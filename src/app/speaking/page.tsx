@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import CodeMirror from '@uiw/react-codemirror';
+import { EditorView } from '@codemirror/view';
 import { diffChars, DiffToken } from '@/utils/diff';
 import { 
   Mic, 
@@ -92,14 +94,7 @@ export default function SpeakingPage() {
   const prepTimerRef = useRef<NodeJS.Timeout | null>(null);
   const speakingTimerRef = useRef<NodeJS.Timeout | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
-  const notesTextareaRef = useRef<HTMLTextAreaElement>(null);
-  const notesGutterRef = useRef<HTMLDivElement>(null);
 
-  const handleNotesScroll = () => {
-    if (notesTextareaRef.current && notesGutterRef.current) {
-      notesGutterRef.current.scrollTop = notesTextareaRef.current.scrollTop;
-    }
-  };
 
   // Split tokens into lines for diff gutter
   const getDiffLines = (tokens: DiffToken[]) => {
@@ -295,27 +290,7 @@ export default function SpeakingPage() {
 
       {/* Main Grid */}
       <div className="flex flex-col space-y-6">
-        {/* Left: Prompt Situation */}
-        <div className="flex flex-col space-y-4">
-          <div className="bg-card border border-border p-5 rounded-2xl space-y-3 shadow-sm h-full">
-            <h2 className="font-extrabold text-base border-b border-border pb-2.5 text-foreground">
-              {config.title}
-            </h2>
-            <div className="text-xs text-primary font-bold bg-primary/10 px-3 py-1.5 rounded-lg w-max flex items-center gap-1">
-              <Clock className="h-3.5 w-3.5" />
-              <span>Chuẩn VSTEP: Chuẩn bị {config.prepTime > 0 ? `${config.prepTime}s` : '0s'} | Nói {config.speakingTime / 60} phút</span>
-            </div>
-            
-            <div className="bg-muted/40 p-4 rounded-xl border border-border text-sm whitespace-pre-wrap font-sans text-muted-foreground leading-relaxed">
-              {config.prompt}
-            </div>
 
-            <div className="flex items-start gap-2 text-xs text-muted-foreground bg-blue-500/5 p-3 rounded-lg border border-blue-500/10">
-              <Info className="h-4 w-4 text-blue-500 shrink-0 mt-0.5" />
-              <span><strong>Mẹo:</strong> {config.guide}</span>
-            </div>
-          </div>
-        </div>
 
         {/* Right: Recorder & Draft Notes Outline */}
         <div className="flex flex-col space-y-5">
@@ -448,24 +423,49 @@ export default function SpeakingPage() {
             <div className={`relative p-[2px] rounded-2xl transition-all duration-300 ${
               isPrepping || isRecording ? 'animate-gradient-flow shadow-lg shadow-primary/10 scale-[1.002]' : 'bg-border'
             }`}>
-              <div className="flex bg-card rounded-[14px] overflow-hidden text-sm font-mono h-[350px]">
-                {/* VS Code style Gutter */}
-                <div 
-                  ref={notesGutterRef}
-                  className="w-10 bg-muted/30 border-r border-border text-muted-foreground select-none text-right pr-2 py-4 overflow-hidden leading-[22px] shrink-0"
-                >
-                  {Array.from({ length: Math.max(1, activeNotes.split('\n').length) }).map((_, i) => (
-                    <div key={i} className="h-[22px]">{i + 1}</div>
-                  ))}
-                </div>
-                {/* Textarea */}
-                <textarea
-                  ref={notesTextareaRef}
-                  onScroll={handleNotesScroll}
+              <div className="flex bg-card rounded-[14px] overflow-hidden text-sm h-[350px] border border-transparent">
+                <CodeMirror
                   value={activeNotes}
-                  onChange={(e) => setActiveNotes(e.target.value)}
+                  onChange={(value) => setActiveNotes(value)}
                   placeholder="Nháp nhanh dàn ý bài nói tại đây để luyện phản xạ nói..."
-                  className="flex-1 p-4 bg-transparent focus:outline-none text-foreground leading-[22px] resize-none h-full overflow-y-auto"
+                  height="346px"
+                  theme="none"
+                  className="flex-1 text-sm font-mono focus:outline-none"
+                  basicSetup={{
+                    lineNumbers: true,
+                    foldGutter: false,
+                    dropCursor: false,
+                    allowMultipleSelections: false,
+                    indentOnInput: false,
+                  }}
+                  extensions={[
+                    EditorView.lineWrapping,
+                    EditorView.theme({
+                      "&": {
+                        height: "100%",
+                        backgroundColor: "transparent",
+                      },
+                      ".cm-scroller": {
+                        fontFamily: "var(--font-mono), monospace",
+                        overflow: "auto",
+                      },
+                      ".cm-gutters": {
+                        backgroundColor: "var(--muted)",
+                        color: "var(--muted-foreground)",
+                        borderRight: "1px solid var(--border)",
+                      },
+                      "&.cm-focused": {
+                        outline: "none",
+                      },
+                      ".cm-content": {
+                        padding: "16px",
+                        caretColor: "var(--foreground)",
+                      },
+                      ".cm-gutterElement": {
+                        paddingRight: "8px",
+                      }
+                    })
+                  ]}
                 />
               </div>
             </div>
@@ -501,7 +501,7 @@ export default function SpeakingPage() {
                 
                 <div className="p-4 bg-muted/40 border border-border rounded-xl max-h-[200px] overflow-y-auto font-mono text-[12px] leading-[22px] flex flex-col space-y-0.5">
                   {activeDiffResult && getDiffLines(activeDiffResult).map((line, i) => (
-                    <div key={i} className="flex items-start min-h-[22px]">
+                    <div key={i} className="flex items-start min-h-[22px] shrink-0">
                       <div className="w-8 text-muted-foreground select-none text-right pr-2 shrink-0 border-r border-border mr-3">
                         {i + 1}
                       </div>

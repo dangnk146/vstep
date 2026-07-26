@@ -1,6 +1,8 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import CodeMirror from '@uiw/react-codemirror';
+import { EditorView } from '@codemirror/view';
 import { useTimer } from '@/hooks/useTimer';
 import { diffChars, DiffToken } from '@/utils/diff';
 import { 
@@ -52,14 +54,7 @@ export default function WritingPage() {
   const setActiveDiffResult = activeTask === 'task1' ? setDiffResult1 : setDiffResult2;
   const activeTimeLimit = activeTask === 'task1' ? TASK1_TIME : TASK2_TIME;
 
-  const textareaRef = useRef<HTMLTextAreaElement>(null);
-  const gutterRef = useRef<HTMLDivElement>(null);
 
-  const handleScroll = () => {
-    if (textareaRef.current && gutterRef.current) {
-      gutterRef.current.scrollTop = textareaRef.current.scrollTop;
-    }
-  };
 
   // Split tokens into lines for diff gutter
   const getDiffLines = (tokens: DiffToken[]) => {
@@ -202,29 +197,54 @@ export default function WritingPage() {
         <div className={`relative p-[2px] rounded-2xl transition-all duration-300 ${
           activeTimer.isRunning ? 'animate-gradient-flow shadow-lg shadow-primary/10 scale-[1.002]' : 'bg-border'
         }`}>
-          <div className="flex bg-card rounded-[14px] overflow-hidden text-sm font-mono h-[350px]">
-            {/* VS Code style Gutter */}
-            <div 
-              ref={gutterRef}
-              className="w-10 bg-muted/30 border-r border-border text-muted-foreground select-none text-right pr-2 py-4 overflow-hidden leading-[22px] shrink-0"
-            >
-              {Array.from({ length: Math.max(1, activeTyped.split('\n').length) }).map((_, i) => (
-                <div key={i} className="h-[22px]">{i + 1}</div>
-              ))}
-            </div>
-            {/* Editor Textarea */}
-            <textarea
-              ref={textareaRef}
-              onScroll={handleScroll}
+          <div className="flex bg-card rounded-[14px] overflow-hidden text-sm h-[350px] border border-transparent">
+            <CodeMirror
               value={activeTyped}
-              onChange={(e) => {
-                setActiveTyped(e.target.value);
-                if (!activeTimer.isRunning && e.target.value.length === 1 && activeTimer.timeLeft === activeTimeLimit) {
+              onChange={(value) => {
+                setActiveTyped(value);
+                if (!activeTimer.isRunning && value.length === 1 && activeTimer.timeLeft === activeTimeLimit) {
                   activeTimer.start();
                 }
               }}
               placeholder="Hãy ghi nhớ bài mẫu và gõ lại nội dung bài viết của bạn tại đây..."
-              className="flex-1 p-4 bg-transparent focus:outline-none text-foreground leading-[22px] resize-none h-full overflow-y-auto"
+              height="346px"
+              theme="none"
+              className="flex-1 text-sm font-mono focus:outline-none"
+              basicSetup={{
+                lineNumbers: true,
+                foldGutter: false,
+                dropCursor: false,
+                allowMultipleSelections: false,
+                indentOnInput: false,
+              }}
+              extensions={[
+                EditorView.lineWrapping,
+                EditorView.theme({
+                  "&": {
+                    height: "100%",
+                    backgroundColor: "transparent",
+                  },
+                  ".cm-scroller": {
+                    fontFamily: "var(--font-mono), monospace",
+                    overflow: "auto",
+                  },
+                  ".cm-gutters": {
+                    backgroundColor: "var(--muted)",
+                    color: "var(--muted-foreground)",
+                    borderRight: "1px solid var(--border)",
+                  },
+                  "&.cm-focused": {
+                    outline: "none",
+                  },
+                  ".cm-content": {
+                    padding: "16px",
+                    caretColor: "var(--foreground)",
+                  },
+                  ".cm-gutterElement": {
+                    paddingRight: "8px",
+                  }
+                })
+              ]}
             />
           </div>
         </div>
@@ -281,11 +301,11 @@ export default function WritingPage() {
 
           <div className="p-5 bg-muted/30 border border-border rounded-xl overflow-y-auto max-h-[350px] font-mono text-[13.5px] leading-[22px] flex flex-col space-y-0.5">
             {activeDiffResult && getDiffLines(activeDiffResult).map((line, i) => (
-              <div key={i} className="flex items-start min-h-[22px]">
+              <div key={i} className="flex items-start min-h-[22px] shrink-0">
                 <div className="w-8 text-muted-foreground select-none text-right pr-2 shrink-0 border-r border-border mr-3">
                   {i + 1}
                 </div>
-                <div className="flex-1 whitespace-pre-wrap break-all">
+                <div className="flex-1 whitespace-pre-wrap break-words leading-[22px]">
                   {line.map((token, idx) => {
                     if (token.type === 'correct') {
                       return <span key={idx} className="text-emerald-600 dark:text-emerald-400 bg-emerald-500/5 font-semibold">{token.char}</span>;
