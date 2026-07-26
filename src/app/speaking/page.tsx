@@ -115,6 +115,7 @@ export default function SpeakingPage() {
   const setActiveNotes = activePart === 'part1' ? setNotes1 : activePart === 'part2' ? setNotes2 : setNotes3;
   const activeDiffResult = activePart === 'part1' ? diffResult1 : activePart === 'part2' ? diffResult2 : diffResult3;
   const setActiveDiffResult = activePart === 'part1' ? setDiffResult1 : activePart === 'part2' ? setDiffResult2 : setDiffResult3;
+  const [isFocused, setIsFocused] = useState(false);
 
   const config = SPEAKING_CONFIG[activePart];
 
@@ -457,11 +458,15 @@ export default function SpeakingPage() {
               </div>
             </div>
             
-            <div className="relative p-[2px] rounded-2xl animate-gradient-flow shadow-lg shadow-primary/10">
+            <div className={`relative p-[2px] rounded-2xl transition-all duration-300 ${
+              isFocused ? 'animate-gradient-flow shadow-lg shadow-primary/10 scale-[1.002]' : 'bg-border'
+            }`}>
               <div className="flex bg-card rounded-[14px] overflow-hidden text-sm h-[350px] border border-transparent">
                 <CodeMirror
                   value={activeNotes}
                   onChange={(value) => setActiveNotes(value)}
+                  onFocus={() => setIsFocused(true)}
+                  onBlur={() => setIsFocused(false)}
                   placeholder="Nháp nhanh dàn ý bài nói tại đây để luyện phản xạ nói..."
                   height="346px"
                   theme="none"

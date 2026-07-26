@@ -74,6 +74,7 @@ export default function WritingPage() {
   const [typed2, setTyped2] = useState('');
   const [diffResult1, setDiffResult1] = useState<DiffToken[] | null>(null);
   const [diffResult2, setDiffResult2] = useState<DiffToken[] | null>(null);
+  const [isFocused, setIsFocused] = useState(false);
 
   // Load saved templates from LocalStorage on mount & updates
   useEffect(() => {
@@ -231,7 +232,9 @@ export default function WritingPage() {
           </div>
         </div>
 
-        <div className="relative p-[2px] rounded-2xl animate-gradient-flow shadow-lg shadow-primary/10">
+        <div className={`relative p-[2px] rounded-2xl transition-all duration-300 ${
+          isFocused ? 'animate-gradient-flow shadow-lg shadow-primary/10 scale-[1.002]' : 'bg-border'
+        }`}>
           <div className="flex bg-card rounded-[14px] overflow-hidden text-sm h-[350px] border border-transparent">
             <CodeMirror
               value={activeTyped}
@@ -241,6 +244,8 @@ export default function WritingPage() {
                   activeTimer.start();
                 }
               }}
+              onFocus={() => setIsFocused(true)}
+              onBlur={() => setIsFocused(false)}
               placeholder="Hãy ghi nhớ bài mẫu và gõ lại nội dung bài viết của bạn tại đây..."
               height="346px"
               theme="none"
