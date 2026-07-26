@@ -1,26 +1,147 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fafc;
+  --foreground: #0f172a;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --border: #e2e8f0;
+  --primary: #0284c7; /* Sky Blue - clean, beautiful, academic */
+  --primary-foreground: #ffffff;
+  --muted: #f1f5f9;
+  --muted-foreground: #64748b;
+  --accent: #f0f9ff;
+  --accent-foreground: #0369a1;
+  --ring: #38bdf8;
+}
+
+.dark {
+  --background: #090d16;
+  --foreground: #f8fafc;
+  --card: #111827;
+  --card-foreground: #f8fafc;
+  --border: #1f2937;
+  --primary: #0ea5e9; /* Sky Blue - glowing in dark mode */
+  --primary-foreground: #ffffff;
+  --muted: #1f2937;
+  --muted-foreground: #9ca3af;
+  --accent: #1e293b;
+  --accent-foreground: #38bdf8;
+  --ring: #0284c7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  min-height: 100vh;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Custom Gradient Theme: High contrast Sky Blue to Deep Purple in Light mode, glowing in Dark mode */
+.bg-vstep-gradient {
+  background: linear-gradient(135deg, #0369a1 0%, #6d28d9 100%);
+}
+
+.dark .bg-vstep-gradient {
+  background: linear-gradient(135deg, #38bdf8 0%, #c084fc 100%);
+}
+
+.text-vstep-gradient {
+  background: linear-gradient(135deg, #0369a1 0%, #6d28d9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.dark .text-vstep-gradient {
+  background: linear-gradient(135deg, #38bdf8 0%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Sliding Gradient Flow Animation (Rainbow Wave - like waves hitting the shore) */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-flow {
+  /* Vibrant rainbow color spectrum */
+  background: linear-gradient(90deg, #ff5e62, #ff9966, #ffea00, #38ef7d, #00f0ff, #7f00ff, #ff007f, #ff5e62);
+  background-size: 400% 400%;
+  animation: gradientFlow 12s ease-in-out infinite;
+}
+
+/* Clock Tick Pulse Animation */
+@keyframes tickBounce {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.04); }
+}
+
+.animate-timer-tick {
+  animation: tickBounce 1s ease-in-out infinite;
+}
+
+/* Error character bounce pop-in */
+@keyframes errorPop {
+  0% { transform: scale(0.8) translateY(2px); opacity: 0; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.animate-char-pop {
+  display: inline-block;
+  animation: errorPop 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Soundwave Visualizer Animations */
+@keyframes soundwave {
+  0%, 100% { height: 6px; }
+  50% { height: 24px; }
+}
+
+.animate-soundwave-1 { animation: soundwave 1.2s ease-in-out infinite; }
+.animate-soundwave-2 { animation: soundwave 0.8s ease-in-out infinite 0.15s; }
+.animate-soundwave-3 { animation: soundwave 1.0s ease-in-out infinite 0.3s; }
+.animate-soundwave-4 { animation: soundwave 0.7s ease-in-out infinite 0.45s; }
+.animate-soundwave-5 { animation: soundwave 1.1s ease-in-out infinite 0.6s; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted-foreground);
 }
