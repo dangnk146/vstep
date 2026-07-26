@@ -457,9 +457,7 @@ export default function SpeakingPage() {
               </div>
             </div>
             
-            <div className={`relative p-[2px] rounded-2xl transition-all duration-300 ${
-              isPrepping || isRecording ? 'animate-gradient-flow shadow-lg shadow-primary/10 scale-[1.002]' : 'bg-border'
-            }`}>
+            <div className="relative p-[2px] rounded-2xl animate-gradient-flow shadow-lg shadow-primary/10">
               <div className="flex bg-card rounded-[14px] overflow-hidden text-sm h-[350px] border border-transparent">
                 <CodeMirror
                   value={activeNotes}
