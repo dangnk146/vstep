@@ -6,46 +6,23 @@ export interface DiffToken {
 }
 
 /**
- * Computes character-level differences between template and typed text.
- * To align comparison from the beginning of the text, we reverse both strings,
- * run the LCS DP alignment, and reverse the final token output array.
+ * Computes character-level differences on a single line (no newlines).
+ * Uses reversed LCS DP to align matching sections from the start.
  */
-export function diffChars(template: string, typed: string): DiffToken[] {
-  // Replace smart quotes and unify line endings
-  const cleanTemplate = template.replace(/\r\n/g, '\n').replace(/[\u201c\u201d]/g, '"').replace(/[\u2018\u2019]/g, "'");
-  const cleanTyped = typed.replace(/\r\n/g, '\n').replace(/[\u201c\u201d]/g, '"').replace(/[\u2018\u2019]/g, "'");
-
-  // Reverse strings to force alignment from the beginning
-  const revTemplate = cleanTemplate.split('').reverse().join('');
-  const revTyped = cleanTyped.split('').reverse().join('');
+function diffSingleLine(template: string, typed: string): DiffToken[] {
+  const revTemplate = template.split('').reverse().join('');
+  const revTyped = typed.split('').reverse().join('');
 
   const m = revTemplate.length;
   const n = revTyped.length;
-  
-  // Safe fallback for very large inputs to prevent browser thread freeze (cap at 4000 characters)
-  if (m * n > 16000000) {
-    const tokens: DiffToken[] = [];
-    const minLen = Math.min(m, n);
-    for (let i = 0; i < minLen; i++) {
-      if (cleanTemplate[i] === cleanTyped[i]) {
-        tokens.push({ char: cleanTemplate[i], type: 'correct' });
-      } else {
-        tokens.push({ char: cleanTyped[i], type: 'extra' });
-      }
-    }
-    if (n > m) {
-      for (let i = minLen; i < n; i++) {
-        tokens.push({ char: cleanTyped[i], type: 'extra' });
-      }
-    } else if (m > n) {
-      for (let i = minLen; i < m; i++) {
-        tokens.push({ char: cleanTemplate[i], type: 'missing' });
-      }
-    }
-    return tokens;
+
+  if (m === 0) {
+    return typed.split('').map(c => ({ char: c, type: 'extra' as const }));
+  }
+  if (n === 0) {
+    return template.split('').map(c => ({ char: c, type: 'missing' as const }));
   }
 
-  // DP table for LCS on reversed strings
   const dp: number[][] = Array.from({ length: m + 1 }, () => new Array(n + 1).fill(0));
   
   for (let i = 1; i <= m; i++) {
@@ -76,6 +53,54 @@ export function diffChars(template: string, typed: string): DiffToken[] {
     }
   }
   
-  // Reversing the reversed results aligns them in the original forward order
   return revResult.reverse();
+}
+
+/**
+ * Computes character-level differences line-by-line to prevent alignment drift.
+ */
+export function diffChars(template: string, typed: string): DiffToken[] {
+  // Replace smart quotes and unify line endings
+  const cleanTemplate = template.replace(/\r\n/g, '\n').replace(/[\u201c\u201d]/g, '"').replace(/[\u2018\u2019]/g, "'");
+  const cleanTyped = typed.replace(/\r\n/g, '\n').replace(/[\u201c\u201d]/g, '"').replace(/[\u2018\u2019]/g, "'");
+
+  const templateLines = cleanTemplate.split('\n');
+  const typedLines = cleanTyped.split('\n');
+
+  const maxLines = Math.max(templateLines.length, typedLines.length);
+  const result: DiffToken[] = [];
+
+  for (let i = 0; i < maxLines; i++) {
+    const tLine = templateLines[i] !== undefined ? templateLines[i] : null;
+    const pLine = typedLines[i] !== undefined ? typedLines[i] : null;
+
+    if (tLine !== null && pLine !== null) {
+      // Both lines exist, run diff on this line
+      const lineDiff = diffSingleLine(tLine, pLine);
+      result.push(...lineDiff);
+    } else if (tLine !== null) {
+      // Template line exists, but user hasn't typed it
+      const lineDiff = tLine.split('').map(c => ({ char: c, type: 'missing' as const }));
+      result.push(...lineDiff);
+    } else if (pLine !== null) {
+      // User typed extra line, template doesn't have it
+      const lineDiff = pLine.split('').map(c => ({ char: c, type: 'extra' as const }));
+      result.push(...lineDiff);
+    }
+
+    // Add newline character between lines
+    if (i < maxLines - 1) {
+      let nlType: DiffType = 'correct';
+      if (tLine !== null && pLine === null) {
+        nlType = 'missing';
+      } else if (tLine === null && pLine !== null) {
+        nlType = 'extra';
+      } else {
+        nlType = 'correct';
+      }
+      result.push({ char: '\n', type: nlType });
+    }
+  }
+
+  return result;
 }

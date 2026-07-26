@@ -2,8 +2,47 @@
 
 import React, { useState, useEffect } from 'react';
 import { Save, Mic, Settings } from 'lucide-react';
+import CodeMirror from '@uiw/react-codemirror';
+import { EditorView } from '@codemirror/view';
 
 type SpeakingPart = 'part1' | 'part2' | 'part3';
+
+const EDITOR_BASIC_SETUP = {
+  lineNumbers: true,
+  foldGutter: false,
+  dropCursor: false,
+  allowMultipleSelections: false,
+  indentOnInput: false,
+};
+
+const EDITOR_EXTENSIONS = [
+  EditorView.lineWrapping,
+  EditorView.theme({
+    "&": {
+      height: "100%",
+      backgroundColor: "transparent",
+    },
+    ".cm-scroller": {
+      fontFamily: "var(--font-mono), monospace",
+      overflow: "auto",
+    },
+    ".cm-gutters": {
+      backgroundColor: "var(--muted)",
+      color: "var(--muted-foreground)",
+      borderRight: "1px solid var(--border)",
+    },
+    "&.cm-focused": {
+      outline: "none",
+    },
+    ".cm-content": {
+      padding: "16px",
+      caretColor: "var(--foreground)",
+    },
+    ".cm-gutterElement": {
+      paddingRight: "8px",
+    }
+  })
+];
 
 export default function SpeakingSettingsPage() {
   const [activePart, setActivePart] = useState<SpeakingPart>('part1');
@@ -77,22 +116,28 @@ export default function SpeakingSettingsPage() {
           </button>
         </div>
 
-        <textarea
-          value={activePart === 'part1' ? template1 : activePart === 'part2' ? template2 : template3}
-          onChange={(e) => {
-            if (activePart === 'part1') setTemplate1(e.target.value);
-            else if (activePart === 'part2') setTemplate2(e.target.value);
-            else setTemplate3(e.target.value);
-          }}
-          placeholder={
-            activePart === 'part1' 
-              ? "Nhập các câu mở đầu hoặc mẫu câu giao tiếp tự giới thiệu..."
-              : activePart === 'part2' 
-                ? "Nhập cấu trúc thảo luận giải pháp (ví dụ: In my opinion, among the three choices, option A is the most suitable because...)"
-                : "Nhập mẫu cấu trúc phát triển chủ đề..."
-          }
-          className="w-full min-h-[400px] p-4 bg-muted/20 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary text-sm font-sans resize-y"
-        />
+        <div className="flex bg-muted/20 border border-border rounded-xl overflow-hidden text-sm h-[400px] focus-within:ring-2 focus-within:ring-primary/40 focus-within:border-primary">
+          <CodeMirror
+            value={activePart === 'part1' ? template1 : activePart === 'part2' ? template2 : template3}
+            onChange={(value) => {
+              if (activePart === 'part1') setTemplate1(value);
+              else if (activePart === 'part2') setTemplate2(value);
+              else setTemplate3(value);
+            }}
+            placeholder={
+              activePart === 'part1' 
+                ? "Nhập các câu mở đầu hoặc mẫu câu giao tiếp tự giới thiệu..."
+                : activePart === 'part2' 
+                  ? "Nhập cấu trúc thảo luận giải pháp (ví dụ: In my opinion, among the three choices, option A is the most suitable because...)"
+                  : "Nhập mẫu cấu trúc phát triển chủ đề..."
+            }
+            height="396px"
+            theme="none"
+            className="flex-1 text-sm font-mono focus:outline-none"
+            basicSetup={EDITOR_BASIC_SETUP}
+            extensions={EDITOR_EXTENSIONS}
+          />
+        </div>
 
         <div className="flex items-center justify-between text-xs text-muted-foreground bg-muted/40 p-3 rounded-lg border border-border">
           <span>Số từ trong mẫu: <strong>{getWordCount(activePart === 'part1' ? template1 : activePart === 'part2' ? template2 : template3)} từ</strong></span>

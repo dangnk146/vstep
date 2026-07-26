@@ -2,6 +2,45 @@
 
 import React, { useState, useEffect } from 'react';
 import { Save, FileText, BookOpen, Settings } from 'lucide-react';
+import CodeMirror from '@uiw/react-codemirror';
+import { EditorView } from '@codemirror/view';
+
+const EDITOR_BASIC_SETUP = {
+  lineNumbers: true,
+  foldGutter: false,
+  dropCursor: false,
+  allowMultipleSelections: false,
+  indentOnInput: false,
+};
+
+const EDITOR_EXTENSIONS = [
+  EditorView.lineWrapping,
+  EditorView.theme({
+    "&": {
+      height: "100%",
+      backgroundColor: "transparent",
+    },
+    ".cm-scroller": {
+      fontFamily: "var(--font-mono), monospace",
+      overflow: "auto",
+    },
+    ".cm-gutters": {
+      backgroundColor: "var(--muted)",
+      color: "var(--muted-foreground)",
+      borderRight: "1px solid var(--border)",
+    },
+    "&.cm-focused": {
+      outline: "none",
+    },
+    ".cm-content": {
+      padding: "16px",
+      caretColor: "var(--foreground)",
+    },
+    ".cm-gutterElement": {
+      paddingRight: "8px",
+    }
+  })
+];
 
 export default function WritingSettingsPage() {
   const [activeTask, setActiveTask] = useState<'task1' | 'task2'>('task1');
@@ -78,14 +117,20 @@ export default function WritingSettingsPage() {
           </button>
         </div>
 
-        <textarea
-          value={activeTask === 'task1' ? template1 : template2}
-          onChange={(e) => activeTask === 'task1' ? setTemplate1(e.target.value) : setTemplate2(e.target.value)}
-          placeholder={activeTask === 'task1' 
-            ? "Nhập bài mẫu thư trả lời thư điện tử tại đây (ví dụ: Dear Mr. Harrison, I am writing this letter to respond to your email...)"
-            : "Nhập bài mẫu luận điểm viết luận tại đây..."}
-          className="w-full min-h-[400px] p-4 bg-muted/20 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary text-sm font-sans resize-y"
-        />
+        <div className="flex bg-muted/20 border border-border rounded-xl overflow-hidden text-sm h-[400px] focus-within:ring-2 focus-within:ring-primary/40 focus-within:border-primary">
+          <CodeMirror
+            value={activeTask === 'task1' ? template1 : template2}
+            onChange={(value) => activeTask === 'task1' ? setTemplate1(value) : setTemplate2(value)}
+            placeholder={activeTask === 'task1' 
+              ? "Nhập bài mẫu thư trả lời thư điện tử tại đây (ví dụ: Dear Mr. Harrison, I am writing this letter to respond to your email...)"
+              : "Nhập bài mẫu luận điểm viết luận tại đây..."}
+            height="396px"
+            theme="none"
+            className="flex-1 text-sm font-mono focus:outline-none"
+            basicSetup={EDITOR_BASIC_SETUP}
+            extensions={EDITOR_EXTENSIONS}
+          />
+        </div>
 
         <div className="flex items-center justify-between text-xs text-muted-foreground bg-muted/40 p-3 rounded-lg border border-border">
           <span>Số từ trong mẫu: <strong>{getWordCount(activeTask === 'task1' ? template1 : template2)} từ</strong></span>

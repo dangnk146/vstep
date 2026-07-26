@@ -20,6 +20,43 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 
+const EDITOR_BASIC_SETUP = {
+  lineNumbers: true,
+  foldGutter: false,
+  dropCursor: false,
+  allowMultipleSelections: false,
+  indentOnInput: false,
+};
+
+const EDITOR_EXTENSIONS = [
+  EditorView.lineWrapping,
+  EditorView.theme({
+    "&": {
+      height: "100%",
+      backgroundColor: "transparent",
+    },
+    ".cm-scroller": {
+      fontFamily: "var(--font-mono), monospace",
+      overflow: "auto",
+    },
+    ".cm-gutters": {
+      backgroundColor: "var(--muted)",
+      color: "var(--muted-foreground)",
+      borderRight: "1px solid var(--border)",
+    },
+    "&.cm-focused": {
+      outline: "none",
+    },
+    ".cm-content": {
+      padding: "16px",
+      caretColor: "var(--foreground)",
+    },
+    ".cm-gutterElement": {
+      paddingRight: "8px",
+    }
+  })
+];
+
 const TASK1_TIME = 20 * 60; // 20 minutes
 const TASK2_TIME = 40 * 60; // 40 minutes
 
@@ -210,41 +247,8 @@ export default function WritingPage() {
               height="346px"
               theme="none"
               className="flex-1 text-sm font-mono focus:outline-none"
-              basicSetup={{
-                lineNumbers: true,
-                foldGutter: false,
-                dropCursor: false,
-                allowMultipleSelections: false,
-                indentOnInput: false,
-              }}
-              extensions={[
-                EditorView.lineWrapping,
-                EditorView.theme({
-                  "&": {
-                    height: "100%",
-                    backgroundColor: "transparent",
-                  },
-                  ".cm-scroller": {
-                    fontFamily: "var(--font-mono), monospace",
-                    overflow: "auto",
-                  },
-                  ".cm-gutters": {
-                    backgroundColor: "var(--muted)",
-                    color: "var(--muted-foreground)",
-                    borderRight: "1px solid var(--border)",
-                  },
-                  "&.cm-focused": {
-                    outline: "none",
-                  },
-                  ".cm-content": {
-                    padding: "16px",
-                    caretColor: "var(--foreground)",
-                  },
-                  ".cm-gutterElement": {
-                    paddingRight: "8px",
-                  }
-                })
-              ]}
+              basicSetup={EDITOR_BASIC_SETUP}
+              extensions={EDITOR_EXTENSIONS}
             />
           </div>
         </div>
