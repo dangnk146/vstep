@@ -44,16 +44,55 @@ const EDITOR_EXTENSIONS = [
   })
 ];
 
+export interface FreeTemplate {
+  id: string;
+  title: string;
+  type: 'writing' | 'speaking';
+  content: string;
+}
+
 export default function SpeakingSettingsPage() {
-  const [activePart, setActivePart] = useState<SpeakingPart>('part1');
+  const [activePart, setActivePart] = useState<SpeakingPart | 'free'>('part1');
   const [template1, setTemplate1] = useState('');
   const [template2, setTemplate2] = useState('');
   const [template3, setTemplate3] = useState('');
+
+  // Free templates
+  const [freeTemplates, setFreeTemplates] = useState<FreeTemplate[]>([]);
+  const [freeTitle, setFreeTitle] = useState('');
+  const [freeContent, setFreeContent] = useState('');
+  const [editId, setEditId] = useState<string | null>(null);
+
+  // Synchronize active part with URL query parameter
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const partParam = params.get('part');
+    if (partParam === 'part1' || partParam === 'part2' || partParam === 'part3' || partParam === 'free') {
+      setActivePart(partParam as SpeakingPart | 'free');
+    }
+  }, []);
+
+  const handleTabChange = (part: SpeakingPart | 'free') => {
+    setActivePart(part);
+    const params = new URLSearchParams(window.location.search);
+    params.set('part', part);
+    window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+  };
 
   useEffect(() => {
     setTemplate1(localStorage.getItem('vstep_speaking_part1_template') || '');
     setTemplate2(localStorage.getItem('vstep_speaking_part2_template') || '');
     setTemplate3(localStorage.getItem('vstep_speaking_part3_template') || '');
+
+    // Load free templates
+    const saved = localStorage.getItem('vstep_free_templates');
+    if (saved) {
+      try {
+        setFreeTemplates(JSON.parse(saved));
+      } catch (e) {
+        console.error(e);
+      }
+    }
   }, []);
 
   const handleSaveTemplate = () => {
@@ -61,10 +100,57 @@ export default function SpeakingSettingsPage() {
       localStorage.setItem('vstep_speaking_part1_template', template1);
     } else if (activePart === 'part2') {
       localStorage.setItem('vstep_speaking_part2_template', template2);
-    } else {
+    } else if (activePart === 'part3') {
       localStorage.setItem('vstep_speaking_part3_template', template3);
     }
     alert('Đã lưu mẫu nói thành công!');
+  };
+
+  const handleSaveFreeTemplate = () => {
+    if (!freeTitle.trim() || !freeContent.trim()) {
+      alert('Vui lòng nhập Tên/Chủ đề và Nội dung bài mẫu!');
+      return;
+    }
+
+    let updated: FreeTemplate[] = [];
+    if (editId) {
+      updated = freeTemplates.map(t => t.id === editId ? { ...t, title: freeTitle, content: freeContent } : t);
+      alert('Đã cập nhật cấu trúc tự do thành công!');
+    } else {
+      const newTemp: FreeTemplate = {
+        id: Date.now().toString(),
+        title: freeTitle,
+        type: 'speaking',
+        content: freeContent
+      };
+      updated = [...freeTemplates, newTemp];
+      alert('Đã thêm cấu trúc tự do mới thành công!');
+    }
+
+    setFreeTemplates(updated);
+    localStorage.setItem('vstep_free_templates', JSON.stringify(updated));
+    setFreeTitle('');
+    setFreeContent('');
+    setEditId(null);
+  };
+
+  const handleDeleteFreeTemplate = (id: string) => {
+    if (confirm('Bạn có chắc chắn muốn xóa mẫu tự do này không?')) {
+      const updated = freeTemplates.filter(t => t.id !== id);
+      setFreeTemplates(updated);
+      localStorage.setItem('vstep_free_templates', JSON.stringify(updated));
+      if (editId === id) {
+        setFreeTitle('');
+        setFreeContent('');
+        setEditId(null);
+      }
+    }
+  };
+
+  const handleStartEditFree = (template: FreeTemplate) => {
+    setEditId(template.id);
+    setFreeTitle(template.title);
+    setFreeContent(template.content);
   };
 
   const getWordCount = (text: string) => {
@@ -90,7 +176,7 @@ export default function SpeakingSettingsPage() {
           {(['part1', 'part2', 'part3'] as SpeakingPart[]).map((p) => (
             <button
               key={p}
-              onClick={() => setActivePart(p)}
+              onClick={() => handleTabChange(p)}
               className={`px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
                 activePart === p ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
               }`}
@@ -98,52 +184,160 @@ export default function SpeakingSettingsPage() {
               Part {p === 'part1' ? '1' : p === 'part2' ? '2' : '3'}
             </button>
           ))}
-        </div>
-      </div>
-
-      {/* Main Form */}
-      <div className="bg-card border border-border p-6 rounded-2xl flex flex-col space-y-4 shadow-sm">
-        <div className="flex items-center justify-between">
-          <h2 className="font-bold text-sm text-muted-foreground">
-            {activePart === 'part1' ? 'Mẫu câu trả lời Speaking Part 1' : activePart === 'part2' ? 'Mẫu cấu trúc Speaking Part 2' : 'Mẫu triển khai chủ đề Speaking Part 3'}
-          </h2>
           <button
-            onClick={handleSaveTemplate}
-            className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-primary-foreground hover:bg-primary/95 text-xs font-bold transition-all cursor-pointer shadow-sm shadow-primary/10"
+            onClick={() => handleTabChange('free')}
+            className={`px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
+              activePart === 'free' ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
+            }`}
           >
-            <Save className="h-3.5 w-3.5" />
-            <span>Lưu mẫu</span>
+            Mẫu Tự Do
           </button>
         </div>
-
-        <div className="flex bg-muted/20 border border-border rounded-xl overflow-hidden text-sm h-[400px] focus-within:ring-2 focus-within:ring-primary/40 focus-within:border-primary">
-          <CodeMirror
-            value={activePart === 'part1' ? template1 : activePart === 'part2' ? template2 : template3}
-            onChange={(value) => {
-              if (activePart === 'part1') setTemplate1(value);
-              else if (activePart === 'part2') setTemplate2(value);
-              else setTemplate3(value);
-            }}
-            placeholder={
-              activePart === 'part1' 
-                ? "Nhập các câu mở đầu hoặc mẫu câu giao tiếp tự giới thiệu..."
-                : activePart === 'part2' 
-                  ? "Nhập cấu trúc thảo luận giải pháp (ví dụ: In my opinion, among the three choices, option A is the most suitable because...)"
-                  : "Nhập mẫu cấu trúc phát triển chủ đề..."
-            }
-            height="396px"
-            theme="none"
-            className="flex-1 text-sm font-mono focus:outline-none"
-            basicSetup={EDITOR_BASIC_SETUP}
-            extensions={EDITOR_EXTENSIONS}
-          />
-        </div>
-
-        <div className="flex items-center justify-between text-xs text-muted-foreground bg-muted/40 p-3 rounded-lg border border-border">
-          <span>Số từ trong mẫu: <strong>{getWordCount(activePart === 'part1' ? template1 : activePart === 'part2' ? template2 : template3)} từ</strong></span>
-          <span>Dữ liệu được lưu an toàn trong trình duyệt cục bộ</span>
-        </div>
       </div>
+
+      {activePart === 'free' ? (
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {/* Form to Add/Edit */}
+          <div className="lg:col-span-2 bg-card border border-border p-6 rounded-2xl flex flex-col space-y-4 shadow-sm">
+            <div className="flex items-center justify-between border-b border-border pb-2.5">
+              <h2 className="font-bold text-sm text-foreground">
+                {editId ? 'Hiệu chỉnh mẫu nói tự do' : 'Thêm mẫu nói tự do mới (Nhập bài mẫu theo Tên/Năm)'}
+              </h2>
+              <button
+                onClick={handleSaveFreeTemplate}
+                className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-primary-foreground hover:bg-primary/95 text-xs font-bold transition-all cursor-pointer shadow-sm shadow-primary/10"
+              >
+                <Save className="h-3.5 w-3.5" />
+                <span>{editId ? 'Cập nhật' : 'Lưu mẫu mới'}</span>
+              </button>
+            </div>
+
+            <div className="flex flex-col space-y-2">
+              <label className="text-xs font-bold text-muted-foreground">Tên / Chủ Đề Đề Thi (Ví dụ: Đề nói 2025 - Topic Travel)</label>
+              <input
+                type="text"
+                value={freeTitle}
+                onChange={(e) => setFreeTitle(e.target.value)}
+                placeholder="Nhập tên đề hoặc chủ đề để dễ lựa chọn khi luyện nói..."
+                className="w-full px-4 py-2.5 bg-muted/20 border border-border rounded-xl focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary text-sm font-sans"
+              />
+            </div>
+
+            <div className="flex flex-col space-y-2">
+              <label className="text-xs font-bold text-muted-foreground">Nội dung bài nói mẫu</label>
+              <div className="flex bg-muted/20 border border-border rounded-xl overflow-hidden text-sm h-[320px] focus-within:ring-2 focus-within:ring-primary/40 focus-within:border-primary">
+                <CodeMirror
+                  value={freeContent}
+                  onChange={(value) => setFreeContent(value)}
+                  placeholder="Nhập nội dung bài nói mẫu để đối chiếu khi luyện tập..."
+                  height="316px"
+                  theme="none"
+                  className="flex-1 text-sm font-mono focus:outline-none"
+                  basicSetup={EDITOR_BASIC_SETUP}
+                  extensions={EDITOR_EXTENSIONS}
+                />
+              </div>
+            </div>
+            
+            {editId && (
+              <button
+                onClick={() => {
+                  setEditId(null);
+                  setFreeTitle('');
+                  setFreeContent('');
+                }}
+                className="text-center text-xs font-bold text-muted-foreground hover:text-foreground cursor-pointer underline"
+              >
+                Hủy hiệu chỉnh (Tạo mẫu mới)
+              </button>
+            )}
+          </div>
+
+          {/* List of Existing */}
+          <div className="bg-card border border-border p-6 rounded-2xl flex flex-col space-y-4 shadow-sm h-max">
+            <h2 className="font-bold text-sm border-b border-border pb-2.5 text-muted-foreground">
+              Danh sách mẫu tự do ({freeTemplates.filter(t => t.type === 'speaking').length})
+            </h2>
+            
+            <div className="space-y-3 max-h-[450px] overflow-y-auto pr-1">
+              {freeTemplates.filter(t => t.type === 'speaking').length === 0 ? (
+                <div className="text-center py-6 text-xs text-muted-foreground font-medium">
+                  Chưa có mẫu tự do nào được thêm. Hãy nhập đề bên cạnh!
+                </div>
+              ) : (
+                freeTemplates.filter(t => t.type === 'speaking').map((t) => (
+                  <div key={t.id} className="p-3.5 bg-muted/40 border border-border rounded-xl flex flex-col space-y-2.5">
+                    <div className="font-bold text-xs text-foreground truncate" title={t.title}>
+                      🎯 {t.title}
+                    </div>
+                    <div className="text-[10px] text-muted-foreground font-medium line-clamp-2">
+                      {t.content}
+                    </div>
+                    <div className="flex gap-2 justify-end">
+                      <button
+                        onClick={() => handleStartEditFree(t)}
+                        className="text-[10px] font-bold text-primary hover:underline cursor-pointer"
+                      >
+                        Sửa
+                      </button>
+                      <button
+                        onClick={() => handleDeleteFreeTemplate(t.id)}
+                        className="text-[10px] font-bold text-rose-500 hover:underline cursor-pointer"
+                      >
+                        Xóa
+                      </button>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
+      ) : (
+        /* Main Form */
+        <div className="bg-card border border-border p-6 rounded-2xl flex flex-col space-y-4 shadow-sm">
+          <div className="flex items-center justify-between">
+            <h2 className="font-bold text-sm text-muted-foreground">
+              {activePart === 'part1' ? 'Mẫu câu trả lời Speaking Part 1' : activePart === 'part2' ? 'Mẫu cấu trúc Speaking Part 2' : 'Mẫu triển khai chủ đề Speaking Part 3'}
+            </h2>
+            <button
+              onClick={handleSaveTemplate}
+              className="flex items-center gap-1.5 px-4 py-2 rounded-xl bg-primary text-primary-foreground hover:bg-primary/95 text-xs font-bold transition-all cursor-pointer shadow-sm shadow-primary/10"
+            >
+              <Save className="h-3.5 w-3.5" />
+              <span>Lưu mẫu</span>
+            </button>
+          </div>
+
+          <div className="flex bg-muted/20 border border-border rounded-xl overflow-hidden text-sm h-[400px] focus-within:ring-2 focus-within:ring-primary/40 focus-within:border-primary">
+            <CodeMirror
+              value={activePart === 'part1' ? template1 : activePart === 'part2' ? template2 : template3}
+              onChange={(value) => {
+                if (activePart === 'part1') setTemplate1(value);
+                else if (activePart === 'part2') setTemplate2(value);
+                else setTemplate3(value);
+              }}
+              placeholder={
+                activePart === 'part1' 
+                  ? "Nhập các câu mở đầu hoặc mẫu câu giao tiếp tự giới thiệu..."
+                  : activePart === 'part2' 
+                    ? "Nhập cấu trúc thảo luận giải pháp (ví dụ: In my opinion, among the three choices, option A is the most suitable because...)"
+                    : "Nhập mẫu cấu trúc phát triển chủ đề..."
+              }
+              height="396px"
+              theme="none"
+              className="flex-1 text-sm font-mono focus:outline-none"
+              basicSetup={EDITOR_BASIC_SETUP}
+              extensions={EDITOR_EXTENSIONS}
+            />
+          </div>
+
+          <div className="flex items-center justify-between text-xs text-muted-foreground bg-muted/40 p-3 rounded-lg border border-border">
+            <span>Số từ trong mẫu: <strong>{getWordCount(activePart === 'part1' ? template1 : activePart === 'part2' ? template2 : template3)} từ</strong></span>
+            <span>Dữ liệu được lưu an toàn trong trình duyệt cục bộ</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

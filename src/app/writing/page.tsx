@@ -60,21 +60,51 @@ const EDITOR_EXTENSIONS = [
 const TASK1_TIME = 20 * 60; // 20 minutes
 const TASK2_TIME = 40 * 60; // 40 minutes
 
+export interface FreeTemplate {
+  id: string;
+  title: string;
+  type: 'writing' | 'speaking';
+  content: string;
+}
+
 export default function WritingPage() {
-  const [activeTask, setActiveTask] = useState<'task1' | 'task2'>('task1');
+  const [activeTask, setActiveTask] = useState<'task1' | 'task2' | 'free'>('task1');
 
   // Timers
   const timer1 = useTimer(TASK1_TIME);
   const timer2 = useTimer(TASK2_TIME);
+  const timerFree = useTimer(30 * 60);
 
   // States
   const [template1, setTemplate1] = useState('');
   const [template2, setTemplate2] = useState('');
   const [typed1, setTyped1] = useState('');
   const [typed2, setTyped2] = useState('');
+  const [typedFree, setTypedFree] = useState('');
   const [diffResult1, setDiffResult1] = useState<DiffToken[] | null>(null);
   const [diffResult2, setDiffResult2] = useState<DiffToken[] | null>(null);
+  const [diffResultFree, setDiffResultFree] = useState<DiffToken[] | null>(null);
   const [isFocused, setIsFocused] = useState(false);
+
+  // Free templates
+  const [freeTemplates, setFreeTemplates] = useState<FreeTemplate[]>([]);
+  const [selectedFreeId, setSelectedFreeId] = useState<string>('');
+
+  // Synchronize active task with URL query parameter
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const taskParam = params.get('task');
+    if (taskParam === 'task1' || taskParam === 'task2' || taskParam === 'free') {
+      setActiveTask(taskParam);
+    }
+  }, []);
+
+  const handleTabChange = (task: 'task1' | 'task2' | 'free') => {
+    setActiveTask(task);
+    const params = new URLSearchParams(window.location.search);
+    params.set('task', task);
+    window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+  };
 
   // Load saved templates from LocalStorage on mount & updates
   useEffect(() => {
@@ -82,15 +112,29 @@ export default function WritingPage() {
     const savedT2 = localStorage.getItem('vstep_writing_t2_template') || '';
     setTemplate1(savedT1);
     setTemplate2(savedT2);
-  }, [activeTask]);
 
-  const activeTimer = activeTask === 'task1' ? timer1 : timer2;
-  const activeTemplate = activeTask === 'task1' ? template1 : template2;
-  const activeTyped = activeTask === 'task1' ? typed1 : typed2;
-  const setActiveTyped = activeTask === 'task1' ? setTyped1 : setTyped2;
-  const activeDiffResult = activeTask === 'task1' ? diffResult1 : diffResult2;
-  const setActiveDiffResult = activeTask === 'task1' ? setDiffResult1 : setDiffResult2;
-  const activeTimeLimit = activeTask === 'task1' ? TASK1_TIME : TASK2_TIME;
+    const savedFree = localStorage.getItem('vstep_free_templates');
+    if (savedFree) {
+      try {
+        const parsed = JSON.parse(savedFree) as FreeTemplate[];
+        const filtered = parsed.filter(t => t.type === 'writing');
+        setFreeTemplates(filtered);
+        if (filtered.length > 0 && !selectedFreeId) {
+          setSelectedFreeId(filtered[0].id);
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  }, [activeTask, selectedFreeId]);
+
+  const activeTimer = activeTask === 'task1' ? timer1 : activeTask === 'task2' ? timer2 : timerFree;
+  const activeTemplate = activeTask === 'task1' ? template1 : activeTask === 'task2' ? template2 : (freeTemplates.find(t => t.id === selectedFreeId)?.content || '');
+  const activeTyped = activeTask === 'task1' ? typed1 : activeTask === 'task2' ? typed2 : typedFree;
+  const setActiveTyped = activeTask === 'task1' ? setTyped1 : activeTask === 'task2' ? setTyped2 : setTypedFree;
+  const activeDiffResult = activeTask === 'task1' ? diffResult1 : activeTask === 'task2' ? diffResult2 : diffResultFree;
+  const setActiveDiffResult = activeTask === 'task1' ? setDiffResult1 : activeTask === 'task2' ? setDiffResult2 : setDiffResultFree;
+  const activeTimeLimit = activeTask === 'task1' ? TASK1_TIME : activeTask === 'task2' ? TASK2_TIME : 30 * 60;
 
 
 
@@ -162,7 +206,7 @@ export default function WritingPage() {
         {/* Task Tabs */}
         <div className="flex bg-muted p-1 rounded-xl border border-border">
           <button
-            onClick={() => setActiveTask('task1')}
+            onClick={() => handleTabChange('task1')}
             className={`flex items-center space-x-2 px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
               activeTask === 'task1' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
             }`}
@@ -171,13 +215,22 @@ export default function WritingPage() {
             <span>Task 1: Viết Thư</span>
           </button>
           <button
-            onClick={() => setActiveTask('task2')}
+            onClick={() => handleTabChange('task2')}
             className={`flex items-center space-x-2 px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
               activeTask === 'task2' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
             }`}
           >
             <BookOpen className="h-4 w-4" />
             <span>Task 2: Viết Luận</span>
+          </button>
+          <button
+            onClick={() => handleTabChange('free')}
+            className={`flex items-center space-x-2 px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
+              activeTask === 'free' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
+            }`}
+          >
+            <RefreshCw className="h-4 w-4" />
+            <span>Luyện Tự Do</span>
           </button>
         </div>
       </div>
@@ -187,10 +240,14 @@ export default function WritingPage() {
         <div className="flex items-center gap-3 p-4 bg-amber-500/10 border border-amber-500/20 text-amber-650 dark:text-amber-500 rounded-xl text-sm font-semibold">
           <AlertCircle className="h-5 w-5 shrink-0 animate-bounce" />
           <div className="flex-1">
-            <span>Bạn chưa cấu hình bài mẫu cho <strong>{activeTask === 'task1' ? 'Task 1' : 'Task 2'}</strong>. Hãy tạo cấu hình mẫu để so khớp kết quả gõ!</span>
+            {activeTask === 'free' ? (
+              <span>Bạn chưa thêm đề viết tự do nào trong Cài Đặt, hoặc chưa chọn đề thi để luyện tập. Hãy thêm đề tự do để tiến hành gõ đối chiếu!</span>
+            ) : (
+              <span>Bạn chưa cấu hình bài mẫu cho <strong>{activeTask === 'task1' ? 'Task 1' : 'Task 2'}</strong>. Hãy tạo cấu hình mẫu để so khớp kết quả gõ!</span>
+            )}
           </div>
           <Link href="/writing/settings" className="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-600 text-white rounded-lg text-xs font-bold transition-all whitespace-nowrap cursor-pointer">
-            Cài Đặt Mẫu
+            {activeTask === 'free' ? 'Thêm Đề Tự Do' : 'Cài Đặt Mẫu'}
           </Link>
         </div>
       )}
@@ -198,9 +255,24 @@ export default function WritingPage() {
       {/* Practice Editor Card */}
       <div className="bg-card border border-border p-6 rounded-2xl flex flex-col space-y-4 shadow-sm">
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border pb-4">
-          <div>
-            <h2 className="text-lg font-bold text-foreground">Khung viết bài làm</h2>
-            <p className="text-xs text-muted-foreground mt-0.5">Bắt đầu gõ bài để đếm giờ tự động</p>
+          <div className="flex flex-wrap items-center gap-3">
+            <div>
+              <h2 className="text-lg font-bold text-foreground">Khung viết bài làm</h2>
+              <p className="text-xs text-muted-foreground mt-0.5">Bắt đầu gõ bài để đếm giờ tự động</p>
+            </div>
+            {activeTask === 'free' && freeTemplates.length > 0 && (
+              <select
+                value={selectedFreeId}
+                onChange={(e) => setSelectedFreeId(e.target.value)}
+                className="px-3 py-1.5 bg-muted border border-border rounded-xl text-xs font-bold text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary cursor-pointer"
+              >
+                {freeTemplates.map((t) => (
+                  <option key={t.id} value={t.id}>
+                    🎯 {t.title}
+                  </option>
+                ))}
+              </select>
+            )}
           </div>
 
           {/* Timer Widget */}

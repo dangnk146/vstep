@@ -94,8 +94,15 @@ const EDITOR_EXTENSIONS = [
   })
 ];
 
+export interface FreeTemplate {
+  id: string;
+  title: string;
+  type: 'writing' | 'speaking';
+  content: string;
+}
+
 export default function SpeakingPage() {
-  const [activePart, setActivePart] = useState<SpeakingPart>('part1');
+  const [activePart, setActivePart] = useState<SpeakingPart | 'free'>('part1');
 
   // Templates & Notes
   const [template1, setTemplate1] = useState('');
@@ -104,20 +111,55 @@ export default function SpeakingPage() {
   const [notes1, setNotes1] = useState('');
   const [notes2, setNotes2] = useState('');
   const [notes3, setNotes3] = useState('');
+  const [notesFree, setNotesFree] = useState('');
+
+  // Free templates
+  const [freeTemplates, setFreeTemplates] = useState<FreeTemplate[]>([]);
+  const [selectedFreeId, setSelectedFreeId] = useState<string>('');
 
   // Diff results
   const [diffResult1, setDiffResult1] = useState<DiffToken[] | null>(null);
   const [diffResult2, setDiffResult2] = useState<DiffToken[] | null>(null);
   const [diffResult3, setDiffResult3] = useState<DiffToken[] | null>(null);
+  const [diffResultFree, setDiffResultFree] = useState<DiffToken[] | null>(null);
 
-  const activeTemplate = activePart === 'part1' ? template1 : activePart === 'part2' ? template2 : template3;
-  const activeNotes = activePart === 'part1' ? notes1 : activePart === 'part2' ? notes2 : notes3;
-  const setActiveNotes = activePart === 'part1' ? setNotes1 : activePart === 'part2' ? setNotes2 : setNotes3;
-  const activeDiffResult = activePart === 'part1' ? diffResult1 : activePart === 'part2' ? diffResult2 : diffResult3;
-  const setActiveDiffResult = activePart === 'part1' ? setDiffResult1 : activePart === 'part2' ? setDiffResult2 : setDiffResult3;
+  const activeTemplate = activePart === 'part1' 
+    ? template1 
+    : activePart === 'part2' 
+      ? template2 
+      : activePart === 'part3' 
+        ? template3 
+        : (freeTemplates.find(t => t.id === selectedFreeId)?.content || '');
+        
+  const activeNotes = activePart === 'part1' ? notes1 : activePart === 'part2' ? notes2 : activePart === 'part3' ? notes3 : notesFree;
+  const setActiveNotes = activePart === 'part1' ? setNotes1 : activePart === 'part2' ? setNotes2 : activePart === 'part3' ? setNotes3 : setNotesFree;
+  const activeDiffResult = activePart === 'part1' ? diffResult1 : activePart === 'part2' ? diffResult2 : activePart === 'part3' ? diffResult3 : diffResultFree;
+  const setActiveDiffResult = activePart === 'part1' ? setDiffResult1 : activePart === 'part2' ? setDiffResult2 : activePart === 'part3' ? setDiffResult3 : setDiffResultFree;
   const [isFocused, setIsFocused] = useState(false);
 
-  const config = SPEAKING_CONFIG[activePart];
+  // Synchronize active part with URL query parameter
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const partParam = params.get('part');
+    if (partParam === 'part1' || partParam === 'part2' || partParam === 'part3' || partParam === 'free') {
+      setActivePart(partParam as SpeakingPart | 'free');
+    }
+  }, []);
+
+  const handleTabChange = (part: SpeakingPart | 'free') => {
+    setActivePart(part);
+    const params = new URLSearchParams(window.location.search);
+    params.set('part', part);
+    window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+  };
+
+  const config = activePart === 'free' ? {
+    title: 'Phần Nói Tự Do (Free Speaking)',
+    prepTime: 60,
+    speakingTime: 180,
+    prompt: '',
+    guide: ''
+  } : SPEAKING_CONFIG[activePart];
 
   // Timers
   const [prepTime, setPrepTime] = useState(config.prepTime);
@@ -158,9 +200,24 @@ export default function SpeakingPage() {
   // Update timers on Part change
   useEffect(() => {
     resetPractice();
-    setPrepTime(SPEAKING_CONFIG[activePart].prepTime);
-    setSpeakingTime(SPEAKING_CONFIG[activePart].speakingTime);
-  }, [activePart]);
+    setPrepTime(config.prepTime);
+    setSpeakingTime(config.speakingTime);
+
+    // Load free templates
+    const savedFree = localStorage.getItem('vstep_free_templates');
+    if (savedFree) {
+      try {
+        const parsed = JSON.parse(savedFree) as FreeTemplate[];
+        const filtered = parsed.filter(t => t.type === 'speaking');
+        setFreeTemplates(filtered);
+        if (filtered.length > 0 && !selectedFreeId) {
+          setSelectedFreeId(filtered[0].id);
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  }, [activePart, selectedFreeId]);
 
   useEffect(() => {
     return () => {
@@ -297,12 +354,11 @@ export default function SpeakingPage() {
           </div>
         </div>
 
-        {/* Part Tabs */}
         <div className="flex bg-muted p-1 rounded-xl border border-border">
           {(['part1', 'part2', 'part3'] as SpeakingPart[]).map((p) => (
             <button
               key={p}
-              onClick={() => setActivePart(p)}
+              onClick={() => handleTabChange(p)}
               className={`px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
                 activePart === p ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
               }`}
@@ -310,18 +366,30 @@ export default function SpeakingPage() {
               Part {p === 'part1' ? '1' : p === 'part2' ? '2' : '3'}
             </button>
           ))}
+          <button
+            onClick={() => handleTabChange('free')}
+            className={`px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
+              activePart === 'free' ? 'bg-card text-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
+            }`}
+          >
+            Mẫu Tự Do
+          </button>
         </div>
       </div>
 
       {/* Warning if no template */}
       {!activeTemplate.trim() && (
         <div className="flex items-center gap-3 p-4 bg-amber-500/10 border border-amber-500/20 text-amber-650 dark:text-amber-500 rounded-xl text-sm font-semibold">
-          <AlertCircle className="h-5 w-5 shrink-0" />
+          <AlertCircle className="h-5 w-5 shrink-0 animate-bounce" />
           <div className="flex-1">
-            <span>Bạn chưa cấu hình mẫu nói cho <strong>{activePart === 'part1' ? 'Part 1' : activePart === 'part2' ? 'Part 2' : 'Part 3'}</strong>. Hãy tạo cấu hình mẫu nói để đối chiếu kết quả nháp!</span>
+            {activePart === 'free' ? (
+              <span>Bạn chưa thêm mẫu nói tự do nào trong Cài Đặt, hoặc chưa chọn đề nói để luyện tập. Hãy thêm mẫu tự do để tiến hành đối chiếu!</span>
+            ) : (
+              <span>Bạn chưa cấu hình mẫu nói cho <strong>{activePart === 'part1' ? 'Part 1' : activePart === 'part2' ? 'Part 2' : 'Part 3'}</strong>. Hãy tạo cấu hình mẫu nói để đối chiếu kết quả nháp!</span>
+            )}
           </div>
           <Link href="/speaking/settings" className="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-600 text-white rounded-lg text-xs font-bold transition-all whitespace-nowrap cursor-pointer">
-            Cài Đặt Mẫu
+            {activePart === 'free' ? 'Thêm Mẫu Tự Do' : 'Cài Đặt Mẫu'}
           </Link>
         </div>
       )}
@@ -449,10 +517,25 @@ export default function SpeakingPage() {
 
           {/* Outline / Note draft */}
           <div className="bg-card border border-border p-6 rounded-2xl flex flex-col space-y-4 shadow-sm">
-            <div className="flex items-center justify-between border-b border-border pb-2.5">
-              <h2 className="font-bold text-sm">
-                Nháp nhanh dàn ý chuẩn bị nói
-              </h2>
+            <div className="flex flex-wrap items-center justify-between border-b border-border pb-2.5 gap-2">
+              <div className="flex items-center gap-3">
+                <h2 className="font-bold text-sm">
+                  Nháp nhanh dàn ý chuẩn bị nói
+                </h2>
+                {activePart === 'free' && freeTemplates.length > 0 && (
+                  <select
+                    value={selectedFreeId}
+                    onChange={(e) => setSelectedFreeId(e.target.value)}
+                    className="px-3 py-1 bg-muted border border-border rounded-xl text-[11px] font-bold text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary cursor-pointer"
+                  >
+                    {freeTemplates.map((t) => (
+                      <option key={t.id} value={t.id}>
+                        🎯 {t.title}
+                      </option>
+                    ))}
+                  </select>
+                )}
+              </div>
               <div className="text-xs text-muted-foreground font-semibold">
                 Từ nháp: <strong className="text-primary">{getWordCount(activeNotes)} từ</strong>
               </div>
