@@ -1,189 +1,160 @@
 'use client';
 
-import React, { useState } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useTheme } from '@/components/ThemeProvider';
-import { 
-  BookOpen, 
-  Headphones, 
-  PenTool, 
-  Mic, 
-  Home, 
-  Sun, 
-  Moon, 
-  Menu, 
-  X,
-  GraduationCap
+import { usePathname, useSearchParams } from 'next/navigation';
+import {
+  BookOpen,
+  GraduationCap,
+  Headphones,
+  Mic,
+  Moon,
+  PenTool,
+  Sparkles,
+  Sun,
+  type LucideIcon,
 } from 'lucide-react';
+import { useTheme } from '@/components/ThemeProvider';
 
-interface SubNavItem {
+type NavItem = {
   name: string;
   href: string;
-}
+  icon: LucideIcon;
+};
 
-interface NavItem {
-  name: string;
-  href: string;
-  icon: React.ComponentType<any>;
-  subItems?: SubNavItem[];
-}
+const skillItems: NavItem[] = [
+  { name: 'Listening', href: '/listening', icon: Headphones },
+  { name: 'Reading', href: '/reading', icon: BookOpen },
+  { name: 'Writing', href: '/writing', icon: PenTool },
+  { name: 'Speaking', href: '/speaking', icon: Mic },
+];
 
 export default function Sidebar() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const { theme, toggleTheme } = useTheme();
-  const [isOpen, setIsOpen] = useState(false);
+  const activeSection = pathname.startsWith('/listening/')
+    ? pathname.match(/\/(part[123])\//)?.[1] ?? 'part1'
+    : pathname === '/writing'
+      ? searchParams.get('task') ?? 'task1'
+      : pathname === '/speaking'
+        ? searchParams.get('part') ?? 'part1'
+        : '';
 
-  const navItems: NavItem[] = [
-    { name: '📊 Dashboard', href: '/', icon: Home },
-    { name: '📖 Reading', href: '/reading', icon: BookOpen },
-    { name: '🎧 Listening', href: '/listening', icon: Headphones },
-    { 
-      name: '✍️ Writing', 
-      href: '/writing', 
-      icon: PenTool,
-      subItems: [
-        { name: '📝 Luyện viết bài', href: '/writing' },
-        { name: '⚙️ Cài đặt bài mẫu', href: '/writing/settings' }
+  const sectionItems = pathname === '/writing'
+    ? [
+        { id: 'task1', label: 'Task 1' },
+        { id: 'task2', label: 'Task 2' },
+        { id: 'free', label: 'Tự do' },
       ]
-    },
-    { 
-      name: '🗣️ Speaking', 
-      href: '/speaking', 
-      icon: Mic,
-      subItems: [
-        { name: '🎙️ Luyện nói', href: '/speaking' },
-        { name: '⚙️ Cài đặt mẫu nói', href: '/speaking/settings' }
-      ]
-    },
-  ];
+    : pathname === '/speaking' || pathname.startsWith('/listening/')
+      ? [
+          { id: 'part1', label: 'Part 1' },
+          { id: 'part2', label: 'Part 2' },
+          { id: 'part3', label: 'Part 3' },
+        ]
+      : null;
 
   return (
-    <>
-      {/* Mobile Header */}
-      <div className="flex items-center justify-between px-6 py-4 md:hidden border-b border-border bg-card">
-        <Link href="/" className="flex items-center space-x-2 text-primary font-bold text-xl">
-          <GraduationCap className="h-6 w-6" />
-          <span>VSTEP Hub</span>
-        </Link>
-        <div className="flex items-center space-x-4">
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-lg bg-muted text-muted-foreground hover:text-primary transition-colors cursor-pointer"
-            aria-label="Toggle theme"
-          >
-            {theme === 'light' ? <Moon className="h-5 w-5" /> : <Sun className="h-5 w-5" />}
-          </button>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="p-2 rounded-lg bg-muted text-muted-foreground hover:text-primary transition-colors cursor-pointer"
-            aria-label="Toggle navigation menu"
-          >
-            {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
-          </button>
-        </div>
-      </div>
-
-      {/* Sidebar navigation */}
-      <aside className={`
-        fixed inset-y-0 left-0 z-40 w-64 transform border-r border-border bg-card px-6 py-8 transition-transform duration-300 ease-in-out md:translate-x-0 md:static md:flex md:h-screen md:flex-col
-        ${isOpen ? 'translate-x-0' : '-translate-x-full'}
-      `}>
-        {/* Brand */}
-        <div className="hidden md:flex items-center space-x-3 mb-8">
-          <div className="p-2.5 bg-primary/10 rounded-xl text-primary">
-            <GraduationCap className="h-6 w-6" />
-          </div>
-          <span className="font-extrabold text-2xl tracking-tight bg-gradient-to-r from-primary to-indigo-500 bg-clip-text text-transparent">
-            VSTEP Prep
-          </span>
-        </div>
-
-        {/* Nav Links */}
-        <nav className="flex-1 space-y-3 overflow-y-auto pr-1">
-          {navItems.map((item) => {
-            const isExactActive = pathname === item.href;
-            const isParentActive = pathname.startsWith(item.href) && item.href !== '/';
-            const Icon = item.icon;
-
+    <aside className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-card/95 shadow-[0_-8px_24px_rgba(15,23,42,0.08)] backdrop-blur">
+      {sectionItems && (
+        <nav className="absolute bottom-full left-1/2 z-10 flex -translate-x-1/2 items-end gap-1 pb-0.5" aria-label="Chọn phần luyện tập">
+          {sectionItems.map(({ id, label }) => {
+            const active = activeSection === id;
             return (
-              <div key={item.name} className="space-y-1.5">
-                <Link
-                  href={item.href}
-                  onClick={() => setIsOpen(false)}
-                  className={`
-                    flex items-center space-x-3 px-4 py-3 rounded-xl font-bold transition-all duration-200
-                    ${isExactActive 
-                      ? 'bg-primary text-primary-foreground shadow-lg shadow-primary/20 scale-[1.02]' 
-                      : isParentActive
-                        ? 'bg-muted text-foreground font-bold'
-                        : 'text-muted-foreground hover:bg-muted hover:text-foreground hover:translate-x-1'}
-                  `}
-                >
-                  <span>{item.name}</span>
-                </Link>
+              <button
+                key={id}
+                type="button"
+                aria-current={active ? 'page' : undefined}
+                onClick={() => {
+                  if (pathname === '/writing' || pathname === '/speaking') {
+                    const params = new URLSearchParams(searchParams.toString());
+                    params.set(pathname === '/writing' ? 'task' : 'part', id);
+                    window.history.pushState(null, '', `${pathname}?${params.toString()}`);
+                  }
+                  window.dispatchEvent(new CustomEvent('vstep:select-section', {
+                    detail: { skill: pathname === '/writing' ? 'writing' : pathname === '/speaking' ? 'speaking' : 'listening', section: id },
+                  }));
+                }}
+                className={`min-w-14 rounded-t-md border border-b-0 px-2.5 py-1 text-[9px] font-bold transition-all duration-200 sm:min-w-16 sm:px-3 sm:text-[10px] ${
+                  active
+                    ? '-translate-y-1 border-primary bg-primary text-primary-foreground shadow-md shadow-primary/20'
+                    : 'border-transparent bg-card/80 text-muted-foreground hover:-translate-y-1 hover:border-border hover:bg-card hover:text-foreground hover:shadow-md'
+                }`}
+              >
+                {label}
+              </button>
+            );
+          })}
+        </nav>
+      )}
+      <div className="relative mx-auto flex h-12 w-full max-w-6xl items-center justify-between gap-2 px-2 sm:px-4">
+        <div className="flex shrink-0 items-center gap-1">
+          <Link
+            href="/"
+            className="hidden shrink-0 items-center gap-1.5 text-xs font-extrabold text-foreground sm:flex"
+            aria-label="VSTEP Prep - Trang chủ"
+          >
+            <span className="grid h-8 w-8 place-items-center rounded-lg bg-primary/10 text-primary">
+              <GraduationCap className="h-4 w-4" />
+            </span>
+            <span className="hidden md:inline">VSTEP Prep</span>
+          </Link>
+          {[
+            { name: 'Ngân hàng đề', href: '/prompts', icon: Sparkles },
+          ].map(({ name, href, icon: Icon }) => {
+            const active = href === '/'
+              ? pathname === '/'
+              : pathname === href;
+            return (
+              <Link
+                key={href}
+                href={href}
+                aria-current={active ? 'page' : undefined}
+                className={`flex h-8 shrink-0 items-center gap-1 rounded-lg px-1.5 text-[9px] font-bold transition-colors sm:h-9 sm:gap-1.5 sm:px-2 sm:text-[10px] ${
+                  active
+                    ? 'bg-primary text-primary-foreground'
+                    : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                }`}
+              >
+                <Icon className="h-3.5 w-3.5" aria-hidden="true" />
+                <span className="whitespace-nowrap">{name === 'Ngân hàng đề' ? 'Đề thi' : name}</span>
+              </Link>
+            );
+          })}
+        </div>
 
-                {/* Subnav links */}
-                {item.subItems && (
-                  <div className="pl-9 space-y-1 border-l border-border ml-6 transition-all duration-200">
-                    {item.subItems.map((sub) => {
-                      const isSubActive = pathname === sub.href;
-                      return (
-                        <Link
-                          key={sub.href}
-                          href={sub.href}
-                          onClick={() => setIsOpen(false)}
-                          className={`
-                            block px-3 py-1.5 text-xs font-semibold rounded-lg transition-all
-                            ${isSubActive 
-                              ? 'text-primary bg-primary/5 font-bold border-l-2 border-primary pl-2' 
-                              : 'text-muted-foreground hover:text-foreground hover:bg-muted/40'}
-                          `}
-                        >
-                          {sub.name}
-                        </Link>
-                      );
-                    })}
-                  </div>
-                )}
-              </div>
+        <nav aria-label="Bốn kỹ năng" className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center gap-0.5">
+          {skillItems.map(({ name, href, icon: Icon }) => {
+            const active = pathname === href
+              || ((href === '/writing' || href === '/speaking')
+                && pathname.startsWith(`${href}/`)
+                && pathname !== `${href}/settings`);
+            return (
+              <Link
+                key={href}
+                href={href}
+                aria-current={active ? 'page' : undefined}
+                className={`flex h-8 min-w-9 items-center justify-center gap-1 rounded-lg px-1 text-[10px] font-bold transition-colors sm:h-9 sm:min-w-0 sm:gap-1.5 sm:px-2.5 sm:text-[11px] ${
+                  active ? 'bg-primary text-primary-foreground' : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                }`}
+              >
+                <Icon className="h-3.5 w-3.5 shrink-0" aria-hidden="true" />
+                <span className="hidden whitespace-nowrap sm:inline">{name}</span>
+              </Link>
             );
           })}
         </nav>
 
-        {/* Footer with Dark mode toggle (Desktop) */}
-        <div className="hidden md:block border-t border-border pt-6 mt-auto">
-          <button
-            onClick={toggleTheme}
-            className="flex w-full items-center justify-between px-4 py-3 rounded-xl bg-muted/50 hover:bg-muted text-muted-foreground hover:text-foreground transition-all duration-200 cursor-pointer"
-          >
-            <div className="flex items-center space-x-3">
-              {theme === 'light' ? (
-                <>
-                  <Moon className="h-5 w-5" />
-                  <span className="font-medium text-sm">Dark Mode</span>
-                </>
-              ) : (
-                <>
-                  <Sun className="h-5 w-5" />
-                  <span className="font-medium text-sm">Light Mode</span>
-                </>
-              )}
-            </div>
-            <div className="w-8 h-4 bg-muted-foreground/30 dark:bg-primary/30 rounded-full relative transition-colors duration-200">
-              <span className={`absolute top-0.5 w-3 h-3 rounded-full bg-card transition-all duration-200 ${theme === 'dark' ? 'right-0.5 bg-primary' : 'left-0.5'}`} />
-            </div>
-          </button>
-        </div>
-      </aside>
-
-      {/* Overlay for mobile */}
-      {isOpen && (
-        <div
-          onClick={() => setIsOpen(false)}
-          className="fixed inset-0 z-30 bg-black/40 backdrop-blur-sm md:hidden"
-        />
-      )}
-    </>
+        <button
+          type="button"
+          onClick={toggleTheme}
+          className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
+          aria-label={theme === 'light' ? 'Chuyển sang giao diện tối' : 'Chuyển sang giao diện sáng'}
+          title={theme === 'light' ? 'Giao diện tối' : 'Giao diện sáng'}
+        >
+          {theme === 'light' ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+        </button>
+      </div>
+    </aside>
   );
 }

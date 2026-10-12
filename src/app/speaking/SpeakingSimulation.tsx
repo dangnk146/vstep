@@ -1,9 +1,11 @@
 'use client';
 
 import React, { startTransition, useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
 import {
   AlertCircle,
-  Clock,
+  Check,
+  Dices,
   Download,
   Mic,
   Play,
@@ -12,6 +14,7 @@ import {
   Square,
   Volume2,
 } from 'lucide-react';
+import { EXAM_PROMPTS, toPromptEditorHtml } from '@/utils/examPrompts';
 
 type SpeakingPart = 'part1' | 'part2' | 'part3';
 type TimerPhase = 'idle' | 'preparing' | 'speaking' | 'complete';
@@ -92,6 +95,8 @@ export default function SpeakingSimulation() {
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [waveformLevels, setWaveformLevels] = useState<number[]>(Array(24).fill(0.08));
   const [hasExamContent, setHasExamContent] = useState(false);
+  const [activePart, setActivePart] = useState<SpeakingPart>('part1');
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const preparationIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const speakingIntervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
@@ -115,6 +120,13 @@ export default function SpeakingSimulation() {
     if (restored.part2 === '120') restored.part2 = '180';
 
     const savedExam = localStorage.getItem(CUSTOM_EXAM_KEY) || '';
+    const queryPart = new URLSearchParams(window.location.search).get('part');
+    const savedPart = localStorage.getItem('vstep_speaking_active_part');
+    const restoredPart = queryPart === 'part1' || queryPart === 'part2' || queryPart === 'part3'
+      ? queryPart
+      : savedPart === 'part1' || savedPart === 'part2' || savedPart === 'part3'
+        ? savedPart
+        : null;
     if (examEditorRef.current) examEditorRef.current.innerHTML = sanitizeClipboardHtml(savedExam);
     startTransition(() => {
       setSettings(restored);
@@ -124,6 +136,15 @@ export default function SpeakingSimulation() {
         part3: Number(restored.part3),
       });
       setHasExamContent(Boolean(savedExam.trim()));
+      if (restoredPart) {
+        setActivePart(restoredPart);
+        localStorage.setItem('vstep_speaking_active_part', restoredPart);
+        if (queryPart !== restoredPart) {
+          const params = new URLSearchParams(window.location.search);
+          params.set('part', restoredPart);
+          window.history.replaceState(null, '', `${window.location.pathname}?${params.toString()}`);
+        }
+      }
       setSettingsLoaded(true);
     });
   }, []);
@@ -134,6 +155,22 @@ export default function SpeakingSimulation() {
       localStorage.setItem(STORAGE_KEYS[key], settings[key]);
     });
   }, [settings, settingsLoaded]);
+
+  useEffect(() => {
+    const handleSectionSelect = (event: Event) => {
+      const { skill, section } = (event as CustomEvent<{ skill: string; section: string }>).detail;
+      if (skill !== 'speaking' || (section !== 'part1' && section !== 'part2' && section !== 'part3')) return;
+      setActivePart(section);
+      setIsSubmitted(false);
+      localStorage.setItem('vstep_speaking_active_part', section);
+      const params = new URLSearchParams(window.location.search);
+      params.set('part', section);
+      window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+    };
+
+    window.addEventListener('vstep:select-section', handleSectionSelect);
+    return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
+  }, []);
 
   useEffect(() => () => {
     if (preparationIntervalRef.current) clearInterval(preparationIntervalRef.current);
@@ -150,6 +187,16 @@ export default function SpeakingSimulation() {
     const value = Number.parseInt(settings[key], 10);
     const minimum = key === 'prep' ? 0 : 1;
     return Number.isFinite(value) && value >= minimum ? value : Number(DEFAULT_SETTINGS[key]);
+  };
+
+  const updateSetting = (key: SettingKey, value: string) => {
+    setSettings((previous) => ({ ...previous, [key]: value }));
+
+    const seconds = Number.parseInt(value, 10);
+    const minimum = key === 'prep' ? 0 : 1;
+    if (!Number.isFinite(seconds) || seconds < minimum || key === 'prep') return;
+
+    setRemainingTimes((previous) => ({ ...previous, [key]: seconds }));
   };
 
   const clearTimers = () => {
@@ -305,6 +352,8 @@ export default function SpeakingSimulation() {
   const handleRunPart = (part: SpeakingPart) => {
     clearTimers();
     stopMedia(true);
+    setActivePart(part);
+    setIsSubmitted(false);
     setRunningPart(part);
     setRemainingTimes((previous) => ({ ...previous, [part]: getSeconds(part) }));
 
@@ -331,13 +380,22 @@ export default function SpeakingSimulation() {
     }, 1000);
   };
 
-  const handleManualRecord = () => {
+  const handleManualRecord = async () => {
     clearTimers();
     stopMedia(true);
-    setRunningPart(null);
+    const part = activePart;
+    const duration = getSeconds(part);
+    setRunningPart(part);
+    setRemainingTimes((previous) => ({ ...previous, [part]: duration }));
     setPreparationRemaining(null);
-    setTimerPhase('idle');
-    void startRecording();
+    setTimerPhase('speaking');
+    const recordingStarted = await startRecording();
+    if (recordingStarted) {
+      runSpeakingTimer(part, duration);
+    } else {
+      setRunningPart(null);
+      setTimerPhase('idle');
+    }
   };
 
   const handleStopRecording = () => {
@@ -346,13 +404,6 @@ export default function SpeakingSimulation() {
     setPreparationRemaining(null);
     setTimerPhase('idle');
     stopMedia(false);
-  };
-
-  const updateSetting = (key: SettingKey, value: string) => {
-    setSettings((previous) => ({ ...previous, [key]: value }));
-    if (key !== 'prep') {
-      setRemainingTimes((previous) => ({ ...previous, [key]: Number(value) || 0 }));
-    }
   };
 
   const handleExamPaste = (event: React.ClipboardEvent<HTMLDivElement>) => {
@@ -372,259 +423,267 @@ export default function SpeakingSimulation() {
     }
   };
 
-  const formatSeconds = (seconds: number) => `${Math.max(seconds, 0)}s`;
+  const handleRandomPrompt = () => {
+    const prompts = EXAM_PROMPTS.filter((prompt) => prompt.category === `speaking-${activePart}`);
+    const prompt = prompts[Math.floor(Math.random() * prompts.length)];
+    if (!prompt || !examEditorRef.current) return;
+
+    const content = toPromptEditorHtml(prompt);
+    examEditorRef.current.innerHTML = content;
+    localStorage.setItem(CUSTOM_EXAM_KEY, content);
+    const part = prompt.category.replace('speaking-', 'part');
+    if (part === 'part1' || part === 'part2' || part === 'part3') {
+      localStorage.setItem('vstep_speaking_active_part', part);
+      setActivePart(part);
+      const params = new URLSearchParams(window.location.search);
+      params.set('part', part);
+      window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+    }
+    setHasExamContent(true);
+    setIsSubmitted(false);
+    examEditorRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  };
+
+  const handleSubmitPractice = () => {
+    clearTimers();
+    setRunningPart(null);
+    setPreparationRemaining(null);
+    setTimerPhase('complete');
+    stopMedia(false);
+    setIsSubmitted(true);
+  };
+
+  const formatClock = (seconds: number) => {
+    const safeSeconds = Math.max(seconds, 0);
+    return `${Math.floor(safeSeconds / 60).toString().padStart(2, '0')}:${(safeSeconds % 60).toString().padStart(2, '0')}`;
+  };
 
   return (
-    <div className="flex w-full flex-col gap-5 pb-8">
-      <header className="flex items-center gap-3 border-b border-border pb-4">
-        <div className="grid h-11 w-11 shrink-0 place-items-center rounded-lg bg-primary/10 text-primary">
-          <Mic className="h-5 w-5" />
+    <div className="mx-auto flex w-full max-w-5xl flex-col gap-3 pb-4">
+      <header className="flex h-10 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white">
+        <div className="flex items-center gap-2 text-xs font-bold">
+          <Mic className="h-4 w-4" />
+          <span>VSTEP SPEAKING</span>
         </div>
-        <div>
-          <h1 className="text-xl font-extrabold text-foreground">VSTEP Speaking Simulation</h1>
-          <p className="mt-1 text-sm text-muted-foreground">Chuẩn bị, ghi âm và tự canh thời gian cho từng phần thi</p>
+        <div className="flex items-center gap-1.5">
+          <Link
+            href="/speaking/settings"
+            title="Cấu hình Speaking"
+            aria-label="Cấu hình Speaking"
+            className="grid h-8 w-8 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20"
+          >
+            <Settings className="h-4 w-4" />
+          </Link>
+          <button
+            type="button"
+            onClick={handleRandomPrompt}
+            title="Lấy đề nói ngẫu nhiên"
+            aria-label="Lấy đề nói ngẫu nhiên"
+            className="grid h-8 w-8 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20 cursor-pointer"
+          >
+            <Dices className="h-4 w-4" />
+          </button>
+          <button
+            type="button"
+            onClick={handleSubmitPractice}
+            className="ml-1 rounded-sm bg-[#df4b24] px-3 py-1.5 text-[10px] font-extrabold text-white transition hover:bg-red-700 cursor-pointer"
+          >
+            NỘP BÀI
+          </button>
         </div>
       </header>
 
-      <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-12">
-        <main className="flex min-w-0 flex-col gap-4 lg:col-span-8">
-          <section className="flex items-center justify-between gap-4 rounded-lg border border-amber-500/20 bg-amber-500/5 px-4 py-3" aria-live="polite">
-            <div>
-              <p className="text-xs font-bold uppercase text-muted-foreground">{timerPhase === 'preparing' ? 'Đang chuẩn bị' : 'Thời gian chuẩn bị'}</p>
-              <p className={`mt-0.5 font-mono text-2xl font-bold tabular-nums ${timerPhase === 'preparing' ? 'text-amber-500' : 'text-foreground'}`}>
-                {timerPhase === 'preparing'
-                  ? formatSeconds(preparationRemaining ?? 0)
-                  : timerPhase === 'speaking'
-                    ? 'Nói ngay'
-                    : formatSeconds(getSeconds('prep'))}
-              </p>
-            </div>
-            <span className="text-right text-xs text-muted-foreground">
-              {timerPhase === 'speaking' && runningPart
-                ? `${PARTS.find((part) => part.id === runningPart)?.title} đang chạy`
-                : timerPhase === 'complete'
-                  ? 'Đã hoàn thành phần thi'
-                  : timerPhase === 'idle'
-                    ? 'Chọn Start ở phần muốn luyện'
-                    : 'Hết giờ sẽ tự bắt đầu ghi âm'}
-            </span>
-          </section>
-
-          <section className="overflow-hidden rounded-lg border border-border bg-card" aria-label="Bộ đếm từng phần thi">
-            {PARTS.map((part, index) => {
-              const active = runningPart === part.id;
-              return (
-                <div key={part.id} className={`flex flex-wrap items-center justify-between gap-3 px-4 py-4 ${index > 0 ? 'border-t border-border' : ''}`}>
-                  <div className="min-w-0 flex-1">
-                    <h2 className="font-bold text-foreground">{part.title}</h2>
-                    <p className="mt-1 text-xs text-muted-foreground">Thời gian nói: {formatSeconds(remainingTimes[part.id])}</p>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <span className={`min-w-14 text-right font-mono text-2xl font-bold tabular-nums ${active ? 'text-primary' : 'text-foreground'}`}>
-                      {formatSeconds(remainingTimes[part.id])}
-                    </span>
-                    <button
-                      onClick={() => handleRunPart(part.id)}
-                      disabled={recorderStatus === 'requesting'}
-                      className="flex h-10 min-w-24 items-center justify-center gap-2 rounded-md bg-primary px-3 text-sm font-bold text-primary-foreground transition-colors hover:bg-primary/90 disabled:cursor-wait disabled:opacity-60 cursor-pointer"
-                    >
-                      <Play className="h-4 w-4 fill-current" />
-                      {active ? 'Chạy lại' : 'Start'}
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
-          </section>
-
-          <section className="flex flex-col gap-3 rounded-lg border border-border bg-card p-4" aria-labelledby="recorder-heading">
-            <div className="flex items-center justify-between gap-3">
-              <div>
-                <h2 id="recorder-heading" className="font-bold">Ghi âm câu trả lời</h2>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  {recorderStatus === 'requesting' ? 'Đang chờ quyền microphone…' : recorderStatus === 'recording' ? 'Đang ghi âm' : recorderStatus === 'ready' ? 'Đã có bản ghi' : 'Bản ghi được tạo trên thiết bị của bạn'}
-                </p>
-              </div>
-              {recorderStatus === 'recording' && <span className="h-2.5 w-2.5 animate-pulse rounded-full bg-red-500" aria-label="Đang ghi âm" />}
-            </div>
-
-            {recorderStatus === 'recording' && (
-              <div
-                role="img"
-                aria-label="Biểu đồ âm lượng microphone đang hoạt động"
-                className="rounded-lg border border-border bg-muted/40 px-3 py-3"
-              >
-                <div className="mb-2 flex items-center justify-between text-[11px] font-semibold text-muted-foreground">
-                  <span>Sóng âm trực tiếp</span>
-                  <span className="text-red-500">● LIVE</span>
-                </div>
-                <div className="flex h-12 items-center gap-1" aria-hidden="true">
-                  {waveformLevels.map((level, index) => (
-                    <span
-                      key={index}
-                      className="min-w-0 flex-1 rounded-full transition-[height] duration-75"
-                      style={{
-                        height: `${Math.max(4, Math.round(level * 44))}px`,
-                        backgroundColor: `hsl(${Math.round(index * 120 / (waveformLevels.length - 1))} 76% 46%)`,
-                      }}
-                    />
-                  ))}
-                </div>
-              </div>
-            )}
-
-            <div className="flex flex-wrap gap-2">
+      <section className="grid overflow-hidden border border-border bg-white shadow-sm dark:bg-card lg:grid-cols-[minmax(0,1fr)_190px]">
+        <main className="min-w-0 border-b border-border lg:border-b-0 lg:border-r">
+          <div className="px-3 pt-3">
+            <p className="mb-1 text-[10px] font-extrabold uppercase tracking-wide text-slate-600 dark:text-muted-foreground">
+              Question {activePart.slice(-1)}
+            </p>
+            <div className="flex h-9 items-center gap-2 bg-[#48005e] px-2 text-white">
               <button
-                onClick={handleManualRecord}
-                disabled={recorderStatus === 'recording' || recorderStatus === 'requesting'}
-                className="flex h-10 items-center gap-2 rounded-md bg-red-600 px-4 text-sm font-bold text-white transition-colors hover:bg-red-700 disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
+                type="button"
+                onClick={() => runningPart ? handleStopRecording() : handleRunPart(activePart)}
+                disabled={recorderStatus === 'requesting'}
+                aria-label={runningPart ? 'Dừng phần thi đang chạy' : `Bắt đầu ${activePart}`}
+                className="grid h-6 w-7 shrink-0 place-items-center bg-white/15 hover:bg-white/25 disabled:opacity-50 cursor-pointer"
               >
-                <Mic className="h-4 w-4" /> Record
+                {runningPart ? <Square className="h-3 w-3 fill-current" /> : <Play className="h-3 w-3 fill-current" />}
               </button>
-              <button
-                onClick={handleStopRecording}
-                disabled={recorderStatus !== 'recording' && recorderStatus !== 'requesting'}
-                className="flex h-10 items-center gap-2 rounded-md border border-border px-4 text-sm font-semibold text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
-              >
-                <Square className="h-4 w-4" /> Stop Recording
-              </button>
-              <button
-                onClick={() => void audioRef.current?.play()}
-                disabled={!audioUrl}
-                className="flex h-10 items-center gap-2 rounded-md border border-border px-4 text-sm font-semibold text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
-              >
-                <Volume2 className="h-4 w-4" /> Play Recording
-              </button>
-              {audioUrl && (
-                <a
-                  href={audioUrl}
-                  download="vstep-speaking.webm"
-                  aria-label="Tải bản ghi xuống"
-                  className="grid h-10 w-10 place-items-center rounded-md border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-                  title="Tải bản ghi xuống"
-                >
-                  <Download className="h-4 w-4" />
-                </a>
-              )}
-              <button
-                onClick={() => {
-                  clearTimers();
-                  setRunningPart(null);
-                  setPreparationRemaining(null);
-                  setTimerPhase('idle');
-                  stopMedia(true);
-                  setRemainingTimes({ part1: getSeconds('part1'), part2: getSeconds('part2'), part3: getSeconds('part3') });
-                }}
-                className="ml-auto grid h-10 w-10 place-items-center rounded-md border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
-                title="Đặt lại các bộ đếm"
-                aria-label="Đặt lại các bộ đếm"
-              >
-                <RotateCcw className="h-4 w-4" />
-              </button>
-            </div>
-            {audioUrl && (
-              <div className="rounded-lg border border-border bg-muted/30 p-3">
-                <div className="mb-2 flex items-center gap-2 text-xs font-semibold text-foreground">
-                  <Volume2 className="h-4 w-4 text-primary" />
-                  Bản ghi âm · tua và phát lại
-                </div>
-                <audio
-                  ref={audioRef}
-                  src={audioUrl}
-                  controls
-                  preload="metadata"
-                  className="h-10 w-full"
-                  aria-label="Phát lại và tua bản ghi câu trả lời"
+              <span className="min-w-12 font-mono text-xs font-bold tabular-nums">
+                {formatClock(timerPhase === 'preparing' ? preparationRemaining ?? 0 : remainingTimes[activePart])}
+              </span>
+              <div className="h-1.5 flex-1 overflow-hidden bg-white/25">
+                <div
+                  className="h-full bg-white transition-[width] duration-500"
+                  style={{
+                    width: `${Math.max(0, Math.min(100, (remainingTimes[activePart] / Math.max(getSeconds(activePart), 1)) * 100))}%`,
+                  }}
                 />
               </div>
+              <span className="min-w-16 text-right font-mono text-xs font-bold tabular-nums" aria-live="off">
+                {timerPhase === 'preparing' ? `Prep ${formatClock(preparationRemaining ?? 0)}` : `Còn ${formatClock(remainingTimes[activePart])}`}
+              </span>
+            </div>
+          </div>
+
+          <div className="px-3 py-3">
+            <div
+              ref={examEditorRef}
+              contentEditable
+              suppressContentEditableWarning
+              role="textbox"
+              aria-label="Nội dung đề Speaking"
+              aria-multiline="true"
+              onInput={(event) => {
+                const editor = event.currentTarget;
+                localStorage.setItem(CUSTOM_EXAM_KEY, editor.innerHTML);
+                setHasExamContent(Boolean(editor.textContent?.trim()));
+                setIsSubmitted(false);
+              }}
+              onPaste={handleExamPaste}
+              data-placeholder="Chọn đề trong Ngân hàng đề hoặc bấm xúc xắc để bắt đầu luyện nói…"
+              className="speaking-editor min-h-[230px] max-h-[48vh] overflow-y-auto bg-white p-3 text-[11px] leading-5 text-slate-800 outline-none dark:bg-card dark:text-foreground [&_a]:text-primary [&_blockquote]:border-l-2 [&_blockquote]:border-border [&_blockquote]:pl-3 [&_h1]:text-base [&_h1]:font-bold [&_h2]:mb-2 [&_h2]:text-sm [&_h2]:font-extrabold [&_h3]:font-bold [&_li]:ml-5 [&_ol]:list-decimal [&_ul]:list-disc"
+            />
+          </div>
+
+          <div className="flex flex-wrap items-center gap-2 border-t border-border bg-muted/40 px-3 py-2">
+            <span className="mr-auto text-[10px] font-semibold text-muted-foreground">
+              {recorderStatus === 'requesting' ? 'Đang chờ quyền microphone…' : recorderStatus === 'recording' ? 'Đang ghi âm · LIVE' : recorderStatus === 'ready' ? 'Đã có bản ghi âm' : timerPhase === 'preparing' ? 'Chuẩn bị trước khi trả lời' : 'Nhấn Start để bắt đầu'}
+            </span>
+            <button
+              type="button"
+              onClick={handleManualRecord}
+              disabled={recorderStatus === 'recording' || recorderStatus === 'requesting'}
+              className="flex h-7 items-center gap-1 rounded-sm bg-red-600 px-2 text-[10px] font-bold text-white hover:bg-red-700 disabled:opacity-50 cursor-pointer"
+            >
+              <Mic className="h-3 w-3" /> GHI ÂM
+            </button>
+            <button
+              type="button"
+              onClick={handleStopRecording}
+              disabled={recorderStatus !== 'recording' && recorderStatus !== 'requesting'}
+              className="flex h-7 items-center gap-1 rounded-sm border border-border px-2 text-[10px] font-bold text-foreground hover:bg-muted disabled:opacity-50 cursor-pointer"
+            >
+              <Square className="h-3 w-3" /> DỪNG
+            </button>
+            <button
+              type="button"
+              onClick={() => void audioRef.current?.play()}
+              disabled={!audioUrl}
+              className="grid h-7 w-7 place-items-center rounded-sm border border-border text-foreground hover:bg-muted disabled:opacity-50 cursor-pointer"
+              aria-label="Phát bản ghi"
+              title="Phát bản ghi"
+            >
+              <Volume2 className="h-3.5 w-3.5" />
+            </button>
+            {audioUrl && (
+              <a href={audioUrl} download="vstep-speaking.webm" aria-label="Tải bản ghi xuống" title="Tải bản ghi xuống" className="grid h-7 w-7 place-items-center rounded-sm border border-border text-foreground hover:bg-muted">
+                <Download className="h-3.5 w-3.5" />
+              </a>
             )}
-            {recorderError && (
-              <p role="alert" className="flex items-center gap-2 text-xs font-medium text-red-600 dark:text-red-400">
-                <AlertCircle className="h-4 w-4 shrink-0" /> {recorderError}
-              </p>
-            )}
-          </section>
+            <button
+              type="button"
+              onClick={() => {
+                clearTimers();
+                setRunningPart(null);
+                setPreparationRemaining(null);
+                setTimerPhase('idle');
+                setIsSubmitted(false);
+                stopMedia(true);
+                setRemainingTimes({ part1: getSeconds('part1'), part2: getSeconds('part2'), part3: getSeconds('part3') });
+              }}
+              className="grid h-7 w-7 place-items-center rounded-sm border border-border text-muted-foreground hover:bg-muted hover:text-foreground cursor-pointer"
+              title="Đặt lại bộ đếm"
+              aria-label="Đặt lại bộ đếm"
+            >
+              <RotateCcw className="h-3.5 w-3.5" />
+            </button>
+          </div>
+
+          {audioUrl && (
+            <audio ref={audioRef} src={audioUrl} controls preload="metadata" className="h-8 w-full px-3 py-1" aria-label="Phát lại và tua bản ghi câu trả lời" />
+          )}
+          {recorderError && (
+            <p role="alert" className="flex items-center gap-2 px-3 pb-2 text-[10px] font-medium text-red-600 dark:text-red-400">
+              <AlertCircle className="h-3.5 w-3.5 shrink-0" /> {recorderError}
+            </p>
+          )}
         </main>
 
-        <aside className="flex min-w-0 flex-col gap-3 rounded-lg border border-border bg-card p-4 lg:col-span-4" aria-labelledby="settings-heading">
-          <div className="flex items-center gap-2 border-b border-border pb-3">
-            <Settings className="h-4 w-4 text-primary" />
-            <h2 id="settings-heading" className="font-bold">Cài đặt số giây</h2>
+        <aside className="flex flex-col gap-2 p-2.5">
+          <div className="flex h-[78px] items-end gap-1 overflow-hidden bg-[#171717] p-2" role="img" aria-label={recorderStatus === 'recording' ? 'Âm lượng microphone đang hoạt động' : 'Trình hiển thị âm thanh'}>
+            {waveformLevels.map((level, index) => (
+              <span
+                key={index}
+                className="min-w-0 flex-1 rounded-t-sm transition-[height] duration-75"
+                style={{
+                  height: `${Math.max(4, Math.round(level * 55))}px`,
+                  backgroundColor: `hsl(${Math.round(index * 120 / (waveformLevels.length - 1))} 85% 48%)`,
+                }}
+              />
+            ))}
           </div>
-          <p className="text-xs text-muted-foreground">Cài đặt được lưu tự động. Part 1 bắt đầu nói ngay; Prep áp dụng cho Part 2 và Part 3.</p>
 
-          {([
-            { key: 'prep', label: 'Chuẩn bị (Prep)', min: 0 },
-            { key: 'part1', label: 'Part 1 (Nói)', min: 1 },
-            { key: 'part2', label: 'Part 2 (Nói)', min: 1 },
-            { key: 'part3', label: 'Part 3 (Nói)', min: 1 },
-          ] as { key: SettingKey; label: string; min: number }[]).map(({ key, label, min }) => (
-            <label key={key} className="flex items-center justify-between gap-3 py-1 text-sm">
-              <span className="font-medium text-foreground">{label}</span>
-              <span className="flex h-10 w-28 shrink-0 items-center overflow-hidden rounded-md border border-border bg-background focus-within:ring-2 focus-within:ring-primary/30">
-                <input
-                  type="number"
-                  min={min}
-                  step="1"
-                  value={settings[key]}
-                  onChange={(event) => updateSetting(key, event.target.value)}
-                  className="h-full w-full min-w-0 bg-transparent px-2 text-right font-mono text-sm text-foreground outline-none"
-                  aria-label={`${label}, giây`}
-                />
-                <span className="pr-2 text-xs text-muted-foreground">s</span>
+          <div className={`flex min-h-[176px] flex-1 flex-col items-center justify-center px-3 py-4 text-center text-white ${isSubmitted ? 'bg-emerald-700' : 'bg-[#23aa00]'}`} aria-live="polite">
+            {isSubmitted ? (
+              <>
+                <Check className="mb-3 h-8 w-8 rounded-full border-2 border-white p-1" />
+                <p className="text-[11px] font-extrabold leading-5">LƯỢT LUYỆN ĐÃ KẾT THÚC</p>
+                <p className="mt-2 text-[9px] font-semibold leading-4">Bản ghi âm được giữ trên thiết bị này. Bạn có thể phát lại hoặc tải xuống.</p>
+              </>
+            ) : (
+              <>
+                <Mic className="mb-3 h-8 w-8" />
+                <p className="text-[11px] font-extrabold leading-5">{hasExamContent ? 'ĐỀ THI ĐÃ SẴN SÀNG' : 'CHỌN ĐỀ ĐỂ BẮT ĐẦU'}</p>
+                <p className="mt-2 text-[9px] font-semibold leading-4">Nhấn “NỘP BÀI” ở góc trên để kết thúc lượt luyện.</p>
+              </>
+            )}
+          </div>
+
+          <section className="rounded-sm border border-border bg-card p-2.5" aria-labelledby="speaking-duration-heading">
+            <div className="mb-2 flex items-center justify-between gap-2 border-b border-border pb-2">
+              <div>
+                <h2 id="speaking-duration-heading" className="text-[11px] font-extrabold text-foreground">Thời lượng từng phần</h2>
+                <p className="mt-0.5 text-[9px] leading-4 text-muted-foreground">Chỉnh giây · Part 1 không có chuẩn bị</p>
+              </div>
+              <span className="shrink-0 rounded-sm bg-primary/10 px-1.5 py-1 text-[9px] font-bold text-primary">
+                {timerPhase === 'preparing'
+                  ? `Prep ${formatClock(preparationRemaining ?? 0)}`
+                  : `${PARTS.find((part) => part.id === activePart)?.title.split(': ')[0]} ${formatClock(remainingTimes[activePart])}`}
               </span>
-            </label>
-          ))}
-
-          <div className="mt-1 flex items-start gap-2 border-t border-border pt-3 text-xs text-muted-foreground">
-            <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-            <span>Bấm Start ở từng Part để chạy prep, sau đó tự ghi âm và đếm ngược thời gian nói.</span>
-          </div>
+            </div>
+            <div className="grid grid-cols-2 gap-x-2 gap-y-1.5">
+              {([
+                { key: 'prep', label: `Chuẩn bị · ${formatClock(getSeconds('prep'))}`, min: 0 },
+                { key: 'part1', label: `Part 1 · ${formatClock(getSeconds('part1'))}`, min: 1 },
+                { key: 'part2', label: `Part 2 · ${formatClock(getSeconds('part2'))}`, min: 1 },
+                { key: 'part3', label: `Part 3 · ${formatClock(getSeconds('part3'))}`, min: 1 },
+              ] as { key: SettingKey; label: string; min: number }[]).map(({ key, label, min }) => (
+                <label key={key} className="flex min-w-0 flex-col gap-1 text-[9px] font-semibold text-muted-foreground">
+                  <span className="truncate" title={label}>{label}</span>
+                  <span className="flex h-7 items-center overflow-hidden rounded-sm border border-border bg-background focus-within:border-primary">
+                    <input
+                      type="number"
+                      min={min}
+                      step="1"
+                      value={settings[key]}
+                      disabled={timerPhase === 'preparing' || timerPhase === 'speaking'}
+                      onChange={(event) => updateSetting(key, event.target.value)}
+                      className="h-full w-full min-w-0 bg-transparent px-1.5 text-right font-mono text-[10px] font-bold text-foreground outline-none disabled:cursor-not-allowed disabled:opacity-60"
+                      aria-label={`${label}, giây`}
+                    />
+                    <span className="pr-1.5 text-[9px]">s</span>
+                  </span>
+                </label>
+              ))}
+            </div>
+            {(timerPhase === 'preparing' || timerPhase === 'speaking') && (
+              <p className="mt-2 text-[9px] leading-4 text-muted-foreground">Dừng lượt luyện để chỉnh thời lượng.</p>
+            )}
+          </section>
         </aside>
-      </div>
-
-      <section className="rounded-lg border border-border bg-card p-4 sm:p-5" aria-labelledby="custom-exam-heading">
-        <div className="mb-3 flex flex-wrap items-center justify-between gap-3 border-b border-border pb-3">
-          <div>
-            <h2 id="custom-exam-heading" className="font-bold">Custom đề thi</h2>
-            <p className="mt-1 text-xs text-muted-foreground">Dán đề thi vào đây; nội dung sẽ được lưu tự động.</p>
-          </div>
-          <button
-            onClick={() => {
-              if (examEditorRef.current) examEditorRef.current.innerHTML = '';
-              localStorage.removeItem(CUSTOM_EXAM_KEY);
-              setHasExamContent(false);
-            }}
-            disabled={!hasExamContent}
-            className="flex h-9 items-center gap-2 rounded-md border border-border px-3 text-xs font-semibold text-muted-foreground transition-colors hover:bg-muted hover:text-foreground disabled:cursor-not-allowed disabled:opacity-50 cursor-pointer"
-          >
-            <RotateCcw className="h-3.5 w-3.5" /> Xóa đề
-          </button>
-        </div>
-
-        <div className="relative">
-          <div
-            ref={examEditorRef}
-            contentEditable
-            suppressContentEditableWarning
-            role="textbox"
-            aria-label="Nội dung custom đề thi"
-            aria-multiline="true"
-            onInput={(event) => {
-              const editor = event.currentTarget;
-              localStorage.setItem(CUSTOM_EXAM_KEY, editor.innerHTML);
-              setHasExamContent(Boolean(editor.textContent?.trim()));
-            }}
-            onPaste={handleExamPaste}
-            className="min-h-52 max-h-[60vh] overflow-y-auto rounded-md border border-border bg-background p-4 text-sm leading-7 text-foreground outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 [&_a]:text-primary [&_blockquote]:border-l-2 [&_blockquote]:border-border [&_blockquote]:pl-3 [&_h1]:text-xl [&_h1]:font-bold [&_h2]:text-lg [&_h2]:font-bold [&_h3]:font-bold [&_li]:ml-5 [&_ol]:list-decimal [&_ul]:list-disc"
-          />
-          {!hasExamContent && (
-            <span className="pointer-events-none absolute left-4 top-4 text-sm text-muted-foreground">
-              Dán đề thi hoặc nhập nội dung tại đây…
-            </span>
-          )}
-        </div>
       </section>
+
     </div>
   );
 }

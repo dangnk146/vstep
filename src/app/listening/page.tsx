@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { useTimer } from '@/hooks/useTimer';
 import { 
@@ -93,9 +93,21 @@ export default function ListeningPage() {
     setFlags(prev => ({ ...prev, [qNumber]: !prev[qNumber] }));
   };
 
-  const navigateToVideo = (part: PartId, video: number) => {
+  const navigateToVideo = useCallback((part: PartId, video: number) => {
     router.push(`/listening/${part}/video${video}`, { scroll: false });
-  };
+  }, [router]);
+
+  useEffect(() => {
+    const handleSectionSelect = (event: Event) => {
+      const { skill, section } = (event as CustomEvent<{ skill: string; section: string }>).detail;
+      if (skill === 'listening' && (section === 'part1' || section === 'part2' || section === 'part3')) {
+        navigateToVideo(section, 1);
+      }
+    };
+
+    window.addEventListener('vstep:select-section', handleSectionSelect);
+    return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
+  }, [navigateToVideo]);
 
   const isTimeLow = timeLeft < 300; // < 5 minutes
   const answeredCount = questionNumbers.filter((number) => answers[number]).length;
@@ -145,25 +157,6 @@ export default function ListeningPage() {
           </select>
         </div>
       </header>
-
-      <nav aria-label="Chọn phần nghe" className="grid grid-cols-3 gap-2">
-        {PARTS.map((item) => {
-          const isSelected = item.id === selectedPart;
-          return (
-            <button
-              key={item.id}
-              onClick={() => navigateToVideo(item.id, 1)}
-              aria-current={isSelected ? 'page' : undefined}
-              className={`flex min-h-12 flex-col items-center justify-center rounded-lg border px-2 py-1 transition-colors cursor-pointer ${isSelected ? 'border-primary bg-primary text-primary-foreground' : 'border-border bg-card text-foreground hover:bg-muted'}`}
-            >
-              <span className="text-sm font-bold">{item.label}</span>
-              <span className={`text-[11px] ${isSelected ? 'text-primary-foreground/80' : 'text-muted-foreground'}`}>
-                Câu {item.start}–{item.start + item.count - 1}
-              </span>
-            </button>
-          );
-        })}
-      </nav>
 
       {/* Keyboard Shortcuts Banner */}
       {showShortcuts && (

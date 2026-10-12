@@ -52,6 +52,11 @@ body {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+.speaking-editor:empty::before {
+  content: attr(data-placeholder);
+  color: #94a3b8;
+}
+
 /* Custom Gradient Theme: High contrast Sky Blue to Deep Purple in Light mode, glowing in Dark mode */
 .bg-vstep-gradient {
   background: linear-gradient(135deg, #0369a1 0%, #6d28d9 100%);

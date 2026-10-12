@@ -1,24 +1,24 @@
 'use client';
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { startTransition, useState, useEffect } from 'react';
 import CodeMirror from '@uiw/react-codemirror';
 import { EditorView } from '@codemirror/view';
 import { useTimer } from '@/hooks/useTimer';
 import { diffChars, DiffToken } from '@/utils/diff';
 import { 
   PenTool, 
-  Clock, 
   Play, 
   Pause, 
   RotateCcw, 
   Check, 
   RefreshCw, 
   Award,
-  FileText,
-  BookOpen,
-  AlertCircle
+  AlertCircle,
+  Dices,
+  Settings,
 } from 'lucide-react';
 import Link from 'next/link';
+import { EXAM_PROMPTS, toReadablePromptText } from '@/utils/examPrompts';
 
 const EDITOR_BASIC_SETUP = {
   lineNumbers: true,
@@ -69,6 +69,7 @@ export interface FreeTemplate {
 
 export default function WritingPage() {
   const [activeTask, setActiveTask] = useState<'task1' | 'task2' | 'free'>('task1');
+  const [bankPrompt, setBankPrompt] = useState<{ title: string; content: string } | null>(null);
 
   // Timers
   const timer1 = useTimer(TASK1_TIME);
@@ -95,11 +96,58 @@ export default function WritingPage() {
     const params = new URLSearchParams(window.location.search);
     const taskParam = params.get('task');
     if (taskParam === 'task1' || taskParam === 'task2' || taskParam === 'free') {
-      setActiveTask(taskParam);
+      startTransition(() => setActiveTask(taskParam));
+    }
+
+    const savedBankPrompt = sessionStorage.getItem('vstep_bank_writing_prompt');
+    if (savedBankPrompt) {
+      try {
+        const prompt = JSON.parse(savedBankPrompt) as { title?: unknown; content?: unknown; task?: unknown };
+        const { title, content, task } = prompt;
+        if (typeof title === 'string' && typeof content === 'string') {
+          startTransition(() => {
+            setBankPrompt({ title, content });
+            if (task === 'task1' || task === 'task2') setActiveTask(task);
+          });
+        } else {
+          console.error('Invalid writing prompt received from the exam bank.');
+        }
+      } catch (error) {
+        console.error('Could not read the writing prompt from the exam bank.', error);
+      } finally {
+        sessionStorage.removeItem('vstep_bank_writing_prompt');
+      }
     }
   }, []);
 
-  const handleTabChange = (task: 'task1' | 'task2' | 'free') => {
+  useEffect(() => {
+    const handleSectionSelect = (event: Event) => {
+      const { skill, section } = (event as CustomEvent<{ skill: string; section: string }>).detail;
+      if (skill === 'writing' && (section === 'task1' || section === 'task2' || section === 'free')) {
+        setActiveTask(section);
+        setBankPrompt(null);
+        const params = new URLSearchParams(window.location.search);
+        params.set('task', section);
+        window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+      }
+    };
+
+    window.addEventListener('vstep:select-section', handleSectionSelect);
+    return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
+  }, []);
+
+  const handleRandomPrompt = () => {
+    const prompts = EXAM_PROMPTS.filter((prompt) => (
+      activeTask === 'task1'
+        ? prompt.category === 'writing-task1'
+        : activeTask === 'task2'
+          ? prompt.category === 'writing-task2'
+          : prompt.category === 'writing-task1' || prompt.category === 'writing-task2'
+    ));
+    const prompt = prompts[Math.floor(Math.random() * prompts.length)];
+    if (!prompt) return;
+    const task = prompt.category === 'writing-task1' ? 'task1' : 'task2';
+    setBankPrompt({ title: prompt.title, content: toReadablePromptText(prompt.content) });
     setActiveTask(task);
     const params = new URLSearchParams(window.location.search);
     params.set('task', task);
@@ -110,22 +158,22 @@ export default function WritingPage() {
   useEffect(() => {
     const savedT1 = localStorage.getItem('vstep_writing_t1_template') || '';
     const savedT2 = localStorage.getItem('vstep_writing_t2_template') || '';
-    setTemplate1(savedT1);
-    setTemplate2(savedT2);
-
+    let filtered: FreeTemplate[] = [];
     const savedFree = localStorage.getItem('vstep_free_templates');
     if (savedFree) {
       try {
         const parsed = JSON.parse(savedFree) as FreeTemplate[];
-        const filtered = parsed.filter(t => t.type === 'writing');
-        setFreeTemplates(filtered);
-        if (filtered.length > 0 && !selectedFreeId) {
-          setSelectedFreeId(filtered[0].id);
-        }
+        filtered = parsed.filter(t => t.type === 'writing');
       } catch (e) {
         console.error(e);
       }
     }
+    startTransition(() => {
+      setTemplate1(savedT1);
+      setTemplate2(savedT2);
+      setFreeTemplates(filtered);
+      if (filtered.length > 0 && !selectedFreeId) setSelectedFreeId(filtered[0].id);
+    });
   }, [activeTask, selectedFreeId]);
 
   const activeTimer = activeTask === 'task1' ? timer1 : activeTask === 'task2' ? timer2 : timerFree;
@@ -190,49 +238,35 @@ export default function WritingPage() {
   const diffStats = activeDiffResult ? getStats(activeDiffResult) : null;
 
   return (
-    <div className="flex flex-col space-y-6 w-full animate-fade-in pb-10">
+    <div className="mx-auto flex w-full max-w-6xl flex-col space-y-4 animate-fade-in pb-10">
       {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card border border-border p-6 rounded-2xl shadow-sm">
-        <div className="flex items-center space-x-4">
-          <div className="p-3 bg-primary/10 rounded-xl text-primary">
-            <PenTool className="h-6 w-6" />
+      <div className="flex flex-col gap-3 overflow-hidden rounded-md border border-border bg-card shadow-sm">
+        <div className="flex flex-wrap items-center justify-between gap-3 bg-[#245b86] px-4 py-3 text-white sm:px-5">
+          <div className="flex items-center gap-2 text-sm font-bold">
+            <PenTool className="h-4 w-4" />
+            <h1>VSTEP Writing</h1>
           </div>
-          <div>
-            <h1 className="text-2xl font-extrabold text-foreground tracking-tight">VSTEP Writing Practice</h1>
-            <p className="text-muted-foreground text-sm font-medium">Luyện gõ bài luận, email và đo lường độ chính xác</p>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={handleRandomPrompt}
+              title="Lấy đề viết ngẫu nhiên"
+              aria-label="Lấy đề viết ngẫu nhiên"
+              className="grid h-9 w-9 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20 cursor-pointer"
+            >
+              <Dices className="h-5 w-5" />
+            </button>
+            <Link
+              href="/writing/settings"
+              title="Cấu hình Writing"
+              aria-label="Cấu hình Writing"
+              className="grid h-9 w-9 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20"
+            >
+              <Settings className="h-4 w-4" />
+            </Link>
           </div>
         </div>
 
-        {/* Task Tabs */}
-        <div className="flex bg-muted p-1 rounded-xl border border-border">
-          <button
-            onClick={() => handleTabChange('task1')}
-            className={`flex items-center space-x-2 px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
-              activeTask === 'task1' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
-            }`}
-          >
-            <FileText className="h-4 w-4" />
-            <span>Task 1: Viết Thư</span>
-          </button>
-          <button
-            onClick={() => handleTabChange('task2')}
-            className={`flex items-center space-x-2 px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
-              activeTask === 'task2' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
-            }`}
-          >
-            <BookOpen className="h-4 w-4" />
-            <span>Task 2: Viết Luận</span>
-          </button>
-          <button
-            onClick={() => handleTabChange('free')}
-            className={`flex items-center space-x-2 px-4 py-2 text-sm font-bold rounded-lg transition-all cursor-pointer ${
-              activeTask === 'free' ? 'bg-primary text-primary-foreground shadow-sm' : 'text-muted-foreground hover:text-foreground'
-            }`}
-          >
-            <RefreshCw className="h-4 w-4" />
-            <span>Luyện Tự Do</span>
-          </button>
-        </div>
       </div>
 
       {/* Warning if no template */}
@@ -252,62 +286,67 @@ export default function WritingPage() {
         </div>
       )}
 
-      {/* Practice Editor Card */}
-      <div className="bg-card border border-border p-6 rounded-2xl flex flex-col space-y-4 shadow-sm">
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border pb-4">
-          <div className="flex flex-wrap items-center gap-3">
+      {bankPrompt && (
+        <section className="overflow-hidden rounded-md border border-border bg-card" aria-labelledby="bank-prompt-heading">
+          <div className="border-b border-border bg-muted/70 px-4 py-2">
             <div>
-              <h2 className="text-lg font-bold text-foreground">Khung viết bài làm</h2>
-              <p className="text-xs text-muted-foreground mt-0.5">Bắt đầu gõ bài để đếm giờ tự động</p>
+              <p className="text-[10px] font-bold uppercase tracking-wide text-primary">Đề thi · {activeTask === 'task1' ? 'Writing Task 1' : 'Writing Task 2'}</p>
+              <h2 id="bank-prompt-heading" className="mt-0.5 text-sm font-bold text-foreground">{bankPrompt.title}</h2>
             </div>
-            {activeTask === 'free' && freeTemplates.length > 0 && (
-              <select
-                value={selectedFreeId}
-                onChange={(e) => setSelectedFreeId(e.target.value)}
-                className="px-3 py-1.5 bg-muted border border-border rounded-xl text-xs font-bold text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary cursor-pointer"
-              >
-                {freeTemplates.map((t) => (
-                  <option key={t.id} value={t.id}>
-                    🎯 {t.title}
-                  </option>
-                ))}
-              </select>
-            )}
           </div>
+          <p className="max-h-[34vh] overflow-y-auto whitespace-pre-line px-4 py-3 text-sm leading-6 text-foreground">{bankPrompt.content}</p>
+        </section>
+      )}
 
-          {/* Timer Widget */}
-          <div className={`p-[1.5px] rounded-xl transition-all duration-300 ${
-            activeTimer.isRunning ? 'animate-gradient-flow shadow-md scale-105' : 'bg-border'
-          }`}>
-            <div className={`flex items-center space-x-3 px-4 py-2 rounded-[10px] bg-card text-foreground ${
-              activeTimer.timeLeft < 180 && activeTimer.timeLeft > 0
-                ? 'text-red-500 bg-red-500/5'
-                : ''
-            }`}>
-              <Clock className="h-4 w-4 text-primary animate-pulse" />
-              <span className="font-mono font-bold text-lg">{formatTime(activeTimer.timeLeft)}</span>
-              <div className="flex gap-1">
-                <button
-                  onClick={activeTimer.toggle}
-                  className="p-1 rounded bg-muted hover:bg-muted-foreground/10 text-muted-foreground hover:text-foreground cursor-pointer"
-                >
-                  {activeTimer.isRunning ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
-                </button>
-                <button
-                  onClick={() => activeTimer.reset(activeTimeLimit)}
-                  className="p-1 rounded bg-muted hover:bg-muted-foreground/10 text-muted-foreground hover:text-foreground cursor-pointer"
-                >
-                  <RotateCcw className="h-3.5 w-3.5" />
-                </button>
+      {/* Practice Editor Card */}
+      <div className="overflow-hidden rounded-md border border-border bg-card shadow-sm">
+        <div className="border-b border-border bg-muted/70 px-4 py-2">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <div className="flex flex-wrap items-center gap-3">
+              <div>
+                <h2 className="text-sm font-bold text-foreground">Bài làm của bạn</h2>
+                <p className="text-[11px] text-muted-foreground">Bắt đầu gõ để chạy đồng hồ đếm giờ</p>
               </div>
+              {activeTask === 'free' && freeTemplates.length > 0 && (
+                <select
+                  value={selectedFreeId}
+                  onChange={(e) => setSelectedFreeId(e.target.value)}
+                  className="px-3 py-1.5 bg-muted border border-border rounded-xl text-xs font-bold text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary cursor-pointer"
+                >
+                  {freeTemplates.map((t) => (
+                    <option key={t.id} value={t.id}>
+                      🎯 {t.title}
+                    </option>
+                  ))}
+                </select>
+              )}
+            </div>
+            <div className="flex items-center gap-1">
+              <span className={`mr-2 rounded-sm px-2 py-1 font-mono text-sm font-extrabold tabular-nums ${activeTimer.timeLeft < 180 && activeTimer.timeLeft > 0 ? 'bg-red-500/10 text-red-600' : 'bg-[#df4b24] text-white'}`}>
+                Còn lại {formatTime(activeTimer.timeLeft)}
+              </span>
+              <button
+                onClick={activeTimer.toggle}
+                aria-label={activeTimer.isRunning ? 'Tạm dừng đồng hồ' : 'Bắt đầu đồng hồ'}
+                className="grid h-8 w-8 place-items-center rounded-sm border border-border bg-card text-muted-foreground hover:text-foreground cursor-pointer"
+              >
+                {activeTimer.isRunning ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+              </button>
+              <button
+                onClick={() => activeTimer.reset(activeTimeLimit)}
+                aria-label="Đặt lại đồng hồ"
+                className="grid h-8 w-8 place-items-center rounded-sm border border-border bg-card text-muted-foreground hover:text-foreground cursor-pointer"
+              >
+                <RotateCcw className="h-3.5 w-3.5" />
+              </button>
             </div>
           </div>
         </div>
 
-        <div className={`relative p-[2px] rounded-2xl transition-all duration-300 ${
+        <div className={`relative mx-3 mb-3 rounded-sm border transition-all duration-300 ${
           isFocused ? 'animate-gradient-flow shadow-lg shadow-primary/10 scale-[1.002]' : 'bg-border'
         }`}>
-          <div className="flex bg-card rounded-[14px] overflow-hidden text-sm h-[350px] border border-transparent">
+          <div className="flex min-h-[340px] overflow-hidden bg-card text-sm sm:h-[52vh]">
             <CodeMirror
               value={activeTyped}
               onChange={(value) => {
@@ -319,7 +358,7 @@ export default function WritingPage() {
               onFocus={() => setIsFocused(true)}
               onBlur={() => setIsFocused(false)}
               placeholder="Hãy ghi nhớ bài mẫu và gõ lại nội dung bài viết của bạn tại đây..."
-              height="346px"
+              height="52vh"
               theme="none"
               className="flex-1 text-sm font-mono focus:outline-none"
               basicSetup={EDITOR_BASIC_SETUP}
@@ -328,8 +367,8 @@ export default function WritingPage() {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-          <div className="text-xs text-muted-foreground font-semibold">
+        <div className="flex flex-col gap-3 border-t border-border bg-muted/40 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
+          <div className="text-xs font-semibold text-muted-foreground">
             Số từ đã gõ: <strong className="text-primary">{getWordCount(activeTyped)} từ</strong>
             {activeTemplate && <span className="ml-2 font-normal">(Mẫu có: {getWordCount(activeTemplate)} từ)</span>}
           </div>
