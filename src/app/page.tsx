@@ -36,7 +36,7 @@ export default function Home() {
   const cards = [
     {
       name: '📖 Reading (Đọc)',
-      description: 'Mô phỏng đếm giờ thi đọc VSTEP (40 câu hỏi) trong 60 phút. Hỗ trợ bộ phím tắt thông minh điều khiển thời gian dễ dàng.',
+      description: 'Mô phỏng đếm giờ thi đọc VSTEP (40 câu hỏi) trong 60 phút.',
       href: '/reading',
       icon: BookOpen,
       color: 'from-blue-700 to-indigo-600',
@@ -45,7 +45,7 @@ export default function Home() {
     },
     {
       name: '🎧 Listening (Nghe)',
-      description: 'Đếm ngược 40 phút thi nghe 3 phần (35 câu hỏi). Hỗ trợ tải lên file âm thanh ôn luyện riêng của bạn để làm bài.',
+      description: 'Đếm ngược 40 phút thi nghe 3 phần (35 câu hỏi).',
       href: '/listening',
       icon: Headphones,
       color: 'from-indigo-600 to-purple-600',
@@ -86,9 +86,6 @@ export default function Home() {
               VSTEP Tiếng Anh 🎯
             </span>
           </h1>
-          <p className="text-muted-foreground text-sm md:text-base font-medium max-w-lg leading-relaxed">
-            Ứng dụng hỗ trợ tự ôn luyện thi VSTEP toàn diện. Thiết lập bài mẫu của riêng bạn, luyện tập phản xạ gõ khớp từ ký tự và ghi âm trả lời trực tiếp dưới áp lực thời gian.
-          </p>
         </div>
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-64 h-64 bg-primary/10 blur-[80px] rounded-full pointer-events-none" />
       </div>
