@@ -1,13 +1,8 @@
 'use client';
 
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
-import { useTimer } from '@/hooks/useTimer';
 import { 
-  Play, 
-  Pause, 
-  RotateCcw, 
-  Keyboard, 
   Headphones, 
   Flag, 
   CheckCircle,
@@ -18,7 +13,8 @@ import {
 } from 'lucide-react';
 import videoData from './listvideo.json';
 
-const LISTENING_TIME = 40 * 60; // 40 minutes in seconds
+const YOUTUBE_IFRAME_API_URL = 'https://www.youtube.com/iframe_api';
+const VIDEO_JUMP_MINUTES = [2, 3, 4, 5, 6] as const;
 const PARTS = [
   { id: 'part1', label: 'Part 1', start: 1, count: 8 },
   { id: 'part2', label: 'Part 2', start: 9, count: 12 },
@@ -26,24 +22,138 @@ const PARTS = [
 ] as const;
 type PartId = (typeof PARTS)[number]['id'];
 
+type YouTubePlayer = {
+  getCurrentTime: () => number;
+  getDuration: () => number;
+  seekTo: (seconds: number, allowSeekAhead: boolean) => void;
+  loadVideoById: (videoId: string) => void;
+  destroy: () => void;
+};
+
+type YouTubeIframeApi = {
+  Player: new (
+    iframe: HTMLIFrameElement,
+    options: {
+      events: {
+        onReady: (event: { target: YouTubePlayer }) => void;
+      };
+    },
+  ) => YouTubePlayer;
+};
+
+declare global {
+  interface Window {
+    YT?: YouTubeIframeApi;
+    onYouTubeIframeAPIReady?: () => void;
+  }
+}
+
+let youtubeApiPromise: Promise<YouTubeIframeApi> | undefined;
+
+function loadYouTubeIframeApi() {
+  if (window.YT) {
+    return Promise.resolve(window.YT);
+  }
+
+  if (youtubeApiPromise) {
+    return youtubeApiPromise;
+  }
+
+  youtubeApiPromise = new Promise<YouTubeIframeApi>((resolve, reject) => {
+    const previousReadyCallback = window.onYouTubeIframeAPIReady;
+    window.onYouTubeIframeAPIReady = () => {
+      if (window.YT) {
+        resolve(window.YT);
+      } else {
+        youtubeApiPromise = undefined;
+        reject(new Error('YouTube Player API failed to initialize.'));
+      }
+      previousReadyCallback?.();
+    };
+
+    const script = document.createElement('script');
+    script.src = YOUTUBE_IFRAME_API_URL;
+    script.onerror = () => {
+      youtubeApiPromise = undefined;
+      reject(new Error('Failed to load the YouTube Player API.'));
+    };
+    document.head.appendChild(script);
+  });
+
+  return youtubeApiPromise;
+}
+
 export default function ListeningPage() {
   const pathname = usePathname();
   const router = useRouter();
-  const { timeLeft, setTimeLeft, isRunning, toggle, reset } = useTimer(LISTENING_TIME);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [flags, setFlags] = useState<Record<number, boolean>>({});
-  const [showShortcuts, setShowShortcuts] = useState(true);
   const videoDialogRef = useRef<HTMLDialogElement>(null);
+  const examRef = useRef<HTMLDivElement>(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const playerRef = useRef<YouTubePlayer | null>(null);
+  const [isPlayerReady, setIsPlayerReady] = useState(false);
+  const [playerError, setPlayerError] = useState(false);
   const routeMatch = pathname.match(/^\/listening\/(part[123])\/video(\d+)$/);
   const selectedPart = (routeMatch?.[1] ?? 'part1') as PartId;
   const selectedVideo = Number(routeMatch?.[2] ?? 1);
   const partInfo = PARTS.find((item) => item.id === selectedPart)!;
   const partVideos = videoData[selectedPart];
   const videoId = partVideos[selectedVideo - 1];
+  const loadedVideoIdRef = useRef(videoId);
   const questionNumbers = Array.from(
     { length: partInfo.count },
     (_, index) => partInfo.start + index,
   );
+
+  useEffect(() => {
+    let cancelled = false;
+
+    loadYouTubeIframeApi()
+      .then((youtubeApi) => {
+        if (cancelled || !iframeRef.current) {
+          return;
+        }
+
+        playerRef.current = new youtubeApi.Player(iframeRef.current, {
+          events: {
+            onReady: ({ target }) => {
+              playerRef.current = target;
+              setIsPlayerReady(true);
+            },
+          },
+        });
+      })
+      .catch(() => {
+        if (!cancelled) {
+          setPlayerError(true);
+        }
+      });
+
+    return () => {
+      cancelled = true;
+      playerRef.current?.destroy();
+      playerRef.current = null;
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isPlayerReady && loadedVideoIdRef.current !== videoId) {
+      playerRef.current?.loadVideoById(videoId);
+      loadedVideoIdRef.current = videoId;
+    }
+  }, [isPlayerReady, videoId]);
+
+  const seekVideoToMinute = (minute: number) => {
+    const player = playerRef.current;
+    if (!player || !isPlayerReady) {
+      return;
+    }
+
+    const targetTime = minute * 60;
+    const duration = player.getDuration();
+    player.seekTo(duration > 0 ? Math.min(targetTime, duration) : targetTime, true);
+  };
 
   useEffect(() => {
     if (pathname === '/listening') {
@@ -51,39 +161,15 @@ export default function ListeningPage() {
     }
   }, [pathname, router]);
 
-  // Keyboard shortcuts listener
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      const activeEl = document.activeElement?.tagName;
-      if (activeEl === 'INPUT' || activeEl === 'TEXTAREA' || activeEl === 'BUTTON' || activeEl === 'SELECT') {
-        return;
-      }
+    if (!pathname.match(/^\/listening\/part[123]\/video\d+$/)) {
+      return;
+    }
 
-      if (e.code === 'Space') {
-        e.preventDefault();
-        toggle();
-      } else if (e.code === 'KeyR' || e.code === 'Keyr') {
-        e.preventDefault();
-        reset(LISTENING_TIME);
-      } else if (e.key === 'ArrowUp' || e.key === '+') {
-        e.preventDefault();
-        setTimeLeft(prev => Math.min(prev + 60, LISTENING_TIME));
-      } else if (e.key === 'ArrowDown' || e.key === '-') {
-        e.preventDefault();
-        setTimeLeft(prev => Math.max(prev - 60, 0));
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [toggle, reset, setTimeLeft]);
-
-  // Format time (MM:SS)
-  const formatTime = (seconds: number) => {
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-  };
+    requestAnimationFrame(() => {
+      examRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }, [pathname]);
 
   const handleSelectAnswer = (qNumber: number, option: string) => {
     setAnswers(prev => ({ ...prev, [qNumber]: option }));
@@ -109,13 +195,12 @@ export default function ListeningPage() {
     return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
   }, [navigateToVideo]);
 
-  const isTimeLow = timeLeft < 300; // < 5 minutes
   const answeredCount = questionNumbers.filter((number) => answers[number]).length;
   const flaggedCount = questionNumbers.filter((number) => flags[number]).length;
 
   return (
     <div className="flex flex-col space-y-6 w-full animate-fade-in pb-10">
-      <header className="flex flex-col gap-5 border-b border-border pb-5 lg:flex-row lg:items-center lg:justify-between">
+      <header className="border-b border-border pb-5">
         <div className="flex items-center gap-4">
           <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
             <Headphones className="h-6 w-6" />
@@ -125,59 +210,10 @@ export default function ListeningPage() {
             <p className="mt-1 text-sm text-muted-foreground">Nghe playlist và chọn đáp án cho 35 câu hỏi</p>
           </div>
         </div>
-
-        <div className="flex flex-wrap items-center gap-3">
-          <div className={`font-mono text-3xl font-bold tabular-nums ${isTimeLow ? 'text-red-500' : 'text-foreground'}`} aria-live="off">
-            {formatTime(timeLeft)}
-          </div>
-          <button
-            onClick={toggle}
-            className={`flex h-10 items-center gap-2 rounded-lg px-4 text-sm font-bold text-white transition-colors cursor-pointer ${isRunning ? 'bg-amber-500 hover:bg-amber-600' : 'bg-primary hover:bg-primary/90'}`}
-          >
-            {isRunning ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
-            {isRunning ? 'Tạm dừng' : 'Bắt đầu'}
-          </button>
-          <button
-            onClick={() => reset(LISTENING_TIME)}
-            className="grid h-10 w-10 place-items-center rounded-lg border border-border bg-card text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
-            title="Đặt lại 40 phút"
-            aria-label="Đặt lại đồng hồ"
-          >
-            <RotateCcw className="h-4 w-4" />
-          </button>
-          <select
-            aria-label="Chọn thời gian luyện tập"
-            defaultValue="40"
-            onChange={(event) => setTimeLeft(Number(event.target.value) * 60)}
-            className="h-10 rounded-lg border border-border bg-card px-3 text-sm text-foreground"
-          >
-            <option value="40">40 phút</option>
-            <option value="20">20 phút</option>
-            <option value="10">10 phút</option>
-          </select>
-        </div>
       </header>
 
-      {/* Keyboard Shortcuts Banner */}
-      {showShortcuts && (
-        <div className="flex items-start justify-between gap-4 rounded-lg border border-primary/10 bg-primary/5 p-3 text-sm text-muted-foreground">
-          <div className="flex items-center gap-2.5">
-            <Keyboard className="h-4 w-4 text-primary" />
-            <span>
-              <strong>Phím tắt:</strong> <kbd className="rounded border border-border bg-card px-1.5 py-0.5 text-xs">Space</kbd> Chạy/Dừng <span className="px-1">|</span> <kbd className="rounded border border-border bg-card px-1.5 py-0.5 text-xs">R</kbd> Đặt lại <span className="px-1">|</span> <kbd className="rounded border border-border bg-card px-1.5 py-0.5 text-xs">↑</kbd>/<kbd className="rounded border border-border bg-card px-1.5 py-0.5 text-xs">↓</kbd> Điều chỉnh thời gian
-            </span>
-          </div>
-          <button 
-            onClick={() => setShowShortcuts(false)} 
-            className="text-muted-foreground hover:text-foreground font-semibold px-2 cursor-pointer"
-          >
-            Ẩn
-          </button>
-        </div>
-      )}
-
-      <div className="grid grid-cols-1 items-start gap-5 lg:grid-cols-12">
-        <section className="order-2 flex min-w-0 flex-col rounded-xl border border-border bg-card p-4 sm:p-5 lg:order-1 lg:col-span-7" aria-labelledby="answers-heading">
+      <div ref={examRef} className="grid scroll-mt-0 grid-cols-1 items-start gap-5 xl:grid-cols-[minmax(24rem,3fr)_minmax(0,7fr)]">
+        <section className="order-2 flex min-w-0 flex-col rounded-xl border border-border bg-card p-4 sm:p-5 lg:order-1" aria-labelledby="answers-heading">
           <div className="flex items-center justify-between border-b border-border pb-4">
             <h2 id="answers-heading" className="flex items-center gap-2 font-extrabold">
               <CheckCircle className="h-5 w-5 text-primary" />
@@ -189,7 +225,7 @@ export default function ListeningPage() {
             </div>
           </div>
 
-          <div className="grid content-start grid-cols-1 gap-2 py-3 sm:grid-cols-2">
+          <div className="grid content-start grid-cols-1 gap-2 py-3">
             {questionNumbers.map((qNum) => {
               const selectedOpt = answers[qNum];
               const isFlagged = flags[qNum];
@@ -239,7 +275,7 @@ export default function ListeningPage() {
           </div>
         </section>
 
-        <section className="order-1 min-w-0 overflow-hidden rounded-xl border border-border bg-card lg:order-2 lg:col-span-5" aria-labelledby="playlist-heading">
+        <section className="order-1 min-w-0 overflow-hidden rounded-xl border border-border bg-card lg:order-2" aria-labelledby="playlist-heading">
           <div className="flex items-center justify-between gap-3 border-b border-border p-4 sm:p-5">
             <div>
               <h2 id="playlist-heading" className="font-extrabold">{partInfo.label} · Video {selectedVideo}</h2>
@@ -313,9 +349,9 @@ export default function ListeningPage() {
           </dialog>
           <div className="aspect-video w-full bg-black">
             <iframe
-              key={videoId}
+              ref={iframeRef}
               className="h-full w-full"
-              src={`https://www.youtube.com/embed/${videoId}?rel=0`}
+              src={`https://www.youtube.com/embed/${videoId}?rel=0&enablejsapi=1`}
               title={`${partInfo.label}, video ${selectedVideo}`}
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -323,6 +359,27 @@ export default function ListeningPage() {
               allowFullScreen
             />
           </div>
+          <div className="grid grid-cols-3 gap-2 border-t border-border px-3 py-3 sm:grid-cols-5">
+            {VIDEO_JUMP_MINUTES.map((minute) => {
+              return (
+                <button
+                  key={minute}
+                  type="button"
+                  onClick={() => seekVideoToMinute(minute)}
+                  disabled={!isPlayerReady}
+                  aria-label={`Tua đến phút thứ ${minute}`}
+                  className={`flex min-h-9 w-full items-center justify-center rounded-md border border-border bg-card px-3 text-xs font-semibold text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50 ${minute === 4 || minute === 5 ? 'hidden sm:flex' : ''}`}
+                >
+                  {minute} phút
+                </button>
+              );
+            })}
+          </div>
+          {playerError && (
+            <p role="status" className="px-4 pb-2 text-xs text-muted-foreground">
+              Không tải được bộ điều khiển YouTube; video vẫn có thể xem nhưng nút tua không khả dụng.
+            </p>
+          )}
           <div className="flex items-center justify-between gap-2 border-t border-border px-4 py-2">
             <span className="text-xs text-muted-foreground">Video luyện tập {selectedVideo}</span>
             <a

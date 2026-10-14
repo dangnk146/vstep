@@ -31,7 +31,7 @@ const skillItems: NavItem[] = [
 export default function Sidebar() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const { theme, toggleTheme } = useTheme();
+  const { theme, isHydrated, toggleTheme } = useTheme();
   const activeSection = pathname.startsWith('/listening/')
     ? pathname.match(/\/(part[123])\//)?.[1] ?? 'part1'
     : pathname === '/writing'
@@ -149,10 +149,10 @@ export default function Sidebar() {
           type="button"
           onClick={toggleTheme}
           className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
-          aria-label={theme === 'light' ? 'Chuyển sang giao diện tối' : 'Chuyển sang giao diện sáng'}
-          title={theme === 'light' ? 'Giao diện tối' : 'Giao diện sáng'}
+          aria-label={!isHydrated ? 'Đổi giao diện' : theme === 'light' ? 'Chuyển sang giao diện tối' : 'Chuyển sang giao diện sáng'}
+          title={!isHydrated ? 'Đổi giao diện' : theme === 'light' ? 'Giao diện tối' : 'Giao diện sáng'}
         >
-          {theme === 'light' ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+          {!isHydrated || theme === 'light' ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
         </button>
       </div>
     </aside>
