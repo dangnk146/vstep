@@ -1,6 +1,6 @@
 'use client';
 
-import React, { createContext, useContext, useEffect, useSyncExternalStore } from 'react';
+import React, { createContext, useContext, useEffect, useState } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -13,42 +13,54 @@ type ThemeContextType = {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 const THEME_CHANGE_EVENT = 'vstep:theme-change';
 
-function subscribeToTheme(onChange: () => void) {
-  window.addEventListener('storage', onChange);
-  window.addEventListener(THEME_CHANGE_EVENT, onChange);
-  return () => {
-    window.removeEventListener('storage', onChange);
-    window.removeEventListener(THEME_CHANGE_EVENT, onChange);
-  };
-}
-
-function getThemeSnapshot(): Theme {
-  const savedTheme = localStorage.getItem('theme');
+function getPreferredTheme(): Theme {
+  if (typeof window === 'undefined') return 'light';
+  const savedTheme = window.localStorage.getItem('theme');
   if (savedTheme === 'light' || savedTheme === 'dark') {
     return savedTheme;
   }
   return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
 }
 
-function getServerThemeSnapshot(): Theme {
-  return 'light';
-}
-
-function subscribeToHydration() {
-  return () => {};
-}
-
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const theme = useSyncExternalStore(subscribeToTheme, getThemeSnapshot, getServerThemeSnapshot);
-  const isHydrated = useSyncExternalStore(subscribeToHydration, () => true, () => false);
+  const [theme, setTheme] = useState<Theme>('light');
+  const [isHydrated, setIsHydrated] = useState(false);
+
+  useEffect(() => {
+    const resolvedTheme = getPreferredTheme();
+    setTheme(resolvedTheme);
+    document.documentElement.classList.toggle('dark', resolvedTheme === 'dark');
+    setIsHydrated(true);
+  }, []);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', theme === 'dark');
   }, [theme]);
 
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const nextTheme = getPreferredTheme();
+      setTheme(nextTheme);
+    };
+
+    const handleThemeEvent = () => {
+      const nextTheme = getPreferredTheme();
+      setTheme(nextTheme);
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    window.addEventListener(THEME_CHANGE_EVENT, handleThemeEvent);
+
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      window.removeEventListener(THEME_CHANGE_EVENT, handleThemeEvent);
+    };
+  }, []);
+
   const toggleTheme = () => {
     const nextTheme = theme === 'light' ? 'dark' : 'light';
-    localStorage.setItem('theme', nextTheme);
+    setTheme(nextTheme);
+    window.localStorage.setItem('theme', nextTheme);
     window.dispatchEvent(new Event(THEME_CHANGE_EVENT));
   };
 

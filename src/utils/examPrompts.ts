@@ -106,7 +106,73 @@ function escapeHtml(text: string) {
   return text.replace(/[&<>"']/g, (character) => replacements[character] ?? character);
 }
 
+function parsePromptQuestions(content: string) {
+  return toReadablePromptText(content)
+    .split('\n')
+    .map((line) => line.trim())
+    .filter(Boolean)
+    .map((line) => line.replace(/^\d+\.\s*/, '').trim())
+    .filter(Boolean);
+}
+
+function extractSpeakingPart3Topic(title: string) {
+  const parenthesisMatch = title.match(/\(([^)]+)\)/);
+  if (parenthesisMatch) return parenthesisMatch[1].trim();
+
+  const cleaned = title.replace(/^.*?:\s*/, '').trim();
+  const match = cleaned.match(/^(.*?)(?:\s*\([^)]*\))?\s*$/);
+  if (!match) return cleaned;
+  return (match[1] || cleaned).trim();
+}
+
+function getSpeakingPart3IdeaLabels(prompt: ExamPrompt) {
+  const pools = [
+    ['Fresh air', 'Cheap cost', 'Friendly neighbors', 'Your own ideas'],
+    ['Better environment', 'Lower living costs', 'Strong community', 'Your own ideas'],
+    ['Health benefits', 'More space', 'Calm lifestyle', 'Your own ideas'],
+    ['Less stress', 'Affordable living', 'Supportive people', 'Your own ideas'],
+    ['Cleaner air', 'Higher quality of life', 'Close-knit society', 'Your own ideas'],
+  ];
+
+  const seed = [...prompt.id].reduce((total, char) => total + char.charCodeAt(0), 0);
+  return pools[seed % pools.length];
+}
+
 export function toPromptEditorHtml(prompt: ExamPrompt) {
+  if (prompt.category === 'speaking-part3') {
+    const topic = extractSpeakingPart3Topic(prompt.title);
+    const questions = parsePromptQuestions(prompt.content).slice(0, 3);
+    const ideaLabels = getSpeakingPart3IdeaLabels(prompt);
+
+    const ideaBoxes = `
+      <div style="display:flex; align-items:center; justify-content:center; gap:18px; margin:18px 0; flex-wrap:nowrap;">
+        <div style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[0])}</div>
+        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;">
+          <div style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[1])}</div>
+          <div style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:190px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[2])}</div>
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[3])}</div>
+      </div>
+    `;
+
+    const questionsHtml = questions
+      .map((question, index) => `<div style="margin:0 0 10px 0; font-size:15px; line-height:1.6; color:var(--foreground, #0f172a);">${index + 1}. ${escapeHtml(question)}</div>`)
+      .join('');
+
+    return `
+      <div style="font-family: Arial, Helvetica, sans-serif; color:var(--foreground, #0f172a); background:transparent;">
+        <div style="text-align:center; font-size:18px; font-weight:500; margin:0 0 18px 0; color:var(--foreground, #0f172a);">
+          <strong>Topic :</strong> ${escapeHtml(topic)}
+        </div>
+        <div style="display:flex; align-items:center; justify-content:center; gap:18px; flex-wrap:wrap; margin:0 0 18px 0; position:relative;">
+          ${ideaBoxes}
+        </div>
+        <div style="margin-top:10px; font-size:18px; font-weight:700; margin-bottom:10px; color:var(--foreground, #0f172a);">Follow-up Questions</div>
+        <div style="display:block;">${questionsHtml}</div>
+      </div>
+    `;
+  }
+
   const lines = toReadablePromptText(prompt.content)
     .split('\n')
     .map((line) => line.trim())
