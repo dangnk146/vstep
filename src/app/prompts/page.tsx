@@ -80,7 +80,7 @@ export default function PromptBankPage() {
   const storeSpeakingPrompt = (prompt: ExamPrompt) => {
     localStorage.setItem('vstep_speaking_custom_exam_html', toPromptEditorHtml(prompt));
     localStorage.setItem('vstep_speaking_active_exam', prompt.id);
-    const part = prompt.category.replace('speaking-', 'part');
+    const part = prompt.category.replace('speaking-', '');
     if (part === 'part1' || part === 'part2' || part === 'part3') {
       localStorage.setItem('vstep_speaking_active_part', part);
     }
@@ -252,7 +252,7 @@ export default function PromptBankPage() {
               </Link>
             ) : (
               <Link
-                href={`/speaking/${selectedPrompt.category.replace('speaking-', 'part')}?exam=${encodeURIComponent(selectedPrompt.id)}`}
+                href={`/speaking/${selectedPrompt.category.replace('speaking-', '')}?exam=${encodeURIComponent(selectedPrompt.id)}`}
                 onClick={() => storeSpeakingPrompt(selectedPrompt)}
                 className="inline-flex h-10 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
               >
