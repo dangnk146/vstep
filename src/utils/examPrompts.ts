@@ -145,13 +145,13 @@ export function toPromptEditorHtml(prompt: ExamPrompt) {
     const ideaLabels = getSpeakingPart3IdeaLabels(prompt);
 
     const ideaBoxes = `
-      <div style="display:flex; align-items:center; justify-content:center; gap:18px; margin:18px 0; flex-wrap:nowrap;">
-        <div style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[0])}</div>
-        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;">
-          <div style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[1])}</div>
-          <div style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:190px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[2])}</div>
+      <div class="speaking-part3-options" style="display:flex; align-items:center; justify-content:center; gap:18px; margin:18px 0; flex-wrap:nowrap;">
+        <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[0])}</div>
+        <div class="speaking-part3-options-center" style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;">
+          <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[1])}</div>
+          <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:190px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[2])}</div>
         </div>
-        <div style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[3])}</div>
+        <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[3])}</div>
       </div>
     `;
 
@@ -164,7 +164,7 @@ export function toPromptEditorHtml(prompt: ExamPrompt) {
         <div style="text-align:center; font-size:18px; font-weight:500; margin:0 0 18px 0; color:var(--foreground, #0f172a);">
           <strong>Topic :</strong> ${escapeHtml(topic)}
         </div>
-        <div style="display:flex; align-items:center; justify-content:center; gap:18px; flex-wrap:wrap; margin:0 0 18px 0; position:relative;">
+        <div class="speaking-part3-layout" style="display:flex; align-items:center; justify-content:center; gap:18px; flex-wrap:wrap; margin:0 0 18px 0; position:relative;">
           ${ideaBoxes}
         </div>
         <div style="margin-top:10px; font-size:18px; font-weight:700; margin-bottom:10px; color:var(--foreground, #0f172a);">Follow-up Questions</div>

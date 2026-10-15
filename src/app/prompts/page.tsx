@@ -70,6 +70,7 @@ export default function PromptBankPage() {
   const storeWritingPrompt = (prompt: ExamPrompt) => {
     const task = prompt.category === 'writing-task1' ? 'task1' : 'task2';
     sessionStorage.setItem('vstep_bank_writing_prompt', JSON.stringify({
+      id: prompt.id,
       title: prompt.title,
       content: toReadablePromptText(prompt.content),
       task,
@@ -78,6 +79,7 @@ export default function PromptBankPage() {
 
   const storeSpeakingPrompt = (prompt: ExamPrompt) => {
     localStorage.setItem('vstep_speaking_custom_exam_html', toPromptEditorHtml(prompt));
+    localStorage.setItem('vstep_speaking_active_exam', prompt.id);
     const part = prompt.category.replace('speaking-', 'part');
     if (part === 'part1' || part === 'part2' || part === 'part3') {
       localStorage.setItem('vstep_speaking_active_part', part);
@@ -242,7 +244,7 @@ export default function PromptBankPage() {
           <div className="flex flex-wrap gap-3 border-t border-border px-5 py-4 md:px-6">
             {selectedCategory.skill === 'writing' ? (
               <Link
-                href={`/writing?task=${writingTask}`}
+                href={`/writing/${writingTask}?exam=${encodeURIComponent(selectedPrompt.id)}`}
                 onClick={() => storeWritingPrompt(selectedPrompt)}
                 className="inline-flex h-10 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
               >
@@ -250,7 +252,7 @@ export default function PromptBankPage() {
               </Link>
             ) : (
               <Link
-                href={`/speaking?part=${selectedPrompt.category.replace('speaking-', 'part')}`}
+                href={`/speaking/${selectedPrompt.category.replace('speaking-', 'part')}?exam=${encodeURIComponent(selectedPrompt.id)}`}
                 onClick={() => storeSpeakingPrompt(selectedPrompt)}
                 className="inline-flex h-10 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
               >

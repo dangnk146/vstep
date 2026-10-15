@@ -1,6 +1,7 @@
 'use client';
 
-import { useCallback, useEffect, useState, type ReactNode } from 'react';
+import { useEffect, useRef, useState, type ReactNode } from 'react';
+import { usePathname } from 'next/navigation';
 import { useTimer } from '@/hooks/useTimer';
 import {
   ChevronLeft,
@@ -73,17 +74,28 @@ function renderPassageParagraph(
 }
 
 export default function ReadingPage() {
+  const pathname = usePathname();
   const { timeLeft, setTimeLeft, isRunning, toggle, reset } = useTimer(READING_TIME);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [flags, setFlags] = useState<Record<number, boolean>>({});
-  const [activeTestId, setActiveTestId] = useState(READING_TESTS[0].id);
-  const [activePassageIndex, setActivePassageIndex] = useState(0);
-  const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
+  const [questionCursor, setQuestionCursor] = useState({ passageKey: '', index: 0 });
   const [checkedPassageKeys, setCheckedPassageKeys] = useState<Set<string>>(new Set());
-  const activeTest = READING_TESTS.find((test) => test.id === activeTestId) ?? READING_TESTS[0];
+  const routeMatch = pathname.match(/^\/reading\/part([1-6])\/passage(\d+)$/);
+  const testIndex = routeMatch ? Number(routeMatch[1]) - 1 : 0;
+  const activeTest = READING_TESTS[testIndex] ?? READING_TESTS[0];
+  const activePassageIndex = routeMatch
+    ? Math.min(
+        Math.max(Number(routeMatch[2]) - 1, 0),
+        activeTest.passages.length - 1,
+      )
+    : 0;
   const activePassage = activeTest.passages[activePassageIndex];
   const checkedPassageKey = `${activeTest.id}:${activePassage.id}`;
+  const activeQuestionIndex = questionCursor.passageKey === checkedPassageKey
+    ? questionCursor.index
+    : 0;
   const isPassageChecked = checkedPassageKeys.has(checkedPassageKey);
+  const previousTestId = useRef(activeTest.id);
   const correctCount = activeTest.passages.reduce((total, passage) => {
     if (!checkedPassageKeys.has(`${activeTest.id}:${passage.id}`)) return total;
     return total + passage.questions.filter((question) => answers[question.number] === question.answer).length;
@@ -124,46 +136,65 @@ export default function ReadingPage() {
     return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
   };
 
-  const changeTest = useCallback((testId: string, passageIndex = 0) => {
-    setActiveTestId(testId);
-    setActivePassageIndex(passageIndex);
-    setActiveQuestionIndex(0);
-    setAnswers({});
-    setFlags({});
-    setCheckedPassageKeys(new Set());
-    reset(READING_TIME);
-  }, [reset]);
+  useEffect(() => {
+    const match = pathname.match(/^\/reading\/part([1-6])\/passage(\d+)$/);
+    const legacyPart = new URLSearchParams(window.location.search).get('part');
+    const partNumber = match
+      ? Number(match[1])
+      : Number(legacyPart?.match(/^part([1-6])$/)?.[1] ?? 1);
+    const passageNumber = match ? Number(match[2]) : 1;
+    const test = READING_TESTS[partNumber - 1] ?? READING_TESTS[0];
+    const validPassageNumber = Math.min(
+      Math.max(passageNumber, 1),
+      test.passages.length,
+    );
+    const canonicalPath = `/reading/part${partNumber}/passage${validPassageNumber}`;
+
+    if (pathname !== canonicalPath || window.location.search) {
+      window.history.replaceState(null, '', canonicalPath);
+    }
+
+  }, [pathname]);
 
   useEffect(() => {
-    const selectPart = (section: string) => {
-      const match = section.match(/^part([1-6])$/);
-      if (!match) return;
+    const resetWhenPartChanges = () => {
+      const route = window.location.pathname.match(/^\/reading\/part([1-6])\//);
+      const legacyPart = new URLSearchParams(window.location.search)
+        .get('part')
+        ?.match(/^part([1-6])$/)?.[1];
+      const partNumber = Number(route?.[1] ?? legacyPart ?? 1);
+      const nextTest = READING_TESTS[partNumber - 1] ?? READING_TESTS[0];
+      if (previousTestId.current === nextTest.id) return;
 
-      const test = READING_TESTS[Number(match[1]) - 1];
-      if (!test) return;
-      if (test.id === activeTestId) {
-        setActivePassageIndex(0);
-        setActiveQuestionIndex(0);
-        return;
-      }
-      changeTest(test.id);
+      previousTestId.current = nextTest.id;
+      setAnswers({});
+      setFlags({});
+      setCheckedPassageKeys(new Set());
+      reset(READING_TIME);
     };
-
     const handleSectionSelect = (event: Event) => {
-      const { skill, section } = (event as CustomEvent<{ skill: string; section: string }>).detail;
-      if (skill === 'reading') selectPart(section);
+      const { skill } = (event as CustomEvent<{ skill: string }>).detail;
+      if (skill === 'reading') resetWhenPartChanges();
     };
 
     window.addEventListener('vstep:select-section', handleSectionSelect);
-    const initialPart = new URLSearchParams(window.location.search).get('part');
-    if (initialPart) selectPart(initialPart);
-
-    return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
-  }, [activeTestId, changeTest]);
+    window.addEventListener('popstate', resetWhenPartChanges);
+    return () => {
+      window.removeEventListener('vstep:select-section', handleSectionSelect);
+      window.removeEventListener('popstate', resetWhenPartChanges);
+    };
+  }, [reset]);
 
   const changePassage = (passageIndex: number) => {
-    setActivePassageIndex(passageIndex);
-    setActiveQuestionIndex(0);
+    setQuestionCursor({
+      passageKey: `${activeTest.id}:${activeTest.passages[passageIndex].id}`,
+      index: 0,
+    });
+    window.history.pushState(
+      null,
+      '',
+      `/reading/part${testIndex + 1}/passage${passageIndex + 1}`,
+    );
   };
 
   const selectAnswer = (questionNumber: number, option: string) => {
@@ -278,7 +309,7 @@ export default function ReadingPage() {
           <div className="flex shrink-0 items-center justify-between gap-2 border-t border-border bg-muted/40 p-1 lg:gap-3 lg:p-3">
             <button
               type="button"
-              onClick={() => setActiveQuestionIndex((index) => Math.max(index - 1, 0))}
+              onClick={() => setQuestionCursor({ passageKey: checkedPassageKey, index: Math.max(activeQuestionIndex - 1, 0) })}
               className="inline-flex h-7 items-center gap-1 rounded-md border border-border bg-card px-1.5 text-xs font-bold text-foreground lg:hidden"
               aria-label="Câu hỏi trước"
             >
@@ -289,7 +320,7 @@ export default function ReadingPage() {
             </span>
             <button
               type="button"
-              onClick={() => setActiveQuestionIndex((index) => Math.min(index + 1, activePassage.questions.length - 1))}
+              onClick={() => setQuestionCursor({ passageKey: checkedPassageKey, index: Math.min(activeQuestionIndex + 1, activePassage.questions.length - 1) })}
               className="inline-flex h-7 items-center gap-1 rounded-md border border-border bg-card px-1.5 text-xs font-bold text-foreground lg:hidden"
               aria-label="Câu hỏi tiếp theo"
             >

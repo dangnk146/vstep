@@ -93,31 +93,77 @@ export default function WritingPage() {
 
   // Synchronize active task with URL query parameter
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const taskParam = params.get('task');
-    if (taskParam === 'task1' || taskParam === 'task2' || taskParam === 'free') {
-      startTransition(() => setActiveTask(taskParam));
-    }
+    const syncFromLocation = (consumeStoredPrompt: boolean) => {
+      const params = new URLSearchParams(window.location.search);
+      const pathTask = window.location.pathname.match(/^\/writing\/(task1|task2|free)$/)?.[1];
+      const queryTask = params.get('task');
+      const examId = params.get('exam');
+      const examPrompt = EXAM_PROMPTS.find((prompt) => (
+        prompt.id === examId
+        && (prompt.category === 'writing-task1' || prompt.category === 'writing-task2')
+      ));
+      let task: 'task1' | 'task2' | 'free' = examPrompt
+        ? examPrompt.category === 'writing-task1' ? 'task1' : 'task2'
+        : pathTask === 'task1' || pathTask === 'task2' || pathTask === 'free'
+          ? pathTask
+          : queryTask === 'task1' || queryTask === 'task2' || queryTask === 'free'
+            ? queryTask
+            : 'task1';
+      let promptContent = examPrompt
+        ? { title: examPrompt.title, content: toReadablePromptText(examPrompt.content) }
+        : null;
+      let selectedExamId = examPrompt?.id;
 
-    const savedBankPrompt = sessionStorage.getItem('vstep_bank_writing_prompt');
-    if (savedBankPrompt) {
-      try {
-        const prompt = JSON.parse(savedBankPrompt) as { title?: unknown; content?: unknown; task?: unknown };
-        const { title, content, task } = prompt;
-        if (typeof title === 'string' && typeof content === 'string') {
-          startTransition(() => {
-            setBankPrompt({ title, content });
-            if (task === 'task1' || task === 'task2') setActiveTask(task);
-          });
-        } else {
-          console.error('Invalid writing prompt received from the exam bank.');
+      if (consumeStoredPrompt) {
+        const savedBankPrompt = sessionStorage.getItem('vstep_bank_writing_prompt');
+        if (savedBankPrompt) {
+          try {
+            const prompt = JSON.parse(savedBankPrompt) as {
+              id?: unknown;
+              title?: unknown;
+              content?: unknown;
+              task?: unknown;
+            };
+            const storedExam = typeof prompt.id === 'string'
+              ? EXAM_PROMPTS.find((item) => item.id === prompt.id
+                && (item.category === 'writing-task1' || item.category === 'writing-task2'))
+              : undefined;
+            if (storedExam) {
+              task = storedExam.category === 'writing-task1' ? 'task1' : 'task2';
+              promptContent = { title: storedExam.title, content: toReadablePromptText(storedExam.content) };
+              selectedExamId = storedExam.id;
+            } else if (typeof prompt.title === 'string' && typeof prompt.content === 'string') {
+              promptContent = { title: prompt.title, content: prompt.content };
+              if (prompt.task === 'task1' || prompt.task === 'task2') task = prompt.task;
+              selectedExamId = undefined;
+            } else {
+              console.error('Invalid writing prompt received from the exam bank.');
+            }
+          } catch (error) {
+            console.error('Could not read the writing prompt from the exam bank.', error);
+          } finally {
+            sessionStorage.removeItem('vstep_bank_writing_prompt');
+          }
         }
-      } catch (error) {
-        console.error('Could not read the writing prompt from the exam bank.', error);
-      } finally {
-        sessionStorage.removeItem('vstep_bank_writing_prompt');
       }
-    }
+
+      startTransition(() => {
+        setActiveTask(task);
+        setBankPrompt(promptContent);
+      });
+      const nextParams = new URLSearchParams();
+      if (selectedExamId) nextParams.set('exam', selectedExamId);
+      const query = nextParams.toString();
+      const canonicalUrl = `/writing/${task}${query ? `?${query}` : ''}`;
+      if (`${window.location.pathname}${window.location.search}` !== canonicalUrl) {
+        window.history.replaceState(null, '', canonicalUrl);
+      }
+    };
+
+    syncFromLocation(true);
+    const handlePopState = () => syncFromLocation(false);
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
   useEffect(() => {
@@ -126,9 +172,6 @@ export default function WritingPage() {
       if (skill === 'writing' && (section === 'task1' || section === 'task2' || section === 'free')) {
         setActiveTask(section);
         setBankPrompt(null);
-        const params = new URLSearchParams(window.location.search);
-        params.set('task', section);
-        window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
       }
     };
 
@@ -149,9 +192,11 @@ export default function WritingPage() {
     const task = prompt.category === 'writing-task1' ? 'task1' : 'task2';
     setBankPrompt({ title: prompt.title, content: toReadablePromptText(prompt.content) });
     setActiveTask(task);
-    const params = new URLSearchParams(window.location.search);
-    params.set('task', task);
-    window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+    window.history.pushState(
+      null,
+      '',
+      `/writing/${task}?exam=${encodeURIComponent(prompt.id)}`,
+    );
   };
 
   // Load saved templates from LocalStorage on mount & updates

@@ -1,6 +1,6 @@
 'use client';
 
-import React, { startTransition, useEffect, useRef, useState } from 'react';
+import React, { startTransition, useCallback, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import {
   AlertCircle,
@@ -42,9 +42,16 @@ const STORAGE_KEYS: Record<SettingKey, string> = {
 };
 
 const CUSTOM_EXAM_KEY = 'vstep_speaking_custom_exam_html';
+const ACTIVE_EXAM_KEY = 'vstep_speaking_active_exam';
 const SAFE_TAGS = new Set([
   'A', 'B', 'BLOCKQUOTE', 'BR', 'DIV', 'EM', 'H1', 'H2', 'H3', 'H4', 'I',
   'LI', 'OL', 'P', 'S', 'STRONG', 'U', 'UL',
+]);
+const SAFE_CLASSES = new Set([
+  'speaking-part3-layout',
+  'speaking-part3-options',
+  'speaking-part3-options-center',
+  'speaking-part3-option',
 ]);
 
 function sanitizeClipboardHtml(html: string) {
@@ -58,7 +65,16 @@ function sanitizeClipboardHtml(html: string) {
     }
 
     Array.from(element.attributes).forEach((attribute) => {
-      if (element.tagName !== 'A' || attribute.name !== 'href') {
+      if (attribute.name === 'class') {
+        const safeClasses = attribute.value
+          .split(/\s+/)
+          .filter((className) => SAFE_CLASSES.has(className));
+        if (safeClasses.length > 0) {
+          element.className = safeClasses.join(' ');
+        } else {
+          element.removeAttribute('class');
+        }
+      } else if (element.tagName !== 'A' || attribute.name !== 'href') {
         element.removeAttribute(attribute.name);
         return;
       }
@@ -110,6 +126,16 @@ export default function SpeakingSimulation() {
   const recordingRequestRef = useRef(0);
   const pendingRequestRef = useRef(false);
   const examEditorRef = useRef<HTMLDivElement | null>(null);
+  const suppressEditorInputRef = useRef(false);
+
+  const setExamEditorContent = useCallback((content: string) => {
+    if (!examEditorRef.current) return;
+    suppressEditorInputRef.current = true;
+    examEditorRef.current.innerHTML = content;
+    window.setTimeout(() => {
+      suppressEditorInputRef.current = false;
+    }, 0);
+  }, []);
 
   useEffect(() => {
     const restored = { ...DEFAULT_SETTINGS };
@@ -120,14 +146,25 @@ export default function SpeakingSimulation() {
     if (restored.part2 === '120') restored.part2 = '180';
 
     const savedExam = localStorage.getItem(CUSTOM_EXAM_KEY) || '';
-    const queryPart = new URLSearchParams(window.location.search).get('part');
+    const params = new URLSearchParams(window.location.search);
+    const queryPart = params.get('part');
+    const pathPart = window.location.pathname.match(/^\/speaking\/(part[123])$/)?.[1];
     const savedPart = localStorage.getItem('vstep_speaking_active_part');
-    const restoredPart = queryPart === 'part1' || queryPart === 'part2' || queryPart === 'part3'
-      ? queryPart
+    const restoredPart = pathPart === 'part1' || pathPart === 'part2' || pathPart === 'part3'
+      ? pathPart
+      : queryPart === 'part1' || queryPart === 'part2' || queryPart === 'part3'
+        ? queryPart
       : savedPart === 'part1' || savedPart === 'part2' || savedPart === 'part3'
         ? savedPart
         : null;
-    if (examEditorRef.current) examEditorRef.current.innerHTML = sanitizeClipboardHtml(savedExam);
+    const requestedExamId = params.get('exam');
+    const examPrompt = EXAM_PROMPTS.find((prompt) => (
+      prompt.id === requestedExamId
+      && prompt.category === `speaking-${restoredPart}`
+    ));
+    const restoredExam = examPrompt ? toPromptEditorHtml(examPrompt) : savedExam;
+    const sanitizedExam = sanitizeClipboardHtml(restoredExam);
+    setExamEditorContent(sanitizedExam);
     startTransition(() => {
       setSettings(restored);
       setRemainingTimes({
@@ -135,19 +172,24 @@ export default function SpeakingSimulation() {
         part2: Number(restored.part2),
         part3: Number(restored.part3),
       });
-      setHasExamContent(Boolean(savedExam.trim()));
+      setHasExamContent(Boolean(restoredExam.trim()));
       if (restoredPart) {
         setActivePart(restoredPart);
         localStorage.setItem('vstep_speaking_active_part', restoredPart);
-        if (queryPart !== restoredPart) {
-          const params = new URLSearchParams(window.location.search);
-          params.set('part', restoredPart);
-          window.history.replaceState(null, '', `${window.location.pathname}?${params.toString()}`);
-        }
+      }
+      if (examPrompt) {
+        localStorage.setItem(CUSTOM_EXAM_KEY, restoredExam);
+        localStorage.setItem(ACTIVE_EXAM_KEY, examPrompt.id);
+      } else {
+        localStorage.removeItem(ACTIVE_EXAM_KEY);
       }
       setSettingsLoaded(true);
     });
-  }, []);
+    const canonicalUrl = `/speaking/${restoredPart ?? 'part1'}${examPrompt ? `?exam=${encodeURIComponent(examPrompt.id)}` : ''}`;
+    if (`${window.location.pathname}${window.location.search}` !== canonicalUrl) {
+      window.history.replaceState(null, '', canonicalUrl);
+    }
+  }, [setExamEditorContent]);
 
   useEffect(() => {
     if (!settingsLoaded) return;
@@ -163,14 +205,34 @@ export default function SpeakingSimulation() {
       setActivePart(section);
       setIsSubmitted(false);
       localStorage.setItem('vstep_speaking_active_part', section);
-      const params = new URLSearchParams(window.location.search);
-      params.set('part', section);
-      window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+      localStorage.removeItem(ACTIVE_EXAM_KEY);
     };
 
     window.addEventListener('vstep:select-section', handleSectionSelect);
-    return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
-  }, []);
+    const handlePopState = () => {
+      const part = window.location.pathname.match(/^\/speaking\/(part[123])$/)?.[1];
+      if (part !== 'part1' && part !== 'part2' && part !== 'part3') return;
+      setActivePart(part);
+      localStorage.setItem('vstep_speaking_active_part', part);
+      const examId = new URLSearchParams(window.location.search).get('exam');
+      const prompt = EXAM_PROMPTS.find((item) => (
+        item.id === examId && item.category === `speaking-${part}`
+      ));
+      if (!prompt || !examEditorRef.current) return;
+      const content = toPromptEditorHtml(prompt);
+      const sanitizedContent = sanitizeClipboardHtml(content);
+      setExamEditorContent(sanitizedContent);
+      localStorage.setItem(CUSTOM_EXAM_KEY, content);
+      localStorage.setItem(ACTIVE_EXAM_KEY, prompt.id);
+      setHasExamContent(true);
+      setIsSubmitted(false);
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('vstep:select-section', handleSectionSelect);
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, [setExamEditorContent]);
 
   useEffect(() => () => {
     if (preparationIntervalRef.current) clearInterval(preparationIntervalRef.current);
@@ -424,24 +486,21 @@ export default function SpeakingSimulation() {
   };
 
   const handleRandomPrompt = () => {
-    const prompts = EXAM_PROMPTS.filter((prompt) => prompt.category === `speaking-${activePart}`);
+    const pathPart = window.location.pathname.match(/^\/speaking\/(part[123])$/)?.[1];
+    const selectedPart = pathPart === 'part1' || pathPart === 'part2' || pathPart === 'part3'
+      ? pathPart
+      : activePart;
+    const prompts = EXAM_PROMPTS.filter((prompt) => prompt.category === `speaking-${selectedPart}`);
     const prompt = prompts[Math.floor(Math.random() * prompts.length)];
     if (!prompt || !examEditorRef.current) return;
-
     const content = toPromptEditorHtml(prompt);
-    examEditorRef.current.innerHTML = content;
     localStorage.setItem(CUSTOM_EXAM_KEY, content);
+    localStorage.setItem(ACTIVE_EXAM_KEY, prompt.id);
     const part = prompt.category.replace('speaking-', 'part');
     if (part === 'part1' || part === 'part2' || part === 'part3') {
       localStorage.setItem('vstep_speaking_active_part', part);
-      setActivePart(part);
-      const params = new URLSearchParams(window.location.search);
-      params.set('part', part);
-      window.history.pushState(null, '', `${window.location.pathname}?${params.toString()}`);
+      window.location.assign(`/speaking/${part}?exam=${encodeURIComponent(prompt.id)}`);
     }
-    setHasExamContent(true);
-    setIsSubmitted(false);
-    examEditorRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
   };
 
   const handleSubmitPractice = () => {
@@ -535,8 +594,20 @@ export default function SpeakingSimulation() {
               aria-label="Nội dung đề Speaking"
               aria-multiline="true"
               onInput={(event) => {
+                if (suppressEditorInputRef.current) return;
                 const editor = event.currentTarget;
                 localStorage.setItem(CUSTOM_EXAM_KEY, editor.innerHTML);
+                localStorage.removeItem(ACTIVE_EXAM_KEY);
+                const params = new URLSearchParams(window.location.search);
+                if (params.has('exam')) {
+                  params.delete('exam');
+                  const query = params.toString();
+                  window.history.replaceState(
+                    null,
+                    '',
+                    `${window.location.pathname}${query ? `?${query}` : ''}`,
+                  );
+                }
                 setHasExamContent(Boolean(editor.textContent?.trim()));
                 setIsSubmitted(false);
               }}

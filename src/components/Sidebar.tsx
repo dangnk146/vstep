@@ -33,26 +33,32 @@ export default function Sidebar() {
   const { toggleTheme } = useTheme();
   const activeSection = pathname.startsWith('/listening/')
     ? pathname.match(/\/(part[123])\//)?.[1] ?? 'part1'
-    : pathname === '/reading'
+    : pathname.startsWith('/reading/')
+      ? pathname.match(/^\/reading\/(part[1-6])(?:\/|$)/)?.[1] ?? 'part1'
+    : pathname === '/reading' || pathname.startsWith('/reading/')
       ? searchParams.get('part') ?? 'part1'
+    : pathname.startsWith('/writing/')
+      ? pathname.match(/^\/writing\/(task1|task2|free)$/)?.[1] ?? 'task1'
     : pathname === '/writing'
       ? searchParams.get('task') ?? 'task1'
+      : pathname.startsWith('/speaking/')
+        ? pathname.match(/^\/speaking\/(part[123])$/)?.[1] ?? 'part1'
       : pathname === '/speaking'
         ? searchParams.get('part') ?? 'part1'
         : '';
 
-  const sectionItems = pathname === '/writing'
+  const sectionItems = pathname === '/writing' || /^\/writing\/(task1|task2|free)$/.test(pathname)
     ? [
         { id: 'task1', label: 'Task 1' },
         { id: 'task2', label: 'Task 2' },
         { id: 'free', label: 'Tự do' },
       ]
-    : pathname === '/reading'
+    : pathname === '/reading' || pathname.startsWith('/reading/')
       ? Array.from({ length: 6 }, (_, index) => ({
           id: `part${index + 1}`,
           label: `Part ${index + 1}`,
         }))
-    : pathname === '/speaking' || pathname.startsWith('/listening/')
+    : pathname === '/speaking' || /^\/speaking\/part[123]$/.test(pathname) || pathname.startsWith('/listening/')
       ? [
           { id: 'part1', label: 'Part 1' },
           { id: 'part2', label: 'Part 2' },
@@ -72,16 +78,18 @@ export default function Sidebar() {
                 type="button"
                 aria-current={active ? 'page' : undefined}
                 onClick={() => {
-                  if (pathname === '/writing' || pathname === '/speaking' || pathname === '/reading') {
-                    const params = new URLSearchParams(searchParams.toString());
-                    params.set(pathname === '/writing' ? 'task' : 'part', id);
-                    window.history.pushState(null, '', `${pathname}?${params.toString()}`);
+                  if (pathname === '/reading' || pathname.startsWith('/reading/')) {
+                    window.history.pushState(null, '', `/reading/${id}/passage1`);
+                  } else if (pathname === '/writing' || /^\/writing\/(task1|task2|free)$/.test(pathname)) {
+                    window.history.pushState(null, '', `/writing/${id}`);
+                  } else if (pathname === '/speaking' || /^\/speaking\/part[123]$/.test(pathname)) {
+                    window.history.pushState(null, '', `/speaking/${id}`);
                   }
                   window.dispatchEvent(new CustomEvent('vstep:select-section', {
                     detail: {
-                      skill: pathname === '/writing'
+                      skill: pathname === '/writing' || pathname.startsWith('/writing/')
                         ? 'writing'
-                        : pathname === '/speaking'
+                        : pathname === '/speaking' || pathname.startsWith('/speaking/')
                           ? 'speaking'
                           : pathname === '/reading'
                             ? 'reading'

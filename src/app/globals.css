@@ -57,6 +57,40 @@ body {
   color: #94a3b8;
 }
 
+@media (max-width: 640px) {
+  .speaking-editor .speaking-part3-layout {
+    display: block !important;
+    width: 100%;
+  }
+
+  .speaking-editor .speaking-part3-options {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    gap: 10px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .speaking-editor .speaking-part3-options-center {
+    display: contents !important;
+  }
+
+  .speaking-editor .speaking-part3-option {
+    width: auto !important;
+    min-width: 0 !important;
+    max-width: 100%;
+    min-height: 64px !important;
+    padding: 10px 8px !important;
+    border-radius: 14px !important;
+    font-size: 13px !important;
+    line-height: 1.35 !important;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+  }
+}
+
 /* Custom Gradient Theme: High contrast Sky Blue to Deep Purple in Light mode, glowing in Dark mode */
 .bg-vstep-gradient {
   background: linear-gradient(135deg, #0369a1 0%, #6d28d9 100%);
