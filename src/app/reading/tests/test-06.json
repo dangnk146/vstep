@@ -1,0 +1,987 @@
+{
+  "id": "reading-6",
+  "title": "Reading Test 6",
+  "directions": "Choose the best answer A, B, C, or D for each question. You have 60 minutes to answer all 40 questions.",
+  "passages": [
+    {
+      "id": "passage-1",
+      "title": "Passage 1",
+      "paragraphs": [
+        "In pursuit of the perfect beach, travel writer Stanley Stewart heads to Brazil, where he discovers some of the world's most beautiful sandy escapes.",
+        "I'm standing on Rio de Janeiro's Copacabana beach, one of Brazil's - and the world's most famous stretches of sand. As I watch life go by here in all its varied forms, I've come to realize that any understanding of Brazil really begins on its beaches. In this vibrant, multicultural country, the beach is not just a place; it's a state of mind - a way of thinking and living.",
+        "Rio alone, I'm told, has over 70 beaches, each with its own community: Some are for bodybuilders, others are for senior citizens, still others are popular with parents and children. But Rio's beaches are just the starting point for my exploration of Brazil's Atlantic coastline, which at more than 8,000 kilometers (5,000 miles), and with more than 2,000 beaches, is the longest in the world. Every Brazilian has his or her own ideas of the perfect beach and is eager to tell you where to find it. I'm happy to take people's advice, but my ultimate goal is to find my own dream beach.",
+        "I head to a place said to have some of Brazil's best coastline: the state of Bahia in the northeast. Portuguese settlers established themselves at Bahia's present-day capital, Salvador da Bahia, in 1549. Over the centuries, people of many races have arrived and intermarried here, creating a distinctive cultural mix, which influences Bahia's language, religion, cuisine, music, and dance.",
+        "I'd been told that one of Bahia's best beaches - Prainha - lies just south of Salvador, near the town of Itacare. On arriving at Prainha's beach, I discover its golden sand lined by a row of perfect palm trees, moving softly in the ocean breeze. Under the moon, silver waves roll onto the sand. As I enter the water, I have the feeling of swimming through moonlight. Prainha's beauty is magnificent - its perfect curves and graceful lines are like something you might see in a postcard. But for me, it's a little too perfect. The beach I'm searching for needs to be a little wilder...",
+        "I continue my search, heading north to one of Brazil's legendary beaches: Jericoacoara. Twenty years ago, only a handful of people were living in Jeri. Today it's an international destination, considered one of the best beach hangouts in the world (especially if you like windsurfing). It attracts visitors from Tokyo to Toronto and has grown from a small village into a lively little town. Despite the changes, Jeri hasn't been spoiled by tourists, mostly because of its isolated location - it's at least five hours from any airport.",
+        "Everyone in Jeri rents a beach buggy, which comes with a driver. I tell my driver to take me as far along the coast as he can. We drive for three hours, finally arriving at Maceió, a fisherman's beach. Boats lie on their sides while nets hang out to dry on lines between fishermen's houses. We eat on the beach and later rest in hammocks near the table. It's a great day on an amazing beach. How can it possibly get any better? I wonder. But I have one final place to visit.",
+        "Of the many beach destinations in this country, there is one that all Brazilians hold in high regard the islands of Fernando de Noronha. More than a dozen beautiful beaches ring the island of Fernando alone, three of which rank among the top ten in Brazil. The islands of Fernando de Noronha lie a few hundred kilometers out in the Atlantic. For years, people were prohibited from visiting these islands because they were used as a prison and later by the army. Today the islands are a national park and UNESCO World Heritage Site, rich with diverse bird and sea life."
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "What is the passage mainly about?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Brazilian beach tourism"
+            },
+            {
+              "label": "B",
+              "text": "an educational tour of South America's beaches"
+            },
+            {
+              "label": "C",
+              "text": "the author's search for the dream beach"
+            },
+            {
+              "label": "D",
+              "text": "little-known beaches of South America"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 2,
+          "prompt": "Which is NOT a group of popular visitors to Rio?",
+          "options": [
+            {
+              "label": "A",
+              "text": "newly married couples"
+            },
+            {
+              "label": "B",
+              "text": "bodybuilders"
+            },
+            {
+              "label": "C",
+              "text": "parents with children"
+            },
+            {
+              "label": "D",
+              "text": "old people"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 3,
+          "prompt": "What best paraphrases the following sentences in paragraph 3? Every Brazilian has his or her own ideas of the perfect beach and is eager to tell you where to find it. I'm happy to take people's advice, but my ultimate goal is to find my own dream beach.",
+          "options": [
+            {
+              "label": "A",
+              "text": "I don't like the beaches Brazilian people tell me so I try to find my own dream beach."
+            },
+            {
+              "label": "B",
+              "text": "Brazil has so many beautiful beaches that I cannot visit all of them."
+            },
+            {
+              "label": "C",
+              "text": "Brazilian people are proud of their beaches and tell me to visit their perfect beaches."
+            },
+            {
+              "label": "D",
+              "text": "I feel pleased to know about beautiful beaches recommended by Brazilians but what I like most is to seek the best beach for myself."
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "What is the purpose of paragraph 4?",
+          "options": [
+            {
+              "label": "A",
+              "text": "to describe Bahia's many beaches"
+            },
+            {
+              "label": "B",
+              "text": "to explain why Bahia has the perfect beach"
+            },
+            {
+              "label": "C",
+              "text": "to describe Bahia's music and dance scene"
+            },
+            {
+              "label": "D",
+              "text": "to give information on Bahia's cultural background"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 5,
+          "prompt": "In paragraph 6, the word 'legendary' can be replaced with",
+          "options": [
+            {
+              "label": "A",
+              "text": "oldest"
+            },
+            {
+              "label": "B",
+              "text": "isolated"
+            },
+            {
+              "label": "C",
+              "text": "picturesque"
+            },
+            {
+              "label": "D",
+              "text": "famous"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 6,
+          "prompt": "Which of these beaches is the most isolated?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Copacabana"
+            },
+            {
+              "label": "B",
+              "text": "Prainha"
+            },
+            {
+              "label": "C",
+              "text": "Jericoacoara"
+            },
+            {
+              "label": "D",
+              "text": "Maceió"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 7,
+          "prompt": "Which of these beaches is famous for golden sand and palm trees?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Copacabana"
+            },
+            {
+              "label": "B",
+              "text": "Prainha"
+            },
+            {
+              "label": "C",
+              "text": "Jericoacoara"
+            },
+            {
+              "label": "D",
+              "text": "Maceió"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 8,
+          "prompt": "The islands of Fernando de Noronha now",
+          "options": [
+            {
+              "label": "A",
+              "text": "contain a prison"
+            },
+            {
+              "label": "B",
+              "text": "are a national park"
+            },
+            {
+              "label": "C",
+              "text": "are used by the army"
+            },
+            {
+              "label": "D",
+              "text": "have many beach buggies"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 9,
+          "prompt": "In paragraph 6, the phrase 'a dozen' is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "a small number of"
+            },
+            {
+              "label": "B",
+              "text": "many"
+            },
+            {
+              "label": "C",
+              "text": "a few"
+            },
+            {
+              "label": "D",
+              "text": "about ten"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 10,
+          "prompt": "Which type of beach would probably appeal to the author the most?",
+          "options": [
+            {
+              "label": "A",
+              "text": "busy, near a city, with lots of beach activities"
+            },
+            {
+              "label": "B",
+              "text": "warm, isolated, a little wild, with rich animal life"
+            },
+            {
+              "label": "C",
+              "text": "trendy, with a distinctive cultural mix"
+            },
+            {
+              "label": "D",
+              "text": "crowded, with music and dance, blue water and palm trees"
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "title": "Passage 2",
+      "paragraphs": [
+        "In September 1994, a violent disease erupted among a group of racehorses in a small town in Australia. The first victim was a female horse that was last seen eating grass beneath a fruit tree. One of her caretakers noticed that the horse didn't appear to be well, and brought the animal back to her stable for observation. Within hours, the horse's health declined rapidly and died two days later, leaving the cause of her death uncertain. Had she been bitten by a snake, or eaten something poisonous? Within two weeks, most of the other horses in the stable became ill and died as well. Meanwhile, the trainer and his assistant also became ill and within days, the trainer was dead, too. Laboratory analysis finally discovered the root of the problem: The horses and men had been infected by a previously unknown virus, which doctors eventually labeled Hendra. This virus had originated in bats that lived in the tree where the first horse had been eating grass. The virus passed from the bats to the horse, which then transmitted the virus to other horses and to people with disastrous results.",
+        "Infectious disease is all around us. Disease-causing agents, such as viruses, usually have specific targets. Some viruses affect only humans. Other viruses live in or affect only animals. Problems start when animal viruses are able to infect people as well, a process known as zoonosis. When an animal virus passes to a human, the results can be fatal. Often, our immune systems are not accustomed to these viruses, and are unable to stop them before they harm us and even kill us.",
+        "In the last three decades, more than 30 zoonotic diseases, the kind that live only in animals but somehow pass to people, have emerged around the globe. HIV is an example; it evolved from a virus originally carried by African monkeys and later, chimps. Today, conservative estimates suggest that HIV has infected more than 70 million people in the past three decades, though this number may be higher. SARS, a type of flu that jumped from chickens to humans, is another type of zoonotic disease.",
+        "But how do these viruses - like Hendra, SARS, and HIV-pass from animals to humans? Contact is crucial. Human destruction of animal habitats, for example, is forcing wild animals to move closer to",
+        "the places people live - putting humans at risk for exposure to animal viruses. The closer humans are to animals, the greater the risk of being bitten, scratched, or exposed to animal waste, which can enable a virus to pass from an animal to a human. Raising animals (for example, on a farm) or keeping certain kinds of wild animals (like monkeys) as pets increases the risk of exposure. Eating animals that are diseased can also result in a virus being transmitted.",
+        "The factor that is probably most responsible for the spread of zoonotic diseases worldwide is international travel. In 1999, for example, a deadly disease appeared in the United States. There were several incidents that year of both birds and people becoming sick and dying in New York City, and doctors couldn't explain why. Subsequently, they discovered that the deaths had been caused by the same thing: the West Nile virus, found typically in birds and transmitted by mosquitoes that live in parts of northern Africa. Somehow this virus probably carried by an infected mosquito or bird on a plane or ship - arrived in the U.S."
+      ],
+      "questions": [
+        {
+          "number": 11,
+          "prompt": "What is the passage mainly about?",
+          "options": [
+            {
+              "label": "A",
+              "text": "the unexplained deaths of horses and humans"
+            },
+            {
+              "label": "B",
+              "text": "the symptoms of zoonotic diseases seen in humans"
+            },
+            {
+              "label": "C",
+              "text": "the effect of international travel on the spread of disease"
+            },
+            {
+              "label": "D",
+              "text": "the rise in the spread of viruses from animals to humans"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 12,
+          "prompt": "The word 'transmitted' in paragraph 1 can be best replaced by",
+          "options": [
+            {
+              "label": "A",
+              "text": "transferred"
+            },
+            {
+              "label": "B",
+              "text": "spread"
+            },
+            {
+              "label": "C",
+              "text": "taken"
+            },
+            {
+              "label": "D",
+              "text": "converted"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 13,
+          "prompt": "What caused the Australian racehorses to get sick?",
+          "options": [
+            {
+              "label": "A",
+              "text": "a virus spread by snakes"
+            },
+            {
+              "label": "B",
+              "text": "a virus spread by bats"
+            },
+            {
+              "label": "C",
+              "text": "a virus spread by humans"
+            },
+            {
+              "label": "D",
+              "text": "a virus spread by a fruit tree"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 14,
+          "prompt": "The word 'fatal' paragraph 2 could be replaced by",
+          "options": [
+            {
+              "label": "A",
+              "text": "scary"
+            },
+            {
+              "label": "B",
+              "text": "painful"
+            },
+            {
+              "label": "C",
+              "text": "harmful"
+            },
+            {
+              "label": "D",
+              "text": "deadly"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 15,
+          "prompt": "What animals have the HIV virus?",
+          "options": [
+            {
+              "label": "A",
+              "text": "mosquitoes"
+            },
+            {
+              "label": "B",
+              "text": "bats"
+            },
+            {
+              "label": "C",
+              "text": "chickens"
+            },
+            {
+              "label": "D",
+              "text": "monkeys"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 16,
+          "prompt": "What is the purpose of paragraph 3?",
+          "options": [
+            {
+              "label": "A",
+              "text": "to discuss the rise in zoonotic diseases in the past three decades"
+            },
+            {
+              "label": "B",
+              "text": "to inform the reader where the HIV virus came from and how it evolved"
+            },
+            {
+              "label": "C",
+              "text": "to give examples and explain the meaning of zoonotic diseases"
+            },
+            {
+              "label": "D",
+              "text": "to compare the spread of HIV and SARS with other zoonotic diseases"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 17,
+          "prompt": "In paragraph 5, the phrase 'a deadly disease' refers to",
+          "options": [
+            {
+              "label": "A",
+              "text": "Hendra"
+            },
+            {
+              "label": "B",
+              "text": "Ebola"
+            },
+            {
+              "label": "C",
+              "text": "West Nile virus"
+            },
+            {
+              "label": "D",
+              "text": "HIV"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 18,
+          "prompt": "Which virus is NOT mentioned in the passage as being zoonotic?",
+          "options": [
+            {
+              "label": "A",
+              "text": "SARS"
+            },
+            {
+              "label": "B",
+              "text": "HIV"
+            },
+            {
+              "label": "C",
+              "text": "Flu"
+            },
+            {
+              "label": "D",
+              "text": "Hendra"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 19,
+          "prompt": "Which is the main reason for the increase in zoonotic diseases?",
+          "options": [
+            {
+              "label": "A",
+              "text": "raising animals"
+            },
+            {
+              "label": "B",
+              "text": "destruction of habitat"
+            },
+            {
+              "label": "C",
+              "text": "eating animals"
+            },
+            {
+              "label": "D",
+              "text": "international travel"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 20,
+          "prompt": "What topic can be discussed after this passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "causes of zoonotic diseases"
+            },
+            {
+              "label": "B",
+              "text": "effects of zoonotic diseases"
+            },
+            {
+              "label": "C",
+              "text": "solutions to zoonotic diseases"
+            },
+            {
+              "label": "D",
+              "text": "animals causing zoonotic diseases"
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "passage-3",
+      "title": "Passage 3",
+      "paragraphs": [
+        "Today we know that the mind is a product of the brain, but how exactly does this 1.5-kilo (three- pound) piece of flesh create a mind that allows you to think about yourself, experience happiness",
+        "and anger, or remember events that happened 20 minutes or 20 years ago? This isn't a new question. Today, however, powerful new techniques for visualizing the sources of thought, emotion, behavior, and memory are transforming the way we understand the brain and the mind it creates.",
+        "Have you ever stopped and thought, \"What's wrong with me today? I just don't feel like myself\"? This self-awareness- the ability to think about yourself and how you're feeling is an important part of being human. This part of your mind has its origins in the prefrontal cortex - a region of your brain just behind your forehead that extends to about your ears. Before this area began to function (around age two), you didn't understand that you were a separate entity with your own identity. In time, as this part of your brain developed, you became more aware of yourself and your thoughts and feelings.",
+        "Perhaps one of the most important factors involved in shaping our identity is memory. Most scientists define it as a stored pattern of connections between neurons in the brain. Every feeling you remember, every thought you think, alters the connections within the vast network of brain cells, and memories are reinforced, weakened, or newly formed. Most people's earliest memories reach back to about age three or so. Very few people recall anything before this time because the part of the brain that helps form long-term memories (the hippocampus) was not yet mature, or fully developed. This doesn't mean earlier memories don't exist in your mind, though. Some scientists believe highly emotional memories might be stored in another structure in the brain (the amygdala) that may be functional at birth. Though these memories are not accessible to the conscious mind, they might still influence the way we feel and behave, even into adulthood.",
+        "But where do our emotions come from, and how do they shape the people we are and the way we perceive the world? Forty years ago, psychologist Paul Ekman demonstrated that facial expressions used to exhibit certain emotions are recognized by people everywhere. Ekman suggested that these emotions and their corresponding facial expressions evolved to help us deal quickly with situations that can affect our welfare. Though humans may share certain emotions and recognize them in",
+        "others, we don't all have the same emotional response to every situation. In fact, most emotional responses are learned and stored in our memories. The smell of freshly cut grass, for example, will generate happy feelings in someone who spent enjoyable childhood summers in the countryside, but not in someone who was forced to work long hours on a farm. Once an emotional association like this is made, it is very difficult to reverse it. But we can learn to control our emotions by becoming consciously aware of their underlying causes and by not reacting automatically to things in our environment.",
+        "But is it really possible to control our emotions? Researcher Richard Davidson has demonstrated that people who experience negative emotions display activity in their right prefrontal cortex. In those with a more positive perspective, the activity occurs in the left prefrontal cortex. He conducted a study on whether or not people can shift their negative feelings toward a calmer state of mind. In his research, one group of volunteers received eight weeks of training using meditation and relaxation techniques and at the end of the study, they showed a clear shift in brain activity toward the left happier frontal cortex.",
+        "For centuries, people have studied the brain, but it is only in recent years that we have really started to learn how it works. Nevertheless, there is still a long way to go before we understand our mind's many complexities."
+      ],
+      "questions": [
+        {
+          "number": 21,
+          "prompt": "What is the passage mainly about?",
+          "options": [
+            {
+              "label": "A",
+              "text": "how memory works"
+            },
+            {
+              "label": "B",
+              "text": "how the mind works"
+            },
+            {
+              "label": "C",
+              "text": "mind reading"
+            },
+            {
+              "label": "D",
+              "text": "how our emotions are processed"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 22,
+          "prompt": "The phrase piece of flesh in paragraph 1 refers to",
+          "options": [
+            {
+              "label": "A",
+              "text": "heart"
+            },
+            {
+              "label": "B",
+              "text": "mind"
+            },
+            {
+              "label": "C",
+              "text": "brain"
+            },
+            {
+              "label": "D",
+              "text": "body"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 23,
+          "prompt": "Which of these statements is NOT true?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Self-awareness develops around the age of two."
+            },
+            {
+              "label": "B",
+              "text": "The prefrontal cortex affects a person's emotions."
+            },
+            {
+              "label": "C",
+              "text": "The prefrontal cortex is located at the back of the brain."
+            },
+            {
+              "label": "D",
+              "text": "Memories depend on the connections between brain cells."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 24,
+          "prompt": "What can be the heading for paragraph 3?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Who am I?"
+            },
+            {
+              "label": "B",
+              "text": "Why do I have emotions?"
+            },
+            {
+              "label": "C",
+              "text": "How do I remember?"
+            },
+            {
+              "label": "D",
+              "text": "Can I control how I feel?"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 25,
+          "prompt": "Why don't most people remember what happened before three years of age?",
+          "options": [
+            {
+              "label": "A",
+              "text": "The prefrontal cortex is not developed at this stage."
+            },
+            {
+              "label": "B",
+              "text": "Early memories disappear soon after they are formed."
+            },
+            {
+              "label": "C",
+              "text": "The part of the brain that forms memory is not fully developed at this stage."
+            },
+            {
+              "label": "D",
+              "text": "After the age of three, children tend to forget emotional memories."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 26,
+          "prompt": "What is true about unconscious memories?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They don't exist in people's minds."
+            },
+            {
+              "label": "B",
+              "text": "They cannot affect people's emotions."
+            },
+            {
+              "label": "C",
+              "text": "They are inaccessible to the conscious mind."
+            },
+            {
+              "label": "D",
+              "text": "They are stored in the hippocampus."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 27,
+          "prompt": "The word 'corresponding' in paragraph 4 is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "sending"
+            },
+            {
+              "label": "B",
+              "text": "changing"
+            },
+            {
+              "label": "C",
+              "text": "powerful"
+            },
+            {
+              "label": "D",
+              "text": "related"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 28,
+          "prompt": "Why did the author mention 'the smell of freshly cut grass' in paragraph 4?",
+          "options": [
+            {
+              "label": "A",
+              "text": "to say that people share the same emotions in every situation."
+            },
+            {
+              "label": "B",
+              "text": "to give an example of different emotions people have in the same situation."
+            },
+            {
+              "label": "C",
+              "text": "to demonstrate that most people love spending their summers in the countryside"
+            },
+            {
+              "label": "D",
+              "text": "to show that it relates to the negative feelings of people working on a farm."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 29,
+          "prompt": "Where is the activity center for negative emotions?",
+          "options": [
+            {
+              "label": "A",
+              "text": "in the amygdala"
+            },
+            {
+              "label": "B",
+              "text": "in the hippocampus"
+            },
+            {
+              "label": "C",
+              "text": "in the left prefrontal cortex"
+            },
+            {
+              "label": "D",
+              "text": "in the right prefrontal cortex"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 30,
+          "prompt": "According to researcher Richard Davidson, what helps people shift away from a negative state of mind?",
+          "options": [
+            {
+              "label": "A",
+              "text": "meditation and relaxation"
+            },
+            {
+              "label": "B",
+              "text": "memory-retention techniques"
+            },
+            {
+              "label": "C",
+              "text": "changing facial expressions"
+            },
+            {
+              "label": "D",
+              "text": "being conscious of underlying emotions."
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "id": "passage-4",
+      "title": "Passage 4",
+      "paragraphs": [
+        "In recent years, the oceans have been seen as a potential source of renewable energy. Some estimates say that during the second decade of this century, ocean energy sources will generate more than 1,000 megawatts of electricity, which is enough to power a million homes in the industrialized world. Several technologies have been developed for exploiting these resources in a practical way, among which ocean thermal energy conversion (OTEC) is one of the most promising. Experimental OTEC plants have been constructed using different operating principles, although as yet no large-scale commercially viable plant has been launched.",
+        "The basic operation behind this system uses the heat energy stored in the oceans as a source of power. The plant exploits the difference in water temperature between the warm surface waters heated by the sun and the colder waters found at ocean depths. A minimum temperature difference of 20 degrees Celsius between surface and depth is required for efficient operation, and this situation is typically found only in tropical and subtropical regions of the world. There are two basic kinds of OTEC system: the open cycle system and the closed cycle system. In the open cycle system, the warm surface water is converted into steam in a partial vacuum and this steam drives a turbine connected to an electrical generator. In a closed cycle system, the warm surface water is used to boil a fluid, such as ammonia, which has a low boiling point. In both systems cold water pumped up from the ocean depths condenses the vapor. In the open system, the steam is condensed back into a liquid by cold water pumped from deep-ocean water and then discharged. In the closed system, the condensed ammonia is used to repeat the cycle continuously.",
+        "The OTEC system is potentially an important source of clean, renewable energy, which could significantly reduce our reliance on fossil fuels and nuclear fission. [A]",
+        "Unlike other forms of renewable energy, such as those provided directly by the sun and wind, OTEC plants can generate power all the time. Furthermore, the design of this technology avoids any significant release of carbon dioxide into the atmosphere. OTEC can offer other important benefits apart from power production. [B] Aquaculture is one important spinoff. [C] It may also be economically feasible to extract minerals from the pumped seawater. [D] Freshwater for drinking and irrigation is another by-product, and this will be an important advantage in regions where freshwater is limited.",
+        "Some drawbacks to this form of power generation have been noted. Perhaps the biggest drawback at present is the high capital cost of initial construction due mainly to the expense of the large pipeline used to pump water from 1,000 meters below the surface. Furthermore, the conversion of thermal to electrical energy in the OTEC system works at very low efficiency as the output power needed to pump a lot of water for production. There are also potential ecological drawbacks, since the water discharges will change the water temperature and disturb some marine habitats.",
+        "The main obstacle created by high initial expenses will have to be met before OTEC competes with conventional alternatives, and until such time, OTEC will remain restricted to experimental plants. When technology permits lower start-up costs, this technology will make an important contribution to world energy requirements."
+      ],
+      "questions": [
+        {
+          "number": 31,
+          "prompt": "The word 'viable' in paragraph 1 is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "clever"
+            },
+            {
+              "label": "B",
+              "text": "feasible"
+            },
+            {
+              "label": "C",
+              "text": "optimistic"
+            },
+            {
+              "label": "D",
+              "text": "convenient"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 32,
+          "prompt": "It can be inferred from the passage that",
+          "options": [
+            {
+              "label": "A",
+              "text": "renewable energy can be put into reservoirs"
+            },
+            {
+              "label": "B",
+              "text": "the experimental plants are ready to be launched"
+            },
+            {
+              "label": "C",
+              "text": "the oceans could be used in the future to generate electricity"
+            },
+            {
+              "label": "D",
+              "text": "1,000 megawatts of electricity is the amount needed in the average home"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 33,
+          "prompt": "How are the two basic kinds of OTEC systems similar?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They turn surface water into steam."
+            },
+            {
+              "label": "B",
+              "text": "They use cold water to cause condensation."
+            },
+            {
+              "label": "C",
+              "text": "They discharge unused water into the ocean."
+            },
+            {
+              "label": "D",
+              "text": "They convert water in a vacuum."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 34,
+          "prompt": "The phrase 'other forms' in paragraph 3 refers to energy produced through",
+          "options": [
+            {
+              "label": "A",
+              "text": "fossil fuels and nuclear fission"
+            },
+            {
+              "label": "B",
+              "text": "chemical reactions"
+            },
+            {
+              "label": "C",
+              "text": "OTEC systems"
+            },
+            {
+              "label": "D",
+              "text": "the sun and wind"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 35,
+          "prompt": "What can be inferred about the different sources of energy?",
+          "options": [
+            {
+              "label": "A",
+              "text": "We rely too much on fossil fuels and nuclear fission."
+            },
+            {
+              "label": "B",
+              "text": "Renewable energy releases a lot of carbon dioxide into the atmosphere."
+            },
+            {
+              "label": "C",
+              "text": "Energy from OTEC is provided directly by the sun and wind."
+            },
+            {
+              "label": "D",
+              "text": "Energy forms other than OTEC do not have important benefits."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 36,
+          "prompt": "Why does the author mention aquaculture and mineral extractions in paragraph 3?",
+          "options": [
+            {
+              "label": "A",
+              "text": "To give examples of possible developments related to OTEC"
+            },
+            {
+              "label": "B",
+              "text": "To demonstrate what other activities can be done in the ocean"
+            },
+            {
+              "label": "C",
+              "text": "To point out OTEC's advantages in regions of limited resources"
+            },
+            {
+              "label": "D",
+              "text": "To show how the environment can be improved by using clean, renewable energy"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 37,
+          "prompt": "In which space (marked A, B, C and D in the passage) will the following sentence fit? The nutrient-rich cold water is an excellent medium for growing phytoplankton, which provide support for various commercially exploitable fish and shellfish.",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 38,
+          "prompt": "What is NOT a problem with the OTEC system as a power-generating system?",
+          "options": [
+            {
+              "label": "A",
+              "text": "the costs of constructing the power system"
+            },
+            {
+              "label": "B",
+              "text": "the damage caused to fishing grounds"
+            },
+            {
+              "label": "C",
+              "text": "the effect of discharged water on the environment"
+            },
+            {
+              "label": "D",
+              "text": "the amount of water needed to produce a useful amount of electricity"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 39,
+          "prompt": "The word 'conventional' in paragraph 5 is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "conservative"
+            },
+            {
+              "label": "B",
+              "text": "traditional"
+            },
+            {
+              "label": "C",
+              "text": "tentative"
+            },
+            {
+              "label": "D",
+              "text": "natural"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 40,
+          "prompt": "Which of the following best describes the author's opinion about OTEC technology?",
+          "options": [
+            {
+              "label": "A",
+              "text": "OTEC will eventually supply most of the world's energy needs."
+            },
+            {
+              "label": "B",
+              "text": "The disadvantages of OTEC energy outweigh its advantages."
+            },
+            {
+              "label": "C",
+              "text": "OTEC technology has a useful role to play in total energy production."
+            },
+            {
+              "label": "D",
+              "text": "Only very large OTEC plants can be made efficient."
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

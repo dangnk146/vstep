@@ -1,258 +1,356 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, type ReactNode } from 'react';
 import { useTimer } from '@/hooks/useTimer';
-import { 
-  Play, 
-  Pause, 
-  RotateCcw, 
-  Keyboard, 
-  BookOpen, 
-  Flag, 
-  CheckCircle,
-  Clock
+import {
+  ChevronLeft,
+  ChevronRight,
+  Flag,
+  Pause,
+  Play,
+  RotateCcw,
 } from 'lucide-react';
+import { READING_TESTS } from './readingTests';
+import type { ReadingPassage, ReadingQuestion } from './readingTests';
 
-const READING_TIME = 60 * 60; // 60 minutes in seconds
+const READING_TIME = 60 * 60;
+const QUESTION_COUNT = 40;
+
+function findWholeWordIndex(text: string, term: string) {
+  const normalizedText = text.toLocaleLowerCase();
+  const normalizedTerm = term.toLocaleLowerCase();
+  let index = normalizedText.indexOf(normalizedTerm);
+
+  while (index >= 0) {
+    const before = text[index - 1] ?? '';
+    const after = text[index + term.length] ?? '';
+    if (!/[a-z]/i.test(before) && !/[a-z]/i.test(after)) return index;
+    index = normalizedText.indexOf(normalizedTerm, index + 1);
+  }
+
+  return -1;
+}
+
+function renderPassageParagraph(
+  paragraph: string,
+  paragraphIndex: number,
+  passage: ReadingPassage,
+) {
+  const highlights = passage.questions.flatMap((question: ReadingQuestion) => {
+    const term = question.prompt.match(/\b(?:word|phrase)\s+["“']([^"”']+)["”']/i)?.[1]?.trim();
+    if (!term || findWholeWordIndex(paragraph, term) < 0) return [];
+
+    const referencedParagraph = question.prompt.match(/\bparagraph\s+(\d+)\b/i)?.[1];
+    if (referencedParagraph) {
+      const targetParagraph = passage.paragraphs[Number(referencedParagraph) - 1];
+      if (targetParagraph && findWholeWordIndex(targetParagraph, term) >= 0) {
+        return Number(referencedParagraph) === paragraphIndex + 1 ? [term] : [];
+      }
+    }
+
+    const firstMatchingParagraph = passage.paragraphs.findIndex((text) => findWholeWordIndex(text, term) >= 0);
+    return firstMatchingParagraph === paragraphIndex ? [term] : [];
+  });
+
+  const uniqueHighlights = Array.from(new Set(highlights.map((term) => term.toLocaleLowerCase())))
+    .map((normalizedTerm) => highlights.find((term) => term.toLocaleLowerCase() === normalizedTerm)!)
+    .map((term) => ({ term, index: findWholeWordIndex(paragraph, term) }))
+    .filter((highlight) => highlight.index >= 0)
+    .sort((left, right) => left.index - right.index);
+
+  if (uniqueHighlights.length === 0) return paragraph;
+
+  const rendered: ReactNode[] = [];
+  let cursor = 0;
+  uniqueHighlights.forEach(({ term, index }) => {
+    if (index < cursor) return;
+    rendered.push(paragraph.slice(cursor, index));
+    rendered.push(<strong key={`${term}-${index}`}><em>{paragraph.slice(index, index + term.length)}</em></strong>);
+    cursor = index + term.length;
+  });
+  rendered.push(paragraph.slice(cursor));
+  return rendered;
+}
 
 export default function ReadingPage() {
   const { timeLeft, setTimeLeft, isRunning, toggle, reset } = useTimer(READING_TIME);
   const [answers, setAnswers] = useState<Record<number, string>>({});
   const [flags, setFlags] = useState<Record<number, boolean>>({});
-  const [showShortcuts, setShowShortcuts] = useState(true);
+  const [activeTestId, setActiveTestId] = useState(READING_TESTS[0].id);
+  const [activePassageIndex, setActivePassageIndex] = useState(0);
+  const [activeQuestionIndex, setActiveQuestionIndex] = useState(0);
+  const [checkedPassageKeys, setCheckedPassageKeys] = useState<Set<string>>(new Set());
+  const activeTest = READING_TESTS.find((test) => test.id === activeTestId) ?? READING_TESTS[0];
+  const activePassage = activeTest.passages[activePassageIndex];
+  const checkedPassageKey = `${activeTest.id}:${activePassage.id}`;
+  const isPassageChecked = checkedPassageKeys.has(checkedPassageKey);
+  const correctCount = activeTest.passages.reduce((total, passage) => {
+    if (!checkedPassageKeys.has(`${activeTest.id}:${passage.id}`)) return total;
+    return total + passage.questions.filter((question) => answers[question.number] === question.answer).length;
+  }, 0);
 
-  // Keyboard shortcuts listener
   useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      const activeEl = document.activeElement?.tagName;
-      if (activeEl === 'INPUT' || activeEl === 'TEXTAREA') {
-        return;
-      }
+    const handleKeyDown = (event: KeyboardEvent) => {
+      const activeElement = document.activeElement;
+      if (
+        activeElement instanceof HTMLInputElement
+        || activeElement instanceof HTMLTextAreaElement
+        || activeElement instanceof HTMLSelectElement
+        || activeElement?.getAttribute('contenteditable') === 'true'
+      ) return;
 
-      if (e.code === 'Space') {
-        e.preventDefault();
+      if (event.code === 'Space') {
+        event.preventDefault();
         toggle();
-      } else if (e.code === 'KeyR' || e.code === 'Keyr') {
-        e.preventDefault();
+      } else if (event.code === 'KeyR') {
+        event.preventDefault();
         reset(READING_TIME);
-      } else if (e.key === 'ArrowUp' || e.key === '+') {
-        e.preventDefault();
-        setTimeLeft(prev => Math.min(prev + 60, READING_TIME));
-      } else if (e.key === 'ArrowDown' || e.key === '-') {
-        e.preventDefault();
-        setTimeLeft(prev => Math.max(prev - 60, 0));
+      } else if (event.key === 'ArrowUp' || event.key === '+') {
+        event.preventDefault();
+        setTimeLeft((previous) => Math.min(previous + 60, READING_TIME));
+      } else if (event.key === 'ArrowDown' || event.key === '-') {
+        event.preventDefault();
+        setTimeLeft((previous) => Math.max(previous - 60, 0));
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [toggle, reset, setTimeLeft]);
+  }, [reset, setTimeLeft, toggle]);
 
-  // Format time (HH:MM:SS)
   const formatTime = (seconds: number) => {
-    const h = Math.floor(seconds / 3600);
-    const m = Math.floor((seconds % 3600) / 60);
-    const s = seconds % 60;
-    return `${h > 0 ? h.toString().padStart(2, '0') + ':' : ''}${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+    const minutes = Math.floor(seconds / 60);
+    const remainingSeconds = seconds % 60;
+    return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
   };
 
-  const handleSelectAnswer = (qNumber: number, option: string) => {
-    setAnswers(prev => ({ ...prev, [qNumber]: option }));
+  const changeTest = useCallback((testId: string, passageIndex = 0) => {
+    setActiveTestId(testId);
+    setActivePassageIndex(passageIndex);
+    setActiveQuestionIndex(0);
+    setAnswers({});
+    setFlags({});
+    setCheckedPassageKeys(new Set());
+    reset(READING_TIME);
+  }, [reset]);
+
+  useEffect(() => {
+    const selectPart = (section: string) => {
+      const match = section.match(/^part([1-6])$/);
+      if (!match) return;
+
+      const test = READING_TESTS[Number(match[1]) - 1];
+      if (!test) return;
+      if (test.id === activeTestId) {
+        setActivePassageIndex(0);
+        setActiveQuestionIndex(0);
+        return;
+      }
+      changeTest(test.id);
+    };
+
+    const handleSectionSelect = (event: Event) => {
+      const { skill, section } = (event as CustomEvent<{ skill: string; section: string }>).detail;
+      if (skill === 'reading') selectPart(section);
+    };
+
+    window.addEventListener('vstep:select-section', handleSectionSelect);
+    const initialPart = new URLSearchParams(window.location.search).get('part');
+    if (initialPart) selectPart(initialPart);
+
+    return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
+  }, [activeTestId, changeTest]);
+
+  const changePassage = (passageIndex: number) => {
+    setActivePassageIndex(passageIndex);
+    setActiveQuestionIndex(0);
   };
 
-  const toggleFlag = (qNumber: number) => {
-    setFlags(prev => ({ ...prev, [qNumber]: !prev[qNumber] }));
+  const selectAnswer = (questionNumber: number, option: string) => {
+    setAnswers((previous) => ({ ...previous, [questionNumber]: option }));
+    setCheckedPassageKeys((previous) => {
+      const updated = new Set(previous);
+      updated.delete(checkedPassageKey);
+      return updated;
+    });
   };
 
-  const isTimeLow = timeLeft < 300; // < 5 minutes
-  const answeredCount = Object.keys(answers).length;
-  const flaggedCount = Object.values(flags).filter(Boolean).length;
+  const checkActivePassage = () => {
+    setCheckedPassageKeys((previous) => new Set(previous).add(checkedPassageKey));
+  };
+
+  const toggleFlag = (questionNumber: number) => {
+    setFlags((previous) => ({ ...previous, [questionNumber]: !previous[questionNumber] }));
+  };
 
   return (
-    <div className="flex flex-col space-y-6 w-full animate-fade-in pb-10">
-      {/* Top Header Section */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 bg-card border border-border p-6 rounded-2xl shadow-sm">
-        <div className="flex items-center space-x-4">
-          <div className="p-3 bg-primary/10 rounded-xl text-primary">
-            <BookOpen className="h-6 w-6" />
-          </div>
-          <div>
-            <h1 className="text-2xl font-extrabold text-foreground tracking-tight">VSTEP Reading Timer</h1>
-            <p className="text-muted-foreground text-sm font-medium">Bấm giờ và mô phỏng thời gian thi đọc VSTEP thực tế</p>
-          </div>
-        </div>
-      </div>
+    <div className="mx-auto -mb-24 flex h-[calc(100dvh-6rem)] min-h-[420px] w-full max-w-7xl flex-col overflow-hidden animate-fade-in lg:-mb-7 lg:h-[calc(100dvh-6.75rem)] lg:min-h-[600px]">
+      <h1 className="sr-only">VSTEP Reading</h1>
 
-      {/* Keyboard Shortcuts Banner */}
-      {showShortcuts && (
-        <div className="flex items-center justify-between p-4 bg-primary/5 border border-primary/10 rounded-xl text-sm text-muted-foreground">
-          <div className="flex items-center gap-2.5">
-            <Keyboard className="h-4 w-4 text-primary" />
-            <span>
-              <strong>Phím tắt điều khiển:</strong> <kbd className="px-1.5 py-0.5 bg-card border border-border rounded text-xs">Space</kbd> Chạy/Dừng | <kbd className="px-1.5 py-0.5 bg-card border border-border rounded text-xs">R</kbd> Đặt lại | <kbd className="px-1.5 py-0.5 bg-card border border-border rounded text-xs">↑</kbd> Tăng 1 phút | <kbd className="px-1.5 py-0.5 bg-card border border-border rounded text-xs">↓</kbd> Giảm 1 phút
+      <main className="grid min-h-0 flex-1 grid-rows-[minmax(0,1fr)_minmax(210px,30dvh)] gap-2 lg:grid-cols-2 lg:grid-rows-1 lg:gap-4">
+        <section className="order-2 flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-card lg:order-2" aria-labelledby="reading-questions-heading">
+          <h2 id="reading-questions-heading" className="sr-only">Câu hỏi của {activePassage.title}</h2>
+          <div className="flex shrink-0 items-center justify-between gap-2 border-b border-border bg-[#245b86] px-2 py-1.5 text-white lg:px-4 lg:py-2">
+            <span className="text-xs font-extrabold lg:text-sm">
+              <span className="lg:hidden">Câu hỏi</span>
+              <span className="hidden lg:inline">{activeTest.title} · {activePassage.title}</span>
             </span>
-          </div>
-          <button 
-            onClick={() => setShowShortcuts(false)} 
-            className="text-muted-foreground hover:text-foreground font-semibold px-2 cursor-pointer"
-          >
-            Ẩn
-          </button>
-        </div>
-      )}
-
-      {/* Layout Panels */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
-        {/* Left Column: Big Timer Card */}
-        <div className="lg:col-span-7 flex flex-col justify-between bg-card border border-border p-8 md:p-12 rounded-3xl shadow-sm text-center relative overflow-hidden min-h-[400px]">
-          <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
-
-          <div className="relative z-10 flex flex-col items-center justify-center flex-1 space-y-8">
-            <span className="text-xs font-bold uppercase tracking-wider text-muted-foreground bg-muted px-3 py-1.5 rounded-full">
-              {isRunning ? 'Đang chạy' : 'Đang tạm dừng'}
-            </span>
-            
-            {/* Giant Countdown Clock */}
-            <div className={`transition-all duration-300 ${
-              isRunning ? 'animate-timer-tick' : ''
-            } ${
-              isTimeLow 
-                ? 'text-red-500 scale-105 filter drop-shadow-[0_0_15px_rgba(239,68,68,0.2)] animate-pulse' 
-                : 'text-primary'
-            }`}>
-              <span className="font-mono text-7xl md:text-8xl font-black tracking-wider leading-none">
-                {formatTime(timeLeft)}
+            <div className="flex shrink-0 items-center gap-1.5">
+              <span className="text-[10px] font-bold sm:text-xs" aria-live="polite">
+                Điểm tham khảo: {correctCount}/{QUESTION_COUNT}
               </span>
-            </div>
-
-            {/* Core Controls */}
-            <div className="flex items-center gap-4">
               <button
-                onClick={toggle}
-                className={`flex items-center gap-2 px-8 py-4 rounded-2xl text-white font-extrabold text-base transition-all cursor-pointer shadow-lg ${
-                  isRunning 
-                    ? 'bg-amber-500 hover:bg-amber-600 shadow-amber-500/10' 
-                    : 'bg-primary hover:bg-primary/95 shadow-primary/10'
-                }`}
+                type="button"
+                onClick={checkActivePassage}
+                className="h-7 rounded-md bg-white px-2 text-[10px] font-extrabold text-[#245b86] transition-colors hover:bg-blue-50 lg:h-8 lg:px-2.5 lg:text-xs"
               >
-                {isRunning ? (
-                  <>
-                    <Pause className="h-5 w-5 fill-current" />
-                    <span>Tạm Dừng</span>
-                  </>
-                ) : (
-                  <>
-                    <Play className="h-5 w-5 fill-current" />
-                    <span>Bắt Đầu</span>
-                  </>
-                )}
-              </button>
-              
-              <button
-                onClick={() => reset(READING_TIME)}
-                className="flex items-center justify-center p-4 rounded-2xl bg-muted hover:bg-muted-foreground/10 text-muted-foreground hover:text-foreground transition-all cursor-pointer border border-border"
-                title="Đặt lại"
-              >
-                <RotateCcw className="h-5 w-5" />
+                Kiểm tra thử
               </button>
             </div>
           </div>
 
-          {/* Quick config */}
-          <div className="relative z-10 border-t border-border pt-6 mt-6 flex flex-wrap justify-center gap-4 text-xs font-semibold text-muted-foreground">
-            <button 
-              onClick={() => setTimeLeft(60 * 60)} 
-              className="px-3 py-1.5 rounded-lg bg-muted hover:bg-muted-foreground/10 hover:text-foreground cursor-pointer"
-            >
-              Thi đọc VSTEP (60m)
-            </button>
-            <button 
-              onClick={() => setTimeLeft(30 * 60)} 
-              className="px-3 py-1.5 rounded-lg bg-muted hover:bg-muted-foreground/10 hover:text-foreground cursor-pointer"
-            >
-              Luyện nhanh (30m)
-            </button>
-            <button 
-              onClick={() => setTimeLeft(15 * 60)} 
-              className="px-3 py-1.5 rounded-lg bg-muted hover:bg-muted-foreground/10 hover:text-foreground cursor-pointer"
-            >
-              Luyện nhanh (15m)
-            </button>
-          </div>
-        </div>
-
-        {/* Right Column: Answer Board Grid */}
-        <div className="lg:col-span-5 flex flex-col space-y-4 bg-card border border-border p-6 rounded-3xl">
-          <div className="flex items-center justify-between border-b border-border pb-4">
-            <h2 className="font-extrabold text-base flex items-center gap-2">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>Bảng Trả Lời Trắc Nghiệm</span>
-            </h2>
-            <div className="text-xs font-semibold text-muted-foreground flex gap-3">
-              <span>Đã làm: <strong className="text-primary">{answeredCount}/40</strong></span>
-              <span>Đánh dấu: <strong className="text-amber-500">{flaggedCount}</strong></span>
-            </div>
-          </div>
-
-          {/* Question Navigator */}
-          <div className="grid grid-cols-4 gap-2 overflow-y-auto max-h-[380px] pr-1 py-1">
-            {Array.from({ length: 40 }, (_, i) => i + 1).map((qNum) => {
-              const selectedOpt = answers[qNum];
-              const isFlagged = flags[qNum];
+          <div className="min-h-0 flex-1 divide-y divide-border overflow-y-auto">
+            {activePassage.questions.map((question, index) => {
+              const selectedAnswer = answers[question.number];
+              const correctAnswer = question.answer;
 
               return (
-                <div 
-                  key={qNum} 
-                  className={`p-2 border rounded-xl flex flex-col items-center justify-center space-y-1.5 transition-all ${
-                    selectedOpt 
-                      ? 'border-primary/20 bg-primary/5' 
-                      : 'border-border bg-card'
-                  }`}
+                <article
+                  key={question.number}
+                  className={`p-2.5 lg:p-4 ${index === activeQuestionIndex ? '' : 'hidden lg:block'}`}
                 >
-                  <div className="flex items-center justify-between w-full">
-                    <span className="text-[10px] font-bold text-muted-foreground"># {qNum}</span>
+                  <div className="flex items-start gap-2">
+                    <h3 className="flex-1 text-xs font-semibold leading-5 text-foreground lg:text-sm lg:leading-6">
+                      <span className="mr-1 font-extrabold">{question.number}.</span>
+                      {question.prompt}
+                    </h3>
                     <button
-                      onClick={() => toggleFlag(qNum)}
-                      className={`text-xs cursor-pointer ${isFlagged ? 'text-amber-500' : 'text-muted-foreground/30 hover:text-amber-500'}`}
-                      title="Đánh dấu xem lại"
+                      type="button"
+                      onClick={() => toggleFlag(question.number)}
+                      aria-label={flags[question.number] ? `Bỏ đánh dấu câu ${question.number}` : `Đánh dấu câu ${question.number}`}
+                      aria-pressed={Boolean(flags[question.number])}
+                      className={`grid h-7 w-7 shrink-0 place-items-center rounded-md ${flags[question.number] ? 'text-amber-500' : 'text-muted-foreground/50 hover:text-amber-500'}`}
                     >
-                      <Flag className="h-3.5 w-3.5 fill-current" />
+                      <Flag className="h-4 w-4" />
                     </button>
                   </div>
-                  
-                  {/* Select Options A, B, C, D */}
-                  <div className="grid grid-cols-2 gap-1 w-full text-[9px]">
-                    {['A', 'B', 'C', 'D'].map((opt) => (
-                      <button
-                        key={opt}
-                        onClick={() => handleSelectAnswer(qNum, opt)}
-                        className={`py-1 rounded font-bold text-center cursor-pointer transition-all active:scale-95 duration-200 ${
-                          selectedOpt === opt
-                            ? 'bg-vstep-gradient text-white scale-110 rotate-2 shadow-md shadow-primary/20'
-                            : 'bg-muted hover:bg-muted-foreground/15 text-muted-foreground hover:text-foreground'
-                        }`}
-                      >
-                        {opt}
-                      </button>
-                    ))}
+                  <div className="mt-1 grid grid-cols-2 gap-1 lg:mt-1.5 lg:gap-1">
+                    {question.options.map((option) => {
+                      const isSelected = selectedAnswer === option.label;
+                      const isCorrect = isPassageChecked && correctAnswer === option.label;
+                      const isWrongSelection = isPassageChecked && isSelected && !isCorrect;
+
+                      return (
+                        <button
+                          key={option.label}
+                          type="button"
+                          onClick={() => selectAnswer(question.number, option.label)}
+                          aria-pressed={isSelected}
+                          className={`flex items-start gap-1 rounded-md border px-1.5 py-1 text-left text-[10px] leading-[14px] transition-colors lg:gap-1.5 lg:px-2 lg:py-1.5 lg:text-xs lg:leading-[18px] ${
+                            isCorrect
+                              ? 'border-emerald-600 bg-emerald-600 text-white'
+                              : isWrongSelection
+                                ? 'border-red-600 bg-red-600 text-white'
+                                : isSelected
+                                  ? 'border-primary/50 bg-primary/10 text-foreground'
+                                  : 'border-transparent text-foreground hover:border-border hover:bg-muted'
+                          }`}
+                        >
+                          <span className={`grid h-4 w-4 shrink-0 place-items-center rounded-full border text-[9px] font-extrabold lg:h-5 lg:w-5 lg:text-[10px] ${
+                            isCorrect || isWrongSelection
+                              ? 'border-white/70 bg-white/15 text-white'
+                              : isSelected
+                                ? 'border-primary bg-primary text-primary-foreground'
+                                : 'border-border text-muted-foreground'
+                          }`}>
+                            {option.label}
+                          </span>
+                          <span>{option.text}</span>
+                        </button>
+                      );
+                    })}
                   </div>
-                </div>
+                </article>
               );
             })}
           </div>
 
-          <div className="border-t border-border pt-4 mt-auto">
+          <div className="flex shrink-0 items-center justify-between gap-2 border-t border-border bg-muted/40 p-1 lg:gap-3 lg:p-3">
             <button
-              onClick={() => {
-                alert(`Bạn đã hoàn thành ${answeredCount}/40 câu hỏi. Chúc mừng bạn đã nỗ lực luyện tập!`);
-              }}
-              className="w-full py-3 rounded-xl bg-primary text-primary-foreground hover:bg-primary/95 font-bold transition-all shadow-md shadow-primary/10 cursor-pointer"
+              type="button"
+              onClick={() => setActiveQuestionIndex((index) => Math.max(index - 1, 0))}
+              className="inline-flex h-7 items-center gap-1 rounded-md border border-border bg-card px-1.5 text-xs font-bold text-foreground lg:hidden"
+              aria-label="Câu hỏi trước"
             >
-              Nộp Bài Luyện Tập
+              <ChevronLeft className="h-4 w-4" />
+            </button>
+            <span className="text-xs font-bold text-muted-foreground lg:hidden">
+              Câu {activeQuestionIndex + 1}/{activePassage.questions.length}
+            </span>
+            <button
+              type="button"
+              onClick={() => setActiveQuestionIndex((index) => Math.min(index + 1, activePassage.questions.length - 1))}
+              className="inline-flex h-7 items-center gap-1 rounded-md border border-border bg-card px-1.5 text-xs font-bold text-foreground lg:hidden"
+              aria-label="Câu hỏi tiếp theo"
+            >
+              <ChevronRight className="h-4 w-4" />
             </button>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <section className="order-1 flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-card lg:order-1" aria-labelledby="reading-passage-heading">
+          <div className="flex shrink-0 flex-wrap items-center justify-between gap-x-2 gap-y-1 border-b border-border bg-[#245b86] px-2 py-2 text-white sm:px-3 lg:px-4">
+            <div className="flex min-w-0 items-center gap-2">
+              <h2 id="reading-passage-heading" className="text-xs font-extrabold sm:text-sm">{activePassage.title}</h2>
+              <span className="hidden text-[10px] font-bold sm:inline">{activeTest.title}</span>
+            </div>
+            <div className="flex items-center gap-1">
+              <nav className="flex items-center gap-0.5" aria-label="Chọn passage trong bộ đề">
+                {activeTest.passages.map((passage, index) => (
+                  <button
+                    key={passage.id}
+                    type="button"
+                    onClick={() => changePassage(index)}
+                    aria-label={`Chọn Passage ${index + 1}`}
+                    aria-pressed={activePassageIndex === index}
+                    className={`grid h-7 min-w-6 place-items-center rounded px-1 text-[10px] font-extrabold transition-colors ${
+                      activePassageIndex === index ? 'bg-white text-[#245b86]' : 'text-white/80 hover:bg-white/15 hover:text-white'
+                    }`}
+                  >
+                    {index + 1}
+                  </button>
+                ))}
+              </nav>
+              <span className="min-w-11 text-center font-mono text-[10px] font-extrabold tabular-nums" aria-live="off">
+                {formatTime(timeLeft)}
+              </span>
+              <button
+                type="button"
+                onClick={toggle}
+                aria-label={isRunning ? 'Tạm dừng đồng hồ' : 'Bắt đầu đồng hồ'}
+                className={`grid h-7 w-7 place-items-center rounded text-white ${isRunning ? 'bg-amber-500 hover:bg-amber-600' : 'bg-white/15 hover:bg-white/25'}`}
+              >
+                {isRunning ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+              </button>
+              <button
+                type="button"
+                onClick={() => reset(READING_TIME)}
+                aria-label="Đặt lại đồng hồ"
+                className="grid h-7 w-7 place-items-center rounded text-white/80 hover:bg-white/15 hover:text-white"
+              >
+                <RotateCcw className="h-3.5 w-3.5" />
+              </button>
+            </div>
+          </div>
+          <div className="min-h-0 flex-1 overflow-y-auto p-3 sm:p-5">
+            <div className="space-y-6 text-[13px] leading-6 text-foreground">
+              {activePassage.paragraphs.map((paragraph, index) => (
+                <p key={`${activePassage.id}-${index}`}>{renderPassageParagraph(paragraph, index, activePassage)}</p>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   );
 }

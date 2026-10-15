@@ -1,0 +1,966 @@
+{
+  "id": "reading-3",
+  "title": "Reading Test 3",
+  "directions": "Choose the best answer A, B, C, or D for each question. You have 60 minutes to answer all 40 questions.",
+  "passages": [
+    {
+      "id": "passage-1",
+      "title": "Passage 1",
+      "paragraphs": [
+        "Scientists do not yet thoroughly understand just how the body of an individual becomes sensitive to a substance that is harmless or even wholesome for the average person. Milk, wheat, and egg, for example, rank among the most healthful and widely used foods. Yet these foods can cause persons sensitive to them to suffer greatly. At first, the body of the individual is not harmed by coming into contact with the substance. After a varying interval of time, usually longer than a few weeks, the body becomes sensitive to it, and an allergy has begun to develop. Sometimes it's hard to figure out if you have a food allergy, since it can show up so many different ways. Your symptoms could be caused by imany other problems. You may have rashes, hives, joint pains mimicking arthritis, headaches, irritability, or depression. The most common food allergies are to milk, eggs, seafood, wheat, nuts, seeds, chocolate, oranges, and tomatoes. Many of these allergies will not develop if these foods are not fed to an infant until her or his intestines mature at around seven months. Breast milk also tends to be protective. Migraines can be set off by foods containing tyramine, phenethylamine, monosodium glutamate, or sodium nitrate. Common foods which contain these are chocolate, aged cheeses, sour cream, red wine, pickled herring, chicken livers, avocados, ripe bananas, cured meats, many Oriental and prepared foods (read the labels!). Some people have been successful in treating their migraines with supplements of B-vitamins, particularly B6 and niacin, Children who are hyperactive may benefit from eliminating food additives, especially colorings, and foods high in salicylates from their diets. A few of these are almonds, green peppers, peaches, tea, grapes. This is the diet made popular by Benjamin Feingold, who has written the book Why Child is Hyperactive. Other researchers have had mixed results when testing whether the diet is effective."
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "The topic of this passage is",
+          "options": [
+            {
+              "label": "A",
+              "text": "reactions to foods"
+            },
+            {
+              "label": "B",
+              "text": "food and nutrition"
+            },
+            {
+              "label": "C",
+              "text": "infants and allergies"
+            },
+            {
+              "label": "D",
+              "text": "a good diet"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 2,
+          "prompt": "According to the passage, the difficulty in diagnosing allergies to foods is due to ___.",
+          "options": [
+            {
+              "label": "A",
+              "text": "the vast number of different foods we eat"
+            },
+            {
+              "label": "B",
+              "text": "lack of a proper treatment plan"
+            },
+            {
+              "label": "C",
+              "text": "the similarity of symptoms of the allergy to other problems"
+            },
+            {
+              "label": "D",
+              "text": "the use of prepared formula to feed babies"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "The word \"symptoms\" in the passage is closest in meaning to _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "indications"
+            },
+            {
+              "label": "B",
+              "text": "diet"
+            },
+            {
+              "label": "C",
+              "text": "diagnosis"
+            },
+            {
+              "label": "D",
+              "text": "prescriptions"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 4,
+          "prompt": "The phrase \"set off\" in the passage is closest in meaning to _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "relieved"
+            },
+            {
+              "label": "B",
+              "text": "identified"
+            },
+            {
+              "label": "C",
+              "text": "avoided"
+            },
+            {
+              "label": "D",
+              "text": "triggered"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 5,
+          "prompt": "What can be inferred about babies from this passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They can eat almost anything."
+            },
+            {
+              "label": "B",
+              "text": "They should have a carefully restricted diet as infants."
+            },
+            {
+              "label": "C",
+              "text": "They gain little benefit from being breast fed."
+            },
+            {
+              "label": "D",
+              "text": "They may become hyperactive if fed solid food too early"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "The word \"hyperactive\" in the passage is closest in meaning to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "overly active"
+            },
+            {
+              "label": "B",
+              "text": "unusually low activity"
+            },
+            {
+              "label": "C",
+              "text": "excited"
+            },
+            {
+              "label": "D",
+              "text": "inquisitive"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 7,
+          "prompt": "The author states that the reason that infants need to avoid certain foods related to allergies has to do with the infant's _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "lack of teeth"
+            },
+            {
+              "label": "B",
+              "text": "poor metabolism"
+            },
+            {
+              "label": "C",
+              "text": "underdeveloped intestinal tract"
+            },
+            {
+              "label": "D",
+              "text": "inability to swallow solid foods"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 8,
+          "prompt": "The word \"these\" in the passage refers to____.",
+          "options": [
+            {
+              "label": "A",
+              "text": "food additives"
+            },
+            {
+              "label": "B",
+              "text": "food colorings"
+            },
+            {
+              "label": "C",
+              "text": "innutritious foods"
+            },
+            {
+              "label": "D",
+              "text": "foods high in salicylates"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 9,
+          "prompt": "Which of the following was a suggested treatment for migraines in the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Eating more ripe bananas"
+            },
+            {
+              "label": "B",
+              "text": "Avoiding all Oriental foods"
+            },
+            {
+              "label": "C",
+              "text": "Getting plenty of sodium nitrate"
+            },
+            {
+              "label": "D",
+              "text": "Using Vitamin B in addition to a good diet"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 10,
+          "prompt": "According to the article the Feingold diet is NOT___.",
+          "options": [
+            {
+              "label": "A",
+              "text": "verified by researchers as being consistently effective"
+            },
+            {
+              "label": "B",
+              "text": "available in book form"
+            },
+            {
+              "label": "C",
+              "text": "beneficial for hyperactive children"
+            },
+            {
+              "label": "D",
+              "text": "designed to eliminate foods containing certain food additives"
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "title": "Passage 2",
+      "paragraphs": [
+        "Until recently, most American entrepreneurs were men. Discrimination against women in business, the demands of caring for families, and lack of business training had kept the number of women entrepreneurs small. Now, however, businesses owned by women account for more than $40 billion in annual revenues, and this figure is likely to continue rising throughout the 1990s. As Carolyn Doppelt Gray, an official of the Small Business Administration, has noted, \"The 1970s was the decade of women entering management, and the 1980s turned out to be the decade of the woman entrepreneur.\" What are some of the factors behind this trend? For one thing, as more women earn advanced degrees in business and enter the corporate world, they are finding obstacles. Women are still excluded from most executive suites. Charlotte Taylor, a management consultant, had noted, \"In the 1970s women believed if they got an MBA and worked hard they could become chairman of the board. Now they've found out that isn't going to happen, so they go out on their own.” In the past, most women entrepreneurs worked in \"women's\" fields cosmetics and clothing, for example. But this is changing. Consider ASK Computer Systems, a $22-million- a-year computer software business. It was founded in 1973 by Sandra Kurtzig, who was then a housewife with degrees in math and engineering. When Kurtzig founded the business, her first product was software that let weekly newspapers keep tabs on their newspaper carriers and her office was a bedroom at home, with a shoebox under the bed to hold the company’s cash. After she succeeded with the newspaper software system, she hired several bright computer-science graduates to develop additional programs. When these were marketed and sold, ASK began to grow. It now has 200 employees, and Sandra Kurtzig owns $66.9 million of stock. Of course, many women who start their own businesses fail, just as men often do. They still face hurdles in the business world, especially problems in raising money; the banking and finance world is still dominated by men, and old attitudes die hard. Most businesses owned by women are still quite small. But the situation is changing: there are likely to be many more Sandra Kurtzigs in the years ahead."
+      ],
+      "questions": [
+        {
+          "number": 11,
+          "prompt": "What is the main idea of this passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Women today are better educated than in the past, making them more attractive to the business world."
+            },
+            {
+              "label": "B",
+              "text": "The computer is especially lucrative for women today."
+            },
+            {
+              "label": "C",
+              "text": "Women are better at small businesses than men are."
+            },
+            {
+              "label": "D",
+              "text": "Women today are opening more businesses of their own."
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 12,
+          "prompt": "The word “excluded” in the passage is closest in meaning to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "not permitted in"
+            },
+            {
+              "label": "B",
+              "text": "often invited to"
+            },
+            {
+              "label": "C",
+              "text": "decorators of"
+            },
+            {
+              "label": "D",
+              "text": "charged admission to"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 13,
+          "prompt": "All of the following were mentioned in the passage as detriments to women in the business world EXCEPT _____.",
+          "options": [
+            {
+              "label": "A",
+              "text": "women were required to stay at home with their families"
+            },
+            {
+              "label": "B",
+              "text": "women lacked ability to work in business"
+            },
+            {
+              "label": "C",
+              "text": "women faced discrimination in business"
+            },
+            {
+              "label": "D",
+              "text": "women were not trained in business"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 14,
+          "prompt": "The word \"that\" in the passage refers to ____ :",
+          "options": [
+            {
+              "label": "A",
+              "text": "a woman becomes chairman of the board"
+            },
+            {
+              "label": "B",
+              "text": "women working hard"
+            },
+            {
+              "label": "C",
+              "text": "women achieving advanced degrees"
+            },
+            {
+              "label": "D",
+              "text": "women believing that business is a place for them"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 15,
+          "prompt": "According to the passage, Charlotte Taylor believes that women in the 1970s______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "were unrealistic about their opportunities in business management"
+            },
+            {
+              "label": "B",
+              "text": "were still more interested in education than business opportunities"
+            },
+            {
+              "label": "C",
+              "text": "had fewer obstacles in business than they do today"
+            },
+            {
+              "label": "D",
+              "text": "were unable to work hard enough to succeed in business the third"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 16,
+          "prompt": "The author mentions the \"shoebox under the bed\" in the third paragraph in order to _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "show the frugality of women in business"
+            },
+            {
+              "label": "B",
+              "text": "show the resourcefulness of Sandra Kurtzig"
+            },
+            {
+              "label": "C",
+              "text": "point out that initially the financial resources of Sandra Kurtzig's business were limited"
+            },
+            {
+              "label": "D",
+              "text": "suggest that the company needed to expand"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 17,
+          "prompt": "The word \"this\" in the passage refers to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "women becoming entrepreneurs"
+            },
+            {
+              "label": "B",
+              "text": "women buying cosmetics and clothing"
+            },
+            {
+              "label": "C",
+              "text": "women working in “women's fields\""
+            },
+            {
+              "label": "D",
+              "text": "women staying at home"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 18,
+          "prompt": "The expression \"keep tabs on” in the passage is closest in meaning to _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "recognize the appearance of"
+            },
+            {
+              "label": "B",
+              "text": "keep records of"
+            },
+            {
+              "label": "C",
+              "text": "provide transportation for"
+            },
+            {
+              "label": "D",
+              "text": "pay the salaries of"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 19,
+          "prompt": "It can be inferred from the passage that the author believes that businesses operated by women are small because _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "women prefer a small intimate setting"
+            },
+            {
+              "label": "B",
+              "text": "women can't deal with money"
+            },
+            {
+              "label": "C",
+              "text": "women are not able to borrow money easily"
+            },
+            {
+              "label": "D",
+              "text": "many women fail at large businesses"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 20,
+          "prompt": "The author's attitude about the future of women in business is ________.",
+          "options": [
+            {
+              "label": "A",
+              "text": "skeptical"
+            },
+            {
+              "label": "B",
+              "text": "optimistic"
+            },
+            {
+              "label": "C",
+              "text": "frustrated"
+            },
+            {
+              "label": "D",
+              "text": "negative"
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "passage-3",
+      "title": "Passage 3",
+      "paragraphs": [
+        "Symbiosis is a close ecological relationship between two dissimilar organisms. They assist each other with feeding, defending and reproducing. In symbiosis, at least one of the pair benefits from the relationship. The other may. be injured (parasitism), unaltered (commensalism), or may also benefit (mutualism).",
+        "An interesting mutually dependent relationship exists between the pine and the pion jay. Blue pinon jays settle on the tops of pine trees and pick at the dark round seeds from the sticky cones. They store the seeds in their throats, fly off and hide them somewhere, and then return to repeat the process again. It seems the reproductive cycle of a pine jay corresponds with the ripening of the pine’s seed. Similar pine is dependent on the pinon jays for distribution of the seeds. Seeds are stored in the bark of a tree or in the ground. Using their long bills, pinon jays plant and store them for later consumption. Their throats can expand to hold a large number of seeds; one pinon jay has been reported carrying 50 seeds in one trip. After they have planted the seeds, they return to eat them. Using their bills like a woodpecker, they hammer the seed until the shell breaks. Any unrecovered nuts are then grown into new trees. This fascinating relationship has been ongoing for thousands of years. When both species benefit each other, this is called mutualism. An example of mutualism is a plant and fungi. The fungus occupies the cortex cells of the secondary roots of the plant. This relationship is called a ‘mycorrhiza.’ It helps the plant absorb inorganic nitrogen and phosphorus from the soil. Some fungi also produce antibiotics which may prevent the invasion of parasitic fungi and bacteria. Another example of mutualism is pollination. Bees carry pollen from one plant to the next when they seek out plants for nectar. They feed themselves on the nectar, and the plants reproduce after fertilization by the pollen from other plants. Mutualism can also bring together two very different organisms, for example, a buffalo and an ox bird. These birds journey on the backs of African buffalo eating their parasites. The bird receives food, and the buffalo is rid of irritating insects. There are also a number of fish that provide an excellent example of mutualism. Known as ‘cleaner fish,’ these fish get rid of parasites and dead skin found on other fish. The best-known example is the ‘cleaner wrasse,’ which dwells in the Pacific and Indian oceans. They clean large predatory fish by eating tissue and parasites off their skin. This relationship provides food and protection for the wrasse and several health benefits for the other fish. The other two types of symbiosis, besides mutualism, are commensalism and parasitism. [A] Commensalism refers to a symbiotic relationship where one organism eats the unused food of another. [B] One benefits, but the other is not affected. Examples include the remora and the shark. The remora attaches itself to the shark, when the shark feeds itself, the remora picks up scraps. [C] One example of commensalism in humans is bacteria living in our intestines that feed on food in our gut. [D] In parasitism, one organism benefits and the other is harmed. Parasites live off the body of other organisms and receive nourishment from their tissues, while also inflicting damage on their hosts. Plants are parasitized by bacteria, fungi, and a handful of other plants, Parasites cause harm by entering the tissue of the host for their own nutritional benefit. None of these relationships are fixed, and it is likely that what starts as a parasitic relationship may gradually evolve into a mutualistic. For example, in 1966, amebas were discovered that had become infected with bacteria. However, after five years, it was found",
+        "that the core of the amebas had become dependent on the bacteria; thus, parasitism had evolved into mutualism. Unfortunately, the inverse is also possible; mutualistic associations may evolve into parasitic ones."
+      ],
+      "questions": [
+        {
+          "number": 21,
+          "prompt": "According to paragraph 2, what does the pinon jay do for the pine tree?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It gives the tree important nutrition,"
+            },
+            {
+              "label": "B",
+              "text": "It provides a primary means of Seed dissemination for pinon trees."
+            },
+            {
+              "label": "C",
+              "text": "It keeps the tree free from parasites,"
+            },
+            {
+              "label": "D",
+              "text": "It helps the tree produce larger seeds,"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 22,
+          "prompt": "The word \"corresponds\" in the passage is closest in meaning to ______ .",
+          "options": [
+            {
+              "label": "A",
+              "text": "matches"
+            },
+            {
+              "label": "B",
+              "text": "includes"
+            },
+            {
+              "label": "C",
+              "text": "exposes"
+            },
+            {
+              "label": "D",
+              "text": "protects"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 23,
+          "prompt": "According to paragraph 3, how does the blue pinon jay store the seeds for later?",
+          "options": [
+            {
+              "label": "A",
+              "text": "By holding up to 50 in its mouth"
+            },
+            {
+              "label": "B",
+              "text": "By burying them in the ground"
+            },
+            {
+              "label": "C",
+              "text": "By protecting them in its nest"
+            },
+            {
+              "label": "D",
+              "text": "By allowing them to develop into new trees"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 24,
+          "prompt": "The word \"It\" in the passage refers to__.",
+          "options": [
+            {
+              "label": "A",
+              "text": "bacteria"
+            },
+            {
+              "label": "B",
+              "text": "mutualism"
+            },
+            {
+              "label": "C",
+              "text": "mycorrhiza"
+            },
+            {
+              "label": "D",
+              "text": "fungus"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 25,
+          "prompt": "According to paragraph 5, what is an example of a mutual relationship?",
+          "options": [
+            {
+              "label": "A",
+              "text": "An animal eating parasites from another"
+            },
+            {
+              "label": "B",
+              "text": "An animal licking the body of another"
+            },
+            {
+              "label": "C",
+              "text": "An animal providing protection for another"
+            },
+            {
+              "label": "D",
+              "text": "An animal keeping another awake and alert"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 26,
+          "prompt": "The author mentions \"the remora and the shark” passage in order to _____.",
+          "options": [
+            {
+              "label": "A",
+              "text": "explain the details behind a mutualist association"
+            },
+            {
+              "label": "B",
+              "text": "demonstrate a connection between an active parasite picker and host"
+            },
+            {
+              "label": "C",
+              "text": "show how one animal can benefit from the acts of another"
+            },
+            {
+              "label": "D",
+              "text": "give an example of one animal causing the suffering of another"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 27,
+          "prompt": "Which of the following best expresses the essential information in the highlighted sentence? Incorrect answer choices change the meaning in important ways or leave out essential information.",
+          "options": [
+            {
+              "label": "A",
+              "text": "There are many types of creatures that are very well developed and have the strength to support other species."
+            },
+            {
+              "label": "B",
+              "text": "Sometimes, the organisms supplying parasites are very harmful to their hosts."
+            },
+            {
+              "label": "C",
+              "text": "Some animals are selfish and only cause damage to their hosts."
+            },
+            {
+              "label": "D",
+              "text": "Organisms which must depend on others die easily because they are not strong,"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 28,
+          "prompt": "The word \"gradually\" in the passage is closest in meaning to ______",
+          "options": [
+            {
+              "label": "A",
+              "text": "slowly"
+            },
+            {
+              "label": "B",
+              "text": "increasingly"
+            },
+            {
+              "label": "C",
+              "text": "constantly"
+            },
+            {
+              "label": "D",
+              "text": "rapidly"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 29,
+          "prompt": "According to the passage, which of the following is NOT an example of mutualism?",
+          "options": [
+            {
+              "label": "A",
+              "text": "A plant and its fungi"
+            },
+            {
+              "label": "B",
+              "text": "Pollen transfer from one plant to another"
+            },
+            {
+              "label": "C",
+              "text": "The remora and the shark"
+            },
+            {
+              "label": "D",
+              "text": "A buffalo and an ox bird"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 30,
+          "prompt": "Look at the four squares [_] that indicate where the following sentence can be added to the passage. They are completely safe and may possibly help us, hence a commensalism relationship. Where would the sentence best fit?",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "passage-4",
+      "title": "Passage 4",
+      "paragraphs": [
+        "Earth has several distinct layers; the outermost of these is the crust, which has an inconsistent thickness of 35-70 km in the continents and 5-10 km in the ocean basins. The second layer is known as the mantle, which is about 2900 km thick, and divided into an upper and lower mantle. Most of Earth's internal heat is situated here, The upper mantle has an area known as the low-velocity zone, where secondary waves decrease rapidly and then gradually increase. The last layer is the core, This is a thick ball of iron and nickel divided into two layers, the inner core and the outer core. The inner core is solid, whereas the outer core is so hot that the metal is always molten. However, because the force at the inner core is so immense, it cannot melt. Due to Earth’s rotation, the outer core spins around the inner core, which causes the Earth’s magnetism. The inner core consists of iron, nickel and other elements, probably a mix of carbon, oxygen, sulphur, silicon, and potassium. The temperature is extremely high, and due to pressure, the core is solid. Because the outer core is liquid, mainly consisting of iron, nickel and about 10% oxygen and sulphur, here the temperature is not as high. Both the outer and inner cores together create the Earth's magnetism. The core has a huge influence on Earth. Because it is so hot, it radiates a natural heat to the upper layers, setting off a current of heat, which in turn causes the movement of the tectonic plates. Because of Earth’s rotation, the outer core spins, but the inner core does not because it is solid. This provides a sort of dynamo effect and causes the Earth’s magnetic force. A seismic wave is a wave that travels through Earth; itis often the result of a tectonic earthquake. There are two kinds of seismic waves, “body waves” and “surface waves.” Other waves do exist, but are of little importance. Body waves travel through the center of Earth, following ray paths which are bent by the unstable density and stiffness of Earth’s interior. These differ according to temperature, phase, and structure. Body waves send out the first tremors of an earthquake as well as any later ones. There are two kinds of body waves, “primary” and “secondary” waves. Primary waves are compression waves, meaning the ground is alternately compressed and expanded in the",
+        "direction of propagation. These waves can travel slightly faster through solids than secondary waves can, and are also able to travel through any type of material. Through air, they take the form of sound waves and so travel at the speed of sound. Primary waves, when created by an earthquake, are less destructive than sound waves due to their minor amplitudes. Secondary waves are tilted waves; in other words, the ground is shifted vertically in the direction of transmission. Here, the ground moves from one side to the other. Secondary waves are only able to travel through solids, not liquids or gases, and thus are unable to travel through Earth’s core. Primary waves are faster than secondary waves. Primary and secondary waves are usually produced by earthquakes ‘and volcanoes. However, they can also be produced by people using explosives or large machinery. Surface waves are comparable to water waves traveling just under Earth's surface. They travel at slower speeds than body waves. Surface waves can be the most devastating type of seismic wave due to their low frequency, long duration, and large amplitude. In theory, they are understood as a system which relates to primary and secondary waves. [A] The moment an earthquake occurs, seismographs try to record its primary and secondary waves, but often they cannot detect the secondary waves of a distant earthquake. [B] This may be due to the fact that secondary waves are unable to pass through liquids. [C] This information about wave travel helps scientists determine the internal structure of the planet. [D]"
+      ],
+      "questions": [
+        {
+          "number": 31,
+          "prompt": "In paragraph 1, what does the author say about the presence of the low-velocity zone in the Earth’s interior?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It causes the high-frequency stimulation."
+            },
+            {
+              "label": "B",
+              "text": "Its width is consistent with the fault zone."
+            },
+            {
+              "label": "C",
+              "text": "It induces regionally extensive oscillations."
+            },
+            {
+              "label": "D",
+              "text": "Itis located just above the lower crustal boundary"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 32,
+          "prompt": "The word “immense” in the passage is closest in meaning to _____.",
+          "options": [
+            {
+              "label": "A",
+              "text": "compressed"
+            },
+            {
+              "label": "B",
+              "text": "dilated"
+            },
+            {
+              "label": "C",
+              "text": "immeasurable"
+            },
+            {
+              "label": "D",
+              "text": "varied"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 33,
+          "prompt": "According to paragraph 2, which of the following is NOT true about the inner core?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It contributes to the Earth's magnetic field."
+            },
+            {
+              "label": "B",
+              "text": "It is always molten and liquid."
+            },
+            {
+              "label": "C",
+              "text": "It is under a lot of pressure."
+            },
+            {
+              "label": "D",
+              "text": "It mainly consists of iron, nickel and some lighter elements."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 34,
+          "prompt": "According to paragraph 3, which of the following is the reason for tectonic plate movement?",
+          "options": [
+            {
+              "label": "A",
+              "text": "The convection of heat from the core"
+            },
+            {
+              "label": "B",
+              "text": "The gravitational effect of the core"
+            },
+            {
+              "label": "C",
+              "text": "The powerful magnetic forces of the core"
+            },
+            {
+              "label": "D",
+              "text": "The spinning of the inner and outer core together"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 35,
+          "prompt": "Why does the author mention \"a tectonic earthquake\" in the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "To show that primary waves are far more powerful than secondary waves"
+            },
+            {
+              "label": "B",
+              "text": "To demonstrate the effect of seismic waves on the Earth"
+            },
+            {
+              "label": "C",
+              "text": "To develop understanding of the structure of the Earth's interior"
+            },
+            {
+              "label": "D",
+              "text": "To explain that scientific detection methods are very efficient"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 36,
+          "prompt": "The word \"phase\" in the passage is closest in meaning to. .",
+          "options": [
+            {
+              "label": "A",
+              "text": "change"
+            },
+            {
+              "label": "B",
+              "text": "period"
+            },
+            {
+              "label": "C",
+              "text": "heat"
+            },
+            {
+              "label": "D",
+              "text": "construction"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 37,
+          "prompt": "The word \"devastating\" in the passage is closest in meaning to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "faint"
+            },
+            {
+              "label": "B",
+              "text": "destructive"
+            },
+            {
+              "label": "C",
+              "text": "productive"
+            },
+            {
+              "label": "D",
+              "text": "quiet"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 38,
+          "prompt": "Which of the following best expresses the essential information in the highlighted sentence? Incorrect answer choices change the meaning in important ways or leave out essential information.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Although primary and secondary waves would be recorded, the secondary waves are not strong enough to be detected at a distance."
+            },
+            {
+              "label": "B",
+              "text": "Seismic waves are too small to be felt as a noticeable earthquake, but detectable by seismographs."
+            },
+            {
+              "label": "C",
+              "text": "Secondary waves can be generated as a result of nonlinear interaction, so seismographs cannot detect them."
+            },
+            {
+              "label": "D",
+              "text": "Because of extensive fault repetition, the primary wave is the most powerful force in an earthquake."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 39,
+          "prompt": "It can be inferred from the passage that the author most likely believes which of the following about earthquakes in the world?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Volcanoes would not exist if earthquakes never happened."
+            },
+            {
+              "label": "B",
+              "text": "They are caused by the force of primary waves hitting the crust."
+            },
+            {
+              "label": "C",
+              "text": "They are primarily caused by the heat from the Earth’s core."
+            },
+            {
+              "label": "D",
+              "text": "There is no more destructive thing in the world."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 40,
+          "prompt": "Look at the four squares [_] that indicate where the following sentence can be added to the passage. For example, with the use of secondary waves, scientists were able to suggest that Earth has a liquid outer core. Where would the sentence best fit?",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

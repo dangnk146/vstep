@@ -1,0 +1,966 @@
+{
+  "id": "reading-4",
+  "title": "Reading Test 4",
+  "directions": "Choose the best answer A, B, C, or D for each question. You have 60 minutes to answer all 40 questions.",
+  "passages": [
+    {
+      "id": "passage-1",
+      "title": "Passage 1",
+      "paragraphs": [
+        "It takes a long time to raise a family of owlets, so the great horned owl begins early in the year, In January and February, or as late as March in the North, the male calls to the female with a resonant hoot. The female is larger than the'male, She sometimes reaches a body length of twenty-two to twenty-four inches, with a wingspread up to fifty inches. To impress her, the male does a strange courtship dance. He bobs. He bows. He ruffles his feathers and hops around with an important air. He flutters from limb to limb and makes flying sorties into the air. Sometimes he returns with an offering of food. They share the repast, after which she joins the dance, hopping and bobbing about as though keeping time to the beat of an inner drum. Owls are poor home builders. They prefer to nest in a large hollow in a tree or even to occupy the deserted nest of a hawk or crow. These structures are large and rough, built of sticks and bark and lined with leaves and feathers. Sometimes owls nest on a rocky ledge, or even on the bare ground. The mother lays two or three round, dull white eggs. Then she stoically settles herself on the nest and spreads her feather skirts about her to protect her precious charges from snow and cold. It is five weeks before the first downy white owlet pecks its way out of the shell. As the young birds feather out, they look like wise old men with their Wide eyes and quizzical expressions. They clamor for food and keep the parents busy supplying mice, squirrels, rabbits, crayfish, and beetles. Later in the season baby crows are taken. Migrating songsters, waterfowl, and game birds all fall prey to the hungry family. It is nearly ten weeks before fledglings leave the nest to search for their own food. The parent birds weary of family life by November and drive the young owls away to establish hunting ranges of their own."
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "What is the topic of this passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Raising a family of great horned owls"
+            },
+            {
+              "label": "B",
+              "text": "Mating rituals of great horned owls"
+            },
+            {
+              "label": "C",
+              "text": "Nest building of great horned owls"
+            },
+            {
+              "label": "D",
+              "text": "Habits of young great horned owls"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 2,
+          "prompt": "The phrase \"a resonant hoot” in the passage is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "an instrument"
+            },
+            {
+              "label": "B",
+              "text": "a sound"
+            },
+            {
+              "label": "C",
+              "text": "a movement"
+            },
+            {
+              "label": "D",
+              "text": "an offering of food"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 3,
+          "prompt": "It can be inferred from the passage that the courtship of great horned owls _____.",
+          "options": [
+            {
+              "label": "A",
+              "text": "takes place on the ground"
+            },
+            {
+              "label": "B",
+              "text": "is an active process"
+            },
+            {
+              "label": "C",
+              "text": "happens in the fall"
+            },
+            {
+              "label": "D",
+              "text": "involves the male alone"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 4,
+          "prompt": "According to the passage, great horned owls______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "are discriminate nest builders"
+            },
+            {
+              "label": "B",
+              "text": "need big nests for their numerous eggs"
+            },
+            {
+              "label": "C",
+              "text": "may inhabit a previously used nest"
+            },
+            {
+              "label": "D",
+              "text": "build nests on tree limbs"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "According to the passage, which of the following is the mother owl's job?",
+          "options": [
+            {
+              "label": "A",
+              "text": "To initiate the courtship ritual"
+            },
+            {
+              "label": "B",
+              "text": "To feed the young"
+            },
+            {
+              "label": "C",
+              "text": "To sit on the nest"
+            },
+            {
+              "label": "D",
+              "text": "To build the nest"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 6,
+          "prompt": "The phrase \"precious charges\" in paragraph 3 refers to______-",
+          "options": [
+            {
+              "label": "A",
+              "text": "the eggs"
+            },
+            {
+              "label": "B",
+              "text": "the nest"
+            },
+            {
+              "label": "C",
+              "text": "the hawks and crows"
+            },
+            {
+              "label": "D",
+              "text": "other nesting owls"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 7,
+          "prompt": "According to the passage, young owlets eat everything EXCEPT _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "other small birds"
+            },
+            {
+              "label": "B",
+              "text": "insects"
+            },
+            {
+              "label": "C",
+              "text": "small mammals"
+            },
+            {
+              "label": "D",
+              "text": "nuts and seeds"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 8,
+          "prompt": "The word \"they\" in the passage refers to___.",
+          "options": [
+            {
+              "label": "A",
+              "text": "the wise old men"
+            },
+            {
+              "label": "B",
+              "text": "the adult birds"
+            },
+            {
+              "label": "C",
+              "text": "the young birds"
+            },
+            {
+              "label": "D",
+              "text": "the prey"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 9,
+          "prompt": "What can be inferred from the passage about the adult parents of the young great horned owls?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They are sorry to see their young leave home."
+            },
+            {
+              "label": "B",
+              "text": "They are lazy and careless about feeding the small owlets."
+            },
+            {
+              "label": "C",
+              "text": "They probably don't see their young after November."
+            },
+            {
+              "label": "D",
+              "text": "They don't eat while they are feeding their young."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 10,
+          "prompt": "The phrase \"weary of\" in the passage is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "tire of"
+            },
+            {
+              "label": "B",
+              "text": "become sad-about"
+            },
+            {
+              "label": "C",
+              "text": "support"
+            },
+            {
+              "label": "D",
+              "text": "are attracted to"
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "title": "Passage 2",
+      "paragraphs": [
+        "In the early 1800s, to reach the jump-off point for the West, a family from the East of the United States could either buy steamboat passage to Missouri for themselves, their wagons, and their livestock or - as happened more often- simply pile everything into a wagon, hitch up a team, and begin their overland trek right in their front yard. Along the macadamized roads and turnpikes east of the Missouri River, travel was comparatively fast, camping easy, and supplies plentiful. Then, in one river town or another, the neophyte emigrants would pause to lay in provisions. For outfitting purposes, the town of Independence had been preeminent ever since 1827, but the rising momentum of pioneer emigration had produced some rival jump-off points. Westport and Fort Leavenworth flourished a few miles upriver. St. Joseph had sprung up 55 miles to the northwest; in fact, emigrants who went to Missouri by riverboat could save four days on the trail by staying on the paddle-wheelers to St. Joe before striking overland. At whatever jump-off point they chose, the emigrants studied guidebooks and directions, asked questions of others as green as themselves, and made their final decisions about outfitting. They had various, sometimes conflicting, options. For example, either pack animals or two-wheel carts or wagons could be used for the overland crossing. A family man usually chose the wagon. It was the costliest and slowest of the three, but it provided space and shelter for children and for a wife who likely as not was pregnant. Everybody knew that a top-heavy covered wagon might blow over in a-prairie wind or be overturned by mountain rocks, that it might mire in river mud or sink to its hubs in desert sand - but maybe if those things happened on this trip, they would happen to someone else. Anyway, most pioneers, with their farm background, were used to wagons."
+      ],
+      "questions": [
+        {
+          "number": 11,
+          "prompt": "What is the topic of this passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Important river towns"
+            },
+            {
+              "label": "B",
+              "text": "Getting started on the trip west"
+            },
+            {
+              "label": "C",
+              "text": "The advantages of traveling by wagon"
+            },
+            {
+              "label": "D",
+              "text": "Choosing a point of departure"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 12,
+          "prompt": "All of the following can be inferred from the passage about travel east of the Missouri EXCEPT that it___.",
+          "options": [
+            {
+              "label": "A",
+              "text": "was faster than in the West"
+            },
+            {
+              "label": "B",
+              "text": "was easier than in the West"
+            },
+            {
+              "label": "C",
+              "text": "took place on good roads"
+            },
+            {
+              "label": "D",
+              "text": "was usually by steamboat"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 13,
+          "prompt": "The phrase \"jump-off point\" in the passage is closest in meaning to___.",
+          "options": [
+            {
+              "label": "A",
+              "text": "a bridge across a river"
+            },
+            {
+              "label": "B",
+              "text": "a point of departure"
+            },
+            {
+              "label": "C",
+              "text": "a gathering place"
+            },
+            {
+              "label": "D",
+              "text": "a trading post"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 14,
+          "prompt": "Which of the cities that served as a jump-off point can be inferred from the passage to be farthest west?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Independence"
+            },
+            {
+              "label": "B",
+              "text": "St. Joseph"
+            },
+            {
+              "label": "C",
+              "text": "Westport"
+            },
+            {
+              "label": "D",
+              "text": "Fort Leavenworth"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 15,
+          "prompt": "The word \"preeminent\" in the passage is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "oldest"
+            },
+            {
+              "label": "B",
+              "text": "superior"
+            },
+            {
+              "label": "C",
+              "text": "most easily reached"
+            },
+            {
+              "label": "D",
+              "text": "closest"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 16,
+          "prompt": "The author implies in the passage that the early emigrants",
+          "options": [
+            {
+              "label": "A",
+              "text": "knew a lot about travel"
+            },
+            {
+              "label": "B",
+              "text": "were well stocked with provisions when they left their homes"
+            },
+            {
+              "label": "C",
+              "text": "left from the same place in Missouri"
+            },
+            {
+              "label": "D",
+              "text": "preferred wagon travel to other types of travel,"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 17,
+          "prompt": "The word \"neophyte\" in the passage is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "cager"
+            },
+            {
+              "label": "B",
+              "text": "courageous"
+            },
+            {
+              "label": "C",
+              "text": "prosperous"
+            },
+            {
+              "label": "D",
+              "text": "inexperienced"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 18,
+          "prompt": "Ail of the following were mentioned in the passage as options for modes of transportation from the Missouri River to the West EXCEPT ____ :",
+          "options": [
+            {
+              "label": "A",
+              "text": "a wagon"
+            },
+            {
+              "label": "B",
+              "text": "a riverboat"
+            },
+            {
+              "label": "C",
+              "text": "a pack animal"
+            },
+            {
+              "label": "D",
+              "text": "a two-wheel cart"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 19,
+          "prompt": "The word \"striking\" in the passage is closest in meaning to ____",
+          "options": [
+            {
+              "label": "A",
+              "text": "hitting"
+            },
+            {
+              "label": "B",
+              "text": "orienting"
+            },
+            {
+              "label": "C",
+              "text": "departing"
+            },
+            {
+              "label": "D",
+              "text": "marking"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 20,
+          "prompt": "All of the following features of the covered wagon made it unattractive to the emigrants EXCEPT _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "speed at which it could travel."
+            },
+            {
+              "label": "B",
+              "text": "its bulk"
+            },
+            {
+              "label": "C",
+              "text": "its familiarity and size"
+            },
+            {
+              "label": "D",
+              "text": "its cost"
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "passage-3",
+      "title": "Passage 3",
+      "paragraphs": [
+        "Alexander the Great commissioned the city of Alexandria to create a Mediterranean stronghold in Egypt to rival Rome and cities in Greece. He died before his idea came to fruition, but his successors built it into one of the greatest cities of the Hellenistic world. The Royal Library of Alexandria has achieved an almost mythical status among scholars of classical studies. As with many ancient topics, scholarship on the matter often conflicts and relies heavily on hearsay and supposition. We will examine the importance of the library during its heyday and how it operated.",
+        "As with many ancient landmarks, there is much debate and controversy over Alexandria's library, especially regarding its destruction. The tale has been retold by countless historians and attributed to just as many different factions and rulers, not to profile this landmark of education, but as a tool for political slander. It is estimated that there are over 4000 writings regarding its destruction, yet very little data exists regarding the structure, layout, organization, administration, or whereabouts of the complex. The accuracy of the available information is suspect. However, 20° century scholars have reached some general consensus from the remaining sources. Most historians have come to the conclusion that the original library (also known as the Temple of the Muses) was commissioned by Ptolemy I, Alexander's key general. More accurately, it was commissioned by the Athenian exile Demetrius of Phaleron under Ptolemy I's patronage. Traditionally it was attributed to his son Ptolemy Il. However, it was later shown that Demetrius was antagonistic toward Ptolemy II and did not survive for much of his reign. Ptolemy II can be seen as responsible for the fruition and completion of the library and museum complex. H.G. Wells asserts that Ptolemy and his son encouraged ‘a blaze of knowledge and discovery at Alexandria’ through their funding of the library and other endowments. The library itself was not a ‘library’ in the modem etymology. In fact, the library was essentially a collection of scholars and scribes encouraged to expand scientific and philosophical wisdom and musings brought about because of the ambition and drive of Ptolemy I. It was not the first institution of its type, developing about a half-century after Plato's Academy and Aristotle's Lyceum. About 30-50 scholars were probably permanently housed there, fed, and funded, first by the royal family, and later, according to an early Roman scroll, by public money. It served a religious, as well as an intellectual, function and it was the centerpiece of a so-called cult of the muses, governed by a priest. [A] The library's output was created through observation and deduction in math, medicine, astronomy, and geometry, the editing of texts and manuscripts, and debating various advances in Western knowledge. [B] For two or three generations, the scientific output at Alexandria was considerably good. Its achievements included the introduction of the first steam engine, the first star map, and an astoundingly accurate estimate of the Earth's diameter. [C] Famous scholars employed there included Euclid, Eratosthenes, Apollonius, and Hero. [D] The library may have consisted of a group of buildings, including lecture halls, study rooms, dining rooms, gardens, and an astronomical observatory. In organization of the library, it is believed that, in the time of Ptolemy Il, the scrolls were haphazardly stored and grouped by general category. From the time of Callimachus onwards, they used an early iteration of a subject catalog. Subject divisions outlined by Callimachus included mathematics, medicine, astronomy, and geometry, as well as philology. At its peak, it is estimated about 600,000 scrolls were held within its walls, although that is likely an overstatement. The Ptolemys achieved their goal of creating the largest collection of its kind by varied and often forceful means. At the time of its founding, Greek libraries were usually collections of manuscripts by private individuals. Ptolemy had a vision to collect all accepted",
+        "literature on all matters scientific, philosophical and spiritual. The library tried to get copies of all known books and would send agents far and wide to acquire them. Ptolemy III wrote a letter \"to all the world’s sovereigns” asking to borrow their books. On more than a few occasions, scribes made copies and kept the originals. Supposedly, all ships entering Alexandria's harbor were searched for books to copy. The Royal Library of Alexandria was created at an ideal time and place in world history. It was able to combine the deductive techniques of Greek thought toward the learning of other world cultures. As such, it holds a legendary position among historians as an important center of classical knowledge. Although much of the story has been buried with time and conflict, the importance and significance of its contributions are clear."
+      ],
+      "questions": [
+        {
+          "number": 21,
+          "prompt": "All of the following sentences express important ideas in the passage EXCEPT ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "The library was essentially a collection of scholars and scribes encouraged to expand scientific and philosophical wisdom."
+            },
+            {
+              "label": "B",
+              "text": "In the time of Callimachus, the scrolls were haphazardly stored and grouped by general category."
+            },
+            {
+              "label": "C",
+              "text": "It is estimated that there were over 4000 writings about its destruction, yet very little evidence exists."
+            },
+            {
+              "label": "D",
+              "text": "The library tried to get copies of all known books and would employ several methods of acquiring them."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 22,
+          "prompt": "The word \"factions\" in the passage is closest in meaning to _______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "sections"
+            },
+            {
+              "label": "B",
+              "text": "insubordinate"
+            },
+            {
+              "label": "C",
+              "text": "cliques"
+            },
+            {
+              "label": "D",
+              "text": "conspiracies"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 23,
+          "prompt": "The word \"its\" in the passage refers to___.",
+          "options": [
+            {
+              "label": "A",
+              "text": "data"
+            },
+            {
+              "label": "B",
+              "text": "education"
+            },
+            {
+              "label": "C",
+              "text": "the Royal Library of Alexandria"
+            },
+            {
+              "label": "D",
+              "text": "destruction"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 24,
+          "prompt": "The author mentions \"its destruction” in the passage in order to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "introduce the idea that the destruction was caused by natural"
+            },
+            {
+              "label": "B",
+              "text": "illustrate that there are so many arguments surrounding its demise and disappearance"
+            },
+            {
+              "label": "C",
+              "text": "indicate the difference between its and other libraries door ice"
+            },
+            {
+              "label": "D",
+              "text": "highlight the difference between the library and other historic sites"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 25,
+          "prompt": "Which of the following best expresses the essential information in the highlighted sentence in the passage? Incorrect answer choices change the meaning in important ways or leave out essential information.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Commissioned by Ptolemy I, the Royal Library was a place where people who wanted to learn gathered to study and record their philosophies."
+            },
+            {
+              "label": "B",
+              "text": "The library was a large building where students gathered to research and study."
+            },
+            {
+              "label": "C",
+              "text": "Philosophers often visited the library to further their studies."
+            },
+            {
+              "label": "D",
+              "text": "Many people gathered at the Royal Library in Alexandria in order to socialize with their friends"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 26,
+          "prompt": "According to paragraph 6, what was true about the early iteration of a subject catalog?",
+          "options": [
+            {
+              "label": "A",
+              "text": "All the books were grouped within two general categories."
+            },
+            {
+              "label": "B",
+              "text": "The books were chosen for their innovation, thematic impact, and popular appeal"
+            },
+            {
+              "label": "C",
+              "text": "The librarians organized the collection of books systematically."
+            },
+            {
+              "label": "D",
+              "text": "The library achieved an astonishing collection and many developments."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 27,
+          "prompt": "The word \"overstatement\" in the passage is closest in meaning to ________.",
+          "options": [
+            {
+              "label": "A",
+              "text": "estimation"
+            },
+            {
+              "label": "B",
+              "text": "falsehood"
+            },
+            {
+              "label": "C",
+              "text": "exaggeration"
+            },
+            {
+              "label": "D",
+              "text": "presumption"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 28,
+          "prompt": "Which of the following can be inferred about the Royal Library from the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Most of the manuscripts from the library are preserved in modern museums."
+            },
+            {
+              "label": "B",
+              "text": "Several writings from the library have been scanned and can be viewed on the Internet."
+            },
+            {
+              "label": "C",
+              "text": "Little of the manuscripts contained in the library are in existence today."
+            },
+            {
+              "label": "D",
+              "text": "The library is currently being reconstructed."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 29,
+          "prompt": "According to historians, all of the following were true about the Royal Library of Alexandria EXCEPT______ :",
+          "options": [
+            {
+              "label": "A",
+              "text": "It probably contained over 600,000 writings."
+            },
+            {
+              "label": "B",
+              "text": "Little is known of its exact location."
+            },
+            {
+              "label": "C",
+              "text": "It was responsible for the first star map."
+            },
+            {
+              "label": "D",
+              "text": "It was the largest and most magnificent library in history"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 30,
+          "prompt": "Look at the four squares [_] that indicate where the following sentence can be added to the passage. It remained an important intellectual center for over 500 years until numerous fires and other problems eroded its significance. Where would the sentence best fit?",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "id": "passage-4",
+      "title": "Passage 4",
+      "paragraphs": [
+        "The Pacific Ocean contains approximately 20,000 to 30,000 islands. Islands, excluding Australia, that are south of the Tropic of Cancer are grouped into three divisions: Melanesia, Micronesia, and Polynesia. Melanesia includes the nation of Papua New Guinea, provinces of Indonesia, and the Solomon Islands. Micronesia means ‘small islands,’ most of which are north of the equator. Finally, Polynesia, which means ‘many islands,’ includes the Hawaiian Islands, Tonga, Tuvalu, and Easter Island, among others, Migrants from South East Asian cities were the first settlers. The next wave of migrants populated New Guinea, gradually spreading to Fiji, The last of the Pacific islands to be settled was Polynesia, Hawaii was discovered sometime between the 7th and 13th centuries. Bats were the only mammals on these islands until the arrival of the first humans. Birds adapted to environmental niches, like grazers and insectivores. Due to the cool and humid location, New Zealand lost plants and animals, like the giant flightless bird, that were",
+        "intolerant of its climate. However, the extinction coincided with the arrival of the Melanesians, so it was probably caused by hunting and fires. Adding to that, mining and a natural drought destroyed a majority of the natural habitat. This was repeated on Easter Island, where early settlers wiped out 22 species of sea birds and land birds. By the time the Europeans had arrived, most of the plant life was extinct and nearly 30% of the forests were cleared, The invasion of New Zealand by the Europeans resulted in a complete transformation of the island, importing over 3,198 species of plants and animals and filling most of the wetlands. Australia also imported animals and plants from many Pacific island countries. Sheep, pigs, goats and foxes were brought to Australia, which further disrupted the native ecosystems. Many plants and animals are presently endangered. The plants and animals that inhabit Pacific islands are found nowhere else on earth. They are often adapted to specific habitats and live on a small part of a few islands. New Caledonia is an island that has been isolated from other lands for over 80 million years. 66 percent of the plant life there evolved on the island. Numerous plant species, unique in the world, are on a small area of one mountain and are represented by only a few specimens. This varied genetic heritage is of such scientific importance that New Caledonia has been listed as one of the ten hot spots where the primary forest is in danger of extinction. It also boasts 68 species of bird; the most diverse bird life in the Southwest Pacific. During the first Ice Age, ocean levels were much lower than they are at present. Levels in the shallow seas, now separating Asia from North America near the present-day Bering strait, dropped approximately 300 feet, creating 1,000 miles of grassland plain. Called the ‘Bering Land Bridge,’ this linked Asia and North America together. The Bering Sea has a long history of stable animal populations, despite the harsh environments, which sustain human life. Lemmings, ox, and mammoths all made the journey across the land bridge. Although mammoths have been extinct for quite a while now, the other two have remained. Pacific walruses inhabit shallow waters of the Bering Sea during winter. They congregate to feed on clams, their principal food. [A] This type of feeding releases nutrients into the water, providing food for starfish and increasing the roughness of the sea floor. [B] Actual impact of the ecology of bottom communities is unknown, but walruses, along with other animals like beavers and sea otters. have huge effects on the biological communities they occupy. [C] Animals such as seals, bowhead whales, and walruses are important for the subsistence of their community. [D] Pacific islands have the same pollution and over fishing problems as most countries. Destructive forms of fishing in Asian nations have taken their toll on marine animals such as birds and tuna, Many of these nations have now entered joint venture agreements to enable them to develop their marine resources more efficiently."
+      ],
+      "questions": [
+        {
+          "number": 31,
+          "prompt": "The word \"populated\" in the passage is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "inhabited"
+            },
+            {
+              "label": "B",
+              "text": "exiled"
+            },
+            {
+              "label": "C",
+              "text": "traveled"
+            },
+            {
+              "label": "D",
+              "text": "governed"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 32,
+          "prompt": "The word \"it\" in the passage refers to",
+          "options": [
+            {
+              "label": "A",
+              "text": "arrival"
+            },
+            {
+              "label": "B",
+              "text": "extinction"
+            },
+            {
+              "label": "C",
+              "text": "climate"
+            },
+            {
+              "label": "D",
+              "text": "hunting"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 33,
+          "prompt": "Why does the author mention \"The invasion of New Zealand by the Europeans\" in the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "To demonstrate its destructive effect on local ecosystems"
+            },
+            {
+              "label": "B",
+              "text": "To explain how many of New Zealand’s species came into being"
+            },
+            {
+              "label": "C",
+              "text": "To show the lack of responsibility that carly settlers had toward new places"
+            },
+            {
+              "label": "D",
+              "text": "To draw a comparison to the way Australia expanded in the Pacific"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 34,
+          "prompt": "According to paragraph 5, what is unique about the Pacific Islands?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They have a long history of traditional management approaches for marine resources."
+            },
+            {
+              "label": "B",
+              "text": "They are home to rare and unique animals."
+            },
+            {
+              "label": "C",
+              "text": "They are made up of 66% plant life."
+            },
+            {
+              "label": "D",
+              "text": "They have all been damaged by European settlers."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 35,
+          "prompt": "The word \"specimens\" in the passage is closest in meaning to ______.",
+          "options": [
+            {
+              "label": "A",
+              "text": "genres"
+            },
+            {
+              "label": "B",
+              "text": "features"
+            },
+            {
+              "label": "C",
+              "text": "examples"
+            },
+            {
+              "label": "D",
+              "text": "images"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 36,
+          "prompt": "According to paragraph 7, how has the Bering Sea aided life forms in the past?",
+          "options": [
+            {
+              "label": "A",
+              "text": "By providing creatures with plentiful food"
+            },
+            {
+              "label": "B",
+              "text": "By being home to a diverse and varied ecosystem"
+            },
+            {
+              "label": "C",
+              "text": "By allowing transit across the great iceshelves in the Americas"
+            },
+            {
+              "label": "D",
+              "text": "By keeping creatures cool and comfortable in the ice"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 37,
+          "prompt": "According to the passage, which of the following is true of walruses?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They protect the surrounding ecosystem by preventing over-fishing."
+            },
+            {
+              "label": "B",
+              "text": "Their unique feeding habits enrich the ecosystem with nutrients."
+            },
+            {
+              "label": "C",
+              "text": "They are solitary animals which hunt and eat by themselves"
+            },
+            {
+              "label": "D",
+              "text": "They are usually found living in the deepest regions of the Bering Sea"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 38,
+          "prompt": "Which of the following best expresses the essential information in the highlighted sentence? Incorrect answer choices change the meaning in important ways or leave out essential information.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Although ecological impacts are not known, many species are largely dependent on animals occupying a sub-level."
+            },
+            {
+              "label": "B",
+              "text": "The true biological diversity of all the walruses is revealed only below the species level"
+            },
+            {
+              "label": "C",
+              "text": "Beavers and otters are strongly related to the walrus family because there is a clear cause-effect relationship."
+            },
+            {
+              "label": "D",
+              "text": "There is a great deal that still needs to be learned about biological communities and ecosystems"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 39,
+          "prompt": "According to paragraph 9, what measures have been taken to protect sea creatures?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Protection agencies have begun guarding areas known for high fish population."
+            },
+            {
+              "label": "B",
+              "text": "Destructive fishing methods such as drag-nets have been outlawed,"
+            },
+            {
+              "label": "C",
+              "text": "Agreements have been made to ensure that marine resources are used carefully"
+            },
+            {
+              "label": "D",
+              "text": "Restrictions have been placed on amounts permitted to be fished in certain areas."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 40,
+          "prompt": "Look at the four squares [_] that indicate where the following sentence can be added to the passage. Walruses blow the clams loose with a jet of water, then suck them from their shells Where would the sentence best fit?",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

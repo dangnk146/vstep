@@ -1,0 +1,965 @@
+{
+  "id": "reading-2",
+  "title": "Reading Test 2",
+  "directions": "Choose the best answer A, B, C, or D for each question. You have 60 minutes to answer all 40 questions.",
+  "passages": [
+    {
+      "id": "passage-1",
+      "title": "Passage 1",
+      "paragraphs": [
+        "Phillis Wheatley was born in Gambia (in Africa) on May 8, 1753 and died in Boston on December 5, 1784. When she was 7 or 8, she was sold as a slave to John and Susanna Wheatley of Boston. She was named after the ship that brought her to America, The Phillis. The Poetry Foundation describes her sale: In August 1761, “in want of a domestic,” Susanna Wheatley, … purchased “a slender, frail female child … for a trifle”… The captain of the slave ship believed that the waif was terminally ill, and he wanted … at least a small profit before she died. … The family surmised the girl—who was “of slender frame and evidently suffering from a change of climate,” nearly naked, with “no other covering than a quantity of dirty carpet about her” - to be “about seven years old … from the circumstances of shedding her front teeth.” (http://www.poetryfoundation.org/bio/phillis- wheatley) Phillis was very intelligent. The Wheatley family taught her to read and write, and encouraged her to write poetry. Her first poem “On Messrs. Hussey and Coffin” was published when she was only twelve. In 1770, \"An Elegiac Poem, on the Death of that Celebrated Divine, and Eminent Servant of Jesus Christ, the Reverend and Learned George Whitefield\" made her famous. It was published in Boston, Newport, and Philadelphia. When she was eighteen, Phillis and Mrs. Wheatley tried to sell a collection containing twenty- eight of her poems. Colonists did not want to buy poetry written by an African. Mrs. Wheatley wrote to England to ask Selina Hastings, Countess of Huntingdon, for help. The countess was a wealthy supporter of evangelical and abolitionist (anti-slavery) causes. She had Poems on",
+        "Various Subjects, Religious and Moral published in England in 1773. This book made Phillis famous in England and the thirteen colonies. She wrote a poem for George Washington in 1775, and he praised her work. They met in 1776. Phillis supported independence for the colonies during the Revolutionary War. After her master died, Phillis was emancipated. She married John Peters, a free black man, in 1778. She and her husband lost two children as infants. John would be imprisoned for debt in 1784. Phillis and her remaining child died in December of 1784 and were buried in an unmarked grave. Nevertheless, the legacy of Phillis Wheatly lives on. She became the first African American and the first slave in the United States to publish a book. She proved that slaves or former slaves had a valuable voice in the Revolutionary era."
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "It can be inferred from the passage that the Countess of Huntingdon …",
+          "options": [
+            {
+              "label": "A",
+              "text": "didn't care about Phillis' poetry"
+            },
+            {
+              "label": "B",
+              "text": "helped Phillis get her writings published"
+            },
+            {
+              "label": "C",
+              "text": "believed in slavery"
+            },
+            {
+              "label": "D",
+              "text": "was surprised that Phillis could read and write"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 2,
+          "prompt": "What question is answered in last paragraph?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Who did Phillis marry?"
+            },
+            {
+              "label": "B",
+              "text": "Where were Phillis' works published?"
+            },
+            {
+              "label": "C",
+              "text": "What did Phillis prove?"
+            },
+            {
+              "label": "D",
+              "text": "Why was Phillis a slave?"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "Phillis finally became free …",
+          "options": [
+            {
+              "label": "A",
+              "text": "when she published her poems in England"
+            },
+            {
+              "label": "B",
+              "text": "after meeting the Countess of Huntingdon"
+            },
+            {
+              "label": "C",
+              "text": "when she became wealthy"
+            },
+            {
+              "label": "D",
+              "text": "after her master died"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "Phillis' first attempt at selling her poetry in America (the colonies) was …",
+          "options": [
+            {
+              "label": "A",
+              "text": "illegal"
+            },
+            {
+              "label": "B",
+              "text": "imaginary"
+            },
+            {
+              "label": "C",
+              "text": "unsuccessful"
+            },
+            {
+              "label": "D",
+              "text": "successful"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "Which of the following is TRUE about Phillis Wheatley?",
+          "options": [
+            {
+              "label": "A",
+              "text": "She was the first African-American slave to visit England."
+            },
+            {
+              "label": "B",
+              "text": "She was the first African-American and slave to publish a book in the United States."
+            },
+            {
+              "label": "C",
+              "text": "She was the first African-American and slave to be able to read and write"
+            },
+            {
+              "label": "D",
+              "text": "She was the first African-American and slave to meet George Washington."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "The Wheatley family estimated the age of the slave girl they named \"Phills\" by …",
+          "options": [
+            {
+              "label": "A",
+              "text": "her size"
+            },
+            {
+              "label": "B",
+              "text": "the condition of her teeth"
+            },
+            {
+              "label": "C",
+              "text": "her color"
+            },
+            {
+              "label": "D",
+              "text": "her weight"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 7,
+          "prompt": "By the age of twelve, Phillis was …",
+          "options": [
+            {
+              "label": "A",
+              "text": "no longer a slave"
+            },
+            {
+              "label": "B",
+              "text": "married"
+            },
+            {
+              "label": "C",
+              "text": "a published poet"
+            },
+            {
+              "label": "D",
+              "text": "still not able to read or write"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 8,
+          "prompt": "The slaveowner who sold Phillis to the Wheatley family believed …",
+          "options": [
+            {
+              "label": "A",
+              "text": "she would soon recover from her illness"
+            },
+            {
+              "label": "B",
+              "text": "she was very intelligent"
+            },
+            {
+              "label": "C",
+              "text": "she was worth a lot of money"
+            },
+            {
+              "label": "D",
+              "text": "she would soon die"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 9,
+          "prompt": "Who was George Whitefield?",
+          "options": [
+            {
+              "label": "A",
+              "text": "A military general"
+            },
+            {
+              "label": "B",
+              "text": "Somebody who Phillis admired greatly"
+            },
+            {
+              "label": "C",
+              "text": "Phillis' husband"
+            },
+            {
+              "label": "D",
+              "text": "A slave owner"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 10,
+          "prompt": "Where is Phillis Wheatley buried?",
+          "options": [
+            {
+              "label": "A",
+              "text": "No one knows"
+            },
+            {
+              "label": "B",
+              "text": "Africa"
+            },
+            {
+              "label": "C",
+              "text": "Boston"
+            },
+            {
+              "label": "D",
+              "text": "Virginia"
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "title": "Passage 2",
+      "paragraphs": [
+        "The conservatism of the early English colonists in North America, their strong attachment to the English way of doing things, would play a major part in the furniture that was made in New England. The very tools that the first New England furniture makers used were, after all, not much different from those used for centuries- even millennia: basic hammers, saws, chisels, planes, augers, compasses, and measures. These were the tools used more or less by all people who worked with wood: carpenters, barrel makers, and shipwrights. At most the furniture makers might have had planes with special edges or more delicate chisels, but there could not have been much specialization in the early years of the colonies. The furniture makers in those early decades of the 1600’ s were known as “joiners,” for the primary method of constructing furniture, at least among the English of this time, was that of mortise-and-tenon joinery. The mortise is the hole chiseled and cut into one piece of wood, while the tenon is the tongue or protruding element shaped from another piece of wood so that it fits into the mortise; and another small hole is then drilled (with the auger) through the mortised end and the tenon so that a whittled peg can secure the joint- thus the term “joiner.\"",
+        "Panels were fitted into slots on the basic frames. This kind of construction was used for making everything from houses to chests. Relatively little hardware was used during this period. Some nails- forged by hand- were used, but no screws or glue. Hinges were often made of leather, but metal hinges were also used. The cruder varieties were made by blacksmiths in the colonies, but the finer metal elements were imported. Locks and escutcheon plates - the latter to shield the wood from the metal key- would often be imported. Above all, what the early English colonists imported was their knowledge of, familiarity with, and dedication to the traditional types and designs of furniture they knew in England."
+      ],
+      "questions": [
+        {
+          "number": 11,
+          "prompt": "The phrase “attachment to” in line 2 is closest in meaning to …………",
+          "options": [
+            {
+              "label": "A",
+              "text": "control of"
+            },
+            {
+              "label": "B",
+              "text": "distance from"
+            },
+            {
+              "label": "C",
+              "text": "curiosity about"
+            },
+            {
+              "label": "D",
+              "text": "preference for"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 12,
+          "prompt": "The word “protruding” in line 12 is closest in meaning to ……..",
+          "options": [
+            {
+              "label": "A",
+              "text": "parallel"
+            },
+            {
+              "label": "B",
+              "text": "simple"
+            },
+            {
+              "label": "C",
+              "text": "projecting"
+            },
+            {
+              "label": "D",
+              "text": "important"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 13,
+          "prompt": "The relationship of a mortise and a tenon is most similar to that of ……..",
+          "options": [
+            {
+              "label": "A",
+              "text": "a lock and a key"
+            },
+            {
+              "label": "B",
+              "text": "a book and its cover"
+            },
+            {
+              "label": "C",
+              "text": "a cup and a saucer"
+            },
+            {
+              "label": "D",
+              "text": "a hammer and a nail"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 14,
+          "prompt": "For what purpose did woodworkers use an auger ……….",
+          "options": [
+            {
+              "label": "A",
+              "text": "To whittle a peg panel"
+            },
+            {
+              "label": "B",
+              "text": "To make a tenon"
+            },
+            {
+              "label": "C",
+              "text": "To drill a hole"
+            },
+            {
+              "label": "D",
+              "text": "To measure a"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 15,
+          "prompt": "Which of the following were NOT used in the construction of colonial furniture?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Mortises"
+            },
+            {
+              "label": "B",
+              "text": "Nails"
+            },
+            {
+              "label": "C",
+              "text": "Hinges"
+            },
+            {
+              "label": "D",
+              "text": "Screws"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 16,
+          "prompt": "The author implies that colonial metalworkers were ……",
+          "options": [
+            {
+              "label": "A",
+              "text": "unable to make elaborate parts"
+            },
+            {
+              "label": "B",
+              "text": "more skilled than woodworkers"
+            },
+            {
+              "label": "C",
+              "text": "more conservative than other colonists"
+            },
+            {
+              "label": "D",
+              "text": "frequently employed by joiners"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 17,
+          "prompt": "The word “shield” in line 20 is closest in meaning to ……..",
+          "options": [
+            {
+              "label": "A",
+              "text": "decorate"
+            },
+            {
+              "label": "B",
+              "text": "copy"
+            },
+            {
+              "label": "C",
+              "text": "shape"
+            },
+            {
+              "label": "D",
+              "text": "protect"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 18,
+          "prompt": "The word “they” in line 25 refers to ………….",
+          "options": [
+            {
+              "label": "A",
+              "text": "designs"
+            },
+            {
+              "label": "B",
+              "text": "types"
+            },
+            {
+              "label": "C",
+              "text": "colonists"
+            },
+            {
+              "label": "D",
+              "text": "all"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 19,
+          "prompt": "The author implies that the colonial joiners ……..",
+          "options": [
+            {
+              "label": "A",
+              "text": "were highly paid"
+            },
+            {
+              "label": "B",
+              "text": "based their furniture on English models"
+            },
+            {
+              "label": "C",
+              "text": "used many specialized tools"
+            },
+            {
+              "label": "D",
+              "text": "had to adjust to using new kinds of wood in New England"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 20,
+          "prompt": "Which of the following terms does the author explain in the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "“millennia”"
+            },
+            {
+              "label": "B",
+              "text": "“joiners”"
+            },
+            {
+              "label": "C",
+              "text": "“whittled”"
+            },
+            {
+              "label": "D",
+              "text": "“blacksmiths”"
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "passage-3",
+      "title": "Passage 3",
+      "paragraphs": [
+        "In addition to their military role, the forts of the nineteenth century provided numerous other benefits for the American West. The establishment of these posts opened new roads and provided for the protection of daring adventurers and expeditions as well as established settlers. Forts also served as bases where enterprising entrepreneurs could bring commerce to the West, providing supplies and refreshments to soldiers as well as to pioneers. Posts like Fort Laramie provided supplies for wagon trains traveling the natural highways toward new frontiers. Some posts became stations for the pony express; still others, such as Fort Davis, were stagecoach stops for weary travelers. All of these functions, of course, suggest that the contributions of the forts to the civilization and development of the West extended beyond patrol duty. Through the establishment of military posts, yet other contributions were made to the development of western culture. Many posts maintained libraries or reading rooms, and some - for example, Fort Davis- had schools. Post chapels provided a setting for religious services and weddings. Throughout the wilderness, post bands provided entertainment and boosted morale. During the last part of the nineteenth century, to reduce expenses, gardening was encouraged at the forts, thus making experimental agriculture another activity of the military. The military stationed at the various forts also played a role in civilian life by assisting in maintaining order, and civilian officials often called on the army for protection. Certainly, among other significant contributions the army made to the improvement of the conditions of life was the investigation of the relationships among health, climate, and architecture. From the earliest colonial times throughout the nineteenth century, disease ranked as the foremost problem in defense. It slowed construction of forts and inhibited their military functions. Official documents from many regions contained innumerable reports of sickness that virtually incapacitated entire garrisons. In response to the problems, detailed observations of architecture and climate and their relationships to the frequency of the occurrence of various diseases were recorded at various posts across the nation by military surgeons."
+      ],
+      "questions": [
+        {
+          "number": 21,
+          "prompt": "Which of the following statements best expresses the main idea of the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "By the nineteenth century, forts were no longer used by the military."
+            },
+            {
+              "label": "B",
+              "text": "Surgeons at forts could not prevent outbreaks of disease."
+            },
+            {
+              "label": "C",
+              "text": "Forts were important to the development of the American West"
+            },
+            {
+              "label": "D",
+              "text": "Life in nineteenth-century forts was very rough."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 22,
+          "prompt": "The word “daring” in line 3 is closest in meaning to ……",
+          "options": [
+            {
+              "label": "A",
+              "text": "lost"
+            },
+            {
+              "label": "B",
+              "text": "bold"
+            },
+            {
+              "label": "C",
+              "text": "lively"
+            },
+            {
+              "label": "D",
+              "text": "foolish"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 23,
+          "prompt": "Which of the following would a traveler be likely be LEAST likely to obtain at Fort Laramie?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Fresh water"
+            },
+            {
+              "label": "B",
+              "text": "Food"
+            },
+            {
+              "label": "C",
+              "text": "Formal clothing"
+            },
+            {
+              "label": "D",
+              "text": "Lodging"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 24,
+          "prompt": "The word “others” in line 6 refers to ……",
+          "options": [
+            {
+              "label": "A",
+              "text": "posts"
+            },
+            {
+              "label": "B",
+              "text": "wagon trains"
+            },
+            {
+              "label": "C",
+              "text": "frontiers"
+            },
+            {
+              "label": "D",
+              "text": "highways"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 25,
+          "prompt": "The word “boosted\" in line 12 is closest in meaning to …….",
+          "options": [
+            {
+              "label": "A",
+              "text": "influenced"
+            },
+            {
+              "label": "B",
+              "text": "established"
+            },
+            {
+              "label": "C",
+              "text": "raised"
+            },
+            {
+              "label": "D",
+              "text": "maintained"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 26,
+          "prompt": "Which of the following is the most likely inference about the decision to promote gardening at forts?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It was expensive to import produce from far away."
+            },
+            {
+              "label": "B",
+              "text": "Food brought in from outside was often spoiled"
+            },
+            {
+              "label": "C",
+              "text": "Gardening was a way to occupy otherwise idle soldiers."
+            },
+            {
+              "label": "D",
+              "text": "The soil near the forts was very fertile."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 27,
+          "prompt": "According to the passage, which of the following posed the biggest obstacle to the development of military forts?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Insufficient shelter"
+            },
+            {
+              "label": "B",
+              "text": "Shortage of materials"
+            },
+            {
+              "label": "C",
+              "text": "Attacks by wild animals"
+            },
+            {
+              "label": "D",
+              "text": "Illness"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 28,
+          "prompt": "The word “inhibited” in line 22 is closest in meaning to ………..",
+          "options": [
+            {
+              "label": "A",
+              "text": "involved"
+            },
+            {
+              "label": "B",
+              "text": "exploited"
+            },
+            {
+              "label": "C",
+              "text": "united"
+            },
+            {
+              "label": "D",
+              "text": "hindered"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 29,
+          "prompt": "How did the military assists in the investigation of health problems?",
+          "options": [
+            {
+              "label": "A",
+              "text": "By registering annual birth and death rates"
+            },
+            {
+              "label": "B",
+              "text": "By experiments with different building materials"
+            },
+            {
+              "label": "C",
+              "text": "By maintaining records of diseases and potential causes"
+            },
+            {
+              "label": "D",
+              "text": "By monitoring the soldiers’ diets"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 30,
+          "prompt": "The author organizes the discussion of forts by …………..",
+          "options": [
+            {
+              "label": "A",
+              "text": "describing their locations"
+            },
+            {
+              "label": "B",
+              "text": "comparing their sizes"
+            },
+            {
+              "label": "C",
+              "text": "explaining their damage to the environment"
+            },
+            {
+              "label": "D",
+              "text": "listing their contributions to western life"
+            }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "id": "passage-4",
+      "title": "Passage 4",
+      "paragraphs": [
+        "Anyone who has handled a fossilized bone knows that it is usually not exactly like its modern counterpart, the most obvious difference being that it is often much heavier. Fossils often have the quality of stone rather than of organic materials, and this has led to the use of the term “ petrifaction” (to bring about rock). The implication is that bone, and other tissues, have somehow been turned into stone, and this is certainly the explanation given in some texts. But it is wrong interpretation; fossils are frequently so dense because the pores and other spaces in the bone have become filled with minerals taken up from the surrounding sediments. Some fossil bones have all the interstitial spaces filled with foreign minerals, including the marrow cavity, if there is one, while others have taken up but little from their surroundings. Probably all of the minerals deposited within the bone have been recrystallized from solution by the action of water percolating thru them. The degree of mineralization appears to be determined by the nature of the environment in which the bone was deposited and not by the antiquity of the bone. For example, the black fossil bones that are so common in many parts of Florida are heavily mineralized, but they are only about 20,000 years old, whereas many of the dinosaur bones from western Canada, which are about 75 million years old, are only partially filled in. Under optimum conditions the process of mineralization probably takes thousands rather than millions of years, perhaps considerably less. The amount of change that has occurred in fossil bone, even in bone as old as that of dinosaurs, is often remarkably small. We are therefore usually able to see the microscopic structures of the bone, including such fine details as the lacunae where the living bone cells once resided. The natural bone mineral, the hydroxyapatite, is virtually unaltered too - it has the same crystal structure as that of modern bone. Although nothing remains of the original collagen, some of its component amino acids are usually still detectable, together with amino acids of the noncollagen proteins of bone."
+      ],
+      "questions": [
+        {
+          "number": 31,
+          "prompt": "What does the passage mainly discuss?",
+          "options": [
+            {
+              "label": "A",
+              "text": "The location of fossils in North America"
+            },
+            {
+              "label": "B",
+              "text": "The composition of fossils"
+            },
+            {
+              "label": "C",
+              "text": "Determining the size and weight of fossils"
+            },
+            {
+              "label": "D",
+              "text": "Procedures for analyzing fossils"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 32,
+          "prompt": "The word “counterpart” in line 2 is closest in meaning to ……..",
+          "options": [
+            {
+              "label": "A",
+              "text": "species"
+            },
+            {
+              "label": "B",
+              "text": "version"
+            },
+            {
+              "label": "C",
+              "text": "change"
+            },
+            {
+              "label": "D",
+              "text": "material"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 33,
+          "prompt": "Why is fossilized bone heavier than ordinary bone?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Bone tissue solidifies with age."
+            },
+            {
+              "label": "B",
+              "text": "The marrow cavity gradually fills with water"
+            },
+            {
+              "label": "C",
+              "text": "The organic materials turn to stone"
+            },
+            {
+              "label": "D",
+              "text": "Spaces within the bone fill with minerals."
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 34,
+          "prompt": "The word “pores” in line 6 is closest in meaning to…………",
+          "options": [
+            {
+              "label": "A",
+              "text": "joints"
+            },
+            {
+              "label": "B",
+              "text": "tissues"
+            },
+            {
+              "label": "C",
+              "text": "lines"
+            },
+            {
+              "label": "D",
+              "text": "holes"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 35,
+          "prompt": "What can be inferred about a fossil with a high degree of mineralization?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It was exposed to large amounts of mineral-laden water throughout time."
+            },
+            {
+              "label": "B",
+              "text": "Mineralization was complete within one year of the animal’s death."
+            },
+            {
+              "label": "C",
+              "text": "Many colorful crystals can be found in such a fossil."
+            },
+            {
+              "label": "D",
+              "text": "It was discovered in western Canada."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 36,
+          "prompt": "Which of the following factors is most important in determining the extent of mineralization in fossil bones?",
+          "options": [
+            {
+              "label": "A",
+              "text": "The age of fossil"
+            },
+            {
+              "label": "B",
+              "text": "Environmental conditions"
+            },
+            {
+              "label": "C",
+              "text": "The location of the bone in the animal’s body."
+            },
+            {
+              "label": "D",
+              "text": "The type of animal the bone came from"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 37,
+          "prompt": "Why does the author compare fossils found in western Canada to those found in Florida?",
+          "options": [
+            {
+              "label": "A",
+              "text": "To prove that a fossil’s age cannot be determined by the amount of mineralization."
+            },
+            {
+              "label": "B",
+              "text": "To discuss the large quantity of fossils found in both places"
+            },
+            {
+              "label": "C",
+              "text": "To suggest that fossils found in both places were the same age."
+            },
+            {
+              "label": "D",
+              "text": "To explain why scientists are especially interested in Canadian fossils"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 38,
+          "prompt": "The word “it” in line 21 refers to ………",
+          "options": [
+            {
+              "label": "A",
+              "text": "hydroxyapatite"
+            },
+            {
+              "label": "B",
+              "text": "microscopic structure"
+            },
+            {
+              "label": "C",
+              "text": "crystal structure"
+            },
+            {
+              "label": "D",
+              "text": "modern bone"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 39,
+          "prompt": "The word “detectable” in line 23 is closest in meaning to ………….",
+          "options": [
+            {
+              "label": "A",
+              "text": "sizable"
+            },
+            {
+              "label": "B",
+              "text": "active"
+            },
+            {
+              "label": "C",
+              "text": "moist"
+            },
+            {
+              "label": "D",
+              "text": "apparent"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 40,
+          "prompt": "Which of the following does NOT survive in fossils?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Noncollagen proteins"
+            },
+            {
+              "label": "B",
+              "text": "Hydroxyapatite"
+            },
+            {
+              "label": "C",
+              "text": "Collagen"
+            },
+            {
+              "label": "D",
+              "text": "Amino acid"
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    }
+  ]
+}

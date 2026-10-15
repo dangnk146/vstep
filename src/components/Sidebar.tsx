@@ -10,7 +10,6 @@ import {
   Moon,
   PenTool,
   Sparkles,
-  Sun,
   type LucideIcon,
 } from 'lucide-react';
 import { useTheme } from '@/components/ThemeProvider';
@@ -31,9 +30,11 @@ const skillItems: NavItem[] = [
 export default function Sidebar() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const { theme, isHydrated, toggleTheme } = useTheme();
+  const { toggleTheme } = useTheme();
   const activeSection = pathname.startsWith('/listening/')
     ? pathname.match(/\/(part[123])\//)?.[1] ?? 'part1'
+    : pathname === '/reading'
+      ? searchParams.get('part') ?? 'part1'
     : pathname === '/writing'
       ? searchParams.get('task') ?? 'task1'
       : pathname === '/speaking'
@@ -46,6 +47,11 @@ export default function Sidebar() {
         { id: 'task2', label: 'Task 2' },
         { id: 'free', label: 'Tự do' },
       ]
+    : pathname === '/reading'
+      ? Array.from({ length: 6 }, (_, index) => ({
+          id: `part${index + 1}`,
+          label: `Part ${index + 1}`,
+        }))
     : pathname === '/speaking' || pathname.startsWith('/listening/')
       ? [
           { id: 'part1', label: 'Part 1' },
@@ -66,13 +72,22 @@ export default function Sidebar() {
                 type="button"
                 aria-current={active ? 'page' : undefined}
                 onClick={() => {
-                  if (pathname === '/writing' || pathname === '/speaking') {
+                  if (pathname === '/writing' || pathname === '/speaking' || pathname === '/reading') {
                     const params = new URLSearchParams(searchParams.toString());
                     params.set(pathname === '/writing' ? 'task' : 'part', id);
                     window.history.pushState(null, '', `${pathname}?${params.toString()}`);
                   }
                   window.dispatchEvent(new CustomEvent('vstep:select-section', {
-                    detail: { skill: pathname === '/writing' ? 'writing' : pathname === '/speaking' ? 'speaking' : 'listening', section: id },
+                    detail: {
+                      skill: pathname === '/writing'
+                        ? 'writing'
+                        : pathname === '/speaking'
+                          ? 'speaking'
+                          : pathname === '/reading'
+                            ? 'reading'
+                            : 'listening',
+                      section: id,
+                    },
                   }));
                 }}
                 className={`min-w-14 rounded-t-md border border-b-0 px-2.5 py-1 text-[9px] font-bold transition-all duration-200 sm:min-w-16 sm:px-3 sm:text-[10px] ${
@@ -149,10 +164,10 @@ export default function Sidebar() {
           type="button"
           onClick={toggleTheme}
           className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
-          aria-label={!isHydrated ? 'Đổi giao diện' : theme === 'light' ? 'Chuyển sang giao diện tối' : 'Chuyển sang giao diện sáng'}
-          title={!isHydrated ? 'Đổi giao diện' : theme === 'light' ? 'Giao diện tối' : 'Giao diện sáng'}
+          aria-label="Đổi giao diện sáng/tối"
+          title="Đổi giao diện sáng/tối"
         >
-          {!isHydrated || theme === 'light' ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+          <Moon className="h-4 w-4" />
         </button>
       </div>
     </aside>

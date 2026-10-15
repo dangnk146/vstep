@@ -1,0 +1,966 @@
+{
+  "id": "reading-1",
+  "title": "Reading Test 1",
+  "directions": "Choose the best answer A, B, C, or D for each question. You have 60 minutes to answer all 40 questions.",
+  "passages": [
+    {
+      "id": "passage-1",
+      "title": "Passage 1",
+      "paragraphs": [
+        "The influx of Americans into Oregon in the 1840s ignited a dispute between Britain and the United States that, in its more intemperate phases, was accompanied by shrill demands in both countries for war. The argument originated in the fact that the boundaries of Oregon had never been clearly fixed. The name vaguely embraced the territory west of the Rockies between the northern boundary of Mexican-held California and the southern edge of Russian-held Alaska, which at the time extended south to parallel 54° 40', In 1818, when America proposed a boundary at the 49th parallel an extension of the border with Canada that already existed east of the Rockies and the British suggested a line farther south, statesmen of both nations avoided the resulting impasse by agreeing to accept temporary \"joint occupancy”. But by the early 1840s, the issue could no longer be avoided: Oregon fever and Manifest Destiny had become potent political forces. Though many eastem Americans considered Oregon country too remote to become excited about, demands for its occupation were shouted with almost religious fervor. Senator Thomas Hart Benton, for one, urged Congress to muster \"thirty or forty thousand American rifles beyond the Rocky Mountains that will be our effective negotiators”. The Democratic Party made \"54°40’ or fight\", an issue of the 1844 Presidential election and just managed to install James K. Polk, an ardent expansionist, in the White House. But despite their seeming intransigence, neither Polk nor the British government wanted to fight. And just about the time that Polk learned that the land lying north of the 49 parallel was useless for agriculture, the British decided the American market for goods was worth far more than Oregon's fast- dying fur trade. So they quietly settled for the 49\" parallel, the boundary that the United States had proposed in the first place."
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "What is the main idea of this passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "The disagreement over the boundaries of Oregon was peacefully solved."
+            },
+            {
+              "label": "B",
+              "text": "The United States wanted more land than it needed."
+            },
+            {
+              "label": "C",
+              "text": "Politicians in 1840 favored war with Britain."
+            },
+            {
+              "label": "D",
+              "text": "The United States ended up by sharing Oregon with Canada."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 2,
+          "prompt": "The word \"intemperate\" in the passage is closest in meaning to, .",
+          "options": [
+            {
+              "label": "A",
+              "text": "untimely"
+            },
+            {
+              "label": "B",
+              "text": "initial"
+            },
+            {
+              "label": "C",
+              "text": "immoderate"
+            },
+            {
+              "label": "D",
+              "text": "uninformed"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "As used in the passage, the word \"fixed\" is closest in meaning to :",
+          "options": [
+            {
+              "label": "A",
+              "text": "repaired"
+            },
+            {
+              "label": "B",
+              "text": "adjusted"
+            },
+            {
+              "label": "C",
+              "text": "built"
+            },
+            {
+              "label": "D",
+              "text": "established"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 4,
+          "prompt": "The word \"remote\" in the passage is closest in meaning to__.",
+          "options": [
+            {
+              "label": "A",
+              "text": "far away"
+            },
+            {
+              "label": "B",
+              "text": "dangerous"
+            },
+            {
+              "label": "C",
+              "text": "large"
+            },
+            {
+              "label": "D",
+              "text": "uninteresting"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 5,
+          "prompt": "The confrontation with Britain over Oregon boundaries came to a head in the early 1840s for all the following reasons EXCEPT. :",
+          "options": [
+            {
+              "label": "A",
+              "text": "more people were living in Oregon at that time"
+            },
+            {
+              "label": "B",
+              "text": "the expansionists made the situation a political issue"
+            },
+            {
+              "label": "C",
+              "text": "all people were united in favoring the expansion and settlement of Oregon"
+            },
+            {
+              "label": "D",
+              "text": "Manifest Destiny was a major political force at this time"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 6,
+          "prompt": "The word \"ardent\" in the passage is closest in meaning to__.",
+          "options": [
+            {
+              "label": "A",
+              "text": "superficial"
+            },
+            {
+              "label": "B",
+              "text": "enthusiastic"
+            },
+            {
+              "label": "C",
+              "text": "old"
+            },
+            {
+              "label": "D",
+              "text": "moderate"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 7,
+          "prompt": "The word \"they\" in the passage refers to__.",
+          "options": [
+            {
+              "label": "A",
+              "text": "the Americans"
+            },
+            {
+              "label": "B",
+              "text": "the British and the Americans"
+            },
+            {
+              "label": "C",
+              "text": "the British"
+            },
+            {
+              "label": "D",
+              "text": "the Democratic Party"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 8,
+          "prompt": "It can be inferred from the passage that Senator Thomas Hart Benton.",
+          "options": [
+            {
+              "label": "A",
+              "text": "was a temperate man"
+            },
+            {
+              "label": "B",
+              "text": "supported the occupation of Oregon by force"
+            },
+            {
+              "label": "C",
+              "text": "felt negotiation was the best policy"
+            },
+            {
+              "label": "D",
+              "text": "proposed and approved the final boundary decision"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 9,
+          "prompt": "The 49th parallel was accepted by both parties in the border dispute for all of the following reasons EXCEPT__.",
+          "options": [
+            {
+              "label": "A",
+              "text": "the dying fur trade in Oregon"
+            },
+            {
+              "label": "B",
+              "text": "the attraction of the American market for goods"
+            },
+            {
+              "label": "C",
+              "text": "the condition of the land north of 49Â°"
+            },
+            {
+              "label": "D",
+              "text": "the desire for a good fight"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 10,
+          "prompt": "It can be inferred from the passage that in the final boundary, settlement the United States__.",
+          "options": [
+            {
+              "label": "A",
+              "text": "got the land that it had originally demanded"
+            },
+            {
+              "label": "B",
+              "text": "got less land than it had originally demanded"
+            },
+            {
+              "label": "C",
+              "text": "got more land than it had originally demanded"
+            },
+            {
+              "label": "D",
+              "text": "had no interest in the land involved in the dispute"
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "title": "Passage 2",
+      "paragraphs": [
+        "For all their great diversity of shapes and sizes, glaciers can be divided into two essential types: valley glaciers, which flow downhill from mountains and are shaped by the constraints of topography, and ice sheets, which flow outward in all directions from domelike centers of accumulated ice to cover vast expanses of terrain. Whatever their type, most glaciers are remnants of great shrouds of ice that covered the earth eons ago. In a few of these glaciers the oldest ice is very ancient indeed; the age of parts of the Antarctic sheet may exceed 500,000 years. Glaciers are born in rocky wombs above the snow line, where there is sufficient winter snowfall and summer cold for snow to survive the annual melting. The long gestation period of a glacier begins with the accumulation and gradual transformation of snowflakes. Soon after they reach the ground, complex snowflakes are reduced to compact, roughly spherical ice crystals, the basic components of a glacier. As new layers of snow and ice, snow that survives the melting of the previous summer, accumulate, they squeeze out most of the air bubbles trapped within and between the crystals below. This process of recrystallization continues throughout the life of the glacier. The length of time required for the creation of glacier ice depends mainly upon the temperature and the rate of snowfall. In Iceland, where snowfall is heavy and summer temperatures are high enough to produce plenty of meltwater, glacier ice may come into being in a relatively short time say, ten years. In parts of Antarctica, where snowfall is scant and the ice remains well below its melting temperature year-round, the process may require hundreds of years. The ice does not become a glacier until it moves under its own weight, and it cannot move significantly until it reaches a critical thickness the point at which the weight of the piled-up layers overcomes the internal strength of the ice and the friction between the ice and the ground. This critical thickness is about 60 feet. The fastest moving glaciers have been gauged at not much more than two and a half miles per year, and some cover less than 1/100 inch in that same amount of time, But no matter how infinitesimal the flow, movement is what distinguishes a glacier from a mere mass of ice."
+      ],
+      "questions": [
+        {
+          "number": 11,
+          "prompt": "This passage mainly discusses__",
+          "options": [
+            {
+              "label": "A",
+              "text": "the size and shape of glaciers"
+            },
+            {
+              "label": "B",
+              "text": "the formation of glaciers"
+            },
+            {
+              "label": "C",
+              "text": "why glaciers move"
+            },
+            {
+              "label": "D",
+              "text": "two types of glaciers"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 12,
+          "prompt": "The word \"constraints\" in the passage is closest in meaning to. :",
+          "options": [
+            {
+              "label": "A",
+              "text": "restrictions"
+            },
+            {
+              "label": "B",
+              "text": "height"
+            },
+            {
+              "label": "C",
+              "text": "beauty"
+            },
+            {
+              "label": "D",
+              "text": "speed"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 13,
+          "prompt": "Why does the author mention the Antarctic ice sheet in the first paragraph?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It is a slow-moving glacier."
+            },
+            {
+              "label": "B",
+              "text": "One would expect glaciers in this part of the world."
+            },
+            {
+              "label": "C",
+              "text": "It contains some of the oldest ice in existence."
+            },
+            {
+              "label": "D",
+              "text": "It is an example of a well-formed ice sheet."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 14,
+          "prompt": "In order to describe the development of glaciers, the author uses the analogy of__.",
+          "options": [
+            {
+              "label": "A",
+              "text": "birth"
+            },
+            {
+              "label": "B",
+              "text": "snowflakes"
+            },
+            {
+              "label": "C",
+              "text": "crystals"
+            },
+            {
+              "label": "D",
+              "text": "Iceland"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 15,
+          "prompt": "The phrase \"this process\" in the passage refers to___.",
+          "options": [
+            {
+              "label": "A",
+              "text": "air bubbles being trapped below"
+            },
+            {
+              "label": "B",
+              "text": "snow and ice compressing the ice crystals"
+            },
+            {
+              "label": "C",
+              "text": "formation of ice from snow that is about to melt"
+            },
+            {
+              "label": "D",
+              "text": "melting of summer snow"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 16,
+          "prompt": "The word \"trapped\" in the passage is closest in meaning",
+          "options": [
+            {
+              "label": "A",
+              "text": "enclosed"
+            },
+            {
+              "label": "B",
+              "text": "hunted"
+            },
+            {
+              "label": "C",
+              "text": "formed"
+            },
+            {
+              "label": "D",
+              "text": "stranded"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 17,
+          "prompt": "According to the passage, what is one of the differences between valley glaciers and ice sheets?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Ice sheets move faster than valley glaciers."
+            },
+            {
+              "label": "B",
+              "text": "While valley glaciers flow downhill, ice sheets flow in all directions."
+            },
+            {
+              "label": "C",
+              "text": "Valley glaciers are thicker than ice sheets because of the restricting land formations"
+            },
+            {
+              "label": "D",
+              "text": "Valley glaciers are not as old as ice sheets."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 18,
+          "prompt": "What does \"it\" in the passage refer to",
+          "options": [
+            {
+              "label": "A",
+              "text": "glacier"
+            },
+            {
+              "label": "B",
+              "text": "weight"
+            },
+            {
+              "label": "C",
+              "text": "ice"
+            },
+            {
+              "label": "D",
+              "text": "critical thickness"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 19,
+          "prompt": "The word \"significantly\" in the passage is closest in meaning to, .",
+          "options": [
+            {
+              "label": "A",
+              "text": "quickly"
+            },
+            {
+              "label": "B",
+              "text": "naturally"
+            },
+            {
+              "label": "C",
+              "text": "thoroughly"
+            },
+            {
+              "label": "D",
+              "text": "notably"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 20,
+          "prompt": "According to the passage, the characteristic that identifies a giacieris___.",
+          "options": [
+            {
+              "label": "A",
+              "text": "the critical thickness of the ice"
+            },
+            {
+              "label": "B",
+              "text": "the amount of ice accumulated"
+            },
+            {
+              "label": "C",
+              "text": "the movement of the ice"
+            },
+            {
+              "label": "D",
+              "text": "the weight of the ice"
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "passage-3",
+      "title": "Passage 3",
+      "paragraphs": [
+        "Pottery refers to dishes, plates, cups and cooking pots made out of clay. Chinese pottery was invented during the Neolithic period (5,000-2,200 BC) and it was molded by hand. Before this time, people had been nomadic, making it difficult to carry heavy, breakable pieces of pottery. At first, pottery was made by pushing a hole into a ball of clay or by taking a piece of clay and coiling it up into a pot shape. Many early pots were simple lumps of clay. However, people later discovered that clay, when placed in an open fire, hardened. This technique, known as firing, soon became common practice in pottery production. People used pottery as a way of forming their social identity or showing who they were and how they were different from other people. Many of the designs that were used on pottery",
+        "were usually borrowed from those already found on clothing and garments. The decoration of pottery began with simple incisions, which were later painted on. Gradually, plants, animals, and human figures were included on the vases. Mythological scenes were common as were dancers, musicians, and images from everyday life. [A] Pottery also has roots in ancient China where, for centuries, people produced black, carved, and painted pieces from rough clay. It was in the Sui dynasty, however, that the aesthetics of pottery took a major leap forward. [B] Potters began experimenting with porcelain and the effect was a stunning, shiny new look and feel for Chinese ceramics. [C] This gleaming pottery became popular not only in China, but in West Asia as well. [D] Inevitably, this led to a new market for cheap imitations. After 1,200 AD, Chinese potters began using different colored glazes to create designs on their pots. Chinese pottery was sill the best and most expensive. After thousands of years of advancements in technique and materials, painted porcelain such as blue and white, tri- color, and under-glazed became successfully produced. The Chinese often used pottery as part of the burial ritual; bronze vessels were decorated with elaborate designs of plants and animals. In Chinese culture, jade symbolizes nobility, perfection, and immortality. Jade utensils were laid over the deceased and some were placed In the mouth or enclosed In the hand. Liquids were placed In the vessels to help the dead in their afterlife and also to aid In funerary ceremonies in which the living communicated with deceased ancestors and gods in an altered state of consciousness after drinking fermented beverages. Such vessels containing liquids have been excavated at centers near the Yellow River, especially from burials of elite, eminent individuals, Many pottery fragments and figurines have also been discovered in the Chang Jiang drainage area. Pottery can be divided into three groups: those designed for storage, those for preserving or holding liquids, and those for special uses. The Greeks made pottery for many purposes. The custom of burning their dead involved using vases to collect the ashes. Some pottery served as decorative pieces, while others were used for ceremonies or during religious festivals. Amphoras were larger vessels used to store liquids such as water or wine. Amphoras have occasionally been found in ancient shipwrecks; some held wine and others were shipped empty after selling their contents off to other countries. The Alabastron had special uses such as holding perfume or oil. The Skyphes, a flat-bottomed bowl, was used as a drinking cup. Grecian soil had many deposits of clay near rivers. This abundance of raw material was not available to others, giving the Greeks a strategic advantage in manufacturing material. They made full use of clay. After its discovery, vessels were made in a wide range of sizes and shapes. Jugs, vases, fruit bowls, and feeding bottles were widely used in homes. Although some larger vessels were made of stone, glass, or metal, clay was by far the most prominent. The ancient Egyptians used pottery and ceramic art for burial purpose. Four vases were sometimes deposited with the mummified body, A large number of vases which have been",
+        "recovered had been buried with the dead in tombs. Some vases are found hanging or standing upright in the tomb. They appear to have been valued by the deceased, hence leaving them for burial in the tomb."
+      ],
+      "questions": [
+        {
+          "number": 21,
+          "prompt": "According to paragraph 1, which of the following statements is true of early pottery?",
+          "options": [
+            {
+              "label": "A",
+              "text": "The first pots were made of hardened clay."
+            },
+            {
+              "label": "B",
+              "text": "The nomadic nature of man before the Neolithic period prevented the widespread use of pottery."
+            },
+            {
+              "label": "C",
+              "text": "Pottery was invented as a way of storing fresh fish and meats."
+            },
+            {
+              "label": "D",
+              "text": "It was not possible to fashion clay into shapes for pottery."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 22,
+          "prompt": "The word \"incisions\" in the passage is closest in meaning to.",
+          "options": [
+            {
+              "label": "A",
+              "text": "figures"
+            },
+            {
+              "label": "B",
+              "text": "squares"
+            },
+            {
+              "label": "C",
+              "text": "paintings"
+            },
+            {
+              "label": "D",
+              "text": "cuts"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 23,
+          "prompt": "Which of the following can be inferred from paragraph 2 about pottery designs?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Designs helped the pot to stay together and not break."
+            },
+            {
+              "label": "B",
+              "text": "The designs on pottery reflected the culture of those who made them."
+            },
+            {
+              "label": "C",
+              "text": "Three basic techniques to produce pottery vessels have been used around the world."
+            },
+            {
+              "label": "D",
+              "text": "Pot design was imaginative and unique in every example."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 24,
+          "prompt": "The word \"gleaming\" in the passage is closest in meaning to,",
+          "options": [
+            {
+              "label": "A",
+              "text": "shiny"
+            },
+            {
+              "label": "B",
+              "text": "dull"
+            },
+            {
+              "label": "C",
+              "text": "delicate"
+            },
+            {
+              "label": "D",
+              "text": "soft"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 25,
+          "prompt": "According to the passage, whose pottery was regarded as the most valuable?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Japanese"
+            },
+            {
+              "label": "B",
+              "text": "Egyptian"
+            },
+            {
+              "label": "C",
+              "text": "Chinese"
+            },
+            {
+              "label": "D",
+              "text": "Greek"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 26,
+          "prompt": "The author mentions \"jade\" in the passage in order to__.",
+          "options": [
+            {
+              "label": "A",
+              "text": "demonstrate how stone could be carved into pottery"
+            },
+            {
+              "label": "B",
+              "text": "give an example of the use of expensive material in burials"
+            },
+            {
+              "label": "C",
+              "text": "show how different cultures value different materials"
+            },
+            {
+              "label": "D",
+              "text": "explain the difficulties in mining a stone for pottery"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 27,
+          "prompt": "The word \"deceased\" in the passage is closest in meaning to. :",
+          "options": [
+            {
+              "label": "A",
+              "text": "sick"
+            },
+            {
+              "label": "B",
+              "text": "dying"
+            },
+            {
+              "label": "C",
+              "text": "dead"
+            },
+            {
+              "label": "D",
+              "text": "diseased"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 28,
+          "prompt": "Which of the following best expresses the essential information in the highlighted sentence? Incorrect answer choices change the meaning in important ways or leave out essential information.",
+          "options": [
+            {
+              "label": "A",
+              "text": "The use of substantial amounts of clay in Greece resulted in a culture rich in pottery."
+            },
+            {
+              "label": "B",
+              "text": "The ancient Greeks had a more advanced way to construct pottery."
+            },
+            {
+              "label": "C",
+              "text": "Pottery making was harder for the ancient Greeks, but pottery was important to them for storage."
+            },
+            {
+              "label": "D",
+              "text": "Pottery was very convenient and useful because the raw material, clay, was abundant and simple to shape and fire In Greek."
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 29,
+          "prompt": "According to the passage, which of the following was NOT a use of pottery?",
+          "options": [
+            {
+              "label": "A",
+              "text": "storing wine"
+            },
+            {
+              "label": "B",
+              "text": "ceremonial offerings"
+            },
+            {
+              "label": "C",
+              "text": "holding ashes"
+            },
+            {
+              "label": "D",
+              "text": "cooking"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 30,
+          "prompt": "Look at the four squares {_} that indicate where the following sentence can be added to the passage. However, it was very expensive there because it had to be carried from China on camels and donkeys. Where would the sentence best fit?",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "C"
+        }
+      ]
+    },
+    {
+      "id": "passage-4",
+      "title": "Passage 4",
+      "paragraphs": [
+        "Louis Pasteur was arguably the greatest biologist of the 19th century. His immense contributions were among the most varied and beneficial in the field of science and industry. Pasteur’s methods of conducting experiments illustrated brilliance, which started when he studied the crystal structure. He observed that tartrate, when created in a laboratory, was optically inactive. This is different from the tartrate from grapes because the artificial tartrate is composed of two optically asymmetric crystals, Pasteur succeeded in unraveling the asymmetric crystals from each other and showed that each regained optical activity. He then theorized that living organisms only produce molecules that are of one specific objective and that these molecules are active at all times. This experiment contradicted *Mitscherlich’ who had observed only a single type of crystal. Later in his career, Pasteur was approached by the parent of one of his students, regarding a contamination problem in alcoholic fermentation. At the time, fermentation leading to the making of wine, or beer was thought to be a simple breakdown of sugar to the favored molecules. Yeast cells were believed to be either a useful ingredient in maintaining or simply a product of fermentation. The manufacturers of alcohol were having economic problems related to fermentation. Wine would suddenly turn sour or into vinegar, or the quality and taste of beer would suddenly change. Therefore, the producers would have to start anew. Pasteur proved that yeast was an organism which did not necessitate oxygen for fermentation to occur. This proved to Justin Von Liebig, who had upheld that fermentation was purely chemical, that he was incorrect. Pasteur was able to prove that the yeast was responsible for forming alcohol from sugar and that contaminating microorganisms turned the fermentations. Over the years, he segregated the organisms that were responsible for normal fermentations when producing wine or beer. He demonstrated that if he heated them to mild temperatures, this would kill the",
+        "microorganisms and prevent souring. This was a major discovery and Pasteur showed brewers how to refine the right organisms for good beer. He proposed that heating milk to a high temperature before bottling it would prevent souring. This is now known as pasteurization. All this had given Pasteur an iconic status throughout the world. After his research on fermentation, he refuted the principle of spontaneous generation. The theory that maggots, beetles and microbes could arise spontaneously from matter had always been a matter of speculation. Pasteur carried out ingenious experiments wiping out every argument in favor of spontaneous generation. In his famous experiment using the ‘swan neck flask’, fermented juice was put in a flask and after sterilization, the neck was heated, (this rescaled the neck of swan), The end of the net Was then Sees If the flask was opened by pinching off the end of air would enter but dust would get trapped on the inside of the neck which was wet. The fluid, however, would still be germ free. If the flask was tipped over allowing the juice to touch the inside of the neck, microorganisms would grow instantly. Pasteur’s work with silkworm parasites and germs led to the proposal of the germ theory of disease. After visiting the hospital wards, he became more aware of the infections being spread by physicians from sick patients to the healthy patients. He compelled doctors to disinfect their instruments by boiling and steaming them. Surgeons were told to wash their hands and use disinfectant. At the time, countries were suffering from anthrax, which is a disease that affects cattle. He believed it was possible that If the animals were intentionally infected with a very mild case of the disease, this may be enough to prevent them from getting the disease later on. To prove this, he needed to test his theory on live animals. [A] They recovered and, when placed with cattle that did have the disease, they remained immune. [B] Pasteur's last major research success was the development of a vaccine against rabies. [C] Institutes were built and people were treated for the disease in them. Pasteur was a national hero in France. [D] He died in 1895 and was given a state funeral."
+      ],
+      "questions": [
+        {
+          "number": 31,
+          "prompt": "The word “inactive” in the passage is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "motionless"
+            },
+            {
+              "label": "B",
+              "text": "occupied"
+            },
+            {
+              "label": "C",
+              "text": "dangerous"
+            },
+            {
+              "label": "D",
+              "text": "reactive"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 32,
+          "prompt": "According to paragraph 2, what evidence contradicted the previous beliefs of ‘Mitscherlich’?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Proof of the process of fermentation"
+            },
+            {
+              "label": "B",
+              "text": "Molecules being active at all times"
+            },
+            {
+              "label": "C",
+              "text": "Observed only a single type of crystal"
+            },
+            {
+              "label": "D",
+              "text": "Molecules produce all living organisms"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 33,
+          "prompt": "According to Pasteur’s experiments, what did he prove to be true?",
+          "options": [
+            {
+              "label": "A",
+              "text": "The wine would change to vinegar because of fermentation."
+            },
+            {
+              "label": "B",
+              "text": "Microorganisms were present in all alcoholic drinks."
+            },
+            {
+              "label": "C",
+              "text": "Yeast was an organism that did not need oxygen to work."
+            },
+            {
+              "label": "D",
+              "text": "The fermentation was a purely chemical process."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 34,
+          "prompt": "The word \"necessitate\" in the passage is closest in meaning to .",
+          "options": [
+            {
+              "label": "A",
+              "text": "facilitate"
+            },
+            {
+              "label": "B",
+              "text": "require"
+            },
+            {
+              "label": "C",
+              "text": "produce"
+            },
+            {
+              "label": "D",
+              "text": "consume"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 35,
+          "prompt": "According to paragraph 5, what did Pasteur publicly refute?",
+          "options": [
+            {
+              "label": "A",
+              "text": "That fermentation contributed to spontaneous generation"
+            },
+            {
+              "label": "B",
+              "text": "That bottle-neck glasses can keep things germ-free"
+            },
+            {
+              "label": "C",
+              "text": "That maggots can form suddenly from matter without warning"
+            },
+            {
+              "label": "D",
+              "text": "That flies were created from the maggots on dead meat"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 36,
+          "prompt": "Why does the author describe Pasteur's ‘swan neck flask’ experiment in the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "To explain the method of scientific experimentation"
+            },
+            {
+              "label": "B",
+              "text": "To demonstrate the correct way to do a scientific experiment"
+            },
+            {
+              "label": "C",
+              "text": "To show how microbes contribute to spontaneous generation"
+            },
+            {
+              "label": "D",
+              "text": "To illustrate exactly how Pasteur determined his findings"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 37,
+          "prompt": "The word \"ingenious\" in the passage is closest in meaning to :",
+          "options": [
+            {
+              "label": "A",
+              "text": "original"
+            },
+            {
+              "label": "B",
+              "text": "tremendous"
+            },
+            {
+              "label": "C",
+              "text": "controlled"
+            },
+            {
+              "label": "D",
+              "text": "significant"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 38,
+          "prompt": "Which of the following best expresses the essential information in the highlighted sentence? Incorrect answer choices change the meaning in important ways or leave out essential information.",
+          "options": [
+            {
+              "label": "A",
+              "text": "Most patients became sick from being infected by doctors in the emergency room."
+            },
+            {
+              "label": "B",
+              "text": "Hospital wards had become dirty and dangerous places due to the lack of proper training and space."
+            },
+            {
+              "label": "C",
+              "text": "Pasteur learned that infections could be transmitted to healthy patients from dirty, non- sterile instruments doctors had used: on previous patients."
+            },
+            {
+              "label": "D",
+              "text": "Healthy patients could become infected by sick people, simply by the shake of a hand or sharing a drink."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 39,
+          "prompt": "According to the passage, which method was NOT used in Pasteur's experiments?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Sealed bottles under observation"
+            },
+            {
+              "label": "B",
+              "text": "Disinfection of materials and instruments"
+            },
+            {
+              "label": "C",
+              "text": "Heating to mild temperatures"
+            },
+            {
+              "label": "D",
+              "text": "Going into animal experimentation known to be scientifically unsound"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 40,
+          "prompt": "Look at the four squares [_] that indicate where the following sentence can be added to the passage. Pasteur was successful in producing a safe version of anthrax bacteria which he then injected into a population of cows. Where would the sentence best fit?",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    }
+  ]
+}

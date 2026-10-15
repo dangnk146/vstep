@@ -1,14 +1,16 @@
 'use client';
 
-import { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { usePathname, useRouter } from 'next/navigation';
 import { 
   Headphones, 
   Flag, 
   CheckCircle,
+  Check,
   ChevronLeft,
   ChevronRight,
   Film,
+  Save,
   X,
 } from 'lucide-react';
 import videoData from './listvideo.json';
@@ -21,6 +23,69 @@ const PARTS = [
   { id: 'part3', label: 'Part 3', start: 21, count: 15 },
 ] as const;
 type PartId = (typeof PARTS)[number]['id'];
+type AnswersByPart = Partial<Record<PartId, Record<number, string>>>;
+
+const ANSWER_KEY_STORAGE_KEY = 'vstep_listening_answer_keys_v1';
+const SAVE_CONFIRMATION_STORAGE_KEY = 'vstep_listening_skip_save_confirmation';
+
+function isRecord(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value);
+}
+
+function loadListeningAnswerKeys(): { answerKeys: AnswersByPart; error: string } {
+  if (typeof window === 'undefined') return { answerKeys: {}, error: '' };
+
+  try {
+    const savedAnswerKeys = localStorage.getItem(ANSWER_KEY_STORAGE_KEY);
+    if (!savedAnswerKeys) return { answerKeys: {}, error: '' };
+
+    const parsed: unknown = JSON.parse(savedAnswerKeys);
+    if (!isRecord(parsed)) {
+      throw new Error('Saved Listening answer keys have an invalid format.');
+    }
+
+    const restoredAnswerKeys: AnswersByPart = {};
+    for (const part of PARTS) {
+      const partAnswerKeys = parsed[part.id];
+      if (partAnswerKeys === undefined) continue;
+      if (!isRecord(partAnswerKeys)) {
+        throw new Error(`Saved answer key for ${part.label} has an invalid format.`);
+      }
+
+      const validAnswerKeys: Record<number, string> = {};
+      for (const [questionNumber, answer] of Object.entries(partAnswerKeys)) {
+        const number = Number(questionNumber);
+        const isValidQuestion = Number.isInteger(number)
+          && number >= part.start
+          && number < part.start + part.count;
+        if (!isValidQuestion || typeof answer !== 'string' || !['A', 'B', 'C', 'D'].includes(answer)) {
+          throw new Error(`Saved answer key for ${part.label}, question ${questionNumber} is invalid.`);
+        }
+        validAnswerKeys[number] = answer;
+      }
+      restoredAnswerKeys[part.id] = validAnswerKeys;
+    }
+    return { answerKeys: restoredAnswerKeys, error: '' };
+  } catch (error) {
+    console.error('Could not restore saved Listening answer keys.', error);
+    return {
+      answerKeys: {},
+      error: 'Không thể tải đáp án đã lưu. Hãy kiểm tra bộ nhớ trình duyệt.',
+    };
+  }
+}
+
+function subscribeToHydration() {
+  return () => {};
+}
+
+function getClientHydrationSnapshot() {
+  return true;
+}
+
+function getServerHydrationSnapshot() {
+  return false;
+}
 
 type YouTubePlayer = {
   getCurrentTime: () => number;
@@ -86,9 +151,22 @@ function loadYouTubeIframeApi() {
 export default function ListeningPage() {
   const pathname = usePathname();
   const router = useRouter();
-  const [answers, setAnswers] = useState<Record<number, string>>({});
+  const [initialSavedAnswerKeys] = useState(loadListeningAnswerKeys);
+  const isHydrated = useSyncExternalStore(
+    subscribeToHydration,
+    getClientHydrationSnapshot,
+    getServerHydrationSnapshot,
+  );
+  const [answersByPart, setAnswersByPart] = useState<AnswersByPart>({});
+  const [answerKeysByPart, setAnswerKeysByPart] = useState<AnswersByPart>(initialSavedAnswerKeys.answerKeys);
+  const [checkedPartId, setCheckedPartId] = useState<PartId | null>(null);
   const [flags, setFlags] = useState<Record<number, boolean>>({});
+  const [isSaveDialogOpen, setIsSaveDialogOpen] = useState(false);
+  const [skipSaveConfirmation, setSkipSaveConfirmation] = useState(false);
+  const [feedback, setFeedback] = useState('');
+  const [storageError, setStorageError] = useState(initialSavedAnswerKeys.error);
   const videoDialogRef = useRef<HTMLDialogElement>(null);
+  const saveDialogRef = useRef<HTMLDialogElement>(null);
   const examRef = useRef<HTMLDivElement>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const playerRef = useRef<YouTubePlayer | null>(null);
@@ -105,6 +183,8 @@ export default function ListeningPage() {
     { length: partInfo.count },
     (_, index) => partInfo.start + index,
   );
+  const answers = answersByPart[selectedPart] ?? {};
+  const answerKey = isHydrated ? answerKeysByPart[selectedPart] ?? {} : {};
 
   useEffect(() => {
     let cancelled = false;
@@ -162,6 +242,13 @@ export default function ListeningPage() {
   }, [pathname, router]);
 
   useEffect(() => {
+    const dialog = saveDialogRef.current;
+    if (!dialog) return;
+    if (isSaveDialogOpen && !dialog.open) dialog.showModal();
+    if (!isSaveDialogOpen && dialog.open) dialog.close();
+  }, [isSaveDialogOpen]);
+
+  useEffect(() => {
     if (!pathname.match(/^\/listening\/part[123]\/video\d+$/)) {
       return;
     }
@@ -172,7 +259,15 @@ export default function ListeningPage() {
   }, [pathname]);
 
   const handleSelectAnswer = (qNumber: number, option: string) => {
-    setAnswers(prev => ({ ...prev, [qNumber]: option }));
+    setAnswersByPart((previous) => ({
+      ...previous,
+      [selectedPart]: {
+        ...previous[selectedPart],
+        [qNumber]: option,
+      },
+    }));
+    setCheckedPartId(null);
+    setFeedback('');
   };
 
   const toggleFlag = (qNumber: number) => {
@@ -197,6 +292,61 @@ export default function ListeningPage() {
 
   const answeredCount = questionNumbers.filter((number) => answers[number]).length;
   const flaggedCount = questionNumbers.filter((number) => flags[number]).length;
+
+  const saveAnswers = () => {
+    const enteredAnswerKey = answersByPart[selectedPart] ?? {};
+    if (Object.keys(enteredAnswerKey).length === 0) {
+      setFeedback('Hãy nhập ít nhất một đáp án chuẩn trước khi lưu.');
+      return false;
+    }
+
+    try {
+      const updatedAnswerKeys: AnswersByPart = {
+        ...answerKeysByPart,
+        [selectedPart]: {
+          ...answerKeysByPart[selectedPart],
+          ...enteredAnswerKey,
+        },
+      };
+      localStorage.setItem(ANSWER_KEY_STORAGE_KEY, JSON.stringify(updatedAnswerKeys));
+      setAnswerKeysByPart(updatedAnswerKeys);
+      setAnswersByPart((previous) => ({ ...previous, [selectedPart]: {} }));
+      setCheckedPartId(null);
+      setStorageError('');
+      setFeedback(`Đã lưu ${Object.keys(enteredAnswerKey).length} đáp án chuẩn cho ${partInfo.label}. Các lựa chọn đã được xóa để bạn làm bài.`);
+      setIsSaveDialogOpen(false);
+      return true;
+    } catch (error) {
+      console.error('Could not save Listening answer keys.', error);
+      setStorageError('Không thể lưu đáp án chuẩn. Hãy kiểm tra bộ nhớ trình duyệt.');
+      return false;
+    }
+  };
+
+  const handleSaveClick = () => {
+    try {
+      if (localStorage.getItem(SAVE_CONFIRMATION_STORAGE_KEY) === 'true') {
+        saveAnswers();
+        return;
+      }
+      setSkipSaveConfirmation(false);
+      setIsSaveDialogOpen(true);
+    } catch (error) {
+      console.error('Could not read Listening save preferences.', error);
+      setStorageError('Không thể đọc cài đặt lưu đáp án trong trình duyệt.');
+    }
+  };
+
+  const confirmSave = () => {
+    if (!saveAnswers() || !skipSaveConfirmation) return;
+
+    try {
+      localStorage.setItem(SAVE_CONFIRMATION_STORAGE_KEY, 'true');
+    } catch (error) {
+      console.error('Could not save the Listening confirmation preference.', error);
+      setFeedback('Đã lưu đáp án, nhưng không thể lưu cài đặt bỏ qua xác nhận.');
+    }
+  };
 
   return (
     <div className="flex flex-col space-y-6 w-full animate-fade-in pb-10">
@@ -237,17 +387,34 @@ export default function ListeningPage() {
                 >
                   <span className="w-8 shrink-0 text-xs font-bold text-muted-foreground">{qNum}.</span>
                   <div className="grid flex-1 grid-cols-4 gap-1">
-                    {['A', 'B', 'C', 'D'].map((opt) => (
-                      <button
-                        key={opt}
-                        onClick={() => handleSelectAnswer(qNum, opt)}
-                        aria-pressed={selectedOpt === opt}
-                        aria-label={`Câu ${qNum}, đáp án ${opt}`}
-                        className={`h-8 rounded-md text-xs font-bold transition-colors cursor-pointer ${selectedOpt === opt ? 'bg-primary text-primary-foreground' : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-foreground'}`}
-                      >
-                        {opt}
-                      </button>
-                    ))}
+                    {(['A', 'B', 'C', 'D'] as const).map((opt) => {
+                      const isSelected = selectedOpt === opt;
+                      const isCorrect = checkedPartId === selectedPart && answerKey[qNum] === opt;
+                      const isWrongSelection = checkedPartId === selectedPart
+                        && isSelected
+                        && answerKey[qNum] !== undefined
+                        && !isCorrect;
+
+                      return (
+                        <button
+                          key={opt}
+                          onClick={() => handleSelectAnswer(qNum, opt)}
+                          aria-pressed={isSelected}
+                          aria-label={`Câu ${qNum}, đáp án ${opt}`}
+                          className={`h-8 rounded-md text-xs font-bold transition-colors cursor-pointer ${
+                            isCorrect
+                              ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+                              : isWrongSelection
+                                ? 'bg-red-600 text-white hover:bg-red-700'
+                                : isSelected
+                                  ? 'bg-primary text-primary-foreground'
+                                  : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-foreground'
+                          }`}
+                        >
+                          {opt}
+                        </button>
+                      );
+                    })}
                   </div>
                   <button
                     onClick={() => toggleFlag(qNum)}
@@ -263,19 +430,56 @@ export default function ListeningPage() {
             })}
           </div>
 
-          <div className="mt-auto border-t border-border pt-4">
-            <button
-              onClick={() => {
-                alert(`Bạn đã hoàn thành ${answeredCount}/${partInfo.count} câu ở ${partInfo.label}.`);
-              }}
-              className="w-full rounded-lg bg-primary py-3 font-bold text-primary-foreground transition-colors hover:bg-primary/90 cursor-pointer"
-            >
-              Nộp phần này
-            </button>
+          <div className="mt-auto border-t border-border pt-3">
+            <div className="flex items-center justify-end gap-2">
+              <button
+                type="button"
+                onClick={handleSaveClick}
+                aria-label={`Lưu đáp án ${partInfo.label}`}
+                title="Lưu đáp án"
+                className="grid h-8 w-8 place-items-center rounded-md border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+              >
+                <Save className="h-4 w-4" />
+              </button>
+              <button
+                type="button"
+                onClick={() => {
+                  const comparableCount = questionNumbers.filter((number) => answerKey[number]).length;
+                  if (comparableCount === 0) {
+                    setFeedback(`Chưa có đáp án chuẩn cho ${partInfo.label}. Nhập đáp án chuẩn rồi bấm Lưu trước.`);
+                    return;
+                  }
+
+                  const correctCount = questionNumbers.filter((number) => (
+                    answers[number] && answerKey[number] && answers[number] === answerKey[number]
+                  )).length;
+                  const incorrectCount = questionNumbers.filter((number) => (
+                    answers[number] && answerKey[number] && answers[number] !== answerKey[number]
+                  )).length;
+                  const unansweredCount = questionNumbers.filter((number) => !answers[number]).length;
+                  const missingKeyCount = partInfo.count - comparableCount;
+                  const missingMessage = missingKeyCount > 0
+                    ? ` Chưa có đáp án chuẩn cho ${missingKeyCount} câu.`
+                    : '';
+
+                  setCheckedPartId(selectedPart);
+                  setFeedback(`Đúng: ${correctCount} · Sai: ${incorrectCount} · Chưa làm: ${unansweredCount}.${missingMessage}`);
+                }}
+                className="inline-flex h-8 items-center gap-1 rounded-md bg-primary px-2.5 text-[11px] font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+              >
+                <Check className="h-4 w-4" />
+                Kiểm tra đáp án
+              </button>
+            </div>
+            {(feedback || (isHydrated && storageError)) && (
+              <p className={`mt-2 text-right text-xs ${isHydrated && storageError ? 'text-red-600 dark:text-red-400' : 'text-muted-foreground'}`} role={isHydrated && storageError ? 'alert' : 'status'}>
+                {(isHydrated && storageError) || feedback}
+              </p>
+            )}
           </div>
         </section>
 
-        <section className="order-1 min-w-0 overflow-hidden rounded-xl border border-border bg-card lg:order-2" aria-labelledby="playlist-heading">
+        <section className="order-1 -mx-3 w-[calc(100%+1.5rem)] min-w-0 overflow-hidden border-y border-border bg-card sm:mx-0 sm:w-auto sm:rounded-xl sm:border lg:order-2" aria-labelledby="playlist-heading">
           <div className="flex items-center justify-between gap-3 border-b border-border p-4 sm:p-5">
             <div>
               <h2 id="playlist-heading" className="font-extrabold">{partInfo.label} · Video {selectedVideo}</h2>
@@ -393,6 +597,50 @@ export default function ListeningPage() {
           </div>
         </section>
       </div>
+
+      <dialog
+        ref={saveDialogRef}
+        aria-labelledby="save-answers-heading"
+        onCancel={(event) => {
+          event.preventDefault();
+          setIsSaveDialogOpen(false);
+        }}
+        className="m-auto w-[min(92vw,24rem)] max-w-none rounded-xl border border-border bg-card p-0 text-foreground shadow-2xl backdrop:bg-black/60"
+      >
+        <div className="space-y-4 p-5">
+          <div>
+            <h2 id="save-answers-heading" className="font-extrabold">Lưu đáp án chuẩn {partInfo.label}?</h2>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Các lựa chọn hiện tại sẽ được lưu trên trình duyệt làm đáp án chuẩn để đối chiếu. Sau khi lưu, màn hình sẽ được xóa lựa chọn để bạn làm bài.
+            </p>
+          </div>
+          <label className="flex items-center gap-2 text-sm text-foreground">
+            <input
+              type="checkbox"
+              checked={skipSaveConfirmation}
+              onChange={(event) => setSkipSaveConfirmation(event.target.checked)}
+              className="h-4 w-4 accent-primary"
+            />
+            Không hỏi lại lần sau
+          </label>
+          <div className="flex justify-end gap-2">
+            <button
+              type="button"
+              onClick={() => setIsSaveDialogOpen(false)}
+              className="h-9 rounded-md border border-border px-3 text-sm font-semibold text-foreground hover:bg-muted"
+            >
+              Hủy
+            </button>
+            <button
+              type="button"
+              onClick={confirmSave}
+              className="h-9 rounded-md bg-primary px-3 text-sm font-bold text-primary-foreground hover:bg-primary/90"
+            >
+              Lưu đáp án chuẩn
+            </button>
+          </div>
+        </div>
+      </dialog>
     </div>
   );
 }

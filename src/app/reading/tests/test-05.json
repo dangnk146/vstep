@@ -1,0 +1,983 @@
+{
+  "id": "reading-5",
+  "title": "Reading Test 5",
+  "directions": "Choose the best answer A, B, C, or D for each question. You have 60 minutes to answer all 40 questions.",
+  "passages": [
+    {
+      "id": "passage-1",
+      "title": "Passage 1",
+      "paragraphs": [
+        "A diver descends into an underwater cave, a scientist researches a dangerous disease, and an entrepreneur invests in a new business.",
+        "Each time we try something new, we take a risk. Sometimes, like the diver or the businessman, we take big risks, usually for obvious reasons for fame, for money, or to save lives. Most people will take some risk to achieve one of these goals. But as the danger increases, the number of people willing to go forward decreases. Only extreme risk-takers continue on. The question is: What exactly drives these people to go on when others would stop? [A]",
+        "The Biology of Risk To answer this question, scientists are studying the biological factors involved in risk- taking. Their research focuses on certain chemicals in the brain. An important chemical in risk-taking is dopamine. It motivates us to seek out and learn new things, and it helps us process emotions like anxiety and fear. People whose brains don't produce enough dopamine often lack motivation and interest in life. On the other hand, \"someone who takes risks to accomplish something - to climb a mountain or start a company - that's driven by motivation, and motivation is driven by dopamine,\" says Larry Zweifel, a neurobiologist at the University of Washington. \"It's what compels humans to move forward.\"",
+        "When we accomplish a task, dopamine produces a feeling of satisfaction; it makes us feel good. The riskier the task, the more dopamine we produce, and the better we feel. Given this, why isn't everyone trying to climb mountains or start businesses? In part, it's because of small molecules called autoreceptors. These receptors control dopamine use in the brain. A person with more autoreceptors tends to be more careful, as there is less dopamine moving freely around his or her brain. \"Think of dopamine like gasoline,\" says neuropsychologist David Zald. The autoreceptors, on the other hand, are like the brakes on a car. A person who is less able to use brakes is more likely to take risks. [B]",
+        "Dealing with Fear",
+        "Dopamine production may make us feel good, but being in a high-risk situation for an extended period of time is also stressful and can be dangerous. Successful risk-takers must learn to deal with the fear associated with high-risk situations to reduce stress and stay safe. In reality, adapting to risk is something we all learn to do. Take, for example, learning to drive a car. At first, a new driver may be afraid to travel on freeways. In time, though, as the driver gains experience, he or she will move comfortably into speeding traffic and will worry less about the danger. Similarly, a tightrope walker first learns to walk on a beam on the ground. Later, he or she moves to a rope just off the ground, and then finally to the high wire. By this point, the tightrope walker is in control and the activity doesn't feel dangerous. By practicing a challenging activity, humans can become used to the risk, manage the danger, and control the fear that they feel in those situations. [C]",
+        "The work that marine biologist and deep-sea diver Rhian Waller does illustrates this well. She studies life in some of the deepest and coldest waters on Earth. How does Waller control her fear and stay safe in these high-risk situations? \"It comes with practice.\" she says. \"It's knowing exactly what to do when something goes wrong. We prepare for each of our expeditions, and we try to minimize the number of risks we take.\"",
+        "Of course, a person doesn't have to be a tightrope walker or a deep-sea diver to be a risk-taker. Taking risks is part of being human. We are all motivated to experience new things. In order to do so, we have to take chances and of course, we may fail. [D]"
+      ],
+      "questions": [
+        {
+          "number": 1,
+          "prompt": "According to the article, what is a common reason for people to take large risks?",
+          "options": [
+            {
+              "label": "A",
+              "text": "a desire for fame"
+            },
+            {
+              "label": "B",
+              "text": "a lack of dopamine"
+            },
+            {
+              "label": "C",
+              "text": "to control motivation"
+            },
+            {
+              "label": "D",
+              "text": "to learn new things"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 2,
+          "prompt": "What is one of the main functions of dopamine?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It allows us to talk."
+            },
+            {
+              "label": "B",
+              "text": "It allows us to be alert."
+            },
+            {
+              "label": "C",
+              "text": "It helps us process emotions."
+            },
+            {
+              "label": "D",
+              "text": "It makes us fear dangerous situations."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 3,
+          "prompt": "The word 'compels' in paragraph 3 is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "takes"
+            },
+            {
+              "label": "B",
+              "text": "forces"
+            },
+            {
+              "label": "C",
+              "text": "makes"
+            },
+            {
+              "label": "D",
+              "text": "discourages"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 4,
+          "prompt": "What do autoreceptors do?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They make us less careful."
+            },
+            {
+              "label": "B",
+              "text": "They make us feel better."
+            },
+            {
+              "label": "C",
+              "text": "They control dopamine in our brain."
+            },
+            {
+              "label": "D",
+              "text": "They connect molecules in our brain."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 5,
+          "prompt": "How do people with high dopamine for a long time feel?",
+          "options": [
+            {
+              "label": "A",
+              "text": "motivated"
+            },
+            {
+              "label": "B",
+              "text": "satisfied"
+            },
+            {
+              "label": "C",
+              "text": "stressed"
+            },
+            {
+              "label": "D",
+              "text": "safe"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 6,
+          "prompt": "The word 'just' in paragraph 6 could be replaced with",
+          "options": [
+            {
+              "label": "A",
+              "text": "slightly"
+            },
+            {
+              "label": "B",
+              "text": "only"
+            },
+            {
+              "label": "C",
+              "text": "recently"
+            },
+            {
+              "label": "D",
+              "text": "finally"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 7,
+          "prompt": "What is the purpose of paragraph 6?",
+          "options": [
+            {
+              "label": "A",
+              "text": "to show why driving and tightrope walking are such risky activities"
+            },
+            {
+              "label": "B",
+              "text": "to give examples of how practicing a risky activity can reduce fear of it"
+            },
+            {
+              "label": "C",
+              "text": "to illustrate how some people are attracted to risky activities while others aren't"
+            },
+            {
+              "label": "D",
+              "text": "to explain why some activities are riskier and more dangerous than others"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 8,
+          "prompt": "What can we infer about marine biologist Rhian Waller?",
+          "options": [
+            {
+              "label": "A",
+              "text": "She has learned to adapt to risk."
+            },
+            {
+              "label": "B",
+              "text": "She has been afraid of the ocean for most of her life."
+            },
+            {
+              "label": "C",
+              "text": "She prefers to do her job when there is danger involved."
+            },
+            {
+              "label": "D",
+              "text": "She thinks it is impossible to prepare for most risks."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 9,
+          "prompt": "In which space (marked A, B, C and D in the passage) will the following sentence fit? But with enough practice, we might also succeed.",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 10,
+          "prompt": "Which of the following would be the best title for this article?",
+          "options": [
+            {
+              "label": "A",
+              "text": "The nature of risk"
+            },
+            {
+              "label": "B",
+              "text": "The biology of risk"
+            },
+            {
+              "label": "C",
+              "text": "Problems of risks taking and solutions"
+            },
+            {
+              "label": "D",
+              "text": "Connection between risks and dopamine"
+            }
+          ],
+          "answer": "B"
+        }
+      ]
+    },
+    {
+      "id": "passage-2",
+      "title": "Passage 2",
+      "paragraphs": [
+        "Astronomers rate the darkness of our skies on a scale of 9 (brightest) to 1 (darkest). Most of us spend our lives in the radiance of levels 5 to 8, only rarely venturing into areas ranked 3 or darker. Because of the rapid growth of light pollution over recent decades, most Americans under 40 have never known real darkness. All over the globe, our nights are growing brighter, and almost nowhere are they growing darker. We are just beginning to learn the true cost of all this light. Studies increasingly link our overuse of light at night with health concerns such as sleep disorders and disease. Other studies report the damaging ecological consequences, the tremendous waste of even the decrease in safety and security. But the steady loss of darkness from our lives is not easily measured, for like the similarly endangered qualities of solitude and quiet, the true value of darkness is something we are barely aware of.",
+        "Take a brilliantly starry sky. Since the beginning of time, a sky plush with stars was part of the common human experience. [A] Everywhere on Earth, on most nights, our predecessors came face to face with the universe. [B] Today, because of light pollution, many of us live under skies which are polluted by light. For the tens of millions who live under a night sky showing 25 stars or fewer, it is nearly impossible to imagine a natural sky of some 2,500 individual stars backed by great swathes of uncountable billions. [C] Our night sky continues to shape us, but now it is the absence of the universe around us that influences our beliefs, our myths, our impulse to",
+        "create. We are being shaped by a diminished experience of darkness, and most of us don't even know what we are missing. [D]",
+        "Our Milky Way galaxy is home to several hundred billion stars, and the universe home to several hundred billion other galaxies. A sky wiped clear of stars encourages us to exaggerate our importance, to imagine humanity as the centre of all things. Face to face with the endless immensity of the universe, we have the chance to know how insignificant we really are. But we might also realise the true largeness of our living on this planet, and realise that we have an enormous responsibility to care, that there is no other place to go, that home is here.",
+        "And what of beauty? 'Everyone needs beauty as well as bread,' wrote John Muir, American naturalist and author, and varied degrees of darkness are rich with this. Lighting designers in Paris understand that without darkness, there is no 'city of light', and work constantly to create their city's atmospheric beauty by subtly mixing artificial light with darkness. And with night's moonlit geographies, its scents of desert rain and autumn fires, its pulsing insect symphonies punctuated by a bird's solo call on a northern lake, natural darkness has many offerings of its own.",
+        "Yet we live immersed in artificial light. Much of this lighting is wholly unnecessary, born of habit and lack of awareness. So let us become aware: simply by shielding our existing lights we could significantly reduce their negative effects on our body, our mind, our soul. Artificial light at night is a miracle, a wonder, a quality that enriches our lives. But the same has always been true of darkness, and can be again."
+      ],
+      "questions": [
+        {
+          "number": 11,
+          "prompt": "What levels of darkness are people often exposed to?",
+          "options": [
+            {
+              "label": "A",
+              "text": "levels 1 to 3"
+            },
+            {
+              "label": "B",
+              "text": "levels 3 to 5"
+            },
+            {
+              "label": "C",
+              "text": "levels 5 to 8"
+            },
+            {
+              "label": "D",
+              "text": "levels 1 to 9"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 12,
+          "prompt": "What does the writer say about lack of darkness in paragraph 1?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It is impossible to reverse its effects."
+            },
+            {
+              "label": "B",
+              "text": "It is something that many people are unhappy about."
+            },
+            {
+              "label": "C",
+              "text": "Its effects are something that need to be studied further."
+            },
+            {
+              "label": "D",
+              "text": "It can be compared with other things that people often fail to appreciate."
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 13,
+          "prompt": "What is NOT a negative effect of overusing light at night?",
+          "options": [
+            {
+              "label": "A",
+              "text": "eye problems"
+            },
+            {
+              "label": "B",
+              "text": "energy waste"
+            },
+            {
+              "label": "C",
+              "text": "safety problems"
+            },
+            {
+              "label": "D",
+              "text": "sleeping problems"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 14,
+          "prompt": "What is the effect of light pollution on us?",
+          "options": [
+            {
+              "label": "A",
+              "text": "we are considerably less creative than our ancient ancestors."
+            },
+            {
+              "label": "B",
+              "text": "we experience the world in a different way to previous generations."
+            },
+            {
+              "label": "C",
+              "text": "we are aware that we are missing out on a great natural phenomenon."
+            },
+            {
+              "label": "D",
+              "text": "we need a great deal of imagination in order to understand the universe."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 15,
+          "prompt": "In which space (marked A, B, C and D in the passage) will the following sentence fit? This experience influenced their beliefs, mythologies, art - their very understanding of their place in the world.",
+          "options": [
+            {
+              "label": "A",
+              "text": "[A]"
+            },
+            {
+              "label": "B",
+              "text": "[B]"
+            },
+            {
+              "label": "C",
+              "text": "[C]"
+            },
+            {
+              "label": "D",
+              "text": "[D]"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 16,
+          "prompt": "What does the writer think about humans in paragraph 3?",
+          "options": [
+            {
+              "label": "A",
+              "text": "We ignore the need to look after our planet."
+            },
+            {
+              "label": "B",
+              "text": "We have an over-confident belief in our own values."
+            },
+            {
+              "label": "C",
+              "text": "We behave as though nothing exists apart from ourselves."
+            },
+            {
+              "label": "D",
+              "text": "We prefer to avoid thinking too deeply about our role on Earth."
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 17,
+          "prompt": "What does the word 'this' in paragraph 4 refer to?",
+          "options": [
+            {
+              "label": "A",
+              "text": "beauty"
+            },
+            {
+              "label": "B",
+              "text": "darkness"
+            },
+            {
+              "label": "C",
+              "text": "variety"
+            },
+            {
+              "label": "D",
+              "text": "lighting"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 18,
+          "prompt": "Why does the writer mention rain, fires and wildlife in paragraph 4?",
+          "options": [
+            {
+              "label": "A",
+              "text": "to describe what he enjoys least about night-time"
+            },
+            {
+              "label": "B",
+              "text": "to explain why some people think that lighting is necessary at night"
+            },
+            {
+              "label": "C",
+              "text": "to provide an example of the attractive qualities of night-time"
+            },
+            {
+              "label": "D",
+              "text": "to highlight the differences between urban and natural environments"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 19,
+          "prompt": "In the final paragraph, we understand that the author is",
+          "options": [
+            {
+              "label": "A",
+              "text": "irritated by people's lack of interest in darkness."
+            },
+            {
+              "label": "B",
+              "text": "understanding of the reasons why artificial light is essential."
+            },
+            {
+              "label": "C",
+              "text": "keen to draw comparisons between artificial light and darkness."
+            },
+            {
+              "label": "D",
+              "text": "hopeful that people are becoming aware of the negative impact of light."
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 20,
+          "prompt": "What is the purpose of the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "to describe the importance of darkness"
+            },
+            {
+              "label": "B",
+              "text": "to describe levels of darkness"
+            },
+            {
+              "label": "C",
+              "text": "to describe light pollution"
+            },
+            {
+              "label": "D",
+              "text": "to describe the importance of human in the universe"
+            }
+          ],
+          "answer": "A"
+        }
+      ]
+    },
+    {
+      "id": "passage-3",
+      "title": "Passage 3",
+      "paragraphs": [
+        "Very few scientists acknowledged that animals were capable of thought. Most believed that animals reacted to things in their environment but lacked the ability to think or feel. How, then, could a scientist demonstrate that animals might, in fact, possess intelligence? Irene Pepperberg, a recent graduate of Harvard University began her research in 1977. She bought an African gray parrot she named Alex and taught him to reproduce the sounds of the English language. \"I thought if he learned to communicate, I could ask him questions about how he sees the world.\" she explains.",
+        "Certain skills are considered key signs of higher mental abilities: a good memory, an understanding of symbols, self-awareness, understanding of others' motives, and creativity. Little by little, researchers have documented these abilities in other species. Sheep and elephants can recognize faces. Chimpanzees - who are genetically similar to humans - use a variety of primitive tools for eating, drinking, and hunting; they also laugh when pleased and spit to show disgust with something. Octopuses in captivity are known to amuse themselves by shooting water at laboratory staff. They may even exhibit basic emotions by changing color.",
+        "Alex the parrot was a surprisingly good talker. He learned how to use his voice to imitate almost 100 English words, including those for foods, colors, shapes, and numbers. Although imitation was once considered a simple skill, in recent years, cognitive scientists have revealed that it's an extremely difficult ability. It requires the imitator to form a mental image of the other person's body and actions and then adjust his own body parts into the same position. It is a behavior that shows an awareness of one's self. Because Alex had mastered many English words, Pepperberg could ask him questions about a bird's basic understanding of the world. Alex could count, as well as describe shapes, colors, and sizes for Pepperberg; he even had an elementary understanding of the abstract concept of zero.",
+        "Many of Alex's cognitive skills, such as his ability to understand the concepts of same and different, are generally attributed only to higher mammals, particularly primates such as humans and apes. But parrots, like great apes (and humans), live a long time in complex societies. And like primates, these birds must monitor the changing relationships within the group. This may explain Alex's ability to learn a human language. \"When we take [parrots) into captivity, what they start to do is treat us as their flock,\" explains Pepperberg. Parrots learn to pronounce and use our words so they can become a part of our group.",
+        "Researchers in Germany and Austria have also been studying language ability in dogs. One named Betsy has shown that she is able to learn and remember words as quickly as a two-year- old child. She has an extraordinary vocabulary of over 340 words (and counting), knows at least 15 people by name, and can link photographs with the real objects they represent. Like Alex, she's pretty smart. This is the larger lesson of animal cognition research: It humbles us. We are not alone in our ability to invent, communicate, demonstrate emotions, or think about ourselves. Still, humans remain the creative species. No other animal has built cities, created music, or made a computer."
+      ],
+      "questions": [
+        {
+          "number": 21,
+          "prompt": "What is the passage mainly about?",
+          "options": [
+            {
+              "label": "A",
+              "text": "ways of teaching animals to become more intelligent"
+            },
+            {
+              "label": "B",
+              "text": "research that shows intelligence is not limited to humans"
+            },
+            {
+              "label": "C",
+              "text": "how animals can communicate with humans"
+            },
+            {
+              "label": "D",
+              "text": "how human and animal intelligence are different"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 22,
+          "prompt": "Which can NOT show higher mental abilities?",
+          "options": [
+            {
+              "label": "A",
+              "text": "understanding signs"
+            },
+            {
+              "label": "B",
+              "text": "remembering words"
+            },
+            {
+              "label": "C",
+              "text": "being aware of one's self"
+            },
+            {
+              "label": "D",
+              "text": "being able to drink water"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 23,
+          "prompt": "Which of the following is NOT mentioned in the passage?",
+          "options": [
+            {
+              "label": "A",
+              "text": "how an octopus displays basic emotions"
+            },
+            {
+              "label": "B",
+              "text": "ways in which elephants communicate with each other"
+            },
+            {
+              "label": "C",
+              "text": "how chimps evolved tool-making abilities"
+            },
+            {
+              "label": "D",
+              "text": "the language ability of dogs"
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 24,
+          "prompt": "The word 'exhibit' in paragraph 2 is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "cover"
+            },
+            {
+              "label": "B",
+              "text": "control"
+            },
+            {
+              "label": "C",
+              "text": "experience"
+            },
+            {
+              "label": "D",
+              "text": "display"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 25,
+          "prompt": "What could Alex do that showed self-awareness?",
+          "options": [
+            {
+              "label": "A",
+              "text": "count"
+            },
+            {
+              "label": "B",
+              "text": "learn vocabulary"
+            },
+            {
+              "label": "C",
+              "text": "copy human sounds"
+            },
+            {
+              "label": "D",
+              "text": "understand the concept of zero"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 26,
+          "prompt": "In paragraph 3, 'It' refers to",
+          "options": [
+            {
+              "label": "A",
+              "text": "counting"
+            },
+            {
+              "label": "B",
+              "text": "talking"
+            },
+            {
+              "label": "C",
+              "text": "imitating"
+            },
+            {
+              "label": "D",
+              "text": "asking questions"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 27,
+          "prompt": "What do parrots and primates have in common?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They both live a long time in complex societies."
+            },
+            {
+              "label": "B",
+              "text": "They both learn to use tools while in captivity."
+            },
+            {
+              "label": "C",
+              "text": "They both teach new human words to their young."
+            },
+            {
+              "label": "D",
+              "text": "Neither likes to participate in or be part of a group."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 28,
+          "prompt": "In paragraph 5, the word 'link' could be replaced with",
+          "options": [
+            {
+              "label": "A",
+              "text": "match"
+            },
+            {
+              "label": "B",
+              "text": "take"
+            },
+            {
+              "label": "C",
+              "text": "count"
+            },
+            {
+              "label": "D",
+              "text": "view"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 29,
+          "prompt": "How are animals different from humans?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They can invent things."
+            },
+            {
+              "label": "B",
+              "text": "They can express emotions."
+            },
+            {
+              "label": "C",
+              "text": "They can show awareness."
+            },
+            {
+              "label": "D",
+              "text": "They can show creativity."
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 30,
+          "prompt": "Which statement would the author probably agree with?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Only humans and primates are capable of thought."
+            },
+            {
+              "label": "B",
+              "text": "Birds share a common ancestor with humans."
+            },
+            {
+              "label": "C",
+              "text": "Some birds are more intelligent than humans."
+            },
+            {
+              "label": "D",
+              "text": "We can find intelligence in species we don't normally consider intelligent."
+            }
+          ],
+          "answer": "D"
+        }
+      ]
+    },
+    {
+      "id": "passage-4",
+      "title": "Passage 4",
+      "paragraphs": [
+        "Pénicillium chrysogenum, or Pénicillium notatum is a common mold - a fungus that has multicellular arms or filaments called hyphae. It can be found living indoors on food. Its spores, units of asexual reproduction that can evolve into a new organism, and are a major cause of allergens in humans. In 1928, Scottish scientist Alexander Fleming discovered that Pénicillium notatum contained a bacteria-killing antibiotic that he named penicillin.",
+        "Alexander Fleming was born in 1881 in Scotland. At the age of twenty, he entered St. Mary's Hospital in London and studied medicine, then went on to become the assistant bacteriologist to Sir Almroth Wright, a pioneer in immunology and vaccine therapy. During World War I, Fleming served as a captain in the Royal Army Medical Corps and worked on the frontlines where he witnessed firsthand soldiers dying of sepsis. Sepsis, or systemic inflammatory response (SIRS), is blood poisoning due to the presence of bacteria in the blood. Fleming witnessed widespread sepsis, most of which was caused by infected wounds. Antiseptics were widely available yet",
+        "Fleming believed they killed only surface bacteria while failing to eradicate deeper bacteria. After the war, Fleming was determined to find a cure for sepsis. In 1928, while researching the properties of staphylococci, a genus of gram-positive bacteria, he stumbled upon Pénicillium notatum.",
+        "By 1928, Fleming was regarded as a brilliant researcher whose laboratory was, more often than not, a mess. That same year, returning to his lab after an August holiday, he discovered that his staphylococci cultures had been contaminated by a fungus. Fleming was intent on throwing the cultures out when he noticed that the staphylococci colonies had been surrounded by an invading blue-green mold. Much to Fleming's surprise, the invading mold had eradicated the staphylococci it had surrounded; whereas, those colonies of staphylococci that had not been touched by the mold were still thriving. He set about isolating and growing the mold which produced a substance that killed not only staphylococci, but also a number of other disease- causing bacteria, such as pneumonia, scarlet fever, meningitis and diphtheria. He called the bacteria-killing substance \"mold juice.\" Once he'd established that the mold was in fact part of the genus pénicillium, he called it penicillin.",
+        "In 1929, Fleming published the results of his experiments in the British Journal of Experimental Pathology. Yet despite such initial promise, his work garnered little attention, for growing pénicillium was difficult while extracting the antibiotic agent, the bacteria- killing penicillin itself, was even harder. These results, combined with tests proving that penicillin worked slowly, convinced Fleming that penicillin had no commercial appeal. By 1939, Fleming, having labored long and hard over penicillin, finally turned his attention to other matters. Then, in that same year, the Australian scientist Howard Walter Florey, director of the Sir William Dunn School of Pathology at Oxford University, read Fleming's paper in which he described the anti-bacterial effects of pénicillium. Florey immediately saw the potential of pénicillium and, with the help of Ernst Chain, did more research on the effects of penicillin and produced it on a large scale successfully in the US. By 1943, frontline soldiers with infections were being treated with a new wonder drug called penicillin."
+      ],
+      "questions": [
+        {
+          "number": 31,
+          "prompt": "What is the passage mainly about?",
+          "options": [
+            {
+              "label": "A",
+              "text": "the history of penicillin"
+            },
+            {
+              "label": "B",
+              "text": "the use of penicillin"
+            },
+            {
+              "label": "C",
+              "text": "the production of penicillin"
+            },
+            {
+              "label": "D",
+              "text": "side effects of penicillin"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 32,
+          "prompt": "According to paragraph 1, what are able to reproduce asexually?",
+          "options": [
+            {
+              "label": "A",
+              "text": "filaments"
+            },
+            {
+              "label": "B",
+              "text": "hypha"
+            },
+            {
+              "label": "C",
+              "text": "spores"
+            },
+            {
+              "label": "D",
+              "text": "penicillin"
+            }
+          ],
+          "answer": "C"
+        },
+        {
+          "number": 33,
+          "prompt": "Where did Fleming see evidence of widespread SIRS?",
+          "options": [
+            {
+              "label": "A",
+              "text": "in the Royal Medical Corps"
+            },
+            {
+              "label": "B",
+              "text": "in St. Mary's Hospital"
+            },
+            {
+              "label": "C",
+              "text": "in Ayrshire, Scotland"
+            },
+            {
+              "label": "D",
+              "text": "in frontline soldiers"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 34,
+          "prompt": "What did Fleming think about antiseptics?",
+          "options": [
+            {
+              "label": "A",
+              "text": "They were ineffective."
+            },
+            {
+              "label": "B",
+              "text": "They killed deeper bacteria."
+            },
+            {
+              "label": "C",
+              "text": "They were difficult to be found."
+            },
+            {
+              "label": "D",
+              "text": "They were too expensive."
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 35,
+          "prompt": "The word 'eradicate' in paragraph 2 is closest in meaning to",
+          "options": [
+            {
+              "label": "A",
+              "text": "reduce"
+            },
+            {
+              "label": "B",
+              "text": "surround"
+            },
+            {
+              "label": "C",
+              "text": "protect"
+            },
+            {
+              "label": "D",
+              "text": "destroy"
+            }
+          ],
+          "answer": "D"
+        },
+        {
+          "number": 36,
+          "prompt": "What did Alexander Fleming find by chance in 1928?",
+          "options": [
+            {
+              "label": "A",
+              "text": "Pénicillium notatum"
+            },
+            {
+              "label": "B",
+              "text": "gram-positive bacteria"
+            },
+            {
+              "label": "C",
+              "text": "lysozyme"
+            },
+            {
+              "label": "D",
+              "text": "sepsis"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 37,
+          "prompt": "According to paragraph 3, what did the blue-green mold do?",
+          "options": [
+            {
+              "label": "A",
+              "text": "It contaminated a fungus."
+            },
+            {
+              "label": "B",
+              "text": "It destroyed the staphylococci."
+            },
+            {
+              "label": "C",
+              "text": "It built colonies of staphylococci."
+            },
+            {
+              "label": "D",
+              "text": "It turned into staphylococci cultures."
+            }
+          ],
+          "answer": "B"
+        },
+        {
+          "number": 38,
+          "prompt": "The word 'it' in paragraph 3 refers to",
+          "options": [
+            {
+              "label": "A",
+              "text": "the invading mold"
+            },
+            {
+              "label": "B",
+              "text": "staphylococci"
+            },
+            {
+              "label": "C",
+              "text": "bacteria"
+            },
+            {
+              "label": "D",
+              "text": "a substance"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 39,
+          "prompt": "What is NOT a disease that a penicillin can cure?",
+          "options": [
+            {
+              "label": "A",
+              "text": "flu"
+            },
+            {
+              "label": "B",
+              "text": "pneumonia"
+            },
+            {
+              "label": "C",
+              "text": "scarlet fever"
+            },
+            {
+              "label": "D",
+              "text": "meningitis"
+            }
+          ],
+          "answer": "A"
+        },
+        {
+          "number": 40,
+          "prompt": "According to paragraph 4, by 1939 what had Fleming concluded?",
+          "options": [
+            {
+              "label": "A",
+              "text": "that penicillin was a wonder drug all would benefit from"
+            },
+            {
+              "label": "B",
+              "text": "that he had wasted his life researching penicillin"
+            },
+            {
+              "label": "C",
+              "text": "that Sir William Dunn should read his 1929 research paper"
+            },
+            {
+              "label": "D",
+              "text": "that penicillin was not economically successful."
+            }
+          ],
+          "answer": "D"
+        }
+      ]
+    }
+  ]
+}
