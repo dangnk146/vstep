@@ -9,6 +9,7 @@ import { SpeakingTimerBar } from './components/SpeakingTimerBar';
 import { SpeakingExamEditor } from './components/SpeakingExamEditor';
 import { SpeakingAudioControls } from './components/SpeakingAudioControls';
 import { SpeakingSidebarPanel } from './components/SpeakingSidebarPanel';
+import { SpeakingPreparationOverlay } from './components/SpeakingPreparationOverlay';
 import type { SpeakingPart } from './types';
 
 export default function SpeakingSimulation() {
@@ -18,6 +19,7 @@ export default function SpeakingSimulation() {
     examKey,
     hasExamContent,
     isSubmitted,
+    isLoadingRandomPrompt,
     setActivePart,
     setIsSubmitted,
     handleRandomPrompt,
@@ -89,26 +91,6 @@ export default function SpeakingSimulation() {
     });
   };
 
-  const handleManualRecord = async () => {
-    clearTimers();
-    stopMedia(true);
-    const duration = getSeconds(activePart);
-    setRunningPart(activePart);
-    setRemainingTimes((previous) => ({ ...previous, [activePart]: duration }));
-    setPreparationRemaining(null);
-    setTimerPhase('speaking');
-
-    const recordingStarted = await startRecording();
-    if (recordingStarted) {
-      runSpeakingTimer(activePart, duration, () => {
-        stopMedia(false);
-      });
-    } else {
-      setRunningPart(null);
-      setTimerPhase('idle');
-    }
-  };
-
   const handleStopRecording = () => {
     clearTimers();
     setRunningPart(null);
@@ -145,7 +127,15 @@ export default function SpeakingSimulation() {
       <SpeakingHeader
         onRandomPrompt={handleRandomPrompt}
         onSubmitPractice={handleSubmitPractice}
+        isLoadingRandomPrompt={isLoadingRandomPrompt}
       />
+
+      {timerPhase === 'preparing' && preparationRemaining !== null && (
+        <SpeakingPreparationOverlay
+          remainingSeconds={preparationRemaining}
+          durationSeconds={getSeconds('prep')}
+        />
+      )}
 
       <section className="grid overflow-hidden border border-border bg-white shadow-sm dark:bg-card lg:grid-cols-[minmax(0,1fr)_190px]">
         <main className="min-w-0 border-b border-border lg:border-b-0 lg:border-r">
@@ -172,9 +162,10 @@ export default function SpeakingSimulation() {
             recorderStatus={recorderStatus}
             recorderError={recorderError}
             timerPhase={timerPhase}
+            isRunning={runningPart !== null}
             audioUrl={audioUrl}
             audioRef={audioRef}
-            onManualRecord={handleManualRecord}
+            onManualRecord={() => handleRunPart(activePart)}
             onStopRecording={handleStopRecording}
             onResetTimers={handleResetTimers}
           />

@@ -15,10 +15,12 @@ import {
   Award,
   AlertCircle,
   Dices,
+  LoaderCircle,
   Settings,
 } from 'lucide-react';
 import Link from 'next/link';
-import { EXAM_PROMPTS, toReadablePromptText } from '@/utils/examPrompts';
+import { toReadablePromptText } from '@/utils/examPrompts';
+import { getExamApiSettings, requestExamApi, type RemoteExam } from '@/lib/examApi';
 
 const EDITOR_BASIC_SETUP = {
   lineNumbers: true,
@@ -90,6 +92,7 @@ export default function WritingPage() {
   // Free templates
   const [freeTemplates, setFreeTemplates] = useState<FreeTemplate[]>([]);
   const [selectedFreeId, setSelectedFreeId] = useState<string>('');
+  const [isLoadingRandomPrompt, setIsLoadingRandomPrompt] = useState(false);
 
   // Synchronize active task with URL query parameter
   useEffect(() => {
@@ -98,21 +101,14 @@ export default function WritingPage() {
       const pathTask = window.location.pathname.match(/^\/writing\/(task1|task2|free)$/)?.[1];
       const queryTask = params.get('task');
       const examId = params.get('exam');
-      const examPrompt = EXAM_PROMPTS.find((prompt) => (
-        prompt.id === examId
-        && (prompt.category === 'writing-task1' || prompt.category === 'writing-task2')
-      ));
-      let task: 'task1' | 'task2' | 'free' = examPrompt
-        ? examPrompt.category === 'writing-task1' ? 'task1' : 'task2'
-        : pathTask === 'task1' || pathTask === 'task2' || pathTask === 'free'
+      let task: 'task1' | 'task2' | 'free' =
+        pathTask === 'task1' || pathTask === 'task2' || pathTask === 'free'
           ? pathTask
           : queryTask === 'task1' || queryTask === 'task2' || queryTask === 'free'
             ? queryTask
             : 'task1';
-      let promptContent = examPrompt
-        ? { title: examPrompt.title, content: toReadablePromptText(examPrompt.content) }
-        : null;
-      let selectedExamId = examPrompt?.id;
+      let promptContent: { title: string; content: string } | null = null;
+      let selectedExamId = examId || undefined;
 
       if (consumeStoredPrompt) {
         const savedBankPrompt = sessionStorage.getItem('vstep_bank_writing_prompt');
@@ -124,23 +120,18 @@ export default function WritingPage() {
               content?: unknown;
               task?: unknown;
             };
-            const storedExam = typeof prompt.id === 'string'
-              ? EXAM_PROMPTS.find((item) => item.id === prompt.id
-                && (item.category === 'writing-task1' || item.category === 'writing-task2'))
-              : undefined;
-            if (storedExam) {
-              task = storedExam.category === 'writing-task1' ? 'task1' : 'task2';
-              promptContent = { title: storedExam.title, content: toReadablePromptText(storedExam.content) };
-              selectedExamId = storedExam.id;
-            } else if (typeof prompt.title === 'string' && typeof prompt.content === 'string') {
-              promptContent = { title: prompt.title, content: prompt.content };
+            if (typeof prompt.title === 'string' && typeof prompt.content === 'string') {
+              promptContent = {
+                title: prompt.title,
+                content: toReadablePromptText(prompt.content),
+              };
               if (prompt.task === 'task1' || prompt.task === 'task2') task = prompt.task;
-              selectedExamId = undefined;
+              if (typeof prompt.id === 'string') selectedExamId = prompt.id;
             } else {
-              console.error('Invalid writing prompt received from the exam bank.');
+              console.error('Invalid Writing prompt received from the exam API.');
             }
           } catch (error) {
-            console.error('Could not read the writing prompt from the exam bank.', error);
+            console.error('Could not read the Writing prompt from the exam API.', error);
           } finally {
             sessionStorage.removeItem('vstep_bank_writing_prompt');
           }
@@ -179,24 +170,51 @@ export default function WritingPage() {
     return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
   }, []);
 
-  const handleRandomPrompt = () => {
-    const prompts = EXAM_PROMPTS.filter((prompt) => (
-      activeTask === 'task1'
-        ? prompt.category === 'writing-task1'
-        : activeTask === 'task2'
-          ? prompt.category === 'writing-task2'
-          : prompt.category === 'writing-task1' || prompt.category === 'writing-task2'
-    ));
-    const prompt = prompts[Math.floor(Math.random() * prompts.length)];
-    if (!prompt) return;
-    const task = prompt.category === 'writing-task1' ? 'task1' : 'task2';
-    setBankPrompt({ title: prompt.title, content: toReadablePromptText(prompt.content) });
-    setActiveTask(task);
-    window.history.pushState(
-      null,
-      '',
-      `/writing/${task}?exam=${encodeURIComponent(prompt.id)}`,
-    );
+  const handleRandomPrompt = async () => {
+    const apiSettings = getExamApiSettings();
+    if (apiSettings.endpoint) {
+      setIsLoadingRandomPrompt(true);
+      try {
+        const result = await requestExamApi<RemoteExam>(apiSettings.endpoint, {
+          action: 'random',
+          skill: 'writing',
+          maTruong: apiSettings.school,
+          dotThi: apiSettings.batch,
+          part: activeTask === 'task1' || activeTask === 'task2' ? activeTask : '',
+          count: '1',
+          limit: '1000',
+        });
+        const prompt = result.items?.[0];
+        if (!prompt) {
+          throw new Error('Không có đề Writing phù hợp với trường, đợt thi và Task đã chọn.');
+        }
+        const task = prompt.part === 'part2' || prompt.part === 'task2' ? 'task2' : 'task1';
+        const title = prompt.title || prompt.id;
+        const content = prompt.content || title;
+        setBankPrompt({ title, content });
+        setActiveTask(task);
+        sessionStorage.setItem('vstep_bank_writing_prompt', JSON.stringify({
+          id: prompt.id,
+          title,
+          content,
+          task,
+        }));
+        window.history.pushState(
+          null,
+          '',
+          `/writing/${task}?exam=${encodeURIComponent(prompt.id)}`,
+        );
+        return;
+      } catch (error) {
+        console.error('Could not load a random Writing prompt from Apps Script.', error);
+        window.alert(error instanceof Error ? error.message : 'Không thể tải đề Writing.');
+      } finally {
+        setIsLoadingRandomPrompt(false);
+      }
+      return;
+    }
+
+    window.alert('Không tìm thấy cấu hình nguồn đề. Hãy mở mục Đề thi để kiểm tra kết nối.');
   };
 
   // Load saved templates from LocalStorage on mount & updates
@@ -294,12 +312,16 @@ export default function WritingPage() {
           <div className="flex items-center gap-2">
             <button
               type="button"
-              onClick={handleRandomPrompt}
-              title="Lấy đề viết ngẫu nhiên"
-              aria-label="Lấy đề viết ngẫu nhiên"
-              className="grid h-9 w-9 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20 cursor-pointer"
+              onClick={() => void handleRandomPrompt()}
+              disabled={isLoadingRandomPrompt}
+              title={isLoadingRandomPrompt ? 'Đang tải đề viết…' : 'Lấy đề viết ngẫu nhiên'}
+              aria-label={isLoadingRandomPrompt ? 'Đang tải đề viết' : 'Lấy đề viết ngẫu nhiên'}
+              aria-busy={isLoadingRandomPrompt}
+              className="grid h-9 w-9 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20 disabled:cursor-wait disabled:opacity-70"
             >
-              <Dices className="h-5 w-5" />
+              {isLoadingRandomPrompt
+                ? <LoaderCircle className="h-5 w-5 animate-spin" />
+                : <Dices className="h-5 w-5" />}
             </button>
             <Link
               href="/writing/settings"

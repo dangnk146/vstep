@@ -1,12 +1,14 @@
 'use client';
 
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import {
   ArrowRight,
   BookOpen,
   Check,
+  Database,
   FileText,
+  LoaderCircle,
   Search,
   Shuffle,
   Sparkles,
@@ -14,16 +16,42 @@ import {
 } from 'lucide-react';
 import {
   EXAM_CATEGORIES,
-  EXAM_PROMPTS,
   getExamSets,
   getExamCategory,
+  toExamPrompt,
   toPromptEditorHtml,
   toReadablePromptText,
   type ExamCategory,
   type ExamPrompt,
 } from '@/utils/examPrompts';
+import {
+  getExamApiSettingsSnapshot,
+  getServerExamApiSettingsSnapshot,
+  parseExamApiSettingsSnapshot,
+  requestExamApi,
+  saveExamApiSettings,
+  subscribeToExamApiSettings,
+  type ExamApiResponse,
+  type RemoteExam,
+} from '@/lib/examApi';
+
+type ActiveFilter = 'school' | 'batch' | null;
 
 export default function PromptBankPage() {
+  const settingsSnapshot = useSyncExternalStore(
+    subscribeToExamApiSettings,
+    getExamApiSettingsSnapshot,
+    getServerExamApiSettingsSnapshot,
+  );
+  const settings = parseExamApiSettingsSnapshot(settingsSnapshot);
+  const [prompts, setPrompts] = useState<ExamPrompt[]>([]);
+  const [loadError, setLoadError] = useState('');
+  const [isLoading, setIsLoading] = useState(true);
+  const [schools, setSchools] = useState<string[]>([]);
+  const [batches, setBatches] = useState<string[]>([]);
+  const [activeFilter, setActiveFilter] = useState<ActiveFilter>(null);
+  const [isLoadingOptions, setIsLoadingOptions] = useState(false);
+  const [optionsError, setOptionsError] = useState('');
   const [activeCategory, setActiveCategory] = useState<ExamCategory>('writing-task1');
   const [activeSetId, setActiveSetId] = useState('all');
   const [search, setSearch] = useState('');
@@ -32,14 +60,98 @@ export default function PromptBankPage() {
   const [copyError, setCopyError] = useState('');
   const promptPanelRef = useRef<HTMLElement>(null);
 
+  useEffect(() => {
+    let cancelled = false;
+    Promise.all([
+      requestExamApi<RemoteExam>(settings.endpoint, {
+        action: 'data',
+        skill: 'speaking',
+        maTruong: settings.school,
+        dotThi: settings.batch,
+        limit: '1000',
+      }),
+      requestExamApi<RemoteExam>(settings.endpoint, {
+        action: 'data',
+        skill: 'writing',
+        maTruong: settings.school,
+        dotThi: settings.batch,
+        limit: '1000',
+      }),
+    ]).then(([speaking, writing]) => {
+      if (cancelled) return;
+      setPrompts(
+        [...(speaking.items || []), ...(writing.items || [])]
+          .map(toExamPrompt)
+          .filter((prompt): prompt is ExamPrompt => Boolean(prompt)),
+      );
+      setLoadError('');
+    }).catch((error: unknown) => {
+      if (!cancelled) {
+        setLoadError(error instanceof Error ? error.message : 'Không thể tải ngân hàng đề.');
+      }
+    }).finally(() => {
+      if (!cancelled) setIsLoading(false);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [settings.endpoint, settings.school, settings.batch]);
+
+  const toggleFilter = async (filter: Exclude<ActiveFilter, null>) => {
+    if (activeFilter === filter) {
+      setActiveFilter(null);
+      return;
+    }
+
+    setActiveFilter(filter);
+    setIsLoadingOptions(true);
+    setOptionsError('');
+    try {
+      const result: ExamApiResponse<never> = await requestExamApi<never>(
+        settings.endpoint,
+        {
+          action: 'options',
+          maTruong: settings.school,
+          dotThi: settings.batch,
+        },
+      );
+      setSchools(result.schools || []);
+      setBatches(result.batches || []);
+    } catch (error) {
+      setOptionsError(error instanceof Error ? error.message : 'Không thể tải danh sách bộ lọc.');
+    } finally {
+      setIsLoadingOptions(false);
+    }
+  };
+
+  const selectSchool = (school: string) => {
+    saveExamApiSettings({ ...settings, school });
+    setActiveFilter(null);
+    setIsLoading(true);
+    setActiveSetId('all');
+    setSelectedPrompt(null);
+  };
+
+  const selectBatch = (batch: string) => {
+    saveExamApiSettings({ ...settings, batch });
+    setActiveFilter(null);
+    setIsLoading(true);
+    setActiveSetId('all');
+    setSelectedPrompt(null);
+  };
+
+  const isAllSchoolsSelected = !settings.school;
+  const isAllBatchesSelected = !settings.batch;
+
   const categoryPrompts = useMemo(
-    () => EXAM_PROMPTS.filter((prompt) => prompt.category === activeCategory),
-    [activeCategory],
+    () => prompts.filter((prompt) => prompt.category === activeCategory),
+    [activeCategory, prompts],
   );
 
   const sets = useMemo(
-    () => getExamSets(activeCategory),
-    [activeCategory],
+    () => getExamSets(activeCategory, prompts),
+    [activeCategory, prompts],
   );
 
   const filteredPrompts = useMemo(() => {
@@ -118,12 +230,84 @@ export default function PromptBankPage() {
           <div className="flex shrink-0 items-center gap-3 rounded-2xl bg-muted px-4 py-3">
             <BookOpen className="h-5 w-5 text-primary" />
             <div>
-              <p className="text-2xl font-extrabold leading-none text-foreground">{EXAM_PROMPTS.length}</p>
+              <p className="text-2xl font-extrabold leading-none text-foreground">{prompts.length}</p>
               <p className="mt-1 text-xs font-semibold text-muted-foreground">đề trong thư viện</p>
             </div>
           </div>
         </div>
       </header>
+
+      {(loadError || isLoading) && (
+        <div
+          role={loadError ? 'alert' : 'status'}
+          className={`rounded-xl border p-4 text-sm font-semibold ${loadError ? 'border-amber-500/30 bg-amber-500/10 text-amber-800' : 'border-border bg-card text-muted-foreground'}`}
+        >
+          {isLoading ? 'Đang tải đề từ Apps Script…' : loadError}
+        </div>
+      )}
+
+      <section className="rounded-xl border border-border bg-card p-4 shadow-sm" aria-label="Lọc ngân hàng đề">
+        <div className="mb-3 flex items-center gap-2 text-xs font-bold text-muted-foreground">
+          <Database className="h-4 w-4 text-primary" />
+          LỌC NGÂN HÀNG ĐỀ
+        </div>
+        <div className="flex flex-wrap gap-2">
+          <button
+            type="button"
+            onClick={() => void toggleFilter('school')}
+            aria-expanded={activeFilter === 'school'}
+            className={`rounded-full border px-3.5 py-2 text-sm font-semibold transition ${activeFilter === 'school' ? 'border-primary bg-primary text-primary-foreground' : 'border-border bg-background hover:border-primary/50'}`}
+          >
+            Trường <span className="ml-1 opacity-75">{settings.school || 'Tất cả'}</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => void toggleFilter('batch')}
+            aria-expanded={activeFilter === 'batch'}
+            className={`rounded-full border px-3.5 py-2 text-sm font-semibold transition ${activeFilter === 'batch' ? 'border-primary bg-primary text-primary-foreground' : 'border-border bg-background hover:border-primary/50'}`}
+          >
+            Đợt thi <span className="ml-1 opacity-75">{settings.batch || 'Tất cả'}</span>
+          </button>
+        </div>
+        {activeFilter && (
+          <div className="mt-4 rounded-lg border border-border bg-background p-3">
+            <div className="mb-2 flex items-center gap-2 text-xs font-bold text-muted-foreground">
+              {isLoadingOptions && <LoaderCircle className="h-3.5 w-3.5 animate-spin" />}
+              {activeFilter === 'school' ? 'Chọn mã trường' : 'Chọn đợt thi'}
+            </div>
+            {optionsError && <p role="alert" className="mb-2 text-xs font-semibold text-red-600">{optionsError}</p>}
+            <div className="flex max-h-48 flex-wrap gap-2 overflow-y-auto">
+              <button
+                type="button"
+                onClick={() => activeFilter === 'school' ? selectSchool('') : selectBatch('')}
+                aria-pressed={activeFilter === 'school' ? isAllSchoolsSelected : isAllBatchesSelected}
+                className={`rounded-full border px-3 py-1.5 text-xs font-semibold ${(activeFilter === 'school' ? isAllSchoolsSelected : isAllBatchesSelected) ? 'border-primary bg-primary/10 text-primary' : 'border-border hover:border-primary/50'}`}
+              >
+                Tất cả
+              </button>
+              {(activeFilter === 'school' ? schools : batches).map((value) => {
+                const selected = activeFilter === 'school'
+                  ? settings.school === value
+                  : settings.batch === value;
+                return (
+                  <button
+                    key={value}
+                    type="button"
+                    onClick={() => activeFilter === 'school' ? selectSchool(value) : selectBatch(value)}
+                    aria-pressed={selected}
+                    className={`rounded-full border px-3 py-1.5 text-xs font-semibold ${selected ? 'border-primary bg-primary/10 text-primary' : 'border-border hover:border-primary/50'}`}
+                  >
+                    {value}
+                  </button>
+                );
+              })}
+              {!isLoadingOptions && !(activeFilter === 'school' ? schools : batches).length && (
+                <span className="py-1 text-xs text-muted-foreground">API chưa trả về lựa chọn nào.</span>
+              )}
+            </div>
+          </div>
+        )}
+      </section>
 
       <section aria-label="Chọn đề ngẫu nhiên">
         <button
@@ -151,7 +335,7 @@ export default function PromptBankPage() {
             <p className="mb-2 text-xs font-extrabold uppercase tracking-wide text-muted-foreground">1. Chọn kỹ năng và phần thi</p>
             <div className="flex flex-wrap gap-2">
               {EXAM_CATEGORIES.map((category) => {
-                const count = EXAM_PROMPTS.filter((prompt) => prompt.category === category.id).length;
+                const count = prompts.filter((prompt) => prompt.category === category.id).length;
                 return (
                   <button
                     key={category.id}

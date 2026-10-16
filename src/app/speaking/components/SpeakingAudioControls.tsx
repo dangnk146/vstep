@@ -8,6 +8,7 @@ interface SpeakingAudioControlsProps {
   recorderStatus: RecorderStatus;
   recorderError: string;
   timerPhase: TimerPhase;
+  isRunning: boolean;
   audioUrl: string | null;
   audioRef: React.RefObject<HTMLAudioElement | null>;
   onManualRecord: () => void;
@@ -19,6 +20,7 @@ export function SpeakingAudioControls({
   recorderStatus,
   recorderError,
   timerPhase,
+  isRunning,
   audioUrl,
   audioRef,
   onManualRecord,
@@ -44,10 +46,11 @@ export function SpeakingAudioControls({
         <button
           type="button"
           onClick={onManualRecord}
-          disabled={recorderStatus === 'recording' || recorderStatus === 'requesting'}
+          disabled={isRunning || recorderStatus === 'recording' || recorderStatus === 'requesting'}
+          aria-busy={timerPhase === 'preparing' || recorderStatus === 'requesting'}
           className="flex h-7 items-center gap-1 rounded-sm bg-red-600 px-2 text-[10px] font-bold text-white hover:bg-red-700 disabled:opacity-50 cursor-pointer"
         >
-          <Mic className="h-3 w-3" /> GHI ÂM
+          <Mic className="h-3 w-3" /> {timerPhase === 'preparing' ? 'ĐANG CHUẨN BỊ' : 'GHI ÂM'}
         </button>
         <button
           type="button"
@@ -107,4 +110,3 @@ export function SpeakingAudioControls({
     </>
   );
 }
-

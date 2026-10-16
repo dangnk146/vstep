@@ -2,14 +2,19 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Dices, Mic, Settings } from 'lucide-react';
+import { Dices, LoaderCircle, Mic, Settings } from 'lucide-react';
 
 interface SpeakingHeaderProps {
   onRandomPrompt: () => void;
   onSubmitPractice: () => void;
+  isLoadingRandomPrompt: boolean;
 }
 
-export function SpeakingHeader({ onRandomPrompt, onSubmitPractice }: SpeakingHeaderProps) {
+export function SpeakingHeader({
+  onRandomPrompt,
+  onSubmitPractice,
+  isLoadingRandomPrompt,
+}: SpeakingHeaderProps) {
   return (
     <header className="flex h-10 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white">
       <div className="flex items-center gap-2 text-xs font-bold">
@@ -28,11 +33,15 @@ export function SpeakingHeader({ onRandomPrompt, onSubmitPractice }: SpeakingHea
         <button
           type="button"
           onClick={onRandomPrompt}
-          title="Lấy đề nói ngẫu nhiên"
-          aria-label="Lấy đề nói ngẫu nhiên"
-          className="grid h-8 w-8 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20 cursor-pointer"
+          disabled={isLoadingRandomPrompt}
+          title={isLoadingRandomPrompt ? 'Đang tải đề nói…' : 'Lấy đề nói ngẫu nhiên'}
+          aria-label={isLoadingRandomPrompt ? 'Đang tải đề nói' : 'Lấy đề nói ngẫu nhiên'}
+          aria-busy={isLoadingRandomPrompt}
+          className="grid h-8 w-8 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20 disabled:cursor-wait disabled:opacity-70"
         >
-          <Dices className="h-4 w-4" />
+          {isLoadingRandomPrompt
+            ? <LoaderCircle className="h-4 w-4 animate-spin" />
+            : <Dices className="h-4 w-4" />}
         </button>
         <button
           type="button"
@@ -45,4 +54,3 @@ export function SpeakingHeader({ onRandomPrompt, onSubmitPractice }: SpeakingHea
     </header>
   );
 }
-
