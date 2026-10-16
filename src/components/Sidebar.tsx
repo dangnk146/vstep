@@ -149,6 +149,8 @@ export default function Sidebar() {
         <nav aria-label="Bốn kỹ năng" className="absolute left-1/2 flex -translate-x-1/2 items-center justify-center gap-0.5">
           {skillItems.map(({ name, href, icon: Icon }) => {
             const active = pathname === href
+              || ((href === '/listening' || href === '/reading')
+                && pathname.startsWith(`${href}/`))
               || ((href === '/writing' || href === '/speaking')
                 && pathname.startsWith(`${href}/`)
                 && pathname !== `${href}/settings`);

@@ -434,7 +434,7 @@ export default function ListeningPage() {
   }
 
   return (
-    <div className="mx-auto -mb-24 flex h-[calc(100dvh-1rem)] min-h-[420px] w-full max-w-7xl flex-col overflow-hidden animate-fade-in sm:h-[calc(100dvh-1.25rem)] lg:-mb-7 lg:h-[calc(100dvh-1.75rem)] lg:min-h-[600px]">
+    <div className="-mx-3 -mb-24 flex h-[calc(100dvh-1rem)] min-h-[420px] w-[calc(100%+1.5rem)] flex-col overflow-hidden animate-fade-in sm:-mx-5 sm:w-[calc(100%+2.5rem)] sm:h-[calc(100dvh-1.25rem)] lg:-mx-8 lg:-mb-7 lg:h-[calc(100dvh-1.75rem)] lg:min-h-[600px] lg:w-[calc(100%+4rem)]">
       <h1 className="sr-only">VSTEP Listening</h1>
 
       <main className="grid min-h-0 flex-1 grid-rows-[auto_minmax(0,1fr)] gap-2 lg:grid-cols-2 lg:grid-rows-1 lg:gap-4">
