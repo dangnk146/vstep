@@ -5,7 +5,6 @@ import { usePathname, useRouter } from 'next/navigation';
 import { 
   Headphones, 
   Flag, 
-  CheckCircle,
   Check,
   ChevronLeft,
   ChevronRight,
@@ -22,50 +21,92 @@ const PARTS = [
   { id: 'part2', label: 'Part 2', start: 9, count: 12 },
   { id: 'part3', label: 'Part 3', start: 21, count: 15 },
 ] as const;
-type PartId = (typeof PARTS)[number]['id'];
-type AnswersByPart = Partial<Record<PartId, Record<number, string>>>;
 
-const ANSWER_KEY_STORAGE_KEY = 'vstep_listening_answer_keys_v1';
+type PartId = (typeof PARTS)[number]['id'];
+type AnswerKeysByVideo = Record<string, Record<number, string>>;
+
+const ANSWER_KEY_STORAGE_KEY_V1 = 'vstep_listening_answer_keys_v1';
+const ANSWER_KEY_STORAGE_KEY_V2 = 'vstep_listening_answer_keys_v2';
 const SAVE_CONFIRMATION_STORAGE_KEY = 'vstep_listening_skip_save_confirmation';
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value);
 }
 
-function loadListeningAnswerKeys(): { answerKeys: AnswersByPart; error: string } {
+function loadListeningAnswerKeys(): { answerKeys: AnswerKeysByVideo; error: string } {
   if (typeof window === 'undefined') return { answerKeys: {}, error: '' };
 
   try {
-    const savedAnswerKeys = localStorage.getItem(ANSWER_KEY_STORAGE_KEY);
-    if (!savedAnswerKeys) return { answerKeys: {}, error: '' };
-
-    const parsed: unknown = JSON.parse(savedAnswerKeys);
-    if (!isRecord(parsed)) {
-      throw new Error('Saved Listening answer keys have an invalid format.');
-    }
-
-    const restoredAnswerKeys: AnswersByPart = {};
-    for (const part of PARTS) {
-      const partAnswerKeys = parsed[part.id];
-      if (partAnswerKeys === undefined) continue;
-      if (!isRecord(partAnswerKeys)) {
-        throw new Error(`Saved answer key for ${part.label} has an invalid format.`);
+    const savedAnswerKeys = localStorage.getItem(ANSWER_KEY_STORAGE_KEY_V2);
+    if (savedAnswerKeys) {
+      const parsed: unknown = JSON.parse(savedAnswerKeys);
+      if (!isRecord(parsed)) {
+        throw new Error('Saved Listening answer keys have an invalid format.');
       }
 
-      const validAnswerKeys: Record<number, string> = {};
-      for (const [questionNumber, answer] of Object.entries(partAnswerKeys)) {
-        const number = Number(questionNumber);
-        const isValidQuestion = Number.isInteger(number)
-          && number >= part.start
-          && number < part.start + part.count;
-        if (!isValidQuestion || typeof answer !== 'string' || !['A', 'B', 'C', 'D'].includes(answer)) {
-          throw new Error(`Saved answer key for ${part.label}, question ${questionNumber} is invalid.`);
+      const restored: AnswerKeysByVideo = {};
+      for (const [vid, videoAnswers] of Object.entries(parsed)) {
+        if (!isRecord(videoAnswers)) continue;
+        const validAnswers: Record<number, string> = {};
+        for (const [qNum, ans] of Object.entries(videoAnswers)) {
+          const number = Number(qNum);
+          if (
+            Number.isInteger(number) &&
+            number >= 1 &&
+            number <= 35 &&
+            typeof ans === 'string' &&
+            ['A', 'B', 'C', 'D'].includes(ans)
+          ) {
+            validAnswers[number] = ans;
+          }
         }
-        validAnswerKeys[number] = answer;
+        if (Object.keys(validAnswers).length > 0) {
+          restored[vid] = validAnswers;
+        }
       }
-      restoredAnswerKeys[part.id] = validAnswerKeys;
+      return { answerKeys: restored, error: '' };
     }
-    return { answerKeys: restoredAnswerKeys, error: '' };
+
+    // Migrate from v1 if present
+    const oldSaved = localStorage.getItem(ANSWER_KEY_STORAGE_KEY_V1);
+    if (oldSaved) {
+      try {
+        const parsedOld: unknown = JSON.parse(oldSaved);
+        if (isRecord(parsedOld)) {
+          const restored: AnswerKeysByVideo = {};
+          for (const part of PARTS) {
+            const partAnswers = parsedOld[part.id];
+            if (!isRecord(partAnswers)) continue;
+            const firstVideoId = (videoData as Record<string, string[]>)[part.id]?.[0];
+            if (!firstVideoId) continue;
+            const validAnswers: Record<number, string> = {};
+            for (const [qNum, ans] of Object.entries(partAnswers)) {
+              const number = Number(qNum);
+              if (
+                Number.isInteger(number) &&
+                number >= part.start &&
+                number < part.start + part.count &&
+                typeof ans === 'string' &&
+                ['A', 'B', 'C', 'D'].includes(ans)
+              ) {
+                validAnswers[number] = ans;
+              }
+            }
+            if (Object.keys(validAnswers).length > 0) {
+              restored[firstVideoId] = validAnswers;
+            }
+          }
+          if (Object.keys(restored).length > 0) {
+            localStorage.setItem(ANSWER_KEY_STORAGE_KEY_V2, JSON.stringify(restored));
+            return { answerKeys: restored, error: '' };
+          }
+        }
+      } catch {
+        // ignore migration errors
+      }
+    }
+
+    return { answerKeys: {}, error: '' };
   } catch (error) {
     console.error('Could not restore saved Listening answer keys.', error);
     return {
@@ -157,36 +198,48 @@ export default function ListeningPage() {
     getClientHydrationSnapshot,
     getServerHydrationSnapshot,
   );
-  const [answersByPart, setAnswersByPart] = useState<AnswersByPart>({});
-  const [answerKeysByPart, setAnswerKeysByPart] = useState<AnswersByPart>(initialSavedAnswerKeys.answerKeys);
-  const [checkedPartId, setCheckedPartId] = useState<PartId | null>(null);
-  const [flags, setFlags] = useState<Record<number, boolean>>({});
+  const [answersByVideo, setAnswersByVideo] = useState<Record<string, Record<number, string>>>({});
+  const [flagsByVideo, setFlagsByVideo] = useState<Record<string, Record<number, boolean>>>({});
+  const [answerKeysByVideo, setAnswerKeysByVideo] = useState<AnswerKeysByVideo>(initialSavedAnswerKeys.answerKeys);
+  const [checkedVideoIds, setCheckedVideoIds] = useState<Set<string>>(new Set());
   const [isSaveDialogOpen, setIsSaveDialogOpen] = useState(false);
   const [skipSaveConfirmation, setSkipSaveConfirmation] = useState(false);
   const [feedback, setFeedback] = useState('');
   const [storageError, setStorageError] = useState(initialSavedAnswerKeys.error);
+
   const videoDialogRef = useRef<HTMLDialogElement>(null);
   const saveDialogRef = useRef<HTMLDialogElement>(null);
-  const examRef = useRef<HTMLDivElement>(null);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const playerRef = useRef<YouTubePlayer | null>(null);
   const [isPlayerReady, setIsPlayerReady] = useState(false);
   const [playerError, setPlayerError] = useState(false);
+
   const routeMatch = pathname.match(/^\/listening\/(part[123])\/video(\d+)$/);
+  const isVideoRoute = routeMatch !== null;
   const selectedPart = (routeMatch?.[1] ?? 'part1') as PartId;
   const selectedVideo = Number(routeMatch?.[2] ?? 1);
   const partInfo = PARTS.find((item) => item.id === selectedPart)!;
   const partVideos = videoData[selectedPart];
-  const videoId = partVideos[selectedVideo - 1];
+  const videoId = partVideos[selectedVideo - 1] ?? partVideos[0];
   const loadedVideoIdRef = useRef(videoId);
+
   const questionNumbers = Array.from(
     { length: partInfo.count },
     (_, index) => partInfo.start + index,
   );
-  const answers = answersByPart[selectedPart] ?? {};
-  const answerKey = isHydrated ? answerKeysByPart[selectedPart] ?? {} : {};
+  const answers = answersByVideo[videoId] ?? {};
+  const flags = flagsByVideo[videoId] ?? {};
+  const answerKey = isHydrated ? (answerKeysByVideo[videoId] ?? {}) : {};
+  const isChecked = checkedVideoIds.has(videoId);
+
+  const answeredCount = questionNumbers.filter((number) => answers[number]).length;
+  const flaggedCount = questionNumbers.filter((number) => flags[number]).length;
 
   useEffect(() => {
+    if (!isVideoRoute) {
+      return;
+    }
+
     let cancelled = false;
 
     loadYouTubeIframeApi()
@@ -215,7 +268,7 @@ export default function ListeningPage() {
       playerRef.current?.destroy();
       playerRef.current = null;
     };
-  }, []);
+  }, [isVideoRoute]);
 
   useEffect(() => {
     if (isPlayerReady && loadedVideoIdRef.current !== videoId) {
@@ -248,30 +301,30 @@ export default function ListeningPage() {
     if (!isSaveDialogOpen && dialog.open) dialog.close();
   }, [isSaveDialogOpen]);
 
-  useEffect(() => {
-    if (!pathname.match(/^\/listening\/part[123]\/video\d+$/)) {
-      return;
-    }
-
-    requestAnimationFrame(() => {
-      examRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    });
-  }, [pathname]);
-
   const handleSelectAnswer = (qNumber: number, option: string) => {
-    setAnswersByPart((previous) => ({
+    setAnswersByVideo((previous) => ({
       ...previous,
-      [selectedPart]: {
-        ...previous[selectedPart],
+      [videoId]: {
+        ...previous[videoId],
         [qNumber]: option,
       },
     }));
-    setCheckedPartId(null);
+    setCheckedVideoIds((previous) => {
+      const updated = new Set(previous);
+      updated.delete(videoId);
+      return updated;
+    });
     setFeedback('');
   };
 
   const toggleFlag = (qNumber: number) => {
-    setFlags(prev => ({ ...prev, [qNumber]: !prev[qNumber] }));
+    setFlagsByVideo((previous) => ({
+      ...previous,
+      [videoId]: {
+        ...previous[videoId],
+        [qNumber]: !previous[videoId]?.[qNumber],
+      },
+    }));
   };
 
   const navigateToVideo = useCallback((part: PartId, video: number) => {
@@ -290,30 +343,31 @@ export default function ListeningPage() {
     return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
   }, [navigateToVideo]);
 
-  const answeredCount = questionNumbers.filter((number) => answers[number]).length;
-  const flaggedCount = questionNumbers.filter((number) => flags[number]).length;
-
   const saveAnswers = () => {
-    const enteredAnswerKey = answersByPart[selectedPart] ?? {};
+    const enteredAnswerKey = answersByVideo[videoId] ?? {};
     if (Object.keys(enteredAnswerKey).length === 0) {
-      setFeedback('Hãy nhập ít nhất một đáp án chuẩn trước khi lưu.');
+      setFeedback('Hãy chọn ít nhất một đáp án chuẩn trước khi lưu.');
       return false;
     }
 
     try {
-      const updatedAnswerKeys: AnswersByPart = {
-        ...answerKeysByPart,
-        [selectedPart]: {
-          ...answerKeysByPart[selectedPart],
+      const updatedAnswerKeys: AnswerKeysByVideo = {
+        ...answerKeysByVideo,
+        [videoId]: {
+          ...(answerKeysByVideo[videoId] ?? {}),
           ...enteredAnswerKey,
         },
       };
-      localStorage.setItem(ANSWER_KEY_STORAGE_KEY, JSON.stringify(updatedAnswerKeys));
-      setAnswerKeysByPart(updatedAnswerKeys);
-      setAnswersByPart((previous) => ({ ...previous, [selectedPart]: {} }));
-      setCheckedPartId(null);
+      localStorage.setItem(ANSWER_KEY_STORAGE_KEY_V2, JSON.stringify(updatedAnswerKeys));
+      setAnswerKeysByVideo(updatedAnswerKeys);
+      setAnswersByVideo((previous) => ({ ...previous, [videoId]: {} }));
+      setCheckedVideoIds((previous) => {
+        const updated = new Set(previous);
+        updated.delete(videoId);
+        return updated;
+      });
       setStorageError('');
-      setFeedback(`Đã lưu ${Object.keys(enteredAnswerKey).length} đáp án chuẩn cho ${partInfo.label}. Các lựa chọn đã được xóa để bạn làm bài.`);
+      setFeedback(`Đã lưu ${Object.keys(enteredAnswerKey).length} đáp án chuẩn cho ${partInfo.label} · Video ${selectedVideo}.`);
       setIsSaveDialogOpen(false);
       return true;
     } catch (error) {
@@ -348,34 +402,207 @@ export default function ListeningPage() {
     }
   };
 
-  return (
-    <div className="flex flex-col space-y-6 w-full animate-fade-in pb-10">
-      <header className="border-b border-border pb-5">
-        <div className="flex items-center gap-4">
-          <div className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-primary/10 text-primary">
-            <Headphones className="h-6 w-6" />
-          </div>
-          <div>
-            <h1 className="text-2xl font-extrabold text-foreground">VSTEP Listening</h1>
-            <p className="mt-1 text-sm text-muted-foreground">Nghe playlist và chọn đáp án cho 35 câu hỏi</p>
-          </div>
-        </div>
-      </header>
+  const handleCheckAnswers = () => {
+    const comparableCount = questionNumbers.filter((number) => answerKey[number]).length;
+    if (comparableCount === 0) {
+      setFeedback(`Chưa có đáp án chuẩn cho Video ${selectedVideo}. Hãy chọn đáp án rồi bấm Lưu đáp án trước.`);
+      return;
+    }
 
-      <div ref={examRef} className="grid scroll-mt-0 grid-cols-1 items-start gap-5 xl:grid-cols-[minmax(24rem,3fr)_minmax(0,7fr)]">
-        <section className="order-2 flex min-w-0 flex-col rounded-xl border border-border bg-card p-4 sm:p-5 lg:order-1" aria-labelledby="answers-heading">
-          <div className="flex items-center justify-between border-b border-border pb-4">
-            <h2 id="answers-heading" className="flex items-center gap-2 font-extrabold">
-              <CheckCircle className="h-5 w-5 text-primary" />
-              <span>{partInfo.label} · Trắc nghiệm</span>
-            </h2>
-            <div className="flex gap-3 text-xs font-semibold text-muted-foreground">
-              <span>Đã làm: <strong className="text-primary">{answeredCount}/{partInfo.count}</strong></span>
-              <span>Đánh dấu: <strong className="text-amber-500">{flaggedCount}</strong></span>
+    const correctCount = questionNumbers.filter((number) => (
+      answers[number] && answerKey[number] && answers[number] === answerKey[number]
+    )).length;
+    const incorrectCount = questionNumbers.filter((number) => (
+      answers[number] && answerKey[number] && answers[number] !== answerKey[number]
+    )).length;
+    const unansweredCount = questionNumbers.filter((number) => !answers[number]).length;
+    const missingKeyCount = partInfo.count - comparableCount;
+    const missingMessage = missingKeyCount > 0
+      ? ` (Chưa có đáp án chuẩn cho ${missingKeyCount} câu)`
+      : '';
+
+    setCheckedVideoIds((previous) => new Set(previous).add(videoId));
+    setFeedback(`Đúng: ${correctCount} · Sai: ${incorrectCount} · Chưa làm: ${unansweredCount}${missingMessage}`);
+  };
+
+  if (!isVideoRoute) {
+    return (
+      <div className="sr-only" role="status">
+        Đang mở bài nghe…
+      </div>
+    );
+  }
+
+  return (
+    <div className="mx-auto -mb-24 flex h-[calc(100dvh-1rem)] min-h-[420px] w-full max-w-7xl flex-col overflow-hidden animate-fade-in sm:h-[calc(100dvh-1.25rem)] lg:-mb-7 lg:h-[calc(100dvh-1.75rem)] lg:min-h-[600px]">
+      <h1 className="sr-only">VSTEP Listening</h1>
+
+      <main className="grid min-h-0 flex-1 grid-rows-[auto_minmax(0,1fr)] gap-2 lg:grid-cols-2 lg:grid-rows-1 lg:gap-4">
+        {/* Video Section */}
+        <section
+          className="order-1 flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-card lg:order-1"
+          aria-labelledby="video-section-heading"
+        >
+          {/* Video Header */}
+          <div className="flex shrink-0 items-center justify-between gap-2 border-b border-border bg-[#245b86] px-2 py-1.5 text-white sm:px-3 lg:px-4 lg:py-2">
+            <div className="flex min-w-0 items-center gap-1.5 sm:gap-2">
+              <h2 id="video-section-heading" className="truncate text-xs font-extrabold sm:text-sm">
+                {partInfo.label}
+              </h2>
+              <span className="text-[10px] font-bold text-white/80">
+                ({selectedVideo}/{partVideos.length})
+              </span>
+            </div>
+            <div className="flex shrink-0 items-center gap-1">
+              <button
+                type="button"
+                onClick={() => navigateToVideo(selectedPart, selectedVideo - 1)}
+                disabled={selectedVideo <= 1}
+                aria-label="Video trước"
+                className="grid h-7 w-7 place-items-center rounded text-white/80 transition-colors hover:bg-white/15 hover:text-white disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </button>
+              <button
+                type="button"
+                onClick={() => videoDialogRef.current?.showModal()}
+                aria-haspopup="dialog"
+                className="flex h-7 items-center gap-1 rounded bg-white/15 px-2 text-[11px] font-extrabold text-white transition-colors hover:bg-white/25 cursor-pointer"
+              >
+                <Film className="h-3.5 w-3.5" />
+                <span>Video {selectedVideo}</span>
+              </button>
+              <button
+                type="button"
+                onClick={() => navigateToVideo(selectedPart, selectedVideo + 1)}
+                disabled={selectedVideo >= partVideos.length}
+                aria-label="Video tiếp theo"
+                className="grid h-7 w-7 place-items-center rounded text-white/80 transition-colors hover:bg-white/15 hover:text-white disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </button>
             </div>
           </div>
 
-          <div className="grid content-start grid-cols-1 gap-2 py-3">
+          {/* YouTube Video Player */}
+          <div className="relative aspect-video w-full shrink-0 bg-black">
+            <iframe
+              ref={iframeRef}
+              className="h-full w-full"
+              src={`https://www.youtube.com/embed/${videoId}?rel=0&enablejsapi=1`}
+              title={`${partInfo.label}, video ${selectedVideo}`}
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+
+          {/* Compact Jump Minutes */}
+          <div className="flex shrink-0 items-center justify-center gap-1 border-t border-border bg-muted/20 px-2 py-1 sm:gap-2 sm:py-1.5">
+            <span className="hidden text-[10px] font-bold text-muted-foreground sm:inline">Tua nhanh:</span>
+            {VIDEO_JUMP_MINUTES.map((minute) => (
+              <button
+                key={minute}
+                type="button"
+                onClick={() => seekVideoToMinute(minute)}
+                disabled={!isPlayerReady}
+                aria-label={`Tua đến phút thứ ${minute}`}
+                className="h-6 min-w-8 rounded border border-border bg-card px-1.5 text-[10px] font-bold text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-40 sm:h-7 sm:px-2.5 sm:text-xs"
+              >
+                <span className="sm:hidden">{minute}p</span>
+                <span className="hidden sm:inline">{minute} phút</span>
+              </button>
+            ))}
+          </div>
+
+          {playerError && (
+            <p role="status" className="px-2 py-1 text-center text-[10px] text-muted-foreground">
+              Không tải được bộ điều khiển YouTube; nút tua không khả dụng.
+            </p>
+          )}
+
+          {/* Filler note on Desktop */}
+          <div className="hidden min-h-0 flex-1 flex-col items-center justify-center p-4 text-center text-xs text-muted-foreground lg:flex">
+            <Headphones className="mb-2 h-8 w-8 text-primary/40" />
+            <p className="font-semibold text-foreground/80">
+              {partInfo.label}: {partInfo.count} câu hỏi (Câu {partInfo.start} - {partInfo.start + partInfo.count - 1})
+            </p>
+            <p className="mt-1 max-w-xs text-muted-foreground/80">
+              Lắng nghe kỹ đoạn băng và chọn đáp án ở khung bên phải.
+            </p>
+          </div>
+        </section>
+
+        {/* Questions Section */}
+        <section
+          className="order-2 flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-card lg:order-2"
+          aria-labelledby="answers-heading"
+        >
+          {/* Question Header with Title, Stats, and Actions */}
+          <div className="flex shrink-0 items-center justify-between gap-1.5 border-b border-border bg-[#245b86] px-2 py-1.5 text-white sm:px-3 lg:px-4 lg:py-2">
+            <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
+              <h2 id="answers-heading" className="truncate text-xs font-extrabold lg:text-sm">
+                <span className="sm:hidden">{partInfo.label}</span>
+                <span className="hidden sm:inline">{partInfo.label} · Trắc nghiệm</span>
+              </h2>
+              <div className="flex items-center gap-1.5 text-[10px] font-semibold sm:gap-2.5 sm:text-xs">
+                <span>
+                  Làm: <strong className="text-white">{answeredCount}/{partInfo.count}</strong>
+                </span>
+                <span>
+                  Dấu: <strong className="text-amber-300">{flaggedCount}</strong>
+                </span>
+              </div>
+            </div>
+
+            <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">
+              <button
+                type="button"
+                onClick={handleSaveClick}
+                aria-label={`Lưu đáp án ${partInfo.label} Video ${selectedVideo}`}
+                title="Lưu đáp án chuẩn cho video này"
+                className="grid h-7 w-7 place-items-center rounded bg-white/15 text-white transition-colors hover:bg-white/25 sm:w-auto sm:px-2 sm:gap-1 sm:inline-flex sm:items-center sm:text-[11px] sm:font-bold cursor-pointer"
+              >
+                <Save className="h-3.5 w-3.5" />
+                <span className="hidden sm:inline">Lưu</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleCheckAnswers}
+                className="inline-flex h-7 items-center gap-1 rounded bg-white px-2 text-[10px] font-extrabold text-[#245b86] transition-colors hover:bg-blue-50 sm:px-2.5 sm:text-xs cursor-pointer shadow-sm"
+              >
+                <Check className="h-3.5 w-3.5 text-[#245b86]" />
+                <span>Kiểm tra</span>
+              </button>
+            </div>
+          </div>
+
+          {/* Conditional Feedback Banner */}
+          {(feedback || (isHydrated && storageError)) && (
+            <div className="flex shrink-0 items-start justify-between gap-2 border-b border-border bg-muted/80 px-3 py-2 text-xs">
+              <p
+                className={`flex-1 text-xs leading-relaxed ${isHydrated && storageError ? 'font-medium text-red-600 dark:text-red-400' : 'text-foreground'}`}
+                role={isHydrated && storageError ? 'alert' : 'status'}
+              >
+                {(isHydrated && storageError) || feedback}
+              </p>
+              <button
+                type="button"
+                onClick={() => {
+                  setFeedback('');
+                  setStorageError('');
+                }}
+                className="grid h-5 w-5 shrink-0 place-items-center rounded text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
+                aria-label="Đóng thông báo"
+              >
+                <X className="h-3.5 w-3.5" />
+              </button>
+            </div>
+          )}
+
+          {/* Scrollable Questions List */}
+          <div className="min-h-0 flex-1 overflow-y-auto p-2 pb-28 space-y-1.5 sm:p-3 sm:pb-32 lg:p-4 lg:pb-36 sm:space-y-2">
             {questionNumbers.map((qNum) => {
               const selectedOpt = answers[qNum];
               const isFlagged = flags[qNum];
@@ -383,14 +610,14 @@ export default function ListeningPage() {
               return (
                 <div
                   key={qNum}
-                  className={`flex min-h-12 items-center gap-2 rounded-lg border px-2.5 transition-colors ${selectedOpt ? 'border-primary/30 bg-primary/5' : 'border-border'}`}
+                  className={`flex min-h-10 items-center gap-1.5 rounded-lg border px-2 py-1 transition-colors sm:min-h-11 sm:gap-2 sm:px-2.5 ${selectedOpt ? 'border-primary/30 bg-primary/5' : 'border-border'}`}
                 >
-                  <span className="w-8 shrink-0 text-xs font-bold text-muted-foreground">{qNum}.</span>
+                  <span className="w-6 shrink-0 text-xs font-bold text-muted-foreground sm:w-7">{qNum}.</span>
                   <div className="grid flex-1 grid-cols-4 gap-1">
                     {(['A', 'B', 'C', 'D'] as const).map((opt) => {
                       const isSelected = selectedOpt === opt;
-                      const isCorrect = checkedPartId === selectedPart && answerKey[qNum] === opt;
-                      const isWrongSelection = checkedPartId === selectedPart
+                      const isCorrect = isChecked && answerKey[qNum] === opt;
+                      const isWrongSelection = isChecked
                         && isSelected
                         && answerKey[qNum] !== undefined
                         && !isCorrect;
@@ -398,10 +625,11 @@ export default function ListeningPage() {
                       return (
                         <button
                           key={opt}
+                          type="button"
                           onClick={() => handleSelectAnswer(qNum, opt)}
                           aria-pressed={isSelected}
                           aria-label={`Câu ${qNum}, đáp án ${opt}`}
-                          className={`h-8 rounded-md text-xs font-bold transition-colors cursor-pointer ${
+                          className={`h-7 rounded-md text-xs font-bold transition-colors cursor-pointer sm:h-8 ${
                             isCorrect
                               ? 'bg-emerald-600 text-white hover:bg-emerald-700'
                               : isWrongSelection
@@ -417,187 +645,69 @@ export default function ListeningPage() {
                     })}
                   </div>
                   <button
+                    type="button"
                     onClick={() => toggleFlag(qNum)}
                     aria-label={isFlagged ? `Bỏ đánh dấu câu ${qNum}` : `Đánh dấu câu ${qNum} để xem lại`}
                     aria-pressed={Boolean(isFlagged)}
-                    className={`grid h-8 w-8 shrink-0 place-items-center rounded-md transition-colors cursor-pointer ${isFlagged ? 'text-amber-500' : 'text-muted-foreground/40 hover:text-amber-500'}`}
+                    className={`grid h-7 w-7 shrink-0 place-items-center rounded-md transition-colors cursor-pointer sm:h-8 sm:w-8 ${isFlagged ? 'text-amber-500' : 'text-muted-foreground/40 hover:text-amber-500'}`}
                     title="Đánh dấu xem lại"
                   >
-                    <Flag className="h-4 w-4" />
+                    <Flag className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
                   </button>
                 </div>
               );
             })}
-          </div>
 
-          <div className="mt-auto border-t border-border pt-3">
-            <div className="flex items-center justify-end gap-2">
+            {/* Bottom spacer so the last questions are completely clear of the floating tabs and tabbar */}
+            <div className="h-28 sm:h-32 lg:h-36 shrink-0" aria-hidden="true" />
+          </div>
+        </section>
+      </main>
+
+      {/* Video Selection Dialog */}
+      <dialog
+        ref={videoDialogRef}
+        aria-labelledby="video-picker-heading"
+        className="m-auto w-[min(92vw,36rem)] max-w-none rounded-xl border border-border bg-card p-0 text-foreground shadow-2xl backdrop:bg-black/60"
+      >
+        <div className="flex items-center justify-between border-b border-border px-4 py-3">
+          <div>
+            <h3 id="video-picker-heading" className="font-bold">Chọn video · {partInfo.label}</h3>
+            <p className="text-xs text-muted-foreground">{partVideos.length} video luyện nghe</p>
+          </div>
+          <button
+            type="button"
+            onClick={() => videoDialogRef.current?.close()}
+            aria-label="Đóng danh sách video"
+            className="grid h-8 w-8 place-items-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
+          >
+            <X className="h-4 w-4" />
+          </button>
+        </div>
+        <div className="grid max-h-[min(65vh,34rem)] grid-cols-3 gap-2 overflow-y-auto p-4 sm:grid-cols-4">
+          {partVideos.map((_, index) => {
+            const videoNumber = index + 1;
+            const isSelected = videoNumber === selectedVideo;
+
+            return (
               <button
-                type="button"
-                onClick={handleSaveClick}
-                aria-label={`Lưu đáp án ${partInfo.label}`}
-                title="Lưu đáp án"
-                className="grid h-8 w-8 place-items-center rounded-md border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
-              >
-                <Save className="h-4 w-4" />
-              </button>
-              <button
+                key={videoNumber}
                 type="button"
                 onClick={() => {
-                  const comparableCount = questionNumbers.filter((number) => answerKey[number]).length;
-                  if (comparableCount === 0) {
-                    setFeedback(`Chưa có đáp án chuẩn cho ${partInfo.label}. Nhập đáp án chuẩn rồi bấm Lưu trước.`);
-                    return;
-                  }
-
-                  const correctCount = questionNumbers.filter((number) => (
-                    answers[number] && answerKey[number] && answers[number] === answerKey[number]
-                  )).length;
-                  const incorrectCount = questionNumbers.filter((number) => (
-                    answers[number] && answerKey[number] && answers[number] !== answerKey[number]
-                  )).length;
-                  const unansweredCount = questionNumbers.filter((number) => !answers[number]).length;
-                  const missingKeyCount = partInfo.count - comparableCount;
-                  const missingMessage = missingKeyCount > 0
-                    ? ` Chưa có đáp án chuẩn cho ${missingKeyCount} câu.`
-                    : '';
-
-                  setCheckedPartId(selectedPart);
-                  setFeedback(`Đúng: ${correctCount} · Sai: ${incorrectCount} · Chưa làm: ${unansweredCount}.${missingMessage}`);
+                  navigateToVideo(selectedPart, videoNumber);
+                  videoDialogRef.current?.close();
                 }}
-                className="inline-flex h-8 items-center gap-1 rounded-md bg-primary px-2.5 text-[11px] font-bold text-primary-foreground transition-colors hover:bg-primary/90"
+                aria-pressed={isSelected}
+                className={`min-h-10 rounded-lg border px-2 text-xs sm:text-sm font-semibold transition-colors cursor-pointer ${isSelected ? 'border-primary bg-primary text-primary-foreground' : 'border-border bg-card text-foreground hover:border-primary/40 hover:bg-primary/5'}`}
               >
-                <Check className="h-4 w-4" />
-                Kiểm tra đáp án
+                Video {videoNumber}
               </button>
-            </div>
-            {(feedback || (isHydrated && storageError)) && (
-              <p className={`mt-2 text-right text-xs ${isHydrated && storageError ? 'text-red-600 dark:text-red-400' : 'text-muted-foreground'}`} role={isHydrated && storageError ? 'alert' : 'status'}>
-                {(isHydrated && storageError) || feedback}
-              </p>
-            )}
-          </div>
-        </section>
+            );
+          })}
+        </div>
+      </dialog>
 
-        <section className="order-1 -mx-3 w-[calc(100%+1.5rem)] min-w-0 overflow-hidden border-y border-border bg-card sm:mx-0 sm:w-auto sm:rounded-xl sm:border lg:order-2" aria-labelledby="playlist-heading">
-          <div className="flex items-center justify-between gap-3 border-b border-border p-4 sm:p-5">
-            <div>
-              <h2 id="playlist-heading" className="font-extrabold">{partInfo.label} · Video {selectedVideo}</h2>
-              <p className="mt-1 text-xs text-muted-foreground">{selectedVideo}/{partVideos.length} video</p>
-            </div>
-            <div className="flex items-center gap-1">
-              <button
-                onClick={() => navigateToVideo(selectedPart, selectedVideo - 1)}
-                disabled={selectedVideo <= 1}
-                aria-label="Video trước"
-                className="grid h-9 w-9 place-items-center rounded-md border border-border text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-40"
-              >
-                <ChevronLeft className="h-4 w-4" />
-              </button>
-              <button
-                onClick={() => videoDialogRef.current?.showModal()}
-                aria-haspopup="dialog"
-                className="flex h-9 items-center gap-2 rounded-md border border-border bg-card px-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-muted cursor-pointer"
-              >
-                <Film className="h-4 w-4 text-primary" />
-                <span>Video {selectedVideo}</span>
-              </button>
-              <button
-                onClick={() => navigateToVideo(selectedPart, selectedVideo + 1)}
-                disabled={selectedVideo >= partVideos.length}
-                aria-label="Video tiếp theo"
-                className="grid h-9 w-9 place-items-center rounded-md border border-border text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-40"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </button>
-            </div>
-          </div>
-          <dialog
-            ref={videoDialogRef}
-            aria-labelledby="video-picker-heading"
-            className="m-auto w-[min(92vw,36rem)] max-w-none rounded-xl border border-border bg-card p-0 text-foreground shadow-2xl backdrop:bg-black/60"
-          >
-            <div className="flex items-center justify-between border-b border-border px-4 py-3">
-              <div>
-                <h3 id="video-picker-heading" className="font-bold">Chọn video · {partInfo.label}</h3>
-                <p className="text-xs text-muted-foreground">{partVideos.length} video luyện nghe</p>
-              </div>
-              <button
-                onClick={() => videoDialogRef.current?.close()}
-                aria-label="Đóng danh sách video"
-                className="grid h-9 w-9 place-items-center rounded-md text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
-              >
-                <X className="h-4 w-4" />
-              </button>
-            </div>
-            <div className="grid max-h-[min(65vh,34rem)] grid-cols-3 gap-2 overflow-y-auto p-4 sm:grid-cols-4">
-              {partVideos.map((_, index) => {
-                const videoNumber = index + 1;
-                const isSelected = videoNumber === selectedVideo;
-
-                return (
-                  <button
-                    key={videoNumber}
-                    onClick={() => {
-                      navigateToVideo(selectedPart, videoNumber);
-                      videoDialogRef.current?.close();
-                    }}
-                    aria-pressed={isSelected}
-                    className={`min-h-11 rounded-lg border px-2 text-sm font-semibold transition-colors cursor-pointer ${isSelected ? 'border-primary bg-primary text-primary-foreground' : 'border-border bg-card text-foreground hover:border-primary/40 hover:bg-primary/5'}`}
-                  >
-                    Video {videoNumber}
-                  </button>
-                );
-              })}
-            </div>
-          </dialog>
-          <div className="aspect-video w-full bg-black">
-            <iframe
-              ref={iframeRef}
-              className="h-full w-full"
-              src={`https://www.youtube.com/embed/${videoId}?rel=0&enablejsapi=1`}
-              title={`${partInfo.label}, video ${selectedVideo}`}
-              loading="lazy"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-          </div>
-          <div className="grid grid-cols-3 gap-2 border-t border-border px-3 py-3 sm:grid-cols-5">
-            {VIDEO_JUMP_MINUTES.map((minute) => {
-              return (
-                <button
-                  key={minute}
-                  type="button"
-                  onClick={() => seekVideoToMinute(minute)}
-                  disabled={!isPlayerReady}
-                  aria-label={`Tua đến phút thứ ${minute}`}
-                  className={`flex min-h-9 w-full items-center justify-center rounded-md border border-border bg-card px-3 text-xs font-semibold text-foreground transition-colors hover:bg-muted disabled:cursor-not-allowed disabled:opacity-50 ${minute === 4 || minute === 5 ? 'hidden sm:flex' : ''}`}
-                >
-                  {minute} phút
-                </button>
-              );
-            })}
-          </div>
-          {playerError && (
-            <p role="status" className="px-4 pb-2 text-xs text-muted-foreground">
-              Không tải được bộ điều khiển YouTube; video vẫn có thể xem nhưng nút tua không khả dụng.
-            </p>
-          )}
-          <div className="flex items-center justify-between gap-2 border-t border-border px-4 py-2">
-            <span className="text-xs text-muted-foreground">Video luyện tập {selectedVideo}</span>
-            <a
-              href={`https://www.youtube.com/watch?v=${videoId}`}
-              target="_blank"
-              rel="noreferrer"
-              className="shrink-0 text-xs font-semibold text-primary underline-offset-4 hover:underline"
-            >
-              Mở YouTube
-            </a>
-          </div>
-        </section>
-      </div>
-
+      {/* Save Answer Key Dialog */}
       <dialog
         ref={saveDialogRef}
         aria-labelledby="save-answers-heading"
@@ -609,9 +719,9 @@ export default function ListeningPage() {
       >
         <div className="space-y-4 p-5">
           <div>
-            <h2 id="save-answers-heading" className="font-extrabold">Lưu đáp án chuẩn {partInfo.label}?</h2>
+            <h2 id="save-answers-heading" className="font-extrabold">Lưu đáp án chuẩn {partInfo.label} · Video {selectedVideo}?</h2>
             <p className="mt-1 text-sm text-muted-foreground">
-              Các lựa chọn hiện tại sẽ được lưu trên trình duyệt làm đáp án chuẩn để đối chiếu. Sau khi lưu, màn hình sẽ được xóa lựa chọn để bạn làm bài.
+              Các lựa chọn hiện tại sẽ được lưu làm đáp án chuẩn cho video này để đối chiếu khi làm bài. Sau khi lưu, màn hình sẽ được xóa lựa chọn để bạn bắt đầu nghe và làm bài.
             </p>
           </div>
           <label className="flex items-center gap-2 text-sm text-foreground">
