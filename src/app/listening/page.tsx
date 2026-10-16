@@ -427,7 +427,7 @@ export default function ListeningPage() {
 
   if (!isVideoRoute) {
     return (
-      <div className="sr-only" role="status">
+      <div className="flex h-[30vh] min-h-[120px] items-center justify-center text-sm text-muted-foreground" role="status">
         Đang mở bài nghe…
       </div>
     );
