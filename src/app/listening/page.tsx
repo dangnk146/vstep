@@ -15,11 +15,11 @@ import {
 import videoData from './listvideo.json';
 
 const YOUTUBE_IFRAME_API_URL = 'https://www.youtube.com/iframe_api';
-const VIDEO_JUMP_MINUTES = [2, 3, 4, 5, 6] as const;
+const VIDEO_JUMP_MINUTES = [2, 3, 4, 5, 6, 8, 10, 12] as const;
 const PARTS = [
   { id: 'part1', label: 'Part 1', start: 1, count: 8 },
-  { id: 'part2', label: 'Part 2', start: 9, count: 12 },
-  { id: 'part3', label: 'Part 3', start: 21, count: 15 },
+  { id: 'part2', label: 'Part 2', start: 1, count: 12 },
+  { id: 'part3', label: 'Part 3', start: 1, count: 15 },
 ] as const;
 
 type PartId = (typeof PARTS)[number]['id'];
