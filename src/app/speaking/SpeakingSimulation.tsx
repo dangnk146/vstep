@@ -34,6 +34,7 @@ export default function SpeakingSimulation() {
     audioRef,
     startRecording,
     stopMedia,
+    clearRecording,
   } = useSpeakingAudio(activePart);
 
   const {
@@ -115,6 +116,7 @@ export default function SpeakingSimulation() {
     setTimerPhase('idle');
     setIsSubmitted(false);
     stopMedia(true);
+    void clearRecording();
     setRemainingTimes({
       part1: getSeconds('part1'),
       part2: getSeconds('part2'),

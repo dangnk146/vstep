@@ -167,6 +167,10 @@ export function useSpeakingAudio(partKey: string = 'part1') {
   };
 
   const clearRecording = async () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
     await deleteAudioRecording(currentPartKeyRef.current);
     if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
     audioUrlRef.current = null;

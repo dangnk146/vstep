@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { AlertCircle, Download, Mic, RotateCcw, Square, Volume2 } from 'lucide-react';
+import { AlertCircle, Download, Mic, RotateCcw, Square } from 'lucide-react';
 import type { RecorderStatus, TimerPhase } from '../types';
 
 interface SpeakingAudioControlsProps {
@@ -77,17 +77,6 @@ export function SpeakingAudioControls({
           <Square className="h-3 w-3" /> DỪNG
         </button>
 
-        <button
-          type="button"
-          onClick={() => void audioRef.current?.play()}
-          disabled={!audioUrl}
-          className="grid h-7 w-7 place-items-center rounded-xs border border-border bg-card text-foreground transition hover:bg-muted active:scale-95 disabled:opacity-50 cursor-pointer shadow-xs"
-          aria-label="Phát bản ghi"
-          title="Phát bản ghi"
-        >
-          <Volume2 className="h-3.5 w-3.5" />
-        </button>
-
         {audioUrl && (
           <a
             href={audioUrl}
@@ -104,8 +93,8 @@ export function SpeakingAudioControls({
           type="button"
           onClick={onResetTimers}
           className="grid h-7 w-7 place-items-center rounded-xs border border-border bg-card text-muted-foreground transition hover:bg-muted hover:text-foreground active:scale-95 cursor-pointer shadow-xs"
-          title="Đặt lại bộ đếm"
-          aria-label="Đặt lại bộ đếm"
+          title="Đặt lại và xóa bản ghi âm"
+          aria-label="Đặt lại và xóa bản ghi âm"
         >
           <RotateCcw className="h-3.5 w-3.5" />
         </button>
