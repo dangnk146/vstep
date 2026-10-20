@@ -36,7 +36,7 @@ export default function RootLayout({
             <Suspense fallback={null}>
               <Sidebar />
             </Suspense>
-            <main className="min-h-0 flex-1 overflow-y-auto px-3 py-4 pb-24 sm:px-5 sm:py-5 lg:px-8 lg:py-7">
+            <main className="min-h-0 flex-1 overflow-y-auto px-1 pt-0 pb-20 sm:px-3 sm:pt-0 lg:px-4 lg:pt-0">
               {children}
             </main>
           </div>

@@ -43,6 +43,7 @@ const EDITOR_EXTENSIONS = [
     "&": {
       height: "100%",
       backgroundColor: "transparent",
+      color: "var(--foreground)",
     },
     ".cm-scroller": {
       fontFamily: "var(--font-mono), monospace",
@@ -59,6 +60,22 @@ const EDITOR_EXTENSIONS = [
     ".cm-content": {
       padding: "16px",
       caretColor: "var(--foreground)",
+      color: "var(--foreground)",
+    },
+    ".cm-line": {
+      color: "var(--foreground)",
+    },
+    ".cm-cursor, &.cm-focused .cm-cursor": {
+      borderLeftColor: "var(--foreground) !important",
+    },
+    "&.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, .cm-selectionBackground": {
+      backgroundColor: "var(--selection-bg, #bae6fd) !important",
+    },
+    ".cm-selectionMatch": {
+      backgroundColor: "var(--selection-match-bg, rgba(2, 132, 199, 0.2)) !important",
+    },
+    ".cm-placeholder": {
+      color: "var(--muted-foreground) !important",
     },
     ".cm-gutterElement": {
       paddingRight: "8px",
@@ -361,205 +378,250 @@ export default function WritingPage() {
   const diffStats = activeDiffResult ? getStats(activeDiffResult) : null;
 
   return (
-    <div className="mx-auto flex w-full max-w-6xl flex-col space-y-4 animate-fade-in pb-10">
-      {/* Header */}
-      <div className="flex flex-col gap-3 overflow-hidden rounded-md border border-border bg-card shadow-sm">
-        <div className="flex flex-wrap items-center justify-between gap-3 bg-[#245b86] px-4 py-3 text-white sm:px-5">
-          <div className="flex items-center gap-2 text-sm font-bold">
-            <PenTool className="h-4 w-4" />
-            <h1>VSTEP Writing</h1>
-          </div>
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              onClick={() => void handleRandomPrompt()}
-              disabled={isLoadingRandomPrompt}
-              title={isLoadingRandomPrompt ? 'Đang tải đề viết…' : 'Lấy đề viết ngẫu nhiên'}
-              aria-label={isLoadingRandomPrompt ? 'Đang tải đề viết' : 'Lấy đề viết ngẫu nhiên'}
-              aria-busy={isLoadingRandomPrompt}
-              className="grid h-9 w-9 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20 disabled:cursor-wait disabled:opacity-70"
-            >
-              {isLoadingRandomPrompt
-                ? <LoaderCircle className="h-5 w-5 animate-spin" />
-                : <Dices className="h-5 w-5" />}
-            </button>
-            <Link
-              href="/writing/settings"
-              title="Cấu hình Writing"
-              aria-label="Cấu hình Writing"
-              className="grid h-9 w-9 place-items-center rounded-sm border border-white/30 bg-white/10 transition hover:bg-white/20"
-            >
-              <Settings className="h-4 w-4" />
-            </Link>
-          </div>
+    <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-4">
+      {/* Top Header */}
+      <header className="flex h-9 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white shadow-xs">
+        <div className="flex items-center gap-2 text-xs font-bold sm:text-sm">
+          <PenTool className="h-4 w-4" />
+          <span>VSTEP Writing</span>
         </div>
 
-      </div>
+        <div className="flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={() => void handleRandomPrompt()}
+            disabled={isLoadingRandomPrompt}
+            title={isLoadingRandomPrompt ? 'Đang tải đề viết…' : 'Lấy đề viết ngẫu nhiên'}
+            aria-label={isLoadingRandomPrompt ? 'Đang tải đề viết' : 'Lấy đề viết ngẫu nhiên'}
+            aria-busy={isLoadingRandomPrompt}
+            className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20 disabled:cursor-wait disabled:opacity-70 cursor-pointer"
+          >
+            {isLoadingRandomPrompt ? <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> : <Dices className="h-3.5 w-3.5" />}
+          </button>
+          <Link
+            href="/writing/settings"
+            title="Cấu hình Writing"
+            aria-label="Cấu hình Writing"
+            className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20"
+          >
+            <Settings className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+      </header>
 
       {/* Warning if no template */}
       {!activeTemplate.trim() && (
-        <div className="flex items-center gap-3 p-4 bg-amber-500/10 border border-amber-500/20 text-amber-650 dark:text-amber-500 rounded-xl text-sm font-semibold">
-          <AlertCircle className="h-5 w-5 shrink-0 animate-bounce" />
-          <div className="flex-1">
-            {activeTask === 'free' ? (
-              <span>Bạn chưa thêm đề viết tự do nào trong Cài Đặt, hoặc chưa chọn đề thi để luyện tập. Hãy thêm đề tự do để tiến hành gõ đối chiếu!</span>
-            ) : (
-              <span>Bạn chưa cấu hình bài mẫu cho <strong>{activeTask === 'task1' ? 'Task 1' : 'Task 2'}</strong>. Hãy tạo cấu hình mẫu để so khớp kết quả gõ!</span>
-            )}
+        <div className="flex items-center justify-between gap-2 rounded-xs border border-amber-500/30 bg-amber-500/10 px-3 py-1.5 text-xs font-medium text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-2">
+            <AlertCircle className="h-3.5 w-3.5 shrink-0" />
+            <span>
+              Chưa có bài mẫu cho <strong>{activeTask === 'task1' ? 'Task 1' : activeTask === 'task2' ? 'Task 2' : 'Tự do'}</strong>. Cài đặt mẫu để so khớp đáp án chi tiết!
+            </span>
           </div>
-          <Link href="/writing/settings" className="px-3.5 py-1.5 bg-amber-500 hover:bg-amber-600 text-white rounded-lg text-xs font-bold transition-all whitespace-nowrap cursor-pointer">
-            {activeTask === 'free' ? 'Thêm Đề Tự Do' : 'Cài Đặt Mẫu'}
+          <Link href="/writing/settings" className="rounded-xs bg-amber-500 px-2 py-0.5 text-[11px] font-bold text-white hover:bg-amber-600 whitespace-nowrap">
+            Cài Đặt Mẫu
           </Link>
         </div>
       )}
 
-      {bankPrompt && (
-        <section className="overflow-hidden rounded-md border border-border bg-card" aria-labelledby="bank-prompt-heading">
-          <div className="border-b border-border bg-muted/70 px-4 py-2">
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-wide text-primary">Đề thi · {activeTask === 'task1' ? 'Writing Task 1' : 'Writing Task 2'}</p>
-              <h2 id="bank-prompt-heading" className="mt-0.5 text-sm font-bold text-foreground">{bankPrompt.title}</h2>
+      {/* Prompt Section (Compact, boxed stimulus) */}
+      <section className="rounded-sm border border-border bg-card px-3 py-2 text-foreground shadow-xs sm:px-4 sm:py-2.5">
+        <p className="text-[11px] font-semibold text-muted-foreground sm:text-xs">
+          You should spend about {activeTask === 'task1' ? '20' : '40'} minutes on this task.
+        </p>
+
+        {bankPrompt ? (
+          <div className="mt-1 space-y-1.5 text-xs sm:text-[13px]">
+            <h2 className="font-bold text-foreground">{bankPrompt.title}</h2>
+            <div className="max-h-[130px] overflow-y-auto rounded-xs border border-border/80 bg-muted/20 p-2.5 text-xs italic leading-relaxed text-foreground whitespace-pre-line sm:text-[13px]">
+              {bankPrompt.content}
             </div>
           </div>
-          <p className="max-h-[34vh] overflow-y-auto whitespace-pre-line px-4 py-3 text-sm leading-6 text-foreground">{bankPrompt.content}</p>
-        </section>
-      )}
-
-      {/* Practice Editor Card */}
-      <div className="overflow-hidden rounded-md border border-border bg-card shadow-sm">
-        <div className="border-b border-border bg-muted/70 px-4 py-2">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <div className="flex flex-wrap items-center gap-3">
-              <div>
-                <h2 className="text-sm font-bold text-foreground">Bài làm của bạn</h2>
-                <p className="text-[11px] text-muted-foreground">Bắt đầu gõ để chạy đồng hồ đếm giờ</p>
-              </div>
-              {activeTask === 'free' && freeTemplates.length > 0 && (
+        ) : activeTask === 'task1' ? (
+          <div className="mt-1 space-y-1.5 text-xs sm:text-[13px]">
+            <p className="font-semibold text-foreground">
+              You received an email from your English friend, Jane. She asked you for some information about one of your friends. Read part of her email below.
+            </p>
+            <div className="rounded-xs border border-border/80 bg-muted/20 p-2.5 text-xs italic leading-relaxed text-foreground sm:text-[13px]">
+              I&apos;ve just got an email from your friend, An. She said she&apos;s going to take a course in London this summer. She asked if she could stay with my family until she could find an apartment. Can you tell me a bit about her (things like her personality, hobbies and interests, and her current work or study if possible)? I want to see if she will fit in with my family.
+            </div>
+            <div className="text-[11px] sm:text-xs">
+              <p className="font-bold text-foreground">Write an email responding to Jane.</p>
+              <p className="text-muted-foreground">
+                You should write at least 120 words. You do not need to include your name or addresses. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.
+              </p>
+            </div>
+          </div>
+        ) : activeTask === 'task2' ? (
+          <div className="mt-1 space-y-1.5 text-xs sm:text-[13px]">
+            <p className="font-semibold text-foreground">
+              In many countries, online learning is becoming more common than traditional classroom learning.
+            </p>
+            <div className="rounded-xs border border-border/80 bg-muted/20 p-2.5 text-xs italic leading-relaxed text-foreground sm:text-[13px]">
+              Some people think that online learning brings great benefits to students and schools, while others argue that traditional face-to-face education cannot be replaced.
+            </div>
+            <div className="text-[11px] sm:text-xs">
+              <p className="font-bold text-foreground">Write an essay to discuss both views and give your own opinion.</p>
+              <p className="text-muted-foreground">
+                Give reasons for your answer and include any relevant examples from your own knowledge or experience. You should write at least 250 words.
+              </p>
+            </div>
+          </div>
+        ) : (
+          <div className="mt-1 space-y-1 text-xs">
+            <p className="font-medium text-foreground">Luyện tập viết tự do theo mẫu cấu hình.</p>
+            {freeTemplates.length > 0 && (
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-muted-foreground">Chọn bài mẫu:</span>
                 <select
                   value={selectedFreeId}
                   onChange={(e) => setSelectedFreeId(e.target.value)}
-                  className="px-3 py-1.5 bg-muted border border-border rounded-xl text-xs font-bold text-foreground focus:outline-none focus:ring-2 focus:ring-primary/40 focus:border-primary cursor-pointer"
+                  className="rounded-xs border border-border bg-muted px-2 py-0.5 text-xs font-semibold text-foreground focus:outline-none"
                 >
                   {freeTemplates.map((t) => (
                     <option key={t.id} value={t.id}>
-                      🎯 {t.title}
+                      {t.title}
                     </option>
                   ))}
                 </select>
-              )}
+              </div>
+            )}
+          </div>
+        )}
+      </section>
+
+      {/* Editor Section */}
+      <section className="overflow-hidden rounded-sm border border-border bg-card shadow-xs">
+        {/* Editor Top Bar with Timer and Word Count */}
+        <div className="flex items-center justify-between border-b border-border bg-muted/70 px-3 py-1.5 text-xs">
+          <div className="flex items-center gap-2">
+            <span className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+              {activeTask === 'task1' ? 'Writing Task 1' : activeTask === 'task2' ? 'Writing Task 2' : 'Free Writing'}
+            </span>
+          </div>
+
+          <div className="flex items-center gap-3">
+            {/* Word Count */}
+            <div className="font-mono text-xs font-bold text-foreground">
+              Words: <span className="text-sm font-black text-primary">{getWordCount(activeTyped)}</span>
+              {activeTemplate && <span className="ml-1 text-[11px] font-normal text-muted-foreground">(mẫu: {getWordCount(activeTemplate)})</span>}
             </div>
+
+            {/* Timer Block */}
             <div className="flex items-center gap-1">
-              <span className={`mr-2 rounded-sm px-2 py-1 font-mono text-sm font-extrabold tabular-nums ${activeTimer.timeLeft < 180 && activeTimer.timeLeft > 0 ? 'bg-red-500/10 text-red-600' : 'bg-[#df4b24] text-white'}`}>
+              <span className={`rounded-xs px-2 py-0.5 font-mono text-xs font-extrabold tabular-nums ${
+                activeTimer.timeLeft < 180 && activeTimer.timeLeft > 0 ? 'bg-red-500/10 text-red-600' : 'bg-[#df4b24] text-white'
+              }`}>
                 Còn lại {formatTime(activeTimer.timeLeft)}
               </span>
               <button
+                type="button"
                 onClick={activeTimer.toggle}
+                title={activeTimer.isRunning ? 'Tạm dừng đồng hồ' : 'Bắt đầu đồng hồ'}
                 aria-label={activeTimer.isRunning ? 'Tạm dừng đồng hồ' : 'Bắt đầu đồng hồ'}
-                className="grid h-8 w-8 place-items-center rounded-sm border border-border bg-card text-muted-foreground hover:text-foreground cursor-pointer"
+                className="grid h-6 w-6 place-items-center rounded-xs border border-border bg-card text-muted-foreground hover:text-foreground cursor-pointer transition"
               >
-                {activeTimer.isRunning ? <Pause className="h-3.5 w-3.5" /> : <Play className="h-3.5 w-3.5" />}
+                {activeTimer.isRunning ? <Pause className="h-3 w-3" /> : <Play className="h-3 w-3" />}
               </button>
               <button
+                type="button"
                 onClick={() => activeTimer.reset(activeTimeLimit)}
+                title="Đặt lại đồng hồ"
                 aria-label="Đặt lại đồng hồ"
-                className="grid h-8 w-8 place-items-center rounded-sm border border-border bg-card text-muted-foreground hover:text-foreground cursor-pointer"
+                className="grid h-6 w-6 place-items-center rounded-xs border border-border bg-card text-muted-foreground hover:text-foreground cursor-pointer transition"
               >
-                <RotateCcw className="h-3.5 w-3.5" />
+                <RotateCcw className="h-3 w-3" />
               </button>
             </div>
           </div>
         </div>
 
-        <div className={`relative mx-3 mb-3 rounded-sm border transition-all duration-300 ${
-          isFocused ? 'animate-gradient-flow shadow-lg shadow-primary/10 scale-[1.002]' : 'bg-border'
-        }`}>
-          <div className="flex min-h-[340px] overflow-hidden bg-card text-sm sm:h-[52vh]">
-            <CodeMirror
-              value={activeTyped}
-              onChange={(value) => {
-                setActiveTyped(value);
-                if (!activeTimer.isRunning && value.length === 1 && activeTimer.timeLeft === activeTimeLimit) {
-                  activeTimer.start();
-                }
-              }}
-              onFocus={() => setIsFocused(true)}
-              onBlur={() => setIsFocused(false)}
-              placeholder="Hãy ghi nhớ bài mẫu và gõ lại nội dung bài viết của bạn tại đây..."
-              height="52vh"
-              theme="none"
-              className="flex-1 text-sm font-mono focus:outline-none"
-              basicSetup={EDITOR_BASIC_SETUP}
-              extensions={EDITOR_EXTENSIONS}
-            />
-          </div>
+        {/* CodeMirror */}
+        <div className="bg-card text-xs sm:text-sm">
+          <CodeMirror
+            value={activeTyped}
+            onChange={(value) => {
+              setActiveTyped(value);
+              if (!activeTimer.isRunning && value.length === 1 && activeTimer.timeLeft === activeTimeLimit) {
+                activeTimer.start();
+              }
+            }}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
+            placeholder="Type your response here..."
+            height="210px"
+            theme="none"
+            className="text-xs font-mono focus:outline-none sm:text-sm"
+            basicSetup={EDITOR_BASIC_SETUP}
+            extensions={EDITOR_EXTENSIONS}
+          />
         </div>
 
-        <div className="flex flex-col gap-3 border-t border-border bg-muted/40 px-4 py-3 sm:flex-row sm:items-center sm:justify-between">
-          <div className="text-xs font-semibold text-muted-foreground">
-            Số từ đã gõ: <strong className="text-primary">{getWordCount(activeTyped)} từ</strong>
-            {activeTemplate && <span className="ml-2 font-normal">(Mẫu có: {getWordCount(activeTemplate)} từ)</span>}
+        {/* Sub-toolbar underneath editor */}
+        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border bg-muted/40 px-3 py-1.5 text-xs">
+          <div className="text-[11px] text-muted-foreground">
+            Thời gian: {activeTask === 'task1' ? '20 phút' : activeTask === 'task2' ? '40 phút' : '30 phút'}
           </div>
-
-          <div className="flex gap-2">
+          <div className="flex items-center gap-2">
             <button
+              type="button"
               onClick={() => {
                 setActiveTyped('');
                 setActiveDiffResult(null);
               }}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-xl border border-border hover:bg-muted text-xs font-bold transition-all cursor-pointer"
+              className="inline-flex items-center gap-1 rounded-xs border border-border bg-card px-2.5 py-1 text-xs font-semibold text-foreground transition hover:bg-muted cursor-pointer"
             >
-              <RefreshCw className="h-3.5 w-3.5" />
+              <RefreshCw className="h-3 w-3" />
               <span>Xóa làm lại</span>
             </button>
-
             <button
+              type="button"
               onClick={handleCheckDiff}
-              className="flex items-center gap-1.5 px-5 py-2.5 rounded-xl bg-primary text-primary-foreground hover:bg-primary/95 font-bold transition-all cursor-pointer shadow-md shadow-primary/20 hover:scale-105 active:scale-95 duration-200"
+              className="inline-flex items-center gap-1 rounded-xs bg-primary px-3 py-1 text-xs font-bold text-primary-foreground transition hover:bg-primary/90 cursor-pointer shadow-xs"
             >
-              <Check className="h-3.5 w-3.5" />
+              <Check className="h-3 w-3" />
               <span>Kiểm Tra Đáp Án</span>
             </button>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* Diff Result Card */}
+      {/* Diff Result Card (Rendered only when active) */}
       {activeDiffResult && (
-        <div className="bg-card border border-border p-6 rounded-2xl shadow-sm transition-all animate-fade-in">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-border pb-4 mb-4">
+        <div className="animate-fade-in rounded-sm border border-border bg-card p-3 shadow-xs">
+          <div className="mb-2 flex flex-col justify-between gap-2 border-b border-border pb-2 sm:flex-row sm:items-center">
             <div className="flex items-center gap-2">
-              <Award className="h-5 w-5 text-primary" />
-              <h2 className="text-lg font-bold">Độ trùng khớp chi tiết</h2>
+              <Award className="h-4 w-4 text-primary" />
+              <h2 className="text-sm font-bold">Độ trùng khớp chi tiết</h2>
             </div>
-            
             {diffStats && (
-              <div className="flex flex-wrap items-center gap-4 text-xs font-semibold">
-                <div className="px-3 py-1.5 bg-primary/10 rounded-lg text-primary">
-                  Độ khớp: <strong className="text-sm font-black">{diffStats.score}%</strong>
+              <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                <div className="rounded-xs bg-primary/10 px-2 py-0.5 text-primary">
+                  Độ khớp: <strong className="font-black">{diffStats.score}%</strong>
                 </div>
-                <div className="text-emerald-600 dark:text-emerald-400">Đúng: {diffStats.correct} ký tự</div>
-                <div className="text-rose-500">Dư: {diffStats.extra} ký tự</div>
-                <div className="text-amber-500">Thiếu: {diffStats.missing} ký tự</div>
+                <div className="text-emerald-600 dark:text-emerald-400">Đúng: {diffStats.correct}</div>
+                <div className="text-rose-500">Dư: {diffStats.extra}</div>
+                <div className="text-amber-500">Thiếu: {diffStats.missing}</div>
               </div>
             )}
           </div>
 
-          <div className="p-5 bg-muted/30 border border-border rounded-xl overflow-y-auto max-h-[350px] font-mono text-[13.5px] leading-[22px] flex flex-col space-y-0.5">
+          <div className="flex max-h-[180px] flex-col space-y-0.5 overflow-y-auto rounded-xs border border-border bg-muted/30 p-2.5 font-mono text-xs leading-[20px]">
             {activeDiffResult && getDiffLines(activeDiffResult).map((line, i) => (
-              <div key={i} className="flex items-start min-h-[22px] shrink-0">
-                <div className="w-8 text-muted-foreground select-none text-right pr-2 shrink-0 border-r border-border mr-3">
+              <div key={i} className="flex min-h-[20px] shrink-0 items-start">
+                <div className="mr-2 w-6 shrink-0 select-none border-r border-border pr-1 text-right text-muted-foreground">
                   {i + 1}
                 </div>
-                <div className="flex-1 whitespace-pre-wrap break-words leading-[22px]">
+                <div className="flex-1 break-words whitespace-pre-wrap leading-[20px]">
                   {line.map((token, idx) => {
                     if (token.type === 'correct') {
-                      return <span key={idx} className="text-emerald-600 dark:text-emerald-400 bg-emerald-500/5 font-semibold">{token.char}</span>;
+                      return <span key={idx} className="bg-emerald-500/5 font-semibold text-emerald-600 dark:text-emerald-400">{token.char}</span>;
                     }
                     if (token.type === 'extra') {
-                      return <span key={idx} className="text-rose-600 dark:text-rose-400 bg-rose-500/20 line-through font-bold animate-char-pop" title="Ký tự dư thừa">{token.char === '\n' ? '↵\n' : token.char}</span>;
+                      return <span key={idx} className="bg-rose-500/20 font-bold text-rose-600 line-through dark:text-rose-400" title="Ký tự dư">{token.char === '\n' ? '↵\n' : token.char}</span>;
                     }
                     if (token.type === 'missing') {
-                      return <span key={idx} className="text-slate-400 dark:text-slate-600 bg-amber-500/10 border-b border-amber-500/50 animate-char-pop" title="Ký tự thiếu">{token.char === '\n' ? '↵\n' : token.char}</span>;
+                      return <span key={idx} className="border-b border-amber-500/50 bg-amber-500/10 text-slate-400 dark:text-slate-600" title="Ký tự thiếu">{token.char === '\n' ? '↵\n' : token.char}</span>;
                     }
                     return null;
                   })}
@@ -569,10 +631,10 @@ export default function WritingPage() {
             ))}
           </div>
 
-          <div className="flex gap-4 mt-3 text-[11px] text-muted-foreground px-1">
-            <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded bg-emerald-500/30 inline-block" /> Đúng</span>
-            <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded bg-rose-500/30 inline-block line-through" /> Dư</span>
-            <span className="flex items-center gap-1"><span className="w-2.5 h-2.5 rounded bg-amber-500/20 inline-block border-b border-amber-500/50" /> Thiếu</span>
+          <div className="mt-2 flex gap-3 px-1 text-[11px] text-muted-foreground">
+            <span className="flex items-center gap-1"><span className="inline-block h-2 w-2 rounded-xs bg-emerald-500/40" /> Đúng</span>
+            <span className="flex items-center gap-1"><span className="inline-block h-2 w-2 rounded-xs bg-rose-500/40 line-through" /> Dư</span>
+            <span className="flex items-center gap-1"><span className="inline-block h-2 w-2 rounded-xs border-b border-amber-500/50 bg-amber-500/30" /> Thiếu</span>
           </div>
         </div>
       )}

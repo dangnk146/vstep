@@ -235,6 +235,30 @@ export default function ListeningPage() {
   const answeredCount = questionNumbers.filter((number) => answers[number]).length;
   const flaggedCount = questionNumbers.filter((number) => flags[number]).length;
 
+  const questionGroups = (() => {
+    if (selectedPart === 'part1') {
+      return [{
+        title: 'Part 1 · Thông báo & Chỉ dẫn ngắn',
+        subtitle: `Câu ${partInfo.start} – ${partInfo.start + partInfo.count - 1}`,
+        questions: questionNumbers,
+      }];
+    }
+
+    const groups: { title: string; subtitle: string; questions: number[] }[] = [];
+    const chunkSize = 5;
+    for (let i = 0; i < questionNumbers.length; i += chunkSize) {
+      const chunk = questionNumbers.slice(i, i + chunkSize);
+      const groupNum = Math.floor(i / chunkSize) + 1;
+      const typeLabel = selectedPart === 'part2' ? 'Hội thoại' : 'Bài thuyết trình';
+      groups.push({
+        title: `${typeLabel} ${groupNum}`,
+        subtitle: `Câu ${chunk[0]} – Câu ${chunk[chunk.length - 1]}`,
+        questions: chunk,
+      });
+    }
+    return groups;
+  })();
+
   useEffect(() => {
     if (!isVideoRoute) {
       return;
@@ -434,10 +458,10 @@ export default function ListeningPage() {
   }
 
   return (
-    <div className="-mx-3 -mb-24 flex h-[calc(100dvh-1rem)] min-h-[420px] w-[calc(100%+1.5rem)] flex-col overflow-hidden animate-fade-in sm:-mx-5 sm:w-[calc(100%+2.5rem)] sm:h-[calc(100dvh-1.25rem)] lg:-mx-8 lg:-mb-7 lg:h-[calc(100dvh-1.75rem)] lg:min-h-[600px] lg:w-[calc(100%+4rem)]">
+    <div className="flex h-[calc(100dvh-5.5rem)] min-h-[420px] w-full flex-col overflow-hidden animate-fade-in lg:min-h-[580px]">
       <h1 className="sr-only">VSTEP Listening</h1>
 
-      <main className="grid min-h-0 flex-1 grid-rows-[auto_minmax(0,1fr)] gap-2 lg:grid-cols-2 lg:grid-rows-1 lg:gap-4">
+      <main className="grid min-h-0 flex-1 grid-rows-[auto_minmax(0,1fr)] gap-2 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)] lg:grid-rows-1 lg:gap-3">
         {/* Video Section */}
         <section
           className="order-1 flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-card lg:order-1"
@@ -601,65 +625,84 @@ export default function ListeningPage() {
             </div>
           )}
 
-          {/* Scrollable Questions List */}
-          <div className="min-h-0 flex-1 overflow-y-auto p-2 pb-28 space-y-1.5 sm:p-3 sm:pb-32 lg:p-4 lg:pb-36 sm:space-y-2">
-            {questionNumbers.map((qNum) => {
-              const selectedOpt = answers[qNum];
-              const isFlagged = flags[qNum];
-
-              return (
-                <div
-                  key={qNum}
-                  className={`flex min-h-10 items-center gap-1.5 rounded-lg border px-2 py-1 transition-colors sm:min-h-11 sm:gap-2 sm:px-2.5 ${selectedOpt ? 'border-primary/30 bg-primary/5' : 'border-border'}`}
-                >
-                  <span className="w-6 shrink-0 text-xs font-bold text-muted-foreground sm:w-7">{qNum}.</span>
-                  <div className="grid flex-1 grid-cols-4 gap-1">
-                    {(['A', 'B', 'C', 'D'] as const).map((opt) => {
-                      const isSelected = selectedOpt === opt;
-                      const isCorrect = isChecked && answerKey[qNum] === opt;
-                      const isWrongSelection = isChecked
-                        && isSelected
-                        && answerKey[qNum] !== undefined
-                        && !isCorrect;
-
-                      return (
-                        <button
-                          key={opt}
-                          type="button"
-                          onClick={() => handleSelectAnswer(qNum, opt)}
-                          aria-pressed={isSelected}
-                          aria-label={`Câu ${qNum}, đáp án ${opt}`}
-                          className={`h-7 rounded-md text-xs font-bold transition-colors cursor-pointer sm:h-8 ${
-                            isCorrect
-                              ? 'bg-emerald-600 text-white hover:bg-emerald-700'
-                              : isWrongSelection
-                                ? 'bg-red-600 text-white hover:bg-red-700'
-                                : isSelected
-                                  ? 'bg-primary text-primary-foreground'
-                                  : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-foreground'
-                          }`}
-                        >
-                          {opt}
-                        </button>
-                      );
-                    })}
+          {/* Scrollable Questions List Grouped */}
+          <div className="min-h-0 flex-1 overflow-y-auto p-2 pb-24 space-y-2 sm:p-2.5 sm:pb-28 lg:p-3 lg:pb-32">
+            {questionGroups.map((group, groupIdx) => (
+              <div
+                key={groupIdx}
+                className="overflow-hidden rounded-lg border border-border bg-card/70 shadow-xs"
+              >
+                <div className="flex items-center justify-between border-b border-border/80 bg-muted/60 px-2.5 py-1 text-xs font-bold text-foreground">
+                  <div className="flex items-center gap-1.5 truncate">
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                    <span className="truncate">{group.title}</span>
+                    <span className="shrink-0 text-[10px] font-medium text-muted-foreground">({group.subtitle})</span>
                   </div>
-                  <button
-                    type="button"
-                    onClick={() => toggleFlag(qNum)}
-                    aria-label={isFlagged ? `Bỏ đánh dấu câu ${qNum}` : `Đánh dấu câu ${qNum} để xem lại`}
-                    aria-pressed={Boolean(isFlagged)}
-                    className={`grid h-7 w-7 shrink-0 place-items-center rounded-md transition-colors cursor-pointer sm:h-8 sm:w-8 ${isFlagged ? 'text-amber-500' : 'text-muted-foreground/40 hover:text-amber-500'}`}
-                    title="Đánh dấu xem lại"
-                  >
-                    <Flag className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
-                  </button>
+                  <span className="shrink-0 text-[10px] font-semibold text-muted-foreground">
+                    {group.questions.filter((n) => answers[n]).length}/{group.questions.length}
+                  </span>
                 </div>
-              );
-            })}
+                <div className="p-1.5 space-y-1.5 sm:p-2 sm:space-y-2">
+                  {group.questions.map((qNum) => {
+                    const selectedOpt = answers[qNum];
+                    const isFlagged = flags[qNum];
 
-            {/* Bottom spacer so the last questions are completely clear of the floating tabs and tabbar */}
-            <div className="h-28 sm:h-32 lg:h-36 shrink-0" aria-hidden="true" />
+                    return (
+                      <div
+                        key={qNum}
+                        className={`flex min-h-9 items-center gap-1.5 rounded-md border px-2 py-0.5 transition-colors sm:min-h-10 sm:gap-2 sm:px-2.5 ${selectedOpt ? 'border-primary/40 bg-primary/5' : 'border-border/80 bg-card'}`}
+                      >
+                        <span className="w-5 shrink-0 text-xs font-bold text-muted-foreground sm:w-6">{qNum}.</span>
+                        <div className="grid flex-1 grid-cols-4 gap-1">
+                          {(['A', 'B', 'C', 'D'] as const).map((opt) => {
+                            const isSelected = selectedOpt === opt;
+                            const isCorrect = isChecked && answerKey[qNum] === opt;
+                            const isWrongSelection = isChecked
+                              && isSelected
+                              && answerKey[qNum] !== undefined
+                              && !isCorrect;
+
+                            return (
+                              <button
+                                key={opt}
+                                type="button"
+                                onClick={() => handleSelectAnswer(qNum, opt)}
+                                aria-pressed={isSelected}
+                                aria-label={`Câu ${qNum}, đáp án ${opt}`}
+                                className={`h-6.5 rounded text-xs font-bold transition-colors cursor-pointer sm:h-7.5 ${
+                                  isCorrect
+                                    ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+                                    : isWrongSelection
+                                      ? 'bg-red-600 text-white hover:bg-red-700'
+                                      : isSelected
+                                        ? 'bg-primary text-primary-foreground'
+                                        : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-foreground'
+                                }`}
+                              >
+                                {opt}
+                              </button>
+                            );
+                          })}
+                        </div>
+                        <button
+                          type="button"
+                          onClick={() => toggleFlag(qNum)}
+                          aria-label={isFlagged ? `Bỏ đánh dấu câu ${qNum}` : `Đánh dấu câu ${qNum} để xem lại`}
+                          aria-pressed={Boolean(isFlagged)}
+                          className={`grid h-6.5 w-6.5 shrink-0 place-items-center rounded transition-colors cursor-pointer sm:h-7.5 sm:w-7.5 ${isFlagged ? 'text-amber-500' : 'text-muted-foreground/40 hover:text-amber-500'}`}
+                          title="Đánh dấu xem lại"
+                        >
+                          <Flag className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+                        </button>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+
+            {/* Bottom spacer */}
+            <div className="h-20 sm:h-24 lg:h-28 shrink-0" aria-hidden="true" />
           </div>
         </section>
       </main>
