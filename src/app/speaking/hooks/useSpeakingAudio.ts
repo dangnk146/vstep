@@ -2,8 +2,9 @@
 
 import { useEffect, useRef, useState } from 'react';
 import type { RecorderStatus } from '../types';
+import { deleteAudioRecording, getAudioRecording, saveAudioRecording } from '@/utils/audioStorage';
 
-export function useSpeakingAudio() {
+export function useSpeakingAudio(partKey: string = 'part1') {
   const [recorderStatus, setRecorderStatus] = useState<RecorderStatus>('idle');
   const [recorderError, setRecorderError] = useState('');
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
@@ -18,6 +19,36 @@ export function useSpeakingAudio() {
   const visualizerFrameRef = useRef<number | null>(null);
   const recordingRequestRef = useRef(0);
   const pendingRequestRef = useRef(false);
+  const currentPartKeyRef = useRef(partKey);
+
+  useEffect(() => {
+    currentPartKeyRef.current = partKey;
+  }, [partKey]);
+
+  // Load existing recording from IndexedDB when partKey changes or on mount
+  useEffect(() => {
+    let isCancelled = false;
+
+    getAudioRecording(partKey).then((savedBlob) => {
+      if (isCancelled) return;
+      if (savedBlob && savedBlob.size > 0) {
+        const nextUrl = URL.createObjectURL(savedBlob);
+        if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
+        audioUrlRef.current = nextUrl;
+        setAudioUrl(nextUrl);
+        setRecorderStatus('ready');
+      } else {
+        if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
+        audioUrlRef.current = null;
+        setAudioUrl(null);
+        setRecorderStatus('idle');
+      }
+    });
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [partKey]);
 
   const stopVisualizer = () => {
     if (visualizerFrameRef.current !== null) cancelAnimationFrame(visualizerFrameRef.current);
@@ -114,6 +145,9 @@ export function useSpeakingAudio() {
           return;
         }
 
+        const targetPart = currentPartKeyRef.current;
+        void saveAudioRecording(targetPart, recording);
+
         const nextUrl = URL.createObjectURL(recording);
         if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
         audioUrlRef.current = nextUrl;
@@ -132,6 +166,14 @@ export function useSpeakingAudio() {
     }
   };
 
+  const clearRecording = async () => {
+    await deleteAudioRecording(currentPartKeyRef.current);
+    if (audioUrlRef.current) URL.revokeObjectURL(audioUrlRef.current);
+    audioUrlRef.current = null;
+    setAudioUrl(null);
+    setRecorderStatus('idle');
+  };
+
   useEffect(() => () => {
     recordingRequestRef.current += 1;
     stopVisualizer();
@@ -148,6 +190,8 @@ export function useSpeakingAudio() {
     audioRef,
     startRecording,
     stopMedia,
+    clearRecording,
   };
 }
+
 

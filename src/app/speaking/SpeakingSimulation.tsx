@@ -34,7 +34,7 @@ export default function SpeakingSimulation() {
     audioRef,
     startRecording,
     stopMedia,
-  } = useSpeakingAudio();
+  } = useSpeakingAudio(activePart);
 
   const {
     settings,

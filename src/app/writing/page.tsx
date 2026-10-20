@@ -152,7 +152,8 @@ export default function WritingPage() {
       let selectedExamId = examId || undefined;
 
       if (consumeStoredPrompt) {
-        const savedBankPrompt = sessionStorage.getItem('vstep_bank_writing_prompt');
+        const savedBankPrompt = sessionStorage.getItem('vstep_bank_writing_prompt')
+          || localStorage.getItem('vstep_bank_writing_prompt');
         if (savedBankPrompt) {
           try {
             const prompt = JSON.parse(savedBankPrompt) as {
@@ -174,8 +175,6 @@ export default function WritingPage() {
             }
           } catch (error) {
             console.error('Could not read the Writing prompt from the exam API.', error);
-          } finally {
-            sessionStorage.removeItem('vstep_bank_writing_prompt');
           }
         }
       }
@@ -190,13 +189,22 @@ export default function WritingPage() {
           .then((p) => {
             if (p) {
               const taskFromPrompt = p.category === 'writing-task2' ? 'task2' : 'task1';
+              const nextPrompt = {
+                title: p.title,
+                content: toReadablePromptText(p.content),
+              };
               startTransition(() => {
-                setBankPrompt({
-                  title: p.title,
-                  content: toReadablePromptText(p.content),
-                });
+                setBankPrompt(nextPrompt);
                 setActiveTask(taskFromPrompt);
               });
+              try {
+                localStorage.setItem('vstep_bank_writing_prompt', JSON.stringify({
+                  id: p.id,
+                  title: p.title,
+                  content: nextPrompt.content,
+                  task: taskFromPrompt,
+                }));
+              } catch {}
 
               if (!hasFilterInUrl) {
                 const promptSchool = p.school || '';
@@ -233,6 +241,10 @@ export default function WritingPage() {
       if (skill === 'writing' && (section === 'task1' || section === 'task2' || section === 'free')) {
         setActiveTask(section);
         setBankPrompt(null);
+        try {
+          localStorage.removeItem('vstep_bank_writing_prompt');
+          sessionStorage.removeItem('vstep_bank_writing_prompt');
+        } catch {}
 
         const parsed = parseExamQueryString(window.location.search);
         delete parsed.exam;
@@ -269,12 +281,16 @@ export default function WritingPage() {
       const content = prompt.content || title;
       setBankPrompt({ title, content });
       setActiveTask(task);
-      sessionStorage.setItem('vstep_bank_writing_prompt', JSON.stringify({
+      const promptObj = {
         id: prompt.id,
         title,
         content,
         task,
-      }));
+      };
+      try {
+        sessionStorage.setItem('vstep_bank_writing_prompt', JSON.stringify(promptObj));
+        localStorage.setItem('vstep_bank_writing_prompt', JSON.stringify(promptObj));
+      } catch {}
 
       const queryStr = buildExamQueryString({
         matruong: apiSettings.school,
@@ -323,6 +339,38 @@ export default function WritingPage() {
   const activeDiffResult = activeTask === 'task1' ? diffResult1 : activeTask === 'task2' ? diffResult2 : diffResultFree;
   const setActiveDiffResult = activeTask === 'task1' ? setDiffResult1 : activeTask === 'task2' ? setDiffResult2 : setDiffResultFree;
   const activeTimeLimit = activeTask === 'task1' ? TASK1_TIME : activeTask === 'task2' ? TASK2_TIME : 30 * 60;
+
+  // Restore saved drafts from LocalStorage on mount
+  useEffect(() => {
+    try {
+      const saved1 = localStorage.getItem('vstep_writing_draft_task1');
+      if (saved1) setTyped1(saved1);
+      const saved2 = localStorage.getItem('vstep_writing_draft_task2');
+      if (saved2) setTyped2(saved2);
+      const savedFree = localStorage.getItem('vstep_writing_draft_free');
+      if (savedFree) setTypedFree(savedFree);
+    } catch (e) {
+      console.error('Could not load writing drafts from localStorage', e);
+    }
+  }, []);
+
+  const handleTypedChange = (value: string) => {
+    setActiveTyped(value);
+    try {
+      localStorage.setItem(`vstep_writing_draft_${activeTask}`, value);
+    } catch {}
+    if (!activeTimer.isRunning && value.length === 1 && activeTimer.timeLeft === activeTimeLimit) {
+      activeTimer.start();
+    }
+  };
+
+  const handleClearDraft = () => {
+    setActiveTyped('');
+    try {
+      localStorage.removeItem(`vstep_writing_draft_${activeTask}`);
+    } catch {}
+    setActiveDiffResult(null);
+  };
 
 
 
@@ -540,12 +588,7 @@ export default function WritingPage() {
         <div className="bg-card text-xs sm:text-sm">
           <CodeMirror
             value={activeTyped}
-            onChange={(value) => {
-              setActiveTyped(value);
-              if (!activeTimer.isRunning && value.length === 1 && activeTimer.timeLeft === activeTimeLimit) {
-                activeTimer.start();
-              }
-            }}
+            onChange={handleTypedChange}
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
             placeholder="Type your response here..."
@@ -565,10 +608,7 @@ export default function WritingPage() {
           <div className="flex items-center gap-2">
             <button
               type="button"
-              onClick={() => {
-                setActiveTyped('');
-                setActiveDiffResult(null);
-              }}
+              onClick={handleClearDraft}
               className="inline-flex items-center gap-1 rounded-xs border border-border bg-card px-2.5 py-1 text-xs font-semibold text-foreground transition hover:bg-muted cursor-pointer"
             >
               <RefreshCw className="h-3 w-3" />
