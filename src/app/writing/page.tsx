@@ -17,6 +17,9 @@ import {
   Dices,
   LoaderCircle,
   Settings,
+  X,
+  ChevronDown,
+  ChevronUp,
 } from 'lucide-react';
 import Link from 'next/link';
 import { toReadablePromptText } from '@/utils/examPrompts';
@@ -93,9 +96,47 @@ export interface FreeTemplate {
   content: string;
 }
 
+interface ParsedPrompt {
+  context: string;
+  quote: string;
+  requirement: string;
+  note: string;
+}
+
+function parsePromptContent(content: string): ParsedPrompt {
+  if (!content) return { context: '', quote: '', requirement: '', note: '' };
+  const paragraphs = content.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  let context = '';
+  let quote = '';
+  let requirement = '';
+  let note = '';
+
+  paragraphs.forEach((p) => {
+    if (p.startsWith('"') || p.startsWith('“') || ((p.endsWith('"') || p.endsWith('”')) && (p.includes('"') || p.includes('“')))) {
+      quote = p.replace(/^[“"]|[”"]$/g, '');
+    } else if (/^Read the following statement:?/i.test(p)) {
+      context = p;
+    } else if (/^(You have received an email|You received an email)/i.test(p)) {
+      context = p;
+    } else if (/^(Write an essay|Write an email|Discuss|To what extent|In your email)/i.test(p)) {
+      requirement = p;
+    } else {
+      if (!requirement) {
+        requirement = p;
+      } else {
+        note = p;
+      }
+    }
+  });
+
+  return { context, quote, requirement, note };
+}
+
 export default function WritingPage() {
   const [activeTask, setActiveTask] = useState<'task1' | 'task2' | 'free'>('task1');
   const [bankPrompt, setBankPrompt] = useState<{ title: string; content: string } | null>(null);
+  const [isWarningDismissed, setIsWarningDismissed] = useState(false);
+  const [isPromptCollapsed, setIsPromptCollapsed] = useState(false);
 
   // Timers
   const timer1 = useTimer(TASK1_TIME);
@@ -425,8 +466,19 @@ export default function WritingPage() {
 
   const diffStats = activeDiffResult ? getStats(activeDiffResult) : null;
 
+  const currentParsedPrompt = React.useMemo(() => {
+    const raw = bankPrompt
+      ? bankPrompt.content
+      : activeTask === 'task1'
+        ? `You received an email from your English friend, Jane. She asked you for some information about one of your friends. Read part of her email below:\n\n"I've just got an email from your friend, An. She said she's going to take a course in London this summer. She asked if she could stay with my family until she could find an apartment. Can you tell me a bit about her (things like her personality, hobbies and interests, and her current work or study if possible)? I want to see if she will fit in with my family."\n\nWrite an email responding to Jane. You should write at least 120 words. You do not need to include your name or addresses. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.`
+        : activeTask === 'task2'
+          ? `Read the following statement:\n\n"In many countries, online learning is becoming more common than traditional classroom learning. Some people think that online learning brings great benefits to students and schools, while others argue that traditional face-to-face education cannot be replaced."\n\nWrite an essay to discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience. You should write at least 250 words.`
+          : '';
+    return parsePromptContent(raw);
+  }, [bankPrompt, activeTask]);
+
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-4">
+    <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
       {/* Top Header */}
       <header className="flex h-9 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white shadow-xs">
         <div className="flex items-center gap-2 text-xs font-bold sm:text-sm">
@@ -458,69 +510,70 @@ export default function WritingPage() {
       </header>
 
       {/* Warning if no template */}
-      {!activeTemplate.trim() && (
-        <div className="flex items-center justify-between gap-2 rounded-xs border border-amber-500/30 bg-amber-500/10 px-3 py-1.5 text-xs font-medium text-amber-700 dark:text-amber-400">
-          <div className="flex items-center gap-2">
+      {!isWarningDismissed && !activeTemplate.trim() && (
+        <div className="flex items-center justify-between gap-2 rounded-xs border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-xs text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-1.5 min-w-0">
             <AlertCircle className="h-3.5 w-3.5 shrink-0" />
-            <span>
+            <span className="truncate">
               Chưa có bài mẫu cho <strong>{activeTask === 'task1' ? 'Task 1' : activeTask === 'task2' ? 'Task 2' : 'Tự do'}</strong>. Cài đặt mẫu để so khớp đáp án chi tiết!
             </span>
           </div>
-          <Link href="/writing/settings" className="rounded-xs bg-amber-500 px-2 py-0.5 text-[11px] font-bold text-white hover:bg-amber-600 whitespace-nowrap">
-            Cài Đặt Mẫu
-          </Link>
+          <div className="flex items-center gap-1.5 shrink-0">
+            <Link href="/writing/settings" className="rounded-xs bg-amber-500 px-2 py-0.5 text-[11px] font-bold text-white hover:bg-amber-600 whitespace-nowrap">
+              Cài Đặt Mẫu
+            </Link>
+            <button
+              type="button"
+              onClick={() => setIsWarningDismissed(true)}
+              className="grid h-5 w-5 place-items-center rounded-xs text-amber-700 hover:bg-amber-500/20 dark:text-amber-300 cursor-pointer transition"
+              title="Đóng thông báo"
+              aria-label="Đóng thông báo"
+            >
+              <X className="h-3.5 w-3.5" />
+            </button>
+          </div>
         </div>
       )}
 
-      {/* Prompt Section (Compact, boxed stimulus) */}
-      <section className="rounded-sm border border-border bg-card px-3 py-2 text-foreground shadow-xs sm:px-4 sm:py-2.5">
-        <p className="text-[11px] font-semibold text-muted-foreground sm:text-xs">
-          You should spend about {activeTask === 'task1' ? '20' : '40'} minutes on this task.
-        </p>
+      {/* Prompt Section */}
+      <section className="rounded-sm border border-border bg-card px-3 py-2 text-foreground shadow-xs sm:px-3.5 sm:py-2">
+        {/* Header row: Badge, Title, Toggle */}
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="shrink-0 rounded-xs bg-primary/10 px-1.5 py-0.5 font-mono text-[10px] font-bold text-primary uppercase">
+              {activeTask === 'task1' ? 'Task 1 • 20m • ≥120 từ' : activeTask === 'task2' ? 'Task 2 • 40m • ≥250 từ' : 'Free Writing'}
+            </span>
+            <h2 className="truncate text-xs font-bold text-foreground sm:text-sm">
+              {bankPrompt
+                ? bankPrompt.title
+                : activeTask === 'task1'
+                  ? "Writing Task 1: Responding to Jane's Email"
+                  : activeTask === 'task2'
+                    ? 'Writing Task 2: Online Learning vs Traditional Education'
+                    : 'Luyện tập viết tự do'}
+            </h2>
+          </div>
 
-        {bankPrompt ? (
-          <div className="mt-1 space-y-1.5 text-xs sm:text-[13px]">
-            <h2 className="font-bold text-foreground">{bankPrompt.title}</h2>
-            <div className="max-h-[130px] overflow-y-auto rounded-xs border border-border/80 bg-muted/20 p-2.5 text-xs italic leading-relaxed text-foreground whitespace-pre-line sm:text-[13px]">
-              {bankPrompt.content}
-            </div>
-          </div>
-        ) : activeTask === 'task1' ? (
-          <div className="mt-1 space-y-1.5 text-xs sm:text-[13px]">
-            <p className="font-semibold text-foreground">
-              You received an email from your English friend, Jane. She asked you for some information about one of your friends. Read part of her email below.
-            </p>
-            <div className="rounded-xs border border-border/80 bg-muted/20 p-2.5 text-xs italic leading-relaxed text-foreground sm:text-[13px]">
-              I&apos;ve just got an email from your friend, An. She said she&apos;s going to take a course in London this summer. She asked if she could stay with my family until she could find an apartment. Can you tell me a bit about her (things like her personality, hobbies and interests, and her current work or study if possible)? I want to see if she will fit in with my family.
-            </div>
-            <div className="text-[11px] sm:text-xs">
-              <p className="font-bold text-foreground">Write an email responding to Jane.</p>
-              <p className="text-muted-foreground">
-                You should write at least 120 words. You do not need to include your name or addresses. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.
-              </p>
-            </div>
-          </div>
-        ) : activeTask === 'task2' ? (
-          <div className="mt-1 space-y-1.5 text-xs sm:text-[13px]">
-            <p className="font-semibold text-foreground">
-              In many countries, online learning is becoming more common than traditional classroom learning.
-            </p>
-            <div className="rounded-xs border border-border/80 bg-muted/20 p-2.5 text-xs italic leading-relaxed text-foreground sm:text-[13px]">
-              Some people think that online learning brings great benefits to students and schools, while others argue that traditional face-to-face education cannot be replaced.
-            </div>
-            <div className="text-[11px] sm:text-xs">
-              <p className="font-bold text-foreground">Write an essay to discuss both views and give your own opinion.</p>
-              <p className="text-muted-foreground">
-                Give reasons for your answer and include any relevant examples from your own knowledge or experience. You should write at least 250 words.
-              </p>
-            </div>
-          </div>
-        ) : (
-          <div className="mt-1 space-y-1 text-xs">
-            <p className="font-medium text-foreground">Luyện tập viết tự do theo mẫu cấu hình.</p>
+          {activeTask !== 'free' && (
+            <button
+              type="button"
+              onClick={() => setIsPromptCollapsed((prev) => !prev)}
+              className="flex items-center gap-1 rounded-xs border border-border/60 bg-muted/40 px-2 py-0.5 text-[11px] font-medium text-muted-foreground hover:bg-muted hover:text-foreground cursor-pointer transition shrink-0"
+              title={isPromptCollapsed ? 'Mở rộng xem chi tiết đề' : 'Thu gọn đề để tập trung gõ'}
+            >
+              <span>{isPromptCollapsed ? 'Chi tiết' : 'Thu gọn'}</span>
+              {isPromptCollapsed ? <ChevronDown className="h-3 w-3" /> : <ChevronUp className="h-3 w-3" />}
+            </button>
+          )}
+        </div>
+
+        {/* Body */}
+        {activeTask === 'free' ? (
+          <div className="mt-1.5 flex flex-wrap items-center gap-2 text-xs">
+            <p className="font-medium text-muted-foreground">Luyện tập viết tự do theo mẫu cấu hình.</p>
             {freeTemplates.length > 0 && (
               <div className="flex items-center gap-2">
-                <span className="text-xs font-bold text-muted-foreground">Chọn bài mẫu:</span>
+                <span className="text-xs font-bold text-foreground">Chọn bài mẫu:</span>
                 <select
                   value={selectedFreeId}
                   onChange={(e) => setSelectedFreeId(e.target.value)}
@@ -535,32 +588,77 @@ export default function WritingPage() {
               </div>
             )}
           </div>
+        ) : isPromptCollapsed ? (
+          /* Collapsed view: Just the single essential sentence */
+          <div className="mt-1.5 flex items-center gap-1.5 text-xs">
+            <span className="shrink-0 font-bold text-primary">Yêu cầu:</span>
+            <p className="truncate font-semibold text-foreground" title={currentParsedPrompt.requirement}>
+              {currentParsedPrompt.requirement || currentParsedPrompt.quote || 'Viết theo yêu cầu đề bài'}
+            </p>
+          </div>
+        ) : (
+          /* Clean, compact full view */
+          <div className="mt-2 space-y-1.5 text-xs sm:text-[13px]">
+            {/* Context if meaningful (not boilerplate) */}
+            {currentParsedPrompt.context && !currentParsedPrompt.context.startsWith('Read the following') && (
+              <p className="text-[11px] text-muted-foreground leading-snug sm:text-xs">
+                {currentParsedPrompt.context}
+              </p>
+            )}
+
+            {/* Stimulus Quote / Topic Statement */}
+            {currentParsedPrompt.quote && (
+              <div className="rounded-xs border-l-2 border-primary/70 bg-primary/5 px-2.5 py-1 text-xs italic text-foreground leading-relaxed sm:text-[13px]">
+                &ldquo;{currentParsedPrompt.quote}&rdquo;
+              </div>
+            )}
+
+            {/* Core Requirement (Bold, highlighted as the key prompt!) */}
+            {currentParsedPrompt.requirement && (
+              <div className="rounded-xs border border-border/70 bg-muted/30 px-2.5 py-1.5 text-xs font-semibold text-foreground leading-snug sm:text-[13px]">
+                <div className="flex items-start gap-1.5">
+                  <span className="mt-0.5 shrink-0 text-primary font-bold">▶</span>
+                  <span className="whitespace-pre-line">{currentParsedPrompt.requirement}</span>
+                </div>
+              </div>
+            )}
+
+            {/* Extra Note / Bullets if present */}
+            {currentParsedPrompt.note && (
+              <p className="text-[11px] text-muted-foreground leading-snug">
+                {currentParsedPrompt.note}
+              </p>
+            )}
+          </div>
         )}
       </section>
 
       {/* Editor Section */}
       <section className="overflow-hidden rounded-sm border border-border bg-card shadow-xs">
         {/* Editor Top Bar with Timer and Word Count */}
-        <div className="flex items-center justify-between border-b border-border bg-muted/70 px-3 py-1.5 text-xs">
+        <div className="flex items-center justify-between border-b border-border bg-muted/70 px-2.5 py-1 text-xs sm:px-3 sm:py-1.5">
           <div className="flex items-center gap-2">
-            <span className="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">
+            <span className="hidden text-[11px] font-bold uppercase tracking-wider text-muted-foreground sm:inline">
               {activeTask === 'task1' ? 'Writing Task 1' : activeTask === 'task2' ? 'Writing Task 2' : 'Free Writing'}
             </span>
+            {/* Word Count (Shown on left on mobile, right on desktop) */}
+            <div className="font-mono text-xs font-bold text-foreground sm:hidden">
+              Words: <span className="text-xs font-black text-primary">{getWordCount(activeTyped)}</span>
+            </div>
           </div>
 
-          <div className="flex items-center gap-3">
-            {/* Word Count */}
-            <div className="font-mono text-xs font-bold text-foreground">
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Word Count on desktop */}
+            <div className="hidden font-mono text-xs font-bold text-foreground sm:block">
               Words: <span className="text-sm font-black text-primary">{getWordCount(activeTyped)}</span>
-              {activeTemplate && <span className="ml-1 text-[11px] font-normal text-muted-foreground">(mẫu: {getWordCount(activeTemplate)})</span>}
             </div>
 
             {/* Timer Block */}
             <div className="flex items-center gap-1">
-              <span className={`rounded-xs px-2 py-0.5 font-mono text-xs font-extrabold tabular-nums ${
+              <span className={`rounded-xs px-1.5 py-0.5 font-mono text-xs font-extrabold tabular-nums ${
                 activeTimer.timeLeft < 180 && activeTimer.timeLeft > 0 ? 'bg-red-500/10 text-red-600' : 'bg-[#df4b24] text-white'
               }`}>
-                Còn lại {formatTime(activeTimer.timeLeft)}
+                <span className="hidden sm:inline">Còn lại </span>{formatTime(activeTimer.timeLeft)}
               </span>
               <button
                 type="button"
@@ -604,6 +702,11 @@ export default function WritingPage() {
         <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border bg-muted/40 px-3 py-1.5 text-xs">
           <div className="text-[11px] text-muted-foreground">
             Thời gian: {activeTask === 'task1' ? '20 phút' : activeTask === 'task2' ? '40 phút' : '30 phút'}
+            {activeTemplate && (
+              <span className="ml-1.5 font-medium text-foreground/80 sm:ml-2">
+                · Mẫu: <strong>{getWordCount(activeTemplate)}</strong> từ
+              </span>
+            )}
           </div>
           <div className="flex items-center gap-2">
             <button

@@ -69,7 +69,10 @@ export default function Sidebar() {
   return (
     <aside className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-card/95 shadow-[0_-8px_24px_rgba(15,23,42,0.08)] backdrop-blur">
       {sectionItems && (
-        <nav className="absolute bottom-full left-1/2 z-10 flex -translate-x-1/2 items-end gap-1 pb-0.5" aria-label="Chọn phần luyện tập">
+        <nav
+          className="absolute bottom-full left-1/2 z-10 -mb-px flex -translate-x-1/2 max-w-[96vw] items-end gap-1 overflow-x-auto px-1 pb-0 select-none [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          aria-label="Chọn phần luyện tập"
+        >
           {sectionItems.map(({ id, label }) => {
             const active = activeSection === id;
             return (
@@ -98,10 +101,10 @@ export default function Sidebar() {
                     },
                   }));
                 }}
-                className={`min-w-14 rounded-t-md border border-b-0 px-2.5 py-1 text-[9px] font-bold transition-all duration-200 sm:min-w-16 sm:px-3 sm:text-[10px] ${
+                className={`flex h-8 shrink-0 items-center justify-center rounded-t-md border border-b-0 px-3 text-[11px] font-bold transition-colors cursor-pointer sm:h-8.5 sm:px-4 sm:text-xs ${
                   active
-                    ? '-translate-y-1 border-primary bg-primary text-primary-foreground shadow-md shadow-primary/20'
-                    : 'border-transparent bg-card/80 text-muted-foreground hover:-translate-y-1 hover:border-border hover:bg-card hover:text-foreground hover:shadow-md'
+                    ? 'border-primary bg-primary text-primary-foreground shadow-xs font-black'
+                    : 'border-border/70 bg-card/90 text-muted-foreground hover:bg-card hover:text-foreground hover:border-border'
                 }`}
               >
                 {label}

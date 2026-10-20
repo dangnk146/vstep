@@ -464,7 +464,7 @@ export default function ListeningPage() {
       <main className="grid min-h-0 flex-1 grid-rows-[auto_minmax(0,1fr)] gap-2 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)] lg:grid-rows-1 lg:gap-3">
         {/* Video Section */}
         <section
-          className="order-1 flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-card lg:order-1"
+          className="order-1 flex min-h-0 min-w-0 flex-col overflow-y-auto rounded-xl border border-border bg-card lg:order-1"
           aria-labelledby="video-section-heading"
         >
           {/* Video Header */}
@@ -546,15 +546,17 @@ export default function ListeningPage() {
             </p>
           )}
 
-          {/* Filler note on Desktop */}
-          <div className="hidden min-h-0 flex-1 flex-col items-center justify-center p-4 text-center text-xs text-muted-foreground lg:flex">
-            <Headphones className="mb-2 h-8 w-8 text-primary/40" />
-            <p className="font-semibold text-foreground/80">
-              {partInfo.label}: {partInfo.count} câu hỏi (Câu {partInfo.start} - {partInfo.start + partInfo.count - 1})
-            </p>
-            <p className="mt-1 max-w-xs text-muted-foreground/80">
+          {/* Instructions bar */}
+          <div className="flex shrink-0 items-center justify-between gap-2 border-t border-border bg-muted/30 px-3 py-1.5 text-xs text-muted-foreground">
+            <div className="flex items-center gap-1.5 text-xs font-semibold text-foreground/90">
+              <Headphones className="h-3.5 w-3.5 text-primary shrink-0" />
+              <span>
+                {partInfo.label}: {partInfo.count} câu hỏi (Câu {partInfo.start} - {partInfo.start + partInfo.count - 1})
+              </span>
+            </div>
+            <span className="hidden text-[11px] text-muted-foreground sm:inline">
               Lắng nghe kỹ đoạn băng và chọn đáp án ở khung bên phải.
-            </p>
+            </span>
           </div>
         </section>
 

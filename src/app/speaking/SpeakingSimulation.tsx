@@ -123,10 +123,9 @@ export default function SpeakingSimulation() {
   };
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-col gap-3 pb-4">
+    <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
       <SpeakingHeader
         onRandomPrompt={handleRandomPrompt}
-        onSubmitPractice={handleSubmitPractice}
         isLoadingRandomPrompt={isLoadingRandomPrompt}
       />
 
@@ -137,7 +136,7 @@ export default function SpeakingSimulation() {
         />
       )}
 
-      <section className="grid overflow-hidden border border-border bg-white shadow-sm dark:bg-card lg:grid-cols-[minmax(0,1fr)_190px]">
+      <section className="grid overflow-hidden rounded-sm border border-border bg-card shadow-xs lg:grid-cols-[minmax(0,1fr)_195px]">
         <main className="min-w-0 border-b border-border lg:border-b-0 lg:border-r">
           <SpeakingTimerBar
             activePart={activePart}

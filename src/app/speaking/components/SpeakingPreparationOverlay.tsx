@@ -13,24 +13,26 @@ export function SpeakingPreparationOverlay({
   durationSeconds,
 }: SpeakingPreparationOverlayProps) {
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/75 px-4 py-6">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 px-4 py-6 backdrop-blur-xs animate-fade-in">
       <section
         role="status"
         aria-label="Thời gian chuẩn bị nói"
-        className="flex min-h-[350px] w-full max-w-[320px] flex-col items-center border-4 border-sky-400 bg-white px-4 py-8 text-center text-slate-800 shadow-2xl"
+        className="flex min-h-[320px] w-full max-w-[340px] flex-col items-center rounded-sm border-2 border-primary/50 bg-card px-5 py-7 text-center text-foreground shadow-2xl"
       >
-        <Headphones aria-hidden="true" className="mb-4 h-16 w-16 text-sky-500" strokeWidth={2.5} />
-        <p className="text-xs font-extrabold uppercase">
+        <div className="mb-4 grid h-16 w-16 place-items-center rounded-full bg-primary/10 text-primary">
+          <Headphones aria-hidden="true" className="h-9 w-9" strokeWidth={2.2} />
+        </div>
+        <p className="text-xs font-black uppercase tracking-wider text-primary">
           Hãy đeo tai nghe để làm bài thi nói
         </p>
-        <p className="mt-4 text-sm font-semibold uppercase">
-          Bạn có {durationSeconds} giây để chuẩn bị.
+        <p className="mt-3 text-xs sm:text-sm font-semibold text-foreground/90">
+          Bạn có <span className="font-bold text-foreground">{durationSeconds} giây</span> để chuẩn bị.
         </p>
-        <p className="mt-4 font-mono text-lg font-bold tabular-nums text-red-600" aria-live="off">
+        <p className="mt-4 font-mono text-4xl font-black tabular-nums text-[#df4b24] animate-pulse" aria-live="off">
           {remainingSeconds}s
         </p>
-        <p className="mt-auto pt-6 text-[10px] font-medium uppercase leading-relaxed text-slate-600">
-          Bài nói sẽ được tự động ghi âm sau khi hết thời gian chuẩn bị. Hãy sẵn sàng trả lời.
+        <p className="mt-auto pt-6 text-[10px] font-medium leading-relaxed text-muted-foreground">
+          Bài nói sẽ được tự động ghi âm sau khi hết thời gian chuẩn bị. Hãy sẵn sàng trả lời!
         </p>
       </section>
     </div>
