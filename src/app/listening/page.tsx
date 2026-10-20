@@ -8,6 +8,8 @@ import {
   Check,
   ChevronLeft,
   ChevronRight,
+  ChevronDown,
+  ChevronUp,
   Film,
   Save,
   X,
@@ -17,9 +19,9 @@ import videoData from './listvideo.json';
 const YOUTUBE_IFRAME_API_URL = 'https://www.youtube.com/iframe_api';
 const VIDEO_JUMP_MINUTES = [2, 3, 4, 5, 6, 8, 10, 12] as const;
 const PARTS = [
-  { id: 'part1', label: 'Part 1', start: 1, count: 8 },
-  { id: 'part2', label: 'Part 2', start: 1, count: 12 },
-  { id: 'part3', label: 'Part 3', start: 1, count: 15 },
+  { id: 'part1', label: 'Part 1', start: 1, count: 8, collapse: 8, groupLabel: 'Thông báo & Chỉ dẫn ngắn' },
+  { id: 'part2', label: 'Part 2', start: 1, count: 12, collapse: 4, groupLabel: 'Hội thoại' },
+  { id: 'part3', label: 'Part 3', start: 1, count: 15, collapse: 5, groupLabel: 'Bài thuyết trình' },
 ] as const;
 
 type PartId = (typeof PARTS)[number]['id'];
@@ -206,6 +208,7 @@ export default function ListeningPage() {
   const [skipSaveConfirmation, setSkipSaveConfirmation] = useState(false);
   const [feedback, setFeedback] = useState('');
   const [storageError, setStorageError] = useState(initialSavedAnswerKeys.error);
+  const [collapsedGroups, setCollapsedGroups] = useState<Record<string, boolean>>({});
 
   const videoDialogRef = useRef<HTMLDialogElement>(null);
   const saveDialogRef = useRef<HTMLDialogElement>(null);
@@ -236,22 +239,21 @@ export default function ListeningPage() {
   const flaggedCount = questionNumbers.filter((number) => flags[number]).length;
 
   const questionGroups = (() => {
-    if (selectedPart === 'part1') {
+    const chunkSize = partInfo.collapse;
+    if (selectedPart === 'part1' || chunkSize >= partInfo.count) {
       return [{
-        title: 'Part 1 · Thông báo & Chỉ dẫn ngắn',
+        title: `Part 1 · ${partInfo.groupLabel}`,
         subtitle: `Câu ${partInfo.start} – ${partInfo.start + partInfo.count - 1}`,
         questions: questionNumbers,
       }];
     }
 
     const groups: { title: string; subtitle: string; questions: number[] }[] = [];
-    const chunkSize = 5;
     for (let i = 0; i < questionNumbers.length; i += chunkSize) {
       const chunk = questionNumbers.slice(i, i + chunkSize);
       const groupNum = Math.floor(i / chunkSize) + 1;
-      const typeLabel = selectedPart === 'part2' ? 'Hội thoại' : 'Bài thuyết trình';
       groups.push({
-        title: `${typeLabel} ${groupNum}`,
+        title: `${partInfo.groupLabel} ${groupNum}`,
         subtitle: `Câu ${chunk[0]} – Câu ${chunk[chunk.length - 1]}`,
         questions: chunk,
       });
@@ -629,79 +631,98 @@ export default function ListeningPage() {
 
           {/* Scrollable Questions List Grouped */}
           <div className="min-h-0 flex-1 overflow-y-auto p-2 pb-24 space-y-2 sm:p-2.5 sm:pb-28 lg:p-3 lg:pb-32">
-            {questionGroups.map((group, groupIdx) => (
-              <div
-                key={groupIdx}
-                className="overflow-hidden rounded-lg border border-border bg-card/70 shadow-xs"
-              >
-                <div className="flex items-center justify-between border-b border-border/80 bg-muted/60 px-2.5 py-1 text-xs font-bold text-foreground">
-                  <div className="flex items-center gap-1.5 truncate">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                    <span className="truncate">{group.title}</span>
-                    <span className="shrink-0 text-[10px] font-medium text-muted-foreground">({group.subtitle})</span>
-                  </div>
-                  <span className="shrink-0 text-[10px] font-semibold text-muted-foreground">
-                    {group.questions.filter((n) => answers[n]).length}/{group.questions.length}
-                  </span>
-                </div>
-                <div className="p-1.5 space-y-1.5 sm:p-2 sm:space-y-2">
-                  {group.questions.map((qNum) => {
-                    const selectedOpt = answers[qNum];
-                    const isFlagged = flags[qNum];
+            {questionGroups.map((group, groupIdx) => {
+              const groupKey = `${selectedPart}_${groupIdx}`;
+              const isCollapsed = Boolean(collapsedGroups[groupKey]);
+              const groupAnswered = group.questions.filter((n) => answers[n]).length;
 
-                    return (
-                      <div
-                        key={qNum}
-                        className={`flex min-h-9 items-center gap-1.5 rounded-md border px-2 py-0.5 transition-colors sm:min-h-10 sm:gap-2 sm:px-2.5 ${selectedOpt ? 'border-primary/40 bg-primary/5' : 'border-border/80 bg-card'}`}
-                      >
-                        <span className="w-5 shrink-0 text-xs font-bold text-muted-foreground sm:w-6">{qNum}.</span>
-                        <div className="grid flex-1 grid-cols-4 gap-1">
-                          {(['A', 'B', 'C', 'D'] as const).map((opt) => {
-                            const isSelected = selectedOpt === opt;
-                            const isCorrect = isChecked && answerKey[qNum] === opt;
-                            const isWrongSelection = isChecked
-                              && isSelected
-                              && answerKey[qNum] !== undefined
-                              && !isCorrect;
+              return (
+                <div
+                  key={groupIdx}
+                  className="overflow-hidden rounded-lg border border-border bg-card/70 shadow-xs"
+                >
+                  <button
+                    type="button"
+                    onClick={() => setCollapsedGroups((prev) => ({ ...prev, [groupKey]: !prev[groupKey] }))}
+                    className="flex w-full items-center justify-between border-b border-border/80 bg-muted/60 px-2.5 py-1 text-xs font-bold text-foreground transition-colors hover:bg-muted/90 cursor-pointer"
+                  >
+                    <div className="flex items-center gap-1.5 truncate">
+                      <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
+                      <span className="truncate">{group.title}</span>
+                      <span className="shrink-0 text-[10px] font-medium text-muted-foreground">({group.subtitle})</span>
+                    </div>
+                    <div className="flex items-center gap-1.5 shrink-0">
+                      <span className="text-[10px] font-semibold text-muted-foreground">
+                        {groupAnswered}/{group.questions.length}
+                      </span>
+                      {isCollapsed ? (
+                        <ChevronDown className="h-3.5 w-3.5 text-muted-foreground" />
+                      ) : (
+                        <ChevronUp className="h-3.5 w-3.5 text-muted-foreground" />
+                      )}
+                    </div>
+                  </button>
+                  {!isCollapsed && (
+                    <div className="p-1.5 space-y-1.5 sm:p-2 sm:space-y-2">
+                      {group.questions.map((qNum) => {
+                        const selectedOpt = answers[qNum];
+                        const isFlagged = flags[qNum];
 
-                            return (
-                              <button
-                                key={opt}
-                                type="button"
-                                onClick={() => handleSelectAnswer(qNum, opt)}
-                                aria-pressed={isSelected}
-                                aria-label={`Câu ${qNum}, đáp án ${opt}`}
-                                className={`h-6.5 rounded text-xs font-bold transition-colors cursor-pointer sm:h-7.5 ${
-                                  isCorrect
-                                    ? 'bg-emerald-600 text-white hover:bg-emerald-700'
-                                    : isWrongSelection
-                                      ? 'bg-red-600 text-white hover:bg-red-700'
-                                      : isSelected
-                                        ? 'bg-primary text-primary-foreground'
-                                        : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-foreground'
-                                }`}
-                              >
-                                {opt}
-                              </button>
-                            );
-                          })}
-                        </div>
-                        <button
-                          type="button"
-                          onClick={() => toggleFlag(qNum)}
-                          aria-label={isFlagged ? `Bỏ đánh dấu câu ${qNum}` : `Đánh dấu câu ${qNum} để xem lại`}
-                          aria-pressed={Boolean(isFlagged)}
-                          className={`grid h-6.5 w-6.5 shrink-0 place-items-center rounded transition-colors cursor-pointer sm:h-7.5 sm:w-7.5 ${isFlagged ? 'text-amber-500' : 'text-muted-foreground/40 hover:text-amber-500'}`}
-                          title="Đánh dấu xem lại"
-                        >
-                          <Flag className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-                        </button>
-                      </div>
-                    );
-                  })}
+                        return (
+                          <div
+                            key={qNum}
+                            className={`flex min-h-9 items-center gap-1.5 rounded-md border px-2 py-0.5 transition-colors sm:min-h-10 sm:gap-2 sm:px-2.5 ${selectedOpt ? 'border-primary/40 bg-primary/5' : 'border-border/80 bg-card'}`}
+                          >
+                            <span className="w-5 shrink-0 text-xs font-bold text-muted-foreground sm:w-6">{qNum}.</span>
+                            <div className="grid flex-1 grid-cols-4 gap-1">
+                              {(['A', 'B', 'C', 'D'] as const).map((opt) => {
+                                const isSelected = selectedOpt === opt;
+                                const isCorrect = isChecked && answerKey[qNum] === opt;
+                                const isWrongSelection = isChecked
+                                  && isSelected
+                                  && answerKey[qNum] !== undefined
+                                  && !isCorrect;
+
+                                return (
+                                  <button
+                                    key={opt}
+                                    type="button"
+                                    onClick={() => handleSelectAnswer(qNum, opt)}
+                                    aria-pressed={isSelected}
+                                    aria-label={`Câu ${qNum}, đáp án ${opt}`}
+                                    className={`h-6.5 rounded text-xs font-bold transition-colors cursor-pointer sm:h-7.5 ${
+                                      isCorrect
+                                        ? 'bg-emerald-600 text-white hover:bg-emerald-700'
+                                        : isWrongSelection
+                                          ? 'bg-red-600 text-white hover:bg-red-700'
+                                          : isSelected
+                                            ? 'bg-primary text-primary-foreground'
+                                            : 'bg-muted text-muted-foreground hover:bg-primary/10 hover:text-foreground'
+                                    }`}
+                                  >
+                                    {opt}
+                                  </button>
+                                );
+                              })}
+                            </div>
+                            <button
+                              type="button"
+                              onClick={() => toggleFlag(qNum)}
+                              aria-label={isFlagged ? `Bỏ đánh dấu câu ${qNum}` : `Đánh dấu câu ${qNum} để xem lại`}
+                              aria-pressed={Boolean(isFlagged)}
+                              className={`grid h-6.5 w-6.5 shrink-0 place-items-center rounded transition-colors cursor-pointer sm:h-7.5 sm:w-7.5 ${isFlagged ? 'text-amber-500' : 'text-muted-foreground/40 hover:text-amber-500'}`}
+                              title="Đánh dấu xem lại"
+                            >
+                              <Flag className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
+                            </button>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              );
+            })}
 
             {/* Bottom spacer */}
             <div className="h-20 sm:h-24 lg:h-28 shrink-0" aria-hidden="true" />
