@@ -1,39 +1,50 @@
-export type ExamSkill = 'speaking' | 'writing' | 'listening';
+import { toExamPrompt, type ExamPrompt } from '@/utils/examPrompts';
 
-export type ExamApiSettings = {
-  endpoint: string;
-  school: string;
-  batch: string;
+export type ExamSkill = 'speaking' | 'writing' | 'listening' | 'reading';
+
+export type ExamFilterOptions = {
+  schools: string[];
+  batches: string[];
 };
 
 export type RemoteExam = {
   id: string;
-  skill: ExamSkill;
-  school: string;
-  batch: string;
+  skill: 'speaking' | 'writing' | 'listening';
   part: string;
   title: string;
   content: string;
+  school?: string;
+  batch?: string;
+  group?: string;
   videoId?: string;
-  [key: string]: string | undefined;
+  [key: string]: unknown;
 };
 
 export type ExamApiResponse<T> = {
   ok: boolean;
   error?: string;
   items?: T[];
+  item?: T | null;
   schools?: string[];
   batches?: string[];
-  data?: Partial<Record<ExamSkill, T[]>>;
+  data?: unknown;
+};
+
+export type ExamApiSettings = {
+  endpoint?: string;
+  school: string;
+  batch: string;
 };
 
 export const EXAM_API_SETTINGS_KEY = 'vstep_exam_api_settings_v1';
 export const DEFAULT_EXAM_API_SETTINGS: ExamApiSettings = {
-  endpoint: 'https://script.google.com/macros/s/AKfycbxL8innFRsbYXgFZ0DdvcQocYl6Uox_zIXKl2LKC-ZpK8ae9c7pO-x6c1AbXICfK7BrAQ/exec',
+  endpoint: '',
   school: '',
   batch: '',
 };
-let callbackSequence = 0;
+
+let filterOptionsPromise: Promise<ExamFilterOptions> | null = null;
+const queryCache = new Map<string, Promise<ExamPrompt[]>>();
 
 export function getExamApiSettings(): ExamApiSettings {
   if (typeof window === 'undefined') return DEFAULT_EXAM_API_SETTINGS;
@@ -57,8 +68,10 @@ export function getExamApiSettings(): ExamApiSettings {
   }
 }
 
-export function saveExamApiSettings(settings: ExamApiSettings) {
-  window.localStorage.setItem(EXAM_API_SETTINGS_KEY, JSON.stringify(settings));
+export function saveExamApiSettings(settings: Partial<ExamApiSettings>) {
+  const current = getExamApiSettings();
+  const next = { ...current, ...settings };
+  window.localStorage.setItem(EXAM_API_SETTINGS_KEY, JSON.stringify(next));
   window.dispatchEvent(new Event('vstep:exam-api-settings-change'));
 }
 
@@ -80,78 +93,228 @@ export function getServerExamApiSettingsSnapshot() {
 }
 
 export function parseExamApiSettingsSnapshot(snapshot: string): ExamApiSettings {
-  const parsed: unknown = JSON.parse(snapshot);
-  if (
-    typeof parsed === 'object'
-    && parsed !== null
-    && 'endpoint' in parsed
-    && typeof parsed.endpoint === 'string'
-    && 'school' in parsed
-    && typeof parsed.school === 'string'
-    && 'batch' in parsed
-    && typeof parsed.batch === 'string'
-  ) {
-    return {
-      endpoint: parsed.endpoint,
-      school: parsed.school,
-      batch: parsed.batch,
-    };
+  try {
+    const parsed: unknown = JSON.parse(snapshot);
+    if (typeof parsed === 'object' && parsed !== null) {
+      const record = parsed as Record<string, unknown>;
+      return {
+        endpoint: typeof record.endpoint === 'string' ? record.endpoint : '',
+        school: typeof record.school === 'string' ? record.school : '',
+        batch: typeof record.batch === 'string' ? record.batch : '',
+      };
+    }
+  } catch {
+    // fallback
   }
   return DEFAULT_EXAM_API_SETTINGS;
 }
 
-export function requestExamApi<T>(
-  endpoint: string,
-  parameters: Record<string, string>,
-): Promise<ExamApiResponse<T>> {
-  return new Promise((resolve, reject) => {
-    let url: URL;
-    try {
-      url = new URL(endpoint);
-    } catch {
-      reject(new Error('Đường dẫn Apps Script không hợp lệ.'));
-      return;
-    }
-    if (url.protocol !== 'https:') {
-      reject(new Error('API Apps Script phải sử dụng HTTPS.'));
-      return;
-    }
+/**
+ * Fetch available filter options (schools, batches) from the server.
+ */
+export function fetchExamFilterOptions(): Promise<ExamFilterOptions> {
+  if (filterOptionsPromise) return filterOptionsPromise;
+  filterOptionsPromise = fetch('/api/exams?action=options')
+    .then(async (res) => {
+      if (!res.ok) throw new Error(`Lỗi tải bộ lọc từ máy chủ (${res.status})`);
+      const json = (await res.json()) as ExamApiResponse<never>;
+      if (!json.ok) throw new Error(json.error || 'Lỗi tải bộ lọc từ máy chủ');
+      return {
+        schools: json.schools || [],
+        batches: json.batches || [],
+      };
+    })
+    .catch((err) => {
+      filterOptionsPromise = null;
+      throw err;
+    });
+  return filterOptionsPromise;
+}
 
-    const callbackName = `vstepExamApiCallback${Date.now()}${callbackSequence++}`;
-    const script = document.createElement('script');
-    const timeoutId = window.setTimeout(() => {
-      Reflect.deleteProperty(window, callbackName);
-      script.remove();
-      reject(new Error('Apps Script không phản hồi trong thời gian cho phép.'));
-    }, 15000);
+/**
+ * Alias for backward compatibility
+ */
+export const fetchExamManifest = fetchExamFilterOptions;
 
-    const cleanup = () => {
-      window.clearTimeout(timeoutId);
-      Reflect.deleteProperty(window, callbackName);
-      script.remove();
-    };
+/**
+ * Fetch exam prompts from Next.js server route on-demand.
+ * Query results are cached in-memory by query key so switching filters is fast.
+ */
+export async function fetchExamPrompts(options?: {
+  skill?: 'speaking' | 'writing';
+  school?: string;
+  batch?: string;
+}): Promise<ExamPrompt[]> {
+  const params = new URLSearchParams();
+  params.set('action', 'data');
+  if (options?.skill) params.set('skill', options.skill);
+  if (options?.school) params.set('school', options.school);
+  if (options?.batch) params.set('batch', options.batch);
 
-    Reflect.set(window, callbackName, (response: unknown) => {
-      cleanup();
-      if (typeof response !== 'object' || response === null) {
-        reject(new Error('API trả về dữ liệu không hợp lệ.'));
-        return;
-      }
-      const result = response as ExamApiResponse<T>;
-      if (!result.ok) {
-        reject(new Error(result.error || 'API không thể hoàn thành yêu cầu.'));
-        return;
-      }
-      resolve(result);
+  const cacheKey = params.toString();
+  const cached = queryCache.get(cacheKey);
+  if (cached) return cached;
+
+  const promise = fetch(`/api/exams?${cacheKey}`)
+    .then(async (res) => {
+      if (!res.ok) throw new Error(`Lỗi máy chủ khi tải đề thi (${res.status})`);
+      const json = (await res.json()) as ExamApiResponse<RemoteExam>;
+      if (!json.ok) throw new Error(json.error || 'Không thể tải đề thi từ máy chủ.');
+      return (json.items || [])
+        .map((item) => toExamPrompt(item))
+        .filter((prompt): prompt is ExamPrompt => Boolean(prompt));
+    })
+    .catch((err) => {
+      queryCache.delete(cacheKey);
+      throw err;
     });
 
-    url.searchParams.set('callback', callbackName);
-    Object.entries(parameters).forEach(([key, value]) => url.searchParams.set(key, value));
-    script.src = url.toString();
-    script.onerror = () => {
-      cleanup();
-      reject(new Error('Không thể kết nối Apps Script. Kiểm tra URL và quyền triển khai Web App.'));
-    };
-    document.head.appendChild(script);
-  });
+  queryCache.set(cacheKey, promise);
+  return promise;
 }
+
+/**
+ * Request random prompt(s) from the server for Speaking or Writing.
+ */
+export async function getRandomExamPrompts(options: {
+  skill: 'speaking' | 'writing';
+  part?: string;
+  school?: string;
+  batch?: string;
+  count?: number;
+}): Promise<ExamPrompt[]> {
+  const params = new URLSearchParams();
+  params.set('action', 'random');
+  params.set('skill', options.skill);
+  if (options.part) params.set('part', options.part);
+  if (options.school) params.set('school', options.school);
+  if (options.batch) params.set('batch', options.batch);
+  if (options.count) params.set('count', String(options.count));
+
+  const res = await fetch(`/api/exams?${params.toString()}`);
+  if (!res.ok) {
+    const errorJson = await res.json().catch(() => null);
+    throw new Error(errorJson?.error || `Không có đề ${options.skill === 'speaking' ? 'Speaking' : 'Writing'} phù hợp.`);
+  }
+
+  const json = (await res.json()) as ExamApiResponse<RemoteExam>;
+  if (!json.ok || !json.items || json.items.length === 0) {
+    throw new Error(json.error || `Không có đề ${options.skill === 'speaking' ? 'Speaking' : 'Writing'} phù hợp.`);
+  }
+
+  return json.items
+    .map((item) => toExamPrompt(item))
+    .filter((prompt): prompt is ExamPrompt => Boolean(prompt));
+}
+
+/**
+ * Fetch one or more prompts by ID(s) from the server.
+ */
+export async function fetchExamPromptsByIds(
+  ids: string | string[],
+  skill?: 'speaking' | 'writing',
+): Promise<ExamPrompt[]> {
+  const idStr = Array.isArray(ids) ? ids.join('+') : ids;
+  if (!idStr) return [];
+  const params = new URLSearchParams();
+  params.set('action', 'data');
+  params.set('id', idStr);
+  if (skill) params.set('skill', skill);
+
+  try {
+    const res = await fetch(`/api/exams?${params.toString()}`);
+    if (!res.ok) return [];
+    const json = (await res.json()) as ExamApiResponse<RemoteExam>;
+    return (json.items || [])
+      .map((item) => toExamPrompt(item))
+      .filter((prompt): prompt is ExamPrompt => Boolean(prompt));
+  } catch (error) {
+    console.error('fetchExamPromptsByIds error:', error);
+    return [];
+  }
+}
+
+/**
+ * Fetch a specific prompt by ID from the server.
+ */
+export async function fetchExamPromptById(id: string, skill?: 'speaking' | 'writing'): Promise<ExamPrompt | null> {
+  const prompts = await fetchExamPromptsByIds(id, skill);
+  return prompts[0] || null;
+}
+
+export type ExamUrlQuery = {
+  exam?: string;
+  matruong?: string;
+  batch?: string;
+  task?: string;
+  part?: string;
+};
+
+/**
+ * Parses query strings from the URL supporting both '-' and standard '&' separators.
+ * e.g. "?batch=09/2026-exam=speaking-part3-24" or "?matruong=VLU-batch=09/2026-exam=123"
+ */
+export function parseExamQueryString(search: string): ExamUrlQuery {
+  const clean = search.replace(/^\?/, '').trim();
+  if (!clean) return {};
+
+  const result: ExamUrlQuery = {};
+  const tokens = clean.split(/[&]|-(?=(?:matruong|school|batch|dotthi|exam|task|part)=)/i);
+
+  for (const token of tokens) {
+    const eq = token.indexOf('=');
+    if (eq === -1) continue;
+    const key = token.slice(0, eq).trim().toLowerCase();
+    const val = decodeURIComponent(token.slice(eq + 1).trim());
+    if (key === 'exam') {
+      result.exam = val;
+    } else if (key === 'matruong' || key === 'school') {
+      result.matruong = val;
+    } else if (key === 'batch' || key === 'dotthi') {
+      result.batch = val;
+    } else if (key === 'task') {
+      result.task = val;
+    } else if (key === 'part') {
+      result.part = val;
+    }
+  }
+
+  return result;
+}
+
+/**
+ * Builds a query string formatted with '-' separators.
+ * If both school and batch are configured -> matruong=VLU-batch=09/2026
+ * If only school is configured -> matruong=VLU
+ * If only batch is configured -> batch=09/2026
+ * If neither is configured -> matruong=all-batch=all
+ * If exam is present -> appends -exam=...
+ */
+export function buildExamQueryString(query: ExamUrlQuery): string {
+  const parts: string[] = [];
+  const school = query.matruong?.trim();
+  const batch = query.batch?.trim();
+  const exam = query.exam?.trim();
+
+  const isSchoolSet = Boolean(school && school.toLowerCase() !== 'all');
+  const isBatchSet = Boolean(batch && batch.toLowerCase() !== 'all');
+
+  if (isSchoolSet && isBatchSet) {
+    parts.push(`matruong=${encodeURIComponent(school!).replace(/%2F/gi, '/')}`);
+    parts.push(`batch=${encodeURIComponent(batch!).replace(/%2F/gi, '/')}`);
+  } else if (isSchoolSet) {
+    parts.push(`matruong=${encodeURIComponent(school!).replace(/%2F/gi, '/')}`);
+  } else if (isBatchSet) {
+    parts.push(`batch=${encodeURIComponent(batch!).replace(/%2F/gi, '/')}`);
+  } else {
+    parts.push('matruong=all');
+    parts.push('batch=all');
+  }
+
+  if (exam) {
+    parts.push(`exam=${encodeURIComponent(exam).replace(/%2F/gi, '/')}`);
+  }
+
+  return parts.join('-');
+}
+

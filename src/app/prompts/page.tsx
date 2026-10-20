@@ -25,14 +25,14 @@ import {
   type ExamPrompt,
 } from '@/utils/examPrompts';
 import {
+  buildExamQueryString,
+  fetchExamManifest,
+  fetchExamPrompts,
   getExamApiSettingsSnapshot,
   getServerExamApiSettingsSnapshot,
   parseExamApiSettingsSnapshot,
-  requestExamApi,
   saveExamApiSettings,
   subscribeToExamApiSettings,
-  type ExamApiResponse,
-  type RemoteExam,
 } from '@/lib/examApi';
 
 type ActiveFilter = 'school' | 'batch' | null;
@@ -62,41 +62,30 @@ export default function PromptBankPage() {
 
   useEffect(() => {
     let cancelled = false;
-    Promise.all([
-      requestExamApi<RemoteExam>(settings.endpoint, {
-        action: 'data',
-        skill: 'speaking',
-        maTruong: settings.school,
-        dotThi: settings.batch,
-        limit: '1000',
-      }),
-      requestExamApi<RemoteExam>(settings.endpoint, {
-        action: 'data',
-        skill: 'writing',
-        maTruong: settings.school,
-        dotThi: settings.batch,
-        limit: '1000',
-      }),
-    ]).then(([speaking, writing]) => {
-      if (cancelled) return;
-      setPrompts(
-        [...(speaking.items || []), ...(writing.items || [])]
-          .map(toExamPrompt)
-          .filter((prompt): prompt is ExamPrompt => Boolean(prompt)),
-      );
-      setLoadError('');
-    }).catch((error: unknown) => {
-      if (!cancelled) {
-        setLoadError(error instanceof Error ? error.message : 'Không thể tải ngân hàng đề.');
-      }
-    }).finally(() => {
-      if (!cancelled) setIsLoading(false);
-    });
+    setIsLoading(true);
+
+    fetchExamPrompts({
+      school: settings.school,
+      batch: settings.batch,
+    })
+      .then((items) => {
+        if (cancelled) return;
+        setPrompts(items);
+        setLoadError('');
+      })
+      .catch((error: unknown) => {
+        if (!cancelled) {
+          setLoadError(error instanceof Error ? error.message : 'Không thể tải ngân hàng đề.');
+        }
+      })
+      .finally(() => {
+        if (!cancelled) setIsLoading(false);
+      });
 
     return () => {
       cancelled = true;
     };
-  }, [settings.endpoint, settings.school, settings.batch]);
+  }, [settings.school, settings.batch]);
 
   const toggleFilter = async (filter: Exclude<ActiveFilter, null>) => {
     if (activeFilter === filter) {
@@ -108,16 +97,9 @@ export default function PromptBankPage() {
     setIsLoadingOptions(true);
     setOptionsError('');
     try {
-      const result: ExamApiResponse<never> = await requestExamApi<never>(
-        settings.endpoint,
-        {
-          action: 'options',
-          maTruong: settings.school,
-          dotThi: settings.batch,
-        },
-      );
-      setSchools(result.schools || []);
-      setBatches(result.batches || []);
+      const manifest = await fetchExamManifest();
+      setSchools(manifest.schools || []);
+      setBatches(manifest.batches || []);
     } catch (error) {
       setOptionsError(error instanceof Error ? error.message : 'Không thể tải danh sách bộ lọc.');
     } finally {
@@ -242,7 +224,7 @@ export default function PromptBankPage() {
           role={loadError ? 'alert' : 'status'}
           className={`rounded-xl border p-4 text-sm font-semibold ${loadError ? 'border-amber-500/30 bg-amber-500/10 text-amber-800' : 'border-border bg-card text-muted-foreground'}`}
         >
-          {isLoading ? 'Đang tải đề từ Apps Script…' : loadError}
+          {isLoading ? 'Đang tải đề thi…' : loadError}
         </div>
       )}
 
@@ -302,7 +284,7 @@ export default function PromptBankPage() {
                 );
               })}
               {!isLoadingOptions && !(activeFilter === 'school' ? schools : batches).length && (
-                <span className="py-1 text-xs text-muted-foreground">API chưa trả về lựa chọn nào.</span>
+                <span className="py-1 text-xs text-muted-foreground">Chưa có lựa chọn nào trong danh mục đề thi.</span>
               )}
             </div>
           </div>
@@ -428,7 +410,11 @@ export default function PromptBankPage() {
           <div className="flex flex-wrap gap-3 border-t border-border px-5 py-4 md:px-6">
             {selectedCategory.skill === 'writing' ? (
               <Link
-                href={`/writing/${writingTask}?exam=${encodeURIComponent(selectedPrompt.id)}`}
+                href={`/writing/${writingTask}?${buildExamQueryString({
+                  matruong: settings.school,
+                  batch: settings.batch,
+                  exam: selectedPrompt.id,
+                })}`}
                 onClick={() => storeWritingPrompt(selectedPrompt)}
                 className="inline-flex h-10 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
               >
@@ -436,7 +422,11 @@ export default function PromptBankPage() {
               </Link>
             ) : (
               <Link
-                href={`/speaking/${selectedPrompt.category.replace('speaking-', '')}?exam=${encodeURIComponent(selectedPrompt.id)}`}
+                href={`/speaking/${selectedPrompt.category.replace('speaking-', '')}?${buildExamQueryString({
+                  matruong: settings.school,
+                  batch: settings.batch,
+                  exam: selectedPrompt.id,
+                })}`}
                 onClick={() => storeSpeakingPrompt(selectedPrompt)}
                 className="inline-flex h-10 items-center gap-2 rounded-xl bg-primary px-4 text-sm font-bold text-primary-foreground transition hover:bg-primary/90"
               >

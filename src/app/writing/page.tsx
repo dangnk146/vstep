@@ -20,7 +20,14 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { toReadablePromptText } from '@/utils/examPrompts';
-import { getExamApiSettings, requestExamApi, type RemoteExam } from '@/lib/examApi';
+import {
+  buildExamQueryString,
+  getExamApiSettings,
+  getRandomExamPrompts,
+  fetchExamPromptById,
+  parseExamQueryString,
+  saveExamApiSettings,
+} from '@/lib/examApi';
 
 const EDITOR_BASIC_SETUP = {
   lineNumbers: true,
@@ -97,10 +104,27 @@ export default function WritingPage() {
   // Synchronize active task with URL query parameter
   useEffect(() => {
     const syncFromLocation = (consumeStoredPrompt: boolean) => {
-      const params = new URLSearchParams(window.location.search);
+      const parsedQuery = parseExamQueryString(window.location.search);
       const pathTask = window.location.pathname.match(/^\/writing\/(task1|task2|free)$/)?.[1];
-      const queryTask = params.get('task');
-      const examId = params.get('exam');
+      const queryTask = parsedQuery.task;
+      const examId = parsedQuery.exam;
+      const urlSchool = parsedQuery.matruong;
+      const urlBatch = parsedQuery.batch;
+
+      // Sync filter from URL to localStorage if provided
+      const hasFilterInUrl = urlSchool !== undefined || urlBatch !== undefined;
+      const currentSettings = getExamApiSettings();
+      let nextSchool = currentSettings.school;
+      let nextBatch = currentSettings.batch;
+
+      if (hasFilterInUrl) {
+        nextSchool = urlSchool && urlSchool.toLowerCase() !== 'all' ? urlSchool : '';
+        nextBatch = urlBatch && urlBatch.toLowerCase() !== 'all' ? urlBatch : '';
+        if (nextSchool !== currentSettings.school || nextBatch !== currentSettings.batch) {
+          saveExamApiSettings({ school: nextSchool, batch: nextBatch });
+        }
+      }
+
       let task: 'task1' | 'task2' | 'free' =
         pathTask === 'task1' || pathTask === 'task2' || pathTask === 'free'
           ? pathTask
@@ -120,15 +144,16 @@ export default function WritingPage() {
               content?: unknown;
               task?: unknown;
             };
-            if (typeof prompt.title === 'string' && typeof prompt.content === 'string') {
-              promptContent = {
-                title: prompt.title,
-                content: toReadablePromptText(prompt.content),
-              };
-              if (prompt.task === 'task1' || prompt.task === 'task2') task = prompt.task;
-              if (typeof prompt.id === 'string') selectedExamId = prompt.id;
-            } else {
-              console.error('Invalid Writing prompt received from the exam API.');
+            const promptId = typeof prompt.id === 'string' ? prompt.id : undefined;
+            if (!examId || examId === promptId) {
+              if (typeof prompt.title === 'string' && typeof prompt.content === 'string') {
+                promptContent = {
+                  title: prompt.title,
+                  content: toReadablePromptText(prompt.content),
+                };
+                if (prompt.task === 'task1' || prompt.task === 'task2') task = prompt.task;
+                if (promptId) selectedExamId = promptId;
+              }
             }
           } catch (error) {
             console.error('Could not read the Writing prompt from the exam API.', error);
@@ -142,10 +167,38 @@ export default function WritingPage() {
         setActiveTask(task);
         setBankPrompt(promptContent);
       });
-      const nextParams = new URLSearchParams();
-      if (selectedExamId) nextParams.set('exam', selectedExamId);
-      const query = nextParams.toString();
-      const canonicalUrl = `/writing/${task}${query ? `?${query}` : ''}`;
+
+      if (selectedExamId && !promptContent) {
+        fetchExamPromptById(selectedExamId, 'writing')
+          .then((p) => {
+            if (p) {
+              const taskFromPrompt = p.category === 'writing-task2' ? 'task2' : 'task1';
+              startTransition(() => {
+                setBankPrompt({
+                  title: p.title,
+                  content: toReadablePromptText(p.content),
+                });
+                setActiveTask(taskFromPrompt);
+              });
+
+              if (!hasFilterInUrl) {
+                const promptSchool = p.school || '';
+                const promptBatch = p.batch || '';
+                if (promptSchool || promptBatch) {
+                  saveExamApiSettings({ school: promptSchool, batch: promptBatch });
+                }
+              }
+            }
+          })
+          .catch(console.error);
+      }
+
+      const queryStr = buildExamQueryString({
+        matruong: nextSchool,
+        batch: nextBatch,
+        exam: selectedExamId,
+      });
+      const canonicalUrl = `/writing/${task}${queryStr ? `?${queryStr}` : ''}`;
       if (`${window.location.pathname}${window.location.search}` !== canonicalUrl) {
         window.history.replaceState(null, '', canonicalUrl);
       }
@@ -163,6 +216,15 @@ export default function WritingPage() {
       if (skill === 'writing' && (section === 'task1' || section === 'task2' || section === 'free')) {
         setActiveTask(section);
         setBankPrompt(null);
+
+        const parsed = parseExamQueryString(window.location.search);
+        delete parsed.exam;
+        const queryStr = buildExamQueryString(parsed);
+        window.history.replaceState(
+          null,
+          '',
+          `/writing/${section}${queryStr ? `?${queryStr}` : ''}`,
+        );
       }
     };
 
@@ -172,49 +234,47 @@ export default function WritingPage() {
 
   const handleRandomPrompt = async () => {
     const apiSettings = getExamApiSettings();
-    if (apiSettings.endpoint) {
-      setIsLoadingRandomPrompt(true);
-      try {
-        const result = await requestExamApi<RemoteExam>(apiSettings.endpoint, {
-          action: 'random',
-          skill: 'writing',
-          maTruong: apiSettings.school,
-          dotThi: apiSettings.batch,
-          part: activeTask === 'task1' || activeTask === 'task2' ? activeTask : '',
-          count: '1',
-          limit: '1000',
-        });
-        const prompt = result.items?.[0];
-        if (!prompt) {
-          throw new Error('Không có đề Writing phù hợp với trường, đợt thi và Task đã chọn.');
-        }
-        const task = prompt.part === 'part2' || prompt.part === 'task2' ? 'task2' : 'task1';
-        const title = prompt.title || prompt.id;
-        const content = prompt.content || title;
-        setBankPrompt({ title, content });
-        setActiveTask(task);
-        sessionStorage.setItem('vstep_bank_writing_prompt', JSON.stringify({
-          id: prompt.id,
-          title,
-          content,
-          task,
-        }));
-        window.history.pushState(
-          null,
-          '',
-          `/writing/${task}?exam=${encodeURIComponent(prompt.id)}`,
-        );
-        return;
-      } catch (error) {
-        console.error('Could not load a random Writing prompt from Apps Script.', error);
-        window.alert(error instanceof Error ? error.message : 'Không thể tải đề Writing.');
-      } finally {
-        setIsLoadingRandomPrompt(false);
+    setIsLoadingRandomPrompt(true);
+    try {
+      const prompts = await getRandomExamPrompts({
+        skill: 'writing',
+        part: activeTask === 'task1' || activeTask === 'task2' ? activeTask : undefined,
+        school: apiSettings.school,
+        batch: apiSettings.batch,
+        count: 1,
+      });
+      const prompt = prompts[0];
+      if (!prompt) {
+        throw new Error('Không có đề Writing phù hợp với trường, đợt thi và Task đã chọn.');
       }
-      return;
-    }
+      const task = prompt.category === 'writing-task2' ? 'task2' : 'task1';
+      const title = prompt.title || prompt.id;
+      const content = prompt.content || title;
+      setBankPrompt({ title, content });
+      setActiveTask(task);
+      sessionStorage.setItem('vstep_bank_writing_prompt', JSON.stringify({
+        id: prompt.id,
+        title,
+        content,
+        task,
+      }));
 
-    window.alert('Không tìm thấy cấu hình nguồn đề. Hãy mở mục Đề thi để kiểm tra kết nối.');
+      const queryStr = buildExamQueryString({
+        matruong: apiSettings.school,
+        batch: apiSettings.batch,
+        exam: prompt.id,
+      });
+      window.history.pushState(
+        null,
+        '',
+        `/writing/${task}${queryStr ? `?${queryStr}` : ''}`,
+      );
+    } catch (error) {
+      console.error('Could not load a random Writing prompt.', error);
+      window.alert(error instanceof Error ? error.message : 'Không thể tải đề Writing.');
+    } finally {
+      setIsLoadingRandomPrompt(false);
+    }
   };
 
   // Load saved templates from LocalStorage on mount & updates

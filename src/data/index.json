@@ -1,0 +1,32 @@
+{
+  "schools": [
+    "VLU"
+  ],
+  "batches": [
+    "09/2026"
+  ],
+  "speaking": [
+    {
+      "school": "VLU",
+      "batch": "09/2026",
+      "file": "speaking/VLU_09-2026.json",
+      "count": 75
+    }
+  ],
+  "writing": [
+    {
+      "school": "VLU",
+      "batch": "09/2026",
+      "file": "writing/VLU_09-2026.json",
+      "count": 79
+    }
+  ],
+  "listening": {
+    "file": "listening.json",
+    "totalVideos": 87
+  },
+  "reading": {
+    "file": "reading.json",
+    "totalTests": 6
+  }
+}

@@ -23,7 +23,11 @@ export type ExamQuestion = {
   content: string;
 };
 
-export type ExamPrompt = ExamQuestion & { group: string };
+export type ExamPrompt = ExamQuestion & {
+  group: string;
+  school?: string;
+  batch?: string;
+};
 
 export function getExamCategory(category: ExamCategory) {
   return EXAM_CATEGORIES.find((item) => item.id === category)!;
@@ -58,6 +62,8 @@ export function toExamPrompt(record: {
     title: record.title,
     content: record.content,
     group,
+    school: record.school,
+    batch: record.batch,
   };
 }
 
