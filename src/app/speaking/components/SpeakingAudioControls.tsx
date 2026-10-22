@@ -1,8 +1,9 @@
 'use client';
 
 import React from 'react';
-import { AlertCircle, Download, Mic, RotateCcw, Square } from 'lucide-react';
+import { AlertCircle, Mic, RotateCcw, Square } from 'lucide-react';
 import type { RecorderStatus, TimerPhase } from '../types';
+import { SpeakingWaveformPlayer } from './SpeakingWaveformPlayer';
 
 interface SpeakingAudioControlsProps {
   recorderStatus: RecorderStatus;
@@ -77,18 +78,6 @@ export function SpeakingAudioControls({
           <Square className="h-3 w-3" /> DỪNG
         </button>
 
-        {audioUrl && (
-          <a
-            href={audioUrl}
-            download="vstep-speaking.webm"
-            aria-label="Tải bản ghi xuống"
-            title="Tải bản ghi xuống"
-            className="grid h-7 w-7 place-items-center rounded-xs border border-border bg-card text-foreground transition hover:bg-muted active:scale-95 cursor-pointer shadow-xs"
-          >
-            <Download className="h-3.5 w-3.5" />
-          </a>
-        )}
-
         <button
           type="button"
           onClick={onResetTimers}
@@ -101,15 +90,8 @@ export function SpeakingAudioControls({
       </div>
 
       {audioUrl && (
-        <div className="border-t border-border/50 bg-muted/20 px-3 py-1.5 sm:px-4">
-          <audio
-            ref={audioRef}
-            src={audioUrl}
-            controls
-            preload="metadata"
-            className="h-7 w-full rounded-xs"
-            aria-label="Phát lại và tua bản ghi câu trả lời"
-          />
+        <div className="border-t border-border/50 bg-muted/20 px-3 py-2 sm:px-4">
+          <SpeakingWaveformPlayer audioUrl={audioUrl} audioRef={audioRef} />
         </div>
       )}
       {recorderError && (
