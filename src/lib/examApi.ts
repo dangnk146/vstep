@@ -209,13 +209,15 @@ export async function getRandomExamPrompts(options: {
 
 /**
  * Fetch one or more prompts by ID(s) from the server.
+ * Preserves the exact order of requested IDs.
  */
 export async function fetchExamPromptsByIds(
   ids: string | string[],
   skill?: 'speaking' | 'writing',
 ): Promise<ExamPrompt[]> {
-  const idStr = Array.isArray(ids) ? ids.join('+') : ids;
-  if (!idStr) return [];
+  const idList = (Array.isArray(ids) ? ids : ids.split('+')).map((s) => s.trim()).filter(Boolean);
+  if (idList.length === 0) return [];
+  const idStr = idList.join('+');
   const params = new URLSearchParams();
   params.set('action', 'data');
   params.set('id', idStr);
@@ -225,7 +227,13 @@ export async function fetchExamPromptsByIds(
     const res = await fetch(`/api/exams?${params.toString()}`);
     if (!res.ok) return [];
     const json = (await res.json()) as ExamApiResponse<RemoteExam>;
-    return (json.items || [])
+    const rawItems = json.items || [];
+    const itemMap = new Map(rawItems.map((item) => [item.id, item]));
+
+    // Strictly map in the exact order requested by idList
+    return idList
+      .map((id) => itemMap.get(id))
+      .filter((item): item is RemoteExam => Boolean(item))
       .map((item) => toExamPrompt(item))
       .filter((prompt): prompt is ExamPrompt => Boolean(prompt));
   } catch (error) {
@@ -251,8 +259,8 @@ export type ExamUrlQuery = {
 };
 
 /**
- * Parses query strings from the URL supporting both '-' and standard '&' separators.
- * e.g. "?batch=09/2026-exam=speaking-part3-24" or "?matruong=VLU-batch=09/2026-exam=123"
+ * Parses query strings from the URL supporting both standard '&' and legacy '-' separators.
+ * Normalizes batch format (e.g. "102026" or "10/2026" -> "10/2026").
  */
 export function parseExamQueryString(search: string): ExamUrlQuery {
   const clean = search.replace(/^\?/, '').trim();
@@ -265,12 +273,19 @@ export function parseExamQueryString(search: string): ExamUrlQuery {
     const eq = token.indexOf('=');
     if (eq === -1) continue;
     const key = token.slice(0, eq).trim().toLowerCase();
-    const val = decodeURIComponent(token.slice(eq + 1).trim());
+    let val = decodeURIComponent(token.slice(eq + 1).trim());
     if (key === 'exam') {
       result.exam = val;
     } else if (key === 'matruong' || key === 'school') {
       result.matruong = val;
     } else if (key === 'batch' || key === 'dotthi') {
+      // Normalize batch format:
+      // If "102026" (MMYYYY) -> convert to standard "10/2026"
+      if (/^\d{2}\d{4}$/.test(val)) {
+        val = `${val.slice(0, 2)}/${val.slice(2)}`;
+      } else if (/^\d{2}-\d{4}$/.test(val)) {
+        val = val.replace('-', '/');
+      }
       result.batch = val;
     } else if (key === 'task') {
       result.task = val;
@@ -283,38 +298,39 @@ export function parseExamQueryString(search: string): ExamUrlQuery {
 }
 
 /**
- * Builds a query string formatted with '-' separators.
- * If both school and batch are configured -> matruong=VLU-batch=09/2026
- * If only school is configured -> matruong=VLU
- * If only batch is configured -> batch=09/2026
- * If neither is configured -> matruong=all-batch=all
- * If exam is present -> appends -exam=...
+ * Builds standard query string formatted with '&' separators.
+ * Batch is formatted cleanly without slashes or dashes (e.g. 10/2026 -> 102026).
+ * Example: ?matruong=VLU&batch=102026
+ * If exam is present -> &exam=...
  */
 export function buildExamQueryString(query: ExamUrlQuery): string {
   const parts: string[] = [];
   const school = query.matruong?.trim();
-  const batch = query.batch?.trim();
+  const rawBatch = query.batch?.trim();
   const exam = query.exam?.trim();
 
+  // Strip slashes and dashes for clean safe URL (e.g. "10/2026" -> "102026")
+  const cleanBatch = rawBatch ? rawBatch.replace(/[\/-]/g, '').trim() : '';
+
   const isSchoolSet = Boolean(school && school.toLowerCase() !== 'all');
-  const isBatchSet = Boolean(batch && batch.toLowerCase() !== 'all');
+  const isBatchSet = Boolean(cleanBatch && cleanBatch.toLowerCase() !== 'all');
 
   if (isSchoolSet && isBatchSet) {
-    parts.push(`matruong=${encodeURIComponent(school!).replace(/%2F/gi, '/')}`);
-    parts.push(`batch=${encodeURIComponent(batch!).replace(/%2F/gi, '/')}`);
+    parts.push(`matruong=${encodeURIComponent(school!)}`);
+    parts.push(`batch=${encodeURIComponent(cleanBatch)}`);
   } else if (isSchoolSet) {
-    parts.push(`matruong=${encodeURIComponent(school!).replace(/%2F/gi, '/')}`);
+    parts.push(`matruong=${encodeURIComponent(school!)}`);
   } else if (isBatchSet) {
-    parts.push(`batch=${encodeURIComponent(batch!).replace(/%2F/gi, '/')}`);
+    parts.push(`batch=${encodeURIComponent(cleanBatch)}`);
   } else {
     parts.push('matruong=all');
     parts.push('batch=all');
   }
 
   if (exam) {
-    parts.push(`exam=${encodeURIComponent(exam).replace(/%2F/gi, '/')}`);
+    parts.push(`exam=${encodeURIComponent(exam)}`);
   }
 
-  return parts.join('-');
+  return parts.join('&');
 }
 

@@ -90,8 +90,12 @@ export async function GET(request: Request) {
       if (school && school.toLowerCase() !== 'all' && entry.school.toLowerCase().trim() !== school.toLowerCase().trim()) {
         return false;
       }
-      if (batch && batch.toLowerCase() !== 'all' && entry.batch.toLowerCase().trim() !== batch.toLowerCase().trim()) {
-        return false;
+      if (batch && batch.toLowerCase() !== 'all') {
+        const cleanReqBatch = batch.replace(/[\/-]/g, '').toLowerCase().trim();
+        const cleanEntryBatch = entry.batch.replace(/[\/-]/g, '').toLowerCase().trim();
+        if (cleanReqBatch !== cleanEntryBatch && entry.batch.toLowerCase().trim() !== batch.toLowerCase().trim()) {
+          return false;
+        }
       }
       return true;
     };
@@ -118,10 +122,13 @@ export async function GET(request: Request) {
     );
     let items = itemArrays.flat();
 
-    // Filter by id if requested (supports single ID or multiple IDs separated by +)
+    // Filter by id if requested (strictly preserving the exact order in requestedIds)
     if (id) {
       const requestedIds = id.split('+').map((s) => s.trim()).filter(Boolean);
-      const found = items.filter((item) => requestedIds.includes(item.id));
+      const itemMap = new Map(items.map((item) => [item.id, item]));
+      const found = requestedIds
+        .map((reqId) => itemMap.get(reqId))
+        .filter((item): item is RawExamItem => Boolean(item));
       return NextResponse.json({
         ok: true,
         item: found[0] || null,
