@@ -48,7 +48,7 @@ export function SpeakingExamEditor({
         }}
         onPaste={handlePaste}
         data-placeholder="Chọn đề trong Ngân hàng đề hoặc bấm xúc xắc để bắt đầu luyện nói…"
-        className="speaking-editor min-h-[240px] max-h-[50vh] overflow-y-auto rounded-xs bg-card p-3 sm:p-4 text-xs sm:text-[13px] leading-relaxed text-foreground outline-none focus:outline-none [&_a]:text-primary [&_blockquote]:border-l-2 [&_blockquote]:border-primary/60 [&_blockquote]:bg-primary/5 [&_blockquote]:p-2.5 [&_blockquote]:rounded-r-xs [&_h1]:mb-2 [&_h1]:text-base [&_h1]:font-black [&_h1]:text-foreground [&_h2]:mb-2 [&_h2]:text-sm sm:[&_h2]:text-base [&_h2]:font-bold [&_h2]:text-foreground [&_h3]:font-bold [&_h3]:text-foreground [&_p]:mb-2 [&_p]:text-foreground/90 [&_li]:ml-5 [&_li]:mb-1 [&_ol]:list-decimal [&_ul]:list-disc"
+        className="speaking-editor min-h-[260px] max-h-[55vh] overflow-y-auto rounded-xs bg-card p-3.5 sm:p-5 text-sm sm:text-[15px] lg:text-base leading-relaxed text-foreground outline-none focus:outline-none [&_a]:text-primary [&_blockquote]:border-l-3 [&_blockquote]:border-primary/70 [&_blockquote]:bg-primary/5 [&_blockquote]:p-3 [&_blockquote]:rounded-r-xs [&_h1]:mb-3 [&_h1]:text-lg sm:[&_h1]:text-xl [&_h1]:font-black [&_h1]:text-foreground [&_h2]:mb-3 [&_h2]:text-base sm:[&_h2]:text-lg [&_h2]:font-bold [&_h2]:text-foreground [&_h3]:font-bold [&_h3]:text-foreground [&_p]:mb-3 [&_p]:text-foreground/90 [&_li]:ml-5 [&_li]:mb-1.5 [&_ol]:list-decimal [&_ul]:list-disc"
       />
     </div>
   );

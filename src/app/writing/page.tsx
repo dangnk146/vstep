@@ -47,9 +47,11 @@ const EDITOR_EXTENSIONS = [
       height: "100%",
       backgroundColor: "transparent",
       color: "var(--foreground)",
+      fontSize: "15px",
     },
     ".cm-scroller": {
-      fontFamily: "var(--font-mono), monospace",
+      fontFamily: "var(--font-sans), system-ui, -apple-system, sans-serif",
+      lineHeight: "1.65",
       overflow: "auto",
     },
     ".cm-gutters": {
@@ -540,10 +542,10 @@ export default function WritingPage() {
         {/* Header row: Badge, Title, Toggle */}
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-2 min-w-0">
-            <span className="shrink-0 rounded-xs bg-primary/10 px-1.5 py-0.5 font-mono text-[10px] font-bold text-primary uppercase">
+            <span className="shrink-0 rounded-xs bg-primary/10 px-2 py-0.5 font-mono text-[11px] font-bold text-primary uppercase">
               {activeTask === 'task1' ? 'Task 1 • 20m • ≥120 từ' : activeTask === 'task2' ? 'Task 2 • 40m • ≥250 từ' : 'Free Writing'}
             </span>
-            <h2 className="truncate text-xs font-bold text-foreground sm:text-sm">
+            <h2 className="truncate text-sm font-bold text-foreground sm:text-base">
               {bankPrompt
                 ? bankPrompt.title
                 : activeTask === 'task1'
@@ -558,7 +560,7 @@ export default function WritingPage() {
             <button
               type="button"
               onClick={() => setIsPromptCollapsed((prev) => !prev)}
-              className="flex items-center gap-1 rounded-xs border border-border/60 bg-muted/40 px-2 py-0.5 text-[11px] font-medium text-muted-foreground hover:bg-muted hover:text-foreground cursor-pointer transition shrink-0"
+              className="flex items-center gap-1 rounded-xs border border-border/60 bg-muted/40 px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-foreground cursor-pointer transition shrink-0"
               title={isPromptCollapsed ? 'Mở rộng xem chi tiết đề' : 'Thu gọn đề để tập trung gõ'}
             >
               <span>{isPromptCollapsed ? 'Chi tiết' : 'Thu gọn'}</span>
@@ -569,7 +571,7 @@ export default function WritingPage() {
 
         {/* Body */}
         {activeTask === 'free' ? (
-          <div className="mt-1.5 flex flex-wrap items-center gap-2 text-xs">
+          <div className="mt-2 flex flex-wrap items-center gap-2 text-xs sm:text-sm">
             <p className="font-medium text-muted-foreground">Luyện tập viết tự do theo mẫu cấu hình.</p>
             {freeTemplates.length > 0 && (
               <div className="flex items-center gap-2">
@@ -590,33 +592,33 @@ export default function WritingPage() {
           </div>
         ) : isPromptCollapsed ? (
           /* Collapsed view: Just the single essential sentence */
-          <div className="mt-1.5 flex items-center gap-1.5 text-xs">
+          <div className="mt-2 flex items-center gap-1.5 text-xs sm:text-sm">
             <span className="shrink-0 font-bold text-primary">Yêu cầu:</span>
             <p className="truncate font-semibold text-foreground" title={currentParsedPrompt.requirement}>
               {currentParsedPrompt.requirement || currentParsedPrompt.quote || 'Viết theo yêu cầu đề bài'}
             </p>
           </div>
         ) : (
-          /* Clean, compact full view */
-          <div className="mt-2 space-y-1.5 text-xs sm:text-[13px]">
+          /* Clean, spacious readable view */
+          <div className="mt-2.5 space-y-2 text-sm sm:text-[15px]">
             {/* Context if meaningful (not boilerplate) */}
             {currentParsedPrompt.context && !currentParsedPrompt.context.startsWith('Read the following') && (
-              <p className="text-[11px] text-muted-foreground leading-snug sm:text-xs">
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 {currentParsedPrompt.context}
               </p>
             )}
 
             {/* Stimulus Quote / Topic Statement */}
             {currentParsedPrompt.quote && (
-              <div className="rounded-xs border-l-2 border-primary/70 bg-primary/5 px-2.5 py-1 text-xs italic text-foreground leading-relaxed sm:text-[13px]">
+              <div className="rounded-xs border-l-3 border-primary/80 bg-primary/5 px-3 py-2 text-sm sm:text-[15px] italic text-foreground leading-relaxed">
                 &ldquo;{currentParsedPrompt.quote}&rdquo;
               </div>
             )}
 
             {/* Core Requirement (Bold, highlighted as the key prompt!) */}
             {currentParsedPrompt.requirement && (
-              <div className="rounded-xs border border-border/70 bg-muted/30 px-2.5 py-1.5 text-xs font-semibold text-foreground leading-snug sm:text-[13px]">
-                <div className="flex items-start gap-1.5">
+              <div className="rounded-xs border border-border/80 bg-muted/40 px-3 py-2 text-sm sm:text-[15px] font-semibold text-foreground leading-relaxed">
+                <div className="flex items-start gap-2">
                   <span className="mt-0.5 shrink-0 text-primary font-bold">▶</span>
                   <span className="whitespace-pre-line">{currentParsedPrompt.requirement}</span>
                 </div>
@@ -625,7 +627,7 @@ export default function WritingPage() {
 
             {/* Extra Note / Bullets if present */}
             {currentParsedPrompt.note && (
-              <p className="text-[11px] text-muted-foreground leading-snug">
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
                 {currentParsedPrompt.note}
               </p>
             )}
@@ -683,16 +685,16 @@ export default function WritingPage() {
         </div>
 
         {/* CodeMirror */}
-        <div className="bg-card text-xs sm:text-sm">
+        <div className="bg-card">
           <CodeMirror
             value={activeTyped}
             onChange={handleTypedChange}
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
             placeholder="Type your response here..."
-            height="210px"
+            height="340px"
             theme="none"
-            className="text-xs font-mono focus:outline-none sm:text-sm"
+            className="text-sm sm:text-[15px] focus:outline-none"
             basicSetup={EDITOR_BASIC_SETUP}
             extensions={EDITOR_EXTENSIONS}
           />
