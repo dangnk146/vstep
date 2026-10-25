@@ -163,6 +163,24 @@
   },
   {
     "STT": "10",
+    "Mã câu hỏi": "vlu10-speaking-part1-10",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 25/10/2026 (Sáng)",
+    "Tiêu đề đề bài": "Topic 10: Recycling & Waste Reduction",
+    "Nội dung chi tiết": "1. Do you or your family regularly recycle household waste like paper, plastic, or cans?\n2. What can local communities and governments do to encourage people to recycle more?\n3. Do you think individuals can make a real difference in protecting the environment by recycling?",
+    "Mã trường": "VLU",
+    "Đợt thi": "10/2026",
+    "id": "vlu10-speaking-part1-10",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "10/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 25/10/2026 (Sáng)",
+    "title": "Topic 10: Recycling & Waste Reduction",
+    "content": "1. Do you or your family regularly recycle household waste like paper, plastic, or cans?\n2. What can local communities and governments do to encourage people to recycle more?\n3. Do you think individuals can make a real difference in protecting the environment by recycling?"
+  },
+  {
+    "STT": "10",
     "Mã câu hỏi": "vlu10-speaking-part2-1",
     "Phần thi": "speaking-part2",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 10/2026",
@@ -286,6 +304,24 @@
     "group": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 2)",
     "title": "Part 2 - Situation 7: Choosing a Farewell Gift for a Colleague",
     "content": "Situation: A close colleague in your department is leaving for a new job opportunity, and you want to give him/her a memorable farewell gift. There are three options:\n- A personalized hand-made greeting card\n- A framed photo of you and your colleague together\n- A special dinner treat at a good restaurant\nWhich option do you think is the best choice and why?"
+  },
+  {
+    "STT": "18",
+    "Mã câu hỏi": "vlu10-speaking-part2-8",
+    "Phần thi": "speaking-part2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 25/10/2026 (Sáng)",
+    "Tiêu đề đề bài": "Part 2 - Situation 8: Career Choice in Health and Wellness",
+    "Nội dung chi tiết": "Situation: Your friend has a strong passion for healthcare and wellness and is deciding which career path to pursue. There are three options:\n- A personal fitness trainer\n- A community healthcare worker\n- A professional nutritionist\nWhich career would you advise your friend to choose and why?",
+    "Mã trường": "VLU",
+    "Đợt thi": "10/2026",
+    "id": "vlu10-speaking-part2-8",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "10/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế VLU 25/10/2026 (Sáng)",
+    "title": "Part 2 - Situation 8: Career Choice in Health and Wellness",
+    "content": "Situation: Your friend has a strong passion for healthcare and wellness and is deciding which career path to pursue. There are three options:\n- A personal fitness trainer\n- A community healthcare worker\n- A professional nutritionist\nWhich career would you advise your friend to choose and why?"
   },
   {
     "STT": "17",
@@ -412,5 +448,23 @@
     "group": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 2)",
     "title": "Part 3 - Topic 7: Solutions to Tackle Obesity in Society",
     "content": "Topic: Practical solutions to tackle obesity in modern society\nSuggestions:\n- Promoting nutrition education and balanced diets in schools\n- Encouraging daily physical exercise through community sports facilities\n- Imposing strict regulations on advertising junk food to children\n- [Your own ideas]\n\nFollow-up questions:\n1. Who should take greater responsibility for the growing rate of childhood obesity: parents or fast food companies?\n2. How does obesity negatively affect an individual's physical health and mental self-esteem?\n3. What initiatives can modern companies implement in the workplace to keep their employees active and healthy?"
+  },
+  {
+    "STT": "26",
+    "Mã câu hỏi": "vlu10-speaking-part3-8",
+    "Phần thi": "speaking-part3",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 25/10/2026 (Sáng)",
+    "Tiêu đề đề bài": "Part 3 - Topic 8: Benefits of Extracurricular Activities",
+    "Nội dung chi tiết": "Topic: Benefits of Extracurricular Activities\nSuggestions:\n- Developing essential soft skills\n- Relieving study stress\n- Expanding social connections\n- [Your own ideas]\n\nFollow-up questions:\n1. Should schools make sports or arts club participation mandatory?\n2. How can students balance extracurricular activities and academic study?\n3. Do parents in your country value extracurricular activities as much as exam scores?",
+    "Mã trường": "VLU",
+    "Đợt thi": "10/2026",
+    "id": "vlu10-speaking-part3-8",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "10/2026",
+    "part": "part3",
+    "group": "Đề thi thực tế VLU 25/10/2026 (Sáng)",
+    "title": "Part 3 - Topic 8: Benefits of Extracurricular Activities",
+    "content": "Topic: Benefits of Extracurricular Activities\nSuggestions:\n- Developing essential soft skills\n- Relieving study stress\n- Expanding social connections\n- [Your own ideas]\n\nFollow-up questions:\n1. Should schools make sports or arts club participation mandatory?\n2. How can students balance extracurricular activities and academic study?\n3. Do parents in your country value extracurricular activities as much as exam scores?"
   }
 ]
