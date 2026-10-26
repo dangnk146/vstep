@@ -5,7 +5,8 @@
     "UEH",
     "HCMUE",
     "UFM",
-    "LHU"
+    "LHU",
+    "BAV"
   ],
   "batches": [
     "09/2026",
@@ -53,6 +54,12 @@
       "batch": "10/2026",
       "file": "speaking/LHU_10-2026.json",
       "count": 4
+    },
+    {
+      "school": "BAV",
+      "batch": "10/2026",
+      "file": "speaking/BAV_10-2026.json",
+      "count": 4
     }
   ],
   "writing": [
@@ -96,6 +103,12 @@
       "school": "LHU",
       "batch": "10/2026",
       "file": "writing/LHU_10-2026.json",
+      "count": 2
+    },
+    {
+      "school": "BAV",
+      "batch": "10/2026",
+      "file": "writing/BAV_10-2026.json",
       "count": 2
     }
   ],

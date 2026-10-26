@@ -18,4 +18,5 @@ export const SCHOOL_DISPLAY_NAMES: Record<string, string> = {
   HCMUE: 'ĐH Sư phạm TP.HCM (HCMUE)',
   UFM: 'ĐH Tài chính - Marketing (UFM)',
   LHU: 'ĐH Lạc Hồng (LHU)',
+  BAV: 'Học viện Ngân hàng (BAV)',
 };
