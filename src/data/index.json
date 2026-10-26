@@ -1,6 +1,11 @@
 {
   "schools": [
-    "VLU"
+    "VLU",
+    "DTHU",
+    "UEH",
+    "HCMUE",
+    "UFM",
+    "LHU"
   ],
   "batches": [
     "09/2026",
@@ -17,7 +22,37 @@
       "school": "VLU",
       "batch": "10/2026",
       "file": "speaking/VLU_10-2026.json",
-      "count": 26
+      "count": 43
+    },
+    {
+      "school": "DTHU",
+      "batch": "10/2026",
+      "file": "speaking/DTHU_10-2026.json",
+      "count": 4
+    },
+    {
+      "school": "UEH",
+      "batch": "10/2026",
+      "file": "speaking/UEH_10-2026.json",
+      "count": 4
+    },
+    {
+      "school": "HCMUE",
+      "batch": "10/2026",
+      "file": "speaking/HCMUE_10-2026.json",
+      "count": 4
+    },
+    {
+      "school": "UFM",
+      "batch": "10/2026",
+      "file": "speaking/UFM_10-2026.json",
+      "count": 4
+    },
+    {
+      "school": "LHU",
+      "batch": "10/2026",
+      "file": "speaking/LHU_10-2026.json",
+      "count": 4
     }
   ],
   "writing": [
@@ -31,7 +66,37 @@
       "school": "VLU",
       "batch": "10/2026",
       "file": "writing/VLU_10-2026.json",
-      "count": 8
+      "count": 16
+    },
+    {
+      "school": "DTHU",
+      "batch": "10/2026",
+      "file": "writing/DTHU_10-2026.json",
+      "count": 2
+    },
+    {
+      "school": "UEH",
+      "batch": "10/2026",
+      "file": "writing/UEH_10-2026.json",
+      "count": 4
+    },
+    {
+      "school": "HCMUE",
+      "batch": "10/2026",
+      "file": "writing/HCMUE_10-2026.json",
+      "count": 2
+    },
+    {
+      "school": "UFM",
+      "batch": "10/2026",
+      "file": "writing/UFM_10-2026.json",
+      "count": 2
+    },
+    {
+      "school": "LHU",
+      "batch": "10/2026",
+      "file": "writing/LHU_10-2026.json",
+      "count": 2
     }
   ],
   "listening": {
