@@ -24,6 +24,7 @@ import {
   Lightbulb,
 } from 'lucide-react';
 import { MINDMAP_TOPICS, MindmapTopic, MindmapNode } from './data';
+import { getVietnameseMeaning } from './translations';
 
 interface PathEdge {
   id: string;
@@ -140,6 +141,7 @@ function Level1Card({
       className={`group relative z-10 flex min-w-[210px] max-w-[290px] flex-col rounded-2xl border-2 bg-card/95 p-3.5 shadow-md backdrop-blur transition-all duration-200 hover:shadow-lg ${
         isRight ? 'text-left' : 'text-right'
       } ${isMatched ? 'ring-3 ring-amber-400 dark:ring-amber-300 shadow-xl' : ''}`}
+      title={getVietnameseMeaning(node.title) || node.title}
     >
       {/* Top Header Row: Title & Collapse Button */}
       <div
@@ -221,6 +223,7 @@ function UnderlinedNode({
   const isRight = direction === 'right';
   const isMatched = searchQuery && text.toLowerCase().includes(searchQuery.toLowerCase());
   const [copied, setCopied] = useState(false);
+  const viMeaning = getVietnameseMeaning(text);
 
   const handleCopy = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -235,8 +238,22 @@ function UnderlinedNode({
       className={`group relative inline-flex flex-col cursor-pointer transition-all ${
         isRight ? 'items-start text-left' : 'items-end text-right'
       } ${searchQuery && !isMatched ? 'opacity-35' : 'opacity-100'}`}
-      title="Bấm để sao chép từ vựng"
+      title={viMeaning || ''}
     >
+      {/* Floating Vietnamese Translation Popover on Hover */}
+      {viMeaning && (
+        <div
+          className={`pointer-events-none absolute bottom-full mb-2.5 z-40 hidden group-hover:flex max-w-sm sm:max-w-md items-center gap-1.5 rounded-xl border border-border/90 bg-popover/95 px-3 py-1.5 text-xs font-semibold text-popover-foreground shadow-2xl backdrop-blur-md animate-in fade-in zoom-in-95 ${
+            isRight ? 'left-0' : 'right-0'
+          }`}
+        >
+          <span className="text-amber-500 font-bold shrink-0 text-xs">🇻🇳</span>
+          <span className="leading-snug text-xs font-medium text-foreground select-none text-left">
+            {viMeaning}
+          </span>
+        </div>
+      )}
+
       {/* Floating Text on top of baseline */}
       <div
         className={`flex items-baseline gap-2 pb-1 select-text ${
@@ -1052,7 +1069,7 @@ export default function Mindmap() {
         {/* Floating Quick Navigation Hints */}
         <div className="pointer-events-none absolute bottom-4 left-4 z-20 flex items-center gap-2 rounded-lg bg-card/90 px-3 py-1.5 text-[11px] font-medium text-muted-foreground shadow-sm backdrop-blur">
           <Move className="h-3.5 w-3.5 text-primary" />
-          <span>Kéo chuột để di chuyển canvas • Cuộn chuột + Ctrl để phóng to/thu nhỏ • Bấm vào từ vựng để sao chép</span>
+          <span>Kéo chuột để di chuyển canvas • Cuộn chuột + Ctrl để phóng to/thu nhỏ • Rê chuột (hover) để xem bản dịch tiếng Việt • Bấm để sao chép</span>
         </div>
       </div>
 
