@@ -6,6 +6,7 @@ import {
   BookOpen,
   GraduationCap,
   Headphones,
+  Lightbulb,
   Mic,
   Moon,
   PenTool,
@@ -173,15 +174,30 @@ export default function Sidebar() {
           })}
         </nav>
 
-        <button
-          type="button"
-          onClick={toggleTheme}
-          className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
-          aria-label="Đổi giao diện sáng/tối"
-          title="Đổi giao diện sáng/tối"
-        >
-          <Moon className="h-4 w-4" />
-        </button>
+        <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">
+          <Link
+            href="/mindmap"
+            className={`grid h-8 w-8 shrink-0 place-items-center rounded-lg border transition-colors cursor-pointer ${
+              pathname === '/mindmap' || pathname.startsWith('/mindmap/')
+                ? 'bg-amber-500 text-white border-amber-600 shadow-sm'
+                : 'border-border text-amber-600 dark:text-amber-400 hover:bg-amber-500/10 hover:border-amber-500/40'
+            }`}
+            aria-label="Mindmap Ý tưởng & Từ vựng VSTEP"
+            title="Mindmap Ý tưởng VSTEP"
+          >
+            <Lightbulb className="h-4 w-4" />
+          </Link>
+
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="grid h-8 w-8 shrink-0 place-items-center rounded-lg border border-border text-muted-foreground transition-colors hover:bg-muted hover:text-foreground cursor-pointer"
+            aria-label="Đổi giao diện sáng/tối"
+            title="Đổi giao diện sáng/tối"
+          >
+            <Moon className="h-4 w-4" />
+          </button>
+        </div>
       </div>
     </aside>
   );
