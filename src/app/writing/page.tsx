@@ -105,6 +105,16 @@ interface ParsedPrompt {
   note: string;
 }
 
+function cleanPromptBoilerplate(text: string): string {
+  if (!text) return '';
+  return text
+    .replace(/\s*You should write (?:at least \d+ words|an essay of at least \d+ words[^\n.]*)[.]?/gi, '')
+    .replace(/\s*You do not need to include your name or address(?:es)?[.]?/gi, '')
+    .replace(/\s*Your response will be evaluated in terms of [^\n.]+[.]?/gi, '')
+    .replace(/\s*You should write [^\n.]*[.]?/gi, '')
+    .trim();
+}
+
 function parsePromptContent(content: string): ParsedPrompt {
   if (!content) return { context: '', quote: '', requirement: '', note: '' };
   const paragraphs = content.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
@@ -114,19 +124,25 @@ function parsePromptContent(content: string): ParsedPrompt {
   let note = '';
 
   paragraphs.forEach((p) => {
+    if (/^You should write (?:at least|\d+ words|an essay)/i.test(p) || /^You do not need to include your name/i.test(p)) {
+      return;
+    }
     if (p.startsWith('"') || p.startsWith('“') || ((p.endsWith('"') || p.endsWith('”')) && (p.includes('"') || p.includes('“')))) {
       quote = p.replace(/^[“"]|[”"]$/g, '');
     } else if (/^Read the following statement:?/i.test(p)) {
       context = p;
-    } else if (/^(You have received an email|You received an email)/i.test(p)) {
+    } else if (/^(You have received an email|You received an email|You have arrived|You recently|You are taking|You and your family)/i.test(p)) {
       context = p;
-    } else if (/^(Write an essay|Write an email|Discuss|To what extent|In your email)/i.test(p)) {
-      requirement = p;
+    } else if (/^(Write an essay|Write an email|Write a letter|Discuss|To what extent|In your email|In your letter)/i.test(p)) {
+      requirement = cleanPromptBoilerplate(p);
     } else {
       if (!requirement) {
-        requirement = p;
+        requirement = cleanPromptBoilerplate(p);
       } else {
-        note = p;
+        const cleanedNote = cleanPromptBoilerplate(p);
+        if (cleanedNote) {
+          note = cleanedNote;
+        }
       }
     }
   });
@@ -472,9 +488,9 @@ export default function WritingPage() {
     const raw = bankPrompt
       ? bankPrompt.content
       : activeTask === 'task1'
-        ? `You received an email from your English friend, Jane. She asked you for some information about one of your friends. Read part of her email below:\n\n"I've just got an email from your friend, An. She said she's going to take a course in London this summer. She asked if she could stay with my family until she could find an apartment. Can you tell me a bit about her (things like her personality, hobbies and interests, and her current work or study if possible)? I want to see if she will fit in with my family."\n\nWrite an email responding to Jane. You should write at least 120 words. You do not need to include your name or addresses. Your response will be evaluated in terms of Task Fulfillment, Organization, Vocabulary and Grammar.`
+        ? `You received an email from your English friend, Jane. She asked you for some information about one of your friends. Read part of her email below:\n\n"I've just got an email from your friend, An. She said she's going to take a course in London this summer. She asked if she could stay with my family until she could find an apartment. Can you tell me a bit about her (things like her personality, hobbies and interests, and her current work or study if possible)? I want to see if she will fit in with my family."\n\nWrite an email responding to Jane.`
         : activeTask === 'task2'
-          ? `Read the following statement:\n\n"In many countries, online learning is becoming more common than traditional classroom learning. Some people think that online learning brings great benefits to students and schools, while others argue that traditional face-to-face education cannot be replaced."\n\nWrite an essay to discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience. You should write at least 250 words.`
+          ? `Read the following statement:\n\n"In many countries, online learning is becoming more common than traditional classroom learning. Some people think that online learning brings great benefits to students and schools, while others argue that traditional face-to-face education cannot be replaced."\n\nWrite an essay to discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.`
           : '';
     return parsePromptContent(raw);
   }, [bankPrompt, activeTask]);

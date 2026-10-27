@@ -90,6 +90,9 @@ export function toReadablePromptText(content: string) {
     .replace(/\*\*(.+?)\*\*/g, '$1')
     .replace(/\*([^*\n]+)\*/g, '$1')
     .replace(/`([^`]+)`/g, '$1')
+    .replace(/\s*You should write (?:at least \d+ words|an essay of at least \d+ words[^\n.]*)[.]?/gi, '')
+    .replace(/\s*You do not need to include your name or address(?:es)?[.]?/gi, '')
+    .replace(/\s*Your response will be evaluated in terms of [^\n.]+[.]?/gi, '')
     .trim();
 }
 
