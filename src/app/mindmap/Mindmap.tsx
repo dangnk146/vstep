@@ -504,6 +504,42 @@ export default function Mindmap() {
   const [toastMessage, setToastMessage] = useState<string | null>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
+  // Restore saved topic from URL or localStorage on mount
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const urlTopic = params.get('topic') as MindmapTopic['id'] | null;
+      const storedTopic = localStorage.getItem('vstep_mindmap_active_topic') as MindmapTopic['id'] | null;
+      const validIds = MINDMAP_TOPICS.map((t) => t.id);
+
+      const resolved = (urlTopic && validIds.includes(urlTopic))
+        ? urlTopic
+        : (storedTopic && validIds.includes(storedTopic))
+          ? storedTopic
+          : null;
+
+      if (resolved) {
+        setActiveTopicId(resolved);
+        if (urlTopic !== resolved) {
+          window.history.replaceState(null, '', `?topic=${resolved}`);
+        }
+      }
+    } catch {
+      // Ignore storage errors
+    }
+  }, []);
+
+  const selectTopic = useCallback((topicId: MindmapTopic['id']) => {
+    setActiveTopicId(topicId);
+    setSearchQuery('');
+    try {
+      localStorage.setItem('vstep_mindmap_active_topic', topicId);
+      window.history.replaceState(null, '', `?topic=${topicId}`);
+    } catch {
+      // Ignore storage errors
+    }
+  }, []);
+
   // SVG Cubic Bezier Paths
   const [paths, setPaths] = useState<PathEdge[]>([]);
 
@@ -820,10 +856,7 @@ export default function Mindmap() {
                 <button
                   key={topic.id}
                   type="button"
-                  onClick={() => {
-                    setActiveTopicId(topic.id);
-                    setSearchQuery('');
-                  }}
+                  onClick={() => selectTopic(topic.id)}
                   className={`flex h-8 shrink-0 items-center gap-1.5 rounded-lg px-2.5 text-xs font-bold transition-all cursor-pointer ${
                     active
                       ? 'bg-primary text-primary-foreground shadow-xs'
