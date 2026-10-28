@@ -15,7 +15,7 @@ export interface MindmapNode {
 }
 
 export interface MindmapTopic {
-  id: 'education' | 'environment' | 'lifestyles' | 'technology' | 'transport' | 'work' | 'tourism' | 'society';
+  id: 'education' | 'health' | 'technology' | 'work' | 'society' | string;
   title: string;
   vietnameseTitle: string;
   description: string;
@@ -30,1083 +30,840 @@ export interface MindmapTopic {
 }
 
 export const MINDMAP_TOPICS: MindmapTopic[] = [
-  // 1. EDUCATION
   {
-    id: 'education',
-    title: 'School / Education',
-    vietnameseTitle: 'Giáo dục & Học đường',
-    description: 'Từ vựng, cơ sở vật chất, vai trò thầy cô, bạn bè và mục đích giáo dục cho VSTEP Writing & Speaking.',
-    icon: 'GraduationCap',
-    centerNode: {
-      title: 'School / Education',
-      subtitle: 'Trường học & Giáo dục',
-      categoryBadge: 'VSTEP Chủ đề 1',
+    "id": "education",
+    "title": "Education & Skills",
+    "vietnameseTitle": "Giáo dục, Học tập & Kỹ năng",
+    "description": "Tổng hợp 35 đề thi thật VSTEP (P1, P2, P3), từ vựng học thuật, phương pháp học, vai trò giáo viên & công nghệ giáo dục.",
+    "icon": "GraduationCap",
+    "centerNode": {
+      "title": "Education & Skills",
+      "subtitle": "Giáo dục, Học tập & Kỹ năng",
+      "categoryBadge": "VSTEP Topic Hub 1 (35 đề)"
     },
-    leftBranches: [
+    "leftBranches": [
       {
-        id: 'edu-general',
-        title: 'General (Tổng quan)',
-        badge: 'Tổng quan',
-        tags: ['Cơ sở vật chất', 'Con người', 'Đồ dùng học tập'],
-        color: '#f97316', // Orange
-        children: [
-          {
-            id: 'edu-gen-subjects',
-            title: 'subjects / departments / discipline / curriculum:',
-            color: '#f97316',
-            items: [
-              '-y (anatomy, oncology,...); ics (physics, mathematics, economics...)',
-            ],
-          },
-          {
-            id: 'edu-gen-supplies',
-            title: 'school supplies / stationery items:',
-            color: '#f97316',
-            items: [
-              'book, textbook, notebook, workbook, board-chalk-marker',
-            ],
-          },
-          {
-            id: 'edu-gen-facilities',
-            title: 'school facilities:',
-            color: '#f97316',
-            items: [
-              '-class with (projector, TV, board), lecture hall, playground, library, computer room, center, sport center, playing field, laboratory (do experiments), hall of residence / dormitory...',
-            ],
-          },
-          {
-            id: 'edu-gen-people',
-            title: 'People in schools:',
-            color: '#f97316',
-            items: [
-              '(vice) - president / rector / principal / school head / headmaster / headmistress; head teacher; monitor;',
-            ],
-          },
+        "id": "edu-p1",
+        "title": "Part 1: Thói quen & Cá nhân (10 đề)",
+        "badge": "Part 1",
+        "tags": [
+          "10 đề thi thật",
+          "Khảo sát cá nhân",
+          "Phản xạ nhanh"
         ],
+        "color": "#f97316",
+        "children": [
+          {
+            "id": "edu-p1-english",
+            "title": "Learning English & Practice Habits (speaking-part1-11, vlu10-part1-8):",
+            "color": "#f97316",
+            "items": [
+              "Daily practice routine, autonomous self-study, language exchange apps",
+              "Biggest hurdles: listening comprehension & speaking fluency",
+              "Future self: English as a gateway to career advancement & global job market"
+            ]
+          },
+          {
+            "id": "edu-p1-reading",
+            "title": "Reading Habits & Book Preferences (speaking-part1-7, speaking-part1-26, dthu10-part3-1):",
+            "color": "#f97316",
+            "items": [
+              "Preferred genres: self-help, academic textbooks, fiction novels",
+              "Reading format: digital e-books vs physical printed books",
+              "Benefits: broaden horizons, enhance vocabulary & intellectual curiosity"
+            ]
+          },
+          {
+            "id": "edu-p1-school",
+            "title": "School, Subjects & Study Environment (speaking-part1-24, vlu10-part1-21, vlu10-part1-22):",
+            "color": "#f97316",
+            "items": [
+              "Favorite subjects: STEM vs humanities & social sciences",
+              "Ideal study conditions: quiet library, collaborative spaces, interactive classrooms",
+              "Educational institutions: public university vs private academy"
+            ]
+          }
+        ]
       },
       {
-        id: 'edu-friends',
-        title: 'Friends (Bạn bè)',
-        badge: 'Bạn bè',
-        tags: ['Mối quan hệ', 'Giao tiếp xã hội', 'Gắn kết'],
-        color: '#8b5cf6', // Purple
-        children: [
-          {
-            id: 'edu-friends-siblings',
-            title: 'siblings & close peers:',
-            color: '#8b5cf6',
-            items: [
-              'enjoy each other\'s company, see eye to eye,...',
-            ],
-          },
-          {
-            id: 'edu-friends-old',
-            title: 'old school friends:',
-            color: '#8b5cf6',
-            items: [
-              'keep in touch, build lifelong networks',
-            ],
-          },
+        "id": "edu-p2",
+        "title": "Part 2: Tình huống Ra quyết định (14 đề)",
+        "badge": "Part 2",
+        "tags": [
+          "14 tình huống thi thật",
+          "So sánh 3 phương án",
+          "Lập luận thuyết phục"
         ],
-      },
+        "color": "#8b5cf6",
+        "children": [
+          {
+            "id": "edu-p2-method",
+            "title": "Improving English Speaking (speaking-part2-6, hcmue10-part2-1):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Enroll in an intensive communication course at an English center",
+              "Option B: Join a weekly English speaking club for casual practice",
+              "Option C (Optimal): One-on-one partner / native tutor for instant error correction"
+            ]
+          },
+          {
+            "id": "edu-p2-softskills",
+            "title": "Most Essential Student Soft Skill (vlu10-part2-3, speaking-part2-5):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Communication & public presentation skills",
+              "Option B: Time management & organizational competence",
+              "Option C (Optimal): Teamwork & collaborative problem solving in group projects"
+            ]
+          },
+          {
+            "id": "edu-p2-career",
+            "title": "Choosing a School / Career in Teaching (speaking-part2-1, special-speaking-part2-3):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Public high school (job security & pensions)",
+              "Option B: Private bilingual school (modern pedagogical facilities)",
+              "Option C (Optimal): International academy (competitive salary & global environment)"
+            ]
+          },
+          {
+            "id": "edu-p2-science",
+            "title": "Promoting Science Interest & Gifts (bav10-part2-1, vlu10-part2-12, ufm10-part2-1):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Interactive science book / encyclopedia as gift",
+              "Option B: Field trip to a science museum / planetary center",
+              "Option C: Hands-on science experiment kit for teenagers"
+            ]
+          }
+        ]
+      }
     ],
-    rightBranches: [
+    "rightBranches": [
       {
-        id: 'edu-purposes',
-        title: 'Purposes of Edu (Mục đích)',
-        badge: 'Mục đích',
-        tags: ['Trí tuệ & Nghề nghiệp', 'Thể chất', 'Nuôi dưỡng nhân cách'],
-        color: '#f43f5e', // Rose
-        children: [
-          {
-            id: 'edu-pur-intellectual',
-            title: 'Intellectual and Work',
-            color: '#f43f5e',
-            items: [
-              'theoretical knowledge',
-              'practical and professional skills, gain hands-on experiences, improve career prospects',
-              'sharpen interpersonal and intrapersonal skills (independent and critical thinking; problem-solving; communication and social skills,...)',
-            ],
-          },
-          {
-            id: 'edu-pur-physical',
-            title: 'Physical',
-            color: '#f43f5e',
-            items: [
-              '-develop (physical fitness, healthy lifestyle)',
-            ],
-          },
-          {
-            id: 'edu-pur-psychological',
-            title: 'Psychological',
-            color: '#f43f5e',
-            items: [
-              '-self-cultivation (sự nuôi dưỡng / rèn luyện nhân cách)',
-            ],
-          },
+        "id": "edu-p3",
+        "title": "Part 3: Tranh luận & Xã hội (11 đề)",
+        "badge": "Part 3",
+        "tags": [
+          "11 chủ đề vĩ mô",
+          "Nguyên nhân - Hệ quả - Giải pháp"
         ],
+        "color": "#0ea5e9",
+        "children": [
+          {
+            "id": "edu-p3-ai",
+            "title": "AI in Modern Education (speaking-part3-4, vlu10-part3-11):",
+            "color": "#0ea5e9",
+            "items": [
+              "Pros: Personalized learning paths, 24/7 instant AI tutoring, automated grading",
+              "Cons: Plagiarism & academic dishonesty, over-reliance, lack of emotional empathy",
+              "Conclusion: AI serves as an empowering copilot, cannot replace human educators"
+            ]
+          },
+          {
+            "id": "edu-p3-discipline",
+            "title": "Student Misbehavior & Discipline (special-speaking-part3-4, speaking-part3-9):",
+            "color": "#0ea5e9",
+            "items": [
+              "Root causes: Peer pressure, academic burnout, lack of parental guidance",
+              "Ineffective: Harsh physical punishment induces resentment & rebellion",
+              "Constructive solutions: Counseling sessions, positive reinforcement, community service"
+            ]
+          },
+          {
+            "id": "edu-p3-global",
+            "title": "Foreign Languages & Studying Abroad (speaking-part3-11, hcmue10-part3-1):",
+            "color": "#0ea5e9",
+            "items": [
+              "Cognitive benefits: Delay dementia, sharpen multitask problem-solving abilities",
+              "Career advantages: Competitive edge in multinational corporations, global networking",
+              "Studying abroad: Cultural immersion, self-reliance, adapt to diverse viewpoints"
+            ]
+          },
+          {
+            "id": "edu-p3-library",
+            "title": "Public Libraries in Digital Era (speaking-part3-12, vlu10-part3-14):",
+            "color": "#0ea5e9",
+            "items": [
+              "Perception: Digitized search engines make traditional archives seem obsolete",
+              "Enduring value: Democratic access to knowledge, tranquil study space, community hub"
+            ]
+          }
+        ]
       },
       {
-        id: 'edu-teachers',
-        title: 'Teachers (Thầy cô)',
-        badge: 'Thầy cô',
-        tags: ['Phương pháp giảng dạy', 'Tạo cảm hứng', 'Chuyên môn'],
-        color: '#10b981', // Emerald
-        children: [
-          {
-            id: 'edu-teach-methods',
-            title: 'teaching & delivery:',
-            color: '#10b981',
-            items: [
-              'impart / deliver knowledge (creatively / in the creative way; with learner-oriented method)',
-            ],
-          },
-          {
-            id: 'edu-teach-inspire',
-            title: 'motivation & feedback:',
-            color: '#10b981',
-            items: [
-              'interact, inspire and motivate students (to have life-long passion for learning); give feedback on sth',
-            ],
-          },
-          {
-            id: 'edu-teach-traits',
-            title: 'qualities & expertise:',
-            color: '#10b981',
-            items: [
-              'adj: dedicated, supportive, understanding',
-              'N: be experts in their fields, be established',
-            ],
-          },
+        "id": "edu-vocab",
+        "title": "Từ vựng & Khung ARE Dùng Chung (B2-C1)",
+        "badge": "Core Bank",
+        "tags": [
+          "Collocations B2-C1",
+          "Khung ARE vạn năng",
+          "Speaking & Writing"
         ],
-      },
-    ],
+        "color": "#10b981",
+        "children": [
+          {
+            "id": "edu-vocab-academic",
+            "title": "Academic & Pedagogical Lexicon:",
+            "color": "#10b981",
+            "items": [
+              "academic curriculum, pedagogical methodology, learner-oriented approach",
+              "autonomous learner, critical thinking skills, lifelong learning mindset",
+              "extracurricular activities, holistic education, well-rounded individual"
+            ]
+          },
+          {
+            "id": "edu-vocab-are",
+            "title": "Khung ARE Vạn Năng (Universal Skeleton):",
+            "color": "#10b981",
+            "items": [
+              "Point (A): Prioritize interactive, experiential learning over passive memorization",
+              "Reason (R): Stimulate cognitive curiosity & enhance long-term knowledge retention",
+              "Example (E): Real-world project assignments equip students with career-ready skillsets"
+            ]
+          }
+        ]
+      }
+    ]
   },
-
-  // 2. ENVIRONMENT
   {
-    id: 'environment',
-    title: 'Environment',
-    vietnameseTitle: 'Môi trường & Biến đổi khí hậu',
-    description: 'Vấn đề môi trường, nguyên nhân phát sinh và giải pháp từ cấp độ toàn cầu đến cá nhân.',
-    icon: 'Trees',
-    centerNode: {
-      title: 'ENVIRONMENT',
-      subtitle: 'Môi trường Sinh thái',
-      categoryBadge: 'VSTEP Chủ đề 2',
+    "id": "health",
+    "title": "Health & Lifestyle",
+    "vietnameseTitle": "Sức khỏe, Ăn uống & Lối sống",
+    "description": "Tổng hợp 31 đề thi thật VSTEP (P1, P2, P3), dinh dưỡng, thể thao, phòng ngừa bệnh béo phì và cân bằng cuộc sống.",
+    "icon": "HeartPulse",
+    "centerNode": {
+      "title": "Health & Lifestyle",
+      "subtitle": "Sức khỏe, Ăn uống & Lối sống",
+      "categoryBadge": "VSTEP Topic Hub 2 (31 đề)"
     },
-    leftBranches: [
+    "leftBranches": [
       {
-        id: 'env-issues',
-        title: 'Issues / Problems (Vấn đề)',
-        badge: 'Vấn đề',
-        tags: ['Biến đổi khí hậu', 'Ô nhiễm môi trường', 'Khủng hoảng năng lượng'],
-        color: '#f43f5e', // Rose
-        children: [
-          {
-            id: 'env-issues-climate',
-            title: 'climate & atmosphere:',
-            color: '#f43f5e',
-            items: [
-              'Climate change, global warming',
-            ],
-          },
-          {
-            id: 'env-issues-pollution',
-            title: 'pollution types:',
-            color: '#f43f5e',
-            items: [
-              'Pollution: air / water / soil / noise / light pollution',
-            ],
-          },
-          {
-            id: 'env-issues-disasters',
-            title: 'extreme weather:',
-            color: '#f43f5e',
-            items: [
-              'Natural disasters / extreme weather: drought, flood, sandstorm, acid rain,...',
-            ],
-          },
-          {
-            id: 'env-issues-resources',
-            title: 'resource depletion:',
-            color: '#f43f5e',
-            items: [
-              'Energy crisis, water shortage, deforestation,...',
-            ],
-          },
+        "id": "health-p1",
+        "title": "Part 1: Thói quen Ăn uống & Thể thao (19 đề)",
+        "badge": "Part 1",
+        "tags": [
+          "19 đề thi thật",
+          "Sở thích ẩm thực",
+          "Thói quen sinh hoạt"
         ],
+        "color": "#f97316",
+        "children": [
+          {
+            "id": "health-p1-diet",
+            "title": "Beverages & Dietary Choices (speaking-part1-9, speaking-part1-10, dthu10-part1-1):",
+            "color": "#f97316",
+            "items": [
+              "Green tea vs milk tea: Antioxidants & metabolism booster vs high sugar & additives",
+              "Vegetarian diet: Lower cholesterol, ethical benefits, nutrient balance concerns",
+              "Eating out vs homemade meals: Convenience & social vibe vs nutritional control"
+            ]
+          },
+          {
+            "id": "health-p1-habits",
+            "title": "Physical Activity & Taking Breaks (speaking-part1-3, speaking-part1-30, vlu10-part1-13):",
+            "color": "#f97316",
+            "items": [
+              "Daily exercise: Cycling, jogging, gym workouts for cardiovascular stamina",
+              "Taking breaks: Short mental intermissions prevent burnout & recharge energy",
+              "Medical check-ups: Regular health screenings detect chronic diseases early"
+            ]
+          }
+        ]
       },
       {
-        id: 'env-causes',
-        title: 'Causes (Nguyên nhân)',
-        badge: 'Nguyên nhân',
-        tags: ['Công nghiệp hóa', 'Bùng nổ dân số', 'Tác động lâu dài'],
-        color: '#f97316', // Orange
-        children: [
-          {
-            id: 'env-cause-industrial',
-            title: 'Industrial development',
-            color: '#f97316',
-            items: [
-              'discharge / pump / release untreated / raw / toxic sewage / pollutants / contaminants into lake / sea',
-            ],
-          },
-          {
-            id: 'env-cause-population',
-            title: 'Population growth',
-            color: '#f97316',
-            items: [
-              'population explosion (deplete natural resources, increase in rubbish / garbage / trash)',
-            ],
-          },
-          {
-            id: 'env-cause-human',
-            title: 'Long-term human activities',
-            color: '#f97316',
-            items: [
-              'overexploitation of natural resources and fossil fuels over decades',
-            ],
-          },
+        "id": "health-p2",
+        "title": "Part 2: Tình huống Lựa chọn Sinh hoạt (2 đề)",
+        "badge": "Part 2",
+        "tags": [
+          "2 tình huống thi thật",
+          "Gặp gỡ bạn bè",
+          "Hoạt động gắn kết"
         ],
-      },
+        "color": "#8b5cf6",
+        "children": [
+          {
+            "id": "health-p2-dine",
+            "title": "Choosing a Place to Dine with Friends (speaking-part2-3, ueh10-part2-1):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Fast food restaurant (cheap & quick, but high calorie and greasy)",
+              "Option B: Traditional Vietnamese buffet (cozy, diverse wholesome nutritious dishes)",
+              "Option C (Optimal): Rooftop casual bistro (great atmosphere, healthy organic options)"
+            ]
+          },
+          {
+            "id": "health-p2-teamwork",
+            "title": "Colleague Team-Building Activity (speaking-part2-9, vlu10-part2-5):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Karaoke night (fun but loud and passive drinking)",
+              "Option B: Luxury dinner (expensive with limited active communication)",
+              "Option C (Optimal): Outdoor sports day / hiking trip (boosts stamina & team spirit)"
+            ]
+          }
+        ]
+      }
     ],
-    rightBranches: [
+    "rightBranches": [
       {
-        id: 'env-macro-solutions',
-        title: 'Macro Solutions (Giải pháp Vĩ mô)',
-        badge: 'Vĩ mô',
-        tags: ['Toàn cầu', 'Quốc gia', 'Năng lượng tái tạo'],
-        color: '#0284c7', // Sky
-        children: [
-          {
-            id: 'env-sol-global',
-            title: 'Global level',
-            color: '#0284c7',
-            items: [
-              'reach agreement',
-              'set international standards for environmental protection',
-            ],
-          },
-          {
-            id: 'env-sol-national',
-            title: 'National level',
-            color: '#0284c7',
-            items: [
-              'enact laws',
-              'raise public awareness of green lifestyle',
-              'encourage low-carbon economy,',
-              'exploit renewable / green energy (wind, hydro, solar power),',
-              'invest in energy-saving technologies',
-            ],
-          },
+        "id": "health-p3",
+        "title": "Part 3: Tranh luận & Y tế Cộng đồng (10 đề)",
+        "badge": "Part 3",
+        "tags": [
+          "10 chủ đề vĩ mô",
+          "Vấn nạn béo phì",
+          "Work-life balance"
         ],
+        "color": "#0ea5e9",
+        "children": [
+          {
+            "id": "health-p3-obesity",
+            "title": "Tackling the Obesity Epidemic (speaking-part3-15, vlu10-part3-7, vlu10-part3-13):",
+            "color": "#0ea5e9",
+            "items": [
+              "Underlying causes: Sedentary lifestyle, excessive screen time, proliferation of fast food",
+              "Childhood risks: Type-2 diabetes, hypertension, low self-esteem & social stigma",
+              "Remedies: Mandatory physical education, tax on sugary beverages, parental role-modeling"
+            ]
+          },
+          {
+            "id": "health-p3-sports",
+            "title": "Team Sports & Proper Exercise (vlu10-part3-5, speaking-part3-16):",
+            "color": "#0ea5e9",
+            "items": [
+              "Team sports benefits: Camaraderie, strategic communication, resilience under pressure",
+              "Improper workout hazards: Muscle tears, joint injuries from overtraining without warmup",
+              "Solution: Seek professional coaching & listen to biological signals"
+            ]
+          },
+          {
+            "id": "health-p3-balance",
+            "title": "Work-Life Balance & Stress Relief (speaking-part3-18, speaking-part3-19):",
+            "color": "#0ea5e9",
+            "items": [
+              "Chronic work stress leads to cardiovascular ailments & depression",
+              "The power of staying calm: Mindfulness meditation, breathing exercises, emotional balance"
+            ]
+          }
+        ]
       },
       {
-        id: 'env-micro-solutions',
-        title: 'Micro Solutions (Giải pháp Vi mô)',
-        badge: 'Vi mô',
-        tags: ['Tổ chức • Doanh nghiệp', 'Cá nhân • Lối sống', 'Quy tắc 3R'],
-        color: '#10b981', // Emerald
-        children: [
-          {
-            id: 'env-sol-org',
-            title: 'Organizational level',
-            color: '#10b981',
-            items: [
-              'promote environmentally-friendly products',
-            ],
-          },
-          {
-            id: 'env-sol-individual',
-            title: 'Individual level',
-            color: '#10b981',
-            items: [
-              'lead green consuming habits, lead green lifestyle',
-              'take public transportation, avoid using throw-away / single-use products',
-              'sort the daily garbage, 3R (reduce, reuse, recycle)',
-            ],
-          },
+        "id": "health-vocab",
+        "title": "Từ vựng & Khung ARE Sức khỏe (B2-C1)",
+        "badge": "Core Bank",
+        "tags": [
+          "Collocations B2-C1",
+          "Khung ARE vạn năng",
+          "Dinh dưỡng & Thể lực"
         ],
-      },
-    ],
+        "color": "#10b981",
+        "children": [
+          {
+            "id": "health-vocab-words",
+            "title": "Health & Nutrition Lexicon:",
+            "color": "#10b981",
+            "items": [
+              "balanced & nutritious diet, sedentary lifestyle, physical stamina & endurance",
+              "cardiovascular health, mental well-being, release endorphins, metabolism",
+              "burn calories, ward off chronic diseases, alleviate mental exhaustion"
+            ]
+          },
+          {
+            "id": "health-vocab-are",
+            "title": "Khung ARE Vạn Năng (Universal Skeleton):",
+            "color": "#10b981",
+            "items": [
+              "Point (A): Adopt regular physical activity and a whole-food diet",
+              "Reason (R): Strengthen immune defenses and stimulate mood-boosting endorphins",
+              "Example (E): 30 minutes of aerobic exercise daily reduces risks of lifestyle-related ailments"
+            ]
+          }
+        ]
+      }
+    ]
   },
-
-  // 3. LIFESTYLES
   {
-    id: 'lifestyles',
-    title: 'Lifestyles',
-    vietnameseTitle: 'Lối sống & Thói quen ăn uống',
-    description: 'Béo phì (nguyên nhân, tác hại, giải pháp) và so sánh chi tiết thức ăn ngoài vs nấu tại nhà.',
-    icon: 'HeartPulse',
-    centerNode: {
-      title: 'Lifestyles',
-      subtitle: 'Lối sống & Sức khỏe',
-      categoryBadge: 'VSTEP Chủ đề 3',
+    "id": "technology",
+    "title": "Technology & AI",
+    "vietnameseTitle": "Công nghệ, Thiết bị số & Mạng xã hội",
+    "description": "Tổng hợp 17 đề thi thật VSTEP (P1, P2, P3), trí tuệ nhân tạo (AI), điện thoại thông minh, sáng tạo nội dung số & an toàn mạng.",
+    "icon": "Cpu",
+    "centerNode": {
+      "title": "Technology & AI",
+      "subtitle": "Công nghệ, Mạng xã hội & AI",
+      "categoryBadge": "VSTEP Topic Hub 3 (17 đề)"
     },
-    leftBranches: [
+    "leftBranches": [
       {
-        id: 'life-obesity',
-        title: 'Obesity (Béo phì)',
-        badge: 'Bệnh lý',
-        tags: ['Nguyên nhân ăn uống', 'Tác hại thể chất & tinh thần', 'Biện pháp can thiệp'],
-        color: '#ef4444', // Red/Crimson
-        children: [
-          {
-            id: 'life-obesity-causes',
-            title: 'Causes',
-            color: '#ef4444',
-            items: [
-              'have poor diet: consume too much fast food / processed food / ready meals; lack knowledge about good nutrition or a balanced diet.',
-              'inactive / sedentary lifestyles => lack physical exercises => prefer staying at home and use technologies.',
-            ],
-          },
-          {
-            id: 'life-obesity-effects',
-            title: 'Effects',
-            color: '#ef4444',
-            items: [
-              'individuals: lead to heart disease, diabetes, high blood pressure and other conditions.',
-              'lead to depression, eating disorders => being bullied / body shaming => badly affect psychological development',
-              'burden on national healthcare system',
-            ],
-          },
-          {
-            id: 'life-obesity-solutions',
-            title: 'Solutions',
-            color: '#ef4444',
-            items: [
-              'family: adopting healthy eating habits',
-              'Increase level of physical activity: play sports / take part in outdoor activities',
-              'Reduce screen time in front of phones, computers and TV.',
-            ],
-          },
+        "id": "tech-p1",
+        "title": "Part 1: Thiết bị & Thói quen Số (9 đề)",
+        "badge": "Part 1",
+        "tags": [
+          "9 đề thi thật",
+          "Smartphone & AI",
+          "Mua sắm online"
         ],
+        "color": "#f97316",
+        "children": [
+          {
+            "id": "tech-p1-devices",
+            "title": "Smartphones & Wearable Gadgets (speaking-part1-2, vlu10-part1-15, ueh10-part1-1):",
+            "color": "#f97316",
+            "items": [
+              "Smartwatch utilities: Track heart rate, monitor sleep quality, count daily steps",
+              "Smartphone dependency: Screen time management, notification fatigue",
+              "Preferred brands: Apple vs Samsung (ecosystem synchronization vs customizability)"
+            ]
+          },
+          {
+            "id": "tech-p1-online",
+            "title": "Online Shopping & AI Perception (vlu10-part1-11, vlu10-part1-14, speaking-part1-18):",
+            "color": "#f97316",
+            "items": [
+              "E-commerce: Convenience, price comparison, home delivery vs counterfeit risk",
+              "AI perception: Fascination with generative AI vs concerns over job displacement"
+            ]
+          }
+        ]
       },
+      {
+        "id": "tech-p2",
+        "title": "Part 2: Xử lý Tình huống Công nghệ (1 đề)",
+        "badge": "Part 2",
+        "tags": [
+          "1 tình huống thi thật",
+          "Ngân hàng số",
+          "Xử lý sự cố"
+        ],
+        "color": "#8b5cf6",
+        "children": [
+          {
+            "id": "tech-p2-banking",
+            "title": "Wrong Bank Transfer Incident (speaking-part2-13):",
+            "color": "#8b5cf6",
+            "items": [
+              "Situation: Waking up to find a huge amount of money wrongly transferred to your account",
+              "Option A: Keep quiet and spend the money (illegal & criminal liability)",
+              "Option B: Contact the sender directly via memo (risk of phishing scam)",
+              "Option C (Optimal): Freeze amount & notify bank support and police immediately"
+            ]
+          }
+        ]
+      }
     ],
-    rightBranches: [
+    "rightBranches": [
       {
-        id: 'life-takeout',
-        title: 'Takeout food / Eating out (Ăn ngoài)',
-        badge: 'Ăn ngoài',
-        tags: ['Tiện lợi', 'Chi phí cao', 'Nguy cơ sức khỏe'],
-        color: '#f97316', // Orange
-        children: [
-          {
-            id: 'life-takeout-pros',
-            title: 'Pros',
-            color: '#f97316',
-            items: [
-              '1. fast, convenient for busy people in modern-day society',
-              '2. offer a variety of choices / dishes cooked by professional chefs',
-            ],
-          },
-          {
-            id: 'life-takeout-cons',
-            title: 'Cons',
-            color: '#f97316',
-            items: [
-              '1 junk food = processed food = low-quality food',
-              'unhealthy: oily, sugary, salty, ...',
-              '2 more pricey than cooking at home: the fee includes services and eating space',
-              '3 results in diseases like heart attack and diabetes => use low quality ingredients and do not ensure cleanliness and hygiene of foods.',
-            ],
-          },
+        "id": "tech-p3",
+        "title": "Part 3: Tranh luận Công nghệ & Tác động (7 đề)",
+        "badge": "Part 3",
+        "tags": [
+          "7 chủ đề vĩ mô",
+          "Trí tuệ nhân tạo",
+          "Giao tiếp mạng xã hội"
         ],
+        "color": "#0ea5e9",
+        "children": [
+          {
+            "id": "tech-p3-media",
+            "title": "Social Media & Content Creation (speaking-part3-5, vlu10-part3-3):",
+            "color": "#0ea5e9",
+            "items": [
+              "Short-form videos (TikTok/Reels): Democratize self-expression & digital entrepreneurship",
+              "Dark side: Shortened attention spans, sensationalism, cyberbullying & unrealistic beauty standards"
+            ]
+          },
+          {
+            "id": "tech-p3-communication",
+            "title": "Face-to-Face vs Virtual Interaction (speaking-part3-7, vlu10-part3-12):",
+            "color": "#0ea5e9",
+            "items": [
+              "Virtual chats: Geographically convenient, instant messaging, multimedia sharing",
+              "Face-to-face supremacy: Non-verbal cues, micro-expressions, genuine emotional resonance"
+            ]
+          },
+          {
+            "id": "tech-p3-schools",
+            "title": "Banning Mobile Phones in Classrooms (speaking-part3-6):",
+            "color": "#0ea5e9",
+            "items": [
+              "Arguments for: Eliminates digital distractions, reduces cheating, boosts focus",
+              "Arguments against: Mobile devices act as interactive digital research tools when guided"
+            ]
+          }
+        ]
       },
       {
-        id: 'life-homemade',
-        title: 'Homemade food (Nấu tại nhà)',
-        badge: 'Cơm nhà',
-        tags: ['Dinh dưỡng lành mạnh', 'Kiểm soát ngân sách', 'Gắn kết gia đình'],
-        color: '#10b981', // Emerald
-        children: [
-          {
-            id: 'life-home-pros',
-            title: 'Pros',
-            color: '#10b981',
-            items: [
-              'cheaper: keep food in the fridge => control household budget',
-              'Healthy and nutritious meals: control over the ingredients => choose fresh and natural ingredients',
-              'boosts immune system and reduces the risk of health issues.',
-              'Create family bonds => enjoy cooking time => give private spaces to talk',
-            ],
-          },
-          {
-            id: 'life-home-cons',
-            title: 'Cons',
-            color: '#10b981',
-            items: [
-              'more time-consuming: preparation, cooking, cleaning',
-              'buying the high-quality and specialty ingredients',
-              'Inconvenience and Fatigue => lead to stress',
-            ],
-          },
+        "id": "tech-vocab",
+        "title": "Từ vựng & Khung ARE Công nghệ (B2-C1)",
+        "badge": "Core Bank",
+        "tags": [
+          "Collocations B2-C1",
+          "Khung ARE vạn năng",
+          "AI & An toàn số"
         ],
-      },
-    ],
+        "color": "#10b981",
+        "children": [
+          {
+            "id": "tech-vocab-words",
+            "title": "Technology & AI Lexicon:",
+            "color": "#10b981",
+            "items": [
+              "cutting-edge technology, artificial intelligence, digital distraction, screen addiction",
+              "streamline workflow, algorithmic recommendation, cyber hygiene & privacy",
+              "information overload, technological literacy, virtual connectivity"
+            ]
+          },
+          {
+            "id": "tech-vocab-are",
+            "title": "Khung ARE Vạn Năng (Universal Skeleton):",
+            "color": "#10b981",
+            "items": [
+              "Point (A): Leverage technological tools while establishing strict digital boundaries",
+              "Reason (R): Maximize productivity without compromising cognitive depth and real-world relationships",
+              "Example (E): Using AI as a brainstorming assistant while verifying facts critically"
+            ]
+          }
+        ]
+      }
+    ]
   },
-
-  // 4. TECHNOLOGY
   {
-    id: 'technology',
-    title: 'Technology',
-    vietnameseTitle: 'Công nghệ & Đời sống số',
-    description: 'Lợi ích trong công việc / học tập / giải trí, kỹ năng tin học và các mặt trái về sức khỏe, an ninh mạng.',
-    icon: 'Cpu',
-    centerNode: {
-      title: 'TECHNOLOGY',
-      subtitle: 'Công nghệ Thông tin',
-      categoryBadge: 'VSTEP Chủ đề 4',
+    "id": "work",
+    "title": "Work & Career",
+    "vietnameseTitle": "Công việc, Sự nghiệp & Tài chính",
+    "description": "Tổng hợp 15 đề thi thật VSTEP (P1, P2, P3), kỹ năng công sở, quản lý tài chính, khởi nghiệp và lựa chọn cơ hội nghề nghiệp.",
+    "icon": "Briefcase",
+    "centerNode": {
+      "title": "Work & Career",
+      "subtitle": "Sự nghiệp & Tài chính",
+      "categoryBadge": "VSTEP Topic Hub 4 (15 đề)"
     },
-    leftBranches: [
+    "leftBranches": [
       {
-        id: 'tech-cons',
-        title: 'Cons & Risks (Mặt trái & Nguy cơ)',
-        badge: 'Mặt trái',
-        tags: ['Sức khỏe thể chất', 'Sức khỏe tinh thần', 'An ninh mạng'],
-        color: '#f43f5e', // Rose
-        children: [
-          {
-            id: 'tech-physical-health',
-            title: 'physical health',
-            color: '#f43f5e',
-            items: [
-              'sit for a long with wrong posture => backbone problem',
-              'radiation; less outdoor activities',
-              'stare at the screen for a long time => weaken eyesight;',
-            ],
-          },
-          {
-            id: 'tech-mental-health',
-            title: 'mental health',
-            color: '#f43f5e',
-            items: [
-              'too indulge in the virtual world => be isolated from the real world',
-              'lack face-to-face conversation',
-              'less quality time with family',
-            ],
-          },
-          {
-            id: 'tech-censorship',
-            title: 'access to information which is not strictly censored',
-            color: '#f43f5e',
-            items: [
-              'questionable and non-educational contents, violence',
-            ],
-          },
-          {
-            id: 'tech-cybercrime',
-            title: 'cybercrime',
-            color: '#f43f5e',
-            items: [
-              'hackers steal personal information',
-              'privacy invaded / infringed',
-              'personal information leaks, illegal gambling',
-            ],
-          },
+        "id": "work-p1",
+        "title": "Part 1: Công việc & Tiết kiệm Tiền (3 đề)",
+        "badge": "Part 1",
+        "tags": [
+          "3 đề thi thật",
+          "Quản lý tài chính",
+          "Môi trường làm việc"
         ],
+        "color": "#f97316",
+        "children": [
+          {
+            "id": "work-p1-finance",
+            "title": "Saving Money & Financial Habits (speaking-part1-1):",
+            "color": "#f97316",
+            "items": [
+              "Saving importance: Emergency fund for unforeseen crises, financial independence",
+              "Impulse spending: Wasting money on transient fads, designer items, daily luxuries",
+              "Effective budgeting: The 50/30/20 rule, automated savings, tracking mobile expenses"
+            ]
+          },
+          {
+            "id": "work-p1-workplace",
+            "title": "Ideal Workplace & Career Aspirations (speaking-part1-4, speaking-part1-25):",
+            "color": "#f97316",
+            "items": [
+              "Physical environment: Ergonomic furniture, natural lighting, flexible hybrid arrangement",
+              "Corporate ethos: Supportive colleagues, transparent management, merit-based promotion"
+            ]
+          }
+        ]
       },
+      {
+        "id": "work-p2",
+        "title": "Part 2: Lựa chọn Lời mời & Đồng nghiệp (5 đề)",
+        "badge": "Part 2",
+        "tags": [
+          "5 tình huống thi thật",
+          "3 lời mời làm việc",
+          "Văn hóa công sở"
+        ],
+        "color": "#8b5cf6",
+        "children": [
+          {
+            "id": "work-p2-offers",
+            "title": "Choosing Among Three Job Offers (vlu10-part2-2):",
+            "color": "#8b5cf6",
+            "items": [
+              "Offer A: High salary but high stress and lengthy daily commute (20km)",
+              "Offer B: Moderate pay at a prestigious multinational with stellar promotion prospects",
+              "Offer C: Modest salary near home with relaxed hours (comfort zone trap)",
+              "Optimal choice: Offer B for sustainable career advancement trajectory"
+            ]
+          },
+          {
+            "id": "work-p2-gifts",
+            "title": "Farewell / Retirement Gift for Colleague (vlu10-part2-1, vlu10-part2-7, speaking-part2-4):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Expensive wrist watch (formal but generic and costly)",
+              "Option B: High-end tech gadget (functional but rapidly depreciates)",
+              "Option C (Optimal): Personalized photo scrapbook + heartfelt group message (sentimental & timeless)"
+            ]
+          },
+          {
+            "id": "work-p2-wellness",
+            "title": "Career in Health and Wellness (vlu10-part2-8):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Clinical nutritionist (scientific & academic)",
+              "Option B: Personal fitness trainer (interactive & hands-on)",
+              "Option C: Corporate wellness consultant (growing industry demand)"
+            ]
+          }
+        ]
+      }
     ],
-    rightBranches: [
+    "rightBranches": [
       {
-        id: 'tech-personal',
-        title: 'Personal: indispensable part (Đời sống)',
-        badge: 'Đời sống',
-        tags: ['Thiết bị thông minh', 'Kỹ năng tin học', 'Cuộc sống tiện ích'],
-        color: '#8b5cf6', // Purple
-        children: [
-          {
-            id: 'tech-gadgets',
-            title: 'gadgets (electronic devices)',
-            color: '#8b5cf6',
-            items: [
-              'computers (laptop + desktop); tablets, smartphones; three dimensional glasses; household appliances (eg. robot vacuum cleaners help to reduce burden of doing household chores)',
-            ],
-          },
-          {
-            id: 'tech-not-buff',
-            title: 'not a computer buff / techie',
-            color: '#8b5cf6',
-            items: [
-              'back-up file when computers crash',
-            ],
-          },
-          {
-            id: 'tech-literate',
-            title: 'but be computer literate',
-            color: '#8b5cf6',
-            items: [
-              'able to use basic functions of a computer: surfing websites, using search engines, word processing, making excel spreadsheets, email,...',
-            ],
-          },
+        "id": "work-p3",
+        "title": "Part 3: Thị trường Lao động & Kỹ năng (7 đề)",
+        "badge": "Part 3",
+        "tags": [
+          "7 chủ đề vĩ mô",
+          "Khởi nghiệp",
+          "Thất nghiệp giới trẻ"
         ],
+        "color": "#0ea5e9",
+        "children": [
+          {
+            "id": "work-p3-skills",
+            "title": "Soft Skills vs Hard Qualifications (speaking-part3-20):",
+            "color": "#0ea5e9",
+            "items": [
+              "Hard skills get you the interview; soft skills determine career longevity",
+              "Top competencies: Emotional intelligence (EQ), adaptability, conflict negotiation"
+            ]
+          },
+          {
+            "id": "work-p3-startup",
+            "title": "Self-Employment & Entrepreneurship (speaking-part3-21, ueh10-part3-1):",
+            "color": "#0ea5e9",
+            "items": [
+              "Merits: Autonomous decision-making, uncapped earning potential, fulfilling vision",
+              "Risks: Financial volatility, continuous stress, high startup failure rates"
+            ]
+          },
+          {
+            "id": "work-p3-unemployment",
+            "title": "Youth Unemployment & Job Choice (speaking-part3-23, vlu10-part3-9):",
+            "color": "#0ea5e9",
+            "items": [
+              "Factors influencing job choice: Remuneration vs passionate alignment vs work-life balance",
+              "Solutions for unemployment: Vocational re-skilling, government startup incubators"
+            ]
+          }
+        ]
       },
       {
-        id: 'tech-pros',
-        title: 'Pros: study, work & relax (Lợi ích)',
-        badge: 'Lợi ích',
-        tags: ['Hiệu suất công việc', 'Giao tiếp toàn cầu', 'Kinh tế tri thức'],
-        color: '#0284c7', // Sky
-        children: [
-          {
-            id: 'tech-pros-efficiency',
-            title: 'productivity & efficiency:',
-            color: '#0284c7',
-            items: [
-              'improve work / study efficiency and productivity',
-              'make life more convenient with the click of a mouse: online (learning, transaction, shopping,...)',
-            ],
-          },
-          {
-            id: 'tech-pros-connectivity',
-            title: 'communication & knowledge:',
-            color: '#0284c7',
-            items: [
-              'boost / promote communication, erase geographical barrier: make phone call / video / - face time; social media connecting like-minded people',
-              'access great and free sources of information / knowledge-based economy',
-            ],
-          },
+        "id": "work-vocab",
+        "title": "Từ vựng & Khung ARE Sự nghiệp (B2-C1)",
+        "badge": "Core Bank",
+        "tags": [
+          "Collocations B2-C1",
+          "Khung ARE vạn năng",
+          "Lương bổng & Cơ hội"
         ],
-      },
-    ],
+        "color": "#10b981",
+        "children": [
+          {
+            "id": "work-vocab-words",
+            "title": "Workplace & Career Lexicon:",
+            "color": "#10b981",
+            "items": [
+              "career advancement trajectory, job satisfaction & remuneration, corporate culture",
+              "financial autonomy, entrepreneurial acumen, professional networking, merit-based",
+              "resilience under pressure, youth unemployment, work ethic, lucrative salary"
+            ]
+          },
+          {
+            "id": "work-vocab-are",
+            "title": "Khung ARE Vạn Năng (Universal Skeleton):",
+            "color": "#10b981",
+            "items": [
+              "Point (A): Assess employment opportunities based on long-term professional growth",
+              "Reason (R): Technical skills evolve rapidly; versatile learning cultures ensure enduring market value",
+              "Example (E): Choosing a role with mentorship and continuous training outperforms immediate wage premiums"
+            ]
+          }
+        ]
+      }
+    ]
   },
-
-  // 5. TRANSPORT
   {
-    id: 'transport',
-    title: 'Transport',
-    vietnameseTitle: 'Giao thông & Phương tiện đi lại',
-    description: 'Giao thông công cộng vs phương tiện cá nhân, vấn đề tai nạn / ùn tắc giao thông và giải pháp.',
-    icon: 'Car',
-    centerNode: {
-      title: 'TRANSPORT',
-      subtitle: 'Hệ thống Giao thông',
-      categoryBadge: 'VSTEP Chủ đề 5',
+    "id": "society",
+    "title": "Environment & Society",
+    "vietnameseTitle": "Môi trường, Đô thị & Đời sống Xã hội",
+    "description": "Tổng hợp 55 đề thi thật VSTEP (P1, P2, P3), bảo vệ môi trường, xe điện (EVs), giao thông đô thị, thú cưng, gia đình & phòng chống tội phạm.",
+    "icon": "Trees",
+    "centerNode": {
+      "title": "Environment & Society",
+      "subtitle": "Môi trường, Đô thị & Xã hội",
+      "categoryBadge": "VSTEP Topic Hub 5 (55 đề)"
     },
-    leftBranches: [
+    "leftBranches": [
       {
-        id: 'trans-problems',
-        title: 'Traffic problems (Vấn nạn giao thông)',
-        badge: 'Vấn đề',
-        tags: ['Ùn tắc & Tai nạn', 'Ý thức chấp hành', 'Chất lượng hạ tầng'],
-        color: '#ef4444', // Red/Crimson
-        children: [
-          {
-            id: 'trans-prob-list',
-            title: 'Types of problems',
-            color: '#ef4444',
-            items: [
-              'Traffic congestion / traffic jams',
-              'Traffic accidents',
-            ],
-          },
-          {
-            id: 'trans-causes',
-            title: 'Causes',
-            color: '#ef4444',
-            items: [
-              'drive carelessly / recklessly / Drunk driving/',
-              'Do not follow traffic rules: run a red light / drive without a helmet / exceed the speed limit',
-              'rise in the number of private vehicles',
-              'Poorly maintained roadways',
-            ],
-          },
+        "id": "soc-p1",
+        "title": "Part 1: Đời sống Cộng đồng & Gia đình (26 đề)",
+        "badge": "Part 1",
+        "tags": [
+          "26 đề thi thật",
+          "Giao thông & Thú cưng",
+          "Quan hệ gia đình"
         ],
+        "color": "#f97316",
+        "children": [
+          {
+            "id": "soc-p1-environment",
+            "title": "Greenery, Pets & Waste Reduction (speaking-part1-28, vlu10-part1-10, vlu10-part1-16):",
+            "color": "#f97316",
+            "items": [
+              "Pets: Companionship, teaches children empathy, stress reduction",
+              "Greenery & plants: Air purification, aesthetic tranquility, connects with nature",
+              "Recycling: Segregating domestic waste, minimizing single-use plastics"
+            ]
+          },
+          {
+            "id": "soc-p1-traffic",
+            "title": "Commuting & Traffic Bottlenecks (speaking-part1-32, vlu10-part1-23):",
+            "color": "#f97316",
+            "items": [
+              "Daily commute: Motorbikes vs public buses vs electric scooters",
+              "Traffic jams: Rush-hour congestion, air and noise pollution, travel delays"
+            ]
+          },
+          {
+            "id": "soc-p1-family",
+            "title": "Family & Neighborhood Bonds (speaking-part1-5, vlu10-part1-3, lhu10-part1-1):",
+            "color": "#f97316",
+            "items": [
+              "Family responsibilities: Household chores distribution, intergenerational mutual support",
+              "Hometown atmosphere: Friendly neighbors, slower pace of life vs metropolitan bustle"
+            ]
+          }
+        ]
       },
       {
-        id: 'trans-solutions',
-        title: 'Solutions to traffic problems (Giải pháp)',
-        badge: 'Giải pháp',
-        tags: ['Chế tài xử phạt', 'Nâng cấp đường sá', 'Tuyên truyền luật'],
-        color: '#10b981', // Emerald
-        children: [
-          {
-            id: 'trans-sol-punish',
-            title: 'strict penalties:',
-            color: '#10b981',
-            items: [
-              'implement stricter punishments for driving offences (a heavier fine)',
-            ],
-          },
-          {
-            id: 'trans-sol-infra',
-            title: 'infrastructure & education:',
-            color: '#10b981',
-            items: [
-              'improve road infrastructure',
-              'educate people to follow traffic rules',
-            ],
-          },
+        "id": "soc-p2",
+        "title": "Part 2: Giải quyết Vấn đề Xã hội (13 đề)",
+        "badge": "Part 2",
+        "tags": [
+          "13 tình huống thi thật",
+          "Kẹt xe & Du lịch",
+          "Quyết định gia đình"
         ],
-      },
+        "color": "#8b5cf6",
+        "children": [
+          {
+            "id": "soc-p2-traffic",
+            "title": "Measures to Mitigate Traffic Congestion (speaking-part2-12, vlu10-part2-13):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Widen existing roads (prohibitively expensive, induces more demand)",
+              "Option B: Heavy congestion charges on private vehicles entering downtown",
+              "Option C (Optimal): Subsidize and expand clean rapid transit systems (metro/bus)"
+            ]
+          },
+          {
+            "id": "soc-p2-tourism",
+            "title": "Attracting Foreign Tourists & Trips (vlu10-part2-15, speaking-part2-10, lhu10-part2-1):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Mass commercial entertainment resorts (erodes local heritage)",
+              "Option B: Discount vouchers and cheaper hospitality tariffs",
+              "Option C (Optimal): Promote authentic culinary eco-tourism & preserved cultural sites"
+            ]
+          },
+          {
+            "id": "soc-p2-pet",
+            "title": "Choosing a Pet for a Child (vlu10-part2-10):",
+            "color": "#8b5cf6",
+            "items": [
+              "Option A: Kitten (independent, low maintenance)",
+              "Option B: Dog (loyal, active, requires daily walks and obedience training)",
+              "Option C: Aquarium fish (easy, soothing, limited interactive bonding)"
+            ]
+          }
+        ]
+      }
     ],
-    rightBranches: [
+    "rightBranches": [
       {
-        id: 'trans-public',
-        title: 'Public transport = Mass transit (Công cộng)',
-        badge: 'Công cộng',
-        tags: ['Xe buýt • Tàu điện', 'Bảo vệ môi trường', 'Tiết kiệm chi phí'],
-        color: '#0284c7', // Sky
-        children: [
-          {
-            id: 'trans-public-pros',
-            title: 'Pros',
-            color: '#0284c7',
-            items: [
-              'Reduces Air Pollution (environmentally-friendly mode of transport) <= less fuel burned',
-              'affordable / Improves Fuel Efficiency',
-              'safe: qualified drivers with driving license and a lot of driving experiences; separate lanes',
-              'Improves road congestion > more people take buses / trains means fewer vehicles on the road',
-            ],
-          },
-          {
-            id: 'trans-public-cons',
-            title: 'Cons',
-            color: '#0284c7',
-            items: [
-              '1. inconvenient: have to follow the bus schedule (have to wait)',
-              '2. share public facilities with others + the buses are jam-packed with people during rush hours => not very hygienic => be at risk of contracting viruses / bacteria (covid-19)',
-              '3. lack of facilities: need to raise quality standard: more bus stations / stops; comfy seats, air-conditioners, better services, security, free wifi...',
-            ],
-          },
+        "id": "soc-p3",
+        "title": "Part 3: Chính sách & Tác động Vĩ mô (16 đề)",
+        "badge": "Part 3",
+        "tags": [
+          "16 chủ đề vĩ mô",
+          "Xe điện (EVs)",
+          "Tội phạm & Môi trường"
         ],
+        "color": "#0ea5e9",
+        "children": [
+          {
+            "id": "soc-p3-evs",
+            "title": "Electric Vehicles & Green Transition (speaking-part3-1, speaking-part3-2):",
+            "color": "#0ea5e9",
+            "items": [
+              "EVs advantages: Zero tailpipe emissions, silent operation, reduced reliance on fossil fuels",
+              "Challenges: Battery disposal hazards, charging station shortages, coal-based electricity generation"
+            ]
+          },
+          {
+            "id": "soc-p3-crime",
+            "title": "Combating Urban Crime (speaking-part3-24, vlu10-part3-16):",
+            "color": "#0ea5e9",
+            "items": [
+              "Interventions: Installing HD surveillance cameras, expanding nocturnal police patrols",
+              "Socio-economic cure: Alleviate poverty, provide vocational youth education, community policing"
+            ]
+          },
+          {
+            "id": "soc-p3-heritage",
+            "title": "Preserving Culture & Traditional Festivals (speaking-part3-25, speaking-part3-28):",
+            "color": "#0ea5e9",
+            "items": [
+              "Threats: Commercialization, youth Westernization, loss of historical storytelling",
+              "Preservation: Government arts funding, school cultural curricula, living heritage exhibitions"
+            ]
+          }
+        ]
       },
       {
-        id: 'trans-private',
-        title: 'Private transport (Phương tiện cá nhân)',
-        badge: 'Cá nhân',
-        tags: ['Ô tô • Xe máy', 'Chủ động thời gian', 'Tác động môi trường'],
-        color: '#f97316', // Orange
-        children: [
-          {
-            id: 'trans-private-pros',
-            title: 'Pros',
-            color: '#f97316',
-            items: [
-              '1. convenient: go anywhere at anytime',
-              '2. hygienic: private-owned vehicle is taken good care of by the owner',
-            ],
-          },
-          {
-            id: 'trans-private-cons',
-            title: 'Cons',
-            color: '#f97316',
-            items: [
-              'a. not environmentally-friendly, one factor contributing to traffic congestion and carbon dioxide emission',
-              'b. costlier / pricier: fuel, parking fee',
-              'c. less safe',
-            ],
-          },
+        "id": "soc-vocab",
+        "title": "Từ vựng & Khung ARE Môi trường (B2-C1)",
+        "badge": "Core Bank",
+        "tags": [
+          "Collocations B2-C1",
+          "Khung ARE vạn năng",
+          "Đô thị & Sinh thái"
         ],
-      },
-    ],
-  },
-
-  // 6. WORK & CAREER (Chủ đề bổ sung phân tích từ đề thi UEH, VLU, UFM...)
-  {
-    id: 'work',
-    title: 'Work & Career',
-    vietnameseTitle: 'Công việc & Sự nghiệp',
-    description: 'Tự do tài chính, làm việc từ xa, áp lực công sở, kỹ năng nghề nghiệp và phát triển bản thân (UEH, VLU).',
-    icon: 'Briefcase',
-    centerNode: {
-      title: 'Work & Career',
-      subtitle: 'Nghề nghiệp & Đời sống Công sở',
-      categoryBadge: 'VSTEP Chủ đề 6 (Hot)',
-    },
-    leftBranches: [
-      {
-        id: 'work-trends',
-        title: 'Modern Work Trends (Xu hướng làm việc)',
-        badge: 'Xu hướng',
-        tags: ['Self-employment', 'Làm việc từ xa (WFH)', 'Nhảy việc (Job-hopping)'],
-        color: '#8b5cf6', // Purple
-        children: [
+        "color": "#10b981",
+        "children": [
           {
-            id: 'work-trend-self',
-            title: 'Self-employment & Freelancing:',
-            color: '#8b5cf6',
-            items: [
-              'Pros: flexible working hours, autonomy in choosing clients, uncapped income potential',
-              'Cons: irregular income stream, no corporate paid leaves / insurance, high financial pressure',
-            ],
+            "id": "soc-vocab-words",
+            "title": "Environment & Urban Lexicon:",
+            "color": "#10b981",
+            "items": [
+              "environmental sustainability, eco-friendly transit, urban traffic congestion",
+              "civic responsibility, community cohesion, carbon footprint, crime prevention",
+              "cultural heritage preservation, green infrastructure, mitigate climate change"
+            ]
           },
           {
-            id: 'work-trend-remote',
-            title: 'Remote work & Telecommuting:',
-            color: '#8b5cf6',
-            items: [
-              'Pros: eliminate exhausting daily commute, save transportation costs, work from home comfort',
-              'Cons: blur boundaries between personal life and work, feelings of professional isolation',
-            ],
-          },
-          {
-            id: 'work-trend-hop',
-            title: 'Job-hopping among youth:',
-            color: '#8b5cf6',
-            items: [
-              'Causes: chase higher salary, seek fast promotions, desire dynamic corporate culture',
-              'Drawbacks: lack of deep domain expertise, creates impression of unreliability on CV',
-            ],
-          },
-        ],
-      },
-      {
-        id: 'work-challenges',
-        title: 'Workplace Stress (Thách thức & Áp lực)',
-        badge: 'Áp lực',
-        tags: ['Khủng hoảng Burnout', 'Deadlines dồn dập', 'Cân bằng cuộc sống'],
-        color: '#ef4444', // Red
-        children: [
-          {
-            id: 'work-chal-stress',
-            title: 'Causes of occupational stress:',
-            color: '#ef4444',
-            items: [
-              'tight project deadlines, overwhelming workload, high performance quotas',
-              'fear of layoffs, competitive peer pressure, poor management communication',
-            ],
-          },
-          {
-            id: 'work-chal-burnout',
-            title: 'Consequences of burnout:',
-            color: '#ef4444',
-            items: [
-              'chronic mental exhaustion, severe insomnia, reduced job productivity and motivation',
-              'higher staff turnover rate, negative spillover into family relationships',
-            ],
-          },
-          {
-            id: 'work-chal-solutions',
-            title: 'Solutions for work-life balance:',
-            color: '#ef4444',
-            items: [
-              'learn to prioritize tasks, set clear boundaries (disconnect emails after work hours)',
-              'companies provide wellness programs, mental health counseling, team-building trips',
-            ],
-          },
-        ],
-      },
-    ],
-    rightBranches: [
-      {
-        id: 'work-skills',
-        title: 'Essential Career Skills (Kỹ năng nghề nghiệp)',
-        badge: 'Kỹ năng',
-        tags: ['Kỹ năng mềm', 'Kỹ năng số & AI', 'Ngoại ngữ'],
-        color: '#0284c7', // Sky
-        children: [
-          {
-            id: 'work-skill-soft',
-            title: 'Soft & Interpersonal skills:',
-            color: '#0284c7',
-            items: [
-              'effective cross-cultural communication, persuasive negotiation, active listening',
-              'adaptability and emotional intelligence (EQ) in handling office conflicts',
-            ],
-          },
-          {
-            id: 'work-skill-hard',
-            title: 'Digital & Technical proficiency:',
-            color: '#0284c7',
-            items: [
-              'computer literacy, data analysis, leveraging AI tools to automate repetitive tasks',
-              'fluency in English as a global business language (break career glass ceilings)',
-            ],
-          },
-        ],
-      },
-      {
-        id: 'work-success',
-        title: 'Career Advancement (Thăng tiến & Thành công)',
-        badge: 'Thành công',
-        tags: ['Nỗ lực vs Năng khiếu', 'Xây dựng mối quan hệ', 'Động lực làm việc'],
-        color: '#10b981', // Emerald
-        children: [
-          {
-            id: 'work-succ-effort',
-            title: 'Hard work vs Natural ability:',
-            color: '#10b981',
-            items: [
-              'diligent effort, discipline and perseverance consistently outweigh raw innate talent',
-              'continuous professional learning and attending skill development workshops',
-            ],
-          },
-          {
-            id: 'work-succ-network',
-            title: 'Professional networking:',
-            color: '#10b981',
-            items: [
-              'foster authentic mentor-mentee relationships, connect with industry leaders',
-              'seek constructive feedback from supervisors to rapidly correct shortcomings',
-            ],
-          },
-        ],
-      },
-    ],
-  },
-
-  // 7. TRAVEL & TOURISM (Chủ đề bổ sung phân tích từ đề thi HCMUE, VLU, LHU...)
-  {
-    id: 'tourism',
-    title: 'Travel & Tourism',
-    vietnameseTitle: 'Du lịch & Giao lưu Văn hóa',
-    description: 'Tác động kinh tế & văn hóa của du lịch, du lịch sinh thái, du lịch tâm linh và dịch vụ lưu trú (HCMUE, VLU).',
-    icon: 'Compass',
-    centerNode: {
-      title: 'Travel & Tourism',
-      subtitle: 'Du lịch & Trải nghiệm Văn hóa',
-      categoryBadge: 'VSTEP Chủ đề 7 (Hot)',
-    },
-    leftBranches: [
-      {
-        id: 'tour-impacts',
-        title: 'Impacts of Tourism (Tác động ngành du lịch)',
-        badge: 'Tác động',
-        tags: ['Tăng trưởng kinh tế', 'Tác động môi trường', 'Overtourism'],
-        color: '#f97316', // Orange
-        children: [
-          {
-            id: 'tour-imp-benefits',
-            title: 'Economic & cultural benefits:',
-            color: '#f97316',
-            items: [
-              'generate massive revenues, create abundant jobs (hospitality, guides, drivers, artisans)',
-              'promote cultural exchange, break stereotypes, foster international mutual respect',
-              'reinvest ticket profits into preserving national monuments and heritage sites',
-            ],
-          },
-          {
-            id: 'tour-imp-drawbacks',
-            title: 'Drawbacks & Overtourism:',
-            color: '#f97316',
-            items: [
-              'overcrowding ruins local tranquility, strains transportation and sewage infrastructure',
-              'littering, plastic pollution, irreversible destruction of coral reefs and natural habitats',
-              'commercialization leads to loss of authentic local traditions and heritage values',
-            ],
-          },
-        ],
-      },
-      {
-        id: 'tour-types',
-        title: 'Travel Styles & Trends (Hình thức du lịch)',
-        badge: 'Hình thức',
-        tags: ['Du lịch tự túc', 'Tour trọn gói', 'Du lịch tâm linh'],
-        color: '#8b5cf6', // Purple
-        children: [
-          {
-            id: 'tour-type-solo',
-            title: 'Solo travel vs Group tours:',
-            color: '#8b5cf6',
-            items: [
-              'Solo backpacking: ultimate freedom, step out of comfort zone, cultivate independence',
-              'Packaged group tour: comprehensive safety, well-planned itineraries, professional guide explanations',
-            ],
-          },
-          {
-            id: 'tour-type-religious',
-            title: 'Religious & Heritage tourism:',
-            color: '#8b5cf6',
-            items: [
-              'pilgrimages to ancient temples, shrines and cathedrals to seek spiritual inner peace',
-              'visiting museums and historic landmarks to gain deep appreciation of national history',
-            ],
-          },
-        ],
-      },
-    ],
-    rightBranches: [
-      {
-        id: 'tour-eco',
-        title: 'Sustainable Tourism (Du lịch sinh thái bền vững)',
-        badge: 'Sinh thái',
-        tags: ['Du lịch có trách nhiệm', 'Bảo tồn thiên nhiên', 'Hỗ trợ bản địa'],
-        color: '#10b981', // Emerald
-        children: [
-          {
-            id: 'tour-eco-principles',
-            title: 'Ecotourism principles:',
-            color: '#10b981',
-            items: [
-              'travel responsibly to natural reserves, minimize carbon emissions and ecological footprint',
-              'stay at community-based homestays, purchase handmade souvenirs from local indigenous tribes',
-            ],
-          },
-          {
-            id: 'tour-eco-solutions',
-            title: 'Conservation measures:',
-            color: '#10b981',
-            items: [
-              'governments establish daily tourist quotas at vulnerable ecological destinations',
-              'heavier penalties for vandalizing artifacts, strict bans on single-use plastics in national parks',
-            ],
-          },
-        ],
-      },
-      {
-        id: 'tour-hospitality',
-        title: 'Hospitality & Services (Dịch vụ & Khách sạn)',
-        badge: 'Lưu trú',
-        tags: ['Đánh giá khách sạn', 'Chất lượng dịch vụ', 'Sự hài lòng du khách'],
-        color: '#0284c7', // Sky
-        children: [
-          {
-            id: 'tour-hosp-accommodations',
-            title: 'Accommodation varieties:',
-            color: '#0284c7',
-            items: [
-              'luxury 5-star hotels: premium amenities (infinity pool, fine dining, spa, 24/7 room service)',
-              'budget hostels & homestays: wallet-friendly, cozy communal vibe, warm cultural immersion',
-            ],
-          },
-          {
-            id: 'tour-hosp-satisfaction',
-            title: 'Key guest satisfaction factors:',
-            color: '#0284c7',
-            items: [
-              'spotless room cleanliness and hygiene, attentive and courteous staff attitude',
-              'prime location near public transit and city center, transparent pricing with no hidden fees',
-            ],
-          },
-        ],
-      },
-    ],
-  },
-
-  // 8. FAMILY & SOCIETY (Chủ đề bổ sung phân tích từ đề thi VLU, DTHU...)
-  {
-    id: 'society',
-    title: 'Family & Society',
-    vietnameseTitle: 'Gia đình & Xã hội hiện đại',
-    description: 'Cấu trúc gia đình, khoảng cách thế hệ, tính tự lập sớm của giới trẻ, hoạt động tình nguyện và xu hướng xã hội (VLU, DTHU).',
-    icon: 'Users',
-    centerNode: {
-      title: 'Family & Society',
-      subtitle: 'Gia đình & Mối quan hệ Xã hội',
-      categoryBadge: 'VSTEP Chủ đề 8 (Hot)',
-    },
-    leftBranches: [
-      {
-        id: 'soc-family',
-        title: 'Family Dynamics (Cấu trúc & Mối quan hệ)',
-        badge: 'Gia đình',
-        tags: ['Gia đình hạt nhân vs Nhiều thế hệ', 'Khoảng cách thế hệ', 'Chia sẻ việc nhà'],
-        color: '#f43f5e', // Rose
-        children: [
-          {
-            id: 'soc-fam-types',
-            title: 'Nuclear vs Extended family:',
-            color: '#f43f5e',
-            items: [
-              'Nuclear family: greater privacy, fewer daily conflicts between in-laws, financial autonomy',
-              'Extended family: grandparents provide childcare and life wisdom, richer emotional support network',
-            ],
-          },
-          {
-            id: 'soc-fam-gap',
-            title: 'Generation gap & Teen conflicts:',
-            color: '#f43f5e',
-            items: [
-              'differing views on career choices, marriage age, social media habits and lifestyle values',
-              'bridge the gap: cultivate open, judgment-free conversations, practice empathetic active listening',
-            ],
-          },
-          {
-            id: 'soc-fam-chores',
-            title: 'Sharing household chores:',
-            color: '#f43f5e',
-            items: [
-              'break gender stereotypes, alleviate stress for working wives/mothers, build harmonious family bond',
-              'instill accountability, time management, and essential life independence in young children',
-            ],
-          },
-        ],
-      },
-      {
-        id: 'soc-youth',
-        title: 'Youth & Independence (Giới trẻ & Tự lập)',
-        badge: 'Giới trẻ',
-        tags: ['Tự lập sớm', 'Áp lực đồng trang lứa (Peer pressure)', 'Trào lưu tiêu dùng'],
-        color: '#f97316', // Orange
-        children: [
-          {
-            id: 'soc-youth-indep',
-            title: 'Early independence in youth:',
-            color: '#f97316',
-            items: [
-              'benefits: learn financial budgeting, mature problem-solving abilities, resilient coping in hardship',
-              'drawbacks: emotional vulnerability if lacking parental guidance, risk of burnout from early jobs',
-            ],
-          },
-          {
-            id: 'soc-youth-peer',
-            title: 'Peer pressure & Trend-following:',
-            color: '#f97316',
-            items: [
-              'buying expensive branded goods just to fit in with friend circles, fear of missing out (FOMO)',
-              'encourage youngsters to embrace individuality, value substance over superficial exterior trends',
-            ],
-          },
-        ],
-      },
-    ],
-    rightBranches: [
-      {
-        id: 'soc-community',
-        title: 'Community & Volunteerism (Gắn kết cộng đồng)',
-        badge: 'Cộng đồng',
-        tags: ['Hoạt động tình nguyện', 'Trách nhiệm công dân', 'Bảo tồn văn hóa'],
-        color: '#10b981', // Emerald
-        children: [
-          {
-            id: 'soc-comm-volunteer',
-            title: 'Benefits of volunteer work:',
-            color: '#10b981',
-            items: [
-              'personal growth: cultivate compassion, gratitude for life, expand social networks, enrich resume',
-              'societal value: support impoverished communities, orphans, elderly homes, disaster relief',
-            ],
-          },
-          {
-            id: 'soc-comm-museums',
-            title: 'Youth interest in museums & history:',
-            color: '#10b981',
-            items: [
-              'decline due to fast-paced digital games and online short-video entertainment',
-              'remedies: modernize exhibits with interactive touchscreens, virtual reality (VR) tours, free student admissions',
-            ],
-          },
-        ],
-      },
-      {
-        id: 'soc-trends',
-        title: 'Modern Lifestyle Shifts (Chuyển dịch xã hội)',
-        badge: 'Xã hội',
-        tags: ['Khuynh hướng độc thân', 'Đô thị hóa', 'Thanh toán không tiền mặt'],
-        color: '#0284c7', // Sky
-        children: [
-          {
-            id: 'soc-trend-single',
-            title: 'Single life vs Marriage:',
-            color: '#0284c7',
-            items: [
-              'Single life: absolute personal freedom, prioritize career ambitions, zero domestic dispute stress',
-              'Marriage: mutual companionship, emotional anchor during hardships, joy of raising offspring together',
-            ],
-          },
-          {
-            id: 'soc-trend-urban',
-            title: 'Urban living vs Rural relocation:',
-            color: '#0284c7',
-            items: [
-              'Big cities: superior medical healthcare, elite schools, diverse cultural entertainment and job pools',
-              'Rural areas: clean air, serene pace, organic food, affordable housing, close-knit neighborhood',
-            ],
-          },
-        ],
-      },
-    ],
-  },
+            "id": "soc-vocab-are",
+            "title": "Khung ARE Vạn Năng (Universal Skeleton):",
+            "color": "#10b981",
+            "items": [
+              "Point (A): Invest in eco-friendly infrastructure and public awareness campaigns",
+              "Reason (R): Sustainable urban policies protect biodiversity while improving citizen living standards",
+              "Example (E): Integrating electric bus networks curbs tailpipe pollution and relieves traffic gridlock"
+            ]
+          }
+        ]
+      }
+    ]
+  }
 ];
