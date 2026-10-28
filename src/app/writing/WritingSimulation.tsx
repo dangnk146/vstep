@@ -1,0 +1,804 @@
+'use client';
+
+import React, { startTransition, useState, useEffect } from 'react';
+import CodeMirror from '@uiw/react-codemirror';
+import { EditorView } from '@codemirror/view';
+import { useTimer } from '@/hooks/useTimer';
+import { diffChars, DiffToken } from '@/utils/diff';
+import { 
+  PenTool, 
+  Play, 
+  Pause, 
+  RotateCcw, 
+  Check, 
+  RefreshCw, 
+  Award,
+  AlertCircle,
+  Dices,
+  LoaderCircle,
+  Settings,
+  X,
+  ChevronDown,
+  ChevronUp,
+} from 'lucide-react';
+import Link from 'next/link';
+import { toReadablePromptText } from '@/utils/examPrompts';
+import {
+  buildExamQueryString,
+  getExamApiSettings,
+  getRandomExamPrompts,
+  fetchExamPromptById,
+  parseExamQueryString,
+  saveExamApiSettings,
+} from '@/lib/examApi';
+
+const EDITOR_BASIC_SETUP = {
+  lineNumbers: true,
+  foldGutter: false,
+  dropCursor: false,
+  allowMultipleSelections: false,
+  indentOnInput: false,
+};
+
+const EDITOR_EXTENSIONS = [
+  EditorView.lineWrapping,
+  EditorView.theme({
+    "&": {
+      height: "100%",
+      backgroundColor: "transparent",
+      color: "var(--foreground)",
+      fontSize: "15px",
+    },
+    ".cm-scroller": {
+      fontFamily: "var(--font-sans), system-ui, -apple-system, sans-serif",
+      lineHeight: "1.65",
+      overflow: "auto",
+    },
+    ".cm-gutters": {
+      backgroundColor: "var(--muted)",
+      color: "var(--muted-foreground)",
+      borderRight: "1px solid var(--border)",
+    },
+    "&.cm-focused": {
+      outline: "none",
+    },
+    ".cm-content": {
+      padding: "16px",
+      caretColor: "var(--foreground)",
+      color: "var(--foreground)",
+    },
+    ".cm-line": {
+      color: "var(--foreground)",
+    },
+    ".cm-cursor, &.cm-focused .cm-cursor": {
+      borderLeftColor: "var(--foreground) !important",
+    },
+    "&.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, .cm-selectionBackground": {
+      backgroundColor: "var(--selection-bg, #bae6fd) !important",
+    },
+    ".cm-selectionMatch": {
+      backgroundColor: "var(--selection-match-bg, rgba(2, 132, 199, 0.2)) !important",
+    },
+    ".cm-placeholder": {
+      color: "var(--muted-foreground) !important",
+    },
+    ".cm-gutterElement": {
+      paddingRight: "8px",
+    }
+  })
+];
+
+const TASK1_TIME = 20 * 60; // 20 minutes
+const TASK2_TIME = 40 * 60; // 40 minutes
+
+export interface FreeTemplate {
+  id: string;
+  title: string;
+  type: 'writing' | 'speaking';
+  content: string;
+}
+
+interface ParsedPrompt {
+  context: string;
+  quote: string;
+  requirement: string;
+  note: string;
+}
+
+function cleanPromptBoilerplate(text: string): string {
+  if (!text) return '';
+  return text
+    .replace(/\s*You should write (?:at least \d+ words|an essay of at least \d+ words[^\n.]*)[.]?/gi, '')
+    .replace(/\s*You do not need to include your name or address(?:es)?[.]?/gi, '')
+    .replace(/\s*Your response will be evaluated in terms of [^\n.]+[.]?/gi, '')
+    .replace(/\s*You should write [^\n.]*[.]?/gi, '')
+    .trim();
+}
+
+function parsePromptContent(content: string): ParsedPrompt {
+  if (!content) return { context: '', quote: '', requirement: '', note: '' };
+  const paragraphs = content.split(/\n\s*\n/).map((p) => p.trim()).filter(Boolean);
+  let context = '';
+  let quote = '';
+  let requirement = '';
+  let note = '';
+
+  paragraphs.forEach((p) => {
+    if (/^You should write (?:at least|\d+ words|an essay)/i.test(p) || /^You do not need to include your name/i.test(p)) {
+      return;
+    }
+    if (p.startsWith('"') || p.startsWith('“') || ((p.endsWith('"') || p.endsWith('”')) && (p.includes('"') || p.includes('“')))) {
+      quote = p.replace(/^[“"]|[”"]$/g, '');
+    } else if (/^Read the following statement:?/i.test(p)) {
+      context = p;
+    } else if (/^(You have received an email|You received an email|You have arrived|You recently|You are taking|You and your family)/i.test(p)) {
+      context = p;
+    } else if (/^(Write an essay|Write an email|Write a letter|Discuss|To what extent|In your email|In your letter)/i.test(p)) {
+      requirement = cleanPromptBoilerplate(p);
+    } else {
+      if (!requirement) {
+        requirement = cleanPromptBoilerplate(p);
+      } else {
+        const cleanedNote = cleanPromptBoilerplate(p);
+        if (cleanedNote) {
+          note = cleanedNote;
+        }
+      }
+    }
+  });
+
+  return { context, quote, requirement, note };
+}
+
+export default function WritingPage() {
+  const [activeTask, setActiveTask] = useState<'task1' | 'task2' | 'free'>('task1');
+  const [bankPrompt, setBankPrompt] = useState<{ title: string; content: string } | null>(null);
+  const [isWarningDismissed, setIsWarningDismissed] = useState(false);
+  const [isPromptCollapsed, setIsPromptCollapsed] = useState(false);
+
+  // Timers
+  const timer1 = useTimer(TASK1_TIME);
+  const timer2 = useTimer(TASK2_TIME);
+  const timerFree = useTimer(30 * 60);
+
+  // States
+  const [template1, setTemplate1] = useState('');
+  const [template2, setTemplate2] = useState('');
+  const [typed1, setTyped1] = useState('');
+  const [typed2, setTyped2] = useState('');
+  const [typedFree, setTypedFree] = useState('');
+  const [diffResult1, setDiffResult1] = useState<DiffToken[] | null>(null);
+  const [diffResult2, setDiffResult2] = useState<DiffToken[] | null>(null);
+  const [diffResultFree, setDiffResultFree] = useState<DiffToken[] | null>(null);
+  const [isFocused, setIsFocused] = useState(false);
+
+  // Free templates
+  const [freeTemplates, setFreeTemplates] = useState<FreeTemplate[]>([]);
+  const [selectedFreeId, setSelectedFreeId] = useState<string>('');
+  const [isLoadingRandomPrompt, setIsLoadingRandomPrompt] = useState(false);
+
+  // Synchronize active task with URL query parameter
+  useEffect(() => {
+    const syncFromLocation = (consumeStoredPrompt: boolean) => {
+      const parsedQuery = parseExamQueryString(window.location.search);
+      const pathTask = window.location.pathname.match(/^\/writing\/(task1|task2|free)$/)?.[1];
+      const queryTask = parsedQuery.task;
+      const examId = parsedQuery.exam;
+      const urlSchool = parsedQuery.matruong;
+      const urlBatch = parsedQuery.batch;
+
+      // Sync filter from URL to localStorage if provided
+      const hasFilterInUrl = urlSchool !== undefined || urlBatch !== undefined;
+      const currentSettings = getExamApiSettings();
+      let nextSchool = currentSettings.school;
+      let nextBatch = currentSettings.batch;
+
+      if (hasFilterInUrl) {
+        nextSchool = urlSchool && urlSchool.toLowerCase() !== 'all' ? urlSchool : '';
+        nextBatch = urlBatch && urlBatch.toLowerCase() !== 'all' ? urlBatch : '';
+        if (nextSchool !== currentSettings.school || nextBatch !== currentSettings.batch) {
+          saveExamApiSettings({ school: nextSchool, batch: nextBatch });
+        }
+      }
+
+      let task: 'task1' | 'task2' | 'free' =
+        pathTask === 'task1' || pathTask === 'task2' || pathTask === 'free'
+          ? pathTask
+          : queryTask === 'task1' || queryTask === 'task2' || queryTask === 'free'
+            ? queryTask
+            : 'task1';
+      let promptContent: { title: string; content: string } | null = null;
+      let selectedExamId = examId || undefined;
+
+      if (consumeStoredPrompt) {
+        const savedBankPrompt = sessionStorage.getItem('vstep_bank_writing_prompt')
+          || localStorage.getItem('vstep_bank_writing_prompt');
+        if (savedBankPrompt) {
+          try {
+            const prompt = JSON.parse(savedBankPrompt) as {
+              id?: unknown;
+              title?: unknown;
+              content?: unknown;
+              task?: unknown;
+            };
+            const promptId = typeof prompt.id === 'string' ? prompt.id : undefined;
+            if (!examId || examId === promptId) {
+              if (typeof prompt.title === 'string' && typeof prompt.content === 'string') {
+                promptContent = {
+                  title: prompt.title,
+                  content: toReadablePromptText(prompt.content),
+                };
+                if (prompt.task === 'task1' || prompt.task === 'task2') task = prompt.task;
+                if (promptId) selectedExamId = promptId;
+              }
+            }
+          } catch (error) {
+            console.error('Could not read the Writing prompt from the exam API.', error);
+          }
+        }
+      }
+
+      startTransition(() => {
+        setActiveTask(task);
+        setBankPrompt(promptContent);
+      });
+
+      if (selectedExamId && !promptContent) {
+        fetchExamPromptById(selectedExamId, 'writing')
+          .then((p) => {
+            if (p) {
+              const taskFromPrompt = p.category === 'writing-task2' ? 'task2' : 'task1';
+              const nextPrompt = {
+                title: p.title,
+                content: toReadablePromptText(p.content),
+              };
+              startTransition(() => {
+                setBankPrompt(nextPrompt);
+                setActiveTask(taskFromPrompt);
+              });
+              try {
+                localStorage.setItem('vstep_bank_writing_prompt', JSON.stringify({
+                  id: p.id,
+                  title: p.title,
+                  content: nextPrompt.content,
+                  task: taskFromPrompt,
+                }));
+              } catch {}
+
+              if (!hasFilterInUrl) {
+                const promptSchool = p.school || '';
+                const promptBatch = p.batch || '';
+                if (promptSchool || promptBatch) {
+                  saveExamApiSettings({ school: promptSchool, batch: promptBatch });
+                }
+              }
+            }
+          })
+          .catch(console.error);
+      }
+
+      const queryStr = buildExamQueryString({
+        matruong: nextSchool,
+        batch: nextBatch,
+        exam: selectedExamId,
+      });
+      const canonicalUrl = `/writing/${task}${queryStr ? `?${queryStr}` : ''}`;
+      if (`${window.location.pathname}${window.location.search}` !== canonicalUrl) {
+        window.history.replaceState(null, '', canonicalUrl);
+      }
+    };
+
+    syncFromLocation(true);
+    const handlePopState = () => syncFromLocation(false);
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  useEffect(() => {
+    const handleSectionSelect = (event: Event) => {
+      const { skill, section } = (event as CustomEvent<{ skill: string; section: string }>).detail;
+      if (skill === 'writing' && (section === 'task1' || section === 'task2' || section === 'free')) {
+        setActiveTask(section);
+        setBankPrompt(null);
+        try {
+          localStorage.removeItem('vstep_bank_writing_prompt');
+          sessionStorage.removeItem('vstep_bank_writing_prompt');
+        } catch {}
+
+        const parsed = parseExamQueryString(window.location.search);
+        delete parsed.exam;
+        const queryStr = buildExamQueryString(parsed);
+        window.history.replaceState(
+          null,
+          '',
+          `/writing/${section}${queryStr ? `?${queryStr}` : ''}`,
+        );
+      }
+    };
+
+    window.addEventListener('vstep:select-section', handleSectionSelect);
+    return () => window.removeEventListener('vstep:select-section', handleSectionSelect);
+  }, []);
+
+  const handleRandomPrompt = async () => {
+    const apiSettings = getExamApiSettings();
+    setIsLoadingRandomPrompt(true);
+    try {
+      const prompts = await getRandomExamPrompts({
+        skill: 'writing',
+        part: activeTask === 'task1' || activeTask === 'task2' ? activeTask : undefined,
+        school: apiSettings.school,
+        batch: apiSettings.batch,
+        count: 1,
+      });
+      const prompt = prompts[0];
+      if (!prompt) {
+        throw new Error('Không có đề Writing phù hợp với trường, đợt thi và Task đã chọn.');
+      }
+      const task = prompt.category === 'writing-task2' ? 'task2' : 'task1';
+      const title = prompt.title || prompt.id;
+      const content = prompt.content || title;
+      setBankPrompt({ title, content });
+      setActiveTask(task);
+      const promptObj = {
+        id: prompt.id,
+        title,
+        content,
+        task,
+      };
+      try {
+        sessionStorage.setItem('vstep_bank_writing_prompt', JSON.stringify(promptObj));
+        localStorage.setItem('vstep_bank_writing_prompt', JSON.stringify(promptObj));
+      } catch {}
+
+      const queryStr = buildExamQueryString({
+        matruong: apiSettings.school,
+        batch: apiSettings.batch,
+        exam: prompt.id,
+      });
+      window.history.pushState(
+        null,
+        '',
+        `/writing/${task}${queryStr ? `?${queryStr}` : ''}`,
+      );
+    } catch (error) {
+      console.error('Could not load a random Writing prompt.', error);
+      window.alert(error instanceof Error ? error.message : 'Không thể tải đề Writing.');
+    } finally {
+      setIsLoadingRandomPrompt(false);
+    }
+  };
+
+  // Load saved templates from LocalStorage on mount & updates
+  useEffect(() => {
+    const savedT1 = localStorage.getItem('vstep_writing_t1_template') || '';
+    const savedT2 = localStorage.getItem('vstep_writing_t2_template') || '';
+    let filtered: FreeTemplate[] = [];
+    const savedFree = localStorage.getItem('vstep_free_templates');
+    if (savedFree) {
+      try {
+        const parsed = JSON.parse(savedFree) as FreeTemplate[];
+        filtered = parsed.filter(t => t.type === 'writing');
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    startTransition(() => {
+      setTemplate1(savedT1);
+      setTemplate2(savedT2);
+      setFreeTemplates(filtered);
+      if (filtered.length > 0 && !selectedFreeId) setSelectedFreeId(filtered[0].id);
+    });
+  }, [activeTask, selectedFreeId]);
+
+  const activeTimer = activeTask === 'task1' ? timer1 : activeTask === 'task2' ? timer2 : timerFree;
+  const activeTemplate = activeTask === 'task1' ? template1 : activeTask === 'task2' ? template2 : (freeTemplates.find(t => t.id === selectedFreeId)?.content || '');
+  const activeTyped = activeTask === 'task1' ? typed1 : activeTask === 'task2' ? typed2 : typedFree;
+  const setActiveTyped = activeTask === 'task1' ? setTyped1 : activeTask === 'task2' ? setTyped2 : setTypedFree;
+  const activeDiffResult = activeTask === 'task1' ? diffResult1 : activeTask === 'task2' ? diffResult2 : diffResultFree;
+  const setActiveDiffResult = activeTask === 'task1' ? setDiffResult1 : activeTask === 'task2' ? setDiffResult2 : setDiffResultFree;
+  const activeTimeLimit = activeTask === 'task1' ? TASK1_TIME : activeTask === 'task2' ? TASK2_TIME : 30 * 60;
+
+  // Restore saved drafts from LocalStorage on mount
+  useEffect(() => {
+    try {
+      const saved1 = localStorage.getItem('vstep_writing_draft_task1');
+      if (saved1) setTyped1(saved1);
+      const saved2 = localStorage.getItem('vstep_writing_draft_task2');
+      if (saved2) setTyped2(saved2);
+      const savedFree = localStorage.getItem('vstep_writing_draft_free');
+      if (savedFree) setTypedFree(savedFree);
+    } catch (e) {
+      console.error('Could not load writing drafts from localStorage', e);
+    }
+  }, []);
+
+  const handleTypedChange = (value: string) => {
+    setActiveTyped(value);
+    try {
+      localStorage.setItem(`vstep_writing_draft_${activeTask}`, value);
+    } catch {}
+    if (!activeTimer.isRunning && value.length === 1 && activeTimer.timeLeft === activeTimeLimit) {
+      activeTimer.start();
+    }
+  };
+
+  const handleClearDraft = () => {
+    setActiveTyped('');
+    try {
+      localStorage.removeItem(`vstep_writing_draft_${activeTask}`);
+    } catch {}
+    setActiveDiffResult(null);
+  };
+
+
+
+  // Split tokens into lines for diff gutter
+  const getDiffLines = (tokens: DiffToken[]) => {
+    const lines: DiffToken[][] = [[]];
+    tokens.forEach((token) => {
+      if (token.char === '\n') {
+        lines[lines.length - 1].push(token);
+        lines.push([]);
+      } else {
+        lines[lines.length - 1].push(token);
+      }
+    });
+    return lines;
+  };
+
+  const handleCheckDiff = () => {
+    if (!activeTemplate.trim()) {
+      alert('Vui lòng cài đặt bài mẫu trước ở mục "Cài đặt bài mẫu"!');
+      return;
+    }
+    const diffs = diffChars(activeTemplate, activeTyped);
+    setActiveDiffResult(diffs);
+  };
+
+  const getWordCount = (text: string) => {
+    return text.trim() ? text.trim().split(/\s+/).length : 0;
+  };
+
+  const formatTime = (seconds: number) => {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+  };
+
+  const getStats = (diffs: DiffToken[]) => {
+    let correct = 0;
+    let extra = 0;
+    let missing = 0;
+    diffs.forEach(t => {
+      if (t.type === 'correct') correct++;
+      else if (t.type === 'extra') extra++;
+      else if (t.type === 'missing') missing++;
+    });
+    
+    const total = correct + missing;
+    const score = total > 0 ? Math.round((correct / Math.max(total, correct + extra)) * 100) : 0;
+    
+    return { score, correct, extra, missing };
+  };
+
+  const diffStats = activeDiffResult ? getStats(activeDiffResult) : null;
+
+  const currentParsedPrompt = React.useMemo(() => {
+    const raw = bankPrompt
+      ? bankPrompt.content
+      : activeTask === 'task1'
+        ? `You received an email from your English friend, Jane. She asked you for some information about one of your friends. Read part of her email below:\n\n"I've just got an email from your friend, An. She said she's going to take a course in London this summer. She asked if she could stay with my family until she could find an apartment. Can you tell me a bit about her (things like her personality, hobbies and interests, and her current work or study if possible)? I want to see if she will fit in with my family."\n\nWrite an email responding to Jane.`
+        : activeTask === 'task2'
+          ? `Read the following statement:\n\n"In many countries, online learning is becoming more common than traditional classroom learning. Some people think that online learning brings great benefits to students and schools, while others argue that traditional face-to-face education cannot be replaced."\n\nWrite an essay to discuss both views and give your own opinion. Give reasons for your answer and include any relevant examples from your own knowledge or experience.`
+          : '';
+    return parsePromptContent(raw);
+  }, [bankPrompt, activeTask]);
+
+  return (
+    <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
+      {/* Top Header */}
+      <header className="flex h-9 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white shadow-xs">
+        <div className="flex items-center gap-2 text-xs font-bold sm:text-sm">
+          <PenTool className="h-4 w-4" />
+          <span>VSTEP Writing</span>
+        </div>
+
+        <div className="flex items-center gap-1.5">
+          <button
+            type="button"
+            onClick={() => void handleRandomPrompt()}
+            disabled={isLoadingRandomPrompt}
+            title={isLoadingRandomPrompt ? 'Đang tải đề viết…' : 'Lấy đề viết ngẫu nhiên'}
+            aria-label={isLoadingRandomPrompt ? 'Đang tải đề viết' : 'Lấy đề viết ngẫu nhiên'}
+            aria-busy={isLoadingRandomPrompt}
+            className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20 disabled:cursor-wait disabled:opacity-70 cursor-pointer"
+          >
+            {isLoadingRandomPrompt ? <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> : <Dices className="h-3.5 w-3.5" />}
+          </button>
+          <Link
+            href="/writing/settings"
+            title="Cấu hình Writing"
+            aria-label="Cấu hình Writing"
+            className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20"
+          >
+            <Settings className="h-3.5 w-3.5" />
+          </Link>
+        </div>
+      </header>
+
+      {/* Warning if no template */}
+      {!isWarningDismissed && !activeTemplate.trim() && (
+        <div className="flex items-center justify-between gap-2 rounded-xs border border-amber-500/30 bg-amber-500/10 px-2.5 py-1 text-xs text-amber-700 dark:text-amber-400">
+          <div className="flex items-center gap-1.5 min-w-0">
+            <AlertCircle className="h-3.5 w-3.5 shrink-0" />
+            <span className="truncate">
+              Chưa có bài mẫu cho <strong>{activeTask === 'task1' ? 'Task 1' : activeTask === 'task2' ? 'Task 2' : 'Tự do'}</strong>. Cài đặt mẫu để so khớp đáp án chi tiết!
+            </span>
+          </div>
+          <div className="flex items-center gap-1.5 shrink-0">
+            <Link href="/writing/settings" className="rounded-xs bg-amber-500 px-2 py-0.5 text-[11px] font-bold text-white hover:bg-amber-600 whitespace-nowrap">
+              Cài Đặt Mẫu
+            </Link>
+            <button
+              type="button"
+              onClick={() => setIsWarningDismissed(true)}
+              className="grid h-5 w-5 place-items-center rounded-xs text-amber-700 hover:bg-amber-500/20 dark:text-amber-300 cursor-pointer transition"
+              title="Đóng thông báo"
+              aria-label="Đóng thông báo"
+            >
+              <X className="h-3.5 w-3.5" />
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Prompt Section */}
+      <section className="rounded-sm border border-border bg-card px-3 py-2 text-foreground shadow-xs sm:px-3.5 sm:py-2">
+        {/* Header row: Badge, Title, Toggle */}
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="shrink-0 rounded-xs bg-primary/10 px-2 py-0.5 font-mono text-[11px] font-bold text-primary uppercase">
+              {activeTask === 'task1' ? 'Task 1 • 20m • ≥120 từ' : activeTask === 'task2' ? 'Task 2 • 40m • ≥250 từ' : 'Free Writing'}
+            </span>
+            <h2 className="truncate text-sm font-bold text-foreground sm:text-base">
+              {bankPrompt
+                ? bankPrompt.title
+                : activeTask === 'task1'
+                  ? "Writing Task 1: Responding to Jane's Email"
+                  : activeTask === 'task2'
+                    ? 'Writing Task 2: Online Learning vs Traditional Education'
+                    : 'Luyện tập viết tự do'}
+            </h2>
+          </div>
+
+          {activeTask !== 'free' && (
+            <button
+              type="button"
+              onClick={() => setIsPromptCollapsed((prev) => !prev)}
+              className="flex items-center gap-1 rounded-xs border border-border/60 bg-muted/40 px-2 py-1 text-xs font-medium text-muted-foreground hover:bg-muted hover:text-foreground cursor-pointer transition shrink-0"
+              title={isPromptCollapsed ? 'Mở rộng xem chi tiết đề' : 'Thu gọn đề để tập trung gõ'}
+            >
+              <span>{isPromptCollapsed ? 'Chi tiết' : 'Thu gọn'}</span>
+              {isPromptCollapsed ? <ChevronDown className="h-3 w-3" /> : <ChevronUp className="h-3 w-3" />}
+            </button>
+          )}
+        </div>
+
+        {/* Body */}
+        {activeTask === 'free' ? (
+          <div className="mt-2 flex flex-wrap items-center gap-2 text-xs sm:text-sm">
+            <p className="font-medium text-muted-foreground">Luyện tập viết tự do theo mẫu cấu hình.</p>
+            {freeTemplates.length > 0 && (
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-bold text-foreground">Chọn bài mẫu:</span>
+                <select
+                  value={selectedFreeId}
+                  onChange={(e) => setSelectedFreeId(e.target.value)}
+                  className="rounded-xs border border-border bg-muted px-2 py-0.5 text-xs font-semibold text-foreground focus:outline-none"
+                >
+                  {freeTemplates.map((t) => (
+                    <option key={t.id} value={t.id}>
+                      {t.title}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            )}
+          </div>
+        ) : isPromptCollapsed ? (
+          /* Collapsed view: Just the single essential sentence */
+          <div className="mt-2 flex items-center gap-1.5 text-xs sm:text-sm">
+            <span className="shrink-0 font-bold text-primary">Yêu cầu:</span>
+            <p className="truncate font-semibold text-foreground" title={currentParsedPrompt.requirement}>
+              {currentParsedPrompt.requirement || currentParsedPrompt.quote || 'Viết theo yêu cầu đề bài'}
+            </p>
+          </div>
+        ) : (
+          /* Clean, spacious readable view */
+          <div className="mt-2.5 space-y-2 text-sm sm:text-[15px]">
+            {/* Context if meaningful (not boilerplate) */}
+            {currentParsedPrompt.context && !currentParsedPrompt.context.startsWith('Read the following') && (
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                {currentParsedPrompt.context}
+              </p>
+            )}
+
+            {/* Stimulus Quote / Topic Statement */}
+            {currentParsedPrompt.quote && (
+              <div className="rounded-xs border-l-3 border-primary/80 bg-primary/5 px-3 py-2 text-sm sm:text-[15px] italic text-foreground leading-relaxed">
+                &ldquo;{currentParsedPrompt.quote}&rdquo;
+              </div>
+            )}
+
+            {/* Core Requirement (Bold, highlighted as the key prompt!) */}
+            {currentParsedPrompt.requirement && (
+              <div className="rounded-xs border border-border/80 bg-muted/40 px-3 py-2 text-sm sm:text-[15px] font-semibold text-foreground leading-relaxed">
+                <div className="flex items-start gap-2">
+                  <span className="mt-0.5 shrink-0 text-primary font-bold">▶</span>
+                  <span className="whitespace-pre-line">{currentParsedPrompt.requirement}</span>
+                </div>
+              </div>
+            )}
+
+            {/* Extra Note / Bullets if present */}
+            {currentParsedPrompt.note && (
+              <p className="text-xs sm:text-sm text-muted-foreground leading-relaxed">
+                {currentParsedPrompt.note}
+              </p>
+            )}
+          </div>
+        )}
+      </section>
+
+      {/* Editor Section */}
+      <section className="overflow-hidden rounded-sm border border-border bg-card shadow-xs">
+        {/* Editor Top Bar with Timer and Word Count */}
+        <div className="flex items-center justify-between border-b border-border bg-muted/70 px-2.5 py-1 text-xs sm:px-3 sm:py-1.5">
+          <div className="flex items-center gap-2">
+            <span className="hidden text-[11px] font-bold uppercase tracking-wider text-muted-foreground sm:inline">
+              {activeTask === 'task1' ? 'Writing Task 1' : activeTask === 'task2' ? 'Writing Task 2' : 'Free Writing'}
+            </span>
+            {/* Word Count (Shown on left on mobile, right on desktop) */}
+            <div className="font-mono text-xs font-bold text-foreground sm:hidden">
+              Words: <span className="text-xs font-black text-primary">{getWordCount(activeTyped)}</span>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-2 sm:gap-3">
+            {/* Word Count on desktop */}
+            <div className="hidden font-mono text-xs font-bold text-foreground sm:block">
+              Words: <span className="text-sm font-black text-primary">{getWordCount(activeTyped)}</span>
+            </div>
+
+            {/* Timer Block */}
+            <div className="flex items-center gap-1">
+              <span className={`rounded-xs px-1.5 py-0.5 font-mono text-xs font-extrabold tabular-nums ${
+                activeTimer.timeLeft < 180 && activeTimer.timeLeft > 0 ? 'bg-red-500/10 text-red-600' : 'bg-[#df4b24] text-white'
+              }`}>
+                <span className="hidden sm:inline">Còn lại </span>{formatTime(activeTimer.timeLeft)}
+              </span>
+              <button
+                type="button"
+                onClick={activeTimer.toggle}
+                title={activeTimer.isRunning ? 'Tạm dừng đồng hồ' : 'Bắt đầu đồng hồ'}
+                aria-label={activeTimer.isRunning ? 'Tạm dừng đồng hồ' : 'Bắt đầu đồng hồ'}
+                className="grid h-6 w-6 place-items-center rounded-xs border border-border bg-card text-muted-foreground hover:text-foreground cursor-pointer transition"
+              >
+                {activeTimer.isRunning ? <Pause className="h-3 w-3" /> : <Play className="h-3 w-3" />}
+              </button>
+              <button
+                type="button"
+                onClick={() => activeTimer.reset(activeTimeLimit)}
+                title="Đặt lại đồng hồ"
+                aria-label="Đặt lại đồng hồ"
+                className="grid h-6 w-6 place-items-center rounded-xs border border-border bg-card text-muted-foreground hover:text-foreground cursor-pointer transition"
+              >
+                <RotateCcw className="h-3 w-3" />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* CodeMirror */}
+        <div className="bg-card">
+          <CodeMirror
+            value={activeTyped}
+            onChange={handleTypedChange}
+            onFocus={() => setIsFocused(true)}
+            onBlur={() => setIsFocused(false)}
+            placeholder="Type your response here..."
+            height="340px"
+            theme="none"
+            className="text-sm sm:text-[15px] focus:outline-none"
+            basicSetup={EDITOR_BASIC_SETUP}
+            extensions={EDITOR_EXTENSIONS}
+          />
+        </div>
+
+        {/* Sub-toolbar underneath editor */}
+        <div className="flex flex-wrap items-center justify-between gap-2 border-t border-border bg-muted/40 px-3 py-1.5 text-xs">
+          <div className="text-[11px] text-muted-foreground">
+            Thời gian: {activeTask === 'task1' ? '20 phút' : activeTask === 'task2' ? '40 phút' : '30 phút'}
+            {activeTemplate && (
+              <span className="ml-1.5 font-medium text-foreground/80 sm:ml-2">
+                · Mẫu: <strong>{getWordCount(activeTemplate)}</strong> từ
+              </span>
+            )}
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={handleClearDraft}
+              className="inline-flex items-center gap-1 rounded-xs border border-border bg-card px-2.5 py-1 text-xs font-semibold text-foreground transition hover:bg-muted cursor-pointer"
+            >
+              <RefreshCw className="h-3 w-3" />
+              <span>Xóa làm lại</span>
+            </button>
+            <button
+              type="button"
+              onClick={handleCheckDiff}
+              className="inline-flex items-center gap-1 rounded-xs bg-primary px-3 py-1 text-xs font-bold text-primary-foreground transition hover:bg-primary/90 cursor-pointer shadow-xs"
+            >
+              <Check className="h-3 w-3" />
+              <span>Kiểm Tra Đáp Án</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      {/* Diff Result Card (Rendered only when active) */}
+      {activeDiffResult && (
+        <div className="animate-fade-in rounded-sm border border-border bg-card p-3 shadow-xs">
+          <div className="mb-2 flex flex-col justify-between gap-2 border-b border-border pb-2 sm:flex-row sm:items-center">
+            <div className="flex items-center gap-2">
+              <Award className="h-4 w-4 text-primary" />
+              <h2 className="text-sm font-bold">Độ trùng khớp chi tiết</h2>
+            </div>
+            {diffStats && (
+              <div className="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                <div className="rounded-xs bg-primary/10 px-2 py-0.5 text-primary">
+                  Độ khớp: <strong className="font-black">{diffStats.score}%</strong>
+                </div>
+                <div className="text-emerald-600 dark:text-emerald-400">Đúng: {diffStats.correct}</div>
+                <div className="text-rose-500">Dư: {diffStats.extra}</div>
+                <div className="text-amber-500">Thiếu: {diffStats.missing}</div>
+              </div>
+            )}
+          </div>
+
+          <div className="flex max-h-[180px] flex-col space-y-0.5 overflow-y-auto rounded-xs border border-border bg-muted/30 p-2.5 font-mono text-xs leading-[20px]">
+            {activeDiffResult && getDiffLines(activeDiffResult).map((line, i) => (
+              <div key={i} className="flex min-h-[20px] shrink-0 items-start">
+                <div className="mr-2 w-6 shrink-0 select-none border-r border-border pr-1 text-right text-muted-foreground">
+                  {i + 1}
+                </div>
+                <div className="flex-1 break-words whitespace-pre-wrap leading-[20px]">
+                  {line.map((token, idx) => {
+                    if (token.type === 'correct') {
+                      return <span key={idx} className="bg-emerald-500/5 font-semibold text-emerald-600 dark:text-emerald-400">{token.char}</span>;
+                    }
+                    if (token.type === 'extra') {
+                      return <span key={idx} className="bg-rose-500/20 font-bold text-rose-600 line-through dark:text-rose-400" title="Ký tự dư">{token.char === '\n' ? '↵\n' : token.char}</span>;
+                    }
+                    if (token.type === 'missing') {
+                      return <span key={idx} className="border-b border-amber-500/50 bg-amber-500/10 text-slate-400 dark:text-slate-600" title="Ký tự thiếu">{token.char === '\n' ? '↵\n' : token.char}</span>;
+                    }
+                    return null;
+                  })}
+                  {line.length === 0 && <span className="opacity-0"> </span>}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-2 flex gap-3 px-1 text-[11px] text-muted-foreground">
+            <span className="flex items-center gap-1"><span className="inline-block h-2 w-2 rounded-xs bg-emerald-500/40" /> Đúng</span>
+            <span className="flex items-center gap-1"><span className="inline-block h-2 w-2 rounded-xs bg-rose-500/40 line-through" /> Dư</span>
+            <span className="flex items-center gap-1"><span className="inline-block h-2 w-2 rounded-xs border-b border-amber-500/50 bg-amber-500/30" /> Thiếu</span>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
