@@ -11,6 +11,7 @@ import {
 
 type ParsedTableRow = {
   no: string;
+  thinking?: string;
   answer: string;
   reason: string;
   example: string;
@@ -72,11 +73,10 @@ export function SpeakingHintPanel({
       });
   }, [activeExamId]);
 
-  // Format cell text with <br> and bullet points
+  // Format cell text with <br>, bold (**text**), and bullet points
   const renderCellContent = (text: string) => {
     if (!text) return <span className="text-muted-foreground/60 italic">—</span>;
-    const cleanText = text.replace(/\*\*/g, '');
-    const parts = cleanText.split(/<br\s*\/?>/gi);
+    const parts = text.split(/<br\s*\/?>/gi);
     return (
       <div className="space-y-1">
         {parts.map((part, index) => {
@@ -84,13 +84,59 @@ export function SpeakingHintPanel({
           if (!trimmed) return <div key={index} className="h-1" />;
           const isBullet = trimmed.startsWith('•') || trimmed.startsWith('-') || trimmed.startsWith('+');
           const isSubheading = trimmed.endsWith(':') || trimmed.startsWith('=>');
+
+          // Parse markdown bold **text** and <mark>highlight</mark>
+          const renderFormatted = (raw: string) => {
+            const segments = raw.split(/(\*\*[^*]+\*\*|<mark>[^<]+<\/mark>)/g);
+            return segments.map((seg, sIdx) => {
+              if (seg.startsWith('**') && seg.endsWith('**')) {
+                const inner = seg.slice(2, -2);
+                if (inner.includes('<mark>')) {
+                  const innerSegs = inner.split(/(<mark>[^<]+<\/mark>)/g);
+                  return (
+                    <strong key={sIdx} className="font-semibold text-foreground">
+                      {innerSegs.map((iseg, iIdx) =>
+                        iseg.startsWith('<mark>') && iseg.endsWith('</mark>') ? (
+                          <mark
+                            key={iIdx}
+                            className="bg-yellow-200 text-yellow-950 dark:bg-yellow-500/30 dark:text-yellow-200 px-1 py-0.5 rounded-2xs font-semibold"
+                          >
+                            {iseg.slice(6, -7)}
+                          </mark>
+                        ) : (
+                          iseg
+                        )
+                      )}
+                    </strong>
+                  );
+                }
+                return (
+                  <strong key={sIdx} className="font-semibold text-foreground">
+                    {inner}
+                  </strong>
+                );
+              }
+              if (seg.startsWith('<mark>') && seg.endsWith('</mark>')) {
+                return (
+                  <mark
+                    key={sIdx}
+                    className="bg-yellow-200 text-yellow-950 dark:bg-yellow-500/30 dark:text-yellow-200 px-1 py-0.5 rounded-2xs font-semibold"
+                  >
+                    {seg.slice(6, -7)}
+                  </mark>
+                );
+              }
+              return seg;
+            });
+          };
+
           return (
             <p
               key={index}
-              className={`text-xs leading-relaxed ${isSubheading ? 'font-semibold text-foreground/90' : 'text-foreground/80'
+              className={`text-xs leading-relaxed ${isSubheading ? 'font-semibold text-foreground/95' : 'text-foreground/80'
                 } ${isBullet ? 'pl-2 text-foreground/85' : ''}`}
             >
-              {trimmed}
+              {renderFormatted(trimmed)}
             </p>
           );
         })}
@@ -257,6 +303,7 @@ export function SpeakingHintPanel({
             {viewMode === 'table' ? (
               activeHint.table && activeHint.table.length > 0 ? (
                 (() => {
+                  const hasThinkingCol = activeHint.table.some((r) => Boolean(r.thinking && r.thinking.trim()));
                   const hasExampleCol = activeHint.table.some((r) => Boolean(r.example && r.example.trim()));
                   const getBadgeClass = (no: string) => {
                     if (no === '✓') return 'bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 font-bold';
@@ -272,9 +319,19 @@ export function SpeakingHintPanel({
                         <thead>
                           <tr className="border-b border-border bg-muted/80 text-[11px] font-bold text-muted-foreground uppercase tracking-wider">
                             <th className="w-9 px-1.5 py-2 text-center">#</th>
+                            {hasExampleCol && hasThinkingCol && (
+                              <th className="min-w-[190px] max-w-[280px] px-2.5 py-2 text-amber-700 dark:text-amber-400 bg-amber-500/10">
+                                💡 Cách suy luận & Mục tiêu
+                              </th>
+                            )}
                             <th className="min-w-[120px] px-2.5 py-2">
                               {hasExampleCol ? 'Ý chính / Trả lời' : 'Option (Lựa chọn)'}
                             </th>
+                            {!hasExampleCol && hasThinkingCol && (
+                              <th className="min-w-[190px] max-w-[280px] px-2.5 py-2 text-amber-700 dark:text-amber-400 bg-amber-500/10">
+                                💡 Cách suy luận & Mục tiêu
+                              </th>
+                            )}
                             <th className="min-w-[190px] px-2.5 py-2">
                               {hasExampleCol ? 'Lập luận & Phát triển (A-R-E)' : 'Lý do & Lập luận (Reasons)'}
                             </th>
@@ -294,9 +351,19 @@ export function SpeakingHintPanel({
                                   {row.no}
                                 </span>
                               </td>
+                              {hasExampleCol && hasThinkingCol && (
+                                <td className="px-2.5 py-2.5 align-top bg-amber-50/40 dark:bg-amber-950/20 border-r border-amber-200/50 dark:border-amber-900/30">
+                                  {renderCellContent(row.thinking || '')}
+                                </td>
+                              )}
                               <td className="px-2.5 py-2.5 align-top font-medium">
                                 {renderCellContent(row.answer)}
                               </td>
+                              {!hasExampleCol && hasThinkingCol && (
+                                <td className="px-2.5 py-2.5 align-top bg-amber-50/40 dark:bg-amber-950/20 border-r border-amber-200/50 dark:border-amber-900/30">
+                                  {renderCellContent(row.thinking || '')}
+                                </td>
+                              )}
                               <td className="px-2.5 py-2.5 align-top">
                                 {renderCellContent(row.reason)}
                               </td>

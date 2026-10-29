@@ -15,6 +15,7 @@ type GoiyIndex = Record<string, GoiyEntry>;
 
 type ParsedTableRow = {
   no: string;
+  thinking?: string;
   answer: string;
   reason: string;
   example: string;
@@ -57,24 +58,52 @@ function parseMarkdownTable(markdown: string): { questions: string[]; table: Par
         inTable = true;
         continue;
       }
-      const firstCell = cells[0].toLowerCase();
-      const secondCell = cells.length > 1 ? cells[1].toLowerCase() : '';
-      if (
-        (cells.length >= 4 && secondCell === 'answer') ||
-        (cells.length >= 2 && (firstCell === 'option' || firstCell === 'phần' || firstCell === '#'))
-      ) {
+      const firstCell = cells[0].toLowerCase().replace(/\*/g, '').trim();
+      if (firstCell === '#' || firstCell === 'option' || firstCell === 'phần' || firstCell === 'stt') {
         inTable = true;
         continue;
       }
 
       if (inTable) {
-        if (cells.length >= 4) {
+        if (cells.length >= 5) {
+          // 5-column table: # | 💡 Cách suy luận | Answer | Reason | Example
+          const no = cells[0].replace(/\*\*/g, '').trim();
+          const thinking = cells[1].trim();
+          const answer = cells[2].trim();
+          const reason = cells[3].trim();
+          const example = cells.slice(4).join(' | ').trim();
+          if (no || answer || reason || thinking) {
+            tableRows.push({ no, thinking, answer, reason, example });
+          }
+        } else if (cells.length === 4) {
+          // 4-column table: # | Answer | Reason | Example
           const no = cells[0].replace(/\*\*/g, '').trim();
           const answer = cells[1].trim();
           const reason = cells[2].trim();
           const example = cells[3].trim();
           if (no || answer || reason) {
-            tableRows.push({ no, answer, reason, example });
+            tableRows.push({ no, thinking: '', answer, reason, example });
+          }
+        } else if (cells.length === 3) {
+          // Part 2 with 3 columns: Option | 💡 Cách suy luận | Lý do
+          const rawAnswer = cells[0].trim();
+          const lowerAnswer = rawAnswer.toLowerCase();
+          const isSelected = lowerAnswer.includes('chọn') && !lowerAnswer.includes('không');
+          const isNotSelected = lowerAnswer.includes('không');
+          
+          if (isSelected || isNotSelected) {
+            const no = isSelected ? '✓' : '✗';
+            const thinking = cells[1].trim();
+            const reason = cells[2].trim();
+            tableRows.push({ no, thinking, answer: rawAnswer, reason, example: '' });
+          } else {
+            // General 3-column table: # | Answer | Reason
+            const no = cells[0].replace(/\*\*/g, '').trim() || String(tableRows.length + 1);
+            const answer = cells[1].trim();
+            const reason = cells[2].trim();
+            if (no || answer || reason) {
+              tableRows.push({ no, thinking: '', answer, reason, example: '' });
+            }
           }
         } else if (cells.length === 2) {
           const rawAnswer = cells[0].trim();
@@ -84,14 +113,7 @@ function parseMarkdownTable(markdown: string): { questions: string[]; table: Par
           const isNotSelected = lowerAnswer.includes('không');
           const no = isSelected ? '✓' : isNotSelected ? '✗' : String(tableRows.length + 1);
           if (rawAnswer || reason) {
-            tableRows.push({ no, answer: rawAnswer, reason, example: '' });
-          }
-        } else if (cells.length === 3) {
-          const no = cells[0].replace(/\*\*/g, '').trim() || String(tableRows.length + 1);
-          const answer = cells[1].trim();
-          const reason = cells[2].trim();
-          if (no || answer || reason) {
-            tableRows.push({ no, answer, reason, example: '' });
+            tableRows.push({ no, thinking: '', answer: rawAnswer, reason, example: '' });
           }
         }
       }

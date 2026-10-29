@@ -1,0 +1,25 @@
+# Part 3 - Topic 12: The Importance of Traditional Libraries
+
+**Topic:** The Importance of Traditional Libraries
+- Quiet and focused study spaces
+- Free access to reliable academic resources
+- Community learning and cultural events
+- [Your own ideas]
+
+**Follow-up questions:**
+1. Why do fewer young people visit traditional libraries nowadays?
+2. How should traditional libraries modernize their services to attract visitors?
+3. Do you think universities should replace printed libraries with digital ones?
+
+---
+
+### Bảng dàn ý Part 3 (Phát triển ý chính & Follow-up Questions)
+
+| # | 💡 Cách suy luận & Mục tiêu | Answer (Ý chính & Câu trả lời) | Reason (Lập luận & Phát triển ý) | Example (Ví dụ thực tế) |
+|---|---|---|---|---|
+| **Ý 1** | 🎯 **Mục tiêu:** Nêu bật giá trị của không gian tự học tĩnh lặng, tạo động lực cao.<br>🧠 **Cách suy luận:** Không gian học tập yên tĩnh và tập trung ➔ Quy về **Cách ly cám dỗ ở nhà & Hiệu ứng đám đông 🤫📚** (ở nhà dễ lười nằm giường/xem TV, vào thư viện nhìn ai cũng học chăm sẽ có động lực ôn thi). | - The study <mark>spaces</mark> are quiet and focused.<br>- Traditional <mark>libraries</mark> provide quiet study <mark>spaces</mark>. | - Distraction-free study haven:<br>• silent atmosphere with comfortable desks, air-conditioning, and study lamps<br>• prevents home distractions like TV or bed; motivates deep revision through peer focus | • Spending the entire weekend in the university library studying for final exams |
+| **Ý 2** | 🎯 **Mục tiêu:** Đảm bảo công bằng xã hội trong tiếp cận tri thức học thuật chính thống.<br>🧠 **Cách suy luận:** Tiếp cận miễn phí nguồn tài liệu uy tín ➔ Quy về **Bình đẳng học tập & Tránh tài liệu rác trên mạng 📖🛡️** (sinh viên nghèo vẫn đọc được sách giáo trình y khoa/kỹ thuật đắt tiền, nguồn tin đã kiểm chứng). | - Traditional <mark>libraries</mark> offer free <mark>access</mark> to academic <mark>resources</mark>.<br>- <mark>Students</mark> can access reliable <mark>resources</mark> for free. | - Verified knowledge & equal opportunity:<br>• provides verified academic journals, reference books, and rare historical archives for free<br>• students from all economic backgrounds have equal access to high-quality learning materials | • Borrowing expensive medical and engineering textbooks without paying thousands of dollars |
+| **Ý 3** | 🎯 **Mục tiêu:** Khẳng định vai trò trung tâm sinh hoạt văn hóa của cộng đồng.<br>🧠 **Cách suy luận:** Học tập cộng đồng và sự kiện văn hóa ➔ Quy về **Điểm hẹn văn hóa cho mọi lứa tuổi 🏛️👥** (tổ chức ngày hội đổi sách, câu lạc bộ đọc sách thiếu nhi, hướng dẫn tin học cho người cao tuổi). | - Traditional <mark>libraries</mark> help people attend community <mark>events</mark>.<br>- People can join cultural <mark>events</mark>. | - Social connection & lifelong learning:<br>• hosts book clubs, author talks, story hours for children, and digital literacy workshops<br>• functions as a vibrant cultural center uniting citizens of all ages | • Attending a weekend book exchange fair organized at the municipal library |
+| **Q1** | 🎯 **Mục tiêu:** Lý giải sự sụt giảm lượng độc giả trẻ trước sự bùng nổ của mạng Internet.<br>🧠 **Cách suy luận:** Vì sao giới trẻ ít đến thư viện truyền thống? ➔ Quy về **Tra cứu Google trong 5 giây + Thích quán cafe ồn ào 📱☕** (ở nhà tải PDF tiện lợi hơn đi xe buýt đến thư viện, thích ngồi cafe trà sữa vừa học vừa tán gẫu). | Availability of internet search engines and e-books on phones | - Instant digital convenience:<br>• students find information in 5 seconds on Google without travelling across town<br>• prefer noisy study cafes where they can drink milk tea and talk with friends | • Reading PDF lecture slides at home instead of taking a bus to the city library |
+| **Q2** | 🎯 **Mục tiêu:** Đề xuất giải pháp đổi mới hiện đại hóa dịch vụ thư viện.<br>🧠 **Cách suy luận:** Thư viện cần đổi mới thế nào để hút khách? ➔ Quy về **Mô hình phức hợp Cafe + Không gian sáng tạo ☕🖨️** (thiết kế đẹp như quán cà phê sách, có Wi-Fi tốc độ cao, phòng thảo luận nhóm, máy in 3D). | Add modern coffee corners, high-speed Wi-Fi, and creative zones | - Dynamic redesign:<br>• combine quiet reading zones with collaborative discussion pods and modern cafes<br>• provide 3D printers, digital tablets, and comfy beanbags to make visits enjoyable | • Modern libraries that look like trendy bookstores with glass walls and coffee bars |
+| **Q3** | 🎯 **Mục tiêu:** Đề xuất mô hình thư viện kết hợp hài hòa (Hybrid).<br>🧠 **Cách suy luận:** Đại học có nên thay sách in bằng thư viện số? ➔ Trả lời **Nên kết hợp song hành cả hai 💻🤝📖** (thư viện số để tìm nhanh và đọc bài báo khoa học từ xa, sách in và phòng tự học vẫn không thể thiếu). | No, combine both in a hybrid model | - Best of both worlds:<br>• digital libraries provide quick keyword searches and 24/7 remote access<br>• but physical spaces and printed books are still essential for deep, eye-friendly studying | • University students searching journal databases online, then studying paper textbooks in the library |

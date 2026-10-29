@@ -1,0 +1,25 @@
+# Part 3 - Topic 26: Benefits of Travelling
+
+**Topic:** Benefits of Travelling
+- Discovering new cultures and traditions
+- Relieving stress and rejuvenating the mind
+- Broadening life perspectives
+- [Your own ideas]
+
+**Follow-up questions:**
+1. Is travelling abroad more beneficial than travelling domestically?
+2. How does mass tourism negatively affect local natural environments?
+3. What is sustainable tourism, and how can travelers practice it?
+
+---
+
+### Bảng dàn ý Part 3 (Phát triển ý chính & Follow-up Questions)
+
+| # | 💡 Cách suy luận & Mục tiêu | Answer (Ý chính & Câu trả lời) | Reason (Lập luận & Phát triển ý) | Example (Ví dụ thực tế) |
+|---|---|---|---|---|
+| **Ý 1** | 🎯 **Mục tiêu:** Trải nghiệm phong tục tập quán, lối sống và ẩm thực mới lạ của từng vùng miền.<br>🧠 **Cách suy luận:** Khám phá văn hóa và truyền thống mới ➔ Quy về **Hiểu biết văn hóa & Thưởng thức món ngon địa phương 🌍🍜** (đi du lịch giúp ta tận mắt ngắm nhìn kiến trúc độc đáo, ăn thử các món đặc sản bản địa và trò chuyện với người dân địa phương). | - Travelling helps people discover new <mark>cultures</mark> and <mark>traditions</mark>.<br>- People can learn about local <mark>customs</mark>. | - Cultural learning & local tastes:<br>• explore unfamiliar customs, ancient buildings, and unique local dishes<br>• chat with friendly local people and understand different ways of living | • Trying authentic Pho in Hanoi or joining the water festival in Thailand |
+| **Ý 2** | 🎯 **Mục tiêu:** Thoát khỏi áp lực công việc hàng ngày để đầu óc được nghỉ ngơi, thư thái.<br>🧠 **Cách suy luận:** Xả stress và phục hồi tinh thần ➔ Quy về **Không khí trong lành & Tái tạo năng lượng 🌲🌊** (rời xa màn hình máy tính và khói bụi thành phố, hít thở gió biển hay ngắm cảnh núi rừng giúp tâm trạng sảng khoái, nạp đầy năng lượng mới). | - Travelling helps people relieve <mark>stress</mark> and refresh the <mark>mind</mark>.<br>- People can relax and have peace of <mark>mind</mark>. | - Mental rest & fresh energy:<br>• step away from heavy work deadlines and computer screens to calm the mind<br>• breathing fresh mountain air or swimming in the blue sea lifts your mood | • Spending a relaxing 3-day weekend hiking in the cool pine forests of Da Lat |
+| **Ý 3** | 🎯 **Mục tiêu:** Mở rộng tầm nhìn, giúp tư duy cởi mở và bớt phán xét người khác.<br>🧠 **Cách suy luận:** Mở rộng thế giới quan và góc nhìn cuộc sống ➔ Quy về **Tự tin, trưởng thành & Học cách thích nghi 🧭🎒** (chứng kiến nhiều hoàn cảnh sống khác nhau giúp ta bớt định kiến, tự lập hơn khi đối mặt với những điều mới lạ). | - Travelling helps people broaden their life <mark>perspectives</mark>.<br>- People can have an open-minded <mark>perspective</mark>. | - Personal growth & open-mindedness:<br>• seeing how different people live around the world breaks personal biases<br>• teaches independence, patience, and problem-solving in unfamiliar places | • Learning how to navigate an unfamiliar city using maps and public buses |
+| **Q1** | 🎯 **Mục tiêu:** So sánh lợi ích giữa đi du lịch nước ngoài và du lịch trong nước.<br>🧠 **Cách suy luận:** Đi nước ngoài có tốt hơn đi trong nước không? ➔ Trả lời **Mỗi chuyến đi có giá trị riêng, tùy túi tiền 🗺️🇻🇳** (đi nước ngoài rèn ngoại ngữ và thấy thế giới rộng lớn; đi trong nước thì vừa rẻ, vừa hiểu sâu sắc vẻ đẹp quê hương mình). | Both have great value depending on your budget | - Foreign horizons vs homeland beauty:<br>• international trips let you practice foreign languages and experience distinct cultures<br>• domestic trips are cheaper, easier to plan, and deepen your love for your home country | • Visiting terraced rice fields in Sapa before saving money for an overseas trip |
+| **Q2** | 🎯 **Mục tiêu:** Chỉ ra những tác động tiêu cực của du lịch quá tải lên môi trường thiên nhiên.<br>🧠 **Cách suy luận:** Du lịch quá đông ảnh hưởng môi trường thế nào? ➔ Quy về **Rác thải nhựa bừa bãi & Ô nhiễm bãi biển, rừng núi 🚯🏖️** (hàng ngàn du khách xả chai nhựa, túi nilon làm bẩn bãi biển và phá hủy các rạn san hô tự nhiên). | Plastic trash, water pollution, and damage to nature | - Environmental damage:<br>• large crowds drop plastic bottles and food packaging on beaches and hiking trails<br>• boat anchors and tourist trash harm coral reefs and wild animals | • Popular beaches full of plastic bags and empty drink cans after holiday weekends |
+| **Q3** | 🎯 **Mục tiêu:** Định nghĩa du lịch bền vững và nêu hành động cụ thể của du khách.<br>🧠 **Cách suy luận:** Du lịch bền vững là gì và làm sao để thực hiện? ➔ Quy về **Không xả rác & Ủng hộ người dân địa phương 🎒🌱** (mang theo bình nước cá nhân, gom rác bỏ đúng nơi quy định và ăn uống tại các quán ăn gia đình địa phương để ủng hộ kinh tế người dân). | Protecting nature and supporting local people | - Eco-friendly travel habits:<br>• bring personal water bottles to avoid plastic waste, and never litter in nature<br>• eat at family-owned eateries and buy local crafts so tourism money helps local people | • Carrying personal trash bags during mountain hikes and staying at local homestays |

@@ -1,0 +1,25 @@
+# Part 3 - Topic 28: The Significance of Traditional Festivals
+
+**Topic:** The Significance of Traditional Festivals
+- Preserving cultural traditions
+- Bringing people together
+- Supporting local businesses
+- [Your own ideas]
+
+**Follow-up questions:**
+1. What is the most significant traditional festival in Vietnam?
+2. Are young people today celebrating traditional festivals differently from their parents?
+3. Should festival holidays be extended so people have more time to travel home?
+
+---
+
+### Bảng dàn ý Part 3 (Phát triển ý chính & Follow-up Questions)
+
+| # | 💡 Cách suy luận & Mục tiêu | Answer (Ý chính & Câu trả lời) | Reason (Lập luận & Phát triển ý) | Example (Ví dụ thực tế) |
+|---|---|---|---|---|
+| **Ý 1** | 🎯 **Mục tiêu:** Lưu giữ và truyền lại các phong tục tập quán tốt đẹp cho thế hệ sau.<br>🧠 **Cách suy luận:** Bảo tồn truyền thống văn hóa ➔ Quy về **Uống nước nhớ nguồn & Dạy con cháu về cội nguồn 🌸🎋** (dịp lễ Tết gói bánh chưng, cúng tổ tiên giúp các bạn trẻ hiểu và tự hào về nguồn cội dân tộc). | - Traditional <mark>festivals</mark> help communities preserve cultural <mark>traditions</mark>.<br>- People can pass down sacred <mark>customs</mark>. | - Living cultural roots:<br>• passes down ancestral customs, traditional recipes, and folk games to younger generations<br>• teaches young people about gratitude to ancestors and pride in national history | • Wrapping square sticky rice cakes (Banh Chung) together with family before Tet |
+| **Ý 2** | 🎯 **Mục tiêu:** Dịp để mọi người đoàn tụ, gắn kết tình cảm gia đình và tình làng nghĩa xóm.<br>🧠 **Cách suy luận:** Gắn kết mọi người lại với nhau ➔ Quy về **Đoàn tụ gia đình & Thăm hỏi họ hàng 👨‍👩‍👧‍👦❤️** (những người đi làm ăn xa trở về quây quần bên mâm cơm tất niên, hàn gắn tình cảm sau cả năm bận rộn). | - Traditional <mark>festivals</mark> help bring family <mark>members</mark> together.<br>- People can have meaningful family <mark>reunions</mark>. | - Family reunion & warm bonds:<br>• family members and workers working far away travel back to sit together at the dinner table<br>• reconnects generations and creates happy moments with grandparents and cousins | • Three generations sitting together happily around the New Year's Eve dinner table |
+| **Ý 3** | 🎯 **Mục tiêu:** Thúc đẩy mua sắm, tạo nguồn thu nhập lớn cho nông dân và tiểu thương.<br>🧠 **Cách suy luận:** Hỗ trợ các hộ kinh doanh địa phương ➔ Quy về **Mua sắm Tết & Tiêu thụ nông sản, hoa kiểng 🌺🍊** (người dân mua hoa đào, quất cảnh, bánh mứt, thịt cá, giúp người nông dân và các cửa hàng nhỏ bán được nhiều hàng và có một cái Tết ấm no). | - Traditional <mark>festivals</mark> help support local <mark>businesses</mark>.<br>- Local traders can increase their seasonal <mark>sales</mark>. | - Strong seasonal sales:<br>• high demand for holiday flowers, fruits, traditional food, and gifts<br>• brings vital income to local farmers, market sellers, and small grocery stores | • Flower farmers selling peach blossom trees and yellow apricot flowers before Tet |
+| **Q1** | 🎯 **Mục tiêu:** Khẳng định Tết Nguyên Đán là ngày lễ truyền thống lớn nhất và thiêng liêng nhất.<br>🧠 **Cách suy luận:** Lễ hội truyền thống quan trọng nhất ở Việt Nam? ➔ Quy về **Tết Nguyên Đán 🧧🎆** (đón chào năm mới, khởi đầu mới, dịp cả nhà sum họp ăn bữa cơm ấm cúng và chúc nhau những điều tốt lành). | Tet Nguyen Dan (Lunar New Year) | - The most sacred family celebration:<br>• marks the arrival of spring, clean beginnings, and the longest family holiday<br>• includes meaningful rituals like cleaning the home, giving lucky red envelopes, and visiting relatives | • Watching midnight fireworks and wishing grandparents good health and longevity |
+| **Q2** | 🎯 **Mục tiêu:** Nhận xét sự khác biệt trong cách đón Tết giữa thế hệ trẻ và cha mẹ.<br>🧠 **Cách suy luận:** Người trẻ ngày nay đón Tết khác cha mẹ thế nào? ➔ Quy về **Thích đi du lịch nghỉ ngơi & Bớt việc bếp núc nặng nhọc ✈️🛋️** (cha mẹ thường bận rộn dọn dẹp, nấu nướng nhiều mâm cỗ cúng; còn người trẻ thích ăn uống đơn giản và đi du lịch xả stress). | Yes, young people prefer travelling and simpler cooking | - Modern holiday style:<br>• parents often spend days cleaning the house and preparing complicated feasts<br>• younger people prefer cooking simple meals and taking holiday trips to relax | • Young couples taking a short vacation flight to Da Nang during Tet holidays |
+| **Q3** | 🎯 **Mục tiêu:** Ủng hộ việc kéo dài kỳ nghỉ lễ Tết để người xa quê thuận tiện về nhà.<br>🧠 **Cách suy luận:** Có nên kéo dài kỳ nghỉ Tết không? ➔ Trả lời **Rất nên, vì giúp giảm kẹt xe và có nhiều thời gian bên gia đình 🚌🏡** (người ở xa mất 1-2 ngày đi tàu xe về quê, kỳ nghỉ dài từ 7-9 ngày giúp bà con đỡ vất vả chen chúc và được ở bên cha mẹ lâu hơn). | Yes, especially for people who work far from home | - Easier travel & quality family time:<br>• workers in big cities often need 1 to 2 days just to travel home by bus or train<br>• longer holidays spread out traffic jams and allow workers more time with aging parents | • A 9-day holiday allowing factory workers enough time to visit rural hometowns comfortably |

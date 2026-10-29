@@ -1,0 +1,25 @@
+# Part 3 - Topic 19: Work-Life Balance
+
+**Topic:** Work-Life Balance
+- Setting clear work boundaries
+- Prioritizing family and personal hobbies
+- Managing time and daily tasks effectively
+- [Your own ideas]
+
+**Follow-up questions:**
+1. Are young employees willing to sacrifice their work-life balance for higher pay?
+2. What practical steps can companies take to help staff maintain work-life balance?
+3. How does continuous overtime work negatively affect family relationships?
+
+---
+
+### Bảng dàn ý Part 3 (Phát triển ý chính & Follow-up Questions)
+
+| # | 💡 Cách suy luận & Mục tiêu | Answer (Ý chính & Câu trả lời) | Reason (Lập luận & Phát triển ý) | Example (Ví dụ thực tế) |
+|---|---|---|---|---|
+| **Ý 1** | 🎯 **Mục tiêu:** Tách bạch rõ ràng giữa giờ làm việc và thời gian riêng tư cá nhân.<br>🧠 **Cách suy luận:** Thiết lập ranh giới công việc rõ ràng ➔ Quy về **Tắt thông báo công việc sau giờ làm 🔕🏡** (không trả lời tin nhắn Zalo hay email công việc sau 7 giờ tối hoặc cuối tuần để đầu óc thực sự được nghỉ ngơi). | - Setting clear work <mark>boundaries</mark> helps people avoid <mark>burnout</mark>.<br>- People can set clear work <mark>boundaries</mark>. | - Disconnect to rest the mind:<br>• avoid checking work emails or chat groups late in the evening and on weekends<br>• creates a clear line between work duties and peaceful private life | • Turning off work notifications after 6 PM to enjoy a peaceful dinner with family |
+| **Ý 2** | 🎯 **Mục tiêu:** Dành thời gian chăm sóc gia đình và nuôi dưỡng sở thích cá nhân.<br>🧠 **Cách suy luận:** Ưu tiên gia đình và sở thích cá nhân ➔ Quy về **Gắn kết tình cảm & Tái tạo năng lượng 👨‍👩‍👧🏸** (nấu ăn cùng người thân, đi chơi thể thao hoặc nghe nhạc giúp xua tan áp lực công việc và có tinh thần phấn khởi cho tuần mới). | - Prioritizing <mark>family</mark> and personal <mark>hobbies</mark> helps people stay happy.<br>- People can spend more time with <mark>family</mark>. | - Warm relationships & mental happiness:<br>• spending quality time with loved ones and doing sports keeps your mind joyful<br>• prevents burnout and brings fresh energy back to work on Monday | • Cooking Sunday lunch with parents or playing badminton with friends |
+| **Ý 3** | 🎯 **Mục tiêu:** Làm việc tập trung trong giờ hành chính để không phải mang việc về nhà.<br>🧠 **Cách suy luận:** Quản lý thời gian và công việc hiệu quả ➔ Quy về **Lên danh sách việc cần làm & Tập trung giải quyết 📝⏰** (lên kế hoạch 3 việc quan trọng nhất mỗi sáng, tập trung làm dứt điểm trước 5 giờ chiều để ra về đúng giờ mà không cần tăng ca). | - Managing <mark>time</mark> effectively helps people finish their <mark>tasks</mark>.<br>- People can manage daily <mark>tasks</mark> effectively. | - Finish work on time:<br>• focus deeply during office hours by listing the most important tasks each morning<br>• finishing tasks efficiently means you can leave on time without staying late | • Listing top 3 priorities each morning and finishing them before 5 PM |
+| **Q1** | 🎯 **Mục tiêu:** Nhận định thái độ của người trẻ giữa thu nhập cao và sự cân bằng cuộc sống.<br>🧠 **Cách suy luận:** Người trẻ có sẵn sàng đánh đổi cân bằng để lấy lương cao? ➔ Trả lời **Mới ra trường thì có, nhưng dần dần nhận ra sức khỏe quan trọng hơn 💼🌱** (người mới đi làm thường cày cuốc để kiếm tiền và kinh nghiệm, nhưng sau một thời gian kiệt sức sẽ tìm kiếm công việc cân bằng hơn). | Many fresh graduates do, but health becomes the priority later | - Earning money vs protecting health:<br>• young workers often work overtime to earn money and build their careers<br>• however, after feeling too exhausted, they choose workplaces with reasonable hours | • Young office workers leaving high-stress jobs to protect their mental well-being |
+| **Q2** | 🎯 **Mục tiêu:** Nêu các chính sách doanh nghiệp có thể áp dụng để hỗ trợ nhân viên.<br>🧠 **Cách suy luận:** Công ty làm gì để giúp nhân viên cân bằng? ➔ Quy về **Làm việc từ xa & Giới hạn giờ làm thêm 💻🏢** (cho phép làm việc ở nhà 1-2 ngày mỗi tuần để tiết kiệm thời gian đi lại, và không khuyến khích tăng ca muộn sau 6 giờ tối). | Allow working from home and discourage late overtime | - Flexible company policies:<br>• letting staff work remotely 1 or 2 days a week saves travel time and traffic stress<br>• managers should respect personal time and not expect late-night replies | • Companies offering work-from-home options on Friday and paying for gym memberships |
+| **Q3** | 🎯 **Mục tiêu:** Chỉ ra tác hại của việc tăng ca triền miên đối với hạnh phúc gia đình.<br>🧠 **Cách suy luận:** Tăng ca liên tục ảnh hưởng quan hệ gia đình ra sao? ➔ Quy về **Thiếu thời gian trò chuyện & Con cái xa cách 🏠💔** (đi sớm về muộn khi con đã ngủ, về nhà trong trạng thái mệt mỏi cáu gắt khiến vợ chồng dễ tranh cãi và không còn gắn kết). | Emotional distance and neglected children | - Weakening family bonds:<br>• coming home late and tired leaves no energy to talk with your partner or listen to children<br>• missing family dinners slowly weakens warm connections between family members | • Young children rarely seeing their parents because they arrive home when kids are already asleep |
