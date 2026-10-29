@@ -1,0 +1,594 @@
+{
+  "vlu10-speaking-part1-1": {
+    "file": "vlu10-speaking-part1-1.md",
+    "title": "Topic 1: Pets & Animals",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-2": {
+    "file": "vlu10-speaking-part1-2.md",
+    "title": "Topic 2: Movies & Cinema",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-3": {
+    "file": "vlu10-speaking-part1-3.md",
+    "title": "Topic 3: Family Responsibilities & Rules",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-4": {
+    "file": "vlu10-speaking-part1-4.md",
+    "title": "Topic 4: Eating Out",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-5": {
+    "file": "vlu10-speaking-part1-5.md",
+    "title": "Topic 5: Celebrities & Famous People",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-6": {
+    "file": "vlu10-speaking-part1-6.md",
+    "title": "Topic 6: Health & Medical Check-ups",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-7": {
+    "file": "vlu10-speaking-part1-7.md",
+    "title": "Topic 7: Hometown & Travelling",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-8": {
+    "file": "vlu10-speaking-part1-8.md",
+    "title": "Topic 8: Learning English & Future Self",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-9": {
+    "file": "vlu10-speaking-part1-9.md",
+    "title": "Topic 9: Online Blogs & Online Learning",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-10": {
+    "file": "vlu10-speaking-part1-10.md",
+    "title": "Topic 10: Recycling & Waste Reduction",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-11": {
+    "file": "vlu10-speaking-part1-11.md",
+    "title": "Topic 11: Artificial Intelligence (AI)",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-12": {
+    "file": "vlu10-speaking-part1-12.md",
+    "title": "Topic 12: Foreign Languages",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-13": {
+    "file": "vlu10-speaking-part1-13.md",
+    "title": "Topic 13: Cycling",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-14": {
+    "file": "vlu10-speaking-part1-14.md",
+    "title": "Topic 14: Shopping Online",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-15": {
+    "file": "vlu10-speaking-part1-15.md",
+    "title": "Topic 15: Smartwatches & Wearable Technology",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-16": {
+    "file": "vlu10-speaking-part1-16.md",
+    "title": "Topic 16: Plants & Greenery",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-17": {
+    "file": "vlu10-speaking-part1-17.md",
+    "title": "Topic 17: Daily Meals & Healthy Eating",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-18": {
+    "file": "vlu10-speaking-part1-18.md",
+    "title": "Topic 18: Happiness & Life Satisfaction",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-19": {
+    "file": "vlu10-speaking-part1-19.md",
+    "title": "Topic 19: Health & Dealing with Sickness",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-20": {
+    "file": "vlu10-speaking-part1-20.md",
+    "title": "Topic 20: Volunteering in Sports Events",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-21": {
+    "file": "vlu10-speaking-part1-21.md",
+    "title": "Topic 21: Favorite Subjects & Study Preferences",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-22": {
+    "file": "vlu10-speaking-part1-22.md",
+    "title": "Topic 22: Types of Schools & Educational Institutions",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part1-23": {
+    "file": "vlu10-speaking-part1-23.md",
+    "title": "Topic 23: Traffic Problems & Commuting",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-1": {
+    "file": "vlu10-speaking-part2-1.md",
+    "title": "Part 2 - Situation 1: Choosing a Gift for a Colleague",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-2": {
+    "file": "vlu10-speaking-part2-2.md",
+    "title": "Part 2 - Situation 2: Choosing Among Three Job Offers",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-3": {
+    "file": "vlu10-speaking-part2-3.md",
+    "title": "Part 2 - Situation 3: Choosing the Most Essential Soft Skill for Students",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-4": {
+    "file": "vlu10-speaking-part2-4.md",
+    "title": "Part 2 - Situation 4: Career Choice for a Teaching Graduate",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-5": {
+    "file": "vlu10-speaking-part2-5.md",
+    "title": "Part 2 - Situation 5: Choosing a Club to Join with Friends",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-6": {
+    "file": "vlu10-speaking-part2-6.md",
+    "title": "Part 2 - Situation 6: Choosing a Venue for a Class Reunion",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-7": {
+    "file": "vlu10-speaking-part2-7.md",
+    "title": "Part 2 - Situation 7: Choosing a Farewell Gift for a Colleague",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-8": {
+    "file": "vlu10-speaking-part2-8.md",
+    "title": "Part 2 - Situation 8: Career Choice in Health and Wellness",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-9": {
+    "file": "vlu10-speaking-part2-9.md",
+    "title": "Part 2 - Situation 9: Organizing a Freshmen Welcome Event",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-10": {
+    "file": "vlu10-speaking-part2-10.md",
+    "title": "Part 2 - Situation 10: Choosing a Pet for a Child",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-11": {
+    "file": "vlu10-speaking-part2-11.md",
+    "title": "Part 2 - Situation 11: Choosing a Creative Class to Attend",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-12": {
+    "file": "vlu10-speaking-part2-12.md",
+    "title": "Part 2 - Situation 12: Promoting Science Interest among Students",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-13": {
+    "file": "vlu10-speaking-part2-13.md",
+    "title": "Part 2 - Situation 13: Measures to Reduce Traffic Accidents",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-14": {
+    "file": "vlu10-speaking-part2-14.md",
+    "title": "Part 2 - Situation 14: Choosing an Activity While Babysitting a Nephew",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part2-15": {
+    "file": "vlu10-speaking-part2-15.md",
+    "title": "Part 2 - Situation 15: Ways to Attract Foreign Tourists to Your City",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-1": {
+    "file": "vlu10-speaking-part3-1.md",
+    "title": "Part 3 - Topic 1: Effective Ways to Stay Healthy",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-2": {
+    "file": "vlu10-speaking-part3-2.md",
+    "title": "Part 3 - Topic 2: Benefits of Experiencing Failures",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-3": {
+    "file": "vlu10-speaking-part3-3.md",
+    "title": "Part 3 - Topic 3: The Impacts of Using Social Media",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-4": {
+    "file": "vlu10-speaking-part3-4.md",
+    "title": "Part 3 - Topic 4: Causes and Solutions for Student Misbehavior",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-5": {
+    "file": "vlu10-speaking-part3-5.md",
+    "title": "Part 3 - Topic 5: Benefits of Playing Team Sports",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-6": {
+    "file": "vlu10-speaking-part3-6.md",
+    "title": "Part 3 - Topic 6: Effective Ways to Lose Weight",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-7": {
+    "file": "vlu10-speaking-part3-7.md",
+    "title": "Part 3 - Topic 7: Solutions to Tackle Obesity in Society",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-8": {
+    "file": "vlu10-speaking-part3-8.md",
+    "title": "Part 3 - Topic 8: Benefits of Extracurricular Activities",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-9": {
+    "file": "vlu10-speaking-part3-9.md",
+    "title": "Part 3 - Topic 9: Factors Influencing Job Choice",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-10": {
+    "file": "vlu10-speaking-part3-10.md",
+    "title": "Part 3 - Topic 10: Benefits of Having a Hobby",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-11": {
+    "file": "vlu10-speaking-part3-11.md",
+    "title": "Part 3 - Topic 11: Artificial Intelligence in Modern Education",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-12": {
+    "file": "vlu10-speaking-part3-12.md",
+    "title": "Part 3 - Topic 12: The Role of Body Language in Communication",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-13": {
+    "file": "vlu10-speaking-part3-13.md",
+    "title": "Part 3 - Topic 13: Combating Childhood Obesity",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-14": {
+    "file": "vlu10-speaking-part3-14.md",
+    "title": "Part 3 - Topic 14: The Value of Public Libraries in Modern Society",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-15": {
+    "file": "vlu10-speaking-part3-15.md",
+    "title": "Part 3 - Topic 15: Hiring a Domestic Helper",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "vlu10-speaking-part3-16": {
+    "file": "vlu10-speaking-part3-16.md",
+    "title": "Part 3 - Topic 16: Effective Ways to Reduce Crime Rates",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "VLU",
+    "batch": "10/2026"
+  },
+  "speaking-part1-31": {
+    "file": "speaking-part1-31.md",
+    "title": "Topic 31: Weather & Seasons",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "dthu10-speaking-part1-1": {
+    "file": "dthu10-speaking-part1-1.md",
+    "title": "Topic 1: Milk Tea / Bubble Tea",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "DTHU",
+    "batch": "10/2026"
+  },
+  "dthu10-speaking-part1-2": {
+    "file": "dthu10-speaking-part1-2.md",
+    "title": "Topic 2: Eating Out",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "DTHU",
+    "batch": "10/2026"
+  },
+  "dthu10-speaking-part2-1": {
+    "file": "dthu10-speaking-part2-1.md",
+    "title": "Part 2 - Situation 1: Free Time Activities",
+    "skill": "speaking",
+    "part": "part2",
+    "school": "DTHU",
+    "batch": "10/2026"
+  },
+  "dthu10-speaking-part3-1": {
+    "file": "dthu10-speaking-part3-1.md",
+    "title": "Part 3 - Topic 1: Benefits of Reading Books",
+    "skill": "speaking",
+    "part": "part3",
+    "school": "DTHU",
+    "batch": "10/2026"
+  },
+  "speaking-part1-1": {
+    "file": "speaking-part1-1.md",
+    "title": "Topic 1: Saving Money",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-2": {
+    "file": "speaking-part1-2.md",
+    "title": "Topic 2: Internet & Mobile Phones",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-3": {
+    "file": "speaking-part1-3.md",
+    "title": "Topic 3: Taking Breaks",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-4": {
+    "file": "speaking-part1-4.md",
+    "title": "Topic 4: Workplace & Working Conditions",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-5": {
+    "file": "speaking-part1-5.md",
+    "title": "Topic 5: Family",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-6": {
+    "file": "speaking-part1-6.md",
+    "title": "Topic 6: Outdoor Activities",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-7": {
+    "file": "speaking-part1-7.md",
+    "title": "Topic 7: Reading Habits",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-8": {
+    "file": "speaking-part1-8.md",
+    "title": "Topic 8: Movies & Cinema",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-9": {
+    "file": "speaking-part1-9.md",
+    "title": "Topic 9: Green Tea & Drinks",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-10": {
+    "file": "speaking-part1-10.md",
+    "title": "Topic 10: Diet & Vegetarianism",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-11": {
+    "file": "speaking-part1-11.md",
+    "title": "Topic 11: Learning English",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-12": {
+    "file": "speaking-part1-12.md",
+    "title": "Topic 12: Traditional Food",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-13": {
+    "file": "speaking-part1-13.md",
+    "title": "Topic 13: Shopping",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-14": {
+    "file": "speaking-part1-14.md",
+    "title": "Topic 14: Photography & Singing",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  },
+  "speaking-part1-15": {
+    "file": "speaking-part1-15.md",
+    "title": "Topic 15: Parties & Celebrations",
+    "skill": "speaking",
+    "part": "part1",
+    "school": "VLU",
+    "batch": "09/2026"
+  }
+}

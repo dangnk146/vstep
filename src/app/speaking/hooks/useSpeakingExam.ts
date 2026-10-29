@@ -43,6 +43,7 @@ export function useSpeakingExam() {
   const [hasExamContent, setHasExamContent] = useState<boolean>(false);
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [isLoadingRandomPrompt, setIsLoadingRandomPrompt] = useState<boolean>(false);
+  const [activeExamId, setActiveExamId] = useState<string | null>(null);
 
   const syncFromLocation = useCallback((consumeStoredPrompt: boolean) => {
     if (typeof window === 'undefined') return;
@@ -81,14 +82,20 @@ export function useSpeakingExam() {
     const savedExamId = localStorage.getItem(ACTIVE_EXAM_KEY);
     const savedExamHtml = localStorage.getItem(CUSTOM_EXAM_KEY);
 
-    if (rawExam) {
+    const isChangingPart = Boolean(pathPart && savedPart && pathPart !== savedPart);
+    if (isChangingPart && !rawExam) {
+      localStorage.removeItem(ACTIVE_EXAM_KEY);
+      localStorage.removeItem(CUSTOM_EXAM_KEY);
+      promptHtml = '';
+      selectedExamId = undefined;
+    } else if (rawExam) {
       selectedExamId = rawExam;
       if (savedExamId === rawExam && savedExamHtml) {
         promptHtml = savedExamHtml;
       } else {
         promptHtml = null;
       }
-    } else if (consumeStoredPrompt && savedExamHtml) {
+    } else if (consumeStoredPrompt && savedExamHtml && (!savedPart || savedPart === part)) {
       promptHtml = savedExamHtml;
       if (savedExamId) selectedExamId = savedExamId;
     } else {
@@ -110,6 +117,7 @@ export function useSpeakingExam() {
       setIsSubmitted(false);
       localStorage.setItem(ACTIVE_PART_KEY, part);
 
+      setActiveExamId(selectedExamId || null);
       if (selectedExamId && promptHtml) {
         localStorage.setItem(CUSTOM_EXAM_KEY, promptHtml);
         localStorage.setItem(ACTIVE_EXAM_KEY, selectedExamId);
@@ -128,6 +136,7 @@ export function useSpeakingExam() {
               setExamHtml(sanitized);
               setExamKey((prev) => prev + 1);
               setHasExamContent(true);
+              setActiveExamId(selectedExamId!);
               localStorage.setItem(CUSTOM_EXAM_KEY, html);
               localStorage.setItem(ACTIVE_EXAM_KEY, selectedExamId!);
             });
@@ -171,6 +180,7 @@ export function useSpeakingExam() {
       setActivePart(section);
       setIsSubmitted(false);
       localStorage.setItem(ACTIVE_PART_KEY, section);
+      setActiveExamId(null);
       localStorage.removeItem(ACTIVE_EXAM_KEY);
       localStorage.removeItem(CUSTOM_EXAM_KEY);
       setExamHtml('');
@@ -220,6 +230,7 @@ export function useSpeakingExam() {
       setHasExamContent(true);
       setIsSubmitted(false);
       setActivePart(part);
+      setActiveExamId(examId);
       localStorage.setItem(CUSTOM_EXAM_KEY, content);
       localStorage.setItem(ACTIVE_EXAM_KEY, examId);
       localStorage.setItem(ACTIVE_PART_KEY, part);
@@ -239,6 +250,7 @@ export function useSpeakingExam() {
   };
 
   const handleEditorInput = (html: string, text: string) => {
+    setActiveExamId(null);
     localStorage.setItem(CUSTOM_EXAM_KEY, html);
     localStorage.removeItem(ACTIVE_EXAM_KEY);
 
@@ -258,6 +270,7 @@ export function useSpeakingExam() {
 
   return {
     activePart,
+    activeExamId,
     examHtml,
     examKey,
     hasExamContent,

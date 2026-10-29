@@ -29,8 +29,12 @@ export default function RootLayout({
     <html
       lang="vi"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="h-screen overflow-hidden bg-background text-foreground">
+      <body
+        className="h-screen overflow-hidden bg-background text-foreground"
+        suppressHydrationWarning
+      >
         <ThemeProvider>
           <div className="flex h-full w-full flex-col">
             <Suspense fallback={null}>
