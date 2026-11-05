@@ -10,9 +10,16 @@
   ],
   "batches": [
     "09/2026",
-    "10/2026"
+    "10/2026",
+    "11/2026"
   ],
   "speaking": [
+    {
+      "school": "VLU",
+      "batch": "11/2026",
+      "file": "speaking/VLU_11-2026.json",
+      "count": 4
+    },
     {
       "school": "VLU",
       "batch": "09/2026",
@@ -63,6 +70,12 @@
     }
   ],
   "writing": [
+    {
+      "school": "VLU",
+      "batch": "11/2026",
+      "file": "writing/VLU_11-2026.json",
+      "count": 2
+    },
     {
       "school": "VLU",
       "batch": "09/2026",
