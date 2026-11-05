@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-29T05:57:01.904Z",
-  "totalSpeakingQuestions": 153,
+  "generatedAt": "2026-11-05T16:53:27.181Z",
+  "totalSpeakingQuestions": 157,
   "hubCount": 5,
   "hubs": {
     "education": {
@@ -712,10 +712,10 @@
         "Mitigate risks of sedentary isolation & superficial virtual relationships (Cảnh báo nguy cơ phụ thuộc công nghệ và mất kết nối thực tế)"
       ],
       "stats": {
-        "total": 17,
+        "total": 18,
         "part1": 9,
         "part2": 1,
-        "part3": 7
+        "part3": 8
       },
       "questions": {
         "part1": [
@@ -813,6 +813,15 @@
           }
         ],
         "part3": [
+          {
+            "id": "vlu11-speaking-part3-1",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 1: Benefits of Reading E-books",
+            "rawTitle": "Part 3 - Topic 1: Benefits of Reading E-books",
+            "content": "Topic: Benefits of reading e-books in modern life\nSuggestions:\n- Time-saving and instant access\n- Cost-effective and affordable\n- Convenient to store and carry\n- [Your own ideas]\n\nFollow-up questions:\n1. Do e-books have any disadvantages or negative impacts?\n2. Do you think e-books will completely replace paper books in the future?\n3. Should people continue to use and promote e-books in the modern world?"
+          },
           {
             "id": "speaking-part3-4",
             "school": "VLU",
@@ -1086,13 +1095,31 @@
         "Preserve cultural identity & strengthen familial and societal bonds (Gìn giữ bản sắc truyền thống và thắt chặt tình cảm gắn kết xã hội)"
       ],
       "stats": {
-        "total": 55,
-        "part1": 26,
-        "part2": 13,
+        "total": 58,
+        "part1": 28,
+        "part2": 14,
         "part3": 16
       },
       "questions": {
         "part1": [
+          {
+            "id": "vlu11-speaking-part1-1",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Weather & Rainy Days",
+            "rawTitle": "Topic 1: Weather & Rainy Days",
+            "content": "1. Do you like rainy days? Why or why not?\n2. What is your favorite season of the year, and why?\n3. How does the weather usually affect your mood or daily activities?"
+          },
+          {
+            "id": "vlu11-speaking-part1-2",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Travelling & Holiday Preferences",
+            "rawTitle": "Topic 2: Travelling & Holiday Preferences",
+            "content": "1. What kinds of places do you prefer to visit when you travel, and why?\n2. Do you prefer traveling alone or with other people? Why?\n3. What was the most memorable trip or holiday you have ever experienced?"
+          },
           {
             "id": "speaking-part1-5",
             "school": "VLU",
@@ -1329,6 +1356,15 @@
           }
         ],
         "part2": [
+          {
+            "id": "vlu11-speaking-part2-1",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Accommodation for a Mountain Climbing Trip",
+            "rawTitle": "Part 2 - Situation 1: Accommodation for a Mountain Climbing Trip",
+            "content": "Situation: You and your group of friends are planning a mountain climbing trip on the upcoming weekend and are deciding where to stay overnight. There are three options:\n- Staying at a hotel\n- Staying at a homestay\n- Outdoor camping\n\nWhich option do you think is the best choice and why?"
+          },
           {
             "id": "speaking-part2-7",
             "school": "VLU",
