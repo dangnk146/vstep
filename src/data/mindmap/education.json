@@ -15,7 +15,10 @@
       "title": "Sách, E-book & Thư viện",
       "viTitle": "Đọc sách giấy, sách điện tử, đọc cho trẻ em, thư viện & tiệm sách",
       "badge": "Nhóm 1",
-      "tags": ["Speaking P1-P2-P3", "Writing T1-T2"],
+      "tags": [
+        "Speaking P1-P2-P3",
+        "Writing T1-T2"
+      ],
       "color": "#f97316",
       "children": [
         {
@@ -30,11 +33,26 @@
           ],
           "color": "#f97316",
           "keywords": [
-            { "word": "broaden knowledge", "meaning": "mở rộng hiểu biết và kiến thức" },
-            { "word": "improve vocabulary", "meaning": "học thêm nhiều từ vựng mới" },
-            { "word": "relax my mind", "meaning": "thư giãn đầu óc sau giờ học căng thẳng" },
-            { "word": "reading habit", "meaning": "thói quen đọc sách mỗi ngày" },
-            { "word": "paper book", "meaning": "sách in giấy truyền thống" }
+            {
+              "word": "broaden knowledge",
+              "meaning": "mở rộng hiểu biết và kiến thức"
+            },
+            {
+              "word": "improve vocabulary",
+              "meaning": "học thêm nhiều từ vựng mới"
+            },
+            {
+              "word": "relax my mind",
+              "meaning": "thư giãn đầu óc sau giờ học căng thẳng"
+            },
+            {
+              "word": "reading habit",
+              "meaning": "thói quen đọc sách mỗi ngày"
+            },
+            {
+              "word": "paper book",
+              "meaning": "sách in giấy truyền thống"
+            }
           ],
           "items": [
             {
@@ -82,11 +100,26 @@
           ],
           "color": "#f97316",
           "keywords": [
-            { "word": "e-book / digital book", "meaning": "sách điện tử đọc trên điện thoại/máy tính bảng" },
-            { "word": "read blogs online", "meaning": "đọc bài viết chia sẻ kinh nghiệm trên blog mạng" },
-            { "word": "convenient to carry", "meaning": "tiện mang theo đi mọi nơi trong máy" },
-            { "word": "save money and space", "meaning": "tiết kiệm tiền mua và đỡ tốn diện tích kệ sách" },
-            { "word": "eye strain", "meaning": "mỏi mắt, nhức mắt do nhìn màn hình lâu" }
+            {
+              "word": "e-book / digital book",
+              "meaning": "sách điện tử đọc trên điện thoại/máy tính bảng"
+            },
+            {
+              "word": "read blogs online",
+              "meaning": "đọc bài viết chia sẻ kinh nghiệm trên blog mạng"
+            },
+            {
+              "word": "convenient to carry",
+              "meaning": "tiện mang theo đi mọi nơi trong máy"
+            },
+            {
+              "word": "save money and space",
+              "meaning": "tiết kiệm tiền mua và đỡ tốn diện tích kệ sách"
+            },
+            {
+              "word": "eye strain",
+              "meaning": "mỏi mắt, nhức mắt do nhìn màn hình lâu"
+            }
           ],
           "items": [
             {
@@ -128,10 +161,22 @@
           ],
           "color": "#f97316",
           "keywords": [
-            { "word": "bedtime story", "meaning": "chuyện kể trước khi ngủ cho trẻ nhỏ" },
-            { "word": "spark imagination", "meaning": "kích thích trí tưởng tượng phong phú" },
-            { "word": "parent-child bond", "meaning": "tình cảm gắn kết giữa cha mẹ và con cái" },
-            { "word": "screen addiction", "meaning": "nghiện màn hình điện thoại, TV, iPad" }
+            {
+              "word": "bedtime story",
+              "meaning": "chuyện kể trước khi ngủ cho trẻ nhỏ"
+            },
+            {
+              "word": "spark imagination",
+              "meaning": "kích thích trí tưởng tượng phong phú"
+            },
+            {
+              "word": "parent-child bond",
+              "meaning": "tình cảm gắn kết giữa cha mẹ và con cái"
+            },
+            {
+              "word": "screen addiction",
+              "meaning": "nghiện màn hình điện thoại, TV, iPad"
+            }
           ],
           "items": [
             {
@@ -172,10 +217,22 @@
           ],
           "color": "#f97316",
           "keywords": [
-            { "word": "quiet atmosphere", "meaning": "không gian yên tĩnh, không bị làm phiền" },
-            { "word": "borrow books for free", "meaning": "mượn sách miễn phí không tốn tiền" },
-            { "word": "study space", "meaning": "chỗ ngồi học bài và làm bài tập lý tưởng" },
-            { "word": "group discussion rooms", "meaning": "phòng thảo luận dành riêng cho nhóm học" }
+            {
+              "word": "quiet atmosphere",
+              "meaning": "không gian yên tĩnh, không bị làm phiền"
+            },
+            {
+              "word": "borrow books for free",
+              "meaning": "mượn sách miễn phí không tốn tiền"
+            },
+            {
+              "word": "study space",
+              "meaning": "chỗ ngồi học bài và làm bài tập lý tưởng"
+            },
+            {
+              "word": "group discussion rooms",
+              "meaning": "phòng thảo luận dành riêng cho nhóm học"
+            }
           ],
           "items": [
             {
@@ -216,11 +273,26 @@
           ],
           "color": "#f97316",
           "keywords": [
-            { "word": "organize bookshelves", "meaning": "sắp xếp kệ sách gọn gàng theo thể loại" },
-            { "word": "genre / category", "meaning": "thể loại (tiểu thuyết, kinh tế, thiếu nhi, ngoại ngữ)" },
-            { "word": "run discounts / promotions", "meaning": "chạy chương trình giảm giá, khuyến mãi" },
-            { "word": "book cafe corner", "meaning": "góc cà phê đọc sách để giữ chân khách hàng" },
-            { "word": "social media fanpage", "meaning": "trang fanpage Facebook/TikTok để quảng bá" }
+            {
+              "word": "organize bookshelves",
+              "meaning": "sắp xếp kệ sách gọn gàng theo thể loại"
+            },
+            {
+              "word": "genre / category",
+              "meaning": "thể loại (tiểu thuyết, kinh tế, thiếu nhi, ngoại ngữ)"
+            },
+            {
+              "word": "run discounts / promotions",
+              "meaning": "chạy chương trình giảm giá, khuyến mãi"
+            },
+            {
+              "word": "book cafe corner",
+              "meaning": "góc cà phê đọc sách để giữ chân khách hàng"
+            },
+            {
+              "word": "social media fanpage",
+              "meaning": "trang fanpage Facebook/TikTok để quảng bá"
+            }
           ],
           "items": [
             {
@@ -258,7 +330,10 @@
       "title": "Ngoại ngữ, Công nghệ & Thiết bị học tập",
       "viTitle": "Học tiếng Anh, ứng dụng AI, cấm điện thoại & mầm non sớm",
       "badge": "Nhóm 2",
-      "tags": ["Speaking P1-P2-P3", "Writing T1-T2"],
+      "tags": [
+        "Speaking P1-P2-P3",
+        "Writing T1-T2"
+      ],
       "color": "#3b82f6",
       "children": [
         {
@@ -275,11 +350,26 @@
           ],
           "color": "#3b82f6",
           "keywords": [
-            { "word": "better job opportunities", "meaning": "cơ hội việc làm lương cao, công ty quốc tế" },
-            { "word": "confident communication", "meaning": "tự tin giao tiếp với người nước ngoài" },
-            { "word": "travel abroad easily", "meaning": "đi du lịch nước ngoài dễ dàng, không sợ lạc" },
-            { "word": "grammar & pronunciation", "meaning": "ngữ pháp và phát âm chuẩn" },
-            { "word": "practice speaking daily", "meaning": "luyện nói mỗi ngày với bạn bè hoặc câu lạc bộ" }
+            {
+              "word": "better job opportunities",
+              "meaning": "cơ hội việc làm lương cao, công ty quốc tế"
+            },
+            {
+              "word": "confident communication",
+              "meaning": "tự tin giao tiếp với người nước ngoài"
+            },
+            {
+              "word": "travel abroad easily",
+              "meaning": "đi du lịch nước ngoài dễ dàng, không sợ lạc"
+            },
+            {
+              "word": "grammar & pronunciation",
+              "meaning": "ngữ pháp và phát âm chuẩn"
+            },
+            {
+              "word": "practice speaking daily",
+              "meaning": "luyện nói mỗi ngày với bạn bè hoặc câu lạc bộ"
+            }
           ],
           "items": [
             {
@@ -322,10 +412,22 @@
           ],
           "color": "#3b82f6",
           "keywords": [
-            { "word": "personal AI tutor", "meaning": "gia sư AI cá nhân giải đáp thắc mắc 24/7" },
-            { "word": "grammar check apps", "meaning": "ứng dụng kiểm tra và sửa lỗi ngữ pháp tự động" },
-            { "word": "lazy thinking", "meaning": "lười tư duy, ỷ lại vào máy tính làm hộ bài" },
-            { "word": "academic cheating", "meaning": "sao chép văn mẫu từ ChatGPT để nộp cho thầy cô" }
+            {
+              "word": "personal AI tutor",
+              "meaning": "gia sư AI cá nhân giải đáp thắc mắc 24/7"
+            },
+            {
+              "word": "grammar check apps",
+              "meaning": "ứng dụng kiểm tra và sửa lỗi ngữ pháp tự động"
+            },
+            {
+              "word": "lazy thinking",
+              "meaning": "lười tư duy, ỷ lại vào máy tính làm hộ bài"
+            },
+            {
+              "word": "academic cheating",
+              "meaning": "sao chép văn mẫu từ ChatGPT để nộp cho thầy cô"
+            }
           ],
           "items": [
             {
@@ -368,10 +470,22 @@
           ],
           "color": "#3b82f6",
           "keywords": [
-            { "word": "look up dictionary", "meaning": "tra cứu từ điển và tài liệu trên lớp" },
-            { "word": "distract from lessons", "meaning": "làm xao nhãng bài giảng của giáo viên" },
-            { "word": "play games secretly", "meaning": "chơi game, lướt mạng lén lút dưới ngăn bàn" },
-            { "word": "contact parents", "meaning": "liên lạc khẩn cấp với gia đình khi có sự cố" }
+            {
+              "word": "look up dictionary",
+              "meaning": "tra cứu từ điển và tài liệu trên lớp"
+            },
+            {
+              "word": "distract from lessons",
+              "meaning": "làm xao nhãng bài giảng của giáo viên"
+            },
+            {
+              "word": "play games secretly",
+              "meaning": "chơi game, lướt mạng lén lút dưới ngăn bàn"
+            },
+            {
+              "word": "contact parents",
+              "meaning": "liên lạc khẩn cấp với gia đình khi có sự cố"
+            }
           ],
           "items": [
             {
@@ -412,11 +526,26 @@
           ],
           "color": "#3b82f6",
           "keywords": [
-            { "word": "preschool / kindergarten", "meaning": "trường mầm non / mẫu giáo" },
-            { "word": "social skills", "meaning": "kỹ năng giao tiếp và chơi hòa đồng với bạn bè" },
-            { "word": "become more independent", "meaning": "tự lập hơn (tự xúc ăn, tự dọn đồ chơi)" },
-            { "word": "working parents", "meaning": "cha mẹ bận rộn đi làm cả ngày" },
-            { "word": "catch flu easily", "meaning": "dễ lây cúm, ốm vặt khi tiếp xúc nhiều bạn" }
+            {
+              "word": "preschool / kindergarten",
+              "meaning": "trường mầm non / mẫu giáo"
+            },
+            {
+              "word": "social skills",
+              "meaning": "kỹ năng giao tiếp và chơi hòa đồng với bạn bè"
+            },
+            {
+              "word": "become more independent",
+              "meaning": "tự lập hơn (tự xúc ăn, tự dọn đồ chơi)"
+            },
+            {
+              "word": "working parents",
+              "meaning": "cha mẹ bận rộn đi làm cả ngày"
+            },
+            {
+              "word": "catch flu easily",
+              "meaning": "dễ lây cúm, ốm vặt khi tiếp xúc nhiều bạn"
+            }
           ],
           "items": [
             {
@@ -446,6 +575,69 @@
             "example": "For example, my niece used to be very shy at home, but after three months at kindergarten, she can sing, eat by herself, and has many friends.",
             "exampleVi": "Ví dụ, cháu gái tôi trước đây rất nhút nhát ở nhà, nhưng sau 3 tháng đi mẫu giáo, bé đã biết hát, tự xúc ăn và có rất nhiều bạn."
           }
+        },
+        {
+          "id": "edu-online-learning",
+          "title": "Học trực tuyến & Nộp bài tập (Online Learning & Assignment Submission)",
+          "viTitle": "Học mọi lúc mọi nơi, tiết kiệm chi phí đi lại vs Thiếu tương tác trực tiếp, khó tập trung",
+          "badge": "Đề Mới",
+          "examTags": [
+            "Speaking P1 (VLU 11 - Online Blogs & Learning)",
+            "Speaking P2 (VLU 11 - Choosing a Course for Self-Development: Online Skill Course vs In-person Workshop)",
+            "Writing T1 (VLU 11 - Apology Letter to Professor for Late Assignment Submission)",
+            "Writing T2 (VLU 11 - Online Learning vs Traditional Classroom Learning)"
+          ],
+          "color": "#3b82f6",
+          "keywords": [
+            {
+              "word": "online course",
+              "meaning": "khóa học trực tuyến qua Zoom/Google Meet"
+            },
+            {
+              "word": "flexible schedule",
+              "meaning": "thời gian học tập linh hoạt theo ý muốn"
+            },
+            {
+              "word": "assignment deadline",
+              "meaning": "hạn chót nộp bài tập được giao"
+            },
+            {
+              "word": "lack of interaction",
+              "meaning": "thiếu sự tương tác trực tiếp mặt đối mặt"
+            },
+            {
+              "word": "self-discipline",
+              "meaning": "tinh thần tự giác, kỷ luật bản thân khi ngồi học ở nhà"
+            }
+          ],
+          "items": [
+            {
+              "id": "edu-ol-1",
+              "badge": "✅ Điểm mạnh",
+              "text": "Online learning offers immense flexibility because students can review recorded lectures and learn from home without commuting.",
+              "viText": "Học trực tuyến mang lại sự linh hoạt lớn vì học viên có thể xem lại video bài giảng và học tại nhà không phải đi lại."
+            },
+            {
+              "id": "edu-ol-2",
+              "badge": "❌ Điểm yếu",
+              "text": "It requires high self-discipline; without direct teacher supervision, learners easily get distracted by social media and miss deadlines.",
+              "viText": "Hình thức này đòi hỏi tính tự giác cao; nếu không có giáo viên giám sát trực tiếp, người học dễ bị phân tâm bởi mạng xã hội và trễ hạn nộp bài."
+            },
+            {
+              "id": "edu-ol-3",
+              "badge": "📝 Bài tập & Hạn chót",
+              "text": "When facing an emergency that delays assignment submission, communicating politely with your professor to request an extension is essential.",
+              "viText": "Khi gặp sự cố khẩn cấp khiến nộp bài muộn, việc chủ động gửi email lịch sự xin phép giáo sư gia hạn là kỹ năng cần thiết."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Online learning has become an effective alternative to traditional classrooms, although it requires strong discipline.",
+            "answerVi": "Học trực tuyến đã trở thành giải pháp thay thế hiệu quả cho lớp học truyền thống, dù đòi hỏi kỷ luật cao.",
+            "reason": "This is because it saves travel time and allows people to learn useful skills flexibly, though lack of real interaction can be challenging.",
+            "reasonVi": "Bởi vì nó tiết kiệm thời gian đi lại và giúp học kỹ năng mới linh hoạt, dù việc thiếu tương tác trực tiếp là một thách thức.",
+            "example": "For instance, I completed an online project management certificate last month completely in the evenings after work.",
+            "exampleVi": "Ví dụ, tôi đã hoàn thành một chứng chỉ quản lý dự án trực tuyến vào tháng trước hoàn toàn vào buổi tối sau giờ làm."
+          }
         }
       ]
     }
@@ -456,7 +648,10 @@
       "title": "Đại học, Kỹ năng & Kỷ luật học đường",
       "viTitle": "Chọn trường ĐH, du học, gap year, CLB ngoại khóa, kỷ luật & kỹ năng mềm",
       "badge": "Nhóm 3",
-      "tags": ["Speaking P2-P3", "Writing T1-T2"],
+      "tags": [
+        "Speaking P2-P3",
+        "Writing T1-T2"
+      ],
       "color": "#10b981",
       "children": [
         {
@@ -470,10 +665,22 @@
           ],
           "color": "#10b981",
           "keywords": [
-            { "word": "affordable tuition fee", "meaning": "học phí vừa phải, hợp túi tiền gia đình" },
-            { "word": "modern campus facilities", "meaning": "cơ sở vật chất hiện đại (máy lạnh, phòng thí nghiệm, thư viện)" },
-            { "word": "convenient location", "meaning": "vị trí gần nhà hoặc tiện xe buýt đi lại" },
-            { "word": "reputation & job rate", "meaning": "danh tiếng trường và tỷ lệ sinh viên có việc làm" }
+            {
+              "word": "affordable tuition fee",
+              "meaning": "học phí vừa phải, hợp túi tiền gia đình"
+            },
+            {
+              "word": "modern campus facilities",
+              "meaning": "cơ sở vật chất hiện đại (máy lạnh, phòng thí nghiệm, thư viện)"
+            },
+            {
+              "word": "convenient location",
+              "meaning": "vị trí gần nhà hoặc tiện xe buýt đi lại"
+            },
+            {
+              "word": "reputation & job rate",
+              "meaning": "danh tiếng trường và tỷ lệ sinh viên có việc làm"
+            }
           ],
           "items": [
             {
@@ -515,11 +722,26 @@
           ],
           "color": "#10b981",
           "keywords": [
-            { "word": "study abroad", "meaning": "đi du học ở nước ngoài" },
-            { "word": "take a gap year", "meaning": "nghỉ 1 năm sau cấp 3 để trải nghiệm/làm thêm" },
-            { "word": "international degree", "meaning": "bằng cấp quốc tế được toàn cầu công nhận" },
-            { "word": "culture shock", "meaning": "sốc văn hóa và nhớ nhà khi sống xa gia đình" },
-            { "word": "high living cost", "meaning": "chi phí sinh hoạt và học phí rất đắt đỏ" }
+            {
+              "word": "study abroad",
+              "meaning": "đi du học ở nước ngoài"
+            },
+            {
+              "word": "take a gap year",
+              "meaning": "nghỉ 1 năm sau cấp 3 để trải nghiệm/làm thêm"
+            },
+            {
+              "word": "international degree",
+              "meaning": "bằng cấp quốc tế được toàn cầu công nhận"
+            },
+            {
+              "word": "culture shock",
+              "meaning": "sốc văn hóa và nhớ nhà khi sống xa gia đình"
+            },
+            {
+              "word": "high living cost",
+              "meaning": "chi phí sinh hoạt và học phí rất đắt đỏ"
+            }
           ],
           "items": [
             {
@@ -561,10 +783,22 @@
           ],
           "color": "#10b981",
           "keywords": [
-            { "word": "extracurricular activities", "meaning": "các hoạt động ngoại khóa ngoài giờ học chính" },
-            { "word": "join a university club", "meaning": "tham gia câu lạc bộ (tiếng Anh, âm nhạc, tình nguyện)" },
-            { "word": "build soft skills", "meaning": "rèn luyện kỹ năng mềm (giao tiếp, làm việc nhóm, tổ chức sự kiện)" },
-            { "word": "freshmen welcome event", "meaning": "sự kiện chào đón tân sinh viên nhập học" }
+            {
+              "word": "extracurricular activities",
+              "meaning": "các hoạt động ngoại khóa ngoài giờ học chính"
+            },
+            {
+              "word": "join a university club",
+              "meaning": "tham gia câu lạc bộ (tiếng Anh, âm nhạc, tình nguyện)"
+            },
+            {
+              "word": "build soft skills",
+              "meaning": "rèn luyện kỹ năng mềm (giao tiếp, làm việc nhóm, tổ chức sự kiện)"
+            },
+            {
+              "word": "freshmen welcome event",
+              "meaning": "sự kiện chào đón tân sinh viên nhập học"
+            }
           ],
           "items": [
             {
@@ -606,10 +840,22 @@
           ],
           "color": "#10b981",
           "keywords": [
-            { "word": "student misbehavior", "meaning": "hành vi quậy phá, vô lễ, gây mất trật tự của học sinh" },
-            { "word": "peer pressure", "meaning": "áp lực từ bạn bè cùng lứa (bắt chước hút thuốc, đua xe để không bị cô lập)" },
-            { "word": "constructive discipline", "meaning": "kỷ luật mang tính xây dựng (lao động công ích, viết bản kiểm điểm, không đòn roi)" },
-            { "word": "lack of parental attention", "meaning": "thiếu sự quan tâm và dạy dỗ từ gia đình do cha mẹ bận rộn" }
+            {
+              "word": "student misbehavior",
+              "meaning": "hành vi quậy phá, vô lễ, gây mất trật tự của học sinh"
+            },
+            {
+              "word": "peer pressure",
+              "meaning": "áp lực từ bạn bè cùng lứa (bắt chước hút thuốc, đua xe để không bị cô lập)"
+            },
+            {
+              "word": "constructive discipline",
+              "meaning": "kỷ luật mang tính xây dựng (lao động công ích, viết bản kiểm điểm, không đòn roi)"
+            },
+            {
+              "word": "lack of parental attention",
+              "meaning": "thiếu sự quan tâm và dạy dỗ từ gia đình do cha mẹ bận rộn"
+            }
           ],
           "items": [
             {
@@ -651,10 +897,22 @@
           ],
           "color": "#10b981",
           "keywords": [
-            { "word": "patient and caring", "meaning": "kiên nhẫn và tận tình quan tâm học sinh" },
-            { "word": "inspiring teaching method", "meaning": "phương pháp giảng dạy truyền cảm hứng, sinh động" },
-            { "word": "hands-on experiments", "meaning": "thí nghiệm thực hành thực tế trong phòng lab" },
-            { "word": "curiosity for science", "meaning": "niềm tò mò và say mê khoa học, vũ trụ, tự nhiên" }
+            {
+              "word": "patient and caring",
+              "meaning": "kiên nhẫn và tận tình quan tâm học sinh"
+            },
+            {
+              "word": "inspiring teaching method",
+              "meaning": "phương pháp giảng dạy truyền cảm hứng, sinh động"
+            },
+            {
+              "word": "hands-on experiments",
+              "meaning": "thí nghiệm thực hành thực tế trong phòng lab"
+            },
+            {
+              "word": "curiosity for science",
+              "meaning": "niềm tò mò và say mê khoa học, vũ trụ, tự nhiên"
+            }
           ],
           "items": [
             {
@@ -697,10 +955,22 @@
           ],
           "color": "#10b981",
           "keywords": [
-            { "word": "overcome stage fright", "meaning": "vượt qua nỗi sợ hãi, run rẩy khi đứng trên sân khấu" },
-            { "word": "practice in front of a mirror", "meaning": "luyện tập trước gương hoặc trước bạn bè thân" },
-            { "word": "time management & to-do list", "meaning": "quản lý thời gian và lập danh sách việc cần làm" },
-            { "word": "musical instrument", "meaning": "nhạc cụ (đàn piano, guitar) giúp rèn luyện tính kiên nhẫn" }
+            {
+              "word": "overcome stage fright",
+              "meaning": "vượt qua nỗi sợ hãi, run rẩy khi đứng trên sân khấu"
+            },
+            {
+              "word": "practice in front of a mirror",
+              "meaning": "luyện tập trước gương hoặc trước bạn bè thân"
+            },
+            {
+              "word": "time management & to-do list",
+              "meaning": "quản lý thời gian và lập danh sách việc cần làm"
+            },
+            {
+              "word": "musical instrument",
+              "meaning": "nhạc cụ (đàn piano, guitar) giúp rèn luyện tính kiên nhẫn"
+            }
           ],
           "items": [
             {
@@ -735,4 +1005,3 @@
     }
   ]
 }
-

@@ -139,7 +139,14 @@ function parsePromptQuestions(content: string) {
         .slice(0, 3);
 }
 
-function extractSpeakingPart3Topic(title: string) {
+function extractSpeakingPart3Topic(title: string, content?: string): string {
+  if (content) {
+    const topicMatch = content.match(/^Topic:\s*([^\n]+)/im);
+    if (topicMatch && topicMatch[1].trim()) {
+      return topicMatch[1].trim();
+    }
+  }
+
   const parenthesisMatch = title.match(/\(([^)]+)\)/);
   if (parenthesisMatch) return parenthesisMatch[1].trim();
 
@@ -149,33 +156,54 @@ function extractSpeakingPart3Topic(title: string) {
   return (match[1] || cleaned).trim();
 }
 
-function getSpeakingPart3IdeaLabels(prompt: ExamPrompt) {
-  const pools = [
-    ['Fresh air', 'Cheap cost', 'Friendly neighbors', 'Your own ideas'],
-    ['Better environment', 'Lower living costs', 'Strong community', 'Your own ideas'],
-    ['Health benefits', 'More space', 'Calm lifestyle', 'Your own ideas'],
-    ['Less stress', 'Affordable living', 'Supportive people', 'Your own ideas'],
-    ['Cleaner air', 'Higher quality of life', 'Close-knit society', 'Your own ideas'],
-  ];
+function extractSpeakingPart3Suggestions(content: string): string[] {
+  const lines = content.split('\n').map((line) => line.trim());
+  const sugIdx = lines.findIndex((line) => /^suggestions\s*:?/i.test(line));
+  let suggestions: string[] = [];
 
-  const seed = [...prompt.id].reduce((total, char) => total + char.charCodeAt(0), 0);
-  return pools[seed % pools.length];
+  if (sugIdx !== -1) {
+    const nextHeaderIdx = lines.findIndex(
+      (line, idx) => idx > sugIdx && /(?:follow[\s-]*up|discussion)\s+questions?\s*:/i.test(line)
+    );
+    const rawLines = lines.slice(sugIdx + 1, nextHeaderIdx === -1 ? undefined : nextHeaderIdx);
+    suggestions = rawLines
+      .map((line) => line.replace(/^[-*•\s]+/, '').replace(/^\[|\]$/g, '').trim())
+      .filter(Boolean);
+  }
+
+  if (suggestions.length === 0) {
+    return ['Idea 1', 'Idea 2', 'Idea 3', 'Your own ideas'];
+  }
+
+  if (suggestions.length === 3) {
+    return [...suggestions, 'Your own ideas'];
+  }
+
+  if (suggestions.length >= 4) {
+    return suggestions.slice(0, 4);
+  }
+
+  while (suggestions.length < 4) {
+    suggestions.push(suggestions.length === 3 ? 'Your own ideas' : `Idea ${suggestions.length + 1}`);
+  }
+
+  return suggestions;
 }
 
 export function toPromptEditorHtml(prompt: ExamPrompt) {
   if (prompt.category === 'speaking-part3') {
-    const topic = extractSpeakingPart3Topic(prompt.title);
+    const topic = extractSpeakingPart3Topic(prompt.title, prompt.content);
     const questions = parsePromptQuestions(prompt.content).slice(0, 3);
-    const ideaLabels = getSpeakingPart3IdeaLabels(prompt);
+    const ideaLabels = extractSpeakingPart3Suggestions(prompt.content);
 
     const ideaBoxes = `
       <div class="speaking-part3-options" style="display:flex; align-items:center; justify-content:center; gap:18px; margin:18px 0; flex-wrap:nowrap;">
-        <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[0])}</div>
+        <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; max-width:220px; padding:12px 14px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:14px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.3; overflow-wrap:anywhere;">${escapeHtml(ideaLabels[0])}</div>
         <div class="speaking-part3-options-center" style="display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px;">
-          <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[1])}</div>
-          <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:190px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[2])}</div>
+          <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; max-width:220px; padding:12px 14px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:14px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.3; overflow-wrap:anywhere;">${escapeHtml(ideaLabels[1])}</div>
+          <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:190px; max-width:220px; padding:12px 14px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:14px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.3; overflow-wrap:anywhere;">${escapeHtml(ideaLabels[2])}</div>
         </div>
-        <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; padding:12px 16px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:16px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.2;">${escapeHtml(ideaLabels[3])}</div>
+        <div class="speaking-part3-option" style="display:flex; align-items:center; justify-content:center; min-height:72px; min-width:160px; max-width:220px; padding:12px 14px; border:2px solid var(--border, #94a3b8); border-radius:18px; background:var(--card, #ffffff); text-align:center; font-size:14px; font-weight:500; color:var(--foreground, #0f172a); line-height:1.3; overflow-wrap:anywhere;">${escapeHtml(ideaLabels[3])}</div>
       </div>
     `;
 

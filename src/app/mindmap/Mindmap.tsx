@@ -261,20 +261,18 @@ function OutlineDocumentView({
                     onSelectTopic(t.id);
                     setActiveSubtopicId(null);
                   }}
-                  className={`flex w-full items-center justify-between rounded-xs px-2.5 py-1.5 text-xs font-bold transition cursor-pointer ${
-                    active
+                  className={`flex w-full items-center justify-between rounded-xs px-2.5 py-1.5 text-xs font-bold transition cursor-pointer ${active
                       ? 'bg-[#245b86] text-white shadow-xs'
                       : 'text-foreground hover:bg-muted'
-                  }`}
+                    }`}
                 >
                   <span className="flex items-center gap-2 truncate">
                     {getTopicIcon(t.icon)}
                     <span className="truncate">{t.title}</span>
                   </span>
                   <span
-                    className={`rounded-xs px-1.5 py-0.2 text-[10px] shrink-0 ${
-                      active ? 'bg-white/20 text-white' : 'bg-muted text-muted-foreground'
-                    }`}
+                    className={`rounded-xs px-1.5 py-0.2 text-[10px] shrink-0 ${active ? 'bg-white/20 text-white' : 'bg-muted text-muted-foreground'
+                      }`}
                   >
                     {count}
                   </span>
@@ -310,13 +308,12 @@ function OutlineDocumentView({
                         key={sub.id}
                         type="button"
                         onClick={() => scrollToTopic(sub.id)}
-                        className={`flex w-full items-center justify-between rounded-xs px-2 py-1 text-left text-xs transition cursor-pointer ${
-                          !matched
+                        className={`flex w-full items-center justify-between rounded-xs px-2 py-1 text-left text-xs transition cursor-pointer ${!matched
                             ? 'opacity-35'
                             : isSelected
-                            ? 'bg-purple-100 font-bold text-purple-900 dark:bg-purple-950/60 dark:text-purple-200 border-l-2 border-purple-600'
-                            : 'text-muted-foreground hover:bg-muted hover:text-foreground'
-                        }`}
+                              ? 'bg-purple-100 font-bold text-purple-900 dark:bg-purple-950/60 dark:text-purple-200 border-l-2 border-purple-600'
+                              : 'text-muted-foreground hover:bg-muted hover:text-foreground'
+                          }`}
                       >
                         <span className="truncate">
                           {sidebarCounter}. {enTitle}
@@ -376,11 +373,10 @@ function OutlineDocumentView({
                       <article
                         key={subtopic.id}
                         id={`topic-${subtopic.id}`}
-                        className={`scroll-mt-14 rounded-sm border bg-card p-3.5 shadow-xs space-y-2.5 transition select-text ${
-                          isHighlighted
+                        className={`scroll-mt-14 rounded-sm border bg-card p-3.5 shadow-xs space-y-2.5 transition select-text ${isHighlighted
                             ? 'border-purple-600 ring-1 ring-purple-600/30'
                             : 'border-border hover:border-border/90'
-                        }`}
+                          }`}
                       >
                         {/* 1. Tên chủ đề: Badge Đỏ Ruby + Tiếng Việt + Tiếng Anh Tím Nổi Bật */}
                         <div className="flex items-start justify-between gap-2 border-b border-border/60 pb-2">
@@ -390,12 +386,12 @@ function OutlineDocumentView({
                                 #{topicCounter}
                               </span>
                               <span className="text-foreground">
-                                <HighlightText text={viTitle} query={searchQuery} />
+                                <HighlightText text={enTitle} query={searchQuery} />
                               </span>
                             </h3>
-                            {enTitle && (
+                            {viTitle && (
                               <p className="text-xs sm:text-[13px] font-bold text-purple-700 dark:text-purple-400 pl-0.5">
-                                <HighlightText text={enTitle} query={searchQuery} />
+                                <HighlightText text={viTitle} query={searchQuery} />
                               </p>
                             )}
                           </div>
@@ -580,9 +576,8 @@ function Level1Card({
   return (
     <div
       ref={(el) => registerAnchor(node.id, el)}
-      className={`group relative z-10 flex cursor-pointer items-center gap-2 rounded-sm border-2 bg-card px-3.5 py-2.5 shadow-xs transition ${
-        isRight ? 'flex-row text-left' : 'flex-row-reverse text-right'
-      } ${searchQuery && !isMatched ? 'opacity-30' : 'opacity-100'}`}
+      className={`group relative z-10 flex cursor-pointer items-center gap-2 rounded-sm border-2 bg-card px-3.5 py-2.5 shadow-xs transition ${isRight ? 'flex-row text-left' : 'flex-row-reverse text-right'
+        } ${searchQuery && !isMatched ? 'opacity-30' : 'opacity-100'}`}
       style={{ borderColor: branchColor }}
       onClick={hasChildren ? onToggleCollapse : undefined}
     >
@@ -652,9 +647,8 @@ function UnderlinedNode({
         e.stopPropagation();
         onCopy(text);
       }}
-      className={`group relative inline-flex flex-col cursor-pointer max-w-[320px] sm:max-w-[380px] ${
-        isRight ? 'items-start text-left' : 'items-end text-right'
-      } ${searchQuery && !isMatched ? 'opacity-35' : 'opacity-100'}`}
+      className={`group relative inline-flex flex-col cursor-pointer max-w-[320px] sm:max-w-[380px] ${isRight ? 'items-start text-left' : 'items-end text-right'
+        } ${searchQuery && !isMatched ? 'opacity-35' : 'opacity-100'}`}
     >
       <div className={`flex flex-col gap-0.5 pb-1 w-full ${isRight ? 'items-start' : 'items-end'}`}>
         <div className={`flex items-baseline gap-1.5 ${isRight ? 'flex-row' : 'flex-row-reverse'}`}>
@@ -897,8 +891,8 @@ export default function Mindmap() {
         urlTopic && validIds.includes(urlTopic)
           ? urlTopic
           : storedTopic && validIds.includes(storedTopic)
-          ? storedTopic
-          : null;
+            ? storedTopic
+            : null;
 
       if (resolved) {
         setActiveTopicId(resolved);
@@ -1142,11 +1136,10 @@ export default function Mindmap() {
           <button
             type="button"
             onClick={() => setShowVietnamese((v) => !v)}
-            className={`flex h-7 items-center gap-1 rounded-xs border px-2 text-xs font-medium transition cursor-pointer ${
-              showVietnamese
+            className={`flex h-7 items-center gap-1 rounded-xs border px-2 text-xs font-medium transition cursor-pointer ${showVietnamese
                 ? 'border-amber-300 bg-amber-400/25 text-amber-200 hover:bg-amber-400/35'
                 : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
-            }`}
+              }`}
             title={showVietnamese ? 'Ẩn dịch tiếng Việt' : 'Hiện dịch tiếng Việt'}
           >
             {showVietnamese ? <Eye className="h-3.5 w-3.5" /> : <EyeOff className="h-3.5 w-3.5" />}
@@ -1198,11 +1191,10 @@ export default function Mindmap() {
                     key={t.id}
                     type="button"
                     onClick={() => selectTopic(t.id)}
-                    className={`flex h-7 items-center gap-1.5 rounded-xs px-2.5 text-xs font-bold transition cursor-pointer ${
-                      active
+                    className={`flex h-7 items-center gap-1.5 rounded-xs px-2.5 text-xs font-bold transition cursor-pointer ${active
                         ? 'bg-[#245b86] text-white'
                         : 'bg-muted/60 text-muted-foreground hover:bg-muted hover:text-foreground'
-                    }`}
+                      }`}
                   >
                     {getTopicIcon(t.icon)}
                     <span>{t.title}</span>

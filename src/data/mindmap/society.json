@@ -1154,6 +1154,67 @@
             "example": "For instance, in my email to Laura about the Westlife concert, I suggested meeting at 5 PM so we could eat Pho together before gates closed.",
             "exampleVi": "Ví dụ, trong thư gửi Laura về vé xem Westlife, tôi đã hẹn gặp lúc 5 giờ chiều để hai đứa kịp ăn phở trước khi ban tổ chức đóng cửa soát vé."
           }
+        },
+        {
+          "id": "soc-green-spaces",
+          "title": "Công viên & Không gian xanh đô thị (Urban Green Spaces & Public Parks)",
+          "viTitle": "Thanh lọc không khí, nơi tập thể dục và xả stress cho cư dân thành phố",
+          "badge": "Đề Mới",
+          "examTags": [
+            "Speaking P1 (VLU 11 - Parks & Public Green Spaces)",
+            "Speaking P3 (VLU 09 - Environmental Protection & Green Lifestyle)"
+          ],
+          "color": "#10b981",
+          "keywords": [
+            {
+              "word": "public green space",
+              "meaning": "không gian xanh công cộng, công viên"
+            },
+            {
+              "word": "urban park",
+              "meaning": "công viên cây xanh giữa lòng đô thị"
+            },
+            {
+              "word": "air purification",
+              "meaning": "thanh lọc bụi mịn và không khí ngột ngạt"
+            },
+            {
+              "word": "jogging and outdoor exercise",
+              "meaning": "chạy bộ và rèn luyện thể chất ngoài trời"
+            },
+            {
+              "word": "mental decompression",
+              "meaning": "giải tỏa căng thẳng, thư thái tâm hồn"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-gs-1",
+              "badge": "🌳 Lợi ích sinh thái",
+              "text": "Urban parks and trees act as natural green lungs, absorbing exhaust fumes and lowering urban heat during hot seasons.",
+              "viText": "Công viên và cây xanh đóng vai trò như lá phổi xanh tự nhiên, hấp thụ khói bụi và giảm nhiệt độ đô thị vào mùa nắng nóng."
+            },
+            {
+              "id": "soc-gs-2",
+              "badge": "🏃 Thể chất & Tinh thần",
+              "text": "Green spaces provide welcoming environments for city residents to jog, practice yoga, and escape noisy digital screens.",
+              "viText": "Không gian xanh tạo môi trường trong lành cho người dân thành phố chạy bộ, tập yoga và tạm rời xa màn hình thiết bị ồn ào."
+            },
+            {
+              "id": "soc-gs-3",
+              "badge": "🏙️ Quy hoạch",
+              "text": "Municipal governments should allocate adequate budgets to preserve public parks amid rapid high-rise residential construction.",
+              "viText": "Chính quyền thành phố cần dành ngân sách thỏa đáng để bảo tồn công viên công cộng trong bối cảnh các tòa nhà cao tầng mọc lên nhanh chóng."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Public green spaces and parks are indispensable for sustainable urban living.",
+            "answerVi": "Không gian xanh và công viên công cộng là yếu tố không thể thiếu cho lối sống đô thị bền vững.",
+            "reason": "This is because they clean the polluted city air and give people an open space to exercise and decompress after work.",
+            "reasonVi": "Bởi vì chúng làm sạch bầu không khí ô nhiễm và đem lại cho người dân không gian thoáng đãng để tập thể thao và giải tỏa áp lực.",
+            "example": "For instance, I run in the neighborhood park three times a week, which keeps me physically energetic and stress-free.",
+            "exampleVi": "Ví dụ, tôi chạy bộ ở công viên gần nhà ba lần mỗi tuần, điều này giúp tôi luôn tràn đầy năng lượng và không bị stress."
+          }
         }
       ]
     }

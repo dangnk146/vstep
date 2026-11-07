@@ -129,10 +129,10 @@ function classifyQuestion(q) {
   // Priority 1: High-specificity title checks
   if (/crime|police|prison|neighborhood safe/i.test(title)) return 'society';
   if (/traffic|congestion|accident|commuting|vehicle|car\b|transport/i.test(title)) return 'society';
-  if (/pet\b|animal|plant|greenery|recycle|waste|weather|season|rain|hometown|countryside|touris|travel|vacation|festival/i.test(title)) return 'society';
-  if (/english|foreign language|study abroad|school|teach|subject|curriculum|exam|freshmen|student misbehavior|discipline children|peer pressure|librar/i.test(title)) return 'education';
-  if (/tea|drink|diet|vegetarian|food|cuisine|eat out|eating out|restaurant|dine|obesity|weight|fitness|gym|cycling|exercise|sport|sickness|medical check|stay calm|work-life balance/i.test(title)) return 'health';
-  if (/artificial intelligence|\bai\b|internet|mobile phone|smartphone|smartwatch|wearable|online shopping|shopping online|invention|e-book|digital reading|social media|post.*video|content creation|transferred money|face-to-face/i.test(title)) return 'technology';
+  if (/pet\b|animal|plant|greenery|green space|park\b|recycle|waste|weather|season|rain|hometown|countryside|touris|travel|vacation|festival|birthday/i.test(title)) return 'society';
+  if (/english|foreign language|study abroad|studying abroad|school|teach|subject|curriculum|exam|cheat|course|self-development|freshmen|student misbehavior|discipline children|peer pressure|librar/i.test(title)) return 'education';
+  if (/tea|drink|beverage|breakfast|diet|vegetarian|food|cuisine|eat out|eating out|restaurant|dine|obesity|weight|fitness|gym|cycling|exercise|sport|sickness|medical check|stay calm|work-life balance/i.test(title)) return 'health';
+  if (/artificial intelligence|\bai\b|internet|mobile phone|smartphone|smartwatch|wearable|online shopping|shopping online|invention|e-book|digital reading|social media|post.*video|content creation|transferred money|face-to-face|cashless/i.test(title)) return 'technology';
   if (/job|career|workplace|working condition|work & career|teamwork|colleague|retirement|farewell|saving money|professional skill|team-building|self-employment|entrepreneurship|unemployment|failure.*success|personal habit.*success/i.test(title)) return 'work';
 
   // Priority 2: Fallback to combined title & group

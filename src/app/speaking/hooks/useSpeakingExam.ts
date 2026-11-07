@@ -103,6 +103,16 @@ export function useSpeakingExam() {
       selectedExamId = undefined;
     }
 
+    const hasStalePart3Mock =
+      part === 'part3' &&
+      Boolean(promptHtml) &&
+      promptHtml!.includes('speaking-part3-option') &&
+      /(?:Fresh air|Lower living costs|Calm lifestyle|Supportive people|Close-knit society)/.test(promptHtml!);
+
+    if (hasStalePart3Mock) {
+      promptHtml = null;
+    }
+
     if (promptHtml && !promptHtml.trim()) {
       promptHtml = null;
     }

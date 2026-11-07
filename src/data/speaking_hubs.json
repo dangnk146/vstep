@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-07T12:14:01.928Z",
-  "totalSpeakingQuestions": 184,
+  "generatedAt": "2026-11-07T13:18:17.056Z",
+  "totalSpeakingQuestions": 198,
   "hubCount": 5,
   "hubs": {
     "education": {
@@ -32,10 +32,10 @@
         "Foster interpersonal communication & teamwork abilities (Rèn luyện giao tiếp xã hội và khả năng làm việc nhóm)"
       ],
       "stats": {
-        "total": 40,
+        "total": 45,
         "part1": 11,
-        "part2": 16,
-        "part3": 13
+        "part2": 20,
+        "part3": 14
       },
       "questions": {
         "part1": [
@@ -159,6 +159,33 @@
             "content": "Situation: A city council is considering imposing stricter financial penalties on certain public misbehaviors to improve community safety and civil order. There are three behaviors being discussed:\n- Using a mobile phone while driving (sử dụng điện thoại khi lái xe)\n- Speaking loudly or making excessive noise in public places (nói to ở nơi công cộng)\n- Smoking cigarettes inside restaurants (hút thuốc trong nhà hàng)\n\nWhich behavior should be penalized most severely, and why?"
           },
           {
+            "id": "vlu11-speaking-part2-8",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Job to Practice English",
+            "rawTitle": "Part 2 - Situation 8: Choosing a Job to Practice English",
+            "content": "Situation: You want to improve your English speaking skills during the upcoming summer break, and you are considering three job options:\n- Working as a tour guide for international tourists\n- Working as a receptionist at an international hotel\n- Working as a teaching assistant at an English language center\n\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "vlu11-speaking-part2-10",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Handling a Friend Cheating in an Exam",
+            "rawTitle": "Part 2 - Situation 10: Handling a Friend Cheating in an Exam",
+            "content": "Situation: During an important university final exam, you notice that your close friend sitting next to you is cheating with hidden notes. You are considering three actions:\n- Ignoring the situation completely to avoid trouble\n- Reporting the cheating incident immediately to the exam invigilator\n- Privately advising your friend to stop and confess after the exam\n\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "vlu11-speaking-part2-11",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Course for Self-Development",
+            "rawTitle": "Part 2 - Situation 11: Choosing a Course for Self-Development",
+            "content": "Situation: You want to foster your personal growth and develop useful life skills. You are considering three options:\n- Enrolling in an online self-paced skill course\n- Attending an intensive in-person weekend workshop\n- Joining a practical community skill club\n\nWhich option do you think is the best choice and why?"
+          },
+          {
             "id": "special-speaking-part2-3",
             "school": "VLU",
             "batch": "09/2026",
@@ -193,6 +220,15 @@
             "title": "Choosing a Retirement Gift for a Colleague or Teacher",
             "rawTitle": "Part 2 - Situation 4: Choosing a Retirement Gift for a Colleague or Teacher",
             "content": "Situation: You and your colleagues are choosing a farewell gift for a retiring teacher or co-worker. There are three options:\n- A handmade greeting card\n- A framed group photograph\n- A dinner at a fine restaurant\nWhich option would you choose and why?"
+          },
+          {
+            "id": "speaking-part2-5",
+            "school": "VLU",
+            "batch": "09/2026",
+            "part": "part2",
+            "title": "Choosing a Professional Skill Development Course",
+            "rawTitle": "Part 2 - Situation 5: Choosing a Professional Skill Development Course",
+            "content": "Situation: You want to improve your professional qualifications before applying for a job. There are three courses available:\n- A public speaking course\n- A computer and office IT skills course\n- A time and project management course\nWhich course would you choose to take and why?"
           },
           {
             "id": "speaking-part2-6",
@@ -303,6 +339,15 @@
             "title": "Part 3 - Topic 3: Sending Young Children to Preschool Early",
             "rawTitle": "Part 3 - Topic 3: Sending Young Children to Preschool Early",
             "content": "Topic: Benefits of sending young children to preschool or daycare early\nSuggestions:\n- Assisting busy working parents\n- Broadening early knowledge and cognitive development\n- Fostering early social skills and peer interaction\n- [Your own ideas]\n\nFollow-up questions:\n1. At what age do you think children should start attending preschool or kindergarten?\n2. What initial challenges might young toddlers face when first going to daycare?\n3. How should parents and preschool teachers cooperate to nurture young children?"
+          },
+          {
+            "id": "vlu11-speaking-part3-8",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 8: Benefits of Studying Abroad",
+            "rawTitle": "Part 3 - Topic 8: Benefits of Studying Abroad",
+            "content": "Topic: Benefits of studying abroad for higher education\nSuggestions:\n- Making international friends and professional networking\n- Gaining better global career prospects and employment opportunities\n- Experiencing new cultures and developing personal independence\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some international students encounter culture shock when studying abroad?\n2. Do you think studying abroad is always superior to studying in one's home country? Why or why not?\n3. What should overseas graduates do when returning home to contribute meaningfully to society?"
           },
           {
             "id": "special-speaking-part3-4",
@@ -435,8 +480,8 @@
         "Establish discipline & sustain prolonged vitality (Xây dựng lối sống kỷ luật và duy trì sự dẻo dai)"
       ],
       "stats": {
-        "total": 36,
-        "part1": 22,
+        "total": 38,
+        "part1": 24,
         "part2": 2,
         "part3": 12
       },
@@ -450,6 +495,24 @@
             "title": "Traditional Food & Cuisine",
             "rawTitle": "Topic 2: Traditional Food & Cuisine",
             "content": "1. What is your favorite traditional Vietnamese dish, and why do you like it?\n2. Do you know how to cook any traditional meals yourself?\n3. Why is traditional food considered an essential part of national culture?"
+          },
+          {
+            "id": "vlu11-speaking-part1-15",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Beverages & Drinking Habits",
+            "rawTitle": "Topic 1: Beverages & Drinking Habits",
+            "content": "1. What is your favorite beverage or drink, and how often do you drink it?\n2. Do you prefer drinking beverages at home or hanging out at local cafes? Why?\n3. What are the health benefits of drinking enough water every day?"
+          },
+          {
+            "id": "vlu11-speaking-part1-18",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Breakfast & Healthy Habits",
+            "rawTitle": "Topic 2: Breakfast & Healthy Habits",
+            "content": "1. Do you regularly eat breakfast every morning? Why or why not?\n2. What kinds of food or drinks do you usually have for breakfast?\n3. Why do nutritionists consider breakfast to be the most vital meal of the day?"
           },
           {
             "id": "speaking-part1-3",
@@ -802,10 +865,10 @@
         "Mitigate risks of sedentary isolation & superficial virtual relationships (Cảnh báo nguy cơ phụ thuộc công nghệ và mất kết nối thực tế)"
       ],
       "stats": {
-        "total": 19,
+        "total": 20,
         "part1": 9,
         "part2": 1,
-        "part3": 9
+        "part3": 10
       },
       "questions": {
         "part1": [
@@ -922,6 +985,15 @@
             "content": "Topic: The significance of face-to-face communication in the digital era\nSuggestions:\n- Fostering deeper emotional connection and genuine empathy\n- Preventing misunderstandings commonly found in written texts\n- Observing non-verbal cues such as facial expressions and body language\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do many young people prefer texting over having face-to-face conversations?\n2. How does excessive reliance on virtual messaging affect interpersonal communication skills?\n3. When is direct in-person discussion more effective than sending digital messages in the workplace?"
           },
           {
+            "id": "vlu11-speaking-part3-9",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 9: Benefits of a Cashless Society",
+            "rawTitle": "Part 3 - Topic 9: Benefits of a Cashless Society",
+            "content": "Topic: Benefits of transitioning towards a cashless society\nSuggestions:\n- Providing convenience and speeding up transaction times\n- Reducing risks of robbery, theft, and counterfeit currency\n- Enabling seamless digital financial tracking and money management\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some elderly citizens feel reluctant to adopt digital and mobile banking payments?\n2. What are the potential privacy and cybersecurity concerns in a completely cashless economy?\n3. How should banks and governments support people in rural regions to access cashless services?"
+          },
+          {
             "id": "speaking-part3-4",
             "school": "VLU",
             "batch": "09/2026",
@@ -1016,10 +1088,10 @@
         "Harness personal strengths to contribute meaningfully to organization (Phát huy sở trường và cống hiến cho tổ chức)"
       ],
       "stats": {
-        "total": 15,
+        "total": 16,
         "part1": 3,
         "part2": 5,
-        "part3": 7
+        "part3": 8
       },
       "questions": {
         "part1": [
@@ -1053,13 +1125,13 @@
         ],
         "part2": [
           {
-            "id": "speaking-part2-5",
+            "id": "vlu11-speaking-part2-9",
             "school": "VLU",
-            "batch": "09/2026",
+            "batch": "11/2026",
             "part": "part2",
-            "title": "Choosing a Professional Skill Development Course",
-            "rawTitle": "Part 2 - Situation 5: Choosing a Professional Skill Development Course",
-            "content": "Situation: You want to improve your professional qualifications before applying for a job. There are three courses available:\n- A public speaking course\n- A computer and office IT skills course\n- A time and project management course\nWhich course would you choose to take and why?"
+            "title": "Choosing a Retirement Gift for a Senior Colleague",
+            "rawTitle": "Part 2 - Situation 9: Choosing a Retirement Gift for a Senior Colleague",
+            "content": "Situation: A senior colleague at your workplace is retiring soon after many years of dedicated service, and your team is discussing what gift to give him/her:\n- A personalized engraved commemorative pen\n- A wellness resort spa voucher for relaxation\n- A framed photo album signed by all company staff members\n\nWhich option do you think is the best choice and why?"
           },
           {
             "id": "vlu10-speaking-part2-1",
@@ -1099,6 +1171,15 @@
           }
         ],
         "part3": [
+          {
+            "id": "vlu11-speaking-part3-11",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 11: Factors Influencing Job Choice",
+            "rawTitle": "Part 3 - Topic 11: Factors Influencing Job Choice",
+            "content": "Topic: Key factors when choosing a job or career\nSuggestions:\n- Competitive salary and comprehensive employee benefits\n- Supportive work environment, colleagues, and leadership\n- Opportunities for professional advancement and career growth\n- [Your own ideas]\n\nFollow-up questions:\n1. What factor do young job seekers in your country prioritize most when applying for work?\n2. What types of occupations are currently most popular and sought-after in your country?\n3. Would you choose a high-paying job with severe stress or a modest-paying job with work-life balance?"
+          },
           {
             "id": "speaking-part3-20",
             "school": "VLU",
@@ -1194,10 +1275,10 @@
         "Preserve cultural identity & strengthen familial and societal bonds (Gìn giữ bản sắc truyền thống và thắt chặt tình cảm gắn kết xã hội)"
       ],
       "stats": {
-        "total": 74,
-        "part1": 37,
-        "part2": 19,
-        "part3": 18
+        "total": 79,
+        "part1": 40,
+        "part2": 20,
+        "part3": 19
       },
       "questions": {
         "part1": [
@@ -1299,6 +1380,33 @@
             "title": "Reading Blogs & Online Articles",
             "rawTitle": "Topic 1: Reading Blogs & Online Articles",
             "content": "1. Do you frequently read online blogs or articles on the internet? Why or why not?\n2. What themes or types of blog content do you find most appealing?\n3. Why have personal blogs and lifestyle websites become increasingly popular?"
+          },
+          {
+            "id": "vlu11-speaking-part1-14",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Parks & Public Green Spaces",
+            "rawTitle": "Topic 1: Parks & Public Green Spaces",
+            "content": "1. How often do you visit parks or public green spaces in your city?\n2. What activities do you usually enjoy doing when you spend time in a park?\n3. Why are public green spaces and trees essential for urban life and residents' health?"
+          },
+          {
+            "id": "vlu11-speaking-part1-16",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Clothes & Shopping for Clothes",
+            "rawTitle": "Topic 2: Clothes & Shopping for Clothes",
+            "content": "1. Do you enjoy buying new clothes? Why or why not?\n2. How often do you go shopping for clothes, and who do you usually shop with?\n3. What style or type of clothes do you feel most comfortable wearing?"
+          },
+          {
+            "id": "vlu11-speaking-part1-17",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Money & Saving Habits",
+            "rawTitle": "Topic 1: Money & Saving Habits",
+            "content": "1. Do you regularly try to save money? Why or why not?\n2. What is the most expensive or valuable item you have ever saved money to purchase?\n3. Do you believe parents should teach children the importance of saving money from a young age?"
           },
           {
             "id": "speaking-part1-5",
@@ -1582,6 +1690,15 @@
             "content": "Situation: Your close female friend is celebrating her birthday, and you want to prepare a memorable gift for her. There are three options to choose from:\n- Making a personalized handmade greeting card (thiệp tự làm)\n- Giving a framed photograph of you and her together (khung ảnh chụp chung)\n- Treating her to a special dinner at a nice restaurant (bữa tối tại nhà hàng)\n\nWhich option do you think is the best choice and why?"
           },
           {
+            "id": "vlu11-speaking-part2-12",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Celebrating a Birthday Party",
+            "rawTitle": "Part 2 - Situation 12: Celebrating a Birthday Party",
+            "content": "Situation: Your upcoming birthday is approaching, and you are planning how to celebrate it. You are considering three options:\n- Hosting a large party at a vibrant public entertainment venue\n- Having an intimate dinner gathering with close family and friends at home\n- Spending quiet personal time on a solo retreat or travel getaway\n\nWhich option do you think is the best choice and why?"
+          },
+          {
             "id": "speaking-part2-7",
             "school": "VLU",
             "batch": "09/2026",
@@ -1717,6 +1834,15 @@
             "title": "Part 3 - Topic 5: Solutions to Traffic Congestion",
             "rawTitle": "Part 3 - Topic 5: Solutions to Traffic Congestion",
             "content": "Topic: Effective solutions to alleviate urban traffic jams\nSuggestions:\n- Upgrading and widening key road infrastructure\n- Expanding reliable public transit systems such as buses and metros\n- Encouraging carpooling and bicycle commuting\n- [Your own ideas]\n\nFollow-up questions:\n1. How does persistent traffic congestion impact urban dwellers' daily mood and productivity?\n2. Should municipalities charge congestion fees for private cars entering city centers?\n3. In what ways can smart traffic lights and AI algorithms optimize traffic flow?"
+          },
+          {
+            "id": "vlu11-speaking-part3-10",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 10: Benefits of Travelling for Young People",
+            "rawTitle": "Part 3 - Topic 10: Benefits of Travelling for Young People",
+            "content": "Topic: Benefits of travelling for young people\nSuggestions:\n- Broadening cultural perspectives and worldviews\n- Developing practical adaptability and independent problem-solving skills\n- Relieving academic and workplace stress\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you prefer traveling on a low budget (backpacking) or choosing comfortable organized tours?\n2. How has social media influenced the destinations that young people choose to visit?\n3. In what ways can tourism promote mutual understanding between different cultures?"
           },
           {
             "id": "speaking-part3-1",

@@ -36,7 +36,7 @@ export function sanitizeClipboardHtml(html: string): string {
       } else if (attribute.name === 'style') {
         // preserve safe inline styles for Part 3 diagram if needed
         const style = attribute.value;
-        if (/display|align-items|justify-content|flex|grid|gap|margin|border|padding|min-|text-align/.test(style)) {
+        if (/display|align-items|justify-content|flex|grid|gap|margin|border|padding|min-|max-|text-align|font-size|line-height|overflow/.test(style)) {
           // keep inline styles
         } else {
           element.removeAttribute('style');

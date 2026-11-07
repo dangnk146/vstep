@@ -88,6 +88,11 @@ body {
   color: #94a3b8;
 }
 
+.speaking-editor .speaking-part3-option {
+  max-width: 230px;
+  overflow-wrap: anywhere;
+}
+
 @media (max-width: 640px) {
   .speaking-editor .speaking-part3-layout {
     display: block !important;
