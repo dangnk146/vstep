@@ -209,7 +209,7 @@ function OutlineDocumentView({
         {/* 1. Ô tìm kiếm */}
         <div className="rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 p-2.5 shadow-xs">
           <label className="block text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5 flex items-center gap-1">
-            <Search className="h-3 w-3 text-indigo-600 dark:text-indigo-400" />
+            <Search className="h-3 w-3 text-[#245b86] dark:text-sky-400" />
             Tìm kiếm chủ đề & từ vựng
           </label>
           <div className="relative">
@@ -219,7 +219,7 @@ function OutlineDocumentView({
               value={searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
               placeholder="Search topics (books, AI, charity...)"
-              className="h-8 w-full rounded-xs border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/80 pl-8 pr-7 text-xs text-foreground outline-none placeholder:text-muted-foreground focus:border-indigo-600 dark:focus:border-indigo-400 select-text"
+              className="h-8 w-full rounded-xs border border-slate-200 dark:border-slate-800 bg-slate-50/70 dark:bg-slate-950/80 pl-8 pr-7 text-xs text-foreground outline-none placeholder:text-muted-foreground focus:border-[#245b86] dark:focus:border-sky-400 select-text"
             />
             {searchQuery && (
               <button
@@ -237,10 +237,10 @@ function OutlineDocumentView({
         <div className="rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 p-2.5 shadow-xs space-y-1.5">
           <div className="flex items-center justify-between pb-1.5 border-b border-slate-200/80 dark:border-slate-800">
             <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
-              <Layers className="h-3.5 w-3.5 text-indigo-600 dark:text-indigo-400" />
+              <Layers className="h-3.5 w-3.5 text-[#245b86] dark:text-sky-400" />
               5 Major Topic Hubs
             </span>
-            <span className="text-[11px] font-bold text-indigo-600 dark:text-indigo-400">
+            <span className="text-[11px] font-bold text-[#245b86] dark:text-sky-400">
               {filteredTopicsCount}/{totalTopicsInHub}
             </span>
           </div>
@@ -262,7 +262,7 @@ function OutlineDocumentView({
                     setActiveSubtopicId(null);
                   }}
                   className={`flex w-full items-center justify-between rounded-xs px-2.5 py-1.5 text-xs font-bold transition cursor-pointer ${active
-                      ? 'bg-indigo-600 text-white shadow-xs'
+                      ? 'bg-[#245b86] text-white shadow-xs'
                       : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/70'
                     }`}
                 >
@@ -291,7 +291,7 @@ function OutlineDocumentView({
                 key={branch.id}
                 className={`space-y-1 ${bIdx > 0 ? 'pt-2 border-t border-slate-200/80 dark:border-slate-800' : ''}`}
               >
-                <div className="px-1 text-[11px] font-bold uppercase tracking-wide text-indigo-600 dark:text-indigo-400">
+                <div className="px-1 text-[11px] font-bold uppercase tracking-wide text-[#245b86] dark:text-sky-400">
                   Part {bIdx + 1}: {getBranchEnTitle(branch.id, branch.title)}
                 </div>
 
@@ -311,7 +311,7 @@ function OutlineDocumentView({
                         className={`flex w-full items-center justify-between rounded-xs px-2 py-1 text-left text-xs transition cursor-pointer ${!matched
                             ? 'opacity-35'
                             : isSelected
-                              ? 'bg-indigo-50 font-bold text-indigo-900 dark:bg-indigo-950/70 dark:text-indigo-200 border-l-2 border-indigo-600 dark:border-indigo-400'
+                              ? 'bg-[#245b86]/10 font-bold text-[#245b86] dark:bg-sky-950/70 dark:text-sky-200 border-l-2 border-[#245b86] dark:border-sky-400'
                               : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 hover:text-foreground'
                           }`}
                       >
@@ -345,12 +345,12 @@ function OutlineDocumentView({
 
             return (
               <section key={branch.id} className="space-y-2.5">
-                {/* Đề mục cấp 1 (Tông màu Indigo trang nhã, tương phản tốt cả 2 theme) */}
-                <div className="flex items-center justify-between rounded-sm border-l-4 border-indigo-600 dark:border-indigo-500 bg-indigo-50/70 dark:bg-indigo-950/40 px-3 py-2 border border-indigo-200/80 dark:border-indigo-800/70 shadow-xs">
-                  <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide text-indigo-900 dark:text-indigo-200">
+                {/* Đề mục cấp 1 (Tông màu xanh #245b86 chuẩn đồng bộ toàn ứng dụng) */}
+                <div className="flex items-center justify-between rounded-sm border-l-4 border-l-[#245b86] dark:border-l-sky-500 bg-[#245b86]/10 dark:bg-slate-900/90 px-3 py-2 border border-[#245b86]/20 dark:border-slate-800 shadow-xs">
+                  <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide text-[#245b86] dark:text-sky-200">
                     Phần {bIdx + 1}: {branch.title}
                   </h2>
-                  <span className="text-[11px] font-semibold text-indigo-700 dark:text-indigo-300 bg-indigo-100/80 dark:bg-indigo-900/60 px-2 py-0.5 rounded-xs">
+                  <span className="text-[11px] font-semibold text-[#245b86] dark:text-sky-300 bg-[#245b86]/15 dark:bg-slate-800 px-2 py-0.5 rounded-xs">
                     {children.length} chủ đề
                   </span>
                 </div>
@@ -374,15 +374,15 @@ function OutlineDocumentView({
                         key={subtopic.id}
                         id={`topic-${subtopic.id}`}
                         className={`scroll-mt-14 rounded-sm border p-3.5 shadow-xs space-y-2.5 transition select-text ${isHighlighted
-                            ? 'border-indigo-600 ring-1 ring-indigo-600/40 bg-white dark:bg-slate-900'
+                            ? 'border-[#245b86] ring-1 ring-[#245b86]/40 bg-white dark:bg-slate-900'
                             : 'border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-slate-300 dark:hover:border-slate-700'
                           }`}
                       >
-                        {/* 1. Tên chủ đề: Badge Indigo dịu + Tiếng Anh Đậm + Tiếng Việt Nhẹ Nhàng */}
+                        {/* 1. Tên chủ đề: Badge #245b86 + Tiếng Anh Đậm + Tiếng Việt Đồng Bộ */}
                         <div className="flex items-start justify-between gap-2 border-b border-slate-200/80 dark:border-slate-800 pb-2">
                           <div className="space-y-0.5">
                             <h3 className="text-sm sm:text-[15px] font-bold text-slate-900 dark:text-slate-100 leading-snug flex items-baseline gap-1.5 flex-wrap">
-                              <span className="inline-flex h-5 items-center justify-center rounded-xs bg-indigo-600 text-white dark:bg-indigo-500/25 dark:text-indigo-300 dark:border dark:border-indigo-500/40 font-bold text-[11px] px-1.5 shadow-2xs shrink-0">
+                              <span className="inline-flex h-5 items-center justify-center rounded-xs bg-[#245b86] text-white dark:bg-sky-500/25 dark:text-sky-300 dark:border dark:border-sky-500/40 font-bold text-[11px] px-1.5 shadow-2xs shrink-0">
                                 #{topicCounter}
                               </span>
                               <span className="text-slate-900 dark:text-slate-100">
@@ -390,7 +390,7 @@ function OutlineDocumentView({
                               </span>
                             </h3>
                             {viTitle && (
-                              <p className="text-xs sm:text-[13px] font-semibold text-indigo-600 dark:text-indigo-400 pl-0.5">
+                              <p className="text-xs sm:text-[13px] font-semibold text-[#245b86] dark:text-sky-400 pl-0.5">
                                 <HighlightText text={viTitle} query={searchQuery} />
                               </p>
                             )}
@@ -442,7 +442,7 @@ function OutlineDocumentView({
 
                         {/* 3. Ý chính triển khai (Gạch đầu dòng trực tiếp giống speaking.part3.v2.md) */}
                         {items.length > 0 && (
-                          <ol className="space-y-1.5 text-xs sm:text-[13px] leading-relaxed pl-4 list-decimal marker:font-bold marker:text-indigo-600 dark:marker:text-indigo-400">
+                          <ol className="space-y-1.5 text-xs sm:text-[13px] leading-relaxed pl-4 list-decimal marker:font-bold marker:text-[#245b86] dark:marker:text-sky-400">
                             {items.map((item, itIdx) => {
                               const text = typeof item === 'string' ? item : item.text;
                               const viText = typeof item === 'string' ? undefined : item.viText;
@@ -465,9 +465,9 @@ function OutlineDocumentView({
 
                         {/* 4. Khung trả lời nhanh A-R-E (Được bọc nổi bật, nhãn phân màu rõ ràng) */}
                         {are && (
-                          <div className="rounded-xs border-l-4 border-l-indigo-600 dark:border-l-indigo-500 border border-slate-200/80 dark:border-slate-800 bg-slate-50/90 dark:bg-slate-950/75 p-2.5 sm:p-3 space-y-1.5 text-xs leading-relaxed shadow-2xs">
+                          <div className="rounded-xs border-l-4 border-l-[#245b86] dark:border-l-sky-500 border border-slate-200/80 dark:border-slate-800 bg-slate-50/90 dark:bg-slate-950/75 p-2.5 sm:p-3 space-y-1.5 text-xs leading-relaxed shadow-2xs">
                             <div className="flex items-baseline flex-wrap">
-                              <span className="inline-flex items-center font-bold text-indigo-700 dark:text-indigo-300 bg-indigo-100/70 dark:bg-indigo-950/80 dark:border dark:border-indigo-800/60 px-1.5 py-0.2 rounded-2xs mr-1.5 shrink-0">
+                              <span className="inline-flex items-center font-bold text-[#245b86] dark:text-sky-300 bg-[#245b86]/10 dark:bg-sky-950/80 dark:border dark:border-sky-800/60 px-1.5 py-0.2 rounded-2xs mr-1.5 shrink-0">
                                 [A - Trả lời]
                               </span>
                               <span className="font-semibold text-slate-800 dark:text-slate-200">
@@ -533,7 +533,7 @@ function RootCard({
   return (
     <div
       ref={(el) => registerAnchor('root-center', el)}
-      className="relative z-20 flex flex-col items-center justify-center rounded-sm border-2 border-indigo-600 bg-indigo-600 dark:border-indigo-500 dark:bg-indigo-700 px-5 py-3.5 text-center text-white shadow-md"
+      className="relative z-20 flex flex-col items-center justify-center rounded-sm border-2 border-[#245b86] bg-[#245b86] dark:border-sky-500 dark:bg-[#1a3852] px-5 py-3.5 text-center text-white shadow-md"
     >
       <div
         ref={(el) => registerAnchor('root-left', el)}
@@ -797,7 +797,7 @@ function getConnectionsForTopic(
   }[] = [];
 
   for (const branch of topic.leftBranches) {
-    const branchColor = branch.color || '#4f46e5';
+    const branchColor = branch.color || '#245b86';
     connections.push({
       fromId: 'root-left',
       toId: branch.id,
@@ -1121,8 +1121,8 @@ export default function Mindmap() {
 
   return (
     <div className="flex w-full max-w-full flex-col space-y-2.5 animate-fade-in pb-12 sm:pb-6 px-1.5 sm:px-3 lg:px-5 select-text">
-      {/* 1. Header chuẩn đồng bộ thanh lịch, dịu mắt */}
-      <header className="flex h-9 items-center justify-between rounded-sm bg-indigo-600 dark:bg-slate-900 dark:border dark:border-slate-800 px-3 text-white shadow-xs">
+      {/* 1. Header chuẩn đồng bộ 100% với /prompts và /speaking (bg-[#245b86] h-9) */}
+      <header className="flex h-9 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white shadow-xs">
         <div className="flex items-center gap-2 text-xs font-bold sm:text-sm">
           <Compass className="h-4 w-4 text-white" />
           <span>VSTEP Sơ Đồ Ý Tưởng & Từ Vựng</span>
@@ -1192,7 +1192,7 @@ export default function Mindmap() {
                     type="button"
                     onClick={() => selectTopic(t.id)}
                     className={`flex h-7 items-center gap-1.5 rounded-xs px-2.5 text-xs font-bold transition cursor-pointer ${active
-                        ? 'bg-indigo-600 text-white shadow-xs'
+                        ? 'bg-[#245b86] text-white shadow-xs'
                         : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-foreground'
                       }`}
                   >
@@ -1285,7 +1285,7 @@ export default function Mindmap() {
                       key={branch.id}
                       node={branch}
                       direction="left"
-                      branchColor={branch.color || '#4f46e5'}
+                      branchColor={branch.color || '#245b86'}
                       collapsedMap={collapsedMap}
                       toggleCollapse={toggleCollapse}
                       onCopy={handleCopy}
@@ -1320,7 +1320,7 @@ export default function Mindmap() {
             </div>
 
             <div className="pointer-events-none absolute bottom-3 left-3 z-20 flex items-center gap-1.5 rounded-xs border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 px-2.5 py-1 text-[11px] text-slate-600 dark:text-slate-300 shadow-2xs">
-              <Move className="h-3.5 w-3.5 text-indigo-600 dark:text-indigo-400" />
+              <Move className="h-3.5 w-3.5 text-[#245b86] dark:text-sky-400" />
               <span>Kéo chuột để di chuyển • Bấm vào câu để chép</span>
             </div>
           </div>
@@ -1329,7 +1329,7 @@ export default function Mindmap() {
 
       {/* Toast Notification */}
       {toastMessage && (
-        <div className="fixed bottom-12 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-sm border border-indigo-700 dark:border-slate-700 bg-indigo-600 dark:bg-slate-800 px-3.5 py-2 text-xs font-bold text-white shadow-lg">
+        <div className="fixed bottom-12 left-1/2 z-50 flex -translate-x-1/2 items-center gap-2 rounded-sm border border-[#245b86] dark:border-slate-700 bg-[#245b86] dark:bg-slate-800 px-3.5 py-2 text-xs font-bold text-white shadow-lg">
           <Check className="h-3.5 w-3.5 text-emerald-300" />
           <span>{toastMessage}</span>
         </div>
