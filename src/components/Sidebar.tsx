@@ -181,16 +181,26 @@ export default function Sidebar() {
         <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">
           <Link
             href="/mindmap"
-            className={`flex h-8 shrink-0 items-center justify-center gap-1.5 rounded-lg border px-2 text-[10px] font-bold transition-colors sm:h-9 sm:px-2.5 sm:text-[11px] cursor-pointer ${
+            className={`flex h-8 shrink-0 items-center gap-1.5 rounded-lg border transition-colors cursor-pointer sm:h-9 ${
               pathname === '/mindmap' || pathname.startsWith('/mindmap/')
-                ? 'bg-amber-500 text-white border-amber-600 shadow-sm'
-                : 'border-border text-amber-600 dark:text-amber-400 hover:bg-amber-500/10 hover:border-amber-500/40'
-            }`}
+                ? 'border-amber-500 bg-transparent text-amber-600 dark:text-amber-400'
+                : 'border-border bg-transparent text-muted-foreground hover:border-amber-500/50 hover:text-foreground'
+            } p-0.5 sm:pl-2.5 sm:pr-0.5`}
             aria-label="Mindmap Ý tưởng & Từ vựng VSTEP"
             title="Mindmap Ý tưởng VSTEP"
           >
-            <Lightbulb className="h-4 w-4 shrink-0" />
-            <span className="hidden whitespace-nowrap sm:inline">Mindmap</span>
+            <span className="hidden whitespace-nowrap text-[11px] font-bold sm:inline">
+              Mindmap
+            </span>
+            <span
+              className={`grid h-7 w-7 shrink-0 place-items-center rounded-md transition-colors sm:h-7.5 sm:w-7.5 ${
+                pathname === '/mindmap' || pathname.startsWith('/mindmap/')
+                  ? 'bg-amber-500 text-white shadow-2xs'
+                  : 'bg-amber-500/20 text-amber-600 dark:bg-amber-500/30 dark:text-amber-300'
+              }`}
+            >
+              <Lightbulb className="h-4 w-4" />
+            </span>
           </Link>
 
           <button
