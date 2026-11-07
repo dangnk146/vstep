@@ -19,4 +19,5 @@ export const SCHOOL_DISPLAY_NAMES: Record<string, string> = {
   UFM: 'ĐH Tài chính - Marketing (UFM)',
   LHU: 'ĐH Lạc Hồng (LHU)',
   BAV: 'Học viện Ngân hàng (BAV)',
+  AJC: 'Học viện Báo chí & Tuyên truyền (AJC)',
 };

@@ -1,0 +1,910 @@
+{
+  "id": "work",
+  "title": "Work, Business & Finance",
+  "vietnameseTitle": "Công việc, Tự kinh doanh & Tài chính",
+  "description": "Tổng hợp 60+ đề thi thật Speaking và Writing về Tự làm chủ (Self-employment), Làm việc từ xa (WFH), Nhảy việc, Thất nghiệp trẻ, Chọn lời mời làm việc, Cân bằng công việc - cuộc sống, Kỹ năng mềm, Nỗ lực vs Tài năng, Thất bại, Tiết kiệm tiền, Ứng tuyển & Quà chia tay đồng nghiệp.",
+  "icon": "Briefcase",
+  "centerNode": {
+    "title": "Work & Business",
+    "subtitle": "Công việc, Tự kinh doanh & Tài chính",
+    "categoryBadge": "Topic Hub 4 (15 Nhóm Đề Cụ Thể)"
+  },
+  "leftBranches": [
+    {
+      "id": "work-group-employment-career",
+      "title": "Tự làm chủ, Xu hướng nghề nghiệp & Chọn việc",
+      "viTitle": "Tự kinh doanh, làm từ xa (WFH), nhảy việc, thất nghiệp, yếu tố chọn việc & định hướng nghề",
+      "badge": "Nhóm 1",
+      "tags": [
+        "Speaking P2-P3",
+        "Writing T1-T2"
+      ],
+      "color": "#eab308",
+      "children": [
+        {
+          "id": "work-self-employment",
+          "title": "Tự làm chủ & Khởi nghiệp (Self-Employment & Starting a Business)",
+          "viTitle": "Tự làm sếp, tự quyết định thời gian, thu nhập không giới hạn vs Rủi ro mất vốn, áp lực",
+          "badge": "Đề 1",
+          "examTags": [
+            "Speaking P3 (VLU 09; UEH 10 - Benefits of Self-Employment & Entrepreneurship)",
+            "Writing T2 (UEH 10; VLU 11 - Advantages & Disadvantages of Self-Employment)"
+          ],
+          "color": "#eab308",
+          "keywords": [
+            {
+              "word": "self-employed / work for yourself",
+              "meaning": "tự làm chủ, tự mở tiệm kinh doanh riêng"
+            },
+            {
+              "word": "be your own boss",
+              "meaning": "tự làm sếp của chính mình, tự quyết định giờ làm"
+            },
+            {
+              "word": "flexible working schedule",
+              "meaning": "thời gian làm việc linh hoạt, không bị chấm công"
+            },
+            {
+              "word": "financial instability & risk",
+              "meaning": "thu nhập bấp bênh và rủi ro thua lỗ vốn"
+            },
+            {
+              "word": "heavy workload & stress",
+              "meaning": "khối lượng công việc khổng lồ và áp lực tự gánh vác"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-se-1",
+              "badge": "🌟 Tự do",
+              "text": "You are your own boss, set your own working hours, and pursue your true passion without obeying strict bosses.",
+              "viText": "Bạn là sếp của chính mình, tự chọn giờ làm việc và theo đuổi đam mê mà không phải nghe lệnh cấp trên khó tính."
+            },
+            {
+              "id": "work-se-2",
+              "badge": "💰 Thu nhập",
+              "text": "If your business succeeds, your profits can be significantly higher than a fixed monthly office salary.",
+              "viText": "Nếu việc kinh doanh thành công, lợi nhuận bạn thu về có thể cao hơn nhiều so với mức lương văn phòng cố định."
+            },
+            {
+              "id": "work-se-3",
+              "badge": "⚠️ Rủi ro",
+              "text": "You have no guaranteed income, no paid sick leave, and must worry constantly about rent and staff salaries.",
+              "viText": "Bạn không có lương đảm bảo hàng tháng, không có ngày nghỉ ốm có lương và luôn phải lo tiền mặt bằng, trả lương nhân viên."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Being self-employed offers immense freedom and earning potential, but comes with heavy financial risks.",
+            "answerVi": "Tự làm chủ mang lại sự tự do to lớn và tiềm năng thu nhập cao, nhưng đi kèm với những rủi ro tài chính nặng nề.",
+            "reason": "You have full control over your schedule and reap all profits, yet you bear total loss if the market slows down.",
+            "reasonVi": "Bạn hoàn toàn kiểm soát thời gian và hưởng trọn lợi nhuận, nhưng phải tự chịu hết thua lỗ nếu thị trường ế ẩm.",
+            "example": "For instance, my uncle quit his banking job to open a bakery; he works 14 hours a day but is extremely proud of his own brand.",
+            "exampleVi": "Ví dụ, chú của tôi đã nghỉ việc ngân hàng để mở tiệm bánh mì; chú làm 14 tiếng mỗi ngày nhưng rất tự hào về thương hiệu riêng của mình."
+          }
+        },
+        {
+          "id": "work-remote-wfh",
+          "title": "Làm việc từ xa & Tại nơi công cộng (Remote Working / WFH & Public Places)",
+          "viTitle": "Tiết kiệm thời gian kẹt xe, làm tại nhà tiện nghi vs Cô lập, thiếu kỷ luật & ồn ào ở quán cà phê",
+          "badge": "Đề 2",
+          "examTags": [
+            "Writing T2 (VLU 09 - Remote Working and WFH: Pros & Cons; Working in Public Places)"
+          ],
+          "color": "#eab308",
+          "keywords": [
+            {
+              "word": "work from home (WFH) / remote work",
+              "meaning": "làm việc từ xa tại nhà qua mạng Internet"
+            },
+            {
+              "word": "save commuting time and fuel",
+              "meaning": "tiết kiệm thời gian đi lại và tiền xăng xe trong giờ cao điểm"
+            },
+            {
+              "word": "work in coffee shops / public places",
+              "meaning": "ngồi làm việc ở quán cà phê hoặc không gian làm việc chung"
+            },
+            {
+              "word": "lack of self-discipline",
+              "meaning": "thiếu tính tự giác, dễ bị xao nhãng bởi giường ngủ và TV"
+            },
+            {
+              "word": "social isolation",
+              "meaning": "cảm giác cô đơn, thiếu tương tác trò chuyện với đồng nghiệp"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-rw-1",
+              "badge": "🚗 Tiết kiệm",
+              "text": "Remote employees avoid daily rush-hour traffic jams and save money on work outfits and outside lunches.",
+              "viText": "Nhân viên làm từ xa tránh được kẹt xe giờ cao điểm và tiết kiệm tiền xăng, đồ công sở và cơm trưa hàng quán."
+            },
+            {
+              "id": "work-rw-2",
+              "badge": "☕ Quán cà phê",
+              "text": "Working in bustling cafes provides creative energy and change of scenery, but background music can disrupt zoom meetings.",
+              "viText": "Làm việc ở quán cà phê mang lại cảm hứng sáng tạo và đổi gió, nhưng tiếng nhạc ồn có thể làm phiền cuộc họp trực tuyến."
+            },
+            {
+              "id": "work-rw-3",
+              "badge": "📉 Nhược điểm",
+              "text": "Staying isolated at home blurs work-life boundaries, making people feel like they are working all the time.",
+              "viText": "Ngồi lì ở nhà làm mờ ranh giới giữa công việc và nghỉ ngơi, khiến mọi người có cảm giác như đang làm việc suốt ngày đêm."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Working from home provides wonderful flexibility, but requires high self-discipline to be effective.",
+            "answerVi": "Làm việc tại nhà mang lại sự linh hoạt tuyệt vời, nhưng đòi hỏi tính tự giác rất cao để đạt hiệu quả.",
+            "reason": "It saves hours of commuting in polluted traffic, but distractions like beds and social media can drastically slow down progress.",
+            "reasonVi": "Nó giúp tiết kiệm hàng giờ đi lại giữa khói bụi, nhưng những cám dỗ như chiếc giường êm hay mạng xã hội có thể làm chậm tiến độ.",
+            "example": "For example, my sister works as a graphic designer from home; she sets strict working hours from 8 AM to 5 PM to stay productive.",
+            "exampleVi": "Ví dụ, chị gái tôi làm thiết kế đồ họa tại nhà; chị luôn tự đặt giờ làm nghiêm ngặt từ 8 giờ sáng đến 5 giờ chiều để giữ hiệu suất cao."
+          }
+        },
+        {
+          "id": "work-job-hopping",
+          "title": "Xu hướng nhảy việc của người trẻ (Job-Hopping Among Young People)",
+          "viTitle": "Tìm kiếm lương cao hơn, cơ hội thăng tiến vs Bị đánh giá thiếu kiên nhẫn, mất ổn định",
+          "badge": "Đề 3",
+          "examTags": [
+            "Writing T2 (VLU 09 - Job-Hopping Among Young People: Causes & Consequences)",
+            "Reading P4 (VLU 11 - The Boomerang Phenomenon & Young Workers Changing Jobs)"
+          ],
+          "color": "#eab308",
+          "keywords": [
+            {
+              "word": "job-hopping",
+              "meaning": "thói quen liên tục chuyển việc, nhảy việc sau 1-2 năm"
+            },
+            {
+              "word": "seek higher salary & career promotion",
+              "meaning": "tìm kiếm mức lương cao hơn và cơ hội thăng chức nhanh"
+            },
+            {
+              "word": "toxic work environment",
+              "meaning": "môi trường làm việc độc hại, sếp chèn ép, lương bèo"
+            },
+            {
+              "word": "lack of loyalty",
+              "meaning": "bị nhà tuyển dụng đánh giá là thiếu trung thành và thiếu kiên nhẫn"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-jh-1",
+              "badge": "🔍 Nguyên nhân",
+              "text": "Young professionals switch companies quickly to negotiate 20-30% salary increases and escape toxic management.",
+              "viText": "Người trẻ chuyển việc nhanh để đàm phán mức lương tăng 20-30% và thoát khỏi sự quản lý độc hại của sếp cũ."
+            },
+            {
+              "id": "work-jh-2",
+              "badge": "📈 Lợi ích",
+              "text": "Hopping across different industries broadens professional networks and quickly builds diverse practical skills.",
+              "viText": "Làm việc qua nhiều môi trường khác nhau giúp mở rộng mạng lưới quan hệ và nhanh chóng tích lũy kỹ năng thực tế đa dạng."
+            },
+            {
+              "id": "work-jh-3",
+              "badge": "⚠️ Hậu quả",
+              "text": "Changing jobs too frequently makes your CV look unstable and scares off large corporations seeking loyal talent.",
+              "viText": "Nhảy việc quá thường xuyên làm hồ sơ CV trông thiếu ổn định và khiến các tập đoàn lớn e ngại khi tìm nhân sự gắn bó."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Job-hopping has become common among Gen Z workers seeking faster career growth and better pay.",
+            "answerVi": "Nhảy việc đã trở nên rất phổ biến ở người lao động trẻ nhằm tìm kiếm sự thăng tiến nhanh và mức đãi ngộ tốt hơn.",
+            "reason": "Staying at one company often results in tiny annual raises, while changing firms allows employees to jump salary brackets.",
+            "reasonVi": "Gắn bó mãi một công ty thường chỉ được tăng lương ít ỏi, trong khi chuyển chỗ làm giúp người lao động nhảy vọt bậc lương.",
+            "example": "For instance, my cousin doubled his income in three years by switching marketing agencies twice, gaining valuable hands-on experience.",
+            "exampleVi": "Ví dụ, anh họ tôi đã tăng gấp đôi thu nhập trong ba năm nhờ hai lần chuyển công ty marketing và tích lũy được nhiều kinh nghiệm quý báu."
+          }
+        },
+        {
+          "id": "work-youth-unemployment",
+          "title": "Thất nghiệp ở người trẻ: Nguyên nhân & Giải pháp (Solutions for Youth Unemployment)",
+          "viTitle": "Thừa thầy thiếu thợ, thiếu kỹ năng thực tế, đào tạo nghề & hỗ trợ khởi nghiệp",
+          "badge": "Đề 4",
+          "examTags": [
+            "Speaking P3 (VLU 09 - Solutions for Youth Unemployment)"
+          ],
+          "color": "#eab308",
+          "keywords": [
+            {
+              "word": "youth unemployment rate",
+              "meaning": "tỷ lệ thất nghiệp trong độ tuổi thanh niên mới ra trường"
+            },
+            {
+              "word": "lack practical working skills",
+              "meaning": "thiếu kỹ năng làm việc thực tế, chỉ giỏi lý thuyết suông"
+            },
+            {
+              "word": "vocational training courses",
+              "meaning": "các khóa đào tạo nghề thực tế (sửa chữa, kỹ thuật, nấu ăn)"
+            },
+            {
+              "word": "startup support funds",
+              "meaning": "quỹ hỗ trợ vốn vay ưu đãi cho thanh niên khởi nghiệp"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-yu-1",
+              "badge": "📉 Nguyên nhân",
+              "text": "Many university graduates cannot find jobs because their curriculum is outdated and lacks hands-on internship experience.",
+              "viText": "Nhiều sinh viên tốt nghiệp không tìm được việc vì chương trình học quá nặng lý thuyết và thiếu kinh nghiệm thực tập thực tế."
+            },
+            {
+              "id": "work-yu-2",
+              "badge": "🔧 Đào tạo nghề",
+              "text": "Governments should promote vocational training in high-demand fields like graphic design, AI coding, and mechanics.",
+              "viText": "Nhà nước nên đẩy mạnh đào tạo nghề trong các lĩnh vực có nhu cầu cao như thiết kế đồ họa, lập trình AI và cơ khí."
+            },
+            {
+              "id": "work-yu-3",
+              "badge": "🤝 Doanh nghiệp",
+              "text": "Universities must partner directly with domestic and foreign firms to guarantee job placements for graduating students.",
+              "viText": "Các trường đại học cần liên kết trực tiếp với doanh nghiệp trong và ngoài nước để bao tiêu đầu ra việc làm cho sinh viên."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "To tackle youth unemployment, education systems must bridge the gap between classroom theory and real corporate needs.",
+            "answerVi": "Để giải quyết vấn đề thất nghiệp ở người trẻ, ngành giáo dục phải thu hẹp khoảng cách giữa lý thuyết giảng đường và nhu cầu thực tế.",
+            "reason": "Employers require graduates who can use software and handle real projects immediately without months of retraining.",
+            "reasonVi": "Các nhà tuyển dụng đòi hỏi nhân sự mới phải biết dùng phần mềm và bắt tay làm việc ngay mà không phải đào tạo lại từ đầu.",
+            "example": "For example, universities that require mandatory six-month company internships have over 90% of students hired right after graduation.",
+            "exampleVi": "Ví dụ, những trường đại học bắt buộc sinh viên đi thực tập doanh nghiệp 6 tháng đều có trên 90% sinh viên được nhận việc ngay khi ra trường."
+          }
+        },
+        {
+          "id": "work-job-choice-offers",
+          "title": "Tiêu chí chọn việc & So sánh lời mời làm việc (Factors Influencing Job Choice)",
+          "viTitle": "Lương cao vs Môi trường thân thiện vs Cơ hội học hỏi & thăng tiến trong tương lai",
+          "badge": "Đề 5",
+          "examTags": [
+            "Speaking P2 (VLU 10 - Choosing Among Three Job Offers: High salary far away vs Lower salary near home vs Startup)",
+            "Speaking P3 (VLU 10 - Factors Influencing Job Choice)"
+          ],
+          "color": "#eab308",
+          "keywords": [
+            {
+              "word": "high salary package",
+              "meaning": "mức lương thưởng cao và chế độ đãi ngộ hấp dẫn"
+            },
+            {
+              "word": "supportive colleagues & culture",
+              "meaning": "đồng nghiệp tốt bụng, môi trường làm việc lành mạnh"
+            },
+            {
+              "word": "career growth opportunities",
+              "meaning": "cơ hội học hỏi kinh nghiệm và thăng tiến lâu dài"
+            },
+            {
+              "word": "reasonable commuting distance",
+              "meaning": "quãng đường đi làm gần nhà, không tốn thời gian di chuyển"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-jc-1",
+              "badge": "💵 Lương",
+              "text": "A competitive salary is essential to cover rising living costs, rent, and provide financial security for families.",
+              "viText": "Mức lương cạnh tranh là điều kiện tiên quyết để trang trải chi phí sinh hoạt, tiền trọ và đảm bảo kinh tế gia đình."
+            },
+            {
+              "id": "work-jc-2",
+              "badge": "🤝 Môi trường",
+              "text": "A friendly office culture with helpful mentors makes going to work pleasant and prevents mental burnout.",
+              "viText": "Văn hóa công sở hòa đồng với những người hướng dẫn tận tình khiến mỗi ngày đi làm đều vui vẻ và tránh bị kiệt sức."
+            },
+            {
+              "id": "work-jc-3",
+              "badge": "🚀 Thăng tiến",
+              "text": "For young workers, choosing a dynamic startup that offers fast promotions is often wiser than a high-paying dead-end job.",
+              "viText": "Với người trẻ, chọn một công ty khởi nghiệp năng động có cơ hội thăng tiến nhanh thường khôn ngoan hơn một việc lương cao nhưng dậm chân tại chỗ."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "When comparing different job offers, I prioritize career growth opportunities over immediate starting salary.",
+            "answerVi": "Khi so sánh giữa các lời mời làm việc, tôi luôn ưu tiên cơ hội phát triển nghề nghiệp hơn là mức lương khởi điểm trước mắt.",
+            "reason": "Because gaining strong practical expertise in your early twenties allows you to earn double or triple that salary in the future.",
+            "reasonVi": "Bởi vì việc tích lũy chuyên môn thực tế vững chắc ở tuổi đôi mươi sẽ giúp bạn kiếm được mức lương gấp đôi gấp ba trong tương lai.",
+            "example": "For instance, I chose an internship at a tech company with modest pay because their senior managers agreed to mentor me directly.",
+            "exampleVi": "Ví dụ, tôi đã chọn thực tập tại một công ty công nghệ dù phụ cấp khiêm tốn vì các quản lý cấp cao tại đây đồng ý trực tiếp kèm cặp tôi."
+          }
+        },
+        {
+          "id": "work-career-teaching-wellness",
+          "title": "Định hướng nghề Sư phạm & Việc làm thêm (Teaching, Wellness & Part-time Jobs)",
+          "viTitle": "Nghề giáo viên cao quý, việc làm trong ngành sức khỏe & đi làm thêm luyện tiếng Anh",
+          "badge": "Đề 6",
+          "examTags": [
+            "Speaking P2 (VLU 09 - Choosing a School to Teach / Teaching Job)",
+            "Speaking P2 (VLU 10 - Career Choice for a Teaching Graduate; Career in Health & Wellness)",
+            "Speaking P2 (HCMUE 10 - Recommending a Job to Improve English: Tour guide vs Hotel receptionist vs English center assistant)",
+            "Writing T1 (VLU 10 - Seeking a Part-Time Job While Studying in Singapore)"
+          ],
+          "color": "#eab308",
+          "keywords": [
+            {
+              "word": "teaching career",
+              "meaning": "sự nghiệp dạy học, nghề giáo viên cao quý"
+            },
+            {
+              "word": "hotel receptionist",
+              "meaning": "lễ tân khách sạn tiếp xúc khách quốc tế hàng ngày"
+            },
+            {
+              "word": "tour guide",
+              "meaning": "hướng dẫn viên du lịch rèn luyện kỹ năng nói tiếng Anh trôi chảy"
+            },
+            {
+              "word": "health and fitness coach",
+              "meaning": "huấn luyện viên thể hình và chăm sóc sức khỏe"
+            },
+            {
+              "word": "part-time job abroad",
+              "meaning": "công việc làm thêm kiếm thêm thu nhập khi đi du học"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-ct-1",
+              "badge": "👩‍🏫 Nghề giáo",
+              "text": "Teaching at an international bilingual school offers great salaries, modern classrooms, and respected social status.",
+              "viText": "Dạy học ở các trường song ngữ quốc tế mang lại mức lương tốt, lớp học hiện đại và được xã hội tôn trọng."
+            },
+            {
+              "id": "work-ct-2",
+              "badge": "🗣️ Luyện tiếng Anh",
+              "text": "Working as a hotel receptionist or tour guide forces you to speak English with foreigners all day, boosting fluency rapidly.",
+              "viText": "Làm lễ tân khách sạn hay hướng dẫn viên du lịch buộc bạn phải nói tiếng Anh với người nước ngoài cả ngày, giúp nói lưu loát cực nhanh."
+            },
+            {
+              "id": "work-ct-3",
+              "badge": "🌏 Du học",
+              "text": "Doing part-time campus jobs in Singapore teaches foreign students financial independence and adaptability.",
+              "viText": "Làm thêm các công việc trong trường tại Singapore giúp du học sinh học cách tự lập tài chính và thích nghi nhanh."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "To improve English speaking skills rapidly, working as a hotel receptionist is the top recommendation.",
+            "answerVi": "Để nâng cao phản xạ nói tiếng Anh một cách nhanh nhất, làm lễ tân khách sạn là công việc được khuyến khích hàng đầu.",
+            "reason": "You interact with international tourists from morning to night, solving their room inquiries in real spoken English.",
+            "reasonVi": "Bạn được tiếp xúc với khách du lịch quốc tế từ sáng đến tối, giải quyết các yêu cầu đặt phòng hoàn toàn bằng tiếng Anh giao tiếp thực tế.",
+            "example": "For example, my friend worked at a boutique hotel in Hanoi's Old Quarter for six months and his speaking score jumped from B1 to B2 effortlessly.",
+            "exampleVi": "Ví dụ, bạn tôi làm việc tại một khách sạn trên phố cổ Hà Nội suốt 6 tháng và điểm Speaking của bạn ấy đã tăng vọt từ B1 lên B2 rất dễ dàng."
+          }
+        }
+      ]
+    }
+  ],
+  "rightBranches": [
+    {
+      "id": "work-group-skills-success",
+      "title": "Kỹ năng, Nỗ lực, Thất bại & Quản lý tài chính",
+      "viTitle": "Cân bằng cuộc sống, kỹ năng mềm, điện thoại cho việc, nỗ lực vs tài năng, thất bại, tiết kiệm & đồng nghiệp",
+      "badge": "Nhóm 2",
+      "tags": [
+        "Speaking P1-P3",
+        "Writing T1-T2"
+      ],
+      "color": "#ca8a04",
+      "children": [
+        {
+          "id": "work-work-life-balance",
+          "title": "Cân bằng Công việc - Cuộc sống (Work-Life Balance & Stress)",
+          "viTitle": "Áp lực làm thêm giờ, kiệt sức vs Dành thời gian cho gia đình, sở thích & thể thao",
+          "badge": "Đề 7",
+          "examTags": [
+            "Speaking P1 (VLU 09 - Workplace & Working Conditions)",
+            "Speaking P3 (VLU 09 - Work-Life Balance)",
+            "Writing T2 (VLU 09 - Work-Related Stress: Impacts & Solutions)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "work-life balance",
+              "meaning": "cân bằng giữa thời gian làm việc và tận hưởng cuộc sống"
+            },
+            {
+              "word": "overtime work & burn out",
+              "meaning": "tăng ca liên tục gây suy nhược cơ thể và kiệt sức"
+            },
+            {
+              "word": "spend quality time with family",
+              "meaning": "dành thời gian chất lượng, ấm áp bên gia đình"
+            },
+            {
+              "word": "unplug from work emails",
+              "meaning": "ngắt kết nối email công việc sau giờ hành chính"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-wlb-1",
+              "badge": "⚖️ Cân bằng",
+              "text": "True success means achieving good career outcomes while still having time to exercise, eat dinner, and play with children.",
+              "viText": "Thành công thực sự là khi đạt kết quả tốt trong sự nghiệp nhưng vẫn có thời gian tập thể thao, ăn cơm tối và chơi với con."
+            },
+            {
+              "id": "work-wlb-2",
+              "badge": "⚠️ Stress",
+              "text": "Working 60 hours a week without rest triggers severe migraines, stomach ulcers, and harms family relationships.",
+              "viText": "Làm việc 60 tiếng mỗi tuần không ngơi nghỉ gây đau nửa đầu, đau dạ dày và làm rạn nứt tình cảm gia đình."
+            },
+            {
+              "id": "work-wlb-3",
+              "badge": "🛑 Giới hạn",
+              "text": "Companies should avoid messaging employees on weekends and encourage them to take full annual paid leaves.",
+              "viText": "Các công ty nên tránh nhắn tin giao việc vào cuối tuần và khuyến khích nhân viên nghỉ trọn vẹn số ngày phép năm."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Maintaining a healthy work-life balance is vital for both long-term health and career longevity.",
+            "answerVi": "Duy trì sự cân bằng giữa công việc và cuộc sống là điều sống còn cho cả sức khỏe lâu dài lẫn độ bền sự nghiệp.",
+            "reason": "Money cannot buy back broken health or lost childhood moments with your growing children.",
+            "reasonVi": "Tiền bạc không thể mua lại sức khỏe đã suy kiệt hay những khoảnh khắc tuổi thơ đã qua của con cái.",
+            "example": "For instance, my manager used to work until midnight every day until he collapsed; now he always leaves the office at 5:30 PM to jog.",
+            "exampleVi": "Ví dụ, sếp của tôi từng làm việc đến nửa đêm mỗi ngày cho đến khi phải nhập viện; giờ đây anh luôn rời văn phòng lúc 5h30 chiều để đi chạy bộ."
+          }
+        },
+        {
+          "id": "work-soft-skills-teamwork",
+          "title": "Kỹ năng mềm & Làm việc nhóm (Soft Skills & Teamwork in Workplace)",
+          "viTitle": "Giao tiếp rõ ràng, giải quyết xung đột, lắng nghe & hợp tác đạt mục tiêu chung",
+          "badge": "Đề 8",
+          "examTags": [
+            "Speaking P1 (VLU 09 - Teamwork)",
+            "Speaking P2 (VLU 10 - Choosing the Most Essential Soft Skill for Students: Communication vs Teamwork vs Time Management)",
+            "Speaking P3 (VLU 09 - The Importance of Soft Skills in the Workplace)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "essential soft skills",
+              "meaning": "các kỹ năng mềm thiết yếu (giao tiếp, làm việc nhóm, giải quyết vấn đề)"
+            },
+            {
+              "word": "teamwork and cooperation",
+              "meaning": "tinh thần làm việc nhóm và hợp tác ăn ý"
+            },
+            {
+              "word": "active listening",
+              "meaning": "lắng nghe tích cực ý kiến đóng góp của đồng nghiệp"
+            },
+            {
+              "word": "conflict resolution",
+              "meaning": "khả năng hòa giải bất đồng quan điểm một cách hòa nhã"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-st-1",
+              "badge": "🤝 Làm nhóm",
+              "text": "Teamwork combines different talents together to complete complex projects that no single genius could do alone.",
+              "viText": "Làm việc nhóm kết hợp các thế mạnh khác nhau để hoàn thành những dự án phức tạp mà không một cá nhân nào tự làm nổi."
+            },
+            {
+              "id": "work-st-2",
+              "badge": "🗣️ Giao tiếp",
+              "text": "Clear communication ensures instructions are understood correctly, avoiding costly operational mistakes.",
+              "viText": "Giao tiếp rõ ràng giúp mọi người hiểu đúng chỉ dẫn công việc, tránh được những sai sót tốn kém tiền bạc."
+            },
+            {
+              "id": "work-st-3",
+              "badge": "🏆 Tuyển dụng",
+              "text": "While hard skills get you an interview, strong emotional intelligence and teamwork skills earn you long-term promotions.",
+              "viText": "Nếu kiến thức chuyên môn giúp bạn được gọi phỏng vấn, thì kỹ năng ứng xử và làm việc nhóm sẽ giúp bạn thăng chức dài lâu."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Among all soft skills, effective communication is undoubtedly the most critical for career success.",
+            "answerVi": "Trong tất cả các kỹ năng mềm, giao tiếp hiệu quả chắc chắn là yếu tố then chốt nhất cho thành công sự nghiệp.",
+            "reason": "If you have brilliant ideas but cannot explain them persuasively to your team and clients, your ideas remain useless.",
+            "reasonVi": "Nếu bạn có ý tưởng tuyệt vời nhưng không thể diễn đạt thuyết phục cho đồng nghiệp và khách hàng, ý tưởng đó cũng thành vô nghĩa.",
+            "example": "For example, in my graduation project, holding a 10-minute briefing every morning helped our five-member team finish first in class.",
+            "exampleVi": "Ví dụ, trong khóa luận tốt nghiệp, việc duy trì họp nhanh 10 phút mỗi sáng đã giúp nhóm 5 người chúng tôi về đích đầu tiên của lớp."
+          }
+        },
+        {
+          "id": "work-personal-phone-work",
+          "title": "Dùng điện thoại cá nhân cho công việc (Personal Mobile Phones for Work)",
+          "viTitle": "Tiện lợi, không cần mang 2 máy vs Bị làm phiền ngoài giờ, nguy cơ lộ dữ liệu công ty",
+          "badge": "Đề 9",
+          "examTags": [
+            "Writing T2 (VLU 09 - Using Personal Mobile Phones for Work: Pros and Cons)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "use personal phone for work",
+              "meaning": "dùng số điện thoại cá nhân để trao đổi công việc"
+            },
+            {
+              "word": "convenience of one device",
+              "meaning": "tiện lợi khi chỉ cần mang theo một chiếc điện thoại duy nhất"
+            },
+            {
+              "word": "invade private personal life",
+              "meaning": "bị công việc xâm lấn đời sống riêng tư vào ban đêm"
+            },
+            {
+              "word": "company data leak",
+              "meaning": "nguy cơ làm lộ dữ liệu mật của công ty nếu làm mất máy"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-pp-1",
+              "badge": "📱 Tiện lợi",
+              "text": "Employees only need to carry one smartphone in their pocket instead of juggling two separate devices and chargers.",
+              "viText": "Nhân viên chỉ cần mang theo một chiếc điện thoại trong túi thay vì phải lỉnh kỉnh hai máy và hai bộ sạc."
+            },
+            {
+              "id": "work-pp-2",
+              "badge": "🔕 Bị làm phiền",
+              "text": "Clients often call or send Zalo work messages at 10 PM or on Sunday mornings, completely destroying personal rest.",
+              "viText": "Khách hàng thường gọi điện hoặc nhắn tin Zalo lúc 10 giờ đêm hay sáng Chủ nhật, phá hỏng hoàn toàn sự nghỉ ngơi."
+            },
+            {
+              "id": "work-pp-3",
+              "badge": "💼 Giải pháp",
+              "text": "Corporations should either provide official company SIM cards or pay monthly communication allowances to employees.",
+              "viText": "Các doanh nghiệp nên cấp SIM công vụ riêng hoặc chi trả tiền phụ cấp liên lạc hàng tháng cho nhân viên."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Using personal phones for work brings obvious convenience, but severely disrupts personal boundaries.",
+            "answerVi": "Dùng điện thoại cá nhân cho công việc mang lại sự tiện lợi thấy rõ, nhưng lại làm xáo trộn nghiêm trọng ranh giới riêng tư.",
+            "reason": "It saves device costs, but receiving work texts during family dinner creates constant psychological stress.",
+            "reasonVi": "Nó giúp đỡ tốn tiền mua máy, nhưng việc nhận tin nhắn việc trong bữa cơm gia đình tạo ra căng thẳng tâm lý liên tục.",
+            "example": "For instance, my friend had to silence her phone every night because her demanding manager kept texting tasks in group chats at midnight.",
+            "exampleVi": "Ví dụ, bạn tôi đã phải tắt chuông điện thoại mỗi đêm vì người sếp khó tính liên tục nhắn việc vào nhóm chat lúc nửa đêm."
+          }
+        },
+        {
+          "id": "work-talent-vs-effort",
+          "title": "Tài năng thiên bẩm vs Sự chăm chỉ nỗ lực (Natural Ability vs Hard Work)",
+          "viTitle": "Năng khiếu giúp xuất phát nhanh nhưng chỉ có sự kiên trì bền bỉ mới dẫn tới thành công",
+          "badge": "Đề 10",
+          "examTags": [
+            "Writing T2 (VLU 10 - Natural Ability versus Hard Work in Achieving Success)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "natural talent / gifted",
+              "meaning": "tài năng bẩm sinh, năng khiếu trời cho"
+            },
+            {
+              "word": "hard work & perseverance",
+              "meaning": "sự chăm chỉ cần cù và lòng kiên trì không bỏ cuộc"
+            },
+            {
+              "word": "consistent practice",
+              "meaning": "luyện tập đều đặn hàng ngày bất kể mưa nắng"
+            },
+            {
+              "word": "hard work beats talent",
+              "meaning": "cần cù bù thông minh (sự chăm chỉ đánh bại tài năng nếu tài năng lười biếng)"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-te-1",
+              "badge": "🌟 Tài năng",
+              "text": "Innate talent gives individuals an early head start in fields like music, mathematics, and professional sports.",
+              "viText": "Tài năng bẩm sinh mang lại lợi thế xuất phát điểm rất nhanh trong các lĩnh vực như âm nhạc, toán học và thể thao."
+            },
+            {
+              "id": "work-te-2",
+              "badge": "💪 Chăm chỉ",
+              "text": "Without thousands of hours of rigorous training, even gifted prodigies quickly fade away and achieve nothing lasting.",
+              "viText": "Nếu thiếu hàng nghìn giờ khổ luyện nghiêm túc, ngay cả những thần đồng cũng sớm mờ nhạt và không làm nên trò trống gì."
+            },
+            {
+              "id": "work-te-3",
+              "badge": "🏆 Kết luận",
+              "text": "Perseverance and grit are always more reliable drivers of long-term life success than raw natural intellect.",
+              "viText": "Sự kiên trì và bền bỉ luôn là yếu tố quyết định đáng tin cậy hơn cho thành công cuộc đời so với trí thông minh đơn thuần."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "In achieving lasting success, I firmly believe that continuous hard work is far more decisive than natural talent.",
+            "answerVi": "Để đạt được thành công bền vững, tôi tin chắc rằng sự chăm chỉ kiên trì mang tính quyết định hơn nhiều so với năng khiếu bẩm sinh.",
+            "reason": "Talent provides a fast start, but only discipline and endless practice turn potential into real mastery.",
+            "reasonVi": "Năng khiếu cho bạn bước khởi đầu nhanh, nhưng chỉ có kỷ luật và sự khổ luyện mới biến tiềm năng thành sự uyên bác thực sự.",
+            "example": "For example, Thomas Edison famously tested thousands of materials before inventing the electric light bulb, proving the power of sheer perseverance.",
+            "exampleVi": "Ví dụ, Thomas Edison đã kiên trì thử nghiệm hàng nghìn vật liệu trước khi phát minh ra bóng đèn điện, minh chứng cho sức mạnh của sự bền bỉ."
+          }
+        },
+        {
+          "id": "work-experiencing-failures",
+          "title": "Ý nghĩa của việc Trải nghiệm thất bại (Benefits of Experiencing Failures)",
+          "viTitle": "Bài học xương máu, rèn luyện bản lĩnh kiên cường & nhận ra điểm yếu để tiến bộ",
+          "badge": "Đề 11",
+          "examTags": [
+            "Speaking P3 (VLU 10 - Benefits of Experiencing Failures)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "experience failure / setbacks",
+              "meaning": "nếm trải thất bại và những vấp ngã đầu đời"
+            },
+            {
+              "word": "learn valuable lessons",
+              "meaning": "học được những bài học đắt giá mà sách vở không dạy"
+            },
+            {
+              "word": "build emotional resilience",
+              "meaning": "rèn luyện bản lĩnh kiên cường, không gục ngã"
+            },
+            {
+              "word": "step out of comfort zone",
+              "meaning": "dũng cảm bước ra khỏi vùng an toàn của bản thân"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-ef-1",
+              "badge": "📚 Bài học",
+              "text": "Failing an exam or business venture shows you clearly what mistakes you made and what knowledge you lack.",
+              "viText": "Thất bại trong một kỳ thi hay một dự án làm ăn cho bạn thấy rõ mình đã sai ở đâu và còn thiếu hụt kiến thức gì."
+            },
+            {
+              "id": "work-ef-2",
+              "badge": "🛡️ Bản lĩnh",
+              "text": "People who experience setbacks early in life develop thick skin and are never easily defeated by future hardships.",
+              "viText": "Những người sớm nếm trải thất bại sẽ tôi luyện được bản lĩnh vững vàng và không bao giờ dễ dàng đầu hàng trước sóng gió."
+            },
+            {
+              "id": "work-ef-3",
+              "badge": "🚀 Động lực",
+              "text": "Overcoming failure teaches humility and motivates individuals to prepare twice as thoroughly for the next attempt.",
+              "viText": "Vượt qua thất bại dạy ta tính khiêm tốn và thôi thúc ta chuẩn bị kỹ càng gấp đôi cho lần thử sức tiếp theo."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Experiencing failures in life is not a disaster, but a necessary stepping stone toward true maturity.",
+            "answerVi": "Nếm trải thất bại trong cuộc đời không phải là thảm họa, mà là bước đệm cần thiết để trưởng thành thực sự.",
+            "reason": "Because success teaches you very little, but painful failures force you to reflect deeply and correct your weak spots.",
+            "reasonVi": "Bởi vì thành công dạy ta rất ít, nhưng những cú ngã đau đớn buộc ta phải nhìn nhận lại mình và sửa đổi các điểm yếu.",
+            "example": "For instance, failing my first driving test made me practice parking much more carefully, and I have never had an accident since.",
+            "exampleVi": "Ví dụ, việc trượt kỳ thi bằng lái xe đầu tiên đã khiến tôi luyện tập lùi chuồng cẩn thận hơn nhiều, và từ đó tôi chưa bao giờ bị va quẹt."
+          }
+        },
+        {
+          "id": "work-saving-money-award",
+          "title": "Thói quen Tiết kiệm tiền & Dùng tiền thưởng (Saving Money & Spending Award)",
+          "viTitle": "Lập quỹ phòng thân, tránh mua sắm lãng phí & đầu tư học hành thay vì tiêu xài",
+          "badge": "Đề 12",
+          "examTags": [
+            "Speaking P1 (VLU 09 - Saving Money)",
+            "Writing T1 (VLU 09 - Spending Award Money: Buying a Computer vs Clothes)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "save money for rainy days",
+              "meaning": "tiết kiệm tiền phòng thân cho những lúc ốm đau, khó khăn"
+            },
+            {
+              "word": "emergency fund",
+              "meaning": "quỹ khẩn cấp đủ chi tiêu trong 3-6 tháng"
+            },
+            {
+              "word": "invest in education / tools",
+              "meaning": "đầu tư vào việc học và công cụ làm việc hữu ích"
+            },
+            {
+              "word": "avoid impulse buying",
+              "meaning": "tránh thói quen mua sắm bốc đồng theo cảm xúc"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-sm-1",
+              "badge": "🏦 Quỹ phòng thân",
+              "text": "Putting aside 20% of your monthly income into savings protects you when unexpected illness or layoffs occur.",
+              "viText": "Trích 20% thu nhập hàng tháng gửi tiết kiệm giúp bảo vệ bạn khi không may bị ốm đau hoặc công ty cắt giảm nhân sự."
+            },
+            {
+              "id": "work-sm-2",
+              "badge": "🎁 Tiền thưởng",
+              "text": "Using prize money to purchase a study computer helps your future career, while luxury clothes lose value fast.",
+              "viText": "Dùng tiền thưởng mua máy tính học tập giúp ích lớn cho tương lai, trong khi quần áo hàng hiệu mất giá rất nhanh."
+            },
+            {
+              "id": "work-sm-3",
+              "badge": "📊 Kiểm soát",
+              "text": "Using expense tracker apps helps you realize how much money you waste on small coffee and snacks each week.",
+              "viText": "Dùng các ứng dụng ghi chép chi tiêu giúp bạn nhận ra mình đã phung phí bao nhiêu tiền vào cà phê và đồ ăn vặt mỗi tuần."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Developing a consistent saving habit from young age provides immense financial peace of mind.",
+            "answerVi": "Hình thành thói quen tiết kiệm tiền đều đặn từ khi còn trẻ mang lại sự bình an to lớn về tài chính.",
+            "reason": "Life is full of unexpected emergencies, and having a reserve fund prevents you from borrowing at high interest rates.",
+            "reasonVi": "Cuộc sống có rất nhiều bất trắc bất ngờ, và có một khoản tiền dự phòng giúp bạn không phải đi vay mượn với lãi suất cao.",
+            "example": "For example, having saved a small amount each month allowed me to replace my broken laptop immediately without asking parents for help.",
+            "exampleVi": "Ví dụ, nhờ thói quen tiết kiệm mỗi tháng một ít, tôi đã có thể tự mua máy tính mới ngay khi máy cũ hỏng mà không phải xin bố mẹ."
+          }
+        },
+        {
+          "id": "work-job-inquiry-interview",
+          "title": "Hỏi thông tin tuyển dụng & Phỏng vấn (Job Inquiry & Interview Schedule)",
+          "viTitle": "Hỏi giờ làm, trách nhiệm, mức lương, chế độ đãi ngộ & xác nhận lịch phỏng vấn",
+          "badge": "Đề 13",
+          "examTags": [
+            "Writing T1 (VLU 09 - Replying regarding Summer Course / Internship)",
+            "Writing T1 (VLU 10 - Replying to a Company Regarding Job Interview Schedule; Replying with Employment Details)",
+            "Writing T1 (AJC 11 - Inquiry Letter Regarding a Full-Time Cook Position: Working hours, duties, pay, benefits)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "job responsibilities and duties",
+              "meaning": "nhiệm vụ và trách nhiệm cụ thể trong công việc"
+            },
+            {
+              "word": "working hours & shift schedule",
+              "meaning": "giờ giấc làm việc và lịch phân ca"
+            },
+            {
+              "word": "salary package and benefits",
+              "meaning": "mức lương chính thức, tiền thưởng và chế độ bảo hiểm"
+            },
+            {
+              "word": "confirm interview time",
+              "meaning": "xác nhận có mặt đúng giờ hẹn phỏng vấn"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-ji-1",
+              "badge": "🍳 Hỏi việc bếp",
+              "text": "When inquiring about a full-time cook job, ask politely about kitchen shifts, weekend duties, and meal allowances.",
+              "viText": "Khi viết thư hỏi về vị trí đầu bếp toàn thời gian, hãy hỏi lịch sự về các ca làm việc, trực cuối tuần và tiền phụ cấp ăn uống."
+            },
+            {
+              "id": "work-ji-2",
+              "badge": "📅 Hẹn phỏng vấn",
+              "text": "Reply promptly to express gratitude for the interview invitation and reconfirm the exact date, time, and office room.",
+              "viText": "Trả lời thư nhanh chóng để cảm ơn lời mời phỏng vấn và xác nhận lại chính xác ngày, giờ cùng địa điểm phòng họp."
+            },
+            {
+              "id": "work-ji-3",
+              "badge": "👔 Tác phong",
+              "text": "Write with a polite and formal tone, attaching your updated resume and professional food hygiene certificates.",
+              "viText": "Viết với giọng văn trang trọng, lịch sự, đính kèm CV cập nhật mới nhất và các chứng chỉ an toàn vệ sinh thực phẩm."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Writing a polite inquiry letter shows high professionalism and makes an immediate positive impression on recruiters.",
+            "answerVi": "Viết một bức thư hỏi việc lịch thiệp thể hiện tính chuyên nghiệp cao và tạo ấn tượng tốt đẹp ngay lập tức với nhà tuyển dụng.",
+            "reason": "It clarifies essential job details like working shifts and remuneration before signing formal labor contracts.",
+            "reasonVi": "Nó giúp làm rõ các chi tiết quan trọng như ca làm việc và chế độ đãi ngộ trước khi đặt bút ký hợp đồng chính thức.",
+            "example": "For instance, I wrote a formal email to a French restaurant asking about their cook position, and the manager praised my polite questions during the interview.",
+            "exampleVi": "Ví dụ, tôi từng viết email hỏi về vị trí phụ bếp tại một nhà hàng Pháp, và người quản lý đã khen ngợi thái độ hỏi lịch sự của tôi trong buổi phỏng vấn."
+          }
+        },
+        {
+          "id": "work-handover-teambuilding",
+          "title": "Bàn giao công việc & Team-Building (Handing Over Work & Team-Building)",
+          "viTitle": "Bàn giao việc trước kỳ nghỉ phép năm, gắn kết đồng nghiệp qua cắm trại & trò chơi",
+          "badge": "Đề 14",
+          "examTags": [
+            "Speaking P2 (VLU 09 - Choosing a Team-Building Activity for Colleagues: Camping vs Cooking contest vs Sports match)",
+            "Writing T1 (VLU 09 - Handing Over Work to a Colleague before Annual Leave)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "hand over pending tasks",
+              "meaning": "bàn giao các đầu việc đang xử lý dở cho đồng nghiệp"
+            },
+            {
+              "word": "annual leave",
+              "meaning": "kỳ nghỉ phép năm hưởng lương theo chế độ"
+            },
+            {
+              "word": "team-building activities",
+              "meaning": "các hoạt động teambuilding gắn kết tinh thần đồng đội"
+            },
+            {
+              "word": "outdoor camping trip",
+              "meaning": "chuyến đi cắm trại dã ngoại ngoài trời giữa thiên nhiên"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-ht-1",
+              "badge": "📋 Bàn giao",
+              "text": "List all urgent client files, contact phone numbers, and next steps clearly in a spreadsheet before going on leave.",
+              "viText": "Liệt kê rõ các hồ sơ khách hàng gấp, số điện thoại liên hệ và các bước xử lý tiếp theo vào bảng biểu trước khi nghỉ phép."
+            },
+            {
+              "id": "work-ht-2",
+              "badge": "🏕️ Teambuilding",
+              "text": "An outdoor camping trip with campfire BBQ and teamwork games is the most enjoyable way to bond office coworkers.",
+              "viText": "Một chuyến cắm trại ngoài trời có tiệc nướng BBQ bên lửa trại và trò chơi đồng đội là cách vui nhất để gắn kết đồng nghiệp."
+            },
+            {
+              "id": "work-ht-3",
+              "badge": "❤️ Hỗ trợ",
+              "text": "Promise to cover your colleague's duties warmly when they take their own holiday next time.",
+              "viText": "Nhiệt tình hứa sẽ hỗ trợ gánh vác lại phần việc của đồng nghiệp khi bạn ấy đến đợt nghỉ phép lần sau."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "For corporate team-building, organizing an overnight outdoor camping trip is the most rewarding choice.",
+            "answerVi": "Đối với hoạt động teambuilding công ty, tổ chức một chuyến cắm trại dã ngoại qua đêm là lựa chọn tuyệt vời nhất.",
+            "reason": "Leaving stuffy air-conditioned offices to pitch tents and grill food together breaks down all hierarchy barriers.",
+            "reasonVi": "Rời khỏi những phòng họp máy lạnh ngột ngạt để cùng nhau dựng lều và nướng thịt sẽ xóa nhòa mọi rào cản cấp bậc.",
+            "example": "For example, after our department camped by Tri An lake for a weekend, our team cooperated much faster and with zero friction.",
+            "exampleVi": "Ví dụ, sau chuyến cắm trại của phòng tôi tại hồ Trị An vào cuối tuần, cả nhóm đã phối hợp làm việc nhanh hơn hẳn và không còn xích mích."
+          }
+        },
+        {
+          "id": "work-gifts-for-colleagues",
+          "title": "Quà tặng đồng nghiệp: Chia tay & Nghỉ hưu (Colleague Retirement & Farewell Gifts)",
+          "viTitle": "Tặng bút khắc tên, album ảnh kỷ niệm, quà lưu niệm thể hiện sự tri ân",
+          "badge": "Đề 15",
+          "examTags": [
+            "Speaking P2 (VLU 09 - Choosing a Retirement Gift for a Colleague or Teacher: Watch vs Pen vs Commemorative Book)",
+            "Speaking P2 (VLU 10 - Choosing a Farewell Gift for a Colleague: Photo album vs Fountain pen vs Watch)",
+            "Writing T1 (VLU 10 - Sharing Current Job Experience with a Colleague)"
+          ],
+          "color": "#ca8a04",
+          "keywords": [
+            {
+              "word": "retirement gift",
+              "meaning": "quà tặng mừng ngày nghỉ hưu cho đồng nghiệp kỳ cựu hoặc thầy cô"
+            },
+            {
+              "word": "farewell gift",
+              "meaning": "quà chia tay đồng nghiệp chuyển công tác hoặc nghỉ việc"
+            },
+            {
+              "word": "engraved fountain pen",
+              "meaning": "cây bút mực cao cấp khắc tên mang ý nghĩa may mắn, tri ân"
+            },
+            {
+              "word": "memory photo album",
+              "meaning": "cuốn album lưu giữ những bức ảnh kỷ niệm vui buồn cùng tập thể"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-gc-1",
+              "badge": "🖊️ Bút khắc tên",
+              "text": "An elegant engraved pen is practical, sophisticated, and wishes the departing colleague success in their next journey.",
+              "viText": "Một cây bút mực khắc tên thanh lịch vừa thiết thực, tinh tế lại mang lời chúc đồng nghiệp gặt hái thành công ở chặng đường mới."
+            },
+            {
+              "id": "work-gc-2",
+              "badge": "📸 Album ảnh",
+              "text": "A photo book filled with candid workplace pictures and handwritten wishes from team members has deep emotional value.",
+              "viText": "Cuốn album chứa những bức ảnh làm việc đời thường và lời chúc viết tay của cả nhóm mang giá trị tinh thần vô giá."
+            },
+            {
+              "id": "work-gc-3",
+              "badge": "⌚ Đồng hồ",
+              "text": "While a classic watch is a generous gift, choosing the exact design and strap size to suit their taste can be tricky.",
+              "viText": "Dù đồng hồ là món quà sang trọng, việc chọn đúng mẫu mã và kích cỡ dây đeo hợp sở thích của họ lại khá khó khăn."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "When choosing a farewell gift for a close colleague, an engraved fountain pen is the most appropriate present.",
+            "answerVi": "Khi chọn quà chia tay cho một đồng nghiệp thân thiết, một cây bút máy khắc tên là món quà phù hợp và ý nghĩa nhất.",
+            "reason": "It is compact, looks very professional, and serves as a lasting token of appreciation whenever they sign documents.",
+            "reasonVi": "Nó nhỏ gọn, trông rất lịch lãm và là vật kỷ niệm bền lâu nhắc nhớ về tình cảm đồng nghiệp mỗi khi họ ký văn bản.",
+            "example": "For instance, when our project leader moved to a new company, we presented him a silver engraved pen, and he was deeply touched.",
+            "exampleVi": "Ví dụ, khi trưởng nhóm của chúng tôi chuyển sang công ty mới, chúng tôi đã tặng anh một cây bút bạc khắc tên, và anh ấy đã rất xúc động."
+          }
+        }
+      ]
+    }
+  ]
+}

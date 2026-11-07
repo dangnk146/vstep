@@ -1,0 +1,738 @@
+{
+  "id": "education",
+  "title": "Education & Skills",
+  "vietnameseTitle": "Giáo dục, Học tập & Kỹ năng",
+  "description": "Tổng hợp toàn diện 70+ đề thi thật Speaking (Part 1, 2, 3) và Writing (Task 1, 2) qua các đợt thi VLU, UEH, HCMUE, DTHU, UFM, LHU, BAV, AJC từ tháng 09/2026 đến 11/2026.",
+  "icon": "GraduationCap",
+  "centerNode": {
+    "title": "Education & Skills",
+    "subtitle": "Giáo dục, Học tập & Kỹ năng",
+    "categoryBadge": "Topic Hub 1 (15 Nhóm Đề Cụ Thể)"
+  },
+  "leftBranches": [
+    {
+      "id": "edu-group-reading-books",
+      "title": "Sách, E-book & Thư viện",
+      "viTitle": "Đọc sách giấy, sách điện tử, đọc cho trẻ em, thư viện & tiệm sách",
+      "badge": "Nhóm 1",
+      "tags": ["Speaking P1-P2-P3", "Writing T1-T2"],
+      "color": "#f97316",
+      "children": [
+        {
+          "id": "edu-reading-books",
+          "title": "Lợi ích của việc đọc sách (Benefits of Reading Books)",
+          "viTitle": "Mở rộng kiến thức, tăng vốn từ, thư giãn đầu óc & cải thiện sự tập trung",
+          "badge": "Đề 1",
+          "examTags": [
+            "Speaking P1 (VLU 09, 10, 11; HCMUE 10)",
+            "Speaking P3 (DTHU 10, AJC 11, VLU 11)",
+            "Writing T2 (VLU 09 - Thói quen đọc sách suy giảm)"
+          ],
+          "color": "#f97316",
+          "keywords": [
+            { "word": "broaden knowledge", "meaning": "mở rộng hiểu biết và kiến thức" },
+            { "word": "improve vocabulary", "meaning": "học thêm nhiều từ vựng mới" },
+            { "word": "relax my mind", "meaning": "thư giãn đầu óc sau giờ học căng thẳng" },
+            { "word": "reading habit", "meaning": "thói quen đọc sách mỗi ngày" },
+            { "word": "paper book", "meaning": "sách in giấy truyền thống" }
+          ],
+          "items": [
+            {
+              "id": "edu-rb-1",
+              "badge": "💡 Lợi ích 1",
+              "text": "Reading books helps broaden your knowledge about different cultures, science, and history.",
+              "viText": "Đọc sách giúp mở rộng kiến thức về văn hóa, khoa học và lịch sử."
+            },
+            {
+              "id": "edu-rb-2",
+              "badge": "💡 Lợi ích 2",
+              "text": "It helps improve your vocabulary and writing skills naturally without feeling bored.",
+              "viText": "Đọc sách giúp tăng vốn từ vựng và kỹ năng viết một cách tự nhiên, không bị chán."
+            },
+            {
+              "id": "edu-rb-3",
+              "badge": "💡 Lợi ích 3",
+              "text": "Sitting quietly with a good book is a great way to relax your mind and reduce stress before sleep.",
+              "viText": "Ngồi yên đọc một cuốn sách hay là cách tuyệt vời để thư giãn đầu óc và giảm stress trước khi ngủ."
+            },
+            {
+              "id": "edu-rb-4",
+              "badge": "⚠️ Vấn đề",
+              "text": "Many young people read fewer books today because they spend too much time on TikTok and Facebook.",
+              "viText": "Nhiều người trẻ ngày nay ít đọc sách hơn vì dành quá nhiều thời gian lướt TikTok và Facebook."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "In my opinion, reading books is one of the best habits for everyone.",
+            "answerVi": "Theo tôi, đọc sách là một trong những thói quen tốt nhất cho tất cả mọi người.",
+            "reason": "This is because it helps broaden our knowledge, learn new words easily, and relax our mind after long working hours.",
+            "reasonVi": "Bởi vì nó giúp mở rộng kiến thức, học thêm từ mới dễ dàng và giúp thư giãn đầu óc sau nhiều giờ làm việc.",
+            "example": "For example, I always spend 20 minutes reading self-help books before going to bed, and it helps me sleep much better.",
+            "exampleVi": "Ví dụ, tôi luôn dành 20 phút đọc sách phát triển bản thân trước khi ngủ, và điều đó giúp tôi ngủ ngon hơn nhiều."
+          }
+        },
+        {
+          "id": "edu-ebooks-blogs",
+          "title": "Sách điện tử & Đọc blog trên mạng (E-books & Reading Online Blogs)",
+          "viTitle": "Tiện lợi, nhẹ nhàng, tiết kiệm tiền mua sách nhưng dễ mỏi mắt",
+          "badge": "Đề 2",
+          "examTags": [
+            "Speaking P1 (VLU 10, 11 - Reading Blogs)",
+            "Speaking P3 (VLU 09, 11 - Benefits of E-books)"
+          ],
+          "color": "#f97316",
+          "keywords": [
+            { "word": "e-book / digital book", "meaning": "sách điện tử đọc trên điện thoại/máy tính bảng" },
+            { "word": "read blogs online", "meaning": "đọc bài viết chia sẻ kinh nghiệm trên blog mạng" },
+            { "word": "convenient to carry", "meaning": "tiện mang theo đi mọi nơi trong máy" },
+            { "word": "save money and space", "meaning": "tiết kiệm tiền mua và đỡ tốn diện tích kệ sách" },
+            { "word": "eye strain", "meaning": "mỏi mắt, nhức mắt do nhìn màn hình lâu" }
+          ],
+          "items": [
+            {
+              "id": "edu-eb-1",
+              "badge": "✅ Điểm mạnh",
+              "text": "E-books are very convenient because you can store hundreds of books inside a smartphone or Kindle.",
+              "viText": "Sách điện tử rất tiện lợi vì bạn có thể chứa hàng trăm cuốn sách trong một chiếc điện thoại."
+            },
+            {
+              "id": "edu-eb-2",
+              "badge": "✅ Điểm mạnh",
+              "text": "They are usually much cheaper than printed books, and many online blogs are completely free to read.",
+              "viText": "Giá sách điện tử thường rẻ hơn sách giấy in, và nhiều blog trên mạng thì hoàn toàn miễn phí."
+            },
+            {
+              "id": "edu-eb-3",
+              "badge": "❌ Điểm yếu",
+              "text": "Staring at phone screens for a long time causes eye strain, headache, and phone notifications distract your focus.",
+              "viText": "Nhìn màn hình điện thoại lâu gây mỏi mắt, đau đầu, và các thông báo tin nhắn làm mất tập trung."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "I prefer reading e-books and online blogs when I travel or take the bus.",
+            "answerVi": "Tôi thích đọc sách điện tử và blog online khi đi du lịch hoặc ngồi trên xe buýt.",
+            "reason": "Because they are super light to carry and I can search for any information instantly on the Internet.",
+            "reasonVi": "Bởi vì chúng siêu nhẹ khi mang theo và tôi có thể tìm kiếm bất kỳ thông tin nào ngay lập tức trên mạng.",
+            "example": "For instance, I read travel blogs on my phone during weekend trips to find cheap local food places.",
+            "exampleVi": "Ví dụ, tôi đọc các blog du lịch trên điện thoại trong các chuyến đi cuối tuần để tìm quán ăn ngon bổ rẻ."
+          }
+        },
+        {
+          "id": "edu-reading-to-children",
+          "title": "Đọc sách cho trẻ em & Dạy thói quen đọc (Reading to Children)",
+          "viTitle": "Kích thích trí tưởng tượng, gắn kết cha mẹ - con cái, giảm xem TV",
+          "badge": "Đề 3",
+          "examTags": [
+            "Speaking P1 (VLU 11 - Books & Reading to Children)",
+            "Writing T2 (VLU 09 - Khuyến khích đọc sách cho trẻ)"
+          ],
+          "color": "#f97316",
+          "keywords": [
+            { "word": "bedtime story", "meaning": "chuyện kể trước khi ngủ cho trẻ nhỏ" },
+            { "word": "spark imagination", "meaning": "kích thích trí tưởng tượng phong phú" },
+            { "word": "parent-child bond", "meaning": "tình cảm gắn kết giữa cha mẹ và con cái" },
+            { "word": "screen addiction", "meaning": "nghiện màn hình điện thoại, TV, iPad" }
+          ],
+          "items": [
+            {
+              "id": "edu-rc-1",
+              "badge": "👨‍👩‍👧 Lợi ích",
+              "text": "Reading stories before bedtime helps children sleep peacefully and feel loved by their parents.",
+              "viText": "Đọc truyện trước giờ ngủ giúp trẻ em ngủ ngon và cảm nhận được tình yêu thương của cha mẹ."
+            },
+            {
+              "id": "edu-rc-2",
+              "badge": "🧠 Phát triển",
+              "text": "Picture books spark children's imagination and help them speak earlier with good vocabulary.",
+              "viText": "Sách tranh giúp kích thích trí tưởng tượng của trẻ và giúp các bé biết nói sớm hơn với vốn từ tốt."
+            },
+            {
+              "id": "edu-rc-3",
+              "badge": "🛡️ Bảo vệ",
+              "text": "It keeps kids away from violent cartoons and prevents screen addiction on iPads.",
+              "viText": "Thói quen này giúp trẻ tránh xa phim hoạt hình bạo lực và phòng ngừa nghiện màn hình iPad."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Parents should definitely spend time reading books to their young children every day.",
+            "answerVi": "Cha mẹ chắc chắn nên dành thời gian đọc sách cho con nhỏ mỗi ngày.",
+            "reason": "This habit not only sparks their imagination but also strengthens the emotional bond between parents and kids.",
+            "reasonVi": "Thói quen này không chỉ khơi gợi trí tưởng tượng mà còn thắt chặt tình cảm giữa cha mẹ và con cái.",
+            "example": "For example, my sister reads comic fairy tales to her son every evening, so he barely asks for her smartphone.",
+            "exampleVi": "Ví dụ, chị gái tôi đọc truyện cổ tích cho con trai mỗi tối, nên bé gần như chẳng đòi điện thoại nữa."
+          }
+        },
+        {
+          "id": "edu-libraries",
+          "title": "Vai trò của Thư viện truyền thống (Traditional & Public Libraries)",
+          "viTitle": "Không gian yên tĩnh để học tập, tài liệu miễn phí, nơi gặp gỡ học nhóm",
+          "badge": "Đề 4",
+          "examTags": [
+            "Speaking P3 (VLU 09, 10 - The Importance of Traditional & Public Libraries)"
+          ],
+          "color": "#f97316",
+          "keywords": [
+            { "word": "quiet atmosphere", "meaning": "không gian yên tĩnh, không bị làm phiền" },
+            { "word": "borrow books for free", "meaning": "mượn sách miễn phí không tốn tiền" },
+            { "word": "study space", "meaning": "chỗ ngồi học bài và làm bài tập lý tưởng" },
+            { "word": "group discussion rooms", "meaning": "phòng thảo luận dành riêng cho nhóm học" }
+          ],
+          "items": [
+            {
+              "id": "edu-lib-1",
+              "badge": "🤫 Không gian",
+              "text": "Libraries provide a quiet and cool study space where students can concentrate 100% without home distractions.",
+              "viText": "Thư viện mang đến không gian học tập yên tĩnh, mát mẻ giúp học sinh tập trung 100% không bị gia đình làm phiền."
+            },
+            {
+              "id": "edu-lib-2",
+              "badge": "📚 Tài liệu",
+              "text": "People can borrow expensive academic books and research papers for free, which helps poor students save money.",
+              "viText": "Mọi người có thể mượn sách chuyên ngành đắt tiền hoàn toàn miễn phí, giúp sinh viên nghèo tiết kiệm."
+            },
+            {
+              "id": "edu-lib-3",
+              "badge": "👥 Cộng đồng",
+              "text": "Modern libraries also host free book clubs, workshops, and computer rooms for community members.",
+              "viText": "Thư viện hiện đại còn tổ chức câu lạc bộ sách, hội thảo và phòng máy tính miễn phí cho cộng đồng."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Public libraries are still extremely important in our modern society.",
+            "answerVi": "Thư viện công cộng vẫn giữ vai trò cực kỳ quan trọng trong xã hội hiện đại ngày nay.",
+            "reason": "They offer a quiet learning space with air conditioning and thousands of free reference books for students.",
+            "reasonVi": "Thư viện đem lại không gian học tập yên tĩnh có máy lạnh và hàng nghìn đầu sách tham khảo miễn phí cho sinh viên.",
+            "example": "For instance, during final exam weeks, my friends and I always go to our university library to study together until evening.",
+            "exampleVi": "Ví dụ, vào các tuần thi cuối kỳ, tôi và bạn bè luôn lên thư viện trường để cùng ôn bài đến tận tối."
+          }
+        },
+        {
+          "id": "edu-bookstore-mgmt",
+          "title": "Quản lý & Quảng bá Nhà sách (Bookstore Management & Promotion)",
+          "viTitle": "Sắp xếp sách theo thể loại, tổ chức giảm giá, quảng cáo mạng xã hội & góc đọc cà phê",
+          "badge": "Đề 5",
+          "examTags": [
+            "Writing T1 (VLU 09, 10, 11 - Advising John on bookstore management & promotion, customer feedback)"
+          ],
+          "color": "#f97316",
+          "keywords": [
+            { "word": "organize bookshelves", "meaning": "sắp xếp kệ sách gọn gàng theo thể loại" },
+            { "word": "genre / category", "meaning": "thể loại (tiểu thuyết, kinh tế, thiếu nhi, ngoại ngữ)" },
+            { "word": "run discounts / promotions", "meaning": "chạy chương trình giảm giá, khuyến mãi" },
+            { "word": "book cafe corner", "meaning": "góc cà phê đọc sách để giữ chân khách hàng" },
+            { "word": "social media fanpage", "meaning": "trang fanpage Facebook/TikTok để quảng bá" }
+          ],
+          "items": [
+            {
+              "id": "edu-bm-1",
+              "badge": "📦 Quản lý",
+              "text": "Arrange books clearly into separate categories like comic books, foreign language, and business so customers can find them fast.",
+              "viText": "Sắp xếp sách rõ ràng theo từng khu như truyện tranh, ngoại ngữ, kinh tế để khách tìm thấy nhanh."
+            },
+            {
+              "id": "edu-bm-2",
+              "badge": "📢 Quảng cáo",
+              "text": "Create short TikTok videos reviewing best-selling novels and offer a 10% discount for students on weekends.",
+              "viText": "Tạo các video ngắn trên TikTok review sách bán chạy và giảm giá 10% cho sinh viên vào cuối tuần."
+            },
+            {
+              "id": "edu-bm-3",
+              "badge": "☕ Dịch vụ",
+              "text": "Set up a small cafe corner with comfortable seats so customers can sit down, drink tea, and read quietly.",
+              "viText": "Bố trí một góc cà phê nhỏ có ghế ngồi êm ái để khách hàng có thể ngồi uống trà và đọc sách yên tĩnh."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "To run a successful bookstore today, owners must focus on neat organization and creative marketing.",
+            "answerVi": "Để vận hành một tiệm sách thành công hiện nay, chủ tiệm cần chú trọng vào sắp xếp gọn gàng và quảng bá sáng tạo.",
+            "reason": "This makes customers feel comfortable finding books and attracts young people through social media deals.",
+            "reasonVi": "Điều này giúp khách hàng cảm thấy dễ chịu khi tìm sách và thu hút giới trẻ nhờ các ưu đãi trên mạng xã hội.",
+            "example": "For example, my local bookstore became very popular after opening a cozy coffee corner and giving 15% discount vouchers on Facebook.",
+            "exampleVi": "Ví dụ, tiệm sách gần nhà tôi rất đông khách sau khi mở góc cà phê ấm cúng và tặng voucher giảm giá 15% trên Facebook."
+          }
+        }
+      ]
+    },
+    {
+      "id": "edu-group-language-technology",
+      "title": "Ngoại ngữ, Công nghệ & Thiết bị học tập",
+      "viTitle": "Học tiếng Anh, ứng dụng AI, cấm điện thoại & mầm non sớm",
+      "badge": "Nhóm 2",
+      "tags": ["Speaking P1-P2-P3", "Writing T1-T2"],
+      "color": "#3b82f6",
+      "children": [
+        {
+          "id": "edu-learning-english",
+          "title": "Học tiếng Anh & Ngoại ngữ (Learning English & Foreign Languages)",
+          "viTitle": "Cơ hội việc làm tốt hơn, tự tin khi đi du lịch nước ngoài & chọn cách luyện nói",
+          "badge": "Đề 6",
+          "examTags": [
+            "Speaking P1 (VLU 09, 10, 11 - Learning English)",
+            "Speaking P2 (HCMUE 10 - Best Job to Improve English)",
+            "Speaking P3 (VLU 09 - Benefits of Learning a Foreign Language)",
+            "Writing T1 (VLU 09 - English Communication Course)",
+            "Writing T2 (VLU 09, 11 - Benefits & Challenges of Learning a New Language)"
+          ],
+          "color": "#3b82f6",
+          "keywords": [
+            { "word": "better job opportunities", "meaning": "cơ hội việc làm lương cao, công ty quốc tế" },
+            { "word": "confident communication", "meaning": "tự tin giao tiếp với người nước ngoài" },
+            { "word": "travel abroad easily", "meaning": "đi du lịch nước ngoài dễ dàng, không sợ lạc" },
+            { "word": "grammar & pronunciation", "meaning": "ngữ pháp và phát âm chuẩn" },
+            { "word": "practice speaking daily", "meaning": "luyện nói mỗi ngày với bạn bè hoặc câu lạc bộ" }
+          ],
+          "items": [
+            {
+              "id": "edu-le-1",
+              "badge": "💼 Việc làm",
+              "text": "English fluency helps you apply for high-paying jobs in foreign companies and pass graduation standards.",
+              "viText": "Thành thạo tiếng Anh giúp bạn ứng tuyển vào các công ty nước ngoài lương cao và đạt chuẩn đầu ra đại học."
+            },
+            {
+              "id": "edu-le-2",
+              "badge": "✈️ Du lịch",
+              "text": "You can order food, book hotel rooms, and ask for directions easily when traveling anywhere in the world.",
+              "viText": "Bạn có thể gọi món, đặt phòng khách sạn và hỏi đường dễ dàng khi đi du lịch bất cứ đâu trên thế giới."
+            },
+            {
+              "id": "edu-le-3",
+              "badge": "🗣️ Khó khăn",
+              "text": "Vietnamese learners often struggle with pronunciation and lack confidence to speak in public.",
+              "viText": "Người học Việt Nam hay gặp khó khăn với phần phát âm và thiếu tự tin khi nói trước đám đông."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Learning English is truly essential for young people today.",
+            "answerVi": "Học tiếng Anh thực sự rất cần thiết đối với người trẻ ngày nay.",
+            "reason": "It opens up great job opportunities in international companies and helps us travel abroad without language barriers.",
+            "reasonVi": "Nó mở ra cơ hội việc làm tuyệt vời trong các công ty quốc tế và giúp chúng ta đi du lịch nước ngoài không rào cản.",
+            "example": "For instance, thanks to my B2 English certificate, I was able to get a well-paid part-time job as a tourist guide in Hanoi.",
+            "exampleVi": "Ví dụ, nhờ có bằng tiếng Anh B2, tôi đã kiếm được công việc làm thêm hướng dẫn viên du lịch lương rất khá ở Hà Nội."
+          }
+        },
+        {
+          "id": "edu-ai-computers",
+          "title": "Trí tuệ nhân tạo (AI) & Máy tính trong học tập (AI & Computers in Education)",
+          "viTitle": "Học 24/7 với gia sư AI, giải bài tập nhanh nhưng học sinh dễ lười suy nghĩ",
+          "badge": "Đề 7",
+          "examTags": [
+            "Speaking P1 (VLU 10 - Artificial Intelligence)",
+            "Speaking P3 (VLU 09, 10 - AI in Education)",
+            "Writing T2 (VLU 09, LHU 10 - Computers & AI in Language Learning)"
+          ],
+          "color": "#3b82f6",
+          "keywords": [
+            { "word": "personal AI tutor", "meaning": "gia sư AI cá nhân giải đáp thắc mắc 24/7" },
+            { "word": "grammar check apps", "meaning": "ứng dụng kiểm tra và sửa lỗi ngữ pháp tự động" },
+            { "word": "lazy thinking", "meaning": "lười tư duy, ỷ lại vào máy tính làm hộ bài" },
+            { "word": "academic cheating", "meaning": "sao chép văn mẫu từ ChatGPT để nộp cho thầy cô" }
+          ],
+          "items": [
+            {
+              "id": "edu-ai-1",
+              "badge": "⚡ Tiện ích",
+              "text": "AI tools like ChatGPT explain difficult math formulas and check English essay mistakes within seconds.",
+              "viText": "Các công cụ AI như ChatGPT giải thích công thức toán khó và sửa lỗi bài luận tiếng Anh chỉ trong vài giây."
+            },
+            {
+              "id": "edu-ai-2",
+              "badge": "🎯 Cá nhân",
+              "text": "Language learning apps adapt lessons to your own speed and schedule, allowing you to practice anytime.",
+              "viText": "Các app học tiếng điều chỉnh bài theo tốc độ riêng của bạn, giúp bạn luyện tập bất cứ lúc nào rảnh."
+            },
+            {
+              "id": "edu-ai-3",
+              "badge": "⚠️ Mặt trái",
+              "text": "If students rely too much on AI to write homework, they will lose critical thinking and fail in written exams.",
+              "viText": "Nếu học sinh quá phụ thuộc vào AI để làm bài tập, các em sẽ mất khả năng tư duy và trượt bài thi viết."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "AI technology brings huge benefits to education, but students should use it wisely.",
+            "answerVi": "Công nghệ AI đem lại lợi ích to lớn cho giáo dục, nhưng người học cần sử dụng nó một cách thông minh.",
+            "reason": "Because AI can correct your grammar errors immediately, but copying its answers will make students lazy to think.",
+            "reasonVi": "Bởi vì AI có thể sửa lỗi ngữ pháp ngay lập tức, nhưng việc sao chép câu trả lời sẽ làm học sinh lười suy nghĩ.",
+            "example": "For example, I use AI to check my writing essays and practice speaking, but I always write the original ideas myself.",
+            "exampleVi": "Ví dụ, tôi dùng AI để kiểm tra lỗi bài viết và luyện nói, nhưng tôi luôn tự mình viết ra các ý tưởng gốc."
+          }
+        },
+        {
+          "id": "edu-phones-at-school",
+          "title": "Cho phép hay Cấm điện thoại trong trường (Mobile Phones at School)",
+          "viTitle": "Tra cứu tài liệu nhanh vs Xao nhãng trong giờ học, gian lận thi cử",
+          "badge": "Đề 8",
+          "examTags": [
+            "Speaking P1 (HCMUE 10 - Mobile Phones & Students)",
+            "Speaking P3 (VLU 09, 11 - Allowing vs Banning Mobile Phones at School)",
+            "Writing T2 (VLU 10 - Should Students Bring Phones to School)"
+          ],
+          "color": "#3b82f6",
+          "keywords": [
+            { "word": "look up dictionary", "meaning": "tra cứu từ điển và tài liệu trên lớp" },
+            { "word": "distract from lessons", "meaning": "làm xao nhãng bài giảng của giáo viên" },
+            { "word": "play games secretly", "meaning": "chơi game, lướt mạng lén lút dưới ngăn bàn" },
+            { "word": "contact parents", "meaning": "liên lạc khẩn cấp với gia đình khi có sự cố" }
+          ],
+          "items": [
+            {
+              "id": "edu-ph-1",
+              "badge": "✅ Điểm tốt",
+              "text": "Smartphones allow students to look up online dictionaries and download lecture slides directly in class.",
+              "viText": "Điện thoại thông minh giúp học sinh tra từ điển mạng và tải slide bài giảng trực tiếp ngay trên lớp."
+            },
+            {
+              "id": "edu-ph-2",
+              "badge": "❌ Điểm hại",
+              "text": "Many students play video games or text friends secretly under their desks instead of listening to teachers.",
+              "viText": "Nhiều học sinh chơi game hoặc nhắn tin lén lút dưới gầm bàn thay vì tập trung nghe thầy cô giảng."
+            },
+            {
+              "id": "edu-ph-3",
+              "badge": "🔧 Giải pháp",
+              "text": "Schools should allow phones for learning activities only and require students to keep them silent in backpacks.",
+              "viText": "Trường học chỉ nên cho phép dùng điện thoại trong giờ học khi có yêu cầu và bắt buộc để chế độ im lặng."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "In my opinion, schools should not completely ban phones, but manage their usage strictly.",
+            "answerVi": "Theo tôi, nhà trường không nên cấm hoàn toàn điện thoại, mà nên quản lý việc sử dụng thật nghiêm ngặt.",
+            "reason": "While phones help students search for study materials quickly, playing games during lessons damages their focus.",
+            "reasonVi": "Dù điện thoại giúp tra cứu tài liệu nhanh, nhưng việc chơi game trong giờ học sẽ phá hỏng sự tập trung.",
+            "example": "For instance, in my high school, teachers collected all phones in a basket at the beginning of each class and returned them at break time.",
+            "exampleVi": "Ví dụ, ở trường cấp 3 của tôi, thầy cô gom hết điện thoại vào một giỏ đầu giờ học và trả lại vào giờ ra chơi."
+          }
+        },
+        {
+          "id": "edu-preschool-early",
+          "title": "Cho trẻ đi học mầm non sớm (Sending Children to Preschool Early)",
+          "viTitle": "Trẻ học cách tự lập, tự xúc ăn, kết bạn vs Cha mẹ bớt áp lực chăm con để đi làm",
+          "badge": "Đề 9",
+          "examTags": [
+            "Speaking P3 (VLU 11 - Sending Young Children to Preschool Early & Best Age)"
+          ],
+          "color": "#3b82f6",
+          "keywords": [
+            { "word": "preschool / kindergarten", "meaning": "trường mầm non / mẫu giáo" },
+            { "word": "social skills", "meaning": "kỹ năng giao tiếp và chơi hòa đồng với bạn bè" },
+            { "word": "become more independent", "meaning": "tự lập hơn (tự xúc ăn, tự dọn đồ chơi)" },
+            { "word": "working parents", "meaning": "cha mẹ bận rộn đi làm cả ngày" },
+            { "word": "catch flu easily", "meaning": "dễ lây cúm, ốm vặt khi tiếp xúc nhiều bạn" }
+          ],
+          "items": [
+            {
+              "id": "edu-ps-1",
+              "badge": "👶 Lợi cho bé",
+              "text": "Going to preschool early helps toddlers learn how to share toys, talk with peers, and eat on their own.",
+              "viText": "Đi học mầm non sớm giúp các bé biết chia sẻ đồ chơi, giao tiếp với bạn cùng lứa và tự xúc ăn."
+            },
+            {
+              "id": "edu-ps-2",
+              "badge": "💼 Lợi cho cha mẹ",
+              "text": "Working parents have peace of mind to focus on their office jobs without worrying about babysitting.",
+              "viText": "Cha mẹ đi làm có thể yên tâm tập trung công việc mà không phải lo tìm người trông con."
+            },
+            {
+              "id": "edu-ps-3",
+              "badge": "👶 Tuổi phù hợp",
+              "text": "Around 2 to 3 years old is the ideal age because children can already speak simple words and walk stably.",
+              "viText": "Khoảng 2 đến 3 tuổi là độ tuổi lý tưởng vì các bé đã biết nói câu đơn giản và đi đứng vững vàng."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "I believe sending young children to preschool at around two or three years old is very beneficial.",
+            "answerVi": "Tôi tin rằng cho trẻ nhỏ đi học mầm non lúc khoảng 2 hoặc 3 tuổi đem lại rất nhiều lợi ích.",
+            "reason": "This helps kids develop social skills and independence, while parents have time to return to work.",
+            "reasonVi": "Điều này giúp trẻ phát triển kỹ năng xã hội và tính tự lập, trong khi cha mẹ có thời gian quay lại làm việc.",
+            "example": "For example, my niece used to be very shy at home, but after three months at kindergarten, she can sing, eat by herself, and has many friends.",
+            "exampleVi": "Ví dụ, cháu gái tôi trước đây rất nhút nhát ở nhà, nhưng sau 3 tháng đi mẫu giáo, bé đã biết hát, tự xúc ăn và có rất nhiều bạn."
+          }
+        }
+      ]
+    }
+  ],
+  "rightBranches": [
+    {
+      "id": "edu-group-university-skills",
+      "title": "Đại học, Kỹ năng & Kỷ luật học đường",
+      "viTitle": "Chọn trường ĐH, du học, gap year, CLB ngoại khóa, kỷ luật & kỹ năng mềm",
+      "badge": "Nhóm 3",
+      "tags": ["Speaking P2-P3", "Writing T1-T2"],
+      "color": "#10b981",
+      "children": [
+        {
+          "id": "edu-choosing-university",
+          "title": "Tiêu chí chọn trường Đại học (Choosing a University & School Factors)",
+          "viTitle": "Học phí vừa phải, cơ sở vật chất tốt, vị trí gần nhà & cơ hội việc làm sau tốt nghiệp",
+          "badge": "Đề 10",
+          "examTags": [
+            "Speaking P1 (VLU 10 - Types of Schools)",
+            "Speaking P2 (VLU 09 - School for 6yo child; VLU 11 - Choosing University Factor: Tuition vs Facilities vs Location)"
+          ],
+          "color": "#10b981",
+          "keywords": [
+            { "word": "affordable tuition fee", "meaning": "học phí vừa phải, hợp túi tiền gia đình" },
+            { "word": "modern campus facilities", "meaning": "cơ sở vật chất hiện đại (máy lạnh, phòng thí nghiệm, thư viện)" },
+            { "word": "convenient location", "meaning": "vị trí gần nhà hoặc tiện xe buýt đi lại" },
+            { "word": "reputation & job rate", "meaning": "danh tiếng trường và tỷ lệ sinh viên có việc làm" }
+          ],
+          "items": [
+            {
+              "id": "edu-cu-1",
+              "badge": "💰 Học phí",
+              "text": "Tuition fees must fit the family budget so students do not face heavy financial pressure during 4 years.",
+              "viText": "Học phí phải phù hợp với kinh tế gia đình để sinh viên không chịu áp lực tiền bạc nặng nề suốt 4 năm."
+            },
+            {
+              "id": "edu-cu-2",
+              "badge": "🏫 Cơ sở",
+              "text": "Modern laboratories, air-conditioned lecture rooms, and fast Wi-Fi make studying much more effective.",
+              "viText": "Phòng thực hành hiện đại, giảng đường có máy lạnh và Wi-Fi mạnh giúp việc học hiệu quả hơn nhiều."
+            },
+            {
+              "id": "edu-cu-3",
+              "badge": "📍 Vị trí",
+              "text": "A school close to home saves lots of commuting time and avoids daily traffic jams.",
+              "viText": "Trường gần nhà giúp tiết kiệm thời gian đi lại và tránh được cảnh kẹt xe mệt mỏi mỗi ngày."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Among the three factors, I think affordable tuition fees is the most decisive choice for most students.",
+            "answerVi": "Trong ba yếu tố, tôi nghĩ học phí hợp lý là tiêu chí quyết định nhất đối với phần lớn sinh viên.",
+            "reason": "Because university lasts four years, and reasonable fees ensure that students can complete their degree without dropping out.",
+            "reasonVi": "Bởi vì đại học kéo dài bốn năm, học phí vừa phải sẽ đảm bảo sinh viên có thể học hết văn bằng mà không phải bỏ dở.",
+            "example": "For instance, my friend chose a public university near his rented room because the tuition was low enough for him to pay with his part-time earnings.",
+            "exampleVi": "Ví dụ, bạn tôi đã chọn một trường công lập gần phòng trọ vì học phí đủ rẻ để bạn tự trả bằng tiền làm thêm."
+          }
+        },
+        {
+          "id": "edu-studying-abroad-gapyear",
+          "title": "Du học & Nghỉ 1 năm trước Đại học (Studying Abroad & Taking a Gap Year)",
+          "viTitle": "Trải nghiệm văn hóa mới, hoàn thiện ngoại ngữ vs Sốc văn hóa, tốn kém chi phí",
+          "badge": "Đề 11",
+          "examTags": [
+            "Speaking P3 (HCMUE 10 - Benefits of Studying Abroad)",
+            "Writing T2 (VLU 09 - Taking a Gap Year: Pros & Cons)"
+          ],
+          "color": "#10b981",
+          "keywords": [
+            { "word": "study abroad", "meaning": "đi du học ở nước ngoài" },
+            { "word": "take a gap year", "meaning": "nghỉ 1 năm sau cấp 3 để trải nghiệm/làm thêm" },
+            { "word": "international degree", "meaning": "bằng cấp quốc tế được toàn cầu công nhận" },
+            { "word": "culture shock", "meaning": "sốc văn hóa và nhớ nhà khi sống xa gia đình" },
+            { "word": "high living cost", "meaning": "chi phí sinh hoạt và học phí rất đắt đỏ" }
+          ],
+          "items": [
+            {
+              "id": "edu-sa-1",
+              "badge": "🌍 Trải nghiệm",
+              "text": "Studying abroad allows students to master English quickly and experience diverse cultures firsthand.",
+              "viText": "Du học giúp sinh viên thông thạo tiếng Anh nhanh chóng và trực tiếp trải nghiệm các nền văn hóa đa dạng."
+            },
+            {
+              "id": "edu-sa-2",
+              "badge": "🎒 Gap Year",
+              "text": "A gap year helps young people do internships, travel, and clearly understand what university major they truly like.",
+              "viText": "Nghỉ một năm giúp bạn trẻ đi thực tập, đi du lịch và hiểu rõ ngành học đại học nào mình thực sự đam mê."
+            },
+            {
+              "id": "edu-sa-3",
+              "badge": "⚠️ Rủi ro",
+              "text": "High tuition costs, homesickness, and falling behind classmates' study progress are common challenges.",
+              "viText": "Chi phí du học đắt đỏ, nỗi nhớ nhà và nguy cơ bị chậm tiến độ học so với bạn bè là các trở ngại lớn."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Studying abroad offers young people priceless life experiences and valuable career opportunities.",
+            "answerVi": "Du học mang lại cho người trẻ những trải nghiệm sống vô giá và cơ hội nghề nghiệp rộng mở.",
+            "reason": "It forces students to live independently, manage their own money, and graduate with a recognized global degree.",
+            "reasonVi": "Nó rèn luyện sinh viên phải sống tự lập, tự quản lý tiền bạc và tốt nghiệp với tấm bằng quốc tế.",
+            "example": "For example, my brother studied in Australia for three years; he became much more mature and easily found a marketing job right after returning home.",
+            "exampleVi": "Ví dụ, anh trai tôi du học ở Úc 3 năm; anh ấy trưởng thành hơn hẳn và dễ dàng tìm được việc làm marketing ngay khi về nước."
+          }
+        },
+        {
+          "id": "edu-extracurricular-clubs",
+          "title": "Hoạt động ngoại khóa & Câu lạc bộ (Extracurricular Activities & Clubs)",
+          "viTitle": "Rèn kỹ năng mềm, giải tỏa căng thẳng sau giờ học, kết bạn & sự kiện tân sinh viên",
+          "badge": "Đề 12",
+          "examTags": [
+            "Speaking P2 (VLU 10 - Choosing a Club to Join with Friends; Freshmen Welcome Event)",
+            "Speaking P3 (VLU 09, 10 - Benefits of Extracurricular Activities)"
+          ],
+          "color": "#10b981",
+          "keywords": [
+            { "word": "extracurricular activities", "meaning": "các hoạt động ngoại khóa ngoài giờ học chính" },
+            { "word": "join a university club", "meaning": "tham gia câu lạc bộ (tiếng Anh, âm nhạc, tình nguyện)" },
+            { "word": "build soft skills", "meaning": "rèn luyện kỹ năng mềm (giao tiếp, làm việc nhóm, tổ chức sự kiện)" },
+            { "word": "freshmen welcome event", "meaning": "sự kiện chào đón tân sinh viên nhập học" }
+          ],
+          "items": [
+            {
+              "id": "edu-ec-1",
+              "badge": "🤝 Kỹ năng",
+              "text": "Joining clubs teaches students how to work in teams, run events, and solve conflicts in real life.",
+              "viText": "Tham gia CLB dạy sinh viên cách làm việc nhóm, tổ chức sự kiện và giải quyết bất đồng trong thực tế."
+            },
+            {
+              "id": "edu-ec-2",
+              "badge": "🎉 Tinh thần",
+              "text": "Participating in music or sports clubs helps students relax their mind and avoid academic burnout.",
+              "viText": "Tham gia các CLB âm nhạc hay thể thao giúp giải tỏa đầu óc và tránh kiệt sức vì bài vở."
+            },
+            {
+              "id": "edu-ec-3",
+              "badge": "👫 Kết bạn",
+              "text": "It is the easiest way for new freshmen to overcome shyness and find close lifelong friends.",
+              "viText": "Đây là cách dễ nhất để các tân sinh viên vượt qua sự rụt rè và tìm thấy những người bạn thân thiết."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "I strongly believe university students should take part in extracurricular activities.",
+            "answerVi": "Tôi tin chắc rằng sinh viên đại học nên tích cực tham gia các hoạt động ngoại khóa.",
+            "reason": "Good grades on paper are not enough; companies always prefer candidates with active teamwork and communication skills.",
+            "reasonVi": "Điểm số đẹp trên giấy là chưa đủ; các công ty luôn ưu tiên tuyển ứng viên có kỹ năng làm việc nhóm và giao tiếp tốt.",
+            "example": "For instance, being the leader of my university English club helped me become confident when speaking in front of hundreds of people.",
+            "exampleVi": "Ví dụ, việc làm trưởng câu lạc bộ tiếng Anh ở trường đã giúp tôi trở nên tự tin khi thuyết trình trước hàng trăm người."
+          }
+        },
+        {
+          "id": "edu-discipline-peerpressure",
+          "title": "Học sinh hư, Áp lực bạn bè & Kỷ luật (Student Misbehavior & Discipline)",
+          "viTitle": "Nguyên nhân quậy phá, áp lực phải giống bạn bè & cách kỷ luật tích cực của nhà trường",
+          "badge": "Đề 13",
+          "examTags": [
+            "Speaking P3 (VLU 09 - Constructive Discipline; Peer Pressure; Special - Student Misbehavior)",
+            "Speaking P3 (VLU 10 - Causes & Solutions for Student Misbehavior)"
+          ],
+          "color": "#10b981",
+          "keywords": [
+            { "word": "student misbehavior", "meaning": "hành vi quậy phá, vô lễ, gây mất trật tự của học sinh" },
+            { "word": "peer pressure", "meaning": "áp lực từ bạn bè cùng lứa (bắt chước hút thuốc, đua xe để không bị cô lập)" },
+            { "word": "constructive discipline", "meaning": "kỷ luật mang tính xây dựng (lao động công ích, viết bản kiểm điểm, không đòn roi)" },
+            { "word": "lack of parental attention", "meaning": "thiếu sự quan tâm và dạy dỗ từ gia đình do cha mẹ bận rộn" }
+          ],
+          "items": [
+            {
+              "id": "edu-dp-1",
+              "badge": "🔍 Nguyên nhân",
+              "text": "Many students misbehave because their parents work all day and neglect emotional support at home.",
+              "viText": "Nhiều học sinh có hành vi quậy phá do cha mẹ đi làm cả ngày và thiếu sự quan tâm chăm sóc tinh thần ở nhà."
+            },
+            {
+              "id": "edu-dp-2",
+              "badge": "👥 Áp lực bạn",
+              "text": "Teenagers often skip classes or vape just to fit in with rebellious friends and look cool.",
+              "viText": "Thanh thiếu niên thường trốn học hoặc hút thuốc chỉ để hòa nhập với nhóm bạn nổi loạn và tỏ ra ngầu."
+            },
+            {
+              "id": "edu-dp-3",
+              "badge": "💡 Giải pháp",
+              "text": "Teachers should listen with empathy and assign community service instead of using harsh physical punishment.",
+              "viText": "Thầy cô nên lắng nghe bằng sự thấu hiểu và phạt lao động công ích thay vì dùng đòn roi hà khắc."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "To reduce student misbehavior, schools should adopt constructive discipline rather than harsh punishment.",
+            "answerVi": "Để giảm thiểu học sinh quậy phá, nhà trường nên áp dụng kỷ luật mang tính xây dựng thay vì trừng phạt nặng nề.",
+            "reason": "Because shouting or hitting only makes teenagers more rebellious, while counseling helps solve their emotional problems.",
+            "reasonVi": "Bởi vì quát mắng hay đánh đòn chỉ làm các em nổi loạn hơn, trong khi tư vấn tâm lý giúp giải quyết tận gốc vấn đề.",
+            "example": "For example, my high school required rule-breaking students to water the school garden and write apology letters, which changed their attitude positively.",
+            "exampleVi": "Ví dụ, trường cấp 3 của tôi phạt học sinh vi phạm tưới vườn hoa trường và viết thư xin lỗi, điều này đã làm các bạn thay đổi thái độ rất tích cực."
+          }
+        },
+        {
+          "id": "edu-teacher-qualities-science",
+          "title": "Phẩm chất giáo viên & Đam mê Khoa học (Effective Teachers & Inspiring Science)",
+          "viTitle": "Kiên nhẫn, truyền cảm hứng, phương pháp sinh động & khơi dậy niềm đam mê khoa học",
+          "badge": "Đề 14",
+          "examTags": [
+            "Speaking P2 (VLU 10, UFM 10, BAV 10 - Science Activity for Students; Science Book Gift)",
+            "Speaking P3 (VLU 09 - Qualities of an Effective Teacher; BAV 10 - Inspiring Young People's Science Interest)"
+          ],
+          "color": "#10b981",
+          "keywords": [
+            { "word": "patient and caring", "meaning": "kiên nhẫn và tận tình quan tâm học sinh" },
+            { "word": "inspiring teaching method", "meaning": "phương pháp giảng dạy truyền cảm hứng, sinh động" },
+            { "word": "hands-on experiments", "meaning": "thí nghiệm thực hành thực tế trong phòng lab" },
+            { "word": "curiosity for science", "meaning": "niềm tò mò và say mê khoa học, vũ trụ, tự nhiên" }
+          ],
+          "items": [
+            {
+              "id": "edu-ts-1",
+              "badge": "👨‍🏫 Phẩm chất",
+              "text": "A great teacher must be extremely patient with slow learners and explain complex concepts in simple words.",
+              "viText": "Một người thầy giỏi phải cực kỳ kiên nhẫn với học sinh chậm hiểu và giải thích kiến thức khó bằng lời lẽ đơn giản."
+            },
+            {
+              "id": "edu-ts-2",
+              "badge": "🔬 Khoa học",
+              "text": "Doing hands-on physics and chemistry experiments sparks students' natural curiosity much better than dry theory.",
+              "viText": "Làm thí nghiệm thực hành vật lý, hóa học kích thích trí tò mò của học sinh tốt hơn nhiều so với lý thuyết suông."
+            },
+            {
+              "id": "edu-ts-3",
+              "badge": "🎁 Sách khoa học",
+              "text": "Giving science comic books or taking kids to the science museum makes learning fun and memorable.",
+              "viText": "Tặng sách truyện khoa học hoặc dẫn trẻ đi bảo tàng khoa học giúp việc học trở nên vui vẻ và đáng nhớ."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "In my opinion, passion and patience are the two most crucial qualities of a truly effective teacher.",
+            "answerVi": "Theo tôi, lòng đam mê và sự kiên nhẫn là hai phẩm chất quan trọng nhất của một người giáo viên thực thụ.",
+            "reason": "When teachers love their subject, they can inspire curiosity in students through exciting experiments and real-life stories.",
+            "reasonVi": "Khi giáo viên yêu môn học của mình, họ có thể truyền cảm hứng tò mò cho học sinh qua các thí nghiệm và câu chuyện thực tế.",
+            "example": "For instance, my high school chemistry teacher always let us mix colorful chemicals in the lab, which made me fall in love with science.",
+            "exampleVi": "Ví dụ, thầy dạy Hóa cấp 3 luôn cho chúng tôi pha hóa chất đổi màu trong phòng thí nghiệm, điều đó khiến tôi yêu thích môn khoa học này."
+          }
+        },
+        {
+          "id": "edu-presentation-skills",
+          "title": "Thuyết trình, Quản lý thời gian & Năng khiếu (Presentations, Deadlines & Music)",
+          "viTitle": "Vượt qua nỗi sợ nói trước đám đông, lập kế hoạch học tập tránh trễ hạn & học nhạc cụ",
+          "badge": "Đề 15",
+          "examTags": [
+            "Writing T1 (VLU 09, 10 - Presentation Advice to a Worried Friend; Time Management for Lily; Guitar vs Piano)",
+            "Writing T2 (VLU 09 - Children Learning Musical Instruments: Pros & Cons)",
+            "Writing T2 (BAV 10 - Education is the Key to Success)"
+          ],
+          "color": "#10b981",
+          "keywords": [
+            { "word": "overcome stage fright", "meaning": "vượt qua nỗi sợ hãi, run rẩy khi đứng trên sân khấu" },
+            { "word": "practice in front of a mirror", "meaning": "luyện tập trước gương hoặc trước bạn bè thân" },
+            { "word": "time management & to-do list", "meaning": "quản lý thời gian và lập danh sách việc cần làm" },
+            { "word": "musical instrument", "meaning": "nhạc cụ (đàn piano, guitar) giúp rèn luyện tính kiên nhẫn" }
+          ],
+          "items": [
+            {
+              "id": "edu-psk-1",
+              "badge": "🎤 Thuyết trình",
+              "text": "Practice speaking with clear slides, look at friendly eyes in the audience, and breathe deeply before presenting.",
+              "viText": "Luyện nói với slide ngắn gọn, nhìn vào ánh mắt thân thiện của người nghe và hít thở sâu trước khi bắt đầu."
+            },
+            {
+              "id": "edu-psk-2",
+              "badge": "⏰ Quản lý hạn",
+              "text": "Break big research assignments into small daily tasks to avoid pulling all-nighters before the deadline.",
+              "viText": "Chia bài tập lớn thành từng việc nhỏ mỗi ngày để tránh phải thức thâu đêm sát hạn nộp."
+            },
+            {
+              "id": "edu-psk-3",
+              "badge": "🎵 Học nhạc",
+              "text": "Learning guitar or piano teaches children patience and enhances brain coordination, though it requires expensive lessons.",
+              "viText": "Học đàn guitar hay piano rèn cho trẻ tính kiên trì và phối hợp não bộ, dù học phí khá đắt."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Mastering presentation skills and time management is vital for both academic and career success.",
+            "answerVi": "Thành thạo kỹ năng thuyết trình và quản lý thời gian là chìa khóa then chốt cho thành công cả trong học tập lẫn công việc.",
+            "reason": "They help you present your thoughts clearly to clients and complete critical deadlines without stress.",
+            "reasonVi": "Các kỹ năng này giúp bạn trình bày ý tưởng rõ ràng cho khách hàng và hoàn thành đúng hạn mọi công việc không bị stress.",
+            "example": "For example, I always use a weekly to-do list app to track my university projects, which keeps me from missing any deadlines.",
+            "exampleVi": "Ví dụ, tôi luôn dùng app danh sách việc cần làm hàng tuần để theo dõi các bài tập trường, giúp tôi không bao giờ bị trễ hạn."
+          }
+        }
+      ]
+    }
+  ]
+}
+

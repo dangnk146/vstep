@@ -1,0 +1,1161 @@
+{
+  "id": "society",
+  "title": "Society, Family & Community",
+  "vietnameseTitle": "Xã hội, Gia đình, Du lịch & Môi trường",
+  "description": "Tổng hợp 80+ đề thi thật Speaking và Writing về Từ thiện (Charity), Hôn nhân & Độc thân, Gia đình & Việc nhà, Trông cháu & Người giúp việc, Tình bạn & Quà sinh nhật, Đô thị hóa, Kẹt xe & Tai nạn giao thông, Xử phạt hành vi xấu, Du lịch xuyên Tết, Môi trường & Nuôi thú cưng.",
+  "icon": "Users",
+  "centerNode": {
+    "title": "Society & Life",
+    "subtitle": "Xã hội, Gia đình, Du lịch & Môi trường",
+    "categoryBadge": "Topic Hub 5 (19 Nhóm Đề Cụ Thể)"
+  },
+  "leftBranches": [
+    {
+      "id": "soc-group-family-relationships",
+      "title": "Gia đình, Tình cảm, Hôn nhân & Tình bạn",
+      "viTitle": "Từ thiện, kiểu hôn nhân, gia đình hạt nhân, tự lập sớm, người giúp việc & tình bạn",
+      "badge": "Nhóm 1",
+      "tags": [
+        "Speaking P1-P2-P3",
+        "Writing T1-T2"
+      ],
+      "color": "#ec4899",
+      "children": [
+        {
+          "id": "soc-charity-volunteering",
+          "title": "Từ thiện & Hoạt động Tình nguyện (Charity & Volunteering)",
+          "viTitle": "Quyên góp quần áo cũ/tiền bạc, nấu cơm từ thiện, dạy học cho trẻ em nghèo & mở rộng lòng nhân ái",
+          "badge": "Đề 1",
+          "examTags": [
+            "Speaking P1 (VLU 11 - Charity & Helping Community)",
+            "Speaking P3 (VLU 09 - Benefits of Volunteering for Young People)",
+            "Writing T1 (VLU 10 - Charity Gala Preparation with a Friend)",
+            "Writing T2 (VLU 10 - Benefits of Participating in Volunteer Work)"
+          ],
+          "color": "#ec4899",
+          "keywords": [
+            {
+              "word": "charity organization",
+              "meaning": "tổ chức từ thiện giúp đỡ người nghèo, vô gia cư"
+            },
+            {
+              "word": "donate money and old clothes",
+              "meaning": "quyên góp tiền bạc, sách vở và quần áo ấm cũ"
+            },
+            {
+              "word": "help underprivileged people",
+              "meaning": "giúp đỡ những hoàn cảnh khó khăn, cơ nhỡ trong xã hội"
+            },
+            {
+              "word": "volunteer at orphanages",
+              "meaning": "đi làm tình nguyện viên tại trại trẻ mồ côi hoặc viện dưỡng lão"
+            },
+            {
+              "word": "develop empathy and gratitude",
+              "meaning": "bồi đắp lòng trắc ẩn và biết trân trọng cuộc sống của mình"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-cv-1",
+              "badge": "🤝 Từ thiện là gì",
+              "text": "Charity means giving help, warm meals, medicine, and donations to poor families, orphans, and flood victims.",
+              "viText": "Từ thiện là việc giúp đỡ, phát cơm ấm, thuốc men và ủng hộ tiền cho người nghèo, trẻ mồ côi và đồng bào vùng lũ."
+            },
+            {
+              "id": "soc-cv-2",
+              "badge": "❤️ Tinh thần",
+              "text": "Volunteering brings deep peace to your heart and makes you grateful for having food, clothes, and a warm bed.",
+              "viText": "Làm tình nguyện mang lại sự bình yên sâu sắc và giúp bạn biết ơn vì mình còn đủ cơm ăn, áo mặc và giường ấm."
+            },
+            {
+              "id": "soc-cv-3",
+              "badge": "🌟 Kỹ năng",
+              "text": "Young volunteers learn valuable real-life skills like organizing charity sales, teamwork, and public empathy.",
+              "viText": "Thanh niên tham gia tình nguyện rèn luyện được kỹ năng tổ chức hội chợ gây quỹ, làm việc nhóm và thấu cảm với mọi người."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "In my opinion, participating in charity and volunteer work is one of the most meaningful activities for youth.",
+            "answerVi": "Theo tôi, tham gia các hoạt động từ thiện và tình nguyện là một trong những việc làm ý nghĩa nhất đối với người trẻ.",
+            "reason": "It not only provides practical food and clothes to poor people, but also nurtures our empathy and life gratitude.",
+            "reasonVi": "Nó không chỉ hỗ trợ đồ ăn, áo ấm thiết thực cho người nghèo mà còn nuôi dưỡng lòng nhân ái và sự biết ơn cuộc sống.",
+            "example": "For example, last Tet holiday, my friends and I collected warm blankets and cooked 200 free meals for homeless people in Saigon.",
+            "exampleVi": "Ví dụ, dịp Tết năm ngoái, tôi cùng bạn bè đã quyên góp chăn ấm và nấu 200 suất cơm miễn phí tặng người vô gia cư tại Sài Gòn."
+          }
+        },
+        {
+          "id": "soc-marriage-types-single",
+          "title": "Hôn nhân tự nguyện vs Sắp đặt & Độc thân (Marriage Choices & Single Life)",
+          "viTitle": "Kết hôn vì tình yêu tự do tìm hiểu vs Hôn nhân cha mẹ sắp đặt & cuộc sống độc thân tự do",
+          "badge": "Đề 2",
+          "examTags": [
+            "Writing T2 (VLU 09; DTHU 10; VLU 11 - Love Marriage versus Arranged Marriage)",
+            "Writing T2 (VLU 09 - Benefits of Single Life)"
+          ],
+          "color": "#ec4899",
+          "keywords": [
+            {
+              "word": "love marriage",
+              "meaning": "hôn nhân tự nguyện bắt nguồn từ tình yêu và sự tự do tìm hiểu"
+            },
+            {
+              "word": "arranged marriage",
+              "meaning": "hôn nhân do cha mẹ sắp đặt dựa trên gia cảnh và môn đăng hộ đối"
+            },
+            {
+              "word": "freedom of single life",
+              "meaning": "sự tự do thoải mái của cuộc sống độc thân, không vướng bận"
+            },
+            {
+              "word": "mutual understanding",
+              "meaning": "sự thấu hiểu và sẻ chia cảm xúc giữa hai người yêu nhau"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-ms-1",
+              "badge": "💍 Hôn nhân tự do",
+              "text": "Love marriage allows couples to date, understand each other's flaws, and build strong mutual trust before wedding.",
+              "viText": "Hôn nhân tự do cho phép các cặp đôi hẹn hò, thấu hiểu khuyết điểm của nhau và xây dựng niềm tin trước khi cưới."
+            },
+            {
+              "id": "soc-ms-2",
+              "badge": "👨‍👩‍👦 Sắp đặt",
+              "text": "Arranged marriage often receives full financial support and stability from both traditional families, but lacks romance.",
+              "viText": "Hôn nhân sắp đặt nhận được sự ủng hộ kinh tế và ổn định từ gia đình hai bên, nhưng thường thiếu đi sự lãng mạn ban đầu."
+            },
+            {
+              "id": "soc-ms-3",
+              "badge": "✨ Độc thân",
+              "text": "Single life offers complete personal freedom to travel, focus on career growth, and spend income without marital stress.",
+              "viText": "Sống độc thân mang lại sự tự do trọn vẹn để đi du lịch, tập trung thăng tiến sự nghiệp và tiêu tiền không vướng bận gia đình."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "When it comes to marriage, I strongly believe love marriage is far superior to arranged marriage.",
+            "answerVi": "Khi nói đến hôn nhân, tôi tin chắc rằng kết hôn dựa trên tình yêu tự nguyện tốt hơn nhiều so với hôn nhân sắp đặt.",
+            "reason": "Because enduring a lifelong partnership requires deep emotional compatibility and mutual love, not just family decisions.",
+            "reasonVi": "Bởi vì để chung sống cả đời cùng nhau đòi hỏi sự hòa hợp sâu sắc về cảm xúc và tình yêu đôi lứa, chứ không thể chỉ do gia đình định đoạt.",
+            "example": "For instance, my parents dated for four years before getting married and their loving bond remains completely intact after 30 years.",
+            "exampleVi": "Ví dụ, bố mẹ tôi đã hẹn hò 4 năm trước khi làm đám cưới và tình cảm bền chặt của họ vẫn vẹn nguyên sau 30 năm chung sống."
+          }
+        },
+        {
+          "id": "soc-family-types-chores",
+          "title": "Gia đình hạt nhân vs Đa thế hệ & Việc nhà (Family Types & Household Chores)",
+          "viTitle": "Gia đình nhỏ riêng tư vs Tam đại đồng đường ấm áp & trách nhiệm chia sẻ việc nhà",
+          "badge": "Đề 3",
+          "examTags": [
+            "Speaking P1 (VLU 09; VLU 10 - Family / Family Responsibilities & Rules)",
+            "Writing T2 (VLU 09 - Sharing Household Chores; Nuclear vs Extended Families)"
+          ],
+          "color": "#ec4899",
+          "keywords": [
+            {
+              "word": "nuclear family",
+              "meaning": "gia đình hạt nhân (chỉ có bố mẹ và con cái chung sống)"
+            },
+            {
+              "word": "extended family",
+              "meaning": "gia đình đa thế hệ (tam đại đồng đường: ông bà, cha mẹ, con cháu)"
+            },
+            {
+              "word": "share household chores",
+              "meaning": "chia sẻ việc nhà (nấu cơm, rửa bát, quét dọn, giặt giũ)"
+            },
+            {
+              "word": "grandparents take care of grandchildren",
+              "meaning": "ông bà phụ giúp trông nom và dạy dỗ cháu chắt khi cha mẹ vắng nhà"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-fc-1",
+              "badge": "🏡 Gia đình nhỏ",
+              "text": "Nuclear families enjoy great privacy, less generation conflicts, and independent lifestyle choices.",
+              "viText": "Gia đình hạt nhân có không gian riêng tư thoải mái, ít va chạm thế hệ và tự do quyết định lối sống."
+            },
+            {
+              "id": "soc-fc-2",
+              "badge": "👴 Đa thế hệ",
+              "text": "Living in an extended family allows grandparents to look after grandchildren warmly and passes down traditions.",
+              "viText": "Sống trong gia đình nhiều thế hệ giúp ông bà chăm sóc cháu chu đáo và truyền lại các phong tục truyền thống."
+            },
+            {
+              "id": "soc-fc-3",
+              "badge": "🧹 Việc nhà",
+              "text": "Husbands and children sharing daily cleaning and cooking reduces wives' exhaustion and strengthens family harmony.",
+              "viText": "Chồng và con cái cùng phụ giúp dọn dẹp, nấu nướng giúp người phụ nữ đỡ kiệt sức và giữ lửa hạnh phúc gia đình."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Sharing household chores equally among all family members is essential for a peaceful and happy home.",
+            "answerVi": "Chia sẻ việc nhà công bằng giữa các thành viên là điều cốt lõi cho một mái ấm gia đình hòa thuận và hạnh phúc.",
+            "reason": "Housework should not be the sole burden of women; cooperating to wash dishes and clean floors builds strong family bonds.",
+            "reasonVi": "Việc nhà không nên là gánh nặng của riêng phụ nữ; cùng nhau rửa bát và lau nhà giúp thắt chặt tình cảm gia đình.",
+            "example": "For example, in my house, my father cooks dinner while I wash the dishes and sweep the living room, making evening chores breezy and fun.",
+            "exampleVi": "Ví dụ, ở nhà tôi, bố phụ trách nấu cơm còn tôi rửa bát và quét nhà, khiến việc nhà mỗi tối trở nên nhẹ tênh và vui vẻ."
+          }
+        },
+        {
+          "id": "soc-early-independence-gap",
+          "title": "Dạy con tự lập sớm & Khoảng cách thế hệ (Early Independence & Generation Gap)",
+          "viTitle": "Cho con làm việc nhà, tự giải quyết vấn đề vs Xung đột quan điểm giữa cha mẹ và tuổi teen",
+          "badge": "Đề 4",
+          "examTags": [
+            "Writing T2 (VLU 09; VLU 10 - Encouraging Children to Become Independent Early)",
+            "Writing T2 (VLU 09 - Generation Gap and Conflicts between Parents and Teenagers)"
+          ],
+          "color": "#ec4899",
+          "keywords": [
+            {
+              "word": "foster early independence",
+              "meaning": "nuôi dưỡng tính tự lập sớm cho con cái"
+            },
+            {
+              "word": "generation gap",
+              "meaning": "khoảng cách thế hệ giữa tư duy cha mẹ truyền thống và con cái hiện đại"
+            },
+            {
+              "word": "open conversation",
+              "meaning": "trò chuyện cởi mở, lắng nghe nhau như hai người bạn"
+            },
+            {
+              "word": "overprotective parenting",
+              "meaning": "nuông chiều, bao bọc con quá mức khiến trẻ ỷ lại"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-ig-1",
+              "badge": "🌱 Tự lập sớm",
+              "text": "Encouraging kids to make their bed, pack schoolbags, and manage pocket money builds strong self-reliance.",
+              "viText": "Dạy con tự gấp chăn, tự soạn sách vở và quản lý tiền tiêu vặt từ bé giúp hình thành bản lĩnh tự lập vững vàng."
+            },
+            {
+              "id": "soc-ig-2",
+              "badge": "⚡ Xung đột",
+              "text": "Differences in fashion tastes, music, and career choices frequently spark arguments between parents and teenagers.",
+              "viText": "Khác biệt về gu thời trang, gu âm nhạc và định hướng nghề nghiệp thường xuyên châm ngòi cho các tranh cãi giữa cha mẹ và con cái."
+            },
+            {
+              "id": "soc-ig-3",
+              "badge": "💡 Hàn gắn",
+              "text": "Parents should listen with respect instead of imposing old-fashioned views, and youth should explain ideas gently.",
+              "viText": "Cha mẹ nên lắng nghe với thái độ tôn trọng thay vì áp đặt quan niệm cũ, và con cái nên nhẹ nhàng giãi bày suy nghĩ."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Teaching children to become independent from an early age is the greatest gift parents can bestow.",
+            "answerVi": "Dạy con tự lập từ khi còn nhỏ là món quà tuyệt vời nhất mà cha mẹ có thể trao cho con mình.",
+            "reason": "Overprotected children struggle when they leave home, while self-reliant kids adapt quickly to university and work pressures.",
+            "reasonVi": "Những đứa trẻ được bao bọc quá mức sẽ rất chật vật khi rời vòng tay cha mẹ, trong khi trẻ tự lập thích nghi rất nhanh với môi trường mới.",
+            "example": "For instance, my cousin was taught how to cook simple meals and do laundry at age 12, so living on his own at university was a breeze.",
+            "exampleVi": "Ví dụ, em họ tôi được dạy nấu cơm và giặt giũ từ năm 12 tuổi, nên khi lên đại học sống trọ một mình em thích nghi rất nhẹ nhàng."
+          }
+        },
+        {
+          "id": "soc-helper-babysitting",
+          "title": "Thuê người giúp việc & Trông cháu cuối tuần (Domestic Helper & Babysitting)",
+          "viTitle": "Thuê giúp việc giảm tải cho cha mẹ đi làm vs Dắt cháu đi công viên, bảo tàng cuối tuần",
+          "badge": "Đề 5",
+          "examTags": [
+            "Speaking P2 (VLU 10 - Babysitting Nephew: Zoo vs Library vs Cooking at home)",
+            "Speaking P2 (UEH 10 - Sunday Outing with Niece or Nephew: Amusement park vs Bookstreet vs Cinema)",
+            "Speaking P3 (VLU 10 - Hiring a Domestic Helper: Pros & Cons)"
+          ],
+          "color": "#ec4899",
+          "keywords": [
+            {
+              "word": "hire a domestic helper",
+              "meaning": "thuê người giúp việc nhà theo giờ hoặc ở lại"
+            },
+            {
+              "word": "take care of cooking & cleaning",
+              "meaning": "lo toàn bộ việc nấu cơm, lau nhà và giặt giũ"
+            },
+            {
+              "word": "babysit a nephew or niece",
+              "meaning": "trông coi, chơi cùng cháu trai hoặc cháu gái"
+            },
+            {
+              "word": "visit the city zoo",
+              "meaning": "dẫn cháu đi Thảo Cầm Viên ngắm thú và hòa mình vào thiên nhiên"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-hb-1",
+              "badge": "🧹 Giúp việc",
+              "text": "A domestic helper relieves tired working parents from exhausting cleaning chores, giving them time to rest.",
+              "viText": "Người giúp việc giải phóng cha mẹ đi làm khỏi việc dọn dẹp mệt mỏi, mang lại thời gian quý báu để nghỉ ngơi."
+            },
+            {
+              "id": "soc-hb-2",
+              "badge": "⚠️ Lưu ý",
+              "text": "Parents must install security cameras and verify clear identity backgrounds before letting strangers into their private home.",
+              "viText": "Cha mẹ cần lắp camera an ninh và kiểm tra kỹ lý lịch rõ ràng trước khi giao nhà cửa cho người lạ."
+            },
+            {
+              "id": "soc-hb-3",
+              "badge": "🦁 Dắt cháu chơi",
+              "text": "Taking your young nephew to the zoo on Sunday lets him see elephants and tigers up close instead of watching TV.",
+              "viText": "Dẫn cháu trai đi sở thú vào Chủ nhật giúp bé được tận mắt ngắm voi và hổ ngoài đời thực thay vì cắm mặt vào TV."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "When babysitting my 6-year-old nephew on Sunday, taking him to the city zoo is definitely the best option.",
+            "answerVi": "Khi trông cháu trai 6 tuổi vào ngày Chủ nhật, dẫn bé đi sở thú thành phố chắc chắn là lựa chọn tuyệt vời nhất.",
+            "reason": "Kids have endless energy and seeing real animals sparks their imagination and gets them exercising outdoors.",
+            "reasonVi": "Trẻ nhỏ rất hiếu động, việc được ngắm nhìn các con thú ngoài đời sẽ kích thích trí tò mò và giúp bé được vận động ngoài trời.",
+            "example": "For example, last Sunday I took my nephew to Saigon Zoo; he was thrilled watching monkeys and giraffes, and fell asleep peacefully that night.",
+            "exampleVi": "Ví dụ, Chủ nhật tuần trước tôi đã dẫn cháu đi Thảo Cầm Viên Sài Gòn; bé rất phấn khích khi xem khỉ và hươu cao cổ, và tối về ngủ rất say."
+          }
+        },
+        {
+          "id": "soc-friendship-reunion-gifts",
+          "title": "Tình bạn, Họp lớp & Quà tặng sinh nhật (Friendship, Reunions & Birthday Gifts)",
+          "viTitle": "Họp lớp chọn quán ăn ấm cúng, chọn quà sinh nhật bạn thân (thiệp tự làm vs ảnh vs ăn tiệm)",
+          "badge": "Đề 6",
+          "examTags": [
+            "Speaking P1 (VLU 09; LHU 10 - Friends & Relationships)",
+            "Speaking P2 (VLU 09 - 60th Birthday Gift for Mother; VLU 10 - Class Reunion Venue; VLU 11 - Birthday Gift for Female Friend: Handmade card vs Photo vs Restaurant meal)",
+            "Writing T2 (VLU 09; VLU 10 - Perceptions of Friendship in Modern Society)"
+          ],
+          "color": "#ec4899",
+          "keywords": [
+            {
+              "word": "lifelong friendship",
+              "meaning": "tình bạn tri kỷ, gắn bó suốt đời từ thời đi học"
+            },
+            {
+              "word": "class reunion dinner",
+              "meaning": "buổi tiệc họp lớp ôn lại kỷ niệm trường xưa"
+            },
+            {
+              "word": "handmade birthday card",
+              "meaning": "tấm thiệp sinh nhật tự làm tỉ mỉ, chan chứa tình cảm"
+            },
+            {
+              "word": "framed memory photo",
+              "meaning": "bức ảnh chụp chung kỷ niệm được đóng khung gỗ đẹp đẽ"
+            },
+            {
+              "word": "dine at a cozy restaurant",
+              "meaning": "đi ăn mừng sinh nhật tại một nhà hàng ấm cúng"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-fr-1",
+              "badge": "🎁 Quà sinh nhật bạn",
+              "text": "A framed photo capturing a memorable friendship trip accompanied by a heartfelt handmade card makes the sweetest gift.",
+              "viText": "Một bức ảnh chụp chung kỷ niệm chuyến đi chơi được lồng khung xinh xắn kèm tấm thiệp tự làm là món quà ngọt ngào nhất."
+            },
+            {
+              "id": "soc-fr-2",
+              "badge": "🍽️ Đi ăn tiệm",
+              "text": "Treating your friend to a delicious hotpot dinner allows you to celebrate and chat happily together.",
+              "viText": "Mời bạn thân đi ăn một bữa lẩu ngon miệng là dịp tuyệt vời để cùng nhau ăn mừng và trò chuyện rôm rả."
+            },
+            {
+              "id": "soc-fr-3",
+              "badge": "🏫 Họp lớp",
+              "text": "Choosing a cozy local restaurant with private rooms is perfect for class reunions because everyone can laugh without disturbing others.",
+              "viText": "Chọn một quán ăn ấm cúng có phòng riêng là lý tưởng nhất cho họp lớp vì cả lớp có thể cười nói ôn kỷ niệm mà không sợ ồn ào xung quanh."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "When choosing a birthday gift for a close female friend, taking her out for dinner at a nice restaurant is my top pick.",
+            "answerVi": "Khi chọn quà sinh nhật cho một bạn nữ thân thiết, mời bạn đi ăn tối tại một nhà hàng ngon là lựa chọn hàng đầu của tôi.",
+            "reason": "Because sharing good food together provides quality bonding time where we can enjoy our favorite dishes and take lovely photos.",
+            "reasonVi": "Bởi vì cùng nhau thưởng thức món ngon mang lại khoảng thời gian gắn kết ấm áp, vừa được ăn ngon vừa có thể chụp ảnh kỷ niệm.",
+            "example": "For example, on my best friend's birthday last month, I treated her to Korean barbecue; we spent two hours gossiping and had a blast.",
+            "exampleVi": "Ví dụ, vào sinh nhật bạn thân tháng trước, tôi đã mời bạn đi ăn thịt nướng Hàn Quốc; chúng tôi vừa ăn vừa trò chuyện suốt 2 tiếng rất vui."
+          }
+        },
+        {
+          "id": "soc-fame-celebrities",
+          "title": "Sự nổi tiếng & Người nổi tiếng (Becoming Famous: Pros & Cons)",
+          "viTitle": "Kiếm tiền khủng, được người hâm mộ yêu quý vs Mất tự do riêng tư, soi mói đời tư & anti-fan",
+          "badge": "Đề 7",
+          "examTags": [
+            "Speaking P1 (VLU 10 - Celebrities & Famous People)",
+            "Writing T2 (VLU 09; UFM 10 - Becoming Famous: Benefits & Drawbacks)"
+          ],
+          "color": "#ec4899",
+          "keywords": [
+            {
+              "word": "celebrity status & fame",
+              "meaning": "sự nổi tiếng và địa vị của người của công chúng"
+            },
+            {
+              "word": "earn massive advertising income",
+              "meaning": "kiếm thu nhập khổng lồ từ hợp đồng quảng cáo và tài trợ"
+            },
+            {
+              "word": "loss of personal privacy",
+              "meaning": "mất hoàn toàn sự riêng tư cá nhân khi ra đường"
+            },
+            {
+              "word": "hateful online criticism",
+              "meaning": "chịu đựng những bình luận ác ý, soi mói từ cư dân mạng"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-fc-1",
+              "badge": "🌟 Hào quang",
+              "text": "Celebrities receive huge salaries, luxury sponsor gifts, and can use their voice to champion charity causes.",
+              "viText": "Người nổi tiếng có mức thu nhập rất cao, nhận tài trợ hàng hiệu và có thể dùng tiếng nói của mình để làm việc thiện."
+            },
+            {
+              "id": "soc-fc-2",
+              "badge": "📷 Mất riêng tư",
+              "text": "Paparazzi and phone cameras follow famous people everywhere, meaning even a small argument with spouses makes headlines.",
+              "viText": "Cánh săn ảnh và camera điện thoại bám theo người nổi tiếng khắp nơi, đến mức một xích mích nhỏ cũng bị giật tít lên báo."
+            },
+            {
+              "id": "soc-fc-3",
+              "badge": "🧠 Áp lực",
+              "text": "Constant fear of losing popularity and harsh cyber attacks drive many actors and singers into severe depression.",
+              "viText": "Nỗi sợ thường trực về việc mất đi danh tiếng cùng các đợt công kích trên mạng đẩy nhiều nghệ sĩ vào tình trạng trầm cảm."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Becoming famous offers immense wealth and influence, but costs individuals their personal freedom.",
+            "answerVi": "Sự nổi tiếng mang lại tiền tài và tầm ảnh hưởng to lớn, nhưng lại lấy đi sự tự do riêng tư của một con người.",
+            "reason": "Famous people can never walk on streets normally without being recorded, which creates nonstop psychological pressure.",
+            "reasonVi": "Những người nổi tiếng không bao giờ có thể đi dạo phố bình thường mà không bị chụp lén, điều đó tạo ra áp lực tâm lý triền miên.",
+            "example": "For instance, famous pop singers in Korea often wear face masks and hats everywhere to avoid aggressive crowds of fans.",
+            "exampleVi": "Ví dụ, các ca sĩ thần tượng nổi tiếng ở Hàn Quốc luôn phải đeo khẩu trang và đội mũ kín mít để tránh đám đông người hâm mộ cuồng nhiệt."
+          }
+        }
+      ]
+    }
+  ],
+  "rightBranches": [
+    {
+      "id": "soc-group-urban-environment-travel",
+      "title": "Đô thị, Giao thông, Du lịch & Môi trường",
+      "viTitle": "Đô thị hóa, nhà ở sinh viên, kẹt xe & xe điện, xử phạt nơi công cộng, du lịch Tết & bảo vệ môi trường",
+      "badge": "Nhóm 2",
+      "tags": [
+        "Speaking P1-P2-P3",
+        "Writing T1-T2"
+      ],
+      "color": "#14b8a6",
+      "children": [
+        {
+          "id": "soc-urbanization-city-vs-country",
+          "title": "Đô thị hóa, Thành phố vs Về quê (Urbanization & City vs Countryside)",
+          "viTitle": "Thành phố nhiều việc làm, bệnh viện lớn vs Khói bụi, đắt đỏ & mong ước về quê yên bình",
+          "badge": "Đề 8",
+          "examTags": [
+            "Speaking P1 (VLU 09 - Hometown & Countryside; LHU 10 - Living Environment)",
+            "Writing T2 (VLU 09 - Moving to Rural Areas: Pros & Cons; Rapid Urbanization; Benefits of Living in Big Cities)",
+            "Writing T2 (AJC 11 - Advantages & Disadvantages of Urbanization)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "rapid urbanization",
+              "meaning": "quá trình đô thị hóa nhanh chóng của các thành phố lớn"
+            },
+            {
+              "word": "modern healthcare & universities",
+              "meaning": "hệ thống bệnh viện tuyến đầu và trường đại học lớn"
+            },
+            {
+              "word": "polluted air & traffic jams",
+              "meaning": "không khí ô nhiễm khói bụi và kẹt xe triền miên"
+            },
+            {
+              "word": "peaceful countryside lifestyle",
+              "meaning": "lối sống yên bình, không khí trong lành ở vùng nông thôn"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-uc-1",
+              "badge": "🏙️ Thành phố",
+              "text": "Big metropolises like Hanoi and Saigon offer abundant job vacancies, modern shopping malls, and top hospitals.",
+              "viText": "Các đại đô thị như Hà Nội và Sài Gòn mang lại vô số việc làm, trung tâm thương mại hiện đại và bệnh viện hàng đầu."
+            },
+            {
+              "id": "soc-uc-2",
+              "badge": "🌾 Về quê",
+              "text": "Moving to the countryside provides clean air, fresh organic food, lower rent, and a peaceful rhythm of life.",
+              "viText": "Về quê sinh sống mang lại bầu không khí trong lành, thực phẩm sạch, tiền nhà rẻ và nhịp sống thanh bình."
+            },
+            {
+              "id": "soc-uc-3",
+              "badge": "⚠️ Đô thị hóa",
+              "text": "Uncontrolled urban sprawl destroys green agricultural lands and leads to overcrowded slums with poor sanitation.",
+              "viText": "Đô thị hóa tự phát làm mất dần đất nông nghiệp màu mỡ và dẫn tới tình trạng quá tải khu ổ chuột thiếu vệ sinh."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Living in big cities provides unparalleled career advantages, but countryside living is far healthier for the soul.",
+            "answerVi": "Sống ở các thành phố lớn mang lại lợi thế nghề nghiệp vượt trội, nhưng sống ở vùng quê lại tốt hơn nhiều cho tâm hồn và sức khỏe.",
+            "reason": "Cities offer high-paying jobs and modern entertainment, but noise and heavy air pollution cause constant exhaustion.",
+            "reasonVi": "Thành thị có nhiều việc làm lương cao và dịch vụ giải trí, nhưng tiếng ồn và khói bụi mù mịt lại gây mệt mỏi thường trực.",
+            "example": "For example, after working in Saigon for five years, my cousin moved back to Da Lat to open a homestay and his health improved remarkably.",
+            "exampleVi": "Ví dụ, sau 5 năm làm việc ở Sài Gòn, anh họ tôi đã chuyển về Đà Lạt mở homestay và sức khỏe của anh đã tốt lên trông thấy."
+          }
+        },
+        {
+          "id": "soc-student-housing-newhome",
+          "title": "Chỗ ở sinh viên & Kể về nhà mới (Student Accommodation & New House)",
+          "viTitle": "Ký túc xá vs Thuê phòng trọ gần trường, an ninh & chia sẻ trải nghiệm chuyển nhà",
+          "badge": "Đề 9",
+          "examTags": [
+            "Speaking P1 (VLU 09 - Accommodation)",
+            "Speaking P2 (VLU 09 - Choosing Accommodation for First-Year University Student: Dormitory vs Rented Room vs Stay with Relatives)",
+            "Writing T1 (VLU 09; HCMUE 10 - Helping a Friend Find Rented Room near University)",
+            "Writing T1 (DTHU 10 - Replying to Maya about Your New House)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "university dormitory (dorm)",
+              "meaning": "ký túc xá trong khuôn viên trường đại học"
+            },
+            {
+              "word": "rented room with private bathroom",
+              "meaning": "phòng trọ thuê ngoài có nhà vệ sinh khép kín"
+            },
+            {
+              "word": "stay with relatives",
+              "meaning": "ở nhờ nhà người quen, bà con họ hàng"
+            },
+            {
+              "word": "safe and quiet neighborhood",
+              "meaning": "khu vực dân cư an ninh tốt, yên tĩnh để học bài"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-sh-1",
+              "badge": "🏫 Ký túc xá",
+              "text": "Campus dormitories are very cheap, strictly secured, and within walking distance to lecture halls, ideal for freshmen.",
+              "viText": "Ký túc xá trường rất rẻ, an ninh nghiêm ngặt và đi bộ tới giảng đường rất gần, cực kỳ lý tưởng cho sinh viên năm nhất."
+            },
+            {
+              "id": "soc-sh-2",
+              "badge": "🚪 Phòng trọ",
+              "text": "Renting a private room gives freedom and cooking space, but costs more and requires finding honest landlords.",
+              "viText": "Thuê phòng trọ riêng mang lại sự tự do và chỗ nấu ăn, nhưng tốn kém hơn và đòi hỏi phải tìm được chủ trọ đàng hoàng."
+            },
+            {
+              "id": "soc-sh-3",
+              "badge": "🏠 Nhà mới",
+              "text": "When writing to friends about a new house, mention bright windows, cozy kitchen, and friendly neighbors nearby.",
+              "viText": "Khi viết thư kể về ngôi nhà mới, hãy nhắc tới cửa sổ nhiều ánh sáng, gian bếp ấm cúng và hàng xóm thân thiện."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "For a first-year university student, staying in the university dormitory is the smartest and safest decision.",
+            "answerVi": "Đối với một sinh viên năm nhất mới lên thành phố, ở ký túc xá trường là quyết định thông minh và an toàn nhất.",
+            "reason": "It saves maximum living costs, ensures high security with campus guards, and helps newcomers make friends easily.",
+            "reasonVi": "Nó giúp tiết kiệm chi phí sinh hoạt tối đa, đảm bảo an ninh với bảo vệ trường và giúp tân sinh viên dễ dàng kết bạn.",
+            "example": "For instance, I stayed in my university dorm for my first two years; the monthly rent was only 300,000 VND and I walked to class in two minutes.",
+            "exampleVi": "Ví dụ, tôi đã ở ký túc xá trường trong suốt 2 năm đầu; tiền phòng mỗi tháng chỉ 300.000 đồng và tôi chỉ mất 2 phút đi bộ là tới lớp."
+          }
+        },
+        {
+          "id": "soc-traffic-congestion-accidents",
+          "title": "Kẹt xe & Tai nạn giao thông (Traffic Congestion & Accidents)",
+          "viTitle": "Nguyên nhân ùn tắc giờ cao điểm, giải pháp tàu điện ngầm, xe buýt & có nên bỏ đèn đỏ",
+          "badge": "Đề 10",
+          "examTags": [
+            "Speaking P1 (VLU 10 - Traffic Problems & Commuting)",
+            "Speaking P2 (VLU 09; VLU 10 - Measures to Reduce Urban Traffic Congestion and Accidents)",
+            "Speaking P3 (VLU 11 - Solutions to Traffic Congestion)",
+            "Writing T2 (VLU 09 - Removing Traffic Lights to Reduce Traffic Congestion)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "heavy traffic congestion",
+              "meaning": "kẹt xe, ùn tắc giao thông nghiêm trọng vào giờ cao điểm"
+            },
+            {
+              "word": "public buses and metro lines",
+              "meaning": "xe buýt công cộng và các tuyến tàu điện ngầm hiện đại"
+            },
+            {
+              "word": "traffic accidents",
+              "meaning": "tai nạn giao thông do phóng nhanh, vượt ẩu, say xỉn"
+            },
+            {
+              "word": "strictly obey traffic laws",
+              "meaning": "chấp hành nghiêm chỉnh luật giao thông và tín hiệu đèn"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-tc-1",
+              "badge": "🚇 Giao thông công",
+              "text": "Expanding metro train networks and subsidizing bus tickets motivates commuters to leave motorbikes at home.",
+              "viText": "Mở rộng mạng lưới tàu điện metro và trợ giá vé xe buýt khuyến khích người dân để xe máy ở nhà."
+            },
+            {
+              "id": "soc-tc-2",
+              "badge": "🚦 Đèn giao thông",
+              "text": "Traffic lights are vital to organize intersections; removing them would cause complete chaos and fatal collisions.",
+              "viText": "Đèn tín hiệu giao thông là thiết yếu để điều tiết ngã tư; việc tháo bỏ đèn sẽ gây hỗn loạn hoàn toàn và tai nạn chết người."
+            },
+            {
+              "id": "soc-tc-3",
+              "badge": "👮 Xử phạt nghiêm",
+              "text": "Deploying traffic police at choke points and installing AI surveillance cameras stops reckless red-light running.",
+              "viText": "Bố trí cảnh sát tại các điểm nghẽn và lắp camera phạt nguội AI sẽ ngăn chặn triệt để hành vi vượt đèn đỏ liều lĩnh."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "To eliminate urban traffic congestion, developing mass public transportation like metro lines is the most effective solution.",
+            "answerVi": "Để giải quyết nạn kẹt xe đô thị, phát triển giao thông công cộng khối lượng lớn như tàu điện metro là giải pháp hữu hiệu nhất.",
+            "reason": "One metro train can carry thousands of passengers simultaneously, taking thousands of personal motorbikes off narrow roads.",
+            "reasonVi": "Một đoàn tàu metro có thể chở hàng nghìn hành khách cùng lúc, giúp giảm hàng nghìn chiếc xe máy cá nhân trên những con đường chật hẹp.",
+            "example": "For example, since the new metro line started running in Hanoi, thousands of office workers now commute smoothly without breathing exhaust fumes.",
+            "exampleVi": "Ví dụ, từ khi tuyến tàu điện trên cao ở Hà Nội vận hành, hàng nghìn nhân viên văn phòng đã đi làm thuận tiện mà không phải hít khói bụi."
+          }
+        },
+        {
+          "id": "soc-motorbikes-electric-vehicles",
+          "title": "Xe máy ở thành phố & Xe điện (Motorbikes in Cities & Electric Vehicles)",
+          "viTitle": "Xe máy luồn lách ngõ hẻm tiện lợi vs Xe máy điện bảo vệ môi trường, không ồn ào",
+          "badge": "Đề 11",
+          "examTags": [
+            "Speaking P3 (VLU 09 - Benefits of Electric Vehicles)",
+            "Writing T2 (UEH 10 - Advantages and Disadvantages of Using Motorbikes in Major Cities)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "motorbikes in major cities",
+              "meaning": "xe máy, phương tiện đi lại phổ biến nhất tại các đô thị Việt Nam"
+            },
+            {
+              "word": "navigate narrow alleys easily",
+              "meaning": "dễ dàng luồn lách qua các ngõ ngách chật hẹp"
+            },
+            {
+              "word": "electric vehicles (EVs) / e-bikes",
+              "meaning": "xe điện, xe máy điện thân thiện với môi trường"
+            },
+            {
+              "word": "zero exhaust emissions",
+              "meaning": "không xả khói thải độc hại và không gây tiếng ồn động cơ"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-me-1",
+              "badge": "🛵 Xe máy tiện",
+              "text": "Motorbikes are cheap to purchase, fuel-efficient, and can easily turn into tiny alleys where cars cannot enter.",
+              "viText": "Xe máy giá rẻ, tiết kiệm xăng và có thể dễ dàng đi sâu vào các con ngõ nhỏ mà ô tô không thể vào được."
+            },
+            {
+              "id": "soc-me-2",
+              "badge": "⚡ Xe điện xanh",
+              "text": "Electric motorbikes produce zero tailpipe emissions, run quietly, and help clean up heavily polluted urban air.",
+              "viText": "Xe máy điện không hề xả khói bụi, chạy êm ái và giúp làm sạch bầu không khí đô thị đang bị ô nhiễm nặng nề."
+            },
+            {
+              "id": "soc-me-3",
+              "badge": "🔌 Trạm sạc",
+              "text": "Cities must build fast battery swapping and charging stations in apartment basements to popularize electric transport.",
+              "viText": "Các thành phố cần xây dựng thêm trạm đổi pin và sạc nhanh dưới hầm chung cư để phổ cập phương tiện xe điện."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Transitioning from gasoline motorbikes to electric vehicles is a vital step toward cleaner, quieter cities.",
+            "answerVi": "Chuyển đổi từ xe máy chạy xăng sang xe điện là bước đi cấp thiết hướng tới các thành phố xanh sạch và yên tĩnh hơn.",
+            "reason": "Gasoline bikes emit tons of black carbon daily, whereas electric bikes are completely emission-free and whisper-quiet.",
+            "reasonVi": "Xe máy xăng thải ra hàng tấn khói bụi độc hại mỗi ngày, trong khi xe điện hoàn toàn không xả thải và chạy êm ru.",
+            "example": "For instance, my father switched to a VinFast electric scooter last year; it charges cheaply at home overnight and never smells of gasoline.",
+            "exampleVi": "Ví dụ, bố tôi đã đổi sang đi xe máy điện VinFast vào năm ngoái; xe sạc điện tại nhà qua đêm rất rẻ và không bao giờ có mùi xăng nồng nặc."
+          }
+        },
+        {
+          "id": "soc-penalizing-misbehavior-crime",
+          "title": "Xử phạt hành vi xấu nơi công cộng & Giảm tội phạm (Penalizing Misbehaviors & Crime)",
+          "viTitle": "Hút thuốc trong quán, nói to nơi công cộng, dùng điện thoại khi lái xe & giải pháp an ninh",
+          "badge": "Đề 12",
+          "examTags": [
+            "Speaking P2 (VLU 11 - Penalizing Public Misbehaviors: Using phone while driving vs Talking loudly in public vs Smoking in restaurants)",
+            "Speaking P3 (VLU 09; VLU 10 - Measures to Reduce Urban Crime Rates)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "using phone while driving",
+              "meaning": "vừa lái xe vừa bấm điện thoại gây nguy hiểm tính mạng"
+            },
+            {
+              "word": "smoking in indoor restaurants",
+              "meaning": "hút thuốc lá trong phòng máy lạnh nhà hàng gây hại người xung quanh"
+            },
+            {
+              "word": "talking loudly in public",
+              "meaning": "nói chuyện bỗ bã, to tiếng làm phiền người khác ở nơi công cộng"
+            },
+            {
+              "word": "heavy financial fines",
+              "meaning": "phạt tiền thật nặng để răn đe người vi phạm"
+            },
+            {
+              "word": "reduce urban crime",
+              "meaning": "giảm thiểu tội phạm cướp giật, trộm cắp ở thành phố"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-pc-1",
+              "badge": "📱 Dùng điện thoại",
+              "text": "Using phones while steering motorbikes or cars should be penalized the most severely because it directly causes deadly road crashes.",
+              "viText": "Vừa lái xe vừa bấm điện thoại cần bị xử phạt nặng nhất vì nó trực tiếp gây ra những vụ tai nạn giao thông thảm khốc."
+            },
+            {
+              "id": "soc-pc-2",
+              "badge": "🚬 Hút thuốc tiệm",
+              "text": "Smoking inside restaurants poisons children and pregnant women with second-hand smoke, warranting strict fines and bans.",
+              "viText": "Hút thuốc trong nhà hàng đầu độc trẻ nhỏ và phụ nữ mang thai bởi khói thuốc thụ động, cần bị phạt tiền và cấm cửa."
+            },
+            {
+              "id": "soc-pc-3",
+              "badge": "📹 Giảm tội phạm",
+              "text": "Installing bright street lights and high-definition security cameras in dark alleys eliminates robbery hotspots.",
+              "viText": "Lắp đèn đường sáng trưng và camera an ninh độ nét cao trong các con hẻm tối sẽ triệt phá các điểm nóng cướp giật."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Among the three public misbehaviors, using a mobile phone while driving should definitely receive the heaviest penalty.",
+            "answerVi": "Trong ba hành vi thiếu ý thức nơi công cộng, sử dụng điện thoại khi đang lái xe chắc chắn phải nhận mức phạt nặng nhất.",
+            "reason": "Looking at a screen for just three seconds makes drivers blind to oncoming pedestrians, directly endangering human lives.",
+            "reasonVi": "Chỉ cần cúi nhìn màn hình trong 3 giây cũng khiến người lái xe bị mất tầm nhìn với người đi bộ, trực tiếp đe dọa mạng sống con người.",
+            "example": "For instance, I once saw a rider texting on his phone who crashed straight into a streetlight because he did not notice the turn.",
+            "exampleVi": "Ví dụ, tôi từng chứng kiến một người vừa lái xe vừa nhắn tin đã tông thẳng vào cột đèn đường vì không kịp nhận ra khúc cua."
+          }
+        },
+        {
+          "id": "soc-tourism-development-impacts",
+          "title": "Phát triển Du lịch: Lợi & Hại (Tourism Development: Pros & Cons)",
+          "viTitle": "Thúc đẩy kinh tế, tạo việc làm vs Ô nhiễm rác bãi biển, kẹt xe & du lịch tâm linh",
+          "badge": "Đề 13",
+          "examTags": [
+            "Speaking P2 (VLU 10 - Ways to Attract Foreign Tourists to Your City)",
+            "Speaking P3 (VLU 09 - Sustainable Tourism Development)",
+            "Writing T2 (VLU 09; VLU 10 - Impacts of Tourism on Tourist Cities)",
+            "Writing T2 (VLU 11 - Tourism Growth: Economic Uplift vs Environmental Degradation)",
+            "Writing T2 (HCMUE 10 - Advantages & Disadvantages of Religious Tourism)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "boost local economy",
+              "meaning": "thúc đẩy kinh tế địa phương, tăng thu nhập cho người dân"
+            },
+            {
+              "word": "environmental degradation",
+              "meaning": "sự suy thoái môi trường, xả rác bừa bãi tại các điểm tham quan"
+            },
+            {
+              "word": "sustainable eco-tourism",
+              "meaning": "du lịch sinh thái bền vững, bảo tồn thiên nhiên hoang dã"
+            },
+            {
+              "word": "religious tourism",
+              "meaning": "du lịch tâm linh (viếng chùa, lễ hội đền thờ cầu bình an)"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-td-1",
+              "badge": "💰 Kinh tế",
+              "text": "Tourism brings millions of dollars to hotels, restaurants, and souvenirs, creating thousands of jobs for local residents.",
+              "viText": "Du lịch mang lại hàng triệu đô la cho khách sạn, nhà hàng và đồ lưu niệm, tạo công ăn việc làm cho người dân bản địa."
+            },
+            {
+              "id": "soc-td-2",
+              "badge": "⚠️ Môi trường",
+              "text": "Overcrowding leads to plastic bottles littering beaches, coral destruction, and soaring living costs for local people.",
+              "viText": "Quá tải khách dẫn đến chai nhựa ngập ngụa bãi biển, phá hủy san hô và đẩy giá cả sinh hoạt của người bản xứ tăng vọt."
+            },
+            {
+              "id": "soc-td-3",
+              "badge": "🛕 Tâm linh",
+              "text": "Visiting holy pagodas brings spiritual peace, but commercialization and commercial burning of incense cause fire hazards.",
+              "viText": "Đi viếng các ngôi chùa linh thiêng mang lại sự thanh tịnh, nhưng thương mại hóa và đốt vàng mã tràn lan gây nguy cơ hỏa hoạn."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Tourism is a powerful engine for economic growth, but destinations must strictly regulate environmental protection.",
+            "answerVi": "Du lịch là đòn bẩy kinh tế mạnh mẽ, nhưng các điểm đến phải quản lý nghiêm ngặt việc bảo vệ môi trường.",
+            "reason": "If beautiful beaches are ruined by plastic trash and loud bars, foreign travelers will leave and never return.",
+            "reasonVi": "Nếu những bãi biển thơ mộng bị tàn phá bởi rác nhựa và quán bar ồn ào, du khách quốc tế sẽ rời đi và không bao giờ quay lại.",
+            "example": "For example, Phu Quoc island attracted huge investments, but improper waste management has caused pollution concerns among international visitors.",
+            "exampleVi": "Ví dụ, đảo Phú Quốc thu hút đầu tư rất lớn, nhưng khâu xử lý rác thải chưa tốt đã khiến du khách quốc tế phải lo ngại về môi trường."
+          }
+        },
+        {
+          "id": "soc-travel-planning-tours",
+          "title": "Lên kế hoạch Du lịch: Biển, Leo núi, Phượt vs Đi Tour (Holiday Planning & Tour Styles)",
+          "viTitle": "Chọn đi biển mát mẻ vs Leo núi thử thách, đi phượt tự do vs Đi tour trọn gói an toàn",
+          "badge": "Đề 14",
+          "examTags": [
+            "Speaking P1 (VLU 09; VLU 11 - Travelling / Holiday Preferences)",
+            "Speaking P2 (VLU 11 - Accommodation for Mountain Climbing Trip: Hotel vs Tent vs Homestay; Planning Summer Holiday: Beach vs Mountain vs Museum; Backpack vs Tour vs Stay Home)",
+            "Speaking P2 (LHU 10 - Choosing Travel Tour Style for Visiting Friend)",
+            "Writing T1 (VLU 09 - Advising on Hotels and Travel Itinerary in Bali; Summer Camping Advice)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "beach vacation",
+              "meaning": "kỳ nghỉ biển mát mẻ, tắm biển và ăn hải sản tươi ngon"
+            },
+            {
+              "word": "mountain climbing & hiking",
+              "meaning": "leo núi, trekking thử thách thể lực và ngắm mây trời"
+            },
+            {
+              "word": "backpacking trip",
+              "meaning": "đi phượt bằng xe máy tự do khám phá theo ý thích"
+            },
+            {
+              "word": "package tour",
+              "meaning": "đi du lịch theo tour trọn gói có hướng dẫn viên lo từ A đến Z"
+            },
+            {
+              "word": "stay in a local homestay",
+              "meaning": "ở homestay nhà dân ấm cúng, trải nghiệm văn hóa bản địa"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-tp-1",
+              "badge": "🏖️ Đi biển",
+              "text": "Relaxing on sunny sandy beaches, swimming in cool waves, and eating fresh seafood is the ultimate summer vacation.",
+              "viText": "Thư giãn trên bãi cát vàng, đắm mình trong làn nước biển mát lạnh và thưởng thức hải sản tươi là kỳ nghỉ hè tuyệt nhất."
+            },
+            {
+              "id": "soc-tp-2",
+              "badge": "🏕️ Homestay núi",
+              "text": "For a mountain trip, staying in an authentic wooden homestay provides warmth, hot showers, and home-cooked tribal meals.",
+              "viText": "Khi đi leo núi, ở homestay nhà gỗ vừa ấm áp, có nước nóng tắm rửa lại được thưởng thức cơm nhà nấu đậm đà."
+            },
+            {
+              "id": "soc-tp-3",
+              "badge": "🎒 Phượt vs Tour",
+              "text": "Backpacking gives thrill and flexibility to stop for photos, while guided package tours ensure maximum safety for families.",
+              "viText": "Đi phượt mang lại sự tự do dừng chụp ảnh bất cứ đâu, trong khi đi tour trọn gói đảm bảo an toàn tuyệt đối cho cả gia đình."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "When planning a summer holiday with friends, a beach getaway is undeniably the top favorite.",
+            "answerVi": "Khi lên kế hoạch đi nghỉ hè cùng nhóm bạn thân, một chuyến đi biển chắc chắn là lựa chọn được yêu thích nhất.",
+            "reason": "Swimming in the clear blue sea cools down the scorching summer heat and seafood barbecue parties by the beach are unforgettable.",
+            "reasonVi": "Tắm biển trong làn nước xanh mát giúp xua tan cái nóng nực ngày hè và tiệc nướng hải sản bên bờ biển luôn là kỷ niệm khó quên.",
+            "example": "For example, our trip to Nha Trang beach last June was incredible; we snorkeled to see corals and ate grilled lobsters every night.",
+            "exampleVi": "Ví dụ, chuyến đi biển Nha Trang của chúng tôi vào tháng 6 năm ngoái rất tuyệt vời; chúng tôi được lặn ngắm san hô và ăn tôm hùm nướng mỗi tối."
+          }
+        },
+        {
+          "id": "soc-tet-travel-festivals",
+          "title": "Du lịch xuyên Tết & Lễ hội truyền thống (Tet Travel & Traditional Festivals)",
+          "viTitle": "Tranh thủ kỳ nghỉ dài đi du lịch xả hơi vs Giữ gìn sum họp gia đình ngày Tết truyền thống",
+          "badge": "Đề 15",
+          "examTags": [
+            "Speaking P3 (VLU 09 - The Significance of Traditional Festivals)",
+            "Writing T1 (VLU 09 - Introducing a Traditional Hometown Festival to Sam)",
+            "Writing T2 (VLU 11 - Traveling Continuously Throughout the Tet Holiday: Pros & Cons)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "travel continuously throughout Tet",
+              "meaning": "đi du lịch xuyên suốt cả kỳ nghỉ Tết Nguyên Đán"
+            },
+            {
+              "word": "family reunion and gathering",
+              "meaning": "sum họp gia đình ấm cúng, chúc thọ ông bà cha mẹ"
+            },
+            {
+              "word": "traditional spring festival",
+              "meaning": "lễ hội mùa xuân truyền thống (chọi trâu, hội đua thuyền, chùa Hương)"
+            },
+            {
+              "word": "preserve cultural heritage",
+              "meaning": "gìn giữ và lưu truyền các giá trị văn hóa ngàn đời của dân tộc"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-tf-1",
+              "badge": "✈️ Du lịch Tết",
+              "text": "Traveling during Tet allows overworked employees to recharge on a rare 7-day vacation and discover new tourist attractions.",
+              "viText": "Đi du lịch dịp Tết giúp người đi làm tận dụng kỳ nghỉ 7 ngày hiếm hoi để xả hơi và khám phá những địa điểm mới."
+            },
+            {
+              "id": "soc-tf-2",
+              "badge": "🏮 Sum họp",
+              "text": "However, Tet is traditionally the only time for family reunions; leaving elderly parents alone at home feels cold and sad.",
+              "viText": "Tuy nhiên, Tết là dịp sum vầy duy nhất trong năm; để cha mẹ già thui thủi ở nhà một mình thì rất cô đơn và chạnh lòng."
+            },
+            {
+              "id": "soc-tf-3",
+              "badge": "🥁 Lễ hội làng",
+              "text": "Traditional festivals with folk games like tug of war and dragon dances unite villagers and remind youth of their roots.",
+              "viText": "Các lễ hội truyền thống với trò chơi dân gian như kéo co, múa lân gắn kết xóm làng và nhắc nhở giới trẻ về nguồn cội."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "While traveling during Tet offers great relaxation, spending the first three days with family remains irreplaceable.",
+            "answerVi": "Mặc dù đi du lịch dịp Tết giúp thư giãn rất tốt, việc dành trọn ba ngày đầu năm bên gia đình vẫn là điều không thể thay thế.",
+            "reason": "Tet is deeply sacred in Vietnamese culture for visiting grandparents, whereas travel trips can be taken anytime during the year.",
+            "reasonVi": "Tết mang ý nghĩa thiêng liêng để về quê chúc Tết ông bà cha mẹ, trong khi các chuyến du lịch có thể đi vào bất cứ dịp nào khác.",
+            "example": "For instance, my family always stays home to wrap Banh Chung until the second day of Tet, and then we take a short 2-day trip to Vung Tau.",
+            "exampleVi": "Ví dụ, gia đình tôi luôn ở nhà cùng nhau gói bánh chưng đến hết mùng 2 Tết, rồi sau đó mới đi du lịch ngắn ngày ở Vũng Tàu."
+          }
+        },
+        {
+          "id": "soc-arts-culture-museums",
+          "title": "Nghệ thuật, Bảo tàng & Giao lưu văn hóa (Arts, Museums & Cultural Sharing)",
+          "viTitle": "Ngân sách tài trợ nghệ thuật, giới trẻ với bảo tàng lịch sử & giao lưu ẩm thực, âm nhạc",
+          "badge": "Đề 16",
+          "examTags": [
+            "Speaking P3 (VLU 09 - Government Investment in Arts & Culture)",
+            "Writing T2 (VLU 09 - Young People's Interest in Museums; Cultural Sharing Through Food, Art & Music)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "government funding for the arts",
+              "meaning": "ngân sách nhà nước đầu tư cho nghệ thuật, bảo tồn di sản"
+            },
+            {
+              "word": "national history museums",
+              "meaning": "bảo tàng lịch sử quốc gia trưng bày hiện vật thời chiến"
+            },
+            {
+              "word": "cultural exchange festivals",
+              "meaning": "các lễ hội giao lưu văn hóa quốc tế qua ẩm thực và âm nhạc"
+            },
+            {
+              "word": "interactive 3D exhibitions",
+              "meaning": "triển lãm tương tác 3D sinh động thu hút giới trẻ đến xem"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-am-1",
+              "badge": "🏛️ Bảo tàng",
+              "text": "Traditional museums must modernize with digital touchscreens and 3D videos to inspire young people to study national history.",
+              "viText": "Các bảo tàng truyền thống cần hiện đại hóa với màn hình cảm ứng và video 3D sinh động để thu hút người trẻ tìm hiểu lịch sử."
+            },
+            {
+              "id": "soc-am-2",
+              "badge": "🎨 Đầu tư nghệ thuật",
+              "text": "State funding for traditional music (like Ca Tru or Cheo) prevents ancient art forms from disappearing completely.",
+              "viText": "Ngân sách hỗ trợ âm nhạc truyền thống (như Ca trù hay Chèo) giúp giữ gìn những loại hình nghệ thuật cổ không bị mai một."
+            },
+            {
+              "id": "soc-am-3",
+              "badge": "🍲 Giao lưu văn hóa",
+              "text": "Sharing local dishes like Banh Mi and folk songs bridges cultural divides and fosters global friendship.",
+              "viText": "Chia sẻ ẩm thực như Bánh mì và các làn điệu dân ca giúp kết nối văn hóa và thắt chặt tình hữu nghị quốc tế."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Governments should allocate reasonable funds to maintain history museums and preserve traditional performing arts.",
+            "answerVi": "Nhà nước nên dành một phần ngân sách hợp lý để trùng tu bảo tàng lịch sử và bảo tồn nghệ thuật biểu diễn dân gian.",
+            "reason": "Without cultural heritage, a nation loses its unique identity and future generations will forget their heroic roots.",
+            "reasonVi": "Nếu thiếu đi di sản văn hóa, một quốc gia sẽ mất đi bản sắc và các thế hệ tương lai sẽ lãng quên nguồn cội hào hùng của dân tộc.",
+            "example": "For instance, when the War Remnants Museum in Saigon added interactive virtual reality rooms, student visitors doubled within months.",
+            "exampleVi": "Ví dụ, khi Bảo tàng Chứng tích Chiến tranh tại Sài Gòn bổ sung phòng chiếu thực tế ảo, lượng sinh viên ghé thăm đã tăng gấp đôi chỉ sau vài tháng."
+          }
+        },
+        {
+          "id": "soc-environment-plastic-water",
+          "title": "Bảo vệ Môi trường: Rác nhựa & Nguồn nước (Plastic Pollution, Recycling & Water)",
+          "viTitle": "Cắt giảm đồ nhựa một lần, phân loại rác tái chế & bảo tồn nguồn nước ngọt sinh hoạt",
+          "badge": "Đề 17",
+          "examTags": [
+            "Speaking P1 (VLU 10 - Recycling & Waste Reduction)",
+            "Speaking P3 (VLU 09 - Environmental Protection & Green Lifestyle)",
+            "Writing T2 (VLU 09 - Plastic Pollution; Fresh Water Conservation; Loss of Biodiversity)",
+            "Writing T2 (VLU 10 - Causes & Solutions of Global Water Shortages)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "single-use plastic items",
+              "meaning": "đồ nhựa dùng một lần (túi nilon, ống hút nhựa, cốc trà sữa)"
+            },
+            {
+              "word": "freshwater conservation",
+              "meaning": "bảo tồn nguồn nước ngọt sinh hoạt, tránh xả thải làm ô nhiễm sông ngòi"
+            },
+            {
+              "word": "sort recyclable waste",
+              "meaning": "phân loại rác hữu cơ, rác tái chế và rác vô cơ tại nguồn"
+            },
+            {
+              "word": "eco-friendly canvas bags",
+              "meaning": "túi vải dùng nhiều lần khi đi chợ và mua sắm"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-ep-1",
+              "badge": "🛍️ Rác nhựa",
+              "text": "Plastic bags take hundreds of years to decompose; replacing them with reusable fabric bags protects marine life.",
+              "viText": "Túi nilon mất hàng trăm năm mới phân hủy; thay thế bằng túi vải dùng nhiều lần sẽ bảo vệ sinh vật biển."
+            },
+            {
+              "id": "soc-ep-2",
+              "badge": "💧 Tiết kiệm nước",
+              "text": "Turn off running taps while brushing teeth and reuse vegetable wash water to water garden plants to save fresh water.",
+              "viText": "Khóa vòi nước khi đang đánh răng và tận dụng nước rửa rau để tưới cây giúp bảo vệ nguồn nước sạch quý giá."
+            },
+            {
+              "id": "soc-ep-3",
+              "badge": "🔄 Tái chế rác",
+              "text": "Sorting plastic bottles and paper at home makes industrial recycling fast and cuts landfill sizes substantially.",
+              "viText": "Phân loại chai nhựa và giấy báo tại nhà giúp khâu tái chế diễn ra nhanh chóng và giảm tải các bãi rác khổng lồ."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Living a green lifestyle by cutting down on plastic waste is every citizen's immediate moral responsibility.",
+            "answerVi": "Thực hành lối sống xanh bằng việc giảm thiểu rác thải nhựa là trách nhiệm đạo đức cấp bách của mỗi công dân.",
+            "reason": "Plastic trash chokes our rivers and oceans, poisoning seafood that humans eventually consume back into our bodies.",
+            "reasonVi": "Rác nhựa làm nghẹt các dòng sông và đại dương, đầu độc các loài thủy hải sản mà cuối cùng con người lại ăn vào cơ thể.",
+            "example": "For example, I always bring my own stainless steel water bottle and canvas bag whenever I buy street food or groceries.",
+            "exampleVi": "Ví dụ, tôi luôn mang theo bình nước giữ nhiệt bằng inox và túi vải mỗi khi đi mua đồ ăn vặt hoặc đi chợ."
+          }
+        },
+        {
+          "id": "soc-pet-ownership",
+          "title": "Nuôi Thú cưng & Trách nhiệm (Pet Ownership Responsibilities & Pets for Children)",
+          "viTitle": "Nuôi chó mèo giảm cô đơn, dạy trẻ biết yêu thương vs Trách nhiệm tiêm phòng, dọn vệ sinh",
+          "badge": "Đề 18",
+          "examTags": [
+            "Speaking P1 (VLU 09; VLU 10 - Pets & Animals)",
+            "Speaking P2 (VLU 10 - Choosing a Pet for a Child: Dog vs Cat vs Goldfish)",
+            "Speaking P3 (VLU 09 - Pet Ownership Responsibilities)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "pet ownership responsibilities",
+              "meaning": "trách nhiệm của người nuôi thú cưng (cho ăn, tiêm phòng, dọn phân)"
+            },
+            {
+              "word": "loyal and playful dog",
+              "meaning": "chú chó trung thành, quấn quýt và hiếu động"
+            },
+            {
+              "word": "gentle and independent cat",
+              "meaning": "chú mèo hiền lành, sạch sẽ và sống độc lập"
+            },
+            {
+              "word": "regular rabies vaccination",
+              "meaning": "tiêm vắc-xin phòng dại định kỳ hàng năm cho chó mèo"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-po-1",
+              "badge": "🐕 Chó cho trẻ",
+              "text": "A friendly puppy teaches children compassion, responsibility to walk pets, and protects the house from strangers.",
+              "viText": "Một chú cún thân thiện dạy trẻ lòng trắc ẩn, trách nhiệm dắt chó đi dạo và giúp trông coi nhà cửa."
+            },
+            {
+              "id": "soc-po-2",
+              "badge": "💉 Tiêm phòng",
+              "text": "Pet owners must get rabies shots for dogs and leash them in public parks to ensure safety for pedestrians.",
+              "viText": "Chủ nuôi bắt buộc phải tiêm phòng dại và rọ mõm, xích chó khi ra công viên để đảm bảo an toàn cho người xung quanh."
+            },
+            {
+              "id": "soc-po-3",
+              "badge": "🐱 Mèo căn hộ",
+              "text": "Cats are quiet, clean themselves, and use sand litter boxes, making them perfect pets for small city apartments.",
+              "viText": "Mèo rất yên tĩnh, tự liếm lông sạch sẽ và đi vệ sinh vào chậu cát, rất hợp để nuôi trong các căn hộ chung cư."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "When choosing a pet for an active 7-year-old child, a gentle dog like a Golden Retriever is the top recommendation.",
+            "answerVi": "Khi chọn thú cưng cho một đứa trẻ 7 tuổi hiếu động, một chú chó hiền lành như giống Golden là gợi ý số một.",
+            "reason": "Dogs love playing fetch and running, which encourages children to exercise outdoors and learn loyalty.",
+            "reasonVi": "Chó rất thích chơi đùa và chạy nhảy, điều đó thôi thúc trẻ em vận động ngoài trời và học được bài học về lòng trung thành.",
+            "example": "For instance, having a puppy at home helped my little cousin stop playing video games because he spends every afternoon walking his dog.",
+            "exampleVi": "Ví dụ, việc nuôi một chú cún con đã giúp em họ tôi cai được game vì chiều nào em cũng háo hức dắt chó đi dạo công viên."
+          }
+        },
+        {
+          "id": "soc-complaint-letters-invitations",
+          "title": "Thư phàn nàn & Thư mời sự kiện (Complaint Letters & Event Invitations)",
+          "viTitle": "Phàn nàn thất lạc hành lý, món ăn nhà hàng dở vs Viết thư mời dự tiệc cưới, hòa nhạc Westlife",
+          "badge": "Đề 19",
+          "examTags": [
+            "Writing T1 (VLU 09 - Lost Luggage at Airport; Complaint regarding Food Quality at Ritz; Cleaning Service Refund; Live Concert Invite; Wedding Invite)",
+            "Writing T1 (VLU 10 - Preparing Charity Gala; Inviting to Live Concert; Wedding Invitation)",
+            "Writing T1 (VLU 11 - Replying to Laura about Westlife Concert Tickets: time, pickup, eating)",
+            "Writing T1 (UEH 10 - Hotel Feedback; UFM 10 - Concert Invite)"
+          ],
+          "color": "#14b8a6",
+          "keywords": [
+            {
+              "word": "formal complaint letter",
+              "meaning": "thư phàn nàn chính thức với giọng văn lịch sự nhưng kiên quyết"
+            },
+            {
+              "word": "report lost luggage at airport",
+              "meaning": "báo cáo hành lý thất lạc tại sân bay và yêu cầu bồi thường"
+            },
+            {
+              "word": "won two concert tickets",
+              "meaning": "trúng thưởng hai vé xem đêm nhạc ca sĩ thần tượng"
+            },
+            {
+              "word": "pick her up on motorbike",
+              "meaning": "qua đón bạn bằng xe máy trước giờ biểu diễn"
+            }
+          ],
+          "items": [
+            {
+              "id": "soc-ci-1",
+              "badge": "✈️ Mất hành lý",
+              "text": "State your flight number, baggage tag code, describe the suitcase color, and request immediate tracking updates.",
+              "viText": "Nêu rõ số hiệu chuyến bay, mã thẻ hành lý, mô tả màu sắc va-li và yêu cầu bộ phận thất lạc cập nhật tiến độ tìm kiếm."
+            },
+            {
+              "id": "soc-ci-2",
+              "badge": "🎵 Vé Westlife",
+              "text": "Tell your friend the concert starts at 7 PM, offer to pick her up at 5:30 PM, and suggest grabbing quick burgers beforehand.",
+              "viText": "Báo cho bạn biết buổi diễn bắt đầu lúc 7h tối, hẹn đón bạn lúc 5h30 chiều và gợi ý ăn nhanh hamburger trước giờ vào cổng."
+            },
+            {
+              "id": "soc-ci-3",
+              "badge": "🍽️ Phàn nàn quán",
+              "text": "Express disappointment politely about undercooked steak and slow service, asking for a partial refund or apology.",
+              "viText": "Lịch sự bày tỏ sự thất vọng về món bít-tết chưa chín và phục vụ chậm chạp, yêu cầu hoàn tiền hoặc lời xin lỗi từ quản lý."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "When writing an email to invite a friend to a concert, provide specific time, pickup logistics, and food plans clearly.",
+            "answerVi": "Khi viết email rủ bạn đi xem hòa nhạc, hãy nêu rõ ràng thời gian diễn ra, cách đưa đón và kế hoạch ăn uống trước buổi diễn.",
+            "reason": "This shows thoughtfulness and allows your friend to arrange her schedule without confusion.",
+            "reasonVi": "Điều này thể hiện sự chu đáo và giúp người bạn có thể sắp xếp lịch trình cá nhân một cách thuận tiện nhất.",
+            "example": "For instance, in my email to Laura about the Westlife concert, I suggested meeting at 5 PM so we could eat Pho together before gates closed.",
+            "exampleVi": "Ví dụ, trong thư gửi Laura về vé xem Westlife, tôi đã hẹn gặp lúc 5 giờ chiều để hai đứa kịp ăn phở trước khi ban tổ chức đóng cửa soát vé."
+          }
+        }
+      ]
+    }
+  ]
+}
