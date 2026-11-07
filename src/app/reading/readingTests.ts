@@ -1,10 +1,3 @@
-import test1 from './tests/test-01.json';
-import test2 from './tests/test-02.json';
-import test3 from './tests/test-03.json';
-import test4 from './tests/test-04.json';
-import test5 from './tests/test-05.json';
-import test6 from './tests/test-06.json';
-
 export type ReadingQuestion = {
   number: number;
   prompt: string;
@@ -26,4 +19,4 @@ export type ReadingTest = {
   passages: ReadingPassage[];
 };
 
-export const READING_TESTS: ReadingTest[] = [test1, test2, test3, test4, test5, test6];
+export const READING_TESTS: ReadingTest[] = [];

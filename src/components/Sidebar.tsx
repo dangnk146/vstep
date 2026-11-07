@@ -15,6 +15,8 @@ import {
 } from 'lucide-react';
 import { useTheme } from '@/components/ThemeProvider';
 
+import { READING_TESTS } from '@/app/reading/readingTests';
+
 type NavItem = {
   name: string;
   href: string;
@@ -55,10 +57,12 @@ export default function Sidebar() {
         { id: 'free', label: 'Tự do' },
       ]
     : pathname === '/reading' || pathname.startsWith('/reading/')
-      ? Array.from({ length: 6 }, (_, index) => ({
-          id: `part${index + 1}`,
-          label: `Part ${index + 1}`,
-        }))
+      ? (READING_TESTS.length > 0
+          ? Array.from({ length: READING_TESTS.length }, (_, index) => ({
+              id: `part${index + 1}`,
+              label: `Part ${index + 1}`,
+            }))
+          : null)
     : pathname === '/speaking' || /^\/speaking\/part[123]$/.test(pathname) || pathname.startsWith('/listening/')
       ? [
           { id: 'part1', label: 'Part 1' },

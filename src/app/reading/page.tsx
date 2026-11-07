@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type ReactNode } from 'react';
 import { usePathname } from 'next/navigation';
 import { useTimer } from '@/hooks/useTimer';
 import {
+  BookOpen,
   ChevronLeft,
   ChevronRight,
   Flag,
@@ -80,26 +81,29 @@ export default function ReadingPage() {
   const [flags, setFlags] = useState<Record<number, boolean>>({});
   const [questionCursor, setQuestionCursor] = useState({ passageKey: '', index: 0 });
   const [checkedPassageKeys, setCheckedPassageKeys] = useState<Set<string>>(new Set());
+  const hasTests = READING_TESTS.length > 0;
   const routeMatch = pathname.match(/^\/reading\/part([1-6])\/passage(\d+)$/);
   const testIndex = routeMatch ? Number(routeMatch[1]) - 1 : 0;
-  const activeTest = READING_TESTS[testIndex] ?? READING_TESTS[0];
-  const activePassageIndex = routeMatch
+  const activeTest = hasTests ? (READING_TESTS[testIndex] ?? READING_TESTS[0]) : null;
+  const activePassageIndex = routeMatch && activeTest
     ? Math.min(
-        Math.max(Number(routeMatch[2]) - 1, 0),
-        activeTest.passages.length - 1,
-      )
+      Math.max(Number(routeMatch[2]) - 1, 0),
+      activeTest.passages.length - 1,
+    )
     : 0;
-  const activePassage = activeTest.passages[activePassageIndex];
-  const checkedPassageKey = `${activeTest.id}:${activePassage.id}`;
+  const activePassage = activeTest?.passages[activePassageIndex];
+  const checkedPassageKey = activeTest && activePassage ? `${activeTest.id}:${activePassage.id}` : '';
   const activeQuestionIndex = questionCursor.passageKey === checkedPassageKey
     ? questionCursor.index
     : 0;
   const isPassageChecked = checkedPassageKeys.has(checkedPassageKey);
-  const previousTestId = useRef(activeTest.id);
-  const correctCount = activeTest.passages.reduce((total, passage) => {
-    if (!checkedPassageKeys.has(`${activeTest.id}:${passage.id}`)) return total;
-    return total + passage.questions.filter((question) => answers[question.number] === question.answer).length;
-  }, 0);
+  const previousTestId = useRef(activeTest?.id ?? '');
+  const correctCount = activeTest
+    ? activeTest.passages.reduce((total, passage) => {
+      if (!checkedPassageKeys.has(`${activeTest.id}:${passage.id}`)) return total;
+      return total + passage.questions.filter((question) => answers[question.number] === question.answer).length;
+    }, 0)
+    : 0;
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -137,6 +141,7 @@ export default function ReadingPage() {
   };
 
   useEffect(() => {
+    if (!hasTests) return;
     const match = pathname.match(/^\/reading\/part([1-6])\/passage(\d+)$/);
     const legacyPart = new URLSearchParams(window.location.search).get('part');
     const partNumber = match
@@ -144,6 +149,7 @@ export default function ReadingPage() {
       : Number(legacyPart?.match(/^part([1-6])$/)?.[1] ?? 1);
     const passageNumber = match ? Number(match[2]) : 1;
     const test = READING_TESTS[partNumber - 1] ?? READING_TESTS[0];
+    if (!test || !test.passages.length) return;
     const validPassageNumber = Math.min(
       Math.max(passageNumber, 1),
       test.passages.length,
@@ -154,9 +160,10 @@ export default function ReadingPage() {
       window.history.replaceState(null, '', canonicalPath);
     }
 
-  }, [pathname]);
+  }, [hasTests, pathname]);
 
   useEffect(() => {
+    if (!hasTests) return;
     const resetWhenPartChanges = () => {
       const route = window.location.pathname.match(/^\/reading\/part([1-6])\//);
       const legacyPart = new URLSearchParams(window.location.search)
@@ -164,7 +171,7 @@ export default function ReadingPage() {
         ?.match(/^part([1-6])$/)?.[1];
       const partNumber = Number(route?.[1] ?? legacyPart ?? 1);
       const nextTest = READING_TESTS[partNumber - 1] ?? READING_TESTS[0];
-      if (previousTestId.current === nextTest.id) return;
+      if (!nextTest || previousTestId.current === nextTest.id) return;
 
       previousTestId.current = nextTest.id;
       setAnswers({});
@@ -183,9 +190,10 @@ export default function ReadingPage() {
       window.removeEventListener('vstep:select-section', handleSectionSelect);
       window.removeEventListener('popstate', resetWhenPartChanges);
     };
-  }, [reset]);
+  }, [hasTests, reset]);
 
   const changePassage = (passageIndex: number) => {
+    if (!activeTest || !activeTest.passages[passageIndex]) return;
     setQuestionCursor({
       passageKey: `${activeTest.id}:${activeTest.passages[passageIndex].id}`,
       index: 0,
@@ -213,6 +221,23 @@ export default function ReadingPage() {
   const toggleFlag = (questionNumber: number) => {
     setFlags((previous) => ({ ...previous, [questionNumber]: !previous[questionNumber] }));
   };
+
+  if (!activeTest || !activePassage) {
+    return (
+      <div className="flex h-[calc(100dvh-5.5rem)] min-h-[420px] w-full flex-col items-center justify-center p-4 text-center animate-fade-in lg:min-h-[580px]">
+        <div className="flex max-w-md flex-col items-center justify-center rounded-2xl border border-dashed border-border bg-card/60 p-8 shadow-xs">
+          <div className="mb-4 grid h-16 w-16 place-items-center rounded-full bg-primary/10 text-primary">
+            <BookOpen className="h-8 w-8" strokeWidth={1.75} />
+          </div>
+          <h2 className="text-lg font-bold text-foreground">Chưa có đề thi Reading</h2>
+          <p className="mt-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">
+            Tham khảo đề TOIEC nha.
+            <a href='https://study4.com/tests/7060/toeic-lr-collection-4-test-1/' className='bg-blue-500g-blu hover:bg-blue-600 text-white px-2 py-1 rounded-md cursor-pointelolorsme'> Đề 1   </a>
+          </p>
+        </div>
+      </div >
+    );
+  }
 
   return (
     <div className="flex h-[calc(100dvh-5.5rem)] min-h-[420px] w-full flex-col overflow-hidden animate-fade-in lg:min-h-[580px]">
@@ -277,23 +302,21 @@ export default function ReadingPage() {
                           type="button"
                           onClick={() => selectAnswer(question.number, option.label)}
                           aria-pressed={isSelected}
-                          className={`flex items-start gap-1 rounded-md border px-1.5 py-1 text-left text-[10px] leading-[14px] transition-colors lg:gap-1.5 lg:px-2 lg:py-1.5 lg:text-xs lg:leading-[18px] ${
-                            isCorrect
-                              ? 'border-emerald-600 bg-emerald-600 text-white'
-                              : isWrongSelection
-                                ? 'border-red-600 bg-red-600 text-white'
-                                : isSelected
-                                  ? 'border-primary/50 bg-primary/10 text-foreground'
-                                  : 'border-transparent text-foreground hover:border-border hover:bg-muted'
-                          }`}
-                        >
-                          <span className={`grid h-4 w-4 shrink-0 place-items-center rounded-full border text-[9px] font-extrabold lg:h-5 lg:w-5 lg:text-[10px] ${
-                            isCorrect || isWrongSelection
-                              ? 'border-white/70 bg-white/15 text-white'
+                          className={`flex items-start gap-1 rounded-md border px-1.5 py-1 text-left text-[10px] leading-[14px] transition-colors lg:gap-1.5 lg:px-2 lg:py-1.5 lg:text-xs lg:leading-[18px] ${isCorrect
+                            ? 'border-emerald-600 bg-emerald-600 text-white'
+                            : isWrongSelection
+                              ? 'border-red-600 bg-red-600 text-white'
                               : isSelected
-                                ? 'border-primary bg-primary text-primary-foreground'
-                                : 'border-border text-muted-foreground'
-                          }`}>
+                                ? 'border-primary/50 bg-primary/10 text-foreground'
+                                : 'border-transparent text-foreground hover:border-border hover:bg-muted'
+                            }`}
+                        >
+                          <span className={`grid h-4 w-4 shrink-0 place-items-center rounded-full border text-[9px] font-extrabold lg:h-5 lg:w-5 lg:text-[10px] ${isCorrect || isWrongSelection
+                            ? 'border-white/70 bg-white/15 text-white'
+                            : isSelected
+                              ? 'border-primary bg-primary text-primary-foreground'
+                              : 'border-border text-muted-foreground'
+                            }`}>
                             {option.label}
                           </span>
                           <span>{option.text}</span>
@@ -344,9 +367,8 @@ export default function ReadingPage() {
                     onClick={() => changePassage(index)}
                     aria-label={`Chọn Passage ${index + 1}`}
                     aria-pressed={activePassageIndex === index}
-                    className={`grid h-7 min-w-6 place-items-center rounded px-1 text-[10px] font-extrabold transition-colors ${
-                      activePassageIndex === index ? 'bg-white text-[#245b86]' : 'text-white/80 hover:bg-white/15 hover:text-white'
-                    }`}
+                    className={`grid h-7 min-w-6 place-items-center rounded px-1 text-[10px] font-extrabold transition-colors ${activePassageIndex === index ? 'bg-white text-[#245b86]' : 'text-white/80 hover:bg-white/15 hover:text-white'
+                      }`}
                   >
                     {index + 1}
                   </button>
