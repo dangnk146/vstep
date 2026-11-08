@@ -3,6 +3,7 @@
 import React from 'react';
 import {
   BookOpen,
+  CheckCircle2,
   Dices,
   FileDown,
   Layers,
@@ -10,6 +11,7 @@ import {
   PenTool,
   Search,
   SlidersHorizontal,
+  Sparkles,
   X,
 } from 'lucide-react';
 import type { SkillFilter, PartFilter } from '../types';
@@ -210,20 +212,50 @@ export function PromptSidebar({
         </div>
       </div>
 
-      {/* 3. Trường thi & Đợt thi */}
-      <div className="rounded-sm border border-border bg-card p-2.5 shadow-xs space-y-2">
-        <span className="block text-[11px] font-bold uppercase tracking-wider text-muted-foreground flex items-center gap-1">
-          <SlidersHorizontal className="h-3 w-3 text-primary" />
-          Trường thi & Đợt thi
-        </span>
+      {/* 3. Trường thi & Đợt thi (Nổi bật tông vàng hổ phách, Hướng dẫn đồng bộ Speaking & Writing) */}
+      <div className="rounded-sm border-2 border-amber-400/90 dark:border-amber-500/60 bg-gradient-to-b from-amber-500/10 via-amber-500/5 to-card dark:from-amber-950/25 dark:via-card dark:to-card p-2.5 shadow-xs space-y-2.5">
+        <div className="flex items-center justify-between pb-1.5 border-b border-amber-300/60 dark:border-amber-600/30">
+          <span className="text-[11px] font-black uppercase tracking-wider text-amber-900 dark:text-amber-400 flex items-center gap-1.5">
+            <SlidersHorizontal className="h-3.5 w-3.5 text-amber-600 dark:text-amber-400" />
+            Trường thi & Đợt thi
+          </span>
+          <span className="inline-flex items-center gap-1 rounded-full bg-amber-500/20 text-amber-900 dark:text-amber-300 px-2 py-0.5 text-[10px] font-bold">
+            <Sparkles className="h-3 w-3 text-amber-600 dark:text-amber-400 animate-pulse" />
+            Đồng bộ toàn web
+          </span>
+        </div>
+
+        {/* Hướng dẫn ngắn cho người mới */}
+        <div className="rounded-xs border border-amber-300/80 bg-amber-100/70 dark:border-amber-800/60 dark:bg-amber-950/40 p-2 text-[11px] leading-relaxed text-amber-950 dark:text-amber-200">
+          <p className="font-bold flex items-center gap-1 text-amber-950 dark:text-amber-100">
+            <span>🎯</span> Cấu hình đề ôn thi trọng tâm:
+          </p>
+          <p className="mt-0.5 text-[10.5px]">
+            Chọn trường & đợt bạn sắp thi tại đây. Toàn bộ các tab <strong>Speaking</strong> & <strong>Writing</strong> sẽ tự động đồng bộ và bốc đúng bộ đề thi thật của trường đó!
+          </p>
+        </div>
+
+        {/* Trạng thái áp dụng trực quan */}
+        {selectedSchool !== 'all' ? (
+          <div className="flex items-center gap-1.5 text-[11px] font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-950/40 px-2 py-1.5 rounded-xs border border-emerald-300 dark:border-emerald-800/60">
+            <CheckCircle2 className="h-3.5 w-3.5 text-emerald-600 shrink-0" />
+            <span className="truncate">
+              Đang áp dụng: <strong>{SCHOOL_DISPLAY_NAMES[selectedSchool] || selectedSchool}</strong> {selectedBatch !== 'all' ? `(Đợt ${selectedBatch})` : ''}
+            </span>
+          </div>
+        ) : (
+          <div className="flex items-center gap-1.5 text-[11px] font-medium text-muted-foreground bg-muted/40 px-2 py-1.5 rounded-xs border border-border/70">
+            <span>Đang áp dụng: Tất cả trường & đợt thi</span>
+          </div>
+        )}
 
         {/* School Dropdown */}
         <div className="space-y-1">
-          <label className="text-[11px] font-semibold text-muted-foreground">Trường thi:</label>
+          <label className="text-[11px] font-bold text-foreground">Trường thi mục tiêu:</label>
           <select
             value={selectedSchool}
             onChange={(e) => onSchoolChange(e.target.value)}
-            className="h-8 w-full rounded-xs border border-border bg-background px-2 text-xs font-semibold text-foreground outline-none focus:border-primary"
+            className="h-8 w-full rounded-xs border-2 border-amber-300 dark:border-amber-600 bg-background px-2 text-xs font-bold text-foreground outline-none focus:border-amber-500 shadow-2xs"
           >
             <option value="all">Tất cả các trường</option>
             {availableSchools.map((s) => (
@@ -263,12 +295,15 @@ export function PromptSidebar({
           <span>Xuất .md</span>
         </button>
 
+        {/* Nút Bốc ngẫu nhiên: Óng ánh vàng + Animation xoay xúc xắc */}
         <button
           type="button"
           onClick={onRandomPrompt}
-          className="flex h-8 items-center justify-center gap-1.5 rounded-xs border border-border bg-card text-xs font-bold text-foreground transition hover:bg-muted cursor-pointer"
+          className="relative group overflow-hidden flex h-8 items-center justify-center gap-1.5 rounded-xs border border-amber-400 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 text-xs font-black text-amber-950 shadow-xs hover:brightness-105 active:scale-95 transition cursor-pointer"
         >
-          <Dices className="h-3.5 w-3.5" />
+          {/* Vệt sáng óng ánh quét qua (Shimmer Gleam) */}
+          <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/60 to-transparent pointer-events-none" />
+          <Dices className="h-3.5 w-3.5 transition-transform duration-500 group-hover:rotate-180 group-hover:scale-110" />
           <span>Bốc ngẫu nhiên</span>
         </button>
       </div>

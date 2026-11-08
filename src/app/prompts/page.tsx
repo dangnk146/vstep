@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useMemo, useRef, useState, useSyncExternalStore } from 'react';
-import { LoaderCircle } from 'lucide-react';
+import { LoaderCircle, Sparkles } from 'lucide-react';
 import {
   getExamCategory,
   toPromptEditorHtml,
@@ -397,12 +397,15 @@ export default function PromptBankPage() {
       <PromptHeader
         totalCount={allPrompts.length}
         isLoading={isLoading}
+        selectedSchool={selectedSchool}
+        selectedBatch={selectedBatch}
         onOpenExport={() => {
           setCustomExportConfig({});
           setIsExportOpen(true);
         }}
         onRandomPrompt={handleRandomPrompt}
       />
+
 
       {/* Error banner */}
       {loadError && (

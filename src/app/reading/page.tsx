@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { READING_TESTS } from './readingTests';
 import type { ReadingPassage, ReadingQuestion } from './readingTests';
+import { TopHeader } from '@/components/TopHeader';
 
 const READING_TIME = 60 * 60;
 const QUESTION_COUNT = 40;
@@ -241,7 +242,12 @@ export default function ReadingPage() {
 
   return (
     <div className="flex h-[calc(100dvh-5.5rem)] min-h-[420px] w-full flex-col overflow-hidden animate-fade-in lg:min-h-[580px]">
-      <h1 className="sr-only">VSTEP Reading</h1>
+      <TopHeader
+        icon={BookOpen}
+        title="VSTEP Reading"
+        showExamFilter={false}
+        className="mb-2 shrink-0"
+      />
 
       <main className="grid min-h-0 flex-1 grid-rows-[minmax(0,1fr)_minmax(210px,30dvh)] gap-2 lg:grid-cols-2 lg:grid-rows-1 lg:gap-4">
         <section className="order-2 flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-card lg:order-2" aria-labelledby="reading-questions-heading">

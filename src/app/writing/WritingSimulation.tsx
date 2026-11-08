@@ -22,6 +22,7 @@ import {
   ChevronUp,
 } from 'lucide-react';
 import Link from 'next/link';
+import { TopHeader } from '@/components/TopHeader';
 import { toReadablePromptText } from '@/utils/examPrompts';
 import {
   buildExamQueryString,
@@ -498,34 +499,22 @@ export default function WritingPage() {
   return (
     <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
       {/* Top Header */}
-      <header className="flex h-9 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white shadow-xs">
-        <div className="flex items-center gap-2 text-xs font-bold sm:text-sm">
-          <PenTool className="h-4 w-4" />
-          <span>VSTEP Writing</span>
-        </div>
-
-        <div className="flex items-center gap-1.5">
-          <button
-            type="button"
-            onClick={() => void handleRandomPrompt()}
-            disabled={isLoadingRandomPrompt}
-            title={isLoadingRandomPrompt ? 'Đang tải đề viết…' : 'Lấy đề viết ngẫu nhiên'}
-            aria-label={isLoadingRandomPrompt ? 'Đang tải đề viết' : 'Lấy đề viết ngẫu nhiên'}
-            aria-busy={isLoadingRandomPrompt}
-            className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20 disabled:cursor-wait disabled:opacity-70 cursor-pointer"
-          >
-            {isLoadingRandomPrompt ? <LoaderCircle className="h-3.5 w-3.5 animate-spin" /> : <Dices className="h-3.5 w-3.5" />}
-          </button>
-          <Link
-            href="/writing/settings"
-            title="Cấu hình Writing"
-            aria-label="Cấu hình Writing"
-            className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20"
-          >
-            <Settings className="h-3.5 w-3.5" />
-          </Link>
-        </div>
-      </header>
+      <TopHeader
+        icon={PenTool}
+        title="VSTEP Writing"
+        onRandom={() => void handleRandomPrompt()}
+        isLoadingRandom={isLoadingRandomPrompt}
+        randomButtonTitle={isLoadingRandomPrompt ? 'Đang tải đề viết…' : 'Bốc đề viết ngẫu nhiên'}
+      >
+        <Link
+          href="/writing/settings"
+          title="Cấu hình Writing"
+          aria-label="Cấu hình Writing"
+          className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20 cursor-pointer"
+        >
+          <Settings className="h-3.5 w-3.5" />
+        </Link>
+      </TopHeader>
 
       {/* Warning if no template */}
       {!isWarningDismissed && !activeTemplate.trim() && (

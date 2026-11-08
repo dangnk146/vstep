@@ -26,6 +26,7 @@ import {
   LoaderCircle,
 } from 'lucide-react';
 import { MINDMAP_HUBS, HubMetadata, MindmapTopic, MindmapNode, normalizeTopic } from './data';
+import { TopHeader } from '@/components/TopHeader';
 
 interface PathEdge {
   id: string;
@@ -1199,57 +1200,54 @@ export default function Mindmap() {
 
   return (
     <div className="flex w-full max-w-full flex-col space-y-2.5 animate-fade-in pb-12 sm:pb-6 px-1.5 sm:px-3 lg:px-5 select-text">
-      {/* 1. Header chuẩn đồng bộ 100% với /prompts và /speaking (Responsive cho mobile) */}
-      <header className="flex min-h-9 h-auto py-1 sm:py-0 sm:h-9 items-center justify-between rounded-sm bg-[#245b86] px-2.5 sm:px-3 text-white shadow-xs">
-        <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-bold sm:text-sm min-w-0">
-          <Compass className="h-4 w-4 shrink-0 text-white" />
-          <span className="truncate">
+      {/* 1. Header chuẩn dùng chung TopHeader đồng bộ với /prompts, /speaking, /writing */}
+      <TopHeader
+        icon={Compass}
+        title={
+          <>
             <span className="hidden sm:inline">VSTEP </span>Sơ Đồ Ý Tưởng
             <span className="hidden md:inline"> & Từ Vựng</span>
-          </span>
-          <span className="ml-1 rounded-full bg-white/20 px-1.5 sm:px-2 py-0.5 text-[10px] font-semibold shrink-0">
-            {totalTopicsCount} chủ đề
-          </span>
-        </div>
+          </>
+        }
+        badge={`${totalTopicsCount} chủ đề`}
+        showExamFilter={false}
+      >
+        {/* Bật / Tắt dịch tiếng Việt */}
+        <button
+          type="button"
+          onClick={() => setShowVietnamese((v) => !v)}
+          className={`flex h-7 items-center gap-1 rounded-xs border px-1.5 sm:px-2 text-xs font-medium transition cursor-pointer ${
+            showVietnamese
+              ? 'border-amber-300 bg-amber-400/25 text-amber-200 hover:bg-amber-400/35'
+              : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
+          }`}
+          title={showVietnamese ? 'Ẩn dịch tiếng Việt' : 'Hiện dịch tiếng Việt'}
+        >
+          {showVietnamese ? <Eye className="h-3.5 w-3.5" /> : <EyeOff className="h-3.5 w-3.5" />}
+          <span className="hidden sm:inline">Dịch Việt</span>
+        </button>
 
-        <div className="flex items-center gap-1.5 shrink-0">
-          {/* Bật / Tắt dịch tiếng Việt */}
-          <button
-            type="button"
-            onClick={() => setShowVietnamese((v) => !v)}
-            className={`flex h-7 items-center gap-1 rounded-xs border px-1.5 sm:px-2 text-xs font-medium transition cursor-pointer ${
-              showVietnamese
-                ? 'border-amber-300 bg-amber-400/25 text-amber-200 hover:bg-amber-400/35'
-                : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
-            }`}
-            title={showVietnamese ? 'Ẩn dịch tiếng Việt' : 'Hiện dịch tiếng Việt'}
-          >
-            {showVietnamese ? <Eye className="h-3.5 w-3.5" /> : <EyeOff className="h-3.5 w-3.5" />}
-            <span className="hidden sm:inline">Dịch Việt</span>
-          </button>
-
-          {/* Chuyển đổi Trang văn bản 2 cột vs Sơ đồ nhánh */}
-          <button
-            type="button"
-            onClick={() => switchViewMode(viewMode === 'outline' ? 'mindmap' : 'outline')}
-            className="flex h-7 items-center gap-1.5 rounded-xs border border-white/30 bg-white/10 px-2 sm:px-2.5 text-xs font-bold text-white transition hover:bg-white/20 cursor-pointer"
-          >
-            {viewMode === 'outline' ? (
-              <>
-                <Compass className="h-3.5 w-3.5" />
-                <span className="hidden sm:inline">Xem Sơ đồ nhánh</span>
-                <span className="sm:hidden text-[11px]">Sơ đồ</span>
-              </>
-            ) : (
-              <>
-                <FileText className="h-3.5 w-3.5" />
-                <span className="hidden sm:inline">Xem Trang văn bản</span>
-                <span className="sm:hidden text-[11px]">Văn bản</span>
-              </>
-            )}
-          </button>
-        </div>
-      </header>
+        {/* Chuyển đổi Trang văn bản 2 cột vs Sơ đồ nhánh */}
+        <button
+          type="button"
+          onClick={() => switchViewMode(viewMode === 'outline' ? 'mindmap' : 'outline')}
+          className="flex h-7 items-center gap-1.5 rounded-xs border border-white/30 bg-white/10 px-2 sm:px-2.5 text-xs font-bold text-white transition hover:bg-white/20 cursor-pointer"
+        >
+          {viewMode === 'outline' ? (
+            <>
+              <Compass className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Xem Sơ đồ nhánh</span>
+              <span className="sm:hidden text-[11px]">Sơ đồ</span>
+            </>
+          ) : (
+            <>
+              <FileText className="h-3.5 w-3.5" />
+              <span className="hidden sm:inline">Xem Trang văn bản</span>
+              <span className="sm:hidden text-[11px]">Văn bản</span>
+            </>
+          )}
+        </button>
+      </TopHeader>
 
       {/* Thông báo lỗi nếu có */}
       {loadError && (

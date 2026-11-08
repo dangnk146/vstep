@@ -15,6 +15,7 @@ import {
   X,
 } from 'lucide-react';
 import videoData from './listvideo.json';
+import { TopHeader } from '@/components/TopHeader';
 
 const YOUTUBE_IFRAME_API_URL = 'https://www.youtube.com/iframe_api';
 const VIDEO_JUMP_MINUTES = [2, 3, 4, 5, 6, 8, 10, 12] as const;
@@ -461,7 +462,12 @@ export default function ListeningPage() {
 
   return (
     <div className="flex h-[calc(100dvh-5.5rem)] min-h-[420px] w-full flex-col overflow-hidden animate-fade-in lg:min-h-[580px]">
-      <h1 className="sr-only">VSTEP Listening</h1>
+      <TopHeader
+        icon={Headphones}
+        title="VSTEP Listening"
+        showExamFilter={false}
+        className="mb-2 shrink-0"
+      />
 
       <main className="grid min-h-0 flex-1 grid-rows-[auto_minmax(0,1fr)] gap-2 lg:grid-cols-[minmax(0,7fr)_minmax(0,3fr)] lg:grid-rows-1 lg:gap-3">
         {/* Video Section */}

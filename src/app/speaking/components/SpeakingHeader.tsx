@@ -2,7 +2,8 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { Dices, Lightbulb, LoaderCircle, Mic, Settings } from 'lucide-react';
+import { Lightbulb, Mic, Settings } from 'lucide-react';
+import { TopHeader } from '@/components/TopHeader';
 
 interface SpeakingHeaderProps {
   onRandomPrompt: () => void;
@@ -18,52 +19,38 @@ export function SpeakingHeader({
   onToggleHint,
 }: SpeakingHeaderProps) {
   return (
-    <header className="flex h-9 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white shadow-xs">
-      <div className="flex items-center gap-2 text-xs font-bold sm:text-sm">
-        <Mic className="h-4 w-4" />
-        <span>VSTEP Speaking</span>
-      </div>
-      <div className="flex items-center gap-1.5">
-        {onToggleHint && (
-          <button
-            type="button"
-            onClick={onToggleHint}
-            title={isHintOpen ? 'Thu gọn bảng gợi ý' : 'Mở bảng gợi ý'}
-            aria-label="Bật tắt bảng gợi ý"
-            className={`flex h-7 items-center gap-1 rounded-xs border px-2 text-xs font-medium transition cursor-pointer ${isHintOpen
-              ? 'border-amber-300 bg-amber-400/25 text-amber-200 hover:bg-amber-400/35'
-              : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
-              }`}
-          >
-            <Lightbulb className={`h-3.5 w-3.5 ${isHintOpen ? 'text-amber-300 fill-amber-300/40' : ''}`} />
-            <span className="hidden sm:inline">Gợi ý</span>
-          </button>
-        )}
-
+    <TopHeader
+      icon={Mic}
+      title="VSTEP Speaking"
+      onRandom={onRandomPrompt}
+      isLoadingRandom={isLoadingRandomPrompt}
+      randomButtonTitle={isLoadingRandomPrompt ? 'Đang tải đề nói…' : 'Bốc đề nói ngẫu nhiên'}
+    >
+      {onToggleHint && (
         <button
           type="button"
-          onClick={onRandomPrompt}
-          disabled={isLoadingRandomPrompt}
-          title={isLoadingRandomPrompt ? 'Đang tải đề nói…' : 'Lấy đề nói ngẫu nhiên'}
-          aria-label={isLoadingRandomPrompt ? 'Đang tải đề nói' : 'Lấy đề nói ngẫu nhiên'}
-          aria-busy={isLoadingRandomPrompt}
-          className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20 disabled:cursor-wait disabled:opacity-70 cursor-pointer"
+          onClick={onToggleHint}
+          title={isHintOpen ? 'Thu gọn bảng gợi ý' : 'Mở bảng gợi ý'}
+          aria-label="Bật tắt bảng gợi ý"
+          className={`flex h-7 items-center gap-1 rounded-xs border px-2 text-xs font-medium transition cursor-pointer ${
+            isHintOpen
+              ? 'border-amber-300 bg-amber-400/25 text-amber-200 hover:bg-amber-400/35'
+              : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
+          }`}
         >
-          {isLoadingRandomPrompt ? (
-            <LoaderCircle className="h-3.5 w-3.5 animate-spin" />
-          ) : (
-            <Dices className="h-3.5 w-3.5" />
-          )}
+          <Lightbulb className={`h-3.5 w-3.5 ${isHintOpen ? 'text-amber-300 fill-amber-300/40' : ''}`} />
+          <span className="hidden sm:inline">Gợi ý</span>
         </button>
-        <Link
-          href="/speaking/settings"
-          title="Cấu hình Speaking"
-          aria-label="Cấu hình Speaking"
-          className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20"
-        >
-          <Settings className="h-3.5 w-3.5" />
-        </Link>
-      </div>
-    </header>
+      )}
+
+      <Link
+        href="/speaking/settings"
+        title="Cấu hình Speaking"
+        aria-label="Cấu hình Speaking"
+        className="grid h-7 w-7 place-items-center rounded-xs border border-white/30 bg-white/10 transition hover:bg-white/20 cursor-pointer"
+      >
+        <Settings className="h-3.5 w-3.5" />
+      </Link>
+    </TopHeader>
   );
 }
