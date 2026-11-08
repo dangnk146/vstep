@@ -23,8 +23,9 @@ import {
   Eye,
   EyeOff,
   Layers,
+  LoaderCircle,
 } from 'lucide-react';
-import { MINDMAP_TOPICS, MindmapTopic, MindmapNode } from './data';
+import { MINDMAP_HUBS, HubMetadata, MindmapTopic, MindmapNode, normalizeTopic } from './data';
 
 interface PathEdge {
   id: string;
@@ -98,8 +99,10 @@ function nodeMatchesQuery(node: MindmapNode, query: string): boolean {
 // 2-COLUMN CLEAN OUTLINE VIEW (UNIFIED WITH /prompts & /speaking)
 // =========================================================================
 function OutlineDocumentView({
-  topics,
+  hubs,
   activeTopicId,
+  activeTopic,
+  isLoading,
   onSelectTopic,
   searchQuery,
   onSearchChange,
@@ -107,9 +110,11 @@ function OutlineDocumentView({
   onCopy,
   getTopicIcon,
 }: {
-  topics: MindmapTopic[];
-  activeTopicId: MindmapTopic['id'];
-  onSelectTopic: (id: MindmapTopic['id']) => void;
+  hubs: HubMetadata[];
+  activeTopicId: string;
+  activeTopic: MindmapTopic | null;
+  isLoading: boolean;
+  onSelectTopic: (id: string) => void;
   searchQuery: string;
   onSearchChange: (q: string) => void;
   showVietnamese: boolean;
@@ -119,15 +124,10 @@ function OutlineDocumentView({
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [activeSubtopicId, setActiveSubtopicId] = useState<string | null>(null);
 
-  const activeTopic = useMemo(
-    () => topics.find((t) => t.id === activeTopicId) || topics[0],
-    [topics, activeTopicId]
-  );
-
-  const activeBranches = useMemo(
-    () => [...activeTopic.leftBranches, ...activeTopic.rightBranches],
-    [activeTopic]
-  );
+  const activeBranches = useMemo(() => {
+    if (!activeTopic) return [];
+    return [...(activeTopic.leftBranches || []), ...(activeTopic.rightBranches || [])];
+  }, [activeTopic]);
 
   // Filter branches & children by search query
   const filteredBranches = useMemo(() => {
@@ -241,17 +241,13 @@ function OutlineDocumentView({
               5 Major Topic Hubs
             </span>
             <span className="text-[11px] font-bold text-[#245b86] dark:text-sky-400">
-              {filteredTopicsCount}/{totalTopicsInHub}
+              {isLoading ? '...' : `${filteredTopicsCount}/${totalTopicsInHub}`}
             </span>
           </div>
 
           <div className="space-y-0.5">
-            {topics.map((t) => {
-              const active = t.id === activeTopic.id;
-              const count = [...t.leftBranches, ...t.rightBranches].reduce(
-                (acc, b) => acc + (b.children?.length || 0),
-                0
-              );
+            {hubs.map((t) => {
+              const active = t.id === activeTopicId;
 
               return (
                 <button
@@ -261,20 +257,24 @@ function OutlineDocumentView({
                     onSelectTopic(t.id);
                     setActiveSubtopicId(null);
                   }}
-                  className={`flex w-full items-center justify-between rounded-xs px-2.5 py-1.5 text-xs font-bold transition cursor-pointer ${active
+                  className={`flex w-full items-center justify-between rounded-xs px-2.5 py-1.5 text-xs font-bold transition cursor-pointer min-w-0 ${
+                    active
                       ? 'bg-[#245b86] text-white shadow-xs'
                       : 'text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800/70'
-                    }`}
+                  }`}
                 >
-                  <span className="flex items-center gap-2 truncate">
+                  <span className="flex items-center gap-2 truncate min-w-0">
                     {getTopicIcon(t.icon)}
                     <span className="truncate">{t.title}</span>
                   </span>
                   <span
-                    className={`rounded-xs px-1.5 py-0.2 text-[10px] shrink-0 ${active ? 'bg-white/20 text-white' : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
-                      }`}
+                    className={`rounded-xs px-1.5 py-0.2 text-[10px] shrink-0 ${
+                      active
+                        ? 'bg-white/20 text-white'
+                        : 'bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400'
+                    }`}
                   >
-                    {count}
+                    {t.topicCount}
                   </span>
                 </button>
               );
@@ -283,56 +283,72 @@ function OutlineDocumentView({
         </div>
 
         {/* 3. Đề mục cấp 1 & Các chủ đề con của Hub đang chọn (Full nội dung, Không scrollbar nội bộ, Tiếng Anh) */}
-        <div className="rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 p-2.5 shadow-xs space-y-2.5">
-          {activeBranches.map((branch, bIdx) => {
-            const children = branch.children || [];
-            return (
-              <div
-                key={branch.id}
-                className={`space-y-1 ${bIdx > 0 ? 'pt-2 border-t border-slate-200/80 dark:border-slate-800' : ''}`}
-              >
-                <div className="px-1 text-[11px] font-bold uppercase tracking-wide text-[#245b86] dark:text-sky-400">
-                  Part {bIdx + 1}: {getBranchEnTitle(branch.id, branch.title)}
-                </div>
+        {isLoading ? (
+          <div className="rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 p-6 flex flex-col items-center justify-center space-y-2 text-muted-foreground shadow-xs">
+            <LoaderCircle className="h-5 w-5 animate-spin text-[#245b86] dark:text-sky-400" />
+            <span className="text-xs font-semibold">Đang tải đề mục...</span>
+          </div>
+        ) : (
+          <div className="rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 p-2.5 shadow-xs space-y-2.5">
+            {activeBranches.map((branch, bIdx) => {
+              const children = branch.children || [];
+              return (
+                <div
+                  key={branch.id}
+                  className={`space-y-1 ${bIdx > 0 ? 'pt-2 border-t border-slate-200/80 dark:border-slate-800' : ''}`}
+                >
+                  <div className="px-1 text-[11px] font-bold uppercase tracking-wide text-purple-700 dark:text-purple-400">
+                    Part {bIdx + 1}: {getBranchEnTitle(branch.id, branch.title)}
+                  </div>
 
-                <div className="space-y-0.5">
-                  {children.map((sub) => {
-                    sidebarCounter++;
-                    const isSelected = activeSubtopicId === sub.id;
-                    const matched = nodeMatchesQuery(sub, searchQuery);
-                    const enMatch = sub.title.match(/\(([^)]+)\)/);
-                    const enTitle = enMatch ? enMatch[1].trim() : sub.title;
+                  <div className="space-y-0.5">
+                    {children.map((sub) => {
+                      sidebarCounter++;
+                      const isSelected = activeSubtopicId === sub.id;
+                      const matched = nodeMatchesQuery(sub, searchQuery);
+                      const enMatch = sub.title.match(/\(([^)]+)\)/);
+                      const enTitle = enMatch ? enMatch[1].trim() : sub.title;
 
-                    return (
-                      <button
-                        key={sub.id}
-                        type="button"
-                        onClick={() => scrollToTopic(sub.id)}
-                        className={`flex w-full items-center justify-between rounded-xs px-2 py-1 text-left text-xs transition cursor-pointer ${!matched
-                            ? 'opacity-35'
-                            : isSelected
+                      return (
+                        <button
+                          key={sub.id}
+                          type="button"
+                          onClick={() => scrollToTopic(sub.id)}
+                          className={`flex w-full items-center justify-between rounded-xs px-2 py-1 text-left text-xs transition cursor-pointer min-w-0 ${
+                            !matched
+                              ? 'opacity-35'
+                              : isSelected
                               ? 'bg-[#245b86]/10 font-bold text-[#245b86] dark:bg-sky-950/70 dark:text-sky-200 border-l-2 border-[#245b86] dark:border-sky-400'
                               : 'text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 hover:text-foreground'
                           }`}
-                      >
-                        <span className="truncate">
-                          {sidebarCounter}. {enTitle}
-                        </span>
-                      </button>
-                    );
-                  })}
+                        >
+                          <span className="truncate min-w-0 flex-1">
+                            {sidebarCounter}. {enTitle}
+                          </span>
+                        </button>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        )}
       </aside>
 
       {/* =========================================================================
           CỘT 2: NỘI DUNG CHI TIẾT (Phối màu Indigo/Slate dịu mắt, tương phản cao, Mở 100%)
           ========================================================================= */}
       <main className="flex-1 min-w-0 space-y-3 w-full select-text">
-        {filteredBranches.length === 0 ? (
+        {isLoading ? (
+          <div className="rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 p-12 flex flex-col items-center justify-center space-y-3 min-h-[360px] shadow-xs">
+            <LoaderCircle className="h-8 w-8 animate-spin text-[#245b86] dark:text-sky-400" />
+            <p className="text-sm font-bold text-foreground">Đang tải dữ liệu chủ đề...</p>
+            <p className="text-xs text-muted-foreground text-center">
+              Vui lòng chờ giây lát trong khi hệ thống nạp các câu hỏi và từ vựng thi thật.
+            </p>
+          </div>
+        ) : filteredBranches.length === 0 ? (
           <div className="rounded-sm border border-dashed border-slate-300 dark:border-slate-800 bg-white dark:bg-slate-900 p-8 text-center">
             <p className="text-sm font-bold text-foreground">Không tìm thấy chủ đề phù hợp</p>
             <p className="mt-1 text-xs text-muted-foreground">
@@ -786,9 +802,10 @@ function Level1BranchNode({
 }
 
 function getConnectionsForTopic(
-  topic: MindmapTopic,
+  topic: MindmapTopic | null,
   collapsedMap: Record<string, boolean>
 ) {
+  if (!topic) return [];
   const connections: {
     fromId: string;
     toId: string;
@@ -796,7 +813,7 @@ function getConnectionsForTopic(
     color: string;
   }[] = [];
 
-  for (const branch of topic.leftBranches) {
+  for (const branch of topic.leftBranches || []) {
     const branchColor = branch.color || '#245b86';
     connections.push({
       fromId: 'root-left',
@@ -828,7 +845,7 @@ function getConnectionsForTopic(
     }
   }
 
-  for (const branch of topic.rightBranches) {
+  for (const branch of topic.rightBranches || []) {
     const branchColor = branch.color || '#0284c7';
     connections.push({
       fromId: 'root-right',
@@ -867,7 +884,12 @@ function getConnectionsForTopic(
 // MAIN PAGE COMPONENT (UNIFIED HEADER & LAYOUT WITH /prompts & /speaking)
 // =========================================================================
 export default function Mindmap() {
-  const [activeTopicId, setActiveTopicId] = useState<MindmapTopic['id']>('education');
+  const [activeTopicId, setActiveTopicId] = useState<string>('education');
+  const [loadedHubs, setLoadedHubs] = useState<Record<string, MindmapTopic>>({});
+  const [isLoadingHub, setIsLoadingHub] = useState<boolean>(true);
+  const [loadError, setLoadError] = useState<string | null>(null);
+  const [hubsList, setHubsList] = useState<HubMetadata[]>(MINDMAP_HUBS);
+
   const [viewMode, setViewMode] = useState<'mindmap' | 'outline'>('outline');
   const [showVietnamese, setShowVietnamese] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
@@ -875,44 +897,82 @@ export default function Mindmap() {
   const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({});
   const [toastMessage, setToastMessage] = useState<string | null>(null);
 
+  // Fetch hub data on demand with client caching
+  const loadHubData = useCallback(async (hubId: string) => {
+    if (loadedHubs[hubId]) {
+      setActiveTopicId(hubId);
+      return;
+    }
+
+    setIsLoadingHub(true);
+    setLoadError(null);
+    try {
+      const res = await fetch(`/api/mindmap?hub=${encodeURIComponent(hubId)}`);
+      if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+      const json = await res.json();
+      if (!json.ok || !json.data) throw new Error(json.error || 'Failed to parse hub data');
+
+      const normalized = normalizeTopic(json.data);
+      setLoadedHubs((prev) => ({
+        ...prev,
+        [hubId]: normalized,
+      }));
+      setActiveTopicId(hubId);
+    } catch (err: any) {
+      console.error('Error fetching hub data:', err);
+      setLoadError(err.message || 'Không thể tải dữ liệu chủ đề');
+    } finally {
+      setIsLoadingHub(false);
+    }
+  }, [loadedHubs]);
+
+  // Initial load: parse URL/storage and fetch first hub
   useEffect(() => {
+    let initialTopic = 'education';
     try {
       const params = new URLSearchParams(window.location.search);
-      const urlTopic = params.get('topic') as MindmapTopic['id'] | null;
+      const urlTopic = params.get('topic');
       const urlView = params.get('view') as 'mindmap' | 'outline' | null;
-      const storedTopic = localStorage.getItem('vstep_mindmap_active_topic') as MindmapTopic['id'] | null;
-      const validIds = MINDMAP_TOPICS.map((t) => t.id);
+      const storedTopic = localStorage.getItem('vstep_mindmap_active_topic');
+      const validIds = MINDMAP_HUBS.map((h) => h.id);
 
       if (urlView === 'outline' || urlView === 'mindmap') {
         setViewMode(urlView);
       }
 
-      const resolved =
-        urlTopic && validIds.includes(urlTopic)
-          ? urlTopic
-          : storedTopic && validIds.includes(storedTopic)
-            ? storedTopic
-            : null;
-
-      if (resolved) {
-        setActiveTopicId(resolved);
+      if (urlTopic && validIds.includes(urlTopic)) {
+        initialTopic = urlTopic;
+      } else if (storedTopic && validIds.includes(storedTopic)) {
+        initialTopic = storedTopic;
       }
     } catch {
       // Ignore storage errors
     }
-  }, []);
+
+    loadHubData(initialTopic);
+
+    // Also fetch hubs metadata to ensure counts are always accurate
+    fetch('/api/mindmap?action=hubs')
+      .then((res) => res.json())
+      .then((json) => {
+        if (json.ok && Array.isArray(json.hubs)) {
+          setHubsList(json.hubs);
+        }
+      })
+      .catch(() => {});
+  }, [loadHubData]);
 
   const selectTopic = useCallback(
-    (topicId: MindmapTopic['id']) => {
-      setActiveTopicId(topicId);
+    (topicId: string) => {
       try {
         localStorage.setItem('vstep_mindmap_active_topic', topicId);
         window.history.replaceState(null, '', `?topic=${topicId}&view=${viewMode}`);
       } catch {
         // Ignore storage errors
       }
+      loadHubData(topicId);
     },
-    [viewMode]
+    [viewMode, loadHubData]
   );
 
   const switchViewMode = (mode: 'mindmap' | 'outline') => {
@@ -935,22 +995,13 @@ export default function Mindmap() {
   zoomRef.current = zoom;
 
   const activeTopic = useMemo(
-    () => MINDMAP_TOPICS.find((t) => t.id === activeTopicId) || MINDMAP_TOPICS[0],
-    [activeTopicId]
+    () => loadedHubs[activeTopicId] || null,
+    [loadedHubs, activeTopicId]
   );
 
   const totalTopicsCount = useMemo(
-    () =>
-      MINDMAP_TOPICS.reduce(
-        (acc, t) =>
-          acc +
-          [...t.leftBranches, ...t.rightBranches].reduce(
-            (bAcc, b) => bAcc + (b.children?.length || 0),
-            0
-          ),
-        0
-      ),
-    []
+    () => hubsList.reduce((acc, h) => acc + (h.topicCount || 0), 0),
+    [hubsList]
   );
 
   const registerAnchor = useCallback((id: string, el: HTMLElement | null) => {
@@ -988,6 +1039,7 @@ export default function Mindmap() {
   const expandAll = useCallback(() => setCollapsedMap({}), []);
 
   const collapseAll = useCallback(() => {
+    if (!activeTopic) return;
     const newMap: Record<string, boolean> = {};
     const traverse = (node: MindmapNode) => {
       if (node.children && node.children.length > 0) {
@@ -995,8 +1047,8 @@ export default function Mindmap() {
         node.children.forEach(traverse);
       }
     };
-    activeTopic.rightBranches.forEach(traverse);
-    activeTopic.leftBranches.forEach(traverse);
+    (activeTopic.rightBranches || []).forEach(traverse);
+    (activeTopic.leftBranches || []).forEach(traverse);
     setCollapsedMap(newMap);
   }, [activeTopic]);
 
@@ -1018,7 +1070,7 @@ export default function Mindmap() {
   }, [activeTopicId, viewMode, centerCanvas]);
 
   const calculatePaths = useCallback(() => {
-    if (viewMode !== 'mindmap' || !treeContainerRef.current) return;
+    if (viewMode !== 'mindmap' || !treeContainerRef.current || !activeTopic) return;
     const containerRect = treeContainerRef.current.getBoundingClientRect();
     if (containerRect.width === 0 || containerRect.height === 0) return;
 
@@ -1100,6 +1152,32 @@ export default function Mindmap() {
     isDraggingRef.current = false;
   };
 
+  // Touch handlers for mobile pan
+  const handleTouchStart = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (viewMode !== 'mindmap' || e.touches.length !== 1 || !canvasRef.current) return;
+    const target = e.target as HTMLElement;
+    if (target.closest('button') || target.closest('input') || target.closest('a')) return;
+    const touch = e.touches[0];
+    isDraggingRef.current = true;
+    startPosRef.current = {
+      x: touch.clientX,
+      y: touch.clientY,
+      scrollLeft: canvasRef.current.scrollLeft,
+      scrollTop: canvasRef.current.scrollTop,
+    };
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<HTMLDivElement>) => {
+    if (!isDraggingRef.current || !canvasRef.current || e.touches.length !== 1) return;
+    const touch = e.touches[0];
+    canvasRef.current.scrollLeft = startPosRef.current.scrollLeft - (touch.clientX - startPosRef.current.x);
+    canvasRef.current.scrollTop = startPosRef.current.scrollTop - (touch.clientY - startPosRef.current.y);
+  };
+
+  const handleTouchEnd = () => {
+    isDraggingRef.current = false;
+  };
+
   const getTopicIcon = (iconName: string) => {
     switch (iconName) {
       case 'GraduationCap':
@@ -1121,25 +1199,29 @@ export default function Mindmap() {
 
   return (
     <div className="flex w-full max-w-full flex-col space-y-2.5 animate-fade-in pb-12 sm:pb-6 px-1.5 sm:px-3 lg:px-5 select-text">
-      {/* 1. Header chuẩn đồng bộ 100% với /prompts và /speaking (bg-[#245b86] h-9) */}
-      <header className="flex h-9 items-center justify-between rounded-sm bg-[#245b86] px-3 text-white shadow-xs">
-        <div className="flex items-center gap-2 text-xs font-bold sm:text-sm">
-          <Compass className="h-4 w-4 text-white" />
-          <span>VSTEP Sơ Đồ Ý Tưởng & Từ Vựng</span>
-          <span className="ml-1 rounded-full bg-white/20 px-2 py-0.5 text-[10px] font-semibold">
+      {/* 1. Header chuẩn đồng bộ 100% với /prompts và /speaking (Responsive cho mobile) */}
+      <header className="flex min-h-9 h-auto py-1 sm:py-0 sm:h-9 items-center justify-between rounded-sm bg-[#245b86] px-2.5 sm:px-3 text-white shadow-xs">
+        <div className="flex items-center gap-1.5 sm:gap-2 text-xs font-bold sm:text-sm min-w-0">
+          <Compass className="h-4 w-4 shrink-0 text-white" />
+          <span className="truncate">
+            <span className="hidden sm:inline">VSTEP </span>Sơ Đồ Ý Tưởng
+            <span className="hidden md:inline"> & Từ Vựng</span>
+          </span>
+          <span className="ml-1 rounded-full bg-white/20 px-1.5 sm:px-2 py-0.5 text-[10px] font-semibold shrink-0">
             {totalTopicsCount} chủ đề
           </span>
         </div>
 
-        <div className="flex items-center gap-1.5">
+        <div className="flex items-center gap-1.5 shrink-0">
           {/* Bật / Tắt dịch tiếng Việt */}
           <button
             type="button"
             onClick={() => setShowVietnamese((v) => !v)}
-            className={`flex h-7 items-center gap-1 rounded-xs border px-2 text-xs font-medium transition cursor-pointer ${showVietnamese
+            className={`flex h-7 items-center gap-1 rounded-xs border px-1.5 sm:px-2 text-xs font-medium transition cursor-pointer ${
+              showVietnamese
                 ? 'border-amber-300 bg-amber-400/25 text-amber-200 hover:bg-amber-400/35'
                 : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
-              }`}
+            }`}
             title={showVietnamese ? 'Ẩn dịch tiếng Việt' : 'Hiện dịch tiếng Việt'}
           >
             {showVietnamese ? <Eye className="h-3.5 w-3.5" /> : <EyeOff className="h-3.5 w-3.5" />}
@@ -1150,28 +1232,40 @@ export default function Mindmap() {
           <button
             type="button"
             onClick={() => switchViewMode(viewMode === 'outline' ? 'mindmap' : 'outline')}
-            className="flex h-7 items-center gap-1.5 rounded-xs border border-white/30 bg-white/10 px-2.5 text-xs font-bold text-white transition hover:bg-white/20 cursor-pointer"
+            className="flex h-7 items-center gap-1.5 rounded-xs border border-white/30 bg-white/10 px-2 sm:px-2.5 text-xs font-bold text-white transition hover:bg-white/20 cursor-pointer"
           >
             {viewMode === 'outline' ? (
               <>
                 <Compass className="h-3.5 w-3.5" />
-                <span>Xem Sơ đồ nhánh</span>
+                <span className="hidden sm:inline">Xem Sơ đồ nhánh</span>
+                <span className="sm:hidden text-[11px]">Sơ đồ</span>
               </>
             ) : (
               <>
                 <FileText className="h-3.5 w-3.5" />
-                <span>Xem Trang văn bản</span>
+                <span className="hidden sm:inline">Xem Trang văn bản</span>
+                <span className="sm:hidden text-[11px]">Văn bản</span>
               </>
             )}
           </button>
         </div>
       </header>
 
+      {/* Thông báo lỗi nếu có */}
+      {loadError && (
+        <div className="rounded-sm border border-rose-300 bg-rose-50 dark:bg-rose-950/30 p-3 text-xs text-rose-800 dark:text-rose-200">
+          <p className="font-bold">Lỗi tải dữ liệu:</p>
+          <p>{loadError}</p>
+        </div>
+      )}
+
       {/* 2. Main Content: 2-Column Outline View (Default) OR Mindmap Canvas */}
       {viewMode === 'outline' ? (
         <OutlineDocumentView
-          topics={MINDMAP_TOPICS}
+          hubs={hubsList}
           activeTopicId={activeTopicId}
+          activeTopic={activeTopic}
+          isLoading={isLoadingHub}
           onSelectTopic={selectTopic}
           searchQuery={searchQuery}
           onSearchChange={setSearchQuery}
@@ -1182,28 +1276,29 @@ export default function Mindmap() {
       ) : (
         <div className="space-y-2.5">
           {/* Mindmap Toolbar */}
-          <div className="flex flex-wrap items-center justify-between gap-2 rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 px-3 py-2 shadow-xs">
-            <div className="flex items-center gap-1.5 overflow-x-auto">
-              {MINDMAP_TOPICS.map((t) => {
+          <div className="flex flex-wrap items-center justify-between gap-2 rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 px-2.5 sm:px-3 py-2 shadow-xs">
+            <div className="flex items-center gap-1.5 overflow-x-auto max-w-full pb-1 sm:pb-0 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              {hubsList.map((t) => {
                 const active = t.id === activeTopicId;
                 return (
                   <button
                     key={t.id}
                     type="button"
                     onClick={() => selectTopic(t.id)}
-                    className={`flex h-7 items-center gap-1.5 rounded-xs px-2.5 text-xs font-bold transition cursor-pointer ${active
+                    className={`flex h-7 shrink-0 items-center gap-1.5 rounded-xs px-2 sm:px-2.5 text-xs font-bold transition cursor-pointer ${
+                      active
                         ? 'bg-[#245b86] text-white shadow-xs'
                         : 'bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 hover:text-foreground'
-                      }`}
+                    }`}
                   >
                     {getTopicIcon(t.icon)}
-                    <span>{t.title}</span>
+                    <span className="whitespace-nowrap">{t.title}</span>
                   </button>
                 );
               })}
             </div>
 
-            <div className="flex items-center gap-1.5">
+            <div className="flex items-center gap-1.5 shrink-0">
               <button
                 type="button"
                 onClick={() => setZoom((z) => Math.max(0.4, Number((z - 0.1).toFixed(2))))}
@@ -1252,76 +1347,87 @@ export default function Mindmap() {
             onMouseDown={handleMouseDown}
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
-            className="relative h-[calc(100vh-9.5rem)] w-full cursor-grab overflow-auto rounded-sm border border-slate-200/90 dark:border-slate-800 bg-slate-100/70 dark:bg-slate-950 active:cursor-grabbing [background-image:radial-gradient(circle_at_1px_1px,#cbd5e1_1px,transparent_0)] dark:[background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.12)_1px,transparent_0)] [background-size:24px_24px]"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+            className="relative h-[calc(100dvh-10rem)] min-h-[380px] w-full cursor-grab overflow-auto rounded-sm border border-slate-200/90 dark:border-slate-800 bg-slate-100/70 dark:bg-slate-950 active:cursor-grabbing [background-image:radial-gradient(circle_at_1px_1px,#cbd5e1_1px,transparent_0)] dark:[background-image:radial-gradient(circle_at_1px_1px,rgba(255,255,255,0.12)_1px,transparent_0)] [background-size:24px_24px]"
           >
-            <div
-              style={{
-                transform: `scale(${zoom})`,
-                transformOrigin: 'center center',
-                transition: 'transform 0.15s ease-out',
-              }}
-              className="inline-flex min-h-full min-w-full items-center justify-center p-16"
-            >
+            {isLoadingHub || !activeTopic ? (
+              <div className="flex h-full min-h-[360px] w-full flex-col items-center justify-center space-y-3">
+                <LoaderCircle className="h-8 w-8 animate-spin text-[#245b86] dark:text-sky-400" />
+                <p className="text-sm font-bold text-foreground">Đang tải sơ đồ ý tưởng...</p>
+                <p className="text-xs text-muted-foreground">Vui lòng chờ giây lát trong khi nạp dữ liệu chủ đề.</p>
+              </div>
+            ) : (
               <div
-                ref={treeContainerRef}
-                className="relative inline-flex items-center justify-center min-w-max p-16 gap-16"
+                style={{
+                  transform: `scale(${zoom})`,
+                  transformOrigin: 'center center',
+                  transition: 'transform 0.15s ease-out',
+                }}
+                className="inline-flex min-h-full min-w-full items-center justify-center p-16"
               >
-                <svg className="absolute inset-0 pointer-events-none w-full h-full overflow-visible z-0">
-                  {paths.map((p) => (
-                    <path
-                      key={p.id}
-                      d={p.d}
-                      stroke={p.color}
-                      strokeWidth={2}
-                      fill="none"
-                      strokeLinecap="round"
-                    />
-                  ))}
-                </svg>
+                <div
+                  ref={treeContainerRef}
+                  className="relative inline-flex items-center justify-center min-w-max p-16 gap-16"
+                >
+                  <svg className="absolute inset-0 pointer-events-none w-full h-full overflow-visible z-0">
+                    {paths.map((p) => (
+                      <path
+                        key={p.id}
+                        d={p.d}
+                        stroke={p.color}
+                        strokeWidth={2}
+                        fill="none"
+                        strokeLinecap="round"
+                      />
+                    ))}
+                  </svg>
 
-                <div className="relative z-10 flex flex-col justify-center gap-12 items-end">
-                  {activeTopic.leftBranches.map((branch) => (
-                    <Level1BranchNode
-                      key={branch.id}
-                      node={branch}
-                      direction="left"
-                      branchColor={branch.color || '#245b86'}
-                      collapsedMap={collapsedMap}
-                      toggleCollapse={toggleCollapse}
-                      onCopy={handleCopy}
-                      searchQuery={searchQuery}
-                      showVietnamese={showVietnamese}
-                      registerAnchor={registerAnchor}
-                    />
-                  ))}
-                </div>
+                  <div className="relative z-10 flex flex-col justify-center gap-12 items-end">
+                    {activeTopic.leftBranches.map((branch) => (
+                      <Level1BranchNode
+                        key={branch.id}
+                        node={branch}
+                        direction="left"
+                        branchColor={branch.color || '#245b86'}
+                        collapsedMap={collapsedMap}
+                        toggleCollapse={toggleCollapse}
+                        onCopy={handleCopy}
+                        searchQuery={searchQuery}
+                        showVietnamese={showVietnamese}
+                        registerAnchor={registerAnchor}
+                      />
+                    ))}
+                  </div>
 
-                <div className="relative z-20 shrink-0">
-                  <RootCard node={activeTopic.centerNode} registerAnchor={registerAnchor} />
-                </div>
+                  <div className="relative z-20 shrink-0">
+                    <RootCard node={activeTopic.centerNode} registerAnchor={registerAnchor} />
+                  </div>
 
-                <div className="relative z-10 flex flex-col justify-center gap-12 items-start">
-                  {activeTopic.rightBranches.map((branch) => (
-                    <Level1BranchNode
-                      key={branch.id}
-                      node={branch}
-                      direction="right"
-                      branchColor={branch.color || '#0284c7'}
-                      collapsedMap={collapsedMap}
-                      toggleCollapse={toggleCollapse}
-                      onCopy={handleCopy}
-                      searchQuery={searchQuery}
-                      showVietnamese={showVietnamese}
-                      registerAnchor={registerAnchor}
-                    />
-                  ))}
+                  <div className="relative z-10 flex flex-col justify-center gap-12 items-start">
+                    {activeTopic.rightBranches.map((branch) => (
+                      <Level1BranchNode
+                        key={branch.id}
+                        node={branch}
+                        direction="right"
+                        branchColor={branch.color || '#0284c7'}
+                        collapsedMap={collapsedMap}
+                        toggleCollapse={toggleCollapse}
+                        onCopy={handleCopy}
+                        searchQuery={searchQuery}
+                        showVietnamese={showVietnamese}
+                        registerAnchor={registerAnchor}
+                      />
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
+            )}
 
             <div className="pointer-events-none absolute bottom-3 left-3 z-20 flex items-center gap-1.5 rounded-xs border border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 px-2.5 py-1 text-[11px] text-slate-600 dark:text-slate-300 shadow-2xs">
               <Move className="h-3.5 w-3.5 text-[#245b86] dark:text-sky-400" />
-              <span>Kéo chuột để di chuyển • Bấm vào câu để chép</span>
+              <span>Kéo chuột hoặc vuốt để di chuyển • Bấm vào câu để chép</span>
             </div>
           </div>
         </div>

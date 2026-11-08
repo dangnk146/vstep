@@ -1,10 +1,5 @@
-// Comprehensive Mindmap Data for 5 Topic Hubs covering 100% of 317 VSTEP Exam Questions
-// Loaded from modular JSON files in src/data/mindmap/
-import educationData from '@/data/mindmap/education.json';
-import healthData from '@/data/mindmap/health.json';
-import technologyData from '@/data/mindmap/technology.json';
-import workData from '@/data/mindmap/work.json';
-import societyData from '@/data/mindmap/society.json';
+// Mindmap Hubs metadata & type definitions
+// Topic data is lazy-loaded on demand via /api/mindmap?hub=[id]
 
 export interface MindmapItem {
   id: string;
@@ -56,7 +51,15 @@ export interface MindmapTopic {
   rightBranches: MindmapNode[];
 }
 
-function normalizeTopic(raw: unknown): MindmapTopic {
+export interface HubMetadata {
+  id: string;
+  title: string;
+  vietnameseTitle: string;
+  icon: string;
+  topicCount: number;
+}
+
+export function normalizeTopic(raw: unknown): MindmapTopic {
   const topic = raw as MindmapTopic;
   return {
     ...topic,
@@ -65,10 +68,40 @@ function normalizeTopic(raw: unknown): MindmapTopic {
   };
 }
 
-export const MINDMAP_TOPICS: MindmapTopic[] = [
-  normalizeTopic(educationData),
-  normalizeTopic(healthData),
-  normalizeTopic(technologyData),
-  normalizeTopic(workData),
-  normalizeTopic(societyData),
+export const MINDMAP_HUBS: HubMetadata[] = [
+  {
+    id: 'education',
+    title: 'Education & Skills',
+    vietnameseTitle: 'Giáo dục, Học tập & Kỹ năng',
+    icon: 'GraduationCap',
+    topicCount: 15,
+  },
+  {
+    id: 'health',
+    title: 'Health & Lifestyle',
+    vietnameseTitle: 'Sức khỏe & Lối sống',
+    icon: 'HeartPulse',
+    topicCount: 14,
+  },
+  {
+    id: 'technology',
+    title: 'Technology & Digital Life',
+    vietnameseTitle: 'Công nghệ & Đời sống số',
+    icon: 'Laptop',
+    topicCount: 13,
+  },
+  {
+    id: 'work',
+    title: 'Work, Money & Career',
+    vietnameseTitle: 'Công việc, Tiền bạc & Sự nghiệp',
+    icon: 'Briefcase',
+    topicCount: 15,
+  },
+  {
+    id: 'society',
+    title: 'Society & Community',
+    vietnameseTitle: 'Xã hội, Gia đình & Môi trường',
+    icon: 'Users',
+    topicCount: 19,
+  },
 ];

@@ -32,7 +32,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="h-screen overflow-hidden bg-background text-foreground"
+        className="h-[100dvh] overflow-hidden bg-background text-foreground"
         suppressHydrationWarning
       >
         <ThemeProvider>
@@ -40,7 +40,7 @@ export default function RootLayout({
             <Suspense fallback={null}>
               <Sidebar />
             </Suspense>
-            <main className="min-h-0 flex-1 overflow-y-auto px-1 pt-0 pb-28 sm:px-3 sm:pt-0 sm:pb-24 lg:px-4 lg:pt-0 lg:pb-20">
+            <main className="min-h-0 flex-1 overflow-y-auto px-1 pt-1.5 sm:pt-2 pt-[calc(env(safe-area-inset-top,0px)+0.375rem)] pb-28 sm:px-3 sm:pb-24 lg:px-4 lg:pb-20">
               {children}
             </main>
           </div>
