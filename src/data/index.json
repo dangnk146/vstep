@@ -7,7 +7,8 @@
     "UFM",
     "LHU",
     "BAV",
-    "AJC"
+    "AJC",
+    "HUST"
   ],
   "batches": [
     "09/2026",
@@ -19,7 +20,7 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "speaking/VLU_11-2026.json",
-      "count": 41
+      "count": 67
     },
     {
       "school": "VLU",
@@ -73,6 +74,12 @@
       "school": "AJC",
       "batch": "11/2026",
       "file": "speaking/AJC_11-2026.json",
+      "count": 7
+    },
+    {
+      "school": "HUST",
+      "batch": "11/2026",
+      "file": "speaking/HUST_11-2026.json",
       "count": 4
     }
   ],
@@ -81,7 +88,7 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "writing/VLU_11-2026.json",
-      "count": 23
+      "count": 42
     },
     {
       "school": "VLU",
@@ -135,6 +142,12 @@
       "school": "AJC",
       "batch": "11/2026",
       "file": "writing/AJC_11-2026.json",
+      "count": 4
+    },
+    {
+      "school": "HUST",
+      "batch": "11/2026",
+      "file": "writing/HUST_11-2026.json",
       "count": 2
     }
   ],
