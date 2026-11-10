@@ -37,7 +37,7 @@ export interface MindmapNode {
 }
 
 export interface MindmapTopic {
-  id: 'education' | 'health' | 'technology' | 'work' | 'society' | string;
+  id: 'letters' | 'work' | 'education' | 'health' | 'technology' | 'society' | string;
   title: string;
   vietnameseTitle: string;
   description: string;
@@ -70,38 +70,45 @@ export function normalizeTopic(raw: unknown): MindmapTopic {
 
 export const MINDMAP_HUBS: HubMetadata[] = [
   {
+    id: 'work',
+    title: 'Work, Career & Job Hugging',
+    vietnameseTitle: 'Công việc, Sự nghiệp & Job Hugging',
+    icon: 'Briefcase',
+    topicCount: 8,
+  },
+  {
     id: 'education',
-    title: 'Education & Skills',
-    vietnameseTitle: 'Giáo dục, Học tập & Kỹ năng',
+    title: 'Education, Campus & Learning',
+    vietnameseTitle: 'Giáo dục, Campus & Học tập',
     icon: 'GraduationCap',
-    topicCount: 15,
+    topicCount: 8,
   },
   {
     id: 'health',
-    title: 'Health & Lifestyle',
-    vietnameseTitle: 'Sức khỏe & Lối sống',
+    title: 'Health, Habits & Lifestyle',
+    vietnameseTitle: 'Sức khỏe, Thói quen & Lối sống',
     icon: 'HeartPulse',
-    topicCount: 14,
+    topicCount: 8,
   },
   {
     id: 'technology',
-    title: 'Technology & Digital Life',
-    vietnameseTitle: 'Công nghệ & Đời sống số',
+    title: 'Technology, Social Media & AI',
+    vietnameseTitle: 'Công nghệ, Mạng xã hội & AI',
     icon: 'Laptop',
-    topicCount: 13,
-  },
-  {
-    id: 'work',
-    title: 'Work, Money & Career',
-    vietnameseTitle: 'Công việc, Tiền bạc & Sự nghiệp',
-    icon: 'Briefcase',
-    topicCount: 15,
+    topicCount: 8,
   },
   {
     id: 'society',
-    title: 'Society & Community',
-    vietnameseTitle: 'Xã hội, Gia đình & Môi trường',
+    title: 'Society, Charity & Environment',
+    vietnameseTitle: 'Xã hội, Từ thiện & Môi trường',
     icon: 'Users',
-    topicCount: 19,
+    topicCount: 8,
+  },
+  {
+    id: 'letters',
+    title: 'Writing Task 1: 6 Letter Types',
+    vietnameseTitle: 'Writing Task 1: 6 Dạng Thư Mẫu',
+    icon: 'FileText',
+    topicCount: 6,
   },
 ];

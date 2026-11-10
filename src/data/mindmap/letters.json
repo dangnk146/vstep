@@ -1,0 +1,452 @@
+{
+  "id": "letters",
+  "title": "Writing Task 1: 6 Letter Types",
+  "vietnameseTitle": "Writing Task 1: 6 Dạng Thư Chức Năng & Bài Mẫu",
+  "description": "Trọn bộ 6 Dạng Thư VSTEP Writing Task 1 (Xin lỗi, Cảm ơn, Yêu cầu, Thông báo, Phàn nàn, Tư vấn/Mời) kèm 36 mẫu câu cố định, đề minh họa và bài viết mẫu hoàn chỉnh.",
+  "icon": "FileText",
+  "centerNode": {
+    "title": "Writing Task 1 Letters",
+    "subtitle": "6 Dạng Thư Chức Năng – 36 Mẫu Câu – 6 Bài Mẫu Chuẩn",
+    "categoryBadge": "Writing Task 1 Hub (6 Dạng Thư Bất Biến)"
+  },
+  "leftBranches": [
+    {
+      "id": "letters-group-polite-social",
+      "title": "Apology, Thank-You & Advice/Invitation Letters",
+      "viTitle": "Thư Xin Lỗi, Thư Cảm Ơn & Thư Tư Vấn / Mời Bạn Bè",
+      "badge": "Nhánh 1 (3 Dạng Thư)",
+      "tags": ["Apology Letter", "Thank-You Letter", "Advice Letter", "Invitation Letter"],
+      "color": "#0284c7",
+      "keywords": [
+        { "word": "sincerely apologize for", "meaning": "chân thành xin lỗi vì..." },
+        { "word": "inconvenience caused", "meaning": "sự bất tiện đã gây ra" },
+        { "word": "express my gratitude for", "meaning": "bày tỏ lòng biết ơn đối với..." },
+        { "word": "timely assistance", "meaning": "sự giúp đỡ kịp thời" },
+        { "word": "warm hospitality", "meaning": "sự tiếp đón nồng hậu, hiếu khách" },
+        { "word": "if I were you, I would...", "meaning": "nếu tôi là bạn, tôi sẽ..." },
+        { "word": "invite you to attend", "meaning": "mời bạn tham dự..." },
+        { "word": "keep the noise down", "meaning": "giữ trật tự, giảm tiếng ồn" }
+      ],
+      "children": [
+        {
+          "id": "letter-apology",
+          "title": "Thư Xin Lỗi (Apology Letter)",
+          "viTitle": "Xin lỗi hàng xóm vì gây ồn, xin lỗi vắng mặt cuộc họp, xin lỗi làm hỏng sách/giao hàng lỗi",
+          "badge": "Dạng 1",
+          "examTags": [
+            "Đề minh họa: Xin lỗi hàng xóm vì tiệc sinh nhật gây ồn đêm khuya",
+            "Đề thi: Xin lỗi bạn vì không đón ở sân bay được / làm hỏng sách mượn",
+            "Đề thi: Xin lỗi cấp trên vì vắng mặt buổi họp thứ Sáu"
+          ],
+          "color": "#0284c7",
+          "keywords": [
+            { "word": "sincerely apologize for", "meaning": "chân thành xin lỗi vì" },
+            { "word": "absence during the meeting", "meaning": "sự vắng mặt trong cuộc họp" },
+            { "word": "disturbance caused", "meaning": "sự làm phiền/ồn ào đã gây ra" },
+            { "word": "interrupt your sleep", "meaning": "làm gián đoạn giấc ngủ của bạn" },
+            { "word": "patience and consideration", "meaning": "sự kiên nhẫn và cảm thông" },
+            { "word": "regret any inconvenience", "meaning": "rất tiếc về bất kỳ sự bất tiện nào" }
+          ],
+          "items": [
+            {
+              "id": "ap-1",
+              "badge": "Mẫu câu 1",
+              "text": "I really apologize for my absence during last Friday's meeting.",
+              "viText": "Tôi thực sự xin lỗi vì sự vắng mặt của tôi trong cuộc họp thứ Sáu tuần trước."
+            },
+            {
+              "id": "ap-2",
+              "badge": "Mẫu câu 2",
+              "text": "I am sorry to say that I will not be able to attend the company meeting scheduled for February 25.",
+              "viText": "Tôi rất tiếc vì không thể tham dự buổi họp của công ty vào ngày 25 tháng 2."
+            },
+            {
+              "id": "ap-3",
+              "badge": "Mẫu câu 3",
+              "text": "I am terribly sorry that I damaged the book you lent me.",
+              "viText": "Tôi xin lỗi vì đã làm hỏng cuốn sách bạn cho tôi mượn."
+            },
+            {
+              "id": "ap-4",
+              "badge": "Mẫu câu 4",
+              "text": "I will replace your entire order and have it delivered by the end of this week. There will be no additional cost to you since this was our fault.",
+              "viText": "Tôi sẽ thay thế toàn bộ đơn hàng của bạn và giao lại vào cuối tuần này. Bạn sẽ không phải trả thêm bất kỳ khoản phí nào vì đây là lỗi của chúng tôi."
+            },
+            {
+              "id": "ap-5",
+              "badge": "Mẫu câu 5",
+              "text": "I sincerely thank you for your patience and consideration.",
+              "viText": "Tôi chân thành cảm ơn sự kiên nhẫn và quan tâm của bạn."
+            },
+            {
+              "id": "ap-6",
+              "badge": "Mẫu câu 6",
+              "text": "We apologize again for our mistake and regret any inconvenience caused as a result.",
+              "viText": "Một lần nữa, chúng tôi xin lỗi vì sai lầm của mình và rất tiếc về những bất tiện đã gây ra."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "ĐỀ BÀI MINH HỌA: Recently, you had a party at your house. There was a lot of noise late at night and you disturbed your next-door neighbor. Write a letter to your neighbor: (1) Explain the reasons for the noise; (2) Apologize; (3) Describe what action you will take to prevent it from happening again.",
+            "answerVi": "Yêu cầu: Viết thư xin lỗi hàng xóm vì đã gây tiếng ồn trong buổi tiệc tại nhà vào đêm muộn.",
+            "reason": "CẤU TRÚC 4 ĐOẠN: Mở bài (I am writing to sincerely apologize for...) ➔ Giải thích lý do (Celebrating 30th birthday, two guests argued loudly) ➔ Xin lỗi chân thành (Deeply regret having interrupted your sleep) ➔ Cam kết khắc phục (Keep noise down and end future gatherings early).",
+            "reasonVi": "Bố cục chuẩn: Nêu mục đích xin lỗi ➔ Kể nguyên nhân khách quan ➔ Bày tỏ sự hối tiếc ➔ Hứa biện pháp không tái phạm.",
+            "example": "Dear Mr. and Mrs. Smith,\nI am writing to sincerely apologize for the disturbance caused during my birthday party last Saturday night.\nI was celebrating my 30th birthday with some friends. Unfortunately, about two hours after the party started, two guests began arguing loudly about a personal issue. This unexpected situation caused a lot of noise and disturbed your evening.\nI deeply regret having interrupted your sleep. Please accept my most sincere apologies. I understand that everyone enjoys living in a peaceful neighborhood, and I should have made sure that my party did not affect others.\nTo prevent this from happening again, I will make sure to keep the noise down and end future gatherings early. I will also be more careful when inviting guests to my home.\nOnce again, I apologize for the inconvenience caused.\nKind regards,\n[Your Name]",
+            "exampleVi": "Bài viết mẫu hoàn chỉnh chuẩn B2 – Có thể sao chép để học thuộc cấu trúc."
+          }
+        },
+        {
+          "id": "letter-thank-you",
+          "title": "Thư Cảm Ơn (Thank-You Letter)",
+          "viTitle": "Cảm ơn gia đình homestay, cảm ơn thầy cô/bạn bè giúp đỡ khóa học, cảm ơn dịch vụ nhà hàng/khách sạn",
+          "badge": "Dạng 2",
+          "examTags": [
+            "Đề minh họa: Cảm ơn gia đình bản xứ (homestay family) sau chuyến du học London",
+            "Đề thi VLU 07/11: Cảm ơn giáo sư về hội thảo và trả lời lịch rảnh cuối tuần",
+            "Đề thi: Cảm ơn bạn đã gửi quà sinh nhật / cho mượn tài liệu ôn thi"
+          ],
+          "color": "#10b981",
+          "keywords": [
+            { "word": "express my sincere appreciation", "meaning": "bày tỏ sự cảm kích chân thành" },
+            { "word": "express my gratitude for", "meaning": "bày tỏ lòng biết ơn đối với" },
+            { "word": "your hospitality", "meaning": "sự hiếu khách, tiếp đón nồng hậu của bạn" },
+            { "word": "pleasantly surprised by", "meaning": "ngạc nhiên và vui mừng trước..." },
+            { "word": "feel at home", "meaning": "cảm thấy ấm cúng, thoải mái như ở nhà" },
+            { "word": "improve my spoken English", "meaning": "cải thiện kỹ năng tiếng Anh giao tiếp" }
+          ],
+          "items": [
+            {
+              "id": "ty-1",
+              "badge": "Mẫu câu 1",
+              "text": "I am writing to express my sincere appreciation for your timely assistance.",
+              "viText": "Tôi viết thư này để bày tỏ sự cảm ơn chân thành vì bạn đã giúp đỡ tôi kịp thời."
+            },
+            {
+              "id": "ty-2",
+              "badge": "Mẫu câu 2",
+              "text": "I am writing to show my appreciation for the time you have spent helping me with the English course.",
+              "viText": "Tôi viết thư này để bày tỏ lòng biết ơn về khoảng thời gian bạn đã dành để hướng dẫn tôi trong khóa học tiếng Anh."
+            },
+            {
+              "id": "ty-3",
+              "badge": "Mẫu câu 3",
+              "text": "My name is [Name] and I am writing to express my gratitude for the excellent service my family received at your restaurant.",
+              "viText": "Tên tôi là ... và tôi viết thư này để bày tỏ lòng biết ơn về dịch vụ rất tốt mà gia đình tôi đã nhận được tại nhà hàng của bạn."
+            },
+            {
+              "id": "ty-4",
+              "badge": "Mẫu câu 4",
+              "text": "I am really pleased with the knowledge and skills of your staff.",
+              "viText": "Tôi thực sự hài lòng với kiến thức cũng như kỹ năng của nhân viên bên công ty bạn."
+            },
+            {
+              "id": "ty-5",
+              "badge": "Mẫu câu 5",
+              "text": "My family was pleasantly surprised by the welcome gift and the lovely flowers you had arranged in our room.",
+              "viText": "Cả gia đình tôi rất ngạc nhiên và vui mừng với món quà chào mừng miễn phí, những bông hoa tươi xinh xắn mà bạn đã trang trí trong phòng của chúng tôi."
+            },
+            {
+              "id": "ty-6",
+              "badge": "Mẫu câu 6",
+              "text": "The information I requested about the new laptop arrived today. I really appreciate your help.",
+              "viText": "Thông tin tôi yêu cầu về chiếc máy tính xách tay mới đã đến hôm nay. Tôi thực sự cảm kích sự giúp đỡ của bạn."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "ĐỀ BÀI MINH HỌA: You are a student who has just returned to your home country. Write a letter to thank your homestay family: (1) Thank them and tell them what you liked about the city you lived in; (2) Say thanks to their children for helping you learn English; (3) Tell them what you liked the most during your stay at their home.",
+            "answerVi": "Yêu cầu: Viết thư cảm ơn gia đình bản xứ sau khi kết thúc thời gian lưu trú du học.",
+            "reason": "CẤU TRÚC 4 ĐOẠN: Mở bài cảm ơn sự hiếu khách (express my gratitude for your hospitality) ➔ Ấn tượng về thành phố (impressed by the beauty of London) ➔ Cảm ơn các con chủ nhà (Libby and Tom helped me improve my spoken English) ➔ Kỷ niệm món ăn & hẹn gặp lại (delicious homemade meals, hope to visit again).",
+            "reasonVi": "Bố cục chuẩn: Cảm ơn chung ➔ Khen thành phố ➔ Cảm ơn người hỗ trợ ➔ Nhắc kỷ niệm đẹp nhất & lời chúc.",
+            "example": "Dear Mr. and Mrs. Cooper,\nI am writing to express my gratitude for your hospitality during my stay with you and your family.\nI was deeply impressed by the beauty of London and the enthusiasm of its people. During my stay, I had the opportunity to visit many interesting places and make several new friends.\nI really miss you and your children, Libby and Tom. Spending time with them made me feel at home and helped me improve my spoken English significantly.\nI also cannot forget your delicious homemade meals and the warm conversations we shared. After returning to Vietnam, I could not help sharing stories about my wonderful experience in London with my parents and friends.\nI would love to visit you again in a year or two and hope to see you all then. Thank you once again for everything. Wish you all the best!\nBest regards,\n[Your Name]",
+            "exampleVi": "Bài viết mẫu hoàn chỉnh chuẩn B2 – Thư cảm ơn gia đình Homestay."
+          }
+        },
+        {
+          "id": "letter-advice-invitation",
+          "title": "Thư Tư Vấn & Mời Sự Kiện (Advice & Invitation Letter)",
+          "viTitle": "Khuyên bạn cách giảm cân, tư vấn chọn trường/chỗ ở, mời dự tiệc Gala từ thiện hoặc đi du lịch",
+          "badge": "Dạng 3",
+          "examTags": [
+            "Đề thi AJC 08/11: Viết thư cho lời khuyên giúp bạn giảm cân (Advice on losing weight)",
+            "Đề thi VLU 08/11: Trao đổi với bạn về việc tổ chức & quyên góp Gala Từ thiện (Charity Gala)",
+            "Đề thi: Tư vấn lịch trình du lịch / chỗ ở cho bạn nước ngoài sang thăm Việt Nam"
+          ],
+          "color": "#8b5cf6",
+          "keywords": [
+            { "word": "delighted to hear from you", "meaning": "rất vui khi nhận được tin từ bạn" },
+            { "word": "if I were you, I would...", "meaning": "nếu tôi là bạn, tôi sẽ..." },
+            { "word": "cut down on fast food", "meaning": "cắt giảm đồ ăn nhanh nhiều dầu mỡ" },
+            { "word": "combine a balanced diet with exercise", "meaning": "kết hợp ăn uống cân bằng với tập thể dục" },
+            { "word": "invite you to attend", "meaning": "mời bạn đến tham dự..." },
+            { "word": "let me know what works best", "meaning": "hãy báo cho tôi phương án nào tiện nhất" }
+          ],
+          "items": [
+            {
+              "id": "ai-1",
+              "badge": "Mẫu câu 1",
+              "text": "I was delighted to receive your letter and hear that you are planning to visit Vietnam next month.",
+              "viText": "Tôi rất vui khi nhận được thư của bạn và nghe tin bạn định đến thăm Việt Nam vào tháng tới."
+            },
+            {
+              "id": "ai-2",
+              "badge": "Mẫu câu 2",
+              "text": "In my opinion, the best way to lose weight healthily is to combine a balanced diet with daily outdoor exercise.",
+              "viText": "Theo ý tôi, cách tốt nhất để giảm cân lành mạnh là kết hợp chế độ ăn cân bằng với tập thể dục ngoài trời mỗi ngày."
+            },
+            {
+              "id": "ai-3",
+              "badge": "Mẫu câu 3",
+              "text": "If I were you, I would cut down on greasy fast food and sugary drinks immediately.",
+              "viText": "Nếu tôi là bạn, tôi sẽ cắt giảm đồ ăn nhanh nhiều dầu mỡ và nước ngọt ngay lập tức."
+            },
+            {
+              "id": "ai-4",
+              "badge": "Mẫu câu 4",
+              "text": "I would like to invite you to attend our university Charity Gala this Saturday evening to raise funds for poor children.",
+              "viText": "Tôi muốn mời bạn tham dự buổi Gala Từ thiện của trường đại học chúng tôi vào tối thứ Bảy này để gây quỹ cho trẻ em nghèo."
+            },
+            {
+              "id": "ai-5",
+              "badge": "Mẫu câu 5",
+              "text": "Let me know which option works best for your schedule so I can make the arrangements.",
+              "viText": "Hãy cho tôi biết phương án nào phù hợp nhất với lịch của bạn để tôi sắp xếp nhé."
+            },
+            {
+              "id": "ai-6",
+              "badge": "Mẫu câu 6",
+              "text": "I really hope you will find my advice useful, and I cannot wait to catch up with you soon!",
+              "viText": "Tôi thực sự hy vọng bạn thấy lời khuyên của tôi hữu ích, và rất mong sớm được gặp lại bạn!"
+            }
+          ],
+          "areSkeleton": {
+            "answer": "ĐỀ BÀI MINH HỌA (Đề thi AJC 08/11): Your friend has written an email telling you that they have gained weight recently due to sitting at work all day. Write a letter to your friend: (1) Express sympathy and encourage them; (2) Suggest a healthy diet plan; (3) Recommend a suitable sport or exercise routine.",
+            "answerVi": "Yêu cầu: Viết thư cho bạn lời khuyên giảm cân bằng chế độ ăn uống và tập thể thao.",
+            "reason": "CẤU TRÚC 4 ĐOẠN: Mở bài hỏi thăm & đồng cảm (I also faced the same problem when coding 10 hours a day) ➔ Khuyên chế độ ăn (Cut down on fast food, eat green vegetables and boiled chicken) ➔ Khuyên tập thể thao (Take up jogging or swimming for 45 minutes) ➔ Rủ tập chung & chúc thành công.",
+            "reasonVi": "Bố cục chuẩn: Hỏi thăm đồng cảm ➔ Lời khuyên 1 (Ăn uống) ➔ Lời khuyên 2 (Vận động) ➔ Kết thư thân mật.",
+            "example": "Dear Alex,\nIt was great to hear from you, although I am sorry to learn that you have been feeling stressed about gaining weight recently. Do not worry too much because I also faced the same problem last year when I spent ten hours a day coding at my desk!\nFirst of all, if I were you, I would change my daily eating habits right away. You should cut down on greasy fast food and bubble tea, and instead prepare homemade meals with plenty of green vegetables, fruits, and boiled chicken breast.\nIn addition, I highly recommend that you take up jogging or swimming for 45 minutes every evening after work. This is mainly because aerobic exercise burns calories rapidly and helps relieve your mental fatigue after a long day at the computer.\nLet me know if you want to join my weekend running club so we can practice together. Keep me updated on your progress!\nBest wishes,\n[Your Name]",
+            "exampleVi": "Bài viết mẫu hoàn chỉnh chuẩn B2 – Thư khuyên bạn giảm cân (Đề AJC 08/11)."
+          }
+        }
+      ]
+    }
+  ],
+  "rightBranches": [
+    {
+      "id": "letters-group-formal-official",
+      "title": "Request, Information & Complaint Letters",
+      "viTitle": "Thư Yêu Cầu Hỏi Thông Tin, Thư Thông Báo & Thư Phàn Nàn Dịch Vụ",
+      "badge": "Nhánh 2 (3 Dạng Thư)",
+      "tags": ["Request Letter", "Information Letter", "Complaint Letter"],
+      "color": "#e11d48",
+      "keywords": [
+        { "word": "inquire about some details", "meaning": "hỏi thông tin chi tiết về..." },
+        { "word": "provide me with information", "meaning": "cung cấp cho tôi thông tin về..." },
+        { "word": "look forward to hearing from you", "meaning": "mong sớm nhận được phản hồi từ bạn" },
+        { "word": "inform you that...", "meaning": "thông báo với bạn rằng..." },
+        { "word": "take an unexpected leave of absence", "meaning": "xin nghỉ phép đột xuất" },
+        { "word": "express my strong dissatisfaction", "meaning": "bày tỏ sự không hài lòng sâu sắc" },
+        { "word": "request a full refund or replacement", "meaning": "yêu cầu hoàn tiền hoặc đổi mới" }
+      ],
+      "children": [
+        {
+          "id": "letter-request",
+          "title": "Thư Yêu Cầu & Hỏi Thông Tin (Request / Inquiry Letter)",
+          "viTitle": "Hỏi thông tin khóa học tiếng Anh/IT, hỏi học phí, xác nhận chi phí ký túc xá, yêu cầu gửi lại đồ thất lạc",
+          "badge": "Dạng 4",
+          "examTags": [
+            "Đề minh họa: Hỏi trường đại học nước ngoài về khóa học tiếng Anh, học phí & ký túc xá",
+            "Đề thi: Hỏi thông tin đăng ký hội thảo CNTT / khóa học kỹ năng mềm",
+            "Đề thi: Yêu cầu khách sạn/hãng xe kiểm tra và gửi lại túi xách để quên"
+          ],
+          "color": "#d97706",
+          "keywords": [
+            { "word": "inquire about some details", "meaning": "hỏi một số thông tin chi tiết" },
+            { "word": "course content and duration", "meaning": "nội dung và thời lượng khóa học" },
+            { "word": "tuition and accommodation expenses", "meaning": "chi phí học phí và ăn ở lưu trú" },
+            { "word": "confirm whether this information is correct", "meaning": "xác nhận xem thông tin này có đúng không" },
+            { "word": "consideration of my request", "meaning": "sự xem xét yêu cầu của tôi" },
+            { "word": "look forward to hearing from you soon", "meaning": "mong sớm nhận được phản hồi từ quý vị" }
+          ],
+          "items": [
+            {
+              "id": "rq-1",
+              "badge": "Mẫu câu 1",
+              "text": "I would like to request that your company provide us with some free samples.",
+              "viText": "Tôi muốn yêu cầu công ty của bạn cung cấp cho chúng tôi một vài mẫu thử miễn phí."
+            },
+            {
+              "id": "rq-2",
+              "badge": "Mẫu câu 2",
+              "text": "I am writing to enroll in the IT seminar that will be held at the university this weekend.",
+              "viText": "Tôi viết thư này để đăng ký tham gia buổi hội thảo IT được tổ chức tại trường đại học vào cuối tuần này."
+            },
+            {
+              "id": "rq-3",
+              "badge": "Mẫu câu 3",
+              "text": "I have read about the construction plan for the park and would like to know more about it.",
+              "viText": "Tôi đã đọc về kế hoạch xây dựng công viên và muốn tìm hiểu thêm về nó."
+            },
+            {
+              "id": "rq-4",
+              "badge": "Mẫu câu 4",
+              "text": "I would greatly appreciate it if you could send the bag back to me by post.",
+              "viText": "Nếu bạn có thể gửi lại cho tôi chiếc túi qua dịch vụ chuyển phát, tôi sẽ vô cùng cảm kích."
+            },
+            {
+              "id": "rq-5",
+              "badge": "Mẫu câu 5",
+              "text": "I would appreciate your consideration of my request and look forward to hearing from you soon.",
+              "viText": "Tôi rất cảm kích khi bạn xem xét yêu cầu của tôi và mong sớm nhận được phản hồi từ bạn."
+            },
+            {
+              "id": "rq-6",
+              "badge": "Mẫu câu 6",
+              "text": "I would greatly appreciate your assistance and look forward to receiving your response.",
+              "viText": "Tôi rất đánh giá cao sự giúp đỡ của bạn và mong nhận được phản hồi sớm."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "ĐỀ BÀI MINH HỌA: Write a letter to an English-speaking college regarding a course you intend to take. In your letter: (1) Ask questions about the course; (2) Ask about the course fees; (3) Confirm whether the quoted fee is correct when you stay at the college hostel.",
+            "answerVi": "Yêu cầu: Viết thư hỏi thông tin về khóa học tiếng Anh, học phí và chi phí lưu trú tại ký túc xá trường.",
+            "reason": "CẤU TRÚC 4 ĐOẠN: Mở bài nêu mục đích hỏi thông tin (writing to inquire about some details) ➔ Hỏi nội dung & thời lượng (course content and duration) ➔ Hỏi học phí & học bổng (inform me of the course fees) ➔ Xác nhận phí ký túc xá 200$/tuần (confirm whether this information is correct).",
+            "reasonVi": "Bố cục chuẩn: Nêu lý do viết thư ➔ Câu hỏi 1 (Nội dung học) ➔ Câu hỏi 2 (Học phí) ➔ Câu hỏi 3 (Ký túc xá) & Cảm ơn.",
+            "example": "Dear Sir/Madam,\nI am a student who is planning to study at your college next fall, and I am writing to inquire about some details of the English course.\nFirst of all, I would like to know more about the course content and its duration. Could you please provide me with information about the subjects covered and the number of lessons per week?\nIn addition, could you inform me of the course fees? I have received a scholarship, but I am not sure whether it will cover both tuition and accommodation expenses.\nFurthermore, I plan to stay at the college hostel. I was informed that the accommodation fee is 200 dollars per week. Could you possibly confirm whether this information is correct?\nThank you for taking the time to answer my questions. I really appreciate your help and look forward to hearing from you soon.\nYours faithfully,\n[Your Name]",
+            "exampleVi": "Bài viết mẫu hoàn chỉnh chuẩn B2 – Thư hỏi thông tin khóa học."
+          }
+        },
+        {
+          "id": "letter-information",
+          "title": "Thư Thông Báo & Cung Cấp Thông Tin (Information Letter)",
+          "viTitle": "Xin nghỉ phép đột xuất về quê và bàn giao việc, cung cấp thông tin nhà ở/sự kiện công ty/thực đơn mới",
+          "badge": "Dạng 5",
+          "examTags": [
+            "Đề minh họa: Viết thư báo cấp trên xin nghỉ phép về quê thăm ông ốm và cử đồng nghiệp thay thế",
+            "Đề thi VLU 08/11: Cung cấp thông tin cho ban tổ chức lễ hội / câu lạc bộ trường",
+            "Đề thi: Phản hồi cung cấp thông tin về sản phẩm/dịch vụ của công ty cho đối tác"
+          ],
+          "color": "#4f46e5",
+          "keywords": [
+            { "word": "inform you that...", "meaning": "thông báo với ông/bà rằng..." },
+            { "word": "unexpected leave of absence", "meaning": "kỳ nghỉ phép đột xuất ngoài dự kiến" },
+            { "word": "family emergency", "meaning": "việc khẩn cấp của gia đình" },
+            { "word": "take care of my responsibilities", "meaning": "đảm nhận thay công việc của tôi" },
+            { "word": "provide you with information about", "meaning": "cung cấp cho bạn thông tin về..." },
+            { "word": "thank you in advance for your understanding", "meaning": "cảm ơn trước vì sự thông cảm của ông/bà" }
+          ],
+          "items": [
+            {
+              "id": "in-1",
+              "badge": "Mẫu câu 1",
+              "text": "I am writing to inform you about the types of housing available in my area.",
+              "viText": "Tôi viết thư này để thông báo cho bạn về các loại nhà ở có trong khu vực này."
+            },
+            {
+              "id": "in-2",
+              "badge": "Mẫu câu 2",
+              "text": "I am writing to provide you with information about our company's events.",
+              "viText": "Tôi viết thư này để cung cấp cho bạn thông tin về các sự kiện của công ty chúng tôi."
+            },
+            {
+              "id": "in-3",
+              "badge": "Mẫu câu 3",
+              "text": "I would also like to inform you that we will introduce new menus and update our catalogue next week.",
+              "viText": "Tôi cũng muốn thông báo với bạn rằng tuần tới chúng tôi sẽ giới thiệu thực đơn mới và cập nhật danh mục món ăn."
+            },
+            {
+              "id": "in-4",
+              "badge": "Mẫu câu 4",
+              "text": "As for our company, we are currently one of the leading suppliers of musical instruments and tools in Vietnam, offering products in various shapes and sizes.",
+              "viText": "Nói về công ty chúng tôi, hiện tại chúng tôi là nhà cung cấp hàng đầu về nhạc cụ và dụng cụ với nhiều hình dạng và kích thước khác nhau tại Việt Nam."
+            },
+            {
+              "id": "in-5",
+              "badge": "Mẫu câu 5",
+              "text": "I hope that the information I have provided will be helpful to your company.",
+              "viText": "Tôi hy vọng những thông tin được cung cấp sẽ hữu ích cho công ty bạn."
+            },
+            {
+              "id": "in-6",
+              "badge": "Mẫu câu 6",
+              "text": "If you need any further assistance, please feel free to call me at the number above.",
+              "viText": "Nếu bạn cần thêm bất kỳ sự hỗ trợ nào, vui lòng gọi cho tôi qua số điện thoại trên nhé."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "ĐỀ BÀI MINH HỌA: You work for a company in the city and you need to travel to your hometown. Write a letter to your employer: (1) Explain why you need to travel home; (2) Give details of when you need to travel; (3) Suggest someone to take care of your job in your absence.",
+            "answerVi": "Yêu cầu: Viết thư thông báo với cấp trên về việc cần trở về quê gấp và đề xuất người thay thế công việc.",
+            "reason": "CẤU TRÚC 4 ĐOẠN: Mở bài xin nghỉ phép khẩn cấp (take an unexpected leave of absence) ➔ Lý do ông bị ốm nặng nhập viện (grandfather has suddenly become seriously ill) ➔ Thời gian đi và về (leave tomorrow afternoon, return on Monday Feb 22) ➔ Đề cử Peter làm thay (recommend Peter to take care of my responsibilities).",
+            "reasonVi": "Bố cục chuẩn: Thông báo xin nghỉ ➔ Giải thích lý do gia đình ➔ Lịch trình cụ thể ➔ Bàn giao người thay thế.",
+            "example": "Dear Mr. Harvard,\nI am writing this letter to inform you that I need to take an unexpected leave of absence due to a family emergency.\nI have just been informed that my grandfather has suddenly become seriously ill, so I need to return to my hometown to visit him and support my family. Fortunately, he has already been taken to the hospital, although his condition is still unstable.\nI must leave tomorrow afternoon and plan to return to work after three days, on Monday, February 22.\nI am confident that my current projects will not be affected by my short absence. I would recommend Peter as the best person to take care of my responsibilities while I am away. He has worked closely with me and knows exactly what needs to be done.\nThank you very much in advance for your understanding and consideration.\nYours sincerely,\n[Your Name]",
+            "exampleVi": "Bài viết mẫu hoàn chỉnh chuẩn B2 – Thư thông báo xin nghỉ phép và bàn giao công việc."
+          }
+        },
+        {
+          "id": "letter-complaint",
+          "title": "Thư Phàn Nàn & Khiếu Nại Dịch Vụ (Complaint Letter)",
+          "viTitle": "Phàn nàn trải nghiệm khách sạn tồi tệ (HUST 08/11), khiếu nại sản phẩm lỗi, yêu cầu hoàn tiền và đề xuất cải thiện",
+          "badge": "Dạng 6",
+          "examTags": [
+            "Đề thi HUST 08/11: Phản hồi về trải nghiệm khách sạn kém chất lượng và đề xuất cải thiện (Hotel feedback & recommendations)",
+            "Đề thi: Phàn nàn về món hàng mua online bị hỏng / không giống quảng cáo",
+            "Đề thi: Phàn nàn thái độ nhân viên nhà hàng / chuyến xe buýt du lịch"
+          ],
+          "color": "#e11d48",
+          "keywords": [
+            { "word": "express my strong dissatisfaction with", "meaning": "bày tỏ sự không hài lòng sâu sắc với..." },
+            { "word": "did not match the description", "meaning": "không đúng với mô tả quảng cáo" },
+            { "word": "to make matters worse", "meaning": "tệ hơn nữa là..." },
+            { "word": "request a full refund or replacement", "meaning": "yêu cầu hoàn tiền 100% hoặc đổi sản phẩm mới" },
+            { "word": "conduct regular maintenance", "meaning": "thực hiện bảo trì thiết bị định kỳ" },
+            { "word": "take my feedback seriously", "meaning": "nghiêm túc tiếp thu ý kiến phản hồi của tôi" }
+          ],
+          "items": [
+            {
+              "id": "cp-1",
+              "badge": "Mẫu câu 1",
+              "text": "I am writing to express my strong dissatisfaction with the poor service I received at your hotel last weekend.",
+              "viText": "Tôi viết thư này để bày tỏ sự không hài lòng sâu sắc với dịch vụ kém chất lượng mà tôi nhận được tại khách sạn của bạn vào cuối tuần trước."
+            },
+            {
+              "id": "cp-2",
+              "badge": "Mẫu câu 2",
+              "text": "Unfortunately, the product I received did not match the description on your website.",
+              "viText": "Thật không may, sản phẩm tôi nhận được không đúng với mô tả trên trang web của bạn."
+            },
+            {
+              "id": "cp-3",
+              "badge": "Mẫu câu 3",
+              "text": "To make matters worse, the air conditioner in my room was broken and the reception staff was unhelpful.",
+              "viText": "Tệ hơn nữa, máy điều hòa trong phòng tôi bị hỏng và nhân viên lễ tân lại không nhiệt tình hỗ trợ."
+            },
+            {
+              "id": "cp-4",
+              "badge": "Mẫu câu 4",
+              "text": "I would like to request a full refund or an immediate replacement for the damaged item.",
+              "viText": "Tôi muốn yêu cầu hoàn tiền đầy đủ hoặc đổi mới ngay lập tức cho món hàng bị hỏng."
+            },
+            {
+              "id": "cp-5",
+              "badge": "Mẫu câu 5",
+              "text": "I strongly recommend that you upgrade your facilities and train your staff better to improve customer satisfaction.",
+              "viText": "Tôi đặc biệt khuyên bạn nên nâng cấp cơ sở vật chất và đào tạo nhân viên tốt hơn để nâng cao sự hài lòng của khách hàng."
+            },
+            {
+              "id": "cp-6",
+              "badge": "Mẫu câu 6",
+              "text": "I hope you will look into this matter promptly to prevent similar issues for future guests.",
+              "viText": "Tôi hy vọng bạn sẽ kiểm tra vấn đề này nhanh chóng để ngăn chặn sự cố tương tự cho các khách hàng sau."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "ĐỀ BÀI MINH HỌA (Đề thi HUST 08/11): Recently, you stayed at a hotel during your trip, but you were dissatisfied with the service. Write a letter to the hotel manager: (1) Give feedback about your bad experience at the hotel; (2) Explain how it affected your trip; (3) Recommend what the hotel should do to improve its service.",
+            "answerVi": "Yêu cầu: Viết thư phản hồi về trải nghiệm khách sạn kém chất lượng và đề xuất hướng cải thiện.",
+            "reason": "CẤU TRÚC 4 ĐOẠN: Mở bài phàn nàn dịch vụ (express my dissatisfaction with the disappointing service) ➔ Kể lỗi phòng 304 (air conditioner noisy, Wi-Fi unstable disrupted my IT online meetings) ➔ Thái độ lễ tân (unhelpful, nobody fixed the router) ➔ Đề xuất cải thiện (upgrade internet, regular maintenance, train staff).",
+            "reasonVi": "Bố cục chuẩn: Nêu mục đích phàn nàn ➔ Chi tiết sự cố & ảnh hưởng ➔ Thái độ nhân viên ➔ Đề xuất khắc phục.",
+            "example": "Dear Sir/Madam,\nI am writing to express my dissatisfaction with the disappointing service I experienced during my three-day stay at your hotel from November 2 to November 5.\nWhen I checked into Room 304, I noticed that the air conditioner was making a loud noise and the Wi-Fi connection was completely unstable. As an IT specialist who needed to attend online meetings, this technical issue severely disrupted my work schedule.\nTo make matters worse, when I reported the problem to the front desk, the receptionist was impolite and nobody came to fix the router during my entire stay.\nTo improve your hotel's reputation, I strongly recommend that you upgrade your internet infrastructure and conduct regular maintenance on room appliances. In addition, your reception staff should be better trained in customer service.\nI hope you will take my feedback seriously to prevent similar issues for future guests.\nYours faithfully,\n[Your Name]",
+            "exampleVi": "Bài viết mẫu hoàn chỉnh chuẩn B2 – Thư phàn nàn & góp ý khách sạn (Đề HUST 08/11)."
+          }
+        }
+      ]
+    }
+  ]
+}
+

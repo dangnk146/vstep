@@ -1,388 +1,246 @@
 {
   "id": "health",
-  "title": "Health, Food & Lifestyle",
-  "vietnameseTitle": "Sức khỏe, Ăn uống & Lối sống",
-  "description": "Tổng hợp 60+ đề thi thật Speaking và Writing về Béo phì, Giảm cân, Đồ ăn nhanh, Nấu ăn tại nhà vs Đi ăn ngoài, Trà sữa, Tập thể dục sai cách, Thể thao đồng đội, Sở thích & Thư giãn cuối tuần.",
+  "title": "Health, Habits & Lifestyle",
+  "vietnameseTitle": "Sức khỏe, Thói quen & Lối sống Lành mạnh",
+  "description": "Mindmap kế thừa từ Kho 30 Từ Vựng Sức khỏe & Lối sống kết hợp Chuỗi Bậc Thang 5 Cấu Trúc (One major reason -> This is mainly because -> This means that) cho Writing Task 2 & Speaking Part 2, 3.",
   "icon": "HeartPulse",
   "centerNode": {
-    "title": "Health & Lifestyle",
-    "subtitle": "Sức khỏe, Ăn uống & Lối sống",
-    "categoryBadge": "Topic Hub 2 (14 Nhóm Đề Cụ Thể)"
+    "title": "Health & Lifestyle Hub",
+    "subtitle": "30 Từ Vựng Gốc Dùng Chung – 8 Chủ Đề Xương Sống",
+    "categoryBadge": "Topic Hub 2 (Hệ Thống Kế Thừa Ý B2)"
   },
   "leftBranches": [
     {
-      "id": "health-group-diet-nutrition",
-      "title": "Dinh dưỡng, Ẩm thực & Thói quen ăn uống",
-      "viTitle": "Béo phì, giảm cân, đồ ăn nhanh, ăn ngoài vs nấu ở nhà, ẩm thực truyền thống & trà sữa",
-      "badge": "Nhóm 1",
-      "tags": [
-        "Speaking P1-P2-P3",
-        "Writing T1-T2"
+      "id": "health-group-diet-habits",
+      "title": "Diet, Weight Loss, Bad Habits, Smoking Ban & Healthcare",
+      "viTitle": "Ăn uống, Giảm cân, Bỏ Thói quen Xấu, Cấm Hút thuốc & Chăm sóc Y tế",
+      "badge": "Nhánh 1 (15 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
+      "tags": ["Weight Loss", "Fast Food", "Bad Habits", "Smoking Ban", "Sick Visit"],
+      "color": "#e11d48",
+      "keywords": [
+        { "word": "balanced and nutritious diet", "meaning": "chế độ ăn uống cân bằng và giàu dinh dưỡng" },
+        { "word": "homemade meals", "meaning": "các bữa cơm tự nấu tại nhà hợp vệ sinh" },
+        { "word": "greasy fast food & sugary drinks", "meaning": "đồ ăn nhanh nhiều dầu mỡ và nước ngọt" },
+        { "word": "sedentary lifestyle", "meaning": "lối sống ít vận động, ngồi lì trước màn hình" },
+        { "word": "obesity and diabetes", "meaning": "bệnh béo phì và tiểu đường" },
+        { "word": "cardiovascular diseases", "meaning": "các bệnh về tim mạch và huyết áp" },
+        { "word": "break bad habits", "meaning": "từ bỏ các thói quen xấu (thức khuya, hút thuốc)" },
+        { "word": "strong willpower and self-discipline", "meaning": "ý chí mạnh mẽ và tính tự kỷ luật" },
+        { "word": "stay up late / sleep deprivation", "meaning": "thức khuya / tình trạng thiếu ngủ kéo dài" },
+        { "word": "public smoking ban", "meaning": "lệnh cấm hút thuốc lá nơi công cộng" },
+        { "word": "secondhand smoke", "meaning": "khói thuốc lá thụ động gây hại cho người xung quanh" },
+        { "word": "respiratory illnesses", "meaning": "các bệnh về đường hô hấp và phổi" },
+        { "word": "speedy recovery", "meaning": "sự hồi phục sức khỏe nhanh chóng sau khi ốm" },
+        { "word": "boost the immune system", "meaning": "tăng cường hệ miễn dịch tự nhiên" },
+        { "word": "preventive healthcare", "meaning": "chăm sóc y tế dự phòng, khám sức khỏe định kỳ" }
       ],
-      "color": "#ef4444",
       "children": [
         {
-          "id": "health-obesity-solutions",
-          "title": "Giải pháp giảm béo phì (Solutions to Tackle Obesity)",
-          "viTitle": "Giảm đồ ăn nhanh, tự nấu ăn tại nhà, tập thể dục & cấm quảng cáo nước ngọt",
-          "badge": "Đề 1",
+          "id": "health-fast-food-vs-homemade-weight",
+          "title": "Đồ ăn Nhanh (Fast Food) vs Cơm nhà & Tư vấn Giảm cân (Weight Loss)",
+          "viTitle": "Kế thừa từ vựng: balanced and nutritious diet, homemade meals, greasy fast food, sedentary lifestyle, obesity",
+          "badge": "Chủ đề 1 (Đề AJC 08/11)",
           "examTags": [
-            "Speaking P3 (VLU 09, 10, 11 - Solutions to Tackle Obesity / Childhood Obesity)"
+            "Task 1 (AJC 08/11): Writing an Email Giving Advice to a Friend on How to Lose Weight",
+            "Task 2 [Dạng 3 & 4 - Cause/Problem-Solution]: Rising Obesity Rates and Fast Food Consumption Among Youths",
+            "Speaking P3: Homemade Food vs Fast Food / How to Maintain a Healthy Weight"
           ],
-          "color": "#ef4444",
+          "color": "#e11d48",
           "keywords": [
-            {
-              "word": "obesity epidemic",
-              "meaning": "nạn béo phì lan rộng trong xã hội hiện đại"
-            },
-            {
-              "word": "cut down on fast food",
-              "meaning": "cắt giảm thức ăn nhanh (gà rán, khoai tây chiên)"
-            },
-            {
-              "word": "cook meals at home",
-              "meaning": "tự nấu ăn tại nhà với nhiều rau xanh"
-            },
-            {
-              "word": "daily physical exercise",
-              "meaning": "tập thể dục hàng ngày ít nhất 30 phút"
-            },
-            {
-              "word": "sugary soft drinks",
-              "meaning": "nước ngọt có gas nhiều đường gây tăng cân"
-            }
+            { "word": "balanced and nutritious diet", "meaning": "chế độ ăn cân bằng và bổ dưỡng" },
+            { "word": "greasy fast food", "meaning": "đồ ăn nhanh nhiều dầu mỡ" },
+            { "word": "sedentary lifestyle", "meaning": "lối sống ngồi nhiều ít vận động" },
+            { "word": "obesity and diabetes", "meaning": "béo phì và tiểu đường" }
           ],
           "items": [
             {
-              "id": "health-ob-1",
-              "badge": "🍔 Đồ ăn nhanh",
-              "text": "Cut down on burgers, fried chicken, and soft drinks because they contain excessive sugar and bad fats.",
-              "viText": "Cắt giảm hamburger, gà rán và nước ngọt vì chúng chứa quá nhiều đường và chất béo xấu."
+              "id": "h-ff-1",
+              "badge": "⚠️ Nhánh 1: Nguyên nhân gây Tăng cân & Béo phì (One contributing factor ➔ Because ➔ Meaning)",
+              "text": "One contributing factor to rising obesity is the overconsumption of greasy fast food and a sedentary lifestyle. This is mainly because busy students and office workers sit in front of computers all day and order fried food or bubble tea to save time. This means that excess calories accumulate rapidly, leading to diabetes and cardiovascular diseases.",
+              "viText": "Một yếu tố góp phần làm tăng bệnh béo phì là việc ăn quá nhiều đồ ăn nhanh nhiều dầu mỡ và lối sống ít vận động. Điều này chủ yếu là do sinh viên và dân văn phòng bận rộn ngồi trước máy tính cả ngày và đặt đồ chiên rán, trà sữa cho nhanh. Điều này có nghĩa là calo dư thừa tích tụ nhanh chóng, dẫn đến tiểu đường và bệnh tim mạch."
             },
             {
-              "id": "health-ob-2",
-              "badge": "🍳 Nấu tại nhà",
-              "text": "Prepare home-cooked meals with plenty of fresh vegetables, fish, and control the amount of cooking oil.",
-              "viText": "Tự nấu ăn ở nhà với nhiều rau xanh, cá và kiểm soát được lượng dầu mỡ nêm nếm."
+              "id": "h-ff-2",
+              "badge": "✅ Nhánh 2: Lợi ích của Cơm nhà & Ăn uống cân bằng (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason to prepare homemade meals is that we can maintain a balanced and nutritious diet. This is mainly because cooking at home allows us to control salt, sugar, and oil while choosing fresh green vegetables and lean meat. This means that we can lose weight safely and save a lot of money.",
+              "viText": "Một lý do chính nên tự nấu cơm nhà là chúng ta có thể duy trì chế độ ăn cân bằng và giàu dinh dưỡng. Điều này chủ yếu là do tự nấu ăn giúp kiểm soát lượng muối, đường, dầu mỡ và chọn được rau xanh tươi cùng thịt nạc. Điều này có nghĩa là chúng ta giảm cân an toàn và tiết kiệm nhiều tiền."
             },
             {
-              "id": "health-ob-3",
-              "badge": "🏃 Tập luyện",
-              "text": "Exercise at least 30 minutes every day by jogging, swimming, or cycling to burn calories and belly fat.",
-              "viText": "Tập thể dục ít nhất 30 phút mỗi ngày như chạy bộ, bơi lội hoặc đạp xe để đốt calo và mỡ bụng."
+              "id": "h-ff-3",
+              "badge": "💡 Nhánh 3: Giải pháp Giảm cân Kết hợp Vận động (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, the best approach to lose weight sustainably is combining healthy eating with 45 minutes of daily aerobic exercise. This is mainly because jogging, swimming, or cycling burns excess calories and boosts metabolism. This means that individuals not only stay in shape but also boost their immune system.",
+              "viText": "Hơn nữa, phương pháp tốt nhất để giảm cân bền vững là kết hợp ăn uống lành mạnh với 45 phút tập thể dục nhịp điệu mỗi ngày. Điều này chủ yếu là do chạy bộ, bơi lội hoặc đạp xe giúp đốt cháy calo dư thừa và tăng trao đổi chất. Điều này có nghĩa là mỗi người không chỉ giữ được dáng đẹp mà còn tăng cường hệ miễn dịch."
+            },
+            {
+              "id": "h-ff-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, last year I gained 6 kilograms while sitting ten hours a day coding my Master's thesis, but by cutting out late-night instant noodles and jogging every evening, I successfully lost 5 kilograms in two months.",
+              "viText": "Ví dụ, năm ngoái tôi tăng 6 kg do ngồi 10 tiếng mỗi ngày viết code luận văn Thạc sĩ, nhưng nhờ cắt bỏ mì tôm đêm khuya và chạy bộ mỗi chiều, tôi đã giảm thành công 5 kg trong hai tháng."
             }
           ],
           "areSkeleton": {
-            "answer": "To fight the obesity epidemic, we should combine a balanced diet with regular physical exercise.",
-            "answerVi": "Để giải quyết nạn béo phì, chúng ta nên kết hợp chế độ ăn uống cân bằng với việc tập thể dục đều đặn.",
-            "reason": "Because eating clean homemade food cuts excessive sugar, while daily jogging burns off stored calories effectively.",
-            "reasonVi": "Bởi vì ăn cơm nhà lành mạnh giúp cắt giảm lượng đường thừa, trong khi chạy bộ hàng ngày giúp đốt cháy calo tích tụ hiệu quả.",
-            "example": "For example, my brother lost 5 kilograms in two months simply by replacing soda with water and running 30 minutes every morning.",
-            "exampleVi": "Ví dụ, anh trai tôi đã giảm 5 ký trong 2 tháng chỉ bằng cách đổi nước ngọt sang uống nước lọc và chạy bộ 30 phút mỗi sáng."
+            "answer": "🎙️ Speaking Part 3 & Task 1 (AJC 08/11 - Khuyên bạn giảm cân): To lose weight effectively, you should cut down on greasy fast food, eat homemade vegetables and chicken breast, and jog for 45 minutes every evening.",
+            "answerVi": "Khuyên bạn giảm cân: Để giảm cân hiệu quả, bạn nên cắt giảm đồ ăn nhanh, ăn cơm nhà nhiều rau xanh ức gà, và chạy bộ 45 phút mỗi chiều.",
+            "reason": "🎙️ Giải pháp từ Chính phủ đối với Fast Food: Authorities should impose higher taxes on sugary drinks and mandate clear calorie labels on fast food menus.",
+            "reasonVi": "Giải pháp vĩ mô: Chính quyền nên đánh thuế cao hơn với nước ngọt và bắt buộc in nhãn calo rõ ràng trên thực đơn đồ ăn nhanh.",
+            "example": "📐 Lắp vào Writing Task 2 (Obesity / Fast Food): [Cause/Problem-Solution] ➔ Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 3 + 4.",
+            "exampleVi": "Dùng trực tiếp cho cả Writing Task 1 (AJC 08/11) và Writing Task 2 (Obesity)."
           }
         },
         {
-          "id": "health-weight-loss",
-          "title": "Cách giảm cân lành mạnh (Effective Ways to Lose Weight)",
-          "viTitle": "Uống nhiều nước, ăn nhiều rau xanh, ngủ đủ giấc & tránh nhịn ăn tiêu cực",
-          "badge": "Đề 2",
+          "id": "health-breaking-bad-habits-sleep",
+          "title": "Thay đổi Thói quen Xấu (Thức khuya, Lướt điện thoại) & Giấc ngủ",
+          "viTitle": "Kế thừa từ vựng: break bad habits, strong willpower, self-discipline, stay up late, sleep deprivation",
+          "badge": "Chủ đề 2 (Đề HUST 08/11)",
           "examTags": [
-            "Speaking P3 (VLU 10 - Effective Ways to Lose Weight)",
-            "Writing T1 (VLU 09 - Giving Advice on Healthy Weight Loss to a Friend)",
-            "Writing T2 (VLU 09 - Benefits of a Healthy Lifestyle)"
+            "Speaking P3 (HUST 08/11): How to Break Bad Habits? Is It Easy for Young People to Change Bad Habits?",
+            "Task 2 [Dạng 3 & 4 - Cause/Problem-Solution]: Why Modern Youths Suffer from Sleep Deprivation and Unhealthy Habits",
+            "Speaking P1 & P2: Daily Routines and Improving Personal Lifestyle"
           ],
-          "color": "#ef4444",
+          "color": "#e11d48",
           "keywords": [
-            {
-              "word": "lose weight safely",
-              "meaning": "giảm cân an toàn và khoa học"
-            },
-            {
-              "word": "drink plenty of water",
-              "meaning": "uống đủ 2 lít nước mỗi ngày giúp lọc cơ thể"
-            },
-            {
-              "word": "eat more fiber & veggies",
-              "meaning": "ăn nhiều chất xơ, rau xanh và củ quả tươi"
-            },
-            {
-              "word": "avoid extreme fasting",
-              "meaning": "tránh nhịn ăn quá mức gây kiệt sức và ngất xỉu"
-            },
-            {
-              "word": "keep fit and in shape",
-              "meaning": "giữ gìn vóc dáng thon gọn, khỏe khoắn"
-            }
+            { "word": "break bad habits", "meaning": "từ bỏ các thói quen xấu" },
+            { "word": "strong willpower and self-discipline", "meaning": "ý chí mạnh mẽ và tính tự kỷ luật" },
+            { "word": "stay up late", "meaning": "thức khuya" },
+            { "word": "sleep deprivation", "meaning": "tình trạng thiếu ngủ" }
           ],
           "items": [
             {
-              "id": "health-wl-1",
-              "badge": "💧 Uống nước",
-              "text": "Drink at least 2 liters of water daily and drink a warm glass before meals to feel full and eat less.",
-              "viText": "Uống ít nhất 2 lít nước mỗi ngày và uống một cốc nước ấm trước bữa ăn để tạo cảm giác no và ăn ít hơn."
+              "id": "h-bh-1",
+              "badge": "⚠️ Nhánh 1: Tại sao người trẻ khó bỏ thói quen xấu (One contributing factor ➔ Because ➔ Meaning)",
+              "text": "One contributing factor is that breaking bad habits like staying up late or endless smartphone scrolling requires strong willpower and self-discipline. This is mainly because addictive social media algorithms and peer pressure constantly tempt young people. This means that they easily give up after a few days and suffer from chronic sleep deprivation.",
+              "viText": "Một yếu tố là việc từ bỏ thói quen xấu như thức khuya hay lướt điện thoại đòi hỏi ý chí mạnh mẽ và kỷ luật tự giác. Điều này chủ yếu là do thuật toán mạng xã hội gây nghiện và áp lực bạn bè liên tục cám dỗ người trẻ. Điều này có nghĩa là họ dễ bỏ cuộc sau vài ngày và bị thiếu ngủ mãn tính."
             },
             {
-              "id": "health-wl-2",
-              "badge": "🥗 Chế độ ăn",
-              "text": "Fill half of your dinner plate with green salad, boiled vegetables, and lean chicken breast instead of white rice.",
-              "viText": "Chia một nửa đĩa ăn tối với salad, rau luộc và ức gà nạc thay vì ăn quá nhiều cơm trắng."
+              "id": "h-bh-2",
+              "badge": "✅ Nhánh 2: Tại sao người trẻ vẫn có lợi thế thay đổi nếu quyết tâm (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, young people can change bad habits rapidly once they have clear motivation. This is mainly because youths have high adaptability and can use smart habit-tracking apps or join fitness clubs with friends. This means that replacing an old bad routine with a positive hobby becomes much easier.",
+              "viText": "Mặt khác, người trẻ có thể thay đổi thói quen xấu rất nhanh một khi có động lực rõ ràng. Điều này chủ yếu là do giới trẻ có khả năng thích nghi cao và biết dùng ứng dụng theo dõi thói quen hoặc tham gia câu lạc bộ thể thao cùng bạn bè. Điều này có nghĩa là việc thay thế thói quen xấu bằng sở thích tích cực trở nên dễ dàng hơn nhiều."
             },
             {
-              "id": "health-wl-3",
-              "badge": "😴 Giấc ngủ",
-              "text": "Sleep 7 to 8 hours each night because lack of sleep stimulates late-night snack cravings.",
-              "viText": "Ngủ đủ 7 đến 8 tiếng mỗi đêm vì việc thiếu ngủ kích thích cảm giác thèm ăn vặt đêm khuya."
+              "id": "h-bh-3",
+              "badge": "💡 Nhánh 3: Phương pháp bỏ thói quen xấu từng bước (Best approach ➔ Because ➔ Meaning)",
+              "text": "In my opinion, the best approach to break bad habits is setting small daily goals and removing environmental triggers. This is mainly because sudden extreme changes often cause frustration, whereas small steps build lasting self-discipline. This means that our biological clock gradually resets without mental stress.",
+              "viText": "Theo tôi, cách tốt nhất để bỏ thói quen xấu là đặt mục tiêu nhỏ hàng ngày và loại bỏ các tác nhân gây xao nhãng. Điều này chủ yếu là do thay đổi đột ngột quá mức thường gây nản chí, trong khi từng bước nhỏ giúp xây dựng kỷ luật bền vững. Điều này có nghĩa là đồng hồ sinh học dần được thiết lập lại mà không gây căng thẳng."
+            },
+            {
+              "id": "h-bh-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, to break my bad habit of staying up until 2 AM coding and watching YouTube, I started leaving my smartphone outside the bedroom at 11 PM and reading a paper book for 20 minutes, which helped me sleep deeply.",
+              "viText": "Ví dụ, để bỏ thói quen xấu thức tới 2 giờ sáng viết code và xem YouTube, tôi bắt đầu để điện thoại bên ngoài phòng ngủ từ 11 giờ đêm và đọc sách giấy 20 phút, giúp tôi ngủ sâu và dậy sớm tỉnh táo."
             }
           ],
           "areSkeleton": {
-            "answer": "The most sustainable way to lose weight is eating healthy food and avoiding crash diets.",
-            "answerVi": "Cách giảm cân bền vững nhất là ăn uống lành mạnh và không bao giờ áp dụng các chế độ nhịn ăn tiêu cực.",
-            "reason": "Crash starvation ruins your metabolism and health, whereas eating boiled veggies and lean meat keeps your energy high.",
-            "reasonVi": "Nhịn ăn ép cân làm hỏng quá trình trao đổi chất và sức khỏe, trong khi ăn rau luộc và thịt nạc giúp bạn luôn dồi dào năng lượng.",
-            "example": "For instance, I advised my classmate to stop taking diet pills and start eating boiled chicken with sweet potatoes, and she successfully kept in shape.",
-            "exampleVi": "Ví dụ, tôi đã khuyên bạn cùng lớp dừng uống thuốc giảm cân và chuyển sang ăn ức gà luộc cùng khoai lang, bạn ấy đã giữ dáng rất thành công."
+            "answer": "🎙️ Speaking Part 3 (HUST 08/11 - Làm sao bỏ thói quen xấu?): People can break bad habits by setting small realistic goals, removing temptations like phones at night, and finding a workout partner.",
+            "answerVi": "Speaking P3 (HUST 08/11): Mọi người có thể bỏ thói quen xấu bằng cách đặt mục tiêu nhỏ thực tế, cất điện thoại ban đêm và tìm bạn tập thể thao cùng.",
+            "reason": "🎙️ Người trẻ có dễ bỏ thói quen xấu không?: It is challenging at first due to digital temptations, but young people have high adaptability to change if they have strong willpower.",
+            "reasonVi": "Người trẻ có dễ thay đổi không?: Lúc đầu khá khó vì cám dỗ công nghệ, nhưng người trẻ có khả năng thích nghi cao để thay đổi nếu có ý chí.",
+            "example": "📐 Lắp vào Writing Task 2 (Sleep Deprivation / Unhealthy Habits): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Trúng tủ 100% đề Speaking Part 3 HUST 08/11."
           }
         },
         {
-          "id": "health-fast-food",
-          "title": "Tác hại của Đồ ăn nhanh & Có nên cấm (Fast Food: Effects & Bans)",
-          "viTitle": "Tiện lợi cho người bận rộn vs Nguy cơ tim mạch, tiểu đường & đề xuất đánh thuế",
-          "badge": "Đề 3",
+          "id": "health-public-smoking-ban",
+          "title": "Cấm Hút thuốc Nơi công cộng (Public Smoking Ban) & Khói thuốc Thụ động",
+          "viTitle": "Kế thừa từ vựng: public smoking ban, secondhand smoke, respiratory illnesses, preventive healthcare",
+          "badge": "Chủ đề 3 (Đề VLU 08/11)",
           "examTags": [
-            "Writing T2 (VLU 09 - Harmful Effects of Fast Food; Causes & Solutions; Banning Fast Food for Public Health)"
+            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Discussion]: Should Smoking Be Completely Banned in All Public Places? (VLU 08/11)",
+            "Speaking P3: Harmful Effects of Smoking and How to Reduce Tobacco Use",
+            "Task 2 [Dạng 3 - Cause/Solution]: Youth Smoking and E-Cigarettes (Vaping)"
           ],
-          "color": "#ef4444",
+          "color": "#e11d48",
           "keywords": [
-            {
-              "word": "fast food chains",
-              "meaning": "các chuỗi cửa hàng thức ăn nhanh (KFC, Lotteria, McDonald's)"
-            },
-            {
-              "word": "high in calories and fat",
-              "meaning": "chứa hàm lượng calo và chất béo bão hòa rất cao"
-            },
-            {
-              "word": "cardiovascular diseases",
-              "meaning": "các bệnh tim mạch, cao huyết áp và tắc nghẽn mạch máu"
-            },
-            {
-              "word": "convenient for busy workers",
-              "meaning": "tiện lợi, nhanh gọn cho người đi làm bận rộn"
-            },
-            {
-              "word": "tax on junk food",
-              "meaning": "đánh thuế cao lên đồ ăn vặt có hại cho sức khỏe"
-            }
+            { "word": "public smoking ban", "meaning": "lệnh cấm hút thuốc lá nơi công cộng" },
+            { "word": "secondhand smoke", "meaning": "khói thuốc lá thụ động" },
+            { "word": "respiratory illnesses", "meaning": "các bệnh về đường hô hấp và phổi" },
+            { "word": "heavy monetary fines", "meaning": "mức phạt tiền nghiêm khắc" }
           ],
           "items": [
             {
-              "id": "health-ff-1",
-              "badge": "⚡ Ưu điểm",
-              "text": "Fast food is extremely quick, tasty, and accessible for busy office workers who have no time to cook.",
-              "viText": "Thức ăn nhanh rất tiện, ngon miệng và dễ mua cho dân văn phòng bận rộn không có thời gian nấu nướng."
+              "id": "h-sb-1",
+              "badge": "✅ Nhánh 1: Bảo vệ người không hút thuốc khỏi Khói thuốc thụ động (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason to enforce a strict public smoking ban is protecting non-smokers from toxic secondhand smoke. This is mainly because inhaling cigarette fumes in restaurants, bus stops, and parks causes severe respiratory illnesses, asthma, and lung cancer. This means that innocent children and pregnant women can breathe clean air safely.",
+              "viText": "Một lý do chính để thực thi lệnh cấm hút thuốc nơi công cộng là bảo vệ người không hút khỏi khói thuốc thụ động độc hại. Điều này chủ yếu là do hít phải khói thuốc ở nhà hàng, trạm xe buýt và công viên gây bệnh hô hấp nặng, hen suyễn và ung thư phổi. Điều này có nghĩa là trẻ em và phụ nữ mang thai được hít thở không khí sạch an toàn."
             },
             {
-              "id": "health-ff-2",
-              "badge": "⚠️ Tác hại",
-              "text": "Eating fried foods regularly leads to obesity, high blood pressure, and serious heart problems.",
-              "viText": "Ăn đồ chiên rán thường xuyên dẫn đến béo phì, cao huyết áp và các bệnh lý tim mạch nguy hiểm."
+              "id": "h-sb-2",
+              "badge": "✅ Nhánh 2: Khuyến khích người nghiện bỏ thuốc & Giảm cháy nổ (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, banning smoking in public spaces helps smokers break their bad habit and prevents fire hazards. This is mainly because making smoking inconvenient in offices and cafes forces people to cut down on daily cigarettes. This means that national healthcare costs drop and littering of cigarette butts is eliminated.",
+              "viText": "Hơn nữa, cấm hút thuốc nơi công cộng giúp người nghiện bỏ thói quen xấu và ngăn ngừa nguy cơ cháy nổ. Điều này chủ yếu là do việc gây bất tiện khi hút thuốc ở văn phòng và quán nước buộc họ phải giảm số điếu thuốc mỗi ngày. Điều này có nghĩa là chi phí y tế quốc gia giảm xuống và tàn thuốc không bị vứt bừa bãi."
             },
             {
-              "id": "health-ff-3",
-              "badge": "⚖️ Giải pháp",
-              "text": "Governments should not ban fast food totally, but impose higher taxes and restrict advertising around schools.",
-              "viText": "Nhà nước không nên cấm hoàn toàn mà nên đánh thuế cao hơn và cấm treo biển quảng cáo xung quanh trường học."
+              "id": "h-sb-3",
+              "badge": "⚠️ Nhánh 3: Quan điểm về Quyền cá nhân & Giải pháp Khu vực riêng (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, some argue that a total ban restricts personal freedom for addicted adults. Therefore, the best approach is imposing heavy monetary fines in indoor spaces while setting up isolated, ventilated smoking booths at airports and stations. This means that public health is protected without causing street conflicts.",
+              "viText": "Mặt khác, một số người cho rằng cấm tuyệt đối làm hạn chế quyền tự do cá nhân của người trưởng thành. Do đó, giải pháp tốt nhất là phạt tiền thật nặng ở không gian kín trong nhà, đồng thời bố trí các buồng hút thuốc biệt lập có thông gió tại sân bay, nhà ga. Điều này có nghĩa là sức khỏe cộng đồng được bảo vệ mà không gây xung đột."
+            },
+            {
+              "id": "h-sb-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, since my university campus and IT office building enforced a 100% indoor smoking ban last year, the hallways and restrooms have become completely fresh, helping me focus on coding without suffering from sinus headaches.",
+              "viText": "Ví dụ, từ khi khuôn viên trường đại học và tòa nhà văn phòng IT của tôi áp dụng lệnh cấm hút thuốc 100% trong nhà vào năm ngoái, hành lang và khu vệ sinh trở nên hoàn toàn thoáng sạch, giúp tôi tập trung viết code mà không bị đau đầu viêm xoang."
             }
           ],
           "areSkeleton": {
-            "answer": "Fast food is convenient, but consuming it frequently poses severe threats to our cardiovascular health.",
-            "answerVi": "Đồ ăn nhanh tuy tiện lợi, nhưng việc tiêu thụ thường xuyên gây ra những mối nguy hại nghiêm trọng cho tim mạch.",
-            "reason": "This is because deep-fried foods contain dangerous trans fats and salt that clog arteries over time.",
-            "reasonVi": "Điều này là do các món chiên ngập dầu chứa chất béo bão hòa và lượng muối cao làm tắc nghẽn mạch máu theo thời gian.",
-            "example": "For example, my coworker ate burgers and french fries every lunch for a year and his doctor warned him about high cholesterol.",
-            "exampleVi": "Ví dụ, đồng nghiệp của tôi ăn hamburger và khoai tây chiên mỗi bữa trưa suốt một năm và bác sĩ đã cảnh báo anh bị mỡ máu cao."
+            "answer": "🎙️ Quan điểm Writing Task 2 & Speaking P3 (VLU 08/11): I strongly agree that smoking should be banned in all public places to protect public health from secondhand smoke.",
+            "answerVi": "Quan điểm chuẩn (VLU 08/11): Tôi hoàn toàn đồng ý cấm hút thuốc tại mọi nơi công cộng để bảo vệ sức khỏe cộng đồng khỏi khói thuốc thụ động.",
+            "reason": "🎙️ Giải pháp thực thi hiệu quả: Governments should increase tobacco taxes, place graphic health warnings on cigarette packs, and fine violators strictly.",
+            "reasonVi": "Giải pháp thực thi: Chính phủ nên tăng thuế thuốc lá, in cảnh báo sức khỏe trực quan lên vỏ bao và phạt nặng người vi phạm.",
+            "example": "📐 Lắp vào Writing Task 2 (Đề VLU 08/11 - Public Smoking Ban): [Dạng 1 - Agree/Disagree] ➔ Lắp Nhánh 1 + 2 + 4 | [Dạng 2 - Discussion] ➔ Đoạn 1 lắp Nhánh 1 + 2, Đoạn 2 lắp Nhánh 3.",
+            "exampleVi": "Trúng tủ 100% đề thi Writing Task 2 VLU 08/11."
           }
         },
         {
-          "id": "health-eating-out-vs-home",
-          "title": "Ăn ngoài hàng quán vs Cơm nhà (Eating Out vs Home Cooking)",
-          "viTitle": "Tiết kiệm thời gian, đổi vị, gặp bạn bè vs Đảm bảo vệ sinh, tiết kiệm tiền bạc & gắn kết",
-          "badge": "Đề 4",
+          "id": "health-visiting-sick-friend-healthcare",
+          "title": "Chọn quà Thăm bạn ốm (Visiting a Sick Friend) & Y tế Dự phòng",
+          "viTitle": "Kế thừa từ vựng: speedy recovery, boost the immune system, balanced and nutritious diet, preventive healthcare",
+          "badge": "Chủ đề 4 (Đề VLU 07/11)",
           "examTags": [
-            "Speaking P1 (VLU 09, 10; DTHU 10; BAV 10; AJC 11 - Eating Out)",
-            "Speaking P2 (VLU 09 - Dining Place; VLU 11 - Offering a Meal to Visiting Friends: Home vs Fast-food vs Restaurant)",
-            "Speaking P3 (VLU 09 - Benefits of Eating Out)",
-            "Writing T1 (VLU 09 - Recommending a Korean Restaurant)"
+            "Speaking P2 (VLU 07/11): Visiting a Sick Friend (Fresh Flowers vs Coloring Book & Colored Pencils vs Healthy Food)",
+            "Task 2 [Dạng 1 - Agree/Disagree]: Prevention Is Better Than Cure (Government Healthcare Budget Allocation)",
+            "Speaking P3: How to Take Care of Physical Health and Prevent Illnesses"
           ],
-          "color": "#ef4444",
+          "color": "#e11d48",
           "keywords": [
-            {
-              "word": "home-cooked meal",
-              "meaning": "bữa cơm gia đình ấm cúng tự nấu tại nhà"
-            },
-            {
-              "word": "eat out with friends",
-              "meaning": "đi ăn ngoài hàng quán, nhà hàng cùng bạn bè"
-            },
-            {
-              "word": "food hygiene & clean ingredients",
-              "meaning": "vệ sinh an toàn thực phẩm và nguyên liệu tươi sạch"
-            },
-            {
-              "word": "cozy atmosphere",
-              "meaning": "không gian ấm cúng, thân mật, dễ trò chuyện"
-            },
-            {
-              "word": "save a lot of money",
-              "meaning": "tiết kiệm được rất nhiều tiền so với ăn tiệm"
-            }
+            { "word": "speedy recovery", "meaning": "sự hồi phục sức khỏe nhanh chóng" },
+            { "word": "boost the immune system", "meaning": "tăng cường hệ miễn dịch" },
+            { "word": "nutritious healthy food", "meaning": "thực phẩm lành mạnh giàu dinh dưỡng" },
+            { "word": "preventive healthcare", "meaning": "chăm sóc y tế dự phòng" }
           ],
           "items": [
             {
-              "id": "health-eo-1",
-              "badge": "🍲 Cơm nhà",
-              "text": "Cooking at home allows you to pick fresh clean ingredients, save money, and adjust spices to your own taste.",
-              "viText": "Nấu ăn ở nhà giúp bạn tự chọn nguyên liệu tươi sạch, tiết kiệm tiền và nêm nếm vừa khẩu vị."
+              "id": "h-vs-1",
+              "badge": "✅ Nhánh 1: Tại sao nên mang Đồ ăn Healthy khi thăm bạn ốm (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason to bring healthy food such as fresh fruits, chicken soup, or bird's nest when visiting a sick friend is that it promotes a speedy recovery. This is mainly because vitamins and warm protein directly boost the immune system of a weak patient. This means that our friend can regain physical energy much faster.",
+              "viText": "Một lý do chính nên mang đồ ăn tốt cho sức khỏe như trái cây tươi, súp gà hoặc yến chưng khi thăm bạn ốm là nó giúp hồi phục nhanh chóng. Điều này chủ yếu là do vitamin và đạm ấm trực tiếp tăng cường hệ miễn dịch cho người bệnh đang yếu. Điều này có nghĩa là bạn chúng ta lấy lại sức lực nhanh hơn nhiều."
             },
             {
-              "id": "health-eo-2",
-              "badge": "🍽️ Ăn ngoài",
-              "text": "Eating at a restaurant saves preparation time, offers delicious specialty dishes, and is perfect for weekend gatherings.",
-              "viText": "Ăn nhà hàng giúp đỡ tốn công nấu nướng, được thử các món đặc sản ngon và rất hợp cho họp mặt cuối tuần."
+              "id": "h-vs-2",
+              "badge": "⚠️ Nhánh 2: Tại sao không chọn Hoa tươi hoặc Sách tập tô (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, bringing fresh flowers or coloring books is much less practical for a patient. This is mainly because flowers wither quickly and pollen can trigger respiratory allergies in hospital rooms, while coloring books cause eye strain when a sick person just needs rest. This means that nutritious food is the most thoughtful choice.",
+              "viText": "Mặt khác, mang hoa tươi hoặc sách tập tô kém thiết thực hơn nhiều đối với người bệnh. Điều này chủ yếu là do hoa nhanh héo và phấn hoa dễ gây dị ứng hô hấp trong phòng bệnh, còn tô màu gây mỏi mắt khi người ốm đang cần ngủ nghỉ. Điều này có nghĩa là đồ ăn bổ dưỡng là lựa chọn chu đáo nhất."
             },
             {
-              "id": "health-eo-3",
-              "badge": "👥 Đãi bạn",
-              "text": "A home-cooked meal is the warmest choice to welcome visiting friends because it shows your personal hospitality.",
-              "viText": "Một bữa cơm nhà là lựa chọn ấm cúng nhất để đãi bạn phương xa tới chơi vì thể hiện sự mến khách và chân thành."
+              "id": "h-vs-3",
+              "badge": "✅ Nhánh 3: Tầm quan trọng của Y tế dự phòng (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, in daily life, investing in preventive healthcare and regular medical check-ups is much better than curing severe diseases later. This is mainly because early detection and vaccinations prevent minor illnesses from turning into life-threatening conditions. This means that citizens save massive hospital bills.",
+              "viText": "Hơn nữa, trong đời sống hàng ngày, đầu tư vào y tế dự phòng và khám sức khỏe định kỳ tốt hơn nhiều so với chờ bệnh nặng mới chữa. Điều này chủ yếu là do phát hiện sớm và tiêm chủng ngăn ngừa bệnh nhẹ biến thành bệnh nguy hiểm. Điều này có nghĩa là người dân tiết kiệm được viện phí khổng lồ."
+            },
+            {
+              "id": "h-vs-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, when my software lab teammate caught a high fever last month, I brought him a thermos of warm chicken porridge and fresh oranges, which helped him recover his strength within three days.",
+              "viText": "Ví dụ, khi người bạn cùng lab phần mềm của tôi bị sốt cao tháng trước, tôi đã mang một bình cháo gà nóng và cam tươi đến thăm, giúp cậu ấy hồi phục thể lực chỉ sau ba ngày."
             }
           ],
           "areSkeleton": {
-            "answer": "When my close friends visit this weekend, I will definitely prepare a home-cooked meal for them.",
-            "answerVi": "Khi bạn thân đến thăm vào cuối tuần này, tôi chắc chắn sẽ tự tay nấu một bữa cơm nhà để thết đãi các bạn.",
-            "reason": "Because cooking together creates a warm cozy atmosphere where we can chat freely without rushing like in busy restaurants.",
-            "reasonVi": "Bởi vì cùng nấu nướng tạo nên không khí ấm cúng, nơi chúng tôi có thể thoải mái trò chuyện mà không bị vội vã như ở quán xá đông đúc.",
-            "example": "For example, last month I invited my university friends over and cooked traditional Pho; everyone loved it and we spent hours laughing together.",
-            "exampleVi": "Ví dụ, tháng trước tôi rủ bạn đại học qua nhà và nấu món phở truyền thống; ai cũng khen ngon và chúng tôi cười nói suốt cả buổi."
-          }
-        },
-        {
-          "id": "health-traditional-vegetarian",
-          "title": "Ẩm thực truyền thống & Ăn chay (Traditional Food & Vegetarianism)",
-          "viTitle": "Món ăn quê hương (Phở, Bánh mì), ăn chay thanh lọc cơ thể & thực phẩm nội địa",
-          "badge": "Đề 5",
-          "examTags": [
-            "Speaking P1 (VLU 09, 11 - Traditional Food & Cuisine; Diet & Vegetarianism)",
-            "Speaking P1 (UEH 10 - Balanced Diet)",
-            "Writing T2 (VLU 10 - Consuming Local Food vs Imported Food)"
-          ],
-          "color": "#ef4444",
-          "keywords": [
-            {
-              "word": "traditional cuisine",
-              "meaning": "ẩm thực truyền thống đậm đà bản sắc (Phở, Bún chả, Bánh chưng)"
-            },
-            {
-              "word": "vegetarian diet",
-              "meaning": "chế độ ăn chay (nhiều rau, nấm, đậu hũ, không ăn thịt)"
-            },
-            {
-              "word": "detox body & peace of mind",
-              "meaning": "thanh lọc cơ thể và tìm sự bình yên trong tâm trí"
-            },
-            {
-              "word": "local fresh ingredients",
-              "meaning": "nguyên liệu nông sản tươi ngon trong nước, ít chất bảo quản"
-            },
-            {
-              "word": "support local farmers",
-              "meaning": "ủng hộ bà con nông dân địa phương thay vì đồ nhập khẩu"
-            }
-          ],
-          "items": [
-            {
-              "id": "health-tv-1",
-              "badge": "🍜 Truyền thống",
-              "text": "Vietnamese dishes like Pho and fresh spring rolls are famous worldwide because they use lots of fresh herbs and light broth.",
-              "viText": "Các món Việt như Phở và gỏi cuốn nổi tiếng thế giới vì dùng nhiều rau thơm tươi và nước dùng thanh đạm."
-            },
-            {
-              "id": "health-tv-2",
-              "badge": "🌱 Ăn chay",
-              "text": "Eating vegetarian meals twice a week helps lower cholesterol, improve digestion, and brings a peaceful feeling.",
-              "viText": "Ăn chay 2 bữa mỗi tuần giúp hạ mỡ máu, cải thiện tiêu hóa và mang lại cảm giác nhẹ nhõm, thanh thản."
-            },
-            {
-              "id": "health-tv-3",
-              "badge": "🇻🇳 Đồ nội địa",
-              "text": "Buying local vegetables and fruits is fresher and cheaper than expensive imported foods that require chemical preservatives.",
-              "viText": "Mua rau quả địa phương vừa tươi vừa rẻ hơn đồ nhập khẩu đắt đỏ vốn phải dùng nhiều chất bảo quản vận chuyển."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "I have a great passion for traditional Vietnamese food and try to eat vegetarian meals once a week.",
-            "answerVi": "Tôi rất yêu thích ẩm thực truyền thống Việt Nam và luôn cố gắng ăn chay một ngày mỗi tuần.",
-            "reason": "Because our local food is packed with fresh green herbs that keep the body healthy without feeling greasy.",
-            "reasonVi": "Bởi vì món ăn quê mình có rất nhiều rau thơm tươi mát, giúp cơ thể khỏe khoắn mà không hề bị ngấy dầu mỡ.",
-            "example": "For instance, whenever I feel sluggish, I eat a bowl of vegetarian noodle soup with tofu and mushrooms to detox my stomach.",
-            "exampleVi": "Ví dụ, mỗi khi cảm thấy nặng bụng, tôi thường ăn một tô bún chay nấu với đậu hũ và nấm để thanh lọc cơ thể."
-          }
-        },
-        {
-          "id": "health-milk-tea-drinks",
-          "title": "Trà sữa & Đồ uống giới trẻ (Milk Tea & Healthy Drinks)",
-          "viTitle": "Món uống giải khát ưa thích, chỗ tụ tập bạn bè vs Nguy cơ tiểu đường, trà xanh tốt hơn",
-          "badge": "Đề 6",
-          "examTags": [
-            "Speaking P1 (VLU 09 - Green Tea & Drinks)",
-            "Speaking P1 (DTHU 10; AJC 11 - Milk Tea / Bubble Tea & Trendy Beverages)"
-          ],
-          "color": "#ef4444",
-          "keywords": [
-            {
-              "word": "bubble tea / milk tea",
-              "meaning": "trà sữa trân châu, thức uống yêu thích của giới trẻ"
-            },
-            {
-              "word": "popular hangout spot",
-              "meaning": "địa điểm tụ tập, tán gẫu quen thuộc sau giờ học"
-            },
-            {
-              "word": "too much added sugar",
-              "meaning": "chứa quá nhiều đường hóa học và si-rô ngọt"
-            },
-            {
-              "word": "green tea & herbal tea",
-              "meaning": "trà xanh và trà thảo mộc giúp chống lão hóa, thanh nhiệt"
-            }
-          ],
-          "items": [
-            {
-              "id": "health-mt-1",
-              "badge": "🧋 Trà sữa",
-              "text": "Bubble tea shops offer air conditioning and sweet drinks, making them the favorite weekend hangout for students.",
-              "viText": "Quán trà sữa có máy lạnh mát mẻ và đồ uống ngọt ngào, là nơi tụ tập cuối tuần yêu thích nhất của sinh viên."
-            },
-            {
-              "id": "health-mt-2",
-              "badge": "⚠️ Nguy cơ",
-              "text": "Drinking bubble tea every day causes weight gain, skin pimples, and increases the risk of early diabetes.",
-              "viText": "Uống trà sữa mỗi ngày gây tăng cân nhanh, nổi mụn trứng cá và làm tăng nguy cơ tiểu đường sớm."
-            },
-            {
-              "id": "health-mt-3",
-              "badge": "🍵 Trà xanh",
-              "text": "Unsweetened green tea is a much healthier alternative because it burns fat and protects the heart.",
-              "viText": "Trà xanh không đường là thức uống thay thế lành mạnh hơn hẳn vì giúp đốt mỡ thừa và bảo vệ tim mạch."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "Although milk tea is very tasty, I only drink it once a month and prefer green tea instead.",
-            "answerVi": "Mặc dù trà sữa rất ngon, tôi chỉ uống mỗi tháng một lần và thích uống trà xanh hơn.",
-            "reason": "Milk tea contains a huge amount of sugar and fat pearls, while green tea has antioxidants that keep my skin clear.",
-            "reasonVi": "Trà sữa chứa lượng đường khổng lồ cùng trân châu béo, trong khi trà xanh có chất chống oxy hóa giúp da dẻ mịn màng.",
-            "example": "For example, my roommate gained 3 kilograms in one semester because she ordered large brown sugar boba milk tea almost every afternoon.",
-            "exampleVi": "Ví dụ, bạn cùng phòng của tôi tăng hẳn 3 ký trong một kỳ học vì hầu như chiều nào cũng gọi ly trà sữa trân châu đường đen size lớn."
+            "answer": "🎙️ Speaking Part 2 (VLU 07/11 - Chọn Đồ ăn Healthy thăm bạn ốm): Among the three options, I would definitely choose bringing healthy food like fresh fruits and warm soup because it provides essential vitamins for a speedy recovery.",
+            "answerVi": "Speaking P2 (VLU 07/11): Trong 3 lựa chọn, tôi chắc chắn chọn mang đồ ăn lành mạnh như trái cây tươi và súp nóng vì nó cung cấp vitamin thiết yếu giúp bạn nhanh khỏi bệnh.",
+            "reason": "🎙️ Bác bỏ Hoa tươi & Bút màu tập tô: Flowers may cause pollen allergies in a closed room and cannot be eaten, while coloring books require concentration and tire the eyes of a sick person.",
+            "reasonVi": "Bác bỏ Hoa & Tập tô: Hoa tươi dễ gây dị ứng phấn hoa trong phòng kín và không ăn được, còn tập tô đòi hỏi sự tập trung làm mỏi mắt người đang ốm.",
+            "example": "📐 Lắp vào Writing Task 2 (Prevention vs Cure): Đoạn 1 lắp Nhánh 3; Đoạn 2 lắp Nhánh 1 + 4.",
+            "exampleVi": "Trúng tủ 100% đề Speaking Part 2 VLU 07/11."
           }
         }
       ]
@@ -391,478 +249,233 @@
   "rightBranches": [
     {
       "id": "health-group-sports-mental",
-      "title": "Thể thao, Tinh thần & Lối sống lành mạnh",
-      "viTitle": "Rủi ro tập thể dục sai cách, thể thao đồng đội, khám bệnh, giữ bình tĩnh, sở thích & cuối tuần",
-      "badge": "Nhóm 2",
-      "tags": [
-        "Speaking P1-P2-P3",
-        "Writing T1-T2"
+      "title": "Sports, Dancing, Stress Relief & Office Ergonomics",
+      "viTitle": "Thể thao, Khiêu vũ Giữ dáng, Giải tỏa Stress & Sức khỏe Dân Văn phòng / IT",
+      "badge": "Nhánh 2 (15 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
+      "tags": ["Dancing & Fitness", "Mental Stress", "Office Neck Pain", "Digital Detox", "Longevity"],
+      "color": "#059669",
+      "keywords": [
+        { "word": "regular physical exercise", "meaning": "việc tập thể dục thể thao đều đặn" },
+        { "word": "burn excess calories", "meaning": "đốt cháy lượng calo dư thừa" },
+        { "word": "keep fit and stay in shape", "meaning": "giữ gìn cơ thể khỏe mạnh và vóc dáng cân đối" },
+        { "word": "release happy hormones (endorphins)", "meaning": "tiết ra hormone hạnh phúc giúp tinh thần sảng khoái" },
+        { "word": "relieve mental fatigue and stress", "meaning": "giải tỏa sự mệt mỏi tinh thần và căng thẳng" },
+        { "word": "dancing and rhythmic aerobics", "meaning": "khiêu vũ, nhảy hiện đại và thể dục nhịp điệu" },
+        { "word": "body flexibility and posture", "meaning": "sự dẻo dai của cơ thể và tư thế đứng thẳng đẹp" },
+        { "word": "neck and back pain", "meaning": "chứng đau mỏi cổ vai gáy và đau lưng" },
+        { "word": "mental wellbeing", "meaning": "sức khỏe tâm thần tích cực" },
+        { "word": "digital detox", "meaning": "tạm ngắt kết nối thiết bị số để tâm trí nghỉ ngơi" },
+        { "word": "mindfulness meditation and yoga", "meaning": "thiền chánh niệm và tập yoga" },
+        { "word": "team sports camaraderie", "meaning": "tình đồng đội gắn kết qua các môn thể thao tập thể" },
+        { "word": "outdoor parks vs indoor gyms", "meaning": "vận động ở công viên ngoài trời vs phòng gym trong nhà" },
+        { "word": "biological clock", "meaning": "đồng hồ sinh học tự nhiên của cơ thể" },
+        { "word": "healthy longevity", "meaning": "tuổi thọ khỏe mạnh và dẻo dai" }
       ],
-      "color": "#10b981",
       "children": [
         {
-          "id": "health-exercise-risks",
-          "title": "Bất lợi & Rủi ro khi tập thể dục sai cách (Disadvantages & Risks of Doing Exercise)",
-          "viTitle": "Tốn kém tiền bạc, lãng phí thời gian nếu không đều đặn & chấn thương cơ bắp, xương khớp",
-          "badge": "Đề 7",
+          "id": "health-sports-dancing-body-shape",
+          "title": "Tập Thể thao, Khiêu vũ (Dancing) & Giữ gìn Vóc dáng (Staying in Shape)",
+          "viTitle": "Kế thừa từ vựng: regular physical exercise, dancing and rhythmic aerobics, keep fit and stay in shape, release happy hormones",
+          "badge": "Chủ đề 5 (Đề VLU 07/11)",
           "examTags": [
-            "Speaking P3 (VLU 09 - Risks of Improper Exercise; VLU 11 - Disadvantages of Doing Exercise: Waste time, Waste money, Get injured)"
+            "Speaking P1 & P3 (VLU 07/11): Dancing as a Sport / How People Keep Fit and Take Care of Their Body Appearance",
+            "Speaking P2: Choosing a Physical Activity for a Busy Friend (Yoga/Dancing vs Swimming vs Running)",
+            "Task 2 [Dạng 1 & 2]: Team Sports vs Individual Exercise / Cosmetic Surgery vs Natural Fitness"
           ],
-          "color": "#10b981",
+          "color": "#059669",
           "keywords": [
-            {
-              "word": "suffer sports injuries",
-              "meaning": "gặp chấn thương thể thao (trật khớp, rách cơ, đau lưng)"
-            },
-            {
-              "word": "waste money on gym fees",
-              "meaning": "lãng phí tiền mua thẻ tập gym đắt đỏ rồi bỏ dở"
-            },
-            {
-              "word": "overtraining & fatigue",
-              "meaning": "tập luyện quá sức gây kiệt sức và mất ngủ"
-            },
-            {
-              "word": "warm up properly",
-              "meaning": "khởi động kỹ càng các khớp trước khi tập nặng"
-            }
+            { "word": "dancing and rhythmic aerobics", "meaning": "nhảy múa, khiêu vũ và thể dục nhịp điệu" },
+            { "word": "keep fit and stay in shape", "meaning": "giữ dáng cân đối, săn chắc" },
+            { "word": "body flexibility and posture", "meaning": "sự dẻo dai và vóc dáng thẳng đẹp" },
+            { "word": "release happy hormones", "meaning": "tiết hormone hạnh phúc giải tỏa căng thẳng" }
           ],
           "items": [
             {
-              "id": "health-er-1",
-              "badge": "🩹 Chấn thương",
-              "text": "Lifting heavy weights without proper form or skipping warm-ups can cause severe muscle tears and back pain.",
-              "viText": "Nâng tạ nặng sai kỹ thuật hoặc bỏ qua bước khởi động có thể gây rách cơ nghiêm trọng và thoái hóa cột sống."
+              "id": "h-sd-1",
+              "badge": "✅ Nhánh 1: Lợi ích của Thể thao & Khiêu vũ đối với Cơ thể (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason why many people practice sports or dancing is that it helps them keep fit and stay in shape naturally. This is mainly because moving the whole body to music burns excess calories and improves body flexibility and posture. This means that learners can build a toned body without extreme dieting.",
+              "viText": "Một lý do chính khiến nhiều người tập thể thao hoặc khiêu vũ là nó giúp giữ dáng cân đối một cách tự nhiên. Điều này chủ yếu là do vận động toàn thân theo âm nhạc giúp đốt cháy calo dư thừa và cải thiện sự dẻo dai cũng như tư thế. Điều này có nghĩa là người tập có được cơ thể săn chắc mà không cần nhịn ăn cực đoan."
             },
             {
-              "id": "health-er-2",
-              "badge": "💸 Tốn kém",
-              "text": "Many people spend millions on expensive gym memberships, running shoes, and supplements, but quit after two weeks.",
-              "viText": "Nhiều người tốn hàng triệu mua thẻ tập gym, giày hiệu và thực phẩm bổ sung, nhưng lại bỏ cuộc chỉ sau hai tuần."
+              "id": "h-sd-2",
+              "badge": "✅ Nhánh 2: Niềm vui Tinh thần & Giao lưu Xã hội (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, group exercises such as dancing clubs or team sports relieve mental fatigue and expand social circles. This is mainly because rhythmic music and friendly teamwork stimulate the brain to release happy hormones. This means that participants forget workplace stress and make cheerful like-minded friends.",
+              "viText": "Hơn nữa, các môn tập theo nhóm như câu lạc bộ khiêu vũ hay thể thao đồng đội giúp giải tỏa mệt mỏi tinh thần và mở rộng giao lưu. Điều này chủ yếu là do âm nhạc sôi động và tinh thần đồng đội kích thích não tiết hormone hạnh phúc. Điều này có nghĩa là người tham gia quên đi áp lực công việc và kết thêm nhiều bạn mới vui vẻ."
             },
             {
-              "id": "health-er-3",
-              "badge": "⏰ Mất thời gian",
-              "text": "Exercising for hours every day leaves busy office workers too tired to focus on their primary jobs.",
-              "viText": "Tập luyện nhiều tiếng mỗi ngày khiến người đi làm quá mệt mỏi, không còn đủ sức tập trung cho công việc chính."
+              "id": "h-sd-3",
+              "badge": "⚠️ Nhánh 3: Cảnh báo về việc lạm dụng Phẫu thuật thẩm mỹ / Thuốc giảm cân (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, relying on weight-loss pills or cosmetic surgery to improve body appearance carries dangerous health risks. This is mainly because chemical supplements and invasive operations can cause organ damage and infections. This means that natural exercise and a balanced diet remain the safest way to look attractive.",
+              "viText": "Mặt khác, phụ thuộc vào thuốc giảm cân hay phẫu thuật thẩm mỹ để làm đẹp ngoại hình tiềm ẩn nhiều rủi ro sức khỏe nguy hiểm. Điều này chủ yếu là do hóa chất và dao kéo có thể gây tổn thương nội tạng và nhiễm trùng. Điều này có nghĩa là tập luyện tự nhiên và ăn uống cân bằng vẫn là cách làm đẹp an toàn nhất."
+            },
+            {
+              "id": "h-sd-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, sitting all day in my computer science lab made my spine stiff, so I joined a weekend modern dance and badminton club at my university, which fixed my hunched posture and boosted my confidence.",
+              "viText": "Ví dụ, việc ngồi cả ngày trong lab khoa học máy tính khiến cột sống của tôi bị cứng, nên tôi đã tham gia câu lạc bộ nhảy hiện đại và cầu lông cuối tuần ở trường, giúp cải thiện tư thế gù lưng và tăng sự tự tin."
             }
           ],
           "areSkeleton": {
-            "answer": "While exercise is generally good, improper or excessive workout can bring serious disadvantages.",
-            "answerVi": "Dù thể dục nhìn chung là tốt, việc tập luyện sai cách hoặc quá sức có thể mang lại những bất lợi nghiêm trọng.",
-            "reason": "People can easily get muscle injuries or waste significant money on unused gym equipment.",
-            "reasonVi": "Mọi người rất dễ bị chấn thương cơ bắp hoặc lãng phí số tiền lớn vào dụng cụ tập gym mà không bao giờ dùng tới.",
-            "example": "For instance, my friend tried to lift heavy gym weights without a coach and injured his shoulder, requiring two months of hospital treatment.",
-            "exampleVi": "Ví dụ, bạn tôi cố nâng tạ nặng ở phòng gym mà không có huấn luyện viên nên đã bị trật khớp vai, phải điều trị bệnh viện suốt hai tháng."
+            "answer": "🎙️ Speaking Part 1 & 3 (VLU 07/11 - Nghĩ gì về Dancing & Chăm sóc cơ thể): Dancing is a wonderful combination of art and physical exercise because it burns calories, improves posture, and brings joy through music.",
+            "answerVi": "Speaking P1 & P3 (VLU 07/11): Khiêu vũ là sự kết hợp tuyệt vời giữa nghệ thuật và thể dục vì nó đốt calo, cải thiện vóc dáng và mang lại niềm vui qua âm nhạc.",
+            "reason": "🎙️ Tại sao người hiện đại quan tâm ngoại hình: Keeping fit boosts self-confidence in job interviews and protects long-term health.",
+            "reasonVi": "Tại sao quan tâm vóc dáng: Giữ dáng khỏe đẹp giúp tăng sự tự tin khi giao tiếp công việc và bảo vệ sức khỏe lâu dài.",
+            "example": "📐 Lắp vào Writing Task 2 (Sports / Keeping Fit): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Trúng tủ đề thi VLU 07/11 về Dancing & Body care."
           }
         },
         {
-          "id": "health-team-sports-outdoor",
-          "title": "Thể thao đồng đội & Hoạt động ngoài trời (Team Sports & Cycling)",
-          "viTitle": "Bóng đá, cầu lông, đạp xe hít thở không khí trong lành & gắn kết đồng đội",
-          "badge": "Đề 8",
+          "id": "health-mental-stress-relaxation",
+          "title": "Giải tỏa Căng thẳng Tinh thần (Stress Relief) & Cai nghiện Thiết bị số (Digital Detox)",
+          "viTitle": "Kế thừa từ vựng: relieve mental fatigue and stress, mental wellbeing, digital detox, mindfulness meditation",
+          "badge": "Chủ đề 6",
           "examTags": [
-            "Speaking P1 (VLU 09 - Outdoor Activities; VLU 10 - Cycling)",
-            "Speaking P3 (VLU 10 - Benefits of Playing Team Sports)"
+            "Task 2 [Dạng 3, 4, 5 - Cause/Problem/Effects-Solution]: Rising Stress and Mental Health Problems in Modern Society",
+            "Speaking P3: Best Ways to Relax After Work & How to Protect Mental Wellbeing",
+            "Speaking P2: Choosing a Weekend Relaxation Activity (Park Walk vs Meditation Class vs Watching Movies)"
           ],
-          "color": "#10b981",
+          "color": "#059669",
           "keywords": [
-            {
-              "word": "team sports (football, volleyball)",
-              "meaning": "các môn thể thao đồng đội (bóng đá, bóng chuyền, bóng rổ)"
-            },
-            {
-              "word": "teamwork spirit",
-              "meaning": "tinh thần đồng đội và sự phối hợp ăn ý"
-            },
-            {
-              "word": "cycling in the park",
-              "meaning": "đạp xe dạo quanh công viên hít thở không khí trong lành"
-            },
-            {
-              "word": "burn calories & strengthen heart",
-              "meaning": "đốt cháy calo và tăng cường sức khỏe tim mạch"
-            }
+            { "word": "relieve mental fatigue and stress", "meaning": "giải tỏa sự mệt mỏi và căng thẳng tâm lý" },
+            { "word": "mental wellbeing", "meaning": "sức khỏe tinh thần" },
+            { "word": "digital detox", "meaning": "tạm rời xa màn hình điện thoại, máy tính" },
+            { "word": "mindfulness meditation and yoga", "meaning": "thiền chánh niệm và yoga" }
           ],
           "items": [
             {
-              "id": "health-ts-1",
-              "badge": "⚽ Tinh thần",
-              "text": "Playing football or badminton teaches players how to communicate, cooperate, and celebrate victory together.",
-              "viText": "Chơi bóng đá hay cầu lông dạy người chơi cách giao tiếp, hợp tác và cùng nhau chia sẻ niềm vui chiến thắng."
+              "id": "h-ms-1",
+              "badge": "⚠️ Nhánh 1: Nguyên nhân gây Căng thẳng tâm lý hiện đại (One contributing factor ➔ Because ➔ Meaning)",
+              "text": "One contributing factor to rising mental stress is heavy workload combined with constant digital overload. This is mainly because modern citizens face high living costs while being bombarded by work emails and negative news 24/7. This means that their brains never get true rest, leading to chronic anxiety and depression.",
+              "viText": "Một yếu tố góp phần làm tăng căng thẳng tâm lý là khối lượng công việc nặng nề cộng với sự quá tải thông tin số. Điều này chủ yếu là do người hiện đại chịu chi phí sống cao trong khi bị bủa vây bởi email công việc và tin tức tiêu cực 24/7. Điều này có nghĩa là não bộ không bao giờ được nghỉ thực sự, dẫn đến lo âu và trầm cảm."
             },
             {
-              "id": "health-ts-2",
-              "badge": "🚴 Đạp xe",
-              "text": "Riding a bicycle around a green lake on weekend mornings is gentle on your joints and refreshes your mind.",
-              "viText": "Đạp xe dạo quanh hồ nước rợp bóng cây vào sáng cuối tuần rất êm cho khớp gối và giúp làm mới tinh thần."
+              "id": "h-ms-2",
+              "badge": "💡 Nhánh 2: Giải pháp Vận động & Hòa mình vào Thiên nhiên (One major solution ➔ Because ➔ Meaning)",
+              "text": "In my opinion, the best approach to protect mental wellbeing is practicing daily outdoor exercise and a weekend digital detox. This is mainly because walking in green parks or practicing yoga away from screens calms the nervous system. This means that people can clear their minds and recharge their emotional energy.",
+              "viText": "Theo tôi, giải pháp tốt nhất để bảo vệ sức khỏe tinh thần là tập thể dục ngoài trời hàng ngày và tạm ngắt thiết bị số vào cuối tuần. Điều này chủ yếu là do đi bộ trong công viên xanh hoặc tập yoga rời xa màn hình giúp làm dịu hệ thần kinh. Điều này có nghĩa là con người làm mới lại tâm trí và nạp đầy năng lượng cảm xúc."
             },
             {
-              "id": "health-ts-3",
-              "badge": "🤝 Giao lưu",
-              "text": "Outdoor matches allow young people to step away from screens and make enthusiastic new friends.",
-              "viText": "Các trận đấu ngoài trời giúp giới trẻ rời mắt khỏi màn hình điện thoại và kết thêm nhiều người bạn nhiệt huyết."
+              "id": "h-ms-3",
+              "badge": "💡 Nhánh 3: Giải pháp Chia sẻ cùng Gia đình & Bạn bè (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, sharing problems with close friends, family members, or school counselors is vital when facing emotional crises. This is mainly because empathetic conversation relieves loneliness and provides practical advice. This means that stressed individuals do not fall into hopeless isolation.",
+              "viText": "Hơn nữa, chia sẻ khó khăn với bạn thân, gia đình hoặc chuyên gia tâm lý là rất quan trọng khi gặp khủng hoảng. Điều này chủ yếu là do cuộc trò chuyện đồng cảm giúp vơi đi nỗi cô đơn và mang lại lời khuyên thiết thực. Điều này có nghĩa là người đang áp lực không bị rơi vào sự cô lập bế tắc."
+            },
+            {
+              "id": "h-ms-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, whenever I feel overwhelmed after debugging complex software errors all week, I turn off my laptop on Sunday morning to go cycling around West Lake, which immediately restores my mental clarity.",
+              "viText": "Ví dụ, mỗi khi cảm thấy quá tải sau cả tuần gỡ lỗi phần mềm phức tạp, tôi tắt máy tính vào sáng Chủ nhật để đạp xe quanh Hồ Tây, giúp tâm trí tôi minh mẫn trở lại ngay lập tức."
             }
           ],
           "areSkeleton": {
-            "answer": "I strongly prefer team sports like football over working out alone at the gym.",
-            "answerVi": "Tôi thích chơi các môn thể thao đồng đội như bóng đá hơn hẳn việc tập thui thủi một mình ở phòng gym.",
-            "reason": "Because playing with teammates brings endless laughter, sharpens teamwork skills, and motivates me to run harder.",
-            "reasonVi": "Bởi vì chơi cùng đồng đội đem lại nhiều tiếng cười, rèn luyện kỹ năng làm việc nhóm và thôi thúc tôi chạy nhiệt huyết hơn.",
-            "example": "For example, my college football team plays every Sunday afternoon; it helps us release all academic stress and stay close.",
-            "exampleVi": "Ví dụ, đội bóng đá trường tôi đá vào mỗi chiều Chủ nhật; điều đó giúp chúng tôi xả sạch áp lực bài vở và luôn thân thiết."
+            "answer": "🎙️ Speaking Part 3 (Cách giảm stress tốt nhất): The most effective way to relieve stress is combining outdoor exercise with a digital detox away from smartphones and computers.",
+            "answerVi": "Speaking P3: Cách giảm stress hiệu quả nhất là kết hợp vận động ngoài trời với việc tạm tắt điện thoại và máy tính.",
+            "reason": "🎙️ Tại sao không nên giải khuây bằng Rượu bia / Game bạo lực: Drinking alcohol or playing video games all night only damages the liver and worsens mental fatigue the next morning.",
+            "reasonVi": "Tại sao tránh rượu bia/game: Uống rượu bia hay cày game suốt đêm chỉ hại gan và làm tinh thần mệt mỏi hơn vào sáng hôm sau.",
+            "example": "📐 Lắp vào Writing Task 2 (Stress Causes/Effects & Solutions): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 3 + 4.",
+            "exampleVi": "Khớp hoàn toàn với Dạng 3, 4, 5 (Cause / Problem / Effects - Solution)."
           }
         },
         {
-          "id": "health-medical-checkups",
-          "title": "Khám sức khỏe & Chăm sóc khi ốm (Medical Check-ups & Dealing with Sickness)",
-          "viTitle": "Khám định kỳ 6 tháng phát hiện bệnh sớm, nghỉ ngơi, uống thuốc đúng chỉ định",
-          "badge": "Đề 9",
+          "id": "health-sedentary-lifestyle-office",
+          "title": "Lối sống Ít vận động của Dân Văn phòng / IT & Bệnh Văn phòng",
+          "viTitle": "Kế thừa từ vựng: sedentary lifestyle, neck and back pain, regular physical exercise, outdoor parks vs indoor gyms",
+          "badge": "Chủ đề 7",
           "examTags": [
-            "Speaking P1 (VLU 10 - Health & Medical Check-ups; Dealing with Sickness)"
+            "Task 2 [Dạng 3, 4, 5 - Cause/Problem/Effects-Solution]: Sedentary Lifestyle Among Modern Office Workers and Students",
+            "Speaking P3: Why People Exercise Less Nowadays and How to Encourage Active Lifestyles"
           ],
-          "color": "#10b981",
+          "color": "#059669",
           "keywords": [
-            {
-              "word": "regular medical check-up",
-              "meaning": "khám sức khỏe tổng quát định kỳ mỗi 6 tháng"
-            },
-            {
-              "word": "early diagnosis",
-              "meaning": "phát hiện bệnh sớm để chữa trị kịp thời và ít tốn kém"
-            },
-            {
-              "word": "prescribed medicine",
-              "meaning": "uống thuốc theo đúng đơn bác sĩ kê, không tự mua linh tinh"
-            },
-            {
-              "word": "take sick leave & rest",
-              "meaning": "xin nghỉ ốm và nghỉ ngơi tĩnh dưỡng ở nhà"
-            }
+            { "word": "sedentary lifestyle", "meaning": "lối sống ngồi nhiều ít vận động" },
+            { "word": "neck and back pain", "meaning": "đau mỏi cổ vai gáy và cột sống" },
+            { "word": "regular physical exercise", "meaning": "vận động thể chất đều đặn" },
+            { "word": "ergonomic workspace", "meaning": "không gian làm việc công thái học bảo vệ cột sống" }
           ],
           "items": [
             {
-              "id": "health-mc-1",
-              "badge": "🩺 Khám định kỳ",
-              "text": "Going for a health check-up twice a year detects potential illnesses early before they become dangerous.",
-              "viText": "Đi khám sức khỏe 2 lần mỗi năm giúp phát hiện mầm bệnh sớm trước khi chúng biến chứng nguy hiểm."
+              "id": "h-sl-1",
+              "badge": "⚠️ Nhánh 1: Nguyên nhân & Hậu quả của Lối sống ít vận động (One major problem ➔ Because ➔ Meaning)",
+              "text": "One major problem in modern cities is the sedentary lifestyle among office employees and students. This is mainly because automation, computers, and food delivery apps allow people to work and eat without leaving their chairs. This means that millions of young adults suffer from chronic neck and back pain, eye strain, and obesity.",
+              "viText": "Một vấn đề lớn ở các đô thị hiện đại là lối sống ít vận động ở nhân viên văn phòng và sinh viên. Điều này chủ yếu là do tự động hóa, máy tính và ứng dụng giao đồ ăn cho phép con người làm việc và ăn uống mà không cần rời khỏi ghế. Điều này có nghĩa là hàng triệu người trẻ bị đau cổ vai gáy, mỏi mắt và béo phì."
             },
             {
-              "id": "health-mc-2",
-              "badge": "💊 Uống thuốc",
-              "text": "Always follow the doctor's prescription and avoid self-medicating with strong antibiotics from local drugstores.",
-              "viText": "Luôn uống thuốc theo đơn bác sĩ chỉ định và tuyệt đối không tự ý mua kháng sinh liều cao ngoài tiệm thuốc."
+              "id": "h-sl-2",
+              "badge": "💡 Nhánh 2: Giải pháp tại Nơi làm việc & Trường học (Best approach ➔ Because ➔ Meaning)",
+              "text": "In my opinion, the best approach to combat a sedentary lifestyle is integrating short movement breaks into daily work routines. This is mainly because standing up to stretch for 5 minutes every hour improves blood circulation and relieves spinal pressure. This means that workers can protect their physical health even during busy schedules.",
+              "viText": "Theo tôi, giải pháp tốt nhất để chống lại lối sống ít vận động là lồng ghép các quãng nghỉ vận động ngắn vào giờ làm việc. Điều này chủ yếu là do đứng dậy vươn vai 5 phút sau mỗi giờ giúp lưu thông máu và giảm áp lực cột sống. Điều này có nghĩa là người lao động bảo vệ được sức khỏe ngay cả khi lịch trình bận rộn."
             },
             {
-              "id": "health-mc-3",
-              "badge": "🛌 Nghỉ ngơi",
-              "text": "When catching the flu, stay in bed, drink warm orange juice, and give your immune system time to recover.",
-              "viText": "Khi bị cảm cúm, hãy nằm nghỉ trên giường, uống nước cam ấm và để hệ miễn dịch có thời gian phục hồi."
+              "id": "h-sl-3",
+              "badge": "💡 Nhánh 3: Giải pháp Quy hoạch Công viên & CLB Công ty (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, companies and city governments should build more free outdoor parks and sponsor fitness memberships for staff. This is mainly because convenient and free facilities remove the financial barrier to exercising. This means that citizens are motivated to jog or play badminton after work.",
+              "viText": "Hơn nữa, các công ty và chính quyền thành phố nên xây thêm nhiều công viên ngoài trời miễn phí và tài trợ thẻ tập thể thao cho nhân viên. Điều này chủ yếu là do cơ sở vật chất tiện lợi và miễn phí giúp xóa bỏ rào cản tài chính khi đi tập. Điều này có nghĩa là người dân có động lực chạy bộ hoặc đánh cầu lông sau giờ làm."
+            },
+            {
+              "id": "h-sl-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, as an IT specialist, I use a smart smartwatch reminder that vibrates every 50 minutes to remind me to stand up, drink water, and do neck stretches, which completely cured my chronic shoulder pain.",
+              "viText": "Ví dụ, là một chuyên viên IT, tôi sử dụng tính năng nhắc nhở trên đồng hồ thông minh rung lên sau mỗi 50 phút để nhắc mình đứng dậy uống nước và xoay cổ vai gáy, giúp tôi chữa khỏi hẳn chứng đau vai mãn tính."
             }
           ],
           "areSkeleton": {
-            "answer": "Going for an annual medical check-up is one of the smartest investments for our health.",
-            "answerVi": "Đi khám sức khỏe định kỳ hàng năm là một trong những khoản đầu tư thông minh nhất cho sức khỏe.",
-            "reason": "Many dangerous diseases have zero obvious symptoms at the beginning, so routine blood tests save lives.",
-            "reasonVi": "Nhiều căn bệnh nguy hiểm không hề có triệu chứng rõ ràng ban đầu, vì vậy xét nghiệm máu định kỳ có thể cứu sống tính mạng.",
-            "example": "For instance, during a routine company check-up last year, my father discovered his mild fatty liver early and cured it simply by changing his diet.",
-            "exampleVi": "Ví dụ, trong đợt khám sức khỏe công ty năm ngoái, bố tôi phát hiện gan nhiễm mỡ nhẹ từ sớm và đã chữa khỏi chỉ nhờ thay đổi chế độ ăn."
+            "answer": "🎙️ Speaking Part 3 (Tại sao người hiện đại lười vận động?): People exercise less today because of long computer working hours, convenient delivery services, and smartphone addiction.",
+            "answerVi": "Speaking P3: Con người ngày nay ít vận động hơn vì giờ làm việc máy tính kéo dài, dịch vụ giao hàng tận nơi quá tiện và nghiện điện thoại.",
+            "reason": "🎙️ Giải pháp thiết thực: Using standing desks, taking the stairs instead of elevators, and walking 30 minutes daily can easily reverse a sedentary lifestyle.",
+            "reasonVi": "Giải pháp: Dùng bàn làm việc đứng, đi thang bộ thay vì thang máy và đi bộ 30 phút mỗi ngày có thể khắc phục lối sống tĩnh tại.",
+            "example": "📐 Lắp vào Writing Task 2 (Sedentary Lifestyle): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 3 + 4.",
+            "exampleVi": "Áp dụng chuẩn xác cho mọi đề về Lối sống ít vận động và Sức khỏe đô thị."
           }
         },
         {
-          "id": "health-staying-calm-breaks",
-          "title": "Giữ bình tĩnh & Giảm stress (Staying Calm, Taking Breaks & Mental Health)",
-          "viTitle": "Hít thở sâu khi giận dữ, nghỉ giải lao ngắn trong giờ làm & cân bằng cuộc sống",
-          "badge": "Đề 10",
+          "id": "health-healthy-aging-longevity",
+          "title": "Bí quyết Sống khỏe, Sống thọ (Healthy Longevity) & Chăm sóc Người cao tuổi",
+          "viTitle": "Kế thừa từ vựng: healthy longevity, biological clock, preventive healthcare, balanced and nutritious diet",
+          "badge": "Chủ đề 8",
           "examTags": [
-            "Speaking P1 (VLU 09 - Taking Breaks)",
-            "Speaking P3 (VLU 09 - The Importance of Staying Calm; Work-Life Balance)",
-            "Writing T2 (VLU 09 - Work-Related Stress: Impacts & Solutions)"
+            "Task 2 [Dạng 3 & 5 - Cause/Effects-Solution]: Aging Population and Increasing Life Expectancy",
+            "Speaking P3: Secrets to Living a Long and Healthy Life"
           ],
-          "color": "#10b981",
+          "color": "#059669",
           "keywords": [
-            {
-              "word": "stay calm under pressure",
-              "meaning": "giữ bình tĩnh, không nóng giận khi gặp áp lực"
-            },
-            {
-              "word": "take a 5-minute break",
-              "meaning": "nghỉ giải lao ngắn 5 phút sau mỗi giờ nhìn màn hình"
-            },
-            {
-              "word": "deep breathing",
-              "meaning": "hít thở sâu bằng bụng để hạ nhịp tim và giảm hoảng sợ"
-            },
-            {
-              "word": "avoid burnout",
-              "meaning": "tránh kiệt sức cả về thể chất lẫn tinh thần"
-            }
+            { "word": "healthy longevity", "meaning": "tuổi thọ khỏe mạnh" },
+            { "word": "biological clock", "meaning": "đồng hồ sinh học điều độ" },
+            { "word": "optimistic attitude", "meaning": "thái độ sống lạc quan, yêu đời" },
+            { "word": "preventive healthcare", "meaning": "chăm sóc y tế dự phòng" }
           ],
           "items": [
             {
-              "id": "health-sc-1",
-              "badge": "🧘 Bình tĩnh",
-              "text": "Staying calm prevents you from saying regrettable words or making impulsive mistakes when angry.",
-              "viText": "Giữ bình tĩnh giúp bạn tránh buông những lời gây hối hận hoặc đưa ra quyết định sai lầm khi đang tức giận."
+              "id": "h-ha-1",
+              "badge": "✅ Nhánh 1: Nền tảng Dinh dưỡng & Đồng hồ sinh học (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason why people achieve healthy longevity is maintaining a regular biological clock and a balanced diet. This is mainly because sleeping 8 hours a night and eating antioxidant-rich vegetables repair body cells naturally. This means that internal organs stay young and resist chronic diseases.",
+              "viText": "Một lý do chính giúp con người sống thọ khỏe mạnh là duy trì đồng hồ sinh học điều độ và chế độ ăn cân bằng. Điều này chủ yếu là do ngủ đủ 8 tiếng mỗi đêm và ăn rau củ giàu chất chống oxy hóa giúp phục hồi tế bào tự nhiên. Điều này có nghĩa là các cơ quan nội tạng luôn trẻ khỏe và chống lại bệnh mãn tính."
             },
             {
-              "id": "health-sc-2",
-              "badge": "☕ Nghỉ ngắn",
-              "text": "Taking a 5-minute break to drink water or look out the window relieves eye fatigue and boosts creativity.",
-              "viText": "Nghỉ giải lao 5 phút để uống nước hoặc nhìn ra ngoài cửa sổ giúp mắt bớt mỏi và tăng cường sự sáng tạo."
+              "id": "h-ha-2",
+              "badge": "✅ Nhánh 2: Tinh thần lạc quan & Vận động nhẹ nhàng (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, an optimistic attitude and gentle daily exercise keep senior citizens mentally sharp and physically active. This is mainly because activities like morning walking, gardening, and chatting with neighbors prevent loneliness and Alzheimer's disease. This means that elderly people enjoy a high quality of life.",
+              "viText": "Hơn nữa, thái độ sống lạc quan và vận động nhẹ nhàng mỗi ngày giúp người cao tuổi minh mẫn và dẻo dai. Điều này chủ yếu là do các hoạt động như đi bộ buổi sáng, làm vườn và trò chuyện cùng hàng xóm giúp ngăn ngừa sự cô đơn và bệnh suy giảm trí nhớ. Điều này có nghĩa là người già tận hưởng chất lượng sống cao."
             },
             {
-              "id": "health-sc-3",
-              "badge": "🛑 Giảm stress",
-              "text": "Leave office tasks at the workplace and do not answer work emails after 8 PM to protect family peace.",
-              "viText": "Để công việc lại văn phòng và không trả lời email sau 8 giờ tối để giữ gìn sự bình yên cho gia đình."
+              "id": "h-ha-3",
+              "badge": "⚠️ Nhánh 3: Thách thức của Già hóa dân số (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, a rapidly aging population places heavy pressure on national pension funds and hospital systems. This is mainly because a shrinking young workforce must pay higher taxes to support millions of retirees. This means that governments must reform healthcare and retirement policies urgently.",
+              "viText": "Mặt khác, dân số già hóa nhanh đặt áp lực nặng nề lên quỹ lương hưu quốc gia và hệ thống bệnh viện. Điều này chủ yếu là do lực lượng lao động trẻ thu hẹp phải đóng thuế cao hơn để nuôi hàng triệu người nghỉ hưu. Điều này có nghĩa là chính phủ phải cải cách chính sách y tế và hưu trí khẩn cấp."
+            },
+            {
+              "id": "h-ha-4",
+              "badge": "🎯 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & IT Example)",
+              "text": "For example, I bought my 75-year-old grandfather a smart health-monitoring wristband that tracks his heart rate and daily steps, motivating him to walk 5,000 steps every morning in the village park.",
+              "viText": "Ví dụ, tôi đã mua tặng ông nội 75 tuổi của mình một chiếc vòng đeo tay thông minh theo dõi nhịp tim và số bước chân, tạo động lực cho ông đi bộ 5.000 bước mỗi sáng tại công viên làng."
             }
           ],
           "areSkeleton": {
-            "answer": "Learning how to stay calm and take regular breaks is crucial for mental well-being.",
-            "answerVi": "Học cách giữ bình tĩnh và nghỉ giải lao điều độ là điều tối quan trọng cho sức khỏe tinh thần.",
-            "reason": "When you pause and breathe deeply, your heart rate slows down, helping your brain solve tough problems rationally.",
-            "reasonVi": "Khi bạn dừng lại và hít thở sâu, nhịp tim sẽ chậm lại, giúp não bộ giải quyết các vấn đề hóc búa một cách sáng suốt.",
-            "example": "For example, whenever I feel overwhelmed with exam revision, I stop for 10 minutes to make a cup of hot tea and listen to acoustic music.",
-            "exampleVi": "Ví dụ, mỗi khi cảm thấy quá tải vì ôn thi, tôi luôn dừng lại 10 phút để pha một tách trà nóng và nghe nhạc acoustic êm dịu."
-          }
-        },
-        {
-          "id": "health-hobbies-creative",
-          "title": "Sở thích cá nhân & Hoạt động sáng tạo (Hobbies & Creative Activities)",
-          "viTitle": "Vẽ tranh, chụp ảnh, ca hát, xem phim giúp thư giãn & thể hiện cá tính",
-          "badge": "Đề 11",
-          "examTags": [
-            "Speaking P1 (VLU 09 - Photography & Singing; Movies; VLU 10 - Movies; VLU 11 - Hobbies & Creative Activities)",
-            "Speaking P2 (VLU 10 - Choosing a Creative Class to Attend)",
-            "Speaking P3 (VLU 10 - Benefits of Having a Hobby)",
-            "Writing T1 (VLU 11 - Replying about Painting Practice at Home; New Hobby)"
-          ],
-          "color": "#10b981",
-          "keywords": [
-            {
-              "word": "creative hobby",
-              "meaning": "sở thích sáng tạo (vẽ tranh nghệ thuật, chụp ảnh phong cảnh, ca hát)"
-            },
-            {
-              "word": "painting with watercolors",
-              "meaning": "vẽ tranh màu nước giúp giải tỏa cảm xúc"
-            },
-            {
-              "word": "take landscape photos",
-              "meaning": "chụp ảnh phong cảnh và lưu giữ kỷ niệm đẹp"
-            },
-            {
-              "word": "watch movies at the cinema",
-              "meaning": "xem phim bom tấn ngoài rạp với màn hình lớn và âm thanh sống động"
-            }
-          ],
-          "items": [
-            {
-              "id": "health-hb-1",
-              "badge": "🎨 Hội họa",
-              "text": "Practicing watercolor painting at home lets you focus on colors and forget all daily work worries.",
-              "viText": "Tập vẽ tranh màu nước tại nhà giúp bạn tập trung vào màu sắc và quên đi mọi lo toan công việc thường ngày."
-            },
-            {
-              "id": "health-hb-2",
-              "badge": "📷 Nhiếp ảnh",
-              "text": "Photography motivates you to walk around town, notice small beautiful moments, and capture memories.",
-              "viText": "Nhiếp ảnh thôi thúc bạn đi dạo phố xá, ngắm nhìn những khoảnh khắc đẹp dung dị và lưu giữ kỷ niệm."
-            },
-            {
-              "id": "health-hb-3",
-              "badge": "🎬 Phim ảnh",
-              "text": "Watching comedy or action films with friends at the cinema on weekends is a great way to laugh and recharge.",
-              "viText": "Xem phim hài hoặc phim hành động cùng bạn bè ở rạp vào cuối tuần là cách tuyệt vời để cười thả ga và nạp năng lượng."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "Having a creative hobby like watercolor painting or photography is wonderful for your soul.",
-            "answerVi": "Có một sở thích sáng tạo như vẽ màu nước hay chụp ảnh là điều vô cùng tuyệt vời cho tâm hồn.",
-            "reason": "It gives you a private space to express your feelings freely without any pressure of winning or losing.",
-            "reasonVi": "Nó mang lại cho bạn một khoảng trời riêng để tự do thể hiện cảm xúc mà không hề có áp lực hơn thua.",
-            "example": "For instance, I took up a weekend oil painting class last month, and painting flowers helped me feel completely relaxed and happy.",
-            "exampleVi": "Ví dụ, tôi tham gia một lớp học vẽ sơn dầu cuối tuần vào tháng trước, và việc vẽ hoa lá giúp tôi cảm thấy hoàn toàn thư thái và vui vẻ."
-          }
-        },
-        {
-          "id": "health-weekend-alone",
-          "title": "Tận hưởng ngày cuối tuần & Thời gian ở một mình (Weekend & Being Alone)",
-          "viTitle": "Gặp bạn bè, đi mua sắm vs Ngồi quán cà phê yên tĩnh một mình để nạp năng lượng",
-          "badge": "Đề 12",
-          "examTags": [
-            "Speaking P1 (VLU 09 - Being Alone; VLU 11 - Weekend Activities)",
-            "Speaking P2 (VLU 09 - Weekend Activity with Visiting Friend; DTHU 10; AJC 11 - Free Weekend: Friends vs Shopping vs Quiet Cafe Alone)"
-          ],
-          "color": "#10b981",
-          "keywords": [
-            {
-              "word": "spending a free weekend",
-              "meaning": "cách tận hưởng ngày cuối tuần thảnh thơi"
-            },
-            {
-              "word": "hang out with friends",
-              "meaning": "tụ tập đi cà phê, ăn uống với bạn bè"
-            },
-            {
-              "word": "go shopping at the mall",
-              "meaning": "đi dạo mua sắm tại trung tâm thương mại"
-            },
-            {
-              "word": "visit a quiet cafe alone",
-              "meaning": "ngồi một mình ở quán cà phê yên tĩnh đọc sách, nghe nhạc"
-            },
-            {
-              "word": "recharge social battery",
-              "meaning": "sạc lại năng lượng giao tiếp sau tuần làm việc mệt mỏi"
-            }
-          ],
-          "items": [
-            {
-              "id": "health-we-1",
-              "badge": "☕ Quán yên tĩnh",
-              "text": "Sitting alone in a cozy quiet cafe with a warm latte allows you to read a book and think about your life peacefully.",
-              "viText": "Ngồi một mình ở quán cà phê yên tĩnh, ấm cúng với ly latte nóng giúp bạn đọc sách và suy ngẫm về cuộc sống bình yên."
-            },
-            {
-              "id": "health-we-2",
-              "badge": "🛍️ Mua sắm",
-              "text": "Going shopping at crowded malls is exciting, but it easily drains your energy and tempts you to overspend.",
-              "viText": "Đi mua sắm ở các trung tâm thương mại đông đúc rất vui nhưng dễ làm hao mòn năng lượng và khiến bạn tiêu xài quá tay."
-            },
-            {
-              "id": "health-we-3",
-              "badge": "👥 Tụ tập bạn",
-              "text": "Hanging out with close buddies brings loud fun, but introverted people often need private quiet time to recharge.",
-              "viText": "Tụ tập bạn bè đem lại tiếng cười sảng khoái, nhưng người hướng nội thường cần thời gian yên tĩnh riêng để hồi sức."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "If I have a free weekend, visiting a quiet cafe alone is definitely my favorite choice.",
-            "answerVi": "Nếu có một ngày cuối tuần rảnh rỗi, ghé một quán cà phê yên tĩnh một mình chắc chắn là lựa chọn tôi yêu thích nhất.",
-            "reason": "After five stressful days talking with colleagues and clients, I need a calm space to read books and recharge my battery.",
-            "reasonVi": "Sau năm ngày căng thẳng giao tiếp với đồng nghiệp và đối tác, tôi cần một không gian êm đềm để đọc sách và nạp lại năng lượng.",
-            "example": "For example, last Sunday I spent three peaceful hours at a garden cafe near my house writing my personal diary, and I felt completely refreshed on Monday.",
-            "exampleVi": "Ví dụ, Chủ nhật tuần trước tôi đã dành 3 tiếng bình yên tại quán cà phê sân vườn gần nhà để viết nhật ký, và sáng thứ Hai tôi thấy người nhẹ nhõm hẳn."
-          }
-        },
-        {
-          "id": "health-plants-gardening",
-          "title": "Trồng cây & Vườn rau tại nhà (Plants, Greenery & Home Gardening)",
-          "viTitle": "Trồng cây thanh lọc không khí, rau sạch tự trồng an toàn & liệu pháp tinh thần",
-          "badge": "Đề 13",
-          "examTags": [
-            "Speaking P1 (VLU 10; UFM 10 - Plants & Greenery / Plants & Nature)",
-            "Writing T1 (VLU 09 - Sharing Experience on Maintaining a Home Vegetable Garden)"
-          ],
-          "color": "#10b981",
-          "keywords": [
-            {
-              "word": "potted indoor plants",
-              "meaning": "chậu cây cảnh đặt trong nhà hoặc bàn làm việc"
-            },
-            {
-              "word": "home vegetable garden",
-              "meaning": "vườn rau sạch tự trồng trên sân thượng hoặc ban công"
-            },
-            {
-              "word": "purify indoor air",
-              "meaning": "lọc sạch bụi mịn và khí độc trong phòng"
-            },
-            {
-              "word": "fresh organic veggies",
-              "meaning": "rau củ hữu cơ tươi ngon, không thuốc trừ sâu"
-            },
-            {
-              "word": "therapeutic hobby",
-              "meaning": "thú vui mang tính chữa lành, làm dịu tâm trí"
-            }
-          ],
-          "items": [
-            {
-              "id": "health-pg-1",
-              "badge": "🌿 Lọc khí",
-              "text": "Indoor plants like snake plants and peace lilies absorb harmful toxins and produce fresh oxygen.",
-              "viText": "Các loại cây trong nhà như lưỡi hổ và lan ý hấp thụ độc tố có hại và tạo ra oxy tươi mát."
-            },
-            {
-              "id": "health-pg-2",
-              "badge": "🥬 Rau sạch",
-              "text": "Growing mint, herbs, and tomatoes in foam boxes on your balcony provides clean organic food for family dinners.",
-              "viText": "Trồng rau thơm, bạc hà và cà chua trong thùng xốp ngoài ban công mang lại rau hữu cơ sạch cho bữa cơm gia đình."
-            },
-            {
-              "id": "health-pg-3",
-              "badge": "💚 Chữa lành",
-              "text": "Watering green leaves and seeing seeds sprout every morning reduces anxiety and connects you with nature.",
-              "viText": "Tưới nước cho những tán lá xanh và ngắm hạt giống nảy mầm mỗi sáng giúp giảm âu lo và gắn kết với thiên nhiên."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "Keeping plants and growing a small balcony vegetable garden is an amazing habit for city residents.",
-            "answerVi": "Trồng cây cảnh và làm một luống rau nhỏ ngoài ban công là thói quen tuyệt vời cho người sống ở thành thị.",
-            "reason": "It purifies polluted city air and offers safe, fresh herbs for cooking right at your doorstep.",
-            "reasonVi": "Nó giúp thanh lọc bầu không khí ô nhiễm nơi đô thị và cung cấp rau thơm tươi sạch cho nấu nướng ngay trước cửa nhà.",
-            "example": "For instance, I grow cherry tomatoes and basil on my balcony; picking my own fresh tomatoes for lunch salad brings immense joy.",
-            "exampleVi": "Ví dụ, tôi trồng cà chua bi và húng quế ngoài ban công; việc tự tay hái quả cà chua tươi ngon cho đĩa salad trưa đem lại niềm vui rất lớn."
-          }
-        },
-        {
-          "id": "health-habits-happiness",
-          "title": "Thói quen tốt & Hạnh phúc (Personal Habits for Success & Happiness)",
-          "viTitle": "Dậy sớm, biết ơn cuộc sống, suy nghĩ tích cực & cân bằng giữa công việc và niềm vui",
-          "badge": "Đề 14",
-          "examTags": [
-            "Speaking P1 (VLU 10 - Happiness & Life Satisfaction)",
-            "Speaking P3 (LHU 10 - The Influence of Personal Habits on Success)"
-          ],
-          "color": "#10b981",
-          "keywords": [
-            {
-              "word": "positive morning routine",
-              "meaning": "thói quen buổi sáng tích cực (uống nước, tập thể dục nhẹ, đọc sách)"
-            },
-            {
-              "word": "gratitude & contentment",
-              "meaning": "lòng biết ơn và sự bằng lòng với những gì mình đang có"
-            },
-            {
-              "word": "consistent small habits",
-              "meaning": "các thói quen nhỏ được duy trì kiên trì mỗi ngày"
-            },
-            {
-              "word": "true happiness",
-              "meaning": "hạnh phúc đích thực đến từ sức khỏe tốt và gia đình êm ấm"
-            }
-          ],
-          "items": [
-            {
-              "id": "health-hh-1",
-              "badge": "⏰ Dậy sớm",
-              "text": "Waking up early gives you extra quiet time to exercise, plan the day, and eat breakfast without rushing.",
-              "viText": "Dậy sớm mang lại cho bạn khoảng thời gian yên tĩnh để tập thể dục, lên kế hoạch trong ngày và ăn sáng thong thả."
-            },
-            {
-              "id": "health-hh-2",
-              "badge": "✨ Thái độ",
-              "text": "Practicing gratitude for what you have instead of comparing yourself to rich people on Facebook brings genuine peace.",
-              "viText": "Biết ơn những gì mình đang có thay vì so sánh bản thân với người giàu trên Facebook mang lại sự bình an thực sự."
-            },
-            {
-              "id": "health-hh-3",
-              "badge": "🎯 Thành công",
-              "text": "Success does not happen overnight; it is the compound result of reading 10 pages and exercising 20 minutes daily.",
-              "viText": "Thành công không đến sau một đêm; đó là kết quả tích lũy của việc đọc 10 trang sách và tập thể dục 20 phút mỗi ngày."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "In my view, daily personal habits define a person's success and true happiness.",
-            "answerVi": "Theo quan điểm của tôi, thói quen hàng ngày định hình thành công và hạnh phúc đích thực của mỗi con người.",
-            "reason": "Good habits keep your body healthy and your mind calm, allowing you to overcome big obstacles steadily.",
-            "reasonVi": "Những thói quen tốt giữ cho cơ thể khỏe khoắn và tinh thần điềm tĩnh, giúp bạn vững vàng vượt qua mọi trở ngại lớn.",
-            "example": "For example, waking up at 6 AM every morning for the past year helped me pass my English exams and never feel rushed for work.",
-            "exampleVi": "Ví dụ, việc duy trì dậy lúc 6 giờ sáng suốt một năm qua đã giúp tôi đỗ các kỳ thi tiếng Anh và không bao giờ bị vội vã khi đi làm."
+            "answer": "🎙️ Speaking Part 3 (Bí quyết sống thọ khỏe mạnh): Living a long healthy life requires a nutritious diet, regular exercise, sufficient sleep, and a cheerful mindset.",
+            "answerVi": "Speaking P3: Sống lâu và khỏe mạnh đòi hỏi chế độ ăn bổ dưỡng, tập luyện đều đặn, ngủ đủ giấc và tâm lý vui vẻ.",
+            "reason": "🎙️ Vai trò của công nghệ y tế: Modern preventive healthcare and smart wearable devices also help detect health issues early.",
+            "reasonVi": "Vai trò công nghệ y tế: Y tế dự phòng hiện đại và thiết bị đeo thông minh cũng giúp phát hiện sớm các vấn đề sức khỏe.",
+            "example": "📐 Lắp vào Writing Task 2 (Aging Population / Healthy Lifestyle): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Dùng trực tiếp cho cả chủ đề Lối sống khỏe mạnh và Già hóa dân số."
           }
         }
       ]

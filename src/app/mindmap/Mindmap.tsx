@@ -234,12 +234,12 @@ function OutlineDocumentView({
           </div>
         </div>
 
-        {/* 2. Chọn 5 Nhóm Chủ đề lớn (Hubs) - Tiêu đề tiếng Anh */}
+        {/* 2. Chọn 6 Nhóm Chủ đề lớn (Hubs) */}
         <div className="rounded-sm border border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 p-2.5 shadow-xs space-y-1.5">
           <div className="flex items-center justify-between pb-1.5 border-b border-slate-200/80 dark:border-slate-800">
             <span className="text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
               <Layers className="h-3.5 w-3.5 text-[#245b86] dark:text-sky-400" />
-              5 Major Topic Hubs
+              5 Topic Hubs & Task 1 Letters
             </span>
             <span className="text-[11px] font-bold text-[#245b86] dark:text-sky-400">
               {isLoading ? '...' : `${filteredTopicsCount}/${totalTopicsInHub}`}
@@ -357,180 +357,313 @@ function OutlineDocumentView({
             </p>
           </div>
         ) : (
-          filteredBranches.map((branch, bIdx) => {
-            const children = branch.children || [];
-
-            return (
-              <section key={branch.id} className="space-y-2.5">
-                {/* Đề mục cấp 1 (Tông màu xanh #245b86 chuẩn đồng bộ toàn ứng dụng) */}
-                <div className="flex items-center justify-between rounded-sm border-l-4 border-l-[#245b86] dark:border-l-sky-500 bg-[#245b86]/10 dark:bg-slate-900/90 px-3 py-2 border border-[#245b86]/20 dark:border-slate-800 shadow-xs">
-                  <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide text-[#245b86] dark:text-sky-200">
-                    Phần {bIdx + 1}: {branch.title}
-                  </h2>
-                  <span className="text-[11px] font-semibold text-[#245b86] dark:text-sky-300 bg-[#245b86]/15 dark:bg-slate-800 px-2 py-0.5 rounded-xs">
-                    {children.length} chủ đề
+          <div className="space-y-3">
+            {/* BẢNG 5 CẤU TRÚC XƯƠNG SỐNG TRIỂN KHAI LUẬN ĐIỂM & LÀM RÕ Ý (Cho 5 Topic Hubs) */}
+            {activeTopicId !== 'letters' && (
+              <div className="rounded-sm border border-[#245b86]/30 dark:border-sky-800/60 bg-slate-50/90 dark:bg-slate-900/95 p-3 shadow-xs space-y-2">
+                <div className="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-1.5">
+                  <span className="text-xs font-bold uppercase tracking-wide text-[#245b86] dark:text-sky-300">
+                    📐 5 Cấu Trúc Nối Câu Bậc Thang (Dùng Chung Cho Mọi Luận Điểm Writing Task 2 & Speaking P2, P3)
+                  </span>
+                  <span className="text-[11px] font-semibold text-emerald-700 dark:text-emerald-400">
+                    Luận điểm ➔ Giải thích (Because) ➔ Làm rõ (Meaning)
                   </span>
                 </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2 text-xs">
+                  <div className="rounded-xs border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-2">
+                    <div className="font-bold text-[#245b86] dark:text-sky-300">1. One major reason is that + S + V</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Một lý do chính là... (Mở đầu luận điểm 1)</div>
+                  </div>
+                  <div className="rounded-xs border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-2">
+                    <div className="font-bold text-[#245b86] dark:text-sky-300">2. Furthermore, + S + V</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Hơn nữa... (Bổ sung luận điểm thứ 2)</div>
+                  </div>
+                  <div className="rounded-xs border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-2">
+                    <div className="font-bold text-rose-700 dark:text-rose-300">3. One contributing factor is that + S + V</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Một yếu tố góp phần là... (Nêu nguyên nhân/vấn đề)</div>
+                  </div>
+                  <div className="rounded-xs border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-2">
+                    <div className="font-bold text-amber-700 dark:text-amber-300">4. This is mainly because + S + V</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Điều này chủ yếu là do... (Giải thích tại sao)</div>
+                  </div>
+                  <div className="rounded-xs border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-950 p-2">
+                    <div className="font-bold text-emerald-700 dark:text-emerald-300">5. This means that + S + V</div>
+                    <div className="text-[11px] text-muted-foreground mt-0.5">Điều này có nghĩa là... (Làm rõ kết quả/hệ quả)</div>
+                  </div>
+                </div>
+              </div>
+            )}
 
-                {/* Danh sách các chủ đề con */}
-                <div className="space-y-2.5">
-                  {children.map((subtopic) => {
-                    topicCounter++;
-                    const items = subtopic.items || [];
-                    const keywords = subtopic.keywords || [];
-                    const are = subtopic.areSkeleton;
-                    const isCopied = copiedId === subtopic.id;
-                    const isHighlighted = activeSubtopicId === subtopic.id;
+            {filteredBranches.map((branch, bIdx) => {
+              const children = branch.children || [];
+              const branchKeywords = branch.keywords || [];
 
-                    const enMatch = subtopic.title.match(/\(([^)]+)\)/);
-                    const enTitle = enMatch ? enMatch[1].trim() : '';
-                    const viTitle = subtopic.title.split('(')[0].trim();
+              return (
+                <section key={branch.id} className="space-y-2.5">
+                  {/* Đề mục cấp 1 + Kho Từ Vựng Dùng Chung Của Nhánh Lớn */}
+                  <div className="rounded-sm border-l-4 border-l-[#245b86] dark:border-l-sky-500 bg-white dark:bg-slate-900 border border-[#245b86]/25 dark:border-slate-800 shadow-xs overflow-hidden">
+                    <div className="flex items-center justify-between bg-[#245b86]/10 dark:bg-slate-800/90 px-3 py-2">
+                      <div>
+                        <h2 className="text-xs sm:text-sm font-bold uppercase tracking-wide text-[#245b86] dark:text-sky-200">
+                          Phần {bIdx + 1}: {branch.title}
+                        </h2>
+                        {branch.viTitle && (
+                          <p className="text-[11px] font-medium text-slate-600 dark:text-slate-400">
+                            {branch.viTitle}
+                          </p>
+                        )}
+                      </div>
+                      <span className="text-[11px] font-semibold text-[#245b86] dark:text-sky-300 bg-[#245b86]/15 dark:bg-slate-700 px-2 py-0.5 rounded-xs shrink-0">
+                        {children.length} chủ đề cốt lõi
+                      </span>
+                    </div>
 
-                    return (
-                      <article
-                        key={subtopic.id}
-                        id={`topic-${subtopic.id}`}
-                        className={`scroll-mt-14 rounded-sm border p-3.5 shadow-xs space-y-2.5 transition select-text ${isHighlighted
-                            ? 'border-[#245b86] ring-1 ring-[#245b86]/40 bg-white dark:bg-slate-900'
-                            : 'border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-slate-300 dark:hover:border-slate-700'
-                          }`}
-                      >
-                        {/* 1. Tên chủ đề: Badge #245b86 + Tiếng Anh Đậm + Tiếng Việt Đồng Bộ */}
-                        <div className="flex items-start justify-between gap-2 border-b border-slate-200/80 dark:border-slate-800 pb-2">
-                          <div className="space-y-0.5">
-                            <h3 className="text-sm sm:text-[15px] font-bold text-slate-900 dark:text-slate-100 leading-snug flex items-baseline gap-1.5 flex-wrap">
-                              <span className="inline-flex h-5 items-center justify-center rounded-xs bg-[#245b86] text-white dark:bg-sky-500/25 dark:text-sky-300 dark:border dark:border-sky-500/40 font-bold text-[11px] px-1.5 shadow-2xs shrink-0">
-                                #{topicCounter}
-                              </span>
-                              <span className="text-slate-900 dark:text-slate-100">
-                                <HighlightText text={enTitle} query={searchQuery} />
-                              </span>
-                            </h3>
-                            {viTitle && (
-                              <p className="text-xs sm:text-[13px] font-semibold text-[#245b86] dark:text-sky-400 pl-0.5">
-                                <HighlightText text={viTitle} query={searchQuery} />
-                              </p>
-                            )}
-                          </div>
-
-                          <button
-                            type="button"
-                            onClick={() => handleCopyTopic(subtopic)}
-                            title="Sao chép chủ đề này"
-                            className="flex h-6 shrink-0 items-center gap-1 rounded-xs border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 px-2 text-[11px] font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-foreground cursor-pointer transition"
-                          >
-                            {isCopied ? (
-                              <>
-                                <Check className="h-3 w-3 text-emerald-600 dark:text-emerald-400" />
-                                <span className="text-emerald-600 dark:text-emerald-400">Đã chép</span>
-                              </>
-                            ) : (
-                              <>
-                                <Copy className="h-3 w-3" />
-                                <span>Chép</span>
-                              </>
-                            )}
-                          </button>
+                    {/* Kho Từ Vựng Dùng Chung Cấp Nhánh Lớn (Đánh số 1, 2, 3... như mẫu Job Hugging) */}
+                    {branchKeywords.length > 0 && (
+                      <div className="p-3 bg-amber-50/40 dark:bg-slate-950/60 border-t border-slate-200/80 dark:border-slate-800 space-y-1.5">
+                        <div className="text-[11px] font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 flex items-center justify-between">
+                          <span>📚 Kho Từ Vựng Gốc Dùng Chung Cho Cả Nhánh ({branchKeywords.length} từ/cụm từ):</span>
+                          <span className="text-[10px] font-normal text-muted-foreground">Các chủ đề bên dưới kế thừa trực tiếp bộ từ này</span>
                         </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-3 gap-y-1 text-xs">
+                          {branchKeywords.map((kw, kIdx) => (
+                            <div key={kIdx} className="flex items-baseline gap-1 leading-snug py-0.5 border-b border-dashed border-slate-200/70 dark:border-slate-800/70">
+                              <span className="font-bold text-amber-700 dark:text-amber-400 shrink-0 text-[11px]">
+                                {kIdx + 1}.
+                              </span>
+                              <strong className="font-bold text-slate-900 dark:text-slate-100">
+                                <HighlightText text={kw.word} query={searchQuery} />:
+                              </strong>
+                              {showVietnamese && (
+                                <span className="text-slate-600 dark:text-slate-400 text-[11px]">
+                                  <HighlightText text={kw.meaning} query={searchQuery} />
+                                </span>
+                              )}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
 
-                        {/* 2. Từ vựng cốt lõi (Tông Rose dịu mắt, tương phản cao trong Dark mode) */}
-                        {keywords.length > 0 && (
-                          <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1.5 text-xs leading-relaxed">
-                            <span className="font-bold text-rose-700 dark:text-rose-300 shrink-0">
-                              Từ vựng:
-                            </span>
-                            {keywords.map((kw, kIdx) => (
-                              <span
-                                key={kIdx}
-                                className="inline-flex items-baseline rounded-xs bg-rose-50/90 dark:bg-rose-500/15 px-1.5 py-0.5 border border-rose-200 dark:border-rose-500/40"
-                              >
-                                <strong className="font-bold text-rose-950 dark:text-rose-100">
-                                  <HighlightText text={kw.word} query={searchQuery} />
-                                </strong>
-                                {showVietnamese && (
-                                  <span className="text-rose-700/80 dark:text-rose-300/80 ml-1 text-[11px]">
-                                    (<HighlightText text={kw.meaning} query={searchQuery} />)
+                  {/* Danh sách các chủ đề con */}
+                  <div className="space-y-2.5">
+                    {children.map((subtopic) => {
+                      topicCounter++;
+                      const items = subtopic.items || [];
+                      const keywords = subtopic.keywords || [];
+                      const examTags = subtopic.examTags || [];
+                      const are = subtopic.areSkeleton;
+                      const isCopied = copiedId === subtopic.id;
+                      const isHighlighted = activeSubtopicId === subtopic.id;
+
+                      const enMatch = subtopic.title.match(/\(([^)]+)\)/);
+                      const enTitle = enMatch ? enMatch[1].trim() : subtopic.title;
+                      const viTitle = subtopic.title.includes('(') ? subtopic.title.split('(')[0].trim() : (subtopic.viTitle || '');
+
+                      return (
+                        <article
+                          key={subtopic.id}
+                          id={`topic-${subtopic.id}`}
+                          className={`scroll-mt-14 rounded-sm border p-3.5 shadow-xs space-y-2.5 transition select-text ${
+                            isHighlighted
+                              ? 'border-[#245b86] ring-1 ring-[#245b86]/40 bg-white dark:bg-slate-900'
+                              : 'border-slate-200/90 dark:border-slate-800 bg-white dark:bg-slate-900 hover:border-slate-300 dark:hover:border-slate-700'
+                          }`}
+                        >
+                          {/* 1. Tên chủ đề */}
+                          <div className="flex items-start justify-between gap-2 border-b border-slate-200/80 dark:border-slate-800 pb-2">
+                            <div className="space-y-0.5">
+                              <h3 className="text-sm sm:text-[15px] font-bold text-slate-900 dark:text-slate-100 leading-snug flex items-baseline gap-1.5 flex-wrap">
+                                <span className="inline-flex h-5 items-center justify-center rounded-xs bg-[#245b86] text-white dark:bg-sky-500/25 dark:text-sky-300 dark:border dark:border-sky-500/40 font-bold text-[11px] px-1.5 shadow-2xs shrink-0">
+                                  #{topicCounter}
+                                </span>
+                                <span className="text-slate-900 dark:text-slate-100">
+                                  <HighlightText text={viTitle || enTitle} query={searchQuery} />
+                                </span>
+                                {viTitle && enTitle && viTitle !== enTitle && (
+                                  <span className="text-xs font-semibold text-[#245b86] dark:text-sky-400">
+                                    (<HighlightText text={enTitle} query={searchQuery} />)
                                   </span>
                                 )}
-                              </span>
-                            ))}
+                              </h3>
+                              {/* Đề thi thực tế áp dụng */}
+                              {examTags.length > 0 && (
+                                <div className="flex flex-wrap gap-1 pt-1">
+                                  {examTags.map((tag, tIdx) => (
+                                    <span
+                                      key={tIdx}
+                                      className="inline-flex items-center rounded-2xs bg-sky-50 dark:bg-sky-950/70 border border-sky-200 dark:border-sky-800/70 px-1.5 py-0.5 text-[11px] font-semibold text-[#245b86] dark:text-sky-300"
+                                    >
+                                      🎯 <HighlightText text={tag} query={searchQuery} />
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+
+                            <button
+                              type="button"
+                              onClick={() => handleCopyTopic(subtopic)}
+                              title="Sao chép chủ đề này"
+                              className="flex h-6 shrink-0 items-center gap-1 rounded-xs border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-800/60 px-2 text-[11px] font-semibold text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-foreground cursor-pointer transition"
+                            >
+                              {isCopied ? (
+                                <>
+                                  <Check className="h-3 w-3 text-emerald-600 dark:text-emerald-400" />
+                                  <span className="text-emerald-600 dark:text-emerald-400">Đã chép</span>
+                                </>
+                              ) : (
+                                <>
+                                  <Copy className="h-3 w-3" />
+                                  <span>Chép</span>
+                                </>
+                              )}
+                            </button>
                           </div>
-                        )}
 
-                        {/* 3. Ý chính triển khai (Gạch đầu dòng trực tiếp giống speaking.part3.v2.md) */}
-                        {items.length > 0 && (
-                          <ol className="space-y-1.5 text-xs sm:text-[13px] leading-relaxed pl-4 list-decimal marker:font-bold marker:text-[#245b86] dark:marker:text-sky-400">
-                            {items.map((item, itIdx) => {
-                              const text = typeof item === 'string' ? item : item.text;
-                              const viText = typeof item === 'string' ? undefined : item.viText;
-
-                              return (
-                                <li key={itIdx} className="pl-1">
-                                  <span className="font-semibold text-slate-800 dark:text-slate-200">
-                                    <HighlightText text={text} query={searchQuery} />
-                                  </span>
-                                  {showVietnamese && viText && (
-                                    <span className="text-muted-foreground ml-1.5">
-                                      — <HighlightText text={viText} query={searchQuery} />
+                          {/* 2. Từ vựng kế thừa trọng tâm trong chủ đề này */}
+                          {keywords.length > 0 && (
+                            <div className="flex flex-wrap items-baseline gap-x-2 gap-y-1.5 text-xs leading-relaxed">
+                              <span className="font-bold text-rose-700 dark:text-rose-300 shrink-0">
+                                {activeTopicId === 'letters' ? 'Cụm từ ăn điểm:' : 'Từ vựng kế thừa:'}
+                              </span>
+                              {keywords.map((kw, kIdx) => (
+                                <span
+                                  key={kIdx}
+                                  className="inline-flex items-baseline rounded-xs bg-rose-50/90 dark:bg-rose-500/15 px-1.5 py-0.5 border border-rose-200 dark:border-rose-500/40"
+                                >
+                                  <strong className="font-bold text-rose-950 dark:text-rose-100">
+                                    <HighlightText text={kw.word} query={searchQuery} />
+                                  </strong>
+                                  {showVietnamese && (
+                                    <span className="text-rose-700/80 dark:text-rose-300/80 ml-1 text-[11px]">
+                                      (<HighlightText text={kw.meaning} query={searchQuery} />)
                                     </span>
                                   )}
-                                </li>
-                              );
-                            })}
-                          </ol>
-                        )}
+                                </span>
+                              ))}
+                            </div>
+                          )}
 
-                        {/* 4. Khung trả lời nhanh A-R-E (Được bọc nổi bật, nhãn phân màu rõ ràng) */}
-                        {are && (
-                          <div className="rounded-xs border-l-4 border-l-[#245b86] dark:border-l-sky-500 border border-slate-200/80 dark:border-slate-800 bg-slate-50/90 dark:bg-slate-950/75 p-2.5 sm:p-3 space-y-1.5 text-xs leading-relaxed shadow-2xs">
-                            <div className="flex items-baseline flex-wrap">
-                              <span className="inline-flex items-center font-bold text-[#245b86] dark:text-sky-300 bg-[#245b86]/10 dark:bg-sky-950/80 dark:border dark:border-sky-800/60 px-1.5 py-0.2 rounded-2xs mr-1.5 shrink-0">
-                                [A - Trả lời]
-                              </span>
-                              <span className="font-semibold text-slate-800 dark:text-slate-200">
-                                <HighlightText text={are.answer} query={searchQuery} />
-                              </span>
-                              {showVietnamese && (
-                                <span className="text-muted-foreground ml-1.5">
-                                  ({are.answerVi})
-                                </span>
+                          {/* 3. Chuỗi phát triển ý bậc thang (hoặc 6 Mẫu câu hữu ích cho Writing Task 1) */}
+                          {items.length > 0 && (
+                            <div className="space-y-2 text-xs sm:text-[13px] leading-relaxed">
+                              {items.map((item, itIdx) => {
+                                const text = typeof item === 'string' ? item : item.text;
+                                const viText = typeof item === 'string' ? undefined : item.viText;
+                                const badge = typeof item === 'string' ? undefined : item.badge;
+
+                                return (
+                                  <div
+                                    key={itIdx}
+                                    className="rounded-xs border border-slate-200/70 dark:border-slate-800/80 bg-slate-50/50 dark:bg-slate-950/40 p-2.5 space-y-1"
+                                  >
+                                    {badge && (
+                                      <div className="text-[11px] font-bold text-[#245b86] dark:text-sky-400">
+                                        {badge}
+                                      </div>
+                                    )}
+                                    <div className="font-semibold text-slate-900 dark:text-slate-100">
+                                      <HighlightText text={text} query={searchQuery} />
+                                    </div>
+                                    {showVietnamese && viText && (
+                                      <div className="text-muted-foreground text-xs">
+                                        ➔ <HighlightText text={viText} query={searchQuery} />
+                                      </div>
+                                    )}
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          )}
+
+                          {/* 4. Khung Phản Xạ Speaking & Lắp Ráp Template (hoặc Đề & Bài Mẫu Hoàn Chỉnh cho Writing Task 1) */}
+                          {are && (
+                            <div className="rounded-xs border-l-4 border-l-emerald-600 dark:border-l-emerald-500 border border-slate-200/80 dark:border-slate-800 bg-emerald-50/30 dark:bg-slate-950/85 p-3 space-y-2 text-xs leading-relaxed shadow-2xs">
+                              {activeTopicId === 'letters' ? (
+                                <>
+                                  <div className="space-y-1">
+                                    <span className="inline-flex items-center font-bold text-amber-800 dark:text-amber-300 bg-amber-100/80 dark:bg-amber-950/80 px-1.5 py-0.5 rounded-2xs">
+                                      📝 Đề Bài Minh Họa Thực Tế
+                                    </span>
+                                    <p className="font-semibold text-slate-800 dark:text-slate-200">
+                                      <HighlightText text={are.answer} query={searchQuery} />
+                                    </p>
+                                    {showVietnamese && (
+                                      <p className="text-muted-foreground">({are.answerVi})</p>
+                                    )}
+                                  </div>
+                                  <div className="space-y-1 pt-1 border-t border-slate-200/70 dark:border-slate-800">
+                                    <span className="inline-flex items-center font-bold text-[#245b86] dark:text-sky-300 bg-sky-100/80 dark:bg-sky-950/80 px-1.5 py-0.5 rounded-2xs">
+                                      🧭 Dàn Ý 4 Đoạn
+                                    </span>
+                                    <p className="font-medium text-slate-700 dark:text-slate-300">
+                                      <HighlightText text={are.reason} query={searchQuery} />
+                                    </p>
+                                  </div>
+                                  <div className="space-y-1.5 pt-2 border-t border-slate-200/70 dark:border-slate-800">
+                                    <div className="flex items-center justify-between">
+                                      <span className="inline-flex items-center font-bold text-emerald-800 dark:text-emerald-300 bg-emerald-100/80 dark:bg-emerald-950/80 px-1.5 py-0.5 rounded-2xs">
+                                        ✍️ Bài Viết Mẫu Hoàn Chỉnh (Model Letter)
+                                      </span>
+                                      <button
+                                        type="button"
+                                        onClick={() => onCopy(are.example, `${subtopic.id}-letter`)}
+                                        className="text-[11px] font-bold text-emerald-700 dark:text-emerald-400 hover:underline cursor-pointer"
+                                      >
+                                        Chép bài mẫu
+                                      </button>
+                                    </div>
+                                    <div className="whitespace-pre-line rounded-xs border border-emerald-200 dark:border-emerald-900/60 bg-white dark:bg-slate-900 p-3 font-medium text-slate-800 dark:text-slate-100 leading-relaxed">
+                                      <HighlightText text={are.example} query={searchQuery} />
+                                    </div>
+                                  </div>
+                                </>
+                              ) : (
+                                <>
+                                  <div className="flex items-baseline flex-wrap gap-1">
+                                    <span className="inline-flex items-center font-bold text-[#245b86] dark:text-sky-300 bg-[#245b86]/10 dark:bg-sky-950/80 px-1.5 py-0.2 rounded-2xs shrink-0">
+                                      [Phản xạ Speaking]
+                                    </span>
+                                    <span className="font-semibold text-slate-800 dark:text-slate-200">
+                                      <HighlightText text={are.answer} query={searchQuery} />
+                                    </span>
+                                    {showVietnamese && (
+                                      <span className="text-muted-foreground">({are.answerVi})</span>
+                                    )}
+                                  </div>
+                                  <div className="flex items-baseline flex-wrap gap-1">
+                                    <span className="inline-flex items-center font-bold text-rose-700 dark:text-rose-300 bg-rose-100/70 dark:bg-rose-950/80 px-1.5 py-0.2 rounded-2xs shrink-0">
+                                      [Bác bỏ / Mở rộng]
+                                    </span>
+                                    <span className="font-semibold text-slate-800 dark:text-slate-200">
+                                      <HighlightText text={are.reason} query={searchQuery} />
+                                    </span>
+                                    {showVietnamese && (
+                                      <span className="text-muted-foreground">({are.reasonVi})</span>
+                                    )}
+                                  </div>
+                                  <div className="flex items-baseline flex-wrap gap-1 pt-1 border-t border-slate-200/60 dark:border-slate-800">
+                                    <span className="inline-flex items-center font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-100/70 dark:bg-emerald-950/80 px-1.5 py-0.2 rounded-2xs shrink-0">
+                                      [Sơ đồ Lắp vào 5 Template Writing Task 2]
+                                    </span>
+                                    <span className="font-semibold text-slate-800 dark:text-slate-200">
+                                      <HighlightText text={are.example} query={searchQuery} />
+                                    </span>
+                                  </div>
+                                </>
                               )}
                             </div>
-                            <div className="flex items-baseline flex-wrap">
-                              <span className="inline-flex items-center font-bold text-rose-700 dark:text-rose-300 bg-rose-100/70 dark:bg-rose-950/80 dark:border dark:border-rose-800/60 px-1.5 py-0.2 rounded-2xs mr-1.5 shrink-0">
-                                [R - Lý do]
-                              </span>
-                              <span className="font-semibold text-slate-800 dark:text-slate-200">
-                                <HighlightText text={are.reason} query={searchQuery} />
-                              </span>
-                              {showVietnamese && (
-                                <span className="text-muted-foreground ml-1.5">
-                                  ({are.reasonVi})
-                                </span>
-                              )}
-                            </div>
-                            <div className="flex items-baseline flex-wrap">
-                              <span className="inline-flex items-center font-bold text-emerald-700 dark:text-emerald-300 bg-emerald-100/70 dark:bg-emerald-950/80 dark:border dark:border-emerald-800/60 px-1.5 py-0.2 rounded-2xs mr-1.5 shrink-0">
-                                [E - Ví dụ]
-                              </span>
-                              <span className="font-semibold text-slate-800 dark:text-slate-200">
-                                <HighlightText text={are.example} query={searchQuery} />
-                              </span>
-                              {showVietnamese && (
-                                <span className="text-muted-foreground ml-1.5">
-                                  ({are.exampleVi})
-                                </span>
-                              )}
-                            </div>
-                          </div>
-                        )}
-                      </article>
-                    );
-                  })}
-                </div>
-              </section>
-            );
-          })
+                          )}
+                        </article>
+                      );
+                    })}
+                  </div>
+                </section>
+              );
+            })}
+          </div>
         )}
       </main>
     </div>
@@ -885,7 +1018,7 @@ function getConnectionsForTopic(
 // MAIN PAGE COMPONENT (UNIFIED HEADER & LAYOUT WITH /prompts & /speaking)
 // =========================================================================
 export default function Mindmap() {
-  const [activeTopicId, setActiveTopicId] = useState<string>('education');
+  const [activeTopicId, setActiveTopicId] = useState<string>('work');
   const [loadedHubs, setLoadedHubs] = useState<Record<string, MindmapTopic>>({});
   const [isLoadingHub, setIsLoadingHub] = useState<boolean>(true);
   const [loadError, setLoadError] = useState<string | null>(null);
@@ -929,7 +1062,7 @@ export default function Mindmap() {
 
   // Initial load: parse URL/storage and fetch first hub
   useEffect(() => {
-    let initialTopic = 'education';
+    let initialTopic = 'work';
     try {
       const params = new URLSearchParams(window.location.search);
       const urlTopic = params.get('topic');
@@ -1193,6 +1326,8 @@ export default function Mindmap() {
         return <Briefcase className="h-3.5 w-3.5 shrink-0" />;
       case 'Users':
         return <Users className="h-3.5 w-3.5 shrink-0" />;
+      case 'FileText':
+        return <FileText className="h-3.5 w-3.5 shrink-0" />;
       default:
         return <Lightbulb className="h-3.5 w-3.5 shrink-0" />;
     }

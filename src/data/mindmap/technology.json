@@ -1,372 +1,244 @@
 {
   "id": "technology",
-  "title": "Technology & Communication",
-  "vietnameseTitle": "Công nghệ, Truyền thông & Mua sắm",
-  "description": "Tổng hợp 55+ đề thi thật Speaking và Writing về Mạng xã hội, Tội phạm mạng, Nghiện Internet, Giao tiếp trực tiếp vs Online, Ngôn ngữ cơ thể, Mua sắm trực tuyến, Mua theo xu hướng, Thanh toán không tiền mặt, Chuyển khoản nhầm, Thiết bị thông minh, AI & Rác điện tử.",
+  "title": "Technology, Social Media & AI",
+  "vietnameseTitle": "Công nghệ, Mạng xã hội & Trí tuệ nhân tạo",
+  "description": "Mindmap kế thừa từ Kho 30 Từ Vựng Công nghệ & Đời sống số kết hợp Chuỗi Bậc Thang 5 Cấu Trúc (One major reason -> This is mainly because -> This means that) cho Writing Task 2 & Speaking Part 2, 3.",
   "icon": "Laptop",
   "centerNode": {
-    "title": "Technology & Media",
-    "subtitle": "Công nghệ, Truyền thông & Mua sắm",
-    "categoryBadge": "Topic Hub 3 (13 Nhóm Đề Cụ Thể)"
+    "title": "Technology & Digital Hub",
+    "subtitle": "30 Từ Vựng Gốc Dùng Chung – 8 Chủ Đề Xương Sống",
+    "categoryBadge": "Topic Hub 3 (Hệ Thống Kế Thừa Ý B2)"
   },
   "leftBranches": [
     {
-      "id": "tech-group-social-media",
-      "title": "Mạng xã hội, Internet & Giao tiếp số",
-      "viTitle": "Lợi/hại mạng xã hội, áp lực khoe khoang, tội phạm mạng, nghiện Internet & mặt đối mặt",
-      "badge": "Nhóm 1",
-      "tags": [
-        "Speaking P1-P3",
-        "Writing T1-T2"
-      ],
+      "id": "tech-group-social-media-phones",
+      "title": "Social Media, Online Friends, Smartphones & Cybersecurity",
+      "viTitle": "Mạng xã hội, Bạn bè Ảo, Điện thoại Thông minh & An toàn Mạng",
+      "badge": "Nhánh 1 (15 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
+      "tags": ["Social Media", "Online Friends", "Smartphones at Work/School", "Video Games", "Cybersecurity"],
       "color": "#0284c7",
+      "keywords": [
+        { "word": "social networking platforms", "meaning": "các nền tảng mạng xã hội (Facebook, TikTok, Zalo)" },
+        { "word": "instant global communication", "meaning": "giao tiếp kết nối toàn cầu tức thì" },
+        { "word": "multifaceted applications", "meaning": "các công dụng đa năng (kinh doanh, học tập, tin tức)" },
+        { "word": "virtual social circle", "meaning": "vòng kết nối bạn bè ảo trên mạng" },
+        { "word": "superficial online relationships", "meaning": "các mối quan hệ hời hợt trên mạng" },
+        { "word": "face-to-face family bonding", "meaning": "sự gắn kết trò chuyện trực tiếp trong gia đình" },
+        { "word": "smartphone addiction", "meaning": "chứng nghiện điện thoại thông minh" },
+        { "word": "constant notification distractions", "meaning": "sự xao nhãng liên tục do thông báo điện thoại" },
+        { "word": "cyberbullying and online scams", "meaning": "bắt nạt qua mạng và lừa đảo trực tuyến" },
+        { "word": "personal data privacy", "meaning": "quyền riêng tư dữ liệu cá nhân" },
+        { "word": "fake news and misinformation", "meaning": "tin giả và thông tin sai lệch chưa kiểm chứng" },
+        { "word": "parental control software", "meaning": "phần mềm quản lý của phụ huynh" },
+        { "word": "strict screen time limits", "meaning": "giới hạn nghiêm ngặt thời gian nhìn màn hình" },
+        { "word": "digital literacy", "meaning": "hiểu biết và kỹ năng an toàn số" },
+        { "word": "workplace phone regulations", "meaning": "quy định sử dụng điện thoại tại nơi làm việc" }
+      ],
       "children": [
         {
-          "id": "tech-social-media",
-          "title": "Lợi ích & Tác hại của Mạng xã hội (Social Networking Sites: Pros & Cons)",
-          "viTitle": "Kết nối bạn bè toàn cầu, giải trí vs Tin giả, mất ngủ, bắt nạt trên mạng",
-          "badge": "Đề 1",
+          "id": "tech-social-media-uses-online-friends",
+          "title": "Đa công dụng của Mạng xã hội & Bạn bè trên Mạng vs Đời thực",
+          "viTitle": "Kế thừa câu mẫu số 3 của bạn: One contributing factor is that many students spend too much time on social media...",
+          "badge": "Chủ đề 1 (Đề VLU 08/11)",
           "examTags": [
-            "Speaking P3 (VLU 10 - The Impacts of Using Social Media)",
-            "Writing T1 (VLU 10 - Replying to Sarah about Social Media Habits)",
-            "Writing T2 (VLU 11 - Advantages & Disadvantages of Social Networking Sites)"
+            "Task 2 [Dạng 2 - Adv/Disadv]: Multifaceted Uses of Social Media Beyond Chatting (VLU 08/11)",
+            "Task 2 [Dạng 1 - Agree/Disagree]: Do Social Networking Sites Make People Closer or More Isolated? (VLU 08/11)",
+            "Speaking P3: Online Friendships vs Real-Life Friendships & Impacts of Social Media"
           ],
           "color": "#0284c7",
           "keywords": [
-            {
-              "word": "stay connected with friends",
-              "meaning": "giữ liên lạc với bạn bè, người thân ở xa"
-            },
-            {
-              "word": "update latest news",
-              "meaning": "cập nhật tin tức thời sự nóng hổi mỗi ngày"
-            },
-            {
-              "word": "fake news & scams",
-              "meaning": "tin tức giả mạo và các bẫy lừa đảo trực tuyến"
-            },
-            {
-              "word": "cyberbullying",
-              "meaning": "bắt nạt, xúc phạm người khác qua mạng xã hội"
-            },
-            {
-              "word": "waste precious time",
-              "meaning": "lãng phí nhiều thời gian quý báu vô ích"
-            }
+            { "word": "social networking platforms", "meaning": "các nền tảng mạng xã hội" },
+            { "word": "multifaceted applications", "meaning": "ứng dụng đa chức năng" },
+            { "word": "virtual social circle", "meaning": "vòng bạn bè ảo trên mạng" },
+            { "word": "face-to-face family bonding", "meaning": "gắn kết trực tiếp ngoài đời thực" }
           ],
           "items": [
             {
-              "id": "tech-sm-1",
-              "badge": "🌐 Lợi ích",
-              "text": "Social platforms like Facebook and Zalo help us video call relatives living far away for free instantly.",
-              "viText": "Các nền tảng như Facebook và Zalo giúp chúng ta gọi video miễn phí ngay tức khắc cho người thân ở xa."
+              "id": "t-sm-1",
+              "badge": "✅ Nhánh 1: Đa công dụng vượt xa việc nhắn tin (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason why social networking platforms are indispensable is their multifaceted applications beyond chatting. This is mainly because users can read breaking news, join free educational groups, and advertise online businesses at zero cost. This means that social media serves as a powerful tool for learning and earning income.",
+              "viText": "Một lý do chính khiến các nền tảng mạng xã hội không thể thiếu là các công dụng đa năng vượt xa việc nhắn tin. Điều này chủ yếu là do người dùng có thể đọc tin tức nóng hổi, tham gia nhóm học tập miễn phí và quảng bá kinh doanh online với chi phí 0 đồng. Điều này có nghĩa là mạng xã hội là công cụ mạnh mẽ để học tập và kiếm tiền."
             },
             {
-              "id": "tech-sm-2",
-              "badge": "⚠️ Tác hại",
-              "text": "Endless scrolling late at night causes severe insomnia, short attention span, and exposure to toxic comments.",
-              "viText": "Lướt mạng vô tận lúc đêm muộn gây mất ngủ nghiêm trọng, giảm khả năng tập trung và dễ gặp bình luận độc hại."
+              "id": "t-sm-2",
+              "badge": "✅ Nhánh 2: Mở rộng kết nối bạn bè xuyên biên giới (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, social media enables instant global communication and expands our virtual social circle. This is mainly because video calls and interest groups connect people with shared hobbies regardless of geographical distance. This means that shy individuals and overseas students can maintain warm friendships easily.",
+              "viText": "Hơn nữa, mạng xã hội giúp giao tiếp toàn cầu tức thì và mở rộng vòng kết nối bạn bè. Điều này chủ yếu là do gọi video và các hội nhóm sở thích kết nối những người cùng đam mê bất chấp khoảng cách địa lý. Điều này có nghĩa là người nhút nhát và du học sinh dễ dàng giữ gìn tình bạn ấm áp."
             },
             {
-              "id": "tech-sm-3",
-              "badge": "🛡️ Lời khuyên",
-              "text": "Limit daily screen time to under two hours and follow educational, positive community groups only.",
-              "viText": "Giới hạn thời gian dùng mạng dưới hai tiếng mỗi ngày và chỉ theo dõi các hội nhóm giáo dục, tích cực."
+              "id": "t-sm-3",
+              "badge": "⚠️ Nhánh 3: Tác hại gây Xao nhãng & Cô đơn đời thực (Câu mẫu chuẩn của bạn)",
+              "text": "On the other hand, one contributing factor to declining academic and work performance is that many students spend too much time on social media. This is mainly because addictive short videos create superficial online relationships and destroy face-to-face family bonding. This means that heavy users feel lonely in real life.",
+              "viText": "Mặt khác, một yếu tố làm giảm kết quả học tập và làm việc là nhiều sinh viên dành quá nhiều thời gian cho mạng xã hội. Điều này chủ yếu là do các video ngắn gây nghiện tạo ra các mối quan hệ ảo hời hợt và phá hủy sự gắn kết trực tiếp trong gia đình. Điều này có nghĩa là người nghiện mạng cảm thấy cô đơn ngoài đời thực."
+            },
+            {
+              "id": "t-sm-4",
+              "badge": "🎯 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & IT Example)",
+              "text": "In my opinion, the best approach is setting strict screen time limits of one hour per day. For example, as a Computer Science Master's student, I use Facebook groups to share AI research papers with fellow programmers, but I always turn off phone notifications during dinner to talk with my family.",
+              "viText": "Theo tôi, giải pháp tốt nhất là đặt giới hạn màn hình nghiêm ngặt 1 tiếng mỗi ngày. Ví dụ, là học viên Thạc sĩ CNTT, tôi dùng các nhóm Facebook để chia sẻ bài báo nghiên cứu AI với các lập trình viên, nhưng luôn tắt thông báo điện thoại trong bữa tối để trò chuyện cùng gia đình."
             }
           ],
           "areSkeleton": {
-            "answer": "Social networking sites bring remarkable convenience, but we must use them with caution.",
-            "answerVi": "Mạng xã hội đem lại sự tiện lợi đáng kinh ngạc, nhưng chúng ta cần phải sử dụng một cách thận trọng.",
-            "reason": "They allow us to stay in touch with old friends anywhere, but scrolling mindlessly for hours wastes precious time.",
-            "reasonVi": "Chúng giúp ta giữ liên lạc với bạn bè cũ ở bất cứ đâu, nhưng việc lướt mạng vô thức hàng giờ sẽ làm lãng phí thời gian quý báu.",
-            "example": "For example, I use Facebook groups to exchange English study materials, but I turn off notifications after 9 PM to sleep well.",
-            "exampleVi": "Ví dụ, tôi dùng các nhóm Facebook để trao đổi tài liệu học tiếng Anh, nhưng tôi luôn tắt thông báo sau 9 giờ tối để ngủ ngon."
+            "answer": "🎙️ Speaking Part 3 (Đề VLU 08/11 - Tác động của Mạng xã hội): Social media is a double-edged sword: it provides instant communication, news, and business marketing, but excessive use weakens real-life relationships.",
+            "answerVi": "Speaking P3 (VLU 08/11): Mạng xã hội là con dao hai lưỡi: nó giúp giao tiếp tức thì, cập nhật tin tức và kinh doanh, nhưng lạm dụng sẽ làm phai nhạt tình cảm đời thực.",
+            "reason": "🎙️ Bạn trên mạng vs Bạn ngoài đời: Online friends are great for sharing technical hobbies, but real-life friends are much more reliable when we are sick or in trouble.",
+            "reasonVi": "Bạn ảo vs Bạn thật: Bạn trên mạng rất tốt để chia sẻ sở thích chuyên môn, nhưng bạn ngoài đời đáng tin cậy hơn nhiều khi ta ốm đau hoạn nạn.",
+            "example": "📐 Lắp vào Writing Task 2 (Đề VLU 08/11 - Social Media Uses / Online Circle): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Trúng tủ 100% hai đề thi Writing & Speaking VLU 08/11 về Mạng xã hội."
           }
         },
         {
-          "id": "tech-social-pressure",
-          "title": "Áp lực khoe thành tích & Sống ảo (Social Media Pressure & Posting Content)",
-          "viTitle": "So sánh ngoại hình/tiền tài, sống ảo vì nút Like & sáng tạo nội dung trực tuyến",
-          "badge": "Đề 2",
+          "id": "tech-smartphones-school-workplace",
+          "title": "Sử dụng Điện thoại Thông minh ở Trường học & Nơi làm việc (Smartphones at School & Work)",
+          "viTitle": "Kế thừa từ vựng: smartphone addiction, constant notification distractions, workplace phone regulations",
+          "badge": "Chủ đề 2 (Đề AJC & VLU 08/11)",
           "examTags": [
-            "Speaking P3 (VLU 09 - Posting Videos Online & Content Creation)",
-            "Writing T2 (VLU 09 - Pressure from Sharing Achievements on Social Media)"
+            "Speaking P1 & P3 (AJC 08/11 & VLU 11): Using Mobile Phones / Allowing Smartphones at School",
+            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Adv/Disadv]: Should Employees Be Allowed to Use Personal Smartphones at Work? (VLU 08/11)",
+            "Speaking P2: Choosing a Gift Device (Smartphone vs Laptop vs Smartwatch)"
           ],
           "color": "#0284c7",
           "keywords": [
-            {
-              "word": "show off achievements",
-              "meaning": "khoe khoang thành tích, xe sang, bằng cấp trên mạng"
-            },
-            {
-              "word": "feeling of inadequacy",
-              "meaning": "cảm giác tự ti, thấy mình thua kém bạn bè đồng trang lứa"
-            },
-            {
-              "word": "obsessed with likes",
-              "meaning": "ám ảnh với số lượng lượt like và thả tim ảo"
-            },
-            {
-              "word": "content creation",
-              "meaning": "sáng tạo nội dung video ngắn bổ ích trên TikTok, YouTube"
-            }
+            { "word": "instant global communication", "meaning": "liên lạc khẩn cấp tức thì" },
+            { "word": "constant notification distractions", "meaning": "sự xao nhãng liên tục vì thông báo" },
+            { "word": "workplace phone regulations", "meaning": "quy định dùng điện thoại nơi công sở" },
+            { "word": "personal data privacy", "meaning": "bảo mật thông tin nội bộ" }
           ],
           "items": [
             {
-              "id": "tech-sp-1",
-              "badge": "😟 Áp lực",
-              "text": "Seeing peers posting luxury cars, overseas trips, and high salaries makes young people feel insecure and depressed.",
-              "viText": "Nhìn thấy bạn bè khoe xe sang, du lịch nước ngoài và lương khủng khiến người trẻ cảm thấy tự ti và trầm cảm."
+              "id": "t-sp-1",
+              "badge": "✅ Nhánh 1: Lợi ích của Smartphone trong Học tập & Công việc (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason to allow smartphones at school and work is that they serve as portable learning and communication tools. This is mainly because students can look up English dictionaries instantly, while employees can contact clients and handle urgent family calls. This means that tasks are solved quickly and conveniently.",
+              "viText": "Một lý do chính nên cho phép dùng điện thoại ở trường và nơi làm việc là chúng đóng vai trò như công cụ học tập và liên lạc nhỏ gọn. Điều này chủ yếu là do học sinh có thể tra từ điển tiếng Anh tức thì, còn nhân viên có thể liên hệ khách hàng và xử lý việc gia đình khẩn cấp. Điều này có nghĩa là công việc được giải quyết nhanh và tiện lợi."
             },
             {
-              "id": "tech-sp-2",
-              "badge": "🎭 Sống ảo",
-              "text": "Many teenagers borrow money or fake lavish lifestyles just to take photos and gain internet fame.",
-              "viText": "Nhiều bạn trẻ vay mượn tiền hoặc làm màu cuộc sống xa hoa chỉ để chụp ảnh câu like và tìm kiếm sự nổi tiếng ảo."
+              "id": "t-sp-2",
+              "badge": "⚠️ Nhánh 2: Tác hại gây Xao nhãng & Giảm năng suất (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, one major problem of unrestricted phone use is constant notification distractions. This is mainly because checking personal messages, playing games, or scrolling TikTok during class or working hours breaks deep concentration. This means that students miss lessons and office workers make costly mistakes.",
+              "viText": "Mặt khác, một vấn đề lớn của việc dùng điện thoại tự do là sự xao nhãng liên tục bởi các thông báo. Điều này chủ yếu là do việc kiểm tra tin nhắn cá nhân, chơi game hay lướt TikTok trong giờ học và giờ làm phá vỡ sự tập trung sâu. Điều này có nghĩa là học sinh mất bài và nhân viên văn phòng dễ mắc sai sót."
             },
             {
-              "id": "tech-sp-3",
-              "badge": "🎬 Mặt tích cực",
-              "text": "Creating helpful short videos about cooking or English teaching can turn into a legitimate creative career.",
-              "viText": "Tạo các video ngắn hữu ích về nấu ăn hoặc dạy tiếng Anh có thể trở thành một nghề sáng tạo nội dung chân chính."
+              "id": "t-sp-3",
+              "badge": "💡 Nhánh 3: Giải pháp Quy định hợp lý thay vì Cấm tuyệt đối (Best approach ➔ Because ➔ Meaning)",
+              "text": "In my opinion, the best approach is establishing clear workplace and school phone regulations rather than a total ban. This is mainly because requiring silent mode during lectures or meetings prevents distractions while still allowing emergency use during breaks. This means that discipline and convenience are balanced.",
+              "viText": "Theo tôi, giải pháp tốt nhất là thiết lập quy định sử dụng điện thoại rõ ràng ở trường và công sở thay vì cấm tuyệt đối. Điều này chủ yếu là do yêu cầu để chế độ im lặng trong giờ giảng hoặc giờ họp giúp tránh xao nhãng mà vẫn cho phép liên lạc khẩn cấp giờ giải lao. Điều này có nghĩa là kỷ luật và sự tiện lợi được cân bằng."
+            },
+            {
+              "id": "t-sp-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, at my software company, programmers use smartphones for two-factor security authentication (2FA) and testing mobile apps, but we put our phones on Do Not Disturb mode during coding sprints.",
+              "viText": "Ví dụ, tại công ty phần mềm của tôi, các lập trình viên sử dụng điện thoại thông minh để xác thực bảo mật 2 lớp (2FA) và kiểm thử ứng dụng di động, nhưng luôn bật chế độ Không làm phiền trong khung giờ tập trung viết code."
             }
           ],
           "areSkeleton": {
-            "answer": "Constantly watching other people show off achievements on social media creates unhealthy pressure for youth.",
-            "answerVi": "Việc liên tục nhìn người khác khoe khoang thành tích trên mạng xã hội tạo ra áp lực tâm lý không lành mạnh cho giới trẻ.",
-            "reason": "People only share their happiest moments online, so comparing our daily struggles to someone else's highlight reel causes low self-esteem.",
-            "reasonVi": "Mọi người chỉ chia sẻ những khoảnh khắc đẹp nhất lên mạng, nên việc so sánh nỗi vất vả đời thường với bức tranh hào nhoáng của người khác sẽ gây tự ti.",
-            "example": "For instance, my friend felt so stressed after seeing classmates buying apartments that she deleted Instagram for a month to focus on herself.",
-            "exampleVi": "Ví dụ, bạn tôi từng thấy rất stress khi thấy bạn học thi nhau khoe mua nhà, đến mức bạn ấy đã xóa Instagram một tháng để tập trung cho bản thân."
+            "answer": "🎙️ Speaking Part 1 & 3 (AJC & VLU 08/11): Smartphones are essential for looking up study materials, testing apps, and urgent communication, provided users set silent mode during work and class hours.",
+            "answerVi": "Speaking P1 & P3: Điện thoại thông minh rất thiết yếu để tra cứu tài liệu, thử nghiệm ứng dụng và liên lạc khẩn cấp, miễn là người dùng bật chế độ im lặng trong giờ học và giờ làm.",
+            "reason": "🎙️ Độ tuổi phù hợp cho trẻ dùng Smartphone: Children should only have their own smartphones at high school age (around 15) when they have sufficient self-discipline.",
+            "reasonVi": "Độ tuổi phù hợp: Trẻ em chỉ nên có smartphone riêng khi lên cấp 3 (khoảng 15 tuổi) khi đã có đủ tính tự giác.",
+            "example": "📐 Lắp vào Writing Task 2 (Phones at School / Workplace - VLU 08/11): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 3 + 4.",
+            "exampleVi": "Giải quyết trọn vẹn đề AJC 08/11 và VLU 08/11."
           }
         },
         {
-          "id": "tech-cybercrime-scams",
-          "title": "Tội phạm mạng & Lừa đảo trực tuyến (Cybercrime, Scams & Malicious Websites)",
-          "viTitle": "Web lừa tiền, hack tài khoản ngân hàng, đánh cắp danh tính & giải pháp bảo mật",
-          "badge": "Đề 3",
+          "id": "tech-children-screen-time-games",
+          "title": "Trẻ em Nghiện Màn hình / Trò chơi Điện tử (Video Games & Screen Time)",
+          "viTitle": "Kế thừa từ vựng: smartphone addiction, strict screen time limits, parental control software, face-to-face family bonding",
+          "badge": "Chủ đề 3",
           "examTags": [
-            "Writing T2 (VLU 11 - Impacts & Solutions of Cybercrime and Malicious Websites)"
+            "Task 2 [Dạng 2, 3, 5 - Adv/Disadv & Cause/Effects-Solution]: Children Spending Too Much Time on Smartphones, TV, and Video Games",
+            "Speaking P3: Impacts of Video Games on Teenagers & Role of Parents"
           ],
           "color": "#0284c7",
           "keywords": [
-            {
-              "word": "cybercrime & hackers",
-              "meaning": "tội phạm mạng và tin tặc chuyên tấn công tài khoản"
-            },
-            {
-              "word": "fake malicious websites",
-              "meaning": "trang web độc hại giả mạo ngân hàng để lừa tiền"
-            },
-            {
-              "word": "steal personal identity",
-              "meaning": "đánh cắp danh tính cá nhân và mật khẩu"
-            },
-            {
-              "word": "two-factor authentication (2FA)",
-              "meaning": "xác thực hai lớp (mã OTP gửi về số điện thoại)"
-            },
-            {
-              "word": "never click suspicious links",
-              "meaning": "tuyệt đối không nhấn vào các đường link lạ gửi qua tin nhắn"
-            }
+            { "word": "smartphone addiction", "meaning": "nghiện điện thoại và trò chơi điện tử" },
+            { "word": "strict screen time limits", "meaning": "giới hạn nghiêm ngặt thời gian nhìn màn hình" },
+            { "word": "parental control software", "meaning": "phần mềm quản lý của cha mẹ" },
+            { "word": "outdoor physical activities", "meaning": "các hoạt động thể chất ngoài trời" }
           ],
           "items": [
             {
-              "id": "tech-cc-1",
-              "badge": "⚠️ Hậu quả",
-              "text": "Scammers build fake bank login portals to steal passwords and empty victims' entire savings within minutes.",
-              "viText": "Kẻ lừa đảo tạo giao diện đăng nhập ngân hàng giả để cướp mật khẩu và rút sạch tiền tiết kiệm của nạn nhân chỉ trong vài phút."
+              "id": "t-cg-1",
+              "badge": "✅ Nhánh 1: Lợi ích giải trí & Phản xạ của Game nếu chơi điều độ (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason why moderate educational gaming is beneficial is that it sharpens quick reflexes and foreign language vocabulary. This is mainly because strategy and puzzle games require players to read English instructions and solve logic challenges quickly. This means that children can relax their minds and learn interactively.",
+              "viText": "Một lý do chính khiến việc chơi game giáo dục điều độ có lợi là nó rèn phản xạ nhanh và vốn từ ngoại ngữ. Điều này chủ yếu là do các trò chơi chiến thuật và giải đố buộc người chơi phải đọc hướng dẫn tiếng Anh và giải quyết thử thách logic nhanh. Điều này có nghĩa là trẻ vừa giải trí vừa học tương tác."
             },
             {
-              "id": "tech-cc-2",
-              "badge": "🔒 Cá nhân",
-              "text": "Always enable two-step verification on Google and banking apps, and never share OTP codes with anyone.",
-              "viText": "Luôn bật bảo mật 2 bước cho Google và app ngân hàng, tuyệt đối không cung cấp mã OTP cho bất kỳ ai."
+              "id": "t-cg-2",
+              "badge": "⚠️ Nhánh 2: Tác hại nghiêm trọng của Nghiện game & Màn hình (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, one major problem of excessive screen time is severe shortsightedness, obesity, and aggressive behavior. This is mainly because addicted children sit motionless for hours staring at violent games and neglect school homework. This means that both their physical health and academic grades deteriorate rapidly.",
+              "viText": "Mặt khác, một vấn đề lớn của việc nhìn màn hình quá mức là cận thị nặng, béo phì và hành vi hung hăng. Điều này chủ yếu là do trẻ nghiện game ngồi bất động hàng giờ nhìn vào các trò bạo lực và bỏ bê bài tập. Điều này có nghĩa là cả sức khỏe thể chất lẫn kết quả học tập của trẻ đều sụt giảm nhanh chóng."
             },
             {
-              "id": "tech-cc-3",
-              "badge": "⚖️ Pháp luật",
-              "text": "Cyber police must trace online criminal groups strictly and run public awareness campaigns on national television.",
-              "viText": "Lực lượng an ninh mạng cần truy bắt nghiêm các đường dây tội phạm và đẩy mạnh tuyên truyền cảnh báo trên truyền hình."
+              "id": "t-cg-3",
+              "badge": "💡 Nhánh 3: Giải pháp từ Cha mẹ & Nhà trường (Best approach ➔ Because ➔ Meaning)",
+              "text": "In my opinion, the best approach to overcome screen addiction is installing parental control software and spending weekend time playing outdoor sports with kids. This is mainly because children turn to screens when busy parents use iPads as electronic babysitters. This means that warm parental companionship is the ultimate cure.",
+              "viText": "Theo tôi, giải pháp tốt nhất để trị chứng nghiện màn hình là cài phần mềm kiểm soát của phụ huynh và dành cuối tuần chơi thể thao ngoài trời cùng con. Điều này chủ yếu là do trẻ tìm đến màn hình khi cha mẹ bận rộn dùng iPad như người giữ trẻ điện tử. Điều này có nghĩa là sự đồng hành ấm áp của cha mẹ là liều thuốc tốt nhất."
+            },
+            {
+              "id": "t-cg-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, I helped my sister configure a screen-time lock on my 10-year-old nephew's tablet that automatically locks games after 45 minutes and enrolled him in a weekend swimming and robotics club.",
+              "viText": "Ví dụ, tôi đã giúp chị gái cài đặt khóa giới hạn thời gian trên máy tính bảng của đứa cháu trai 10 tuổi, tự động khóa game sau 45 phút và đăng ký cho cháu tham gia câu lạc bộ bơi lội và lắp ráp robot cuối tuần."
             }
           ],
           "areSkeleton": {
-            "answer": "Cybercrime has become a severe threat in modern digital society, requiring urgent actions from everyone.",
-            "answerVi": "Tội phạm mạng đã trở thành một mối đe dọa nghiêm trọng trong xã hội số, đòi hỏi hành động quyết liệt từ tất cả mọi người.",
-            "reason": "Scammers use increasingly cunning tricks to steal bank accounts, causing huge financial and emotional damage to victims.",
-            "reasonVi": "Những kẻ lừa đảo dùng thủ đoạn ngày càng tinh vi để chiếm đoạt tài khoản ngân hàng, gây thiệt hại lớn về tiền của và tinh thần nạn nhân.",
-            "example": "For example, my grandmother was almost tricked into transferring 50 million VND by a scammer pretending to be a police officer online.",
-            "exampleVi": "Ví dụ, bà của tôi suýt nữa bị lừa chuyển 50 triệu đồng bởi một kẻ giả danh cán bộ công an trên mạng."
+            "answer": "🎙️ Speaking Part 3 (Tác hại và Giải pháp trẻ nghiện màn hình): Excessive screen time causes shortsightedness, obesity, and poor grades, so parents must set strict screen limits and take kids outdoors.",
+            "answerVi": "Speaking P3: Nhìn màn hình quá nhiều gây cận thị, béo phì và học sút, nên cha mẹ phải giới hạn giờ chơi và đưa con ra ngoài vận động.",
+            "reason": "🎙️ Nguyên nhân từ phía phụ huynh: Many busy parents give smartphones to young children during meals just to keep them quiet.",
+            "reasonVi": "Nguyên nhân từ cha mẹ: Nhiều phụ huynh bận rộn đưa điện thoại cho con nhỏ trong bữa ăn chỉ để dỗ con ngồi yên.",
+            "example": "📐 Lắp vào Writing Task 2 (Video Games / Children Screen Time): [Adv/Disadv] ➔ Đoạn 1 lắp Nhánh 1, Đoạn 2 lắp Nhánh 2 | [Cause/Effects-Solution] ➔ Đoạn 1 lắp Nhánh 2, Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Dùng cho mọi đề về Trẻ em dùng điện thoại, Xem TV và Chơi game."
           }
         },
         {
-          "id": "tech-internet-addiction",
-          "title": "Nghiện Internet & Bỏ quên đời thực (Internet Overuse & Digital Addiction)",
-          "viTitle": "Ngồi lì trong phòng lướt web cả ngày, lười vận động, xa cách gia đình & giải pháp cai",
-          "badge": "Đề 4",
+          "id": "tech-cybersecurity-privacy-fake-news",
+          "title": "An toàn Thông tin, Quyền Riêng tư & Tin giả trên Mạng (Cybersecurity & Fake News)",
+          "viTitle": "Kế thừa từ vựng: personal data privacy, cyberbullying and online scams, fake news and misinformation, digital literacy",
+          "badge": "Chủ đề 4",
           "examTags": [
-            "Speaking P1 (VLU 09; BAV 10 - Internet & Mobile Phones / Going Online)",
-            "Writing T2 (VLU 09, 10 - Internet Overuse: Impacts & Solutions; Replacing Traditional Activities)"
+            "Task 2 [Dạng 3 & 4 - Cause/Problem-Solution]: Cybercrime, Personal Data Leaks, and Fake News on the Internet",
+            "Speaking P3: How to Protect Personal Privacy Online and Verify Internet Information"
           ],
           "color": "#0284c7",
           "keywords": [
-            {
-              "word": "internet addiction",
-              "meaning": "chứng nghiện mạng Internet, không rời được màn hình"
-            },
-            {
-              "word": "sedentary lifestyle",
-              "meaning": "lối sống lười vận động, ngồi lì một chỗ suốt nhiều giờ"
-            },
-            {
-              "word": "neglect real-life family",
-              "meaning": "bỏ bê người thân, không trò chuyện với cha mẹ"
-            },
-            {
-              "word": "digital detox",
-              "meaning": "cai nghiện công nghệ số (tắt mạng vào cuối tuần để ra ngoài)"
-            }
+            { "word": "personal data privacy", "meaning": "quyền riêng tư dữ liệu cá nhân" },
+            { "word": "cyberbullying and online scams", "meaning": "bắt nạt qua mạng và lừa đảo trực tuyến" },
+            { "word": "fake news and misinformation", "meaning": "tin giả và thông tin sai lệch" },
+            { "word": "digital literacy", "meaning": "kỹ năng nhận thức an toàn số" }
           ],
           "items": [
             {
-              "id": "tech-ia-1",
-              "badge": "📉 Tác hại",
-              "text": "Spending over eight hours daily online ruins vision, causes neck stiffness, and leads to poor academic grades.",
-              "viText": "Ngồi lướt mạng hơn 8 tiếng mỗi ngày làm suy giảm thị lực, thoái hóa đốt sống cổ và sa sút kết quả học tập."
+              "id": "t-cs-1",
+              "badge": "⚠️ Nhánh 1: Vấn đề Lộ dữ liệu cá nhân & Lừa đảo mạng (One major problem ➔ Because ➔ Meaning)",
+              "text": "One major problem of the digital age is the widespread leakage of personal data privacy and sophisticated online scams. This is mainly because many internet users carelessly share their phone numbers, home addresses, and bank details on public websites. This means that hackers can easily steal their identity and money.",
+              "viText": "Một vấn đề lớn của thời đại số là tình trạng lộ dữ liệu cá nhân tràn lan và lừa đảo trực tuyến tinh vi. Điều này chủ yếu là do nhiều người dùng bất cẩn chia sẻ số điện thoại, địa chỉ nhà và thông tin ngân hàng lên các trang web công khai. Điều này có nghĩa là tin tặc dễ dàng đánh cắp danh tính và tiền bạc của họ."
             },
             {
-              "id": "tech-ia-2",
-              "badge": "🏠 Gia đình",
-              "text": "Family members sit at the same dinner table but look silently into their own screens instead of talking.",
-              "viText": "Các thành viên trong gia đình ngồi chung mâm cơm nhưng chỉ cắm mặt vào điện thoại của mình thay vì trò chuyện."
+              "id": "t-cs-2",
+              "badge": "⚠️ Nhánh 2: Hiểm họa từ Tin giả & Bắt nạt qua mạng (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, the rapid spread of fake news and cyberbullying causes severe social panic and mental trauma. This is mainly because anonymous social media accounts can post unverified rumors and toxic insults without immediate censorship. This means that innocent victims suffer from depression and public trust is eroded.",
+              "viText": "Hơn nữa, sự lan truyền nhanh chóng của tin giả và bắt nạt qua mạng gây hoang mang xã hội và tổn thương tâm lý nặng nề. Điều này chủ yếu là do các tài khoản ẩn danh có thể đăng tin đồn chưa kiểm chứng và lời lẽ xúc phạm mà chưa bị kiểm duyệt ngay. Điều này có nghĩa là nạn nhân bị trầm cảm và niềm tin xã hội bị xói mòn."
             },
             {
-              "id": "tech-ia-3",
-              "badge": "🍃 Cai nghiện",
-              "text": "Families should implement screen-free Sundays to go camping, ride bicycles, and cook together outdoors.",
-              "viText": "Các gia đình nên quy định Chủ nhật không điện thoại để đi cắm trại, đạp xe và cùng nhau nấu ăn ngoài trời."
+              "id": "t-cs-3",
+              "badge": "💡 Nhánh 3: Giải pháp từ Người dùng & Chính phủ (Best approach ➔ Because ➔ Meaning)",
+              "text": "In my opinion, the best approach to ensure cybersecurity is combining strict government laws with individual digital literacy. This is mainly because users must learn to use two-factor authentication (2FA) and verify news from official newspapers, while authorities must heavily fine data thieves. This means that cyberspace becomes safe for everyone.",
+              "viText": "Theo tôi, giải pháp tốt nhất để đảm bảo an ninh mạng là kết hợp luật pháp nghiêm minh của chính phủ với kỹ năng an toàn số của mỗi cá nhân. Điều này chủ yếu là do người dùng phải biết bật xác thực 2 lớp (2FA) và kiểm chứng tin tức từ báo chính thống, còn cơ quan chức năng phải phạt nặng kẻ đánh cắp dữ liệu."
+            },
+            {
+              "id": "t-cs-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, as a Computer Science specialist, I trained my parents never to click on strange links or transfer money before making a video call, which saved my mother from a fake bank scam last month.",
+              "viText": "Ví dụ, là một chuyên gia Khoa học máy tính, tôi đã hướng dẫn bố mẹ không bao giờ bấm vào đường link lạ hoặc chuyển tiền trước khi gọi video xác nhận, nhờ đó cứu mẹ tôi khỏi một vụ lừa đảo giả danh ngân hàng tháng trước."
             }
           ],
           "areSkeleton": {
-            "answer": "Internet overuse is harming both the physical health and interpersonal relationships of young generations.",
-            "answerVi": "Việc lạm dụng Internet đang tàn phá cả sức khỏe thể chất lẫn các mối quan hệ xã hội của thế hệ trẻ.",
-            "reason": "It turns active youngsters into passive couch potatoes who prefer virtual chatting over real outdoor interactions.",
-            "reasonVi": "Nó biến những người trẻ năng động thành những người thụ động ngồi một chỗ, thích chat ảo hơn là gặp gỡ ngoài đời thực.",
-            "example": "For instance, my cousin used to love playing football, but since he got an iPhone, he spends his entire weekend lying in bed watching TikTok.",
-            "exampleVi": "Ví dụ, em họ tôi từng rất thích đá bóng, nhưng từ khi có iPhone, cậu bé dành trọn cả ngày cuối tuần nằm trên giường lướt TikTok."
-          }
-        },
-        {
-          "id": "tech-face-to-face-vs-online",
-          "title": "Giao tiếp mặt đối mặt vs Qua mạng (Face-to-Face vs Online Communication)",
-          "viTitle": "Cảm nhận ánh mắt, nụ cười chân thật, tránh hiểu lầm tin nhắn & xây dựng niềm tin",
-          "badge": "Đề 5",
-          "examTags": [
-            "Speaking P3 (VLU 09, 11 - Importance & Advantages of Face-to-Face Communication)"
-          ],
-          "color": "#0284c7",
-          "keywords": [
-            {
-              "word": "face-to-face communication",
-              "meaning": "giao tiếp trực tiếp mặt đối mặt ngoài đời thực"
-            },
-            {
-              "word": "eye contact and warmth",
-              "meaning": "ánh mắt giao cảm và sự ấm áp chân tình"
-            },
-            {
-              "word": "avoid texting misunderstandings",
-              "meaning": "tránh được những hiểu lầm tai hại do đọc sai giọng văn tin nhắn"
-            },
-            {
-              "word": "build genuine trust",
-              "meaning": "xây dựng niềm tin sâu sắc và sự gắn bó lâu dài"
-            }
-          ],
-          "items": [
-            {
-              "id": "tech-ftf-1",
-              "badge": "❤️ Cảm xúc",
-              "text": "Talking in person allows you to see facial expressions, hear emotional voice tones, and give supportive hugs.",
-              "viText": "Nói chuyện trực tiếp giúp bạn nhìn thấy nét mặt, nghe được giọng điệu cảm xúc và trao nhau những cái ôm động viên."
-            },
-            {
-              "id": "tech-ftf-2",
-              "badge": "💬 Hiểu lầm",
-              "text": "Text messages lack tone of voice, so a simple joke can easily be misinterpreted as coldness or anger.",
-              "viText": "Tin nhắn văn bản không có ngữ điệu, vì vậy một câu đùa đơn giản rất dễ bị hiểu nhầm thành lạnh lùng hoặc tức giận."
-            },
-            {
-              "id": "tech-ftf-3",
-              "badge": "🤝 Đối tác",
-              "text": "Major business deals and serious relationship commitments are always closed over face-to-face meetings.",
-              "viText": "Những thương vụ kinh doanh lớn hay các cam kết tình cảm nghiêm túc luôn được chốt lại qua các buổi gặp trực tiếp."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "Despite high-tech video apps, face-to-face communication remains irreplaceable.",
-            "answerVi": "Bất chấp các ứng dụng gọi video công nghệ cao, giao tiếp trực tiếp mặt đối mặt vẫn là không thể thay thế.",
-            "reason": "Because real presence conveys sincere feelings through eye contact and body warmth that text messages can never replace.",
-            "reasonVi": "Bởi vì sự hiện diện ngoài đời thực truyền tải tình cảm chân thành qua ánh mắt và hơi ấm mà tin nhắn không bao giờ làm được.",
-            "example": "For example, when my best friend had family trouble, a 10-minute in-person hug consoled her much more than dozens of text emojis.",
-            "exampleVi": "Ví dụ, khi bạn thân tôi gặp chuyện buồn gia đình, một cái ôm trực tiếp 10 phút đã an ủi bạn ấy tốt hơn hàng chục icon tin nhắn."
-          }
-        },
-        {
-          "id": "tech-body-language",
-          "title": "Vai trò của Ngôn ngữ cơ thể (Body Language in Communication)",
-          "viTitle": "Nụ cười thân thiện, ánh mắt tự tin, cái bắt tay lịch thiệp khi phỏng vấn",
-          "badge": "Đề 6",
-          "examTags": [
-            "Speaking P3 (VLU 10; UFM 10 - The Role / Importance of Body Language in Communication)"
-          ],
-          "color": "#0284c7",
-          "keywords": [
-            {
-              "word": "body language / non-verbal cues",
-              "meaning": "ngôn ngữ cơ thể (ánh mắt, nụ cười, cử chỉ tay)"
-            },
-            {
-              "word": "confident eye contact",
-              "meaning": "giao tiếp bằng ánh mắt tự tin, không nhìn xuống đất"
-            },
-            {
-              "word": "warm smile",
-              "meaning": "nụ cười ấm áp, thân thiện xóa tan khoảng cách"
-            },
-            {
-              "word": "firm handshake",
-              "meaning": "cái bắt tay dứt khoát, chuyên nghiệp trong phỏng vấn"
-            }
-          ],
-          "items": [
-            {
-              "id": "tech-bl-1",
-              "badge": "👀 Ánh mắt",
-              "text": "Maintaining polite eye contact shows honesty and demonstrates that you are actively listening to the speaker.",
-              "viText": "Duy trì ánh mắt lịch thiệp thể hiện sự chân thành và chứng minh bạn đang lắng nghe người nói một cách chăm chú."
-            },
-            {
-              "id": "tech-bl-2",
-              "badge": "💼 Phỏng vấn",
-              "text": "Sitting straight with an open posture and a firm handshake creates an immediate professional impression on interviewers.",
-              "viText": "Ngồi thẳng lưng với tư thế cởi mở và cái bắt tay dứt khoát tạo ấn tượng chuyên nghiệp ngay tức thì với nhà tuyển dụng."
-            },
-            {
-              "id": "tech-bl-3",
-              "badge": "🚫 Tránh",
-              "text": "Crossing your arms or checking your watch repeatedly signals boredom, arrogance, or disrespect.",
-              "viText": "Khoanh tay trước ngực hoặc liên tục nhìn đồng hồ là dấu hiệu của sự buồn chán, kiêu ngạo hoặc thiếu tôn trọng."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "Body language plays an enormous role in determining the success of any daily conversation.",
-            "answerVi": "Ngôn ngữ cơ thể đóng vai trò cực kỳ quan trọng quyết định sự thành công của mọi cuộc giao tiếp hàng ngày.",
-            "reason": "Actions speak louder than words; a friendly smile and open posture make people trust you even before you start speaking.",
-            "reasonVi": "Hành động có sức mạnh hơn lời nói; một nụ cười thân thiện và tư thế cởi mở khiến người khác tin tưởng bạn ngay trước khi bạn mở lời.",
-            "example": "For instance, during my scholarship interview, smiling warmly and keeping eye contact with the professors helped me win their full score.",
-            "exampleVi": "Ví dụ, trong buổi phỏng vấn học bổng, việc mỉm cười ấm áp và duy trì ánh mắt tự tin với các thầy cô đã giúp tôi đạt điểm tối đa."
+            "answer": "🎙️ Speaking Part 3 (Cách tự bảo vệ trên mạng): Users should enable two-factor authentication, avoid sharing private info publicly, and only read news from official government websites.",
+            "answerVi": "Speaking P3: Người dùng nên bật xác thực 2 lớp, tránh đăng thông tin cá nhân công khai và chỉ đọc tin từ báo chí chính thống.",
+            "reason": "🎙️ Trách nhiệm của nhà mạng và chính phủ: Tech companies must encrypt user databases and remove fake news accounts immediately.",
+            "reasonVi": "Trách nhiệm của nền tảng: Các công ty công nghệ phải mã hóa cơ sở dữ liệu người dùng và khóa ngay các tài khoản tung tin giả.",
+            "example": "📐 Lắp vào Writing Task 2 (Cybercrime / Data Privacy / Fake News): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Khớp hoàn toàn với Dạng 3, 4, 5 (Cause / Problem / Effects - Solution)."
           }
         }
       ]
@@ -374,419 +246,232 @@
   ],
   "rightBranches": [
     {
-      "id": "tech-group-shopping-smart",
-      "title": "Mua sắm trực tuyến, Thanh toán & Thiết bị thông minh",
-      "viTitle": "Mua hàng online vs tại tiệm, mua theo trào lưu, ví điện tử, chuyển nhầm tiền, AI & rác điện tử",
-      "badge": "Nhóm 2",
-      "tags": [
-        "Speaking P1-P2",
-        "Writing T1-T2"
+      "id": "tech-group-ai-ecommerce-cashless",
+      "title": "Artificial Intelligence (AI), Online Shopping, Cashless Payment & E-Waste",
+      "viTitle": "Trí tuệ Nhân tạo AI, Mua sắm Online, Thanh toán Không tiền mặt & Rác thải Điện tử",
+      "badge": "Nhánh 2 (15 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
+      "tags": ["AI & Automation", "Online Shopping", "Cashless Payment", "E-Waste", "Smart Home"],
+      "color": "#7c3aed",
+      "keywords": [
+        { "word": "artificial intelligence (AI) & automation", "meaning": "trí tuệ nhân tạo và tự động hóa" },
+        { "word": "boost work productivity", "meaning": "tăng năng suất làm việc vượt bậc" },
+        { "word": "automate repetitive tasks", "meaning": "tự động hóa các công việc lặp đi lặp lại" },
+        { "word": "replace low-skilled human labor", "meaning": "thay thế sức lao động giản đơn của con người" },
+        { "word": "over-reliance on AI tools", "meaning": "sự phụ thuộc, ỷ lại quá mức vào công cụ AI" },
+        { "word": "online shopping / e-commerce", "meaning": "mua sắm trực tuyến / thương mại điện tử" },
+        { "word": "compare prices and customer reviews", "meaning": "so sánh giá cả và đọc đánh giá của khách hàng" },
+        { "word": "door-to-door delivery", "meaning": "dịch vụ giao hàng tận cửa" },
+        { "word": "counterfeit or low-quality goods", "meaning": "hàng giả, hàng nhái hoặc kém chất lượng" },
+        { "word": "cashless payment / QR code & e-wallets", "meaning": "thanh toán không tiền mặt / quét QR & ví điện tử" },
+        { "word": "fast and hygienic transactions", "meaning": "giao dịch nhanh chóng và hợp vệ sinh" },
+        { "word": "transparent expense tracking", "meaning": "theo dõi lịch sử chi tiêu minh bạch" },
+        { "word": "electronic waste (e-waste)", "meaning": "rác thải điện tử (điện thoại, pin, máy tính hỏng)" },
+        { "word": "toxic heavy metals", "meaning": "các chất kim loại nặng độc hại ngấm vào đất nước" },
+        { "word": "smart home appliances", "meaning": "các thiết bị gia dụng thông minh tự động" }
       ],
-      "color": "#6366f1",
       "children": [
         {
-          "id": "tech-online-shopping",
-          "title": "Mua sắm trực tuyến vs Tại cửa hàng (Online Shopping vs Traditional Stores)",
-          "viTitle": "Săn sale Shopee, giao tận cửa vs Nguy cơ hàng giả, không được thử đồ trực tiếp",
-          "badge": "Đề 7",
+          "id": "tech-ai-automation-robots",
+          "title": "Trí tuệ Nhân tạo (AI), Robot & Tương lai Việc làm Con người",
+          "viTitle": "Kế thừa từ vựng: artificial intelligence (AI), boost work productivity, automate repetitive tasks, over-reliance on AI tools",
+          "badge": "Chủ đề 5",
           "examTags": [
-            "Speaking P1 (VLU 09, 11 - Shopping; VLU 10 - Shopping Online)",
-            "Writing T2 (VLU 09, 10 - Advantages & Disadvantages of Online Shopping)"
+            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Adv/Disadv]: Impact of Artificial Intelligence (AI) and Robots on Human Jobs and Society",
+            "Speaking P3: Will AI Replace Human Teachers and Workers in the Future?"
           ],
-          "color": "#6366f1",
+          "color": "#7c3aed",
           "keywords": [
-            {
-              "word": "online shopping apps (Shopee, Lazada)",
-              "meaning": "các ứng dụng mua sắm trực tuyến phổ biến"
-            },
-            {
-              "word": "delivered to doorstep",
-              "meaning": "giao hàng tận cửa nhà chỉ sau vài cú chạm tay"
-            },
-            {
-              "word": "hunt discount vouchers",
-              "meaning": "săn mã giảm giá và miễn phí vận chuyển"
-            },
-            {
-              "word": "cannot try clothes on",
-              "meaning": "không được sờ chất vải hay thử đồ trước khi mua"
-            },
-            {
-              "word": "fake or low-quality goods",
-              "meaning": "hàng giả, hàng kém chất lượng khác xa hình ảnh quảng cáo"
-            }
+            { "word": "artificial intelligence (AI)", "meaning": "trí tuệ nhân tạo" },
+            { "word": "boost work productivity", "meaning": "tăng năng suất làm việc" },
+            { "word": "automate repetitive tasks", "meaning": "tự động hóa việc lặp đi lặp lại" },
+            { "word": "over-reliance on AI tools", "meaning": "ỷ lại quá mức vào AI" }
           ],
           "items": [
             {
-              "id": "tech-os-1",
-              "badge": "⚡ Tiện lợi",
-              "text": "You can compare prices from dozens of sellers in seconds and have bulky items delivered right to your door.",
-              "viText": "Bạn có thể so sánh giá từ hàng chục người bán trong vài giây và được giao những món hàng cồng kềnh tận nhà."
+              "id": "t-ai-1",
+              "badge": "✅ Nhánh 1: Lợi ích tăng năng suất & Giải phóng sức lao động (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason why artificial intelligence (AI) is revolutionary is that it dramatically boosts work productivity. This is mainly because AI algorithms and robots can automate repetitive tasks, analyze big data in seconds, and work 24/7 in hazardous factories without getting tired. This means that companies save operational costs and humans are freed from boring manual labor.",
+              "viText": "Một lý do chính khiến trí tuệ nhân tạo (AI) mang tính cách mạng là nó làm tăng năng suất làm việc vượt bậc. Điều này chủ yếu là do thuật toán AI và robot có thể tự động hóa việc lặp đi lặp lại, phân tích dữ liệu lớn trong vài giây và làm việc 24/7 trong nhà máy độc hại mà không mệt. Điều này có nghĩa là doanh nghiệp tiết kiệm chi phí và con người được giải phóng khỏi lao động chân tay nhàm chán."
             },
             {
-              "id": "tech-os-2",
-              "badge": "🏷️ Rẻ hơn",
-              "text": "E-commerce apps regularly offer midnight flash sales and free shipping vouchers, saving consumers money.",
-              "viText": "Các sàn thương mại điện tử thường xuyên có flash sale nửa đêm và mã freeship, giúp người tiêu dùng tiết kiệm tiền."
+              "id": "t-ai-2",
+              "badge": "✅ Nhánh 2: Hỗ trợ Y tế & Giáo dục cá nhân hóa (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, AI tools act as intelligent virtual tutors in education and accurate diagnostic assistants in medicine. This is mainly because machine learning models can detect early signs of cancer on X-ray scans and translate foreign languages instantly. This means that public healthcare and learning become much more accessible.",
+              "viText": "Hơn nữa, công cụ AI đóng vai trò như gia sư ảo thông minh trong giáo dục và trợ lý chẩn đoán chính xác trong y khoa. Điều này chủ yếu là do các mô hình học máy có thể phát hiện sớm dấu hiệu ung thư trên phim X-quang và dịch ngoại ngữ tức thì. Điều này có nghĩa là y tế và việc học trở nên dễ tiếp cận hơn nhiều."
             },
             {
-              "id": "tech-os-3",
-              "badge": "👗 Nhược điểm",
-              "text": "Buying clothes online often leads to wrong sizes, and returning defective items by post is troublesome.",
-              "viText": "Mua quần áo online hay bị sai kích cỡ, và việc gửi trả hàng lỗi qua bưu điện rất mất thời gian, phiền toái."
+              "id": "t-ai-3",
+              "badge": "⚠️ Nhánh 3: Nguy cơ Thất nghiệp & Lười tư duy (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, one major drawback of rapid AI development is replacing low-skilled human labor and encouraging mental laziness. This is mainly because factory workers and call-center staff lose their jobs to automation, while students develop an over-reliance on AI tools to copy homework. This means that unemployment rises and critical thinking declines.",
+              "viText": "Mặt khác, một bất lợi lớn của sự phát triển AI nhanh chóng là thay thế lao động kỹ năng thấp và khuyến khích sự lười tư duy. Điều này chủ yếu là do công nhân nhà máy và nhân viên tổng đài mất việc vào tay tự động hóa, còn học sinh ỷ lại quá mức vào AI để chép bài tập. Điều này có nghĩa là thất nghiệp tăng và tư duy phản biện suy giảm."
+            },
+            {
+              "id": "t-ai-4",
+              "badge": "🎯 Nhánh 4: Giải pháp làm chủ AI & Ví dụ IT (Solution & IT Example)",
+              "text": "In my opinion, humans should learn to master AI as a supportive assistant rather than fearing it. For example, in my software engineering work, I use AI coding assistants to generate boilerplate code in seconds, allowing me to focus my brain on high-level system security that AI cannot do.",
+              "viText": "Theo tôi, con người nên học cách làm chủ AI như một trợ lý hỗ trợ thay vì sợ hãi nó. Ví dụ, trong công việc kỹ sư phần mềm của tôi, tôi dùng trợ lý lập trình AI để viết các đoạn code mẫu trong vài giây, giúp tôi tập trung trí não vào việc thiết kế bảo mật hệ thống cấp cao mà AI không tự làm được."
             }
           ],
           "areSkeleton": {
-            "answer": "I do most of my grocery and book shopping online, but I prefer traditional stores for clothes.",
-            "answerVi": "Tôi mua hầu hết đồ gia dụng và sách vở qua mạng, nhưng với quần áo thì tôi vẫn thích đến tiệm truyền thống.",
-            "reason": "Online apps save enormous travel time and offer cheap discounts, but trying clothes on at physical stores ensures a perfect fit.",
-            "reasonVi": "Ứng dụng online tiết kiệm thời gian đi lại và có nhiều giảm giá, nhưng việc thử đồ ở tiệm sẽ đảm bảo vừa vặn 100%.",
-            "example": "For example, I bought a winter jacket online last month, but the fabric was too thin and the size was way too large.",
-            "exampleVi": "Ví dụ, tháng trước tôi đặt mua một chiếc áo khoác mùa đông qua mạng, nhưng vải quá mỏng và kích cỡ lại quá rộng."
+            "answer": "🎙️ Speaking Part 3 (AI có thay thế hoàn toàn con người không?): AI can automate repetitive tasks, but it can never replace human emotional empathy, moral judgment, and creative leadership.",
+            "answerVi": "Speaking P3: AI có thể tự động hóa việc lặp lại, nhưng không bao giờ thay thế được sự thấu cảm, đạo đức và khả năng lãnh đạo sáng tạo của con người.",
+            "reason": "🎙️ Người lao động cần chuẩn bị gì: Workers must practice continuous learning and upgrade digital skills to work alongside AI.",
+            "reasonVi": "Cần chuẩn bị gì: Người lao động phải học tập không ngừng và nâng cấp kỹ năng số để làm việc cùng AI.",
+            "example": "📐 Lắp vào Writing Task 2 (AI Pros & Cons / Agree-Disagree): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Trọng tâm bậc nhất cho một học viên Thạc sĩ Khoa học máy tính."
           }
         },
         {
-          "id": "tech-trends-vs-needs",
-          "title": "Mua hàng theo trào lưu bạn bè vs Nhu cầu thực tế (Buying Trends vs Needs)",
-          "viTitle": "Chạy theo đồ hiệu để bằng bạn bằng bè vs Mua sắm thông minh theo túi tiền",
-          "badge": "Đề 8",
+          "id": "tech-online-shopping-vs-traditional",
+          "title": "Mua sắm Trực tuyến (Online Shopping) vs Cửa hàng Truyền thống",
+          "viTitle": "Kế thừa từ vựng: online shopping / e-commerce, compare prices and customer reviews, door-to-door delivery, counterfeit goods",
+          "badge": "Chủ đề 6",
           "examTags": [
-            "Writing T2 (VLU 09 - Buying Products to Fit in with Friends)",
-            "Writing T2 (VLU 10 - Buying Products Based on Trends vs Personal Needs)"
+            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Adv/Disadv]: Online Shopping vs Shopping at Traditional Brick-and-Mortar Stores",
+            "Speaking P3: Why E-Commerce Is Growing Rapidly & Problems of Online Shopping"
           ],
-          "color": "#6366f1",
+          "color": "#7c3aed",
           "keywords": [
-            {
-              "word": "peer influence / herd effect",
-              "meaning": "tâm lý bầy đàn, bắt chước bạn bè xung quanh"
-            },
-            {
-              "word": "buy trending luxury items",
-              "meaning": "mua sắm đồ hiệu, trà sữa hot trend đắt tiền"
-            },
-            {
-              "word": "practical personal needs",
-              "meaning": "nhu cầu sử dụng thực tế và thiết yếu của bản thân"
-            },
-            {
-              "word": "live within budget",
-              "meaning": "chi tiêu hợp lý trong khả năng tài chính của mình"
-            }
+            { "word": "online shopping / e-commerce", "meaning": "mua sắm trực tuyến" },
+            { "word": "compare prices and customer reviews", "meaning": "so sánh giá và đọc đánh giá" },
+            { "word": "door-to-door delivery", "meaning": "giao hàng tận nhà" },
+            { "word": "counterfeit or low-quality goods", "meaning": "hàng giả, hàng kém chất lượng" }
           ],
           "items": [
             {
-              "id": "tech-tn-1",
-              "badge": "🐑 Đua đòi",
-              "text": "Many students buy expensive branded sneakers or the latest iPhones just to look rich and gain peers' approval.",
-              "viText": "Nhiều sinh viên vay tiền mua giày hiệu đắt đỏ hoặc iPhone mới nhất chỉ để trông giàu có và được bạn bè nể phục."
+              "id": "t-os-1",
+              "badge": "✅ Nhánh 1: Sự tiện lợi 24/7 & Tiết kiệm chi phí (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason why online shopping has boomed is that it offers unmatched convenience and door-to-door delivery. This is mainly because consumers can order anything on their smartphones in minutes and compare prices and customer reviews across hundreds of shops. This means that busy workers save travel time and buy items at cheaper discount prices.",
+              "viText": "Một lý do chính khiến mua sắm trực tuyến bùng nổ là nó mang lại sự tiện lợi tuyệt đối và dịch vụ giao hàng tận cửa. Điều này chủ yếu là do người tiêu dùng có thể đặt mua mọi thứ trên điện thoại trong vài phút và so sánh giá cả cùng đánh giá của khách hàng qua hàng trăm gian hàng. Điều này có nghĩa là người bận rộn tiết kiệm thời gian đi lại và mua được hàng giảm giá rẻ hơn."
             },
             {
-              "id": "tech-tn-2",
-              "badge": "💸 Lãng phí",
-              "text": "Chasing fast-fashion trends drains monthly allowances quickly, leaving nothing for emergency savings.",
-              "viText": "Chạy theo các trào lưu thời trang nhanh làm cạn kiệt tiền sinh hoạt hàng tháng, chẳng còn đồng nào phòng thân."
+              "id": "t-os-2",
+              "badge": "⚠️ Nhánh 2: Rủi ro Hàng giả & Rác thải bao bì (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, one major drawback of e-commerce is receiving counterfeit or low-quality goods and creating massive plastic waste. This is mainly because buyers cannot touch or try on clothes before paying, and every parcel is wrapped in thick bubble wrap. This means that customers often waste time returning wrong items and pollute the environment.",
+              "viText": "Mặt khác, một nhược điểm lớn của thương mại điện tử là nhận phải hàng giả kém chất lượng và tạo ra lượng rác thải nhựa khổng lồ. Điều này chủ yếu là do người mua không thể sờ trực tiếp hay thử quần áo trước khi trả tiền, và mỗi kiện hàng đều bọc nhiều lớp nilon chống sốc. Điều này có nghĩa là khách hàng часто mất thời gian đổi trả hàng lỗi và gây ô nhiễm môi trường."
             },
             {
-              "id": "tech-tn-3",
-              "badge": "💡 Lời khuyên",
-              "text": "Ask yourself if you will use an item for at least six months before clicking the checkout button.",
-              "viText": "Hãy tự hỏi xem mình có dùng món đồ đó ít nhất 6 tháng hay không trước khi bấm nút thanh toán."
+              "id": "t-os-3",
+              "badge": "✅ Nhánh 3: Giá trị của Cửa hàng truyền thống (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, traditional local stores and supermarkets remain vital for fresh food and high-value items. This is mainly because shoppers can inspect product quality directly and enjoy weekend shopping outings with family friends. This means that online and offline retail will coexist rather than replace each other.",
+              "viText": "Hơn nữa, các cửa hàng truyền thống và siêu thị vẫn rất quan trọng đối với thực phẩm tươi sống và món đồ giá trị cao. Điều này chủ yếu là do người mua được kiểm tra chất lượng trực tiếp và tận hưởng buổi đi dạo mua sắm cuối tuần cùng gia đình. Điều này có nghĩa là bán lẻ online và truyền thống sẽ cùng tồn tại chứ không triệt tiêu nhau."
+            },
+            {
+              "id": "t-os-4",
+              "badge": "🎯 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & IT Example)",
+              "text": "For example, when buying inexpensive computer cables or books, I always order from official Mall stores on Shopee to save time, but when buying an expensive laptop, I go directly to a physical electronics store to test the screen and keyboard.",
+              "viText": "Ví dụ, khi mua dây cáp máy tính hoặc sách giá rẻ, tôi luôn đặt từ các gian hàng chính hãng (Mall) trên Shopee để tiết kiệm thời gian, nhưng khi mua máy tính xách tay đắt tiền, tôi đến trực tiếp cửa hàng điện máy để kiểm tra màn hình và bàn phím."
             }
           ],
           "areSkeleton": {
-            "answer": "People should always purchase goods based on their actual needs rather than copying social media trends.",
-            "answerVi": "Mọi người luôn nên mua sắm dựa trên nhu cầu sử dụng thực tế thay vì bắt chước trào lưu mạng xã hội.",
-            "reason": "Trends fade away within weeks, whereas purchasing practical necessities helps us save money for real future goals.",
-            "reasonVi": "Các trào lưu sẽ biến mất chỉ sau vài tuần, trong khi mua đồ thiết yếu giúp chúng ta tích lũy tiền cho mục tiêu tương lai.",
-            "example": "For instance, several classmates borrowed money to buy expensive Labubu toys just because everyone had them, which I find very wasteful.",
-            "exampleVi": "Ví dụ, vài người bạn cùng lớp của tôi đã vay tiền mua những con gấu Labubu đắt đỏ chỉ vì thấy ai cũng có, điều đó theo tôi rất lãng phí."
+            "answer": "🎙️ Speaking Part 3 (Ưu & nhược điểm của Online Shopping): Online shopping saves time with door-to-door delivery and easy price comparison, but buyers face risks of fake products and delivery delays.",
+            "answerVi": "Speaking P3: Mua sắm online tiết kiệm thời gian nhờ giao hàng tận nơi và dễ so sánh giá, nhưng người mua đối mặt rủi ro hàng giả và giao trễ.",
+            "reason": "🎙️ Cách mua hàng online an toàn: Consumers should only buy from verified official stores, read real photo reviews, and record an unboxing video.",
+            "reasonVi": "Cách mua an toàn: Người tiêu dùng chỉ nên mua từ gian hàng chính hãng, đọc đánh giá có ảnh thật và quay video mở hộp.",
+            "example": "📐 Lắp vào Writing Task 2 (Online Shopping vs Traditional Stores): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 3 + 4.",
+            "exampleVi": "Lắp trực tiếp vào Dạng 1 (Agree/Disagree) và Dạng 2 (Adv/Disadv)."
           }
         },
         {
-          "id": "tech-cashless-payment",
-          "title": "Thanh toán không dùng tiền mặt (Cashless Payment: Pros & Cons)",
-          "viTitle": "Quẹt mã QR, ví Momo tiện lợi, không sợ mất cắp ví vs Rủi ro lộ mã PIN, lỗi mạng",
-          "badge": "Đề 9",
+          "id": "tech-cashless-payment-ewallets",
+          "title": "Thanh toán Không tiền mặt (Cashless Payment: QR Code & Ví điện tử) vs Tiền mặt",
+          "viTitle": "Kế thừa từ vựng: cashless payment / QR code & e-wallets, fast and hygienic transactions, transparent expense tracking",
+          "badge": "Chủ đề 7 (Đề VLU 08/11)",
           "examTags": [
-            "Writing T2 (VLU 09 - Transition to Cashless Payment: Advantages & Disadvantages)"
+            "Task 2 [Dạng 2 - Adv/Disadv]: The Rise of a Cashless Society (QR Codes, E-Wallets, and Digital Banking) (VLU 08/11)",
+            "Speaking P3: Benefits and Risks of Using Digital Payments Instead of Cash"
           ],
-          "color": "#6366f1",
+          "color": "#7c3aed",
           "keywords": [
-            {
-              "word": "cashless payment",
-              "meaning": "thanh toán không dùng tiền mặt (chuyển khoản, quẹt thẻ)"
-            },
-            {
-              "word": "scan QR code",
-              "meaning": "quẹt mã VietQR nhanh chóng tại quầy thu ngân"
-            },
-            {
-              "word": "e-wallets (Momo, ZaloPay)",
-              "meaning": "ví điện tử tiện lợi cài trên điện thoại"
-            },
-            {
-              "word": "system downtime / no internet",
-              "meaning": "sự cố mất mạng hoặc hệ thống ngân hàng bảo trì"
-            },
-            {
-              "word": "overspending without noticing",
-              "meaning": "tiêu tiền quá tay vì không thấy tiền giấy vơi đi"
-            }
+            { "word": "cashless payment / QR code & e-wallets", "meaning": "thanh toán không tiền mặt / mã QR & ví điện tử" },
+            { "word": "fast and hygienic transactions", "meaning": "giao dịch nhanh chóng và vệ sinh" },
+            { "word": "transparent expense tracking", "meaning": "theo dõi chi tiêu minh bạch" },
+            { "word": "online banking fraud", "meaning": "lừa đảo chiếm đoạt tài khoản ngân hàng" }
           ],
           "items": [
             {
-              "id": "tech-cp-1",
-              "badge": "⚡ Siêu tiện",
-              "text": "You can pay for street street food, groceries, and taxi fares by simply scanning a QR code with your phone.",
-              "viText": "Bạn có thể trả tiền ăn vỉa hè, mua đồ tạp hóa và đi xe ôm chỉ bằng cách quét mã QR trên điện thoại."
+              "id": "t-cp-1",
+              "badge": "✅ Nhánh 1: Giao dịch siêu tốc & Không lo tiền lẻ/mất cắp (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason why cashless payment is widely preferred is that it enables fast and hygienic transactions. This is mainly because buyers only need to scan a QR code on their smartphone in two seconds without carrying bulky wallets or waiting for small change. This means that daily shopping becomes effortless and street pickpocketing is prevented.",
+              "viText": "Một lý do chính khiến thanh toán không tiền mặt được ưa chuộng là nó giúp giao dịch nhanh chóng và sạch sẽ. Điều này chủ yếu là do người mua chỉ cần quét mã QR trên điện thoại trong 2 giây mà không cần mang ví dày cộm hay chờ thối tiền lẻ. Điều này có nghĩa là việc mua sắm hàng ngày trở nên nhẹ nhàng và ngăn chặn nạn móc túi."
             },
             {
-              "id": "tech-cp-2",
-              "badge": "🛡️ An toàn",
-              "text": "You do not need to carry thick wallets of cash, reducing the risk of pickpocketing on crowded buses.",
-              "viText": "Bạn không cần mang theo ví tiền mặt dày cộm, giảm thiểu tối đa nguy cơ bị móc túi trên xe buýt đông người."
+              "id": "t-cp-2",
+              "badge": "✅ Nhánh 2: Quản lý chi tiêu cá nhân & Minh bạch thuế (Furthermore ➔ Because ➔ Meaning)",
+              "text": "Furthermore, digital banking apps and e-wallets provide transparent expense tracking for both individuals and governments. This is mainly because every payment is automatically recorded with exact dates and amounts in the app history. This means that young people can control their monthly budget easily and authorities can prevent tax evasion.",
+              "viText": "Hơn nữa, ứng dụng ngân hàng số và ví điện tử giúp theo dõi chi tiêu minh bạch cho cả cá nhân lẫn nhà nước. Điều này chủ yếu là do mọi giao dịch đều được tự động lưu lại ngày giờ và số tiền chính xác trong lịch sử ứng dụng. Điều này có nghĩa là người trẻ dễ dàng kiểm soát ngân sách tháng và cơ quan chức năng chống được thất thu thuế."
             },
             {
-              "id": "tech-cp-3",
-              "badge": "⚠️ Bất tiện",
-              "text": "If your phone runs out of battery or local mobile internet fails, you cannot pay for your meal.",
-              "viText": "Nếu điện thoại hết pin hoặc mạng di động bị mất sóng, bạn sẽ không thể thanh toán được bữa ăn."
+              "id": "t-cp-3",
+              "badge": "⚠️ Nhánh 3: Bất lợi khi Mất mạng, Hết pin & Rủi ro lừa đảo (On the other hand ➔ Because ➔ Meaning)",
+              "text": "On the other hand, relying 100% on cashless payment has notable drawbacks regarding technical failures and cybersecurity. This is mainly because users cannot pay if their phone battery dies, the internet disconnects, or bank servers crash, and elderly citizens often fall victim to phishing scams. This means that keeping a small amount of backup cash is still necessary.",
+              "viText": "Mặt khác, phụ thuộc 100% vào thanh toán không tiền mặt có những bất cập lớn về lỗi kỹ thuật và an ninh mạng. Điều này chủ yếu là do người dùng không thể trả tiền nếu điện thoại hết pin, mất mạng hoặc lỗi hệ thống ngân hàng, đồng thời người lớn tuổi dễ bị lừa đảo qua mạng. Điều này có nghĩa là giữ một ít tiền mặt dự phòng vẫn rất cần thiết."
+            },
+            {
+              "id": "t-cp-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, in Hanoi today, I use VietQR and Apple Pay on my smartphone to pay for everything from bus tickets to morning pho, while setting a daily transfer limit and biometric FaceID lock to keep my bank account secure.",
+              "viText": "Ví dụ, tại Hà Nội hiện nay, tôi dùng mã VietQR và Apple Pay trên điện thoại để thanh toán mọi thứ từ vé xe buýt đến bát phở sáng, đồng thời cài hạn mức chuyển tiền hàng ngày và khóa sinh trắc học FaceID để bảo vệ tài khoản ngân hàng an toàn."
             }
           ],
           "areSkeleton": {
-            "answer": "Going cashless brings immense convenience and is definitely the future of modern commerce.",
-            "answerVi": "Thanh toán không tiền mặt mang lại sự tiện lợi vượt bậc và chắc chắn là tương lai của thương mại hiện đại.",
-            "reason": "It saves time counting change and protects people from losing cash, although carrying a little emergency cash is still wise.",
-            "reasonVi": "Nó giúp tiết kiệm thời gian đếm tiền thối và tránh mất tiền mặt, dù việc mang theo ít tiền mặt phòng thân vẫn rất cần thiết.",
-            "example": "For example, I have not used paper money for months; even the traditional market aunties now have bank QR codes printed out.",
-            "exampleVi": "Ví dụ, tôi đã không dùng tiền giấy suốt nhiều tháng; thậm chí các cô bán rau ngoài chợ truyền thống giờ cũng in sẵn mã QR ngân hàng."
+            "answer": "🎙️ Speaking Part 3 & Task 2 (Đề VLU 08/11 - Cashless Society): Cashless payment offers speed, convenience, and transparent budget tracking, though users must guard against technical outages and cyber scams.",
+            "answerVi": "Speaking P3 & Task 2 (VLU 08/11): Thanh toán không tiền mặt mang lại tốc độ, sự tiện lợi và quản lý chi tiêu rõ ràng, dù người dùng phải đề phòng lúc lỗi mạng và lừa đảo.",
+            "reason": "🎙️ Tại sao người già ở nông thôn vẫn thích tiền mặt: Many elderly people in rural areas lack smartphones and find digital banking interfaces confusing.",
+            "reasonVi": "Tại sao người già vẫn dùng tiền mặt: Nhiều người lớn tuổi ở nông thôn không có smartphone và thấy giao diện ngân hàng số phức tạp.",
+            "example": "📐 Lắp vào Writing Task 2 (Đề VLU 08/11 - Cashless Society Adv/Disadv): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Trúng tủ 100% đề thi VLU 08/11."
           }
         },
         {
-          "id": "tech-wrong-bank-transfer",
-          "title": "Xử lý khi nhận tiền chuyển khoản nhầm (Handling Wrongly Transferred Money)",
-          "viTitle": "Tuyệt đối không tiêu xài, báo ngay cho ngân hàng và công an để hoàn trả an toàn",
-          "badge": "Đề 10",
+          "id": "tech-ewaste-smart-devices",
+          "title": "Rác thải Điện tử (E-Waste), Đổi đồ Công nghệ & Thiết bị Thông minh",
+          "viTitle": "Kế thừa từ vựng: electronic waste (e-waste), toxic heavy metals, smart home appliances, automate repetitive tasks",
+          "badge": "Chủ đề 8",
           "examTags": [
-            "Speaking P2 (VLU 09 - Handling Wrongly Transferred Money into Bank Account: Spend vs Wait vs Report to Bank/Police)"
+            "Task 2 [Dạng 3, 4, 5 - Cause/Problem/Effects-Solution]: Growing Electronic Waste (E-Waste) From Frequent Upgrading of Smartphones and Computers",
+            "Speaking P3: Benefits of Smart Home Appliances & How to Reduce Tech Waste"
           ],
-          "color": "#6366f1",
+          "color": "#7c3aed",
           "keywords": [
-            {
-              "word": "wrongly transferred money",
-              "meaning": "tiền chuyển nhầm từ người lạ vào tài khoản ngân hàng"
-            },
-            {
-              "word": "report to bank hotline",
-              "meaning": "gọi ngay tổng đài ngân hàng để khóa và nhờ hỗ trợ"
-            },
-            {
-              "word": "illegal appropriation",
-              "meaning": "tội chiếm đoạt tài sản trái phép có thể bị phạt tù"
-            },
-            {
-              "word": "scam trap",
-              "meaning": "bẫy giả vờ chuyển nhầm rồi đòi nợ với lãi suất cắt cổ"
-            }
+            { "word": "electronic waste (e-waste)", "meaning": "rác thải điện tử" },
+            { "word": "toxic heavy metals", "meaning": "kim loại nặng độc hại (chì, thủy ngân trong pin)" },
+            { "word": "smart home appliances", "meaning": "thiết bị gia dụng thông minh" },
+            { "word": "trade-in and recycling programs", "meaning": "chương trình thu cũ đổi mới và tái chế" }
           ],
           "items": [
             {
-              "id": "tech-wt-1",
-              "badge": "🚫 Cấm tiêu",
-              "text": "Never spend the transferred money because using someone else's mistakenly sent money is illegal and punishable by law.",
-              "viText": "Tuyệt đối không được tiêu xài số tiền đó vì sử dụng tiền người khác chuyển nhầm là vi phạm pháp luật và bị truy cứu hình sự."
+              "id": "t-ew-1",
+              "badge": "✅ Nhánh 1: Lợi ích của Thiết bị gia dụng thông minh (One major reason ➔ Because ➔ Meaning)",
+              "text": "One major reason why smart home appliances are popular is that they save housework time and energy. This is mainly because robotic vacuums, dishwashers, and smart lighting systems can be controlled remotely via smartphone apps. This means that busy working families can enjoy a clean, comfortable home and relax more in the evening.",
+              "viText": "Một lý do chính khiến thiết bị gia dụng thông minh được ưa chuộng là chúng tiết kiệm thời gian làm việc nhà và điện năng. Điều này chủ yếu là do robot hút bụi, máy rửa bát và hệ thống đèn thông minh có thể điều khiển từ xa qua điện thoại. Điều này có nghĩa là các gia đình bận rộn có ngôi nhà sạch sẽ tiện nghi và nghỉ ngơi nhiều hơn vào buổi tối."
             },
             {
-              "id": "tech-wt-2",
-              "badge": "📞 Báo ngân hàng",
-              "text": "Contact your bank branch immediately so they can verify the sender's identity and initiate a safe refund protocol.",
-              "viText": "Liên hệ ngay với chi nhánh ngân hàng để họ xác minh danh tính người gửi và tiến hành thủ tục hoàn trả an toàn."
+              "id": "t-ew-2",
+              "badge": "⚠️ Nhánh 2: Nguyên nhân & Hậu quả của Rác thải điện tử E-waste (One contributing factor ➔ Because ➔ Meaning)",
+              "text": "On the other hand, one contributing factor to the alarming rise in electronic waste (e-waste) is aggressive marketing and short product lifespans. This is mainly because consumers throw away working smartphones every year to buy the latest models, and discarded batteries leak toxic heavy metals like lead and mercury into soil and groundwater. This means that e-waste severely poisons the environment and human health.",
+              "viText": "Mặt khác, một yếu tố làm gia tăng đáng báo động rác thải điện tử là quảng cáo rầm rộ và vòng đời sản phẩm ngắn. Điều này chủ yếu là do người tiêu dùng vứt bỏ điện thoại đang dùng tốt mỗi năm để mua mẫu mới nhất, làm pin hỏng rò rỉ kim loại nặng độc hại như chì và thủy ngân vào đất và nước ngầm. Điều này có nghĩa là rác điện tử đầu độc nghiêm trọng môi trường và sức khỏe."
             },
             {
-              "id": "tech-wt-3",
-              "badge": "🛡️ Cảnh giác bẫy",
-              "text": "Do not transfer money back directly to private phone numbers without official bank records, as it could be a high-interest scam.",
-              "viText": "Không tự ý chuyển tiền lại cho các số điện thoại lạ nhắn tin đòi, vì đây có thể là bẫy cho vay nặng lãi giả mạo."
+              "id": "t-ew-3",
+              "badge": "💡 Nhánh 3: Giải pháp từ Nhà sản xuất & Người tiêu dùng (Best approach ➔ Because ➔ Meaning)",
+              "text": "In my opinion, the best approach to tackle e-waste is enforcing trade-in recycling programs and repairing old devices. This is mainly because manufacturers should give discounts when customers return old phones for safe mineral recovery, while users should only upgrade devices when truly broken. This means that valuable resources are conserved.",
+              "viText": "Theo tôi, giải pháp tốt nhất để xử lý rác điện tử là bắt buộc các chương trình thu cũ đổi mới tái chế và sửa chữa thiết bị cũ. Điều này chủ yếu là do nhà sản xuất nên giảm giá khi khách trả lại máy cũ để thu hồi linh kiện an toàn, còn người dùng chỉ nên đổi máy khi thực sự hỏng. Điều này có nghĩa là tài nguyên quý giá được bảo tồn."
+            },
+            {
+              "id": "t-ew-4",
+              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
+              "text": "For example, instead of throwing away my 4-year-old laptop when it became slow, I upgraded its RAM and SSD drive myself for just 1 million VND, making it run smoothly for another three years and reducing e-waste.",
+              "viText": "Ví dụ, thay vì vứt bỏ chiếc máy tính xách tay 4 năm tuổi khi nó chạy chậm, tôi đã tự nâng cấp thanh RAM và ổ cứng SSD chỉ với 1 triệu đồng, giúp máy chạy mượt thêm 3 năm nữa và giảm rác thải điện tử."
             }
           ],
           "areSkeleton": {
-            "answer": "If an unexpected amount of money is transferred into my account, reporting it directly to the bank is the best choice.",
-            "answerVi": "Nếu có một khoản tiền lạ bất ngờ chuyển vào tài khoản của tôi, báo ngay cho ngân hàng là lựa chọn đúng đắn nhất.",
-            "reason": "This protects you from falling into online loan scams and ensures the money returns legally to the true sender.",
-            "reasonVi": "Điều này giúp bạn tránh sập bẫy lừa đảo tín dụng đen và đảm bảo số tiền được hoàn trả hợp pháp cho chủ nhân thực sự.",
-            "example": "For instance, when a stranger transferred 20 million VND into my friend's account by mistake, he went to Vietcombank right away to refund it cleanly.",
-            "exampleVi": "Ví dụ, khi một người lạ vô tình chuyển nhầm 20 triệu vào tài khoản bạn tôi, bạn ấy đã đến ngay Vietcombank để làm thủ tục hoàn trả rõ ràng."
-          }
-        },
-        {
-          "id": "tech-smart-devices",
-          "title": "Tư vấn mua Thiết bị thông minh (Smartphones, Computers & Smartwatches)",
-          "viTitle": "Chọn điện thoại chụp ảnh đẹp, laptop học tập nhẹ bền & đồng hồ thông minh đo nhịp tim",
-          "badge": "Đề 11",
-          "examTags": [
-            "Speaking P1 (VLU 10; UFM 10 - Smartwatches & Wearable Technology)",
-            "Speaking P1 (UEH 10 - Mobile Phone Brands & Daily Usage)",
-            "Writing T1 (VLU 09 - Recommending a Smartphone to a Friend; Buying a Computer vs Clothes)"
-          ],
-          "color": "#6366f1",
-          "keywords": [
-            {
-              "word": "smartwatch & fitness tracker",
-              "meaning": "đồng hồ thông minh đo nhịp tim, đếm bước chân"
-            },
-            {
-              "word": "long battery life",
-              "meaning": "thời lượng pin trâu dùng được 2-3 ngày"
-            },
-            {
-              "word": "lightweight laptop for students",
-              "meaning": "máy tính xách tay mỏng nhẹ, pin khỏe cho sinh viên"
-            },
-            {
-              "word": "sharp camera & clear display",
-              "meaning": "màn hình hiển thị sắc nét và camera chụp ảnh đẹp"
-            }
-          ],
-          "items": [
-            {
-              "id": "tech-sd-1",
-              "badge": "⌚ Đồng hồ",
-              "text": "Smartwatches track your heart rate, count daily steps, and alert you if you sit still for too long.",
-              "viText": "Đồng hồ thông minh theo dõi nhịp tim, đếm số bước chân và nhắc nhở bạn đứng dậy nếu ngồi lì quá lâu."
-            },
-            {
-              "id": "tech-sd-2",
-              "badge": "💻 Máy tính",
-              "text": "Investing award money into a durable laptop is much smarter than buying clothes because it supports coding and office work.",
-              "viText": "Dùng tiền thưởng đầu tư một chiếc laptop bền bỉ thông minh hơn nhiều so với mua quần áo vì nó phục vụ học tập và công việc."
-            },
-            {
-              "id": "tech-sd-3",
-              "badge": "📱 Điện thoại",
-              "text": "Mid-range smartphones with large screens, sharp cameras, and long-lasting batteries offer the best value for money.",
-              "viText": "Các dòng điện thoại tầm trung có màn hình to, camera chụp nét và pin trâu là lựa chọn đáng tiền nhất cho sinh viên."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "Among modern wearable gadgets, I think a smartwatch is a truly wonderful companion for health tracking.",
-            "answerVi": "Trong số các thiết bị công nghệ đeo tay hiện nay, tôi thấy đồng hồ thông minh thực sự là người bạn đồng hành tuyệt vời cho sức khỏe.",
-            "reason": "It acts as a personal doctor on your wrist, tracking sleep quality and nudging you to exercise every day.",
-            "reasonVi": "Nó như một bác sĩ cá nhân trên cổ tay, theo dõi chất lượng giấc ngủ và nhắc nhở bạn vận động mỗi ngày.",
-            "example": "For example, wearing a smartwatch motivated me to hit 8,000 steps daily and drastically improved my cardiovascular fitness.",
-            "exampleVi": "Ví dụ, việc đeo đồng hồ thông minh đã thôi thúc tôi đi bộ đủ 8.000 bước mỗi ngày và cải thiện rõ rệt sức bền tim mạch."
-          }
-        },
-        {
-          "id": "tech-ai-daily-life",
-          "title": "Trí tuệ nhân tạo (AI) trong đời sống (Artificial Intelligence in Daily Life)",
-          "viTitle": "Nhận diện khuôn mặt, đề xuất phim ảnh/nhạc, trợ lý ảo giọng nói & tự động hóa",
-          "badge": "Đề 12",
-          "examTags": [
-            "Speaking P1 (VLU 10 - Artificial Intelligence in Daily Life)",
-            "Reading P4 (VLU 11 - AI in Modern Society)"
-          ],
-          "color": "#6366f1",
-          "keywords": [
-            {
-              "word": "artificial intelligence (AI)",
-              "meaning": "trí tuệ nhân tạo mô phỏng bộ não con người"
-            },
-            {
-              "word": "facial recognition",
-              "meaning": "công nghệ nhận diện khuôn mặt để mở khóa điện thoại"
-            },
-            {
-              "word": "personalized recommendations",
-              "meaning": "thuật toán gợi ý bài hát, phim ảnh và video đúng sở thích"
-            },
-            {
-              "word": "virtual voice assistant",
-              "meaning": "trợ lý ảo điều khiển bằng giọng nói (Siri, Google Assistant)"
-            }
-          ],
-          "items": [
-            {
-              "id": "tech-adl-1",
-              "badge": "🔓 Tiện lợi",
-              "text": "AI powers face unlock on smartphones and filters out spam calls automatically, keeping daily life smooth.",
-              "viText": "AI vận hành tính năng mở khóa bằng khuôn mặt và tự động chặn cuộc gọi rác, giúp cuộc sống thuận tiện hơn."
-            },
-            {
-              "id": "tech-adl-2",
-              "badge": "🎵 Giải trí",
-              "text": "Algorithms on Spotify and YouTube learn your musical taste and suggest perfect relaxing playlists.",
-              "viText": "Thuật toán trên Spotify và YouTube hiểu sở thích âm nhạc của bạn và gợi ý những danh sách bài hát thư giãn tuyệt vời."
-            },
-            {
-              "id": "tech-adl-3",
-              "badge": "🤖 Tương lai",
-              "text": "While AI automates repetitive tasks, human empathy, creative art, and emotional caring remain irreplaceable.",
-              "viText": "Dù AI tự động hóa các tác vụ lặp đi lặp lại, sự thấu cảm, nghệ thuật sáng tạo và lòng trắc ẩn của con người vẫn là độc nhất."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "AI has integrated deeply into our daily life and made everything much faster and personalized.",
-            "answerVi": "Trí tuệ nhân tạo đã len lỏi sâu vào cuộc sống thường nhật và làm cho mọi thứ trở nên nhanh chóng, cá nhân hóa hơn.",
-            "reason": "From recommending movies to translating foreign menus when traveling, AI saves hours of manual searching.",
-            "reasonVi": "Từ việc gợi ý phim hay đến việc dịch menu tiếng nước ngoài khi đi du lịch, AI giúp tiết kiệm hàng giờ tra cứu thủ công.",
-            "example": "For instance, I use Google Lens to translate English product labels instantly just by pointing my phone camera at them.",
-            "exampleVi": "Ví dụ, tôi dùng Google Lens để dịch nhãn mác sản phẩm tiếng Anh ngay tức khắc chỉ bằng cách hướng camera điện thoại vào đó."
-          }
-        },
-        {
-          "id": "tech-electronic-waste",
-          "title": "Rác thải điện tử: Tác hại & Giải pháp (Electronic Waste / E-waste)",
-          "viTitle": "Pin cũ, đồ điện hỏng xả độc chì/thủy ngân vào nguồn nước & chương trình thu gom cũ đổi mới",
-          "badge": "Đề 13",
-          "examTags": [
-            "Writing T2 (VLU 09 - Causes and Solutions of Electronic Waste / E-waste)"
-          ],
-          "color": "#6366f1",
-          "keywords": [
-            {
-              "word": "electronic waste (e-waste)",
-              "meaning": "rác thải điện tử (pin cũ, điện thoại hỏng, vi mạch)"
-            },
-            {
-              "word": "toxic heavy metals (lead, mercury)",
-              "meaning": "kim loại nặng độc hại (chì, thủy ngân) ngấm vào đất và nước"
-            },
-            {
-              "word": "trade-in old phones",
-              "meaning": "chương trình thu cũ đổi mới tại các siêu thị điện máy"
-            },
-            {
-              "word": "repair instead of buying new",
-              "meaning": "sửa chữa linh kiện thay vì vứt bỏ mua máy mới liên tục"
-            }
-          ],
-          "items": [
-            {
-              "id": "tech-ew-1",
-              "badge": "☠️ Tác hại",
-              "text": "Throwing old batteries into normal trash bins leaks toxic lead and mercury, contaminating groundwater for decades.",
-              "viText": "Vứt pin cũ vào thùng rác thông thường làm rò rỉ chì và thủy ngân độc hại, làm ô nhiễm nguồn nước ngầm suốt nhiều thập kỷ."
-            },
-            {
-              "id": "tech-ew-2",
-              "badge": "🔄 Thu gom",
-              "text": "Electronics manufacturers should set up collection boxes in supermarkets to recycle precious metals inside old phones.",
-              "viText": "Các hãng sản xuất điện tử nên đặt thùng thu gom tại siêu thị để tái chế kim loại quý bên trong điện thoại cũ."
-            },
-            {
-              "id": "tech-ew-3",
-              "badge": "💡 Người dùng",
-              "text": "Consumers should stop replacing smartphones every single year and support repairing broken screens.",
-              "viText": "Người tiêu dùng nên dừng thói quen đổi điện thoại mới mỗi năm và ưu tiên sửa chữa màn hình khi bị vỡ."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "Electronic waste is an alarming environmental threat that requires proper recycling policies from governments.",
-            "answerVi": "Rác thải điện tử là một hiểm họa môi trường đáng báo động đòi hỏi chính sách tái chế chuẩn mực từ các chính phủ.",
-            "reason": "Discarded batteries contain poisonous chemicals that seep into drinking water and poison human health permanently.",
-            "reasonVi": "Pin thải chứa hóa chất độc hại ngấm sâu vào nguồn nước sinh hoạt và hủy hoại sức khỏe con người lâu dài.",
-            "example": "For example, my university placed special green bins to collect used batteries and old chargers, preventing them from being buried in landfills.",
-            "exampleVi": "Ví dụ, trường đại học của tôi đã đặt các thùng rác xanh đặc biệt để thu gom pin và củ sạc cũ, ngăn chúng bị chôn lấp ở các bãi rác."
+            "answer": "🎙️ Speaking Part 3 (Nguyên nhân và Giải pháp Rác thải điện tử): E-waste grows because people upgrade phones too often; we can reduce it by repairing old gadgets and joining manufacturer trade-in recycling programs.",
+            "answerVi": "Speaking P3: Rác điện tử tăng do người ta đổi điện thoại quá thường xuyên; ta có thể giảm thiểu bằng cách sửa thiết bị cũ và tham gia chương trình thu cũ đổi mới để tái chế.",
+            "reason": "🎙️ Tác hại của việc vứt pin và điện thoại bừa bãi: Electronic components contain toxic heavy metals that contaminate drinking water and soil for decades.",
+            "reasonVi": "Tác hại: Linh kiện điện tử chứa kim loại nặng độc hại làm ô nhiễm nguồn nước uống và đất đai trong hàng chục năm.",
+            "example": "📐 Lắp vào Writing Task 2 (E-Waste / Throwaway Tech Culture): Đoạn 1 lắp Nhánh 2; Đoạn 2 lắp Nhánh 3 + 4.",
+            "exampleVi": "Khớp 100% vào Dạng 3, 4, 5 (Cause / Problem / Effects - Solution)."
           }
         }
       ]

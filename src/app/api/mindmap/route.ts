@@ -13,39 +13,45 @@ type HubMetadata = {
 const MINDMAP_DIR = path.join(process.cwd(), 'src', 'data', 'mindmap');
 const fileCache = new Map<string, unknown>();
 
-const VALID_HUBS = ['education', 'health', 'technology', 'work', 'society'] as const;
+const VALID_HUBS = ['work', 'education', 'health', 'technology', 'society', 'letters'] as const;
 type ValidHub = (typeof VALID_HUBS)[number];
 
 const HUBS_METADATA: Record<ValidHub, Omit<HubMetadata, 'topicCount'>> = {
+  work: {
+    id: 'work',
+    title: 'Work, Career & Job Hugging',
+    vietnameseTitle: 'Công việc, Sự nghiệp & Job Hugging',
+    icon: 'Briefcase',
+  },
   education: {
     id: 'education',
-    title: 'Education & Skills',
-    vietnameseTitle: 'Giáo dục, Học tập & Kỹ năng',
+    title: 'Education, Campus & Learning',
+    vietnameseTitle: 'Giáo dục, Campus & Học tập',
     icon: 'GraduationCap',
   },
   health: {
     id: 'health',
-    title: 'Health & Lifestyle',
-    vietnameseTitle: 'Sức khỏe & Lối sống',
+    title: 'Health, Habits & Lifestyle',
+    vietnameseTitle: 'Sức khỏe, Thói quen & Lối sống',
     icon: 'HeartPulse',
   },
   technology: {
     id: 'technology',
-    title: 'Technology & Digital Life',
-    vietnameseTitle: 'Công nghệ & Đời sống số',
+    title: 'Technology, Social Media & AI',
+    vietnameseTitle: 'Công nghệ, Mạng xã hội & AI',
     icon: 'Laptop',
-  },
-  work: {
-    id: 'work',
-    title: 'Work, Money & Career',
-    vietnameseTitle: 'Công việc, Tiền bạc & Sự nghiệp',
-    icon: 'Briefcase',
   },
   society: {
     id: 'society',
-    title: 'Society & Community',
-    vietnameseTitle: 'Xã hội, Gia đình & Môi trường',
+    title: 'Society, Charity & Environment',
+    vietnameseTitle: 'Xã hội, Từ thiện & Môi trường',
     icon: 'Users',
+  },
+  letters: {
+    id: 'letters',
+    title: 'Writing Task 1: 6 Letter Types',
+    vietnameseTitle: 'Writing Task 1: 6 Dạng Thư Mẫu',
+    icon: 'FileText',
   },
 };
 
