@@ -418,7 +418,7 @@ function OutlineDocumentView({
                       </span>
                     </div>
 
-                    {/* Kho Từ Vựng Dùng Chung Cấp Nhánh Lớn (Đánh số 1, 2, 3... như mẫu Job Hugging) */}
+                    {/* Kho Từ Vựng Dùng Chung Cấp Nhánh Lớn (Đánh số 1, 2, 3...) */}
                     {branchKeywords.length > 0 && (
                       <div className="p-3 bg-amber-50/40 dark:bg-slate-950/60 border-t border-slate-200/80 dark:border-slate-800 space-y-1.5">
                         <div className="text-[11px] font-bold uppercase tracking-wider text-amber-800 dark:text-amber-300 flex items-center justify-between">
