@@ -20,7 +20,7 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "speaking/VLU_11-2026.json",
-      "count": 67
+      "count": 70
     },
     {
       "school": "VLU",
@@ -81,6 +81,12 @@
       "batch": "11/2026",
       "file": "speaking/HUST_11-2026.json",
       "count": 4
+    },
+    {
+      "school": "UFM",
+      "batch": "11/2026",
+      "file": "speaking/UFM_11-2026.json",
+      "count": 4
     }
   ],
   "writing": [
@@ -88,7 +94,7 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "writing/VLU_11-2026.json",
-      "count": 42
+      "count": 44
     },
     {
       "school": "VLU",
@@ -149,6 +155,12 @@
       "batch": "11/2026",
       "file": "writing/HUST_11-2026.json",
       "count": 2
+    },
+    {
+      "school": "UFM",
+      "batch": "11/2026",
+      "file": "writing/UFM_11-2026.json",
+      "count": 4
     }
   ],
   "listening": {

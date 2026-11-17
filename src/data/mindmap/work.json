@@ -1,258 +1,523 @@
 {
   "id": "work",
-  "title": "Work, Career & Job Hugging",
-  "vietnameseTitle": "Công việc, Sự nghiệp & Bám trụ Nghề nghiệp",
-  "description": "Mindmap kế thừa từ Kho 40 Từ Vựng Job Hugging & Career kết hợp Chuỗi Bậc Thang 5 Cấu Trúc (One major reason -> This is mainly because -> This means that) cho Writing Task 2 & Speaking Part 2, 3.",
+  "title": "Work, Career, Job Hugging & Skills",
+  "vietnameseTitle": "Công việc, Sự nghiệp, Bám việc & Kỹ năng",
+  "description": "Mindmap từ vựng B2 bám sát đề thi VSTEP Speaking & Writing (10 chủ đề cốt lõi, 62 cụm từ B2 chuẩn xác).",
   "icon": "Briefcase",
   "centerNode": {
     "title": "Work & Career Hub",
-    "subtitle": "40 Từ Vựng Gốc Dùng Chung – 8 Chủ Đề Xương Sống",
+    "subtitle": "62 Từ Vựng B2 Bám Đề – 10 Chủ Đề Cốt Lõi",
     "categoryBadge": "Topic Hub 4 (Hệ Thống Kế Thừa Ý B2)"
   },
   "leftBranches": [
     {
       "id": "work-group-career-transitions",
-      "title": "Job Hugging, Self-Employment, Remote Work & Gap Year",
-      "viTitle": "Bám trụ Công việc (Job Hugging), Tự làm chủ, Làm từ xa & Nghỉ Gap Year",
-      "badge": "Nhánh 1 (20 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
-      "tags": ["Job Hugging", "Self-Employed", "Remote Work", "Gap Year", "Comfort Zone"],
+      "title": "Job Hugging, Job-Hopping, Self-Employment, Remote Work & Gap Year (Bám việc, Nhảy việc, Tự làm chủ & Gap Year)",
+      "viTitle": "Bám trụ Công việc (Job Hugging), Nhảy việc, Tự làm chủ, Làm từ xa & Gap Year",
+      "badge": "Nhánh 1 (32 Từ Vựng Gốc + 5 Chủ Đề Cốt Lõi)",
+      "tags": [
+        "Job-Hopping & Job Hugging",
+        "Self-Employment",
+        "Remote Work",
+        "Gap Year",
+        "Youth Jobs"
+      ],
       "color": "#0284c7",
       "keywords": [
-        { "word": "job hugging", "meaning": "bám giữ công việc hiện tại, không muốn thay đổi" },
-        { "word": "survival tactic", "meaning": "chiến thuật sinh tồn trong thời kỳ kinh tế khó khăn" },
-        { "word": "fear-based status quo trap", "meaning": "cái bẫy hiện trạng xuất phát từ nỗi sợ" },
-        { "word": "comfort zone", "meaning": "vùng an toàn quen thuộc" },
-        { "word": "career stagnation", "meaning": "sự trì trệ, giẫm chân tại chỗ trong sự nghiệp" },
-        { "word": "cling to / hold on for dear life", "meaning": "bám chặt, giữ lấy công việc vì sợ mất đi" },
-        { "word": "anchor in place", "meaning": "neo giữ, cố định bản thân tại một vị trí" },
-        { "word": "loss aversion", "meaning": "xu hướng tâm lý sợ mất mát" },
-        { "word": "job security", "meaning": "sự an toàn, ổn định nghề nghiệp" },
-        { "word": "risk aversion", "meaning": "tâm lý ngại rủi ro, sợ thất bại" },
-        { "word": "complacency", "meaning": "sự an phận, tự mãn với hiện tại" },
-        { "word": "fear of change", "meaning": "nỗi sợ sự thay đổi môi trường mới" },
-        { "word": "comfort-driven decision", "meaning": "quyết định dựa trên sự thoải mái an nhàn" },
-        { "word": "psychological safety", "meaning": "cảm giác an toàn về mặt tâm lý" },
-        { "word": "burnout", "meaning": "sự kiệt sức trong công việc" },
-        { "word": "disengagement", "meaning": "sự mất kết nối, thiếu hứng thú làm việc" },
-        { "word": "opportunity cost", "meaning": "chi phí cơ hội bị bỏ lỡ" },
-        { "word": "self-employed / freelancer", "meaning": "người tự làm chủ / làm nghề tự do" },
-        { "word": "career transition", "meaning": "quá trình chuyển đổi sự nghiệp" },
-        { "word": "self-reflection", "meaning": "sự tự nhìn nhận, đánh giá lại bản thân" }
+        {
+          "word": "job hugging",
+          "meaning": "bám giữ công việc hiện tại vì ngại rủi ro / sợ thay đổi (trái ngược job-hopping)"
+        },
+        {
+          "word": "job-hopping",
+          "meaning": "nhảy việc (thay đổi công ty liên tục)"
+        },
+        {
+          "word": "career advancement",
+          "meaning": "thăng tiến sự nghiệp"
+        },
+        {
+          "word": "salary expectations",
+          "meaning": "kỳ vọng mức lương"
+        },
+        {
+          "word": "poor work attitude",
+          "meaning": "thái độ làm việc kém / thiếu chuyên nghiệp"
+        },
+        {
+          "word": "practical skills",
+          "meaning": "kỹ năng thực tế trong công việc"
+        },
+        {
+          "word": "self-employment",
+          "meaning": "tự làm chủ / tự kinh doanh"
+        },
+        {
+          "word": "flexible working hours",
+          "meaning": "giờ làm việc linh hoạt"
+        },
+        {
+          "word": "work independently",
+          "meaning": "làm việc độc lập"
+        },
+        {
+          "word": "self-reliance",
+          "meaning": "tính tự lực / tự xoay xở"
+        },
+        {
+          "word": "decision-making skills",
+          "meaning": "kỹ năng ra quyết định"
+        },
+        {
+          "word": "financial risk",
+          "meaning": "rủi ro tài chính"
+        },
+        {
+          "word": "steady income",
+          "meaning": "thu nhập ổn định"
+        },
+        {
+          "word": "office politics",
+          "meaning": "mâu thuẫn / đấu đá nơi công sở"
+        },
+        {
+          "word": "remote work",
+          "meaning": "làm việc từ xa"
+        },
+        {
+          "word": "public spaces",
+          "meaning": "không gian công cộng (quán cà phê, coworking)"
+        },
+        {
+          "word": "digital distractions",
+          "meaning": "sự xao nhãng từ thiết bị số / tin nhắn"
+        },
+        {
+          "word": "save commuting time",
+          "meaning": "tiết kiệm thời gian di chuyển"
+        },
+        {
+          "word": "team communication",
+          "meaning": "giao tiếp trong nhóm"
+        },
+        {
+          "word": "work-life boundaries",
+          "meaning": "ranh giới giữa công việc và đời sống"
+        },
+        {
+          "word": "gap year",
+          "meaning": "năm nghỉ chuyển tiếp (giữa cấp 3 và đại học)"
+        },
+        {
+          "word": "life experience",
+          "meaning": "kinh nghiệm sống thực tế"
+        },
+        {
+          "word": "personal maturity",
+          "meaning": "sự trưởng thành cá nhân"
+        },
+        {
+          "word": "academic disruption",
+          "meaning": "sự gián đoạn việc học"
+        },
+        {
+          "word": "master's degree",
+          "meaning": "bằng thạc sĩ"
+        },
+        {
+          "word": "volunteer project",
+          "meaning": "dự án tình nguyện cộng đồng"
+        },
+        {
+          "word": "youth unemployment",
+          "meaning": "tình trạng thất nghiệp ở thanh niên"
+        },
+        {
+          "word": "vocational training",
+          "meaning": "đào tạo nghề thực hành"
+        },
+        {
+          "word": "job market",
+          "meaning": "thị trường lao động / việc làm"
+        },
+        {
+          "word": "low-paid internships",
+          "meaning": "thực tập lương thấp"
+        },
+        {
+          "word": "university graduates",
+          "meaning": "sinh viên tốt nghiệp đại học"
+        },
+        {
+          "word": "work experience",
+          "meaning": "kinh nghiệm làm việc"
+        }
       ],
       "children": [
         {
-          "id": "work-job-hugging-vs-hopping",
-          "title": "Bám trụ Công việc vs Nhảy việc & Đổi mới (Job Hugging vs Career Transition)",
-          "viTitle": "Kế thừa từ vựng: job hugging, comfort zone, job security, career stagnation, loss aversion, burnout",
-          "badge": "Chủ đề 1",
+          "id": "work-job-hopping",
+          "title": "Nhảy việc, Bám trụ Công việc & Mất việc (Job-Hopping, Job Hugging & Dismissal)",
+          "viTitle": "Từ vựng B2: job hugging, job-hopping, career advancement, salary expectations, poor work attitude, practical skills",
           "examTags": [
-            "Task 2 [Dạng 1 - Agree/Disagree & Dạng 2 - Adv/Disadv]: Staying in the Same Job for Life vs Changing Jobs Frequently",
-            "Task 2 [Dạng 3 - Cause/Solution]: Why Many Employees Lose Jobs or Suffer from Career Stagnation (VLU 07/11)",
-            "Speaking P2 (VLU 07/11): Choosing Between a Foreign Company, a Local Big Firm, or a Startup",
-            "Speaking P3 (VLU 07/11): Reasons for Job Loss & Changing Careers in Modern Society"
+            "Writing T2: Job-Hopping Among Young People: Causes and Consequences",
+            "Writing T2: Causes and Effects of Job-Hopping among Young Professionals",
+            "Speaking P3: Reasons Why Young Employees Lose Their Jobs",
+            "Speaking P1: Work & Career"
           ],
-          "color": "#0284c7",
           "keywords": [
-            { "word": "job hugging", "meaning": "bám giữ công việc hiện tại" },
-            { "word": "job security", "meaning": "sự an toàn nghề nghiệp" },
-            { "word": "comfort zone", "meaning": "vùng an toàn" },
-            { "word": "career stagnation", "meaning": "sự trì trệ trong sự nghiệp" },
-            { "word": "fear of change", "meaning": "nỗi sợ sự thay đổi" },
-            { "word": "career transition", "meaning": "chuyển đổi sự nghiệp" }
+            {
+              "word": "job hugging",
+              "meaning": "bám giữ công việc hiện tại vì ngại rủi ro / sợ thay đổi (trái ngược job-hopping)"
+            },
+            {
+              "word": "job-hopping",
+              "meaning": "nhảy việc (thay đổi công ty liên tục)"
+            },
+            {
+              "word": "career advancement",
+              "meaning": "thăng tiến sự nghiệp"
+            },
+            {
+              "word": "salary expectations",
+              "meaning": "kỳ vọng mức lương"
+            },
+            {
+              "word": "poor work attitude",
+              "meaning": "thái độ làm việc kém / thiếu chuyên nghiệp"
+            },
+            {
+              "word": "practical skills",
+              "meaning": "kỹ năng thực tế trong công việc"
+            }
           ],
           "items": [
             {
-              "id": "w-jh-1",
-              "badge": "✅ Nhánh 1: Lý do bám trụ công việc (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that staying in one permanent job provides high job security and psychological safety. This is mainly because many workers have a strong fear of change and prefer staying in their comfort zone as a survival tactic. This means that they can pay monthly family bills steadily without worrying about unemployment.",
-              "viText": "Một lý do chính là làm một công việc cố định mang lại sự an toàn nghề nghiệp và tâm lý vững vàng. Điều này chủ yếu là do nhiều người có nỗi sợ thay đổi và thích ở trong vùng an toàn như một chiến thuật sinh tồn. Điều này có nghĩa là họ có thể trả hóa đơn gia đình đều đặn mà không lo thất nghiệp."
+              "id": "work-job-hopping-1",
+              "badge": "✅ Nhánh 1 – Xu hướng Bám việc vs Nhảy việc (Job Hugging vs Job-Hopping)",
+              "text": "Young employees often swing between job hugging and frequent job-hopping. When the economy feels uncertain, nervous staff cling to familiar roles for job security. Meanwhile, ambitious graduates change companies often in search of higher pay, faster career advancement, and diverse skills.",
+              "viText": "Nhân viên trẻ thường rơi vào hai thái cực: bám giữ công việc (job hugging) hoặc nhảy việc liên tục (job-hopping). Khi kinh tế bất ổn, nhiều người giữ chặt việc cũ để tìm sự an toàn, còn người trẻ tham vọng hay đổi chỗ làm để tăng lương, thăng tiến và học kỹ năng đa dạng."
             },
             {
-              "id": "w-jh-2",
-              "badge": "⚠️ Nhánh 2: Mặt trái của Job Hugging (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one contributing factor to career stagnation is complacency and loss aversion. This is mainly because clinging to an old position for too long traps employees in a fixed mindset. This means that they miss high opportunity costs, lose their market value, and suffer from disengagement.",
-              "viText": "Mặt khác, một yếu tố dẫn đến sự trì trệ sự nghiệp là tính an phận và tâm lý sợ mất mát. Điều này chủ yếu là do bám chặt lấy vị trí cũ quá lâu nhốt nhân viên trong tư duy cố định. Điều này có nghĩa là họ đánh mất chi phí cơ hội, giảm giá trị thị trường và mất hứng thú làm việc."
+              "id": "work-job-hopping-2",
+              "badge": "⚠️ Nhánh 2 – Hệ quả Nhảy việc & Lý do Mất việc (Trust, Attitude & Adaptability)",
+              "text": "However, switching employers every year worries managers because hiring and training replacements costs money. At the same time, young workers often lose jobs due to poor work attitude, weak discipline, unrealistic salary expectations, or slowly adapting to modern workplace demands and lacking practical skills.",
+              "viText": "Tuy nhiên, đổi công ty hằng năm khiến nhà tuyển dụng e ngại vì tốn chi phí tuyển mới và đào tạo. Đồng thời, nhân viên trẻ dễ bị mất việc do thái độ làm việc kém, thiếu kỷ luật, kỳ vọng lương quá cao, chậm thích nghi với yêu cầu công sở hiện đại hoặc thiếu kỹ năng thực tế."
             },
             {
-              "id": "w-jh-3",
-              "badge": "✅ Nhánh 3: Lợi ích của Chuyển đổi công việc (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, making a proactive career transition stimulates continuous learning and professional development. This is mainly because adapting to a new workplace culture forces individuals to practice risk-taking and skill building. This means that they achieve higher upward mobility and personal fulfillment.",
-              "viText": "Hơn nữa, chủ động chuyển đổi công việc kích thích việc học hỏi không ngừng và phát triển chuyên môn. Điều này chủ yếu là do thích nghi với văn hóa làm việc mới buộc mỗi người phải dám chấp nhận rủi ro và rèn kỹ năng. Điều này có nghĩa là họ đạt cơ hội thăng tiến cao hơn và thỏa mãn cá nhân."
+              "id": "work-job-hopping-3",
+              "badge": "💡 Nhánh 3 – Thái độ vs Kỹ năng & Bước xử lý khi Mất việc (Feedback & Training)",
+              "text": "Many employers value a reliable work attitude even more than technical speed because habits are harder to teach than software tools. Colleges should train workplace soft skills early. If dismissed, workers should calmly review honest feedback, upgrade weak practical skills, and apply carefully.",
+              "viText": "Nhiều nhà tuyển dụng coi trọng thái độ làm việc hơn cả tay nghề thuần túy vì thói quen khó rèn hơn công cụ phần mềm. Đại học nên rèn kỹ năng mềm sớm, còn khi chẳng may mất việc, người trẻ cần bình tĩnh lắng nghe góp ý, bổ sung kỹ năng yếu và ứng tuyển cẩn trọng."
             },
             {
-              "id": "w-jh-4",
-              "badge": "💡 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution ➔ Meaning ➔ Example)",
-              "text": "In my opinion, the best approach to overcome career stagnation is to adopt a growth mindset and upgrade digital skills regularly. This means that workers remain resilient against layoffs. For example, as an IT specialist, I constantly learn AI programming frameworks so I never fall into the fear-based status quo trap.",
-              "viText": "Theo tôi, giải pháp tốt nhất để vượt qua sự trì trệ là rèn tư duy phát triển và nâng cấp kỹ năng số thường xuyên. Điều này có nghĩa là người lao động luôn vững vàng trước làn sóng sa thải. Ví dụ, là chuyên viên IT, tôi liên tục học các công cụ lập trình AI để không bao giờ rơi vào cái bẫy hiện trạng vì sợ hãi."
+              "id": "work-job-hopping-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Balanced Commitment at UIT)",
+              "text": "In my opinion, balanced loyalty beats both fearful job hugging and impatient job-hopping. For example, after graduating from UIT in Ho Chi Minh City, I plan to stay in one engineering team for three years for steady career advancement first.",
+              "viText": "Theo tôi, gắn bó có định hướng tốt hơn cả thói quen bám việc thụ động lẫn nhảy việc vội vàng. Ví dụ, sau khi tốt nghiệp UIT ở TP.HCM, tôi muốn gắn bó với một đội ngũ kỹ thuật tốt khoảng hai đến ba năm để phát triển nghề nghiệp thật vững trước khi tìm cơ hội mới."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (Chọn Công ty lớn / Đa quốc gia): I would advise choosing a reputable multinational company because it offers strong job security, internal mobility, and clear professional development.",
-            "answerVi": "Speaking P2 (Chọn Công ty lớn): Tôi khuyên chọn công ty đa quốc gia uy tín vì nó mang lại sự an toàn nghề nghiệp, cơ hội luân chuyển nội bộ và phát triển chuyên môn rõ ràng.",
-            "reason": "🎙️ Speaking Part 2 (Loại Startup rủi ro / Nhảy việc liên tục): On the contrary, I would not choose an unstable startup right away because of low psychological safety, high burnout, and financial risks.",
-            "reasonVi": "Speaking P2 (Loại Startup rủi ro): Ngược lại, tôi không chọn startup bấp bênh ngay vì thiếu an toàn tâm lý, dễ kiệt sức và rủi ro tài chính.",
-            "example": "📐 Lắp vào 5 Dạng Writing Task 2: [Agree/Disagree & Adv/Disadv] ➔ Thân bài 1 lắp Nhánh 1 & 3, Thân bài 2 lắp Nhánh 2 | [Cause/Problem-Solution (Mất việc/Trì trệ)] ➔ Thân bài 1 lắp Nhánh 2, Thân bài 2 lắp Nhánh 4.",
-            "exampleVi": "Hướng dẫn lắp ghép trực tiếp vào 5 khung Template Writing Task 2."
+            "answer": "Workers should balance steady job security with continuous learning instead of falling into fearful job hugging or restless job-hopping.",
+            "answerVi": "Người lao động nên cân bằng giữa sự ổn định và học hỏi liên tục thay vì bám việc thụ động hay nhảy việc thiếu kiên nhẫn.",
+            "reason": "Unfair work attitude, poor adaptability, and weak practical skills cause job loss, while fair commitment builds employer trust and faster career advancement.",
+            "reasonVi": "Thái độ làm việc kém, chậm thích nghi và thiếu kỹ năng thực tế dễ gây mất việc, còn gắn bó hợp lý giúp tạo niềm tin và thăng tiến bền vững.",
+            "example": "Staying in one IT team for three years after graduating from UIT builds deep system skills before seeking higher roles.",
+            "exampleVi": "Gắn bó một nhóm IT ba năm sau khi tốt nghiệp UIT giúp tích lũy tay nghề hệ thống sâu trước khi tìm vị trí cao hơn."
           }
         },
         {
-          "id": "work-self-employed-freelance",
-          "title": "Tự làm chủ & Làm việc Tự do vs Làm công ăn lương (Self-Employment & Freelancing)",
-          "viTitle": "Kế thừa từ vựng: self-employed, proactive mindset, risk-taking, burnout, job security, personal fulfillment",
-          "badge": "Chủ đề 2 (Đề Thi Thật Của Bạn)",
+          "id": "work-self-employment",
+          "title": "Tự làm chủ & Khởi nghiệp (Self-Employment & Entrepreneurship)",
+          "viTitle": "Từ vựng B2: self-employment, flexible working hours, work independently, self-reliance, decision-making skills, financial risk, steady income, office politics",
           "examTags": [
-            "Task 2 [Dạng 2 - Adv/Disadv]: Becoming Self-Employed vs Working as a Salaried Employee (Đề thi thật của bạn)",
-            "Speaking P3 (AJC 08/11 & VLU 11): Benefits and Challenges of Working Independently / Freelancing",
-            "Speaking P2: Advising a Friend on Opening a Own Business vs Joining a State Company"
+            "Writing T2: Pros and Cons of Self-Employment",
+            "Writing T2: Advantages and Disadvantages of Self-Employment",
+            "Speaking P3: Benefits of Working Independently",
+            "Speaking P3: Benefits of Self-Employment and Entrepreneurship",
+            "Speaking P3: Self-Employment and Starting a Business"
           ],
-          "color": "#0284c7",
           "keywords": [
-            { "word": "self-employed", "meaning": "tự làm chủ, tự kinh doanh riêng (không làm thuê)" },
-            { "word": "proactive mindset", "meaning": "tư duy chủ động" },
-            { "word": "personal fulfillment", "meaning": "sự thỏa mãn, thành tựu cá nhân" },
-            { "word": "risk-taking", "meaning": "dám chấp nhận rủi ro" },
-            { "word": "burnout", "meaning": "sự kiệt sức vì làm việc quá sức" },
-            { "word": "job security", "meaning": "sự ổn định nghề nghiệp" }
+            {
+              "word": "self-employment",
+              "meaning": "tự làm chủ / tự kinh doanh"
+            },
+            {
+              "word": "flexible working hours",
+              "meaning": "giờ làm việc linh hoạt"
+            },
+            {
+              "word": "work independently",
+              "meaning": "làm việc độc lập"
+            },
+            {
+              "word": "self-reliance",
+              "meaning": "tính tự lực / tự xoay xở"
+            },
+            {
+              "word": "decision-making skills",
+              "meaning": "kỹ năng ra quyết định"
+            },
+            {
+              "word": "financial risk",
+              "meaning": "rủi ro tài chính"
+            },
+            {
+              "word": "steady income",
+              "meaning": "thu nhập ổn định"
+            },
+            {
+              "word": "office politics",
+              "meaning": "mâu thuẫn / đấu đá nơi công sở"
+            }
           ],
           "items": [
             {
-              "id": "w-se-1",
-              "badge": "✅ Nhánh 1: Ưu điểm số 1 của Tự làm chủ (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that being self-employed gives individuals complete autonomy and personal fulfillment. This is mainly because freelancers can choose their own projects, working hours, and workplace without boss supervision. This means that they escape organizational inertia and keep 100% of the profits they earn.",
-              "viText": "Một lý do chính là việc tự làm chủ mang lại cho cá nhân sự tự chủ hoàn toàn và sự thỏa mãn cá nhân. Điều này chủ yếu là do người làm tự do được tự chọn dự án, giờ giấc và nơi làm việc mà không bị sếp giám sát. Điều này có nghĩa là họ thoát khỏi sự ì trệ của tổ chức và hưởng trọn 100% lợi nhuận."
+              "id": "work-self-employment-1",
+              "badge": "✅ Nhánh 1 – Lợi ích 1: Linh hoạt Giờ, Địa điểm & Đam mê",
+              "text": "One major benefit of self-employment is enjoying flexible working hours and choosing any work location. Freelancers can set personal schedules, pursue personal passion, and skip exhausting daily commutes or office politics. This freedom helps independent workers stay motivated and design a lifestyle around family needs.",
+              "viText": "Một lợi ích lớn của việc tự làm chủ là tận hưởng giờ làm việc linh hoạt và tự chọn nơi làm việc. Người làm tự do có thể tự sắp xếp lịch cá nhân, theo đuổi đam mê và tránh kẹt xe hay mâu thuẫn công sở, giúp họ giữ động lực và cân đối nhu cầu gia đình."
             },
             {
-              "id": "w-se-2",
-              "badge": "✅ Nhánh 2: Ưu điểm số 2 của Tự làm chủ (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, self-employment accelerates skill building and increases a worker's market value. This is mainly because running a business requires a proactive mindset, adaptability, and continuous learning. This means that self-employed people develop much stronger resilience than passive office workers.",
-              "viText": "Hơn nữa, tự kinh doanh thúc đẩy nhanh việc phát triển kỹ năng và nâng cao giá trị thị trường của người lao động. Điều này chủ yếu là do tự vận hành công việc đòi hỏi tư duy chủ động, khả năng thích nghi và học hỏi không ngừng. Điều này có nghĩa là người tự làm chủ rèn được bản lĩnh bền bỉ hơn hẳn nhân viên thụ động."
+              "id": "work-self-employment-2",
+              "badge": "✅ Nhánh 2 – Lợi ích 2: Tự lập, Kỹ năng Mới & Thu nhập Cao",
+              "text": "In addition, choosing to work independently builds strong self-reliance and quick decision-making skills. Owners must handle client talks, budgeting, and marketing, which develops useful new professional skills quickly. As their own business grows stronger, successful entrepreneurs also enjoy unlimited earning potential compared with fixed monthly salaries.",
+              "viText": "Ngoài ra, chọn làm việc độc lập giúp rèn tính tự lực cao và kỹ năng ra quyết định nhanh. Người tự kinh doanh phải trực tiếp trao đổi với khách hàng, lập ngân sách và tiếp thị, nhờ vậy học nhanh các kỹ năng nghề nghiệp mới và có cơ hội thu nhập không giới hạn."
             },
             {
-              "id": "w-se-3",
-              "badge": "⚠️ Nhánh 3: Bất lợi / Rủi ro của Tự làm chủ (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one major drawback of self-employment is the lack of job security and severe burnout. This is mainly because freelancers must handle unstable client income, taxes, and financial risks alone without paid holidays. This means that they often work late at night and suffer from high stress.",
-              "viText": "Mặt khác, một bất lợi lớn của tự làm chủ là thiếu sự an toàn nghề nghiệp và tình trạng kiệt sức nặng nề. Điều này chủ yếu là do người làm tự do phải tự gánh thu nhập bấp bênh, thuế má và rủi ro tài chính một mình mà không có nghỉ phép hưởng lương. Điều này có nghĩa là họ thường phải thức khuya cày việc và chịu áp lực lớn."
+              "id": "work-self-employment-3",
+              "badge": "⚠️ Nhánh 3 – Hạn chế: Rủi ro Tài chính & Startup Thất bại Sớm",
+              "text": "On the other hand, starting your own business carries heavy financial risk and constant pressure. Unlike company staff who receive a steady income, health insurance, and paid holidays, freelancers earn nothing during sick days. Many startups fail within their first two years due to weak planning and limited money.",
+              "viText": "Mặt khác, tự mở doanh nghiệp hay làm tự do mang theo rủi ro tài chính lớn và áp lực thường trực. Khác với nhân viên công ty có thu nhập ổn định, bảo hiểm y tế và ngày nghỉ hưởng lương, nhiều startup thất bại ngay trong hai năm đầu vì thiếu kế hoạch và thiếu vốn."
             },
             {
-              "id": "w-se-4",
-              "badge": "💡 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution ➔ Meaning ➔ Example)",
-              "text": "In my opinion, the best approach is to gain experience in a company first before making a career transition to self-employment. For example, as a Computer Science Master's student, I work full-time at a software firm for stability while taking freelance web projects on weekends to build my client network.",
-              "viText": "Theo tôi, hướng đi tốt nhất là tích lũy kinh nghiệm ở công ty trước khi chuyển đổi sang tự làm chủ. Ví dụ, là học viên Thạc sĩ CNTT, tôi đi làm toàn thời gian ở công ty phần mềm để ổn định, đồng thời nhận làm web freelance cuối tuần để xây dựng tệp khách hàng riêng."
+              "id": "work-self-employment-4",
+              "badge": "⚖️ Nhánh 4 – Tố chất Cần thiết & Xu hướng Tương lai",
+              "text": "To survive alone, essential personality traits include strict self-discipline, patience, and smart time management. Because large corporations still offer reliable job security and supportive mentors, many graduates still prefer salaried roles. Therefore, independent work will grow alongside traditional corporate jobs rather than replacing them completely.",
+              "viText": "Để đứng vững một mình, những tố chất cần thiết gồm kỷ luật bản thân nghiêm ngặt, sự kiên nhẫn và quản lý thời gian khéo léo. Vì các tập đoàn lớn vẫn mang lại sự ổn định và người hướng dẫn, xu hướng làm tự do sẽ phát triển song song chứ khó thay thế hoàn toàn việc làm công ty."
+            },
+            {
+              "id": "work-self-employment-5",
+              "badge": "🎯 Nhánh 5 – Đào tạo Khởi nghiệp & Ví dụ (Company First)",
+              "text": "Universities should offer practical entrepreneurship courses covering basic accounting and business planning so students understand market reality early. In my opinion, working at an established company first is safer. For example, building IT systems with an experienced engineering team for three years gives me real confidence before starting freelance work.",
+              "viText": "Đại học nên mở các khóa khởi nghiệp thực tế về kế toán cơ bản và lập kế hoạch kinh doanh để sinh viên hiểu rõ thị trường sớm. Theo tôi, đi làm ở công ty lớn vài năm trước vẫn an toàn hơn; ví dụ làm hệ thống IT ba năm giúp tôi vững tay nghề trước khi làm tự do."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (Lợi ích làm việc độc lập / Self-employed): Working independently allows young people to enjoy flexible schedules, develop a proactive mindset, and maximize their earning potential.",
-            "answerVi": "Speaking P3 (Lợi ích làm độc lập / Tự làm chủ): Làm việc độc lập giúp người trẻ có lịch trình linh hoạt, rèn tư duy chủ động và tối đa hóa thu nhập.",
-            "reason": "🎙️ Speaking Part 2 (Tư vấn cho bạn mới ra trường): I advise working for an established company first to build skills and savings, rather than becoming self-employed immediately with high financial risks.",
-            "reasonVi": "Speaking P2 (Tư vấn cho bạn mới ra trường): Tôi khuyên nên đi làm công ty trước để rèn kỹ năng và tích lũy vốn, thay vì ra tự làm chủ ngay với rủi ro tài chính cao.",
-            "example": "📐 Lắp vào 5 Dạng Writing Task 2: [Dạng 2 - Adv/Disadv của Self-employment] ➔ Đoạn 1 (Advantages) lắp Nhánh 1 + Nhánh 2; Đoạn 2 (Disadvantages) lắp Nhánh 3 + Ví dụ Nhánh 4.",
-            "exampleVi": "Khớp 100% vào đề thi thật Self-employed của bạn."
+            "answer": "Self-employment brings flexible working hours and freedom from office politics, yet starting inside an established company is safer for a steady income.",
+            "answerVi": "Tự làm chủ mang lại giờ làm việc linh hoạt và tránh mâu thuẫn công sở, nhưng làm việc ở công ty bài bản trước vẫn an toàn hơn để có thu nhập ổn định.",
+            "reason": "While choosing to work independently builds self-reliance and decision-making skills, early ventures carry heavy financial risk without paid holidays or experienced mentors.",
+            "reasonVi": "Dù làm việc độc lập giúp rèn tính tự lực và kỹ năng ra quyết định, khởi nghiệp sớm mang nhiều rủi ro tài chính khi chưa có ngày nghỉ hưởng lương hay người dẫn dắt.",
+            "example": "Spending three years on an experienced engineering team builds strong technical and communication habits before anyone starts freelancing or launching a startup.",
+            "exampleVi": "Làm việc ba năm trong một đội ngũ kỹ thuật giàu kinh nghiệm giúp xây dựng nền tảng chuyên môn và giao tiếp vững chắc trước khi ra làm tự do hay khởi nghiệp."
           }
         },
         {
-          "id": "work-remote-work-life-balance",
-          "title": "Làm việc Từ xa (Remote Work) & Cân bằng Công việc – Cuộc sống (Work-Life Balance)",
-          "viTitle": "Kế thừa từ vựng: burnout, disengagement, job satisfaction, psychological safety, adaptability",
-          "badge": "Chủ đề 3",
+          "id": "work-remote-public",
+          "title": "Làm việc Từ xa, Quán cà phê & Dùng Điện thoại Nơi làm việc (Remote & Mobile)",
+          "viTitle": "Từ vựng B2: remote work, public spaces, digital distractions, save commuting time, team communication, work-life boundaries",
           "examTags": [
-            "Task 2 [Dạng 2 - Adv/Disadv]: Working From Home (Remote Work) for Employees and Employers",
-            "Task 2 [Dạng 3 & 4 - Cause/Problem-Solution]: Work-Related Stress, Burnout, and Lack of Work-Life Balance",
-            "Speaking P3: How to Achieve Work-Life Balance & Benefits of Remote Working"
+            "Writing T2: Remote Working and Working from Home: Pros and Cons",
+            "Writing T2: Working in Public Places: Pros and Cons",
+            "Writing T2: Advantages and Disadvantages of Working in Public Spaces",
+            "Writing T2: Workplace Mobile Phone Use: Advantages and Disadvantages"
           ],
-          "color": "#0284c7",
           "keywords": [
-            { "word": "burnout", "meaning": "sự kiệt sức trong công việc" },
-            { "word": "disengagement", "meaning": "sự mất kết nối, chán việc" },
-            { "word": "job satisfaction", "meaning": "mức độ hài lòng trong công việc" },
-            { "word": "psychological safety", "meaning": "cảm giác an toàn tâm lý" },
-            { "word": "adaptability", "meaning": "khả năng thích nghi linh hoạt" }
+            {
+              "word": "remote work",
+              "meaning": "làm việc từ xa"
+            },
+            {
+              "word": "public spaces",
+              "meaning": "không gian công cộng (quán cà phê, coworking)"
+            },
+            {
+              "word": "digital distractions",
+              "meaning": "sự xao nhãng từ thiết bị số / tin nhắn"
+            },
+            {
+              "word": "save commuting time",
+              "meaning": "tiết kiệm thời gian di chuyển"
+            },
+            {
+              "word": "team communication",
+              "meaning": "giao tiếp trong nhóm"
+            },
+            {
+              "word": "work-life boundaries",
+              "meaning": "ranh giới giữa công việc và đời sống"
+            }
           ],
           "items": [
             {
-              "id": "w-rw-1",
-              "badge": "✅ Nhánh 1: Ưu điểm của Làm việc từ xa (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that remote working significantly increases job satisfaction and saves commuting costs. This is mainly because employees do not have to waste two hours every day stuck in heavy traffic jams. This means that they have more time for healthy homemade meals, family care, and continuous learning.",
-              "viText": "Một lý do chính là làm việc từ xa làm tăng đáng kể sự hài lòng trong công việc và tiết kiệm chi phí đi lại. Điều này chủ yếu là do nhân viên không phải lãng phí hai tiếng mỗi ngày chịu cảnh kẹt xe. Điều này có nghĩa là họ có thêm thời gian ăn cơm nhà lành mạnh, chăm sóc gia đình và học tập nâng cao."
+              "id": "work-remote-public-1",
+              "badge": "✅ Nhánh 1 – Lợi ích Linh hoạt (Commute & Inspiration)",
+              "text": "Remote work and working in public spaces like quiet cafes have grown quickly thanks to fast laptops and smartphones. Employees save commuting time and enjoy relaxed focus, while employers reduce office rent and hire skilled staff across different cities.",
+              "viText": "Làm việc từ xa và làm việc ở không gian công cộng như quán cà phê yên tĩnh phát triển mạnh nhờ laptop và điện thoại thông minh. Nhân viên tiết kiệm thời gian di chuyển và có không gian thoải mái, còn doanh nghiệp giảm tiền thuê văn phòng và tuyển được người giỏi ở nhiều thành phố."
             },
             {
-              "id": "w-rw-2",
-              "badge": "⚠️ Nhánh 2: Nguyên nhân gây Kiệt sức & Mất cân bằng (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one contributing factor to severe burnout and disengagement is blurring the boundary between work and home life. This is mainly because digital messaging apps force employees to reply to bosses late at night. This means that workers suffer from chronic sleep deprivation and lose psychological safety.",
-              "viText": "Mặt khác, một yếu tố dẫn đến sự kiệt sức và mất kết nối là sự xóa nhòa ranh giới giữa công việc và cuộc sống riêng. Điều này chủ yếu là do các ứng dụng nhắn tin buộc nhân viên phải trả lời sếp vào đêm muộn. Điều này có nghĩa là người lao động bị thiếu ngủ mãn tính và mất cảm giác an toàn tâm lý."
+              "id": "work-remote-public-2",
+              "badge": "⚠️ Nhánh 2 – Hạn chế Xao nhãng & Bảo mật (Noise, Distractions & Isolation)",
+              "text": "However, working outside traditional offices and checking personal phones all day create serious problems. Noisy coffee shops, weak public Wi-Fi, and constant digital distractions from social apps lower focus and risk leaking company data. Remote workers can also feel lonely and weaken face-to-face team communication.",
+              "viText": "Tuy nhiên, làm việc ngoài văn phòng và dùng điện thoại cá nhân cả ngày gây ra nhiều bất lợi. Quán cà phê ồn ào, Wi-Fi công cộng yếu và sự xao nhãng từ ứng dụng xã hội làm giảm tập trung, dễ lộ dữ liệu công ty, còn người làm từ xa dễ thấy cô đơn và giảm kết nối nhóm."
             },
             {
-              "id": "w-rw-3",
-              "badge": "💡 Nhánh 3: Giải pháp từ phía Cá nhân & Công ty (Best approach ➔ Because ➔ Meaning)",
-              "text": "In my opinion, the best approach to overcome burnout is adopting a hybrid work model and strict after-hours disconnect rules. This is mainly because combining 3 days at the office with 2 days at home balances teamwork and rest. This means that companies can boost productivity while protecting staff resilience.",
-              "viText": "Theo tôi, giải pháp tốt nhất để vượt qua sự kiệt sức là áp dụng mô hình làm việc kết hợp (hybrid) và quy định ngắt kết nối sau giờ làm. Điều này chủ yếu là do kết hợp 3 ngày lên văn phòng với 2 ngày ở nhà giúp cân bằng giữa làm việc nhóm và nghỉ ngơi. Điều này có nghĩa là công ty vừa tăng năng suất vừa bảo vệ sức bền nhân sự."
+              "id": "work-remote-public-3",
+              "badge": "💡 Nhánh 3 – Giải pháp Quản lý (Hybrid Model & Clear Rules)",
+              "text": "A balanced hybrid schedule works best for both employees and companies. Staff should protect clear work-life boundaries, mute private phone alerts during focus hours, and use secure private networks in public places. Meanwhile, managers can combine remote days with weekly in-office meetings.",
+              "viText": "Mô hình làm việc kết hợp hài hòa mang lại hiệu quả tốt nhất cho cả nhân viên và doanh nghiệp. Nhân sự cần giữ rõ ranh giới công việc - đời sống, tắt thông báo cá nhân khi tập trung và dùng mạng an toàn nơi công cộng, còn quản lý nên xen kẽ ngày làm từ xa với họp trực tiếp hằng tuần."
             },
             {
-              "id": "w-rw-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, in my software engineering team, working from home two days a week allows me to write complex code in a quiet room without office noise, which improves my coding speed by 30% and prevents mental burnout.",
-              "viText": "Ví dụ, trong nhóm kỹ sư phần mềm của tôi, làm việc tại nhà hai ngày mỗi tuần giúp tôi viết các đoạn code phức tạp trong phòng yên tĩnh không bị ồn ào, giúp tăng 30% tốc độ lập trình và ngăn ngừa kiệt sức tinh thần."
+              "id": "work-remote-public-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Hybrid Coding & Study)",
+              "text": "In my opinion, flexible working environments are helpful when people manage workplace distractions wisely. For example, when coding from home in Ho Chi Minh City, I mute social apps and play epic music. This keeps me productive without losing touch with teammates.",
+              "viText": "Theo tôi, môi trường làm việc linh hoạt rất hữu ích nếu ta kiểm soát tốt sự xao nhãng. Ví dụ, khi lập trình tại nhà ở TP.HCM, tôi tắt thông báo mạng xã hội và đeo tai nghe nghe nhạc epic để tập trung cao mà vẫn giữ nhịp làm việc cùng đồng đội."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (Chọn hình thức làm việc): I prefer a hybrid or remote working arrangement because it eliminates daily traffic stress and boosts my deep focus.",
-            "answerVi": "Speaking P2: Tôi ưu tiên hình thức làm việc từ xa hoặc kết hợp vì nó xóa bỏ áp lực kẹt xe hàng ngày và giúp tập trung sâu.",
-            "reason": "🎙️ Speaking Part 3 (Giải pháp cân bằng cuộc sống): Employees should set clear boundaries by turning off work notifications after 7 PM and exercising daily.",
-            "reasonVi": "Speaking P3: Nhân viên nên đặt ranh giới rõ ràng bằng cách tắt thông báo công việc sau 7 giờ tối và tập thể dục mỗi ngày.",
-            "example": "📐 Lắp vào 5 Dạng Writing Task 2: [Adv/Disadv của WFH] ➔ Đoạn 1 lắp Nhánh 1 + 4, Đoạn 2 lắp Nhánh 2 | [Cause/Problem/Effects-Solution về Stress/Burnout] ➔ Đoạn 1 lắp Nhánh 2, Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Dùng chung mượt mà cho cả đề Làm việc từ xa và đề Áp lực công việc."
+            "answer": "Remote work and smartphones boost daily flexibility and save commuting time, yet weak focus and poor team communication remain clear risks.",
+            "answerVi": "Làm việc từ xa và điện thoại giúp tăng sự linh hoạt và tiết kiệm thời gian đi lại, nhưng dễ mất tập trung và giảm giao tiếp nhóm.",
+            "reason": "Working in public spaces often brings noise and digital distractions, so hybrid work and clear work-life boundaries help keep productivity high.",
+            "reasonVi": "Làm việc ở không gian công cộng hay có tiếng ồn và xao nhãng số, nên làm việc kết hợp và giữ ranh giới công việc - đời sống sẽ đảm bảo hiệu suất.",
+            "example": "Muting phone alerts during coding sessions lets me enjoy flexible work from home while still hitting every team deadline.",
+            "exampleVi": "Tắt thông báo điện thoại khi tập trung lập trình giúp tôi tận dụng làm việc tại nhà mà vẫn hoàn thành đúng mọi hạn chót."
           }
         },
         {
-          "id": "work-gap-year-part-time",
-          "title": "Nghỉ một năm (Gap Year), Làm thêm Sinh viên & Hướng đi sau Tốt nghiệp",
-          "viTitle": "Kế thừa từ vựng: self-reflection, skill building, adaptability, opportunity cost, career stagnation",
-          "badge": "Chủ đề 4 (Đề AJC & VLU 08/11)",
+          "id": "work-gap-year-graduation",
+          "title": "Gap Year & Ngã rẽ Sau Tốt nghiệp Đại học (Gap Year & Post-Graduation Path)",
+          "viTitle": "Từ vựng B2: gap year, life experience, personal maturity, academic disruption, master's degree, volunteer project",
           "examTags": [
-            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Adv/Disadv]: Taking a Gap Year Before University or Work (AJC 08/11)",
-            "Speaking P2 (VLU 08/11): Choosing a Path After Graduation (Working Immediately vs Master's Degree vs Gap Year)",
-            "Speaking P3: Benefits and Drawbacks of Part-Time Jobs for University Students"
+            "Writing T2: Advantages and Disadvantages of Taking a Gap Year",
+            "Writing T2: Taking a Gap Year Before University: Pros and Cons",
+            "Speaking P2: Choosing a Path after University Graduation"
           ],
-          "color": "#0284c7",
           "keywords": [
-            { "word": "self-reflection", "meaning": "sự tự nhìn nhận, khám phá bản thân" },
-            { "word": "skill building", "meaning": "rèn luyện, phát triển kỹ năng thực tế" },
-            { "word": "adaptability", "meaning": "khả năng thích nghi với môi trường sống" },
-            { "word": "opportunity cost", "meaning": "chi phí cơ hội (thời gian trễ 1 năm)" },
-            { "word": "self-awareness", "meaning": "nhận thức rõ điểm mạnh yếu của bản thân" }
+            {
+              "word": "gap year",
+              "meaning": "năm nghỉ chuyển tiếp (giữa cấp 3 và đại học)"
+            },
+            {
+              "word": "life experience",
+              "meaning": "kinh nghiệm sống thực tế"
+            },
+            {
+              "word": "personal maturity",
+              "meaning": "sự trưởng thành cá nhân"
+            },
+            {
+              "word": "academic disruption",
+              "meaning": "sự gián đoạn việc học"
+            },
+            {
+              "word": "master's degree",
+              "meaning": "bằng thạc sĩ"
+            },
+            {
+              "word": "volunteer project",
+              "meaning": "dự án tình nguyện cộng đồng"
+            }
           ],
           "items": [
             {
-              "id": "w-gy-1",
-              "badge": "✅ Nhánh 1: Lợi ích của Gap Year & Làm thêm (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that taking a gap year or doing part-time jobs promotes deep self-reflection and practical skill building. This is mainly because young people can step outside academic classrooms to experience real-world workplaces and volunteering. This means that they develop strong self-awareness and choose the right career path.",
-              "viText": "Một lý do chính là nghỉ gap year hoặc đi làm thêm giúp thúc đẩy sự tự nhìn nhận bản thân và rèn kỹ năng thực tế. Điều này chủ yếu là do người trẻ được bước ra khỏi giảng đường để trải nghiệm môi trường làm việc và tình nguyện thực tế. Điều này có nghĩa là họ hiểu rõ bản thân và chọn đúng nghề nghiệp."
+              "id": "work-gap-year-graduation-1",
+              "badge": "✅ Nhánh 1 – Lợi ích Trải nghiệm (Maturity & Clarity)",
+              "text": "Taking a gap year to travel, work, or join a volunteer project gives young people rich life experience and personal maturity. Stepping outside classrooms helps them discover real interests, build confidence, and save money before committing to expensive university degrees or full-time careers.",
+              "viText": "Nghỉ một năm chuyển tiếp để du lịch, đi làm hoặc tham gia dự án tình nguyện mang lại kinh nghiệm sống phong phú và sự trưởng thành cá nhân. Bước ra khỏi lớp học giúp người trẻ khám phá đam mê thật, tự tin hơn và tiết kiệm tiền trước khi học đại học hay đi làm lâu dài."
             },
             {
-              "id": "w-gy-2",
-              "badge": "✅ Nhánh 2: Rèn luyện sự bền bỉ & Tài chính (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, working part-time or interning during a gap year enhances adaptability and financial independence. This is mainly because students learn how to communicate with customers, manage time, and earn their own money. This means that they gain a higher market value when applying for full-time jobs later.",
-              "viText": "Hơn nữa, đi làm thêm hoặc thực tập trong năm gap year giúp tăng khả năng thích nghi và tự lập tài chính. Điều này chủ yếu là do sinh viên học được cách giao tiếp với khách hàng, quản lý thời gian và tự kiếm tiền. Điều này có nghĩa là họ có giá trị thị trường cao hơn khi xin việc toàn thời gian sau này."
+              "id": "work-gap-year-graduation-2",
+              "badge": "⚠️ Nhánh 2 – Rủi ro Gián đoạn & Chi phí (Delay & Money)",
+              "text": "On the other hand, a poorly planned year off can cause academic disruption and financial burden. Students may forget core study habits, fall behind peers who graduate earlier, or waste precious months without clear goals. Traveling without income can also place extra costs on parents.",
+              "viText": "Mặt khác, một năm nghỉ thiếu kế hoạch dễ gây gián đoạn việc học và gánh nặng tài chính. Sinh viên có thể quên thói quen học tập, chậm chân hơn bạn bè đồng trang lứa hoặc lãng phí thời gian nếu không có mục tiêu rõ ràng, đồng thời tốn thêm tiền của cha mẹ."
             },
             {
-              "id": "w-gy-3",
-              "badge": "⚠️ Nhánh 3: Rủi ro / Mặt trái của Gap Year (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one major drawback of taking a gap year is the high opportunity cost and academic disengagement. This is mainly because a lack of strict planning can make youngsters fall into complacency and forget school knowledge. This means that they may fall behind their peers and struggle to return to formal study.",
-              "viText": "Mặt khác, một nhược điểm lớn của việc nghỉ gap year là chi phí cơ hội cao và sự mất kết nối việc học. Điều này chủ yếu là do thiếu kế hoạch chặt chẽ dễ khiến người trẻ rơi vào sự an phận lười biếng và quên kiến thức. Điều này có nghĩa là họ có thể tụt hậu so với bạn bè và ngại quay lại trường học."
+              "id": "work-gap-year-graduation-3",
+              "badge": "⚖️ Nhánh 3 – Lựa chọn Sau Tốt nghiệp (Job vs Master's vs Volunteer)",
+              "text": "Similarly, fresh graduates face three paths: working full-time right away, pursuing a master's degree, or joining a volunteer project for a year. Taking a job first builds real technical readiness and early financial independence, whereas further study suits learners after clarifying their exact career goals, and volunteering mainly builds empathy without steady pay.",
+              "viText": "Tương tự, sinh viên mới ra trường có ba lựa chọn: đi làm toàn thời gian ngay, học bằng thạc sĩ hoặc tham gia dự án tình nguyện một năm. Đi làm trước tạo kinh nghiệm thực tế và độc lập tài chính sớm, học tiếp hợp khi đã rõ mục tiêu, còn tình nguyện giúp rèn sự thấu cảm nhưng không có thu nhập ổn định."
             },
             {
-              "id": "w-gy-4",
-              "badge": "💡 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & Example)",
-              "text": "In my opinion, students should set a clear learning schedule if they take a gap year or work part-time. For example, before starting my Master's degree in Computer Science, I spent six months working as a junior software tester, which helped me save tuition money and understand real industry workflows.",
-              "viText": "Theo tôi, sinh viên cần lập kế hoạch học tập rõ ràng nếu nghỉ gap year hoặc làm thêm. Ví dụ, trước khi học Thạc sĩ Khoa học máy tính, tôi đã dành 6 tháng đi làm kiểm thử phần mềm (tester), giúp tôi vừa tiết kiệm tiền học phí vừa hiểu quy trình làm việc thực tế của ngành."
+              "id": "work-gap-year-graduation-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Tom's Post-Uni Plan)",
+              "text": "In my opinion, a gap year only works well with clear deadlines, and after graduation working full-time first is usually wisest. For example, I plan to gain engineering experience after finishing my degree at UIT before studying for a master's degree to apply theory efficiently in real life.",
+              "viText": "Theo tôi, năm chuyển tiếp chỉ hiệu quả khi có kế hoạch rõ ràng, và sau khi tốt nghiệp đại học thì đi làm thực tế trước thường sáng suốt nhất. Ví dụ, tôi dự định tích lũy kinh nghiệm kỹ sư sau khi tốt nghiệp UIT rồi mới học bằng thạc sĩ để áp dụng lý thuyết hiệu quả hơn."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (VLU 08/11 - Sau tốt nghiệp nên đi làm ngay, học Thạc sĩ hay Gap year): I would choose starting a full-time job immediately or pursuing a Master's degree with a clear plan, rather than taking an unplanned gap year.",
-            "answerVi": "Speaking P2 (Chọn hướng đi sau tốt nghiệp): Tôi chọn đi làm ngay hoặc học Thạc sĩ có lộ trình rõ ràng, thay vì nghỉ gap year không có kế hoạch.",
-            "reason": "🎙️ Lý do bác bỏ Gap Year tự phát: Taking a gap year without discipline carries a high opportunity cost and can lead to career stagnation.",
-            "reasonVi": "Lý do loại Gap Year tự phát: Nghỉ một năm mà thiếu kỷ luật sẽ tốn chi phí cơ hội và dễ dẫn đến sự trì trệ.",
-            "example": "📐 Lắp vào Writing Task 2 (Đề AJC 08/11 - Gap Year): Đoạn 1 (Ưu điểm) lắp Nhánh 1 + 2; Đoạn 2 (Nhược điểm & Lời khuyên) lắp Nhánh 3 + 4.",
-            "exampleVi": "Trúng tủ 100% đề Writing Task 2 AJC 08/11 (Take a gap year)."
+            "answer": "While a planned gap year builds personal maturity, fresh graduates usually benefit most from starting full-time work before considering further study.",
+            "answerVi": "Dù một năm chuyển tiếp có kế hoạch giúp tăng sự trưởng thành, sinh viên mới tốt nghiệp thường hưởng lợi nhiều nhất khi đi làm toàn thời gian trước khi học tiếp.",
+            "reason": "Working immediately prevents academic disruption or financial stress, earns practical life experience, and clarifies whether a master's degree or volunteer project fits future goals.",
+            "reasonVi": "Đi làm ngay giúp tránh gián đoạn hay áp lực tài chính, tích lũy kinh nghiệm sống thực tế và xác định rõ liệu bằng thạc sĩ hay dự án tình nguyện có phù hợp.",
+            "example": "Working in Site Reliability Engineering for two years before starting a master's degree will make advanced study much more meaningful.",
+            "exampleVi": "Đi làm Kỹ thuật Độ tin cậy Hệ thống hai năm trước khi học thạc sĩ sẽ giúp việc học chuyên sâu có giá trị thực tế hơn nhiều."
+          }
+        },
+        {
+          "id": "work-youth-unemployment",
+          "title": "Giải pháp Cho Tình trạng Thất nghiệp ở Người trẻ (Youth Unemployment)",
+          "viTitle": "Từ vựng B2: youth unemployment, vocational training, job market, low-paid internships, university graduates, work experience",
+          "examTags": [
+            "Speaking P3: Solutions for Youth Unemployment"
+          ],
+          "keywords": [
+            {
+              "word": "youth unemployment",
+              "meaning": "tình trạng thất nghiệp ở thanh niên"
+            },
+            {
+              "word": "vocational training",
+              "meaning": "đào tạo nghề thực hành"
+            },
+            {
+              "word": "job market",
+              "meaning": "thị trường lao động / việc làm"
+            },
+            {
+              "word": "low-paid internships",
+              "meaning": "thực tập lương thấp"
+            },
+            {
+              "word": "university graduates",
+              "meaning": "sinh viên tốt nghiệp đại học"
+            },
+            {
+              "word": "work experience",
+              "meaning": "kinh nghiệm làm việc"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-youth-unemployment-1",
+              "badge": "⚠️ Nhánh 1 – Nguyên nhân (Skills Mismatch & Automation)",
+              "text": "One main reason for youth unemployment is the wide gap between classroom theory and the real job market. Many university graduates struggle to find jobs matching their majors because schools teach outdated lessons, while modern automation is also replacing simple entry-level office tasks.",
+              "viText": "Một nguyên nhân chính dẫn đến thất nghiệp ở người trẻ là khoảng cách giữa lý thuyết trên lớp và thị trường lao động thực tế. Nhiều sinh viên ra trường khó tìm việc đúng ngành vì trường dạy kiến thức cũ, trong khi tự động hóa hiện đại dần thay thế các công việc văn phòng đơn giản."
+            },
+            {
+              "id": "work-youth-unemployment-2",
+              "badge": "✅ Nhánh 2 – Đào tạo Nghề & Kết nối Doanh nghiệp (Vocational Links)",
+              "text": "To solve this problem effectively, governments should invest more in practical vocational training and updated IT courses. Connecting universities directly with employers helps design realistic programs, host regular career fairs, and ensure graduates leave school with employable skills.",
+              "viText": "Để giải quyết hiệu quả, chính phủ nên đầu tư mạnh hơn vào đào tạo nghề thực hành và các khóa kỹ năng công nghệ cập nhật. Kết nối trực tiếp trường đại học với doanh nghiệp giúp thiết kế chương trình sát thực tế, tổ chức ngày hội việc làm và trang bị kỹ năng tuyển dụng."
+            },
+            {
+              "id": "work-youth-unemployment-3",
+              "badge": "💡 Nhánh 3 – Thực tập & Khởi nghiệp (Internships & Entrepreneurship)",
+              "text": "At the same time, young job seekers should stay flexible and consider useful low-paid internships during university to build early work experience. Encouraging youth entrepreneurship through small startup grants and soft-skill mentoring also creates new jobs instead of waiting for big firms.",
+              "viText": "Đồng thời, người trẻ tìm việc nên linh hoạt chấp nhận các kỳ thực tập lương thấp trong thời gian học để tích lũy kinh nghiệm làm việc sớm. Khuyến khích thanh niên khởi nghiệp qua hỗ trợ vốn nhỏ và cố vấn kỹ năng cũng góp phần tự tạo việc làm."
+            },
+            {
+              "id": "work-youth-unemployment-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Student Internship Advantage)",
+              "text": "In my opinion, early internships help students bridge the gap between school and work far better than high grades alone. For example, joining a part-time technical internship in Ho Chi Minh City during my third year lets me learn real tools before graduation.",
+              "viText": "Theo tôi, thực tập sớm giúp sinh viên thu hẹp khoảng cách từ giảng đường ra doanh nghiệp tốt hơn nhiều so với chỉ chạy theo điểm cao. Ví dụ, đi thực tập kỹ thuật bán thời gian ở TP.HCM từ năm ba giúp tôi thành thạo công cụ thật trước khi ra trường."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Reducing youth unemployment requires practical vocational training, closer ties between universities and employers, and early internships for students.",
+            "answerVi": "Giảm thất nghiệp ở thanh niên đòi hỏi đào tạo nghề thực tế, gắn kết chặt chẽ giữa đại học với doanh nghiệp và các kỳ thực tập sớm cho sinh viên.",
+            "reason": "Many university graduates fail to match the job market due to weak work experience, while short low-paid internships teach skills that automation cannot easily replace.",
+            "reasonVi": "Nhiều sinh viên tốt nghiệp chưa đáp ứng được thị trường lao động vì thiếu kinh nghiệm làm việc, trong khi thực tập lương thấp giúp rèn kỹ năng mà tự động hóa khó thay thế.",
+            "example": "University IT partnerships and early summer internships in my city help students receive full-time offers before graduation day.",
+            "exampleVi": "Chương trình liên kết doanh nghiệp IT và thực tập hè sớm ở thành phố tôi giúp nhiều sinh viên có việc chính thức trước ngày tốt nghiệp."
           }
         }
       ]
@@ -261,244 +526,511 @@
   "rightBranches": [
     {
       "id": "work-group-leadership-finance",
-      "title": "Leadership, Sales Management, Career Location & Finance",
-      "viTitle": "Kỹ năng Lãnh đạo, Quản lý Bán hàng, Địa điểm Lập nghiệp & Tài chính",
-      "badge": "Nhánh 2 (20 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
-      "tags": ["Leadership", "Sales Manager", "Upward Mobility", "Growth Mindset", "Brain Drain"],
+      "title": "Career Choices, Soft Skills, Leadership & Work-Life Balance (Chọn nghề, Kỹ năng Mềm, Lãnh đạo & Cân bằng)",
+      "viTitle": "Lựa chọn Nghề nghiệp, Địa điểm, Kỹ năng Mềm, Lãnh đạo & Cân bằng",
+      "badge": "Nhánh 2 (31 Từ Vựng Gốc + 5 Chủ Đề Cốt Lõi)",
+      "tags": [
+        "Job Offers",
+        "Soft Skills",
+        "Leadership",
+        "Sales & Teaching",
+        "Work-Life Balance"
+      ],
       "color": "#10b981",
       "keywords": [
-        { "word": "internal mobility", "meaning": "sự dịch chuyển, thăng tiến nội bộ trong tổ chức" },
-        { "word": "skill building", "meaning": "phát triển và bồi đắp kỹ năng" },
-        { "word": "market value", "meaning": "giá trị của bản thân trên thị trường lao động" },
-        { "word": "change management", "meaning": "kỹ năng quản lý sự thay đổi" },
-        { "word": "growth mindset", "meaning": "tư duy phát triển, cầu tiến" },
-        { "word": "fixed mindset", "meaning": "tư duy cố định, bảo thủ" },
-        { "word": "adaptability", "meaning": "khả năng thích nghi nhanh" },
-        { "word": "resilience", "meaning": "khả năng phục hồi, chịu áp lực bền bỉ" },
-        { "word": "professional development", "meaning": "sự phát triển nghề nghiệp chuyên sâu" },
-        { "word": "self-awareness", "meaning": "sự tự nhận thức bản thân" },
-        { "word": "continuous learning", "meaning": "tinh thần học hỏi không ngừng" },
-        { "word": "risk-taking", "meaning": "sự dám chấp nhận thử thách, rủi ro" },
-        { "word": "motivation driver", "meaning": "yếu tố thúc đẩy động lực làm việc" },
-        { "word": "workplace culture", "meaning": "văn hóa nơi làm việc" },
-        { "word": "stagnate", "meaning": "trở nên trì trệ, đứng yên" },
-        { "word": "upward mobility", "meaning": "cơ hội thăng tiến lên vị trí cao hơn" },
-        { "word": "job satisfaction", "meaning": "mức độ hài lòng trong công việc" },
-        { "word": "organizational inertia", "meaning": "sự ì trệ của bộ máy tổ chức" },
-        { "word": "proactive mindset", "meaning": "tư duy chủ động giải quyết vấn đề" },
-        { "word": "personal fulfillment", "meaning": "sự thỏa mãn và tự hào cá nhân" }
+        {
+          "word": "competitive salary",
+          "meaning": "mức lương cạnh tranh"
+        },
+        {
+          "word": "working environment",
+          "meaning": "môi trường làm việc"
+        },
+        {
+          "word": "personal passion",
+          "meaning": "đam mê cá nhân"
+        },
+        {
+          "word": "multinational company",
+          "meaning": "công ty đa quốc gia"
+        },
+        {
+          "word": "career growth",
+          "meaning": "phát triển / thăng tiến nghề nghiệp"
+        },
+        {
+          "word": "cost of living",
+          "meaning": "chi phí sinh hoạt"
+        },
+        {
+          "word": "sales manager",
+          "meaning": "quản lý bán hàng / kinh doanh"
+        },
+        {
+          "word": "high income potential",
+          "meaning": "tiềm năng thu nhập cao"
+        },
+        {
+          "word": "irregular working hours",
+          "meaning": "giờ giấc làm việc thất thường"
+        },
+        {
+          "word": "heavy work pressure",
+          "meaning": "áp lực công việc nặng nề"
+        },
+        {
+          "word": "fitness trainer",
+          "meaning": "huấn luyện viên thể hình cá nhân"
+        },
+        {
+          "word": "nutritionist",
+          "meaning": "chuyên gia dinh dưỡng"
+        },
+        {
+          "word": "teaching career",
+          "meaning": "nghề dạy học / sự nghiệp sư phạm"
+        },
+        {
+          "word": "public school",
+          "meaning": "trường công lập"
+        },
+        {
+          "word": "international school",
+          "meaning": "trường quốc tế"
+        },
+        {
+          "word": "practice English",
+          "meaning": "thực hành / rèn luyện tiếng Anh"
+        },
+        {
+          "word": "language center",
+          "meaning": "trung tâm ngoại ngữ"
+        },
+        {
+          "word": "tour guide",
+          "meaning": "hướng dẫn viên du lịch"
+        },
+        {
+          "word": "soft skills",
+          "meaning": "kỹ năng mềm"
+        },
+        {
+          "word": "effective leadership",
+          "meaning": "năng lực lãnh đạo hiệu quả"
+        },
+        {
+          "word": "team productivity",
+          "meaning": "năng suất làm việc của cả nhóm"
+        },
+        {
+          "word": "workplace conflicts",
+          "meaning": "xung đột tại nơi làm việc"
+        },
+        {
+          "word": "time management",
+          "meaning": "quản lý thời gian"
+        },
+        {
+          "word": "career advancement",
+          "meaning": "thăng tiến nghề nghiệp"
+        },
+        {
+          "word": "team-building activity",
+          "meaning": "hoạt động gắn kết đội nhóm"
+        },
+        {
+          "word": "work-life balance",
+          "meaning": "cân bằng giữa công việc và cuộc sống"
+        },
+        {
+          "word": "work-related stress",
+          "meaning": "căng thẳng liên quan đến công việc"
+        },
+        {
+          "word": "mental burnout",
+          "meaning": "kiệt sức tinh thần (do làm việc quá tải)"
+        },
+        {
+          "word": "continuous overtime",
+          "meaning": "tăng ca liên tục"
+        },
+        {
+          "word": "family relationships",
+          "meaning": "các mối quan hệ gia đình"
+        },
+        {
+          "word": "clear boundaries",
+          "meaning": "ranh giới rõ ràng (giữa giờ làm và nghỉ)"
+        }
       ],
       "children": [
         {
-          "id": "work-leadership-sales-manager",
-          "title": "Kỹ năng Lãnh đạo (Leadership) & Nghề Quản lý Bán hàng (Sales Manager)",
-          "viTitle": "Kế thừa từ vựng: upward mobility, motivation driver, resilience, change management, burnout, market value",
-          "badge": "Chủ đề 5 (Đề HUST 08/11 & VLU 07/11)",
+          "id": "work-job-choice-location",
+          "title": "Tiêu chí Chọn việc, Công ty & Địa điểm Lập nghiệp (Job Choice, Company & Location)",
+          "viTitle": "Từ vựng B2: competitive salary, working environment, personal passion, multinational company, career growth, cost of living",
           "examTags": [
-            "Task 2 [Dạng 2 - Adv/Disadv]: Choosing to Work as a Sales Manager Instead of Other Professions (HUST 08/11)",
-            "Speaking P3 (VLU 07/11): The Importance of Leadership Skills (Are Leaders Born or Made?)",
-            "Speaking P2: Choosing a Team Leader or Management Training Course"
+            "Speaking P3: Factors Influencing Job Choice",
+            "Speaking P2: Choosing Among Three Job Offers",
+            "Speaking P2: Choosing a Company for Career Development",
+            "Speaking P2: Deciding on a Career Location after Graduation"
           ],
-          "color": "#10b981",
           "keywords": [
-            { "word": "upward mobility", "meaning": "cơ hội thăng tiến nhanh" },
-            { "word": "motivation driver", "meaning": "yếu tố thúc đẩy động lực" },
-            { "word": "change management", "meaning": "quản lý sự thay đổi và dẫn dắt đội nhóm" },
-            { "word": "resilience", "meaning": "bản lĩnh chịu áp lực doanh số" },
-            { "word": "market value", "meaning": "giá trị cao trên thị trường nhân sự" }
+            {
+              "word": "competitive salary",
+              "meaning": "mức lương cạnh tranh"
+            },
+            {
+              "word": "working environment",
+              "meaning": "môi trường làm việc"
+            },
+            {
+              "word": "personal passion",
+              "meaning": "đam mê cá nhân"
+            },
+            {
+              "word": "multinational company",
+              "meaning": "công ty đa quốc gia"
+            },
+            {
+              "word": "career growth",
+              "meaning": "phát triển / thăng tiến nghề nghiệp"
+            },
+            {
+              "word": "cost of living",
+              "meaning": "chi phí sinh hoạt"
+            }
           ],
           "items": [
             {
-              "id": "w-ls-1",
-              "badge": "✅ Nhánh 1: Ưu điểm của Quản lý Bán hàng / Lãnh đạo (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that working as a sales manager or team leader offers exceptional upward mobility and financial rewards. This is mainly because commission bonuses and performance incentives act as a powerful motivation driver. This means that talented managers can achieve high market value and wealth much faster than regular clerks.",
-              "viText": "Một lý do chính là làm quản lý bán hàng hoặc trưởng nhóm mang lại cơ hội thăng tiến vượt bậc và thu nhập hấp dẫn. Điều này chủ yếu là do tiền thưởng hoa hồng và thưởng hiệu suất đóng vai trò là yếu tố thúc đẩy động lực mạnh mẽ. Điều này có nghĩa là người quản lý giỏi đạt giá trị thị trường cao và làm giàu nhanh hơn nhân viên thường."
+              "id": "work-job-choice-location-1",
+              "badge": "✅ Nhánh 1 – Chọn Việc & Môi trường (Environment vs High Salary)",
+              "text": "When choosing among job offers, young people weigh competitive salary, friendly colleagues, and personal passion. Although high pay pays the bills, a supportive working environment with helpful mentors reduces burnout and brings real career growth. Loving your field keeps motivation alive during tough weeks.",
+              "viText": "Khi chọn giữa các lời mời làm việc, người trẻ cân nhắc mức lương cạnh tranh, đồng nghiệp thân thiện và đam mê cá nhân. Dù lương cao giúp trang trải cuộc sống, môi trường làm việc hỗ trợ với người hướng dẫn tận tâm giúp giảm kiệt sức và phát triển sự nghiệp bền vững."
             },
             {
-              "id": "w-ls-2",
-              "badge": "✅ Nhánh 2: Tầm quan trọng & Rèn luyện Kỹ năng Lãnh đạo (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, leadership is a learnable skill built through continuous learning rather than just an inborn talent. This is mainly because managing a team trains individuals in change management, conflict resolution, and psychological safety. This means that a good leader can inspire team engagement and prevent organizational inertia.",
-              "viText": "Hơn nữa, lãnh đạo là kỹ năng có thể rèn luyện qua việc học hỏi không ngừng chứ không chỉ là năng khiếu bẩm sinh. Điều này chủ yếu là do việc quản lý đội nhóm rèn cho cá nhân kỹ năng quản lý sự thay đổi, giải quyết mâu thuẫn và tạo an toàn tâm lý. Điều này có nghĩa là người sếp tốt sẽ truyền cảm hứng và chống lại sự ì trệ."
+              "id": "work-job-choice-location-2",
+              "badge": "✅ Nhánh 2 – Chọn Loại hình Công ty (Multinational vs Family vs State)",
+              "text": "Comparing company types, a multinational company offers global training, clear promotion rules, and international networking compared with a small family business or traditional state company. Small family firms may lack clear structure, while state enterprises often feel slow to adopt modern technology.",
+              "viText": "So sánh các loại hình doanh nghiệp, công ty đa quốc gia mang lại quy trình đào tạo chuẩn quốc tế, lộ trình thăng tiến rõ và mạng lưới rộng hơn so với công ty gia đình hay doanh nghiệp nhà nước. Công ty gia đình thường thiếu hệ thống, còn đơn vị nhà nước hay chậm đổi mới công nghệ."
             },
             {
-              "id": "w-ls-3",
-              "badge": "⚠️ Nhánh 3: Mặt trái / Áp lực của Nghề Sales Manager (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one major drawback of being a sales manager is extreme target pressure and rapid burnout. This is mainly because managers are held accountable whenever monthly revenue stagnates during economic downturns. This means that they frequently suffer from anxiety, overtime exhaustion, and family neglect.",
-              "viText": "Mặt khác, một nhược điểm lớn của nghề quản lý bán hàng là áp lực doanh số khốc liệt và sự kiệt sức nhanh chóng. Điều này chủ yếu là do người quản lý phải chịu trách nhiệm mỗi khi doanh thu tháng bị trì trệ trong thời kỳ suy thoái. Điều này có nghĩa là họ thường xuyên bị lo âu, kiệt sức vì tăng ca và thiếu thời gian cho gia đình."
+              "id": "work-job-choice-location-3",
+              "badge": "⚖️ Nhánh 3 – Địa điểm Làm việc (Big City vs Abroad vs Hometown)",
+              "text": "Location also shapes a career: working in a major domestic city brings plenty of tech jobs without leaving family too far behind. Moving abroad raises cultural barriers and homesickness, while a quiet hometown often has a lower cost of living but limited high-level positions.",
+              "viText": "Địa điểm cũng định hình sự nghiệp: làm ở thành phố lớn trong nước có nhiều cơ hội công nghệ mà không quá xa gia đình. Ra nước ngoài dễ gặp rào cản văn hóa và nỗi nhớ nhà, còn về quê tuy chi phí sinh hoạt thấp nhưng lại ít vị trí chuyên môn cao."
             },
             {
-              "id": "w-ls-4",
-              "badge": "💡 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & IT Example)",
-              "text": "In my opinion, aspiring leaders should combine technical expertise with emotional resilience. For example, when leading a 5-member software development project at my university lab, I learned to divide coding tasks fairly and encourage my teammates, which helped us deliver our AI product on time.",
-              "viText": "Theo tôi, những nhà lãnh đạo tương lai cần kết hợp chuyên môn kỹ thuật với sự bền bỉ cảm xúc. Ví dụ, khi làm trưởng nhóm dự án phần mềm 5 người tại lab trường đại học, tôi đã học cách phân chia việc code công bằng và động viên đồng đội, giúp nhóm bàn giao sản phẩm AI đúng hạn."
+              "id": "work-job-choice-location-4",
+              "badge": "📈 Nhánh 4 – Ngành Hấp dẫn Giới trẻ & Đổi việc (Hot Fields & Switching)",
+              "text": "Nowadays, many young Vietnamese graduates prefer IT, digital marketing, and international business because these fields offer creative projects and rapid career growth. While changing jobs occasionally can raise a competitive salary, switching companies too often hurts employer trust and delays deeper expertise.",
+              "viText": "Ngày nay, nhiều bạn trẻ Việt Nam yêu thích ngành IT, tiếp thị số và kinh doanh quốc tế vì công việc sáng tạo và cơ hội thăng tiến nhanh. Dù thỉnh thoảng đổi việc giúp tăng mức lương cạnh tranh, nhảy việc quá thường xuyên lại làm giảm uy tín và chậm tích lũy chuyên môn sâu."
+            },
+            {
+              "id": "work-job-choice-location-5",
+              "badge": "🎯 Nhánh 5 – Ý kiến & Ví dụ (Tom's HCMC Multinational Choice)",
+              "text": "In my opinion, choosing a supportive working environment in a lively domestic city gives fresh graduates the strongest start. For example, starting in a multinational company in Ho Chi Minh City lets me grow professionally while staying close enough to visit family on weekends.",
+              "viText": "Theo tôi, chọn môi trường làm việc hỗ trợ tại thành phố lớn trong nước mang lại khởi đầu tốt nhất cho sinh viên mới ra trường. Ví dụ, bắt đầu ở công ty đa quốc gia tại TP.HCM giúp tôi phát triển chuyên môn mà vẫn đủ gần để về thăm gia đình cuối tuần."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (VLU 07/11 - Tố chất lãnh đạo là bẩm sinh hay học được?): I strongly believe leadership is mostly developed through continuous learning, self-reflection, and real-world practice rather than inborn traits.",
-            "answerVi": "Speaking P3 (VLU 07/11): Tôi tin chắc rằng kỹ năng lãnh đạo chủ yếu được rèn luyện qua sự học hỏi không ngừng, tự nhìn nhận và thực hành hơn là bẩm sinh.",
-            "reason": "🎙️ Cách rèn luyện Leadership cho sinh viên: Young people can build leadership by leading university club events, managing group projects, and adopting a proactive mindset.",
-            "reasonVi": "Cách rèn kỹ năng lãnh đạo: Người trẻ có thể rèn lãnh đạo bằng cách dẫn dắt câu lạc bộ, làm nhóm trưởng đồ án và rèn tư duy chủ động.",
-            "example": "📐 Lắp vào Writing Task 2 (Đề HUST 08/11 - Sales Manager Adv/Disadv): Đoạn 1 (Advantages) lắp Nhánh 1 + 2; Đoạn 2 (Disadvantages) lắp Nhánh 3 + 4.",
-            "exampleVi": "Giải quyết trọn vẹn cả đề Writing HUST 08/11 (Sales Manager) và Speaking VLU 07/11 (Leadership)."
+            "answer": "I prioritize a supportive working environment and career growth in a big domestic city or multinational company over pure high pay.",
+            "answerVi": "Tôi ưu tiên môi trường làm việc hỗ trợ và cơ hội phát triển nghề nghiệp tại thành phố lớn trong nước hoặc công ty đa quốc gia hơn là chỉ nhìn lương cao.",
+            "reason": "While competitive salary and low cost of living help daily finance, clear global training and personal passion matter most, without the homesickness of working abroad.",
+            "reasonVi": "Dù lương cạnh tranh và chi phí sinh hoạt thấp hỗ trợ tài chính, môi trường đào tạo chuyên nghiệp và đam mê cá nhân quan trọng nhất mà không chịu nỗi nhớ nhà khi xa xứ.",
+            "example": "Joining a multinational tech firm in Ho Chi Minh City lets me practice English daily and learn from senior architects.",
+            "exampleVi": "Làm việc tại công ty công nghệ đa quốc gia ở TP.HCM giúp tôi dùng tiếng Anh hằng ngày và học hỏi từ các kiến trúc sư hệ thống dày dặn kinh nghiệm."
           }
         },
         {
-          "id": "work-career-location-brain-drain",
-          "title": "Chọn Nơi Lập Nghiệp (Thành phố vs Quê nhà / Nước ngoài) & Chảy máu Chất xám",
-          "viTitle": "Kế thừa từ vựng: upward mobility, market value, comfort zone, opportunity cost, professional development",
-          "badge": "Chủ đề 6 (Đề VLU 08/11)",
+          "id": "work-sales-health-careers",
+          "title": "Quản lý Bán hàng & Nghề Chăm sóc Sức khỏe (Sales Manager & Health Careers)",
+          "viTitle": "Từ vựng B2: sales manager, high income potential, irregular working hours, heavy work pressure, fitness trainer, nutritionist",
           "examTags": [
-            "Speaking P2 (VLU 08/11): Choosing Where to Start a Career After Graduation (Hometown vs Big City vs Foreign Country)",
-            "Speaking P2: Choosing a Teaching Job (International School vs Public School Near Home)",
-            "Task 2 [Dạng 3 & 4 - Cause/Problem-Solution]: Brain Drain (Talented Workers Leaving Rural Areas or Developing Countries)"
+            "Writing T2: Advantages and Disadvantages of Pursuing a Career as a Sales Manager",
+            "Speaking P2: Career Choice in Health and Wellness"
           ],
-          "color": "#10b981",
           "keywords": [
-            { "word": "upward mobility", "meaning": "cơ hội thăng tiến cao ở thành phố lớn" },
-            { "word": "professional development", "meaning": "phát triển nghề nghiệp chuyên sâu" },
-            { "word": "comfort zone", "meaning": "vùng an toàn khi ở gần gia đình tại quê nhà" },
-            { "word": "market value", "meaning": "giá trị đãi ngộ nhân tài" },
-            { "word": "workplace culture", "meaning": "môi trường và văn hóa làm việc" }
+            {
+              "word": "sales manager",
+              "meaning": "quản lý bán hàng / kinh doanh"
+            },
+            {
+              "word": "high income potential",
+              "meaning": "tiềm năng thu nhập cao"
+            },
+            {
+              "word": "irregular working hours",
+              "meaning": "giờ giấc làm việc thất thường"
+            },
+            {
+              "word": "heavy work pressure",
+              "meaning": "áp lực công việc nặng nề"
+            },
+            {
+              "word": "fitness trainer",
+              "meaning": "huấn luyện viên thể hình cá nhân"
+            },
+            {
+              "word": "nutritionist",
+              "meaning": "chuyên gia dinh dưỡng"
+            }
           ],
           "items": [
             {
-              "id": "w-cl-1",
-              "badge": "✅ Nhánh 1: Lợi ích lập nghiệp ở Thành phố lớn (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that starting a career in a major city provides superior upward mobility and professional development. This is mainly because big metropolises concentrate leading technology corporations, research institutes, and modern workplace cultures. This means that fresh graduates can rapidly build skills and increase their market value.",
-              "viText": "Một lý do chính là bắt đầu sự nghiệp ở thành phố lớn mang lại cơ hội thăng tiến và phát triển chuyên môn vượt trội. Điều này chủ yếu là do các đại đô thị tập trung những tập đoàn công nghệ hàng đầu, viện nghiên cứu và văn hóa làm việc hiện đại. Điều này có nghĩa là sinh viên mới ra trường có thể nhanh chóng rèn kỹ năng và tăng giá trị thị trường."
+              "id": "work-sales-health-careers-1",
+              "badge": "✅ Nhánh 1 – Ưu điểm Quản lý Bán hàng (Income & Promotion)",
+              "text": "Pursuing a career as a sales manager attracts ambitious young graduates because it offers high income potential through monthly bonuses and commissions. Moreover, handling big client deals brings rapid career promotion, sharpens communication habits, and builds practical negotiation skills useful across every business industry.",
+              "viText": "Theo đuổi nghề quản lý bán hàng thu hút sinh viên trẻ đầy tham vọng nhờ tiềm năng thu nhập cao từ tiền thưởng và hoa hồng hằng tháng. Hơn nữa, phụ trách các hợp đồng lớn giúp thăng tiến nhanh, rèn giao tiếp khéo léo và kỹ năng đàm phán hữu ích trong mọi ngành."
             },
             {
-              "id": "w-cl-2",
-              "badge": "⚠️ Nhánh 2: Nguyên nhân Chảy máu chất xám (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one contributing factor to brain drain from rural provinces is low salary and organizational inertia. This is mainly because local companies often lack modern equipment and merit-based promotion. This means that ambitious young talents feel their careers will stagnate if they return to their hometowns.",
-              "viText": "Mặt khác, một yếu tố góp phần gây chảy máu chất xám khỏi các tỉnh lẻ là mức lương thấp và sự ì trệ của tổ chức. Điều này chủ yếu là do doanh nghiệp địa phương thường thiếu trang thiết bị hiện đại và cơ chế trọng dụng nhân tài. Điều này có nghĩa là những người trẻ giàu hoài bão sợ sự nghiệp sẽ trì trệ nếu về quê."
+              "id": "work-sales-health-careers-2",
+              "badge": "⚠️ Nhánh 2 – Nhược điểm Quản lý Bán hàng (Pressure & Hours)",
+              "text": "However, working as a sales manager also creates heavy work pressure to reach strict monthly sales targets. Constant client meetings and urgent market drops often force staff into irregular working hours during evenings and weekends, leaving very little relaxed time for family dinners or hobbies.",
+              "viText": "Tuy nhiên, làm quản lý bán hàng cũng tạo áp lực công việc nặng nề để đạt chỉ tiêu doanh số nghiêm ngặt hằng tháng. Các cuộc hẹn khách hàng dày đặc khiến nhân viên phải làm giờ giấc thất thường vào buổi tối và cuối tuần, ít còn thời gian nghỉ ngơi bên gia đình."
             },
             {
-              "id": "w-cl-3",
-              "badge": "💡 Nhánh 3: Giải pháp thu hút Nhân tài & Cân bằng (Best approach ➔ Because ➔ Meaning)",
-              "text": "In my opinion, the best approach to reverse brain drain is improving provincial infrastructure and offering tax incentives to tech firms. This is mainly because remote work and digital connectivity allow engineers to work for global clients from anywhere. This means that young workers can enjoy both career growth and low rural living costs.",
-              "viText": "Theo tôi, giải pháp tốt nhất để đảo ngược chảy máu chất xám là nâng cấp hạ tầng tỉnh lẻ và ưu đãi thuế cho doanh nghiệp công nghệ. Điều này chủ yếu là do làm việc từ xa và kết nối số cho phép kỹ sư làm việc cho khách hàng toàn cầu từ bất cứ đâu. Điều này có nghĩa là người trẻ vừa phát triển sự nghiệp vừa hưởng chi phí sống rẻ ở quê."
+              "id": "work-sales-health-careers-3",
+              "badge": "⚖️ Nhánh 3 – Nghề Sức khỏe: Nutritionist vs Trainer vs Community Care",
+              "text": "When advising a friend passionate about health and wellness, becoming a professional nutritionist offers regular daytime schedules and rising public demand compared with a personal fitness trainer or community healthcare worker. Unlike exhausting evening gym shifts or tiring rural travel, planning healthy diets provides long-term stability.",
+              "viText": "Khi tư vấn cho bạn đam mê sức khỏe, làm chuyên gia dinh dưỡng mang lại lịch ban ngày đều đặn và nhu cầu xã hội ngày càng tăng so với huấn luyện viên thể hình hay nhân viên y tế cộng đồng. Khác với ca tối mệt mỏi ở phòng gym, nghề dinh dưỡng ổn định lâu dài hơn."
             },
             {
-              "id": "w-cl-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, after graduating in Computer Science, I chose to work in Ho Chi Minh City for three years to master cloud computing architecture before planning to manage remote software teams from my hometown.",
-              "viText": "Ví dụ, sau khi tốt nghiệp ngành Khoa học máy tính, tôi chọn làm việc tại TP.HCM trong 3 năm để làm chủ kiến trúc điện toán đám mây trước khi có kế hoạch quản lý các nhóm phần mềm từ xa ngay tại quê nhà."
+              "id": "work-sales-health-careers-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Health Stability over Quota Stress)",
+              "text": "In my opinion, choosing a career should balance steady income with daily mental health rather than chasing commissions blindly. For example, my cousin chose to become a hospital nutritionist instead of taking high-target sales shifts with exhausting irregular working hours.",
+              "viText": "Theo tôi, chọn nghề nghiệp cần cân bằng thu nhập ổn định với sức khỏe tinh thần thay vì chỉ chạy theo hoa hồng. Ví dụ, anh họ tôi chọn làm chuyên gia dinh dưỡng bệnh viện thay vì nhận công việc bán hàng áp lực doanh số và giờ giấc thất thường."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (VLU 08/11 - Chọn Thành phố lớn sau tốt nghiệp): I would definitely choose starting my career in a big city because it offers the best professional development, networking, and upward mobility.",
-            "answerVi": "Speaking P2 (VLU 08/11): Tôi chắc chắn chọn lập nghiệp ở thành phố lớn vì nó mang lại sự phát triển chuyên môn, mạng lưới quan hệ và cơ hội thăng tiến tốt nhất.",
-            "reason": "🎙️ Bác bỏ Quê nhà & Nước ngoài: Working in my hometown right now may cause career stagnation due to fewer tech jobs, while moving abroad is too costly and lonely.",
-            "reasonVi": "Lý do loại Quê nhà & Nước ngoài: Về quê ngay lúc này dễ làm sự nghiệp trì trệ vì ít việc làm IT, trong khi ra nước ngoài lại quá đắt đỏ và cô đơn.",
-            "example": "📐 Lắp vào Writing Task 2 (Brain Drain / Urbanization): Đoạn 1 (Causes/Problems) lắp Nhánh 1 + 2; Đoạn 2 (Solutions) lắp Nhánh 3 + 4.",
-            "exampleVi": "Dùng trực tiếp cho đề Speaking Part 2 VLU 08/11 và Writing Task 2 về Brain Drain."
+            "answer": "While a sales manager enjoys high income potential, a nutritionist career offers better daily balance than stressful sales quotas or gym trainer shifts.",
+            "answerVi": "Dù quản lý bán hàng có tiềm năng thu nhập cao, nghề chuyên gia dinh dưỡng mang lại sự cân bằng hằng ngày tốt hơn áp lực doanh số hay ca tập phòng gym.",
+            "reason": "Sales jobs often involve heavy work pressure and irregular working hours, whereas advising clients on diet builds meaningful impact without exhausting late-night travel.",
+            "reasonVi": "Nghề bán hàng thường chịu áp lực nặng và giờ giấc thất thường, trong khi tư vấn dinh dưỡng vừa tạo giá trị cho cộng đồng vừa không phải đi lại đêm khuya.",
+            "example": "Choosing clinical nutrition instead of tough commission targets gave my relative steady hours, healthy clients, and peaceful weekends.",
+            "exampleVi": "Chọn chuyên ngành dinh dưỡng thay vì chạy chỉ tiêu doanh số giúp người thân tôi có giờ làm ổn định và cuối tuần thảnh thơi."
           }
         },
         {
-          "id": "work-teamwork-workplace-culture",
-          "title": "Làm việc Nhóm (Teamwork) vs Độc lập & Văn hóa Doanh nghiệp",
-          "viTitle": "Kế thừa từ vựng: workplace culture, psychological safety, skill building, adaptability, disengagement",
-          "badge": "Chủ đề 7",
+          "id": "work-teaching-english-careers",
+          "title": "Nghề Giáo viên & Việc làm Luyện Tiếng Anh (Teaching & English Jobs)",
+          "viTitle": "Từ vựng B2: teaching career, public school, international school, practice English, language center, tour guide",
           "examTags": [
-            "Task 2 [Dạng 1 - Agree/Disagree]: Working in a Team Is Better Than Working Alone",
-            "Speaking P3: Importance of Teamwork and a Positive Workplace Culture",
-            "Speaking P2: Choosing a Team Building Activity for Company Staff"
+            "Speaking P2: Choosing a Teaching Job",
+            "Speaking P2: Choosing a School to Teach",
+            "Speaking P2: Career Choice for a Teaching Graduate",
+            "Speaking P2: Recommending a Job to Improve English Skills",
+            "Speaking P2: Choosing a Job to Practice English"
           ],
-          "color": "#10b981",
           "keywords": [
-            { "word": "workplace culture", "meaning": "văn hóa nơi làm việc" },
-            { "word": "psychological safety", "meaning": "cảm giác an toàn tâm lý khi đóng góp ý kiến" },
-            { "word": "skill building", "meaning": "học hỏi và xây dựng kỹ năng từ đồng nghiệp" },
-            { "word": "adaptability", "meaning": "khả năng phối hợp thích ứng" },
-            { "word": "disengagement", "meaning": "sự rời rạc, mất kết nối giữa các thành viên" }
+            {
+              "word": "teaching career",
+              "meaning": "nghề dạy học / sự nghiệp sư phạm"
+            },
+            {
+              "word": "public school",
+              "meaning": "trường công lập"
+            },
+            {
+              "word": "international school",
+              "meaning": "trường quốc tế"
+            },
+            {
+              "word": "practice English",
+              "meaning": "thực hành / rèn luyện tiếng Anh"
+            },
+            {
+              "word": "language center",
+              "meaning": "trung tâm ngoại ngữ"
+            },
+            {
+              "word": "tour guide",
+              "meaning": "hướng dẫn viên du lịch"
+            }
           ],
           "items": [
             {
-              "id": "w-tw-1",
-              "badge": "✅ Nhánh 1: Ưu điểm của Làm việc nhóm (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that collaborative teamwork accelerates problem-solving and mutual skill building. This is mainly because team members can combine diverse perspectives and share heavy workloads. This means that complex projects are completed faster with fewer errors than working in isolation.",
-              "viText": "Một lý do chính là làm việc nhóm thúc đẩy nhanh việc giải quyết vấn đề và học hỏi kỹ năng lẫn nhau. Điều này chủ yếu là do các thành viên có thể kết hợp nhiều góc nhìn đa dạng và san sẻ khối lượng việc nặng. Điều này có nghĩa là các dự án phức tạp được hoàn thành nhanh hơn và ít lỗi hơn so với làm một mình."
+              "id": "work-teaching-english-careers-1",
+              "badge": "⚖️ Nhánh 1 – Chọn Trường: Công lập Gần nhà vs Tư thục & Quê nhà",
+              "text": "Starting a teaching career at a public school near home provides reliable job stability, low transport costs, and close family support. By contrast, a small village school in a quiet hometown often pays less, while an unfamiliar private school far away brings strict student enrollment pressure.",
+              "viText": "Bắt đầu nghề dạy học tại trường công lập gần nhà mang lại sự ổn định cao, tiết kiệm chi phí đi lại và gần gũi gia đình. Ngược lại, trường làng quê tuy yên bình nhưng thu nhập thường thấp hơn, còn trường tư thục xa nhà hay chịu áp lực tuyển sinh lớn."
             },
             {
-              "id": "w-tw-2",
-              "badge": "✅ Nhánh 2: Vai trò của Văn hóa doanh nghiệp (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, a supportive workplace culture creates psychological safety and high job satisfaction. This is mainly because employees feel respected when sharing innovative ideas without fear of blame. This means that companies can prevent disengagement and retain loyal talent for a long time.",
-              "viText": "Hơn nữa, văn hóa nơi làm việc tích cực tạo ra sự an toàn tâm lý và sự hài lòng cao trong công việc. Điều này chủ yếu là do nhân viên cảm thấy được tôn trọng khi đóng góp ý tưởng mới mà không sợ bị đổ lỗi. Điều này có nghĩa là công ty ngăn chặn được sự chán việc và giữ chân nhân tài lâu dài."
+              "id": "work-teaching-english-careers-2",
+              "badge": "⚖️ Nhánh 2 – Trường Quốc tế: Thu nhập vs Áp lực Xa nhà",
+              "text": "Teaching at an international school in a big city offers higher pay, modern classrooms, and daily English communication. However, heavy lesson preparation, high parent expectations, and expensive city rent make a nearby public school less stressful for fresh university graduates finding their rhythm.",
+              "viText": "Dạy ở trường quốc tế tại thành phố lớn có lương cao, lớp học hiện đại và dùng tiếng Anh hằng ngày. Tuy nhiên, soạn giáo án nặng, kỳ vọng khắt khe từ phụ huynh và tiền trọ đắt đỏ khiến trường công gần nhà dễ thở hơn cho sinh viên mới ra trường."
             },
             {
-              "id": "w-tw-3",
-              "badge": "⚠️ Nhánh 3: Khi nào Làm việc Độc lập tốt hơn (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, working independently is sometimes more effective for tasks requiring deep concentration. This is mainly because large teams often waste time in endless meetings and suffer from free-riding members. This means that individual specialists can work faster alone when executing technical tasks.",
-              "viText": "Mặt khác, làm việc độc lập đôi khi hiệu quả hơn đối với những nhiệm vụ đòi hỏi sự tập trung sâu. Điều này chủ yếu là do các nhóm đông người thường tốn thời gian họp hành miên man và có người ỷ lại. Điều này có nghĩa là các chuyên gia có thể làm nhanh hơn khi thực hiện tác vụ kỹ thuật một mình."
+              "id": "work-teaching-english-careers-3",
+              "badge": "⚖️ Nhánh 3 – Luyện Tiếng Anh: Trung tâm, Du lịch vs Khách sạn, Nhà hàng",
+              "text": "To practice English effectively through part-time work, assisting classes at a language center, joining a travel agency, or working as a tour guide creates rich conversations. In contrast, a hotel receptionist repeats brief check-in scripts, and a restaurant waiter mostly uses simple food phrases.",
+              "viText": "Để luyện tiếng Anh hiệu quả qua việc làm thêm, trợ giảng tại trung tâm ngoại ngữ, làm ở công ty lữ hành hay làm hướng dẫn viên du lịch tạo môi trường trò chuyện tự nhiên. Ngược lại, lễ tân khách sạn hay phục vụ nhà hàng chủ yếu lặp lại vài mẫu câu ngắn."
             },
             {
-              "id": "w-tw-4",
-              "badge": "💡 Nhánh 4: Giải pháp kết hợp & Ví dụ IT (Solution & IT Example)",
-              "text": "In my opinion, modern professionals should combine independent focus with effective teamwork. For example, in my Master's software project, we hold a 15-minute team meeting every morning to divide modules, and then each programmer writes code independently to maximize efficiency.",
-              "viText": "Theo tôi, người đi làm hiện đại nên kết hợp sự tập trung độc lập với làm việc nhóm hiệu quả. Ví dụ, trong đồ án phần mềm Thạc sĩ của tôi, cả nhóm họp 15 phút mỗi sáng để chia phân hệ, sau đó mỗi lập trình viên độc lập viết code để đạt hiệu suất tối đa."
+              "id": "work-teaching-english-careers-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Steady Start & Active Speaking)",
+              "text": "In my opinion, new teachers benefit from starting at a public school near home, while students wanting fluency should pick jobs full of real dialogue. For example, tutoring at an English language center helped my classmate speak confidently every evening.",
+              "viText": "Theo tôi, giáo viên mới ra trường nên khởi đầu ở trường công gần nhà, còn sinh viên muốn nói tiếng Anh lưu loát cần chọn việc giàu giao tiếp thật. Ví dụ, làm trợ giảng tại trung tâm Anh ngữ giúp bạn cùng lớp tôi tự tin nói chuyện mỗi tối."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (Lợi ích của Teamwork): Teamwork allows colleagues to share workloads, learn from each other's strengths, and build a supportive workplace culture.",
-            "answerVi": "Speaking P3: Làm việc nhóm giúp đồng nghiệp san sẻ khối lượng việc, học hỏi điểm mạnh của nhau và xây dựng văn hóa công sở gắn kết.",
-            "reason": "🎙️ Khi nào nên làm độc lập: However, for deep technical tasks like coding or writing reports, working independently prevents distractions.",
-            "reasonVi": "Khi nào nên làm độc lập: Tuy nhiên, với các việc kỹ thuật cần tập trung sâu như viết code hay làm báo cáo, làm độc lập giúp tránh xao nhãng.",
-            "example": "📐 Lắp vào Writing Task 2 (Teamwork vs Working Alone): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Dùng linh hoạt cho cả đề ủng hộ Teamwork lẫn đề ủng hộ Working Independently."
+            "answer": "For teaching graduates, a public school near home is steadier, while working at a language center or as a tour guide is best to practice English.",
+            "answerVi": "Với sinh viên sư phạm, dạy ở trường công lập gần nhà ổn định hơn, còn làm ở trung tâm ngoại ngữ hoặc hướng dẫn viên là cách tốt nhất để luyện tiếng Anh.",
+            "reason": "An international school brings high pay alongside heavy stress, whereas starting a teaching career locally saves rent and English-rich part-time jobs prevent repetitive waiting scripts.",
+            "reasonVi": "Trường quốc tế lương cao nhưng áp lực lớn, trong khi dạy gần nhà tiết kiệm tiền thuê và việc trợ giảng hay du lịch giúp tránh lặp lại câu chữ đơn giản như phục vụ bàn.",
+            "example": "Assisting speaking clubs at a neighborhood language center let my friend improve fluency quickly without sacrificing evening university study.",
+            "exampleVi": "Làm trợ giảng câu lạc bộ nói tại một trung tâm ngoại ngữ gần trường giúp bạn tôi tăng độ trôi chảy nhanh mà không ảnh hưởng lịch học đại học."
           }
         },
         {
-          "id": "work-financial-management-salary",
-          "title": "Lương cao vs Đam mê (High Salary vs Job Satisfaction) & Quản lý Tài chính",
-          "viTitle": "Kế thừa từ vựng: motivation driver, job satisfaction, personal fulfillment, burnout, job security",
-          "badge": "Chủ đề 8",
+          "id": "work-soft-skills-leadership",
+          "title": "Kỹ năng Mềm, Lãnh đạo & Gắn kết Đội nhóm (Soft Skills & Leadership)",
+          "viTitle": "Từ vựng B2: soft skills, effective leadership, team productivity, workplace conflicts, time management, career advancement, team-building activity",
           "examTags": [
-            "Task 2 [Dạng 1 - Agree/Disagree]: Is High Salary the Most Important Factor When Choosing a Job?",
-            "Speaking P3: Money vs Job Satisfaction & How Young People Should Manage Money",
-            "Speaking P2: Choosing Between a High-Paying Stressful Job and a Lower-Paying Fulfilling Job"
+            "Speaking P3: The Importance of Soft Skills in the Workplace",
+            "Speaking P3: The Importance of Leadership in Contemporary Society",
+            "Speaking P2: Choosing a Professional Skill Development Course",
+            "Speaking P2: Choosing a Team-Building Activity for Colleagues"
           ],
-          "color": "#10b981",
           "keywords": [
-            { "word": "motivation driver", "meaning": "động lực thúc đẩy làm việc" },
-            { "word": "job satisfaction", "meaning": "sự hài lòng trong công việc" },
-            { "word": "personal fulfillment", "meaning": "sự thỏa mãn và ý nghĩa cá nhân" },
-            { "word": "job security", "meaning": "sự đảm bảo an toàn tài chính" },
-            { "word": "burnout", "meaning": "sự kiệt sức vì chạy theo đồng tiền" }
+            {
+              "word": "soft skills",
+              "meaning": "kỹ năng mềm"
+            },
+            {
+              "word": "effective leadership",
+              "meaning": "năng lực lãnh đạo hiệu quả"
+            },
+            {
+              "word": "team productivity",
+              "meaning": "năng suất làm việc của cả nhóm"
+            },
+            {
+              "word": "workplace conflicts",
+              "meaning": "xung đột tại nơi làm việc"
+            },
+            {
+              "word": "time management",
+              "meaning": "quản lý thời gian"
+            },
+            {
+              "word": "career advancement",
+              "meaning": "thăng tiến nghề nghiệp"
+            },
+            {
+              "word": "team-building activity",
+              "meaning": "hoạt động gắn kết đội nhóm"
+            }
           ],
           "items": [
             {
-              "id": "w-fm-1",
-              "badge": "✅ Nhánh 1: Tại sao Lương cao rất quan trọng (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that a competitive salary serves as a primary motivation driver and ensures financial security. This is mainly because workers need stable income to afford housing, healthcare, and family education in expensive cities. This means that fair pay directly reduces financial anxiety and attracts top talent.",
-              "viText": "Một lý do chính là mức lương cạnh tranh đóng vai trò là động lực thúc đẩy hàng đầu và đảm bảo an toàn tài chính. Điều này chủ yếu là do người lao động cần thu nhập ổn định để chi trả nhà ở, y tế và giáo dục ở các thành phố đắt đỏ. Điều này có nghĩa là đãi ngộ xứng đáng giúp giảm lo âu tài chính và thu hút nhân tài."
+              "id": "work-soft-skills-leadership-1",
+              "badge": "✅ Nhánh 1 – Kỹ năng Mềm (Productivity, Promotion & Experience)",
+              "text": "Employers often value soft skills like communication and time management above high grades because habits matter every day. Strong interpersonal habits raise team productivity, open doors to career advancement, and resolve workplace conflicts calmly. Students learn these skills best through real teamwork rather than textbooks alone.",
+              "viText": "Nhà tuyển dụng thường đánh giá cao kỹ năng mềm như giao tiếp và quản lý thời gian hơn cả điểm số vì chúng ảnh hưởng trực tiếp từng ngày. Kỹ năng tốt giúp tăng năng suất nhóm, mở đường thăng tiến nghề nghiệp và giải quyết xung đột công sở qua trải nghiệm thật."
             },
             {
-              "id": "w-fm-2",
-              "badge": "✅ Nhánh 2: Tại sao Sự hài lòng & Văn hóa quan trọng không kém (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, long-term career retention depends heavily on job satisfaction and personal fulfillment. This is mainly because a toxic workplace culture with excessive overtime quickly leads to severe burnout and disengagement. This means that money alone cannot keep employees happy if their mental health is destroyed.",
-              "viText": "Hơn nữa, sự gắn bó lâu dài phụ thuộc rất lớn vào mức độ hài lòng và sự thỏa mãn cá nhân. Điều này chủ yếu là do một môi trường độc hại bắt tăng ca quá mức sẽ nhanh chóng dẫn đến kiệt sức và chán nản. Điều này có nghĩa là tiền bạc đơn thuần không thể giữ chân nhân viên nếu sức khỏe tinh thần bị hủy hoại."
+              "id": "work-soft-skills-leadership-2",
+              "badge": "✅ Nhánh 2 – Lãnh đạo Hiệu quả (Crisis, Trust & Innovation)",
+              "text": "Effective leadership guides groups toward shared goals, welcomes fresh innovation, and makes calm decisive choices during a crisis. Unlike a poor manager who only gives cold orders, a great leader builds mutual trust. Leadership is not just an inborn gift; young people can train it in clubs.",
+              "viText": "Lãnh đạo hiệu quả giúp dẫn dắt tập thể tới mục tiêu chung, khuyến khích đổi mới và đưa ra quyết định dứt khoát lúc khủng hoảng. Khác với quản lý kém chỉ ra lệnh khô khan, lãnh đạo giỏi tạo dựng lòng tin và hoàn toàn có thể rèn luyện qua câu lạc bộ."
             },
             {
-              "id": "w-fm-3",
-              "badge": "⚠️ Nhánh 3: Vấn đề tiêu xài hoang phí của giới trẻ (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one contributing factor to financial stress among young workers is impulsive spending and lack of self-awareness. This is mainly because many youths spend their entire salary on luxury gadgets without saving an emergency fund. This means that they become trapped in job hugging because they cannot afford a single month without pay.",
-              "viText": "Mặt khác, một yếu tố gây áp lực tài chính ở người trẻ là thói quen tiêu xài bốc đồng và thiếu tự nhận thức. Điều này chủ yếu là do nhiều bạn tiêu hết lương vào đồ công nghệ đắt tiền mà không lập quỹ dự phòng. Điều này có nghĩa là họ bị kẹt trong cảnh bám víu công việc (job hugging) vì không thể sống nổi một tháng nếu mất lương."
+              "id": "work-soft-skills-leadership-3",
+              "badge": "⚖️ Nhánh 3 – Chọn Khóa học Kỹ năng (Time Management vs Speaking & IT)",
+              "text": "Before job hunting, a time and project management course delivers daily structure across any profession. Public speaking classes mainly help confident presenters and computer IT skills are easy to pick up online, whereas organizing deadlines helps fresh graduates finish every assignment reliably.",
+              "viText": "Trước khi xin việc, khóa quản lý thời gian và dự án mang lại nền tảng làm việc bài bản cho mọi ngành. Lớp thuyết trình chủ yếu hợp người tự tin còn tin học văn phòng dễ tự học trực tuyến, trong khi biết sắp xếp hạn chót giúp tân cử nhân luôn hoàn thành đúng việc."
             },
             {
-              "id": "w-fm-4",
-              "badge": "💡 Nhánh 4: Giải pháp Quản lý tài chính & Ví dụ IT (Solution & IT Example)",
-              "text": "In my opinion, the best approach is to balance a decent salary with a growth-friendly workplace while saving 30% of monthly income. For example, as an IT engineer, I automatically transfer 30% of my salary into a savings account and invest in online AI courses to steadily increase my market value.",
-              "viText": "Theo tôi, hướng đi tốt nhất là cân bằng giữa mức lương khá với môi trường giàu cơ hội phát triển, đồng thời tiết kiệm 30% thu nhập hàng tháng. Ví dụ, là kỹ sư IT, tôi tự động trích 30% lương vào tài khoản tiết kiệm và đầu tư mua các khóa học AI để nâng cao giá trị thị trường của bản thân."
+              "id": "work-soft-skills-leadership-4",
+              "badge": "⚖️ Nhánh 4 – Chọn Hoạt động Đội nhóm (Cooking vs Painting vs Photo)",
+              "text": "For a company team-building activity, a group cooking class sparks natural conversation and shared laughter regardless of rainy weather. By contrast, a collective painting workshop stays quiet and individual, while an outdoor photography trip easily tires staff or gets canceled during sudden summer storms.",
+              "viText": "Để gắn kết đồng nghiệp, lớp nấu ăn chung tạo sự trao đổi tự nhiên và tiếng cười thoải mái bất kể thời tiết mưa nắng. Ngược lại, buổi vẽ tranh tập thể khá im ắng và rời rạc, còn đi chụp ảnh ngoài trời dễ làm mọi người mệt hoặc bị hủy khi gặp mưa bất chợt."
+            },
+            {
+              "id": "work-soft-skills-leadership-5",
+              "badge": "🎯 Nhánh 5 – Ý kiến & Ví dụ (IT Team Leadership)",
+              "text": "In my opinion, technical skills help you get an interview, while soft skills drive long-term career advancement. For example, taking a time management course and leading four teammates in an IT project taught me how to divide tasks fairly and hit every tight deadline.",
+              "viText": "Theo tôi, kỹ năng chuyên môn giúp bạn vượt qua vòng phỏng vấn, còn kỹ năng mềm quyết định khả năng thăng tiến lâu dài. Ví dụ, học quản lý thời gian và dẫn dắt nhóm bốn bạn trong đồ án IT giúp tôi chia việc công bằng và luôn kịp tiến độ gấp."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (Chọn việc lương vừa phải nhưng môi trường tốt vs Việc lương cao nhưng độc hại): I would choose a job with a supportive workplace culture and growth mindset over a toxic high-paying job to avoid burnout.",
-            "answerVi": "Speaking P2: Tôi chọn công việc có văn hóa hỗ trợ và cơ hội phát triển hơn là công việc lương cao nhưng độc hại để tránh kiệt sức.",
-            "reason": "🎙️ Speaking Part 3 (Quản lý tài chính cá nhân): Saving an emergency fund gives workers psychological safety and the freedom to make career transitions.",
-            "reasonVi": "Speaking P3: Lập quỹ dự phòng khẩn cấp mang lại sự an toàn tâm lý và sự tự do khi muốn chuyển đổi sự nghiệp.",
-            "example": "📐 Lắp vào Writing Task 2 (Salary vs Job Satisfaction): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 4.",
-            "exampleVi": "Lắp trực tiếp vào Dạng 1 (Agree/Disagree) và Dạng 2 (Adv/Disadv)."
+            "answer": "Strong soft skills and effective leadership boost team productivity, drive career advancement, and solve workplace conflicts far better than grades alone.",
+            "answerVi": "Kỹ năng mềm vững và năng lực lãnh đạo hiệu quả giúp tăng năng suất nhóm, thúc đẩy thăng tiến nghề nghiệp và giải quyết xung đột công sở tốt hơn nhiều so với điểm số đơn thuần.",
+            "reason": "A time management course and a cheerful team-building activity like group cooking build lasting trust and decisive habits that books cannot teach.",
+            "reasonVi": "Khóa quản lý thời gian cùng hoạt động gắn kết như lớp nấu ăn nhóm tạo dựng niềm tin và thói quen xử lý quyết đoán mà sách vở không dạy trọn vẹn được.",
+            "example": "Leading an engineering group during my third year taught me communication, clear planning, and calm teamwork under tight deadlines.",
+            "exampleVi": "Dẫn dắt nhóm đồ án kỹ thuật năm ba dạy tôi kỹ năng giao tiếp, lập kế hoạch rõ ràng và phối hợp bình tĩnh khi gần hạn nộp."
+          }
+        },
+        {
+          "id": "work-balance-stress",
+          "title": "Cân bằng Công việc - Cuộc sống & Áp lực Nghề nghiệp (Work-Life Balance & Stress)",
+          "viTitle": "Từ vựng B2: work-life balance, work-related stress, mental burnout, continuous overtime, family relationships, clear boundaries",
+          "examTags": [
+            "Speaking P3: Work-Life Balance",
+            "Speaking P3: The Importance of Sustaining Work-Life Balance",
+            "Writing T2: Work-Related Stress: Impacts and Solutions"
+          ],
+          "keywords": [
+            {
+              "word": "work-life balance",
+              "meaning": "cân bằng giữa công việc và cuộc sống"
+            },
+            {
+              "word": "work-related stress",
+              "meaning": "căng thẳng liên quan đến công việc"
+            },
+            {
+              "word": "mental burnout",
+              "meaning": "kiệt sức tinh thần (do làm việc quá tải)"
+            },
+            {
+              "word": "continuous overtime",
+              "meaning": "tăng ca liên tục"
+            },
+            {
+              "word": "family relationships",
+              "meaning": "các mối quan hệ gia đình"
+            },
+            {
+              "word": "clear boundaries",
+              "meaning": "ranh giới rõ ràng (giữa giờ làm và nghỉ)"
+            }
+          ],
+          "items": [
+            {
+              "id": "work-balance-stress-1",
+              "badge": "⚠️ Nhánh 1 – Tác hại Căng thẳng & Tăng ca (Health, Family & Youth Pay)",
+              "text": "Continuous overtime and late-night work chats trigger serious work-related stress, mental burnout, and poor sleep. Many young graduates still sacrifice evening rest for higher pay at first, yet constant exhaustion soon harms family relationships and reduces long-term loyalty.",
+              "viText": "Tăng ca liên tục và kiểm tra tin nhắn công việc khuya gây căng thẳng công việc nghiêm trọng, kiệt sức tinh thần và mất ngủ. Nhiều bạn trẻ ban đầu sẵn sàng đánh đổi thời gian nghỉ để nhận lương cao hơn, nhưng mệt mỏi kéo dài sớm làm rạn nứt quan hệ gia đình."
+            },
+            {
+              "id": "work-balance-stress-2",
+              "badge": "✅ Nhánh 2 – Lợi ích Cân bằng (Innovation, Satisfaction & Realism)",
+              "text": "By contrast, protecting work-life balance boosts creativity, workplace innovation, and steady job satisfaction. Well-rested workers enjoy personal hobbies, stay energetic, and make fewer costly mistakes. While perfect daily balance is unrealistic before big deadlines, aiming for healthy weekly recovery keeps careers sustainable.",
+              "viText": "Ngược lại, bảo vệ cân bằng công việc - cuộc sống thúc đẩy sự sáng tạo, đổi mới tại nơi làm việc và mức độ hài lòng lâu dài. Người được nghỉ ngơi đầy đủ sẽ có thời gian cho sở thích riêng và ít mắc sai sót, dù sự cân bằng tuyệt đối mỗi ngày khá khó trước các hạn chót gấp."
+            },
+            {
+              "id": "work-balance-stress-3",
+              "badge": "💡 Nhánh 3 – Giải pháp Công ty & Cá nhân (Clear Boundaries)",
+              "text": "Solving occupational stress requires fair rules from employers and personal discipline. Companies should ban unnecessary after-hours emails, offer flexible hours, and balance team workloads. Meanwhile, workers must set clear boundaries, manage daily tasks efficiently, and unplug completely during family evenings.",
+              "viText": "Giải quyết áp lực công việc cần quy định công bằng từ công ty và kỷ luật cá nhân. Doanh nghiệp nên hạn chế gửi email ngoài giờ không cần thiết, linh hoạt giờ giấc và chia đều khối lượng việc, còn nhân viên cần đặt ranh giới rõ ràng và tắt thông báo công việc buổi tối bên gia đình."
+            },
+            {
+              "id": "work-balance-stress-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Unplugging After Hours)",
+              "text": "In my opinion, protecting personal rest is essential for sustainable success, even in fast-paced IT careers. For example, after 8 p.m., I close work laptops, listen to K-pop, or play Minecraft with friends to recharge my batteries before the next busy day.",
+              "viText": "Theo tôi, bảo vệ thời gian nghỉ ngơi cá nhân là điều thiết yếu để thành công bền vững ngay cả trong ngành IT áp lực cao. Ví dụ, sau 8 giờ tối tôi đóng laptop học tập và làm việc, nghe K-pop hoặc chơi Minecraft cùng bạn bè để nạp lại năng lượng cho ngày mới."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Maintaining work-life balance prevents mental burnout and protects family relationships, which makes employees far more productive over time.",
+            "answerVi": "Duy trì cân bằng công việc - cuộc sống giúp tránh kiệt sức tinh thần và bảo vệ tình cảm gia đình, nhờ đó nhân viên làm việc hiệu quả hơn về lâu dài.",
+            "reason": "Continuous overtime creates serious work-related stress, so employers must respect after-hours rest while staff set clear boundaries and organize time wisely.",
+            "reasonVi": "Tăng ca liên tục gây căng thẳng công việc nghiêm trọng, nên doanh nghiệp cần tôn trọng giờ nghỉ còn nhân viên đặt ranh giới rõ ràng và quản lý thời gian tốt.",
+            "example": "Turning off work chats after dinner to spend time with family or enjoy personal hobbies keeps me refreshed and motivated.",
+            "exampleVi": "Tắt tin nhắn công việc sau bữa tối để trò chuyện cùng gia đình hoặc giải trí theo sở thích giúp tôi luôn tỉnh táo và có động lực."
           }
         }
       ]

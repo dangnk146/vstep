@@ -2,247 +2,711 @@
   "id": "education",
   "title": "Education, Campus & Learning",
   "vietnameseTitle": "Giáo dục, Khuôn viên Trường & Học tập",
-  "description": "Mindmap kế thừa từ Kho 30 Từ Vựng Giáo dục & Học tập kết hợp Chuỗi Bậc Thang 5 Cấu Trúc (One major reason -> This is mainly because -> This means that) cho Writing Task 2 & Speaking Part 2, 3.",
+  "description": "Mindmap từ vựng B2 bám sát đề thi VSTEP cho Writing Task 2 & Speaking Part 2, 3 (11 chủ đề cốt lõi, 66 cụm từ B2 chuẩn xác).",
   "icon": "GraduationCap",
   "centerNode": {
     "title": "Education & Learning Hub",
-    "subtitle": "30 Từ Vựng Gốc Dùng Chung – 8 Chủ Đề Xương Sống",
+    "subtitle": "66 Từ Vựng B2 Bám Đề – 11 Chủ Đề Cốt Lõi",
     "categoryBadge": "Topic Hub 1 (Hệ Thống Kế Thừa Ý B2)"
   },
   "leftBranches": [
     {
       "id": "edu-group-campus-higher-ed",
-      "title": "Campus Facilities, University Choice, Rules & Exam Pressure",
-      "viTitle": "Chọn Trường, Cơ sở Vật chất Campus, Nội quy Đại học & Áp lực Thi cử",
-      "badge": "Nhánh 1 (15 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
-      "tags": ["Campus Facilities", "Cousin School Choice", "University Rules", "Exam Pressure", "Vocational"],
+      "title": "Higher Ed, Teachers, Science, History & Student Pressure (Đại học, Giáo viên, Khoa học & Áp lực Học đường)",
+      "viTitle": "Thành công, Khuôn viên Đại học, Giáo viên, Khoa học - Lịch sử & Áp lực Học sinh",
+      "badge": "Nhánh 1 (42 Từ Vựng Gốc + 7 Chủ Đề Cốt Lõi)",
+      "tags": [
+        "Higher Ed",
+        "Campus Dorm",
+        "Study Abroad",
+        "Teachers",
+        "Science & STEM",
+        "Museums & Arts",
+        "Exam Pressure"
+      ],
       "color": "#245b86",
       "keywords": [
-        { "word": "modern campus facilities", "meaning": "cơ sở vật chất khuôn viên trường hiện đại (phòng lab, thư viện, gym)" },
-        { "word": "affordable tuition fees", "meaning": "mức học phí hợp lý, vừa túi tiền gia đình" },
-        { "word": "strong academic reputation", "meaning": "danh tiếng và chất lượng đào tạo học thuật tốt" },
-        { "word": "hands-on laboratory practice", "meaning": "thực hành trực tiếp tại phòng máy tính / thí nghiệm" },
-        { "word": "inspiring learning environment", "meaning": "môi trường học tập truyền cảm hứng, tiện nghi" },
-        { "word": "student-centered governance", "meaning": "quản trị nhà trường lấy sinh viên làm trung tâm" },
-        { "word": "constructive feedback", "meaning": "ý kiến đóng góp mang tính xây dựng" },
-        { "word": "academic integrity", "meaning": "sự trung thực và kỷ cương học thuật" },
-        { "word": "heavy academic pressure", "meaning": "áp lực học tập và thi cử nặng nề" },
-        { "word": "rote memorization", "meaning": "lối học vẹt, học thuộc lòng máy móc để đối phó thi cử" },
-        { "word": "continuous assessment", "meaning": "đánh giá quá trình liên tục qua đồ án và bài tập nhóm" },
-        { "word": "extracurricular activities", "meaning": "các hoạt động ngoại khóa, câu lạc bộ sinh viên" },
-        { "word": "holistic development", "meaning": "sự phát triển toàn diện cả thể chất, tinh thần và trí tuệ" },
-        { "word": "vocational training", "meaning": "đào tạo nghề thực hành ngắn hạn" },
-        { "word": "career readiness", "meaning": "sự sẵn sàng làm việc ngay sau khi ra trường" }
+        {
+          "word": "formal education",
+          "meaning": "giáo dục chính quy / bằng cấp đại học"
+        },
+        {
+          "word": "personal success",
+          "meaning": "thành công cá nhân"
+        },
+        {
+          "word": "hard work",
+          "meaning": "sự chăm chỉ / nỗ lực bền bỉ"
+        },
+        {
+          "word": "good habits",
+          "meaning": "những thói quen tốt"
+        },
+        {
+          "word": "learn from failure",
+          "meaning": "học hỏi từ thất bại"
+        },
+        {
+          "word": "natural talent",
+          "meaning": "năng khiếu bẩm sinh"
+        },
+        {
+          "word": "university reputation",
+          "meaning": "uy tín và chất lượng đào tạo của trường"
+        },
+        {
+          "word": "tuition fees",
+          "meaning": "học phí đại học"
+        },
+        {
+          "word": "campus facilities",
+          "meaning": "cơ sở vật chất trong khuôn viên trường"
+        },
+        {
+          "word": "student dormitory",
+          "meaning": "ký túc xá sinh viên"
+        },
+        {
+          "word": "fitness gym",
+          "meaning": "phòng tập thể hình"
+        },
+        {
+          "word": "football pitch",
+          "meaning": "sân bóng đá ngoài trời"
+        },
+        {
+          "word": "study abroad",
+          "meaning": "du học nước ngoài"
+        },
+        {
+          "word": "student voice",
+          "meaning": "tiếng nói / ý kiến đóng góp của sinh viên"
+        },
+        {
+          "word": "international friends",
+          "meaning": "bạn bè quốc tế"
+        },
+        {
+          "word": "career prospects",
+          "meaning": "triển vọng nghề nghiệp"
+        },
+        {
+          "word": "culture shock",
+          "meaning": "sốc văn hóa"
+        },
+        {
+          "word": "academic standards",
+          "meaning": "chuẩn mực đào tạo học thuật"
+        },
+        {
+          "word": "effective teacher",
+          "meaning": "giáo viên giỏi / dạy hiệu quả"
+        },
+        {
+          "word": "patient and caring",
+          "meaning": "kiên nhẫn và tận tâm"
+        },
+        {
+          "word": "subject knowledge",
+          "meaning": "kiến thức chuyên môn vững"
+        },
+        {
+          "word": "public school",
+          "meaning": "trường công lập"
+        },
+        {
+          "word": "international school",
+          "meaning": "trường quốc tế"
+        },
+        {
+          "word": "early preschool",
+          "meaning": "mẫu giáo / nhà trẻ từ sớm"
+        },
+        {
+          "word": "science experiments",
+          "meaning": "thí nghiệm khoa học thực hành"
+        },
+        {
+          "word": "science museum",
+          "meaning": "bảo tàng khoa học tương tác"
+        },
+        {
+          "word": "robotics workshop",
+          "meaning": "buổi thực hành lắp ráp & lập trình robot"
+        },
+        {
+          "word": "guest scientist",
+          "meaning": "nhà khoa học khách mời diễn thuyết"
+        },
+        {
+          "word": "school library",
+          "meaning": "thư viện trường học"
+        },
+        {
+          "word": "public funding",
+          "meaning": "ngân sách đầu tư công (cho nghiên cứu)"
+        },
+        {
+          "word": "national history",
+          "meaning": "lịch sử dân tộc"
+        },
+        {
+          "word": "cultural heritage",
+          "meaning": "di sản văn hóa"
+        },
+        {
+          "word": "historic pagoda",
+          "meaning": "ngôi chùa cổ lịch sử"
+        },
+        {
+          "word": "government funding",
+          "meaning": "ngân sách tài trợ của chính phủ"
+        },
+        {
+          "word": "cultural exchange",
+          "meaning": "giao lưu văn hóa"
+        },
+        {
+          "word": "tourism growth",
+          "meaning": "phát triển / tăng trưởng du lịch"
+        },
+        {
+          "word": "academic pressure",
+          "meaning": "áp lực điểm số / học tập"
+        },
+        {
+          "word": "peer pressure",
+          "meaning": "áp lực đồng trang lứa"
+        },
+        {
+          "word": "student misbehavior",
+          "meaning": "hành vi vi phạm kỷ luật của học sinh"
+        },
+        {
+          "word": "positive discipline",
+          "meaning": "kỷ luật tích cực (không đòn roi)"
+        },
+        {
+          "word": "mental exhaustion",
+          "meaning": "kiệt sức tinh thần / mệt mỏi"
+        },
+        {
+          "word": "exam cheating",
+          "meaning": "gian lận trong thi cử"
+        }
       ],
       "children": [
         {
-          "id": "edu-choosing-university-campus",
-          "title": "Tư vấn Chọn Trường Đại học cho Em họ & Nâng cấp Cơ sở Vật chất Campus",
-          "viTitle": "Kế thừa từ vựng: modern campus facilities, affordable tuition fees, strong academic reputation, hands-on laboratory practice",
-          "badge": "Chủ đề 1 (Đề vlu11-speaking-part2-3 & VLU 08/11)",
+          "id": "edu-higher-ed-success",
+          "title": "Giáo dục, Nỗ lực Cá nhân, Thói quen & Thất bại (Education, Effort & Habits)",
+          "viTitle": "Từ vựng B2: formal education, personal success, hard work, good habits, learn from failure, natural talent",
           "examTags": [
-            "Speaking P2 (vlu11-speaking-part2-3): Advising a Cousin on Choosing a University (Affordable Tuition vs A Modern Campus vs Academic Reputation)",
-            "Speaking P2 (VLU 08/11): Upgrading Campus Sports Facilities (Fitness Gym vs Swimming Pool vs Football Pitch)",
-            "Speaking P2 (VLU 09): Choosing Accommodation for a Freshman Cousin (Campus Dormitory vs Shared Room vs Studio)",
-            "Task 2 [Dạng 1 - Agree/Disagree]: Should Universities Invest More in Campus Facilities & Sports or Academic Lectures?"
+            "Writing T2: Education is the Key to the Future",
+            "Writing T2: Education as the Key to Success in Modern Life",
+            "Writing T2: Natural Ability versus Hard Work in Achieving Success",
+            "Speaking P3: The Influence of Personal Habits on Success",
+            "Speaking P3: Benefits of Experiencing Failures"
           ],
-          "color": "#245b86",
           "keywords": [
-            { "word": "modern campus facilities", "meaning": "cơ sở vật chất khuôn viên trường hiện đại" },
-            { "word": "inspiring learning environment", "meaning": "môi trường học tập truyền cảm hứng" },
-            { "word": "hands-on laboratory practice", "meaning": "thực hành trực tiếp tại phòng lab" },
-            { "word": "affordable tuition fees", "meaning": "mức học phí hợp lý" },
-            { "word": "strong academic reputation", "meaning": "danh tiếng đào tạo tốt" }
+            {
+              "word": "formal education",
+              "meaning": "giáo dục chính quy / bằng cấp đại học"
+            },
+            {
+              "word": "personal success",
+              "meaning": "thành công cá nhân"
+            },
+            {
+              "word": "hard work",
+              "meaning": "sự chăm chỉ / nỗ lực bền bỉ"
+            },
+            {
+              "word": "good habits",
+              "meaning": "những thói quen tốt"
+            },
+            {
+              "word": "learn from failure",
+              "meaning": "học hỏi từ thất bại"
+            },
+            {
+              "word": "natural talent",
+              "meaning": "năng khiếu bẩm sinh"
+            }
           ],
           "items": [
             {
-              "id": "edu-cu-1",
-              "badge": "✅ Nhánh 1: Tại sao nên chọn Campus hiện đại (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that a modern campus with good facilities creates an inspiring learning environment. This is mainly because students can access high-speed Wi-Fi, air-conditioned libraries, and advanced laboratories every day. This means that they can conduct hands-on laboratory practice and focus completely on their studies.",
-              "viText": "Một lý do chính là khuôn viên trường hiện đại với cơ sở vật chất tốt tạo ra môi trường học tập truyền cảm hứng. Điều này chủ yếu là do sinh viên được tiếp cận Wi-Fi tốc độ cao, thư viện máy lạnh và phòng lab tiên tiến mỗi ngày. Điều này có nghĩa là họ có thể thực hành trực tiếp tại phòng máy và tập trung hoàn toàn vào việc học."
+              "id": "edu-higher-ed-success-1",
+              "badge": "✅ Nhánh 1 – Vai trò Giáo dục (Degrees & Knowledge)",
+              "text": "Strong formal education builds clear thinking, professional knowledge, and wide career doors that help both citizens and nations develop sustainably. Even so, a university degree alone cannot guarantee personal success without practical communication, teamwork, and real workplace experience.",
+              "viText": "Giáo dục chính quy vững chắc xây dựng tư duy mạch lạc, kiến thức chuyên môn và cơ hội nghề nghiệp giúp cá nhân lẫn quốc gia phát triển bền vững. Dù vậy, chỉ riêng tấm bằng đại học không đảm bảo thành công cá nhân nếu thiếu giao tiếp, làm việc nhóm và kinh nghiệm thực tế."
             },
             {
-              "id": "edu-cu-2",
-              "badge": "✅ Nhánh 2: Lợi ích của Khu thể thao & Ký túc xá trong Campus (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, on-campus dormitories and sports gyms promote holistic development and student safety. This is mainly because living and exercising right inside the campus saves daily commuting time and bus fares. This means that undergraduates can relieve heavy academic pressure and make friends easily after class.",
-              "viText": "Hơn nữa, ký túc xá và phòng tập thể thao trong khuôn viên trường thúc đẩy sự phát triển toàn diện và an toàn cho sinh viên. Điều này chủ yếu là do việc ở và tập luyện ngay trong campus giúp tiết kiệm thời gian đi lại và tiền xe buýt. Điều này có nghĩa là sinh viên giải tỏa được áp lực học tập và dễ dàng kết bạn sau giờ học."
+              "id": "edu-higher-ed-success-2",
+              "badge": "✅ Nhánh 2 – Chăm chỉ vs Năng khiếu (Hard Work Wins Long Term)",
+              "text": "Between innate ability and daily effort, steady hard work plays a far more decisive role in lasting success. Natural talent gives beginners a fast start, yet lazy gifted students quickly fall behind while dedicated learners keep improving, stay curious, and overcome tough challenges.",
+              "viText": "Giữa khả năng thiên bẩm và nỗ lực mỗi ngày, sự chăm chỉ bền bỉ giữ vai trò quyết định hơn nhiều cho thành công lâu dài. Năng khiếu bẩm sinh giúp khởi đầu nhanh, nhưng người tài mà lười sẽ sớm tụt lại trong khi người kiên trì học hỏi luôn tiến bộ."
             },
             {
-              "id": "edu-cu-3",
-              "badge": "⚠️ Nhánh 3: Bất cập của Trường học phí quá rẻ hoặc Chỉ chạy theo Danh tiếng (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, choosing a school solely for low tuition fees or fame has notable drawbacks. This is mainly because ultra-cheap colleges often suffer from outdated equipment, while top-ranked schools impose extreme peer pressure. This means that freshmen may struggle with broken computers or severe mental stress.",
-              "viText": "Mặt khác, chọn trường chỉ vì học phí rẻ hoặc danh tiếng có những bất cập đáng kể. Điều này chủ yếu là do các trường học phí quá thấp thường có thiết bị lỗi thời, trong khi trường top đầu lại gây áp lực đồng trang lứa cực lớn. Điều này có nghĩa là tân sinh viên dễ khổ sở vì máy tính hỏng hoặc căng thẳng tâm lý."
+              "id": "edu-higher-ed-success-3",
+              "badge": "💡 Nhánh 3 – Thói quen Tốt & Bỏ Thói quen Xấu (Reading, Exercise & Screens)",
+              "text": "Daily good habits like reading books, maintaining consistent exercise, and quitting unhealthy bad habits shape long-term growth. Breaking lazy routines feels harder than starting new ones because phone scrolling gives instant comfort, yet loving your field still requires real discipline to turn passion into lasting success.",
+              "viText": "Thói quen tốt mỗi ngày như đọc sách, tập thể dục đều đặn và loại bỏ thói quen xấu định hình thành công lâu dài. Bỏ thói quen lười thường khó hơn tạo thói quen mới vì màn hình điện thoại mang lại sự thoải mái tức thì, còn đam mê thôi cũng chưa đủ nếu thiếu kỷ luật."
             },
             {
-              "id": "edu-cu-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, as a Master's student in Computer Science, studying on a modern campus with 24/7 AI computing labs and an indoor fitness gym allows me to debug software efficiently and exercise for 30 minutes every evening to prevent back pain.",
-              "viText": "Ví dụ, là học viên Thạc sĩ Khoa học máy tính, việc học tại một campus hiện đại có phòng lab máy tính AI mở cửa 24/7 và phòng gym trong nhà giúp tôi gỡ lỗi phần mềm hiệu quả và tập thể dục 30 phút mỗi chiều để chống đau lưng."
+              "id": "edu-higher-ed-success-4",
+              "badge": "💪 Nhánh 4 – Học hỏi từ Thất bại & Phục hồi (Mistakes & Weaknesses)",
+              "text": "Learning to learn from failure instead of quitting reveals personal weaknesses clearly and builds steady patience. People often fail early because of poor planning or impatience, yet honest reflection turns painful errors into practical lessons that strengthen future attempts.",
+              "viText": "Biết học hỏi từ thất bại thay vì bỏ cuộc giúp ta nhìn rõ điểm yếu của bản thân và rèn tính kiên nhẫn. Nhiều người thất bại sớm do thiếu kế hoạch hoặc nôn nóng, nhưng nhìn lại trung thực sẽ biến sai lầm thành bài học thực tế cho lần thử tiếp theo."
+            },
+            {
+              "id": "edu-higher-ed-success-5",
+              "badge": "🎯 Nhánh 5 – Ý kiến & Ví dụ (Study Discipline at UIT)",
+              "text": "In my opinion, lasting personal success combines formal education with consistent effort and healthy daily routines. For example, failing an early coding test at UIT pushed me to stop late-night scrolling, debug patiently every evening, and apply theory efficiently in real engineering projects.",
+              "viText": "Theo tôi, thành công bền vững kết hợp giáo dục chính quy với nỗ lực đều đặn và nếp sống lành mạnh. Ví dụ, từng trượt bài kiểm tra lập trình đầu khóa ở UIT giúp tôi bỏ thói quen thức khuya lướt mạng, kiên trì sửa lỗi mỗi tối và làm đồ án thực tế hiệu quả hơn."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (Đề vlu11-speaking-part2-3 - Tư vấn cho em họ chọn trường): I would definitely advise my cousin to choose a university with a modern campus and good facilities (hoặc chọn xây Fitness Gym trong đề nâng cấp Campus).",
-            "answerVi": "Speaking P2 (Em họ chọn trường): Tôi chắc chắn khuyên em họ chọn trường có khuôn viên campus và cơ sở vật chất hiện đại.",
-            "reason": "🎙️ Speaking Part 2 (Bác bỏ 2 lựa chọn còn lại): Affordable tuition fees often mean outdated labs and cramped classrooms, while strong academic reputation alone often brings overwhelming exam stress.",
-            "reasonVi": "Bác bỏ 2 phương án kia: Học phí rẻ thường đi kèm phòng máy cũ kỹ chật chội, còn chỉ chạy theo danh tiếng thường gây áp lực thi cử nặng nề.",
-            "example": "📐 Lắp vào Writing Task 2 (Đầu tư Campus Facilities vs Học thuật): Đoạn 1 lắp Nhánh 1 + 2 + 4; Đoạn 2 lắp Nhánh 3.",
-            "exampleVi": "Giải quyết trọn vẹn đề Em họ chọn trường, đề Ký túc xá Campus và đề Xây phòng Gym trong Campus."
+            "answer": "Formal education opens doors, but hard work, good habits, and knowing how to learn from failure matter most for lasting personal success.",
+            "answerVi": "Giáo dục chính quy mở ra cơ hội, nhưng sự chăm chỉ, thói quen tốt và biết học hỏi từ thất bại mới là yếu tố quyết định thành công bền vững.",
+            "reason": "Natural talent alone cannot carry someone through tough challenges, whereas daily reading, exercise, and steady effort build reliable skills over time.",
+            "reasonVi": "Chỉ riêng năng khiếu bẩm sinh khó giúp vượt qua thử thách lớn, trong khi thói quen đọc sách, rèn luyện và nỗ lực hằng ngày tạo năng lực vững chắc.",
+            "example": "Fixing mistakes after failing an early engineering quiz helped me build stronger study habits and prepare for my dream career.",
+            "exampleVi": "Rút kinh nghiệm sau một bài kiểm tra kỹ thuật bị điểm thấp giúp tôi rèn thói quen học tốt hơn cho sự nghiệp mơ ước."
           }
         },
         {
-          "id": "edu-university-rules-student-voice",
-          "title": "Tiếng nói Sinh viên trong Nội quy Đại học & Kỷ luật Học đường",
-          "viTitle": "Kế thừa từ vựng: student-centered governance, constructive feedback, academic integrity, holistic development",
-          "badge": "Chủ đề 2 (Đề VLU 07/11 & 08/11)",
+          "id": "edu-campus-housing-sports",
+          "title": "Chọn Trường, Ký túc xá & Thể thao Campus (University Choice, Dorm & Sports)",
+          "viTitle": "Từ vựng B2: university reputation, tuition fees, campus facilities, student dormitory, fitness gym, football pitch",
           "examTags": [
-            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Discussion]: Should University Students Be Allowed to Revise Rules Made by Professors? (VLU 07/11)",
-            "Task 1 & 2 (VLU 08/11): Organizing University Festivals & Extracurricular Rules",
-            "Speaking P3: How to Handle Student Misbehavior and Cheating in Exams"
+            "Speaking P2: Advising a Cousin on Choosing a University",
+            "Speaking P2: Choosing Accommodation for a First-Year University Student",
+            "Speaking P2: Upgrading Campus Sports Infrastructure"
           ],
-          "color": "#245b86",
           "keywords": [
-            { "word": "student-centered governance", "meaning": "quản trị nhà trường lấy sinh viên làm trung tâm" },
-            { "word": "constructive feedback", "meaning": "ý kiến đóng góp mang tính xây dựng" },
-            { "word": "academic integrity", "meaning": "sự nghiêm minh, công bằng trong học thuật" },
-            { "word": "mutual respect", "meaning": "sự tôn trọng lẫn nhau giữa giảng viên và sinh viên" }
+            {
+              "word": "university reputation",
+              "meaning": "uy tín và chất lượng đào tạo của trường"
+            },
+            {
+              "word": "tuition fees",
+              "meaning": "học phí đại học"
+            },
+            {
+              "word": "campus facilities",
+              "meaning": "cơ sở vật chất trong khuôn viên trường"
+            },
+            {
+              "word": "student dormitory",
+              "meaning": "ký túc xá sinh viên"
+            },
+            {
+              "word": "fitness gym",
+              "meaning": "phòng tập thể hình"
+            },
+            {
+              "word": "football pitch",
+              "meaning": "sân bóng đá ngoài trời"
+            }
           ],
           "items": [
             {
-              "id": "edu-ur-1",
-              "badge": "✅ Nhánh 1: Tại sao nên lắng nghe Tiếng nói Sinh viên (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that allowing students to give constructive feedback on campus rules promotes student-centered governance. This is mainly because undergraduates are the direct users of dormitories, libraries, and class schedules. This means that their practical suggestions help universities fix outdated regulations and improve satisfaction.",
-              "viText": "Một lý do chính là cho phép sinh viên đóng góp ý kiến xây dựng về nội quy trường thúc đẩy quản trị lấy người học làm trung tâm. Điều này chủ yếu là do sinh viên là người trực tiếp sử dụng ký túc xá, thư viện và lịch học. Điều này có nghĩa là đề xuất thực tế của họ giúp trường sửa các quy định lỗi thời và tăng sự hài lòng."
+              "id": "edu-campus-housing-sports-1",
+              "badge": "⚖️ Nhánh 1 – Chọn Trường Đại học (Reputation vs Tuition vs Facilities)",
+              "text": "When advising a cousin on university, strong university reputation and career placement support matter most for future jobs. Low tuition fees ease short-term bills and modern campus facilities feel comfortable, yet a respected degree opens far better interviews and alumni networks after graduation.",
+              "viText": "Khi khuyên em họ chọn đại học, uy tín đào tạo và hỗ trợ việc làm quan trọng nhất cho tương lai nghề nghiệp. Học phí rẻ giúp nhẹ gánh trước mắt và cơ sở vật chất hiện đại tạo sự thoải mái, nhưng tấm bằng uy tín mở ra nhiều cơ hội phỏng vấn tốt hơn."
             },
             {
-              "id": "edu-ur-2",
-              "badge": "⚠️ Nhánh 2: Tại sao Giáo sư phải giữ quyền Quyết định Học thuật (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, core academic regulations and grading standards must be decided by experienced professors. This is mainly because young students often lack long-term pedagogical vision and may demand easier exams to avoid hard work. This means that letting students change academic rules could damage academic integrity and degree quality.",
-              "viText": "Mặt khác, các quy chế học thuật cốt lõi và chuẩn chấm điểm phải do các giáo sư giàu kinh nghiệm quyết định. Điều này chủ yếu là do sinh viên trẻ thường thiếu tầm nhìn sư phạm dài hạn và có thể đòi đề thi dễ hơn để lười học. Điều này có nghĩa là để sinh viên tự sửa quy chế học thuật sẽ làm hỏng sự nghiêm minh và chất lượng bằng cấp."
+              "id": "edu-campus-housing-sports-2",
+              "badge": "⚖️ Nhánh 2 – Chỗ ở Năm nhất (Dormitory vs Shared House vs Studio)",
+              "text": "For first-year accommodation, staying in a student dormitory is safer and cheaper than renting a shared house with friends or a private studio apartment. Private studios feel lonely and expensive, while shared off-campus rooms risk noisy roommates and long bus rides away from class.",
+              "viText": "Về chỗ ở cho tân sinh viên, ký túc xá an toàn và tiết kiệm hơn nhiều so với thuê nhà chung với bạn hay căn hộ studio riêng. Studio riêng vừa đắt vừa cô đơn, còn thuê phòng trọ ngoài trường dễ gặp bạn chung ồn ào và đi lại xa giảng đường."
             },
             {
-              "id": "edu-ur-3",
-              "badge": "💡 Nhánh 3: Giải pháp Dung hòa giữa Nhà trường & Sinh viên (Best approach ➔ Because ➔ Meaning)",
-              "text": "In my opinion, the best approach is to establish a joint dialogue council between faculty leaders and student representatives. This is mainly because open discussion builds mutual respect while preserving strict educational standards. This means that campus protests are prevented and school policies become both fair and practical.",
-              "viText": "Theo tôi, giải pháp tốt nhất là thành lập hội đồng đối thoại chung giữa lãnh đạo khoa và đại diện hội sinh viên. Điều này chủ yếu là do thảo luận cởi mở giúp xây dựng sự tôn trọng lẫn nhau mà vẫn giữ vững chuẩn mực giáo dục. Điều này có nghĩa là ngăn chặn được sự bức xúc của sinh viên và giúp nội quy vừa công bằng vừa thực tế."
+              "id": "edu-campus-housing-sports-3",
+              "badge": "⚖️ Nhánh 3 – Hạ tầng Thể thao (Football Pitch vs Gym vs Pool)",
+              "text": "Upgrading an outdoor all-weather football pitch benefits the largest student crowd at affordable maintenance cost. By comparison, a modern fitness gym holds fewer people at peak hours, while building and heating an indoor swimming pool drains massive utility budgets and strict safety staff.",
+              "viText": "Đầu tư sân bóng đá ngoài trời phục vụ được đông đảo sinh viên nhất với chi phí bảo trì hợp lý. So sánh thì phòng tập gym nhanh chóng quá tải giờ cao điểm, còn hồ bơi nước ấm tiêu tốn ngân sách điện nước khổng lồ và đòi hỏi nhân sự cứu hộ nghiêm ngặt."
             },
             {
-              "id": "edu-ur-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, at my university's IT faculty, professors keep strict grading rules for coding exams, but they accepted our student union's request to extend computer lab opening hours until 10 PM during thesis season.",
-              "viText": "Ví dụ, tại khoa CNTT trường tôi, các giáo sư giữ quy định chấm thi lập trình rất nghiêm ngặt, nhưng đã đồng ý với đề xuất của hội sinh viên về việc mở cửa phòng lab máy tính đến 10 giờ tối trong mùa làm luận văn."
+              "id": "edu-campus-housing-sports-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (UIT Freshmen Campus Experience)",
+              "text": "In my opinion, first-year students thrive best with strong academic support, affordable dorm rooms, and accessible team sports. For instance, living near campus in Ho Chi Minh City and playing evening matches on a student football pitch keeps energy high during busy semesters.",
+              "viText": "Theo tôi, sinh viên năm nhất phát triển tốt nhất khi có đào tạo uy tín, ký túc xá vừa túi tiền và sân thể thao đồng đội dễ tiếp cận. Ví dụ, sinh hoạt gần khu đại học ở TP.HCM và đá bóng buổi chiều trên sân trường giúp giữ sức khỏe tốt suốt kỳ học."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Quan điểm bài thảo luận (VLU 07/11): Universities should consult students on daily campus life rules, while professors must retain authority over academic standards.",
-            "answerVi": "Quan điểm chuẩn (VLU 07/11): Nhà trường nên tham khảo ý kiến sinh viên về nội quy sinh hoạt campus, nhưng giáo sư phải giữ quyền quyết định về chuẩn mực học thuật.",
-            "reason": "🎙️ Speaking P2 (Xử lý bạn quay cóp trong phòng thi): I would privately remind my friend to stop cheating after the test to protect their academic integrity without ruining our friendship.",
-            "reasonVi": "Speaking P2 (Xử lý bạn gian lận thi cử): Tôi sẽ nhắc riêng bạn dừng gian lận để bảo vệ sự trung thực học thuật mà không làm sứt mẻ tình bạn.",
-            "example": "📐 Lắp vào Writing Task 2 (Đề VLU 07/11 - Students revising rules by professors): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2; Kết bài/Giải pháp lắp Nhánh 3 + 4.",
-            "exampleVi": "Trúng tủ 100% đề thi Writing Task 2 VLU 07/11."
+            "answer": "For university freshmen, I recommend strong university reputation, an affordable student dormitory, and an outdoor football pitch for shared health.",
+            "answerVi": "Với tân sinh viên, tôi khuyên ưu tiên uy tín đào tạo tốt, ở ký túc xá tiết kiệm và đầu tư sân bóng đá ngoài trời để cả trường cùng rèn luyện.",
+            "reason": "Respectable job support beats saving slightly on tuition fees, dorms prevent isolated studio bills, and open pitches serve more students than a crowded fitness gym or costly pool.",
+            "reasonVi": "Hỗ trợ việc làm bền vững hơn tiết kiệm chút học phí, ký túc xá tránh cảnh đắt đỏ cô đơn của studio riêng, còn sân bóng phục vụ đông sinh viên hơn gym hay hồ bơi.",
+            "example": "Choosing a respected engineering college with safe dorm rooms and evening pitch games makes transitioning from high school smooth and lively.",
+            "exampleVi": "Chọn trường kỹ thuật uy tín có ký túc xá an toàn và sân bóng chiều giúp bước chuyển từ cấp ba lên đại học nhẹ nhàng và sôi nổi."
           }
         },
         {
-          "id": "edu-academic-pressure-exams",
-          "title": "Áp lực Học tập, Thi cử & Đánh giá Quá trình (Academic Pressure & Exams)",
-          "viTitle": "Kế thừa từ vựng: heavy academic pressure, rote memorization, continuous assessment, holistic development",
-          "badge": "Chủ đề 3 (Đề VLU 08/11)",
+          "id": "edu-study-abroad-governance",
+          "title": "Du học Quốc tế & Tiếng nói Sinh viên (Study Abroad & Student Voice)",
+          "viTitle": "Từ vựng B2: study abroad, student voice, international friends, career prospects, culture shock, academic standards",
           "examTags": [
-            "Speaking P3 (VLU 08/11): Causes and Solutions for Heavy Academic Pressure on Young People",
-            "Task 2 [Dạng 3 & 4 - Cause/Problem-Solution]: Academic Stress and Extra Tutoring Among School Children",
-            "Task 2 [Dạng 1 - Agree/Disagree]: Continuous Assessment Projects vs Traditional Final Written Exams"
+            "Writing T2: Student Voice in University Academic Policies and Governance",
+            "Speaking P3: Benefits of Studying Abroad"
           ],
-          "color": "#245b86",
           "keywords": [
-            { "word": "heavy academic pressure", "meaning": "áp lực học tập và điểm số nặng nề" },
-            { "word": "rote memorization", "meaning": "học vẹt, học thuộc lòng máy móc" },
-            { "word": "continuous assessment", "meaning": "đánh giá quá trình qua bài tập và dự án" },
-            { "word": "peer pressure", "meaning": "áp lực so sánh điểm số với bạn bè" }
+            {
+              "word": "study abroad",
+              "meaning": "du học nước ngoài"
+            },
+            {
+              "word": "student voice",
+              "meaning": "tiếng nói / ý kiến đóng góp của sinh viên"
+            },
+            {
+              "word": "international friends",
+              "meaning": "bạn bè quốc tế"
+            },
+            {
+              "word": "career prospects",
+              "meaning": "triển vọng nghề nghiệp"
+            },
+            {
+              "word": "culture shock",
+              "meaning": "sốc văn hóa"
+            },
+            {
+              "word": "academic standards",
+              "meaning": "chuẩn mực đào tạo học thuật"
+            }
           ],
           "items": [
             {
-              "id": "edu-ap-1",
-              "badge": "⚠️ Nhánh 1: Nguyên nhân gây Áp lực học tập (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "One contributing factor to heavy academic pressure is the obsession with exam scores and parental expectations. This is mainly because traditional curricula focus heavily on theoretical tests and force students into evening tutoring classes. This means that teenagers suffer from sleep deprivation, anxiety, and a loss of creativity.",
-              "viText": "Một yếu tố góp phần gây áp lực học tập nặng nề là sự ám ảnh về điểm số và kỳ vọng của cha mẹ. Điều này chủ yếu là do chương trình học truyền thống nặng về thi lý thuyết và ép học sinh đi học thêm buổi tối. Điều này có nghĩa là thanh thiếu niên bị thiếu ngủ, lo âu và mất đi sự sáng tạo."
+              "id": "edu-study-abroad-governance-1",
+              "badge": "✅ Nhánh 1 – Lợi ích Du học (Networking, Careers & Independence)",
+              "text": "Choosing to study abroad lets young adults build lifelong international friends, enjoy wider global career prospects, and grow truly independent. Living alone in a foreign country teaches budget planning, cross-cultural teamwork, and fluent communication faster than local textbook courses.",
+              "viText": "Đi du học giúp người trẻ kết nối bạn bè quốc tế, mở rộng triển vọng nghề nghiệp toàn cầu và rèn tính tự lập thực sự. Sống tự túc ở nước ngoài dạy kỹ năng quản lý tài chính, làm việc đa văn hóa và giao tiếp ngoại ngữ nhanh hơn học trên lớp."
             },
             {
-              "id": "edu-ap-2",
-              "badge": "⚠️ Nhánh 2: Hạn chế của Thi cử Học vẹt (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, relying on a single final exam encourages rote memorization rather than real understanding. This is mainly because students only cram formulas for a few days to pass the test and forget everything afterward. This means that graduates often lack practical problem-solving skills when entering the workplace.",
-              "viText": "Hơn nữa, việc chỉ dựa vào một kỳ thi cuối kỳ khuyến khích lối học vẹt hơn là hiểu bản chất. Điều này chủ yếu là do học sinh chỉ nhồi nhét công thức trong vài ngày để qua môn rồi quên sạch sau đó. Điều này có nghĩa là sinh viên ra trường thường thiếu kỹ năng giải quyết vấn đề thực tế khi đi làm."
+              "id": "edu-study-abroad-governance-2",
+              "badge": "⚖️ Nhánh 2 – Khó khăn Du học & Đóng góp Khi Về nước",
+              "text": "However, overseas degrees are not always superior because students may suffer high living expenses, loneliness, and intense culture shock. Studying locally still works great for strong tech fields, while returning graduates should transfer new skills and honest work ethics to grow home industries.",
+              "viText": "Tuy nhiên, du học không phải lúc nào cũng tốt hơn học trong nước vì sinh viên dễ gặp chi phí cao, cô đơn và sốc văn hóa. Học trong nước vẫn rất tốt ở nhiều ngành kỹ thuật, còn du học sinh về nước nên mang công nghệ mới và tác phong chuyên nghiệp về phát triển quê hương."
             },
             {
-              "id": "edu-ap-3",
-              "badge": "💡 Nhánh 3: Giải pháp Đổi mới Đánh giá & Giảm tải (Best approach ➔ Because ➔ Meaning)",
-              "text": "In my opinion, the best approach to reduce academic stress is replacing high-stakes exams with continuous assessment and extracurricular activities. This is mainly because grading practical group projects and presentations evaluates real competence fairly. This means that students can enjoy holistic development without fear of exam failure.",
-              "viText": "Theo tôi, giải pháp tốt nhất để giảm áp lực học tập là thay thế các kỳ thi nặng nề bằng đánh giá quá trình và hoạt động ngoại khóa. Điều này chủ yếu là do chấm điểm qua đồ án nhóm thực tế và thuyết trình giúp đánh giá năng lực công bằng hơn. Điều này có nghĩa là học sinh phát triển toàn diện mà không sợ trượt kỳ thi."
+              "id": "edu-study-abroad-governance-3",
+              "badge": "⚖️ Nhánh 3 – Tiếng nói Sinh viên trong Chính sách Đại học (Pros & Cons)",
+              "text": "Respecting student voice in campus governance fixes unfair exam timetables, library hours, and outdated lab tools quickly because learners experience classes first-hand. Conversely, critics argue inexperienced students might demand easier grades, threatening strict academic standards guarded by seasoned professors.",
+              "viText": "Tôn trọng tiếng nói sinh viên trong quản trị đại học giúp cải thiện lịch thi, giờ thư viện và thiết bị thực hành sát thực tế vì người học trải nghiệm trực tiếp. Ngược lại, ý kiến phản đối lo sinh viên thiếu kinh nghiệm có thể đòi nới lỏng điểm số, ảnh hưởng chuẩn mực học thuật."
             },
             {
-              "id": "edu-ap-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, in my Master's Computer Science courses, instead of taking a paper exam, we are graded on building a working web application, which reduces rote memorization stress and prepares us directly for IT jobs.",
-              "viText": "Ví dụ, trong các môn Thạc sĩ Khoa học máy tính của tôi, thay vì thi viết trên giấy, chúng tôi được chấm điểm qua việc xây dựng một ứng dụng web chạy thực tế, giúp giảm áp lực học thuộc lòng và chuẩn bị trực tiếp cho công việc IT."
+              "id": "edu-study-abroad-governance-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Balanced Governance & Global Skills)",
+              "text": "In my opinion, faculties should protect core academic standards while consulting student feedback on daily services, and students should learn actively wherever they study. For example, answering UIT course surveys improved lab schedules while online tech events let me collaborate globally from Vietnam.",
+              "viText": "Theo tôi, giảng viên nên giữ vững chuẩn mực học thuật cốt lõi nhưng tiếp thu góp ý sinh viên về dịch vụ học tập, còn người học cần chủ động dù học ở đâu. Ví dụ, khảo sát môn học ở UIT giúp lịch phòng máy hợp lý hơn và hội thảo trực tuyến vẫn giúp kết nối quốc tế."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (VLU 08/11 - Nguyên nhân áp lực học tập): Academic pressure comes from intense exam competition, heavy theoretical homework, and high expectations from parents.",
-            "answerVi": "Speaking P3 (VLU 08/11): Áp lực học tập xuất phát từ cạnh tranh thi cử khốc liệt, bài tập lý thuyết nặng và kỳ vọng cao từ phụ huynh.",
-            "reason": "🎙️ Giải pháp cho học sinh & nhà trường: Schools should adopt continuous project-based assessment and encourage daily sports to help students unwind.",
-            "reasonVi": "Giải pháp: Nhà trường nên áp dụng đánh giá qua dự án thực hành và khuyến khích thể thao hàng ngày để học sinh giải tỏa căng thẳng.",
-            "example": "📐 Lắp vào Writing Task 2: [Cause/Problem-Solution về Exam Stress] ➔ Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Dùng trực tiếp cho đề Speaking Part 3 VLU 08/11 và Writing Task 2 về Thi cử."
+            "answer": "Going to study abroad boosts global career prospects and international friends, while universities should listen to student voice without lowering academic standards.",
+            "answerVi": "Đi du học mở rộng triển vọng nghề nghiệp và bạn bè quốc tế, trong khi đại học nên lắng nghe tiếng nói sinh viên nhưng vẫn giữ vững chuẩn mực học thuật.",
+            "reason": "Overseas graduates gain independence despite early culture shock, and sharing feedback fixes practical campus issues while experienced professors safeguard fair grading.",
+            "reasonVi": "Du học sinh rèn được sự tự lập dù ban đầu gặp sốc văn hóa, còn đóng góp ý kiến giúp cải thiện sinh hoạt trường học trong khi giảng viên giữ sự công bằng thi cử.",
+            "example": "Joining online global hackathons and completing end-of-term campus surveys gave me both international teamwork and better local lab access.",
+            "exampleVi": "Tham gia cuộc thi lập trình trực tuyến quốc tế cùng việc điền khảo sát cuối kỳ ở trường giúp tôi vừa rèn làm việc toàn cầu vừa cải thiện giờ thực hành."
           }
         },
         {
-          "id": "edu-university-vs-vocational-homeschool",
-          "title": "Đại học vs Học nghề (Vocational Training) & Chọn trường Công / Tư / Quốc tế",
-          "viTitle": "Kế thừa từ vựng: vocational training, career readiness, affordable tuition fees, holistic development",
-          "badge": "Chủ đề 4",
+          "id": "edu-schools-teachers-preschool",
+          "title": "Chất lượng Giáo viên, Chọn Trường & Giáo dục Mầm non (Teachers & Schools)",
+          "viTitle": "Từ vựng B2: effective teacher, patient and caring, subject knowledge, public school, international school, early preschool",
           "examTags": [
-            "Task 2 [Dạng 1 - Agree/Disagree]: Is University Education the Best Way to Succeed, or Should More Youths Choose Vocational Training?",
-            "Speaking P2: Choosing a Primary School for a 6-Year-Old Niece (Public School vs Private School vs International School)",
-            "Task 2 [Dạng 2 - Adv/Disadv]: Homeschooling vs Traditional Schooling"
+            "Speaking P3: Qualities of an Effective Teacher",
+            "Speaking P3: Essential Qualities of an Outstanding Teacher",
+            "Speaking P2: Choosing a School for a 6-Year-Old Daughter",
+            "Speaking P3: Sending Young Children to Preschool Early"
           ],
-          "color": "#245b86",
           "keywords": [
-            { "word": "vocational training", "meaning": "đào tạo nghề thực hành" },
-            { "word": "career readiness", "meaning": "sự sẵn sàng làm việc ngay" },
-            { "word": "affordable tuition fees", "meaning": "học phí hợp lý" },
-            { "word": "holistic development", "meaning": "phát triển toàn diện kỹ năng xã hội" }
+            {
+              "word": "effective teacher",
+              "meaning": "giáo viên giỏi / dạy hiệu quả"
+            },
+            {
+              "word": "patient and caring",
+              "meaning": "kiên nhẫn và tận tâm"
+            },
+            {
+              "word": "subject knowledge",
+              "meaning": "kiến thức chuyên môn vững"
+            },
+            {
+              "word": "public school",
+              "meaning": "trường công lập"
+            },
+            {
+              "word": "international school",
+              "meaning": "trường quốc tế"
+            },
+            {
+              "word": "early preschool",
+              "meaning": "mẫu giáo / nhà trẻ từ sớm"
+            }
           ],
           "items": [
             {
-              "id": "edu-uv-1",
-              "badge": "✅ Nhánh 1: Lợi ích của Đại học & Trường chính quy (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that formal university education provides deep theoretical foundations and critical thinking skills. This is mainly because professions such as medicine, law, and computer science require rigorous academic training. This means that university graduates qualify for high-level research and management positions.",
-              "viText": "Một lý do chính là giáo dục đại học chính quy cung cấp nền tảng lý thuyết sâu sắc và kỹ năng tư duy phản biện. Điều này chủ yếu là do các ngành như y khoa, luật và khoa học máy tính đòi hỏi đào tạo học thuật bài bản. Điều này có nghĩa là cử nhân đại học đủ điều kiện đảm nhận các vị trí nghiên cứu và quản lý cấp cao."
+              "id": "edu-schools-teachers-preschool-1",
+              "badge": "✅ Nhánh 1 – Phẩm chất Giáo viên & Truyền lửa (Patience, Knowledge & Care)",
+              "text": "An effective teacher needs strong subject knowledge paired with creative lessons that wake up bored classrooms. Above all, being patient and caring encourages shy pupils to ask honest questions and motivates discouraged learners through positive praise instead of harsh criticism.",
+              "viText": "Một giáo viên giỏi cần kiến thức chuyên môn vững vàng kết hợp phương pháp sáng tạo để khuấy động lớp học nhàm chán. Hơn hết, thái độ kiên nhẫn và tận tâm giúp học sinh rụt rè dám đặt câu hỏi và truyền động lực cho các em chán học bằng lời động viên đúng lúc."
             },
             {
-              "id": "edu-uv-2",
-              "badge": "✅ Nhánh 2: Ưu điểm của Đào tạo nghề (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, vocational training offers rapid career readiness and affordable tuition fees for practical learners. This is mainly because vocational courses focus 80% of their time on hands-on workshop skills over just two years. This means that young technicians can enter the labor market early and earn a stable income without student debt.",
-              "viText": "Hơn nữa, đào tạo nghề mang lại sự sẵn sàng làm việc nhanh chóng và học phí hợp lý cho những người thích thực hành. Điều này chủ yếu là do các trường nghề dành 80% thời lượng cho kỹ năng xưởng thực tế chỉ trong 2 năm. Điều này có nghĩa là kỹ thuật viên trẻ có thể đi làm sớm và có thu nhập ổn định mà không mang nợ học phí."
+              "id": "edu-schools-teachers-preschool-2",
+              "badge": "💡 Nhánh 2 – Vai trò Thời AI & Giữ chân Giáo viên (Tech vs Human Warmth)",
+              "text": "As AI tools deliver fast facts, human teachers shift into mentors who teach critical questioning and moral judgment. Patience matters far more than flashy app tricks, while schools must offer fair pay and lower paperwork stress to keep talented educators staying long-term.",
+              "viText": "Khi công cụ AI cung cấp kiến thức nhanh chóng, giáo viên con người trở thành người dẫn đường rèn tư duy phản biện và đạo đức. Sự kiên nhẫn quan trọng hơn nhiều so với kỹ xảo công nghệ, còn nhà trường cần trả lương xứng đáng và giảm áp lực giấy tờ để giữ người giỏi."
             },
             {
-              "id": "edu-uv-3",
-              "badge": "⚠️ Nhánh 3: Bất cập của Homeschooling / Chọn trường quá đắt (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, isolating children in homeschooling or overly expensive international schools has drawbacks. This is mainly because homeschooled kids lack daily peer interaction, while international schools charge exorbitant fees. This means that public or bilingual schools with balanced extracurricular activities are often more practical for average families.",
-              "viText": "Mặt khác, tách biệt trẻ qua việc tự học tại nhà (homeschooling) hoặc học trường quốc tế quá đắt đỏ đều có hạn chế. Điều này chủ yếu là do trẻ học ở nhà thiếu tương tác bạn bè hàng ngày, còn trường quốc tế thu học phí quá cao. Điều này có nghĩa là trường công hoặc trường tư song ngữ có hoạt động ngoại khóa cân bằng sẽ thiết thực hơn cho đa số gia đình."
+              "id": "edu-schools-teachers-preschool-3",
+              "badge": "⚖️ Nhánh 3 – Chọn Trường Tiểu học (Public vs Private vs International)",
+              "text": "When picking a primary school for a six-year-old girl, a reliable public school near home avoids heavy tuition fees and tiring traffic compared with a costly international school. Unlike small private schools with higher fees, public classrooms help children grow naturally alongside neighborhood friends.",
+              "viText": "Khi chọn trường tiểu học cho bé gái sáu tuổi, trường công lập uy tín gần nhà tránh học phí nặng nề và kẹt xe mệt mỏi so với trường quốc tế đắt đỏ. Khác với trường tư thục phí cao, trường công giúp trẻ lớn lên tự nhiên bên bạn bè cùng khu phố."
             },
             {
-              "id": "edu-uv-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, in the IT industry, while I pursued a Master's degree to research artificial intelligence algorithms, my cousin completed a 1-year vocational web design bootcamp and quickly found a great job at a digital agency.",
-              "viText": "Ví dụ, trong ngành CNTT, trong khi tôi học Thạc sĩ để nghiên cứu thuật toán trí tuệ nhân tạo, em họ tôi hoàn thành khóa trường nghề thiết kế web 1 năm và nhanh chóng tìm được việc làm tốt tại một công ty truyền thông số."
+              "id": "edu-schools-teachers-preschool-4",
+              "badge": "✅ Nhánh 4 – Cho trẻ Đi Mẫu giáo Sớm (Preschool & Parent Partnership)",
+              "text": "Sending children to early preschool around age three helps working parents keep stable jobs while teaching toddlers early sharing, polite manners, and social skills. Although newcomers may cry during week one, calm teachers and daily chats with parents help kids adapt smoothly.",
+              "viText": "Cho trẻ đi mẫu giáo sớm quanh tuổi lên ba giúp cha mẹ đi làm yên tâm công tác, đồng thời dạy bé biết chia sẻ, lễ phép và kỹ năng xã hội sớm. Dù tuần đầu trẻ có thể khóc, cô giáo dịu dàng và trao đổi hằng ngày với phụ huynh giúp bé hòa nhập rất nhanh."
+            },
+            {
+              "id": "edu-schools-teachers-preschool-5",
+              "badge": "🎯 Nhánh 5 – Ý kiến & Ví dụ (Memorable Caring Teacher)",
+              "text": "In my opinion, teachers who balance clear fairness with kindness inspire students far better than strict rules alone. For example, my high school math teacher explained hard problems patiently until the whole class understood, making me love technology and engineering today.",
+              "viText": "Theo tôi, giáo viên kết hợp công bằng rõ ràng với sự tử tế sẽ truyền cảm hứng cho học sinh tốt hơn hẳn việc quá nghiêm khắc. Ví dụ, thầy dạy Toán cấp ba của tôi luôn kiên nhẫn giảng lại bài khó cho đến khi cả lớp hiểu, giúp tôi thêm yêu thích ngành kỹ thuật công nghệ ngày nay."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (Chọn trường cho cháu 6 tuổi): I would recommend a reputable private bilingual school because it combines modern campus facilities with affordable tuition compared to international schools.",
-            "answerVi": "Speaking P2 (Chọn trường cho cháu): Tôi khuyên chọn trường tư song ngữ uy tín vì nó kết hợp cơ sở vật chất hiện đại với mức học phí hợp lý hơn trường quốc tế.",
-            "reason": "🎙️ Speaking Part 3 (Đại học có phải con đường duy nhất?): University is not the only path to success because vocational training equips youths with practical skills that are in high demand.",
-            "reasonVi": "Speaking P3: Đại học không phải con đường duy nhất vì đào tạo nghề trang bị cho người trẻ tay nghề thực tế đang rất khát nhân lực.",
-            "example": "📐 Lắp vào Writing Task 2 (University vs Vocational): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 4.",
-            "exampleVi": "Cân bằng hoàn hảo hai góc nhìn Đại học và Học nghề."
+            "answer": "Great education starts with an effective teacher who is patient and caring, alongside practical choices like a nearby public school and early preschool.",
+            "answerVi": "Giáo dục tốt bắt đầu từ giáo viên giỏi vừa kiên nhẫn vừa tận tâm, cùng lựa chọn thực tế như trường công gần nhà và cho trẻ đi mẫu giáo sớm.",
+            "reason": "Strong subject knowledge matters, yet human warmth motivates students better than AI, while early preschool builds sharing habits and public schools keep family budgets comfortable.",
+            "reasonVi": "Kiến thức chuyên môn rất cần, nhưng sự quan tâm của thầy cô tạo động lực tốt hơn AI, còn mẫu giáo sớm dạy kỹ năng xã hội và trường công giúp gia đình đỡ nặng học phí.",
+            "example": "A patient teacher who encouraged my curiosity in science class completely shaped my university major in engineering.",
+            "exampleVi": "Một người thầy kiên nhẫn nuôi dưỡng sự tò mò khoa học của tôi đã định hướng trọn vẹn lựa chọn ngành kỹ thuật ở đại học."
+          }
+        },
+        {
+          "id": "edu-science-stem-interest",
+          "title": "Truyền cảm hứng Khoa học & Hoạt động STEM (Science & STEM)",
+          "viTitle": "Từ vựng B2: science experiments, science museum, robotics workshop, guest scientist, school library, public funding",
+          "examTags": [
+            "Speaking P3: Inspiring Young People's Interest in Science",
+            "Speaking P2: Choosing a Science Learning Activity for Students",
+            "Speaking P2: Promoting Science Interest among Students"
+          ],
+          "keywords": [
+            {
+              "word": "science experiments",
+              "meaning": "thí nghiệm khoa học thực hành"
+            },
+            {
+              "word": "science museum",
+              "meaning": "bảo tàng khoa học tương tác"
+            },
+            {
+              "word": "robotics workshop",
+              "meaning": "buổi thực hành lắp ráp & lập trình robot"
+            },
+            {
+              "word": "guest scientist",
+              "meaning": "nhà khoa học khách mời diễn thuyết"
+            },
+            {
+              "word": "school library",
+              "meaning": "thư viện trường học"
+            },
+            {
+              "word": "public funding",
+              "meaning": "ngân sách đầu tư công (cho nghiên cứu)"
+            }
+          ],
+          "items": [
+            {
+              "id": "edu-science-stem-interest-1",
+              "badge": "✅ Nhánh 1 – Cách Truyền lửa Khoa học & Nguyên nhân Ngại học",
+              "text": "Schools spark lasting curiosity through hands-on science experiments, entertaining TV documentaries, and engaging stories rather than dry textbook memorization. Fewer students enter engineering today because difficult theory feels disconnected from daily life, so fun practical projects help teenagers see how technology helps society.",
+              "viText": "Nhà trường khơi dậy niềm say mê lâu dài qua thí nghiệm thực hành, phim tài liệu cuốn hút và câu chuyện gần gũi thay vì học thuộc sách giáo khoa khô khan. Ít học sinh chọn ngành kỹ thuật hơn vì lý thuyết nặng nề thiếu gắn kết đời sống, nên dự án thực tế giúp các em thấy công nghệ rất hữu ích."
+            },
+            {
+              "id": "edu-science-stem-interest-2",
+              "badge": "⚖️ Nhánh 2 – Hoạt động STEM (Robotics Workshop vs Museum vs Outdoors)",
+              "text": "Among secondary science activities, joining a robotics workshop lets students build and code real gadgets directly in teams. Walking through a science museum offers neat displays yet stays passive, while simple outdoor experiments often depend heavily on sunny weather and basic tools.",
+              "viText": "Trong các hoạt động khoa học cấp hai, buổi thực hành robot cho phép học sinh tự tay lắp ráp và lập trình thiết bị theo nhóm. Tham quan bảo tàng khoa học tuy có nhiều mô hình đẹp nhưng vẫn mang tính xem thụ động, còn thí nghiệm ngoài trời dễ phụ thuộc thời tiết và dụng cụ đơn sơ."
+            },
+            {
+              "id": "edu-science-stem-interest-3",
+              "badge": "⚖️ Nhánh 3 – Khởi xướng Trường học (Scientist Talk vs Books vs Games)",
+              "text": "To inspire teenagers quickly, inviting a lively guest scientist or organizing team science quiz competitions beats quietly storing textbooks inside the school library. Listening to a real researcher share failure stories motivates shy learners, while library books remain helpful later for self-study.",
+              "viText": "Để truyền cảm hứng nhanh cho học sinh, mời nhà khoa học khách mời trò chuyện hoặc tổ chức trò chơi thi đấu khoa học hiệu quả hơn chỉ đặt sách vào thư viện trường. Nghe chuyên gia kể chuyện vượt khó giúp các em có động lực, còn sách thư viện hỗ trợ tự nghiên cứu sâu hơn về sau."
+            },
+            {
+              "id": "edu-science-stem-interest-4",
+              "badge": "🎯 Nhánh 4 – Ngân sách Nghiên cứu & Ví dụ (Public Funding & Coding)",
+              "text": "In my opinion, governments should protect steady public funding for clean energy research and medical science because breakthroughs benefit everyone long-term. For example, building small sensor projects in high school workshops inspired me to choose computer engineering at university.",
+              "viText": "Theo tôi, chính phủ cần duy trì ngân sách công ổn định cho nghiên cứu năng lượng sạch và y học vì thành tựu khoa học giúp ích lâu dài cho cả xã hội. Ví dụ, làm thử các mạch cảm biến ở câu lạc bộ cấp ba đã khơi nguồn cho quyết định chọn ngành kỹ thuật máy tính của tôi."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Hands-on science experiments, an active robotics workshop, and an inspiring guest scientist spark science interest far better than passive textbooks alone.",
+            "answerVi": "Thí nghiệm thực hành, buổi học robot sôi nổi và nhà khoa học khách mời khơi dậy hứng thú khoa học tốt hơn nhiều so với chỉ học vẹt sách giáo khoa.",
+            "reason": "Direct teamwork beats just walking around a science museum or stacking guides in a school library, while smart public funding supports discoveries in medicine and clean energy.",
+            "reasonVi": "Thực hành theo nhóm hiệu quả hơn chỉ xem ở bảo tàng hay đặt thêm sách thư viện trường, còn đầu tư ngân sách công hợp lý tạo động lực cho các phát minh y tế và năng lượng sạch.",
+            "example": "Watching a school coding robot demo excited our whole class and encouraged many friends to try STEM competitions.",
+            "exampleVi": "Xem buổi trình diễn lập trình robot tại trường khiến cả lớp hào hứng và rủ nhau tham gia các cuộc thi khoa học kỹ thuật."
+          }
+        },
+        {
+          "id": "edu-museums-culture-arts",
+          "title": "Bảo tàng, Di sản, Nghệ thuật & Giao lưu Văn hóa (Museums, Heritage & Arts)",
+          "viTitle": "Từ vựng B2: national history, cultural heritage, historic pagoda, government funding, cultural exchange, tourism growth",
+          "examTags": [
+            "Writing T2: Young People's Interest in Museums and National History",
+            "Speaking P2: Organizing an Educational Activity at a Historic Pagoda",
+            "Speaking P3: Government Investment in Arts and Culture",
+            "Writing T2: Cultural Sharing Through Food, Art, and Music"
+          ],
+          "keywords": [
+            {
+              "word": "national history",
+              "meaning": "lịch sử dân tộc"
+            },
+            {
+              "word": "cultural heritage",
+              "meaning": "di sản văn hóa"
+            },
+            {
+              "word": "historic pagoda",
+              "meaning": "ngôi chùa cổ lịch sử"
+            },
+            {
+              "word": "government funding",
+              "meaning": "ngân sách tài trợ của chính phủ"
+            },
+            {
+              "word": "cultural exchange",
+              "meaning": "giao lưu văn hóa"
+            },
+            {
+              "word": "tourism growth",
+              "meaning": "phát triển / tăng trưởng du lịch"
+            }
+          ],
+          "items": [
+            {
+              "id": "edu-museums-culture-arts-1",
+              "badge": "✅ Nhánh 1 – Giới trẻ, Bảo tàng & Chùa cổ (History Pride & Pagoda Activity)",
+              "text": "More young people visit historical museums today because short online videos and interactive exhibits make national history vivid rather than boring. At a quiet historic pagoda, hosting a guided photo exhibition or interactive quiz competition teaches cultural heritage respectfully without noisy festival crowds.",
+              "viText": "Ngày nay nhiều bạn trẻ đến bảo tàng hơn nhờ video ngắn trên mạng và trưng bày tương tác giúp lịch sử dân tộc trở nên sống động. Tại một ngôi chùa cổ trang nghiêm, tổ chức triển lãm ảnh lịch sử hoặc cuộc thi tìm hiểu văn hóa giúp truyền đạt di sản trang trọng hơn hội chợ ồn ào."
+            },
+            {
+              "id": "edu-museums-culture-arts-2",
+              "badge": "💡 Nhánh 2 – Đầu tư Nghệ thuật & Bảo tàng Tương lai (Arts Funding)",
+              "text": "Steady government funding for galleries and traditional crafts protects cultural heritage, fuels local tourism growth, and enriches citizens' spiritual lives. Schools should offer arts or music classes for creativity, while future museums will likely mix real historical artifacts with digital virtual tours.",
+              "viText": "Ngân sách chính phủ dành cho phòng tranh và nghệ thuật truyền thống giúp bảo vệ di sản văn hóa, thúc đẩy du lịch địa phương và làm giàu đời sống tinh thần. Trường học nên có môn nghệ thuật âm nhạc để nuôi dưỡng sáng tạo, còn bảo tàng tương lai sẽ kết hợp hiện vật thật với tham quan thực tế ảo."
+            },
+            {
+              "id": "edu-museums-culture-arts-3",
+              "badge": "🌍 Nhánh 3 – Giao lưu Văn hóa qua Ẩm thực, Nghệ thuật & Âm nhạc",
+              "text": "Sharing local dishes, folk music, and traditional paintings creates warm cultural exchange that breaks down international prejudice faster than formal speeches. While language education also fosters respect, shared arts and food immediately remind strangers from different nations of their common humanity.",
+              "viText": "Chia sẻ món ăn địa phương, dân ca và tranh truyền thống tạo nên giao lưu văn hóa ấm áp giúp xóa bỏ định kiến quốc tế nhanh hơn bài diễn văn khô khan. Dù giáo dục ngôn ngữ cũng rất cần, ẩm thực và âm nhạc kết nối cảm xúc chung giữa các dân tộc tức thì."
+            },
+            {
+              "id": "edu-museums-culture-arts-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Ho Chi Minh City Museums & Music)",
+              "text": "In my opinion, modern technology should refresh museums without losing historical dignity. For example, visiting War Remnants museums in Ho Chi Minh City alongside enjoying Vietnamese folk music performances online makes me feel proud of my roots while connecting easily with foreign classmates.",
+              "viText": "Theo tôi, công nghệ hiện đại nên làm mới bảo tàng mà vẫn giữ được nét trang nghiêm lịch sử. Ví dụ, tham quan bảo tàng ở TP.HCM kết hợp xem biểu diễn âm nhạc dân tộc giúp tôi thêm tự hào cội nguồn khi trò chuyện cùng bạn bè quốc tế."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Steady government funding for arts, museums, and respectful historic pagoda quizzes strengthens pride in national history and drives international cultural exchange.",
+            "answerVi": "Ngân sách chính phủ ổn định cho nghệ thuật, bảo tàng và các hoạt động trang nhã ở chùa cổ giúp bồi đắp niềm tự hào lịch sử dân tộc và giao lưu văn hóa quốc tế.",
+            "reason": "Interactive galleries boost tourism growth and emotional wellness, while sharing traditional food, art, and music breaks social prejudice naturally.",
+            "reasonVi": "Không gian trưng bày sinh động thúc đẩy du lịch và đời sống tinh thần, còn chia sẻ ẩm thực, nghệ thuật và âm nhạc giúp xóa bỏ định kiến một cách tự nhiên.",
+            "example": "Curating a quiet photography exhibition at a local historic site helps teenagers respect heritage far more than memorizing dates alone.",
+            "exampleVi": "Tổ chức triển lãm ảnh lịch sử nhẹ nhàng tại di tích địa phương giúp học sinh trân trọng di sản hơn hẳn việc chỉ học thuộc mốc năm."
+          }
+        },
+        {
+          "id": "edu-stress-behavior-discipline",
+          "title": "Áp lực Thi cử, Bạn bè, Kỷ luật Học đường & Gian lận (Pressure & Discipline)",
+          "viTitle": "Từ vựng B2: academic pressure, peer pressure, student misbehavior, positive discipline, mental exhaustion, exam cheating",
+          "examTags": [
+            "Speaking P3: Detrimental Effects of Academic Pressure on Students",
+            "Speaking P3: Negative Effects of Student Peer Pressure",
+            "Speaking P3: Causes and Solutions for Student Misbehavior",
+            "Speaking P3: Constructive Ways to Discipline Children",
+            "Speaking P2: Handling a Friend Cheating in an Exam"
+          ],
+          "keywords": [
+            {
+              "word": "academic pressure",
+              "meaning": "áp lực điểm số / học tập"
+            },
+            {
+              "word": "peer pressure",
+              "meaning": "áp lực đồng trang lứa"
+            },
+            {
+              "word": "student misbehavior",
+              "meaning": "hành vi vi phạm kỷ luật của học sinh"
+            },
+            {
+              "word": "positive discipline",
+              "meaning": "kỷ luật tích cực (không đòn roi)"
+            },
+            {
+              "word": "mental exhaustion",
+              "meaning": "kiệt sức tinh thần / mệt mỏi"
+            },
+            {
+              "word": "exam cheating",
+              "meaning": "gian lận trong thi cử"
+            }
+          ],
+          "items": [
+            {
+              "id": "edu-stress-behavior-discipline-1",
+              "badge": "⚠️ Nhánh 1 – Áp lực Học tập & Bạn bè (Burnout & Losing Identity)",
+              "text": "Intense academic pressure from strict family expectations triggers chronic sleep loss, angry mood swings, and severe mental exhaustion, pushing teens away from friends. Meanwhile, negative peer pressure makes teenagers lose personal identity, chase risky trends, or feel harmful jealousy toward high-scoring classmates.",
+              "viText": "Áp lực học tập nặng nề từ kỳ vọng gia đình gây mất ngủ kéo dài, thất thường cảm xúc và kiệt sức tinh thần, khiến học sinh thu mình khỏi bạn bè. Đồng thời, áp lực bạn bè làm nhiều em đánh mất bản sắc cá nhân, chạy theo hành vi liều lĩnh hoặc đố kỵ với bạn điểm cao."
+            },
+            {
+              "id": "edu-stress-behavior-discipline-2",
+              "badge": "⚠️ Nhánh 2 – Nguyên nhân Hư hỏng & Bạo lực (Parental Care Not Expulsion)",
+              "text": "Common causes of student misbehavior include lack of parental attention, peer pressure, and negative online clips. Playing violent games does not automatically create aggressive behavior if families stay involved, while expelling troubled teenagers only pushes them onto the streets instead of fixing behavior.",
+              "viText": "Nguyên nhân học sinh vi phạm kỷ luật gồm thiếu sự quan tâm của cha mẹ, áp lực bạn bè và video mạng độc hại. Trò chơi bạo lực không tự động khiến trẻ hung hăng nếu gia đình đồng hành sát sao, còn đuổi học chỉ đẩy các em ra ngoài đường thay vì sửa đổi hành vi."
+            },
+            {
+              "id": "edu-stress-behavior-discipline-3",
+              "badge": "💡 Nhánh 3 – Kỷ luật Tích cực (Clear Rules, Empathy & Rewards)",
+              "text": "Instead of physical punishment, schools and parents should apply positive discipline by setting clear, consistent rules and listening with empathy. Using positive reinforcement and fair rewards for honest effort builds responsibility slowly while teaching students healthy coping skills against exam stress.",
+              "viText": "Thay vì đòn roi, nhà trường và cha mẹ nên dùng kỷ luật tích cực qua nội quy rõ ràng, nhất quán và lắng nghe thấu cảm. Khen thưởng động viên đúng lúc cho nỗ lực tiến bộ giúp trẻ tự giác hơn đồng thời học cách vượt qua căng thẳng thi cử lành mạnh."
+            },
+            {
+              "id": "edu-stress-behavior-discipline-4",
+              "badge": "⚖️ Nhánh 4 – Xử lý Bạn Gian lận Thi cử (Fairness & Friendship)",
+              "text": "If a close friend tries exam cheating during finals, privately urging them to stop and confess afterward protects both exam fairness and personal friendship. Ignoring dishonesty harms honest classmates, while publicly shaming them first can destroy trust unnecessarily before they fix their mistake.",
+              "viText": "Nếu thấy bạn thân gian lận trong kỳ thi cuối kỳ, khuyên riêng bạn dừng lại và tự thú sau giờ thi vừa giữ công bằng vừa bảo vệ tình bạn. Làm ngơ sẽ bất công với người học thật, còn tố cáo đột ngột trước mắt mọi người dễ làm rạn nứt lòng tin khi bạn còn cơ hội sửa sai."
+            },
+            {
+              "id": "edu-stress-behavior-discipline-5",
+              "badge": "🎯 Nhánh 5 – Ý kiến & Ví dụ (Healthy Coping Habits)",
+              "text": "In my opinion, schools should offer counseling rooms and value personal progress rather than test scores alone. For example, during stressful finals at university, talking openly with close friends and taking short music breaks keeps me calm without unhealthy comparison.",
+              "viText": "Theo tôi, nhà trường nên có phòng tư vấn tâm lý và đánh giá sự tiến bộ toàn diện thay vì chỉ nhìn điểm thi. Ví dụ, vào mùa thi căng thẳng ở đại học, trò chuyện thẳng thắn với bạn thân và nghe nhạc thư giãn giúp tôi giữ bình tĩnh mà không tự áp lực so sánh."
+            }
+          ],
+          "areSkeleton": {
+            "answer": "Reducing academic pressure and handling student misbehavior require supportive communication, positive discipline, and fair personal honesty.",
+            "answerVi": "Giảm áp lực học tập và xử lý hành vi sai của học sinh đòi hỏi giao tiếp thấu hiểu, kỷ luật tích cực và sự trung thực công bằng.",
+            "reason": "Harsh punishments and toxic peer pressure cause mental exhaustion, whereas calm talks protect confidence, and advising a friend against exam cheating preserves fairness and trust.",
+            "reasonVi": "Hình phạt nặng nề và áp lực bạn bè gây kiệt sức tinh thần, còn đối thoại bình tĩnh giúp giữ tự tin và nhắc nhở bạn tránh gian lận thi cử vẫn giữ trọn tình bạn.",
+            "example": "Setting steady weekly study goals and resting on Sunday evenings protects me from exam anxiety and burnout.",
+            "exampleVi": "Đặt mục tiêu học tập vừa sức mỗi tuần và nghỉ ngơi tối Chủ nhật giúp tôi tránh lo âu thi cử và kiệt sức."
           }
         }
       ]
@@ -251,236 +715,417 @@
   "rightBranches": [
     {
       "id": "edu-group-digital-reading-skills",
-      "title": "Online Learning, Books vs E-books, Foreign Languages & Soft Skills",
-      "viTitle": "Học Trực tuyến, Sách Giấy vs E-book, Ngoại ngữ & Kỹ năng Mềm",
-      "badge": "Nhánh 2 (15 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
-      "tags": ["Online Learning", "E-books vs Paper Books", "Foreign Languages", "Soft Skills", "Study Abroad"],
+      "title": "Online Learning, AI, Books, Libraries, Languages & Skills (Học trực tuyến, AI, Sách, Ngoại ngữ & Kỹ năng)",
+      "viTitle": "Học trực tuyến - AI, Sách - Thư viện, Ngoại ngữ, Âm nhạc & Kỹ năng Mềm",
+      "badge": "Nhánh 2 (24 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
+      "tags": [
+        "Online & AI",
+        "Books & E-books",
+        "Libraries",
+        "Foreign Languages",
+        "Soft Skills"
+      ],
       "color": "#7c3aed",
       "keywords": [
-        { "word": "online learning / e-learning", "meaning": "học trực tuyến qua nền tảng số" },
-        { "word": "study at their own pace", "meaning": "học theo tốc độ tiếp thu riêng của bản thân" },
-        { "word": "greater flexibility", "meaning": "sự linh hoạt cao hơn về thời gian và địa điểm" },
-        { "word": "save time and money", "meaning": "tiết kiệm thời gian di chuyển và chi phí" },
-        { "word": "face-to-face interaction", "meaning": "sự tương tác trực tiếp mặt đối mặt trên lớp" },
-        { "word": "self-discipline", "meaning": "tính tự giác và kỷ luật cá nhân" },
-        { "word": "printed books vs e-books", "meaning": "sách giấy truyền thống vs sách điện tử" },
-        { "word": "prevent digital eye strain", "meaning": "ngăn ngừa mỏi mắt do nhìn màn hình điện tử" },
-        { "word": "portable digital library", "meaning": "thư viện số nhỏ gọn lưu hàng ngàn cuốn sách" },
-        { "word": "lifelong reading habit", "meaning": "thói quen đọc sách suốt đời" },
-        { "word": "foreign language proficiency", "meaning": "sự thông thạo ngoại ngữ" },
-        { "word": "global career opportunities", "meaning": "cơ hội việc làm tại các công ty toàn cầu" },
-        { "word": "cross-cultural communication", "meaning": "giao tiếp đa văn hóa" },
-        { "word": "soft skills & teamwork", "meaning": "kỹ năng mềm và làm việc nhóm" },
-        { "word": "critical thinking", "meaning": "tư duy phản biện độc lập" }
+        {
+          "word": "online learning",
+          "meaning": "học trực tuyến"
+        },
+        {
+          "word": "artificial intelligence",
+          "meaning": "trí tuệ nhân tạo (AI)"
+        },
+        {
+          "word": "personalized feedback",
+          "meaning": "phản hồi cá nhân hóa (theo trình độ)"
+        },
+        {
+          "word": "human teachers",
+          "meaning": "giáo viên ngoài đời / con người"
+        },
+        {
+          "word": "schedule flexibility",
+          "meaning": "sự linh hoạt về thời gian học"
+        },
+        {
+          "word": "school rules",
+          "meaning": "nội quy nhà trường"
+        },
+        {
+          "word": "reading habits",
+          "meaning": "thói quen đọc sách"
+        },
+        {
+          "word": "printed books",
+          "meaning": "sách giấy truyền thống"
+        },
+        {
+          "word": "digital e-books",
+          "meaning": "sách điện tử"
+        },
+        {
+          "word": "public libraries",
+          "meaning": "thư viện công cộng"
+        },
+        {
+          "word": "broaden knowledge",
+          "meaning": "mở rộng kiến thức"
+        },
+        {
+          "word": "short-form videos",
+          "meaning": "video ngắn (TikTok, Reels)"
+        },
+        {
+          "word": "foreign language",
+          "meaning": "ngoại ngữ"
+        },
+        {
+          "word": "career opportunities",
+          "meaning": "cơ hội nghề nghiệp rộng mở"
+        },
+        {
+          "word": "language apps",
+          "meaning": "ứng dụng học ngoại ngữ trên máy tính/điện thoại"
+        },
+        {
+          "word": "speaking skills",
+          "meaning": "kỹ năng nói giao tiếp"
+        },
+        {
+          "word": "practice regularly",
+          "meaning": "luyện tập đều đặn"
+        },
+        {
+          "word": "cultural understanding",
+          "meaning": "sự thấu hiểu văn hóa"
+        },
+        {
+          "word": "extracurricular activities",
+          "meaning": "hoạt động ngoại khóa (câu lạc bộ, thể thao)"
+        },
+        {
+          "word": "musical instrument",
+          "meaning": "nhạc cụ (piano, guitar)"
+        },
+        {
+          "word": "personal hobby",
+          "meaning": "sở thích cá nhân"
+        },
+        {
+          "word": "soft skills",
+          "meaning": "kỹ năng mềm"
+        },
+        {
+          "word": "time management",
+          "meaning": "kỹ năng quản lý thời gian"
+        },
+        {
+          "word": "reduce stress",
+          "meaning": "giảm căng thẳng"
+        }
       ],
       "children": [
         {
-          "id": "edu-online-vs-traditional-learning",
-          "title": "Học Trực tuyến (Online Learning) vs Học trên Lớp & AI trong Giáo dục",
-          "viTitle": "Kế thừa đúng câu mẫu của bạn: One major reason is that online learning allows students to study more flexibly...",
-          "badge": "Chủ đề 5 (Câu Mẫu Chuẩn Của Bạn)",
+          "id": "edu-online-ai-phones",
+          "title": "Học Trực tuyến, Trí tuệ Nhân tạo & Điện thoại Ở trường (Online, AI & Phones)",
+          "viTitle": "Từ vựng B2: online learning, artificial intelligence, personalized feedback, human teachers, schedule flexibility, school rules",
           "examTags": [
-            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Adv/Disadv]: Online Learning vs Traditional Classroom Education",
-            "Task 2 [Dạng 2 - Adv/Disadv]: Using Artificial Intelligence (AI) and Smartphones in Learning",
-            "Speaking P3: Benefits and Drawbacks of Online Courses for University Students"
+            "Writing T2: Online Learning vs Traditional Classroom Learning",
+            "Speaking P3: Artificial Intelligence in Education",
+            "Speaking P3: Artificial Intelligence in Modern Education",
+            "Writing T2: Should Students Be Allowed to Bring Smartphones to School",
+            "Speaking P3: Allowing Mobile Phones at School"
           ],
-          "color": "#7c3aed",
           "keywords": [
-            { "word": "online learning", "meaning": "học trực tuyến" },
-            { "word": "greater flexibility", "meaning": "sự linh hoạt cao hơn" },
-            { "word": "study at their own pace", "meaning": "học theo tốc độ của riêng mình" },
-            { "word": "save time and money", "meaning": "tiết kiệm thời gian và tiền bạc" },
-            { "word": "face-to-face interaction", "meaning": "tương tác trực tiếp" }
+            {
+              "word": "online learning",
+              "meaning": "học trực tuyến"
+            },
+            {
+              "word": "artificial intelligence",
+              "meaning": "trí tuệ nhân tạo (AI)"
+            },
+            {
+              "word": "personalized feedback",
+              "meaning": "phản hồi cá nhân hóa (theo trình độ)"
+            },
+            {
+              "word": "human teachers",
+              "meaning": "giáo viên ngoài đời / con người"
+            },
+            {
+              "word": "schedule flexibility",
+              "meaning": "sự linh hoạt về thời gian học"
+            },
+            {
+              "word": "school rules",
+              "meaning": "nội quy nhà trường"
+            }
           ],
           "items": [
             {
-              "id": "edu-ol-1",
-              "badge": "✅ Nhánh 1: Sự linh hoạt & Chủ động (Chuỗi câu mẫu chuẩn của bạn)",
-              "text": "One major reason is that online learning allows students to study more flexibly. This is mainly because it offers greater flexibility in choosing study time and location. Students can study at their own pace and replay recorded video lectures. This means that they have more control over their learning.",
-              "viText": "Một lý do chính là học trực tuyến cho phép sinh viên học tập linh hoạt hơn. Điều này chủ yếu là do hình thức này mang lại sự linh hoạt cao hơn về thời gian và địa điểm. Sinh viên có thể học theo tốc độ của riêng mình và xem lại bài giảng video. Điều này có nghĩa là họ chủ động hơn trong việc học."
+              "id": "edu-online-ai-phones-1",
+              "badge": "✅ Nhánh 1 – Ưu & Nhược Học Trực tuyến (Online vs Classroom)",
+              "text": "Digital online learning offers great schedule flexibility and lets rural students access quality courses anywhere. However, watching screens alone weakens real group discussion and hands-on guidance, so traditional physical classrooms remain far stronger for building lasting study discipline and teamwork.",
+              "viText": "Học trực tuyến mang lại sự linh hoạt thời gian và giúp học sinh vùng xa tiếp cận bài giảng chất lượng. Tuy nhiên, học qua màn hình một mình làm giảm thảo luận nhóm và hướng dẫn trực tiếp, nên lớp học truyền thống vẫn hiệu quả hơn để rèn kỷ luật."
             },
             {
-              "id": "edu-ol-2",
-              "badge": "✅ Nhánh 2: Tiết kiệm Thời gian & Chi phí (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, students can save time and money by studying online. This is mainly because they do not need to commute through heavy traffic or rent expensive rooms near campus. This means that working adults and rural students can access top university courses from home.",
-              "viText": "Hơn nữa, sinh viên có thể tiết kiệm thời gian và tiền bạc bằng cách học trực tuyến. Điều này chủ yếu là do họ không cần di chuyển qua cảnh kẹt xe hay thuê trọ đắt đỏ gần trường. Điều này có nghĩa là người đi làm và học sinh vùng xa có thể tiếp cận các khóa học hàng đầu ngay tại nhà."
+              "id": "edu-online-ai-phones-2",
+              "badge": "✅ Nhánh 2 – AI Trong Giáo dục (Supportive Tool Not Replacement)",
+              "text": "In modern education, artificial intelligence gives 24/7 practice and personalized feedback while helping teachers grade exercises quickly. Students should use chatbots ethically to clarify tough concepts or check grammar instead of copying full essays, because AI tools cannot replace human teachers who nurture real empathy.",
+              "viText": "Trong giáo dục hiện đại, trí tuệ nhân tạo hỗ trợ luyện tập 24/7 và phản hồi cá nhân hóa, đồng thời giúp thầy cô chấm bài nhanh hơn. Học sinh nên dùng AI có đạo đức để giải thích khái niệm khó hay kiểm tra ngữ pháp chứ không chép nguyên bài, vì AI không thể thay thế sự ấm áp của giáo viên thật."
             },
             {
-              "id": "edu-ol-3",
-              "badge": "⚠️ Nhánh 3: Mặt trái của Học Online & Lạm dụng Điện thoại (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one contributing factor to poor online learning results is the lack of face-to-face interaction and self-discipline. This is mainly because many students spend too much time on social media and games when studying alone on computers. This means that they easily lose focus and feel isolated from teachers.",
-              "viText": "Mặt khác, một yếu tố dẫn đến kết quả học online kém là thiếu tương tác trực tiếp và thiếu tính tự giác. Điều này chủ yếu là do nhiều sinh viên dành quá nhiều thời gian cho mạng xã hội và trò chơi khi ngồi máy tính một mình. Điều này có nghĩa là họ dễ mất tập trung và cảm thấy xa cách với thầy cô."
+              "id": "edu-online-ai-phones-3",
+              "badge": "💡 Nhánh 3 – Quy định Điện thoại Ở trường (Useful Under Rules)",
+              "text": "Bringing mobile phones onto school grounds helps students check digital dictionaries and reach parents during emergencies. Fair school rules should allow personal phones starting around secondary school age for quick research, yet keep devices silent inside bags during exams and focused class discussions.",
+              "viText": "Mang điện thoại đến trường giúp học sinh tra từ điển số và liên lạc cha mẹ khi khẩn cấp. Nội quy hợp lý nên cho trẻ dùng máy riêng từ bậc trung học cơ sở để tra cứu, nhưng phải cất yên trong cặp suốt giờ thi và khi thảo luận trên lớp."
             },
             {
-              "id": "edu-ol-4",
-              "badge": "💡 Nhánh 4: Giải pháp Blended Learning & Ví dụ IT (Solution & IT Example)",
-              "text": "In my opinion, the best approach is blending online theory lectures with offline campus laboratory practice. For example, during my Master's program in Computer Science, I watch AI theory videos online at night to save commuting time, and attend university labs on Saturdays for teamwork.",
-              "viText": "Theo tôi, giải pháp tốt nhất là kết hợp bài giảng lý thuyết online với thực hành phòng lab trực tiếp tại trường. Ví dụ, trong chương trình Thạc sĩ Khoa học máy tính, tôi xem video lý thuyết AI trực tuyến vào buổi tối để tiết kiệm thời gian đi lại, và lên phòng lab trường vào thứ Bảy để làm việc nhóm."
+              "id": "edu-online-ai-phones-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Blended Learning at UIT)",
+              "text": "In my opinion, blended learning that mixes live campus classes with smart digital tools works best. For example, I attend university lectures in person to discuss ideas with peers, then use AI explanations at home to review tough engineering modules.",
+              "viText": "Theo tôi, mô hình học kết hợp giữa lên lớp trực tiếp và dùng công cụ số thông minh mang lại hiệu quả cao nhất. Ví dụ, tôi vẫn đến giảng đường trao đổi trực tiếp cùng bạn học, sau đó về nhà dùng AI giải thích thêm phần kiến thức kỹ thuật khó."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (Ưu điểm của Online Learning): Online learning offers greater flexibility, saves commuting time and money, and allows students to study at their own pace.",
-            "answerVi": "Speaking P3: Học trực tuyến mang lại sự linh hoạt cao hơn, tiết kiệm thời gian tiền bạc và cho phép sinh viên học theo tốc độ riêng.",
-            "reason": "🎙️ Tại sao không thể thay thế hoàn toàn thầy cô trên lớp: However, traditional classrooms remain essential for face-to-face interaction, teamwork, and hands-on laboratory practice.",
-            "reasonVi": "Tại sao không thay thế được lớp học truyền thống: Tuy nhiên, lớp học truyền thống vẫn thiết yếu để tương tác trực tiếp, làm việc nhóm và thực hành phòng lab.",
-            "example": "📐 Lắp vào Writing Task 2 (Online vs Traditional / AI in Education): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Sử dụng nguyên vẹn các câu mẫu chuẩn trong tài liệu của bạn."
+            "answer": "I support combining physical classrooms with online learning tools and artificial intelligence under fair school rules.",
+            "answerVi": "Tôi ủng hộ kết hợp lớp học truyền thống với công cụ học trực tuyến và trí tuệ nhân tạo dưới nội quy nhà trường hợp lý.",
+            "reason": "Digital courses bring schedule flexibility and personalized feedback, yet human teachers and clear phone rules stay essential to build real discipline and prevent passive copying.",
+            "reasonVi": "Học số mang lại lịch trình linh hoạt và phản hồi cá nhân hóa, nhưng giáo viên thật và quy định điện thoại rõ ràng vẫn thiết yếu để giữ kỷ luật và tránh ỷ lại.",
+            "example": "Listening to professors in class during the day and practicing quizzes online at home gives me the strongest results.",
+            "exampleVi": "Nghe thầy cô giảng trực tiếp ban ngày và luyện bài tập trực tuyến buổi tối mang lại kết quả học tập tốt nhất."
           }
         },
         {
-          "id": "edu-printed-books-vs-ebooks",
-          "title": "Sách Giấy (Printed Books) vs Sách Điện tử (E-books) & Văn hóa Đọc",
-          "viTitle": "Kế thừa từ vựng: printed books vs e-books, portable digital library, prevent digital eye strain, lifelong reading habit",
-          "badge": "Chủ đề 6",
+          "id": "edu-reading-ebooks-libraries",
+          "title": "Văn hóa Đọc sách, Sách điện tử & Thư viện Truyền thống (Books, E-Books & Libraries)",
+          "viTitle": "Từ vựng B2: reading habits, printed books, digital e-books, public libraries, broaden knowledge, short-form videos",
           "examTags": [
-            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Adv/Disadv]: Will E-books Completely Replace Traditional Printed Books?",
-            "Speaking P2 (AJC 08/11 & BAV 10): Visiting a Bookstore on Sunday / Choosing a Science Book for a Cousin",
-            "Speaking P3: Benefits of Reading Books & How to Encourage Reading Habits Among Youths"
+            "Writing T2: The Decline of Reading Habits: Effects and Solutions",
+            "Speaking P3: Benefits of Reading Books",
+            "Speaking P3: Benefits of E-Books and Digital Reading",
+            "Speaking P3: Benefits of Reading E-books",
+            "Speaking P3: The Importance of Traditional Libraries",
+            "Speaking P3: The Value of Public Libraries in Modern Society"
           ],
-          "color": "#7c3aed",
           "keywords": [
-            { "word": "portable digital library", "meaning": "thư viện số nhỏ gọn mang đi mọi nơi" },
-            { "word": "prevent digital eye strain", "meaning": "ngăn ngừa mỏi mắt do màn hình điện tử" },
-            { "word": "lifelong reading habit", "meaning": "thói quen đọc sách suốt đời" },
-            { "word": "deep concentration", "meaning": "sự tập trung sâu không bị thông báo làm phiền" }
+            {
+              "word": "reading habits",
+              "meaning": "thói quen đọc sách"
+            },
+            {
+              "word": "printed books",
+              "meaning": "sách giấy truyền thống"
+            },
+            {
+              "word": "digital e-books",
+              "meaning": "sách điện tử"
+            },
+            {
+              "word": "public libraries",
+              "meaning": "thư viện công cộng"
+            },
+            {
+              "word": "broaden knowledge",
+              "meaning": "mở rộng kiến thức"
+            },
+            {
+              "word": "short-form videos",
+              "meaning": "video ngắn (TikTok, Reels)"
+            }
           ],
           "items": [
             {
-              "id": "edu-bk-1",
-              "badge": "✅ Nhánh 1: Ưu điểm của Sách điện tử E-books (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that e-books provide a portable digital library and instant search convenience. This is mainly because a single tablet or smartphone can store thousands of PDF textbooks at a much lower cost than paper books. This means that students can carry all their study materials anywhere without heavy backpacks.",
-              "viText": "Một lý do chính là sách điện tử mang lại một thư viện số nhỏ gọn và sự tiện lợi tra cứu tức thì. Điều này chủ yếu là do một chiếc máy tính bảng hay điện thoại có thể lưu hàng ngàn giáo trình PDF với chi phí rẻ hơn nhiều so với sách giấy. Điều này có nghĩa là sinh viên mang theo mọi tài liệu đi khắp nơi mà không phải vác balo nặng."
+              "id": "edu-reading-ebooks-libraries-1",
+              "badge": "✅ Nhánh 1 – Suy giảm Văn hóa Đọc & Lợi ích (Focus & Language)",
+              "text": "Strong reading habits help people broaden knowledge, expand vocabulary, and enjoy quiet calm away from stress. Unfortunately, addictive short-form videos have lowered young people's attention spans, harming their writing skills and patience for long, detailed arguments.",
+              "viText": "Thói quen đọc sách tốt giúp mở rộng kiến thức, làm giàu vốn từ vựng và mang lại sự bình yên giảm căng thẳng. Tiếc rằng các video ngắn gây nghiện đã làm giảm khả năng tập trung của người trẻ, khiến kỹ năng viết và sự kiên nhẫn đọc tài liệu dài yếu đi."
             },
             {
-              "id": "edu-bk-2",
-              "badge": "✅ Nhánh 2: Tại sao Sách giấy không bao giờ biến mất (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, reading traditional printed books protects eyesight and improves deep concentration. This is mainly because paper pages do not emit blue light or pop-up social media notifications. This means that readers can prevent digital eye strain and absorb complex knowledge more effectively before bedtime.",
-              "viText": "Hơn nữa, đọc sách giấy truyền thống giúp bảo vệ thị lực và tăng sự tập trung sâu. Điều này chủ yếu là do trang giấy không phát ra ánh sáng xanh hay thông báo mạng xã hội làm phiền. Điều này có nghĩa là người đọc ngăn ngừa được chứng mỏi mắt kỹ thuật số và tiếp thu kiến thức sâu hơn trước khi ngủ."
+              "id": "edu-reading-ebooks-libraries-2",
+              "badge": "⚖️ Nhánh 2 – Sách giấy vs Sách điện tử (Feel vs Portability)",
+              "text": "Tech fans find digital e-books affordable, convenient, and portable with huge storage on one light device. Still, traditional printed books will never disappear completely because many readers love real paper texture and turning pages without bright-screen eye strain.",
+              "viText": "Nhiều người thích sách điện tử vì giá rẻ hơn, chứa hàng ngàn đầu sách trên một thiết bị gọn nhẹ và tải đọc ngay khi đi lại. Dù vậy, sách giấy truyền thống không thể biến mất hoàn toàn vì nhiều người yêu cảm giác chạm giấy thật và đọc êm mắt không lo mỏi màn hình."
             },
             {
-              "id": "edu-bk-3",
-              "badge": "⚠️ Nhánh 3: Nguyên nhân giới trẻ lười đọc sách (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one contributing factor to declining reading habits among youths is the addiction to short video apps like TikTok. This is mainly because fast visual entertainment shortens attention spans. This means that many teenagers find long books boring and gradually lose their critical thinking and vocabulary.",
-              "viText": "Mặt khác, một yếu tố làm suy giảm thói quen đọc sách ở giới trẻ là sự nghiện các ứng dụng video ngắn như TikTok. Điều này chủ yếu là do giải trí hình ảnh nhanh làm ngắn khả năng tập trung. Điều này có nghĩa là nhiều bạn trẻ thấy sách dài nhàm chán và dần mất đi tư duy phản biện cùng vốn từ vựng."
+              "id": "edu-reading-ebooks-libraries-3",
+              "badge": "💡 Nhánh 3 – Vai trò & Đổi mới Thư viện (Quiet Spaces & Events)",
+              "text": "Public libraries play crucial roles by providing quiet study desks, free computers to close digital gaps, and friendly community workshops. To fight declining reading habits caused by short videos, families can keep screen-free reading evenings, schools can run book challenges, and libraries should offer cozy cafes alongside digital archives.",
+              "viText": "Thư viện công cộng giữ vai trò thiết yếu khi cung cấp góc học yên tĩnh, máy tính miễn phí thu hẹp khoảng cách số và các hội thảo cộng đồng. Để khắc phục việc lười đọc do video ngắn, gia đình nên có buổi tối đọc sách không màn hình, trường tổ chức thử thách đọc và thư viện thêm góc cà phê ấm cúng."
             },
             {
-              "id": "edu-bk-4",
-              "badge": "💡 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & IT Example)",
-              "text": "In my opinion, the best approach is combining both formats depending on the situation. For example, as an IT postgraduate who stares at code on monitors all day, I use e-books to search programming syntax quickly at work, but I always read printed books in the evening to rest my eyes.",
-              "viText": "Theo tôi, cách tốt nhất là kết hợp cả hai định dạng tùy hoàn cảnh. Ví dụ, là học viên cao học IT phải nhìn màn hình code cả ngày, tôi dùng e-book để tra cứu cú pháp lập trình nhanh khi làm việc, nhưng luôn đọc sách giấy vào buổi tối để mắt được nghỉ ngơi."
+              "id": "edu-reading-ebooks-libraries-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Tom's Tech Books & Library)",
+              "text": "In my opinion, parents and libraries should encourage daily 20-minute reading in both paper and digital formats. For example, I carry tech e-books on my tablet when commuting, yet I still love borrowing printed engineering books at our quiet campus library before exams.",
+              "viText": "Theo tôi, gia đình và thư viện nên khuyến khích thói quen đọc 20 phút mỗi ngày dù là sách giấy hay điện tử. Ví dụ, tôi đọc sách công nghệ điện tử trên máy tính bảng khi đi lại, nhưng mùa thi vẫn thích mượn sách giấy đọc ở thư viện trường yên tĩnh."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (AJC 08/11 - Chọn đi Nhà sách / Bookstore vào Chủ nhật): I would choose visiting a quiet bookstore or book café with my friend because it offers a peaceful space to relax, read printed books, and talk deeply.",
-            "answerVi": "Speaking P2 (AJC 08/11): Tôi chọn đi nhà sách hoặc cà phê sách vào Chủ nhật vì nó mang lại không gian yên tĩnh để thư giãn, đọc sách giấy và trò chuyện sâu sắc.",
-            "reason": "🎙️ Bác bỏ Quán nước ồn ào / Sở thú ngoài trời: Outdoor zoos are too hot and tiring on sunny weekends, while regular coffee shops are often too noisy for meaningful conversation.",
-            "reasonVi": "Loại Sở thú / Quán cà phê ồn ào: Sở thú ngoài trời quá nắng nóng và mệt vào cuối tuần, còn quán cà phê thường lại quá ồn ào.",
-            "example": "📐 Lắp vào Writing Task 2 (E-books vs Printed Books): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 4.",
-            "exampleVi": "Dùng cho cả đề Writing E-books, Speaking Part 3 Đọc sách và Speaking Part 2 AJC 08/11."
+            "answer": "Healthy reading habits remain vital to broaden knowledge and calm the mind, whether through portable digital e-books, printed books, or welcoming public libraries.",
+            "answerVi": "Thói quen đọc sách rất thiết yếu để mở rộng kiến thức và thư giãn tâm trí, dù qua sách điện tử tiện lợi, sách giấy hay thư viện công cộng.",
+            "reason": "Short-form videos easily hurt focus, while modern public libraries with fast Wi-Fi and workshops attract youth and ensure printed books never vanish completely.",
+            "reasonVi": "Video ngắn dễ làm giảm tập trung, trong khi thư viện công cộng có Wi-Fi mạnh và câu lạc bộ sẽ thu hút bạn trẻ và giữ sức sống cho sách giấy.",
+            "example": "Reading tech books for twenty minutes before sleeping helps me disconnect from screens and sleep far better.",
+            "exampleVi": "Đọc sách công nghệ hai mươi phút trước khi đi ngủ giúp tôi rời xa màn hình điện thoại và ngủ ngon hơn hẳn."
           }
         },
         {
-          "id": "edu-foreign-languages-study-abroad",
-          "title": "Học Ngoại ngữ từ sớm, Tiếng Anh Quốc tế & Du học (Study Abroad)",
-          "viTitle": "Kế thừa từ vựng: foreign language proficiency, global career opportunities, cross-cultural communication",
-          "badge": "Chủ đề 7",
+          "id": "edu-foreign-languages",
+          "title": "Học Ngoại ngữ & Công nghệ Hỗ trợ Tiếng Anh (Foreign Languages & EdTech)",
+          "viTitle": "Từ vựng B2: foreign language, career opportunities, language apps, speaking skills, practice regularly, cultural understanding",
           "examTags": [
-            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Adv/Disadv]: Teaching Foreign Languages to Children in Primary School",
-            "Task 2 [Dạng 2 - Adv/Disadv]: Studying Abroad vs Studying at Local Universities",
-            "Speaking P3: Importance of Learning English & Challenges of Studying Abroad"
+            "Writing T2: Benefits and Challenges of Learning a New Language",
+            "Writing T2: Measures to Promote Foreign Language Education",
+            "Speaking P3: Benefits of Learning a Foreign Language",
+            "Speaking P3: Benefits of Mastering Foreign Languages",
+            "Writing T2: Computer Technology in Language Learning",
+            "Writing T2: Computer Technology and AI in English Language Learning",
+            "Speaking P2: Best Method to Improve English Speaking Skills"
           ],
-          "color": "#7c3aed",
           "keywords": [
-            { "word": "foreign language proficiency", "meaning": "sự thông thạo ngoại ngữ" },
-            { "word": "global career opportunities", "meaning": "cơ hội nghề nghiệp toàn cầu" },
-            { "word": "cross-cultural communication", "meaning": "giao tiếp xuyên văn hóa" },
-            { "word": "culture shock and homesickness", "meaning": "sốc văn hóa và nỗi nhớ nhà khi du học" }
+            {
+              "word": "foreign language",
+              "meaning": "ngoại ngữ"
+            },
+            {
+              "word": "career opportunities",
+              "meaning": "cơ hội nghề nghiệp rộng mở"
+            },
+            {
+              "word": "language apps",
+              "meaning": "ứng dụng học ngoại ngữ trên máy tính/điện thoại"
+            },
+            {
+              "word": "speaking skills",
+              "meaning": "kỹ năng nói giao tiếp"
+            },
+            {
+              "word": "practice regularly",
+              "meaning": "luyện tập đều đặn"
+            },
+            {
+              "word": "cultural understanding",
+              "meaning": "sự thấu hiểu văn hóa"
+            }
           ],
           "items": [
             {
-              "id": "edu-fl-1",
-              "badge": "✅ Nhánh 1: Lợi ích học Ngoại ngữ sớm & Tiếng Anh (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that achieving foreign language proficiency unlocks global career opportunities and world knowledge. This is mainly because young children have flexible brains that can imitate native pronunciation naturally without shyness. This means that learning English early gives students a strong competitive edge in the future.",
-              "viText": "Một lý do chính là thông thạo ngoại ngữ mở ra cơ hội nghề nghiệp toàn cầu và kho tàng tri thức thế giới. Điều này chủ yếu là do trẻ nhỏ có bộ não linh hoạt, bắt chước phát âm bản xứ tự nhiên mà không ngại ngùng. Điều này có nghĩa là học tiếng Anh sớm mang lại lợi thế cạnh tranh lớn trong tương lai."
+              "id": "edu-foreign-languages-1",
+              "badge": "✅ Nhánh 1 – Lợi ích Nghề nghiệp, Văn hóa & AI Dịch (Jobs & Mind)",
+              "text": "Mastering a foreign language unlocks global career opportunities, easier travel, cross-border friendships, sharper memory, and richer cultural understanding. Although AI translators handle basic tourist menus, learning real languages builds authentic trust in business meetings and trains clear thinking.",
+              "viText": "Thành thạo ngoại ngữ mở ra cơ hội nghề nghiệp toàn cầu, du lịch dễ dàng, kết bạn quốc tế, tăng trí nhớ và thấu hiểu văn hóa sâu sắc. Dù phần mềm dịch xử lý được câu giao tiếp cơ bản, tự nói ngoại ngữ mới tạo dựng niềm tin chân thành trong công việc."
             },
             {
-              "id": "edu-fl-2",
-              "badge": "✅ Nhánh 2: Ưu điểm của việc Đi du học (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, studying abroad fosters early independence and cross-cultural communication. This is mainly because international students must manage their own finances, cook meals, and collaborate with classmates from diverse countries. This means that they become much more adaptable and mature.",
-              "viText": "Hơn nữa, đi du học giúp rèn luyện tính tự lập sớm và giao tiếp đa văn hóa. Điều này chủ yếu là do du học sinh phải tự quản lý tài chính, nấu ăn và làm việc nhóm với bạn bè từ nhiều quốc gia. Điều này có nghĩa là họ trở nên thích nghi nhanh và trưởng thành hơn nhiều."
+              "id": "edu-foreign-languages-2",
+              "badge": "⚠️ Nhánh 2 – Thách thức & Độ tuổi Bắt đầu (Time, Grammar & Shyness)",
+              "text": "However, learners face real challenges including scarce study time, tricky grammar rules, and forgetting dense vocabulary lists. Many adults struggle most with speaking skills because shyness and fear of embarrassing mistakes freeze them—which is why starting joyfully in primary childhood helps build natural accents.",
+              "viText": "Tuy nhiên, người học gặp nhiều thách thức như thiếu thời gian, ngữ pháp phức tạp và dễ quên từ vựng. Nhiều người thấy kỹ năng nói khó nhất vì ngại ngùng và sợ mắc lỗi, nên cho trẻ tiếp xúc vui vẻ từ bậc tiểu học giúp phát âm tự nhiên hơn."
             },
             {
-              "id": "edu-fl-3",
-              "badge": "⚠️ Nhánh 3: Rào cản của Du học & Học ngoại ngữ quá tải (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, studying abroad or forcing kids into excessive language classes has clear drawbacks. This is mainly because overseas tuition and living costs are extremely expensive, and living far from family causes culture shock and homesickness. This means that many students suffer from financial stress and loneliness.",
-              "viText": "Mặt khác, đi du học hoặc ép trẻ học ngoại ngữ quá tải có những bất lợi rõ rệt. Điều này chủ yếu là do học phí và sinh hoạt phí ở nước ngoài cực kỳ đắt đỏ, đồng thời sống xa gia đình dễ gây sốc văn hóa và nhớ nhà. Điều này có nghĩa là nhiều sinh viên chịu áp lực tài chính và cô đơn."
+              "id": "edu-foreign-languages-3",
+              "badge": "⚖️ Nhánh 3 – 3 Cách Cải thiện Nói trong 3 Tháng (Partner vs Club vs Center)",
+              "text": "To sharpen speaking skills within three months, practicing with a dedicated one-on-one partner gives immediate feedback and comfort without peer embarrassment. Joining a weekly English club is lively yet limits speaking turns per person, while formal courses at an English center cost far more and focus heavily on grammar books.",
+              "viText": "Để cải thiện kỹ năng nói trong ba tháng, luyện một kèm một với bạn đồng hành giúp sửa lỗi ngay lập tức và đỡ ngại đám đông. Câu lạc bộ tuần tuy vui nhưng ít lượt nói cho mỗi người, còn khóa học ở trung tâm tiếng Anh thường đắt đỏ và nặng lý thuyết ngữ pháp."
             },
             {
-              "id": "edu-fl-4",
-              "badge": "🎯 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & IT Example)",
-              "text": "For example, in my Computer Science research, having strong English reading skills allows me to read the latest international AI documentation and collaborate with foreign developers on GitHub without needing to spend billions of VND studying abroad.",
-              "viText": "Ví dụ, trong nghiên cứu Khoa học máy tính của tôi, việc có kỹ năng đọc tiếng Anh tốt giúp tôi đọc được các tài liệu AI quốc tế mới nhất và hợp tác với lập trình viên nước ngoài trên GitHub mà không cần tốn hàng tỷ đồng đi du học."
+              "id": "edu-foreign-languages-4",
+              "badge": "💡 Nhánh 4 – Công nghệ Hỗ trợ & Chính sách Trường học (Apps & Policy)",
+              "text": "Digital computer tools and language apps offer fun audio quizzes and instant feedback, yet excessive screen time causes distractions and reduces human dialogue. To promote language fluency nationwide, schools should train supportive teachers, reform speaking exams, and subsidize affordable digital learning clubs.",
+              "viText": "Công nghệ máy tính và ứng dụng học ngoại ngữ mang lại bài luyện nghe vui nhộn và phản hồi tức thì, nhưng lạm dụng màn hình dễ gây xao nhãng và thiếu hội thoại người thật. Nhà trường cần đào tạo giáo viên vững tay nghề, đổi mới thi nói và hỗ trợ câu lạc bộ luyện tập."
+            },
+            {
+              "id": "edu-foreign-languages-5",
+              "badge": "🎯 Nhánh 5 – Ý kiến & Ví dụ (Tom's English Routine)",
+              "text": "In my opinion, starting language exposure early in childhood and practicing aloud daily beats cramming grammar rules. For example, reading English IT documentation by day and joining friendly speaking clubs at night helps me broaden my career options in Ho Chi Minh City.",
+              "viText": "Theo tôi, tiếp xúc ngoại ngữ từ nhỏ và luyện nói thành tiếng mỗi ngày hiệu quả hơn học vẹt ngữ pháp. Ví dụ, ban ngày đọc tài liệu kỹ thuật bằng tiếng Anh và buổi tối tham gia câu lạc bộ giao tiếp giúp tôi mở rộng cơ hội việc làm tại TP.HCM."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (Tầm quan trọng của Ngoại ngữ): Learning a foreign language improves brain memory, enables cross-cultural communication, and opens up high-paying jobs at multinational firms.",
-            "answerVi": "Speaking P3: Học ngoại ngữ giúp rèn trí nhớ, giao tiếp đa văn hóa và mở ra công việc lương cao tại các tập đoàn đa quốc gia.",
-            "reason": "🎙️ Phương pháp học Ngoại ngữ hiệu quả: Learners should practice daily through English podcasts, language apps, and real conversations rather than rote grammar memorization.",
-            "reasonVi": "Cách học hiệu quả: Người học nên luyện hàng ngày qua podcast, app học từ và giao tiếp thực tế thay vì chỉ học vẹt ngữ pháp.",
-            "example": "📐 Lắp vào Writing Task 2 (Early Language Learning / Study Abroad): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Dùng chung cho cả đề Học tiếng Anh tiểu học và đề Du học nước ngoài."
+            "answer": "Mastering a foreign language boosts career opportunities and cultural understanding, and combining language apps with real conversation clubs works best.",
+            "answerVi": "Thành thạo ngoại ngữ mở rộng cơ hội nghề nghiệp và hiểu biết văn hóa, trong đó kết hợp ứng dụng học tập với câu lạc bộ giao tiếp thật là hiệu quả nhất.",
+            "reason": "Translation tools cannot replace human warmth, so learners need to overcome shyness and practice regularly in speaking clubs to sharpen real speaking skills.",
+            "reasonVi": "Công cụ dịch không thể thay thế sự kết nối giữa người với người, nên người học cần vượt qua nỗi ngại sai và luyện nói đều đặn ở câu lạc bộ.",
+            "example": "Practicing short speaking topics twice a week in an English club helped me express technical ideas much more naturally.",
+            "exampleVi": "Luyện nói các chủ đề ngắn hai buổi mỗi tuần tại câu lạc bộ tiếng Anh giúp tôi diễn đạt ý kỹ thuật tự nhiên hơn hẳn."
           }
         },
         {
-          "id": "edu-soft-skills-history-art",
-          "title": "Đào tạo Kỹ năng Mềm, Hoạt động Ngoại khóa & Môn Lịch sử / Nghệ thuật",
-          "viTitle": "Kế thừa từ vựng: soft skills & teamwork, critical thinking, extracurricular activities, career readiness",
-          "badge": "Chủ đề 8",
+          "id": "edu-extracurricular-music-skills",
+          "title": "Ngoại khóa, Âm nhạc, Sở thích & Kỹ năng Mềm Sinh viên (Activities, Music & Skills)",
+          "viTitle": "Từ vựng B2: extracurricular activities, musical instrument, personal hobby, soft skills, time management, reduce stress",
           "examTags": [
-            "Speaking P2: Choosing the Most Essential Soft Skill Course for University Students (Communication vs Time Management vs Teamwork)",
-            "Task 2 [Dạng 1 - Agree/Disagree]: Should Schools Focus Only on Academic Subjects or Also Teach Soft Skills, Art, and History?",
-            "Speaking P3: Role of Extracurricular Activities and Club Participation in University"
+            "Writing T2: Children Learning Musical Instruments: Benefits and Drawbacks",
+            "Speaking P3: Benefits of Extracurricular Activities",
+            "Speaking P3: Benefits of Having a Hobby",
+            "Speaking P2: Choosing the Most Essential Soft Skill for Students",
+            "Speaking P2: Choosing a Course for Self-Development"
           ],
-          "color": "#7c3aed",
           "keywords": [
-            { "word": "soft skills & teamwork", "meaning": "kỹ năng mềm và làm việc nhóm" },
-            { "word": "critical thinking", "meaning": "tư duy phản biện" },
-            { "word": "extracurricular activities", "meaning": "hoạt động ngoại khóa" },
-            { "word": "career readiness", "meaning": "sự sẵn sàng cho công việc" }
+            {
+              "word": "extracurricular activities",
+              "meaning": "hoạt động ngoại khóa (câu lạc bộ, thể thao)"
+            },
+            {
+              "word": "musical instrument",
+              "meaning": "nhạc cụ (piano, guitar)"
+            },
+            {
+              "word": "personal hobby",
+              "meaning": "sở thích cá nhân"
+            },
+            {
+              "word": "soft skills",
+              "meaning": "kỹ năng mềm"
+            },
+            {
+              "word": "time management",
+              "meaning": "kỹ năng quản lý thời gian"
+            },
+            {
+              "word": "reduce stress",
+              "meaning": "giảm căng thẳng"
+            }
           ],
           "items": [
             {
-              "id": "edu-ss-1",
-              "badge": "✅ Nhánh 1: Tại sao Kỹ năng mềm quyết định thành công (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason is that soft skills such as communication, teamwork, and time management are essential for career readiness. This is mainly because modern employers do not just hire people with high GPAs, but look for candidates who can present ideas clearly and resolve workplace conflicts. This means that soft skills help graduates get promoted much faster.",
-              "viText": "Một lý do chính là các kỹ năng mềm như giao tiếp, làm việc nhóm và quản lý thời gian là thiết yếu để sẵn sàng đi làm. Điều này chủ yếu là do nhà tuyển dụng hiện đại không chỉ tuyển người điểm cao mà cần người biết trình bày ý tưởng rõ ràng và giải quyết mâu thuẫn. Điều này có nghĩa là kỹ năng mềm giúp sinh viên thăng tiến nhanh hơn nhiều."
+              "id": "edu-extracurricular-music-skills-1",
+              "badge": "✅ Nhánh 1 – Ngoại khóa & Áp lực Điểm số (Clubs vs Exam Focus)",
+              "text": "Joining campus clubs and extracurricular activities helps students reduce stress, build wide social connections, and meet positive peers. While many parents still prize test grades above clubs, balanced participation stays optional—making arts or sports mandatory would stress busy students—so good time planning matters most.",
+              "viText": "Tham gia hoạt động ngoại khóa giúp học sinh giảm căng thẳng, rèn giao tiếp và kết bạn tích cực. Dù nhiều phụ huynh vẫn đặt nặng điểm thi hơn câu lạc bộ, các trường nên khuyến khích tham gia tự nguyện thay vì ép buộc để học sinh tự cân đối thời gian học."
             },
             {
-              "id": "edu-ss-2",
-              "badge": "✅ Nhánh 2: Giá trị của Ngoại khóa, Nghệ thuật & Lịch sử (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, learning history, arts, and joining extracurricular activities nurtures critical thinking and national pride. This is mainly because artistic and historical subjects stimulate creative imagination and emotional empathy. This means that students achieve holistic development instead of becoming robotic test-takers.",
-              "viText": "Hơn nữa, học lịch sử, nghệ thuật và tham gia ngoại khóa giúp nuôi dưỡng tư duy phản biện và lòng tự hào dân tộc. Điều này chủ yếu là do các môn nghệ thuật và lịch sử kích thích trí tưởng tượng sáng tạo và sự thấu cảm. Điều này có nghĩa là học sinh phát triển toàn diện thay vì trở thành những cái máy giải đề."
+              "id": "edu-extracurricular-music-skills-2",
+              "badge": "⚖️ Nhánh 2 – Trẻ Học Nhạc cụ (Creativity vs Pressure & Cost)",
+              "text": "Letting children learn a musical instrument boosts creativity, patience, and memory noticeably. However, buying instruments and paying private tutors can be very costly, while forcing unwilling kids to practice daily creates unnecessary exam pressure—so music lessons should stay voluntary and joyful.",
+              "viText": "Cho trẻ học chơi một loại nhạc cụ giúp phát triển sáng tạo, sự kiên nhẫn và trí nhớ rõ rệt. Tuy nhiên, mua đàn và học phí gia sư khá tốn kém, còn ép trẻ luyện tập khi không thích sẽ gây áp lực vô ích nên cần để trẻ tự nguyện yêu thích."
             },
             {
-              "id": "edu-ss-3",
-              "badge": "⚠️ Nhánh 3: Vấn đề sinh viên thiếu kỹ năng thực tế (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "On the other hand, one contributing factor to high graduate unemployment is the neglect of soft skills in traditional universities. This is mainly because many students spend four years only studying theoretical textbooks without joining any clubs or internships. This means that they feel nervous and fail job interviews.",
-              "viText": "Mặt khác, một yếu tố dẫn đến tỷ lệ thất nghiệp cao ở cử nhân là sự xem nhẹ kỹ năng mềm trong đại học truyền thống. Điều này chủ yếu là do nhiều sinh viên dành cả 4 năm chỉ đọc sách lý thuyết mà không tham gia câu lạc bộ hay thực tập. Điều này có nghĩa là họ bị run và trượt khi phỏng vấn xin việc."
+              "id": "edu-extracurricular-music-skills-3",
+              "badge": "🎨 Nhánh 3 – Sở thích Cá nhân: Thay đổi Theo Tuổi & Nghề nghiệp (Hobbies)",
+              "text": "Keeping a personal hobby connects friends with shared interests and restores daily mental energy. People's tastes naturally shift with age from loud video games toward calm reading or gardening. Although passionate creators sometimes turn hobbies into careers, spending obsessive hours neglecting family or study hurts real duties.",
+              "viText": "Duy trì sở thích cá nhân giúp kết nối bạn cùng gu và nạp lại năng lượng tinh thần. Sở thích thường thay đổi theo tuổi từ trò chơi sôi động sang đọc sách hay làm vườn; dù đôi khi có thể phát triển thành nghề nghiệp, sa đà quá mức gây xao nhãng gia đình và học tập là điều nên tránh."
             },
             {
-              "id": "edu-ss-4",
-              "badge": "🎯 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & IT Example)",
-              "text": "For example, in my IT company, many brilliant programmers struggle to explain their software architecture to clients, whereas engineers with good communication and presentation skills quickly become project managers.",
-              "viText": "Ví dụ, tại công ty IT của tôi, nhiều lập trình viên rất giỏi code nhưng lại lúng túng khi giải thích kiến trúc phần mềm cho khách hàng, trong khi những kỹ sư có kỹ năng giao tiếp và thuyết trình tốt lại nhanh chóng trở thành giám đốc dự án."
+              "id": "edu-extracurricular-music-skills-4",
+              "badge": "⚖️ Nhánh 4 – Chọn Kỹ năng Mềm & Khóa Phát triển (Time & Community Club)",
+              "text": "Between time management, study habits, and teamwork, time management is the single soft skill students need first to balance deadlines peacefully. For personal growth, joining a hands-on community skill club beats passive online self-paced videos or rushing an intensive weekend workshop because regular peer feedback locks new habits in.",
+              "viText": "Giữa quản lý thời gian, tự học và làm việc nhóm, quản lý thời gian là kỹ năng mềm nền tảng nhất giúp sinh viên cân đối mọi hạn nộp nhẹ nhàng. Để tự rèn luyện, tham gia câu lạc bộ kỹ năng cộng đồng hiệu quả hơn khóa trực tuyến một mình hay hội thảo cuối tuần ngắn ngủi nhờ tương tác đều đặn."
+            },
+            {
+              "id": "edu-extracurricular-music-skills-5",
+              "badge": "🎯 Nhánh 5 – Ý kiến & Ví dụ (Tom's Music & Time Balance)",
+              "text": "In my opinion, schools and parents should encourage clubs and hobbies without making music mandatory or harming rest time. For example, listening to K-pop or EDM while planning my weekly schedule lets me enjoy downtime and still keep top grades at university.",
+              "viText": "Theo tôi, nhà trường và cha mẹ nên khuyến khích câu lạc bộ và sở thích mà không ép buộc hay chiếm giờ nghỉ. Ví dụ, nghe K-pop hoặc EDM kết hợp lập kế hoạch tuần giúp tôi thư giãn thoải mái mà vẫn giữ vững kết quả học đại học."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (Chọn khóa học Kỹ năng mềm quan trọng nhất): I would choose communication and presentation skills because they help students express ideas confidently in job interviews and teamwork.",
-            "answerVi": "Speaking P2: Tôi chọn kỹ năng giao tiếp và thuyết trình vì nó giúp sinh viên trình bày ý tưởng tự tin khi phỏng vấn xin việc và làm việc nhóm.",
-            "reason": "🎙️ Kết hợp với Quản lý thời gian: Meanwhile, time management and leadership skills can be practiced naturally while working on group presentations.",
-            "reasonVi": "Kết hợp quản lý thời gian: Trong khi đó, kỹ năng quản lý thời gian và lãnh đạo có thể rèn luyện tự nhiên trong quá trình làm bài thuyết trình nhóm.",
-            "example": "📐 Lắp vào Writing Task 2 (Academic Subjects vs Soft Skills / Arts): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Áp dụng cho mọi đề về Kỹ năng mềm, Hoạt động ngoại khóa và Môn học tự chọn."
+            "answer": "Extracurricular activities and a joyful personal hobby reduce stress and develop essential soft skills, provided students organize time wisely.",
+            "answerVi": "Hoạt động ngoại khóa và sở thích cá nhân lành mạnh giúp giảm căng thẳng và rèn kỹ năng mềm thiết yếu, miễn là sinh viên biết quản lý thời gian.",
+            "reason": "Skills like time management help students enjoy sports, community clubs, or learning a musical instrument voluntarily without falling behind in schoolwork or facing cost stress.",
+            "reasonVi": "Kỹ năng quản lý thời gian giúp sinh viên thoải mái tham gia câu lạc bộ, thể thao hay học nhạc cụ tự nguyện mà không ảnh hưởng bài vở hay áp lực.",
+            "example": "Balancing weekly study goals with music hobbies and community workshops helps me meet like-minded people and stay energized.",
+            "exampleVi": "Cân bằng mục tiêu học hằng tuần với sở thích âm nhạc và câu lạc bộ kỹ năng giúp tôi quen bạn cùng chí hướng và luôn tràn đầy năng lượng."
           }
         }
       ]

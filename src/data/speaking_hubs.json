@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-10T07:27:44.459Z",
-  "totalSpeakingQuestions": 231,
+  "generatedAt": "2026-11-15T07:25:04.590Z",
+  "totalSpeakingQuestions": 238,
   "hubCount": 5,
   "hubs": {
     "education": {
@@ -543,10 +543,10 @@
         "Establish discipline & sustain prolonged vitality (Xây dựng lối sống kỷ luật và duy trì sự dẻo dai)"
       ],
       "stats": {
-        "total": 41,
+        "total": 42,
         "part1": 25,
         "part2": 3,
-        "part3": 13
+        "part3": 14
       },
       "questions": {
         "part1": [
@@ -922,6 +922,15 @@
             "title": "Part 3 - Topic 13: Combating Childhood Obesity",
             "rawTitle": "Part 3 - Topic 13: Combating Childhood Obesity",
             "content": "Topic: Practical solutions to tackle childhood obesity and promote healthy lifestyles\nSuggestions:\n- Promoting nutrition education and balanced meals in schools\n- Encouraging regular daily physical exercise through community sports\n- Restricting advertisements of unhealthy junk foods to children\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you think people and children tend to eat more unhealthy junk food when feeling sad or frustrated?\n2. What crucial steps should parents take at home to prevent their children from becoming overweight?\n3. What specific actions can schools take to encourage healthier eating habits among students?"
+          },
+          {
+            "id": "ufm11-speaking-part3-1",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 1: The Importance of Teamwork in Modern Life",
+            "rawTitle": "Part 3 - Topic 1: The Importance of Teamwork in Modern Life",
+            "content": "Topic: The vital importance of teamwork in work and study\nSuggestions:\n- Boosting productivity and sharing heavy workloads\n- Combining diverse skills, knowledge, and creative ideas\n- Developing mutual trust, communication, and conflict resolution skills\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some individuals prefer working independently rather than in a team?\n2. How can a team leader effectively resolve disagreements between team members?\n3. What soft skills are most critical for successful teamwork in modern workplaces?"
           }
         ]
       }
@@ -1196,9 +1205,9 @@
         "Harness personal strengths to contribute meaningfully to organization (Phát huy sở trường và cống hiến cho tổ chức)"
       ],
       "stats": {
-        "total": 19,
+        "total": 20,
         "part1": 3,
-        "part2": 7,
+        "part2": 8,
         "part3": 9
       },
       "questions": {
@@ -1258,6 +1267,15 @@
             "title": "Deciding on a Career Location after Graduation",
             "rawTitle": "Part 2 - Situation 19: Deciding on a Career Location after Graduation",
             "content": "Situation: A newly graduated student is deliberating on where to settle down and establish their professional career:\n- Working in a major domestic metropolis (làm việc tại một thành phố lớn trong nước)\n- Relocating abroad for an international job (ra nước ngoài làm việc)\n- Returning to work in their peaceful hometown (trở về lập nghiệp tại quê nhà)\n\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "vlu11-speaking-part2-22",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Company for Career Development",
+            "rawTitle": "Part 2 - Situation 22: Choosing a Company for Career Development",
+            "content": "Situation: You have just graduated from university and are deciding which type of company to work for to begin your professional career. There are three options:\n- A multinational corporation (công ty đa quốc gia)\n- A family-owned business (công ty gia đình)\n- A local startup company (công ty khởi nghiệp địa phương)\nWhich option would you choose and why?"
           },
           {
             "id": "vlu10-speaking-part2-1",
@@ -1410,10 +1428,10 @@
         "Preserve cultural identity & strengthen familial and societal bonds (Gìn giữ bản sắc truyền thống và thắt chặt tình cảm gắn kết xã hội)"
       ],
       "stats": {
-        "total": 97,
-        "part1": 49,
-        "part2": 24,
-        "part3": 24
+        "total": 102,
+        "part1": 52,
+        "part2": 25,
+        "part3": 25
       },
       "questions": {
         "part1": [
@@ -1605,6 +1623,15 @@
             "title": "Indoor Leisure Activities & Daily Work",
             "rawTitle": "Topic 1: Indoor Leisure Activities & Daily Work",
             "content": "1. What indoor hobbies do you turn to when bad weather prevents outdoor activities?\n2. How do you balance demanding work responsibilities with daily leisure time?\n3. Do you find indoor activities as invigorating as outdoor sports?"
+          },
+          {
+            "id": "vlu11-speaking-part1-27",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Natural Landscapes & Drawing Scenery",
+            "rawTitle": "Topic 1: Natural Landscapes & Drawing Scenery",
+            "content": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What makes up the natural landscape or environment around your hometown or neighborhood?\n3. Do you like taking landscape photographs when you travel? Why or why not?\n4. Do you enjoy drawing or painting natural landscapes in your free time?"
           },
           {
             "id": "speaking-part1-5",
@@ -1857,6 +1884,24 @@
             "title": "Best Friends & Making Friends",
             "rawTitle": "Topic 2: Best Friends & Making Friends",
             "content": "1. Could you tell me about your best friend? How long have you known each other?\n2. Does your best friend often help you when you face difficulties? In what ways?\n3. In your opinion, what is the best way to make new friends easily?"
+          },
+          {
+            "id": "ufm11-speaking-part1-1",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Shopping & Spending Habits",
+            "rawTitle": "Topic 1: Shopping & Spending Habits",
+            "content": "1. How often do you go shopping for clothes or daily necessities?\n2. Do you prefer shopping online or going to physical stores? Why?\n3. How do you manage your budget and avoid overspending when shopping?"
+          },
+          {
+            "id": "ufm11-speaking-part1-2",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Family & Friends",
+            "rawTitle": "Topic 2: Family & Friends",
+            "content": "1. Do you prefer spending your leisure time with family or with friends?\n2. What activities do you usually enjoy doing together with your family?\n3. What qualities do you think are most essential in a lifelong friend?"
           }
         ],
         "part2": [
@@ -2075,6 +2120,15 @@
             "title": "Choosing an Outing Venue for an Anniversary",
             "rawTitle": "Part 2 - Situation 2: Choosing an Outing Venue for an Anniversary",
             "content": "Situation: You and your close group of friends want to celebrate an anniversary this Sunday. You are considering three different venues:\\n- A cozy bookstore cafe (quán cà phê sách ấm cúng)\\n- A vibrant modern coffee shop (quán cà phê hiện đại, sôi động)\\n- An outdoor zoo and botanical park (vườn thú hoặc công viên ngoài trời)\\n\\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "ufm11-speaking-part2-1",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Birthday Gift for a Female Friend",
+            "rawTitle": "Part 2 - Situation 1: Choosing a Birthday Gift for a Female Friend",
+            "content": "Situation: Your close female friend is celebrating her upcoming 20th birthday, and you want to choose a meaningful gift for her. There are three options:\n- A wristwatch (đồng hồ đeo tay)\n- A pair of wireless headphones (tai nghe không dây)\n- A framed picture of your friendship (khung ảnh kỷ niệm)\nWhich option would you choose and why?"
           }
         ],
         "part3": [
@@ -2122,6 +2176,15 @@
             "title": "Part 3 - Topic 15: Benefits of Keeping Household Pets",
             "rawTitle": "Part 3 - Topic 15: Benefits of Keeping Household Pets",
             "content": "Topic: Benefits of keeping domestic pets in households\nSuggestions:\n- Providing loyal companionship and alleviating feelings of loneliness\n- Offering psychological comfort and significantly reducing daily stress\n- Encouraging healthier physical routines and teaching empathy and responsibility\n- [Your own ideas]\n\nFollow-up questions:\n1. What species of domestic pets are most common in Vietnamese households and why?\n2. What ethical responsibilities must pet owners adhere to when living in dense urban apartments?\n3. Do you support strict legal bans against owning wild and exotic animals as home pets?"
+          },
+          {
+            "id": "vlu11-speaking-part3-21",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 21: Advantages of Electric Vehicles (EVs)",
+            "rawTitle": "Part 3 - Topic 21: Advantages of Electric Vehicles (EVs)",
+            "content": "Topic: Advantages of electric vehicles (EVs) over conventional gasoline cars\nSuggestions:\n- Protecting the environment by reducing exhaust emissions\n- Lower long-term operational and charging costs\n- Providing a smoother, quieter, and modern driving experience\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you believe that electric vehicles will completely replace petrol-powered cars in the future? Why or why not?\n2. What are the main obstacles and drawbacks preventing people from adopting electric vehicles today?\n3. How can the government encourage more citizens to switch to green transport?"
           },
           {
             "id": "speaking-part3-1",

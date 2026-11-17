@@ -19,8 +19,8 @@ type ValidHub = (typeof VALID_HUBS)[number];
 const HUBS_METADATA: Record<ValidHub, Omit<HubMetadata, 'topicCount'>> = {
   work: {
     id: 'work',
-    title: 'Work, Career & Job Hugging',
-    vietnameseTitle: 'Công việc, Sự nghiệp & Job Hugging',
+    title: 'Work, Career, Job Hugging & Skills',
+    vietnameseTitle: 'Công việc, Sự nghiệp, Bám việc & Kỹ năng',
     icon: 'Briefcase',
   },
   education: {
@@ -44,7 +44,7 @@ const HUBS_METADATA: Record<ValidHub, Omit<HubMetadata, 'topicCount'>> = {
   society: {
     id: 'society',
     title: 'Society, Charity & Environment',
-    vietnameseTitle: 'Xã hội, Từ thiện & Môi trường',
+    vietnameseTitle: 'Xã hội, Từ thiện, Đời sống & Môi trường',
     icon: 'Users',
   },
   letters: {

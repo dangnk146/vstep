@@ -2,245 +2,311 @@
   "id": "health",
   "title": "Health, Habits & Lifestyle",
   "vietnameseTitle": "Sức khỏe, Thói quen & Lối sống Lành mạnh",
-  "description": "Mindmap kế thừa từ Kho 30 Từ Vựng Sức khỏe & Lối sống kết hợp Chuỗi Bậc Thang 5 Cấu Trúc (One major reason -> This is mainly because -> This means that) cho Writing Task 2 & Speaking Part 2, 3.",
+  "description": "Mindmap từ vựng B2 bám sát đề thi VSTEP cho Writing Task 2 & Speaking Part 2, 3 (6 chủ đề cốt lõi, 36 cụm từ B2 chuẩn xác).",
   "icon": "HeartPulse",
   "centerNode": {
     "title": "Health & Lifestyle Hub",
-    "subtitle": "30 Từ Vựng Gốc Dùng Chung – 8 Chủ Đề Xương Sống",
+    "subtitle": "36 Từ Vựng B2 Bám Đề – 6 Chủ Đề Cốt Lõi",
     "categoryBadge": "Topic Hub 2 (Hệ Thống Kế Thừa Ý B2)"
   },
   "leftBranches": [
     {
       "id": "health-group-diet-habits",
-      "title": "Diet, Weight Loss, Bad Habits, Smoking Ban & Healthcare",
-      "viTitle": "Ăn uống, Giảm cân, Bỏ Thói quen Xấu, Cấm Hút thuốc & Chăm sóc Y tế",
-      "badge": "Nhánh 1 (15 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
-      "tags": ["Weight Loss", "Fast Food", "Bad Habits", "Smoking Ban", "Sick Visit"],
+      "title": "Nutrition, Fast Food, Obesity & Public Health (Dinh dưỡng, Đồ ăn nhanh & Sức khỏe Cộng đồng)",
+      "viTitle": "Dinh dưỡng, Đồ ăn nhanh, Béo phì & Thuốc lá Nơi công cộng",
+      "badge": "Nhánh 1 (18 Từ Vựng Gốc + 3 Chủ Đề Cốt Lõi)",
+      "tags": [
+        "Fast Food",
+        "Obesity Solutions",
+        "Balanced Diet",
+        "Smoking Ban",
+        "Public Health"
+      ],
       "color": "#e11d48",
       "keywords": [
-        { "word": "balanced and nutritious diet", "meaning": "chế độ ăn uống cân bằng và giàu dinh dưỡng" },
-        { "word": "homemade meals", "meaning": "các bữa cơm tự nấu tại nhà hợp vệ sinh" },
-        { "word": "greasy fast food & sugary drinks", "meaning": "đồ ăn nhanh nhiều dầu mỡ và nước ngọt" },
-        { "word": "sedentary lifestyle", "meaning": "lối sống ít vận động, ngồi lì trước màn hình" },
-        { "word": "obesity and diabetes", "meaning": "bệnh béo phì và tiểu đường" },
-        { "word": "cardiovascular diseases", "meaning": "các bệnh về tim mạch và huyết áp" },
-        { "word": "break bad habits", "meaning": "từ bỏ các thói quen xấu (thức khuya, hút thuốc)" },
-        { "word": "strong willpower and self-discipline", "meaning": "ý chí mạnh mẽ và tính tự kỷ luật" },
-        { "word": "stay up late / sleep deprivation", "meaning": "thức khuya / tình trạng thiếu ngủ kéo dài" },
-        { "word": "public smoking ban", "meaning": "lệnh cấm hút thuốc lá nơi công cộng" },
-        { "word": "secondhand smoke", "meaning": "khói thuốc lá thụ động gây hại cho người xung quanh" },
-        { "word": "respiratory illnesses", "meaning": "các bệnh về đường hô hấp và phổi" },
-        { "word": "speedy recovery", "meaning": "sự hồi phục sức khỏe nhanh chóng sau khi ốm" },
-        { "word": "boost the immune system", "meaning": "tăng cường hệ miễn dịch tự nhiên" },
-        { "word": "preventive healthcare", "meaning": "chăm sóc y tế dự phòng, khám sức khỏe định kỳ" }
+        {
+          "word": "fast food",
+          "meaning": "đồ ăn nhanh / đồ ăn vặt công nghiệp"
+        },
+        {
+          "word": "unhealthy diet",
+          "meaning": "chế độ ăn thiếu lành mạnh"
+        },
+        {
+          "word": "health problems",
+          "meaning": "các vấn đề sức khỏe (bệnh mãn tính, béo phì)"
+        },
+        {
+          "word": "busy lifestyle",
+          "meaning": "lối sống bận rộn, ít thời gian nấu ăn"
+        },
+        {
+          "word": "personal freedom",
+          "meaning": "quyền tự do cá nhân (lựa chọn ăn uống)"
+        },
+        {
+          "word": "raise public awareness",
+          "meaning": "nâng cao nhận thức cộng đồng"
+        },
+        {
+          "word": "balanced diet",
+          "meaning": "chế độ ăn cân bằng dinh dưỡng"
+        },
+        {
+          "word": "regular exercise",
+          "meaning": "tập thể dục đều đặn"
+        },
+        {
+          "word": "childhood obesity",
+          "meaning": "tình trạng béo phì ở trẻ em"
+        },
+        {
+          "word": "sugary drinks",
+          "meaning": "đồ uống nhiều đường / nước ngọt"
+        },
+        {
+          "word": "home-cooked meals",
+          "meaning": "bữa ăn tự nấu tại nhà"
+        },
+        {
+          "word": "fitness routine",
+          "meaning": "thói quen / lịch trình rèn luyện thể lực"
+        },
+        {
+          "word": "public places",
+          "meaning": "nơi công cộng (bệnh viện, công viên, bến xe)"
+        },
+        {
+          "word": "second-hand smoke",
+          "meaning": "khói thuốc thụ động"
+        },
+        {
+          "word": "individual freedom",
+          "meaning": "quyền tự do cá nhân"
+        },
+        {
+          "word": "public health",
+          "meaning": "sức khỏe cộng đồng"
+        },
+        {
+          "word": "ban smoking",
+          "meaning": "cấm hút thuốc lá"
+        },
+        {
+          "word": "non-smokers",
+          "meaning": "những người không hút thuốc"
+        }
       ],
       "children": [
         {
-          "id": "health-fast-food-vs-homemade-weight",
-          "title": "Đồ ăn Nhanh (Fast Food) vs Cơm nhà & Tư vấn Giảm cân (Weight Loss)",
-          "viTitle": "Kế thừa từ vựng: balanced and nutritious diet, homemade meals, greasy fast food, sedentary lifestyle, obesity",
-          "badge": "Chủ đề 1 (Đề AJC 08/11)",
+          "id": "health-fast-food",
+          "title": "Tác hại của Đồ ăn nhanh & Tranh luận Cấm bán (Fast Food & Public Health)",
+          "viTitle": "Từ vựng B2: fast food, unhealthy diet, health problems, busy lifestyle, personal freedom, raise public awareness",
           "examTags": [
-            "Task 1 (AJC 08/11): Writing an Email Giving Advice to a Friend on How to Lose Weight",
-            "Task 2 [Dạng 3 & 4 - Cause/Problem-Solution]: Rising Obesity Rates and Fast Food Consumption Among Youths",
-            "Speaking P3: Homemade Food vs Fast Food / How to Maintain a Healthy Weight"
+            "Writing T2: Harmful Effects of Fast Food Consumption",
+            "Writing T2: Overconsumption of Fast Food: Causes and Solutions",
+            "Writing T2: Banning Fast Food for Public Health Reasons",
+            "Speaking P1: Milk Tea & Trendy Beverages"
           ],
-          "color": "#e11d48",
           "keywords": [
-            { "word": "balanced and nutritious diet", "meaning": "chế độ ăn cân bằng và bổ dưỡng" },
-            { "word": "greasy fast food", "meaning": "đồ ăn nhanh nhiều dầu mỡ" },
-            { "word": "sedentary lifestyle", "meaning": "lối sống ngồi nhiều ít vận động" },
-            { "word": "obesity and diabetes", "meaning": "béo phì và tiểu đường" }
+            {
+              "word": "fast food",
+              "meaning": "đồ ăn nhanh / đồ ăn vặt công nghiệp"
+            },
+            {
+              "word": "unhealthy diet",
+              "meaning": "chế độ ăn thiếu lành mạnh"
+            },
+            {
+              "word": "health problems",
+              "meaning": "các vấn đề sức khỏe (bệnh mãn tính, béo phì)"
+            },
+            {
+              "word": "busy lifestyle",
+              "meaning": "lối sống bận rộn, ít thời gian nấu ăn"
+            },
+            {
+              "word": "personal freedom",
+              "meaning": "quyền tự do cá nhân (lựa chọn ăn uống)"
+            },
+            {
+              "word": "raise public awareness",
+              "meaning": "nâng cao nhận thức cộng đồng"
+            }
           ],
           "items": [
             {
-              "id": "h-ff-1",
-              "badge": "⚠️ Nhánh 1: Nguyên nhân gây Tăng cân & Béo phì (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "One contributing factor to rising obesity is the overconsumption of greasy fast food and a sedentary lifestyle. This is mainly because busy students and office workers sit in front of computers all day and order fried food or bubble tea to save time. This means that excess calories accumulate rapidly, leading to diabetes and cardiovascular diseases.",
-              "viText": "Một yếu tố góp phần làm tăng bệnh béo phì là việc ăn quá nhiều đồ ăn nhanh nhiều dầu mỡ và lối sống ít vận động. Điều này chủ yếu là do sinh viên và dân văn phòng bận rộn ngồi trước máy tính cả ngày và đặt đồ chiên rán, trà sữa cho nhanh. Điều này có nghĩa là calo dư thừa tích tụ nhanh chóng, dẫn đến tiểu đường và bệnh tim mạch."
+              "id": "health-fast-food-1",
+              "badge": "⚠️ Nhánh 1 – Nguyên nhân (Busy Lifestyle & Convenience)",
+              "text": "One major reason people eat too much fast food is their busy lifestyle. This is mainly because modern workers and students often lack time to cook fresh meals at home. This means that cheap and ready-made meals quickly become an easy daily habit.",
+              "viText": "Một lý do lớn khiến mọi người ăn quá nhiều đồ ăn nhanh là lối sống bận rộn. Điều này chủ yếu vì người đi làm và sinh viên hiện đại thường thiếu thời gian nấu bữa ăn tươi tại nhà, khiến đồ ăn rẻ và làm sẵn nhanh chóng trở thành thói quen hằng ngày."
             },
             {
-              "id": "h-ff-2",
-              "badge": "✅ Nhánh 2: Lợi ích của Cơm nhà & Ăn uống cân bằng (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason to prepare homemade meals is that we can maintain a balanced and nutritious diet. This is mainly because cooking at home allows us to control salt, sugar, and oil while choosing fresh green vegetables and lean meat. This means that we can lose weight safely and save a lot of money.",
-              "viText": "Một lý do chính nên tự nấu cơm nhà là chúng ta có thể duy trì chế độ ăn cân bằng và giàu dinh dưỡng. Điều này chủ yếu là do tự nấu ăn giúp kiểm soát lượng muối, đường, dầu mỡ và chọn được rau xanh tươi cùng thịt nạc. Điều này có nghĩa là chúng ta giảm cân an toàn và tiết kiệm nhiều tiền."
+              "id": "health-fast-food-2",
+              "badge": "⚠️ Nhánh 2 – Tác hại (Weight Gain & Health Problems)",
+              "text": "Eating an unhealthy diet high in sugar, salt, and oil regularly can seriously harm human health. Over time, overeating fried items and sweet beverages like milk tea leads to weight gain and health problems like heart disease and diabetes. This places extra pressure on families and public hospitals.",
+              "viText": "Việc ăn theo chế độ thiếu lành mạnh nhiều đường, muối và dầu mỡ thường xuyên có thể gây hại nghiêm trọng cho sức khỏe. Lâu dần, ăn quá nhiều đồ chiên rán và nước ngọt dẫn đến tăng cân, béo phì cùng các bệnh tim mạch và tiểu đường, tạo thêm áp lực cho gia đình và bệnh viện công."
             },
             {
-              "id": "h-ff-3",
-              "badge": "💡 Nhánh 3: Giải pháp Giảm cân Kết hợp Vận động (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, the best approach to lose weight sustainably is combining healthy eating with 45 minutes of daily aerobic exercise. This is mainly because jogging, swimming, or cycling burns excess calories and boosts metabolism. This means that individuals not only stay in shape but also boost their immune system.",
-              "viText": "Hơn nữa, phương pháp tốt nhất để giảm cân bền vững là kết hợp ăn uống lành mạnh với 45 phút tập thể dục nhịp điệu mỗi ngày. Điều này chủ yếu là do chạy bộ, bơi lội hoặc đạp xe giúp đốt cháy calo dư thừa và tăng trao đổi chất. Điều này có nghĩa là mỗi người không chỉ giữ được dáng đẹp mà còn tăng cường hệ miễn dịch."
+              "id": "health-fast-food-3",
+              "badge": "💡 Nhánh 3 – Giải pháp & Quan điểm (Regulation vs Freedom)",
+              "text": "Instead of a total ban, which limits personal freedom, governments should raise public awareness through nutrition education in schools. In addition, putting higher taxes on sugary drinks and putting clear calorie labels on menus can encourage people to choose healthier homemade food.",
+              "viText": "Thay vì cấm hoàn toàn gây hạn chế quyền tự do cá nhân, chính phủ nên nâng cao nhận thức cộng đồng qua giáo dục dinh dưỡng ở trường học. Ngoài ra, đánh thuế cao hơn lên đồ uống nhiều đường và ghi rõ lượng calo trên thực đơn có thể khuyến khích người dân chọn món tự nấu lành mạnh hơn."
             },
             {
-              "id": "h-ff-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, last year I gained 6 kilograms while sitting ten hours a day coding my Master's thesis, but by cutting out late-night instant noodles and jogging every evening, I successfully lost 5 kilograms in two months.",
-              "viText": "Ví dụ, năm ngoái tôi tăng 6 kg do ngồi 10 tiếng mỗi ngày viết code luận văn Thạc sĩ, nhưng nhờ cắt bỏ mì tôm đêm khuya và chạy bộ mỗi chiều, tôi đã giảm thành công 5 kg trong hai tháng."
+              "id": "health-fast-food-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Ho Chi Minh City Student)",
+              "text": "In my opinion, balanced education works much better than banning fast food completely. For example, during busy exam weeks at UIT in Ho Chi Minh City, I used to order fried chicken at night. Learning simple 15-minute home recipes helped me save money and feel healthier.",
+              "viText": "Theo tôi, giáo dục cân bằng hiệu quả hơn nhiều so với việc cấm hoàn toàn đồ ăn nhanh. Ví dụ, vào những tuần thi bận rộn ở UIT tại TP.HCM, tôi từng hay đặt gà rán ban đêm, nhưng học vài món nấu nhanh 15 phút tại nhà giúp tôi tiết kiệm tiền và khỏe hơn hẳn."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 & Task 1 (AJC 08/11 - Khuyên bạn giảm cân): To lose weight effectively, you should cut down on greasy fast food, eat homemade vegetables and chicken breast, and jog for 45 minutes every evening.",
-            "answerVi": "Khuyên bạn giảm cân: Để giảm cân hiệu quả, bạn nên cắt giảm đồ ăn nhanh, ăn cơm nhà nhiều rau xanh ức gà, và chạy bộ 45 phút mỗi chiều.",
-            "reason": "🎙️ Giải pháp từ Chính phủ đối với Fast Food: Authorities should impose higher taxes on sugary drinks and mandate clear calorie labels on fast food menus.",
-            "reasonVi": "Giải pháp vĩ mô: Chính quyền nên đánh thuế cao hơn với nước ngọt và bắt buộc in nhãn calo rõ ràng trên thực đơn đồ ăn nhanh.",
-            "example": "📐 Lắp vào Writing Task 2 (Obesity / Fast Food): [Cause/Problem-Solution] ➔ Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 3 + 4.",
-            "exampleVi": "Dùng trực tiếp cho cả Writing Task 1 (AJC 08/11) và Writing Task 2 (Obesity)."
+            "answer": "I believe governments should educate people and add taxes on junk food rather than banning fast food completely.",
+            "answerVi": "Tôi tin chính phủ nên giáo dục người dân và đánh thuế đồ ăn vặt thay vì cấm hoàn toàn đồ ăn nhanh.",
+            "reason": "A total ban restricts personal freedom, whereas clear nutrition education helps busy students understand long-term health problems.",
+            "reasonVi": "Cấm hoàn toàn hạn chế tự do cá nhân, trong khi giáo dục dinh dưỡng rõ ràng giúp sinh viên bận rộn hiểu rõ các vấn đề sức khỏe lâu dài.",
+            "example": "When I cooked quick rice bowls at home instead of buying fast food during exams, my energy improved noticeably.",
+            "exampleVi": "Khi tôi tự nấu cơm đơn giản ở nhà thay vì mua đồ ăn nhanh mùa thi, năng lượng của tôi cải thiện rõ rệt."
           }
         },
         {
-          "id": "health-breaking-bad-habits-sleep",
-          "title": "Thay đổi Thói quen Xấu (Thức khuya, Lướt điện thoại) & Giấc ngủ",
-          "viTitle": "Kế thừa từ vựng: break bad habits, strong willpower, self-discipline, stay up late, sleep deprivation",
-          "badge": "Chủ đề 2 (Đề HUST 08/11)",
+          "id": "health-obesity-weight",
+          "title": "Giải pháp Giảm cân & Ngăn ngừa Béo phì (Obesity & Weight Management)",
+          "viTitle": "Từ vựng B2: balanced diet, regular exercise, childhood obesity, sugary drinks, home-cooked meals, fitness routine",
           "examTags": [
-            "Speaking P3 (HUST 08/11): How to Break Bad Habits? Is It Easy for Young People to Change Bad Habits?",
-            "Task 2 [Dạng 3 & 4 - Cause/Problem-Solution]: Why Modern Youths Suffer from Sleep Deprivation and Unhealthy Habits",
-            "Speaking P1 & P2: Daily Routines and Improving Personal Lifestyle"
+            "Speaking P3: Solutions for Reducing Obesity",
+            "Speaking P3: Effective Ways to Lose Weight",
+            "Speaking P3: Solutions to Tackle Obesity in Society",
+            "Speaking P3: Combating Childhood Obesity",
+            "Speaking P3: Solutions to Tackle the Obesity Epidemic"
           ],
-          "color": "#e11d48",
           "keywords": [
-            { "word": "break bad habits", "meaning": "từ bỏ các thói quen xấu" },
-            { "word": "strong willpower and self-discipline", "meaning": "ý chí mạnh mẽ và tính tự kỷ luật" },
-            { "word": "stay up late", "meaning": "thức khuya" },
-            { "word": "sleep deprivation", "meaning": "tình trạng thiếu ngủ" }
+            {
+              "word": "balanced diet",
+              "meaning": "chế độ ăn cân bằng dinh dưỡng"
+            },
+            {
+              "word": "regular exercise",
+              "meaning": "tập thể dục đều đặn"
+            },
+            {
+              "word": "childhood obesity",
+              "meaning": "tình trạng béo phì ở trẻ em"
+            },
+            {
+              "word": "sugary drinks",
+              "meaning": "đồ uống nhiều đường / nước ngọt"
+            },
+            {
+              "word": "home-cooked meals",
+              "meaning": "bữa ăn tự nấu tại nhà"
+            },
+            {
+              "word": "fitness routine",
+              "meaning": "thói quen / lịch trình rèn luyện thể lực"
+            }
           ],
           "items": [
             {
-              "id": "h-bh-1",
-              "badge": "⚠️ Nhánh 1: Tại sao người trẻ khó bỏ thói quen xấu (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "One contributing factor is that breaking bad habits like staying up late or endless smartphone scrolling requires strong willpower and self-discipline. This is mainly because addictive social media algorithms and peer pressure constantly tempt young people. This means that they easily give up after a few days and suffer from chronic sleep deprivation.",
-              "viText": "Một yếu tố là việc từ bỏ thói quen xấu như thức khuya hay lướt điện thoại đòi hỏi ý chí mạnh mẽ và kỷ luật tự giác. Điều này chủ yếu là do thuật toán mạng xã hội gây nghiện và áp lực bạn bè liên tục cám dỗ người trẻ. Điều này có nghĩa là họ dễ bỏ cuộc sau vài ngày và bị thiếu ngủ mãn tính."
+              "id": "health-obesity-weight-1",
+              "badge": "✅ Nhánh 1 – Dinh dưỡng (Balanced Diet & Home Meals)",
+              "text": "To lose weight safely and prevent obesity, people should start by following a balanced diet. Cooking fresh home-cooked meals avoids hidden sugar and oil, whereas stress eating junk food when sad or tired adds extra fat quickly. Cutting back on sugary drinks works far better than risky diet pills.",
+              "viText": "Để giảm cân an toàn và ngăn béo phì, mọi người nên bắt đầu bằng chế độ ăn cân bằng. Tự nấu cơm ở nhà giúp tránh đường và dầu mỡ ẩn, trong khi thói quen ăn đồ ngọt khi buồn hoặc căng thẳng gây tích mỡ rất nhanh và cắt giảm nước ngọt an toàn hơn hẳn thuốc giảm cân."
             },
             {
-              "id": "h-bh-2",
-              "badge": "✅ Nhánh 2: Tại sao người trẻ vẫn có lợi thế thay đổi nếu quyết tâm (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, young people can change bad habits rapidly once they have clear motivation. This is mainly because youths have high adaptability and can use smart habit-tracking apps or join fitness clubs with friends. This means that replacing an old bad routine with a positive hobby becomes much easier.",
-              "viText": "Mặt khác, người trẻ có thể thay đổi thói quen xấu rất nhanh một khi có động lực rõ ràng. Điều này chủ yếu là do giới trẻ có khả năng thích nghi cao và biết dùng ứng dụng theo dõi thói quen hoặc tham gia câu lạc bộ thể thao cùng bạn bè. Điều này có nghĩa là việc thay thế thói quen xấu bằng sở thích tích cực trở nên dễ dàng hơn nhiều."
+              "id": "health-obesity-weight-2",
+              "badge": "✅ Nhánh 2 – Vận động (Regular Exercise & Gym Routine)",
+              "text": "Combining healthy eating with regular exercise is essential to burn excess energy and keep fit. Whether people choose a structured fitness routine at the gym or play outdoor sports, staying active daily helps them avoid serious weight issues and boosts self-confidence.",
+              "viText": "Kết hợp ăn uống lành mạnh với tập thể dục đều đặn là điều thiết yếu để đốt năng lượng thừa và giữ dáng. Dù mọi người chọn lịch tập có bài bản ở phòng gym hay chơi thể thao ngoài trời, vận động mỗi ngày giúp tránh thừa cân và tăng sự tự tin."
             },
             {
-              "id": "h-bh-3",
-              "badge": "💡 Nhánh 3: Phương pháp bỏ thói quen xấu từng bước (Best approach ➔ Because ➔ Meaning)",
-              "text": "In my opinion, the best approach to break bad habits is setting small daily goals and removing environmental triggers. This is mainly because sudden extreme changes often cause frustration, whereas small steps build lasting self-discipline. This means that our biological clock gradually resets without mental stress.",
-              "viText": "Theo tôi, cách tốt nhất để bỏ thói quen xấu là đặt mục tiêu nhỏ hàng ngày và loại bỏ các tác nhân gây xao nhãng. Điều này chủ yếu là do thay đổi đột ngột quá mức thường gây nản chí, trong khi từng bước nhỏ giúp xây dựng kỷ luật bền vững. Điều này có nghĩa là đồng hồ sinh học dần được thiết lập lại mà không gây căng thẳng."
+              "id": "health-obesity-weight-3",
+              "badge": "💡 Nhánh 3 – Vai trò Nhà trường & Chính phủ (Childhood Obesity)",
+              "text": "Reducing childhood obesity requires strong cooperation between families, schools, companies, and authorities. Parents should limit unhealthy home snacks, schools must improve cafeteria lunches, companies can promote active office stretch breaks, and governments should restrict junk food ads aimed at children.",
+              "viText": "Giảm béo phì ở trẻ em đòi hỏi sự phối hợp giữa gia đình, trường học, doanh nghiệp và chính quyền. Cha mẹ cần hạn chế đồ ăn vặt ở nhà, trường học cải thiện thực đơn căng tin, công ty khuyến khích vận động nhẹ và nhà nước hạn chế quảng cáo đồ ăn nhanh nhắm vào trẻ."
             },
             {
-              "id": "h-bh-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, to break my bad habit of staying up until 2 AM coding and watching YouTube, I started leaving my smartphone outside the bedroom at 11 PM and reading a paper book for 20 minutes, which helped me sleep deeply.",
-              "viText": "Ví dụ, để bỏ thói quen xấu thức tới 2 giờ sáng viết code và xem YouTube, tôi bắt đầu để điện thoại bên ngoài phòng ngủ từ 11 giờ đêm và đọc sách giấy 20 phút, giúp tôi ngủ sâu và dậy sớm tỉnh táo."
+              "id": "health-obesity-weight-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Cutting Sugar & Consistent Habits)",
+              "text": "In my opinion, small daily changes work far better than extreme diets people quit after one week. For example, my younger cousin replaced afternoon milk tea and sugary drinks with water and played badminton after school, and within months he felt much fitter and happier.",
+              "viText": "Theo tôi, những thay đổi nhỏ mỗi ngày hiệu quả hơn nhiều so với ăn kiêng khắc nghiệt dễ bỏ cuộc sau một tuần. Ví dụ, em họ tôi đổi trà sữa và nước ngọt buổi chiều thành nước lọc rồi chơi cầu lông sau giờ học, chỉ sau vài tháng em ấy khỏe khoắn và vui vẻ hơn hẳn."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (HUST 08/11 - Làm sao bỏ thói quen xấu?): People can break bad habits by setting small realistic goals, removing temptations like phones at night, and finding a workout partner.",
-            "answerVi": "Speaking P3 (HUST 08/11): Mọi người có thể bỏ thói quen xấu bằng cách đặt mục tiêu nhỏ thực tế, cất điện thoại ban đêm và tìm bạn tập thể thao cùng.",
-            "reason": "🎙️ Người trẻ có dễ bỏ thói quen xấu không?: It is challenging at first due to digital temptations, but young people have high adaptability to change if they have strong willpower.",
-            "reasonVi": "Người trẻ có dễ thay đổi không?: Lúc đầu khá khó vì cám dỗ công nghệ, nhưng người trẻ có khả năng thích nghi cao để thay đổi nếu có ý chí.",
-            "example": "📐 Lắp vào Writing Task 2 (Sleep Deprivation / Unhealthy Habits): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Trúng tủ 100% đề Speaking Part 3 HUST 08/11."
+            "answer": "To reduce obesity effectively, people need a balanced diet at home combined with regular exercise rather than extreme crash diets.",
+            "answerVi": "Để giảm béo phì hiệu quả, mọi người cần chế độ ăn cân bằng tại nhà kết hợp tập thể dục đều đặn thay vì ăn kiêng khắc nghiệt.",
+            "reason": "Cutting sugary drinks, teaching healthy eating in school cafeterias, and building a realistic fitness routine prevent childhood obesity and keep people active long term.",
+            "reasonVi": "Cắt giảm đồ uống nhiều đường, dạy ăn uống lành mạnh ở căng tin trường học và duy trì lịch tập thực tế giúp ngăn béo phì trẻ em lâu dài.",
+            "example": "My cousin switched from daily milk tea to water and evening badminton, which helped him stay fit without stress.",
+            "exampleVi": "Em họ tôi bỏ trà sữa hằng ngày sang uống nước lọc và đánh cầu lông buổi tối nên giữ dáng rất khỏe mà không áp lực."
           }
         },
         {
-          "id": "health-public-smoking-ban",
-          "title": "Cấm Hút thuốc Nơi công cộng (Public Smoking Ban) & Khói thuốc Thụ động",
-          "viTitle": "Kế thừa từ vựng: public smoking ban, secondhand smoke, respiratory illnesses, preventive healthcare",
-          "badge": "Chủ đề 3 (Đề VLU 08/11)",
+          "id": "health-public-smoking",
+          "title": "Cấm Hút thuốc Nơi công cộng: Tự do Cá nhân vs Sức khỏe (Public Smoking Ban)",
+          "viTitle": "Từ vựng B2: public places, second-hand smoke, individual freedom, public health, ban smoking, non-smokers",
           "examTags": [
-            "Task 2 [Dạng 1 & 2 - Agree/Disagree & Discussion]: Should Smoking Be Completely Banned in All Public Places? (VLU 08/11)",
-            "Speaking P3: Harmful Effects of Smoking and How to Reduce Tobacco Use",
-            "Task 2 [Dạng 3 - Cause/Solution]: Youth Smoking and E-Cigarettes (Vaping)"
+            "Writing T2: Public Smoking Controversy: Individual Liberty vs Public Health"
           ],
-          "color": "#e11d48",
           "keywords": [
-            { "word": "public smoking ban", "meaning": "lệnh cấm hút thuốc lá nơi công cộng" },
-            { "word": "secondhand smoke", "meaning": "khói thuốc lá thụ động" },
-            { "word": "respiratory illnesses", "meaning": "các bệnh về đường hô hấp và phổi" },
-            { "word": "heavy monetary fines", "meaning": "mức phạt tiền nghiêm khắc" }
+            {
+              "word": "public places",
+              "meaning": "nơi công cộng (bệnh viện, công viên, bến xe)"
+            },
+            {
+              "word": "second-hand smoke",
+              "meaning": "khói thuốc thụ động"
+            },
+            {
+              "word": "individual freedom",
+              "meaning": "quyền tự do cá nhân"
+            },
+            {
+              "word": "public health",
+              "meaning": "sức khỏe cộng đồng"
+            },
+            {
+              "word": "ban smoking",
+              "meaning": "cấm hút thuốc lá"
+            },
+            {
+              "word": "non-smokers",
+              "meaning": "những người không hút thuốc"
+            }
           ],
           "items": [
             {
-              "id": "h-sb-1",
-              "badge": "✅ Nhánh 1: Bảo vệ người không hút thuốc khỏi Khói thuốc thụ động (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason to enforce a strict public smoking ban is protecting non-smokers from toxic secondhand smoke. This is mainly because inhaling cigarette fumes in restaurants, bus stops, and parks causes severe respiratory illnesses, asthma, and lung cancer. This means that innocent children and pregnant women can breathe clean air safely.",
-              "viText": "Một lý do chính để thực thi lệnh cấm hút thuốc nơi công cộng là bảo vệ người không hút khỏi khói thuốc thụ động độc hại. Điều này chủ yếu là do hít phải khói thuốc ở nhà hàng, trạm xe buýt và công viên gây bệnh hô hấp nặng, hen suyễn và ung thư phổi. Điều này có nghĩa là trẻ em và phụ nữ mang thai được hít thở không khí sạch an toàn."
+              "id": "health-public-smoking-1",
+              "badge": "⚖️ Nhánh 1 – Phía Tự do Cá nhân (Individual Liberty)",
+              "text": "On the one hand, some people argue that governments should not ban smoking in open-air spaces completely. They believe adults have individual freedom to make personal lifestyle choices as long as they pay taxes and follow basic rules. A strict ban may feel unfair to smokers outdoors.",
+              "viText": "Một mặt, một số người cho rằng chính phủ không nên cấm hút thuốc hoàn toàn ở không gian ngoài trời. Họ tin người trưởng thành có quyền tự do cá nhân chọn lối sống miễn là đóng thuế và tuân thủ quy định cơ bản, nên lệnh cấm gắt gao có thể gây cảm giác bất công."
             },
             {
-              "id": "h-sb-2",
-              "badge": "✅ Nhánh 2: Khuyến khích người nghiện bỏ thuốc & Giảm cháy nổ (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, banning smoking in public spaces helps smokers break their bad habit and prevents fire hazards. This is mainly because making smoking inconvenient in offices and cafes forces people to cut down on daily cigarettes. This means that national healthcare costs drop and littering of cigarette butts is eliminated.",
-              "viText": "Hơn nữa, cấm hút thuốc nơi công cộng giúp người nghiện bỏ thói quen xấu và ngăn ngừa nguy cơ cháy nổ. Điều này chủ yếu là do việc gây bất tiện khi hút thuốc ở văn phòng và quán nước buộc họ phải giảm số điếu thuốc mỗi ngày. Điều này có nghĩa là chi phí y tế quốc gia giảm xuống và tàn thuốc không bị vứt bừa bãi."
+              "id": "health-public-smoking-2",
+              "badge": "✅ Nhánh 2 – Bảo vệ Người xung quanh (Second-Hand Smoke)",
+              "text": "On the other hand, protecting public health must come before personal habits. This is mainly because second-hand smoke causes serious lung and breathing illnesses for innocent non-smokers, especially young children and pregnant women. Crowded public places cannot keep toxic smoke away from people nearby.",
+              "viText": "Mặt khác, bảo vệ sức khỏe cộng đồng phải đặt lên trước thói quen cá nhân. Điều này chủ yếu vì khói thuốc thụ động gây bệnh phổi và hô hấp nghiêm trọng cho những người vô tội không hút thuốc, nhất là trẻ nhỏ và phụ nữ mang thai."
             },
             {
-              "id": "h-sb-3",
-              "badge": "⚠️ Nhánh 3: Quan điểm về Quyền cá nhân & Giải pháp Khu vực riêng (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, some argue that a total ban restricts personal freedom for addicted adults. Therefore, the best approach is imposing heavy monetary fines in indoor spaces while setting up isolated, ventilated smoking booths at airports and stations. This means that public health is protected without causing street conflicts.",
-              "viText": "Mặt khác, một số người cho rằng cấm tuyệt đối làm hạn chế quyền tự do cá nhân của người trưởng thành. Do đó, giải pháp tốt nhất là phạt tiền thật nặng ở không gian kín trong nhà, đồng thời bố trí các buồng hút thuốc biệt lập có thông gió tại sân bay, nhà ga. Điều này có nghĩa là sức khỏe cộng đồng được bảo vệ mà không gây xung đột."
+              "id": "health-public-smoking-3",
+              "badge": "💡 Nhánh 3 – Giải pháp Dung hòa (Designated Zones & Fines)",
+              "text": "To keep fairness while protecting everyone, authorities should firmly prohibit smoking in parks, cafes, bus stops, and hospitals. At the same time, setting up isolated smoking rooms and issuing clear fines can remind smokers to respect shared clean air.",
+              "viText": "Để vừa công bằng vừa bảo vệ mọi người, chính quyền nên nghiêm cấm hút thuốc tại công viên, quán cà phê, trạm xe buýt và bệnh viện. Đồng thời, bố trí phòng hút thuốc tách biệt và xử phạt rõ ràng giúp nhắc nhở người hút tôn trọng bầu không khí chung."
             },
             {
-              "id": "h-sb-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, since my university campus and IT office building enforced a 100% indoor smoking ban last year, the hallways and restrooms have become completely fresh, helping me focus on coding without suffering from sinus headaches.",
-              "viText": "Ví dụ, từ khi khuôn viên trường đại học và tòa nhà văn phòng IT của tôi áp dụng lệnh cấm hút thuốc 100% trong nhà vào năm ngoái, hành lang và khu vệ sinh trở nên hoàn toàn thoáng sạch, giúp tôi tập trung viết code mà không bị đau đầu viêm xoang."
+              "id": "health-public-smoking-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Smoke-Free Campus & Cafes)",
+              "text": "In my opinion, public places should be strictly smoke-free to protect bystanders' health. For example, at our university campus and bus station in Ho Chi Minh City, strict no-smoking signs keep the air much cleaner for students and children waiting outside.",
+              "viText": "Theo tôi, nơi công cộng cần nghiêm cấm hút thuốc để bảo vệ người xung quanh. Ví dụ, tại khuôn viên đại học và bến xe ở TP.HCM, biển cấm hút thuốc nghiêm ngặt giúp không khí trong lành hơn nhiều cho sinh viên và trẻ em đứng chờ."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Quan điểm Writing Task 2 & Speaking P3 (VLU 08/11): I strongly agree that smoking should be banned in all public places to protect public health from secondhand smoke.",
-            "answerVi": "Quan điểm chuẩn (VLU 08/11): Tôi hoàn toàn đồng ý cấm hút thuốc tại mọi nơi công cộng để bảo vệ sức khỏe cộng đồng khỏi khói thuốc thụ động.",
-            "reason": "🎙️ Giải pháp thực thi hiệu quả: Governments should increase tobacco taxes, place graphic health warnings on cigarette packs, and fine violators strictly.",
-            "reasonVi": "Giải pháp thực thi: Chính phủ nên tăng thuế thuốc lá, in cảnh báo sức khỏe trực quan lên vỏ bao và phạt nặng người vi phạm.",
-            "example": "📐 Lắp vào Writing Task 2 (Đề VLU 08/11 - Public Smoking Ban): [Dạng 1 - Agree/Disagree] ➔ Lắp Nhánh 1 + 2 + 4 | [Dạng 2 - Discussion] ➔ Đoạn 1 lắp Nhánh 1 + 2, Đoạn 2 lắp Nhánh 3.",
-            "exampleVi": "Trúng tủ 100% đề thi Writing Task 2 VLU 08/11."
-          }
-        },
-        {
-          "id": "health-visiting-sick-friend-healthcare",
-          "title": "Chọn quà Thăm bạn ốm (Visiting a Sick Friend) & Y tế Dự phòng",
-          "viTitle": "Kế thừa từ vựng: speedy recovery, boost the immune system, balanced and nutritious diet, preventive healthcare",
-          "badge": "Chủ đề 4 (Đề VLU 07/11)",
-          "examTags": [
-            "Speaking P2 (VLU 07/11): Visiting a Sick Friend (Fresh Flowers vs Coloring Book & Colored Pencils vs Healthy Food)",
-            "Task 2 [Dạng 1 - Agree/Disagree]: Prevention Is Better Than Cure (Government Healthcare Budget Allocation)",
-            "Speaking P3: How to Take Care of Physical Health and Prevent Illnesses"
-          ],
-          "color": "#e11d48",
-          "keywords": [
-            { "word": "speedy recovery", "meaning": "sự hồi phục sức khỏe nhanh chóng" },
-            { "word": "boost the immune system", "meaning": "tăng cường hệ miễn dịch" },
-            { "word": "nutritious healthy food", "meaning": "thực phẩm lành mạnh giàu dinh dưỡng" },
-            { "word": "preventive healthcare", "meaning": "chăm sóc y tế dự phòng" }
-          ],
-          "items": [
-            {
-              "id": "h-vs-1",
-              "badge": "✅ Nhánh 1: Tại sao nên mang Đồ ăn Healthy khi thăm bạn ốm (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason to bring healthy food such as fresh fruits, chicken soup, or bird's nest when visiting a sick friend is that it promotes a speedy recovery. This is mainly because vitamins and warm protein directly boost the immune system of a weak patient. This means that our friend can regain physical energy much faster.",
-              "viText": "Một lý do chính nên mang đồ ăn tốt cho sức khỏe như trái cây tươi, súp gà hoặc yến chưng khi thăm bạn ốm là nó giúp hồi phục nhanh chóng. Điều này chủ yếu là do vitamin và đạm ấm trực tiếp tăng cường hệ miễn dịch cho người bệnh đang yếu. Điều này có nghĩa là bạn chúng ta lấy lại sức lực nhanh hơn nhiều."
-            },
-            {
-              "id": "h-vs-2",
-              "badge": "⚠️ Nhánh 2: Tại sao không chọn Hoa tươi hoặc Sách tập tô (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, bringing fresh flowers or coloring books is much less practical for a patient. This is mainly because flowers wither quickly and pollen can trigger respiratory allergies in hospital rooms, while coloring books cause eye strain when a sick person just needs rest. This means that nutritious food is the most thoughtful choice.",
-              "viText": "Mặt khác, mang hoa tươi hoặc sách tập tô kém thiết thực hơn nhiều đối với người bệnh. Điều này chủ yếu là do hoa nhanh héo và phấn hoa dễ gây dị ứng hô hấp trong phòng bệnh, còn tô màu gây mỏi mắt khi người ốm đang cần ngủ nghỉ. Điều này có nghĩa là đồ ăn bổ dưỡng là lựa chọn chu đáo nhất."
-            },
-            {
-              "id": "h-vs-3",
-              "badge": "✅ Nhánh 3: Tầm quan trọng của Y tế dự phòng (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, in daily life, investing in preventive healthcare and regular medical check-ups is much better than curing severe diseases later. This is mainly because early detection and vaccinations prevent minor illnesses from turning into life-threatening conditions. This means that citizens save massive hospital bills.",
-              "viText": "Hơn nữa, trong đời sống hàng ngày, đầu tư vào y tế dự phòng và khám sức khỏe định kỳ tốt hơn nhiều so với chờ bệnh nặng mới chữa. Điều này chủ yếu là do phát hiện sớm và tiêm chủng ngăn ngừa bệnh nhẹ biến thành bệnh nguy hiểm. Điều này có nghĩa là người dân tiết kiệm được viện phí khổng lồ."
-            },
-            {
-              "id": "h-vs-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, when my software lab teammate caught a high fever last month, I brought him a thermos of warm chicken porridge and fresh oranges, which helped him recover his strength within three days.",
-              "viText": "Ví dụ, khi người bạn cùng lab phần mềm của tôi bị sốt cao tháng trước, tôi đã mang một bình cháo gà nóng và cam tươi đến thăm, giúp cậu ấy hồi phục thể lực chỉ sau ba ngày."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "🎙️ Speaking Part 2 (VLU 07/11 - Chọn Đồ ăn Healthy thăm bạn ốm): Among the three options, I would definitely choose bringing healthy food like fresh fruits and warm soup because it provides essential vitamins for a speedy recovery.",
-            "answerVi": "Speaking P2 (VLU 07/11): Trong 3 lựa chọn, tôi chắc chắn chọn mang đồ ăn lành mạnh như trái cây tươi và súp nóng vì nó cung cấp vitamin thiết yếu giúp bạn nhanh khỏi bệnh.",
-            "reason": "🎙️ Bác bỏ Hoa tươi & Bút màu tập tô: Flowers may cause pollen allergies in a closed room and cannot be eaten, while coloring books require concentration and tire the eyes of a sick person.",
-            "reasonVi": "Bác bỏ Hoa & Tập tô: Hoa tươi dễ gây dị ứng phấn hoa trong phòng kín và không ăn được, còn tập tô đòi hỏi sự tập trung làm mỏi mắt người đang ốm.",
-            "example": "📐 Lắp vào Writing Task 2 (Prevention vs Cure): Đoạn 1 lắp Nhánh 3; Đoạn 2 lắp Nhánh 1 + 4.",
-            "exampleVi": "Trúng tủ 100% đề Speaking Part 2 VLU 07/11."
+            "answer": "I strongly support banning smoking in all public places because protecting innocent non-smokers is more important than one habit.",
+            "answerVi": "Tôi hoàn toàn ủng hộ việc cấm hút thuốc ở mọi nơi công cộng vì bảo vệ người không hút thuốc quan trọng hơn một thói quen cá nhân.",
+            "reason": "While adults value individual freedom, second-hand smoke directly harms public health, especially children and pregnant women sitting nearby.",
+            "reasonVi": "Dù người lớn coi trọng tự do cá nhân, khói thuốc thụ động gây hại trực tiếp tới sức khỏe cộng đồng, đặc biệt là trẻ em và phụ nữ mang thai.",
+            "example": "Smoke-free university campuses and parks in my city allow students and families to breathe fresh air comfortably.",
+            "exampleVi": "Khuôn viên đại học và công viên không khói thuốc ở thành phố tôi giúp sinh viên và các gia đình hít thở không khí trong lành thoải mái."
           }
         }
       ]
@@ -249,233 +315,299 @@
   "rightBranches": [
     {
       "id": "health-group-sports-mental",
-      "title": "Sports, Dancing, Stress Relief & Office Ergonomics",
-      "viTitle": "Thể thao, Khiêu vũ Giữ dáng, Giải tỏa Stress & Sức khỏe Dân Văn phòng / IT",
-      "badge": "Nhánh 2 (15 Từ Vựng Gốc + 4 Chủ Đề Cốt Lõi)",
-      "tags": ["Dancing & Fitness", "Mental Stress", "Office Neck Pain", "Digital Detox", "Longevity"],
+      "title": "Healthy Lifestyle, Sports, Exercise & Staying Calm (Lối sống Lành mạnh, Thể thao & Giữ Bình tĩnh)",
+      "viTitle": "Lối sống Lành mạnh, Thể thao, Tập luyện & Giữ Bình tĩnh",
+      "badge": "Nhánh 2 (18 Từ Vựng Gốc + 3 Chủ Đề Cốt Lõi)",
+      "tags": [
+        "Healthy Lifestyle",
+        "Bad Habits",
+        "Team Sports",
+        "Exercise Risks",
+        "Staying Calm"
+      ],
       "color": "#059669",
       "keywords": [
-        { "word": "regular physical exercise", "meaning": "việc tập thể dục thể thao đều đặn" },
-        { "word": "burn excess calories", "meaning": "đốt cháy lượng calo dư thừa" },
-        { "word": "keep fit and stay in shape", "meaning": "giữ gìn cơ thể khỏe mạnh và vóc dáng cân đối" },
-        { "word": "release happy hormones (endorphins)", "meaning": "tiết ra hormone hạnh phúc giúp tinh thần sảng khoái" },
-        { "word": "relieve mental fatigue and stress", "meaning": "giải tỏa sự mệt mỏi tinh thần và căng thẳng" },
-        { "word": "dancing and rhythmic aerobics", "meaning": "khiêu vũ, nhảy hiện đại và thể dục nhịp điệu" },
-        { "word": "body flexibility and posture", "meaning": "sự dẻo dai của cơ thể và tư thế đứng thẳng đẹp" },
-        { "word": "neck and back pain", "meaning": "chứng đau mỏi cổ vai gáy và đau lưng" },
-        { "word": "mental wellbeing", "meaning": "sức khỏe tâm thần tích cực" },
-        { "word": "digital detox", "meaning": "tạm ngắt kết nối thiết bị số để tâm trí nghỉ ngơi" },
-        { "word": "mindfulness meditation and yoga", "meaning": "thiền chánh niệm và tập yoga" },
-        { "word": "team sports camaraderie", "meaning": "tình đồng đội gắn kết qua các môn thể thao tập thể" },
-        { "word": "outdoor parks vs indoor gyms", "meaning": "vận động ở công viên ngoài trời vs phòng gym trong nhà" },
-        { "word": "biological clock", "meaning": "đồng hồ sinh học tự nhiên của cơ thể" },
-        { "word": "healthy longevity", "meaning": "tuổi thọ khỏe mạnh và dẻo dai" }
+        {
+          "word": "healthy lifestyle",
+          "meaning": "lối sống lành mạnh"
+        },
+        {
+          "word": "work productivity",
+          "meaning": "năng suất làm việc"
+        },
+        {
+          "word": "mental health",
+          "meaning": "sức khỏe tinh thần"
+        },
+        {
+          "word": "bad habits",
+          "meaning": "các thói quen xấu (thức khuya, lướt mạng)"
+        },
+        {
+          "word": "strong self-discipline",
+          "meaning": "tính tự giác / kỷ luật bản thân cao"
+        },
+        {
+          "word": "see a doctor",
+          "meaning": "đi khám bác sĩ (khi bị ốm)"
+        },
+        {
+          "word": "team sports",
+          "meaning": "thể thao đồng đội (bóng đá, bóng rổ)"
+        },
+        {
+          "word": "teamwork skills",
+          "meaning": "kỹ năng làm việc nhóm"
+        },
+        {
+          "word": "physical endurance",
+          "meaning": "sức bền thể chất"
+        },
+        {
+          "word": "muscle strain",
+          "meaning": "căng cơ / chấn thương cơ"
+        },
+        {
+          "word": "proper warm-up",
+          "meaning": "khởi động đúng cách"
+        },
+        {
+          "word": "outdoor exercise",
+          "meaning": "tập luyện ngoài trời"
+        },
+        {
+          "word": "stay calm",
+          "meaning": "giữ bình tĩnh"
+        },
+        {
+          "word": "rational decisions",
+          "meaning": "các quyết định sáng suốt / hợp lý"
+        },
+        {
+          "word": "avoid conflicts",
+          "meaning": "tránh xung đột không đáng có"
+        },
+        {
+          "word": "control anger",
+          "meaning": "kiểm soát cơn giận"
+        },
+        {
+          "word": "deep breathing",
+          "meaning": "hít thở sâu (để lấy lại bình tĩnh)"
+        },
+        {
+          "word": "stressful situations",
+          "meaning": "những tình huống căng thẳng"
+        }
       ],
       "children": [
         {
-          "id": "health-sports-dancing-body-shape",
-          "title": "Tập Thể thao, Khiêu vũ (Dancing) & Giữ gìn Vóc dáng (Staying in Shape)",
-          "viTitle": "Kế thừa từ vựng: regular physical exercise, dancing and rhythmic aerobics, keep fit and stay in shape, release happy hormones",
-          "badge": "Chủ đề 5 (Đề VLU 07/11)",
+          "id": "health-healthy-lifestyle",
+          "title": "Lối sống Lành mạnh & Từ bỏ Thói quen Xấu (Healthy Lifestyle & Habits)",
+          "viTitle": "Từ vựng B2: healthy lifestyle, work productivity, mental health, bad habits, strong self-discipline, public sports facilities",
           "examTags": [
-            "Speaking P1 & P3 (VLU 07/11): Dancing as a Sport / How People Keep Fit and Take Care of Their Body Appearance",
-            "Speaking P2: Choosing a Physical Activity for a Busy Friend (Yoga/Dancing vs Swimming vs Running)",
-            "Task 2 [Dạng 1 & 2]: Team Sports vs Individual Exercise / Cosmetic Surgery vs Natural Fitness"
+            "Writing T2: Benefits of Maintaining a Healthy Lifestyle",
+            "Speaking P3: Effective Ways to Stay Healthy",
+            "Speaking P3: Methods to Break Bad Habits",
+            "Speaking P1: Health & Dealing with Sickness"
           ],
-          "color": "#059669",
           "keywords": [
-            { "word": "dancing and rhythmic aerobics", "meaning": "nhảy múa, khiêu vũ và thể dục nhịp điệu" },
-            { "word": "keep fit and stay in shape", "meaning": "giữ dáng cân đối, săn chắc" },
-            { "word": "body flexibility and posture", "meaning": "sự dẻo dai và vóc dáng thẳng đẹp" },
-            { "word": "release happy hormones", "meaning": "tiết hormone hạnh phúc giải tỏa căng thẳng" }
+            {
+              "word": "healthy lifestyle",
+              "meaning": "lối sống lành mạnh"
+            },
+            {
+              "word": "work productivity",
+              "meaning": "năng suất làm việc"
+            },
+            {
+              "word": "mental health",
+              "meaning": "sức khỏe tinh thần"
+            },
+            {
+              "word": "bad habits",
+              "meaning": "các thói quen xấu (thức khuya, lướt mạng)"
+            },
+            {
+              "word": "strong self-discipline",
+              "meaning": "tính tự giác / kỷ luật bản thân cao"
+            },
+            {
+              "word": "see a doctor",
+              "meaning": "đi khám bác sĩ (khi bị ốm)"
+            }
           ],
           "items": [
             {
-              "id": "h-sd-1",
-              "badge": "✅ Nhánh 1: Lợi ích của Thể thao & Khiêu vũ đối với Cơ thể (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason why many people practice sports or dancing is that it helps them keep fit and stay in shape naturally. This is mainly because moving the whole body to music burns excess calories and improves body flexibility and posture. This means that learners can build a toned body without extreme dieting.",
-              "viText": "Một lý do chính khiến nhiều người tập thể thao hoặc khiêu vũ là nó giúp giữ dáng cân đối một cách tự nhiên. Điều này chủ yếu là do vận động toàn thân theo âm nhạc giúp đốt cháy calo dư thừa và cải thiện sự dẻo dai cũng như tư thế. Điều này có nghĩa là người tập có được cơ thể săn chắc mà không cần nhịn ăn cực đoan."
+              "id": "health-healthy-lifestyle-1",
+              "badge": "✅ Nhánh 1 – Lợi ích Sức khỏe & Công việc (Body, Mind & Doctor Care)",
+              "text": "Maintaining a healthy lifestyle through fresh meals, deep sleep, and managing stress brings lasting rewards. Strong physical energy prevents common illnesses, though people should see a doctor quickly when feeling unwell. Even with busy office schedules, protecting mental health boosts daily happiness and work productivity.",
+              "viText": "Duy trì lối sống lành mạnh qua bữa ăn tươi, ngủ đủ giấc và kiểm soát căng thẳng mang lại lợi ích bền vững. Thể lực tốt giúp hạn chế bệnh vặt, dù khi ốm nặng vẫn cần đi khám bác sĩ kịp thời, còn bảo vệ sức khỏe tinh thần giúp vui vẻ và tăng năng suất làm việc bất chấp lịch bận."
             },
             {
-              "id": "h-sd-2",
-              "badge": "✅ Nhánh 2: Niềm vui Tinh thần & Giao lưu Xã hội (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, group exercises such as dancing clubs or team sports relieve mental fatigue and expand social circles. This is mainly because rhythmic music and friendly teamwork stimulate the brain to release happy hormones. This means that participants forget workplace stress and make cheerful like-minded friends.",
-              "viText": "Hơn nữa, các môn tập theo nhóm như câu lạc bộ khiêu vũ hay thể thao đồng đội giúp giải tỏa mệt mỏi tinh thần và mở rộng giao lưu. Điều này chủ yếu là do âm nhạc sôi động và tinh thần đồng đội kích thích não tiết hormone hạnh phúc. Điều này có nghĩa là người tham gia quên đi áp lực công việc và kết thêm nhiều bạn mới vui vẻ."
+              "id": "health-healthy-lifestyle-2",
+              "badge": "✅ Nhánh 2 – Phá bỏ Thói quen Xấu (Self-Discipline & Alternatives)",
+              "text": "Breaking bad habits like late-night phone scrolling feels tough for young adults without strong self-discipline. Replacing negative routines with evening jogging, reading books, and seeking advice and emotional support from close family and friends makes lasting change far easier.",
+              "viText": "Từ bỏ thói quen xấu như thức khuya lướt điện thoại khá khó với người trẻ nếu thiếu kỷ luật bản thân cao. Thay thế thói quen xấu bằng chạy bộ tối, đọc sách và tìm kiếm lời khuyên, sự động viên từ gia đình, bạn bè giúp thay đổi bền vững hơn nhiều."
             },
             {
-              "id": "h-sd-3",
-              "badge": "⚠️ Nhánh 3: Cảnh báo về việc lạm dụng Phẫu thuật thẩm mỹ / Thuốc giảm cân (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, relying on weight-loss pills or cosmetic surgery to improve body appearance carries dangerous health risks. This is mainly because chemical supplements and invasive operations can cause organ damage and infections. This means that natural exercise and a balanced diet remain the safest way to look attractive.",
-              "viText": "Mặt khác, phụ thuộc vào thuốc giảm cân hay phẫu thuật thẩm mỹ để làm đẹp ngoại hình tiềm ẩn nhiều rủi ro sức khỏe nguy hiểm. Điều này chủ yếu là do hóa chất và dao kéo có thể gây tổn thương nội tạng và nhiễm trùng. Điều này có nghĩa là tập luyện tự nhiên và ăn uống cân bằng vẫn là cách làm đẹp an toàn nhất."
+              "id": "health-healthy-lifestyle-3",
+              "badge": "💡 Nhánh 3 – Vai trò Cộng đồng & Gia đình (Support & Facilities)",
+              "text": "Family, teachers, and the government all play a vital role in encouraging healthy living. Supportive parents can listen and set good daily examples, while authorities should invest more money in free public sports facilities so busy citizens can exercise easily near home.",
+              "viText": "Gia đình, giáo viên và chính phủ đều đóng vai trò quan trọng trong việc khuyến khích sống khỏe. Cha mẹ tâm lý có thể lắng nghe và làm gương tốt hằng ngày, còn chính quyền nên đầu tư thêm tiền vào cơ sở thể thao công cộng miễn phí để người dân dễ tập gần nhà."
             },
             {
-              "id": "h-sd-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, sitting all day in my computer science lab made my spine stiff, so I joined a weekend modern dance and badminton club at my university, which fixed my hunched posture and boosted my confidence.",
-              "viText": "Ví dụ, việc ngồi cả ngày trong lab khoa học máy tính khiến cột sống của tôi bị cứng, nên tôi đã tham gia câu lạc bộ nhảy hiện đại và cầu lông cuối tuần ở trường, giúp cải thiện tư thế gù lưng và tăng sự tự tin."
+              "id": "health-healthy-lifestyle-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Tom's Sleep & Jogging Habit)",
+              "text": "In my opinion, mental health is just as important as physical health, and small routines build both. For example, I used to stay up past midnight scrolling my phone. Now I jog outside while listening to V-pop, which helps me recharge my batteries for university study.",
+              "viText": "Theo tôi, sức khỏe tinh thần quan trọng ngang sức khỏe thể chất, và thói quen nhỏ giúp nuôi dưỡng cả hai. Ví dụ, tôi từng hay thức quá nửa đêm lướt điện thoại, nên tôi bắt đầu chạy bộ quanh khu nhà và nghe V-pop sôi động để nạp lại năng lượng cho việc học đại học."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 1 & 3 (VLU 07/11 - Nghĩ gì về Dancing & Chăm sóc cơ thể): Dancing is a wonderful combination of art and physical exercise because it burns calories, improves posture, and brings joy through music.",
-            "answerVi": "Speaking P1 & P3 (VLU 07/11): Khiêu vũ là sự kết hợp tuyệt vời giữa nghệ thuật và thể dục vì nó đốt calo, cải thiện vóc dáng và mang lại niềm vui qua âm nhạc.",
-            "reason": "🎙️ Tại sao người hiện đại quan tâm ngoại hình: Keeping fit boosts self-confidence in job interviews and protects long-term health.",
-            "reasonVi": "Tại sao quan tâm vóc dáng: Giữ dáng khỏe đẹp giúp tăng sự tự tin khi giao tiếp công việc và bảo vệ sức khỏe lâu dài.",
-            "example": "📐 Lắp vào Writing Task 2 (Sports / Keeping Fit): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Trúng tủ đề thi VLU 07/11 về Dancing & Body care."
+            "answer": "Maintaining a healthy lifestyle requires strong self-discipline, healthy daily swaps, and support from family and public spaces.",
+            "answerVi": "Duy trì lối sống lành mạnh đòi hỏi tính tự giác cao, thay đổi thói quen tích cực hằng ngày cùng sự hỗ trợ từ gia đình và không gian công cộng.",
+            "reason": "Good sleep, regular movement, and fewer bad habits protect mental health equally alongside the body while boosting daily work productivity.",
+            "reasonVi": "Ngủ đủ, vận động đều và bớt thói quen xấu bảo vệ sức khỏe tinh thần ngang với thể chất, đồng thời tăng năng suất làm việc hằng ngày.",
+            "example": "Putting my phone away before bed and jogging in local public sports facilities completely improved my morning focus.",
+            "exampleVi": "Cất điện thoại trước khi ngủ và chạy bộ ở khu thể thao công cộng gần nhà giúp sự tập trung buổi sáng của tôi tốt lên hẳn."
           }
         },
         {
-          "id": "health-mental-stress-relaxation",
-          "title": "Giải tỏa Căng thẳng Tinh thần (Stress Relief) & Cai nghiện Thiết bị số (Digital Detox)",
-          "viTitle": "Kế thừa từ vựng: relieve mental fatigue and stress, mental wellbeing, digital detox, mindfulness meditation",
-          "badge": "Chủ đề 6",
+          "id": "health-exercise-sports",
+          "title": "Thể thao Đồng đội & Rủi ro Tập luyện Sai cách (Team Sports & Exercise Risks)",
+          "viTitle": "Từ vựng B2: team sports, teamwork skills, physical endurance, muscle strain, proper warm-up, outdoor exercise",
           "examTags": [
-            "Task 2 [Dạng 3, 4, 5 - Cause/Problem/Effects-Solution]: Rising Stress and Mental Health Problems in Modern Society",
-            "Speaking P3: Best Ways to Relax After Work & How to Protect Mental Wellbeing",
-            "Speaking P2: Choosing a Weekend Relaxation Activity (Park Walk vs Meditation Class vs Watching Movies)"
+            "Speaking P3: Benefits of Playing Team Sports",
+            "Speaking P3: Risks of Improper Exercise and Physical Activity",
+            "Speaking P3: Disadvantages of Doing Exercise"
           ],
-          "color": "#059669",
           "keywords": [
-            { "word": "relieve mental fatigue and stress", "meaning": "giải tỏa sự mệt mỏi và căng thẳng tâm lý" },
-            { "word": "mental wellbeing", "meaning": "sức khỏe tinh thần" },
-            { "word": "digital detox", "meaning": "tạm rời xa màn hình điện thoại, máy tính" },
-            { "word": "mindfulness meditation and yoga", "meaning": "thiền chánh niệm và yoga" }
+            {
+              "word": "team sports",
+              "meaning": "thể thao đồng đội (bóng đá, bóng rổ)"
+            },
+            {
+              "word": "teamwork skills",
+              "meaning": "kỹ năng làm việc nhóm"
+            },
+            {
+              "word": "physical endurance",
+              "meaning": "sức bền thể chất"
+            },
+            {
+              "word": "muscle strain",
+              "meaning": "căng cơ / chấn thương cơ"
+            },
+            {
+              "word": "proper warm-up",
+              "meaning": "khởi động đúng cách"
+            },
+            {
+              "word": "outdoor exercise",
+              "meaning": "tập luyện ngoài trời"
+            }
           ],
           "items": [
             {
-              "id": "h-ms-1",
-              "badge": "⚠️ Nhánh 1: Nguyên nhân gây Căng thẳng tâm lý hiện đại (One contributing factor ➔ Because ➔ Meaning)",
-              "text": "One contributing factor to rising mental stress is heavy workload combined with constant digital overload. This is mainly because modern citizens face high living costs while being bombarded by work emails and negative news 24/7. This means that their brains never get true rest, leading to chronic anxiety and depression.",
-              "viText": "Một yếu tố góp phần làm tăng căng thẳng tâm lý là khối lượng công việc nặng nề cộng với sự quá tải thông tin số. Điều này chủ yếu là do người hiện đại chịu chi phí sống cao trong khi bị bủa vây bởi email công việc và tin tức tiêu cực 24/7. Điều này có nghĩa là não bộ không bao giờ được nghỉ thực sự, dẫn đến lo âu và trầm cảm."
+              "id": "health-exercise-sports-1",
+              "badge": "✅ Nhánh 1 – Lợi ích Thể thao Đồng đội (Fitness & Teamwork)",
+              "text": "Playing team sports builds physical endurance, teamwork skills, and close friendships while teaching players to accept wins and losses calmly. Individual activities like running suit busy people with tight hours better, and schools should gently encourage group games rather than making sports harshly compulsory.",
+              "viText": "Chơi thể thao đồng đội tăng sức bền thể chất, rèn kỹ năng làm việc nhóm và gắn kết bạn bè, đồng thời dạy cách bình tĩnh trước thắng thua. Môn cá nhân như chạy bộ hợp người bận giờ giấc linh hoạt hơn, còn nhà trường nên khuyến khích nhẹ nhàng thay vì bắt buộc gắt gao."
             },
             {
-              "id": "h-ms-2",
-              "badge": "💡 Nhánh 2: Giải pháp Vận động & Hòa mình vào Thiên nhiên (One major solution ➔ Because ➔ Meaning)",
-              "text": "In my opinion, the best approach to protect mental wellbeing is practicing daily outdoor exercise and a weekend digital detox. This is mainly because walking in green parks or practicing yoga away from screens calms the nervous system. This means that people can clear their minds and recharge their emotional energy.",
-              "viText": "Theo tôi, giải pháp tốt nhất để bảo vệ sức khỏe tinh thần là tập thể dục ngoài trời hàng ngày và tạm ngắt thiết bị số vào cuối tuần. Điều này chủ yếu là do đi bộ trong công viên xanh hoặc tập yoga rời xa màn hình giúp làm dịu hệ thần kinh. Điều này có nghĩa là con người làm mới lại tâm trí và nạp đầy năng lượng cảm xúc."
+              "id": "health-exercise-sports-2",
+              "badge": "⚠️ Nhánh 2 – Hạn chế & Rủi ro (Injury, Time & Cost)",
+              "text": "However, exercise has drawbacks if done recklessly or without smart limits. Overtraining causes muscle strain, dangerous heart strain, and severe exhaustion. Also, consuming lots of time and paying high fees for trainers or gear push beginners to quit early.",
+              "viText": "Tuy nhiên, tập luyện cũng có mặt trái nếu tập quá sức hoặc thiếu hợp lý. Tập nặng sai cách dễ gây căng cơ, quá tải tim mạch và kiệt sức; ngoài ra việc tốn nhiều thời gian mỗi ngày hay chi phí cao cho thẻ tập, huấn luyện viên và dụng cụ khiến nhiều người sớm bỏ cuộc."
             },
             {
-              "id": "h-ms-3",
-              "badge": "💡 Nhánh 3: Giải pháp Chia sẻ cùng Gia đình & Bạn bè (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, sharing problems with close friends, family members, or school counselors is vital when facing emotional crises. This is mainly because empathetic conversation relieves loneliness and provides practical advice. This means that stressed individuals do not fall into hopeless isolation.",
-              "viText": "Hơn nữa, chia sẻ khó khăn với bạn thân, gia đình hoặc chuyên gia tâm lý là rất quan trọng khi gặp khủng hoảng. Điều này chủ yếu là do cuộc trò chuyện đồng cảm giúp vơi đi nỗi cô đơn và mang lại lời khuyên thiết thực. Điều này có nghĩa là người đang áp lực không bị rơi vào sự cô lập bế tắc."
+              "id": "health-exercise-sports-3",
+              "badge": "💡 Nhánh 3 – Giải pháp Tập An toàn (Warm-up & Outdoor Activity)",
+              "text": "To stay safe and keep motivated, beginners should learn correct techniques and never skip a proper warm-up before exercising. Choosing affordable outdoor exercise like running in the park or cycling with friends saves money while keeping both children and adults active.",
+              "viText": "Để an toàn và giữ động lực, người mới nên học đúng kỹ thuật và không bao giờ bỏ qua bước khởi động kỹ trước khi tập. Chọn tập ngoài trời tiết kiệm như chạy bộ công viên hay đạp xe cùng bạn bè vừa đỡ tốn kém vừa giúp trẻ em và người lớn năng động hơn."
             },
             {
-              "id": "h-ms-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, whenever I feel overwhelmed after debugging complex software errors all week, I turn off my laptop on Sunday morning to go cycling around West Lake, which immediately restores my mental clarity.",
-              "viText": "Ví dụ, mỗi khi cảm thấy quá tải sau cả tuần gỡ lỗi phần mềm phức tạp, tôi tắt máy tính vào sáng Chủ nhật để đạp xe quanh Hồ Tây, giúp tâm trí tôi minh mẫn trở lại ngay lập tức."
+              "id": "health-exercise-sports-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (Football vs Gym)",
+              "text": "In my opinion, playing casual team sports outdoors is often more fun and sustainable than expensive gym workouts. For example, my university friends and I play football twice a week after a proper warm-up, which keeps us fit without wasting money or getting injured.",
+              "viText": "Theo tôi, chơi thể thao đồng đội ngoài trời thường vui và dễ duy trì hơn phòng gym đắt tiền. Ví dụ, tôi và nhóm bạn đại học đá bóng hai buổi mỗi tuần sau khi khởi động kỹ, vừa giữ dáng khỏe mạnh vừa không tốn kém hay chấn thương."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (Cách giảm stress tốt nhất): The most effective way to relieve stress is combining outdoor exercise with a digital detox away from smartphones and computers.",
-            "answerVi": "Speaking P3: Cách giảm stress hiệu quả nhất là kết hợp vận động ngoài trời với việc tạm tắt điện thoại và máy tính.",
-            "reason": "🎙️ Tại sao không nên giải khuây bằng Rượu bia / Game bạo lực: Drinking alcohol or playing video games all night only damages the liver and worsens mental fatigue the next morning.",
-            "reasonVi": "Tại sao tránh rượu bia/game: Uống rượu bia hay cày game suốt đêm chỉ hại gan và làm tinh thần mệt mỏi hơn vào sáng hôm sau.",
-            "example": "📐 Lắp vào Writing Task 2 (Stress Causes/Effects & Solutions): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 3 + 4.",
-            "exampleVi": "Khớp hoàn toàn với Dạng 3, 4, 5 (Cause / Problem / Effects - Solution)."
+            "answer": "Regular sports build physical endurance and teamwork skills, yet improper training can cause injuries, exhaustion, and high costs.",
+            "answerVi": "Chơi thể thao đều đặn giúp tăng sức bền và kỹ năng làm việc nhóm, nhưng tập sai cách có thể gây chấn thương, kiệt sức và tốn kém.",
+            "reason": "Many beginners skip a proper warm-up and suffer muscle strain, whereas affordable outdoor exercise in parks solves cost issues and encourages beginners.",
+            "reasonVi": "Nhiều người mới bỏ qua bước khởi động đúng cách nên dễ bị căng cơ, trong khi tập ngoài trời miễn phí ở công viên vừa tiết kiệm vừa dễ duy trì.",
+            "example": "Playing team sports like weekend badminton with friends after stretching keeps me active safely and reduces study stress.",
+            "exampleVi": "Chơi thể thao đồng đội như cầu lông cuối tuần cùng bạn bè sau khi giãn cơ giúp tôi vận động an toàn và giảm căng thẳng học tập."
           }
         },
         {
-          "id": "health-sedentary-lifestyle-office",
-          "title": "Lối sống Ít vận động của Dân Văn phòng / IT & Bệnh Văn phòng",
-          "viTitle": "Kế thừa từ vựng: sedentary lifestyle, neck and back pain, regular physical exercise, outdoor parks vs indoor gyms",
-          "badge": "Chủ đề 7",
+          "id": "health-staying-calm",
+          "title": "Tầm quan trọng của Việc Giữ Bình tĩnh (The Importance of Staying Calm)",
+          "viTitle": "Từ vựng B2: stay calm, rational decisions, avoid conflicts, control anger, deep breathing, stressful situations",
           "examTags": [
-            "Task 2 [Dạng 3, 4, 5 - Cause/Problem/Effects-Solution]: Sedentary Lifestyle Among Modern Office Workers and Students",
-            "Speaking P3: Why People Exercise Less Nowadays and How to Encourage Active Lifestyles"
+            "Speaking P3: The Importance of Staying Calm"
           ],
-          "color": "#059669",
           "keywords": [
-            { "word": "sedentary lifestyle", "meaning": "lối sống ngồi nhiều ít vận động" },
-            { "word": "neck and back pain", "meaning": "đau mỏi cổ vai gáy và cột sống" },
-            { "word": "regular physical exercise", "meaning": "vận động thể chất đều đặn" },
-            { "word": "ergonomic workspace", "meaning": "không gian làm việc công thái học bảo vệ cột sống" }
+            {
+              "word": "stay calm",
+              "meaning": "giữ bình tĩnh"
+            },
+            {
+              "word": "rational decisions",
+              "meaning": "các quyết định sáng suốt / hợp lý"
+            },
+            {
+              "word": "avoid conflicts",
+              "meaning": "tránh xung đột không đáng có"
+            },
+            {
+              "word": "control anger",
+              "meaning": "kiểm soát cơn giận"
+            },
+            {
+              "word": "deep breathing",
+              "meaning": "hít thở sâu (để lấy lại bình tĩnh)"
+            },
+            {
+              "word": "stressful situations",
+              "meaning": "những tình huống căng thẳng"
+            }
           ],
           "items": [
             {
-              "id": "h-sl-1",
-              "badge": "⚠️ Nhánh 1: Nguyên nhân & Hậu quả của Lối sống ít vận động (One major problem ➔ Because ➔ Meaning)",
-              "text": "One major problem in modern cities is the sedentary lifestyle among office employees and students. This is mainly because automation, computers, and food delivery apps allow people to work and eat without leaving their chairs. This means that millions of young adults suffer from chronic neck and back pain, eye strain, and obesity.",
-              "viText": "Một vấn đề lớn ở các đô thị hiện đại là lối sống ít vận động ở nhân viên văn phòng và sinh viên. Điều này chủ yếu là do tự động hóa, máy tính và ứng dụng giao đồ ăn cho phép con người làm việc và ăn uống mà không cần rời khỏi ghế. Điều này có nghĩa là hàng triệu người trẻ bị đau cổ vai gáy, mỏi mắt và béo phì."
+              "id": "health-staying-calm-1",
+              "badge": "✅ Nhánh 1 – Ra quyết định Sáng suốt (Rational Decisions)",
+              "text": "The biggest benefit of learning to stay calm is being able to make rational decisions under pressure. When people panic in stressful situations, they easily miss important facts and make costly errors. A clear mind lets us evaluate solutions carefully and solve problems faster.",
+              "viText": "Lợi ích lớn nhất của việc học cách giữ bình tĩnh là có thể đưa ra quyết định sáng suốt dưới áp lực. Khi hoảng loạn trong tình huống căng thẳng, ta dễ bỏ sót thông tin quan trọng và mắc lỗi đáng tiếc, còn tâm trí tỉnh táo giúp cân nhắc giải pháp và xử lý nhanh hơn."
             },
             {
-              "id": "h-sl-2",
-              "badge": "💡 Nhánh 2: Giải pháp tại Nơi làm việc & Trường học (Best approach ➔ Because ➔ Meaning)",
-              "text": "In my opinion, the best approach to combat a sedentary lifestyle is integrating short movement breaks into daily work routines. This is mainly because standing up to stretch for 5 minutes every hour improves blood circulation and relieves spinal pressure. This means that workers can protect their physical health even during busy schedules.",
-              "viText": "Theo tôi, giải pháp tốt nhất để chống lại lối sống ít vận động là lồng ghép các quãng nghỉ vận động ngắn vào giờ làm việc. Điều này chủ yếu là do đứng dậy vươn vai 5 phút sau mỗi giờ giúp lưu thông máu và giảm áp lực cột sống. Điều này có nghĩa là người lao động bảo vệ được sức khỏe ngay cả khi lịch trình bận rộn."
+              "id": "health-staying-calm-2",
+              "badge": "✅ Nhánh 2 – Quan hệ & Sức khỏe (Avoiding Conflicts)",
+              "text": "Controlling emotions also helps us protect relationships and mental health. When we control anger instead of shouting during an argument, we can avoid conflicts that hurt friendships or team trust. However, staying quiet without communicating clearly will not fix deep disagreements.",
+              "viText": "Kiểm soát cảm xúc còn giúp bảo vệ các mối quan hệ và sức khỏe tinh thần. Khi biết kiềm chế cơn giận thay vì to tiếng lúc tranh luận, ta tránh được xung đột làm sứt mẻ tình bạn hay lòng tin đồng đội; tuy nhiên, chỉ im lặng mà không trao đổi rõ ràng cũng khó giải quyết bất đồng."
             },
             {
-              "id": "h-sl-3",
-              "badge": "💡 Nhánh 3: Giải pháp Quy hoạch Công viên & CLB Công ty (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, companies and city governments should build more free outdoor parks and sponsor fitness memberships for staff. This is mainly because convenient and free facilities remove the financial barrier to exercising. This means that citizens are motivated to jog or play badminton after work.",
-              "viText": "Hơn nữa, các công ty và chính quyền thành phố nên xây thêm nhiều công viên ngoài trời miễn phí và tài trợ thẻ tập thể thao cho nhân viên. Điều này chủ yếu là do cơ sở vật chất tiện lợi và miễn phí giúp xóa bỏ rào cản tài chính khi đi tập. Điều này có nghĩa là người dân có động lực chạy bộ hoặc đánh cầu lông sau giờ làm."
+              "id": "health-staying-calm-3",
+              "badge": "💡 Nhánh 3 – Phương pháp Rèn luyện (Deep Breathing & Experience)",
+              "text": "With age and life experience, older adults often handle crises more calmly than teenagers. Still, young people can practice simple habits anytime, such as taking a few moments for deep breathing, stepping outside for fresh air, or listening to calming music before replying.",
+              "viText": "Nhờ tuổi tác và kinh nghiệm sống, người lớn tuổi thường xử lý khủng hoảng bình tĩnh hơn người trẻ. Dù vậy, người trẻ hoàn toàn có thể luyện thói quen đơn giản như dừng lại hít thở sâu, ra ngoài hít không khí thoáng hoặc nghe nhạc dịu trước khi phản hồi."
             },
             {
-              "id": "h-sl-4",
-              "badge": "🎯 Nhánh 4: Ví dụ Thực tế IT (Concrete IT Persona Example)",
-              "text": "For example, as an IT specialist, I use a smart smartwatch reminder that vibrates every 50 minutes to remind me to stand up, drink water, and do neck stretches, which completely cured my chronic shoulder pain.",
-              "viText": "Ví dụ, là một chuyên viên IT, tôi sử dụng tính năng nhắc nhở trên đồng hồ thông minh rung lên sau mỗi 50 phút để nhắc mình đứng dậy uống nước và xoay cổ vai gáy, giúp tôi chữa khỏi hẳn chứng đau vai mãn tính."
+              "id": "health-staying-calm-4",
+              "badge": "🎯 Nhánh 4 – Ý kiến & Ví dụ (IT Debugging Under Pressure)",
+              "text": "In my opinion, staying calm is a vital life skill for both exams and engineering work. For example, when a server fails before a deadline in my Site Reliability Engineering projects, deep breathing helps me check logs step by step instead of panicking.",
+              "viText": "Theo tôi, giữ bình tĩnh là kỹ năng sống thiết yếu cả trong thi cử lẫn công việc kỹ thuật. Ví dụ, khi máy chủ gặp sự cố sát hạn nộp ở môn Kỹ thuật Độ tin cậy Hệ thống, hít thở sâu giúp tôi kiểm tra nhật ký lỗi từng bước thay vì hoảng loạn."
             }
           ],
           "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (Tại sao người hiện đại lười vận động?): People exercise less today because of long computer working hours, convenient delivery services, and smartphone addiction.",
-            "answerVi": "Speaking P3: Con người ngày nay ít vận động hơn vì giờ làm việc máy tính kéo dài, dịch vụ giao hàng tận nơi quá tiện và nghiện điện thoại.",
-            "reason": "🎙️ Giải pháp thiết thực: Using standing desks, taking the stairs instead of elevators, and walking 30 minutes daily can easily reverse a sedentary lifestyle.",
-            "reasonVi": "Giải pháp: Dùng bàn làm việc đứng, đi thang bộ thay vì thang máy và đi bộ 30 phút mỗi ngày có thể khắc phục lối sống tĩnh tại.",
-            "example": "📐 Lắp vào Writing Task 2 (Sedentary Lifestyle): Đoạn 1 lắp Nhánh 1; Đoạn 2 lắp Nhánh 2 + 3 + 4.",
-            "exampleVi": "Áp dụng chuẩn xác cho mọi đề về Lối sống ít vận động và Sức khỏe đô thị."
-          }
-        },
-        {
-          "id": "health-healthy-aging-longevity",
-          "title": "Bí quyết Sống khỏe, Sống thọ (Healthy Longevity) & Chăm sóc Người cao tuổi",
-          "viTitle": "Kế thừa từ vựng: healthy longevity, biological clock, preventive healthcare, balanced and nutritious diet",
-          "badge": "Chủ đề 8",
-          "examTags": [
-            "Task 2 [Dạng 3 & 5 - Cause/Effects-Solution]: Aging Population and Increasing Life Expectancy",
-            "Speaking P3: Secrets to Living a Long and Healthy Life"
-          ],
-          "color": "#059669",
-          "keywords": [
-            { "word": "healthy longevity", "meaning": "tuổi thọ khỏe mạnh" },
-            { "word": "biological clock", "meaning": "đồng hồ sinh học điều độ" },
-            { "word": "optimistic attitude", "meaning": "thái độ sống lạc quan, yêu đời" },
-            { "word": "preventive healthcare", "meaning": "chăm sóc y tế dự phòng" }
-          ],
-          "items": [
-            {
-              "id": "h-ha-1",
-              "badge": "✅ Nhánh 1: Nền tảng Dinh dưỡng & Đồng hồ sinh học (One major reason ➔ Because ➔ Meaning)",
-              "text": "One major reason why people achieve healthy longevity is maintaining a regular biological clock and a balanced diet. This is mainly because sleeping 8 hours a night and eating antioxidant-rich vegetables repair body cells naturally. This means that internal organs stay young and resist chronic diseases.",
-              "viText": "Một lý do chính giúp con người sống thọ khỏe mạnh là duy trì đồng hồ sinh học điều độ và chế độ ăn cân bằng. Điều này chủ yếu là do ngủ đủ 8 tiếng mỗi đêm và ăn rau củ giàu chất chống oxy hóa giúp phục hồi tế bào tự nhiên. Điều này có nghĩa là các cơ quan nội tạng luôn trẻ khỏe và chống lại bệnh mãn tính."
-            },
-            {
-              "id": "h-ha-2",
-              "badge": "✅ Nhánh 2: Tinh thần lạc quan & Vận động nhẹ nhàng (Furthermore ➔ Because ➔ Meaning)",
-              "text": "Furthermore, an optimistic attitude and gentle daily exercise keep senior citizens mentally sharp and physically active. This is mainly because activities like morning walking, gardening, and chatting with neighbors prevent loneliness and Alzheimer's disease. This means that elderly people enjoy a high quality of life.",
-              "viText": "Hơn nữa, thái độ sống lạc quan và vận động nhẹ nhàng mỗi ngày giúp người cao tuổi minh mẫn và dẻo dai. Điều này chủ yếu là do các hoạt động như đi bộ buổi sáng, làm vườn và trò chuyện cùng hàng xóm giúp ngăn ngừa sự cô đơn và bệnh suy giảm trí nhớ. Điều này có nghĩa là người già tận hưởng chất lượng sống cao."
-            },
-            {
-              "id": "h-ha-3",
-              "badge": "⚠️ Nhánh 3: Thách thức của Già hóa dân số (On the other hand ➔ Because ➔ Meaning)",
-              "text": "On the other hand, a rapidly aging population places heavy pressure on national pension funds and hospital systems. This is mainly because a shrinking young workforce must pay higher taxes to support millions of retirees. This means that governments must reform healthcare and retirement policies urgently.",
-              "viText": "Mặt khác, dân số già hóa nhanh đặt áp lực nặng nề lên quỹ lương hưu quốc gia và hệ thống bệnh viện. Điều này chủ yếu là do lực lượng lao động trẻ thu hẹp phải đóng thuế cao hơn để nuôi hàng triệu người nghỉ hưu. Điều này có nghĩa là chính phủ phải cải cách chính sách y tế và hưu trí khẩn cấp."
-            },
-            {
-              "id": "h-ha-4",
-              "badge": "🎯 Nhánh 4: Giải pháp & Ví dụ Thực tế IT (Solution & IT Example)",
-              "text": "For example, I bought my 75-year-old grandfather a smart health-monitoring wristband that tracks his heart rate and daily steps, motivating him to walk 5,000 steps every morning in the village park.",
-              "viText": "Ví dụ, tôi đã mua tặng ông nội 75 tuổi của mình một chiếc vòng đeo tay thông minh theo dõi nhịp tim và số bước chân, tạo động lực cho ông đi bộ 5.000 bước mỗi sáng tại công viên làng."
-            }
-          ],
-          "areSkeleton": {
-            "answer": "🎙️ Speaking Part 3 (Bí quyết sống thọ khỏe mạnh): Living a long healthy life requires a nutritious diet, regular exercise, sufficient sleep, and a cheerful mindset.",
-            "answerVi": "Speaking P3: Sống lâu và khỏe mạnh đòi hỏi chế độ ăn bổ dưỡng, tập luyện đều đặn, ngủ đủ giấc và tâm lý vui vẻ.",
-            "reason": "🎙️ Vai trò của công nghệ y tế: Modern preventive healthcare and smart wearable devices also help detect health issues early.",
-            "reasonVi": "Vai trò công nghệ y tế: Y tế dự phòng hiện đại và thiết bị đeo thông minh cũng giúp phát hiện sớm các vấn đề sức khỏe.",
-            "example": "📐 Lắp vào Writing Task 2 (Aging Population / Healthy Lifestyle): Đoạn 1 lắp Nhánh 1 + 2; Đoạn 2 lắp Nhánh 3 + 4.",
-            "exampleVi": "Dùng trực tiếp cho cả chủ đề Lối sống khỏe mạnh và Già hóa dân số."
+            "answer": "Staying calm helps people make rational decisions, protect their health, and avoid conflicts in daily life.",
+            "answerVi": "Giữ bình tĩnh giúp mọi người đưa ra quyết định sáng suốt, bảo vệ sức khỏe và tránh những xung đột không cần thiết hằng ngày.",
+            "reason": "When we control anger during stressful situations using simple habits like deep breathing, we communicate clearly rather than hurting team relationships.",
+            "reasonVi": "Khi kiểm soát cơn giận trong tình huống căng thẳng bằng cách hít thở sâu, ta giao tiếp rõ ràng hơn thay vì làm tổn hại mối quan hệ.",
+            "example": "During sudden technical errors at university, stepping back for deep breathing allows me to find the bug twice as fast.",
+            "exampleVi": "Khi gặp lỗi kỹ thuật bất ngờ ở trường, dừng lại hít thở sâu giúp tôi tìm ra lỗi nhanh gấp đôi."
           }
         }
       ]
