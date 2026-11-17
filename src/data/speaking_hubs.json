@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-15T07:25:04.590Z",
-  "totalSpeakingQuestions": 238,
+  "generatedAt": "2026-11-17T12:37:59.661Z",
+  "totalSpeakingQuestions": 274,
   "hubCount": 5,
   "hubs": {
     "education": {
@@ -32,10 +32,10 @@
         "Foster interpersonal communication & teamwork abilities (Rèn luyện giao tiếp xã hội và khả năng làm việc nhóm)"
       ],
       "stats": {
-        "total": 52,
+        "total": 54,
         "part1": 11,
-        "part2": 24,
-        "part3": 17
+        "part2": 25,
+        "part3": 18
       },
       "questions": {
         "part1": [
@@ -355,6 +355,15 @@
             "title": "Hosting a Foreign Friend during Exam Week",
             "rawTitle": "Part 2 - Situation 1: Hosting a Foreign Friend during Exam Week",
             "content": "Situation: A close foreign friend is visiting your country for a week. However, you are extremely busy preparing for an important university final exam. You want to suggest the best option for your friend to explore the city:\n- Joining a guided group tour (tham gia tour đoàn có hướng dẫn viên)\n- Booking a private customized tour (đặt tour riêng theo yêu cầu)\n- Exploring independently with a detailed itinerary (tự mình khám phá theo lịch trình gợi ý)\n\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "ufm11-speaking-part2-4",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing an Internship Preparation Workshop for Students",
+            "rawTitle": "Part 2 - Situation 4: Choosing an Internship Preparation Workshop for Students",
+            "content": "Situation: Your university is organizing a special preparatory workshop for senior students who are about to start their internships. The student union is deciding between three workshop themes:\n- Professional CV writing skills (kỹ năng viết CV chuyên nghiệp)\n- Job interview techniques and mock interviews (kỹ năng phỏng vấn tuyển dụng)\n- Workplace adaptability and communication skills (kỹ năng thích ứng với môi trường làm việc)\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -510,6 +519,15 @@
             "title": "Part 3 - Topic 1: Inspiring Young People's Interest in Science",
             "rawTitle": "Part 3 - Topic 1: Inspiring Young People's Interest in Science",
             "content": "Topic: Effective ways to inspire students and young people to develop a passion for science\nSuggestions:\n- Organizing hands-on science experiments and interactive workshops in schools\n- Providing engaging science books, documentaries, and digital media\n- Arranging educational field trips to science museums and research centers\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are fewer young students in some countries choosing science and engineering majors nowadays?\n2. How can mass media and movies contribute to popularizing science among the general public?\n3. Do you think governments should invest more funding in scientific research and space exploration?"
+          },
+          {
+            "id": "ufm11-speaking-part3-2",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 2: Benefits of Educational Technology in Schools",
+            "rawTitle": "Part 3 - Topic 2: Benefits of Educational Technology in Schools",
+            "content": "Topic: The substantial benefits of integrating modern technology into education\nSuggestions:\n- Enhancing student engagement and interactive learning\n- Providing quick access to diverse digital learning materials\n- Facilitating distance learning and personalized study paces\n- [Your own ideas]\n\nFollow-up questions:\n1. Can educational technology completely replace traditional classroom teachers in the future?\n2. What are the potential drawbacks of students relying too heavily on digital devices for study?\n3. How can schools ensure equal technology access for students from underprivileged backgrounds?"
           }
         ]
       }
@@ -543,10 +561,10 @@
         "Establish discipline & sustain prolonged vitality (Xây dựng lối sống kỷ luật và duy trì sự dẻo dai)"
       ],
       "stats": {
-        "total": 42,
-        "part1": 25,
-        "part2": 3,
-        "part3": 14
+        "total": 49,
+        "part1": 29,
+        "part2": 4,
+        "part3": 16
       },
       "questions": {
         "part1": [
@@ -774,6 +792,42 @@
             "title": "Eating Out & Dining Preferences",
             "rawTitle": "Topic 2: Eating Out & Dining Preferences",
             "content": "1. How often do you dine out at restaurants or street food stalls?\n2. What type of food do you prefer when eating outside: fast food or traditional home-cooked cuisine?\n3. What are the noticeable advantages of eating out compared to preparing meals at home?"
+          },
+          {
+            "id": "hust11-speaking-part1-4",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Healthy Diets & Public Parks",
+            "rawTitle": "Topic 4: Healthy Diets & Public Parks",
+            "content": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?"
+          },
+          {
+            "id": "ufm11-speaking-part1-4",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Teamwork & Group Activities",
+            "rawTitle": "Topic 4: Teamwork & Group Activities",
+            "content": "1. Do you prefer working on group assignments or doing tasks independently? Why?\n2. What qualities make an effective and reliable team member?\n3. How do you handle disagreements when collaborating with others in a team?"
+          },
+          {
+            "id": "dtu11-speaking-part1-1",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Sports & Outdoor Activities",
+            "rawTitle": "Topic 1: Sports & Outdoor Activities",
+            "content": "1. Do you play any sports regularly or prefer watching sports on television?\n2. What are the noticeable benefits of participating in competitive sports?\n3. Which new sport or physical activity would you like to try in the future?"
+          },
+          {
+            "id": "ulis11-speaking-part1-1",
+            "school": "ULIS",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Bicycles & Cycling Habits",
+            "rawTitle": "Topic 1: Bicycles & Cycling Habits",
+            "content": "1. How often do you ride a bicycle, and where do you usually ride it?\n2. What are the key advantages of cycling compared to riding motorbikes or driving cars?\n3. Do you think more bike lanes should be constructed in major cities?"
           }
         ],
         "part2": [
@@ -803,6 +857,15 @@
             "title": "Choosing a Team-Building Activity for Colleagues",
             "rawTitle": "Part 2 - Situation 9: Choosing a Team-Building Activity for Colleagues",
             "content": "Situation: Your company wants to organize a team-building activity for employees to strengthen relationships. There are three options:\n- A collective painting workshop\n- A group cooking class\n- An outdoor photography excursion\nWhich option would you choose and why?"
+          },
+          {
+            "id": "ajc11-speaking-part2-3",
+            "school": "AJC",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Handling an Incorrect Food Order at a Restaurant",
+            "rawTitle": "Part 2 - Situation 3: Handling an Incorrect Food Order at a Restaurant",
+            "content": "Situation: You are dining at a busy restaurant with your friends, and the waiter mistakenly brings you a completely different dish from what you ordered. You are considering three possible courses of action:\n- Politely informing the waiter or manager to replace the dish (nói lại lịch sự với nhân viên hoặc quản lý để đổi món)\n- Leaving immediately to dine at a different restaurant (rời đi ngay lập tức để sang quán khác)\n- Accepting the mistake and eating the delivered dish anyway (chấp nhận và ăn món ăn đã dọn ra)\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -924,6 +987,15 @@
             "content": "Topic: Practical solutions to tackle childhood obesity and promote healthy lifestyles\nSuggestions:\n- Promoting nutrition education and balanced meals in schools\n- Encouraging regular daily physical exercise through community sports\n- Restricting advertisements of unhealthy junk foods to children\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you think people and children tend to eat more unhealthy junk food when feeling sad or frustrated?\n2. What crucial steps should parents take at home to prevent their children from becoming overweight?\n3. What specific actions can schools take to encourage healthier eating habits among students?"
           },
           {
+            "id": "hust11-speaking-part3-2",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 2: Benefits of Participating in Team Sports",
+            "rawTitle": "Part 3 - Topic 2: Benefits of Participating in Team Sports",
+            "content": "Topic: The far-reaching benefits of playing team sports\nSuggestions:\n- Enhancing cardiovascular health and physical endurance\n- Learning strategic collaboration and communication under pressure\n- Building enduring camaraderie and social friendships\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some people prefer individual athletic activities over group sports?\n2. What lessons from team sports can be applied to professional workplace environments?\n3. How can schools encourage students who are not naturally athletic to take part in team games?"
+          },
+          {
             "id": "ufm11-speaking-part3-1",
             "school": "UFM",
             "batch": "11/2026",
@@ -931,6 +1003,15 @@
             "title": "Part 3 - Topic 1: The Importance of Teamwork in Modern Life",
             "rawTitle": "Part 3 - Topic 1: The Importance of Teamwork in Modern Life",
             "content": "Topic: The vital importance of teamwork in work and study\nSuggestions:\n- Boosting productivity and sharing heavy workloads\n- Combining diverse skills, knowledge, and creative ideas\n- Developing mutual trust, communication, and conflict resolution skills\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some individuals prefer working independently rather than in a team?\n2. How can a team leader effectively resolve disagreements between team members?\n3. What soft skills are most critical for successful teamwork in modern workplaces?"
+          },
+          {
+            "id": "ufm11-speaking-part3-3",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 3: Ways to Maintain a Healthy Lifestyle",
+            "rawTitle": "Part 3 - Topic 3: Ways to Maintain a Healthy Lifestyle",
+            "content": "Topic: Practical ways to cultivate and maintain a healthy lifestyle\nSuggestions:\n- Eating a nutritious and well-balanced daily diet\n- Doing regular physical exercise and workouts\n- Managing emotional stress and maintaining sufficient sleep\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do many young people nowadays struggle to maintain a healthy lifestyle?\n2. Is fast food advertising partly responsible for declining public health?\n3. What can schools and local communities do to promote physical well-being among citizens?"
           }
         ]
       }
@@ -964,10 +1045,10 @@
         "Mitigate risks of sedentary isolation & superficial virtual relationships (Cảnh báo nguy cơ phụ thuộc công nghệ và mất kết nối thực tế)"
       ],
       "stats": {
-        "total": 22,
+        "total": 24,
         "part1": 10,
         "part2": 1,
-        "part3": 11
+        "part3": 13
       },
       "questions": {
         "part1": [
@@ -1059,7 +1140,7 @@
             "part": "part1",
             "title": "Mobile Phone Habits & Daily Life",
             "rawTitle": "Topic 3: Mobile Phone Habits & Daily Life",
-            "content": "1. How often do you use your mobile phone each day, and what do you use it for most?\\n2. Has your mobile phone usage changed compared to a few years ago?\\n3. Do you think people nowadays rely too heavily on their smartphones?"
+            "content": "1. How often do you use your mobile phone each day, and what do you use it for most?\n2. Has your mobile phone usage changed compared to a few years ago?\n3. Do you think people nowadays rely too heavily on their smartphones?"
           }
         ],
         "part2": [
@@ -1172,6 +1253,24 @@
             "title": "Part 3 - Topic 11: Artificial Intelligence in Modern Education",
             "rawTitle": "Part 3 - Topic 11: Artificial Intelligence in Modern Education",
             "content": "Topic: Applications and benefits of AI in modern education\nSuggestions:\n- Providing personalized learning paths for students\n- Offering instant feedback and 24/7 learning support\n- Assisting educators in lesson planning and grading\n- [Your own ideas]\n\nFollow-up questions:\n1. Should students be allowed or encouraged to use AI tools when completing their homework assignments?\n2. How can students and researchers use AI ethically and effectively for academic research?\n3. Do you think AI will ever replace human teachers in the classroom? Why or why not?"
+          },
+          {
+            "id": "hust11-speaking-part3-3",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 3: Negative Effects of Technology on Learning Habits",
+            "rawTitle": "Part 3 - Topic 3: Negative Effects of Technology on Learning Habits",
+            "content": "Topic: The detrimental effects of modern digital technology on students' learning habits\nSuggestions:\n- Information overload and superficial reading\n- Heavy reliance on search engines and automated tools\n- Deteriorating critical thinking and independent reasoning\n- [Your own ideas]\n\nFollow-up questions:\n1. How does multitasking with smartphones during study hours affect students' memory retention?\n2. What practical habits can learners adopt to avoid digital distractions while studying?\n3. Do you think conventional handwritten notes are more effective for deep learning than typing on laptops?"
+          },
+          {
+            "id": "ufm11-speaking-part3-4",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 4: Drawbacks of Relying on Artificial Intelligence in Learning",
+            "rawTitle": "Part 3 - Topic 4: Drawbacks of Relying on Artificial Intelligence in Learning",
+            "content": "Topic: The notable drawbacks and risks of using Artificial Intelligence (AI) in education\nSuggestions:\n- Deteriorating students' critical thinking and problem-solving abilities\n- Increasing academic dishonesty and plagiarism in assignments\n- Creating overdependence on technology and diminishing face-to-face communication\n- [Your own ideas]\n\nFollow-up questions:\n1. How can educators prevent students from misusing generative AI tools in coursework?\n2. Do you believe AI will eventually make some academic degrees redundant?\n3. What ethical guidelines should students follow when utilizing AI for research?"
           }
         ]
       }
@@ -1205,10 +1304,10 @@
         "Harness personal strengths to contribute meaningfully to organization (Phát huy sở trường và cống hiến cho tổ chức)"
       ],
       "stats": {
-        "total": 20,
-        "part1": 3,
-        "part2": 8,
-        "part3": 9
+        "total": 25,
+        "part1": 5,
+        "part2": 10,
+        "part3": 10
       },
       "questions": {
         "part1": [
@@ -1238,6 +1337,24 @@
             "title": "Work & Career",
             "rawTitle": "Topic 25: Work & Career",
             "content": "1. What is your job or future career plan?\n2. Do you enjoy your current work or study? Why?\n3. What is the best thing about your job or study?"
+          },
+          {
+            "id": "ufm11-speaking-part1-3",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Dream Job & Career Aspirations",
+            "rawTitle": "Topic 3: Dream Job & Career Aspirations",
+            "content": "1. What was your dream job when you were a child, and has it changed over time?\n2. What qualifications or skills do you need to achieve your dream career?\n3. In your opinion, is job passion or a high salary more important when choosing a lifelong job?"
+          },
+          {
+            "id": "ufm11-speaking-part1-5",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Job Interviews & Preparation",
+            "rawTitle": "Topic 5: Job Interviews & Preparation",
+            "content": "1. Have you ever attended a formal job interview or scholarship interview?\n2. What essential preparations should a candidate make before an interview?\n3. What practical advice would you give to someone attending their first interview?"
           }
         ],
         "part2": [
@@ -1312,6 +1429,24 @@
             "title": "Career Choice in Health and Wellness",
             "rawTitle": "Part 2 - Situation 8: Career Choice in Health and Wellness",
             "content": "Situation: Your friend has a strong passion for healthcare and wellness and is deciding which career path to pursue. There are three options:\n- A personal fitness trainer\n- A community healthcare worker\n- A professional nutritionist\nWhich career would you advise your friend to choose and why?"
+          },
+          {
+            "id": "hust11-speaking-part2-3",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Preparing for a Workplace Presentation",
+            "rawTitle": "Part 2 - Situation 3: Preparing for a Workplace Presentation",
+            "content": "Situation: You are preparing for an important upcoming project presentation at your workplace. You want to choose the most effective rehearsal method. There are three options:\n- Practicing speaking in front of a mirror (luyện tập nói trước gương)\n- Recording your speech and listening back to self-correct (thu âm và nghe lại để tự sửa)\n- Rehearsing in front of a small group of colleagues for direct feedback (tập dượt trước một nhóm đồng nghiệp để nhận phản hồi)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "ussh11-speaking-part2-1",
+            "school": "USSH",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Advising a Helper-Minded Friend on a Health & Wellness Career",
+            "rawTitle": "Part 2 - Situation 1: Advising a Helper-Minded Friend on a Health & Wellness Career",
+            "content": "Situation: Your close friend has a genuine passion for helping people lead healthier lives and wants to transition into the wellness field. He is considering three career paths:\n- Becoming a personal fitness trainer (huấn luyện viên thể hình cá nhân)\n- Working as a certified nutritionist (chuyên gia tư vấn dinh dưỡng)\n- Pursuing a career as a wellness and life coach (huấn luyện viên phong cách sống và sức khỏe toàn diện)\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -1395,6 +1530,15 @@
             "title": "Part 3 - Topic 1: The Influence of Personal Habits on Success",
             "rawTitle": "Part 3 - Topic 1: The Influence of Personal Habits on Success",
             "content": "Topic: The role of building good personal habits in achieving long-term success\nSuggestions:\n- Developing a daily habit of reading books for knowledge\n- Maintaining consistent physical exercise and healthy routines\n- Eliminating unproductive and negative bad habits\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is it often much harder to break a bad habit than to adopt a good one?\n2. How can parents and teachers help teenagers develop productive daily routines?\n3. Do you agree that modern digital devices have made people develop more negative lifestyle habits?"
+          },
+          {
+            "id": "dtu11-speaking-part3-3",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 3: Advantages and Challenges of Self-Employment",
+            "rawTitle": "Part 3 - Topic 3: Advantages and Challenges of Self-Employment",
+            "content": "Topic: The notable benefits and demanding challenges of self-employment\nSuggestions:\n- Autonomous working schedule and independence from management\n- Direct correlation between personal effort and income potential\n- Financial instability and heavy entrepreneurial pressure\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are an increasing number of young graduates choosing freelance work or startup ventures?\n2. What essential skills are necessary before transitioning to self-employment?\n3. Do you think governments should provide financial subsidies for young entrepreneurs?"
           }
         ]
       }
@@ -1428,10 +1572,10 @@
         "Preserve cultural identity & strengthen familial and societal bonds (Gìn giữ bản sắc truyền thống và thắt chặt tình cảm gắn kết xã hội)"
       ],
       "stats": {
-        "total": 102,
-        "part1": 52,
-        "part2": 25,
-        "part3": 25
+        "total": 122,
+        "part1": 58,
+        "part2": 33,
+        "part3": 31
       },
       "questions": {
         "part1": [
@@ -1868,6 +2012,24 @@
             "content": "1. Do you have a large circle of friends or just a few close friends?\n2. What qualities do you value most in a good friend?\n3. How do you usually keep in touch with your friends when you are busy?"
           },
           {
+            "id": "ajc11-speaking-part1-4",
+            "school": "AJC",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Honesty & Telling Lies",
+            "rawTitle": "Topic 4: Honesty & Telling Lies",
+            "content": "1. In what situations do people sometimes tell white lies?\n2. How do you feel when you discover that someone has lied to you?\n3. Do you agree that absolute honesty is always the best policy in relationships?"
+          },
+          {
+            "id": "ajc11-speaking-part1-5",
+            "school": "AJC",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Weather Seasons & Dining Out Habits",
+            "rawTitle": "Topic 5: Weather Seasons & Dining Out Habits",
+            "content": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?"
+          },
+          {
             "id": "hust11-speaking-part1-1",
             "school": "HUST",
             "batch": "11/2026",
@@ -1886,6 +2048,15 @@
             "content": "1. Could you tell me about your best friend? How long have you known each other?\n2. Does your best friend often help you when you face difficulties? In what ways?\n3. In your opinion, what is the best way to make new friends easily?"
           },
           {
+            "id": "hust11-speaking-part1-3",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Cooking & Social Events",
+            "rawTitle": "Topic 3: Cooking & Social Events",
+            "content": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. How important are communal meals and social gatherings in Vietnamese culture?"
+          },
+          {
             "id": "ufm11-speaking-part1-1",
             "school": "UFM",
             "batch": "11/2026",
@@ -1902,6 +2073,33 @@
             "title": "Family & Friends",
             "rawTitle": "Topic 2: Family & Friends",
             "content": "1. Do you prefer spending your leisure time with family or with friends?\n2. What activities do you usually enjoy doing together with your family?\n3. What qualities do you think are most essential in a lifelong friend?"
+          },
+          {
+            "id": "dtu11-speaking-part1-2",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Types of Schools & Traffic Conditions",
+            "rawTitle": "Topic 2: Types of Schools & Traffic Conditions",
+            "content": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. How severe is traffic congestion in your hometown during rush hours?"
+          },
+          {
+            "id": "dtu11-speaking-part1-3",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Close Friends & Memorable Events",
+            "rawTitle": "Topic 3: Close Friends & Memorable Events",
+            "content": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What memorable community or school event have you enjoyed attending recently?"
+          },
+          {
+            "id": "ussh11-speaking-part1-1",
+            "school": "USSH",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Travel Plans & Recycling Habits",
+            "rawTitle": "Topic 1: Travel Plans & Recycling Habits",
+            "content": "1. Where are you planning to travel next, and why did you choose that destination?\n2. Do you frequently use recycled products or separate household recyclable waste?\n3. Are recycling programs and environmental awareness common among people in your neighborhood?"
           }
         ],
         "part2": [
@@ -2119,7 +2317,25 @@
             "part": "part2",
             "title": "Choosing an Outing Venue for an Anniversary",
             "rawTitle": "Part 2 - Situation 2: Choosing an Outing Venue for an Anniversary",
-            "content": "Situation: You and your close group of friends want to celebrate an anniversary this Sunday. You are considering three different venues:\\n- A cozy bookstore cafe (quán cà phê sách ấm cúng)\\n- A vibrant modern coffee shop (quán cà phê hiện đại, sôi động)\\n- An outdoor zoo and botanical park (vườn thú hoặc công viên ngoài trời)\\n\\nWhich option do you think is the best choice and why?"
+            "content": "Situation: You and your close group of friends want to celebrate an anniversary this Sunday. You are considering three different venues:\n- A cozy bookstore cafe (quán cà phê sách ấm cúng)\n- A vibrant modern coffee shop (quán cà phê hiện đại, sôi động)\n- An outdoor zoo and botanical park (vườn thú hoặc công viên ngoài trời)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "ajc11-speaking-part2-4",
+            "school": "AJC",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Spending Quality Family Time Together",
+            "rawTitle": "Part 2 - Situation 4: Spending Quality Family Time Together",
+            "content": "Situation: Your family has a completely free weekend together and wants to choose an activity to strengthen emotional bonds. There are three options:\n- Staying at home cooking and watching movies together (ở nhà cùng nhau nấu ăn, xem phim)\n- Having an outdoor picnic at a public green park (đi picnic dã ngoại ở công viên)\n- Dining out at a luxury restaurant in the city center (đi ăn tại một nhà hàng sang trọng)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "hust11-speaking-part2-2",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Planning a Short Vacation Trip for Your Family",
+            "rawTitle": "Part 2 - Situation 2: Planning a Short Vacation Trip for Your Family",
+            "content": "Situation: You are assigned to arrange a three-day weekend getaway for your whole family. There are three approaches to organizing this trip:\n- Planning the entire itinerary independently (tự lên kế hoạch chi tiết từ A đến Z)\n- Purchasing an all-inclusive package tour from a travel agency (mua gói tour trọn gói của công ty du lịch)\n- Following specific destination recommendations from an experienced friend (tham khảo địa điểm và lịch trình từ một người bạn đã từng đi)\nWhich option do you think is the best choice and why?"
           },
           {
             "id": "ufm11-speaking-part2-1",
@@ -2129,6 +2345,60 @@
             "title": "Choosing a Birthday Gift for a Female Friend",
             "rawTitle": "Part 2 - Situation 1: Choosing a Birthday Gift for a Female Friend",
             "content": "Situation: Your close female friend is celebrating her upcoming 20th birthday, and you want to choose a meaningful gift for her. There are three options:\n- A wristwatch (đồng hồ đeo tay)\n- A pair of wireless headphones (tai nghe không dây)\n- A framed picture of your friendship (khung ảnh kỷ niệm)\nWhich option would you choose and why?"
+          },
+          {
+            "id": "ufm11-speaking-part2-2",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Prioritizing Hospital Upgrades and Improvements",
+            "rawTitle": "Part 2 - Situation 2: Prioritizing Hospital Upgrades and Improvements",
+            "content": "Situation: A local general hospital has received municipal funding to improve its operations. The management board is considering three areas to prioritize:\n- Modernizing advanced medical equipment (nâng cấp trang thiết bị y tế hiện đại)\n- Improving customer care and patient services (nâng cao chất lượng dịch vụ chăm sóc người bệnh)\n- Expanding physical infrastructure and hospital beds (mở rộng cơ sở vật chất và giường bệnh)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "ufm11-speaking-part2-3",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing Accommodation for a Holiday Trip",
+            "rawTitle": "Part 2 - Situation 3: Choosing Accommodation for a Holiday Trip",
+            "content": "Situation: You and your close friends are planning a five-day vacation to a famous tourist city and are considering three accommodation options:\n- Staying at a local family-run homestay (ở khách sạn địa phương/homestay)\n- Booking a comfortable mid-range hotel (ở khách sạn tiện nghi, thoải mái)\n- Reserving a luxury expensive resort hotel (ở khách sạn/resort cao cấp đắt tiền)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "dtu11-speaking-part2-1",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Weekend Activity for a 10-Year-Old Cousin",
+            "rawTitle": "Part 2 - Situation 1: Choosing a Weekend Activity for a 10-Year-Old Cousin",
+            "content": "Situation: Your 10-year-old cousin is visiting your city for the weekend, and you want to organize a fun and memorable outing. There are three options:\n- Visiting the city zoo (đi sở thú)\n- Going to a modern shopping mall (đi trung tâm thương mại mua sắm)\n- Attending a live performance at the children's theater (đi xem kịch tại nhà hát thiếu nhi)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "dtu11-speaking-part2-2",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Selecting a Tourism Promotion Channel for the City",
+            "rawTitle": "Part 2 - Situation 2: Selecting a Tourism Promotion Channel for the City",
+            "content": "Situation: Your city's tourism promotion board has allocated a budget to attract domestic and international visitors. The committee is deliberating between three marketing channels:\n- Broadcasting promotional commercials on national television (quảng bá qua truyền hình TV)\n- Running targeted campaigns on social media platforms (chạy chiến dịch trên mạng xã hội)\n- Developing creative content marketing and travel blogging (tiếp thị nội dung và cẩm nang du lịch trải nghiệm)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "dtu11-speaking-part2-3",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Prioritizing Factors when Purchasing a House",
+            "rawTitle": "Part 2 - Situation 3: Prioritizing Factors when Purchasing a House",
+            "content": "Situation: You are planning to purchase a new house or apartment for your family. You are contemplating which criterion should be given the highest priority. There are three options:\n- The purchase cost and mortgage affordability (giá cả và khả năng tài chính)\n- The size and floor area of the property (diện tích và không gian sinh hoạt)\n- The geographical location and proximity to facilities (vị trí địa lý và tiện ích xung quanh)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "ulis11-speaking-part2-1",
+            "school": "ULIS",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Pet Gift for a 12-Year-Old Niece's Birthday",
+            "rawTitle": "Part 2 - Situation 1: Choosing a Pet Gift for a 12-Year-Old Niece's Birthday",
+            "content": "Situation: Your 12-year-old niece loves animals and is celebrating her upcoming birthday. Her parents have agreed to let her raise a pet at home. You are considering three pet options as a birthday gift:\n- A puppy dog (một chú chó con)\n- A cute kitten (một chú mèo con)\n- A colorful aquarium with ornamental fish (một bể cá cảnh nhiều màu sắc)\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -2346,7 +2616,25 @@
             "part": "part3",
             "title": "Part 3 - Topic 2: Benefits of Working Independently",
             "rawTitle": "Part 3 - Topic 2: Benefits of Working Independently",
-            "content": "Topic: Benefits of working independently as a freelancer\\nSuggestions:\\n- Having high flexibility in scheduling and work location\\n- Enhancing self-reliance and decision-making skills\\n- Avoiding workplace office politics and commuting stress\\n- [Your own ideas]\\n\\nFollow-up questions:\\n1. What are the greatest challenges faced by independent workers or freelancers?\\n2. Do you believe that independent working will become the dominant employment trend in the future?\\n3. What personality traits are essential for someone who wants to work independently?"
+            "content": "Topic: Benefits of working independently as a freelancer\nSuggestions:\n- Having high flexibility in scheduling and work location\n- Enhancing self-reliance and decision-making skills\n- Avoiding workplace office politics and commuting stress\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the greatest challenges faced by independent workers or freelancers?\n2. Do you believe that independent working will become the dominant employment trend in the future?\n3. What personality traits are essential for someone who wants to work independently?"
+          },
+          {
+            "id": "ajc11-speaking-part3-3",
+            "school": "AJC",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 3: The Importance of Honesty and Trust in Society",
+            "rawTitle": "Part 3 - Topic 3: The Importance of Honesty and Trust in Society",
+            "content": "Topic: The indispensable role of honesty and mutual trust in modern society\nSuggestions:\n- Fostering long-lasting friendships and healthy family bonds\n- Enhancing corporate transparency and consumer confidence\n- Reducing legal conflicts and social friction\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some leaders or politicians find it difficult to be completely truthful?\n2. How can parents teach their children the virtue of truthfulness from an early age?\n3. In what careers is uncompromising honesty considered the most vital qualification?"
+          },
+          {
+            "id": "ajc11-speaking-part3-4",
+            "school": "AJC",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 4: Benefits of Travelling for Personal Growth",
+            "rawTitle": "Part 3 - Topic 4: Benefits of Travelling for Personal Growth",
+            "content": "Topic: The extensive benefits of travelling for personal development and life skills\nSuggestions:\n- Developing independence and adaptability in new environments\n- Cultivating cross-cultural understanding and empathy\n- Expanding practical life skills and problem-solving abilities\n- [Your own ideas]\n\nFollow-up questions:\n1. How does travelling independently differ from joining an organized tour group?\n2. In what ways can travelling broaden a young person's career perspective?\n3. Do you believe that excessive travel can sometimes be harmful to local ecosystems?"
           },
           {
             "id": "hust11-speaking-part3-1",
@@ -2356,6 +2644,42 @@
             "title": "Part 3 - Topic 1: Methods to Break Bad Habits",
             "rawTitle": "Part 3 - Topic 1: Methods to Break Bad Habits",
             "content": "Topic: Effective methods to break bad habits\nSuggestions:\n- Practicing strong self-discipline\n- Replacing bad habits with healthy alternatives\n- Seeking advice and emotional support from family and friends\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you think it is easy or difficult for young people to change their bad habits? Why?\n2. What is the most common negative habit among teenagers today?\n3. How can parents and teachers assist young people in overcoming negative habits?"
+          },
+          {
+            "id": "dtu11-speaking-part3-1",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 1: The Impact of Parenting Styles on Children's Development",
+            "rawTitle": "Part 3 - Topic 1: The Impact of Parenting Styles on Children's Development",
+            "content": "Topic: How parental behavior and guidance shape children's development\nSuggestions:\n- Fostering self-confidence and emotional resilience\n- Shaping moral values, honesty, and social manners\n- Influencing academic success and future career orientation\n- [Your own ideas]\n\nFollow-up questions:\n1. Is strict parenting or lenient parenting more effective in raising well-behaved children?\n2. How does modern screen time affect interactions between parents and their children?\n3. What can society do to support parents who have hectic work schedules?"
+          },
+          {
+            "id": "dtu11-speaking-part3-2",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 2: Developing Sustainable Urban Tourism",
+            "rawTitle": "Part 3 - Topic 2: Developing Sustainable Urban Tourism",
+            "content": "Topic: The multifaceted benefits of developing sustainable tourism in cities\nSuggestions:\n- Stimulating local economic growth and creating jobs\n- Preserving historical landmarks and architectural heritage\n- Promoting international cultural exchange and understanding\n- [Your own ideas]\n\nFollow-up questions:\n1. What negative impacts can excessive tourism (overtourism) inflict on local communities?\n2. How can municipal authorities balance tourism revenue with environmental conservation?\n3. Should historic heritage sites charge entrance fees to domestic citizens?"
+          },
+          {
+            "id": "ussh11-speaking-part3-1",
+            "school": "USSH",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 1: The Role of Extracurricular Activities for Children",
+            "rawTitle": "Part 3 - Topic 1: The Role of Extracurricular Activities for Children",
+            "content": "Topic: The positive contributions of extracurricular activities to children's growth\nSuggestions:\n- Cultivating a balanced lifestyle between study and leisure\n- Developing essential time management skills\n- Enhancing social communication and teamwork abilities\n- [Your own ideas]\n\nFollow-up questions:\n1. What extracurricular activities would you recommend for primary school pupils?\n2. How can parents help their children balance formal schoolwork with extracurricular commitments?\n3. Should universities consider extracurricular participation as a mandatory criterion for student admission?"
+          },
+          {
+            "id": "ulis11-speaking-part3-1",
+            "school": "ULIS",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 1: The Developmental Benefits of Keeping Household Pets for Children",
+            "rawTitle": "Part 3 - Topic 1: The Developmental Benefits of Keeping Household Pets for Children",
+            "content": "Topic: The positive impacts of raising pets on children's personal development\nSuggestions:\n- Nurturing a sense of responsibility and daily discipline\n- Fostering emotional empathy, compassion, and companionship\n- Reducing screen time and encouraging active indoor/outdoor play\n- [Your own ideas]\n\nFollow-up questions:\n1. What safety precautions should families take when introducing pets to small children?\n2. What happens when a child loses interest in taking care of their pet after a few months?\n3. Should animal protection and pet care be taught in school curricula?"
           }
         ]
       }

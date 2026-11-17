@@ -8,7 +8,10 @@
     "LHU",
     "BAV",
     "AJC",
-    "HUST"
+    "HUST",
+    "DTU",
+    "USSH",
+    "ULIS"
   ],
   "batches": [
     "09/2026",
@@ -74,19 +77,37 @@
       "school": "AJC",
       "batch": "11/2026",
       "file": "speaking/AJC_11-2026.json",
-      "count": 7
+      "count": 13
     },
     {
       "school": "HUST",
       "batch": "11/2026",
       "file": "speaking/HUST_11-2026.json",
-      "count": 4
+      "count": 10
     },
     {
       "school": "UFM",
       "batch": "11/2026",
       "file": "speaking/UFM_11-2026.json",
-      "count": 4
+      "count": 13
+    },
+    {
+      "school": "DTU",
+      "batch": "11/2026",
+      "file": "speaking/DTU_11-2026.json",
+      "count": 9
+    },
+    {
+      "school": "USSH",
+      "batch": "11/2026",
+      "file": "speaking/USSH_11-2026.json",
+      "count": 3
+    },
+    {
+      "school": "ULIS",
+      "batch": "11/2026",
+      "file": "speaking/ULIS_11-2026.json",
+      "count": 3
     }
   ],
   "writing": [
@@ -148,19 +169,37 @@
       "school": "AJC",
       "batch": "11/2026",
       "file": "writing/AJC_11-2026.json",
-      "count": 4
+      "count": 8
     },
     {
       "school": "HUST",
       "batch": "11/2026",
       "file": "writing/HUST_11-2026.json",
-      "count": 2
+      "count": 6
     },
     {
       "school": "UFM",
       "batch": "11/2026",
       "file": "writing/UFM_11-2026.json",
-      "count": 4
+      "count": 10
+    },
+    {
+      "school": "DTU",
+      "batch": "11/2026",
+      "file": "writing/DTU_11-2026.json",
+      "count": 6
+    },
+    {
+      "school": "USSH",
+      "batch": "11/2026",
+      "file": "writing/USSH_11-2026.json",
+      "count": 2
+    },
+    {
+      "school": "ULIS",
+      "batch": "11/2026",
+      "file": "writing/ULIS_11-2026.json",
+      "count": 2
     }
   ],
   "listening": {
