@@ -2,11 +2,11 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { 
-  BookOpen, 
-  Headphones, 
-  PenTool, 
-  Mic, 
+import {
+  BookOpen,
+  Headphones,
+  PenTool,
+  Mic,
   ArrowRight,
   TrendingUp,
   Settings,
@@ -82,8 +82,8 @@ export default function Home() {
           </span>
           <h1 className="text-3xl md:text-5xl font-extrabold text-foreground tracking-tight leading-tight animate-fade-in">
             Chinh phục chứng chỉ <br />
-            <span className="bg-vstep-gradient bg-clip-text text-transparent">
-              VSTEP Tiếng Anh 🎯
+            <span className="bg-vstep-gradient bg-clip-text ">
+              Vùi chôn thanh xuân
             </span>
           </h1>
         </div>
@@ -100,8 +100,8 @@ export default function Home() {
           {cards.map((card) => {
             const Icon = card.icon;
             return (
-              <Link 
-                key={card.href} 
+              <Link
+                key={card.href}
                 href={card.href}
                 className="group relative flex flex-col bg-card border border-border hover:border-primary/30 p-6 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1.5 overflow-hidden cursor-pointer"
               >
