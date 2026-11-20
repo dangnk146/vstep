@@ -11,7 +11,8 @@
     "HUST",
     "DTU",
     "USSH",
-    "ULIS"
+    "ULIS",
+    "CTU"
   ],
   "batches": [
     "09/2026",
@@ -23,7 +24,7 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "speaking/VLU_11-2026.json",
-      "count": 70
+      "count": 76
     },
     {
       "school": "VLU",
@@ -83,7 +84,7 @@
       "school": "HUST",
       "batch": "11/2026",
       "file": "speaking/HUST_11-2026.json",
-      "count": 10
+      "count": 18
     },
     {
       "school": "UFM",
@@ -108,6 +109,12 @@
       "batch": "11/2026",
       "file": "speaking/ULIS_11-2026.json",
       "count": 3
+    },
+    {
+      "school": "CTU",
+      "batch": "11/2026",
+      "file": "speaking/CTU_11-2026.json",
+      "count": 7
     }
   ],
   "writing": [
@@ -115,7 +122,7 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "writing/VLU_11-2026.json",
-      "count": 44
+      "count": 50
     },
     {
       "school": "VLU",
@@ -175,7 +182,7 @@
       "school": "HUST",
       "batch": "11/2026",
       "file": "writing/HUST_11-2026.json",
-      "count": 6
+      "count": 10
     },
     {
       "school": "UFM",
@@ -200,6 +207,12 @@
       "batch": "11/2026",
       "file": "writing/ULIS_11-2026.json",
       "count": 2
+    },
+    {
+      "school": "CTU",
+      "batch": "11/2026",
+      "file": "writing/CTU_11-2026.json",
+      "count": 4
     }
   ],
   "listening": {

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-17T12:37:59.661Z",
-  "totalSpeakingQuestions": 274,
+  "generatedAt": "2026-11-20T15:48:36.645Z",
+  "totalSpeakingQuestions": 295,
   "hubCount": 5,
   "hubs": {
     "education": {
@@ -32,9 +32,9 @@
         "Foster interpersonal communication & teamwork abilities (Rèn luyện giao tiếp xã hội và khả năng làm việc nhóm)"
       ],
       "stats": {
-        "total": 54,
+        "total": 56,
         "part1": 11,
-        "part2": 25,
+        "part2": 27,
         "part3": 18
       },
       "questions": {
@@ -213,6 +213,15 @@
             "content": "Situation: A student who just graduated from university with a bachelor's degree is contemplating their immediate next step:\n- Entering the job market to work full-time right away (đi làm ngay để tích lũy kinh nghiệm)\n- Pursuing higher education through a Master's degree (học tiếp lên chương trình thạc sĩ)\n- Joining a community-driven volunteer project for a year (tham gia hoạt động tình nguyện vì cộng đồng)\n\nWhich option do you think is the best choice and why?"
           },
           {
+            "id": "vlu11-speaking-part2-23",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Penalizing Public Misbehaviors",
+            "rawTitle": "Part 2 - Situation 23: Penalizing Public Misbehaviors",
+            "content": "Situation: A school or local authority is considering imposing stricter penalties on public misbehaviors. There are three options (two recalled from the exam review):\n- Smoking in a restaurant (hút thuốc trong nhà hàng)\n- Using a mobile phone while driving (sử dụng điện thoại khi lái xe)\n- [Option 3 not recalled in review]\n\nWhich behavior should receive the strictest penalty, and why?"
+          },
+          {
             "id": "special-speaking-part2-3",
             "school": "VLU",
             "batch": "09/2026",
@@ -364,6 +373,15 @@
             "title": "Choosing an Internship Preparation Workshop for Students",
             "rawTitle": "Part 2 - Situation 4: Choosing an Internship Preparation Workshop for Students",
             "content": "Situation: Your university is organizing a special preparatory workshop for senior students who are about to start their internships. The student union is deciding between three workshop themes:\n- Professional CV writing skills (kỹ năng viết CV chuyên nghiệp)\n- Job interview techniques and mock interviews (kỹ năng phỏng vấn tuyển dụng)\n- Workplace adaptability and communication skills (kỹ năng thích ứng với môi trường làm việc)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "ctu11-speaking-part2-1",
+            "school": "CTU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing Where to Buy Clothes for Students",
+            "rawTitle": "Part 2 - Situation 1: Choosing Where to Buy Clothes for Students",
+            "content": "Situation: A group of students wants to buy some new clothes and is deciding where to shop. There are three options:\n- A shopping mall (trung tâm thương mại)\n- An open-air market (chợ ngoài trời)\n- An online shop (cửa hàng trực tuyến)\n\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -561,8 +579,8 @@
         "Establish discipline & sustain prolonged vitality (Xây dựng lối sống kỷ luật và duy trì sự dẻo dai)"
       ],
       "stats": {
-        "total": 49,
-        "part1": 29,
+        "total": 50,
+        "part1": 30,
         "part2": 4,
         "part3": 16
       },
@@ -801,6 +819,15 @@
             "title": "Healthy Diets & Public Parks",
             "rawTitle": "Topic 4: Healthy Diets & Public Parks",
             "content": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?"
+          },
+          {
+            "id": "hust11-speaking-part1-7",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Breakfast Habits & Nutrition",
+            "rawTitle": "Topic 7: Breakfast Habits & Nutrition",
+            "content": "1. What do you usually have for breakfast?\n2. Do you prefer eating breakfast at home or eating out? Why?\n3. How important is breakfast to your health and daily energy?"
           },
           {
             "id": "ufm11-speaking-part1-4",
@@ -1045,10 +1072,10 @@
         "Mitigate risks of sedentary isolation & superficial virtual relationships (Cảnh báo nguy cơ phụ thuộc công nghệ và mất kết nối thực tế)"
       ],
       "stats": {
-        "total": 24,
-        "part1": 10,
+        "total": 26,
+        "part1": 11,
         "part2": 1,
-        "part3": 13
+        "part3": 14
       },
       "questions": {
         "part1": [
@@ -1141,6 +1168,15 @@
             "title": "Mobile Phone Habits & Daily Life",
             "rawTitle": "Topic 3: Mobile Phone Habits & Daily Life",
             "content": "1. How often do you use your mobile phone each day, and what do you use it for most?\n2. Has your mobile phone usage changed compared to a few years ago?\n3. Do you think people nowadays rely too heavily on their smartphones?"
+          },
+          {
+            "id": "hust11-speaking-part1-8",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Mobile Phone Usage",
+            "rawTitle": "Topic 8: Mobile Phone Usage",
+            "content": "1. Do you use your mobile phone frequently in your daily life?\n2. What purposes do you mostly use your mobile phone for?\n3. Do you think people today rely too much on their mobile phones?"
           }
         ],
         "part2": [
@@ -1190,6 +1226,15 @@
             "title": "Part 3 - Topic 17: Wide-Ranging Uses of Social Media Platforms",
             "rawTitle": "Part 3 - Topic 17: Wide-Ranging Uses of Social Media Platforms",
             "content": "Topic: The multifaceted uses and functions of social media in everyday life\nSuggestions:\n- Providing accessible entertainment, gaming, and multimedia streaming\n- Serving as powerful channels for e-commerce, advertising, and entrepreneurship\n- Enabling seamless global communication and keeping in touch with friends and relatives\n- [Your own ideas]\n\nFollow-up questions:\n1. How has social media fundamentally transformed marketing strategies for small local businesses?\n2. Can heavy reliance on digital social platforms undermine real-life communication abilities?\n3. What responsibilities should tech giants bear in combating fake news and cyber harassment?"
+          },
+          {
+            "id": "vlu11-speaking-part3-23",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 23: Benefits of Face-to-Face Conversation",
+            "rawTitle": "Part 3 - Topic 23: Benefits of Face-to-Face Conversation",
+            "content": "Topic: Benefits of face-to-face conversation in daily communication\nSuggestions:\n- Building stronger personal trust and emotional connection\n- Understanding body language and avoiding misunderstandings\n- Improving real-life communication skills\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do many young people prefer texting or online messaging over face-to-face talks?\n2. In what situations is face-to-face communication much more effective than digital messaging?\n3. Will face-to-face conversation become less common in the future?"
           },
           {
             "id": "speaking-part3-4",
@@ -1304,10 +1349,10 @@
         "Harness personal strengths to contribute meaningfully to organization (Phát huy sở trường và cống hiến cho tổ chức)"
       ],
       "stats": {
-        "total": 25,
+        "total": 26,
         "part1": 5,
         "part2": 10,
-        "part3": 10
+        "part3": 11
       },
       "questions": {
         "part1": [
@@ -1539,6 +1584,15 @@
             "title": "Part 3 - Topic 3: Advantages and Challenges of Self-Employment",
             "rawTitle": "Part 3 - Topic 3: Advantages and Challenges of Self-Employment",
             "content": "Topic: The notable benefits and demanding challenges of self-employment\nSuggestions:\n- Autonomous working schedule and independence from management\n- Direct correlation between personal effort and income potential\n- Financial instability and heavy entrepreneurial pressure\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are an increasing number of young graduates choosing freelance work or startup ventures?\n2. What essential skills are necessary before transitioning to self-employment?\n3. Do you think governments should provide financial subsidies for young entrepreneurs?"
+          },
+          {
+            "id": "ctu11-speaking-part3-1",
+            "school": "CTU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 1: Making a Good Impression at a Job Interview",
+            "rawTitle": "Part 3 - Topic 1: Making a Good Impression at a Job Interview",
+            "content": "Topic: Different ways to make a good impression at a job interview\nSuggestions:\n- Being punctual\n- Being humorous and friendly\n- Dressing neatly and preparing thoroughly\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is being punctual essential when attending a job interview?\n2. Should applicants use humor during a formal job interview? Why or why not?\n3. What should candidates prepare before going to an important interview?"
           }
         ]
       }
@@ -1572,10 +1626,10 @@
         "Preserve cultural identity & strengthen familial and societal bonds (Gìn giữ bản sắc truyền thống và thắt chặt tình cảm gắn kết xã hội)"
       ],
       "stats": {
-        "total": 122,
-        "part1": 58,
-        "part2": 33,
-        "part3": 31
+        "total": 137,
+        "part1": 66,
+        "part2": 36,
+        "part3": 35
       },
       "questions": {
         "part1": [
@@ -1776,6 +1830,33 @@
             "title": "Natural Landscapes & Drawing Scenery",
             "rawTitle": "Topic 1: Natural Landscapes & Drawing Scenery",
             "content": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What makes up the natural landscape or environment around your hometown or neighborhood?\n3. Do you like taking landscape photographs when you travel? Why or why not?\n4. Do you enjoy drawing or painting natural landscapes in your free time?"
+          },
+          {
+            "id": "vlu11-speaking-part1-28",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Art & Creativity",
+            "rawTitle": "Topic 1: Art & Creativity",
+            "content": "1. Are you interested in art, such as painting, drawing, or visiting galleries?\n2. Did you enjoy art classes when you were at school? Why or why not?\n3. Why is art considered important in modern life?"
+          },
+          {
+            "id": "vlu11-speaking-part1-29",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Weather",
+            "rawTitle": "Topic 1: Weather",
+            "content": "1. What kind of weather do you like best, and why?\n2. How does the weather usually affect your daily routine or mood?\n3. What do you enjoy doing on rainy or cool days?"
+          },
+          {
+            "id": "vlu11-speaking-part1-30",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Hobbies & Free Time",
+            "rawTitle": "Topic 2: Hobbies & Free Time",
+            "content": "1. What hobbies do you usually enjoy in your free time?\n2. How did you get started with your favorite hobby?\n3. Why is having a hobby important for reducing daily stress?"
           },
           {
             "id": "speaking-part1-5",
@@ -2057,6 +2138,24 @@
             "content": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. How important are communal meals and social gatherings in Vietnamese culture?"
           },
           {
+            "id": "hust11-speaking-part1-5",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Advertisements & Consumer Choices",
+            "rawTitle": "Topic 5: Advertisements & Consumer Choices",
+            "content": "1. Do you often pay attention to advertisements on TV or social media?\n2. What is the most impressive or memorable advertisement you have ever seen, and why?\n3. Do you usually buy products after watching their advertisements? Why or why not?"
+          },
+          {
+            "id": "hust11-speaking-part1-6",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Home Decoration & Favorite Colors",
+            "rawTitle": "Topic 6: Home Decoration & Favorite Colors",
+            "content": "1. How do you like to decorate your home or personal room?\n2. What is your favorite color, and why do you like it?\n3. Which colors are most popular among people in your country for home decoration or daily items?"
+          },
+          {
             "id": "ufm11-speaking-part1-1",
             "school": "UFM",
             "batch": "11/2026",
@@ -2100,6 +2199,33 @@
             "title": "Travel Plans & Recycling Habits",
             "rawTitle": "Topic 1: Travel Plans & Recycling Habits",
             "content": "1. Where are you planning to travel next, and why did you choose that destination?\n2. Do you frequently use recycled products or separate household recyclable waste?\n3. Are recycling programs and environmental awareness common among people in your neighborhood?"
+          },
+          {
+            "id": "ctu11-speaking-part1-1",
+            "school": "CTU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Days of the Week",
+            "rawTitle": "Topic 1: Days of the Week",
+            "content": "1. What is your favorite day of the week, and why?\n2. Which day of the week is usually the busiest for you?\n3. What do you usually do differently on weekends compared to weekdays?"
+          },
+          {
+            "id": "ctu11-speaking-part1-2",
+            "school": "CTU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Numbers",
+            "rawTitle": "Topic 2: Numbers",
+            "content": "1. Do you have a favorite or lucky number? Why?\n2. Are you good at remembering important numbers, such as phone numbers or birthdays?\n3. Are there any numbers considered lucky or unlucky in your country?"
+          },
+          {
+            "id": "ctu11-speaking-part1-3",
+            "school": "CTU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Home Decoration & Favorite Colors",
+            "rawTitle": "Topic 3: Home Decoration & Favorite Colors",
+            "content": "1. How do you decorate your home or bedroom?\n2. What is your favorite color, and why do you like it?\n3. Do you think colors have a strong effect on people's mood at home?"
           }
         ],
         "part2": [
@@ -2338,6 +2464,24 @@
             "content": "Situation: You are assigned to arrange a three-day weekend getaway for your whole family. There are three approaches to organizing this trip:\n- Planning the entire itinerary independently (tự lên kế hoạch chi tiết từ A đến Z)\n- Purchasing an all-inclusive package tour from a travel agency (mua gói tour trọn gói của công ty du lịch)\n- Following specific destination recommendations from an experienced friend (tham khảo địa điểm và lịch trình từ một người bạn đã từng đi)\nWhich option do you think is the best choice and why?"
           },
           {
+            "id": "hust11-speaking-part2-4",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Planning an Outdoor Activity Venue for Your Family",
+            "rawTitle": "Part 2 - Situation 4: Planning an Outdoor Activity Venue for Your Family",
+            "content": "Situation: You are planning a weekend outing to organize enjoyable activities for your family. There are three venue options:\n- A water park (công viên nước)\n- An amusement park (công viên giải trí)\n- A museum (bảo tàng)\n\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "hust11-speaking-part2-5",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Planning a Fun Outing with Friends",
+            "rawTitle": "Part 2 - Situation 5: Planning a Fun Outing with Friends",
+            "content": "Situation: You and your group of friends are planning a weekend outing together to unwind and have fun. There are three options:\n- Going on a hiking adventure (đi leo núi dã ngoại)\n- Spending time at an amusement park (vui chơi tại công viên giải trí)\n- Going to a spa (đi spa thư giãn)\n\nWhich option do you think is the best choice and why?"
+          },
+          {
             "id": "ufm11-speaking-part2-1",
             "school": "UFM",
             "batch": "11/2026",
@@ -2399,6 +2543,15 @@
             "title": "Choosing a Pet Gift for a 12-Year-Old Niece's Birthday",
             "rawTitle": "Part 2 - Situation 1: Choosing a Pet Gift for a 12-Year-Old Niece's Birthday",
             "content": "Situation: Your 12-year-old niece loves animals and is celebrating her upcoming birthday. Her parents have agreed to let her raise a pet at home. You are considering three pet options as a birthday gift:\n- A puppy dog (một chú chó con)\n- A cute kitten (một chú mèo con)\n- A colorful aquarium with ornamental fish (một bể cá cảnh nhiều màu sắc)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "ctu11-speaking-part2-2",
+            "school": "CTU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Place for a Family Outing",
+            "rawTitle": "Part 2 - Situation 2: Choosing a Place for a Family Outing",
+            "content": "Situation: You are choosing a suitable destination for a family outing this weekend. There are three options:\n- A water park (công viên nước)\n- An amusement park (công viên giải trí)\n- A museum (bảo tàng)\n\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -2455,6 +2608,15 @@
             "title": "Part 3 - Topic 21: Advantages of Electric Vehicles (EVs)",
             "rawTitle": "Part 3 - Topic 21: Advantages of Electric Vehicles (EVs)",
             "content": "Topic: Advantages of electric vehicles (EVs) over conventional gasoline cars\nSuggestions:\n- Protecting the environment by reducing exhaust emissions\n- Lower long-term operational and charging costs\n- Providing a smoother, quieter, and modern driving experience\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you believe that electric vehicles will completely replace petrol-powered cars in the future? Why or why not?\n2. What are the main obstacles and drawbacks preventing people from adopting electric vehicles today?\n3. How can the government encourage more citizens to switch to green transport?"
+          },
+          {
+            "id": "vlu11-speaking-part3-22",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 22: Electric Vehicles & Environmental Solutions",
+            "rawTitle": "Part 3 - Topic 22: Electric Vehicles & Environmental Solutions",
+            "content": "Topic: Benefits of electric vehicles and clean energy solutions for the environment\nSuggestions:\n- Reducing environmental pollution and emissions\n- Saving energy and lowering long-term fuel costs\n- Offering sustainable urban transport solutions\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you think using electric vehicles is good or bad overall? Why?\n2. Do you prefer gas-powered cars or electric vehicles? Why?\n3. What challenges still exist when adopting electric vehicles?"
           },
           {
             "id": "speaking-part3-1",
@@ -2646,6 +2808,24 @@
             "content": "Topic: Effective methods to break bad habits\nSuggestions:\n- Practicing strong self-discipline\n- Replacing bad habits with healthy alternatives\n- Seeking advice and emotional support from family and friends\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you think it is easy or difficult for young people to change their bad habits? Why?\n2. What is the most common negative habit among teenagers today?\n3. How can parents and teachers assist young people in overcoming negative habits?"
           },
           {
+            "id": "hust11-speaking-part3-4",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 4: Disadvantages of Living in an Apartment",
+            "rawTitle": "Part 3 - Topic 4: Disadvantages of Living in an Apartment",
+            "content": "Topic: Disadvantages of living in an apartment\nSuggestions:\n- Limited living space\n- Pet restrictions\n- Neighbor issues and noise\n- [Your own ideas]\n\nFollow-up questions:\n1. Do people around you prefer living in private houses or apartments? Why?\n2. What challenges do families with pets or young children face in apartment buildings?\n3. How can residents maintain good relationships with their neighbors in an apartment?"
+          },
+          {
+            "id": "hust11-speaking-part3-5",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 5: Volunteering and Communication Skills",
+            "rawTitle": "Part 3 - Topic 5: Volunteering and Communication Skills",
+            "content": "Topic: Participating in volunteer work and personal development\nSuggestions:\n- Improving interpersonal and communication skills\n- Gaining practical experience and teamwork abilities\n- Contributing positively to the local community\n- [Your own ideas]\n\nFollow-up questions:\n1. What aspects of volunteering help improve your personal communication skills?\n2. What difficulties do people often encounter when doing volunteer work, and what are the solutions?\n3. How can schools and organizations encourage more young people to volunteer?"
+          },
+          {
             "id": "dtu11-speaking-part3-1",
             "school": "DTU",
             "batch": "11/2026",
@@ -2680,6 +2860,15 @@
             "title": "Part 3 - Topic 1: The Developmental Benefits of Keeping Household Pets for Children",
             "rawTitle": "Part 3 - Topic 1: The Developmental Benefits of Keeping Household Pets for Children",
             "content": "Topic: The positive impacts of raising pets on children's personal development\nSuggestions:\n- Nurturing a sense of responsibility and daily discipline\n- Fostering emotional empathy, compassion, and companionship\n- Reducing screen time and encouraging active indoor/outdoor play\n- [Your own ideas]\n\nFollow-up questions:\n1. What safety precautions should families take when introducing pets to small children?\n2. What happens when a child loses interest in taking care of their pet after a few months?\n3. Should animal protection and pet care be taught in school curricula?"
+          },
+          {
+            "id": "ctu11-speaking-part3-2",
+            "school": "CTU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 2: Disadvantages of Apartment Living",
+            "rawTitle": "Part 3 - Topic 2: Disadvantages of Apartment Living",
+            "content": "Topic: Disadvantages of living in an apartment\nSuggestions:\n- Restrictions on keeping pets\n- Noise or conflicts with neighbors\n- Limited living space\n- [Your own ideas]\n\nFollow-up questions:\n1. Do people around you mostly choose to live in private houses or apartments? Do you like living in an apartment? Why?\n2. What common problems can arise between neighbors in an apartment building?\n3. Where do you think people will choose to live in 50 years?"
           }
         ]
       }
