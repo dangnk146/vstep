@@ -162,6 +162,46 @@ export function parsePromptsUrlQuery(searchStr: string): ParsedPromptsUrlState {
   return result;
 }
 
+export interface PromptsFilterCriteria {
+  skill: SkillFilter;
+  part: PartFilter;
+  school: string;
+  batch: string;
+  search: string;
+}
+
+export function filterExamPrompts(
+  allPrompts: ExamPrompt[],
+  criteria: PromptsFilterCriteria
+): ExamPrompt[] {
+  const query = criteria.search.trim().toLowerCase();
+
+  return allPrompts.filter((prompt) => {
+    if (criteria.skill === 'speaking' && !prompt.category.startsWith('speaking-')) return false;
+    if (criteria.skill === 'writing' && !prompt.category.startsWith('writing-')) return false;
+
+    if (criteria.part !== 'all' && prompt.category !== criteria.part) return false;
+
+    if (criteria.school !== 'all') {
+      const promptSchool = (prompt.school || '').toUpperCase().trim();
+      if (promptSchool !== criteria.school.toUpperCase().trim()) return false;
+    }
+
+    if (criteria.batch !== 'all') {
+      const cleanReq = criteria.batch.replace(/[\/-]/g, '').toLowerCase().trim();
+      const cleanPrompt = (prompt.batch || '').replace(/[\/-]/g, '').toLowerCase().trim();
+      if (cleanReq !== cleanPrompt && prompt.batch !== criteria.batch) return false;
+    }
+
+    if (query) {
+      const matchString = `${prompt.title} ${prompt.group} ${prompt.content} ${prompt.school || ''} ${prompt.batch || ''}`.toLowerCase();
+      if (!matchString.includes(query)) return false;
+    }
+
+    return true;
+  });
+}
+
 export function buildPromptsUrlQuery({
   school,
   batch,

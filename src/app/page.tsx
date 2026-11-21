@@ -83,7 +83,7 @@ export default function Home() {
           <h1 className="text-3xl md:text-5xl font-extrabold text-foreground tracking-tight leading-tight animate-fade-in">
             Chinh phục chứng chỉ <br />
             <span className="bg-vstep-gradient bg-clip-text ">
-              Vùi chôn thanh xuân
+              VSTEP
             </span>
           </h1>
         </div>

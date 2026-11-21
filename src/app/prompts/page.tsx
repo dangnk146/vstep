@@ -11,6 +11,7 @@ import {
 import {
   buildPromptsUrlQuery,
   downloadMarkdownFile,
+  filterExamPrompts,
   generatePromptsMarkdown,
   parsePromptsUrlQuery,
 } from './utils';
@@ -203,40 +204,30 @@ export default function PromptBankPage() {
     saveExamApiSettings({ ...settings, batch: batch === 'all' ? '' : batch });
   };
 
-  // Main filtered prompts for display
-  const filteredPrompts = useMemo(() => {
-    const query = search.trim().toLowerCase();
+  // Main filtered prompts for display (shared with standalone /dating app)
+  const filteredPrompts = useMemo(
+    () =>
+      filterExamPrompts(allPrompts, {
+        skill: selectedSkill,
+        part: selectedPart,
+        school: selectedSchool,
+        batch: selectedBatch,
+        search,
+      }),
+    [allPrompts, selectedSkill, selectedPart, selectedSchool, selectedBatch, search]
+  );
 
-    return allPrompts.filter((prompt) => {
-      // Skill filter
-      if (selectedSkill === 'speaking' && !prompt.category.startsWith('speaking-')) return false;
-      if (selectedSkill === 'writing' && !prompt.category.startsWith('writing-')) return false;
-
-      // Part filter
-      if (selectedPart !== 'all' && prompt.category !== selectedPart) return false;
-
-      // School filter
-      if (selectedSchool !== 'all') {
-        const promptSchool = (prompt.school || '').toUpperCase().trim();
-        if (promptSchool !== selectedSchool.toUpperCase().trim()) return false;
-      }
-
-      // Batch filter
-      if (selectedBatch !== 'all') {
-        const cleanReq = selectedBatch.replace(/[\/-]/g, '').toLowerCase().trim();
-        const cleanPrompt = (prompt.batch || '').replace(/[\/-]/g, '').toLowerCase().trim();
-        if (cleanReq !== cleanPrompt && prompt.batch !== selectedBatch) return false;
-      }
-
-      // Search query
-      if (query) {
-        const matchString = `${prompt.title} ${prompt.group} ${prompt.content} ${prompt.school || ''} ${prompt.batch || ''}`.toLowerCase();
-        if (!matchString.includes(query)) return false;
-      }
-
-      return true;
+  // Build URL for standalone /dating app carrying current configured filters
+  const datingHref = useMemo(() => {
+    const queryString = buildPromptsUrlQuery({
+      school: selectedSchool,
+      batch: selectedBatch,
+      skill: selectedSkill,
+      part: selectedPart,
+      search,
     });
-  }, [allPrompts, selectedSkill, selectedPart, selectedSchool, selectedBatch, search]);
+    return queryString ? `/dating?${queryString}` : '/dating';
+  }, [selectedSchool, selectedBatch, selectedSkill, selectedPart, search]);
 
   // Counts by category
   const counts = useMemo(() => {
@@ -396,6 +387,8 @@ export default function PromptBankPage() {
       {/* 1. Header (Full Width & Synchronized with Speaking & Writing) */}
       <PromptHeader
         totalCount={allPrompts.length}
+        filteredCount={filteredPrompts.length}
+        datingHref={datingHref}
         isLoading={isLoading}
         selectedSchool={selectedSchool}
         selectedBatch={selectedBatch}

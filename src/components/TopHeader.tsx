@@ -58,14 +58,14 @@ export function TopHeader({
         {showExamFilter && (
           <span
             title={`Bộ lọc đề đang áp dụng: Trường ${schoolText} • Đợt ${batchText}`}
-            className="ml-1 inline-flex items-center px-1.5 py-0.5 rounded text-[10px] sm:text-[11px] font-bold text-white/80 bg-white/10 hover:bg-amber-400/25 hover:text-amber-200 hover:border-amber-300/40 border border-transparent transition-all duration-300 cursor-help shrink-0 shadow-2xs select-none"
+            className="ml-0.5 hidden sm:inline-flex items-center px-1.5 py-0.5 rounded text-[10px] sm:text-[11px] font-bold text-white/80 bg-white/10 hover:bg-amber-400/25 hover:text-amber-200 hover:border-amber-300/40 border border-transparent transition-all duration-300 cursor-help shrink-0 shadow-2xs select-none"
           >
             ({schoolText}, {batchText})
           </span>
         )}
       </div>
 
-      <div className="flex items-center gap-1.5 shrink-0">
+      <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
         {onRandom && (
           <button
             type="button"
@@ -73,7 +73,7 @@ export function TopHeader({
             disabled={isLoadingRandom}
             title={randomButtonTitle}
             aria-label={randomButtonTitle}
-            className="relative group overflow-hidden flex h-7 items-center gap-1.5 rounded-xs border border-amber-300 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 px-2 sm:px-2.5 text-xs font-black text-amber-950 shadow-xs hover:brightness-105 active:scale-95 transition cursor-pointer disabled:opacity-50"
+            className="relative group overflow-hidden flex h-7 items-center gap-1 sm:gap-1.5 rounded-xs border border-amber-300 bg-gradient-to-r from-amber-400 via-amber-300 to-amber-400 px-1.5 sm:px-2.5 text-xs font-black text-amber-950 shadow-xs hover:brightness-105 active:scale-95 transition cursor-pointer disabled:opacity-50"
           >
             {/* Vệt sáng óng ánh quét qua */}
             <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 bg-gradient-to-r from-transparent via-white/60 to-transparent pointer-events-none" />
