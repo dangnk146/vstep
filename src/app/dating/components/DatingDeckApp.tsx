@@ -106,20 +106,44 @@ export function DatingDeckApp({
   const [decisionDir, setDecisionDir] = useState<'left' | 'right' | null>(null);
   const [swipePhase, setSwipePhase] = useState<SwipePhase>('idle');
   const timersRef = useRef<number[]>([]);
+  const cardRef = useRef<HTMLElement | null>(null);
+  const swipePhaseRef = useRef<SwipePhase>('idle');
 
-  const pointerStateRef = useRef<{
-    pointerId: number | null;
+  const touchStateRef = useRef<{
+    touchId: number | null;
     startX: number;
     startY: number;
+    lastDx: number;
     startTime: number;
     lock: 'none' | 'horizontal' | 'vertical';
   }>({
-    pointerId: null,
+    touchId: null,
     startX: 0,
     startY: 0,
+    lastDx: 0,
     startTime: 0,
     lock: 'none',
   });
+
+  const mouseStateRef = useRef<{
+    active: boolean;
+    startX: number;
+    startY: number;
+    lastDx: number;
+    startTime: number;
+    lock: 'none' | 'horizontal' | 'vertical';
+  }>({
+    active: false,
+    startX: 0,
+    startY: 0,
+    lastDx: 0,
+    startTime: 0,
+    lock: 'none',
+  });
+
+  useEffect(() => {
+    swipePhaseRef.current = swipePhase;
+  }, [swipePhase]);
 
   const clearAnimationTimers = useCallback(() => {
     timersRef.current.forEach((id) => window.clearTimeout(id));
@@ -366,77 +390,196 @@ export function DatingDeckApp({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [commitSwipe, currentCard, handleExitApp, isFullscreen, swipePhase, toggleFullscreen]);
 
-  // Smart pointer swipe (horizontal swipe vs native vertical scroll inside card)
-  const handlePointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (swipePhase !== 'idle' || !currentCard) return;
-    if (e.pointerType === 'mouse' && e.button !== 0) return;
+  const commitSwipeRef = useRef(commitSwipe);
+  useEffect(() => {
+    commitSwipeRef.current = commitSwipe;
+  }, [commitSwipe]);
 
-    pointerStateRef.current = {
-      pointerId: e.pointerId,
+  // Native Touch swipe listeners ({ passive: false }) for rock-solid mobile swiping + smooth vertical scroll
+  const activeCardKey = currentCard ? `${currentCard.prompt.id}-${currentCard.lapses}` : '';
+
+  useEffect(() => {
+    const el = cardRef.current;
+    if (!el || !activeCardKey) return;
+
+    const resetTouch = () => {
+      touchStateRef.current.touchId = null;
+      touchStateRef.current.lock = 'none';
+      touchStateRef.current.lastDx = 0;
+      setIsDragging(false);
+      setDragX(0);
+    };
+
+    const handleTouchStart = (e: TouchEvent) => {
+      if (swipePhaseRef.current !== 'idle' || e.touches.length !== 1) return;
+      const touch = e.touches[0];
+      touchStateRef.current = {
+        touchId: touch.identifier,
+        startX: touch.clientX,
+        startY: touch.clientY,
+        lastDx: 0,
+        startTime: performance.now(),
+        lock: 'none',
+      };
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      const st = touchStateRef.current;
+      if (st.touchId === null || swipePhaseRef.current !== 'idle') return;
+
+      let touch: Touch | undefined;
+      for (let i = 0; i < e.touches.length; i += 1) {
+        if (e.touches[i].identifier === st.touchId) {
+          touch = e.touches[i];
+          break;
+        }
+      }
+      if (!touch) return;
+
+      const dx = touch.clientX - st.startX;
+      const dy = touch.clientY - st.startY;
+
+      if (st.lock === 'none') {
+        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+        if (Math.abs(dx) > Math.abs(dy) * 1.1) {
+          st.lock = 'horizontal';
+          setIsDragging(true);
+        } else {
+          st.lock = 'vertical';
+          return;
+        }
+      }
+
+      if (st.lock === 'horizontal') {
+        // Prevent browser scroll / back-swipe interference once horizontal swipe is locked
+        if (e.cancelable) e.preventDefault();
+        st.lastDx = dx;
+        setDragX(dx);
+      }
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      const st = touchStateRef.current;
+      if (st.touchId === null) return;
+
+      let endedTouch: Touch | undefined;
+      for (let i = 0; i < e.changedTouches.length; i += 1) {
+        if (e.changedTouches[i].identifier === st.touchId) {
+          endedTouch = e.changedTouches[i];
+          break;
+        }
+      }
+      if (!endedTouch) return;
+
+      const wasHorizontal = st.lock === 'horizontal';
+      const dx = endedTouch.clientX - st.startX;
+      const finalDx = Math.abs(dx) > 0 ? dx : st.lastDx;
+      const elapsed = Math.max(1, performance.now() - st.startTime);
+      const velocity = Math.abs(finalDx) / elapsed;
+
+      st.touchId = null;
+      st.lock = 'none';
+      st.lastDx = 0;
+
+      if (!wasHorizontal) return;
+
+      const dynamicThreshold = Math.min(82, Math.max(58, window.innerWidth * 0.22));
+      const shouldCommit =
+        Math.abs(finalDx) >= dynamicThreshold ||
+        (velocity > 0.32 && Math.abs(finalDx) > 32);
+
+      if (shouldCommit) {
+        commitSwipeRef.current(finalDx > 0 ? 'right' : 'left', true);
+      } else {
+        setIsDragging(false);
+        setDragX(0);
+      }
+    };
+
+    const handleTouchCancel = () => {
+      // NEVER commit a swipe on touchcancel (mobile browsers can send clientX=0 on cancel)
+      resetTouch();
+    };
+
+    el.addEventListener('touchstart', handleTouchStart, { passive: true });
+    el.addEventListener('touchmove', handleTouchMove, { passive: false });
+    el.addEventListener('touchend', handleTouchEnd, { passive: true });
+    el.addEventListener('touchcancel', handleTouchCancel, { passive: true });
+
+    return () => {
+      el.removeEventListener('touchstart', handleTouchStart);
+      el.removeEventListener('touchmove', handleTouchMove);
+      el.removeEventListener('touchend', handleTouchEnd);
+      el.removeEventListener('touchcancel', handleTouchCancel);
+    };
+  }, [activeCardKey]);
+
+  // Desktop mouse horizontal swipe (completely separated from mobile touch)
+  const handleMouseDown = (e: React.MouseEvent<HTMLElement>) => {
+    if (swipePhaseRef.current !== 'idle' || !currentCard || e.button !== 0) return;
+
+    mouseStateRef.current = {
+      active: true,
       startX: e.clientX,
       startY: e.clientY,
+      lastDx: 0,
       startTime: performance.now(),
       lock: 'none',
     };
-  };
 
-  const handlePointerMove = (e: React.PointerEvent<HTMLDivElement>) => {
-    const st = pointerStateRef.current;
-    if (st.pointerId !== e.pointerId || swipePhase !== 'idle') return;
+    const handleMouseMove = (moveEvent: MouseEvent) => {
+      const st = mouseStateRef.current;
+      if (!st.active || swipePhaseRef.current !== 'idle') return;
 
-    const dx = e.clientX - st.startX;
-    const dy = e.clientY - st.startY;
+      const dx = moveEvent.clientX - st.startX;
+      const dy = moveEvent.clientY - st.startY;
 
-    if (st.lock === 'none') {
-      if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return;
-      if (Math.abs(dx) > Math.abs(dy) * 1.2) {
-        st.lock = 'horizontal';
-        setIsDragging(true);
-        try {
-          e.currentTarget.setPointerCapture(e.pointerId);
-        } catch {
-          // Ignore
+      if (st.lock === 'none') {
+        if (Math.abs(dx) < 10 && Math.abs(dy) < 10) return;
+        if (Math.abs(dx) > Math.abs(dy) * 1.2) {
+          st.lock = 'horizontal';
+          setIsDragging(true);
+        } else {
+          st.lock = 'vertical';
+          return;
         }
+      }
+
+      if (st.lock === 'horizontal') {
+        st.lastDx = dx;
+        setDragX(dx);
+      }
+    };
+
+    const handleMouseUp = () => {
+      window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('mouseup', handleMouseUp);
+
+      const st = mouseStateRef.current;
+      const wasHorizontal = st.lock === 'horizontal';
+      const finalDx = st.lastDx;
+      const elapsed = Math.max(1, performance.now() - st.startTime);
+      const velocity = Math.abs(finalDx) / elapsed;
+
+      st.active = false;
+      st.lock = 'none';
+      st.lastDx = 0;
+
+      if (!wasHorizontal) return;
+
+      const shouldCommit =
+        Math.abs(finalDx) >= SWIPE_THRESHOLD || (velocity > 0.42 && Math.abs(finalDx) > 40);
+
+      if (shouldCommit) {
+        commitSwipeRef.current(finalDx > 0 ? 'right' : 'left', true);
       } else {
-        st.lock = 'vertical';
-        return;
+        setIsDragging(false);
+        setDragX(0);
       }
-    }
+    };
 
-    if (st.lock === 'horizontal') {
-      setDragX(dx);
-    }
-  };
-
-  const finishPointerDrag = (e: React.PointerEvent<HTMLDivElement>) => {
-    const st = pointerStateRef.current;
-    if (st.pointerId !== e.pointerId) return;
-
-    const wasHorizontal = st.lock === 'horizontal';
-    const dx = e.clientX - st.startX;
-    const elapsed = Math.max(1, performance.now() - st.startTime);
-    const velocity = Math.abs(dx) / elapsed;
-
-    pointerStateRef.current.pointerId = null;
-    pointerStateRef.current.lock = 'none';
-
-    if (!wasHorizontal) return;
-
-    try {
-      if (e.currentTarget.hasPointerCapture(e.pointerId)) {
-        e.currentTarget.releasePointerCapture(e.pointerId);
-      }
-    } catch {
-      // Ignore
-    }
-
-    const shouldCommit = Math.abs(dx) >= SWIPE_THRESHOLD || (velocity > 0.45 && Math.abs(dx) > 42);
-    if (shouldCommit) {
-      commitSwipe(dx > 0 ? 'right' : 'left', true);
-    } else {
-      setIsDragging(false);
-      setDragX(0);
-    }
+    window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('mouseup', handleMouseUp);
   };
 
   const nearestCooldown = useMemo(() => {
@@ -587,11 +730,9 @@ export function DatingDeckApp({
 
             {/* Active Swipeable Exam Card — Clean, Full Height, Zero Extra Metadata Clutter */}
             <article
-              key={`${currentCard.prompt.id}-${currentCard.lapses}`}
-              onPointerDown={handlePointerDown}
-              onPointerMove={handlePointerMove}
-              onPointerUp={finishPointerDrag}
-              onPointerCancel={finishPointerDrag}
+              ref={cardRef}
+              key={activeCardKey}
+              onMouseDown={handleMouseDown}
               style={{
                 transform: `translate3d(${effectiveX}px, ${Math.abs(effectiveX) * 0.03}px, 0) rotate(${rotateDeg}deg)`,
                 opacity: cardOpacity,
@@ -600,7 +741,6 @@ export function DatingDeckApp({
                   : swipePhase === 'stamp'
                     ? 'transform 0.22s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s ease, box-shadow 0.2s ease'
                     : 'transform 0.32s cubic-bezier(0.32, 0.08, 0.24, 1), opacity 0.28s ease',
-                touchAction: 'pan-y',
               }}
               className={`relative z-10 flex h-full w-full flex-col rounded-2xl border-2 bg-card shadow-lg overflow-hidden cursor-grab active:cursor-grabbing ${
                 isStampHighlightRight
@@ -658,7 +798,7 @@ export function DatingDeckApp({
               )}
 
               {/* Pure Scrollable Exam Prompt Content (100% of card area!) */}
-              <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-3.5 py-3.5 sm:px-6 sm:py-5 select-text">
+              <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain px-3.5 py-3.5 sm:px-6 sm:py-5 select-none sm:select-text">
                 <DatingPromptContent
                   prompt={currentCard.prompt}
                   reviewCount={currentCard.isReview ? currentCard.lapses : 0}
@@ -746,11 +886,11 @@ export function DatingDeckApp({
               disabled={swipePhase !== 'idle'}
               title={`Chưa hiểu — Ôn lại sau ${nextAnkiSeconds}s (←)`}
               aria-label="Chưa hiểu, đưa vào hàng chờ ôn lại"
-              className="btn-metallic-silver group flex h-11 sm:h-12 items-center gap-2 rounded-full px-4 sm:px-5 text-xs sm:text-[13px] font-black transition-transform duration-200 hover:scale-104 active:scale-95 cursor-pointer disabled:opacity-60"
+              className="btn-metallic-silver group flex h-11 sm:h-12 items-center gap-2 rounded-full px-4 sm:px-5 text-xs sm:text-[13px] font-black transition-transform duration-200 active:scale-95 cursor-pointer disabled:opacity-60"
             >
-              <X className="h-4.5 w-4.5 stroke-[3] text-rose-600 dark:text-rose-400 group-hover:text-rose-400 dark:group-hover:text-rose-600 transition-colors" />
+              <X className="h-4.5 w-4.5 stroke-[3] text-rose-600 dark:text-rose-400" />
               <span>Chưa hiểu</span>
-              <span className="rounded-full bg-amber-500/18 px-1.5 py-0.5 font-mono text-[10px] font-bold text-amber-700 dark:text-amber-300 group-hover:bg-amber-400/25 group-hover:text-amber-200 dark:group-hover:text-amber-700">
+              <span className="rounded-full bg-amber-500/18 px-1.5 py-0.5 font-mono text-[10px] font-bold text-amber-700 dark:text-amber-300">
                 +{nextAnkiSeconds}s
               </span>
             </button>
