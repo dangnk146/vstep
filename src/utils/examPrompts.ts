@@ -27,10 +27,44 @@ export type ExamPrompt = ExamQuestion & {
   group: string;
   school?: string;
   batch?: string;
+  isNew?: boolean;
+  addedAt?: string;
 };
 
 export function getExamCategory(category: ExamCategory) {
   return EXAM_CATEGORIES.find((item) => item.id === category)!;
+}
+
+export function getPromptSortTimestamp(prompt: Pick<ExamPrompt, 'addedAt' | 'group' | 'batch'>): number {
+  if (prompt.addedAt) {
+    const parsed = Date.parse(prompt.addedAt);
+    if (!Number.isNaN(parsed)) return parsed;
+  }
+
+  if (prompt.group) {
+    const dateMatch = prompt.group.match(/\b(\d{1,2})\/(\d{1,2})\/(\d{4})\b/);
+    if (dateMatch) {
+      const day = Number(dateMatch[1]);
+      const month = Number(dateMatch[2]);
+      const year = Number(dateMatch[3]);
+      if (month >= 1 && month <= 12 && day >= 1 && day <= 31) {
+        return Date.UTC(year, month - 1, day);
+      }
+    }
+  }
+
+  if (prompt.batch) {
+    const batchMatch = prompt.batch.match(/\b(\d{1,2})[\/-](\d{4})\b/);
+    if (batchMatch) {
+      const month = Number(batchMatch[1]);
+      const year = Number(batchMatch[2]);
+      if (month >= 1 && month <= 12) {
+        return Date.UTC(year, month - 1, 1);
+      }
+    }
+  }
+
+  return 0;
 }
 
 export function toExamPrompt(record: {
@@ -42,6 +76,8 @@ export function toExamPrompt(record: {
   group?: string;
   school?: string;
   batch?: string;
+  isNew?: boolean;
+  addedAt?: string;
 }): ExamPrompt | null {
   const part = record.part.toLowerCase().replace(/\s+/g, '');
   let category: ExamCategory;
@@ -64,6 +100,8 @@ export function toExamPrompt(record: {
     group,
     school: record.school,
     batch: record.batch,
+    isNew: Boolean(record.isNew),
+    addedAt: typeof record.addedAt === 'string' ? record.addedAt : undefined,
   };
 }
 

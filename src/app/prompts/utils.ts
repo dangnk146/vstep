@@ -1,5 +1,10 @@
-import { getExamCategory, toReadablePromptText, type ExamPrompt } from '@/utils/examPrompts';
-import type { SkillFilter, PartFilter } from './types';
+import {
+  getExamCategory,
+  getPromptSortTimestamp,
+  toReadablePromptText,
+  type ExamPrompt,
+} from '@/utils/examPrompts';
+import type { SkillFilter, PartFilter, PromptSortMode } from './types';
 
 export function generatePromptsMarkdown(
   prompts: ExamPrompt[],
@@ -87,6 +92,8 @@ export interface ParsedPromptsUrlState {
   part?: PartFilter;
   search?: string;
   examId?: string;
+  onlyNew?: boolean;
+  sort?: PromptSortMode;
 }
 
 export function parsePromptsUrlQuery(searchStr: string): ParsedPromptsUrlState {
@@ -159,6 +166,20 @@ export function parsePromptsUrlQuery(searchStr: string): ParsedPromptsUrlState {
     result.examId = rawExam.trim();
   }
 
+  // Only new filter
+  const rawNew = searchParams.get('new')?.toLowerCase().trim();
+  if (rawNew === '1' || rawNew === 'true') {
+    result.onlyNew = true;
+  } else if (rawNew === '0' || rawNew === 'false') {
+    result.onlyNew = false;
+  }
+
+  // Sort mode
+  const rawSort = searchParams.get('sort')?.toLowerCase().trim();
+  if (rawSort === 'newest' || rawSort === 'oldest' || rawSort === 'default') {
+    result.sort = rawSort;
+  }
+
   return result;
 }
 
@@ -168,6 +189,13 @@ export interface PromptsFilterCriteria {
   school: string;
   batch: string;
   search: string;
+  onlyNew?: boolean;
+  sort?: PromptSortMode;
+}
+
+function getPromptNumericSuffix(id: string): number {
+  const m = id.match(/(\d+)$/);
+  return m ? Number(m[1]) : 0;
 }
 
 export function filterExamPrompts(
@@ -176,30 +204,70 @@ export function filterExamPrompts(
 ): ExamPrompt[] {
   const query = criteria.search.trim().toLowerCase();
 
-  return allPrompts.filter((prompt) => {
-    if (criteria.skill === 'speaking' && !prompt.category.startsWith('speaking-')) return false;
-    if (criteria.skill === 'writing' && !prompt.category.startsWith('writing-')) return false;
+  const indexed = allPrompts
+    .map((prompt, idx) => ({ prompt, idx }))
+    .filter(({ prompt }) => {
+      if (criteria.onlyNew && !prompt.isNew) return false;
 
-    if (criteria.part !== 'all' && prompt.category !== criteria.part) return false;
+      if (criteria.skill === 'speaking' && !prompt.category.startsWith('speaking-')) return false;
+      if (criteria.skill === 'writing' && !prompt.category.startsWith('writing-')) return false;
 
-    if (criteria.school !== 'all') {
-      const promptSchool = (prompt.school || '').toUpperCase().trim();
-      if (promptSchool !== criteria.school.toUpperCase().trim()) return false;
+      if (criteria.part !== 'all' && prompt.category !== criteria.part) return false;
+
+      if (criteria.school !== 'all') {
+        const promptSchool = (prompt.school || '').toUpperCase().trim();
+        if (promptSchool !== criteria.school.toUpperCase().trim()) return false;
+      }
+
+      if (criteria.batch !== 'all') {
+        const cleanReq = criteria.batch.replace(/[\/-]/g, '').toLowerCase().trim();
+        const cleanPrompt = (prompt.batch || '').replace(/[\/-]/g, '').toLowerCase().trim();
+        if (cleanReq !== cleanPrompt && prompt.batch !== criteria.batch) return false;
+      }
+
+      if (query) {
+        const matchString = `${prompt.title} ${prompt.group} ${prompt.content} ${prompt.school || ''} ${prompt.batch || ''}`.toLowerCase();
+        if (!matchString.includes(query)) return false;
+      }
+
+      return true;
+    });
+
+  const sortMode: PromptSortMode = criteria.sort ?? 'newest';
+  if (sortMode === 'default') {
+    return indexed.map((item) => item.prompt);
+  }
+
+  indexed.sort((a, b) => {
+    if (sortMode === 'newest') {
+      const aNew = a.prompt.isNew ? 1 : 0;
+      const bNew = b.prompt.isNew ? 1 : 0;
+      if (aNew !== bNew) return bNew - aNew;
+
+      const aTime = getPromptSortTimestamp(a.prompt);
+      const bTime = getPromptSortTimestamp(b.prompt);
+      if (aTime !== bTime) return bTime - aTime;
+
+      const aNum = getPromptNumericSuffix(a.prompt.id);
+      const bNum = getPromptNumericSuffix(b.prompt.id);
+      if (aNum !== bNum) return bNum - aNum;
+
+      return b.idx - a.idx;
     }
 
-    if (criteria.batch !== 'all') {
-      const cleanReq = criteria.batch.replace(/[\/-]/g, '').toLowerCase().trim();
-      const cleanPrompt = (prompt.batch || '').replace(/[\/-]/g, '').toLowerCase().trim();
-      if (cleanReq !== cleanPrompt && prompt.batch !== criteria.batch) return false;
-    }
+    // oldest first
+    const aTime = getPromptSortTimestamp(a.prompt);
+    const bTime = getPromptSortTimestamp(b.prompt);
+    if (aTime !== bTime) return aTime - bTime;
 
-    if (query) {
-      const matchString = `${prompt.title} ${prompt.group} ${prompt.content} ${prompt.school || ''} ${prompt.batch || ''}`.toLowerCase();
-      if (!matchString.includes(query)) return false;
-    }
+    const aNew = a.prompt.isNew ? 1 : 0;
+    const bNew = b.prompt.isNew ? 1 : 0;
+    if (aNew !== bNew) return aNew - bNew;
 
-    return true;
+    return a.idx - b.idx;
   });
+
+  return indexed.map((item) => item.prompt);
 }
 
 export function buildPromptsUrlQuery({
@@ -209,6 +277,8 @@ export function buildPromptsUrlQuery({
   part,
   search,
   examId,
+  onlyNew,
+  sort,
 }: {
   school?: string;
   batch?: string;
@@ -216,6 +286,8 @@ export function buildPromptsUrlQuery({
   part?: PartFilter;
   search?: string;
   examId?: string;
+  onlyNew?: boolean;
+  sort?: PromptSortMode;
 }): string {
   const parts: string[] = [];
 
@@ -248,7 +320,17 @@ export function buildPromptsUrlQuery({
     parts.push(`q=${encodeURIComponent(search.trim())}`);
   }
 
-  // 6. selected exam id (e.g. &exam=...)
+  // 6. onlyNew filter
+  if (onlyNew) {
+    parts.push('new=1');
+  }
+
+  // 7. sort mode (omit default 'newest' to keep URLs clean)
+  if (sort && sort !== 'newest') {
+    parts.push(`sort=${encodeURIComponent(sort)}`);
+  }
+
+  // 8. selected exam id (e.g. &exam=...)
   if (examId && examId.trim()) {
     parts.push(`exam=${encodeURIComponent(examId.trim())}`);
   }

@@ -17,7 +17,7 @@ import {
   filterExamPrompts,
   parsePromptsUrlQuery,
 } from '@/app/prompts/utils';
-import type { PartFilter, SkillFilter } from '@/app/prompts/types';
+import type { PartFilter, PromptSortMode, SkillFilter } from '@/app/prompts/types';
 import { DatingDeckApp } from './components/DatingDeckApp';
 
 function DatingAppContent() {
@@ -78,8 +78,10 @@ function DatingAppContent() {
     const skill: SkillFilter = parsed.skill ?? 'all';
     const part: PartFilter = parsed.part ?? 'all';
     const search = parsed.search ?? '';
+    const onlyNew = parsed.onlyNew ?? false;
+    const sort: PromptSortMode = parsed.sort ?? 'newest';
 
-    return { school, batch, skill, part, search };
+    return { school, batch, skill, part, search, onlyNew, sort };
   }, [queryString, settings.school, settings.batch]);
 
   const filteredPrompts = useMemo(
@@ -94,6 +96,8 @@ function DatingAppContent() {
       skill: filters.skill,
       part: filters.part,
       search: filters.search,
+      onlyNew: filters.onlyNew,
+      sort: filters.sort,
     });
     return qs ? `/prompts?${qs}` : '/prompts';
   }, [filters]);

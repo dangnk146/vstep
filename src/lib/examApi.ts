@@ -16,6 +16,8 @@ export type RemoteExam = {
   school?: string;
   batch?: string;
   group?: string;
+  isNew?: boolean;
+  addedAt?: string;
   videoId?: string;
   [key: string]: unknown;
 };

@@ -36,7 +36,12 @@ export function PromptDetailCard({
       aria-labelledby="selected-prompt-heading"
     >
       <div className="flex items-center justify-between bg-[#245b86]/10 px-3.5 py-2.5 border-b border-[#245b86]/20">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 flex-wrap">
+          {prompt.isNew && (
+            <span className="rounded-xs bg-gradient-to-r from-pink-500 to-rose-500 px-1.5 py-0.5 text-[10px] font-black text-white uppercase tracking-wider shadow-2xs">
+              NEW
+            </span>
+          )}
           <span className="rounded-xs bg-[#245b86] px-2 py-0.5 text-[11px] font-bold text-white uppercase tracking-wider">
             {category ? category.label : prompt.category}
           </span>

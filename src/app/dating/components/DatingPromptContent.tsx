@@ -240,16 +240,23 @@ function ExamTypeBadge({
   tone,
   icon: Icon,
   reviewCount,
+  isNew,
 }: {
   label: string;
   sub: string;
   tone: 'speaking' | 'writing';
   icon: React.ComponentType<{ className?: string }>;
   reviewCount?: number;
+  isNew?: boolean;
 }) {
   return (
     <div className="flex items-center justify-between gap-2">
       <div className="flex items-center gap-1.5 min-w-0">
+        {isNew && (
+          <span className="inline-flex items-center rounded-md bg-gradient-to-r from-pink-500 to-rose-500 px-1.5 py-0.5 text-[9.5px] font-black uppercase tracking-wider text-white shrink-0">
+            NEW
+          </span>
+        )}
         <span
           className={`inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-[10.5px] font-black uppercase tracking-wide text-white shrink-0 ${
             tone === 'speaking' ? 'bg-emerald-600' : 'bg-[#245b86] dark:bg-sky-600'
@@ -285,6 +292,7 @@ export function DatingPromptContent({ prompt, reviewCount }: DatingPromptContent
           tone="speaking"
           icon={MessageSquare}
           reviewCount={reviewCount}
+          isNew={prompt.isNew}
         />
 
         <h2 className="text-base sm:text-lg font-black text-foreground leading-snug">
@@ -326,6 +334,7 @@ export function DatingPromptContent({ prompt, reviewCount }: DatingPromptContent
           tone="speaking"
           icon={Scale}
           reviewCount={reviewCount}
+          isNew={prompt.isNew}
         />
 
         <h2 className="text-base sm:text-lg font-black text-foreground leading-snug">
@@ -395,6 +404,7 @@ export function DatingPromptContent({ prompt, reviewCount }: DatingPromptContent
           tone="speaking"
           icon={Lightbulb}
           reviewCount={reviewCount}
+          isNew={prompt.isNew}
         />
 
         {/* VSTEP Part 3 Diagram */}
@@ -474,6 +484,7 @@ export function DatingPromptContent({ prompt, reviewCount }: DatingPromptContent
           tone="writing"
           icon={Mail}
           reviewCount={reviewCount}
+          isNew={prompt.isNew}
         />
 
         <h2 className="text-base sm:text-lg font-black text-foreground leading-snug">
@@ -553,6 +564,7 @@ export function DatingPromptContent({ prompt, reviewCount }: DatingPromptContent
           tone="writing"
           icon={FileText}
           reviewCount={reviewCount}
+          isNew={prompt.isNew}
         />
 
         <h2 className="text-base sm:text-lg font-black text-foreground leading-snug">

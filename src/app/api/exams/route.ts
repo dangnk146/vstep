@@ -35,13 +35,16 @@ const DATA_DIR = path.join(process.cwd(), 'src', 'data');
 const fileCache = new Map<string, unknown>();
 
 async function readJsonFile<T>(relativePath: string): Promise<T> {
-  if (fileCache.has(relativePath)) {
+  const useCache = process.env.NODE_ENV === 'production';
+  if (useCache && fileCache.has(relativePath)) {
     return fileCache.get(relativePath) as T;
   }
   const fullPath = path.join(DATA_DIR, relativePath);
   const raw = await fs.readFile(fullPath, 'utf8');
   const parsed = JSON.parse(raw) as T;
-  fileCache.set(relativePath, parsed);
+  if (useCache) {
+    fileCache.set(relativePath, parsed);
+  }
   return parsed;
 }
 

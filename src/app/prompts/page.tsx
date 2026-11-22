@@ -24,7 +24,7 @@ import {
   saveExamApiSettings,
   subscribeToExamApiSettings,
 } from '@/lib/examApi';
-import type { SkillFilter, PartFilter, ExportConfig } from './types';
+import type { SkillFilter, PartFilter, ExportConfig, PromptSortMode } from './types';
 import { PromptHeader } from './components/PromptHeader';
 import { PromptSidebar } from './components/PromptSidebar';
 import { PromptDetailCard } from './components/PromptDetailCard';
@@ -55,6 +55,8 @@ export default function PromptBankPage() {
   const [selectedBatch, setSelectedBatch] = useState<string>(settings.batch || 'all');
   const [search, setSearch] = useState('');
   const [debouncedSearch, setDebouncedSearch] = useState('');
+  const [onlyNew, setOnlyNew] = useState(false);
+  const [sortMode, setSortMode] = useState<PromptSortMode>('newest');
 
   // Active prompt drawer
   const [selectedPrompt, setSelectedPrompt] = useState<ExamPrompt | null>(null);
@@ -114,6 +116,14 @@ export default function PromptBankPage() {
         setDebouncedSearch(parsed.search);
       }
 
+      if (parsed.onlyNew !== undefined) {
+        setOnlyNew(parsed.onlyNew);
+      }
+
+      if (parsed.sort !== undefined) {
+        setSortMode(parsed.sort);
+      }
+
       if (parsed.examId) {
         initialExamIdRef.current = parsed.examId;
       }
@@ -152,6 +162,8 @@ export default function PromptBankPage() {
       skill: selectedSkill,
       part: selectedPart,
       search: debouncedSearch,
+      onlyNew,
+      sort: sortMode,
       examId: selectedPrompt?.id,
     });
 
@@ -161,7 +173,7 @@ export default function PromptBankPage() {
     if (currentUrl !== canonicalUrl) {
       window.history.replaceState(null, '', canonicalUrl);
     }
-  }, [selectedSkill, selectedPart, selectedSchool, selectedBatch, debouncedSearch, selectedPrompt]);
+  }, [selectedSkill, selectedPart, selectedSchool, selectedBatch, debouncedSearch, onlyNew, sortMode, selectedPrompt]);
 
   // Load all prompts and filter options on mount
   useEffect(() => {
@@ -204,8 +216,8 @@ export default function PromptBankPage() {
     saveExamApiSettings({ ...settings, batch: batch === 'all' ? '' : batch });
   };
 
-  // Main filtered prompts for display (shared with standalone /dating app)
-  const filteredPrompts = useMemo(
+  // Prompts matching scope before onlyNew filter (to display accurate NEW badge count)
+  const scopedPrompts = useMemo(
     () =>
       filterExamPrompts(allPrompts, {
         skill: selectedSkill,
@@ -213,8 +225,21 @@ export default function PromptBankPage() {
         school: selectedSchool,
         batch: selectedBatch,
         search,
+        onlyNew: false,
+        sort: sortMode,
       }),
-    [allPrompts, selectedSkill, selectedPart, selectedSchool, selectedBatch, search]
+    [allPrompts, selectedSkill, selectedPart, selectedSchool, selectedBatch, search, sortMode]
+  );
+
+  const newPromptsCount = useMemo(
+    () => scopedPrompts.filter((p) => p.isNew).length,
+    [scopedPrompts]
+  );
+
+  // Main filtered prompts for display (shared with standalone /dating app)
+  const filteredPrompts = useMemo(
+    () => (onlyNew ? scopedPrompts.filter((p) => p.isNew) : scopedPrompts),
+    [scopedPrompts, onlyNew]
   );
 
   // Build URL for standalone /dating app carrying current configured filters
@@ -225,9 +250,11 @@ export default function PromptBankPage() {
       skill: selectedSkill,
       part: selectedPart,
       search,
+      onlyNew,
+      sort: sortMode,
     });
     return queryString ? `/dating?${queryString}` : '/dating';
-  }, [selectedSchool, selectedBatch, selectedSkill, selectedPart, search]);
+  }, [selectedSchool, selectedBatch, selectedSkill, selectedPart, search, onlyNew, sortMode]);
 
   // Counts by category
   const counts = useMemo(() => {
@@ -461,6 +488,11 @@ export default function PromptBankPage() {
             selectedPromptId={selectedPrompt?.id}
             copiedPromptId={copiedPromptId}
             copiedAll={copiedAll}
+            onlyNew={onlyNew}
+            newPromptsCount={newPromptsCount}
+            sortMode={sortMode}
+            onToggleOnlyNew={() => setOnlyNew((prev) => !prev)}
+            onSortModeChange={setSortMode}
             onSelectPrompt={handleSelectPrompt}
             onCopyPrompt={(prompt) => void handleCopyPrompt(prompt)}
             onCopyAll={() => void handleCopyAll()}

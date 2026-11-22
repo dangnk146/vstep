@@ -2,14 +2,17 @@
 
 import React from 'react';
 import {
+  ArrowDownUp,
   ArrowRight,
   Check,
   Copy,
   Download,
   Eye,
   LoaderCircle,
+  Sparkles,
 } from 'lucide-react';
 import { getExamCategory, toReadablePromptText, type ExamPrompt } from '@/utils/examPrompts';
+import type { PromptSortMode } from '../types';
 
 interface PromptListProps {
   prompts: ExamPrompt[];
@@ -18,6 +21,11 @@ interface PromptListProps {
   selectedPromptId?: string;
   copiedPromptId: string | null;
   copiedAll: boolean;
+  onlyNew: boolean;
+  newPromptsCount: number;
+  sortMode: PromptSortMode;
+  onToggleOnlyNew: () => void;
+  onSortModeChange: (mode: PromptSortMode) => void;
   onSelectPrompt: (prompt: ExamPrompt) => void;
   onCopyPrompt: (prompt: ExamPrompt) => void;
   onCopyAll: () => void;
@@ -32,6 +40,11 @@ export function PromptList({
   selectedPromptId,
   copiedPromptId,
   copiedAll,
+  onlyNew,
+  newPromptsCount,
+  sortMode,
+  onToggleOnlyNew,
+  onSortModeChange,
   onSelectPrompt,
   onCopyPrompt,
   onCopyAll,
@@ -42,9 +55,49 @@ export function PromptList({
     <section aria-label="Danh sách đề thi" className="space-y-2.5">
       {/* List Toolbar */}
       <div className="flex flex-wrap items-center justify-between gap-2 px-1">
-        <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">
-          {isLoading ? 'Đang tải danh sách...' : `Danh sách đề thi (${prompts.length})`}
-        </span>
+        <div className="flex flex-wrap items-center gap-2">
+          <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">
+            {isLoading ? 'Đang tải danh sách...' : `Danh sách đề thi (${prompts.length})`}
+          </span>
+
+          {!isLoading && (newPromptsCount > 0 || onlyNew) && (
+            <button
+              type="button"
+              onClick={onToggleOnlyNew}
+              title="Lọc chỉ hiển thị các đề mới cập nhật"
+              className={`inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[11px] font-black transition active:scale-95 cursor-pointer ${
+                onlyNew
+                  ? 'btn-dating-pink text-white shadow-xs'
+                  : 'border border-pink-500/40 bg-pink-500/10 text-pink-600 dark:text-pink-400 hover:bg-pink-500/20'
+              }`}
+            >
+              <Sparkles className="h-3 w-3 shrink-0" />
+              <span>Đề NEW ({newPromptsCount})</span>
+            </button>
+          )}
+
+          {!isLoading && (
+            <div className="inline-flex items-center gap-1 rounded-xs border border-border bg-card px-2 py-0.5 text-[11px] font-semibold text-foreground shadow-2xs">
+              <ArrowDownUp className="h-3 w-3 text-primary shrink-0" />
+              <select
+                value={sortMode}
+                onChange={(e) => onSortModeChange(e.target.value as PromptSortMode)}
+                aria-label="Sắp xếp danh sách đề thi"
+                className="bg-transparent text-[11px] font-bold text-foreground outline-none cursor-pointer"
+              >
+                <option value="newest" className="bg-card text-foreground">
+                  Mới thêm nhất
+                </option>
+                <option value="oldest" className="bg-card text-foreground">
+                  Cũ nhất trước
+                </option>
+                <option value="default" className="bg-card text-foreground">
+                  Thứ tự gốc
+                </option>
+              </select>
+            </div>
+          )}
+        </div>
 
         {!isLoading && prompts.length > 0 && (
           <div className="flex flex-wrap items-center gap-1.5">
@@ -158,6 +211,11 @@ export function PromptList({
                   {/* Header Tags & Quick Copy Button */}
                   <div className="mb-2 flex items-center justify-between gap-1">
                     <div className="flex flex-wrap items-center gap-1">
+                      {prompt.isNew && (
+                        <span className="inline-flex items-center rounded-xs bg-gradient-to-r from-pink-500 to-rose-500 px-1.5 py-0.5 text-[9.5px] font-black uppercase tracking-wider text-white shadow-2xs">
+                          NEW
+                        </span>
+                      )}
                       <span
                         className={`rounded-xs px-1.5 py-0.5 text-[10px] font-bold ${
                           isSpeaking
