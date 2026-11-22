@@ -32,7 +32,6 @@ export function PromptHeader({
     <TopHeader
       icon={Database}
       title="VSTEP Ngân Hàng Đề Thi"
-      badge={`${totalCount} đề`}
       selectedSchool={selectedSchool}
       selectedBatch={selectedBatch}
       onRandom={onRandomPrompt}

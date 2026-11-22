@@ -1,8 +1,15 @@
 import { notFound } from 'next/navigation';
 import ListeningPage from '../../page';
-import videoData from '../../listvideo.json';
+import rawVideoData from '../../listvideo.json';
 
-type PartId = keyof typeof videoData;
+type VideoMap = {
+  part1: string[];
+  part2: string[];
+  part3: string[];
+};
+
+const videoData: VideoMap =
+  (rawVideoData as VideoMap & { default?: VideoMap }).default ?? (rawVideoData as VideoMap);
 
 export default async function PartVideoPage({
   params,
@@ -10,11 +17,14 @@ export default async function PartVideoPage({
   params: Promise<{ part: string; video: string }>;
 }) {
   const { part, video } = await params;
-  if (!Object.prototype.hasOwnProperty.call(videoData, part)) notFound();
+  if (part !== 'part1' && part !== 'part2' && part !== 'part3') {
+    notFound();
+  }
 
-  const videoNumber = Number(video.replace('video', ''));
-  const partVideos = videoData[part as PartId];
-  if (!/^video\d+$/.test(video) || videoNumber < 1 || videoNumber > partVideos.length) {
+  const partVideos = videoData[part];
+  const match = /^video(\d+)$/.exec(video);
+  const videoNumber = match ? Number(match[1]) : NaN;
+  if (!match || !Array.isArray(partVideos) || videoNumber < 1 || videoNumber > partVideos.length) {
     notFound();
   }
 

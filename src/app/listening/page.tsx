@@ -4,7 +4,6 @@ import { useCallback, useEffect, useRef, useState, useSyncExternalStore } from '
 import { usePathname, useRouter } from 'next/navigation';
 import { 
   Headphones, 
-  Flag, 
   Check,
   ChevronLeft,
   ChevronRight,
@@ -202,7 +201,6 @@ export default function ListeningPage() {
     getServerHydrationSnapshot,
   );
   const [answersByVideo, setAnswersByVideo] = useState<Record<string, Record<number, string>>>({});
-  const [flagsByVideo, setFlagsByVideo] = useState<Record<string, Record<number, boolean>>>({});
   const [answerKeysByVideo, setAnswerKeysByVideo] = useState<AnswerKeysByVideo>(initialSavedAnswerKeys.answerKeys);
   const [checkedVideoIds, setCheckedVideoIds] = useState<Set<string>>(new Set());
   const [isSaveDialogOpen, setIsSaveDialogOpen] = useState(false);
@@ -232,12 +230,8 @@ export default function ListeningPage() {
     (_, index) => partInfo.start + index,
   );
   const answers = answersByVideo[videoId] ?? {};
-  const flags = flagsByVideo[videoId] ?? {};
   const answerKey = isHydrated ? (answerKeysByVideo[videoId] ?? {}) : {};
   const isChecked = checkedVideoIds.has(videoId);
-
-  const answeredCount = questionNumbers.filter((number) => answers[number]).length;
-  const flaggedCount = questionNumbers.filter((number) => flags[number]).length;
 
   const questionGroups = (() => {
     const chunkSize = partInfo.collapse;
@@ -342,16 +336,6 @@ export default function ListeningPage() {
       return updated;
     });
     setFeedback('');
-  };
-
-  const toggleFlag = (qNumber: number) => {
-    setFlagsByVideo((previous) => ({
-      ...previous,
-      [videoId]: {
-        ...previous[videoId],
-        [qNumber]: !previous[videoId]?.[qNumber],
-      },
-    }));
   };
 
   const navigateToVideo = useCallback((part: PartId, video: number) => {
@@ -553,19 +537,6 @@ export default function ListeningPage() {
               Không tải được bộ điều khiển YouTube; nút tua không khả dụng.
             </p>
           )}
-
-          {/* Instructions bar */}
-          <div className="flex shrink-0 items-center justify-between gap-2 border-t border-border bg-muted/30 px-3 py-1.5 text-xs text-muted-foreground">
-            <div className="flex items-center gap-1.5 text-xs font-semibold text-foreground/90">
-              <Headphones className="h-3.5 w-3.5 text-primary shrink-0" />
-              <span>
-                {partInfo.label}: {partInfo.count} câu hỏi (Câu {partInfo.start} - {partInfo.start + partInfo.count - 1})
-              </span>
-            </div>
-            <span className="hidden text-[11px] text-muted-foreground sm:inline">
-              Lắng nghe kỹ đoạn băng và chọn đáp án ở khung bên phải.
-            </span>
-          </div>
         </section>
 
         {/* Questions Section */}
@@ -573,21 +544,13 @@ export default function ListeningPage() {
           className="order-2 flex min-h-0 min-w-0 flex-col overflow-hidden rounded-xl border border-border bg-card lg:order-2"
           aria-labelledby="answers-heading"
         >
-          {/* Question Header with Title, Stats, and Actions */}
+          {/* Question Header with Title and Actions */}
           <div className="flex shrink-0 items-center justify-between gap-1.5 border-b border-border bg-[#245b86] px-2 py-1.5 text-white sm:px-3 lg:px-4 lg:py-2">
-            <div className="flex min-w-0 items-center gap-1.5 sm:gap-3">
+            <div className="flex min-w-0 items-center gap-1.5">
               <h2 id="answers-heading" className="truncate text-xs font-extrabold lg:text-sm">
                 <span className="sm:hidden">{partInfo.label}</span>
                 <span className="hidden sm:inline">{partInfo.label} · Trắc nghiệm</span>
               </h2>
-              <div className="flex items-center gap-1.5 text-[10px] font-semibold sm:gap-2.5 sm:text-xs">
-                <span>
-                  Làm: <strong className="text-white">{answeredCount}/{partInfo.count}</strong>
-                </span>
-                <span>
-                  Dấu: <strong className="text-amber-300">{flaggedCount}</strong>
-                </span>
-              </div>
             </div>
 
             <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">
@@ -655,7 +618,6 @@ export default function ListeningPage() {
                     <div className="flex items-center gap-1.5 truncate">
                       <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
                       <span className="truncate">{group.title}</span>
-                      <span className="shrink-0 text-[10px] font-medium text-muted-foreground">({group.subtitle})</span>
                     </div>
                     <div className="flex items-center gap-1.5 shrink-0">
                       <span className="text-[10px] font-semibold text-muted-foreground">
@@ -672,7 +634,6 @@ export default function ListeningPage() {
                     <div className="p-1.5 space-y-1.5 sm:p-2 sm:space-y-2">
                       {group.questions.map((qNum) => {
                         const selectedOpt = answers[qNum];
-                        const isFlagged = flags[qNum];
 
                         return (
                           <div
@@ -711,16 +672,6 @@ export default function ListeningPage() {
                                 );
                               })}
                             </div>
-                            <button
-                              type="button"
-                              onClick={() => toggleFlag(qNum)}
-                              aria-label={isFlagged ? `Bỏ đánh dấu câu ${qNum}` : `Đánh dấu câu ${qNum} để xem lại`}
-                              aria-pressed={Boolean(isFlagged)}
-                              className={`grid h-6.5 w-6.5 shrink-0 place-items-center rounded transition-colors cursor-pointer sm:h-7.5 sm:w-7.5 ${isFlagged ? 'text-amber-500' : 'text-muted-foreground/40 hover:text-amber-500'}`}
-                              title="Đánh dấu xem lại"
-                            >
-                              <Flag className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-                            </button>
                           </div>
                         );
                       })}

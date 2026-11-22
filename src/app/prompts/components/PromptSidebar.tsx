@@ -24,7 +24,6 @@ interface PromptSidebarProps {
   selectedBatch: string;
   search: string;
   filteredCount: number;
-  totalCount: number;
   counts: Record<string, number>;
   availableSchools: string[];
   availableBatches: string[];
@@ -43,7 +42,6 @@ export function PromptSidebar({
   selectedBatch,
   search,
   filteredCount,
-  totalCount,
   counts,
   availableSchools,
   availableBatches,
@@ -93,7 +91,7 @@ export function PromptSidebar({
             Phần thi & Kỹ năng
           </span>
           <span className="text-[11px] font-bold text-primary">
-            {filteredCount}/{totalCount} đề
+            {filteredCount} đề
           </span>
         </div>
 
@@ -110,9 +108,6 @@ export function PromptSidebar({
           <span className="flex items-center gap-2">
             <BookOpen className="h-3.5 w-3.5" />
             <span>Tất cả đề thi</span>
-          </span>
-          <span className={`rounded-xs px-1.5 py-0.5 text-[10px] ${isAllSelected ? 'bg-white/20 text-white' : 'bg-muted text-muted-foreground'}`}>
-            {counts.all || 0}
           </span>
         </button>
 

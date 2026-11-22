@@ -256,10 +256,20 @@ export default function PromptBankPage() {
     return queryString ? `/dating?${queryString}` : '/dating';
   }, [selectedSchool, selectedBatch, selectedSkill, selectedPart, search, onlyNew, sortMode]);
 
-  // Counts by category
+  // Counts by category scoped to active School, Batch, Search & onlyNew filters
   const counts = useMemo(() => {
+    const baseScoped = filterExamPrompts(allPrompts, {
+      skill: 'all',
+      part: 'all',
+      school: selectedSchool,
+      batch: selectedBatch,
+      search,
+      onlyNew,
+      sort: 'default',
+    });
+
     const res: Record<string, number> = {
-      all: allPrompts.length,
+      all: baseScoped.length,
       speaking: 0,
       writing: 0,
       'speaking-part1': 0,
@@ -268,13 +278,13 @@ export default function PromptBankPage() {
       'writing-task1': 0,
       'writing-task2': 0,
     };
-    allPrompts.forEach((p) => {
+    baseScoped.forEach((p) => {
       if (p.category.startsWith('speaking-')) res.speaking++;
       if (p.category.startsWith('writing-')) res.writing++;
       if (res[p.category] !== undefined) res[p.category]++;
     });
     return res;
-  }, [allPrompts]);
+  }, [allPrompts, selectedSchool, selectedBatch, search, onlyNew]);
 
   // Select a prompt to view details
   const handleSelectPrompt = (prompt: ExamPrompt) => {
@@ -444,7 +454,6 @@ export default function PromptBankPage() {
           selectedBatch={selectedBatch}
           search={search}
           filteredCount={filteredPrompts.length}
-          totalCount={allPrompts.length}
           counts={counts}
           availableSchools={availableSchools}
           availableBatches={availableBatches}

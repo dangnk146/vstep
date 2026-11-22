@@ -57,7 +57,7 @@ export function PromptList({
       <div className="flex flex-wrap items-center justify-between gap-2 px-1">
         <div className="flex flex-wrap items-center gap-2">
           <span className="text-xs font-bold text-muted-foreground uppercase tracking-wider">
-            {isLoading ? 'Đang tải danh sách...' : `Danh sách đề thi (${prompts.length})`}
+            {isLoading ? 'Đang tải danh sách...' : 'Danh sách đề thi'}
           </span>
 
           {!isLoading && (newPromptsCount > 0 || onlyNew) && (
@@ -114,7 +114,7 @@ export function PromptList({
               ) : (
                 <Download className="h-3.5 w-3.5" />
               )}
-              <span>{isDownloading ? 'Đang tải file...' : `Xuất kết quả này ra Markdown (${prompts.length})`}</span>
+              <span>{isDownloading ? 'Đang tải file...' : 'Xuất Markdown'}</span>
             </button>
 
             {/* 2. NÚT SAO CHÉP NHANH TOÀN BỘ KẾT QUẢ ĐANG LỌC */}
@@ -267,10 +267,7 @@ export function PromptList({
                 </div>
 
                 {/* Card Footer */}
-                <div className="mt-3 flex items-center justify-between border-t border-border/50 pt-2 text-[10px]">
-                  <span className="text-muted-foreground truncate max-w-[130px]">
-                    {prompt.group || prompt.id}
-                  </span>
+                <div className="mt-3 flex items-center justify-end border-t border-border/50 pt-2 text-[10px]">
                   <span className="flex items-center gap-1 font-bold text-primary group-hover:translate-x-0.5 transition-transform">
                     <span>Xem đề</span>
                     <ArrowRight className="h-3 w-3" />
