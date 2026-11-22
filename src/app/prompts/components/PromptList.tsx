@@ -1,17 +1,30 @@
 'use client';
 
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import {
   ArrowDownUp,
   ArrowRight,
   Check,
+  ChevronDown,
+  ChevronUp,
   Copy,
   Download,
   Eye,
+  FileText,
+  Layers,
+  LayoutGrid,
+  Lightbulb,
   LoaderCircle,
+  Mail,
+  MessageSquare,
+  Scale,
   Sparkles,
 } from 'lucide-react';
-import { getExamCategory, toReadablePromptText, type ExamPrompt } from '@/utils/examPrompts';
+import {
+  toReadablePromptText,
+  type ExamCategory,
+  type ExamPrompt,
+} from '@/utils/examPrompts';
 import type { PromptSortMode } from '../types';
 
 interface PromptListProps {
@@ -33,6 +46,131 @@ interface PromptListProps {
   onOpenExportCurrent: () => void;
 }
 
+type CategoryStyle = {
+  id: ExamCategory;
+  shortLabel: string;
+  label: string;
+  subtitle: string;
+  icon: React.ComponentType<{ className?: string }>;
+  cardBorderLeft: string;
+  badgeClass: string;
+  headerBg: string;
+  headerBorder: string;
+  iconBox: string;
+  titleColor: string;
+  jumpPill: string;
+};
+
+const CATEGORY_ORDER: ExamCategory[] = [
+  'speaking-part1',
+  'speaking-part2',
+  'speaking-part3',
+  'writing-task1',
+  'writing-task2',
+];
+
+const CATEGORY_STYLES: Record<ExamCategory, CategoryStyle> = {
+  'speaking-part1': {
+    id: 'speaking-part1',
+    shortLabel: 'SP Part 1',
+    label: 'Speaking Part 1',
+    subtitle: 'Social Interaction',
+    icon: MessageSquare,
+    cardBorderLeft: 'border-l-emerald-500',
+    badgeClass:
+      'bg-emerald-500/12 text-emerald-700 dark:text-emerald-300 border border-emerald-500/25',
+    headerBg: 'bg-emerald-500/8 dark:bg-emerald-500/12',
+    headerBorder: 'border-emerald-500/25',
+    iconBox: 'bg-emerald-600 text-white',
+    titleColor: 'text-emerald-800 dark:text-emerald-300',
+    jumpPill:
+      'border-emerald-500/30 bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 hover:bg-emerald-500/20',
+  },
+  'speaking-part2': {
+    id: 'speaking-part2',
+    shortLabel: 'SP Part 2',
+    label: 'Speaking Part 2',
+    subtitle: 'Solution Discussion',
+    icon: Scale,
+    cardBorderLeft: 'border-l-teal-500',
+    badgeClass:
+      'bg-teal-500/12 text-teal-700 dark:text-teal-300 border border-teal-500/25',
+    headerBg: 'bg-teal-500/8 dark:bg-teal-500/12',
+    headerBorder: 'border-teal-500/25',
+    iconBox: 'bg-teal-600 text-white',
+    titleColor: 'text-teal-800 dark:text-teal-300',
+    jumpPill:
+      'border-teal-500/30 bg-teal-500/10 text-teal-700 dark:text-teal-300 hover:bg-teal-500/20',
+  },
+  'speaking-part3': {
+    id: 'speaking-part3',
+    shortLabel: 'SP Part 3',
+    label: 'Speaking Part 3',
+    subtitle: 'Topic Development',
+    icon: Lightbulb,
+    cardBorderLeft: 'border-l-amber-500',
+    badgeClass:
+      'bg-amber-500/14 text-amber-800 dark:text-amber-300 border border-amber-500/30',
+    headerBg: 'bg-amber-500/8 dark:bg-amber-500/12',
+    headerBorder: 'border-amber-500/25',
+    iconBox: 'bg-amber-500 text-white',
+    titleColor: 'text-amber-800 dark:text-amber-300',
+    jumpPill:
+      'border-amber-500/30 bg-amber-500/10 text-amber-800 dark:text-amber-300 hover:bg-amber-500/20',
+  },
+  'writing-task1': {
+    id: 'writing-task1',
+    shortLabel: 'WR Task 1',
+    label: 'Writing Task 1',
+    subtitle: 'Letter / Email',
+    icon: Mail,
+    cardBorderLeft: 'border-l-sky-500',
+    badgeClass:
+      'bg-sky-500/12 text-sky-700 dark:text-sky-300 border border-sky-500/25',
+    headerBg: 'bg-sky-500/8 dark:bg-sky-500/12',
+    headerBorder: 'border-sky-500/25',
+    iconBox: 'bg-sky-600 text-white',
+    titleColor: 'text-sky-800 dark:text-sky-300',
+    jumpPill:
+      'border-sky-500/30 bg-sky-500/10 text-sky-700 dark:text-sky-300 hover:bg-sky-500/20',
+  },
+  'writing-task2': {
+    id: 'writing-task2',
+    shortLabel: 'WR Task 2',
+    label: 'Writing Task 2',
+    subtitle: 'Essay Writing',
+    icon: FileText,
+    cardBorderLeft: 'border-l-indigo-500',
+    badgeClass:
+      'bg-indigo-500/12 text-indigo-700 dark:text-indigo-300 border border-indigo-500/25',
+    headerBg: 'bg-indigo-500/8 dark:bg-indigo-500/12',
+    headerBorder: 'border-indigo-500/25',
+    iconBox: 'bg-indigo-600 text-white',
+    titleColor: 'text-indigo-800 dark:text-indigo-300',
+    jumpPill:
+      'border-indigo-500/30 bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 hover:bg-indigo-500/20',
+  },
+};
+
+function cleanCardTitle(title: string): string {
+  return (
+    title
+      .replace(/^Part\s*[123]\s*[-–:]?\s*(?:Situation|Topic)\s*\d*\s*:\s*/i, '')
+      .replace(/^Topic\s*\d+\s*:\s*/i, '')
+      .replace(/^Task\s*[12](?:\.\d+)?\s*:\s*/i, '')
+      .trim() || title
+  );
+}
+
+function cleanCardSnippet(content: string): string {
+  return toReadablePromptText(content)
+    .replace(/^Read the following statement:\s*/i, '')
+    .replace(/^Situation:\s*/i, '')
+    .replace(/^Topic:\s*/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 export function PromptList({
   prompts,
   isLoading,
@@ -51,6 +189,113 @@ export function PromptList({
   onDownloadCurrent,
   onOpenExportCurrent,
 }: PromptListProps) {
+  const [groupByPart, setGroupByPart] = useState(true);
+  const [collapsedSections, setCollapsedSections] = useState<Partial<Record<ExamCategory, boolean>>>({});
+
+  const groupedSections = useMemo(() => {
+    const map = new Map<ExamCategory, ExamPrompt[]>();
+    for (const p of prompts) {
+      const list = map.get(p.category) || [];
+      list.push(p);
+      map.set(p.category, list);
+    }
+    return CATEGORY_ORDER.map((catId) => ({
+      meta: CATEGORY_STYLES[catId],
+      items: map.get(catId) || [],
+    })).filter((section) => section.items.length > 0);
+  }, [prompts]);
+
+  const hasMultipleParts = groupedSections.length > 1;
+  const shouldRenderGrouped = groupByPart && hasMultipleParts;
+
+  const toggleSection = (catId: ExamCategory) => {
+    setCollapsedSections((prev) => ({ ...prev, [catId]: !prev[catId] }));
+  };
+
+  const jumpToSection = (catId: ExamCategory) => {
+    setCollapsedSections((prev) => ({ ...prev, [catId]: false }));
+    const el = document.getElementById(`prompt-group-${catId}`);
+    el?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  const renderCard = (prompt: ExamPrompt, showCategoryBadge: boolean) => {
+    const isSelected = selectedPromptId === prompt.id;
+    const style = CATEGORY_STYLES[prompt.category];
+    const isCardCopied = copiedPromptId === prompt.id;
+    const metaLine = [prompt.school, prompt.batch].filter(Boolean).join(' · ');
+
+    return (
+      <div
+        key={prompt.id}
+        onClick={() => onSelectPrompt(prompt)}
+        className={`group relative flex flex-col justify-between rounded-sm border border-l-3 ${style.cardBorderLeft} p-3 text-left transition hover:shadow-sm cursor-pointer ${
+          isSelected
+            ? 'border-[#245b86] bg-[#245b86]/6 ring-1 ring-[#245b86]/30'
+            : 'border-border bg-card hover:border-primary/45'
+        }`}
+      >
+        <div>
+          {/* Clean Top Meta Row */}
+          <div className="mb-1.5 flex items-center justify-between gap-1.5">
+            <div className="flex flex-wrap items-center gap-1.5 min-w-0">
+              {prompt.isNew && (
+                <span className="inline-flex items-center rounded-xs bg-gradient-to-r from-pink-500 to-rose-500 px-1.5 py-0.5 text-[9.5px] font-black uppercase tracking-wider text-white shadow-2xs shrink-0">
+                  NEW
+                </span>
+              )}
+              {showCategoryBadge && (
+                <span
+                  className={`rounded-xs px-1.5 py-0.5 text-[10px] font-bold shrink-0 ${style.badgeClass}`}
+                >
+                  {style.label}
+                </span>
+              )}
+              {metaLine && (
+                <span className="text-[10.5px] font-medium text-muted-foreground truncate">
+                  {metaLine}
+                </span>
+              )}
+            </div>
+
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                onCopyPrompt(prompt);
+              }}
+              title="Sao chép nhanh đề này"
+              className="grid h-6 w-6 shrink-0 place-items-center rounded-xs text-muted-foreground opacity-75 group-hover:opacity-100 hover:bg-muted hover:text-foreground transition cursor-pointer"
+            >
+              {isCardCopied ? (
+                <Check className="h-3 w-3 text-emerald-600" />
+              ) : (
+                <Copy className="h-3 w-3" />
+              )}
+            </button>
+          </div>
+
+          {/* Crisp De-noised Topic Title */}
+          <h3 className="text-[13px] font-extrabold leading-snug text-foreground group-hover:text-primary transition-colors">
+            {cleanCardTitle(prompt.title)}
+          </h3>
+
+          {/* Clean 2-Line Snippet */}
+          <p className="mt-1.5 line-clamp-2 text-[11.5px] leading-relaxed text-muted-foreground font-sans">
+            {cleanCardSnippet(prompt.content)}
+          </p>
+        </div>
+
+        {/* Minimal Footer */}
+        <div className="mt-2.5 flex items-center justify-end pt-1.5 text-[10.5px]">
+          <span className="flex items-center gap-1 font-bold text-primary/90 group-hover:text-primary group-hover:translate-x-0.5 transition-all">
+            <span>Xem đề</span>
+            <ArrowRight className="h-3 w-3" />
+          </span>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section aria-label="Danh sách đề thi" className="space-y-2.5">
       {/* List Toolbar */}
@@ -97,11 +342,35 @@ export function PromptList({
               </select>
             </div>
           )}
+
+          {!isLoading && hasMultipleParts && (
+            <button
+              type="button"
+              onClick={() => setGroupByPart((prev) => !prev)}
+              title={groupByPart ? 'Đang nhóm theo từng Part — bấm để xem trộn chung' : 'Đang xem trộn chung — bấm để nhóm theo từng Part'}
+              className={`inline-flex items-center gap-1 rounded-xs border px-2 py-0.5 text-[11px] font-bold transition cursor-pointer shadow-2xs ${
+                groupByPart
+                  ? 'border-primary/40 bg-primary/10 text-primary'
+                  : 'border-border bg-card text-muted-foreground hover:text-foreground'
+              }`}
+            >
+              {groupByPart ? (
+                <>
+                  <Layers className="h-3 w-3 shrink-0" />
+                  <span>Nhóm theo Part</span>
+                </>
+              ) : (
+                <>
+                  <LayoutGrid className="h-3 w-3 shrink-0" />
+                  <span>Trộn chung</span>
+                </>
+              )}
+            </button>
+          )}
         </div>
 
         {!isLoading && prompts.length > 0 && (
           <div className="flex flex-wrap items-center gap-1.5">
-            {/* 1. NÚT XUẤT MARKDOWN TRỰC TIẾP - MÀU TÍM NỔI BẬT */}
             <button
               type="button"
               onClick={onDownloadCurrent}
@@ -117,7 +386,6 @@ export function PromptList({
               <span>{isDownloading ? 'Đang tải file...' : 'Xuất Markdown'}</span>
             </button>
 
-            {/* 2. NÚT SAO CHÉP NHANH TOÀN BỘ KẾT QUẢ ĐANG LỌC */}
             <button
               type="button"
               onClick={onCopyAll}
@@ -137,7 +405,6 @@ export function PromptList({
               )}
             </button>
 
-            {/* 3. NÚT XEM TRƯỚC (PREVIEW MODAL) */}
             <button
               type="button"
               onClick={onOpenExportCurrent}
@@ -151,10 +418,30 @@ export function PromptList({
         )}
       </div>
 
+      {/* Quick-Jump Color Pills across Part Sections */}
+      {!isLoading && shouldRenderGrouped && (
+        <div className="flex flex-wrap items-center gap-1.5 px-1">
+          {groupedSections.map(({ meta, items }) => {
+            const Icon = meta.icon;
+            return (
+              <button
+                key={meta.id}
+                type="button"
+                onClick={() => jumpToSection(meta.id)}
+                className={`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-0.5 text-[11px] font-bold transition active:scale-95 cursor-pointer ${meta.jumpPill}`}
+              >
+                <Icon className="h-3 w-3 shrink-0" />
+                <span>{meta.label}</span>
+                <span className="opacity-75">({items.length})</span>
+              </button>
+            );
+          })}
+        </div>
+      )}
+
       {/* SKELETON LOADING STATE */}
       {isLoading ? (
         <div className="space-y-3 animate-fade-in">
-          {/* Shimmer loading banner */}
           <div className="flex items-center justify-between rounded-xs border border-border bg-card p-3 shadow-xs">
             <div className="flex items-center gap-2.5">
               <LoaderCircle className="h-4 w-4 animate-spin text-[#7c3aed]" />
@@ -163,8 +450,7 @@ export function PromptList({
             <span className="text-[11px] text-muted-foreground animate-pulse">Vui lòng đợi giây lát</span>
           </div>
 
-          {/* Grid Skeleton Cards */}
-          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
             {Array.from({ length: 8 }).map((_, idx) => (
               <div
                 key={idx}
@@ -172,7 +458,6 @@ export function PromptList({
               >
                 <div className="flex items-center gap-1.5">
                   <div className="h-4 w-20 rounded-xs bg-muted" />
-                  <div className="h-4 w-12 rounded-xs bg-muted" />
                   <div className="h-4 w-14 rounded-xs bg-muted" />
                 </div>
                 <div className="h-4 w-4/5 rounded-xs bg-muted" />
@@ -180,103 +465,78 @@ export function PromptList({
                   <div className="h-3 w-full rounded-xs bg-muted/60" />
                   <div className="h-3 w-5/6 rounded-xs bg-muted/60" />
                 </div>
-                <div className="flex justify-between items-center pt-2.5 border-t border-border/40">
-                  <div className="h-3 w-24 rounded-xs bg-muted/60" />
-                  <div className="h-3 w-14 rounded-xs bg-muted/60" />
-                </div>
               </div>
             ))}
           </div>
         </div>
       ) : prompts.length > 0 ? (
-        /* PROMPTS GRID */
-        <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4">
-          {prompts.map((prompt) => {
-            const isSelected = selectedPromptId === prompt.id;
-            const isSpeaking = prompt.category.startsWith('speaking-');
-            const category = getExamCategory(prompt.category);
-            const isCardCopied = copiedPromptId === prompt.id;
+        shouldRenderGrouped ? (
+          /* GROUPED BY PART SECTIONS (Clean visual separation between Speaking P1/P2/P3 & Writing T1/T2) */
+          <div className="space-y-4">
+            {groupedSections.map(({ meta, items }) => {
+              const Icon = meta.icon;
+              const isCollapsed = Boolean(collapsedSections[meta.id]);
+              const sectionNewCount = items.filter((p) => p.isNew).length;
 
-            return (
-              <div
-                key={prompt.id}
-                onClick={() => onSelectPrompt(prompt)}
-                className={`group relative flex flex-col justify-between rounded-sm border p-3 text-left transition hover:shadow-xs cursor-pointer ${
-                  isSelected
-                    ? 'border-[#245b86] bg-[#245b86]/5'
-                    : 'border-border bg-card hover:border-primary/50'
-                }`}
-              >
-                <div>
-                  {/* Header Tags & Quick Copy Button */}
-                  <div className="mb-2 flex items-center justify-between gap-1">
-                    <div className="flex flex-wrap items-center gap-1">
-                      {prompt.isNew && (
-                        <span className="inline-flex items-center rounded-xs bg-gradient-to-r from-pink-500 to-rose-500 px-1.5 py-0.5 text-[9.5px] font-black uppercase tracking-wider text-white shadow-2xs">
-                          NEW
-                        </span>
-                      )}
-                      <span
-                        className={`rounded-xs px-1.5 py-0.5 text-[10px] font-bold ${
-                          isSpeaking
-                            ? 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-500/20'
-                            : 'bg-blue-500/10 text-blue-700 dark:text-blue-400 border border-blue-500/20'
-                        }`}
-                      >
-                        {category ? category.label : prompt.category}
+              return (
+                <div
+                  key={meta.id}
+                  id={`prompt-group-${meta.id}`}
+                  className="scroll-mt-3 space-y-2.5"
+                >
+                  {/* Section Header */}
+                  <button
+                    type="button"
+                    onClick={() => toggleSection(meta.id)}
+                    className={`flex w-full items-center justify-between gap-2 rounded-sm border ${meta.headerBorder} ${meta.headerBg} px-3 py-2 text-left transition hover:brightness-98 dark:hover:brightness-110 cursor-pointer`}
+                  >
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <span className={`grid h-6 w-6 shrink-0 place-items-center rounded-xs shadow-2xs ${meta.iconBox}`}>
+                        <Icon className="h-3.5 w-3.5" />
                       </span>
-                      {prompt.school && (
-                        <span className="rounded-xs bg-muted px-1.5 py-0.5 text-[10px] font-semibold text-foreground border border-border">
-                          {prompt.school}
+                      <div className="flex flex-wrap items-baseline gap-x-2 gap-y-0.5 min-w-0">
+                        <h2 className={`text-xs sm:text-[13px] font-black tracking-tight ${meta.titleColor}`}>
+                          {meta.label}
+                        </h2>
+                        <span className="text-[11px] font-medium text-muted-foreground">
+                          {meta.subtitle}
                         </span>
-                      )}
-                      {prompt.batch && (
-                        <span className="rounded-xs bg-muted px-1.5 py-0.5 text-[10px] font-medium text-muted-foreground">
-                          {prompt.batch}
-                        </span>
-                      )}
+                      </div>
                     </div>
 
-                    {/* Quick Copy on Card */}
-                    <button
-                      type="button"
-                      onClick={(e) => {
-                        e.stopPropagation();
-                        onCopyPrompt(prompt);
-                      }}
-                      title="Sao chép nhanh đề này"
-                      className="grid h-6 w-6 shrink-0 place-items-center rounded-xs text-muted-foreground hover:bg-muted hover:text-foreground transition cursor-pointer"
-                    >
-                      {isCardCopied ? (
-                        <Check className="h-3 w-3 text-emerald-600" />
-                      ) : (
-                        <Copy className="h-3 w-3" />
+                    <div className="flex items-center gap-2 shrink-0">
+                      {sectionNewCount > 0 && (
+                        <span className="rounded-full bg-pink-500/15 border border-pink-500/30 px-2 py-0.5 text-[10px] font-black text-pink-600 dark:text-pink-400">
+                          {sectionNewCount} NEW
+                        </span>
                       )}
-                    </button>
-                  </div>
+                      <span className="rounded-xs bg-background/80 border border-border/70 px-2 py-0.5 text-[11px] font-bold text-foreground">
+                        {items.length} đề
+                      </span>
+                      {isCollapsed ? (
+                        <ChevronDown className="h-4 w-4 text-muted-foreground" />
+                      ) : (
+                        <ChevronUp className="h-4 w-4 text-muted-foreground" />
+                      )}
+                    </div>
+                  </button>
 
-                  {/* Title */}
-                  <h3 className="text-xs font-bold leading-snug text-foreground group-hover:text-primary transition-colors">
-                    {prompt.title}
-                  </h3>
-
-                  {/* Content snippet */}
-                  <p className="mt-1.5 line-clamp-2 text-[11px] leading-relaxed text-muted-foreground font-sans">
-                    {toReadablePromptText(prompt.content)}
-                  </p>
+                  {/* Cards inside this Part (no redundant Part badge repeated on every card) */}
+                  {!isCollapsed && (
+                    <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+                      {items.map((prompt) => renderCard(prompt, false))}
+                    </div>
+                  )}
                 </div>
-
-                {/* Card Footer */}
-                <div className="mt-3 flex items-center justify-end border-t border-border/50 pt-2 text-[10px]">
-                  <span className="flex items-center gap-1 font-bold text-primary group-hover:translate-x-0.5 transition-transform">
-                    <span>Xem đề</span>
-                    <ArrowRight className="h-3 w-3" />
-                  </span>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+              );
+            })}
+          </div>
+        ) : (
+          /* SINGLE-PART OR FLAT MIXED GRID */
+          <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+            {prompts.map((prompt) => renderCard(prompt, hasMultipleParts))}
+          </div>
+        )
       ) : (
         <div className="rounded-sm border border-dashed border-border bg-card p-8 text-center">
           <p className="text-sm font-bold text-foreground">Không tìm thấy đề thi phù hợp</p>
