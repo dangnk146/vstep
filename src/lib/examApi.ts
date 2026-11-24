@@ -19,6 +19,7 @@ export type RemoteExam = {
   isNew?: boolean;
   addedAt?: string;
   videoId?: string;
+  hint?: unknown;
   [key: string]: unknown;
 };
 

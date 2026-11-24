@@ -6,6 +6,7 @@ import {
   CheckCircle2,
   Clock,
   Heart,
+  Lightbulb,
   Maximize2,
   Minimize2,
   RotateCcw,
@@ -14,6 +15,8 @@ import {
 } from 'lucide-react';
 import type { ExamPrompt } from '@/utils/examPrompts';
 import type { PartFilter, SkillFilter } from '@/app/prompts/types';
+import { ExamHintDrawer } from '@/components/ExamHintDrawer';
+import { useHintOpen } from '@/hooks/useHintOpen';
 import { DatingPromptContent } from './DatingPromptContent';
 
 interface DatingDeckAppProps {
@@ -99,6 +102,7 @@ export function DatingDeckApp({
   // Fullscreen state (native Fullscreen API + fixed z-60 100dvh edge-to-edge fallback for mobile/iOS)
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [isHintOpen, setIsHintOpen] = useHintOpen();
 
   // Two-phase clear swipe feedback: 'stamp' (visible pop + tilt + colored halo) -> 'fly' (smooth glide off)
   const [dragX, setDragX] = useState(0);
@@ -364,10 +368,21 @@ export function DatingDeckApp({
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
+        if (isHintOpen) {
+          setIsHintOpen(false);
+          return;
+        }
         if (isFullscreen) {
           void toggleFullscreen();
         } else {
           handleExitApp();
+        }
+        return;
+      }
+      if (e.key === 'h' || e.key === 'H') {
+        if (currentCard && swipePhase === 'idle') {
+          e.preventDefault();
+          setIsHintOpen((prev) => !prev);
         }
         return;
       }
@@ -388,7 +403,7 @@ export function DatingDeckApp({
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [commitSwipe, currentCard, handleExitApp, isFullscreen, swipePhase, toggleFullscreen]);
+  }, [commitSwipe, currentCard, handleExitApp, isFullscreen, isHintOpen, swipePhase, toggleFullscreen]);
 
   const commitSwipeRef = useRef(commitSwipe);
   useEffect(() => {
@@ -640,32 +655,63 @@ export function DatingDeckApp({
 
       {/* FLOATING SLIM TOP OVERLAY STRIP (Zero bulky header box, hangs cleanly over the deck) */}
       <div className="pointer-events-none absolute inset-x-0 top-1 z-30 mx-auto flex w-full max-w-3xl items-center justify-between gap-2 px-2.5 sm:px-4 pt-[env(safe-area-inset-top)]">
-        {/* Left Floating Pill: Tiny title badge + Progress + Live Anki countdown */}
-        <div className="pointer-events-auto flex items-center gap-1.5 rounded-full border border-border/80 bg-card/90 backdrop-blur-md px-2 py-1 shadow-xs">
-          <span
-            title="Prompt Dating"
-            className="btn-dating-pink grid h-5 w-5 shrink-0 place-items-center rounded-full"
-          >
-            <Heart className="h-2.5 w-2.5 fill-white text-white" />
-          </span>
-          <span className="hidden sm:inline text-[10.5px] font-black tracking-tight text-muted-foreground">
-            Dating
-          </span>
-          <span className="h-3 w-px bg-border/80 hidden sm:inline-block" />
-          <span className="text-[11px] font-extrabold tabular-nums text-pink-600 dark:text-pink-400">
-            {masteredCount}/{totalPrompts}
-          </span>
+        {/* Left Floating Group: Heart Progress Pill + Hint Toggle */}
+        <div className="pointer-events-auto flex items-center gap-1.5 min-w-0">
+          <div className="flex items-center gap-1.5 rounded-full border border-border/80 bg-card/90 backdrop-blur-md px-2 py-1 shadow-xs">
+            <span
+              title="Prompt Dating"
+              className="btn-dating-pink grid h-5 w-5 shrink-0 place-items-center rounded-full"
+            >
+              <Heart className="h-2.5 w-2.5 fill-white text-white" />
+            </span>
+            <span className="hidden sm:inline text-[10.5px] font-black tracking-tight text-muted-foreground">
+              Dating
+            </span>
+            <span className="h-3 w-px bg-border/80 hidden sm:inline-block" />
+            <span className="text-[11px] font-extrabold tabular-nums text-pink-600 dark:text-pink-400">
+              {masteredCount}/{totalPrompts}
+            </span>
 
-          {cooldownQueue.length > 0 && (
-            <>
-              <span className="h-3 w-px bg-border/80" />
-              <span className="inline-flex items-center gap-1 font-mono text-[10.5px] font-bold text-amber-600 dark:text-amber-400">
-                <Clock className="h-3 w-3 animate-pulse" />
-                <span>
-                  {cooldownQueue.length} · {formatCountdown(nearestRemainingMs)}
+            {cooldownQueue.length > 0 && (
+              <>
+                <span className="h-3 w-px bg-border/80" />
+                <span className="inline-flex items-center gap-1 font-mono text-[10.5px] font-bold text-amber-600 dark:text-amber-400">
+                  <Clock className="h-3 w-3 animate-pulse" />
+                  <span>
+                    {cooldownQueue.length} · {formatCountdown(nearestRemainingMs)}
+                  </span>
                 </span>
-              </span>
-            </>
+              </>
+            )}
+          </div>
+
+          {currentCard && (
+            <button
+              type="button"
+              onClick={() => setIsHintOpen((prev) => !prev)}
+              disabled={swipePhase !== 'idle'}
+              title={isHintOpen ? 'Đóng gợi ý (H)' : 'Xem gợi ý VSTEP B2 (H)'}
+              aria-label="Bật tắt gợi ý VSTEP B2"
+              className={`flex h-7 items-center gap-1 rounded-full border px-2.5 text-[11px] font-bold backdrop-blur-md shadow-xs transition active:scale-95 cursor-pointer disabled:opacity-60 ${
+                isHintOpen
+                  ? 'border-primary bg-primary text-primary-foreground'
+                  : 'border-border/80 bg-card/90 text-foreground hover:bg-muted'
+              }`}
+            >
+              <Lightbulb
+                className={`h-3.5 w-3.5 shrink-0 ${
+                  isHintOpen
+                    ? 'text-white'
+                    : currentCard.prompt.hint
+                      ? 'text-primary'
+                      : 'text-muted-foreground'
+                }`}
+              />
+              <span>Gợi ý</span>
+              {currentCard.prompt.hint && !isHintOpen && (
+                <span className="h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
+              )}
+            </button>
           )}
         </div>
 
@@ -803,6 +849,24 @@ export function DatingDeckApp({
                   prompt={currentCard.prompt}
                   reviewCount={currentCard.isReview ? currentCard.lapses : 0}
                 />
+
+                {/* Mobile (< md): inline hint dropdown appended at the very end of the prompt */}
+                {isHintOpen && (
+                  <div className="mt-4 pt-1 md:hidden">
+                    <ExamHintDrawer
+                      mode="inline"
+                      isOpen={isHintOpen}
+                      onClose={() => setIsHintOpen(false)}
+                      items={[
+                        {
+                          id: currentCard.prompt.id,
+                          title: currentCard.prompt.title,
+                          hint: currentCard.prompt.hint,
+                        },
+                      ]}
+                    />
+                  </div>
+                )}
               </div>
             </article>
           </div>
@@ -909,6 +973,25 @@ export function DatingDeckApp({
           </div>
         </div>
       )}
+
+      {/* Desktop (>= md): Non-modal draggable floating hint window (works cleanly in Fullscreen too) */}
+      <ExamHintDrawer
+        contained
+        mode="floating"
+        isOpen={isHintOpen && Boolean(currentCard)}
+        onClose={() => setIsHintOpen(false)}
+        items={
+          currentCard
+            ? [
+                {
+                  id: currentCard.prompt.id,
+                  title: currentCard.prompt.title,
+                  hint: currentCard.prompt.hint,
+                },
+              ]
+            : []
+        }
+      />
     </div>
   );
 }

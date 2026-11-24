@@ -20,9 +20,13 @@ import {
   X,
   ChevronDown,
   ChevronUp,
+  Lightbulb,
 } from 'lucide-react';
 import Link from 'next/link';
 import { TopHeader } from '@/components/TopHeader';
+import { ExamHintDrawer } from '@/components/ExamHintDrawer';
+import { useHintOpen } from '@/hooks/useHintOpen';
+import { isExamHint, type ExamHint } from '@/types/examHint';
 import { toReadablePromptText } from '@/utils/examPrompts';
 import {
   buildExamQueryString,
@@ -153,9 +157,11 @@ function parsePromptContent(content: string): ParsedPrompt {
 
 export default function WritingPage() {
   const [activeTask, setActiveTask] = useState<'task1' | 'task2' | 'free'>('task1');
-  const [bankPrompt, setBankPrompt] = useState<{ title: string; content: string } | null>(null);
+  const [bankPrompt, setBankPrompt] = useState<{ id?: string; title: string; content: string; hint?: ExamHint } | null>(null);
   const [isWarningDismissed, setIsWarningDismissed] = useState(false);
   const [isPromptCollapsed, setIsPromptCollapsed] = useState(false);
+  const [isHintOpen, setIsHintOpen] = useHintOpen();
+  const [isLoadingHint, setIsLoadingHint] = useState(false);
 
   // Timers
   const timer1 = useTimer(TASK1_TIME);
@@ -208,7 +214,7 @@ export default function WritingPage() {
           : queryTask === 'task1' || queryTask === 'task2' || queryTask === 'free'
             ? queryTask
             : 'task1';
-      let promptContent: { title: string; content: string } | null = null;
+      let promptContent: { id?: string; title: string; content: string; hint?: ExamHint } | null = null;
       let selectedExamId = examId || undefined;
 
       if (consumeStoredPrompt) {
@@ -221,13 +227,16 @@ export default function WritingPage() {
               title?: unknown;
               content?: unknown;
               task?: unknown;
+              hint?: unknown;
             };
             const promptId = typeof prompt.id === 'string' ? prompt.id : undefined;
             if (!examId || examId === promptId) {
               if (typeof prompt.title === 'string' && typeof prompt.content === 'string') {
                 promptContent = {
+                  id: promptId,
                   title: prompt.title,
                   content: toReadablePromptText(prompt.content),
+                  hint: isExamHint(prompt.hint) ? prompt.hint : undefined,
                 };
                 if (prompt.task === 'task1' || prompt.task === 'task2') task = prompt.task;
                 if (promptId) selectedExamId = promptId;
@@ -250,8 +259,10 @@ export default function WritingPage() {
             if (p) {
               const taskFromPrompt = p.category === 'writing-task2' ? 'task2' : 'task1';
               const nextPrompt = {
+                id: p.id,
                 title: p.title,
                 content: toReadablePromptText(p.content),
+                hint: p.hint,
               };
               startTransition(() => {
                 setBankPrompt(nextPrompt);
@@ -263,6 +274,7 @@ export default function WritingPage() {
                   title: p.title,
                   content: nextPrompt.content,
                   task: taskFromPrompt,
+                  hint: p.hint,
                 }));
               } catch {}
 
@@ -294,6 +306,29 @@ export default function WritingPage() {
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
+
+  // Hydrate structured hint when a prompt was restored from older localStorage without hint
+  useEffect(() => {
+    const promptId = bankPrompt?.id;
+    if (!promptId || bankPrompt?.hint) return;
+
+    let cancelled = false;
+    setIsLoadingHint(true);
+    fetchExamPromptById(promptId, 'writing')
+      .then((p) => {
+        if (!cancelled && p?.hint) {
+          setBankPrompt((prev) => (prev && prev.id === promptId ? { ...prev, hint: p.hint } : prev));
+        }
+      })
+      .catch(console.error)
+      .finally(() => {
+        if (!cancelled) setIsLoadingHint(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [bankPrompt?.id, bankPrompt?.hint]);
 
   useEffect(() => {
     const handleSectionSelect = (event: Event) => {
@@ -339,13 +374,14 @@ export default function WritingPage() {
       const task = prompt.category === 'writing-task2' ? 'task2' : 'task1';
       const title = prompt.title || prompt.id;
       const content = prompt.content || title;
-      setBankPrompt({ title, content });
+      setBankPrompt({ id: prompt.id, title, content, hint: prompt.hint });
       setActiveTask(task);
       const promptObj = {
         id: prompt.id,
         title,
         content,
         task,
+        hint: prompt.hint,
       };
       try {
         sessionStorage.setItem('vstep_bank_writing_prompt', JSON.stringify(promptObj));
@@ -506,6 +542,26 @@ export default function WritingPage() {
         isLoadingRandom={isLoadingRandomPrompt}
         randomButtonTitle={isLoadingRandomPrompt ? 'Đang tải đề viết…' : 'Bốc đề viết ngẫu nhiên'}
       >
+        {activeTask !== 'free' && (
+          <button
+            type="button"
+            onClick={() => setIsHintOpen((prev) => !prev)}
+            title={isHintOpen ? 'Đóng gợi ý' : 'Mở gợi ý VSTEP B2'}
+            aria-label="Bật tắt gợi ý VSTEP B2"
+            className={`flex h-7 items-center gap-1 rounded-xs border px-2 text-xs font-semibold transition cursor-pointer ${
+              isHintOpen
+                ? 'border-sky-300 bg-sky-400/25 text-white'
+                : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
+            }`}
+          >
+            <Lightbulb className="h-3.5 w-3.5 shrink-0" />
+            <span className="hidden sm:inline text-[11px]">Gợi ý</span>
+            {bankPrompt?.hint && (
+              <span className="h-1.5 w-1.5 rounded-full bg-sky-300 shrink-0" />
+            )}
+          </button>
+        )}
+
         <Link
           href="/writing/settings"
           title="Cấu hình Writing"
@@ -788,6 +844,23 @@ export default function WritingPage() {
           </div>
         </div>
       )}
+
+      <ExamHintDrawer
+        isOpen={isHintOpen && activeTask !== 'free'}
+        onClose={() => setIsHintOpen(false)}
+        isLoading={isLoadingHint}
+        items={
+          bankPrompt
+            ? [
+                {
+                  id: bankPrompt.id || 'writing-current',
+                  title: bankPrompt.title,
+                  hint: bankPrompt.hint,
+                },
+              ]
+            : []
+        }
+      />
     </div>
   );
 }

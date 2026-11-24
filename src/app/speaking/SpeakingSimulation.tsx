@@ -10,11 +10,15 @@ import { SpeakingExamEditor } from './components/SpeakingExamEditor';
 import { SpeakingAudioControls } from './components/SpeakingAudioControls';
 import { SpeakingSidebarPanel } from './components/SpeakingSidebarPanel';
 import { SpeakingPreparationOverlay } from './components/SpeakingPreparationOverlay';
+import { ExamHintDrawer } from '@/components/ExamHintDrawer';
+import { useHintOpen } from '@/hooks/useHintOpen';
 import type { SpeakingPart } from './types';
 
 export default function SpeakingSimulation() {
   const {
     activePart,
+    activePrompts,
+    isLoadingHint,
     examHtml,
     examKey,
     hasExamContent,
@@ -25,6 +29,9 @@ export default function SpeakingSimulation() {
     handleRandomPrompt,
     handleEditorInput,
   } = useSpeakingExam();
+
+  const [isHintOpen, setIsHintOpen] = useHintOpen();
+  const hasHint = activePrompts.some((prompt) => Boolean(prompt.hint));
 
   const {
     recorderStatus,
@@ -125,10 +132,13 @@ export default function SpeakingSimulation() {
   };
 
   return (
-    <div className="w-full max-w-[1920px] mx-auto flex flex-col space-y-2 animate-fade-in px-2 sm:px-4 pb-12 sm:pb-6">
+    <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
       <SpeakingHeader
         onRandomPrompt={handleRandomPrompt}
         isLoadingRandomPrompt={isLoadingRandomPrompt}
+        hasHint={hasHint}
+        isHintOpen={isHintOpen}
+        onToggleHint={() => setIsHintOpen((prev) => !prev)}
       />
 
       {timerPhase === 'preparing' && preparationRemaining !== null && (
@@ -189,6 +199,17 @@ export default function SpeakingSimulation() {
           />
         </section>
       </div>
+
+      <ExamHintDrawer
+        isOpen={isHintOpen}
+        onClose={() => setIsHintOpen(false)}
+        isLoading={isLoadingHint}
+        items={activePrompts.map((prompt) => ({
+          id: prompt.id,
+          title: prompt.title,
+          hint: prompt.hint,
+        }))}
+      />
     </div>
   );
 }

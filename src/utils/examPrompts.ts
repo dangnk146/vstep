@@ -1,3 +1,5 @@
+import { isExamHint, type ExamHint } from '@/types/examHint';
+
 export const EXAM_CATEGORIES = [
   { id: 'writing-task1', label: 'Writing Task 1', skill: 'writing' },
   { id: 'writing-task2', label: 'Writing Task 2', skill: 'writing' },
@@ -29,6 +31,7 @@ export type ExamPrompt = ExamQuestion & {
   batch?: string;
   isNew?: boolean;
   addedAt?: string;
+  hint?: ExamHint;
 };
 
 export function getExamCategory(category: ExamCategory) {
@@ -78,6 +81,7 @@ export function toExamPrompt(record: {
   batch?: string;
   isNew?: boolean;
   addedAt?: string;
+  hint?: unknown;
 }): ExamPrompt | null {
   const part = record.part.toLowerCase().replace(/\s+/g, '');
   let category: ExamCategory;
@@ -102,6 +106,7 @@ export function toExamPrompt(record: {
     batch: record.batch,
     isNew: Boolean(record.isNew),
     addedAt: typeof record.addedAt === 'string' ? record.addedAt : undefined,
+    hint: isExamHint(record.hint) ? record.hint : undefined,
   };
 }
 
