@@ -15,7 +15,49 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng)",
     "title": "Topic 1: Hometown & Neighborhood",
-    "content": "1. Can you describe your hometown? What is it known for?\n2. What do you like most about living in your hometown?\n3. Is there anything you dislike or wish to improve about your hometown?"
+    "content": "1. Can you describe your hometown? What is it known for?\n2. What do you like most about living in your hometown?\n3. Is there anything you dislike or wish to improve about your hometown?",
+    "hint": {
+      "extraVocab": [
+        "Old Quarter",
+        "rush hour"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I was born and grew up in Hanoi, which is located in the North of Vietnam. It is a huge bustling city known for its old streets and local food.",
+          "example": "I live there with my family, and we often visit Hoan Kiem Lake and the Old Quarter on weekends.",
+          "pillar": "Bộ đề gốc",
+          "q": "Can you describe your hometown? What is it known for?",
+          "reason": "It has breathtaking, picturesque landmarks symbolizing the beauty of the city, along with a long history."
+        },
+        {
+          "answer": "What I like most about living in my hometown is the people and the diverse, flavorful cuisine.",
+          "example": "Whenever I eat pho or bun cha with my friends at small street stalls, I feel happy and comfortable.",
+          "pillar": "Bộ đề gốc",
+          "q": "What do you like most about living in your hometown?",
+          "reason": "People here are very kind, helpful, friendly, and hospitable, and there are lots of delicious dishes to enjoy."
+        },
+        {
+          "answer": "Yes, I dislike the heavy traffic and air pollution, so I wish to improve public transport.",
+          "example": "During rush hour on weekdays, it takes me 45 minutes by motorbike to get to school because of traffic congestion.",
+          "pillar": "Bộ đề gốc",
+          "q": "Is there anything you dislike or wish to improve about your hometown?",
+          "reason": "Living in a big city brings higher living expenses and noise or air pollution, which makes people feel stressed and exhausted."
+        }
+      ],
+      "reusedSource": "Bộ đề 2 (Hometown)",
+      "reusedVocab": [
+        "I was born and grew up in",
+        "huge bustling city",
+        "breathtaking, picturesque",
+        "diverse, flavorful",
+        "kind, helpful, friendly, and hospitable",
+        "higher living expenses",
+        "environmental pollution",
+        "traffic congestion"
+      ],
+      "topic": "Hometown & Neighborhood"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +75,49 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng)",
     "title": "Topic 2: Best Friends & Making Friends",
-    "content": "1. Could you tell me about your best friend? How long have you known each other?\n2. Does your best friend often help you when you face difficulties? In what ways?\n3. In your opinion, what is the best way to make new friends easily?"
+    "content": "1. Could you tell me about your best friend? How long have you known each other?\n2. Does your best friend often help you when you face difficulties? In what ways?\n3. In your opinion, what is the best way to make new friends easily?",
+    "hint": {
+      "extraVocab": [
+        "cheer someone up",
+        "speaking club"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "My best friend is Minh, and we have known each other for about eight years since high school.",
+          "example": "We often play badminton together or go out for coffee in our spare time.",
+          "pillar": "Bộ đề gốc",
+          "q": "Could you tell me about your best friend? How long have you known each other?",
+          "reason": "We have a lot of things in common, get on really well with each other, and he is very understanding and supportive."
+        },
+        {
+          "answer": "Yes, of course. He is always beside me when I face difficulties and gives me a lot of support.",
+          "example": "Last month when I worried about my final exams, he helped me review lessons and cheered me up at a quiet cafe.",
+          "pillar": "Social",
+          "q": "Does your best friend often help you when you face difficulties? In what ways?",
+          "reason": "We can openly and respectfully share our thoughts and emotions, which helps reduce stress and makes me feel refreshed."
+        },
+        {
+          "answer": "I think the best way is to join clubs, classes, or sports teams in your free time.",
+          "example": "When I joined an English speaking club at university, I quickly made three close friends who also love travelling.",
+          "pillar": "Social",
+          "q": "In your opinion, what is the best way to make new friends easily?",
+          "reason": "Because it is good for your social network, where you can meet like-minded people who have a lot of things in common with you through face-to-face interaction."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Family/Friends) & Trục Social",
+      "reusedVocab": [
+        "have a lot of things in common",
+        "get on really well with each other",
+        "understanding and supportive",
+        "always beside me when I face difficulties",
+        "openly and respectfully share thoughts and emotions",
+        "meet like-minded people",
+        "face-to-face interaction",
+        "enrich my social life"
+      ],
+      "topic": "Best Friends & Making Friends"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +135,47 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng)",
     "title": "Part 2 - Situation 1: Hosting a Foreign Friend during Exam Week",
-    "content": "Situation: A close foreign friend is visiting your country for a week. However, you are extremely busy preparing for an important university final exam. You want to suggest the best option for your friend to explore the city:\n- Joining a guided group tour (tham gia tour đoàn có hướng dẫn viên)\n- Booking a private customized tour (đặt tour riêng theo yêu cầu)\n- Exploring independently with a detailed itinerary (tự mình khám phá theo lịch trình gợi ý)\n\nWhich option do you think is the best choice and why?"
+    "content": "Situation: A close foreign friend is visiting your country for a week. However, you are extremely busy preparing for an important university final exam. You want to suggest the best option for your friend to explore the city:\n- Joining a guided group tour (tham gia tour đoàn có hướng dẫn viên)\n- Booking a private customized tour (đặt tour riêng theo yêu cầu)\n- Exploring independently with a detailed itinerary (tự mình khám phá theo lịch trình gợi ý)\n\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-0",
+        "khen1Text": "because it is super easy for my friend to join right away without requiring any complicated preparation from me while I study for my exam.",
+        "khen2ARE": {
+          "answer": "Joining a guided group tour gives my friend the chance to broaden his horizons and build a social network safely.",
+          "example": "For example, my friend can join a one-day city tour to visit famous historical places and try local food while I focus on reviewing for my university final exam.",
+          "reason": "A tour guide explains local people, culture, and traditions clearly, and my friend can meet like-minded travelers in the group while I save time to prepare for my important exam."
+        },
+        "khen2Pillar": "Broaden Knowledge & Social Network",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help my friend refresh his mind, enjoy the city safely, and take meaningful photos with new friends.",
+        "option": "Joining a guided group tour"
+      },
+      "extraVocab": [
+        "tour guide",
+        "final exam",
+        "local food"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-2",
+          "option": "Booking a private customized tour",
+          "reason": "spending too much money on a private customized tour will burden my friend's budget, and traveling alone with only a guide can feel stiff and less fun."
+        },
+        {
+          "cheCode": "CHÊ-8",
+          "option": "Exploring independently with a detailed itinerary",
+          "reason": "traveling alone on busy, unfamiliar roads without knowing the local language is unsafe and tiring, and I am too busy studying for finals to help my friend if he gets lost."
+        }
+      ],
+      "reusedVocab": [
+        "broaden my horizons",
+        "people, culture, and tradition",
+        "meet like-minded people",
+        "refresh our minds"
+      ],
+      "situation": "A close foreign friend is visiting my country for a week. However, I am extremely busy preparing for an important university final exam, and I want to suggest the best option for my friend to explore the city: joining a guided group tour, booking a private customized tour, or exploring independently with a detailed itinerary."
+    }
   },
   {
     "STT": "4",
@@ -69,7 +193,75 @@
     "part": "part3",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng)",
     "title": "Part 3 - Topic 1: Methods to Break Bad Habits",
-    "content": "Topic: Effective methods to break bad habits\nSuggestions:\n- Practicing strong self-discipline\n- Replacing bad habits with healthy alternatives\n- Seeking advice and emotional support from family and friends\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you think it is easy or difficult for young people to change their bad habits? Why?\n2. What is the most common negative habit among teenagers today?\n3. How can parents and teachers assist young people in overcoming negative habits?"
+    "content": "Topic: Effective methods to break bad habits\nSuggestions:\n- Practicing strong self-discipline\n- Replacing bad habits with healthy alternatives\n- Seeking advice and emotional support from family and friends\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you think it is easy or difficult for young people to change their bad habits? Why?\n2. What is the most common negative habit among teenagers today?\n3. How can parents and teachers assist young people in overcoming negative habits?",
+    "hint": {
+      "coreTopic": "effective ways to break bad habits",
+      "extraVocab": [
+        "healthy alternatives",
+        "stay motivated",
+        "smartphones",
+        "instant fun"
+      ],
+      "followUps": [
+        {
+          "answer": "I think it is quite difficult for young people to change their bad habits.",
+          "example": "For example, a student knows staying up late gaming is bad, but still finds it hard to turn off the computer at 10 PM.",
+          "formula": "Do you think ...? -> I think it is difficult... (Reason + Example)",
+          "q": "Do you think it is easy or difficult for young people to change their bad habits? Why?",
+          "reason": "Many teenagers lack proper guidance and self-control, and bad habits often give instant fun while healthy habits take time to show results."
+        },
+        {
+          "answer": "There are some common bad habits among teenagers today, and the biggest one is spending too much time on smartphones.",
+          "example": "For instance, many teens watch social media videos for three or four hours every evening instead of exercising or talking with family.",
+          "formula": "What ...? -> There are some... (Reason + Example)",
+          "q": "What is the most common negative habit among teenagers today?",
+          "reason": "Excessive screen time can affect physical health, reduce sleep, and lower study focus."
+        },
+        {
+          "answer": "I think parents and schools should work closely together to guide, listen, and support young people instead of just scolding them.",
+          "example": "For example, schools can organize afternoon sports clubs so students spend less time playing video games at home.",
+          "formula": "How ...? -> Penalize/Support solution (Parents & schools guide)",
+          "q": "How can parents and teachers assist young people in overcoming negative habits?",
+          "reason": "They can help teens set realistic goals, offer healthy school clubs, and limit phone use during study hours."
+        }
+      ],
+      "macroTopic": "health",
+      "mindmapPoints": [
+        {
+          "cue": "Practicing strong self-discipline",
+          "expand": "This is because setting clear rules, like creating a daily timetable, prevents us from wasting hours on lazy behaviors.",
+          "impact": "Therefore, it is good for personal success and keeps our life organized.",
+          "sentence": "Practicing strong self-discipline helps people control their daily actions and stop bad habits.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Replacing bad habits with healthy alternatives",
+          "expand": "For example, instead of eating fast food or scrolling on a phone at night, people can go jogging or read a book to relieve stress.",
+          "impact": "Clearly, it is beneficial to both physical health and mental health.",
+          "sentence": "Replacing a bad habit with a good activity helps people change naturally without feeling bored.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Seeking advice and emotional support from family and friends",
+          "expand": "This is because loved ones can remind us politely, encourage us on hard days, and join healthy routines with us.",
+          "impact": "So, it has positive effects on our confidence and long-term results.",
+          "sentence": "Asking family and friends for support helps people stay motivated when changing habits.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "build good self-discipline",
+        "creating a daily study timetable",
+        "relieve stress",
+        "physical health",
+        "mental health",
+        "lack proper guidance and self-control",
+        "screen time can affect health and social development",
+        "work closely together to guide, listen, and support young people"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -87,7 +279,50 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 07/11/2026",
     "title": "Topic 3: Cooking & Social Events",
-    "content": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. How important are communal meals and social gatherings in Vietnamese culture?"
+    "content": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. How important are communal meals and social gatherings in Vietnamese culture?",
+    "hint": {
+      "extraVocab": [
+        "fried spring rolls",
+        "home-cooked food"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I am keen on cooking meals for my family in my free time.",
+          "example": "On Sundays, I often cook dinner with my mom using fresh local vegetables and fish.",
+          "pillar": "Physical health",
+          "q": "Do you enjoy cooking meals for yourself or for your family? Why or why not?",
+          "reason": "Home-cooked food plays an essential role in maintaining our physical health, and cooking is also advantageous to my mental health because it helps me relax my mind and reduce stress."
+        },
+        {
+          "answer": "I am best at making fried spring rolls, which is a popular traditional dish in Vietnam.",
+          "example": "I usually prepare fried spring rolls for my family during the Tet holiday or weekend dinners.",
+          "pillar": "Bộ đề gốc",
+          "q": "What traditional dish are you best at preparing?",
+          "reason": "It is easy to prepare with simple ingredients, and it tastes delicious and flavorful when eaten hot."
+        },
+        {
+          "answer": "They are extremely important because family and community mean the world to Vietnamese people.",
+          "example": "During Tet or Mid-Autumn Festival, my whole extended family gathers at my grandparents' house to eat and talk happily.",
+          "pillar": "Social",
+          "q": "How important are communal meals and social gatherings in Vietnamese culture?",
+          "reason": "Sharing meals helps strengthen bonds within a family, build a strong sense of belonging, and help people truly understand each other through face-to-face interaction."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Leisure & Family) & Trục Physical/Mental health",
+      "reusedVocab": [
+        "keen on",
+        "plays an essential role in",
+        "physical health",
+        "mental health",
+        "relax my mind",
+        "fresh local food",
+        "strengthen bonds within a family",
+        "build a strong sense of belonging",
+        "face-to-face interaction"
+      ],
+      "topic": "Cooking & Social Events"
+    }
   },
   {
     "STT": "6",
@@ -105,7 +340,48 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 07/11/2026",
     "title": "Part 2 - Situation 2: Planning a Short Vacation Trip for Your Family",
-    "content": "Situation: You are assigned to arrange a three-day weekend getaway for your whole family. There are three approaches to organizing this trip:\n- Planning the entire itinerary independently (tự lên kế hoạch chi tiết từ A đến Z)\n- Purchasing an all-inclusive package tour from a travel agency (mua gói tour trọn gói của công ty du lịch)\n- Following specific destination recommendations from an experienced friend (tham khảo địa điểm và lịch trình từ một người bạn đã từng đi)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You are assigned to arrange a three-day weekend getaway for your whole family. There are three approaches to organizing this trip:\n- Planning the entire itinerary independently (tự lên kế hoạch chi tiết từ A đến Z)\n- Purchasing an all-inclusive package tour from a travel agency (mua gói tour trọn gói của công ty du lịch)\n- Following specific destination recommendations from an experienced friend (tham khảo địa điểm và lịch trình từ một người bạn đã từng đi)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-0",
+        "khen1Text": "because it is super easy to start right away without requiring any complicated planning or booking from me.",
+        "khen2ARE": {
+          "answer": "Purchasing an all-inclusive package tour is fast and convenient for busy people and helps us reach a healthy balance between work and family time.",
+          "example": "For example, I can book a three-day coastal resort tour where a shuttle bus picks us up, covers hotel rooms and meals, and takes my parents and children to safe sightseeing spots.",
+          "reason": "The travel agency arranges transport, hotels, and meals in advance, so nobody has to worry about problems and everyone can put their feet up, relieve stress, and enjoy the holiday."
+        },
+        "khen2Pillar": "Convenience & Mental Health",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and take meaningful photos together.",
+        "option": "Purchasing an all-inclusive package tour from a travel agency"
+      },
+      "extraVocab": [
+        "travel agency",
+        "coastal resort",
+        "shuttle bus"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-0",
+          "option": "Planning the entire itinerary independently",
+          "reason": "planning transport, hotels, and tickets from start to finish takes too much time and energy, which leaves me exhausted and stressed before the trip even begins."
+        },
+        {
+          "cheCode": "CHÊ-0",
+          "option": "Following specific destination recommendations from an experienced friend",
+          "reason": "a friend's travel style may not suit my older parents or younger family members, and I would still have to book everything myself without professional support if a problem happens."
+        }
+      ],
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "reach a healthy balance between work and family time",
+        "put my feet up",
+        "relieve stress",
+        "refresh our minds"
+      ],
+      "situation": "I am assigned to arrange a three-day weekend getaway for my whole family. There are three approaches to organizing this trip: planning the entire itinerary independently, purchasing an all-inclusive package tour from a travel agency, or following specific destination recommendations from an experienced friend."
+    }
   },
   {
     "STT": "7",
@@ -123,7 +399,77 @@
     "part": "part3",
     "group": "Đề thi thực tế HUST 07/11/2026",
     "title": "Part 3 - Topic 2: Benefits of Participating in Team Sports",
-    "content": "Topic: The far-reaching benefits of playing team sports\nSuggestions:\n- Enhancing cardiovascular health and physical endurance\n- Learning strategic collaboration and communication under pressure\n- Building enduring camaraderie and social friendships\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some people prefer individual athletic activities over group sports?\n2. What lessons from team sports can be applied to professional workplace environments?\n3. How can schools encourage students who are not naturally athletic to take part in team games?"
+    "content": "Topic: The far-reaching benefits of playing team sports\nSuggestions:\n- Enhancing cardiovascular health and physical endurance\n- Learning strategic collaboration and communication under pressure\n- Building enduring camaraderie and social friendships\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some people prefer individual athletic activities over group sports?\n2. What lessons from team sports can be applied to professional workplace environments?\n3. How can schools encourage students who are not naturally athletic to take part in team games?",
+    "hint": {
+      "coreTopic": "the benefits of playing team sports",
+      "extraVocab": [
+        "teamwork",
+        "teammates",
+        "individual sports",
+        "beginner-friendly"
+      ],
+      "followUps": [
+        {
+          "answer": "This is mainly because individual sports offer more freedom over your schedule and a peaceful time alone.",
+          "example": "For example, an office worker can run in the park for 30 minutes at 6 AM alone without booking a football field.",
+          "formula": "Why ...? -> Because + Schedule & Privacy (Reason + Example)",
+          "q": "Why do some people prefer individual athletic activities over group sports?",
+          "reason": "Busy people can go jogging or swimming whenever they are free without waiting for ten other teammates."
+        },
+        {
+          "answer": "There are some valuable lessons from team sports for the workplace, such as teamwork, responsibility, and staying calm under pressure.",
+          "example": "For instance, a team member who learned to cooperate in university volleyball often works smoothly with coworkers on tight deadlines.",
+          "formula": "What ...? -> There are some... (Reason + Example)",
+          "q": "What lessons from team sports can be applied to professional workplace environments?",
+          "reason": "Just like on the sports field, company workers must support colleagues, share goals, and accept feedback to finish projects well."
+        },
+        {
+          "answer": "I think schools should offer fun, beginner-friendly games and upgrade sports facilities instead of focusing only on winning prizes.",
+          "example": "For example, schools can hold friendly badminton or relay games every Friday where every class participates for fun.",
+          "formula": "How ...? -> Support solution (Schools upgrade facilities & clubs)",
+          "q": "How can schools encourage students who are not naturally athletic to take part in team games?",
+          "reason": "When games are relaxed and inclusive, shy students feel comfortable joining to make friends and stay active rather than worrying about scores."
+        }
+      ],
+      "macroTopic": "health",
+      "mindmapPoints": [
+        {
+          "cue": "Enhancing cardiovascular health and physical endurance",
+          "expand": "This is because running and moving actively in games like football or basketball helps us strengthen our immune system and feel more energetic.",
+          "impact": "Therefore, it is good for our physical health and reduces stress after work or study.",
+          "sentence": "Playing team sports helps people keep fit, strengthen their heart, and stay healthy.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Learning strategic collaboration and communication under pressure",
+          "expand": "For example, players must pass the ball, listen to teammates, and make quick decisions together to win a match.",
+          "impact": "Clearly, it is beneficial to their teamwork and problem-solving abilities.",
+          "sentence": "Playing in a team helps people improve teamwork and communication skills.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Building enduring camaraderie and social friendships",
+          "expand": "This is because sports clubs let us meet like-minded people who share the same hobby and build a strong sense of belonging.",
+          "impact": "So, it has positive effects on our social network and mental health.",
+          "sentence": "Joining team sports brings people together and builds strong friendships.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "keep fit and stay healthy",
+        "strengthen our immune system",
+        "feel more energetic",
+        "physical health",
+        "brings people together",
+        "meet like-minded people",
+        "build a strong sense of belonging",
+        "social network",
+        "mental health",
+        "control their own schedule"
+      ]
+    }
   },
   {
     "STT": "8",
@@ -141,7 +487,49 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
     "title": "Topic 4: Healthy Diets & Public Parks",
-    "content": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?"
+    "content": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?",
+    "hint": {
+      "extraVocab": [
+        "fast food",
+        "green spaces"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I try to eat a healthy diet every day, although I do not follow a strict nutritional plan.",
+          "example": "Every day, I eat green vegetables, rice, and chicken for lunch instead of fast food.",
+          "pillar": "Physical health",
+          "q": "Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?",
+          "reason": "Eating clean food is beneficial to my physical health because fresh vegetables and fruit help me strengthen my immune system, stay fit and healthy, and feel more energetic."
+        },
+        {
+          "answer": "When having a gathering with friends, I prefer bringing fresh fruit, sandwiches, and homemade drinks.",
+          "example": "Last Saturday, my friends and I went on a picnic and shared watermelon, cheese sandwiches, and iced tea.",
+          "pillar": "Social",
+          "q": "What dishes or snacks do you prefer bringing when having a food gathering with friends?",
+          "reason": "They are cheap, convenient to carry, and healthy so everyone can enjoy them while spending quality time together."
+        },
+        {
+          "answer": "I visit a park about three times a week, and I prefer small community green spaces near my home.",
+          "example": "I usually walk around my neighborhood park for 30 minutes at 6 p.m. after finishing school or work.",
+          "pillar": "Peace & Privacy",
+          "q": "How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?",
+          "reason": "Large parks are often crowded and noisy, which makes me feel stressed, whereas small parks offer a quiet environment to relax and recharge my batteries."
+        }
+      ],
+      "reusedSource": "Trục Physical health, Trục Peace & Privacy & Bộ đề 1",
+      "reusedVocab": [
+        "beneficial to my physical health",
+        "strengthen my immune system",
+        "stay fit and healthy",
+        "feel more energetic",
+        "go on a picnic",
+        "spend quality time",
+        "crowded, noisy",
+        "recharge my batteries"
+      ],
+      "topic": "Healthy Diets & Public Parks"
+    }
   },
   {
     "STT": "9",
@@ -159,7 +547,47 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
     "title": "Part 2 - Situation 3: Preparing for a Workplace Presentation",
-    "content": "Situation: You are preparing for an important upcoming project presentation at your workplace. You want to choose the most effective rehearsal method. There are three options:\n- Practicing speaking in front of a mirror (luyện tập nói trước gương)\n- Recording your speech and listening back to self-correct (thu âm và nghe lại để tự sửa)\n- Rehearsing in front of a small group of colleagues for direct feedback (tập dượt trước một nhóm đồng nghiệp để nhận phản hồi)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You are preparing for an important upcoming project presentation at your workplace. You want to choose the most effective rehearsal method. There are three options:\n- Practicing speaking in front of a mirror (luyện tập nói trước gương)\n- Recording your speech and listening back to self-correct (thu âm và nghe lại để tự sửa)\n- Rehearsing in front of a small group of colleagues for direct feedback (tập dượt trước một nhóm đồng nghiệp để nhận phản hồi)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-0",
+        "khen1Text": "because it is easy to arrange with a few coworkers at the office without requiring any complicated equipment or preparation.",
+        "khen2ARE": {
+          "answer": "Rehearsing in front of colleagues helps me solve presentation problems early and adapt well to the workplace environment.",
+          "example": "For example, I can gather three teammates in a meeting room for twenty minutes after lunch, present my project slides, and ask them which parts need clearer examples.",
+          "reason": "Face-to-face interaction lets my colleagues point out unclear ideas or nervous body language right away, so I can fix weak points before the real presentation."
+        },
+        "khen2Pillar": "Work Skills & Social Feedback",
+        "khen3Code": "KHEN-3",
+        "khen3Text": "a safe and practical environment to gain real presentation experience, build confidence, and get ready for success at work.",
+        "option": "Rehearsing in front of a small group of colleagues for direct feedback"
+      },
+      "extraVocab": [
+        "teammates",
+        "project slides",
+        "body language"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-0",
+          "option": "Practicing speaking in front of a mirror",
+          "reason": "talking to myself in front of a mirror feels awkward and cannot tell me whether my project ideas are clear or persuasive to real listeners."
+        },
+        {
+          "cheCode": "CHÊ-0",
+          "option": "Recording your speech and listening back to self-correct",
+          "reason": "listening only to a voice recording misses my eye contact and posture, and I might still fail to notice my own mistakes without another person's feedback."
+        }
+      ],
+      "reusedVocab": [
+        "solve the problem",
+        "adjust and adapt to the social environment",
+        "face-to-face interaction",
+        "build confidence"
+      ],
+      "situation": "I am preparing for an important upcoming project presentation at my workplace, and I want to choose the most effective rehearsal method among three options: practicing speaking in front of a mirror, recording my speech and listening back to self-correct, or rehearsing in front of a small group of colleagues for direct feedback."
+    }
   },
   {
     "STT": "10",
@@ -177,7 +605,72 @@
     "part": "part3",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
     "title": "Part 3 - Topic 3: Negative Effects of Technology on Learning Habits",
-    "content": "Topic: The detrimental effects of modern digital technology on students' learning habits\nSuggestions:\n- Information overload and superficial reading\n- Heavy reliance on search engines and automated tools\n- Deteriorating critical thinking and independent reasoning\n- [Your own ideas]\n\nFollow-up questions:\n1. How does multitasking with smartphones during study hours affect students' memory retention?\n2. What practical habits can learners adopt to avoid digital distractions while studying?\n3. Do you think conventional handwritten notes are more effective for deep learning than typing on laptops?"
+    "content": "Topic: The detrimental effects of modern digital technology on students' learning habits\nSuggestions:\n- Information overload and superficial reading\n- Heavy reliance on search engines and automated tools\n- Deteriorating critical thinking and independent reasoning\n- [Your own ideas]\n\nFollow-up questions:\n1. How does multitasking with smartphones during study hours affect students' memory retention?\n2. What practical habits can learners adopt to avoid digital distractions while studying?\n3. Do you think conventional handwritten notes are more effective for deep learning than typing on laptops?",
+    "hint": {
+      "coreTopic": "the negative effects of digital technology on students' learning",
+      "extraVocab": [
+        "notifications",
+        "search engines",
+        "independent thinking",
+        "handwritten notes",
+        "concentration"
+      ],
+      "followUps": [
+        {
+          "answer": "Checking a smartphone while studying seriously weakens memory and makes learning much slower.",
+          "example": "For example, a student who replies to chat messages while reading English vocabulary often forgets most of the words the next day.",
+          "formula": "How ...? -> Negative impact (Reason + Example)",
+          "q": "How does multitasking with smartphones during study hours affect students' memory retention?",
+          "reason": "Every time a message notification pops up, the student's brain loses focus and cannot store new knowledge deeply."
+        },
+        {
+          "answer": "There are some simple habits learners can use, such as turning off notifications and creating a clear daily study timetable.",
+          "example": "For instance, using a paper notebook and leaving the phone on silent mode in a schoolbag helps students stay focused during homework.",
+          "formula": "What ...? -> There are some... + Self-discipline solution",
+          "q": "What practical habits can learners adopt to avoid digital distractions while studying?",
+          "reason": "Putting the phone in another room for 45 minutes helps students build good self-discipline and finish urgent assignments faster."
+        },
+        {
+          "answer": "Yes, I think writing notes by hand is often better for deep learning than typing on a laptop.",
+          "example": "For example, students who write mindmaps on paper during lectures usually remember lessons better before exams than those who type every word.",
+          "formula": "Do you think ...? -> Yes, I think... (Reason + Example)",
+          "q": "Do you think conventional handwritten notes are more effective for deep learning than typing on laptops?",
+          "reason": "Handwriting is slower, so students must listen carefully and summarize key ideas in their own words, which allows their brain to exercise."
+        }
+      ],
+      "macroTopic": "technology",
+      "mindmapPoints": [
+        {
+          "cue": "Information overload and superficial reading",
+          "expand": "This is because scrolling through endless online posts and notifications makes it hard to focus on one long textbook.",
+          "impact": "Therefore, it has a negative effect on students' concentration and memory.",
+          "sentence": "Students can face too much information and read quickly without deep understanding.",
+          "wordForm": "N"
+        },
+        {
+          "cue": "Heavy reliance on search engines and automated tools",
+          "expand": "For example, many learners just copy answers from the internet for homework instead of reading and solving exercises by themselves.",
+          "impact": "Clearly, it is harmful to their real learning progress and honest study habits.",
+          "sentence": "Students can depend too much on search engines and AI tools for answers.",
+          "wordForm": "N"
+        },
+        {
+          "cue": "Deteriorating critical thinking and independent reasoning",
+          "expand": "This is because when devices do all the thinking, learners do not allow their brain to exercise or analyze ideas carefully.",
+          "impact": "So, it has negative effects on their academic skills and future job readiness.",
+          "sentence": "Using technology too much can weaken students' independent thinking and problem-solving skills.",
+          "wordForm": "V-ing / N"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "allow their brain to exercise",
+        "creating a daily study timetable",
+        "build good self-discipline",
+        "complete urgent assignments"
+      ]
+    }
   },
   {
     "STT": "11",
@@ -195,7 +688,49 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 18/11/2026 (Sáng)",
     "title": "Topic 5: Advertisements & Consumer Choices",
-    "content": "1. Do you often pay attention to advertisements on TV or social media?\n2. What is the most impressive or memorable advertisement you have ever seen, and why?\n3. Do you usually buy products after watching their advertisements? Why or why not?"
+    "content": "1. Do you often pay attention to advertisements on TV or social media?\n2. What is the most impressive or memorable advertisement you have ever seen, and why?\n3. Do you usually buy products after watching their advertisements? Why or why not?",
+    "hint": {
+      "extraVocab": [
+        "commercial",
+        "customer reviews"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Sometimes I pay attention to advertisements on social media, especially when I need to buy something new.",
+          "example": "When scrolling Facebook in the evening, I sometimes stop to watch short ads for English books or sports shoes.",
+          "pillar": "Knowledge",
+          "q": "Do you often pay attention to advertisements on TV or social media?",
+          "reason": "Watching ads gives me useful information about new products and discounts, though too many ads can be annoying when I want to relax."
+        },
+        {
+          "answer": "The most memorable advertisement I have seen is a Tet holiday commercial for a tea brand.",
+          "example": "It showed a young worker travelling home to have dinner with his parents on New Year's Eve, and I watched it with my family on TV.",
+          "pillar": "Mental health",
+          "q": "What is the most impressive or memorable advertisement you have ever seen, and why?",
+          "reason": "It had soft, gentle music and conveyed a touching message about family reunion, which made me feel warm and nostalgic."
+        },
+        {
+          "answer": "No, I usually do not buy products right after watching an advertisement.",
+          "example": "Before buying a new backpack online, I always read real customer reviews first instead of trusting the video ad.",
+          "pillar": "Knowledge",
+          "q": "Do you usually buy products after watching their advertisements? Why or why not?",
+          "reason": "Ads often tempt buyers to waste money on cheap items that look nothing like the advertised photos, so I prefer to stay on the safe side, think things through calmly, and choose items that fit comfortably within my budget."
+        }
+      ],
+      "reusedSource": "24 cụm đa năng (#21, #24) & 18 luận điểm (#10)",
+      "reusedVocab": [
+        "soft, gentle",
+        "convey meaningful/inspiring/touching message",
+        "nostalgic",
+        "family reunion",
+        "tempts buyers to waste money",
+        "look nothing like the advertised photos",
+        "stay on the safe side and think things through calmly",
+        "fit comfortably within my budget"
+      ],
+      "topic": "Advertisements & Consumer Choices"
+    }
   },
   {
     "STT": "12",
@@ -213,7 +748,49 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 18/11/2026 (Sáng)",
     "title": "Topic 6: Home Decoration & Favorite Colors",
-    "content": "1. How do you like to decorate your home or personal room?\n2. What is your favorite color, and why do you like it?\n3. Which colors are most popular among people in your country for home decoration or daily items?"
+    "content": "1. How do you like to decorate your home or personal room?\n2. What is your favorite color, and why do you like it?\n3. Which colors are most popular among people in your country for home decoration or daily items?",
+    "hint": {
+      "extraVocab": [
+        "light blue",
+        "symbolize luck"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I like to decorate my personal room in a simple, neat style with a few green plants and warm lights.",
+          "example": "In my bedroom, I put two small green plants near the window and hang some family photos on the wall.",
+          "pillar": "Peace & Privacy",
+          "q": "How do you like to decorate your home or personal room?",
+          "reason": "It creates a quiet, cozy environment where I can enjoy personal privacy, relax comfortably, and relieve stress after a day of hard work."
+        },
+        {
+          "answer": "My favorite color is light blue because it makes me feel calm and peaceful.",
+          "example": "I painted my bedroom walls light blue, and I also have a blue notebook and school bag.",
+          "pillar": "Mental health",
+          "q": "What is your favorite color, and why do you like it?",
+          "reason": "It is advantageous to my mental health because soft colors elevate my mood and help me feel refreshed after busy hours at school or work."
+        },
+        {
+          "answer": "In Vietnam, white and cream are very popular for home decoration, while red and yellow are popular for festivals.",
+          "example": "Most modern apartments use white walls, and during Tet holiday people buy red decorations and yellow apricot flowers.",
+          "pillar": "Knowledge",
+          "q": "Which colors are most popular among people in your country for home decoration or daily items?",
+          "reason": "Light colors make rooms look bright and clean, while red and yellow symbolize luck and happiness in Vietnamese tradition."
+        }
+      ],
+      "reusedSource": "Trục Peace & Privacy, Trục Mental health & Kho từ vựng",
+      "reusedVocab": [
+        "quiet, cozy environment",
+        "personal privacy",
+        "relieve stress",
+        "after a day of hard work",
+        "advantageous to my mental health",
+        "elevate my mood",
+        "feel refreshed and peaceful",
+        "Tet holiday"
+      ],
+      "topic": "Home Decoration & Favorite Colors"
+    }
   },
   {
     "STT": "13",
@@ -231,7 +808,48 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 18/11/2026 (Sáng)",
     "title": "Part 2 - Situation 4: Planning an Outdoor Activity Venue for Your Family",
-    "content": "Situation: You are planning a weekend outing to organize enjoyable activities for your family. There are three venue options:\n- A water park (công viên nước)\n- An amusement park (công viên giải trí)\n- A museum (bảo tàng)\n\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You are planning a weekend outing to organize enjoyable activities for your family. There are three venue options:\n- A water park (công viên nước)\n- An amusement park (công viên giải trí)\n- A museum (bảo tàng)\n\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to visit together, so everyone in my family can enjoy games, share snacks, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Going to an amusement park is advantageous to our mental health and helps us reach a healthy balance between work and family time.",
+          "example": "For example, my family can ride the Ferris wheel together, watch a live show, and have lunch inside the park on Sunday afternoon.",
+          "reason": "It offers gentle rides and fun activities for both parents and children, helping us relieve stress, boost our energy, and build a strong sense of belonging."
+        },
+        "khen2Pillar": "Mental Health & Family Bonding",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and take meaningful photos together.",
+        "option": "An amusement park"
+      },
+      "extraVocab": [
+        "Ferris wheel",
+        "live show",
+        "gentle rides"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-6",
+          "option": "A water park",
+          "reason": "playing in water outdoors depends heavily on the weather, and wet, slippery areas can be cold or dangerous for young children and older family members."
+        },
+        {
+          "cheCode": "CHÊ-1",
+          "option": "A museum",
+          "reason": "walking quietly around a museum feels stiff and boring for energetic family members, and we cannot laugh or play freely together like at a park."
+        }
+      ],
+      "reusedVocab": [
+        "reach a healthy balance between work and family time",
+        "relieve stress",
+        "boost my energy",
+        "build a strong sense of belonging",
+        "refresh our minds"
+      ],
+      "situation": "I am planning a weekend outing to organize enjoyable activities for my family. There are three place options: a water park, an amusement park, or a museum."
+    }
   },
   {
     "STT": "14",
@@ -249,7 +867,74 @@
     "part": "part3",
     "group": "Đề thi thực tế HUST 18/11/2026 (Sáng)",
     "title": "Part 3 - Topic 4: Disadvantages of Living in an Apartment",
-    "content": "Topic: Disadvantages of living in an apartment\nSuggestions:\n- Limited living space\n- Pet restrictions\n- Neighbor issues and noise\n- [Your own ideas]\n\nFollow-up questions:\n1. Do people around you prefer living in private houses or apartments? Why?\n2. What challenges do families with pets or young children face in apartment buildings?\n3. How can residents maintain good relationships with their neighbors in an apartment?"
+    "content": "Topic: Disadvantages of living in an apartment\nSuggestions:\n- Limited living space\n- Pet restrictions\n- Neighbor issues and noise\n- [Your own ideas]\n\nFollow-up questions:\n1. Do people around you prefer living in private houses or apartments? Why?\n2. What challenges do families with pets or young children face in apartment buildings?\n3. How can residents maintain good relationships with their neighbors in an apartment?",
+    "hint": {
+      "coreTopic": "the disadvantages of living in an apartment",
+      "extraVocab": [
+        "living space",
+        "private yard",
+        "shared walls",
+        "balconies",
+        "noise complaints"
+      ],
+      "followUps": [
+        {
+          "answer": "Many young people around me prefer apartments, while older families still prefer private houses.",
+          "example": "For example, young office couples often choose a two-bedroom apartment near their workplace, while parents with two kids prefer a house with a small yard.",
+          "formula": "Do people ...? -> Compare preferences (Reason + Example)",
+          "q": "Do people around you prefer living in private houses or apartments? Why?",
+          "reason": "Apartments are convenient for busy people with good security and shared facilities, whereas private houses give more space, privacy, and long-term value."
+        },
+        {
+          "answer": "There are some common challenges for them, such as noise complaints and a lack of safe play areas.",
+          "example": "For instance, parents must always watch their kids on high balconies and take dogs downstairs in the elevator several times a day.",
+          "formula": "What ...? -> There are some... (Reason + Example)",
+          "q": "What challenges do families with pets or young children face in apartment buildings?",
+          "reason": "Young children love running and pets may bark, which easily annoys downstairs neighbors, and high balconies can also be unsafe."
+        },
+        {
+          "answer": "I think residents should respect shared rules, keep noise low at night, and communicate politely with neighbors.",
+          "example": "For example, if a family plans to repair their room or hold a small birthday party, telling next-door neighbors in advance keeps everyone happy.",
+          "formula": "How ...? -> Support/Rules solution (Individual responsibility)",
+          "q": "How can residents maintain good relationships with their neighbors in an apartment?",
+          "reason": "Being friendly in the elevator, keeping common hallways clean, and cleaning up after pets builds trust and avoids unnecessary trouble."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Limited living space",
+          "expand": "This is because most apartments do not have a private yard or garden for children to play or for families to plant trees.",
+          "impact": "Therefore, it can feel uncomfortable for big families who need more room.",
+          "sentence": "The living space in an apartment is quite small and limited.",
+          "wordForm": "Adj + N"
+        },
+        {
+          "cue": "Pet restrictions",
+          "expand": "For example, many buildings ban dogs and cats, or owners cannot find enough open space for their pets to run safely.",
+          "impact": "Clearly, it is inconvenient for animal lovers who want warm companionship at home.",
+          "sentence": "Residents often face strict rules against keeping pets in apartment buildings.",
+          "wordForm": "N"
+        },
+        {
+          "cue": "Neighbor issues and noise",
+          "expand": "This is because shared walls and floors let loud music, footsteps, or crying children disturb your personal privacy and peace.",
+          "impact": "So, it has negative effects on people's rest and mental health.",
+          "sentence": "People living in apartments can easily suffer from noise and neighbor problems.",
+          "wordForm": "N"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "personal privacy",
+        "mental health",
+        "convenient for busy people",
+        "warm companionship",
+        "clean up after their animals",
+        "avoid unnecessary trouble"
+      ]
+    }
   },
   {
     "STT": "15",
@@ -267,7 +952,47 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 19/11/2026 (Chiều)",
     "title": "Topic 7: Breakfast Habits & Nutrition",
-    "content": "1. What do you usually have for breakfast?\n2. Do you prefer eating breakfast at home or eating out? Why?\n3. How important is breakfast to your health and daily energy?"
+    "content": "1. What do you usually have for breakfast?\n2. Do you prefer eating breakfast at home or eating out? Why?\n3. How important is breakfast to your health and daily energy?",
+    "hint": {
+      "extraVocab": [
+        "sticky rice",
+        "skip breakfast"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I usually have something simple and quick like bread with eggs, sticky rice, or a bowl of pho.",
+          "example": "On weekday mornings around 7 a.m., I often eat two boiled eggs, bread, and drink a glass of milk before leaving home.",
+          "pillar": "Physical health",
+          "q": "What do you usually have for breakfast?",
+          "reason": "These dishes are tasty, affordable, and fast and convenient for busy people in modern-day society."
+        },
+        {
+          "answer": "I prefer eating breakfast at home with my family whenever I have time.",
+          "example": "Every morning, my mom cooks noodle soup or fried rice at home, and we eat together in the kitchen.",
+          "pillar": "Physical health",
+          "q": "Do you prefer eating breakfast at home or eating out? Why?",
+          "reason": "Home-cooked food is cleaner, healthier, and fits comfortably within my budget, and it also helps strengthen bonds within my family."
+        },
+        {
+          "answer": "Breakfast plays an essential role in my physical health and daily energy.",
+          "example": "Whenever I skip breakfast on busy days, I feel tired and cannot concentrate in my morning classes.",
+          "pillar": "Physical health",
+          "q": "How important is breakfast to your health and daily energy?",
+          "reason": "Eating a good breakfast helps me feel more energetic, allows my brain to focus better at school or work, and prevents stomach problems."
+        }
+      ],
+      "reusedSource": "Trục Physical health, Kho từ vựng (#18, #21) & Bộ đề 1",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "fit comfortably within my budget",
+        "strengthen bonds within a family",
+        "plays an essential role in",
+        "physical health",
+        "feel more energetic"
+      ],
+      "topic": "Breakfast Habits & Nutrition"
+    }
   },
   {
     "STT": "16",
@@ -285,7 +1010,47 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 19/11/2026 (Chiều)",
     "title": "Topic 8: Mobile Phone Usage",
-    "content": "1. Do you use your mobile phone frequently in your daily life?\n2. What purposes do you mostly use your mobile phone for?\n3. Do you think people today rely too much on their mobile phones?"
+    "content": "1. Do you use your mobile phone frequently in your daily life?\n2. What purposes do you mostly use your mobile phone for?\n3. Do you think people today rely too much on their mobile phones?",
+    "hint": {
+      "extraVocab": [
+        "keep in touch",
+        "dictionary app"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I use my mobile phone every day because it is fast and convenient for busy people in modern-day society.",
+          "example": "I spend about two to three hours a day on my phone, mostly in the morning and evening.",
+          "pillar": "Knowledge",
+          "q": "Do you use your mobile phone frequently in your daily life?",
+          "reason": "It helps me keep in touch with my family and friends, check study schedules, and make the most of new technology to improve productivity."
+        },
+        {
+          "answer": "I mostly use my phone for studying English, chatting with friends, and relaxing with music or videos.",
+          "example": "Every evening, I use a dictionary app to learn new vocabulary and listen to soft music on Spotify.",
+          "pillar": "Knowledge",
+          "q": "What purposes do you mostly use your mobile phone for?",
+          "reason": "It helps me broaden my knowledge easily and recharge my batteries when I feel stressed after school."
+        },
+        {
+          "answer": "Yes, I think many people today rely too much on their phones, especially young people.",
+          "example": "Even at family dinners or coffee shops with friends, many people keep looking at their phone screens instead of talking.",
+          "pillar": "Social",
+          "q": "Do you think people today rely too much on their mobile phones?",
+          "reason": "Using phones too much reduces face-to-face interaction, hurts our eyes, and widens the generation gap when family members do not talk to each other."
+        }
+      ],
+      "reusedSource": "Kho từ vựng (#8, #18, #22, #23) & Trục Knowledge",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "make the most of new technology to improve productivity",
+        "broaden my knowledge",
+        "recharge my batteries",
+        "face-to-face interaction",
+        "widens the generation gap"
+      ],
+      "topic": "Mobile Phone Usage"
+    }
   },
   {
     "STT": "17",
@@ -303,7 +1068,48 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 19/11/2026 (Chiều)",
     "title": "Part 2 - Situation 5: Planning a Fun Outing with Friends",
-    "content": "Situation: You and your group of friends are planning a weekend outing together to unwind and have fun. There are three options:\n- Going on a hiking adventure (đi leo núi dã ngoại)\n- Spending time at an amusement park (vui chơi tại công viên giải trí)\n- Going to a spa (đi spa thư giãn)\n\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You and your group of friends are planning a weekend outing together to unwind and have fun. There are three options:\n- Going on a hiking adventure (đi leo núi dã ngoại)\n- Spending time at an amusement park (vui chơi tại công viên giải trí)\n- Going to a spa (đi spa thư giãn)\n\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy for all of us to meet up, so my friends and I can play games, share good food, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Spending time at an amusement park is advantageous to my mental health and great for our social network.",
+          "example": "For example, my friends and I can ride the roller coaster, play arcade games together, and enjoy street food at the park on Saturday afternoon.",
+          "reason": "Exciting rides and group games help us relieve stress and reduce fatigue, boost our energy, and build a strong sense of belonging through fun face-to-face interaction."
+        },
+        "khen2Pillar": "Mental Health & Social Network",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and take meaningful photos together.",
+        "option": "Spending time at an amusement park"
+      },
+      "extraVocab": [
+        "roller coaster",
+        "arcade games",
+        "street food"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-6",
+          "option": "Going on a hiking adventure",
+          "reason": "hiking outdoors on steep paths is exhausting and dangerous, especially if it rains heavily or someone slips and gets hurt."
+        },
+        {
+          "cheCode": "CHÊ-2",
+          "option": "Going to a spa",
+          "reason": "going to a spa costs too much money for a group of friends, and people have to stay quiet in separate rooms instead of laughing and talking freely together."
+        }
+      ],
+      "reusedVocab": [
+        "relieve stress and reduce fatigue",
+        "boost my energy",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "refresh our minds"
+      ],
+      "situation": "My group of friends and I are planning a weekend outing together to unwind and have fun. There are three options: going on a hiking adventure, spending time at an amusement park, or going to a spa."
+    }
   },
   {
     "STT": "18",
@@ -321,6 +1127,72 @@
     "part": "part3",
     "group": "Đề thi thực tế HUST 19/11/2026 (Chiều)",
     "title": "Part 3 - Topic 5: Volunteering and Communication Skills",
-    "content": "Topic: Participating in volunteer work and personal development\nSuggestions:\n- Improving interpersonal and communication skills\n- Gaining practical experience and teamwork abilities\n- Contributing positively to the local community\n- [Your own ideas]\n\nFollow-up questions:\n1. What aspects of volunteering help improve your personal communication skills?\n2. What difficulties do people often encounter when doing volunteer work, and what are the solutions?\n3. How can schools and organizations encourage more young people to volunteer?"
+    "content": "Topic: Participating in volunteer work and personal development\nSuggestions:\n- Improving interpersonal and communication skills\n- Gaining practical experience and teamwork abilities\n- Contributing positively to the local community\n- [Your own ideas]\n\nFollow-up questions:\n1. What aspects of volunteering help improve your personal communication skills?\n2. What difficulties do people often encounter when doing volunteer work, and what are the solutions?\n3. How can schools and organizations encourage more young people to volunteer?",
+    "hint": {
+      "coreTopic": "participating in volunteer work and personal development",
+      "extraVocab": [
+        "charity event",
+        "training points",
+        "blood donation"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some parts of volunteering that improve communication skills, such as talking with strangers, working in teams, and listening to people in need.",
+          "example": "For example, when joining a blood donation event, volunteers explain the steps to visitors politely and work closely with doctors.",
+          "formula": "What -> There are some [Ns], such as...",
+          "q": "What aspects of volunteering help improve your personal communication skills?",
+          "reason": "This is because volunteers must share ideas clearly and build a strong sense of belonging through face-to-face interaction."
+        },
+        {
+          "answer": "There are some common difficulties, such as lack of free time, low budgets, and feeling tired after hard work.",
+          "example": "For instance, university clubs can plan weekend clean-up trips and give free lunch boxes to student volunteers.",
+          "formula": "What -> There are some [Ns], such as... + Support solution",
+          "q": "What difficulties do people often encounter when doing volunteer work, and what are the solutions?",
+          "reason": "To solve this problem, volunteers should manage their schedule well, while organizations should provide clear training and financial support for travel and meals."
+        },
+        {
+          "answer": "I think schools and organizations should launch community education campaigns and offer rewards or certificates for active volunteers.",
+          "example": "For example, universities can give extra training points or host fun weekend charity fairs on campus.",
+          "formula": "How -> Support solution",
+          "q": "How can schools and organizations encourage more young people to volunteer?",
+          "reason": "From a broader perspective, giving clear information and small rewards helps young people see volunteering as a gateway to self-discovery and self-development."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Improving interpersonal and communication skills",
+          "expand": "This is because volunteers meet many different people and work together in groups, which helps them adjust and adapt to the social environment.",
+          "impact": "Therefore, it is good for their social network and has a positive effect on their confidence.",
+          "sentence": "Participating in volunteer work helps people improve their communication skills.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Gaining practical experience and teamwork abilities",
+          "expand": "For example, students who join a charity event learn how to plan tasks, talk with teammates, and solve real problems together.",
+          "impact": "Clearly, it is beneficial to people when they apply for future jobs.",
+          "sentence": "Doing volunteer work helps young people gain practical experience and teamwork skills.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Contributing positively to the local community",
+          "expand": "This is because volunteers clean parks, teach poor children, or raise public awareness of environmental protection and healthy lifestyles.",
+          "impact": "So, it has positive effects on both individuals and society.",
+          "sentence": "Volunteering helps people make a contribution to their local community.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "make a contribution to",
+        "adjust and adapt to the social environment",
+        "a gateway to self-discovery and self-development",
+        "face-to-face interaction",
+        "build a strong sense of belonging",
+        "financial support",
+        "community education campaigns"
+      ]
+    }
   }
 ]

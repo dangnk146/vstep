@@ -17,7 +17,51 @@
     "title": "Topic 1: Walking & Daily Movement",
     "content": "1. Do you often walk in your daily life, and where do you usually go for a walk?\n2. What are the health benefits of walking regularly?\n3. Do you prefer walking alone or walking with friends and family? Why?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:40:01+07:00"
+    "addedAt": "2026-11-22T19:40:01+07:00",
+    "hint": {
+      "extraVocab": [
+        "nearby park",
+        "get fresh air"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I am keen on walking in my daily life, and I usually go for a walk in a nearby park in the late afternoon.",
+          "example": "I usually walk around the park near my house for about 30 minutes at 5:30 PM on weekdays.",
+          "pillar": "Physical health",
+          "q": "Do you often walk in your daily life, and where do you usually go for a walk?",
+          "reason": "It is cheap and convenient, and it allows me to relax my mind and get fresh air after sitting at my desk all day."
+        },
+        {
+          "answer": "Walking regularly brings a lot of benefits to both physical and mental health.",
+          "example": "Since I started walking every evening three months ago, I sleep much better at night and rarely feel tired in the morning.",
+          "pillar": "Physical health",
+          "q": "What are the health benefits of walking regularly?",
+          "reason": "To be more specific, it helps me keep fit, stay healthy, strengthen my immune system, and feel more energetic. It can also relieve stress and reduce fatigue."
+        },
+        {
+          "answer": "I prefer walking with my family or close friends rather than walking alone.",
+          "example": "Every Sunday morning, my mom and I walk together around the lake and talk about our plans for the week.",
+          "pillar": "Social",
+          "q": "Do you prefer walking alone or walking with friends and family? Why?",
+          "reason": "Because it lets me spend quality time with my loved ones and strengthen bonds within my family, while we openly share our thoughts and daily stories."
+        }
+      ],
+      "reusedSource": "Trục Physical health + Trục Mental health + Bộ đề 1 (Alone vs With others)",
+      "reusedVocab": [
+        "I am keen on",
+        "cheap and convenient",
+        "relax my mind",
+        "keep fit",
+        "stay healthy",
+        "strengthen my immune system",
+        "feel more energetic",
+        "relieve stress and reduce fatigue",
+        "spend quality time",
+        "strengthen bonds within my family"
+      ],
+      "topic": "Walking & Daily Movement"
+    }
   },
   {
     "STT": "2",
@@ -37,7 +81,48 @@
     "title": "Topic 2: Zoos & Wild Animals",
     "content": "1. Have you ever visited a zoo, and what animals did you enjoy seeing the most?\n2. Do you think visiting the zoo is a good educational activity for children? Why or why not?\n3. Are zoos still popular places to visit in your city today?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:40:02+07:00"
+    "addedAt": "2026-11-22T19:40:02+07:00",
+    "hint": {
+      "extraVocab": [
+        "wild animals",
+        "green space"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I have visited the zoo a few times, and I enjoyed seeing elephants and monkeys the most.",
+          "example": "I visited Saigon Zoo with my cousins two years ago, and we took lots of photos near the elephant area.",
+          "pillar": "Knowledge",
+          "q": "Have you ever visited a zoo, and what animals did you enjoy seeing the most?",
+          "reason": "Watching wild animals in real life is interesting and helps me relax my mind and elevate my mood."
+        },
+        {
+          "answer": "Yes, I think going to the zoo is a great educational activity for young children.",
+          "example": "When my little brother visited the zoo, he learned what giraffes eat and how to care for animals instead of only seeing them in comic books.",
+          "pillar": "Knowledge",
+          "q": "Do you think visiting the zoo is a good educational activity for children? Why or why not?",
+          "reason": "It gives them the opportunity to increase knowledge and broaden their horizons about nature, and teaches them why people should be involved in environmental protection."
+        },
+        {
+          "answer": "Yes, zoos are still quite popular in my city, especially for families with young kids.",
+          "example": "On weekends or public holidays, many parents bring their children to the city zoo for a picnic and a fun day out.",
+          "pillar": "Social",
+          "q": "Are zoos still popular places to visit in your city today?",
+          "reason": "It is affordable and gives families a chance to spend quality time together outdoors and enjoy green space away from busy streets."
+        }
+      ],
+      "reusedSource": "Trục Broaden knowledge + Bộ đề 1 (Family leisure) + Cụm đa năng (#11)",
+      "reusedVocab": [
+        "relax my mind",
+        "elevate my mood",
+        "give the opportunity to increase knowledge",
+        "broaden their horizons",
+        "should be involved in environmental protection",
+        "spend quality time",
+        "go on a picnic"
+      ],
+      "topic": "Zoos & Wild Animals"
+    }
   },
   {
     "STT": "3",
@@ -57,7 +142,49 @@
     "title": "Part 2 - Situation 1: Choosing a Reward Gift for a Child Moving Up a Grade",
     "content": "Situation: Your child has achieved excellent academic results and is moving up to a new grade. You want to reward them with a meaningful gift and are considering three options:\n- A laptop or computer (một chiếc máy tính)\n- A holiday trip (một chuyến du lịch)\n- A motorbike (một chiếc xe máy)\n\nWhich option do you think is the best choice and why?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:40:03+07:00"
+    "addedAt": "2026-11-22T19:40:03+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-2",
+        "khen1Text": "because it is easy to find in local electronics shops, fits my budget, and my child can use it every day at home for their studies.",
+        "khen2ARE": {
+          "answer": "A laptop or computer gives my child the opportunity to increase knowledge and learn useful skills for the new grade.",
+          "example": "For example, my child can attend online evening classes from home and prepare school slides easily for the new school year.",
+          "reason": "They can make the most of new technology to search for study materials, practice English, and finish homework faster."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-2",
+        "khen3Text": "a practical and meaningful reward that reminds my child of my care and encouragement for many years to come.",
+        "option": "A laptop or computer"
+      },
+      "extraVocab": [
+        "local electronics shops",
+        "study materials",
+        "school slides"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-6",
+          "option": "A motorbike",
+          "reason": "riding a motorbike on busy roads is dangerous for a school child, especially when it rains heavily or traffic is crowded, and a young student may not even be old enough for a license."
+        },
+        {
+          "cheCode": "CUSTOM",
+          "option": "A holiday trip",
+          "reason": "spending a lot of money on a short holiday trip is inconvenient because the trip ends after a few days, and my child cannot use it for daily study in the new grade."
+        }
+      ],
+      "reusedVocab": [
+        "fits my budget",
+        "use it every day",
+        "gives ... the opportunity to increase knowledge",
+        "make the most of new technology",
+        "meaningful keepsake / reward that reminds ... of my care",
+        "riding motorbikes ... is dangerous, especially when it rains heavily"
+      ],
+      "situation": "My child has achieved excellent academic results and is moving up to a new grade. I want to reward them with a meaningful gift and am considering three options: a laptop or computer, a holiday trip, and a motorbike."
+    }
   },
   {
     "STT": "4",
@@ -77,7 +204,73 @@
     "title": "Part 3 - Topic 1: The Importance of Good Relationships at the Workplace",
     "content": "Topic: The importance of maintaining positive relationships at the workplace\nSuggestions:\n- Enhancing teamwork and daily work efficiency\n- Reducing workplace stress and boosting job satisfaction\n- Expanding professional support and career growth opportunities\n- [Your own ideas]\n\nFollow-up questions:\n1. What qualities help an employee get along well with their colleagues?\n2. How should coworkers resolve disagreements or conflicts in the office?\n3. What can managers do to build a friendly and collaborative working environment?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:40:04+07:00"
+    "addedAt": "2026-11-22T19:40:04+07:00",
+    "hint": {
+      "coreTopic": "the importance of maintaining positive relationships at the workplace",
+      "extraVocab": [
+        "workplace",
+        "colleagues",
+        "team productivity"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some good qualities that help an employee get along well with colleagues, such as honesty, patience, and a willingness to listen.",
+          "example": "For example, an employee who helps a new teammate learn office software quickly earns everyone's trust and respect.",
+          "formula": "what",
+          "q": "What qualities help an employee get along well with their colleagues?",
+          "reason": "Being polite and helpful builds a strong sense of belonging and helps coworkers truly understand each other through face-to-face interaction."
+        },
+        {
+          "answer": "I think coworkers should stay calm, talk face-to-face privately, and listen to each other to solve the problem.",
+          "example": "For instance, if two colleagues disagree on a sales plan, they can sit in a meeting room for 15 minutes and combine the best ideas from both sides.",
+          "formula": "how/should",
+          "q": "How should coworkers resolve disagreements or conflicts in the office?",
+          "reason": "Thinking things through calmly avoids unnecessary trouble and prevents small work disagreements from turning into personal anger."
+        },
+        {
+          "answer": "I think managers should support open communication, treat everyone fairly, and organize regular team activities.",
+          "example": "For example, a manager can hold a short coffee break every Friday afternoon so team members can relax and talk freely.",
+          "formula": "how/should",
+          "q": "What can managers do to build a friendly and collaborative working environment?",
+          "reason": "When leaders listen to staff and encourage teamwork, workers feel respected, reduce fatigue, and stay motivated at the office."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Enhancing teamwork and daily work efficiency",
+          "expand": "because coworkers share ideas openly and help each other solve problems faster instead of working alone.",
+          "impact": "Therefore, it is good for team productivity and company success.",
+          "sentence": "Good workplace relationships help employees improve teamwork and daily work efficiency.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Reducing workplace stress and boosting job satisfaction",
+          "expand": "For example, having friendly colleagues to chat with during lunch breaks helps you put your feet up and elevate your mood on busy days.",
+          "impact": "Clearly, it is beneficial to employees' mental health.",
+          "sentence": "Positive relationships at work help staff relieve stress and feel happier with their job.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Expanding professional support and career growth opportunities",
+          "expand": "This is because experienced colleagues and managers are willing to teach you new skills and recommend you for higher positions.",
+          "impact": "So, it has positive effects on your long-term career and living standard.",
+          "sentence": "Good relationships help workers gain professional support and better career opportunities.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "relieve stress",
+        "put your feet up",
+        "elevate your mood",
+        "mental health",
+        "improve people's living standard",
+        "build a strong sense of belonging and help us truly understand each other through face-to-face interaction",
+        "think things through calmly to avoid unnecessary trouble",
+        "solve the problem"
+      ]
+    }
   }
 ]
-

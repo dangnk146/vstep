@@ -15,7 +15,60 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng)",
     "title": "Task 1.1: Feedback and Recommendation Letter to Hotel Manager",
-    "content": "You recently stayed at the Grand Horizon Hotel during a vacation with your family. While you generally enjoyed your stay, there were a few issues that needed improvement. Write a formal email to the hotel general manager to provide your feedback.\n\nIn your email, you should:\n- Mention the details of your stay (dates, room number) and express your overall impression\n- Detail specific problems you encountered (e.g., room service delays or noise at night)\n- Recommend constructive suggestions to improve customer experience in the future"
+    "content": "You recently stayed at the Grand Horizon Hotel during a vacation with your family. While you generally enjoyed your stay, there were a few issues that needed improvement. Write a formal email to the hotel general manager to provide your feedback.\n\nIn your email, you should:\n- Mention the details of your stay (dates, room number) and express your overall impression\n- Detail specific problems you encountered (e.g., room service delays or noise at night)\n- Recommend constructive suggestions to improve customer experience in the future",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, I would like to let you know that my family stayed in Room 405 from November 10th to November 13th, and we generally liked the clean rooms and polite staff.",
+          "example": "The check-in process took only a few minutes, and the morning breakfast buffet had plenty of fresh fruit and warm dishes.",
+          "frame": "D. Provide Information (I would like to let you know that...) + A. Reaction",
+          "reason": "Overall, the hotel provides convenient facilities that gave my family a pleasant start to our vacation.",
+          "requirement": "Mention stay details (dates, room number) and overall impression"
+        },
+        {
+          "answer": "However, I would like to explain what happened: the first problem was a long delay in room service, and the second issue was loud noise in the hallway at night.",
+          "example": "On Friday evening, our dinner order arrived 50 minutes late and cold, while noisy guests next door kept talking loudly until 1 AM.",
+          "frame": "E. Provide Problem (I would like to explain what happened. The first problem...) + F. Explanation",
+          "reason": "Because of this, my family could not enjoy total personal privacy or sleep deeply to relieve stress and reduce fatigue.",
+          "requirement": "Detail specific problems encountered (room service delays and night noise)"
+        },
+        {
+          "answer": "There are two suggestions I would like to make: I believe you should add extra staff for room service during busy dinner hours and remind guests to stay quiet after 10 PM.",
+          "example": "Putting polite quiet-hours signs in hallways and telling guests upfront if food takes over 30 minutes will make future stays much better.",
+          "frame": "G. Provide Instruction / Suggestion (There are two suggestions... I believe you should...)",
+          "reason": "These practical steps will solve the problem easily and protect your hotel's good reputation.",
+          "requirement": "Recommend constructive suggestions to improve customer experience"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "my feedback on our stay at Grand Horizon Hotel"
+      },
+      "extraVocab": [
+        "check-in process",
+        "room service",
+        "quiet-hours signs",
+        "busy dinner hours"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "give feedback and suggest improvements regarding my family's recent stay at the Grand Horizon Hotel",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Complaint + Constructive Suggestions (Hotel stay)",
+      "reusedVocab": [
+        "I would like to let you know that",
+        "I would like to explain what happened",
+        "The first problem I have encountered is",
+        "Because of this",
+        "total personal privacy",
+        "can relieve stress and reduce fatigue",
+        "There are two suggestions that I would like to make",
+        "I believe you should",
+        "solve the problem"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,7 +86,43 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng)",
     "title": "Task 2.1: Advantages and Disadvantages of Pursuing a Career as a Sales Manager",
-    "content": "Read the following statement:\n\n\"In recent years, an increasing number of young graduates in developed countries like the United States prefer pursuing a career as a sales manager over other traditional professions. While this job offers high income potential and rapid career advancement, it also brings immense work pressure and irregular working hours.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of choosing a career as a sales manager. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"In recent years, an increasing number of young graduates in developed countries like the United States prefer pursuing a career as a sales manager over other traditional professions. While this job offers high income potential and rapid career advancement, it also brings immense work pressure and irregular working hours.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of choosing a career as a sales manager. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, a hard-working sales manager in a big company can receive monthly commissions and get promoted to regional director within just a few years.",
+        "focus": "Advantages of being a sales manager",
+        "frame": "Firstly, [debai] + People have more opportunities to [V] + Cụm #4, #15",
+        "point": "Working as a sales manager gives young graduates more opportunities to earn high bonuses and improve people's living standard quickly. It also provides practical experience in communication, teamwork, and leadership for fast promotion."
+      },
+      "body2": {
+        "example": "For example, my brother worked in sales and often skipped lunch or answered client phone calls at 10 p.m., which made him feel exhausted and stressed.",
+        "focus": "Disadvantages of being a sales manager",
+        "frame": "Secondly, [debai] has a negative impact on... + Mini-essay #4 (Áp lực công việc) + Cụm #10",
+        "point": "However, sales managers face tight monthly deadlines and irregular working hours when meeting clients at night or on weekends. Because they often work overtime and worry about sales targets, it is hard to reach a healthy balance between work and family time."
+      },
+      "conclusion": "In conclusion, pursuing a career as a sales manager has both pros and cons: while it offers high income and fast promotion, workers must manage stress carefully to protect their health and family life.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "sales targets",
+        "monthly commissions",
+        "fast promotion"
+      ],
+      "intro": {
+        "debai": "choosing a career as a sales manager",
+        "ld1": "earn high income and achieve fast career growth",
+        "ld2": "suffer from heavy sales targets and irregular working hours"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Adv-Disadv + Mini-essay #4 (Áp lực công việc) + Cụm #4, #10, #15",
+      "reusedVocab": [
+        "have more opportunities to",
+        "improve people's living standard",
+        "provide knowledge and experience in",
+        "meet tight deadlines",
+        "work overtime",
+        "reach a healthy balance between work and family time"
+      ]
+    }
   },
   {
     "STT": "3",
@@ -51,7 +140,60 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 07/11/2026",
     "title": "Task 1.2: Informal Letter Advising a Friend on Organizing a Community Event in the Countryside",
-    "content": "You have received an email from your close friend, Alex, who is planning a community sports and cultural festival in his home village. Read part of his email below:\n\n\"Our village youth committee has decided to organize a community weekend festival next month to bring neighbors together. Since you have experience in organizing events, could you give me some suggestions on suitable activities we should include, how to attract local villagers, and what potential logistical issues we need to prepare for?\"\n\nWrite an informal email responding to Alex."
+    "content": "You have received an email from your close friend, Alex, who is planning a community sports and cultural festival in his home village. Read part of his email below:\n\n\"Our village youth committee has decided to organize a community weekend festival next month to bring neighbors together. Since you have experience in organizing events, could you give me some suggestions on suitable activities we should include, how to attract local villagers, and what potential logistical issues we need to prepare for?\"\n\nWrite an informal email responding to Alex.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm happy to hear about your village festival! Why don't you include friendly football and badminton matches alongside folk games and local food stalls?",
+          "example": "Young villagers can play a weekend football cup, while children and older neighbors enjoy tug-of-war and traditional singing together.",
+          "frame": "A. Reaction (I'm happy to hear...) + G. Provide Instruction / Suggestion (Why don't you...?)",
+          "reason": "Sports are beneficial to everyone's physical health, while cultural games build a strong sense of belonging through face-to-face interaction.",
+          "requirement": "Suggest suitable sports and cultural activities for the village festival"
+        },
+        {
+          "answer": "I believe you should put up bright posters at the village market and ask respected elders to invite neighbors in person.",
+          "example": "You can also share event times on the local community social media page and offer simple prizes like rice or fruit baskets for game winners.",
+          "frame": "G. Provide Instruction / Suggestion (I believe you should...)",
+          "reason": "Clear information and warm face-to-face invitations help bring families of all ages together.",
+          "requirement": "Advise how to attract local villagers to the event"
+        },
+        {
+          "answer": "From my point of view, you should prepare early for sudden rain, enough drinking water, and plenty of trash bins around the field.",
+          "example": "Set up large tents in case of bad weather and assign youth volunteers to collect plastic bottles and wrappers every two hours.",
+          "frame": "H. Provide Opinion (From my point of view...) + F. Explanation",
+          "reason": "Thinking things through calmly helps you stay on the safe side and avoid unnecessary trouble while getting everyone involved in environmental protection.",
+          "requirement": "Identify potential logistical issues to prepare for"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your village weekend festival"
+      },
+      "extraVocab": [
+        "folk games",
+        "food stalls",
+        "tug-of-war",
+        "trash bins"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "some helpful suggestions for planning your village community festival next month",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Give Suggestions & Advice (Village festival activities, promotion & planning)",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "Why don't you",
+        "I believe you should",
+        "From my point of view",
+        "beneficial to my physical health",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "stay on the safe side and think things through calmly to avoid unnecessary trouble",
+        "should be involved in environmental protection"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -69,7 +211,42 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 07/11/2026",
     "title": "Task 2.2: Advantages and Disadvantages of Becoming Famous",
-    "content": "Read the following statement:\n\n\"In today's media-saturated culture, many young people aspire to achieve fame and celebrity status. While being famous brings widespread recognition, lavish wealth, and exclusive privileges, it also entails heavy sacrifices.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of becoming famous. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"In today's media-saturated culture, many young people aspire to achieve fame and celebrity status. While being famous brings widespread recognition, lavish wealth, and exclusive privileges, it also entails heavy sacrifices.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of becoming famous. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, well-known athletes or singers are invited to international shows, stay at luxury hotels, and easily attract millions of supporters for charity projects.",
+        "focus": "Advantages of becoming famous",
+        "frame": "Firstly, [debai] + People have more opportunities to [V] + Cụm #2, #4",
+        "point": "Becoming famous helps people earn huge wealth from sponsors and enjoy special privileges like VIP events and free travel, which greatly improves people's living standard. Wide public recognition also lets stars make a contribution to social campaigns."
+      },
+      "body2": {
+        "example": "For example, many young pop stars cannot walk in a park without masks and sunglasses, and any small mistake in their private life quickly becomes headline news.",
+        "focus": "Disadvantages and heavy sacrifices of fame",
+        "frame": "Secondly, [debai] has a negative impact on... + Trục Peace & Privacy + Mini-essay #3",
+        "point": "However, fame brings heavy sacrifices because celebrities lose total personal privacy in noisy public places and on social media. Constant gossip and fear of losing fans make it difficult to relax or live a normal life with family."
+      },
+      "conclusion": "In conclusion, becoming famous has both pros and cons: it brings wealth, recognition, and special privileges, yet celebrities must pay a high price in personal privacy and mental peace.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "public recognition",
+        "special privileges",
+        "media gossip"
+      ],
+      "intro": {
+        "debai": "becoming famous in today's media culture",
+        "ld1": "enjoy public recognition, high wealth, and special career privileges",
+        "ld2": "sacrifice personal privacy and face constant media stress"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Adv-Disadv + Trục Peace & Privacy + Mini-essay #3 (Mạng xã hội) + Cụm #2, #4",
+      "reusedVocab": [
+        "have more opportunities to",
+        "improve people's living standard",
+        "make a contribution to",
+        "personal privacy",
+        "crowded, noisy public venues"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -87,7 +264,58 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
     "title": "Task 1.3: Replying to Lauren regarding Train Arrival and City Outing Plans",
-    "content": "You have received an email from your English friend, Lauren, who you are visiting next week. Read part of her email below:\n\n\"I am so sorry that I cannot pick you up at the airport because my university exam schedule was suddenly moved! Could you catch the express train into the city center? We can meet up at a nice cafe there—what kind of food or drinks do you fancy? Also, if you have free time in the evening, is there any special place or nightlife activity you would love to experience?\"\n\nWrite an informal email responding to Lauren."
+    "content": "You have received an email from your English friend, Lauren, who you are visiting next week. Read part of her email below:\n\n\"I am so sorry that I cannot pick you up at the airport because my university exam schedule was suddenly moved! Could you catch the express train into the city center? We can meet up at a nice cafe there—what kind of food or drinks do you fancy? Also, if you have free time in the evening, is there any special place or nightlife activity you would love to experience?\"\n\nWrite an informal email responding to Lauren.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm sorry to hear about your sudden exam change, and I would like to let you know that I can easily catch the express train into the city center.",
+          "example": "My flight lands at 10 AM, so I will take the 11 AM express train and meet you at the central station cafe around noon.",
+          "frame": "A. Reaction + D. Provide Information (I would like to let you know that...)",
+          "reason": "Taking the express train is fast and convenient for busy travelers, and this lets you focus calmly on your university exam.",
+          "requirement": "Respond to catching the express train into the city center"
+        },
+        {
+          "answer": "When it comes to food and drinks at the cafe, I would love a cup of hot tea or milk coffee with a fresh sandwich or pastry.",
+          "example": "A warm cheese croissant and a cup of tea at a cozy corner table will be perfect while we chat and catch up.",
+          "frame": "K. Informal Chunks (Ẩm thực) + H. Provide Opinion",
+          "reason": "After a long flight, a light meal helps me recharge my batteries and boost my energy without feeling too heavy.",
+          "requirement": "State food and drink preferences for the cafe meetup"
+        },
+        {
+          "answer": "In the evening, why don't we take a walk along the river, visit a night market, or watch a live music show at a cozy cafe?",
+          "example": "I would love to see the city lights by the river at 7 PM and try some local evening snacks together.",
+          "frame": "G. Provide Instruction / Suggestion (Why don't you/we...?) + H. Provide Opinion",
+          "reason": "Going out in the evening lets me broaden my mind about your city's local lifestyle while enjoying a relaxed time together.",
+          "requirement": "Share preferred evening place or nightlife activity"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my trip to visit you next week"
+      },
+      "extraVocab": [
+        "express train",
+        "light meal",
+        "night market",
+        "live music"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my train arrival plan and what I would like to eat and do in your city",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Confirm Travel Plan + Express Food & Evening Preferences",
+      "reusedVocab": [
+        "I would like to let you know that",
+        "fast, convenient",
+        "When it comes to [food/travel]",
+        "recharge my batteries",
+        "boost my energy",
+        "broaden their mind",
+        "Why don't you"
+      ]
+    }
   },
   {
     "STT": "6",
@@ -105,7 +333,42 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
     "title": "Task 2.3: Fast Fashion: Root Causes and Environmental Solutions",
-    "content": "Read the following statement:\n\n\"The global fashion industry has witnessed the rapid expansion of 'fast fashion'—mass-producing cheap, low-quality garments to meet fleeting trends. However, this model now accounts for approximately 10% of total global carbon emissions and generates massive amounts of textile waste.\"\n\nWrite an essay to an educated reader analyzing the root causes of the fast fashion phenomenon and proposing viable solutions to mitigate its severe environmental damage. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"The global fashion industry has witnessed the rapid expansion of 'fast fashion'—mass-producing cheap, low-quality garments to meet fleeting trends. However, this model now accounts for approximately 10% of total global carbon emissions and generates massive amounts of textile waste.\"\n\nWrite an essay to an educated reader analyzing the root causes of the fast fashion phenomenon and proposing viable solutions to mitigate its severe environmental damage. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For example, my sister bought five cheap shirts online last month to follow a new trend, and most of them are now sitting unused in her closet.",
+        "focus": "Root causes of fast fashion",
+        "frame": "Firstly, the first reason is that [ld1]... + Chunks A & D",
+        "point": "Nowadays, people are busy and want cheap, trendy items that look good on social media. Shopping apps also tempt buyers to waste money on cheap clothes they wear only a few times."
+      },
+      "body2": {
+        "example": "For instance, clothing stores can offer discounts when customers bring back old clothes for recycling instead of throwing them away.",
+        "focus": "Solutions to reduce fashion waste (Penalize + Support)",
+        "frame": "Secondly, to deal with this problem... + Giải pháp A (Penalize) & Giải pháp B (Support)",
+        "point": "Each individual should raise awareness, buy fewer clothes, and choose eco-friendly brands. At the same time, the government must introduce stricter rules and heavy fines for factories that pollute the air and water."
+      },
+      "conclusion": "In conclusion, fast fashion causes serious waste and air pollution, so both buyers and the government should take concrete actions to choose green habits and protect the environment.",
+      "essayType": "Causes-Solutions",
+      "extraVocab": [
+        "fast fashion",
+        "clothing waste",
+        "recycle old clothes"
+      ],
+      "intro": {
+        "debai": "buying cheap fast fashion clothes",
+        "ld1": "why young people buy cheap clothes so often",
+        "ld2": "practical ways to protect the environment from fashion waste"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #6 (Môi trường) + Câu #10 (Mua sắm online) + Giải pháp A (Penalize) & B (Support)",
+      "reusedVocab": [
+        "should be involved in environmental protection",
+        "tempts buyers to waste money on cheap items",
+        "raise their awareness",
+        "introduce stricter rules and heavy fines",
+        "choose green habits"
+      ]
+    }
   },
   {
     "STT": "7",
@@ -123,7 +386,49 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 18/11/2026 (Sáng)",
     "title": "Task 1.4: Replying to Carol Regarding a Company Seminar",
-    "content": "You have received an email from Carol, a colleague from another branch who is visiting your city for an upcoming company seminar. Read part of her email below:\n\n\"I am really looking forward to attending the company seminar in your city next week! Since I will be staying at the hotel arranged by the company, could you let me know if I need to prepare or bring any extra items for my accommodation? Also, could you tell me how much the participation fee for the seminar is?\"\n\nWrite an email responding to Carol."
+    "content": "You have received an email from Carol, a colleague from another branch who is visiting your city for an upcoming company seminar. Read part of her email below:\n\n\"I am really looking forward to attending the company seminar in your city next week! Since I will be staying at the hotel arranged by the company, could you let me know if I need to prepare or bring any extra items for my accommodation? Also, could you tell me how much the participation fee for the seminar is?\"\n\nWrite an email responding to Carol.",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, I am happy to hear you are coming to our city, and I would like to inform you that the company hotel already provides towels, basic toiletries, and free Wi-Fi.",
+          "example": "You only need to pack your personal laptop, phone charger, and light office clothes because the weather here is quite warm next week.",
+          "frame": "I. [Formal] Reply to Inquiry (First of all, I would like to inform you that...) + A. Reaction",
+          "reason": "The hotel room is equipped with modern facilities so visiting staff can stay comfortably without carrying heavy luggage.",
+          "requirement": "Clarify whether Carol needs to bring extra items for her hotel accommodation"
+        },
+        {
+          "answer": "Regarding your second question, I would like to inform you that the participation fee is completely free for all company employees.",
+          "example": "Just show your employee ID card at the seminar reception desk on Monday morning at 8:30 AM to collect your name badge and handbook.",
+          "frame": "I. [Formal] Reply to Inquiry (Regarding..., I would like to inform you that...)",
+          "reason": "Our company covers all seminar costs, meals, and materials to help staff make the most of new knowledge and improve productivity.",
+          "requirement": "Answer how much the participation fee for the seminar is"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "the upcoming company seminar"
+      },
+      "extraVocab": [
+        "toiletries",
+        "participation fee",
+        "employee ID card",
+        "name badge"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "answer your questions about the hotel stay and the upcoming company seminar",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Reply to Inquiry (Hotel items & seminar participation fee)",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "First of all, I would like to inform you that",
+        "Regarding",
+        "be equipped with state-of-the-art facilities",
+        "make the most of new technology to improve productivity"
+      ]
+    }
   },
   {
     "STT": "8",
@@ -141,7 +446,42 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 18/11/2026 (Sáng)",
     "title": "Task 2.4: Computer Technology in Language Learning",
-    "content": "Read the following statement:\n\n\"In recent years, computer technology has become an essential part of foreign language education, offering interactive exercises, language apps, and instant access to online resources. However, some educators argue that overreliance on digital technology reduces genuine human interaction and speaking practice.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of computer technology in language learning. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"In recent years, computer technology has become an essential part of foreign language education, offering interactive exercises, language apps, and instant access to online resources. However, some educators argue that overreliance on digital technology reduces genuine human interaction and speaking practice.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of computer technology in language learning. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother used an AI speaking app for 20 minutes every evening at home, and his English pronunciation improved quickly.",
+        "focus": "Advantages of computer technology in language learning",
+        "frame": "Firstly, [debai] is considered as a convenient way to [V]... + Mini-essay #5",
+        "point": "With computer tools and language apps, students can practice English speaking daily and receive instant feedback on their grammar errors. This makes self-study much faster and more affordable than paying for private tutors."
+      },
+      "body2": {
+        "example": "For example, I used to study vocabulary only on my laptop, so I felt very nervous when I first talked to a foreign tourist in person.",
+        "focus": "Disadvantages of computer technology in language learning",
+        "frame": "Secondly, [debai] has a negative impact on... + Khung Disadvantages (Mục 3C) + Chunk #23",
+        "point": "However, depending too much on screens gives students fewer opportunities to talk face to face with teachers and classmates. Without real conversation, learners may feel shy and fail to build natural communication skills."
+      },
+      "conclusion": "In conclusion, using technology to learn a language has both pros and cons: while learners can enjoy fast, affordable study tools, they still need face-to-face practice with real teachers and friends.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "language apps",
+        "self-study",
+        "pronunciation"
+      ],
+      "intro": {
+        "debai": "using computers and apps to learn foreign languages",
+        "ld1": "learn faster with flexible online tools",
+        "ld2": "losing real speaking practice with people"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #5 (AI & Modern Skills) + Khung Advantages & Disadvantages (Mục 3B, 3C)",
+      "reusedVocab": [
+        "make the most of new technology to improve productivity",
+        "fast, convenient for busy people in modern-day society",
+        "face-to-face interaction",
+        "practice English speaking daily",
+        "receive instant feedback on their grammar errors"
+      ]
+    }
   },
   {
     "STT": "9",
@@ -159,7 +499,59 @@
     "part": "part1",
     "group": "Đề thi thực tế HUST 19/11/2026 (Chiều)",
     "title": "Task 1.5: Handing Over Work to a Colleague Before a One-Week Leave",
-    "content": "You are going to take a one-week leave next week and need to hand over your ongoing work to a colleague. Write an email to your colleague:\n\n- Inform them of the dates and purpose of your one-week leave\n- Explain the urgent tasks and responsibilities that need to be handled while you are away\n- Outline the key items and issues that need to be discussed in the upcoming workshop"
+    "content": "You are going to take a one-week leave next week and need to hand over your ongoing work to a colleague. Write an email to your colleague:\n\n- Inform them of the dates and purpose of your one-week leave\n- Explain the urgent tasks and responsibilities that need to be handled while you are away\n- Outline the key items and issues that need to be discussed in the upcoming workshop",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, please be advised that I will be on leave from Monday, November 30th to Friday, December 4th to attend a close family wedding in my hometown.",
+          "example": "I will be back at my desk on Monday, December 7th, and I can still check urgent messages once every evening if anything sudden comes up.",
+          "frame": "D. Provide Information (Please be advised that...)",
+          "reason": "Sharing my exact dates early helps us stay organized and reach a healthy balance while you cover my work.",
+          "requirement": "Inform colleague of the dates and purpose of the one-week leave"
+        },
+        {
+          "answer": "Secondly, I would appreciate it if you could finish checking the monthly sales report and reply to daily customer support emails while I am away.",
+          "example": "The sales report must be emailed to our manager by 5 PM next Wednesday, and all current client files are saved in our shared team folder.",
+          "frame": "B. Request (I would appreciate it if you could...) + D. Provide Information",
+          "reason": "Handling these urgent duties on time solves problems quickly and keeps our team's productivity steady without missing deadlines.",
+          "requirement": "Explain urgent tasks and responsibilities to handle during the leave"
+        },
+        {
+          "answer": "Regarding next Thursday's workshop, I would like to give you information on the key topics: our new project timeline, slow delivery times, and staff training needs.",
+          "example": "I have prepared a short 5-slide summary and placed all customer feedback notes in the shared folder so you can present them easily.",
+          "frame": "D. Provide Information (I would like to give you information on...) + I. Reply/Topic transition (Regarding...)",
+          "reason": "Discussing these points face-to-face lets our team adjust quickly and make the most of new tools to improve productivity.",
+          "requirement": "Outline key items and issues to discuss in the upcoming workshop"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "my work handover before next week's leave"
+      },
+      "extraVocab": [
+        "on leave",
+        "sales report",
+        "shared folder",
+        "project timeline"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "hand over my ongoing tasks and share key details before my one-week leave next week",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Request Assistance (Work handover before leave)",
+      "reusedVocab": [
+        "Please be advised that",
+        "reach a healthy balance",
+        "I would appreciate it if you could",
+        "solve the problem",
+        "I would like to give you information on",
+        "Regarding",
+        "make the most of new technology to improve productivity",
+        "face-to-face interaction"
+      ]
+    }
   },
   {
     "STT": "10",
@@ -177,6 +569,41 @@
     "part": "part2",
     "group": "Đề thi thực tế HUST 19/11/2026 (Chiều)",
     "title": "Task 2.5: Advantages and Disadvantages of Riding Motorbikes in Cities",
-    "content": "Read the following statement:\n\n\"In many busy cities, motorbikes continue to be a convenient and affordable means of transportation for daily commuters. However, the heavy use of motorbikes also raises serious concerns regarding traffic accidents, noise, and urban air pollution.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of riding motorbikes in cities. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"In many busy cities, motorbikes continue to be a convenient and affordable means of transportation for daily commuters. However, the heavy use of motorbikes also raises serious concerns regarding traffic accidents, noise, and urban air pollution.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of riding motorbikes in cities. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother rides his motorbike to his office in 15 minutes every morning instead of waiting an hour for a crowded bus.",
+        "focus": "Advantages of riding motorbikes in cities",
+        "frame": "Firstly, [debai] is considered as a convenient way to [V]... + Chunks #18, #21",
+        "point": "Motorbikes are fast and convenient for busy people in modern cities because they can easily move through narrow streets and heavy traffic. They also cost much less money than buying a car, so they fit well within a worker's budget."
+      },
+      "body2": {
+        "example": "For example, during rush hour in my city, thousands of motorbikes get stuck together, making everyone breathe in thick exhaust smoke.",
+        "focus": "Disadvantages of riding motorbikes in cities",
+        "frame": "Secondly, [debai] has a negative impact on... + Mini-essay #6",
+        "point": "On the other hand, too many motorbikes on the road cause serious traffic accidents and loud noise every day. In addition, gasoline motorbikes release harmful exhaust fumes that make city air dirty and harm people's health."
+      },
+      "conclusion": "In conclusion, riding motorbikes in cities brings both pros and cons: it helps people travel quickly and cheaply, yet it worsens traffic safety and air pollution.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "narrow streets",
+        "rush hour",
+        "traffic accidents"
+      ],
+      "intro": {
+        "debai": "riding motorbikes in big cities",
+        "ld1": "travel fast and save money every day",
+        "ld2": "traffic accidents, noise, and dirty air"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #6 (Xe cộ & Môi trường) + Khung Advantages & Disadvantages (Mục 3B, 3C) + Chunk #18",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "fit comfortably within my budget and daily routine without sacrificing quality",
+        "harmful exhaust fumes",
+        "air pollution",
+        "traffic noise"
+      ]
+    }
   }
 ]

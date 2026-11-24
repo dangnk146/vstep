@@ -15,7 +15,61 @@
     "part": "part1",
     "group": "Đề thi thực tế DTU 12/11/2026 (Sáng)",
     "title": "Task 1.1: Replying to a Friend's Invitation to a Local Sports Tournament",
-    "content": "You have received an email from your close friend, Liam, inviting you to take part in an upcoming amateur sports competition in his town. Read part of his email below:\n\n\"Our university sports club is organizing a 3-on-3 basketball and badminton tournament next weekend! We still need an energetic player for our team. Would you like to join us? The tournament will be held at the city stadium, and we can practice together this Thursday. Let me know if you can make it!\"\n\nWrite an informal email responding to Liam."
+    "content": "You have received an email from your close friend, Liam, inviting you to take part in an upcoming amateur sports competition in his town. Read part of his email below:\n\n\"Our university sports club is organizing a 3-on-3 basketball and badminton tournament next weekend! We still need an energetic player for our team. Would you like to join us? The tournament will be held at the city stadium, and we can practice together this Thursday. Let me know if you can make it!\"\n\nWrite an informal email responding to Liam.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm so happy to hear about your university club's tournament! Yes, I would love to join your team next weekend.",
+          "example": "Specifically, I am free all next Saturday and Sunday, so I can play in both the 3-on-3 basketball and badminton matches.",
+          "frame": "I'm happy to hear ______ / I would like to let you know that ______.",
+          "reason": "Joining this competition is beneficial to my physical health and good for my social network, as I can keep fit and meet like-minded people who love sports.",
+          "requirement": "Respond to Liam's invitation to join the 3-on-3 basketball and badminton tournament next weekend"
+        },
+        {
+          "answer": "From my point of view, I can contribute most in 3-on-3 basketball, though I am also happy to play badminton if the team needs an extra player.",
+          "example": "For example, I have been playing basketball twice a week with my classmates this semester, so my passing and defense are quite sharp.",
+          "frame": "From my point of view, I think that ______. / I have a lot of information about ______.",
+          "reason": "Playing team sports helps us relieve stress after studying and build a strong sense of belonging through face-to-face interaction.",
+          "requirement": "Explain which sport you prefer and why you want to join the team"
+        },
+        {
+          "answer": "I can definitely make it to practice with the team this Thursday at the city stadium.",
+          "example": "Why don't we meet outside the main gate of the city stadium at 4:30 PM on Thursday so we can warm up together?",
+          "frame": "Please be advised that ______. / Why don't you [V-bare] ______?",
+          "reason": "Practicing together beforehand helps solve the problem of weak teamwork and lets us get used to the court before the real matches.",
+          "requirement": "Confirm whether you can make it to practice this Thursday at the city stadium"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "the sports tournament"
+      },
+      "extraVocab": [
+        "amateur tournament",
+        "3-on-3 basketball",
+        "warm up",
+        "teamwork",
+        "city stadium"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "your invitation to the sports tournament next weekend",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Reply to Liam accepting his invitation to the sports tournament, share your preferred sport, and confirm Thursday's practice at the city stadium.",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "beneficial to my physical health",
+        "good for my social network",
+        "keep fit",
+        "meet like-minded people",
+        "relieve stress",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "solve the problem"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,7 +87,42 @@
     "part": "part2",
     "group": "Đề thi thực tế DTU 12/11/2026 (Sáng)",
     "title": "Task 2.1: Impacts and Solutions of Cybercrime in the Digital Era",
-    "content": "Read the following statement:\n\n\"As digital connectivity expands, cybercrime—such as online identity theft, financial fraud, and cyber harassment—has emerged as a severe threat to individuals and businesses worldwide.\"\n\nWrite an essay to an educated reader examining the primary impacts of cybercrime and proposing effective solutions that governments and internet users can take to combat it. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"As digital connectivity expands, cybercrime—such as online identity theft, financial fraud, and cyber harassment—has emerged as a severe threat to individuals and businesses worldwide.\"\n\nWrite an essay to an educated reader examining the primary impacts of cybercrime and proposing effective solutions that governments and internet users can take to combat it. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my neighbor clicked a fake bank link in a text message last year and lost five million dong from her savings account.",
+        "focus": "Primary impacts of cybercrime on individuals and businesses",
+        "frame": "Firstly, the first reason is that [ld1]... + Câu #11 & Khung Effects (Mục 3D)",
+        "point": "Cybercrime directly harms both normal people and companies by stealing bank accounts, private photos, and personal identities. Victims not only lose a lot of money but also feel worried, stressed, and unsafe when using the internet."
+      },
+      "body2": {
+        "example": "For example, banks and police in my city now send warning messages on mobile apps to teach people how to spot fake phone calls and scam links.",
+        "focus": "Solutions for governments and internet users (Giải pháp A - Penalize)",
+        "frame": "Secondly, to solve this problem... + Giải pháp A (Penalize) + Chunk #24",
+        "point": "At the macro level, the government must introduce stricter rules and heavy fines to catch and punish online criminals. At the same time, internet users must stay on the safe side by using strong passwords and never clicking strange links."
+      },
+      "conclusion": "In conclusion, online crime causes serious financial and mental damage, so governments need stricter punishments while users must protect their personal details carefully.",
+      "essayType": "Causes-Solutions",
+      "extraVocab": [
+        "online crime",
+        "strong passwords",
+        "fake links"
+      ],
+      "intro": {
+        "debai": "online crime in today's digital world",
+        "ld1": "serious money loss and stolen personal information",
+        "ld2": "stronger laws from the government and safer online habits"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Câu #11 (An ninh mạng) + Giải pháp A (Penalize) + Chunks #3, #24",
+      "reusedVocab": [
+        "sharing private details online or clicking strange links allows cyber criminals to steal bank accounts and personal identities easily",
+        "introduce stricter rules and heavy fines for violations",
+        "raise their awareness",
+        "stay on the safe side and think things through calmly to avoid unnecessary trouble",
+        "solve the problem"
+      ]
+    }
   },
   {
     "STT": "3",
@@ -51,7 +140,61 @@
     "part": "part1",
     "group": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
     "title": "Task 1.2: Recommending Sightseeing, Transport, and Cultural Venues to Pen Pal Jack",
-    "content": "You have received an email from your pen pal, Jack, who is traveling to your hometown with a group of friends next month. Read part of his email below:\n\n\"My friends and I are finalizing our travel plan to your city! Since you know the area well, could you recommend some must-see sights for young travelers? Would it be better for us to use public transport or rent a private vehicle, and is there an engaging history museum or cultural site where we can learn about local history?\"\n\nWrite an informal email responding to Jack."
+    "content": "You have received an email from your pen pal, Jack, who is traveling to your hometown with a group of friends next month. Read part of his email below:\n\n\"My friends and I are finalizing our travel plan to your city! Since you know the area well, could you recommend some must-see sights for young travelers? Would it be better for us to use public transport or rent a private vehicle, and is there an engaging history museum or cultural site where we can learn about local history?\"\n\nWrite an informal email responding to Jack.",
+    "hint": {
+      "body": [
+        {
+          "answer": "For young travelers like your group, you should visit our old quarter, the riverside art street, and the lively local night market.",
+          "example": "For example, you can walk along the riverside in the late afternoon, take group photos by the old bridge, and enjoy street food together.",
+          "frame": "I am genuinely thrilled to hear that you are planning to visit my hometown! There are two suggestions that I would like to make.",
+          "reason": "When it comes to food and sightseeing, these places let you try authentic local snacks and broaden your mind about modern youth life in my hometown.",
+          "requirement": "Recommend must-see sights for Jack and his group of young travelers"
+        },
+        {
+          "answer": "Since you are traveling in a group, I think it is better to book ride-hailing cars or rent a small van with a driver rather than relying only on public buses.",
+          "example": "For instance, splitting a 7-seat car among four or five friends costs almost the same as bus tickets and takes you directly to distant beaches or hills.",
+          "frame": "From my point of view, I think that ______. / I believe you should ______.",
+          "reason": "Sharing a vehicle is fast and convenient for busy travelers, fits comfortably within your group budget, and helps you stay on the safe side on unfamiliar roads.",
+          "requirement": "Advise whether to use public transport or rent a private vehicle"
+        },
+        {
+          "answer": "To learn about local history, I recommend visiting the Provincial History Museum and the ancient temple next to it.",
+          "example": "Why don't you join the free 9:00 AM English guided tour at the museum? It explains traditional crafts and old stories in a fun way.",
+          "frame": "I would like to give you information on ______. / Why don't you [V-bare] ______?",
+          "reason": "These sites provide knowledge and experience in local heritage and help you gain a deeper understanding of people, culture, and tradition here.",
+          "requirement": "Recommend an engaging history museum or cultural site to learn about local history"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "visiting my hometown"
+      },
+      "extraVocab": [
+        "old quarter",
+        "night market",
+        "group budget",
+        "guided tour",
+        "traditional crafts"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "your group trip to my hometown next month",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Reply to Jack with must-see sights for young travelers, advice on public transport vs. renting a private vehicle, and a history museum or cultural site recommendation.",
+      "reusedVocab": [
+        "I am genuinely thrilled to hear that you are planning to visit my hometown!",
+        "When it comes to",
+        "authentic",
+        "broaden their mind",
+        "fast, convenient for busy people in modern-day society",
+        "fit comfortably within my budget",
+        "stay on the safe side",
+        "provide knowledge and experience in",
+        "gain a deeper understanding of people, culture, and tradition"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -69,7 +212,41 @@
     "part": "part2",
     "group": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
     "title": "Task 2.2: Arranged Marriages versus Love Marriages",
-    "content": "Read the following statement:\n\n\"In some traditional cultures, arranged marriages organized by parents and family elders are still prevalent, while in modern societies, most people insist on choosing their own life partner based on romantic love.\"\n\nWrite an essay to an educated reader discussing both arranged marriages and love marriages, and give your own perspective on which approach fosters long-term marital stability and happiness. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"In some traditional cultures, arranged marriages organized by parents and family elders are still prevalent, while in modern societies, most people insist on choosing their own life partner based on romantic love.\"\n\nWrite an essay to an educated reader discussing both arranged marriages and love marriages, and give your own perspective on which approach fosters long-term marital stability and happiness. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my sister dated her husband for three years before getting married, so they understand each other deeply and rarely argue over small things.",
+        "focus": "Love marriages (Preferred view)",
+        "frame": "Firstly, the first reason is that [ld1]... + Câu #12 & Chunk #23",
+        "point": "Marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents. When couples choose each other freely, they know each other's personality well and solve family problems more easily."
+      },
+      "body2": {
+        "example": "For example, my uncle married a woman introduced by his parents, and both families helped them buy a small house and start a business together.",
+        "focus": "Arranged marriages (Other view)",
+        "frame": "Secondly, it allows that [ld2]... + Khung Discuss both views & Chunk #24",
+        "point": "On the other hand, some people support arranged marriages because parents have rich life experience and want a safe, stable match for their children. Families with similar backgrounds may also avoid money conflicts and get strong support from both sides."
+      },
+      "conclusion": "In conclusion, while arranged marriages bring family support and careful matching, I prefer love marriages because genuine love and mutual understanding lead to lasting happiness.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "life partner",
+        "family support",
+        "similar backgrounds"
+      ],
+      "intro": {
+        "debai": "choosing a marriage partner based on love rather than family arrangement",
+        "ld1": "build a happy home through true love and shared understanding",
+        "ld2": "receive helpful advice and support from experienced parents"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Câu #12 (Hôn nhân tình yêu vs sắp đặt) + Chunk #23 + Khung Discuss both views",
+      "reusedVocab": [
+        "marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents",
+        "help us truly understand each other through face-to-face interaction",
+        "stay on the safe side and think things through calmly",
+        "reach a healthy balance between work and family time"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -87,7 +264,60 @@
     "part": "part1",
     "group": "Đề thi thực tế DTU (Ca sáng bổ sung)",
     "title": "Task 1.3: Formal Reply to an Employer Confirming Job Interview Details",
-    "content": "You recently received an email from an international recruitment agency informing you that your CV has passed the initial screening and inviting you to a formal job interview. In the email, the hiring manager asks you to confirm:\n\n- Your expected monthly salary and benefits\n- A summary of your previous relevant work experience\n- The earliest date you can commence work if hired\n\nWrite a formal email responding to the recruitment manager."
+    "content": "You recently received an email from an international recruitment agency informing you that your CV has passed the initial screening and inviting you to a formal job interview. In the email, the hiring manager asks you to confirm:\n\n- Your expected monthly salary and benefits\n- A summary of your previous relevant work experience\n- The earliest date you can commence work if hired\n\nWrite a formal email responding to the recruitment manager.",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, I would like to inform you that my expected monthly salary is around 15 to 18 million VND, along with standard health insurance and paid annual leave.",
+          "example": "However, I am open to discussing the final offer during the interview based on the exact job duties and performance bonuses.",
+          "frame": "First of all, I would like to inform you that ______.",
+          "reason": "This package fits comfortably within my living needs while allowing me to improve my living standard and focus fully on the company's goals.",
+          "requirement": "Confirm your expected monthly salary and benefits"
+        },
+        {
+          "answer": "Regarding my previous work experience, I worked for two years as a junior software support specialist at a local IT firm after finishing my university internship.",
+          "example": "For example, I handled daily technical tickets, updated user guides, and helped solve system issues for over 50 business clients.",
+          "frame": "Regarding ______, ______.",
+          "reason": "That role provided knowledge and experience in customer support, helping me make the most of new technology to improve productivity and adjust smoothly to a professional team.",
+          "requirement": "Provide a summary of your previous relevant work experience"
+        },
+        {
+          "answer": "As to your next concern, I would like to let you know that I can start working full-time from the first day of next month if I am selected for the position.",
+          "example": "Specifically, if the interview takes place this Friday, I will be ready to sign the contract and attend onboarding on December 1st.",
+          "frame": "As to your next concern, ______. / I would like to let you know that ______.",
+          "reason": "This gives me two weeks to complete my current handover calmly and stay on the safe side so I can join your team with full energy.",
+          "requirement": "State the earliest date you can commence work if hired"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "my interview and application details"
+      },
+      "extraVocab": [
+        "health insurance",
+        "paid annual leave",
+        "performance bonuses",
+        "technical tickets",
+        "onboarding"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "confirm my interview attendance and provide the requested details regarding my salary expectations, relevant experience, and earliest start date",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Reply formally to the recruitment manager to confirm expected salary and benefits, summarize relevant work experience, and state your earliest start date.",
+      "reusedVocab": [
+        "First of all, I would like to inform you that",
+        "Regarding",
+        "As to your next concern",
+        "improve people's living standard",
+        "provide knowledge and experience in",
+        "make the most of new technology to improve productivity",
+        "adjust and adapt to the social environment",
+        "stay on the safe side"
+      ]
+    }
   },
   {
     "STT": "6",
@@ -105,6 +335,40 @@
     "part": "part2",
     "group": "Đề thi thực tế DTU (Ca sáng bổ sung)",
     "title": "Task 2.3: Discussing the Positive and Negative Impacts of Sharing Our Lives Online",
-    "content": "Read the following statement:\n\n\"With the ubiquity of social networks, millions of internet users share their daily lives, personal achievements, and family moments online. Many people argue that sharing our lives online has brought overwhelmingly positive impacts by fostering connection and inspiration.\"\n\nWrite an essay to an educated reader discussing to what extent you agree or disagree with the statement that sharing our lives online has many positive impacts. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"With the ubiquity of social networks, millions of internet users share their daily lives, personal achievements, and family moments online. Many people argue that sharing our lives online has brought overwhelmingly positive impacts by fostering connection and inspiration.\"\n\nWrite an essay to an educated reader discussing to what extent you agree or disagree with the statement that sharing our lives online has many positive impacts. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, when my cousin moved to another city for work, sharing family photos online helped our relatives follow his daily life and feel close to him.",
+        "focus": "Positive impact: Staying connected and inspiring others",
+        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Template 2)",
+        "point": "Sharing daily moments online is a fast, convenient way for busy people to enrich their social life, keep in touch with faraway friends, and motivate others with positive achievements."
+      },
+      "body2": {
+        "example": "For example, many teenagers scroll through Facebook and TikTok, compare themselves to luxury vacation posts, or accidentally share private details that cyber criminals can steal.",
+        "focus": "Negative impact: Peer pressure and online privacy risks",
+        "frame": "Secondly, it also brings [ld2]... / Disadvantages (Body Chunk C)",
+        "point": "However, posting too much online can create peer pressure, cause mental stress, and expose personal data to cyber criminals."
+      },
+      "conclusion": "In conclusion, sharing our lives online has both positive and negative sides, so users should stay on the safe side by connecting with loved ones while avoiding oversharing private details.",
+      "essayType": "Agree or Disagree",
+      "extraVocab": [
+        "overshare private details",
+        "online privacy risks"
+      ],
+      "intro": {
+        "debai": "sharing our daily lives and personal moments online",
+        "ld1": "stay connected with friends and inspire others",
+        "ld2": "avoiding peer pressure and online safety risks"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 2 (Agree or Disagree) + Trục 2 (Social network) + Mini-essay #3 (Peer Pressure) + Câu #11 (An ninh mạng)",
+      "reusedVocab": [
+        "enrich our social life",
+        "fast, convenient for busy people in modern-day society",
+        "peer pressure",
+        "stay on the safe side",
+        "steal bank accounts and personal identities"
+      ]
+    }
   }
 ]

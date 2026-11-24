@@ -15,7 +15,54 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng)",
     "title": "Topic 1: Milk Tea & Trendy Beverages",
-    "content": "1. Do you like drinking milk tea or boba tea? Why or why not?\n2. How often do you buy milk tea, and who do you usually drink it with?\n3. Why has milk tea become such an overwhelmingly popular beverage among young people?"
+    "content": "1. Do you like drinking milk tea or boba tea? Why or why not?\n2. How often do you buy milk tea, and who do you usually drink it with?\n3. Why has milk tea become such an overwhelmingly popular beverage among young people?",
+    "hint": {
+      "extraVocab": [
+        "milk tea",
+        "sweet flavor",
+        "toppings",
+        "less sugar",
+        "affordable"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I am quite keen on drinking milk tea, though I try not to drink it too often.",
+          "example": "Whenever I finish a difficult test, I treat myself to a cup of oolong milk tea with less sugar.",
+          "pillar": "Mental health & Physical health",
+          "q": "1. Do you like drinking milk tea or boba tea? Why or why not?",
+          "reason": "The sweet flavor and chewy toppings help elevate my mood and make me feel refreshed after a hard day of studying. However, drinking too much sugar is not good for my physical health."
+        },
+        {
+          "answer": "I usually buy milk tea once a week, mostly on weekends with my close friends.",
+          "example": "Every Friday afternoon after class, my friends and I visit our favorite drink shop near campus to chat and relax.",
+          "pillar": "Social",
+          "q": "2. How often do you buy milk tea, and who do you usually drink it with?",
+          "reason": "Sitting together at a milk tea shop is a fun way to spend quality time, strengthen our friendship, and share stories about school and life."
+        },
+        {
+          "answer": "Milk tea has become popular among young people because it is delicious, affordable, and social.",
+          "example": "For instance, students often gather at milk tea cafes to do group homework or celebrate birthdays together.",
+          "pillar": "Social & Budget",
+          "q": "3. Why has milk tea become such an overwhelmingly popular beverage among young people?",
+          "reason": "First, shops offer many flavors that fit comfortably within a student's budget. Second, milk tea shops give young people a comfortable space to meet like-minded friends and reduce stress."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Mental health, Social) + Trục Physical health & Từ vựng #21",
+      "reusedVocab": [
+        "keen on",
+        "elevate my mood",
+        "feel refreshed",
+        "physical health",
+        "spend quality time",
+        "strengthen",
+        "fit comfortably within",
+        "budget",
+        "like-minded friends",
+        "reduce stress"
+      ],
+      "topic": "Milk Tea & Trendy Beverages"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +80,52 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng)",
     "title": "Topic 2: Eating Out & Dining Preferences",
-    "content": "1. How often do you dine out at restaurants or street food stalls?\n2. What type of food do you prefer when eating outside: fast food or traditional home-cooked cuisine?\n3. What are the noticeable advantages of eating out compared to preparing meals at home?"
+    "content": "1. How often do you dine out at restaurants or street food stalls?\n2. What type of food do you prefer when eating outside: fast food or traditional home-cooked cuisine?\n3. What are the noticeable advantages of eating out compared to preparing meals at home?",
+    "hint": {
+      "extraVocab": [
+        "street food stalls",
+        "traditional cuisine",
+        "fast food",
+        "wash dishes"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I usually eat out at street food stalls or casual restaurants two or three times a week.",
+          "example": "On Tuesday and Thursday evenings, after my extra classes finish, I often stop by a local food stall with my classmates.",
+          "pillar": "Social & Convenience",
+          "q": "1. How often do you dine out at restaurants or street food stalls?",
+          "reason": "On busy study days, eating outside is fast and convenient for busy people, and it also lets me hang out with my friends without spending time cooking."
+        },
+        {
+          "answer": "When eating outside, I definitely prefer traditional home-cooked style cuisine over fast food.",
+          "example": "For example, I usually order a bowl of pho or broken rice with grilled pork and vegetables instead of burgers and fried chicken.",
+          "pillar": "Physical health",
+          "q": "2. What type of food do you prefer when eating outside: fast food or traditional home-cooked cuisine?",
+          "reason": "Traditional dishes with fresh vegetables and soup are much better for my physical health and help me stay fit and healthy, whereas fast food has too much oil and calories."
+        },
+        {
+          "answer": "Eating out offers convenience, variety, and more free time for relaxation.",
+          "example": "On my mom's birthday, our whole family eats out at a seafood restaurant so she can put her feet up and enjoy the evening with us.",
+          "pillar": "Mental health & Social",
+          "q": "3. What are the noticeable advantages of eating out compared to preparing meals at home?",
+          "reason": "You do not have to buy ingredients, cook, or wash dishes, which helps reduce fatigue after a day of hard work. It also allows families to enjoy diverse, flavorful dishes and build a strong sense of belonging through face-to-face interaction."
+        }
+      ],
+      "reusedSource": "Trục Mental health, Physical health & Từ vựng #18, #23",
+      "reusedVocab": [
+        "fast and convenient for busy people",
+        "physical health",
+        "stay fit and healthy",
+        "reduce fatigue",
+        "after a day of hard work",
+        "diverse, flavorful",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "put her feet up"
+      ],
+      "topic": "Eating Out & Dining Preferences"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +143,49 @@
     "part": "part2",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng)",
     "title": "Part 2 - Situation 1: Spending a Free Weekend",
-    "content": "Situation: You have an entirely free weekend with no work or study commitments, and you are contemplating three possible ways to spend your time:\n- Hanging out with friends (đi chơi với bạn bè)\n- Going shopping at a commercial mall (đi mua sắm)\n- Visiting a quiet cafe alone to unwind (ngồi quán cà phê yên tĩnh một mình)\n\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You have an entirely free weekend with no work or study commitments, and you are contemplating three possible ways to spend your time:\n- Hanging out with friends (đi chơi với bạn bè)\n- Going shopping at a commercial mall (đi mua sắm)\n- Visiting a quiet cafe alone to unwind (ngồi quán cà phê yên tĩnh một mình)\n\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to meet up, so my friends and I can sit down, share good food, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Hanging out with friends is advantageous to my mental health and good for my social network.",
+          "example": "For example, we can meet at a local cafe on Saturday afternoon, enjoy iced tea, talk about our week, and laugh together.",
+          "reason": "After a busy week of work or study, spending time with close friends helps me relieve stress and reduce fatigue, recharge my batteries, and build a strong sense of belonging through face-to-face interaction."
+        },
+        "khen2Pillar": "Mental Health & Social Network",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and take meaningful photos together.",
+        "option": "Hanging out with friends"
+      },
+      "extraVocab": [
+        "iced tea",
+        "free weekend",
+        "lonely"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-2",
+          "option": "Going shopping at a commercial mall",
+          "reason": "spending too much money at a commercial mall will burden my pocket, and crowded, noisy public venues easily make me feel tired and stressed instead of relaxed."
+        },
+        {
+          "cheCode": "CHÊ-0",
+          "option": "Visiting a quiet cafe alone to unwind",
+          "reason": "sitting alone at a cafe for a whole free weekend can feel boring and lonely when I have plenty of free time to enjoy with people I care about."
+        }
+      ],
+      "reusedVocab": [
+        "relieve stress and reduce fatigue",
+        "recharge my batteries",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "crowded, noisy public venues",
+        "refresh our minds"
+      ],
+      "situation": "I have an entirely free weekend with no work or study commitments, and I am considering three possible ways to spend my time: hanging out with friends, going shopping at a commercial mall, or visiting a quiet cafe alone to unwind."
+    }
   },
   {
     "STT": "4",
@@ -69,7 +203,77 @@
     "part": "part3",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng)",
     "title": "Part 3 - Topic 1: Benefits of Reading Books",
-    "content": "Topic: Benefits of cultivating a habit of reading books\nSuggestions:\n- Broadening general knowledge\n- Improving vocabulary and language mastery\n- Providing relaxation and emotional calm\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are digital e-books becoming increasingly favored over conventional printed books nowadays?\n2. How can individuals establish and maintain a sustained daily reading habit?\n3. Do you believe that digital social media will cause future generations to read substantially less?"
+    "content": "Topic: Benefits of cultivating a habit of reading books\nSuggestions:\n- Broadening general knowledge\n- Improving vocabulary and language mastery\n- Providing relaxation and emotional calm\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are digital e-books becoming increasingly favored over conventional printed books nowadays?\n2. How can individuals establish and maintain a sustained daily reading habit?\n3. Do you believe that digital social media will cause future generations to read substantially less?",
+    "hint": {
+      "coreTopic": "the benefits of reading books regularly",
+      "extraVocab": [
+        "communication skills",
+        "reading habit",
+        "novel",
+        "impatient"
+      ],
+      "followUps": [
+        {
+          "answer": "This is mainly because digital e-books are fast, convenient for busy people in modern-day society, and easy to carry on trips.",
+          "example": "For example, office workers can read an e-book on the bus or during a short lunch break at work.",
+          "formula": "Why ...? -> Because + E-book vs Printed book (Reason + Example)",
+          "q": "Why are digital e-books becoming increasingly favored over conventional printed books nowadays?",
+          "reason": "People can store hundreds of books on one phone or tablet and read anywhere without carrying heavy bags."
+        },
+        {
+          "answer": "I think each individual should create a simple daily timetable and choose books that match their real interests.",
+          "example": "For instance, reading ten pages of a favorite story every night before sleep instead of checking a phone soon becomes an easy habit.",
+          "formula": "How ...? -> Support solution (Individual self-discipline)",
+          "q": "How can individuals establish and maintain a sustained daily reading habit?",
+          "reason": "Starting with just 15 or 20 minutes a day in a quiet place builds good self-discipline without feeling pressured."
+        },
+        {
+          "answer": "Yes, I think social media may cause many young people to read full books less often.",
+          "example": "For example, many teenagers spend two hours scrolling short videos after school instead of opening a novel.",
+          "formula": "Do you believe ...? -> Yes, I think... (Reason + Example)",
+          "q": "Do you believe that digital social media will cause future generations to read substantially less?",
+          "reason": "Short videos and fast news online make people impatient, and screen time can take away hours that used to go to reading."
+        }
+      ],
+      "macroTopic": "education",
+      "mindmapPoints": [
+        {
+          "cue": "Broadening general knowledge",
+          "expand": "This is because books provide knowledge and experience in history, science, and different cultures.",
+          "impact": "Therefore, it is good for lifelong learning and enriches our general knowledge.",
+          "sentence": "Reading books helps people increase knowledge and broaden their horizons about the world.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Improving vocabulary and language mastery",
+          "expand": "For example, when we dive into the world of a book for 30 minutes daily, we naturally remember useful phrases and grammar.",
+          "impact": "Clearly, it is beneficial to students and workers who want better communication skills.",
+          "sentence": "Reading every day helps people learn new words and improve their writing and speaking skills.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Providing relaxation and emotional calm",
+          "expand": "This is because it offers a quiet moment to slow down, recharge our batteries, and feel peaceful without noisy screens.",
+          "impact": "So, it has positive effects on our mental health and sleep quality.",
+          "sentence": "Reading a good book helps people relieve stress and reduce fatigue after work.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "increase knowledge and broaden their horizons",
+        "provide knowledge and experience in",
+        "dive into the world of a book",
+        "relieve stress and reduce fatigue",
+        "recharge our batteries",
+        "mental health",
+        "fast, convenient for busy people in modern-day society",
+        "digital e-books are easy to carry on trips",
+        "build good self-discipline",
+        "screen time"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -87,7 +291,51 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 08/11/2026 (Sáng)",
     "title": "Topic 3: Mobile Phone Habits & Daily Life",
-    "content": "1. How often do you use your mobile phone each day, and what do you use it for most?\n2. Has your mobile phone usage changed compared to a few years ago?\n3. Do you think people nowadays rely too heavily on their smartphones?"
+    "content": "1. How often do you use your mobile phone each day, and what do you use it for most?\n2. Has your mobile phone usage changed compared to a few years ago?\n3. Do you think people nowadays rely too heavily on their smartphones?",
+    "hint": {
+      "extraVocab": [
+        "smartphone",
+        "scroll social media",
+        "eye strain",
+        "rely on"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I use my mobile phone every day for about three hours, mainly for studying, messaging, and listening to music.",
+          "example": "Every morning I check my university timetable on my phone, and on the bus I listen to English podcasts to broaden my horizons.",
+          "pillar": "Knowledge & Convenience",
+          "q": "1. How often do you use your mobile phone each day, and what do you use it for most?",
+          "reason": "A smartphone is fast and convenient for busy people in modern-day society. It helps me check schedules, keep in touch with family, and relax my mind with music."
+        },
+        {
+          "answer": "Yes, my mobile phone usage has changed quite a lot compared to a few years ago.",
+          "example": "For instance, I now use dictionary apps, note-taking tools, and calendar reminders much more than gaming apps.",
+          "pillar": "Knowledge & Productivity",
+          "q": "2. Has your mobile phone usage changed compared to a few years ago?",
+          "reason": "Before, I mostly used my phone to play games and scroll social media. Now, I try to make the most of new technology to improve productivity for my university studies and daily tasks."
+        },
+        {
+          "answer": "Yes, I agree that many people nowadays rely too heavily on their smartphones.",
+          "example": "For example, at family dinners or coffee shops, you often see people looking down at their phones instead of talking openly with the people sitting right next to them.",
+          "pillar": "Social & Mental health",
+          "q": "3. Do you think people nowadays rely too heavily on their smartphones?",
+          "reason": "Spending too much time staring at screens causes eye strain, reduces face-to-face interaction with family members, and widens the generation gap. Lack of self-control with phones also makes people feel stressed."
+        }
+      ],
+      "reusedSource": "4 Trục A-R-E (Knowledge, Social) + Từ vựng #8, #18, #22, #23",
+      "reusedVocab": [
+        "fast and convenient for busy people in modern-day society",
+        "relax my mind",
+        "broaden my horizons",
+        "make the most of new technology to improve productivity",
+        "face-to-face interaction",
+        "widens the generation gap",
+        "self-control",
+        "feel stressed"
+      ],
+      "topic": "Mobile Phone Habits & Daily Life"
+    }
   },
   {
     "STT": "6",
@@ -105,7 +353,49 @@
     "part": "part2",
     "group": "Đề thi thực tế AJC 08/11/2026 (Sáng)",
     "title": "Part 2 - Situation 2: Choosing an Outing Venue for an Anniversary",
-    "content": "Situation: You and your close group of friends want to celebrate an anniversary this Sunday. You are considering three different venues:\n- A cozy bookstore cafe (quán cà phê sách ấm cúng)\n- A vibrant modern coffee shop (quán cà phê hiện đại, sôi động)\n- An outdoor zoo and botanical park (vườn thú hoặc công viên ngoài trời)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You and your close group of friends want to celebrate an anniversary this Sunday. You are considering three different venues:\n- A cozy bookstore cafe (quán cà phê sách ấm cúng)\n- A vibrant modern coffee shop (quán cà phê hiện đại, sôi động)\n- An outdoor zoo and botanical park (vườn thú hoặc công viên ngoài trời)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to meet up, so everyone in my group can sit down, share good drinks, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Choosing a cozy bookstore cafe offers a quiet, cozy environment and is advantageous to our mental health and friendship.",
+          "example": "For example, we can sit at a quiet table near the bookshelves, order coffee and cakes, share stories about our favorite memories, and celebrate our anniversary calmly.",
+          "reason": "In a peaceful place away from noisy crowds, we can truly slow down, relieve stress and reduce fatigue, and build a strong sense of belonging through warm face-to-face interaction."
+        },
+        "khen2Pillar": "Peace & Privacy / Mental Health",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and take meaningful photos together.",
+        "option": "A cozy bookstore cafe"
+      },
+      "extraVocab": [
+        "anniversary",
+        "bookshelves",
+        "loud music"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-1",
+          "option": "A vibrant modern coffee shop",
+          "reason": "being in a crowded, noisy public venue with loud music makes people feel overwhelmed and stressed, and we cannot talk as freely as in a quiet bookstore cafe."
+        },
+        {
+          "cheCode": "CHÊ-6",
+          "option": "An outdoor zoo and botanical park",
+          "reason": "staying outdoors at a zoo or park is uncomfortable and tiring, especially if it rains heavily or gets too hot on Sunday."
+        }
+      ],
+      "reusedVocab": [
+        "quiet, cozy environment",
+        "crowded, noisy public venues",
+        "relieve stress and reduce fatigue",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "refresh our minds"
+      ],
+      "situation": "My close group of friends and I want to celebrate an anniversary this Sunday, and we are considering three different places: a cozy bookstore cafe, a vibrant modern coffee shop, or an outdoor zoo and botanical park."
+    }
   },
   {
     "STT": "7",
@@ -123,7 +413,79 @@
     "part": "part3",
     "group": "Đề thi thực tế AJC 08/11/2026 (Sáng)",
     "title": "Part 3 - Topic 2: Benefits of Working Independently",
-    "content": "Topic: Benefits of working independently as a freelancer\nSuggestions:\n- Having high flexibility in scheduling and work location\n- Enhancing self-reliance and decision-making skills\n- Avoiding workplace office politics and commuting stress\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the greatest challenges faced by independent workers or freelancers?\n2. Do you believe that independent working will become the dominant employment trend in the future?\n3. What personality traits are essential for someone who wants to work independently?"
+    "content": "Topic: Benefits of working independently as a freelancer\nSuggestions:\n- Having high flexibility in scheduling and work location\n- Enhancing self-reliance and decision-making skills\n- Avoiding workplace office politics and commuting stress\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the greatest challenges faced by independent workers or freelancers?\n2. Do you believe that independent working will become the dominant employment trend in the future?\n3. What personality traits are essential for someone who wants to work independently?",
+    "hint": {
+      "coreTopic": "benefits of working independently as a freelancer",
+      "extraVocab": [
+        "freelancer",
+        "clients",
+        "time management",
+        "deadlines"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some major challenges for freelancers, such as unstable income and feeling lonely.",
+          "example": "For example, a freelance designer may earn good money in one month, but struggle to pay rent if no new projects come the next month.",
+          "formula": "What ...? -> There are some... (Reason + Example)",
+          "q": "What are the greatest challenges faced by independent workers or freelancers?",
+          "reason": "Working alone can blur work-life balance and lead to isolation, while some months have very few clients or late payments."
+        },
+        {
+          "answer": "Yes, I think independent and remote work will become much more common in the future.",
+          "example": "For instance, many software developers and writers already work online for international companies from their own homes.",
+          "formula": "Do you believe ...? -> Yes, I think... (Reason + Example)",
+          "q": "Do you believe that independent working will become the dominant employment trend in the future?",
+          "reason": "Companies can make the most of new technology to hire skilled people online, and young workers want more flexibility."
+        },
+        {
+          "answer": "There are some important qualities for independent workers, such as strong self-discipline, honesty, and good time management.",
+          "example": "For example, making a clear daily timetable helps a freelancer complete urgent work before taking a break.",
+          "formula": "What ...? -> There are some... (Reason + Example)",
+          "q": "What personality traits are essential for someone who wants to work independently?",
+          "reason": "Without a manager checking every hour, freelancers must plan their tasks carefully and finish deadlines on time to keep clients' trust."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Having high flexibility in scheduling and work location",
+          "expand": "This is because freelancers can work from home or a quiet cafe and reach a healthy balance between work and family time.",
+          "impact": "Therefore, it is good for people who want freedom and comfort in daily life.",
+          "sentence": "Working independently lets people control their own schedule and work location.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Enhancing self-reliance and decision-making skills",
+          "expand": "For example, freelancers have to manage their own money, talk directly to clients, and solve daily problems on their own.",
+          "impact": "Clearly, it is beneficial to their personal growth and practical work skills.",
+          "sentence": "Working for yourself helps people become more independent and make better decisions.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Avoiding workplace office politics and commuting stress",
+          "expand": "This is because working remotely reduces commuting stress and lets people work in a peaceful space without a boss watching over them.",
+          "impact": "So, it has positive effects on their mental health and daily productivity.",
+          "sentence": "Working independently helps people avoid heavy traffic and office stress.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "control their own schedule",
+        "reach a healthy balance between work and family time",
+        "manage their own money",
+        "solve daily problems independently",
+        "without a boss watching over you",
+        "reduces commuting stress",
+        "mental health",
+        "unstable monthly income",
+        "blur work-life balance and lead to isolation",
+        "make the most of new technology",
+        "build good self-discipline",
+        "daily timetable"
+      ]
+    }
   },
   {
     "STT": "8",
@@ -141,7 +503,53 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng - Ca 2)",
     "title": "Topic 4: Honesty & Telling Lies",
-    "content": "1. In what situations do people sometimes tell white lies?\n2. How do you feel when you discover that someone has lied to you?\n3. Do you agree that absolute honesty is always the best policy in relationships?"
+    "content": "1. In what situations do people sometimes tell white lies?\n2. How do you feel when you discover that someone has lied to you?\n3. Do you agree that absolute honesty is always the best policy in relationships?",
+    "hint": {
+      "extraVocab": [
+        "white lies",
+        "protect someone's feelings",
+        "disappointed",
+        "trust",
+        "honesty"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "People often tell small white lies when they want to protect someone's feelings or avoid hurting a loved one.",
+          "example": "For instance, if my friend cooks a meal that is a bit salty, I might still say it is tasty so she feels happy and proud of her effort.",
+          "pillar": "Social & Mental health",
+          "q": "1. In what situations do people sometimes tell white lies?",
+          "reason": "In daily life, saying the harsh truth directly can make others feel down or create unnecessary trouble in a relationship, so people choose gentler words to keep peace."
+        },
+        {
+          "answer": "I usually feel disappointed and hurt when I discover that someone has lied to me, especially a close friend.",
+          "example": "Once, a classmate lied to me about finishing his part of a group project, which caused a lot of stress before our deadline.",
+          "pillar": "Mental health & Social",
+          "q": "2. How do you feel when you discover that someone has lied to you?",
+          "reason": "Trust plays an essential role in every relationship. Once a person lies about something important, it weakens our bond and makes it harder to openly share thoughts and emotions later."
+        },
+        {
+          "answer": "I mostly agree that honesty is the best policy, though kindness and timing also matter.",
+          "example": "If a friend asks for advice on an outfit or presentation, I give honest feedback in a polite, supportive way so they can improve without feeling upset.",
+          "pillar": "Social & Peace & Privacy",
+          "q": "3. Do you agree that absolute honesty is always the best policy in relationships?",
+          "reason": "Being honest helps people truly understand each other through open communication and builds a strong sense of belonging. Still, we should think things through calmly and speak respectfully rather than being rude."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Social) + Từ vựng #1, #23, #24",
+      "reusedVocab": [
+        "unnecessary trouble",
+        "feel down",
+        "plays an essential role in",
+        "openly share thoughts and emotions",
+        "truly understand each other",
+        "build a strong sense of belonging",
+        "think things through calmly",
+        "respectfully",
+        "supportive"
+      ],
+      "topic": "Honesty & Telling Lies"
+    }
   },
   {
     "STT": "9",
@@ -159,7 +567,47 @@
     "part": "part2",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng - Ca 2)",
     "title": "Part 2 - Situation 3: Handling an Incorrect Food Order at a Restaurant",
-    "content": "Situation: You are dining at a busy restaurant with your friends, and the waiter mistakenly brings you a completely different dish from what you ordered. You are considering three possible courses of action:\n- Politely informing the waiter or manager to replace the dish (nói lại lịch sự với nhân viên hoặc quản lý để đổi món)\n- Leaving immediately to dine at a different restaurant (rời đi ngay lập tức để sang quán khác)\n- Accepting the mistake and eating the delivered dish anyway (chấp nhận và ăn món ăn đã dọn ra)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You are dining at a busy restaurant with your friends, and the waiter mistakenly brings you a completely different dish from what you ordered. You are considering three possible courses of action:\n- Politely informing the waiter or manager to replace the dish (nói lại lịch sự với nhân viên hoặc quản lý để đổi món)\n- Leaving immediately to dine at a different restaurant (rời đi ngay lập tức để sang quán khác)\n- Accepting the mistake and eating the delivered dish anyway (chấp nhận và ăn món ăn đã dọn ra)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-5",
+        "khen1Text": "because it solves the problem calmly and politely, following normal restaurant rules without causing an argument or ruining dinner with my friends.",
+        "khen2ARE": {
+          "answer": "Politely informing the waiter or manager helps solve the problem quickly and keeps us on the safe side.",
+          "example": "For example, I can smile, call the waiter over quietly, show him the menu item I ordered, and wait a few minutes for the right dish while chatting with my friends.",
+          "reason": "Speaking calmly lets the staff fix their mistake right away so I get the meal I paid for, avoid any food allergies, and stay comfortable during dinner."
+        },
+        "khen2Pillar": "Safety & Problem Solving",
+        "khen3Code": "KHEN-5",
+        "khen3Text": "the right and polite action that keeps my conscience clear, protects our pleasant meal together, and avoids unnecessary trouble.",
+        "option": "Politely informing the waiter or manager to replace the dish"
+      },
+      "extraVocab": [
+        "waiter",
+        "replace the dish",
+        "food allergies"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-8",
+          "option": "Leaving immediately to dine at a different restaurant",
+          "reason": "leaving at once to travel on congested roads to another restaurant wastes time, leaves us hungry and tired, and creates an awkward scene in front of my friends."
+        },
+        {
+          "cheCode": "CHÊ-5",
+          "option": "Accepting the mistake and eating the delivered dish anyway",
+          "reason": "staying silent and accepting the wrong dish is unfair when I have to pay for it, and the delivered food might contain ingredients I dislike or am allergic to."
+        }
+      ],
+      "reusedVocab": [
+        "solve the problem",
+        "stay on the safe side",
+        "avoid unnecessary trouble",
+        "congested roads"
+      ],
+      "situation": "I am dining at a busy restaurant with my friends, and the waiter mistakenly brings me a completely different dish from what I ordered. I am considering three possible actions: politely informing the waiter or manager to replace the dish, leaving immediately to dine at a different restaurant, or accepting the mistake and eating the delivered dish anyway."
+    }
   },
   {
     "STT": "10",
@@ -177,7 +625,74 @@
     "part": "part3",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng - Ca 2)",
     "title": "Part 3 - Topic 3: The Importance of Honesty and Trust in Society",
-    "content": "Topic: The indispensable role of honesty and mutual trust in modern society\nSuggestions:\n- Fostering long-lasting friendships and healthy family bonds\n- Enhancing corporate transparency and consumer confidence\n- Reducing legal conflicts and social friction\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some leaders or politicians find it difficult to be completely truthful?\n2. How can parents teach their children the virtue of truthfulness from an early age?\n3. In what careers is uncompromising honesty considered the most vital qualification?"
+    "content": "Topic: The indispensable role of honesty and mutual trust in modern society\nSuggestions:\n- Fostering long-lasting friendships and healthy family bonds\n- Enhancing corporate transparency and consumer confidence\n- Reducing legal conflicts and social friction\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some leaders or politicians find it difficult to be completely truthful?\n2. How can parents teach their children the virtue of truthfulness from an early age?\n3. In what careers is uncompromising honesty considered the most vital qualification?",
+    "hint": {
+      "coreTopic": "the important role of honesty and trust in society",
+      "extraVocab": [
+        "mutual trust",
+        "honest",
+        "customers",
+        "role models",
+        "fair prices"
+      ],
+      "followUps": [
+        {
+          "answer": "This is mainly because some leaders worry about losing public support or facing angry reactions if they share bad news.",
+          "example": "For example, a manager might delay telling workers about a budget problem until the company has no money left.",
+          "formula": "Why ...? -> Because (Reason + Example)",
+          "q": "Why do some leaders or politicians find it difficult to be completely truthful?",
+          "reason": "Sometimes problems are complex, so they try to hide mistakes or make big promises to keep their position."
+        },
+        {
+          "answer": "I think parents should guide children gently, listen to them calmly, and be honest role models themselves.",
+          "example": "For instance, when a child breaks a cup by accident and tells the truth, parents can thank them for being honest and teach them to be careful next time.",
+          "formula": "How ...? -> Penalize/Support solution (Parents guide & listen)",
+          "q": "How can parents teach their children the virtue of truthfulness from an early age?",
+          "reason": "If parents punish mistakes too harshly, children may lie out of fear; instead, praising honesty builds good self-discipline and trust."
+        },
+        {
+          "answer": "There are some careers where total honesty is essential, such as doctors, judges, teachers, and accountants.",
+          "example": "For example, a doctor must always tell a patient the truth about their illness and treatment so they can make safe choices.",
+          "formula": "In what ...? -> There are some... (Reason + Example)",
+          "q": "In what careers is uncompromising honesty considered the most vital qualification?",
+          "reason": "In these jobs, people trust professionals with their health, money, and justice, so even a small lie can cause serious harm."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Fostering long-lasting friendships and healthy family bonds",
+          "expand": "This is because honesty brings people together, strengthens relationships, and helps us truly understand each other through open communication.",
+          "impact": "Therefore, it is good for our social life and makes family members feel safe and respected.",
+          "sentence": "Being honest helps people build strong friendships and happy family relationships.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Enhancing corporate transparency and consumer confidence",
+          "expand": "For example, when shops sell real quality products at fair prices instead of cheating buyers, customers return and recommend them to others.",
+          "impact": "Clearly, it is beneficial to both buyers and long-term economic development.",
+          "sentence": "Being honest in business helps companies gain customer trust and grow steadily.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Reducing legal conflicts and social friction",
+          "expand": "This is because when citizens and neighbors tell the truth and keep their promises, there are fewer misunderstandings and disputes.",
+          "impact": "So, it has positive effects on social safety and peace in the community.",
+          "sentence": "Having mutual trust helps society reduce arguments and solve problems peacefully.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "brings people together and strengthens relationships",
+        "truly understand each other",
+        "economic development",
+        "solve problems",
+        "guide, listen, and support",
+        "build good self-discipline"
+      ]
+    }
   },
   {
     "STT": "11",
@@ -195,7 +710,57 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
     "title": "Topic 5: Weather Seasons & Dining Out Habits",
-    "content": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?"
+    "content": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?",
+    "hint": {
+      "extraVocab": [
+        "fresh breeze",
+        "hotpot restaurant",
+        "eat out frequently",
+        "personal finance"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "My favorite season of the year is autumn because I really enjoy cool and pleasant weather.",
+          "example": "On cool autumn weekends, I love going for a walk in the park with my family to relax my mind and enjoy the fresh breeze.",
+          "pillar": "Mental health & Physical health",
+          "q": "1. What is your favorite season of the year, and what weather do you enjoy the most?",
+          "reason": "Unlike boiling-hot summer days, pleasant autumn weather lifts up my mood, makes me feel more energetic, and is wonderful for outdoor activities like going on a picnic. It is also the season of the Mid-autumn festival."
+        },
+        {
+          "answer": "I eat out at food stalls or restaurants about once or twice a week, usually with my friends or family.",
+          "example": "Every Sunday night, my family goes to a nearby hotpot restaurant to share a warm meal and talk about our week.",
+          "pillar": "Social",
+          "q": "2. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?",
+          "reason": "It is a great chance to spend quality time together, strengthen our bonds, and enjoy delicious dishes after a busy week."
+        },
+        {
+          "answer": "I think eating out too frequently can be harmful to both personal health and finances.",
+          "example": "For example, cooking fresh vegetables and meat at home costs much less than restaurant meals and helps prevent common illnesses.",
+          "pillar": "Physical health & Budget",
+          "q": "3. Do you think eating out frequently is beneficial or harmful to personal health and finance?",
+          "reason": "Restaurant meals often contain too much oil, salt, or sugar, which is not good for keeping fit and staying healthy. Moreover, eating out every day leads to higher living expenses instead of fitting comfortably within our budget."
+        }
+      ],
+      "reusedSource": "Bộ đề 2: Hometown & Weather (Câu 5) + Trục Physical health, Mental health & Từ vựng #21",
+      "reusedVocab": [
+        "cool and pleasant",
+        "boiling-hot",
+        "lifts up my mood",
+        "feel more energetic",
+        "go on a picnic",
+        "Mid-autumn festival",
+        "relax my mind",
+        "spend quality time",
+        "strengthen our bonds",
+        "delicious dishes",
+        "keep fit and stay healthy",
+        "higher living expenses",
+        "fit comfortably within our budget",
+        "prevent common illnesses"
+      ],
+      "topic": "Weather Seasons & Dining Out Habits"
+    }
   },
   {
     "STT": "12",
@@ -213,7 +778,49 @@
     "part": "part2",
     "group": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
     "title": "Part 2 - Situation 4: Spending Quality Family Time Together",
-    "content": "Situation: Your family has a completely free weekend together and wants to choose an activity to strengthen emotional bonds. There are three options:\n- Staying at home cooking and watching movies together (ở nhà cùng nhau nấu ăn, xem phim)\n- Having an outdoor picnic at a public green park (đi picnic dã ngoại ở công viên)\n- Dining out at a luxury restaurant in the city center (đi ăn tại một nhà hàng sang trọng)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: Your family has a completely free weekend together and wants to choose an activity to strengthen emotional bonds. There are three options:\n- Staying at home cooking and watching movies together (ở nhà cùng nhau nấu ăn, xem phim)\n- Having an outdoor picnic at a public green park (đi picnic dã ngoại ở công viên)\n- Dining out at a luxury restaurant in the city center (đi ăn tại một nhà hàng sang trọng)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy for everyone to join in at home, so my whole family can cook, share good food, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Staying at home together helps us reach a healthy balance between work and family time and improves our mental health.",
+          "example": "For example, my parents and I can cook a warm hotpot meal together in the kitchen, talk freely, and watch a funny movie in the living room.",
+          "reason": "Sharing cooking and relaxing in a quiet, cozy environment helps every family member relieve stress, feel happy and comfortable, and build a strong sense of belonging through face-to-face interaction."
+        },
+        "khen2Pillar": "Mental Health & Peace/Privacy",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and create warm family memories together.",
+        "option": "Staying at home cooking and watching movies together"
+      },
+      "extraVocab": [
+        "hotpot",
+        "living room",
+        "funny movie"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-1",
+          "option": "Dining out at a luxury restaurant in the city center",
+          "reason": "a formal dinner at an expensive luxury restaurant costs too much money, and my family often feels stiff and cannot talk as freely as at home."
+        },
+        {
+          "cheCode": "CHÊ-6",
+          "option": "Having an outdoor picnic at a public green park",
+          "reason": "having an outdoor picnic is risky and tiring, especially when it rains heavily or gets too hot, and carrying food to a crowded park takes a lot of effort."
+        }
+      ],
+      "reusedVocab": [
+        "reach a healthy balance between work and family time",
+        "quiet, cozy environment",
+        "relieve stress",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "refresh our minds"
+      ],
+      "situation": "My family has a completely free weekend together and wants to choose an activity to strengthen emotional bonds. There are three options: staying at home cooking and watching movies together, having an outdoor picnic at a public green park, or dining out at a luxury restaurant in the city center."
+    }
   },
   {
     "STT": "13",
@@ -231,6 +838,76 @@
     "part": "part3",
     "group": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
     "title": "Part 3 - Topic 4: Benefits of Travelling for Personal Growth",
-    "content": "Topic: The extensive benefits of travelling for personal development and life skills\nSuggestions:\n- Developing independence and adaptability in new environments\n- Cultivating cross-cultural understanding and empathy\n- Expanding practical life skills and problem-solving abilities\n- [Your own ideas]\n\nFollow-up questions:\n1. How does travelling independently differ from joining an organized tour group?\n2. In what ways can travelling broaden a young person's career perspective?\n3. Do you believe that excessive travel can sometimes be harmful to local ecosystems?"
+    "content": "Topic: The extensive benefits of travelling for personal development and life skills\nSuggestions:\n- Developing independence and adaptability in new environments\n- Cultivating cross-cultural understanding and empathy\n- Expanding practical life skills and problem-solving abilities\n- [Your own ideas]\n\nFollow-up questions:\n1. How does travelling independently differ from joining an organized tour group?\n2. In what ways can travelling broaden a young person's career perspective?\n3. Do you believe that excessive travel can sometimes be harmful to local ecosystems?",
+    "hint": {
+      "coreTopic": "the benefits of travelling for personal growth",
+      "extraVocab": [
+        "solo traveler",
+        "local food",
+        "tour group",
+        "plastic waste"
+      ],
+      "followUps": [
+        {
+          "answer": "Travelling alone gives you total freedom over your schedule, while a tour group is safer and easier to organize.",
+          "example": "For example, a solo traveler can spend an extra day in Da Lat if they like the weather, while a tour group must leave on time.",
+          "formula": "How ...? -> Contrast + Reason + Example",
+          "q": "How does travelling independently differ from joining an organized tour group?",
+          "reason": "Independent travelers can stay longer at places they love, whereas tour groups have a fixed plan and a guide to handle tickets and hotels."
+        },
+        {
+          "answer": "There are some clear ways travelling helps young people's careers, such as improving foreign languages and learning new work ideas.",
+          "example": "For instance, visiting a modern farm or a coffee shop abroad can inspire a young person to start a better business back home.",
+          "formula": "In what ways ...? -> There are some... (Reason + Example)",
+          "q": "In what ways can travelling broaden a young person's career perspective?",
+          "reason": "Meeting people from other cities or countries helps them build a better social network and see different business models."
+        },
+        {
+          "answer": "Yes, I think too much tourism can cause environmental damage to local nature.",
+          "example": "For example, crowded beaches often suffer from trash and dirty water unless local authorities enforce strict rules and tourists recycle.",
+          "formula": "Do you believe ...? -> Yes, I think... + Penalize solution",
+          "q": "Do you believe that excessive travel can sometimes be harmful to local ecosystems?",
+          "reason": "Increased tourist activities create more plastic waste, traffic pollution, and may damage natural habitats if not managed well."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Developing independence and adaptability in new environments",
+          "expand": "This is because visiting a new place teaches young people to manage their own money, read maps, and solve daily problems on their own.",
+          "impact": "Therefore, it is good for self-development and confidence.",
+          "sentence": "Travelling helps people become more independent and adapt to new environments.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Cultivating cross-cultural understanding and empathy",
+          "expand": "For example, trying local food and talking with local people lets us broaden our horizons and gain a deeper understanding of how others live.",
+          "impact": "Clearly, it is beneficial to our general knowledge and helps us respect differences.",
+          "sentence": "Travelling gives people the chance to understand different cultures and traditions.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Expanding practical life skills and problem-solving abilities",
+          "expand": "This is because when plans change, like missing a bus or facing bad weather, travelers learn to stay calm and find quick solutions.",
+          "impact": "So, it has positive effects on their life skills and future work.",
+          "sentence": "Travelling helps people improve communication and practical problem-solving skills.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "adjust and adapt to the social environment",
+        "manage their own money and solve daily problems independently",
+        "self-development",
+        "broaden our horizons",
+        "gain a deeper understanding of people, culture, and tradition",
+        "general knowledge",
+        "stay on the safe side",
+        "social network",
+        "cause environmental damage",
+        "increased tourist activities may damage natural habitats"
+      ]
+    }
   }
 ]

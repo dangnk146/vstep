@@ -15,7 +15,49 @@
     "part": "part1",
     "group": "Đề thi thực tế CTU 19/11/2026",
     "title": "Topic 1: Days of the Week",
-    "content": "1. What is your favorite day of the week, and why?\n2. Which day of the week is usually the busiest for you?\n3. What do you usually do differently on weekends compared to weekdays?"
+    "content": "1. What is your favorite day of the week, and why?\n2. Which day of the week is usually the busiest for you?\n3. What do you usually do differently on weekends compared to weekdays?",
+    "hint": {
+      "extraVocab": [
+        "strict schedule",
+        "catch up on emails",
+        "early alarms"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "My favorite day of the week is definitely Saturday because I can finally slow down after five busy working days.",
+          "example": "On Saturday mornings, I usually drink coffee slowly at home and then meet my friends for lunch.",
+          "pillar": "Mental health",
+          "q": "1. Favorite day of the week & why",
+          "reason": "It is great for my mental health since I can sleep a little longer, put my feet up, and recharge my batteries without worrying about early alarms."
+        },
+        {
+          "answer": "Monday is usually the busiest and most tiring day of the week for me.",
+          "example": "For example, every Monday morning I spend nearly three hours checking reports and setting deadlines with my team.",
+          "pillar": "Mental health",
+          "q": "2. Usually the busiest day of the week",
+          "reason": "After a relaxing weekend, I have to catch up on emails, attend morning meetings, and plan tasks for the whole week, which easily makes me feel stressed."
+        },
+        {
+          "answer": "On weekdays I follow a strict schedule, whereas on weekends I focus on relaxing and spending quality time with my family.",
+          "example": "While I eat quick lunches near my office on weekdays, on Sunday evenings I always cook dinner and watch a comedy movie with my parents.",
+          "pillar": "Peace & Privacy",
+          "q": "3. What you do differently on weekends vs weekdays",
+          "reason": "Having free time at home gives me peace and privacy to pursue my hobbies, cook a nice meal, and reach a healthy balance between work and life."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Leisure/Family) + Trục Mental health & Peace & Privacy",
+      "reusedVocab": [
+        "mental health",
+        "put my feet up",
+        "recharge my batteries",
+        "feel stressed",
+        "spend quality time with my family",
+        "peace and privacy",
+        "reach a healthy balance between work and life"
+      ],
+      "topic": "Days of the Week"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +75,46 @@
     "part": "part1",
     "group": "Đề thi thực tế CTU 19/11/2026",
     "title": "Topic 2: Numbers",
-    "content": "1. Do you have a favorite or lucky number? Why?\n2. Are you good at remembering important numbers, such as phone numbers or birthdays?\n3. Are there any numbers considered lucky or unlucky in your country?"
+    "content": "1. Do you have a favorite or lucky number? Why?\n2. Are you good at remembering important numbers, such as phone numbers or birthdays?\n3. Are there any numbers considered lucky or unlucky in your country?",
+    "hint": {
+      "extraVocab": [
+        "lucky number",
+        "by heart",
+        "motorbike plate"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, my favorite number is seven, and I always see it as my lucky number.",
+          "example": "For instance, whenever I pick a seat number at the cinema or a lottery ticket with friends, I always try to choose number seven.",
+          "pillar": "Mental health",
+          "q": "1. Favorite or lucky number & why",
+          "reason": "Seeing this number simply elevates my mood and makes me feel confident, especially because my birthday falls on the seventh."
+        },
+        {
+          "answer": "To be honest, I am only good at remembering a few close family phone numbers and birthdays.",
+          "example": "I still remember my parents' phone numbers by heart, though I always check my phone calendar for my friends' birthdays.",
+          "pillar": "Knowledge",
+          "q": "2. Good at remembering important numbers?",
+          "reason": "Nowadays, smartphones save almost everything for us, so our brains do not exercise memorizing long lists of numbers like before."
+        },
+        {
+          "answer": "Yes, in Vietnam, numbers like six, eight, and nine are considered lucky, while number four is often seen as unlucky.",
+          "example": "For example, many Vietnamese people are willing to pay extra money for a phone number or motorbike plate ending in 68 or 88.",
+          "pillar": "Knowledge",
+          "q": "3. Numbers considered lucky or unlucky in your country",
+          "reason": "This comes from traditional beliefs and how the numbers sound, as people associate eight with wealth and four with bad luck."
+        }
+      ],
+      "reusedSource": "Trục Knowledge & Mental health + Cụm #17",
+      "reusedVocab": [
+        "elevates my mood",
+        "feel confident",
+        "allow our brain to exercise",
+        "traditional beliefs"
+      ],
+      "topic": "Numbers"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +132,49 @@
     "part": "part2",
     "group": "Đề thi thực tế CTU 19/11/2026",
     "title": "Part 2 - Situation 1: Choosing Where to Buy Clothes for Students",
-    "content": "Situation: A group of students wants to buy some new clothes and is deciding where to shop. There are three options:\n- A shopping mall (trung tâm thương mại)\n- An open-air market (chợ ngoài trời)\n- An online shop (cửa hàng trực tuyến)\n\nWhich option do you think is the best choice and why?"
+    "content": "Situation: A group of students wants to buy some new clothes and is deciding where to shop. There are three options:\n- A shopping mall (trung tâm thương mại)\n- An open-air market (chợ ngoài trời)\n- An online shop (cửa hàng trực tuyến)\n\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-3",
+        "khen1Text": "because an open-air market is close to student dorms, which saves travel time, and the clothing prices are very affordable for students on a tight budget.",
+        "khen2ARE": {
+          "answer": "Shopping together at an open-air market is good for the students' social life and fits comfortably within their budget without sacrificing quality.",
+          "example": "For example, four roommates can visit the local evening market on Saturday, bargain together for nice T-shirts and jeans, and enjoy street snacks right next to the stalls.",
+          "reason": "Going in a group allows them to walk around, try on different clothes, compare prices, and help each other choose outfits through fun face-to-face interaction."
+        },
+        "khen2Pillar": "Social",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help the students forget about study pressure, refresh their minds, and enjoy a fun weekend hangout together.",
+        "option": "An open-air market"
+      },
+      "extraVocab": [
+        "student dorms",
+        "bargain",
+        "try the size on"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-2",
+          "option": "A shopping mall",
+          "reason": "buying clothes at a shopping mall costs too much money on brand-name items, which will easily burden students' limited pockets."
+        },
+        {
+          "cheCode": "CUSTOM",
+          "option": "An online shop",
+          "reason": "shopping on e-commerce apps often tempts buyers to waste money on cheap clothes that look nothing like the advertised photos, and students cannot try the size on before paying."
+        }
+      ],
+      "reusedVocab": [
+        "saves travel time",
+        "fits comfortably within their budget without sacrificing quality",
+        "face-to-face interaction",
+        "forget about study pressure, refresh their minds",
+        "burden pockets",
+        "tempts buyers to waste money on cheap items that look nothing like the advertised photos"
+      ],
+      "situation": "A group of students wants to buy some new clothes and is deciding where to shop among three options: a shopping mall, an open-air market, or an online shop."
+    }
   },
   {
     "STT": "4",
@@ -69,7 +192,72 @@
     "part": "part3",
     "group": "Đề thi thực tế CTU 19/11/2026",
     "title": "Part 3 - Topic 1: Making a Good Impression at a Job Interview",
-    "content": "Topic: Different ways to make a good impression at a job interview\nSuggestions:\n- Being punctual\n- Being humorous and friendly\n- Dressing neatly and preparing thoroughly\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is being punctual essential when attending a job interview?\n2. Should applicants use humor during a formal job interview? Why or why not?\n3. What should candidates prepare before going to an important interview?"
+    "content": "Topic: Different ways to make a good impression at a job interview\nSuggestions:\n- Being punctual\n- Being humorous and friendly\n- Dressing neatly and preparing thoroughly\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is being punctual essential when attending a job interview?\n2. Should applicants use humor during a formal job interview? Why or why not?\n3. What should candidates prepare before going to an important interview?",
+    "hint": {
+      "coreTopic": "ways to make a good impression at a job interview",
+      "extraVocab": [
+        "arrive on time",
+        "job candidates",
+        "first impression"
+      ],
+      "followUps": [
+        {
+          "answer": "Yes, I think being punctual is essential because it shows respect and a good work attitude from the very first minute.",
+          "example": "For example, if an applicant arrives 10 minutes early, they can stay calm and review their CV before entering the room.",
+          "formula": "do you think",
+          "q": "Why is being punctual essential when attending a job interview?",
+          "reason": "Coming late makes employers doubt your responsibility, while arriving on time proves you have good self-discipline."
+        },
+        {
+          "answer": "I think applicants should stay on the safe side and use only light, friendly humor instead of telling too many jokes.",
+          "example": "For instance, a warm smile or a polite comment at the start is enough to relax without distracting from your skills.",
+          "formula": "how/should",
+          "q": "Should applicants use humor during a formal job interview? Why or why not?",
+          "reason": "Too much humor in a formal meeting can look unprofessional, so candidates should think things through calmly to avoid unnecessary trouble."
+        },
+        {
+          "answer": "There are some important things candidates should prepare, such as company information, common interview questions, and neat clothes.",
+          "example": "For example, a fresh graduate can practice answering questions with a friend the night before and print two copies of their CV.",
+          "formula": "what",
+          "q": "What should candidates prepare before going to an important interview?",
+          "reason": "Preparing well helps solve the problem of feeling nervous and shows that you are ready to learn new things and work hard."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Being punctual",
+          "expand": "because employers see that you respect their time and have good self-discipline.",
+          "impact": "Therefore, it is good for your professional image and job chances.",
+          "sentence": "Arriving on time helps candidates make a good first impression.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Being humorous and friendly",
+          "expand": "For example, greeting the interviewers with a smile and sharing a polite joke helps make the room feel comfortable.",
+          "impact": "Clearly, it is beneficial to building a good connection with the interviewers.",
+          "sentence": "Candidates should be friendly and lightly humorous during a job interview.",
+          "wordForm": "Adj"
+        },
+        {
+          "cue": "Dressing neatly and preparing thoroughly",
+          "expand": "This is because wearing clean, formal clothes and researching the company shows you are serious and ready to adjust and adapt to the social environment.",
+          "impact": "So, it has positive effects on your confidence and the employer's trust.",
+          "sentence": "Candidates can dress neatly and prepare thoroughly before going to the interview.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "self-discipline",
+        "stay on the safe side and think things through calmly to avoid unnecessary trouble",
+        "solve the problem",
+        "adjust and adapt to the social environment",
+        "work attitude",
+        "learning new things"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -87,7 +275,53 @@
     "part": "part1",
     "group": "Đề thi thực tế CTU 20/11/2026 (Chiều)",
     "title": "Topic 3: Home Decoration & Favorite Colors",
-    "content": "1. How do you decorate your home or bedroom?\n2. What is your favorite color, and why do you like it?\n3. Do you think colors have a strong effect on people's mood at home?"
+    "content": "1. How do you decorate your home or bedroom?\n2. What is your favorite color, and why do you like it?\n3. Do you think colors have a strong effect on people's mood at home?",
+    "hint": {
+      "extraVocab": [
+        "potted plants",
+        "bedsheets",
+        "cream white"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I like decorating my bedroom in a simple and cozy way with warm lights, a small bookshelf, and a few green plants.",
+          "example": "Last month, I put two small potted plants and soft yellow lights near my desk in my bedroom.",
+          "pillar": "Peace & Privacy",
+          "q": "How do you decorate your home or bedroom?",
+          "reason": "Because it offers a quiet, cozy environment where I can enjoy total personal privacy and relax comfortably without any distractions."
+        },
+        {
+          "answer": "My favorite color is light blue, and I am a big fan of using it for my room curtains and bedsheets.",
+          "example": "Whenever I look at my light blue walls in the evening after studying, I feel calm right away.",
+          "pillar": "Mental health",
+          "q": "What is your favorite color, and why do you like it?",
+          "reason": "It is advantageous to my mental health because it makes me feel refreshed and peaceful, helping me recharge my batteries and elevate my mood after a day of hard work."
+        },
+        {
+          "answer": "Yes, I think colors have a big impact on people's emotions and moods at home.",
+          "example": "For example, my family painted our living room cream white so everyone feels warm and relaxed when chatting together after dinner.",
+          "pillar": "Mental health",
+          "q": "Do you think colors have a strong effect on people's mood at home?",
+          "reason": "Bright or soft colors can lift up people's mood and help them feel happy and comfortable, while dark or gloomy colors can make people feel down or stressed."
+        }
+      ],
+      "reusedSource": "Trục Peace & Privacy + Trục Mental health (1 mình) + Bộ đề 2 (Weather & Mood)",
+      "reusedVocab": [
+        "quiet, cozy environment",
+        "enjoy total personal privacy",
+        "without any distractions",
+        "a big fan of",
+        "advantageous to my mental health",
+        "feel refreshed and peaceful",
+        "recharge my batteries",
+        "elevate my mood after a day of hard work",
+        "have a big impact on people's emotions and moods",
+        "lift up people's mood",
+        "feel down"
+      ],
+      "topic": "Home Decoration & Favorite Colors"
+    }
   },
   {
     "STT": "6",
@@ -105,7 +339,49 @@
     "part": "part2",
     "group": "Đề thi thực tế CTU 20/11/2026 (Chiều)",
     "title": "Part 2 - Situation 2: Choosing a Place for a Family Outing",
-    "content": "Situation: You are choosing a suitable destination for a family outing this weekend. There are three options:\n- A water park (công viên nước)\n- An amusement park (công viên giải trí)\n- A museum (bảo tàng)\n\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You are choosing a suitable destination for a family outing this weekend. There are three options:\n- A water park (công viên nước)\n- An amusement park (công viên giải trí)\n- A museum (bảo tàng)\n\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy for all family members to go together, enjoy fun rides, sit down for good food, and chat comfortably without bringing swimsuits or special gear.",
+        "khen2ARE": {
+          "answer": "Spending the weekend at an amusement park is advantageous to my family's mental health and helps us reach a healthy balance between work and family time.",
+          "example": "For instance, on Sunday morning my parents, younger siblings, and I can ride the giant Ferris wheel, watch a fun circus show, and eat ice cream together in the park.",
+          "reason": "It makes both parents and children feel happy and refreshed, allowing everyone to put their feet up, laugh together, and recharge their batteries after a busy week of work and school."
+        },
+        "khen2Pillar": "Mental health",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and take meaningful family photos together.",
+        "option": "An amusement park"
+      },
+      "extraVocab": [
+        "giant Ferris wheel",
+        "slippery floors",
+        "special gear"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-6",
+          "option": "A water park",
+          "reason": "playing at an outdoor water park can be risky for young kids or older relatives because of slippery floors and sudden rain or strong sun, leaving parents worried instead of relaxing."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "A museum",
+          "reason": "a quiet museum is often boring for children who want active weekend fun, and people cannot talk loudly there, so this opinion has received little agreement for a family outing."
+        }
+      ],
+      "reusedVocab": [
+        "sit down, share good food, and chat comfortably",
+        "advantageous to mental health",
+        "reach a healthy balance between work and family time",
+        "put their feet up",
+        "recharge their batteries",
+        "forget about work pressure, refresh our minds, and take meaningful photos together"
+      ],
+      "situation": "I am choosing a suitable destination for a family outing this weekend from three options: a water park, an amusement park, or a museum."
+    }
   },
   {
     "STT": "7",
@@ -123,7 +399,73 @@
     "part": "part3",
     "group": "Đề thi thực tế CTU 20/11/2026 (Chiều)",
     "title": "Part 3 - Topic 2: Disadvantages of Apartment Living",
-    "content": "Topic: Disadvantages of living in an apartment\nSuggestions:\n- Restrictions on keeping pets\n- Noise or conflicts with neighbors\n- Limited living space\n- [Your own ideas]\n\nFollow-up questions:\n1. Do people around you mostly choose to live in private houses or apartments? Do you like living in an apartment? Why?\n2. What common problems can arise between neighbors in an apartment building?\n3. Where do you think people will choose to live in 50 years?"
+    "content": "Topic: Disadvantages of living in an apartment\nSuggestions:\n- Restrictions on keeping pets\n- Noise or conflicts with neighbors\n- Limited living space\n- [Your own ideas]\n\nFollow-up questions:\n1. Do people around you mostly choose to live in private houses or apartments? Do you like living in an apartment? Why?\n2. What common problems can arise between neighbors in an apartment building?\n3. Where do you think people will choose to live in 50 years?",
+    "hint": {
+      "coreTopic": "disadvantages of living in an apartment",
+      "extraVocab": [
+        "apartment building",
+        "residents",
+        "tall apartment buildings"
+      ],
+      "followUps": [
+        {
+          "answer": "In my area, many young families choose apartments, but I think I prefer living in a private house.",
+          "example": "For instance, my family can grow green plants on our rooftop and keep a pet dog freely without asking building managers.",
+          "formula": "do you think",
+          "q": "Do people around you mostly choose to live in private houses or apartments? Do you like living in an apartment? Why?",
+          "reason": "A private house offers a quiet, cozy environment with total personal privacy without any distractions from neighbors."
+        },
+        {
+          "answer": "There are some common problems between neighbors in an apartment building, such as loud noise, shared trash, and limited parking spaces.",
+          "example": "For example, a family singing karaoke late at night can keep children and elderly neighbors awake.",
+          "formula": "what",
+          "q": "What common problems can arise between neighbors in an apartment building?",
+          "reason": "When people live close together and lack self-control, small habits easily cause daily arguments."
+        },
+        {
+          "answer": "Yes, I think in 50 years more people will choose modern tall apartment buildings in big cities.",
+          "example": "For instance, modern apartment buildings near bus or train stations let workers save travel time and enjoy gyms or shops downstairs.",
+          "formula": "do you think",
+          "q": "Where do you think people will choose to live in 50 years?",
+          "reason": "City land is getting smaller while modern apartments are equipped with state-of-the-art facilities and fast, convenient services for busy people."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Restrictions on keeping pets",
+          "expand": "because many buildings ban dogs and cats, even though keeping a household pet brings warm companionship every day.",
+          "impact": "Therefore, it has a negative effect on animal lovers' happiness.",
+          "sentence": "Apartment rules often restrict people from keeping pets.",
+          "wordForm": "N"
+        },
+        {
+          "cue": "Noise or conflicts with neighbors",
+          "expand": "For example, loud music from the room next door or footsteps upstairs can disturb your sleep after a day of hard work.",
+          "impact": "Clearly, it is harmful to people's mental health and personal privacy.",
+          "sentence": "Residents can have noise problems and conflicts with neighbors in apartment buildings.",
+          "wordForm": "N"
+        },
+        {
+          "cue": "Limited living space",
+          "expand": "This is because apartments do not have private yards or gardens, so crowded rooms easily make people feel overwhelmed and stressed.",
+          "impact": "So, it has negative effects on family comfort and daily life.",
+          "sentence": "The living space in most city apartments is quite limited.",
+          "wordForm": "Adj+N"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "keeping a household pet brings warm companionship every day",
+        "after a day of hard work",
+        "mental health",
+        "personal privacy",
+        "quiet, cozy environment",
+        "without any distractions",
+        "state-of-the-art facilities",
+        "fast, convenient for busy people"
+      ]
+    }
   }
 ]
-

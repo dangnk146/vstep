@@ -15,7 +15,62 @@
     "part": "part1",
     "group": "Đề thi thực tế ULIS 14/11/2026",
     "title": "Task 1.1: Replying to a Friend Sharing Personal Music Taste and Listening Habits",
-    "content": "You have received an email from your pen pal, Hannah, asking about your musical preferences. Read part of her email below:\n\n\"I have been listening to a lot of indie acoustic and classical music lately, and it helps me focus so much when studying! What genres of music do you enjoy listening to the most? Do you usually listen to music while studying or traveling, and has your taste in music changed over the past few years?\"\n\nWrite an informal email responding to Hannah."
+    "content": "You have received an email from your pen pal, Hannah, asking about your musical preferences. Read part of her email below:\n\n\"I have been listening to a lot of indie acoustic and classical music lately, and it helps me focus so much when studying! What genres of music do you enjoy listening to the most? Do you usually listen to music while studying or traveling, and has your taste in music changed over the past few years?\"\n\nWrite an informal email responding to Hannah.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm happy to hear that indie acoustic and classical music help you focus! Personally, I enjoy listening to pop ballads and soft acoustic songs the most.",
+          "example": "For example, every evening I put on my headphones and listen to soft acoustic playlists to recharge my batteries before sleeping.",
+          "frame": "I'm happy to hear ______ / I would like to let you know that ______.",
+          "reason": "This kind of music is advantageous to my mental health because it makes me feel refreshed and peaceful, helping me relieve stress and reduce fatigue after a day of hard work.",
+          "requirement": "Share what genres of music you enjoy listening to the most"
+        },
+        {
+          "answer": "I rarely play songs with lyrics while studying, but I always listen to music when traveling on the bus or train.",
+          "example": "For instance, on my 40-minute morning bus ride to university, upbeat pop songs boost my energy and make the commute feel much shorter.",
+          "frame": "From my point of view, I think that ______. / I have a lot of information about ______.",
+          "reason": "During study time I need total personal privacy without any distractions so my brain can exercise and focus, whereas on noisy trips music helps me feel inner peace.",
+          "requirement": "Say whether you usually listen to music while studying or traveling"
+        },
+        {
+          "answer": "Yes, my music taste has changed quite a bit over the past three years as I moved from loud dance music to calmer acoustic and jazz tracks.",
+          "example": "For example, back in high school I loved loud rock concerts, but now I prefer quiet coffee-shop acoustic songs when hanging out with friends.",
+          "frame": "I would like to give you information on ______. / The main reason for this is ______.",
+          "reason": "The main reason for this is that as university work gets busier, I prefer gentle melodies that help my mind slow down and adjust smoothly to daily pressure.",
+          "requirement": "Explain whether your taste in music has changed over the past few years"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "music and listening habits"
+      },
+      "extraVocab": [
+        "pop ballads",
+        "soft acoustic",
+        "song lyrics",
+        "bus commute",
+        "gentle melodies"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my favorite music genres and listening habits",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Reply to Hannah sharing your favorite music genres, whether you listen to music while studying or traveling, and how your music taste has changed over recent years.",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "advantageous to my mental health",
+        "feel refreshed and peaceful",
+        "relieve stress and reduce fatigue",
+        "after a day of hard work",
+        "recharge my batteries",
+        "without any distractions",
+        "allow their brain to exercise",
+        "inner peace",
+        "slow down"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,6 +88,40 @@
     "part": "part2",
     "group": "Đề thi thực tế ULIS 14/11/2026",
     "title": "Task 2.1: Traveling Continuously Throughout the Tet Holiday",
-    "content": "Read the following statement:\n\n\"Traditionally, the Lunar New Year (Tet) is a sacred occasion for Vietnamese families to gather at home, visit grandparents, and honor ancestral customs. Nowadays, however, an increasing number of individuals and families choose to spend the entire Tet holiday traveling on vacations to domestic or international destinations.\"\n\nWrite an essay to an educated reader presenting your personal opinion on whether traveling throughout Tet is a positive lifestyle choice or an erosion of valuable traditional customs. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"Traditionally, the Lunar New Year (Tet) is a sacred occasion for Vietnamese families to gather at home, visit grandparents, and honor ancestral customs. Nowadays, however, an increasing number of individuals and families choose to spend the entire Tet holiday traveling on vacations to domestic or international destinations.\"\n\nWrite an essay to an educated reader presenting your personal opinion on whether traveling throughout Tet is a positive lifestyle choice or an erosion of valuable traditional customs. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, a busy office family can take a three-day trip to the beach during Tet to recharge their batteries and enjoy peaceful moments together.",
+        "focus": "Positive side: Relaxation and family bonding on vacation",
+        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
+        "point": "Traveling during Tet helps busy workers relieve stress, reduce fatigue, and reach a healthy balance between work and family time."
+      },
+      "body2": {
+        "example": "For example, if young people spend the whole holiday abroad, grandparents at home may feel lonely and children will miss traditional family meals and New Year greetings.",
+        "focus": "Negative side: Weakening traditional customs and family visits",
+        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
+        "point": "However, being away for the entire holiday reduces face-to-face interaction with older relatives and widens the generation gap when traditional customs are skipped."
+      },
+      "conclusion": "In conclusion, taking a family trip during the Tet holiday offers great relaxation, as long as we still spend New Year's Day visiting grandparents and keeping our family traditions.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "traditional family meals",
+        "New Year greetings"
+      ],
+      "intro": {
+        "debai": "traveling continuously throughout the Tet holiday",
+        "ld1": "relax and enjoy quality family time",
+        "ld2": "losing traditional customs and family visits"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 3 (Positive or Negative) + Câu #16 (Du lịch dịp Tết) + Trục 2 (Mental health) + Chunks #9, #10, #22, #23",
+      "reusedVocab": [
+        "recharge my batteries",
+        "relieve stress and reduce fatigue",
+        "reach a healthy balance between work and family time",
+        "face-to-face interaction",
+        "widens the generation gap"
+      ]
+    }
   }
 ]

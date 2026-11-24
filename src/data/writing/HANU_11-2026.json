@@ -17,7 +17,59 @@
     "title": "Task 1.1: Advising a Friend on Organizing a 1-Day Field Trip for English Students",
     "content": "You have received an email from your friend, an English teacher, who plans to organize a one-day outdoor field trip for her students and is asking for your advice. Write an email responding to her:\n\n- Advise whether she should choose the city museum or the central park\n- Suggest suitable food to bring along or whether to eat at a restaurant\n- Recommend whether students should share their experience after the trip by writing a letter/essay or recording a video",
     "isNew": true,
-    "addedAt": "2026-11-22T19:37:05+07:00"
+    "addedAt": "2026-11-22T19:37:05+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "I believe you should choose the central park for a one-day outdoor field trip instead of the city museum.",
+          "example": "You can organize an English speaking treasure hunt on the grass, which is much livelier than walking quietly inside a museum.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "Being outdoors in fresh air is beneficial to the students' physical and mental health, and the open space helps them build a strong sense of belonging through team games.",
+          "requirement": "Advise whether to choose the city museum or the central park"
+        },
+        {
+          "answer": "Why don't you ask students to bring simple packed lunches instead of eating at a restaurant?",
+          "example": "Students can bring sandwiches, fresh fruit, and bottled water to share on picnic mats under the trees at noon.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "Bringing packed food is fast, convenient, and fits comfortably within the students' budget without wasting time waiting for restaurant service.",
+          "requirement": "Suggest suitable food to bring along or whether to eat at a restaurant"
+        },
+        {
+          "answer": "From my point of view, I think that asking students to record a short video is better than writing a letter or essay.",
+          "example": "Each student can record a two-minute clip talking about their favorite game in the park and share it in your class group chat.",
+          "frame": "H. Provide Opinion",
+          "reason": "Making a video helps students make the most of new technology, practice speaking naturally, and allow their brain to exercise creatively.",
+          "requirement": "Recommend whether students should share their experience by writing a letter/essay or recording a video"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your students' field trip"
+      },
+      "extraVocab": [
+        "[+] packed lunches",
+        "[+] treasure hunt",
+        "[+] short video"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "your one-day field trip for your English students",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Give Advice + Suggestion + Provide Opinion",
+      "reusedVocab": [
+        "I believe you should",
+        "Why don't you",
+        "From my point of view, I think that",
+        "beneficial to physical and mental health",
+        "build a strong sense of belonging",
+        "fast, convenient",
+        "fit comfortably within my budget",
+        "make the most of new technology",
+        "allow their brain to exercise"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -37,7 +89,41 @@
     "title": "Task 2.1: Advantages and Disadvantages of Children Learning Musical Instruments",
     "content": "Read the following statement:\n\n\"Nowadays, many parents enroll their children in extracurricular music classes to learn how to play musical instruments. While music lessons can nurture talent and discipline, they may also add pressure and take away children's free time.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of letting children learn to play musical instruments. Support your arguments with specific reasons and examples.",
     "isNew": true,
-    "addedAt": "2026-11-22T19:37:06+07:00"
+    "addedAt": "2026-11-22T19:37:06+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, practicing guitar or piano for 30 minutes each day improves a child's memory and helps them relax after hard school lessons.",
+        "focus": "Advantages: Brain exercise, focus, and healthy relaxation",
+        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
+        "point": "Learning musical instruments allows children's brains to exercise creatively, improves their focus, and helps them relieve stress in a positive way."
+      },
+      "body2": {
+        "example": "For example, buying a piano and paying for private lessons is expensive, and tight practice schedules can make tired children lose playtime with friends.",
+        "focus": "Disadvantages: High costs and extra pressure on free time",
+        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
+        "point": "However, music classes cost a great deal of money, time, and effort, and children may feel stressed if parents force them to practice instead of listening to their feelings."
+      },
+      "conclusion": "In conclusion, learning musical instruments benefits children's minds and creativity, provided that parents choose affordable lessons and respect their children's free time.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "playtime with friends",
+        "affordable lessons"
+      ],
+      "intro": {
+        "debai": "children learning to play musical instruments",
+        "ld1": "exercising the brain and relieving study stress",
+        "ld2": "managing lesson costs and pressure on free time"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 3 (Positive or Negative) + Mẫu A-R-E #5 (Học nhạc cụ) + Chunk #17 + Body Chunk C + Câu #15 (Mâu thuẫn gia đình)",
+      "reusedVocab": [
+        "allow their brain to exercise",
+        "improves focus and memory",
+        "relieve stress and reduce fatigue",
+        "costs a great deal of money, time, and effort",
+        "instead of listening to their concerns with patience"
+      ]
+    }
   },
   {
     "STT": "3",
@@ -57,7 +143,59 @@
     "title": "Task 1.2: Advising a Visiting Foreign Friend on Winter Clothes, Activities, and Souvenirs",
     "content": "You have received an email from a foreign friend who is planning to visit your country this winter and asked for your suggestions. Write an email responding to your friend:\n\n- Suggest suitable clothes to pack for the winter weather\n- Recommend enjoyable outdoor activities to experience during their visit\n- Suggest meaningful local souvenirs they can buy for their family and friends",
     "isNew": true,
-    "addedAt": "2026-11-22T19:42:03+07:00"
+    "addedAt": "2026-11-22T19:42:03+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "I believe you should pack a warm jacket, a few long-sleeved shirts, and comfortable walking shoes.",
+          "example": "If you visit northern areas like Hanoi, wearing a light scarf and a warm coat will help you walk around without catching a cold.",
+          "frame": "G. Provide Instruction / Suggestion + K. Mẫu câu Thân mật hay gặp",
+          "reason": "The winter air can get chilly and windy in the morning and evening, so warm layers will protect your physical health while we do a lot of walking around the town.",
+          "requirement": "Suggest suitable clothes to pack for the winter weather"
+        },
+        {
+          "answer": "Why don't you take a walking food tour in the old quarter and visit a local flower market or lake?",
+          "example": "When it comes to food, you certainly shouldn't miss hot Pho on a cold morning, and we can walk around Hoan Kiem Lake in the afternoon.",
+          "frame": "G. Provide Instruction / Suggestion + K. Mẫu câu Thân mật hay gặp",
+          "reason": "Outdoor sightseeing gives you the opportunity to broaden your mind and gain a deeper understanding of our people, culture, and tradition.",
+          "requirement": "Recommend enjoyable outdoor activities to experience during their visit"
+        },
+        {
+          "answer": "From my point of view, I think that traditional handicrafts, silk scarves, or Vietnamese coffee packets are the best souvenirs.",
+          "example": "You can buy boxes of roasted coffee for your friends and handmade ceramic cups for your parents at the night market.",
+          "frame": "H. Provide Opinion",
+          "reason": "Buying local products supports domestic farmers and local workers directly, and these small items are easy to pack in your suitcase.",
+          "requirement": "Suggest meaningful local souvenirs to buy for family and friends"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your winter visit"
+      },
+      "extraVocab": [
+        "[+] warm jacket",
+        "[+] walking food tour",
+        "[+] handmade ceramic cups"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "your upcoming winter trip to my country",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Give Advice + Suggestion + Provide Opinion",
+      "reusedVocab": [
+        "I believe you should",
+        "Why don't you",
+        "From my point of view, I think that",
+        "When it comes to [food/travel], you certainly shouldn't miss Pho",
+        "do a lot of walking around the town",
+        "physical health",
+        "broaden your mind",
+        "gain a deeper understanding of people, culture, and tradition",
+        "supports domestic farmers directly"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -77,7 +215,41 @@
     "title": "Task 2.2: Advantages and Disadvantages of Working from Home",
     "content": "Read the following statement:\n\n\"Thanks to advancements in digital technology, working from home has become increasingly widespread among modern employees and companies. While remote work offers flexibility and saves commuting time, it also presents challenges such as isolation and blurred work-life boundaries.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of working from home. Support your arguments with specific reasons and illustrative examples.",
     "isNew": true,
-    "addedAt": "2026-11-22T19:42:04+07:00"
+    "addedAt": "2026-11-22T19:42:04+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, working from home lets parents join morning meetings on a laptop without sitting in heavy traffic, giving them more time to cook dinner with family.",
+        "focus": "Advantages: Flexible time, quiet space, and less commuting",
+        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
+        "point": "Working from home is fast and convenient for busy people, saves travel time and money, and helps workers reach a healthy balance between work and family time."
+      },
+      "body2": {
+        "example": "For example, remote workers who stay alone all week miss face-to-face teamwork and often keep checking work emails late at night because work and rest happen in the same room.",
+        "focus": "Disadvantages: Loneliness and blurred work-life boundaries",
+        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
+        "point": "However, working remotely reduces face-to-face interaction with colleagues, makes people feel lonely, and can lead to working overtime when office hours are unclear."
+      },
+      "conclusion": "In conclusion, working from home offers great flexibility and saves commuting time, yet employees should set clear working hours and stay connected with teammates to avoid isolation.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "heavy traffic",
+        "clear working hours"
+      ],
+      "intro": {
+        "debai": "working from home",
+        "ld1": "save commuting time and enjoy flexible schedules",
+        "ld2": "dealing with loneliness and unclear work-life limits"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 3 (Positive or Negative) + Mẫu A-R-E #6 (Online/không kẹt xe) + Mini-essay #4 (Check emails late) + Chunks #10, #18, #23 + Trục 4",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "without heavy traffic",
+        "reach a healthy balance between work and family time",
+        "face-to-face interaction",
+        "build a strong sense of belonging",
+        "check work emails late at night"
+      ]
+    }
   }
 ]
-

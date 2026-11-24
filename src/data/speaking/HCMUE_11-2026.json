@@ -17,7 +17,51 @@
     "title": "Topic 1: Weekend Leisure & Upcoming Plans",
     "content": "1. What do you usually do in your free time on weekends?\n2. What are you preparing or planning to do for next week?\n3. Do you wish weekends were longer? Why or why not?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:36:01+07:00"
+    "addedAt": "2026-11-22T19:36:01+07:00",
+    "hint": {
+      "extraVocab": [
+        "study timetable",
+        "day off",
+        "feel rushed"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "In my free time on weekends, I am a big fan of reading books, watching movies, and cooking meals with my family.",
+          "example": "Every Saturday evening, I watch a comedy movie with my sister and eat homemade snacks at home.",
+          "pillar": "Bộ đề gốc",
+          "q": "What do you usually do in your free time on weekends?",
+          "reason": "These activities are advantageous to my mental health because they help me relax my mind, recharge my batteries, and spend quality time with my loved ones."
+        },
+        {
+          "answer": "I am planning to organize a clear study timetable and finish my English assignments early next week.",
+          "example": "This Sunday night, I will write down my tasks for Monday to Friday and prepare my speaking notes for class.",
+          "pillar": "Knowledge",
+          "q": "What are you preparing or planning to do for next week?",
+          "reason": "Creating a daily timetable helps solve the problem of missing deadlines, so I can complete urgent tasks on time and avoid stress."
+        },
+        {
+          "answer": "Yes, I definitely wish weekends were longer, maybe three days instead of two.",
+          "example": "With an extra day off, I could visit my grandparents in my hometown without feeling rushed on Sunday night.",
+          "pillar": "Mental health",
+          "q": "Do you wish weekends were longer? Why or why not?",
+          "reason": "Having more free time helps people relieve stress, reduce fatigue, and reach a healthy balance between work and family time."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Leisure Activities) + Trục Mental health + Cụm đa năng (#3, #10)",
+      "reusedVocab": [
+        "in my free time",
+        "a big fan of",
+        "advantageous to my mental health",
+        "relax my mind",
+        "recharge my batteries",
+        "spend quality time",
+        "solve the problem",
+        "relieve stress and reduce fatigue",
+        "reach a healthy balance between work and family time"
+      ],
+      "topic": "Weekend Leisure & Upcoming Plans"
+    }
   },
   {
     "STT": "2",
@@ -37,7 +81,50 @@
     "title": "Part 2 - Situation 1: Choosing a Cultural Gift for an Exchange Student",
     "content": "Situation: An international exchange student is about to return to their home country after studying in Vietnam. You want to give them a memorable traditional gift and are considering three options:\n- A traditional Ao Dai (áo dài truyền thống)\n- A lotus souvenir or artwork (quà lưu niệm hoa sen)\n- A Vietnamese conical hat (nón lá)\n\nWhich option do you think is the best choice and why?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:36:02+07:00"
+    "addedAt": "2026-11-22T19:36:02+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-2",
+        "khen1Text": "because it is easy to find in local souvenir shops, fits my budget, and the exchange student can see and use it every day in their house.",
+        "khen2ARE": {
+          "answer": "A lotus souvenir or artwork helps the student remember and share a deeper understanding of Vietnamese culture and tradition in their home country.",
+          "example": "For example, a small lotus painting or ceramic cup is easy to pack in a suitcase and looks lovely on their study desk back home.",
+          "reason": "Because the lotus is a famous traditional symbol of Vietnam, putting it in their room helps them broaden their friends' horizons about Vietnam whenever guests ask about it."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-2",
+        "khen3Text": "a warm and meaningful keepsake that reminds the student of my care, sincere friendship, and happy memories in Vietnam for many years to come.",
+        "option": "A lotus souvenir or artwork"
+      },
+      "extraVocab": [
+        "souvenir shops",
+        "traditional symbol",
+        "pack in a suitcase"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-2",
+          "option": "A traditional Ao Dai",
+          "reason": "spending too much money on a traditional Ao Dai will burden my pocket, and if the size does not fit well, the student might feel embarrassed and rarely wear it back home."
+        },
+        {
+          "cheCode": "CUSTOM",
+          "option": "A Vietnamese conical hat",
+          "reason": "a conical hat is bulky and easily crushed in luggage on a long flight home, and it is difficult for the student to use in daily life abroad."
+        }
+      ],
+      "reusedVocab": [
+        "easy to find in local shops",
+        "fits my budget",
+        "see and use it every day in their house",
+        "a warm and meaningful keepsake that reminds ... of our care and sincere friendship for many years to come",
+        "deeper understanding of people, culture, and tradition",
+        "broaden ... horizons",
+        "burden my pocket ... feel embarrassed"
+      ],
+      "situation": "An international exchange student is about to return to their home country after studying in Vietnam. I want to give them a memorable traditional gift and am considering three options: a traditional Ao Dai, a lotus souvenir or artwork, and a Vietnamese conical hat."
+    }
   },
   {
     "STT": "3",
@@ -57,7 +144,74 @@
     "title": "Part 3 - Topic 1: Ways to Protect the Environment",
     "content": "Topic: Effective ways to protect the environment\nSuggestions:\n- Stopping the use of single-use plastic bags\n- Switching to alternative and renewable energy sources\n- Using public transportation instead of private vehicles\n- [Your own ideas]\n\nFollow-up questions:\n1. In what ways do people commonly negatively affect the environment?\n2. Do you think the environment will get better in the future? Why or why not?\n3. Should large corporations join hands to protect the environment? Why?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:36:03+07:00"
+    "addedAt": "2026-11-22T19:36:03+07:00",
+    "hint": {
+      "coreTopic": "effective ways to protect the environment",
+      "extraVocab": [
+        "single-use plastic bags",
+        "air quality",
+        "reusable water bottles"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some common ways people harm the environment, such as throwing away plastic waste, wasting water, and driving too many private vehicles.",
+          "example": "For example, many shoppers still ask for three or four plastic bags at local markets and throw them away after just ten minutes.",
+          "formula": "what",
+          "q": "In what ways do people commonly negatively affect the environment?",
+          "reason": "Daily bad habits and improper disposal of rubbish and electronic waste cause serious air and water pollution."
+        },
+        {
+          "answer": "Yes, I think the environment can get better in the future if both individuals and governments take strong action.",
+          "example": "For instance, many young people now carry reusable water bottles and ride electric buses to school or work.",
+          "formula": "do you think",
+          "q": "Do you think the environment will get better in the future? Why or why not?",
+          "reason": "More people now raise their awareness of environmental protection and choose green habits, while clean technology is becoming cheaper."
+        },
+        {
+          "answer": "Yes, I think large corporations should join hands with the government to protect the environment, and authorities must introduce stricter rules.",
+          "example": "For example, electronics companies can run e-waste recycling programs and design products that are easier to repair and reuse.",
+          "formula": "how/should",
+          "q": "Should large corporations join hands to protect the environment? Why?",
+          "reason": "Factories produce huge amounts of waste and carbon emissions, so companies must take responsibility, recycle materials, and face heavy fines if they pollute."
+        }
+      ],
+      "macroTopic": "environment",
+      "mindmapPoints": [
+        {
+          "cue": "Stopping the use of single-use plastic bags",
+          "expand": "because reducing plastic use and recycling can help combat pollution and protect natural habitats.",
+          "impact": "Therefore, it is good for keeping nature and ecosystems healthy.",
+          "sentence": "People can stop using single-use plastic bags when shopping every day.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Switching to alternative and renewable energy sources",
+          "expand": "For example, installing solar panels on rooftops reduces dependence on fossil fuels, even though initial setup costs can be high.",
+          "impact": "Clearly, it is beneficial to lowering air pollution and saving energy.",
+          "sentence": "Society can switch to alternative energy sources like solar and wind power.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Using public transportation instead of private vehicles",
+          "expand": "This is because public transport reduces traffic congestion and carbon emissions in crowded cities.",
+          "impact": "So, it has positive effects on air quality and people's physical health.",
+          "sentence": "Citizens can use public transport instead of driving private cars and motorbikes.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "reducing plastic use and recycling can help combat pollution",
+        "Energy sources like solar and wind power reduce dependence on fossil fuels",
+        "Public transport reduces traffic congestion and carbon emissions",
+        "environmental protection",
+        "improper disposal",
+        "e-waste",
+        "stricter rules and heavy fines",
+        "green habits"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -77,7 +231,50 @@
     "title": "Topic 2: Cooking at Home",
     "content": "1. How often do you cook meals at home?\n2. When did you first start learning how to cook?\n3. What is your favorite dish to cook, and why?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:41:01+07:00"
+    "addedAt": "2026-11-22T19:41:01+07:00",
+    "hint": {
+      "extraVocab": [
+        "home-cooked meals",
+        "stir-fried beef"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I cook meals at home almost every day, especially for dinner.",
+          "example": "From Monday to Friday, I usually cook simple rice and vegetable dishes in my kitchen at 6:30 PM.",
+          "pillar": "Physical health",
+          "q": "How often do you cook meals at home?",
+          "reason": "Home-cooked meals play an essential role in maintaining our health because eating clean food is hygienic and fits comfortably within my budget."
+        },
+        {
+          "answer": "I first started learning how to cook when I was about twelve years old, and my mom taught me.",
+          "example": "I still remember helping my mom wash vegetables and fry eggs in our kitchen during summer vacation.",
+          "pillar": "Social",
+          "q": "When did you first start learning how to cook?",
+          "reason": "Cooking together helped us spend quality time and strengthen bonds within my family, and my mom taught me important life skills."
+        },
+        {
+          "answer": "My favorite dish to cook is stir-fried beef with fresh vegetables.",
+          "example": "I often cook it on Sunday evenings using fresh beef and green vegetables from the local market.",
+          "pillar": "Mental health",
+          "q": "What is your favorite dish to cook, and why?",
+          "reason": "First, it is fast, convenient, and easy to make for busy people. Second, cooking this dish helps me relax my mind and makes my family feel happy when we eat together."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Leisure & Family - Mom) + Trục Physical health + Trục Mental health",
+      "reusedVocab": [
+        "play an essential role in",
+        "hygienic",
+        "fit comfortably within my budget",
+        "spend quality time",
+        "strengthen bonds within my family",
+        "teach important life skills",
+        "summer vacation",
+        "fast, convenient for busy people",
+        "relax my mind"
+      ],
+      "topic": "Cooking at Home"
+    }
   },
   {
     "STT": "5",
@@ -97,7 +294,50 @@
     "title": "Part 2 - Situation 2: Planning a Family Vacation",
     "content": "Situation: You are planning an upcoming vacation for your family and want to decide the best way to organize the trip. There are three options:\n- Planning the entire trip by yourself (tự lên kế hoạch chuyến đi)\n- Hiring a travel specialist or travel agency (nhờ chuyên gia / công ty du lịch)\n- Asking a friend who has taken a similar trip (hỏi kinh nghiệm người bạn từng đi)\n\nWhich option do you think is the best choice and why?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:41:02+07:00"
+    "addedAt": "2026-11-22T19:41:02+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-0",
+        "khen1Text": "because it is easy to start right away online, and I can choose places and hotels that fit comfortably within my family's budget and daily routine without sacrificing quality.",
+        "khen2ARE": {
+          "answer": "Planning the trip by myself is advantageous to my family's mental health and helps us reach a healthy balance between work and family time.",
+          "example": "For instance, I can book a quiet homestay by the beach and keep the afternoons free for family meals and talking together.",
+          "reason": "Because I know what my family enjoys most, I can plan a relaxing schedule so everyone can put their feet up, recharge their batteries, and reduce stress without rushing."
+        },
+        "khen2Pillar": "Mental health",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and take meaningful photos together, while everything stays under our control.",
+        "option": "Planning the entire trip by yourself"
+      },
+      "extraVocab": [
+        "service fees",
+        "homestay",
+        "book online"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CUSTOM",
+          "option": "Hiring a travel specialist or travel agency",
+          "reason": "hiring a travel agency costs too much money in service fees, and fixed group tours often feel stiff and rushed, so my family cannot enjoy private time freely."
+        },
+        {
+          "cheCode": "CUSTOM",
+          "option": "Asking a friend who has taken a similar trip",
+          "reason": "relying only on a friend's past experience may not suit my family's budget or needs, because travel prices change quickly and what a friend likes may be tiring for other family members."
+        }
+      ],
+      "reusedVocab": [
+        "fit comfortably within my budget and daily routine without sacrificing quality",
+        "advantageous to ... mental health",
+        "reach a healthy balance between work and family time",
+        "put their feet up",
+        "recharge their batteries",
+        "forget about work pressure, refresh our minds, and take meaningful photos together",
+        "stays under our control"
+      ],
+      "situation": "I am planning an upcoming vacation for my family and want to decide the best way to organize the trip. I am considering three options: planning the entire trip by myself, hiring a travel specialist or travel agency, and asking a friend who has taken a similar trip."
+    }
   },
   {
     "STT": "6",
@@ -117,7 +357,75 @@
     "title": "Part 3 - Topic 2: Benefits of Playing Team Sports",
     "content": "Topic: Benefits of playing team sports\nSuggestions:\n- Improving physical health and fitness\n- Developing teamwork and communication skills\n- Building friendships and relieving daily stress\n- [Your own ideas]\n\nFollow-up questions:\n1. What sports competitions are popular in your country?\n2. What problems can happen when people participate in sports?\n3. How can people stay motivated to exercise regularly?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:41:03+07:00"
+    "addedAt": "2026-11-22T19:41:03+07:00",
+    "hint": {
+      "coreTopic": "benefits of playing team sports",
+      "extraVocab": [
+        "team sports",
+        "physical injuries",
+        "badminton"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some popular sports competitions in Vietnam, such as national football leagues, school badminton tournaments, and city marathons.",
+          "example": "For example, whenever the Vietnamese national football team plays, families and friends gather together to watch and cheer.",
+          "formula": "what",
+          "q": "What sports competitions are popular in your country?",
+          "reason": "Football and running events bring people together, create excitement, and encourage healthy habits for people of all ages."
+        },
+        {
+          "answer": "There are some problems that can happen when people play sports, such as physical injuries and arguments over winning or losing.",
+          "example": "For instance, playing a fast football match without proper shoes or warming up can easily lead to a hurt ankle.",
+          "formula": "what",
+          "q": "What problems can happen when people participate in sports?",
+          "reason": "Without warming up properly or controlling emotions, players can hurt their legs or argue angrily with other players."
+        },
+        {
+          "answer": "I think individuals should build good self-discipline and join local sports clubs with friends, while authorities should build more public sports centers.",
+          "example": "For example, joining a neighborhood badminton club at 6 PM after work helps busy people stay active three times a week.",
+          "formula": "how/should",
+          "q": "How can people stay motivated to exercise regularly?",
+          "reason": "Exercising in a friendly group makes workouts fun instead of boring, and convenient public facilities make it easy for everyone to join."
+        }
+      ],
+      "macroTopic": "health",
+      "mindmapPoints": [
+        {
+          "cue": "Improving physical health and fitness",
+          "expand": "because it enables us to keep fit, strengthen our immune system, and get into good shape.",
+          "impact": "Therefore, it is good for our overall physical health.",
+          "sentence": "Playing team sports helps people improve their physical health and fitness.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Developing teamwork and communication skills",
+          "expand": "For example, during a football or basketball match, teammates must pass the ball, listen to each other, and work together to score.",
+          "impact": "Clearly, it is beneficial to learning essential skills for school and work.",
+          "sentence": "Team sports help players develop teamwork and communication skills.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Building friendships and relieving daily stress",
+          "expand": "This is because joining a sports team lets you meet like-minded people and recharge your batteries after a day of hard work.",
+          "impact": "So, it has positive effects on your mental health and social network.",
+          "sentence": "Playing team sports helps people build friendships and relieve daily stress.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "keep fit",
+        "strengthen our immune system",
+        "get into good shape",
+        "like-minded people",
+        "recharge your batteries after a day of hard work",
+        "mental health",
+        "social network",
+        "brings people together",
+        "self-discipline",
+        "public sports centers"
+      ]
+    }
   }
 ]
-

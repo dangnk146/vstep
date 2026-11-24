@@ -15,7 +15,54 @@
     "part": "part1",
     "group": "Đề thi thực tế BAV 10/10/2026",
     "title": "Topic 1: Eating Out & Restaurants",
-    "content": "1. How often do you eat out at restaurants with your family or friends?\n2. What kinds of restaurants or dining places do you prefer, and why?\n3. Do you think eating out at restaurants has more advantages than cooking at home?"
+    "content": "1. How often do you eat out at restaurants with your family or friends?\n2. What kinds of restaurants or dining places do you prefer, and why?\n3. Do you think eating out at restaurants has more advantages than cooking at home?",
+    "hint": {
+      "extraVocab": [
+        "eat out",
+        "home-cooked meals",
+        "fresh ingredients",
+        "save money"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I usually eat out at restaurants about once or twice a week with my family or friends.",
+          "example": "Every Saturday evening, my family goes to a nearby restaurant for dinner instead of cooking at home.",
+          "pillar": "Social",
+          "q": "1. How often do you eat out at restaurants with your family or friends?",
+          "reason": "It is a great way to spend quality time together, strengthen family bonds, and catch up after a busy week of work or study."
+        },
+        {
+          "answer": "I prefer quiet, cozy local restaurants that serve traditional Vietnamese dishes.",
+          "example": "For instance, I love going to a small family-run noodle shop near my house where the staff are friendly and the food is fresh.",
+          "pillar": "Peace & Privacy & Budget",
+          "q": "2. What kinds of restaurants or dining places do you prefer, and why?",
+          "reason": "Crowded, noisy places easily make me feel overwhelmed and stressed. Local spots offer a comfortable atmosphere, delicious and flavorful food, and fit comfortably within my budget."
+        },
+        {
+          "answer": "Eating out is convenient, but I think cooking at home still has more advantages overall.",
+          "example": "During weekdays my family cooks clean, healthy meals at home, and we only eat out on weekends to relax and recharge our batteries.",
+          "pillar": "Physical health & Convenience",
+          "q": "3. Do you think eating out at restaurants has more advantages than cooking at home?",
+          "reason": "While restaurants are fast and convenient for busy people in modern-day society, home-cooked meals play an essential role in maintaining physical health because we can choose fresh ingredients and save money."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Social) + Trục Peace & Privacy, Physical health & Từ vựng #1, #18, #21",
+      "reusedVocab": [
+        "spend quality time",
+        "strengthen family bonds",
+        "quiet, cozy",
+        "crowded, noisy",
+        "overwhelmed and stressed",
+        "delicious and flavorful",
+        "fit comfortably within my budget",
+        "fast and convenient for busy people in modern-day society",
+        "play an essential role in",
+        "physical health",
+        "recharge our batteries"
+      ],
+      "topic": "Eating Out & Restaurants"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +80,53 @@
     "part": "part1",
     "group": "Đề thi thực tế BAV 10/10/2026",
     "title": "Topic 2: Going Online & Internet Usage",
-    "content": "1. How much time do you spend going online every day?\n2. What online activities or websites do you usually engage in most?\n3. How has being online improved your daily study, work, or entertainment?"
+    "content": "1. How much time do you spend going online every day?\n2. What online activities or websites do you usually engage in most?\n3. How has being online improved your daily study, work, or entertainment?",
+    "hint": {
+      "extraVocab": [
+        "screen time",
+        "educational websites",
+        "search for information",
+        "study efficiency"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I spend around three to four hours going online every day, mostly for studying and relaxing.",
+          "example": "I usually go online for two hours in the afternoon to do homework and about one hour in the evening to watch videos.",
+          "pillar": "Mental health & Balance",
+          "q": "1. How much time do you spend going online every day?",
+          "reason": "In modern-day society, the Internet plays an essential role in daily tasks, so I try to make the most of it while still keeping a healthy balance between screen time and rest."
+        },
+        {
+          "answer": "I mostly use educational websites, YouTube for English videos, and Spotify for music.",
+          "example": "For example, I often listen to soft Lofi music on Spotify when I study and watch English news clips before bed.",
+          "pillar": "Knowledge & Mental health",
+          "q": "2. What online activities or websites do you usually engage in most?",
+          "reason": "Educational websites allow me to gain knowledge and broaden my horizons, while music and short clips help me relax my mind and reduce stress."
+        },
+        {
+          "answer": "Going online has improved both my study efficiency and my free-time entertainment.",
+          "example": "Last month, I joined an online evening English class via my laptop without facing heavy traffic, which really helped boost my skills.",
+          "pillar": "Knowledge & Convenience",
+          "q": "3. How has being online improved your daily study, work, or entertainment?",
+          "reason": "It is fast and convenient for busy people because we can search for information in seconds, join online courses from home, and make the most of new technology to improve productivity."
+        }
+      ],
+      "reusedSource": "4 Trục A-R-E (Knowledge, Mental health) + Bộ đề 3 (Music) + Từ vựng #8, #18 & Mẫu #6",
+      "reusedVocab": [
+        "plays an essential role in",
+        "healthy balance",
+        "gain knowledge",
+        "broaden my horizons",
+        "relax my mind",
+        "reduce stress",
+        "fast and convenient for busy people",
+        "make the most of new technology to improve productivity",
+        "online evening",
+        "without heavy traffic"
+      ],
+      "topic": "Going Online & Internet Usage"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +144,49 @@
     "part": "part2",
     "group": "Đề thi thực tế BAV 10/10/2026",
     "title": "Part 2 - Situation 1: Choosing a Science Book as a Gift",
-    "content": "Situation: You want to buy a science book as a gift for your 12-year-old cousin who has a keen interest in science. There are three types of science books to choose from: an illustrated encyclopedia about astronomy and space exploration, a handbook on wildlife and animal biology, or an interactive science experiment guide with practical DIY projects. Which book would you choose and why?"
+    "content": "Situation: You want to buy a science book as a gift for your 12-year-old cousin who has a keen interest in science. There are three types of science books to choose from: an illustrated encyclopedia about astronomy and space exploration, a handbook on wildlife and animal biology, or an interactive science experiment guide with practical DIY projects. Which book would you choose and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-2",
+        "khen1Text": "because it is easy to find in local bookstores, fits my budget, and my cousin can read and use it every day at home.",
+        "khen2ARE": {
+          "answer": "Secondly, this book brings my cousin a wide range of benefits because it gives them the opportunity to increase knowledge and practice hands-on science skills safely.",
+          "example": "For example, my cousin can follow step-by-step instructions to make a simple baking-soda volcano or grow salt crystals on the weekend.",
+          "reason": "Doing simple DIY projects allows their brain to exercise creatively and helps them broaden their mind far better than just memorizing facts from a page."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-2",
+        "khen3Text": "a warm and meaningful keepsake that reminds my cousin of my care and support for their love of science for many years to come.",
+        "option": "an interactive science experiment guide with practical DIY projects"
+      },
+      "extraVocab": [
+        "DIY projects",
+        "baking-soda volcano",
+        "hardcover encyclopedia"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-2",
+          "option": "an illustrated encyclopedia about astronomy and space exploration",
+          "reason": "a large hardcover encyclopedia is often very expensive and heavy, which can burden my budget, and too much reading text without activities may feel boring for a 12-year-old."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "a handbook on wildlife and animal biology",
+          "reason": "a plain handbook mostly presents facts like a school textbook, so an active 12-year-old may lose interest quickly, and it receives few choices compared to a hands-on DIY book."
+        }
+      ],
+      "reusedVocab": [
+        "easy to find in local shops, fits my budget",
+        "a warm and meaningful keepsake",
+        "increase knowledge",
+        "broaden their mind",
+        "allow their brain to exercise",
+        "practice hands-on skills"
+      ],
+      "situation": "I want to buy a science book as a gift for my 12-year-old cousin who has a keen interest in science, and there are three types of science books to choose from: an illustrated encyclopedia about astronomy and space exploration, a handbook on wildlife and animal biology, or an interactive science experiment guide with practical DIY projects."
+    }
   },
   {
     "STT": "4",
@@ -69,6 +204,77 @@
     "part": "part3",
     "group": "Đề thi thực tế BAV 10/10/2026",
     "title": "Part 3 - Topic 1: Inspiring Young People's Interest in Science",
-    "content": "Topic: Effective ways to inspire students and young people to develop a passion for science\nSuggestions:\n- Organizing hands-on science experiments and interactive workshops in schools\n- Providing engaging science books, documentaries, and digital media\n- Arranging educational field trips to science museums and research centers\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are fewer young students in some countries choosing science and engineering majors nowadays?\n2. How can mass media and movies contribute to popularizing science among the general public?\n3. Do you think governments should invest more funding in scientific research and space exploration?"
+    "content": "Topic: Effective ways to inspire students and young people to develop a passion for science\nSuggestions:\n- Organizing hands-on science experiments and interactive workshops in schools\n- Providing engaging science books, documentaries, and digital media\n- Arranging educational field trips to science museums and research centers\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are fewer young students in some countries choosing science and engineering majors nowadays?\n2. How can mass media and movies contribute to popularizing science among the general public?\n3. Do you think governments should invest more funding in scientific research and space exploration?",
+    "hint": {
+      "coreTopic": "ways to inspire young people to love science",
+      "extraVocab": [
+        "science experiments",
+        "science museums",
+        "astronomy",
+        "satellite technology"
+      ],
+      "followUps": [
+        {
+          "answer": "This is mainly because science majors are hard and many university lessons focus too much on theory instead of real practice.",
+          "example": "For instance, students who only memorize physics formulas on paper without doing real lab work quickly lose interest.",
+          "formula": "Why ...? -> Because + Theory vs practice (Reason + Example)",
+          "q": "Why are fewer young students in some countries choosing science and engineering majors nowadays?",
+          "reason": "When lessons are boring and students do not see clear job paths, they prefer faster and easier majors like business or media."
+        },
+        {
+          "answer": "I think TV channels and film makers should produce simple, fun science programs and stories for everyday viewers.",
+          "example": "For example, popular space movies or short YouTube science clips make thousands of teenagers curious about astronomy and technology.",
+          "formula": "How ...? -> Support solution (Media & Education)",
+          "q": "How can mass media and movies contribute to popularizing science among the general public?",
+          "reason": "Media can be educational and entertaining, helping people understand how modern science improves people's living standard without using hard words."
+        },
+        {
+          "answer": "Yes, I think governments should invest more public funds in scientific research and space programs.",
+          "example": "For instance, satellite technology from space research now gives us accurate weather forecasts and GPS maps on our phones.",
+          "formula": "Do you think ...? -> Yes, I think... + Support solution",
+          "q": "Do you think governments should invest more funding in scientific research and space exploration?",
+          "reason": "New science discoveries help us solve big problems in health, clean energy, and communication, which boosts economic development."
+        }
+      ],
+      "macroTopic": "education",
+      "mindmapPoints": [
+        {
+          "cue": "Organizing hands-on science experiments and interactive workshops in schools",
+          "expand": "This is because doing experiments in a lab equipped with state-of-the-art facilities and modern teaching tools allows their brain to exercise actively.",
+          "impact": "Therefore, it is good for students' curiosity and gives them practical skills.",
+          "sentence": "Organizing practical science experiments helps students learn new things and enjoy their lessons.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Providing engaging science books, documentaries, and digital media",
+          "expand": "For example, watching clear science videos or diving into the world of a science book makes hard topics easy and fun to understand.",
+          "impact": "Clearly, it is beneficial to students who want to gain deeper knowledge outside class.",
+          "sentence": "Providing interesting science books and videos helps young people broaden their mind.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Arranging educational field trips to science museums and research centers",
+          "expand": "This is because visiting real labs gives them the opportunity to increase knowledge and meet like-minded people who share the same interest.",
+          "impact": "So, it has positive effects on their love for learning and future career choices.",
+          "sentence": "Arranging trips to science museums helps students see real inventions and get inspired.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "equipped with state-of-the-art facilities and modern teaching tools",
+        "allow their brain to exercise",
+        "broaden their mind",
+        "dive into the world of a book",
+        "increase knowledge",
+        "meet like-minded people",
+        "focus too much on theory",
+        "can be educational and entertaining",
+        "improve people's living standard",
+        "boost economic development",
+        "invest more public funds"
+      ]
+    }
   }
 ]

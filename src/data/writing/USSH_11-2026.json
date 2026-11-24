@@ -15,7 +15,60 @@
     "part": "part1",
     "group": "Đề thi thực tế USSH 11/2026",
     "title": "Task 1.1: Replying to Lucia regarding Her Upcoming Trip, Itinerary, and Weather",
-    "content": "You have received an email from your pen pal, Lucia, who is visiting your city next month. Read part of her email below:\n\n\"I have just booked my flights to your city next month! I cannot wait to explore and catch up. Could you suggest some enjoyable activities and places we should visit together? What will the weather be like at that time, and what kind of clothes or essentials should I prepare for the trip?\"\n\nWrite an informal email responding to Lucia."
+    "content": "You have received an email from your pen pal, Lucia, who is visiting your city next month. Read part of her email below:\n\n\"I have just booked my flights to your city next month! I cannot wait to explore and catch up. Could you suggest some enjoyable activities and places we should visit together? What will the weather be like at that time, and what kind of clothes or essentials should I prepare for the trip?\"\n\nWrite an informal email responding to Lucia.",
+    "hint": {
+      "body": [
+        {
+          "answer": "We should spend a morning walking around the central lake and historical museum, and then explore the evening food street together.",
+          "example": "For example, on Saturday we can drink iced coffee near the old cathedral, visit a craft market, and have hot Pho for dinner.",
+          "frame": "I am genuinely thrilled to hear that you are planning to visit my hometown! There are two suggestions that I would like to make.",
+          "reason": "Visiting these spots helps us catch up through face-to-face interaction while letting you broaden your mind and taste authentic local dishes like Pho.",
+          "requirement": "Suggest enjoyable activities and places to visit together with Lucia"
+        },
+        {
+          "answer": "Next month the weather here will be quite warm and sunny during the day, around 28 to 32 degrees Celsius, with occasional short afternoon showers.",
+          "example": "For instance, mornings from 8:00 AM to 11:00 AM are usually bright and breezy, which is great for taking photos outdoors.",
+          "frame": "I would like to give you information on ______. / I would like to let you know that ______.",
+          "reason": "Knowing the forecast early helps us plan outdoor walks in the morning and stay indoors at cozy cafes when it rains.",
+          "requirement": "Describe what the weather will be like next month"
+        },
+        {
+          "answer": "Don't forget to pack light cotton clothes, comfortable walking shoes, sunscreen, and a small folding umbrella.",
+          "example": "For example, wearing breathable T-shirts, sunglasses, and cushioned sneakers will keep you cool and comfortable all day.",
+          "frame": "When it comes to ______, you certainly shouldn't ______. / Also, don't forget to ______.",
+          "reason": "Light outfits and good sneakers are convenient because we will do a lot of walking around town, and an umbrella helps you stay on the safe side during sudden rain.",
+          "requirement": "Advise what kind of clothes or essentials she should prepare for the trip"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your visit next month"
+      },
+      "extraVocab": [
+        "folding umbrella",
+        "sunscreen",
+        "cotton clothes",
+        "afternoon showers",
+        "walking shoes"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "your upcoming visit, our trip plan, and what to pack for next month",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Reply to Lucia with suggested activities and places to visit together, next month's weather forecast, and packing advice on clothes and essentials.",
+      "reusedVocab": [
+        "I am genuinely thrilled to hear that you are planning to visit my hometown!",
+        "When it comes to",
+        "authentic",
+        "Pho",
+        "don't forget to pack light clothes because we will likely do a lot of walking around the town",
+        "face-to-face interaction",
+        "broaden their mind",
+        "stay on the safe side"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,6 +86,41 @@
     "part": "part2",
     "group": "Đề thi thực tế USSH 11/2026",
     "title": "Task 2.1: The Effects of Reading Habits and Methods to Encourage Reading",
-    "content": "Read the following statement:\n\n\"With the overwhelming rise of short-form digital media, fewer people maintain the habit of reading books. Many educators stress that reading books exercises the brain, expands vocabulary, and deepens emotional empathy.\"\n\nWrite an essay to an educated reader discussing the positive effects of cultivating a regular reading habit and proposing feasible measures that schools and families can implement to encourage people, especially the youth, to read more. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"With the overwhelming rise of short-form digital media, fewer people maintain the habit of reading books. Many educators stress that reading books exercises the brain, expands vocabulary, and deepens emotional empathy.\"\n\nWrite an essay to an educated reader discussing the positive effects of cultivating a regular reading habit and proposing feasible measures that schools and families can implement to encourage people, especially the youth, to read more. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother reads a printed history book for 30 minutes every night in a quiet room, which helps him relax and do better in his school essays.",
+        "focus": "Positive effects: Brain exercise, knowledge, and stress relief",
+        "frame": "Firstly, the first reason is that [ld1]... / Shared Body 1",
+        "point": "Reading books regularly allows our brain to exercise, broadens our mind with useful vocabulary, and helps us relieve stress away from phone screens."
+      },
+      "body2": {
+        "example": "For example, schools can update their libraries with interesting storybooks, and parents can read together with their children before bedtime instead of letting them watch short videos.",
+        "focus": "Solutions: Actions from schools and families",
+        "frame": "Secondly, [ld2]... / Solutions (Body Chunk E + Giải pháp A)",
+        "point": "To solve this problem, schools and families should work closely together to guide young people, create daily reading time, and upgrade libraries with modern facilities."
+      },
+      "conclusion": "In conclusion, reading regularly helps young people exercise their brain and broaden their mind, so schools and parents should take practical steps to build this good habit.",
+      "essayType": "Causes-Solutions",
+      "extraVocab": [
+        "short videos",
+        "daily reading time"
+      ],
+      "intro": {
+        "debai": "cultivating a regular reading habit among young people",
+        "ld1": "exercising the brain and broadening knowledge",
+        "ld2": "encouraging young people through schools and families"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 4 (Causes-Solutions) + Body Chunk E + Chunks #14, #16, #17 + Câu #9 + Giải pháp A",
+      "reusedVocab": [
+        "allow their brain to exercise",
+        "broaden their mind",
+        "dive into the world of a book",
+        "relieve stress and reduce fatigue",
+        "parents and schools should work closely together to guide, listen, and support young people",
+        "protect our eyes from blue-light strain"
+      ]
+    }
   }
 ]

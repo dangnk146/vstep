@@ -15,7 +15,48 @@
     "part": "part1",
     "group": "Đề thi thực tế USSH 11/2026",
     "title": "Topic 1: Travel Plans & Recycling Habits",
-    "content": "1. Where are you planning to travel next, and why did you choose that destination?\n2. Do you frequently use recycled products or separate household recyclable waste?\n3. Are recycling programs and environmental awareness common among people in your neighborhood?"
+    "content": "1. Where are you planning to travel next, and why did you choose that destination?\n2. Do you frequently use recycled products or separate household recyclable waste?\n3. Are recycling programs and environmental awareness common among people in your neighborhood?",
+    "hint": {
+      "extraVocab": [
+        "separate household waste",
+        "reusable cloth bags",
+        "recycling bins"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I am planning to travel to Da Nang, a beautiful coastal city in central Vietnam, during my next summer break.",
+          "example": "I plan to go there with my family for four days in July to go swimming and visit the old town nearby.",
+          "pillar": "Knowledge",
+          "q": "1. Next travel destination & reason",
+          "reason": "I chose it simply because it offers breathtaking beaches, delicious local food, and a chance to relax my mind and broaden my knowledge of local culture."
+        },
+        {
+          "answer": "Yes, I try to separate plastic bottles and paper at home and reuse cloth bags whenever I go shopping.",
+          "example": "For example, my family keeps two separate bins in the kitchen and sells old cardboard boxes and plastic bottles for recycling every month.",
+          "pillar": "Social",
+          "q": "2. Using recycled products or separating household waste",
+          "reason": "Doing small green habits every day helps me make a contribution to protecting the environment and reducing plastic waste."
+        },
+        {
+          "answer": "Environmental awareness is becoming more common in my neighborhood, though recycling programs still need to improve.",
+          "example": "Last Sunday morning, our local youth group organized a neighborhood clean-up and put new recycling bins along the main street.",
+          "pillar": "Social",
+          "q": "3. Recycling programs & environmental awareness in your neighborhood",
+          "reason": "Many young people now choose reusable cups and join clean-up days, but some busy residents still throw all their trash into one bag."
+        }
+      ],
+      "reusedSource": "Bộ đề 2 (Hometown/Travel) + Trục Knowledge & Mental health + Cụm #2, #11",
+      "reusedVocab": [
+        "coastal city",
+        "breathtaking",
+        "relax my mind",
+        "broaden my knowledge",
+        "make a contribution to protecting the environment",
+        "choose green habits"
+      ],
+      "topic": "Travel Plans & Recycling"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +74,49 @@
     "part": "part2",
     "group": "Đề thi thực tế USSH 11/2026",
     "title": "Part 2 - Situation 1: Advising a Helper-Minded Friend on a Health & Wellness Career",
-    "content": "Situation: Your close friend has a genuine passion for helping people lead healthier lives and wants to transition into the wellness field. He is considering three career paths:\n- Becoming a personal fitness trainer (huấn luyện viên thể hình cá nhân)\n- Working as a certified nutritionist (chuyên gia tư vấn dinh dưỡng)\n- Pursuing a career as a wellness and life coach (huấn luyện viên phong cách sống và sức khỏe toàn diện)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: Your close friend has a genuine passion for helping people lead healthier lives and wants to transition into the wellness field. He is considering three career paths:\n- Becoming a personal fitness trainer (huấn luyện viên thể hình cá nhân)\n- Working as a certified nutritionist (chuyên gia tư vấn dinh dưỡng)\n- Pursuing a career as a wellness and life coach (huấn luyện viên phong cách sống và sức khỏe toàn diện)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-3",
+        "khen1Text": "because he can work at a fitness center close to home, which saves daily travel time, and the training courses to become a personal trainer are easy for him to afford.",
+        "khen2ARE": {
+          "answer": "This career brings both my friend and his clients a wide range of benefits because it is directly beneficial to physical health.",
+          "example": "For instance, he can guide busy office workers through simple 45-minute gym workouts after work so they feel more energetic and avoid back pain.",
+          "reason": "To be more specific, working as a fitness trainer allows him to stay active every day while helping others keep fit, get into good shape, and raise public awareness of a healthy lifestyle and diseases."
+        },
+        "khen2Pillar": "Physical health",
+        "khen3Code": "KHEN-3",
+        "khen3Text": "a safe and practical job to gain real working experience, build confidence, and get ready for a stable career in the fitness field.",
+        "option": "Becoming a personal fitness trainer"
+      },
+      "extraVocab": [
+        "gym workouts",
+        "back pain",
+        "switch careers"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-3",
+          "option": "Working as a certified nutritionist",
+          "reason": "becoming a certified nutritionist requires years of difficult medical study and high tuition fees, which creates financial worry when my friend wants to switch careers soon."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "Pursuing a career as a wellness and life coach",
+          "reason": "the job of a life coach is still unclear to many local people, so finding paying clients is hard, and this opinion has received little agreement in similar career situations."
+        }
+      ],
+      "reusedVocab": [
+        "close to home, which saves daily travel time",
+        "beneficial to physical health",
+        "keep fit",
+        "get into good shape",
+        "raise public awareness of healthy lifestyle and diseases",
+        "gain real working experience, build confidence, and get ready for a stable career"
+      ],
+      "situation": "My close friend has a genuine passion for helping people lead healthier lives and wants to change into the wellness field. He is considering three career paths: becoming a personal fitness trainer, working as a certified nutritionist, or pursuing a career as a wellness and life coach."
+    }
   },
   {
     "STT": "3",
@@ -51,6 +134,76 @@
     "part": "part3",
     "group": "Đề thi thực tế USSH 11/2026",
     "title": "Part 3 - Topic 1: The Role of Extracurricular Activities for Children",
-    "content": "Topic: The positive contributions of extracurricular activities to children's growth\nSuggestions:\n- Cultivating a balanced lifestyle between study and leisure\n- Developing essential time management skills\n- Enhancing social communication and teamwork abilities\n- [Your own ideas]\n\nFollow-up questions:\n1. What extracurricular activities would you recommend for primary school pupils?\n2. How can parents help their children balance formal schoolwork with extracurricular commitments?\n3. Should universities consider extracurricular participation as a mandatory criterion for student admission?"
+    "content": "Topic: The positive contributions of extracurricular activities to children's growth\nSuggestions:\n- Cultivating a balanced lifestyle between study and leisure\n- Developing essential time management skills\n- Enhancing social communication and teamwork abilities\n- [Your own ideas]\n\nFollow-up questions:\n1. What extracurricular activities would you recommend for primary school pupils?\n2. How can parents help their children balance formal schoolwork with extracurricular commitments?\n3. Should universities consider extracurricular participation as a mandatory criterion for student admission?",
+    "hint": {
+      "coreTopic": "the positive role of extracurricular activities for children",
+      "extraVocab": [
+        "after-school clubs",
+        "musical instrument",
+        "part-time"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some great activities for primary school children, such as swimming, drawing, and learning a musical instrument.",
+          "example": "For example, practicing music for thirty minutes after school helps young kids relax and improve their memory.",
+          "formula": "What -> There are some [Ns], such as...",
+          "q": "What extracurricular activities would you recommend for primary school pupils?",
+          "reason": "This is because swimming improves physical fitness, while learning guitar or drawing allows their brain to exercise creatively."
+        },
+        {
+          "answer": "I think parents should help their children create a simple daily timetable and avoid joining too many clubs at once.",
+          "example": "For instance, parents can let their child join just one sport club on weekends while keeping weekday evenings for homework and rest.",
+          "formula": "How -> Support solution + Timetable chunk",
+          "q": "How can parents help their children balance formal schoolwork with extracurricular commitments?",
+          "reason": "Breaking tasks into small daily steps helps children finish homework on time without feeling stressed or tired."
+        },
+        {
+          "answer": "No, I don't think universities should make after-school clubs a strict requirement for every student.",
+          "example": "For example, a hardworking rural student with high exam scores might miss out on university if clubs were required.",
+          "formula": "Should -> No, I don't think...",
+          "q": "Should universities consider extracurricular participation as a mandatory criterion for student admission?",
+          "reason": "This is because some students from poor families must work part-time or help with housework, so they do not have free time or money for extra clubs."
+        }
+      ],
+      "macroTopic": "education and lifestyle",
+      "mindmapPoints": [
+        {
+          "cue": "Cultivating a balanced lifestyle between study and leisure",
+          "expand": "This is because playing sports or music after school allows children to unwind, relieve stress, and stay away from boring screen time.",
+          "impact": "Therefore, it is good for both their physical health and mental health.",
+          "sentence": "Extracurricular activities help children keep a healthy balance between study and free time.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Developing essential time management skills",
+          "expand": "For example, a student in a football club learns to finish school homework early so they can attend practice on time.",
+          "impact": "Clearly, it is beneficial to children's daily habits and school discipline.",
+          "sentence": "Joining after-school clubs helps children learn important time management skills.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Enhancing social communication and teamwork abilities",
+          "expand": "This is because joining clubs lets children meet like-minded friends, share common interests, and build a strong sense of belonging through face-to-face interaction.",
+          "impact": "So, it has positive effects on their social network and confidence.",
+          "sentence": "After-school activities help children improve communication and teamwork skills.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "relieve stress",
+        "screen time",
+        "physical health",
+        "mental health",
+        "like-minded people",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "social network",
+        "allow their brain to exercise",
+        "daily timetable",
+        "finish on time"
+      ]
+    }
   }
 ]

@@ -15,7 +15,49 @@
     "part": "part1",
     "group": "Đề thi thực tế CTU 19/11/2026",
     "title": "Task 1.1: Replying to a Friend's Beach Holiday Invitation",
-    "content": "You have received an email from your friend inviting you to go on a beach holiday with their family. Read part of their email below:\n\n\"My family is planning a beach holiday next month, and we would love for you to join us! The weather here is lovely and the beach is really beautiful—what do you think about coming on this trip with us? Also, for accommodation, would you like to stay in a small spare room on your own, or would you prefer sharing a room with my older sister, who is currently studying in New Zealand?\"\n\nWrite an informal email responding to your friend."
+    "content": "You have received an email from your friend inviting you to go on a beach holiday with their family. Read part of their email below:\n\n\"My family is planning a beach holiday next month, and we would love for you to join us! The weather here is lovely and the beach is really beautiful—what do you think about coming on this trip with us? Also, for accommodation, would you like to stay in a small spare room on your own, or would you prefer sharing a room with my older sister, who is currently studying in New Zealand?\"\n\nWrite an informal email responding to your friend.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm happy to hear about your trip and I would love to join your family on this beach holiday.",
+          "example": "Spending a few sunny days swimming and walking along the beach with your family will help me recharge my batteries.",
+          "frame": "A. Câu dẫn cảm xúc / phản hồi mở đầu + H. Provide Opinion",
+          "reason": "Because it is advantageous to my mental health, and it can relieve stress and reduce fatigue after my busy weeks of studying.",
+          "requirement": "What you think about coming on the beach holiday with their family"
+        },
+        {
+          "answer": "From my point of view, I think that staying in the small spare room on my own would be better for both of us.",
+          "example": "I can sleep early or read a book at night, while we still spend all day together at the beach and share meals with your family.",
+          "frame": "H. Provide Opinion",
+          "reason": "Opting for the small spare room offers a quiet, cozy environment where people can enjoy total personal privacy without disturbing your sister's daily routine.",
+          "requirement": "Preference between staying in a small spare room alone or sharing with their older sister"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "our beach holiday"
+      },
+      "extraVocab": [
+        "[+] spare room",
+        "[+] daily routine",
+        "[+] share meals"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "your family's beach holiday next month",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Accept Invitation + Provide Opinion & Preference",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "From my point of view, I think that",
+        "advantageous to my mental health",
+        "can relieve stress and reduce fatigue",
+        "recharge my batteries",
+        "quiet, cozy environment where people can enjoy total personal privacy"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,7 +75,42 @@
     "part": "part2",
     "group": "Đề thi thực tế CTU 19/11/2026",
     "title": "Task 2.1: Children Using Smartphones at an Early Age",
-    "content": "Read the following statement:\n\n\"An increasing number of children are being given smartphones from a very young age. While some people believe that early access to smartphones brings educational and communication benefits, others are concerned about its negative effects on children's health, concentration, and social skills.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of children using smartphones from an early age. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"An increasing number of children are being given smartphones from a very young age. While some people believe that early access to smartphones brings educational and communication benefits, others are concerned about its negative effects on children's health, concentration, and social skills.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of children using smartphones from an early age. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, primary students can use English learning apps for 20 minutes a day to practice speaking and receive instant feedback on their mistakes.",
+        "focus": "Advantages: Educational support and quick communication",
+        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
+        "point": "Early smartphone use helps children make the most of new technology to broaden their mind, study languages faster, and stay in touch with parents safely."
+      },
+      "body2": {
+        "example": "For example, many young children spend hours playing games or watching violent videos, which harms their eyes and reduces face-to-face time with classmates.",
+        "focus": "Disadvantages: Health problems, poor focus, and bad habits",
+        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
+        "point": "However, without proper guidance and self-control, children easily copy bad habits from the internet, suffer from eye strain, and lose focus on schoolwork."
+      },
+      "conclusion": "In conclusion, early smartphone use brings both benefits and risks, so parents should set clear screen rules so children use phones safely for learning rather than wasting time.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "screen rules",
+        "learning apps"
+      ],
+      "intro": {
+        "debai": "children using smartphones at an early age",
+        "ld1": "support learning and parent-child communication",
+        "ld2": "harming children's health, focus, and social skills"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 3 (Positive or Negative) + Mini-essay #2 (Student Misbehaviour) + Mini-essay #5 (AI & learning) + Chunk #22 + Câu #9",
+      "reusedVocab": [
+        "make the most of new technology",
+        "broaden their mind",
+        "receive instant feedback",
+        "copying bad habits from the internet",
+        "lack proper guidance and self-control",
+        "blue-light strain"
+      ]
+    }
   },
   {
     "STT": "3",
@@ -51,7 +128,66 @@
     "part": "part1",
     "group": "Đề thi thực tế CTU 20/11/2026 (Chiều)",
     "title": "Task 1.2: Replying to Alex About the Upcoming Trip to Scotland",
-    "content": "You have received an email from your friend, Alex, regarding your upcoming trip to Scotland together. Read part of his email below:\n\n\"I am super excited about our upcoming trip to Scotland! First, when would you like to depart? Second, do you agree with traveling there by train, and what transport should we use to get around once we arrive in Scotland? Also, we will be staying at my uncle's house in the mountains—do you worry there might be a lack of entertainment or interesting places to visit nearby?\"\n\nWrite an informal email responding to Alex."
+    "content": "You have received an email from your friend, Alex, regarding your upcoming trip to Scotland together. Read part of his email below:\n\n\"I am super excited about our upcoming trip to Scotland! First, when would you like to depart? Second, do you agree with traveling there by train, and what transport should we use to get around once we arrive in Scotland? Also, we will be staying at my uncle's house in the mountains—do you worry there might be a lack of entertainment or interesting places to visit nearby?\"\n\nWrite an informal email responding to Alex.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to let you know that I prefer leaving on Saturday morning around 8 a.m.",
+          "example": "We can finish packing on Friday night and catch an early train without rushing.",
+          "frame": "D. Provide Information",
+          "reason": "This departure time fits comfortably within my daily routine and gives us enough time to arrive before dark.",
+          "requirement": "When you would like to depart"
+        },
+        {
+          "answer": "From my point of view, I think that traveling there by train is a great idea.",
+          "example": "We can chat, listen to music, or look out the window at the countryside during the ride.",
+          "frame": "H. Provide Opinion",
+          "reason": "Taking the train is fast, convenient for busy people, and allows us to relax comfortably instead of driving a long distance.",
+          "requirement": "Whether you agree with traveling to Scotland by train"
+        },
+        {
+          "answer": "I believe we should use local buses and trains to move between towns, and walk around small villages.",
+          "example": "We can take a local bus from the station to nearby sights and walk along the scenic trails.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "Public transport is affordable, helps protect the environment, and lets us stay on the safe side without worrying about driving on narrow mountain roads.",
+          "requirement": "What transport to use to get around once arriving in Scotland"
+        },
+        {
+          "answer": "I think that staying at your uncle's mountain house will be wonderful, so I am not worried about a lack of entertainment at all.",
+          "example": "We can go hiking in the fresh air during the day, visit nearby villages, and play board games or cook dinner together at night.",
+          "frame": "H. Provide Opinion",
+          "reason": "Being in crowded, noisy public venues easily makes people feel stressed, whereas a mountain house offers a quiet, cozy environment that is beneficial to our physical and mental health.",
+          "requirement": "Whether you worry about a lack of entertainment or places to visit near his uncle's house in the mountains"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "our trip to Scotland"
+      },
+      "extraVocab": [
+        "[+] departure time",
+        "[+] local buses",
+        "[+] scenic trails"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "our upcoming trip to Scotland",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Info + Provide Opinion + Suggestion",
+      "reusedVocab": [
+        "I would like to let you know that",
+        "From my point of view, I think that",
+        "I believe you should",
+        "fit comfortably within my daily routine",
+        "fast, convenient for busy people",
+        "stay on the safe side",
+        "crowded, noisy public venues",
+        "quiet, cozy environment",
+        "beneficial to our physical and mental health"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -69,7 +205,41 @@
     "part": "part2",
     "group": "Đề thi thực tế CTU 20/11/2026 (Chiều)",
     "title": "Task 2.2: Advantages and Disadvantages of Working in Public Places",
-    "content": "Read the following statement:\n\n\"Nowadays, many people prefer working or studying in public places such as coffee shops, libraries, or coworking spaces instead of working in traditional offices or at home.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of working in public places. Include specific reasons and examples from your knowledge or experience to support your arguments."
+    "content": "Read the following statement:\n\n\"Nowadays, many people prefer working or studying in public places such as coffee shops, libraries, or coworking spaces instead of working in traditional offices or at home.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of working in public places. Include specific reasons and examples from your knowledge or experience to support your arguments.",
+    "hint": {
+      "body1": {
+        "example": "For instance, a freelancer can work in a modern coworking space with fast internet and meet like-minded people to exchange creative ideas.",
+        "focus": "Advantages: Convenient facilities and social connection",
+        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
+        "point": "Public places like cafes and coworking spaces are fast, convenient for busy people, equipped with modern facilities, and help workers avoid feeling lonely at home."
+      },
+      "body2": {
+        "example": "For example, loud phone calls at a crowded coffee shop make it hard to focus on important tasks, and buying drinks every day costs a great deal of money.",
+        "focus": "Disadvantages: Noise, high costs, and lack of privacy",
+        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
+        "point": "However, crowded, noisy public venues easily make people feel stressed, lack personal privacy, and create risks when using public Wi-Fi for private work."
+      },
+      "conclusion": "In conclusion, working in public places has both pros and cons; it is useful for short tasks and networking, while quiet home or office spaces remain better for deep focus.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "public Wi-Fi",
+        "deep focus"
+      ],
+      "intro": {
+        "debai": "working or studying in public places",
+        "ld1": "enjoy convenient facilities and social energy",
+        "ld2": "handling noise, extra costs, and privacy issues"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 3 (Positive or Negative) + Trục 4 (Peace & Privacy) + Trục 2 (Social network) + Chunks #18, #20, #24 + Body Chunk C",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "meet like-minded people",
+        "crowded, noisy public venues easily makes people feel overwhelmed and stressed",
+        "total personal privacy",
+        "costs a great deal of money, time, and effort",
+        "stay on the safe side"
+      ]
+    }
   }
 ]
-

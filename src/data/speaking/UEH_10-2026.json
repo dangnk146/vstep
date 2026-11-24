@@ -15,7 +15,47 @@
     "part": "part1",
     "group": "Đề thi thực tế UEH 25/10/2026",
     "title": "Topic 1: Mobile Phone Brands & Daily Usage",
-    "content": "1. Which mobile phone brand do you currently use, and why did you choose it?\n2. How many hours a day do you spend using your mobile phone, and what do you mostly use it for?\n3. Do you prefer buying flagship phones from well-known brands or more affordable budget alternatives?"
+    "content": "1. Which mobile phone brand do you currently use, and why did you choose it?\n2. How many hours a day do you spend using your mobile phone, and what do you mostly use it for?\n3. Do you prefer buying flagship phones from well-known brands or more affordable budget alternatives?",
+    "hint": {
+      "extraVocab": [
+        "durable",
+        "mid-range phone"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Currently, I am using a Samsung smartphone, and I chose it simply because it is convenient, durable, and easy to use.",
+          "example": "I bought this phone two years ago at a store near my house, and it still works very smoothly every day.",
+          "pillar": "Knowledge",
+          "q": "Which mobile phone brand do you currently use, and why did you choose it?",
+          "reason": "It fits comfortably within my budget without sacrificing quality, and it helps me make the most of modern technology for my daily study and work."
+        },
+        {
+          "answer": "I spend about three to four hours a day using my mobile phone, mostly for studying, searching for information, and relaxing.",
+          "example": "Every evening after dinner, I use my phone for an hour to read English news and chat with my mom.",
+          "pillar": "Knowledge",
+          "q": "How many hours a day do you spend using your mobile phone, and what do you mostly use it for?",
+          "reason": "It allows me to gain knowledge quickly, stay connected with my family and friends, and listen to music on Spotify to reduce stress."
+        },
+        {
+          "answer": "Certainly, I prefer buying more affordable budget alternatives rather than expensive flagship phones.",
+          "example": "Last year, I chose a medium-priced Samsung model instead of the newest iPhone so I could save money for my English course.",
+          "pillar": "Peace & Privacy",
+          "q": "Do you prefer buying flagship phones from well-known brands or more affordable budget alternatives?",
+          "reason": "As a student, spending too much money on luxury phones is unnecessary. A mid-range phone already meets my basic needs and fits comfortably within my budget."
+        }
+      ],
+      "reusedSource": "Bộ đề 3 (Music) + Trục Knowledge + 24 cụm từ đa năng",
+      "reusedVocab": [
+        "Currently, I am",
+        "I choose it simply because",
+        "fit comfortably within my budget without sacrificing quality",
+        "make the most of new technology",
+        "gain knowledge",
+        "reduce stress"
+      ],
+      "topic": "Mobile Phone Brands & Daily Usage"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +73,48 @@
     "part": "part1",
     "group": "Đề thi thực tế UEH 25/10/2026",
     "title": "Topic 2: Healthy & Balanced Diet",
-    "content": "1. What does having a balanced diet mean to you?\n2. Do you think your daily eating habits are healthy and balanced? Why or why not?\n3. What practical advice would you give to busy people who struggle to eat healthy meals?"
+    "content": "1. What does having a balanced diet mean to you?\n2. Do you think your daily eating habits are healthy and balanced? Why or why not?\n3. What practical advice would you give to busy people who struggle to eat healthy meals?",
+    "hint": {
+      "extraVocab": [
+        "balanced diet",
+        "prepare meals in advance"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "To me, having a balanced diet means eating different kinds of healthy food every day in the right amounts, such as vegetables, fruit, meat, and enough water.",
+          "example": "For example, a good meal for me includes rice, steamed fish, green vegetables, and fresh fruit for dessert.",
+          "pillar": "Physical health",
+          "q": "What does having a balanced diet mean to you?",
+          "reason": "A balanced diet plays an essential role in maintaining physical health because it gives us vitamins, strengthens our immune system, and keeps us energetic."
+        },
+        {
+          "answer": "Honestly, my eating habits are quite healthy on weekdays, although I sometimes eat fast food when I am busy.",
+          "example": "From Monday to Friday, I eat meals cooked at home, and I only eat pizza or fried chicken once a week on Sundays.",
+          "pillar": "Physical health",
+          "q": "Do you think your daily eating habits are healthy and balanced? Why or why not?",
+          "reason": "Eating fresh home-cooked meals helps me keep fit and stay healthy, while eating too much oily fast food can make me feel tired and gain weight."
+        },
+        {
+          "answer": "I would advise busy people to plan a simple weekly menu, cook easy meals at home, and carry fresh fruit as snacks.",
+          "example": "For instance, they can prepare clean vegetables on Sunday evening so they only need 15 minutes to cook after work.",
+          "pillar": "Physical health",
+          "q": "What practical advice would you give to busy people who struggle to eat healthy meals?",
+          "reason": "Preparing meals in advance is fast and convenient for busy people in modern-day society, and it helps them reach a healthy balance between work and health."
+        }
+      ],
+      "reusedSource": "Trục Physical health + 24 cụm từ đa năng + Mẫu Vườn rau/Sức khỏe",
+      "reusedVocab": [
+        "play an essential role in",
+        "physical health",
+        "strengthen my immune system",
+        "feel more energetic",
+        "keep fit and stay healthy",
+        "fast, convenient for busy people in modern-day society",
+        "reach a healthy balance between"
+      ],
+      "topic": "Healthy & Balanced Diet"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +132,48 @@
     "part": "part2",
     "group": "Đề thi thực tế UEH 25/10/2026",
     "title": "Part 2 - Situation 1: Sunday Outing with Your Niece or Nephew",
-    "content": "Situation: You are planning to take your young niece or nephew out this Sunday. There are three possible destinations to choose from: a bookstore, a city zoo, or a family-friendly coffee shop. Which option would you recommend, and why?"
+    "content": "Situation: You are planning to take your young niece or nephew out this Sunday. There are three possible destinations to choose from: a bookstore, a city zoo, or a family-friendly coffee shop. Which option would you recommend, and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to visit on a Sunday morning, so my niece or nephew and I can walk around, share snacks, and enjoy the weekend comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Secondly, this option brings my young niece or nephew a wide range of benefits because it gives them the opportunity to increase knowledge and stay active outdoors.",
+          "example": "For example, I can take my niece or nephew to the city zoo at 8 a.m. to feed the deer, learn animal names, and eat ice cream together under the trees.",
+          "reason": "Seeing real animals like elephants, giraffes, and birds helps children broaden their minds about nature, while walking outside in the fresh air is beneficial to their physical health."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help both of us forget about daily pressure, refresh our minds, and take meaningful photos together with the animals.",
+        "option": "a city zoo"
+      },
+      "extraVocab": [
+        "stay quiet",
+        "in the fresh air",
+        "feed the deer"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CUSTOM",
+          "option": "a family-friendly coffee shop",
+          "reason": "a coffee shop is mainly a place for adults to sit and talk, so a young child will quickly get bored sitting still indoors instead of playing outdoors."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "a bookstore",
+          "reason": "bookstores require visitors to stay quiet and not move around actively, which feels uncomfortable for young children on a Sunday outing, so this opinion receives few choices in similar situations."
+        }
+      ],
+      "reusedVocab": [
+        "increase knowledge",
+        "broaden their mind",
+        "beneficial to physical health",
+        "refresh our minds",
+        "take meaningful photos together"
+      ],
+      "situation": "I am planning to take my young niece or nephew out this Sunday, and there are three possible destinations to choose from: a bookstore, a city zoo, or a family-friendly coffee shop."
+    }
   },
   {
     "STT": "4",
@@ -69,6 +191,74 @@
     "part": "part3",
     "group": "Đề thi thực tế UEH 25/10/2026",
     "title": "Part 3 - Topic 1: Benefits of Self-Employment and Entrepreneurship",
-    "content": "Topic: Benefits of starting one's own business or being self-employed\nSuggestions:\n- Having flexible working hours (flexi-time)\n- Earning higher income\n- Learning and developing new professional skills\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the main challenges that young entrepreneurs encounter when starting a business?\n2. Why do some people prefer working for a large corporation rather than being self-employed?\n3. Should universities offer practical entrepreneurship courses to college students?"
+    "content": "Topic: Benefits of starting one's own business or being self-employed\nSuggestions:\n- Having flexible working hours (flexi-time)\n- Earning higher income\n- Learning and developing new professional skills\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the main challenges that young entrepreneurs encounter when starting a business?\n2. Why do some people prefer working for a large corporation rather than being self-employed?\n3. Should universities offer practical entrepreneurship courses to college students?",
+    "hint": {
+      "coreTopic": "benefits of starting one's own business or being self-employed",
+      "extraVocab": [
+        "self-employed",
+        "flexible working hours",
+        "business owner",
+        "steady salary",
+        "business plan"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some main challenges young business owners face, such as unstable income, lack of money, and little market experience.",
+          "example": "For example, a young person opening a small coffee shop may lose money in the first six months because they do not know how to control rent and food costs.",
+          "formula": "What ...? -> There are some [Ns], such as ...",
+          "q": "1. What are the main challenges that young entrepreneurs encounter when starting a business?",
+          "reason": "Running a new business brings unstable monthly income and a high risk of losing all your savings without market experience, and many fresh graduates lack practical training."
+        },
+        {
+          "answer": "There are some clear reasons why people prefer working for a big company, such as a steady salary and lower stress.",
+          "example": "For instance, an accountant at a large bank can finish work at 5 p.m. and enjoy weekends without worrying about paying staff or finding new clients.",
+          "formula": "Why / What ...? -> There are some reasons, such as ...",
+          "q": "2. Why do some people prefer working for a large corporation rather than being self-employed?",
+          "reason": "Company workers receive a stable paycheck every month with health insurance, whereas running a business carries high financial risk and heavy responsibility."
+        },
+        {
+          "answer": "Yes, I think universities should offer practical business startup courses to college students.",
+          "example": "For example, colleges can invite successful business owners to teach students how to write a simple business plan and manage a small budget.",
+          "formula": "Should ...? -> Yes, I think universities should ... (Support)",
+          "q": "3. Should universities offer practical entrepreneurship courses to college students?",
+          "reason": "Many fresh graduates struggle to find jobs because university lessons focus too much on theory instead of real company practice, so practical classes help students prepare better."
+        }
+      ],
+      "macroTopic": "work and career",
+      "mindmapPoints": [
+        {
+          "cue": "Having flexible working hours (flexi-time)",
+          "expand": "This is because working for yourself lets you control your own schedule and follow your true passion without a boss watching over you.",
+          "impact": "Therefore, it helps you reach a healthy balance between work and family time.",
+          "sentence": "Being self-employed lets you enjoy flexible working hours.",
+          "wordForm": "V / V-ing"
+        },
+        {
+          "cue": "Earning higher income",
+          "expand": "For example, instead of waiting for a small yearly raise from a company, a hard-working shop or online business owner keeps all the profits when sales grow.",
+          "impact": "Clearly, it can improve your living standard.",
+          "sentence": "Starting a successful business gives owners the chance to earn a higher income.",
+          "wordForm": "V / V-ing"
+        },
+        {
+          "cue": "Learning and developing new professional skills",
+          "expand": "This is because a business owner has to manage money, talk to customers, and solve daily problems independently, which is a great gateway to self-discovery and self-development.",
+          "impact": "So, it has positive effects on your career growth.",
+          "sentence": "Running your own business helps you learn and develop many useful work skills.",
+          "wordForm": "V / V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "Working for yourself lets you control your own schedule and follow your true passion without a boss watching over you",
+        "reach a healthy balance between work and family time",
+        "improve people's living standard",
+        "solve daily problems independently",
+        "is a gateway to self-discovery and self-development",
+        "Running a new business brings unstable monthly income and a high risk of losing all your savings without market experience",
+        "Many fresh graduates struggle to find jobs because university lessons focus too much on theory"
+      ]
+    }
   }
 ]

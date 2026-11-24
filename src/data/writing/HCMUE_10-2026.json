@@ -15,7 +15,56 @@
     "part": "part1",
     "group": "Đề thi thực tế HCMUE 25/10/2026",
     "title": "Task 1.1: Assisting a Friend Moving Near Your University",
-    "content": "You have received an email from your friend, Daniel, who is preparing to move into a rented apartment near your university. Read part of his email below:\n\n\"I am moving to a new apartment near your university next weekend! Since you are familiar with the area, could you recommend a reliable moving company or delivery service to help me transport my belongings? Would you be available to give me a hand on the moving day? Also, could you tell me a little bit about what the neighborhood and neighbors are like there? Thanks so much!\"\n\nWrite an email responding to Daniel."
+    "content": "You have received an email from your friend, Daniel, who is preparing to move into a rented apartment near your university. Read part of his email below:\n\n\"I am moving to a new apartment near your university next weekend! Since you are familiar with the area, could you recommend a reliable moving company or delivery service to help me transport my belongings? Would you be available to give me a hand on the moving day? Also, could you tell me a little bit about what the neighborhood and neighbors are like there? Thanks so much!\"\n\nWrite an email responding to Daniel.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I believe you should book Lalamove or AhaMove small truck delivery service to transport your furniture and boxes.",
+          "example": "Last month, my cousin used their mini-van service for 300,000 VND, and all his belongings arrived safely within an hour.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "Their app service is fast, convenient for busy people, and fits comfortably within a student's budget without hidden charges.",
+          "requirement": "Recommend a reliable moving company or delivery service"
+        },
+        {
+          "answer": "I would like to let you know that I am completely free next Saturday morning from 8:00 AM to noon to give you a hand.",
+          "example": "I can ride my motorbike over early to help you carry boxes and set up your study desk.",
+          "frame": "D. Provide Information",
+          "reason": "Moving into a new place alone is tiring, and helping each other builds a strong sense of belonging between friends.",
+          "requirement": "Availability to help on moving day"
+        },
+        {
+          "answer": "I would like to give you information on the neighborhood: it is safe, lively, and full of friendly families and university students.",
+          "example": "Right downstairs, there is a 24-hour convenience store and a quiet park where people jog every afternoon.",
+          "frame": "D. Provide Information + H. Provide Opinion",
+          "reason": "Having helpful neighbors and cheap local markets nearby helps newcomers adjust and adapt to the new environment quickly.",
+          "requirement": "Describe what the neighborhood and neighbors are like"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "moving to your new apartment"
+      },
+      "extraVocab": [
+        "[+] mini-van service",
+        "[+] 24-hour convenience store"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "moving to your new apartment near my university",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Recommend Service + Offer Help + Describe Neighborhood",
+      "reusedVocab": [
+        "I believe you should",
+        "I would like to let you know that",
+        "I would like to give you information on",
+        "fast, convenient for busy people",
+        "fit comfortably within my budget",
+        "build a strong sense of belonging",
+        "adjust and adapt to"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,6 +82,42 @@
     "part": "part2",
     "group": "Đề thi thực tế HCMUE 25/10/2026",
     "title": "Task 2.1: Advantages and Disadvantages of Religious Tourism",
-    "content": "Read the following statement:\n\n\"Religious tourism, also known as spiritual tourism, where people travel to sacred sites, temples, pagodas, and pilgrimage destinations, has grown rapidly in many parts of the world.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of religious tourism for individuals and local communities. Include specific reasons and examples from your knowledge or experience to support your view."
+    "content": "Read the following statement:\n\n\"Religious tourism, also known as spiritual tourism, where people travel to sacred sites, temples, pagodas, and pilgrimage destinations, has grown rapidly in many parts of the world.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of religious tourism for individuals and local communities. Include specific reasons and examples from your knowledge or experience to support your view.",
+    "hint": {
+      "body1": {
+        "example": "For instance, during spring festivals at Yen Tu Pagoda, tourists feel peaceful and happy, while local families earn good income from selling food and souvenirs.",
+        "focus": "Advantages for individuals and local communities",
+        "frame": "Firstly, the first reason is that [ld1] + Advantages chunks + A-R-E Mental health & Knowledge",
+        "point": "Visiting temples and pagodas helps travelers relieve stress and reduce fatigue while broadening their mind about local culture and traditions. For local communities, more visitors boost economic development and improve people's living standard."
+      },
+      "body2": {
+        "example": "For example, on big holiday weekends at famous pagodas, travelers often get stuck in long lines, pay high hotel prices, and see plastic trash around the temple yard.",
+        "focus": "Disadvantages for individuals and local communities",
+        "frame": "Secondly, [debai] has a negative impact on... + Disadvantages chunks + Environmental protection",
+        "point": "However, too many visitors at sacred sites can cause overcrowding, traffic jams, and littering, which harms environmental protection. Also, long pilgrimage trips cost a great deal of money, time, and effort for travelers."
+      },
+      "conclusion": "In conclusion, religious tourism can have both pros and cons: while it helps travelers feel peaceful and boosts local income, communities must protect the environment and manage large crowds carefully.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "sacred sites",
+        "pilgrimage trips",
+        "overcrowding"
+      ],
+      "intro": {
+        "debai": "religious tourism",
+        "ld1": "improve mental health, learn about local culture, and boost economic development",
+        "ld2": "face overcrowding, high travel costs, and pollution at sacred sites"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Adv-Disadv + Trục Mental health & Broaden knowledge + Cụm #4, #5, #9, #11",
+      "reusedVocab": [
+        "relieve stress and reduce fatigue",
+        "broaden their mind",
+        "boost economic development",
+        "improve people's living standard",
+        "costs a great deal of money, time, and effort",
+        "environmental protection"
+      ]
+    }
   }
 ]

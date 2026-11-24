@@ -15,7 +15,46 @@
     "part": "part1",
     "group": "Đề thi thực tế UFM 15/11/2026 (Sáng)",
     "title": "Topic 1: Shopping & Spending Habits",
-    "content": "1. How often do you go shopping for clothes or daily necessities?\n2. Do you prefer shopping online or going to physical stores? Why?\n3. How do you manage your budget and avoid overspending when shopping?"
+    "content": "1. How often do you go shopping for clothes or daily necessities?\n2. Do you prefer shopping online or going to physical stores? Why?\n3. How do you manage your budget and avoid overspending when shopping?",
+    "hint": {
+      "extraVocab": [
+        "daily necessities",
+        "shopping list"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I buy daily necessities like food once a week, while I only shop for clothes once every two months.",
+          "example": "On Sunday mornings, I usually go to a nearby supermarket with my mom to buy groceries for the whole week.",
+          "pillar": "Mental health",
+          "q": "How often do you go shopping for clothes or daily necessities?",
+          "reason": "Buying only when needed helps me save money and avoid wasting time, though shopping with friends sometimes helps me relax and elevate my mood."
+        },
+        {
+          "answer": "I prefer going to physical stores for clothes, even though online shopping is fast and convenient for busy people.",
+          "example": "Last month, I went to a local clothing shop near my house to try on a jacket before buying it.",
+          "pillar": "Peace & Privacy",
+          "q": "Do you prefer shopping online or going to physical stores? Why?",
+          "reason": "Shopping on e-commerce apps often tempts buyers to waste money on cheap items that look nothing like the advertised photos, whereas in stores I can check quality directly."
+        },
+        {
+          "answer": "I always make a shopping list before going out and set a clear spending limit each month.",
+          "example": "Before visiting the supermarket, I write down exact food items on my phone and avoid buying unnecessary snacks.",
+          "pillar": "Knowledge",
+          "q": "How do you manage your budget and avoid overspending when shopping?",
+          "reason": "This helps me stay on the safe side, think things through calmly, and choose items that fit comfortably within my budget."
+        }
+      ],
+      "reusedSource": "Kho từ vựng (#18, #21, #24) & 18 luận điểm (#10)",
+      "reusedVocab": [
+        "elevate my mood",
+        "fast, convenient for busy people",
+        "tempts buyers to waste money on cheap items that look nothing like the advertised photos",
+        "stay on the safe side and think things through calmly",
+        "fit comfortably within my budget"
+      ],
+      "topic": "Shopping & Spending Habits"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +72,51 @@
     "part": "part1",
     "group": "Đề thi thực tế UFM 15/11/2026 (Sáng)",
     "title": "Topic 2: Family & Friends",
-    "content": "1. Do you prefer spending your leisure time with family or with friends?\n2. What activities do you usually enjoy doing together with your family?\n3. What qualities do you think are most essential in a lifelong friend?"
+    "content": "1. Do you prefer spending your leisure time with family or with friends?\n2. What activities do you usually enjoy doing together with your family?\n3. What qualities do you think are most essential in a lifelong friend?",
+    "hint": {
+      "extraVocab": [
+        "honesty",
+        "lifelong friend"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I love both, but I prefer spending my leisure time with my family because my family means the world to me.",
+          "example": "On weekends, I usually stay at home to have dinner and talk with my parents instead of going out late.",
+          "pillar": "Bộ đề gốc",
+          "q": "Do you prefer spending your leisure time with family or with friends?",
+          "reason": "My family loves me unconditionally, and spending quality time together helps strengthen bonds within the family and makes me feel peaceful."
+        },
+        {
+          "answer": "My family enjoys both indoor and outdoor activities like cooking meals, watching movies, and going on a picnic.",
+          "example": "Last Sunday, we prepared a big lunch together at home and watched a comedy movie in the living room.",
+          "pillar": "Bộ đề gốc",
+          "q": "What activities do you usually enjoy doing together with your family?",
+          "reason": "Doing these activities allows us to openly and respectfully share our thoughts and emotions, relieve stress, and feel over the moon together."
+        },
+        {
+          "answer": "I think honesty, kindness, and being supportive are the most essential qualities in a lifelong friend.",
+          "example": "My best friend from high school always gives me honest advice and supports me whenever I feel down.",
+          "pillar": "Social",
+          "q": "What qualities do you think are most essential in a lifelong friend?",
+          "reason": "A good friend is someone who is always beside you when you face difficulties, listens patiently, and has a lot of things in common with you."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Leisure & Family) & Trục Social",
+      "reusedVocab": [
+        "means the world to me",
+        "love me unconditionally",
+        "spend quality time",
+        "strengthen bonds within a family",
+        "go on a picnic",
+        "openly and respectfully share thoughts and emotions",
+        "relieve stress",
+        "feel over the moon",
+        "always beside you when you face difficulties",
+        "have a lot of things in common"
+      ],
+      "topic": "Family & Friends"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +134,48 @@
     "part": "part2",
     "group": "Đề thi thực tế UFM 15/11/2026 (Sáng)",
     "title": "Part 2 - Situation 1: Choosing a Birthday Gift for a Female Friend",
-    "content": "Situation: Your close female friend is celebrating her upcoming 20th birthday, and you want to choose a meaningful gift for her. There are three options:\n- A wristwatch (đồng hồ đeo tay)\n- A pair of wireless headphones (tai nghe không dây)\n- A framed picture of your friendship (khung ảnh kỷ niệm)\nWhich option would you choose and why?"
+    "content": "Situation: Your close female friend is celebrating her upcoming 20th birthday, and you want to choose a meaningful gift for her. There are three options:\n- A wristwatch (đồng hồ đeo tay)\n- A pair of wireless headphones (tai nghe không dây)\n- A framed picture of your friendship (khung ảnh kỷ niệm)\nWhich option would you choose and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-2",
+        "khen1Text": "because it is easy to find in local shops, fits comfortably within my budget, and my friend can see it every day in her room.",
+        "khen2ARE": {
+          "answer": "Giving a framed picture of our friendship is advantageous to her mental health and builds a strong sense of belonging between us.",
+          "example": "For example, I can print our favorite photo from our school trip, put it in a nice wooden frame, and write a warm birthday wish on the back.",
+          "reason": "Every time she sees our happy photo on her desk, it will elevate her mood, relieve stress after hard study days, and remind her of our close friendship."
+        },
+        "khen2Pillar": "Mental Health & Friendship",
+        "khen3Code": "KHEN-2",
+        "khen3Text": "a warm and meaningful keepsake that reminds her of my care and our sincere friendship for many years to come.",
+        "option": "A framed picture of your friendship"
+      },
+      "extraVocab": [
+        "wooden frame",
+        "birthday wish",
+        "desk"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-2",
+          "option": "A pair of wireless headphones",
+          "reason": "spending too much money on wireless headphones will burden my pocket, and my friend might feel embarrassed and hesitate to accept an expensive electronic gift."
+        },
+        {
+          "cheCode": "CHÊ-2",
+          "option": "A wristwatch",
+          "reason": "a nice wristwatch is quite expensive and might not match her personal style, while most young people already check the time on their phones."
+        }
+      ],
+      "reusedVocab": [
+        "fit comfortably within my budget",
+        "build a strong sense of belonging",
+        "elevate my mood",
+        "relieve stress",
+        "meaningful keepsake"
+      ],
+      "situation": "My close female friend is celebrating her upcoming 20th birthday, and I want to choose a meaningful gift for her among three options: a wristwatch, a pair of wireless headphones, or a framed picture of our friendship."
+    }
   },
   {
     "STT": "4",
@@ -69,7 +193,73 @@
     "part": "part3",
     "group": "Đề thi thực tế UFM 15/11/2026 (Sáng)",
     "title": "Part 3 - Topic 1: The Importance of Teamwork in Modern Life",
-    "content": "Topic: The vital importance of teamwork in work and study\nSuggestions:\n- Boosting productivity and sharing heavy workloads\n- Combining diverse skills, knowledge, and creative ideas\n- Developing mutual trust, communication, and conflict resolution skills\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some individuals prefer working independently rather than in a team?\n2. How can a team leader effectively resolve disagreements between team members?\n3. What soft skills are most critical for successful teamwork in modern workplaces?"
+    "content": "Topic: The vital importance of teamwork in work and study\nSuggestions:\n- Boosting productivity and sharing heavy workloads\n- Combining diverse skills, knowledge, and creative ideas\n- Developing mutual trust, communication, and conflict resolution skills\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some individuals prefer working independently rather than in a team?\n2. How can a team leader effectively resolve disagreements between team members?\n3. What soft skills are most critical for successful teamwork in modern workplaces?",
+    "hint": {
+      "coreTopic": "the importance of teamwork in work and study",
+      "extraVocab": [
+        "heavy workload",
+        "active listening",
+        "time management"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some reasons why some people prefer working alone, such as wanting quiet time and full control over their schedule.",
+          "example": "For example, a designer or writer may work faster at home without waiting for slow teammates to reply.",
+          "formula": "Why -> Reason (Peace & Privacy + Self-control)",
+          "q": "Why do some individuals prefer working independently rather than in a team?",
+          "reason": "This is because working in noisy groups can cause stress or disagreements, while working alone gives them peace, privacy, and freedom to follow their own pace."
+        },
+        {
+          "answer": "I think a team leader should stay calm, listen to every side fairly, and focus on solving the problem.",
+          "example": "For instance, if two coworkers argue about a marketing plan, the leader can hold a short meeting to combine the best ideas from both sides.",
+          "formula": "How -> Solution + Safe side frame",
+          "q": "How can a team leader effectively resolve disagreements between team members?",
+          "reason": "This helps everyone stay on the safe side, avoid unnecessary trouble, and understand each other better through face-to-face interaction."
+        },
+        {
+          "answer": "There are some key soft skills for teamwork, such as active listening, clear communication, and time management.",
+          "example": "For example, team members who update their progress daily help the group finish a company report smoothly.",
+          "formula": "What -> There are some [Ns], such as...",
+          "q": "What soft skills are most critical for successful teamwork in modern workplaces?",
+          "reason": "This is because good communication prevents misunderstandings, and meeting deadlines keeps the whole team productive and stress-free."
+        }
+      ],
+      "macroTopic": "education and work",
+      "mindmapPoints": [
+        {
+          "cue": "Boosting productivity and sharing heavy workloads",
+          "expand": "This is because each member takes care of one small part of a big project, so the team can finish tasks on time and reduce stress.",
+          "impact": "Therefore, it is good for mental health and helps workers reach a healthy balance between work and rest.",
+          "sentence": "Teamwork helps people boost productivity and share heavy workloads.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Combining diverse skills, knowledge, and creative ideas",
+          "expand": "For example, in a class project, one student can design slides, another writes the report, and everyone learns new things from each other.",
+          "impact": "Clearly, it is beneficial to both students and office workers.",
+          "sentence": "Working in a team helps members share different skills, knowledge, and creative ideas.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Developing mutual trust, communication, and conflict resolution skills",
+          "expand": "This is because working closely with others teaches us how to listen calmly, share ideas politely, and solve problems together.",
+          "impact": "So, it has positive effects on our social network and workplace relationships.",
+          "sentence": "Teamwork helps people build trust, communication, and problem-solving skills.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "solve the problem",
+        "reduce stress",
+        "social network",
+        "face-to-face interaction",
+        "stay on the safe side",
+        "avoid unnecessary trouble",
+        "learning new things"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -87,7 +277,49 @@
     "part": "part1",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 1)",
     "title": "Topic 3: Dream Job & Career Aspirations",
-    "content": "1. What was your dream job when you were a child, and has it changed over time?\n2. What qualifications or skills do you need to achieve your dream career?\n3. In your opinion, is job passion or a high salary more important when choosing a lifelong job?"
+    "content": "1. What was your dream job when you were a child, and has it changed over time?\n2. What qualifications or skills do you need to achieve your dream career?\n3. In your opinion, is job passion or a high salary more important when choosing a lifelong job?",
+    "hint": {
+      "extraVocab": [
+        "dream career",
+        "part-time internship",
+        "decent salary"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "When I was a child, my dream job was to be a teacher, though it has changed over time to working in business.",
+          "example": "I am currently studying marketing at university and doing a part-time office internship to prepare for this career.",
+          "pillar": "Knowledge",
+          "q": "1. Childhood dream job & whether it changed",
+          "reason": "As I grew up, I realized I want a job that can improve my living standard and let me gain knowledge in a fast-paced environment."
+        },
+        {
+          "answer": "To achieve my dream career, I need a university degree, good English communication, and practical computer skills.",
+          "example": "For example, I am taking an evening English course for a B2 certificate and practicing teamwork skills in group projects.",
+          "pillar": "Knowledge",
+          "q": "2. Qualifications or skills needed for your dream career",
+          "reason": "Nowadays, employers want workers who can keep pace with modern technology, solve daily problems, and learn new skills continuously."
+        },
+        {
+          "answer": "In my opinion, job passion is slightly more important, though we still need a decent salary to live comfortably.",
+          "example": "For instance, a friend of mine earns a high salary at a bank, but he feels exhausted and has no time for family or hobbies.",
+          "pillar": "Mental health",
+          "q": "3. Job passion vs high salary",
+          "reason": "Doing a job you love helps reduce stress and elevate your mood every day, whereas chasing only high pay often leads to fatigue."
+        }
+      ],
+      "reusedSource": "24 cụm đa năng (#4, #6, #9, #10) + Trục Knowledge & Mental health",
+      "reusedVocab": [
+        "improve my living standard",
+        "gain knowledge",
+        "keep pace with modern technology",
+        "solve problems",
+        "learn new skills",
+        "reduce stress",
+        "elevate my mood"
+      ],
+      "topic": "Dream Job & Career"
+    }
   },
   {
     "STT": "6",
@@ -105,7 +337,48 @@
     "part": "part2",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 1)",
     "title": "Part 2 - Situation 2: Prioritizing Hospital Upgrades and Improvements",
-    "content": "Situation: A local general hospital has received municipal funding to improve its operations. The management board is considering three areas to prioritize:\n- Modernizing advanced medical equipment (nâng cấp trang thiết bị y tế hiện đại)\n- Improving customer care and patient services (nâng cao chất lượng dịch vụ chăm sóc người bệnh)\n- Expanding physical infrastructure and hospital beds (mở rộng cơ sở vật chất và giường bệnh)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: A local general hospital has received municipal funding to improve its operations. The management board is considering three areas to prioritize:\n- Modernizing advanced medical equipment (nâng cấp trang thiết bị y tế hiện đại)\n- Improving customer care and patient services (nâng cao chất lượng dịch vụ chăm sóc người bệnh)\n- Expanding physical infrastructure and hospital beds (mở rộng cơ sở vật chất và giường bệnh)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-4",
+        "khen1Text": "because a modern hospital with state-of-the-art machines and high-tech labs gives doctors and nurses the best conditions to examine and treat patients accurately.",
+        "khen2ARE": {
+          "answer": "This option brings local residents a wide range of benefits because it is beneficial to people's physical health and raises public awareness of a healthy lifestyle and diseases.",
+          "example": "For example, if the hospital upgrades its X-ray and blood-testing machines, local patients can get quick and accurate checkups right in their town instead of traveling to big cities.",
+          "reason": "To be more specific, modern medical equipment helps doctors detect illnesses early and solve the problem of slow or inaccurate test results, allowing patients to recover faster and stay healthy."
+        },
+        "khen2Pillar": "Physical health",
+        "khen3Code": "KHEN-0",
+        "khen3Text": "great for reducing mental pressure for both doctors and patients. This is because accurate equipment keeps treatment under control, allowing everyone to feel safe, confident, and emotionally balanced.",
+        "option": "Modernizing advanced medical equipment"
+      },
+      "extraVocab": [
+        "examine and treat patients",
+        "X-ray and blood-testing machines",
+        "recover faster"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CUSTOM",
+          "option": "Expanding physical infrastructure and hospital beds",
+          "reason": "constructing new buildings and adding more hospital beds costs too much money and takes years to finish, which can burden the city's budget while leaving doctors without modern tools."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "Improving customer care and patient services",
+          "reason": "while polite staff and good service are helpful, friendliness alone cannot cure serious illnesses without proper medical machines, so this opinion has received little agreement in similar situations."
+        }
+      ],
+      "reusedVocab": [
+        "state-of-the-art facilities",
+        "beneficial to physical health",
+        "raise public awareness of healthy lifestyle and diseases",
+        "solve the problem",
+        "feel safe, confident, and emotionally balanced"
+      ],
+      "situation": "A local general hospital has received municipal funding to improve its operations. The management board is considering three areas to prioritize: modernizing advanced medical equipment, improving customer care and patient services, and expanding physical infrastructure and hospital beds."
+    }
   },
   {
     "STT": "7",
@@ -123,7 +396,76 @@
     "part": "part3",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 1)",
     "title": "Part 3 - Topic 2: Benefits of Educational Technology in Schools",
-    "content": "Topic: The substantial benefits of integrating modern technology into education\nSuggestions:\n- Enhancing student engagement and interactive learning\n- Providing quick access to diverse digital learning materials\n- Facilitating distance learning and personalized study paces\n- [Your own ideas]\n\nFollow-up questions:\n1. Can educational technology completely replace traditional classroom teachers in the future?\n2. What are the potential drawbacks of students relying too heavily on digital devices for study?\n3. How can schools ensure equal technology access for students from underprivileged backgrounds?"
+    "content": "Topic: The substantial benefits of integrating modern technology into education\nSuggestions:\n- Enhancing student engagement and interactive learning\n- Providing quick access to diverse digital learning materials\n- Facilitating distance learning and personalized study paces\n- [Your own ideas]\n\nFollow-up questions:\n1. Can educational technology completely replace traditional classroom teachers in the future?\n2. What are the potential drawbacks of students relying too heavily on digital devices for study?\n3. How can schools ensure equal technology access for students from underprivileged backgrounds?",
+    "hint": {
+      "coreTopic": "the benefits of modern technology in schools",
+      "extraVocab": [
+        "digital devices",
+        "eye strain",
+        "computer labs"
+      ],
+      "followUps": [
+        {
+          "answer": "No, I don't think technology can completely replace traditional teachers in the future.",
+          "example": "For instance, when a young child feels sad or confused about math, a human teacher can notice right away and encourage them kindly.",
+          "formula": "Do you think / Can -> No, I don't think...",
+          "q": "Can educational technology completely replace traditional classroom teachers in the future?",
+          "reason": "This is because teachers give emotional care, proper guidance, and real face-to-face interaction that a computer screen cannot provide."
+        },
+        {
+          "answer": "There are some drawbacks of using digital devices too much, such as eye strain, poor focus, and less outdoor activity.",
+          "example": "For example, students who study on phones late at night often feel tired in class the next morning.",
+          "formula": "What -> There are some [Ns], such as...",
+          "q": "What are the potential drawbacks of students relying too heavily on digital devices for study?",
+          "reason": "This is because too much screen time can harm physical health, hurt our eyes from blue light, and reduce real communication with classmates."
+        },
+        {
+          "answer": "I think schools and authorities should invest public funds to upgrade school computer labs and lend free laptops to poor students.",
+          "example": "For example, a high school can open a free library room with Wi-Fi and computers for students to use after class.",
+          "formula": "How -> Support solution",
+          "q": "How can schools ensure equal technology access for students from underprivileged backgrounds?",
+          "reason": "From a broader perspective, providing financial support and free public facilities ensures every student can keep pace with modern education."
+        }
+      ],
+      "macroTopic": "education and technology",
+      "mindmapPoints": [
+        {
+          "cue": "Enhancing student engagement and interactive learning",
+          "expand": "This is because classrooms equipped with modern teaching tools and videos make lessons fun and allow students' brains to exercise creatively.",
+          "impact": "Therefore, it is good for students' motivation and helps improve learning quality.",
+          "sentence": "Using technology in schools helps students feel more interested and active in class.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Providing quick access to diverse digital learning materials",
+          "expand": "For example, learners can read digital e-books, watch science videos, and broaden their mind within seconds on a tablet or laptop.",
+          "impact": "Clearly, it is beneficial to students who want to gain more knowledge.",
+          "sentence": "Educational technology helps students quickly find many useful online study materials.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Facilitating distance learning and personalized study paces",
+          "expand": "This is because students can join online courses from home without heavy traffic and replay difficult lessons at their own speed.",
+          "impact": "So, it has positive effects on both full-time students and working learners.",
+          "sentence": "Modern technology makes distance learning fast and convenient for busy students.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "equipped with modern teaching tools",
+        "allow their brain to exercise",
+        "broaden their mind",
+        "fast and convenient",
+        "face-to-face interaction",
+        "screen time",
+        "physical health",
+        "public funds",
+        "financial support",
+        "keep pace with"
+      ]
+    }
   },
   {
     "STT": "8",
@@ -141,7 +483,48 @@
     "part": "part1",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 2)",
     "title": "Topic 4: Teamwork & Group Activities",
-    "content": "1. Do you prefer working on group assignments or doing tasks independently? Why?\n2. What qualities make an effective and reliable team member?\n3. How do you handle disagreements when collaborating with others in a team?"
+    "content": "1. Do you prefer working on group assignments or doing tasks independently? Why?\n2. What qualities make an effective and reliable team member?\n3. How do you handle disagreements when collaborating with others in a team?",
+    "hint": {
+      "extraVocab": [
+        "group assignments",
+        "reliable team member",
+        "divide tasks"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I usually prefer working on group assignments rather than doing tasks completely alone.",
+          "example": "Last semester, my four-person group divided a marketing presentation into small parts and finished it two days before the deadline.",
+          "pillar": "Social",
+          "q": "1. Group assignments vs independent tasks",
+          "reason": "This is because teamwork is good for my social network and lets me meet like-minded classmates, share ideas, and reduce stress on big projects."
+        },
+        {
+          "answer": "I think an effective and reliable team member should be supportive, responsible, and a good listener.",
+          "example": "For example, my close classmate always checks our group chat every evening and helps others fix mistakes before submission.",
+          "pillar": "Social",
+          "q": "2. Qualities of an effective and reliable team member",
+          "reason": "When everyone finishes their part on time and openly shares thoughts, it builds trust and helps the whole team work smoothly."
+        },
+        {
+          "answer": "When disagreements happen in a team, I always try to stay calm and listen to everyone's opinions.",
+          "example": "During a recent group project, two teammates argued about the slide design, so we voted fairly and combined the best ideas from both.",
+          "pillar": "Peace & Privacy",
+          "q": "3. Handling disagreements in a team",
+          "reason": "It is best to think things through calmly to avoid unnecessary trouble, and we can understand each other better through face-to-face discussion."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Alone vs With others) + Trục Social & Peace & Privacy + Cụm #23, #24",
+      "reusedVocab": [
+        "good for my social network",
+        "meet like-minded people",
+        "reduce stress",
+        "openly share thoughts",
+        "think things through calmly to avoid unnecessary trouble",
+        "understand each other through face-to-face discussion"
+      ],
+      "topic": "Teamwork & Group Activities"
+    }
   },
   {
     "STT": "9",
@@ -159,7 +542,48 @@
     "part": "part2",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 2)",
     "title": "Part 2 - Situation 3: Choosing Accommodation for a Holiday Trip",
-    "content": "Situation: You and your close friends are planning a five-day vacation to a famous tourist city and are considering three accommodation options:\n- Staying at a local family-run homestay (ở khách sạn địa phương/homestay)\n- Booking a comfortable mid-range hotel (ở khách sạn tiện nghi, thoải mái)\n- Reserving a luxury expensive resort hotel (ở khách sạn/resort cao cấp đắt tiền)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You and your close friends are planning a five-day vacation to a famous tourist city and are considering three accommodation options:\n- Staying at a local family-run homestay (ở khách sạn địa phương/homestay)\n- Booking a comfortable mid-range hotel (ở khách sạn tiện nghi, thoải mái)\n- Reserving a luxury expensive resort hotel (ở khách sạn/resort cao cấp đắt tiền)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to stay together under one roof, so my close friends and I can sit down, share good local food, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "This option gives my friends and me the opportunity to increase knowledge and broaden our horizons and perspectives about local life.",
+          "example": "For instance, during our five-day trip, the local host family can recommend hidden street food stalls and teach us how to cook a traditional dish together in the evening.",
+          "reason": "Staying with a local host family allows us to gain a deeper understanding of people, culture, and traditions in that tourist city, while fitting comfortably within our budget without sacrificing quality."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work pressure, refresh our minds, and take meaningful photos together.",
+        "option": "Staying at a local family-run homestay"
+      },
+      "extraVocab": [
+        "under one roof",
+        "local host family",
+        "street food stalls"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-1",
+          "option": "Reserving a luxury expensive resort hotel",
+          "reason": "staying at a luxury expensive resort hotel costs too much money for a five-day group trip, and people often feel stiff and cannot hang out as freely as at a cozy local homestay."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "Booking a comfortable mid-range hotel",
+          "reason": "staying in separate mid-range hotel rooms gives our group less shared living space to talk together, and this opinion has received little agreement and few choices from my friends on similar trips."
+        }
+      ],
+      "reusedVocab": [
+        "sit down, share good food, and chat comfortably",
+        "increase knowledge and broaden our horizons and perspectives",
+        "gain a deeper understanding of people, culture, and traditions",
+        "fit comfortably within our budget without sacrificing quality",
+        "forget about work pressure, refresh our minds, and take meaningful photos together"
+      ],
+      "situation": "My close friends and I are planning a five-day vacation to a famous tourist city and are considering three accommodation options: staying at a local family-run homestay, booking a comfortable mid-range hotel, or reserving a luxury expensive resort hotel."
+    }
   },
   {
     "STT": "10",
@@ -177,7 +601,77 @@
     "part": "part3",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 2)",
     "title": "Part 3 - Topic 3: Ways to Maintain a Healthy Lifestyle",
-    "content": "Topic: Practical ways to cultivate and maintain a healthy lifestyle\nSuggestions:\n- Eating a nutritious and well-balanced daily diet\n- Doing regular physical exercise and workouts\n- Managing emotional stress and maintaining sufficient sleep\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do many young people nowadays struggle to maintain a healthy lifestyle?\n2. Is fast food advertising partly responsible for declining public health?\n3. What can schools and local communities do to promote physical well-being among citizens?"
+    "content": "Topic: Practical ways to cultivate and maintain a healthy lifestyle\nSuggestions:\n- Eating a nutritious and well-balanced daily diet\n- Doing regular physical exercise and workouts\n- Managing emotional stress and maintaining sufficient sleep\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do many young people nowadays struggle to maintain a healthy lifestyle?\n2. Is fast food advertising partly responsible for declining public health?\n3. What can schools and local communities do to promote physical well-being among citizens?",
+    "hint": {
+      "coreTopic": "practical ways to maintain a healthy lifestyle",
+      "extraVocab": [
+        "balanced meals",
+        "fast food ads",
+        "walking clubs"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some reasons why many young people find it hard to stay healthy, such as busy schedules and bad daily habits.",
+          "example": "For example, many office workers sit at a desk for eight hours and order fried chicken instead of cooking fresh food at home.",
+          "formula": "Why -> Reason (Hectic world + Physical/Mental health)",
+          "q": "Why do many young people nowadays struggle to maintain a healthy lifestyle?",
+          "reason": "In today's hectic world, young workers often eat fast food to save time and stay up late using phones, which hurts both their physical and mental health."
+        },
+        {
+          "answer": "Yes, I think fast food ads play a part in causing health problems.",
+          "example": "For instance, bright burger ads on social media often make teenagers order sugary drinks late at night.",
+          "formula": "Do you think / Is -> Yes, I think...",
+          "q": "Is fast food advertising partly responsible for declining public health?",
+          "reason": "This is because colorful ads tempt children and busy people to buy cheap, oily food instead of healthy meals, especially when they lack self-control."
+        },
+        {
+          "answer": "I think schools and communities should build free public sports centers and run campaigns to raise public awareness of healthy lifestyles.",
+          "example": "For example, local neighborhoods can organize free morning yoga or walking clubs in the community park every weekend.",
+          "formula": "What -> Support solution",
+          "q": "What can schools and local communities do to promote physical well-being among citizens?",
+          "reason": "When authorities invest in safe parks and sports clubs, citizens can easily exercise together and improve their living standard."
+        }
+      ],
+      "macroTopic": "health",
+      "mindmapPoints": [
+        {
+          "cue": "Eating a nutritious and well-balanced daily diet",
+          "expand": "This is because fresh organic vegetables and clean food provide vitamins, strengthen our immune system, and prevent common illnesses.",
+          "impact": "Therefore, it is good for physical health and helps people stay energetic.",
+          "sentence": "Eating healthy and balanced meals every day plays an essential role in keeping fit.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Doing regular physical exercise and workouts",
+          "expand": "For example, jogging for thirty minutes every morning in the park keeps our heart strong and helps us feel more active at work.",
+          "impact": "Clearly, it is beneficial to people of all ages.",
+          "sentence": "Doing regular exercise helps people get into good shape and stay healthy.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Managing emotional stress and maintaining sufficient sleep",
+          "expand": "This is because getting good rest allows us to recharge our batteries, relieve stress, and reduce fatigue after a day of hard work.",
+          "impact": "So, it has positive effects on our daily mood and work productivity.",
+          "sentence": "Managing stress and sleeping enough helps people protect their mental health.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "plays an essential role in",
+        "fresh organic vegetables",
+        "strengthen my immune system",
+        "get into good shape",
+        "physical health",
+        "mental health",
+        "recharge our batteries",
+        "relieve stress and reduce fatigue",
+        "In today's hectic world",
+        "public sports centers",
+        "raise public awareness of healthy lifestyle"
+      ]
+    }
   },
   {
     "STT": "11",
@@ -195,7 +689,47 @@
     "part": "part1",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 3)",
     "title": "Topic 5: Job Interviews & Preparation",
-    "content": "1. Have you ever attended a formal job interview or scholarship interview?\n2. What essential preparations should a candidate make before an interview?\n3. What practical advice would you give to someone attending their first interview?"
+    "content": "1. Have you ever attended a formal job interview or scholarship interview?\n2. What essential preparations should a candidate make before an interview?\n3. What practical advice would you give to someone attending their first interview?",
+    "hint": {
+      "extraVocab": [
+        "formal interview",
+        "neat clothes",
+        "arrive early"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I attended a formal interview last year when I applied for a part-time assistant position at a language center.",
+          "example": "The manager asked me about my communication skills and schedule for about twenty minutes, and I got the job two days later.",
+          "pillar": "Knowledge",
+          "q": "1. Ever attended a formal job or scholarship interview?",
+          "reason": "At first I felt nervous, but the interview gave me valuable real-world experience and helped me understand what employers look for."
+        },
+        {
+          "answer": "Before an interview, a candidate should research the company carefully, prepare clear answers, and choose neat clothes.",
+          "example": "For instance, I always read the company website the night before and practice answering common questions in front of a mirror.",
+          "pillar": "Knowledge",
+          "q": "2. Essential preparations before an interview",
+          "reason": "Preparing well helps us stay on the safe side, gain confidence, and show that we are serious about the job."
+        },
+        {
+          "answer": "My practical advice for first-time interviewees is to arrive fifteen minutes early, stay calm, and be honest.",
+          "example": "For example, if you do not know an answer, just smile politely and explain that you are eager to learn new skills on the job.",
+          "pillar": "Mental health",
+          "q": "3. Practical advice for someone's first interview",
+          "reason": "Arriving early helps reduce stress and gives you quiet time to relax your mind, so you can speak naturally and clearly."
+        }
+      ],
+      "reusedSource": "Trục Knowledge & Mental health + Cụm #15, #24",
+      "reusedVocab": [
+        "gain confidence",
+        "stay on the safe side",
+        "reduce stress",
+        "relax my mind",
+        "learn new skills"
+      ],
+      "topic": "Job Interviews & Preparation"
+    }
   },
   {
     "STT": "12",
@@ -213,7 +747,49 @@
     "part": "part2",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 3)",
     "title": "Part 2 - Situation 4: Choosing an Internship Preparation Workshop for Students",
-    "content": "Situation: Your university is organizing a special preparatory workshop for senior students who are about to start their internships. The student union is deciding between three workshop themes:\n- Professional CV writing skills (kỹ năng viết CV chuyên nghiệp)\n- Job interview techniques and mock interviews (kỹ năng phỏng vấn tuyển dụng)\n- Workplace adaptability and communication skills (kỹ năng thích ứng với môi trường làm việc)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: Your university is organizing a special preparatory workshop for senior students who are about to start their internships. The student union is deciding between three workshop themes:\n- Professional CV writing skills (kỹ năng viết CV chuyên nghiệp)\n- Job interview techniques and mock interviews (kỹ năng phỏng vấn tuyển dụng)\n- Workplace adaptability and communication skills (kỹ năng thích ứng với môi trường làm việc)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-4",
+        "khen1Text": "because a practical workshop with interactive group activities gives senior students the best conditions to practice hands-on workplace skills before joining real companies.",
+        "khen2ARE": {
+          "answer": "This workshop is good for senior students' social skills and helps them adjust and adapt to the social environment at work.",
+          "example": "For example, during the workshop, seniors can role-play how to ask a manager for feedback or handle teamwork disagreements politely during their first week as an intern.",
+          "reason": "Many fresh graduates struggle at first because university lessons focus too much on theory instead of real company internships. Practicing communication helps students build a strong sense of belonging and understand colleagues through face-to-face interaction."
+        },
+        "khen2Pillar": "Social",
+        "khen3Code": "KHEN-3",
+        "khen3Text": "a safe and practical environment to gain real working confidence, learn teamwork habits, and get ready for a stable career.",
+        "option": "Workplace adaptability and communication skills"
+      },
+      "extraVocab": [
+        "role-play",
+        "ask a manager for feedback",
+        "CV templates"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CUSTOM",
+          "option": "Professional CV writing skills",
+          "reason": "spending an entire workshop on CV writing is boring and unnecessary because senior students can easily download free CV templates online in ten minutes."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "Job interview techniques and mock interviews",
+          "reason": "interview tips only help for a short meeting before getting hired rather than during a multi-month internship, so this opinion has received little agreement among senior students."
+        }
+      ],
+      "reusedVocab": [
+        "practice hands-on skills",
+        "adjust and adapt to the social environment",
+        "focus too much on theory instead of real company internships",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "build confidence, and get ready for a stable career"
+      ],
+      "situation": "My university is organizing a special preparatory workshop for senior students who are about to start their internships. The student union is deciding between three workshop themes: professional CV writing skills, job interview techniques and mock interviews, and workplace adaptability and communication skills."
+    }
   },
   {
     "STT": "13",
@@ -231,6 +807,72 @@
     "part": "part3",
     "group": "Đề thi thực tế UFM 15/11/2026 (Chiều - Ca 3)",
     "title": "Part 3 - Topic 4: Drawbacks of Relying on Artificial Intelligence in Learning",
-    "content": "Topic: The notable drawbacks and risks of using Artificial Intelligence (AI) in education\nSuggestions:\n- Deteriorating students' critical thinking and problem-solving abilities\n- Increasing academic dishonesty and plagiarism in assignments\n- Creating overdependence on technology and diminishing face-to-face communication\n- [Your own ideas]\n\nFollow-up questions:\n1. How can educators prevent students from misusing generative AI tools in coursework?\n2. Do you believe AI will eventually make some academic degrees redundant?\n3. What ethical guidelines should students follow when utilizing AI for research?"
+    "content": "Topic: The notable drawbacks and risks of using Artificial Intelligence (AI) in education\nSuggestions:\n- Deteriorating students' critical thinking and problem-solving abilities\n- Increasing academic dishonesty and plagiarism in assignments\n- Creating overdependence on technology and diminishing face-to-face communication\n- [Your own ideas]\n\nFollow-up questions:\n1. How can educators prevent students from misusing generative AI tools in coursework?\n2. Do you believe AI will eventually make some academic degrees redundant?\n3. What ethical guidelines should students follow when utilizing AI for research?",
+    "hint": {
+      "coreTopic": "the drawbacks of using Artificial Intelligence (AI) in learning",
+      "extraVocab": [
+        "cheating",
+        "AI tools",
+        "group presentations"
+      ],
+      "followUps": [
+        {
+          "answer": "I think teachers should set stricter rules for homework and give more in-class speaking tests or group presentations.",
+          "example": "For example, after students submit an essay, the teacher can ask them to explain their main ideas aloud in front of the class.",
+          "formula": "How -> Penalize solution",
+          "q": "How can educators prevent students from misusing generative AI tools in coursework?",
+          "reason": "This is because clear rules and heavy penalties stop cheating, while face-to-face presentations force students to truly understand their own work."
+        },
+        {
+          "answer": "No, I don't think AI will make all university degrees useless, though some simple jobs may change.",
+          "example": "For instance, hospitals still need trained doctors and nurses with medical degrees to care for patients safely.",
+          "formula": "Do you think -> No, I don't think...",
+          "q": "Do you believe AI will eventually make some academic degrees redundant?",
+          "reason": "This is because degrees prove that graduates have real knowledge, practical skills, and the ability to work with people, which AI cannot fully replace."
+        },
+        {
+          "answer": "There are some important rules students should follow, such as using AI only to brainstorm ideas and always checking facts carefully.",
+          "example": "For example, a student can ask AI to explain a hard topic, then read real books and write the report in their own words.",
+          "formula": "What -> There are some [Ns], such as... + Penalize self-discipline",
+          "q": "What ethical guidelines should students follow when utilizing AI for research?",
+          "reason": "Students must build good self-discipline, stay honest, and never copy AI text as their own work."
+        }
+      ],
+      "macroTopic": "technology and education",
+      "mindmapPoints": [
+        {
+          "cue": "Deteriorating students' critical thinking and problem-solving abilities",
+          "expand": "This is because when students ask AI to solve every homework task, they do not allow their brain to exercise or think deeply.",
+          "impact": "Therefore, it has a negative effect on their real learning and future job skills.",
+          "sentence": "Using AI too much can weaken students' thinking and problem-solving skills.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Increasing academic dishonesty and plagiarism in assignments",
+          "expand": "For example, some lazy learners copy whole essays directly from an AI tool without writing a single sentence by themselves.",
+          "impact": "Clearly, it is harmful to honest students and fair grading in schools.",
+          "sentence": "Relying on AI easily leads to cheating and copying in school assignments.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Creating overdependence on technology and diminishing face-to-face communication",
+          "expand": "This is because students prefer chatting with AI apps instead of asking teachers or discussing lessons with classmates, which can lead to isolation.",
+          "impact": "So, it has negative effects on their social network and teamwork skills.",
+          "sentence": "Depending too much on AI reduces face-to-face communication among students.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "allow their brain to exercise",
+        "face-to-face communication",
+        "lead to isolation",
+        "social network",
+        "stricter rules",
+        "build good self-discipline",
+        "practical skills"
+      ]
+    }
   }
 ]

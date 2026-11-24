@@ -15,7 +15,58 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng)",
     "title": "Task 1.1: Inquiry Letter Regarding a Full-Time Cook Position",
-    "content": "You recently applied for a full-time cook position at a local restaurant. Write a formal letter to the restaurant general manager seeking further details about the role.\n\nIn your letter, you should:\n- Inquire about the exact working hours, shift rotations, and weekend duties\n- Ask about your primary kitchen responsibilities and team structure\n- Request specific details regarding base compensation, overtime pay, and employee benefits"
+    "content": "You recently applied for a full-time cook position at a local restaurant. Write a formal letter to the restaurant general manager seeking further details about the role.\n\nIn your letter, you should:\n- Inquire about the exact working hours, shift rotations, and weekend duties\n- Ask about your primary kitchen responsibilities and team structure\n- Request specific details regarding base compensation, overtime pay, and employee benefits",
+    "hint": {
+      "body": [
+        {
+          "answer": "Firstly, I would appreciate it if you could give me more information about the exact working hours, shift rotations, and weekend duties.",
+          "example": "For example, I would like to know if cooks take turns working morning and evening shifts or need to work every Sunday.",
+          "frame": "J. [Formal 3] Request Information (I would appreciate it if you could give me more information about...)",
+          "reason": "Knowing the work schedule clearly helps me plan ahead to reach a healthy balance between work and family time.",
+          "requirement": "Inquire about exact working hours, shift rotations, and weekend duties"
+        },
+        {
+          "answer": "Secondly, I am interested in learning more about my primary kitchen responsibilities and how the kitchen team is organized.",
+          "example": "Could you tell me whether I will cook main dishes or prepare fresh ingredients, and how many cooks work together in one shift?",
+          "frame": "J. [Formal 3] Request Information (I am interested in learning more about...) + C. Question",
+          "reason": "Understanding my daily tasks helps me adjust and adapt to the new work environment smoothly from the first day.",
+          "requirement": "Ask about primary kitchen responsibilities and team structure"
+        },
+        {
+          "answer": "Finally, can you provide additional details about the base salary, overtime pay, and employee benefits?",
+          "example": "For instance, I would like to know if staff meals, health insurance, or extra pay on public holidays are included.",
+          "frame": "J. [Formal 3] Request Information (Can you provide additional details about...?)",
+          "reason": "Having clear pay details ensures the job fits comfortably within my budget and helps improve my living standard.",
+          "requirement": "Request details regarding base pay, overtime pay, and employee benefits"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "the full-time cook position"
+      },
+      "extraVocab": [
+        "shift rotations",
+        "kitchen team",
+        "overtime pay",
+        "employee benefits"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "ask for more details about the full-time cook position I recently applied for at your restaurant",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Request Information (Job schedule, kitchen duties & pay details)",
+      "reusedVocab": [
+        "I would appreciate it if you could give me more information about",
+        "I am interested in learning more about",
+        "Can you provide additional details about",
+        "reach a healthy balance between work and family time",
+        "adjust and adapt to the social environment",
+        "fit comfortably within my budget",
+        "improve people's living standard"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,7 +84,43 @@
     "part": "part2",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng)",
     "title": "Task 2.1: Advantages and Disadvantages of Urbanization",
-    "content": "Read the following statement:\n\n\"Urbanization is proceeding at an unprecedented rate worldwide, drawing vast populations from rural districts into metropolises in pursuit of better living standards. While rapid urbanization fosters economic vitality and modern convenience, it simultaneously spawns critical issues such as overcrowding, environmental degradation, and overloaded public infrastructure.\"\n\nWrite an essay to an educated reader examining both the advantages and disadvantages of rapid urbanization. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"Urbanization is proceeding at an unprecedented rate worldwide, drawing vast populations from rural districts into metropolises in pursuit of better living standards. While rapid urbanization fosters economic vitality and modern convenience, it simultaneously spawns critical issues such as overcrowding, environmental degradation, and overloaded public infrastructure.\"\n\nWrite an essay to an educated reader examining both the advantages and disadvantages of rapid urbanization. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, many young people from rural villages move to Hanoi or Ho Chi Minh City to work in modern offices and send money back to support their parents.",
+        "focus": "Advantages of rapid urbanization",
+        "frame": "Firstly, [debai] + People have more opportunities to [V] + Cụm #4, #5, #18",
+        "point": "Moving to big cities gives people more opportunities to find well-paid jobs, boost economic development, and improve people's living standard. Cities also offer modern hospitals, good schools, and fast, convenient public transport."
+      },
+      "body2": {
+        "example": "For example, during rush hour in big cities, workers often spend an hour stuck in heavy traffic and breathe dirty air every morning.",
+        "focus": "Disadvantages of rapid urbanization",
+        "frame": "Secondly, [debai] has a negative impact on... + Mini-essay #6 (Ô nhiễm đô thị) + Trục 4",
+        "point": "However, when too many people live in one city, roads become crowded with traffic jams and vehicles release harmful exhaust fumes, causing air pollution. Public hospitals and schools also become overloaded, while noisy streets make citizens feel stressed."
+      },
+      "conclusion": "In conclusion, rapid urbanization brings both pros and cons: while it improves jobs and modern services, governments should invest in public transport and housing to reduce pollution and crowding.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "traffic jams",
+        "rush hour",
+        "rural villages"
+      ],
+      "intro": {
+        "debai": "rapid urbanization",
+        "ld1": "boost economic development and improve people's living standard",
+        "ld2": "cause overcrowding, air pollution, and overloaded public services"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Adv-Disadv + Mini-essay #6 (Ô nhiễm đô thị) + Trục Peace & Privacy + Cụm #4, #5, #18",
+      "reusedVocab": [
+        "have more opportunities to",
+        "boost economic development",
+        "improve people's living standard",
+        "fast, convenient",
+        "harmful exhaust fumes",
+        "air pollution"
+      ]
+    }
   },
   {
     "STT": "3",
@@ -51,7 +138,59 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 08/11/2026 (Sáng)",
     "title": "Task 1.2: Informal Letter Giving Advice on Weight Loss",
-    "content": "You have received an email from your close friend, Alex, who is struggling with weight gain and wants your advice to live healthier. Alex eats out frequently due to a busy study schedule and rarely exercises.\n\nWrite an informal letter to Alex. In your letter, you should:\n- Express your sympathy and encourage Alex to stay positive\n- Recommend specific unhealthy habits Alex should eliminate immediately\n- Suggest a realistic, budget-friendly diet and simple workout routine suitable for a college student"
+    "content": "You have received an email from your close friend, Alex, who is struggling with weight gain and wants your advice to live healthier. Alex eats out frequently due to a busy study schedule and rarely exercises.\n\nWrite an informal letter to Alex. In your letter, you should:\n- Express your sympathy and encourage Alex to stay positive\n- Recommend specific unhealthy habits Alex should eliminate immediately\n- Suggest a realistic, budget-friendly diet and simple workout routine suitable for a college student",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm sorry to hear you are stressed about your weight, and remember that student life can be quite hectic at first, but things always get smoother with time.",
+          "example": "Many college students gain weight during busy exam weeks, so stay calm and start with small, steady changes.",
+          "frame": "A. Reaction + K. Informal Chunks (Động viên)",
+          "reason": "Staying positive is advantageous to your mental health and helps you think things through calmly without feeling discouraged.",
+          "requirement": "Express sympathy and encourage Alex to stay positive"
+        },
+        {
+          "answer": "I believe you should stop eating fast food late at night and cut down on sugary drinks right away.",
+          "example": "Instead of ordering fried chicken or milk tea at 11 PM while studying, drink plain water and go to sleep earlier.",
+          "frame": "G. Provide Instruction / Suggestion (I believe you should...)",
+          "reason": "Eating out too often adds unnecessary fat and sugar, which is harmful to your physical health and lowers your energy.",
+          "requirement": "Recommend specific unhealthy habits Alex should eliminate immediately"
+        },
+        {
+          "answer": "There are two suggestions I would like to make: why don't you cook simple meals at home and jog for 20 minutes every morning?",
+          "example": "You can buy fresh local vegetables and eggs to cook quick meals, and walk or cycle to campus instead of riding a motorbike.",
+          "frame": "G. Provide Instruction / Suggestion (There are two suggestions... Why don't you...?)",
+          "reason": "Fresh home-cooked food fits comfortably within a student budget and plays an essential role in helping you keep fit and strengthen your immune system.",
+          "requirement": "Suggest a realistic, budget-friendly diet and simple workout routine for a college student"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "losing weight and living healthier"
+      },
+      "extraVocab": [
+        "fast food",
+        "sugary drinks",
+        "home-cooked meals",
+        "jog"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "some simple tips to lose weight and stay healthy at university",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Express Sympathy + Give Suggestions (Healthy diet & student exercise)",
+      "reusedVocab": [
+        "Life can be quite hectic at first, but things always get smoother with time",
+        "advantageous to my mental health",
+        "think things through calmly",
+        "beneficial to my physical health",
+        "keep fit and stay healthy",
+        "strengthen my immune system",
+        "fit comfortably within my budget",
+        "plays an essential role in"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -69,7 +208,44 @@
     "part": "part2",
     "group": "Đề thi thực tế AJC 08/11/2026 (Sáng)",
     "title": "Task 2.2: Advantages and Disadvantages of Taking a Gap Year",
-    "content": "Read the following statement:\n\n\"Taking a gap year—a year off between graduating from high school and starting university to travel or work—has gained immense popularity among young people. While proponents argue that a gap year provides practical life skills and personal maturity, critics worry it causes academic disruption and financial burdens.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of taking a gap year before entering higher education. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"Taking a gap year—a year off between graduating from high school and starting university to travel or work—has gained immense popularity among young people. While proponents argue that a gap year provides practical life skills and personal maturity, critics worry it causes academic disruption and financial burdens.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of taking a gap year before entering higher education. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my cousin worked part-time at a coffee shop and volunteered for six months after high school, which helped her save money and decide to study tourism.",
+        "focus": "Advantages of taking a gap year",
+        "frame": "Firstly, [debai] + Câu #6 (Môi trường mới) + Trục Knowledge + Cụm #7, #14",
+        "point": "Working or traveling in a new environment teaches young people to manage their own money, solve daily problems independently, and adjust and adapt to the social environment. It also gives them time to broaden their mind and choose the right major."
+      },
+      "body2": {
+        "example": "For example, a friend of mine took a year off to travel across Vietnam, and when he returned to university, he struggled to focus in math classes and fell behind his classmates.",
+        "focus": "Disadvantages of taking a gap year",
+        "frame": "Secondly, [debai] has a negative impact on... + Câu #7 (Gap year) + Disadvantages chunk",
+        "point": "On the other hand, pausing formal study for a year can make students forget high school lessons and delay graduation behind their peers. Travel or unpaid internships can also cost a great deal of money, creating a burden for parents."
+      },
+      "conclusion": "In conclusion, taking a gap year has both pros and cons: while it builds maturity and real-life experience, students need a clear plan and budget so they do not fall behind in their studies.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "part-time job",
+        "choose the right major",
+        "fall behind"
+      ],
+      "intro": {
+        "debai": "taking a gap year before starting university",
+        "ld1": "learn practical life skills, broaden their mind, and become independent",
+        "ld2": "delay graduation and face financial pressure or study difficulties"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Adv-Disadv + Câu #6 & Câu #7 (Gap year) + Trục Knowledge + Cụm #7, #14",
+      "reusedVocab": [
+        "manage their own money",
+        "solve daily problems independently",
+        "adjust and adapt to the social environment",
+        "broaden their mind",
+        "pausing formal study",
+        "delay graduation behind your peers",
+        "costs a great deal of money"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -87,7 +263,53 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng - Ca 2)",
     "title": "Task 1.3: Recommending Destinations and Educational Activities to Foreign Teacher Paul",
-    "content": "You have received an email from Paul, an English teacher from abroad, who is leading a group of international students to visit Vietnam this summer. Read part of his email below:\n\n\"I am organizing a study tour for a group of fifteen international high school students to visit Vietnam this coming July. Could you recommend two or three captivating destinations in your region that offer great educational value? What activities would best help my students immerse themselves in Vietnamese history and local lifestyle?\"\n\nWrite an informal email responding to Paul."
+    "content": "You have received an email from Paul, an English teacher from abroad, who is leading a group of international students to visit Vietnam this summer. Read part of his email below:\n\n\"I am organizing a study tour for a group of fifteen international high school students to visit Vietnam this coming July. Could you recommend two or three captivating destinations in your region that offer great educational value? What activities would best help my students immerse themselves in Vietnamese history and local lifestyle?\"\n\nWrite an informal email responding to Paul.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I am genuinely thrilled to hear that you and your students are planning to visit Vietnam! I believe you should visit the War Remnants Museum, the Independence Palace, and the Cu Chi Tunnels.",
+          "example": "At the Cu Chi Tunnels, your students can see real underground rooms and learn how Vietnamese people lived and worked during the war.",
+          "frame": "K. Informal Chunks (Bạn sắp ghé thăm) + G. Provide Instruction / Suggestion (I believe you should...)",
+          "reason": "These historical places give students the opportunity to increase knowledge and gain a deeper understanding of Vietnamese history and culture.",
+          "requirement": "Recommend 2-3 educational destinations in your region"
+        },
+        {
+          "answer": "Why don't you organize a morning walking tour at a local market, a traditional cooking class, and a friendly exchange at a local high school?",
+          "example": "When it comes to food, your students shouldn't miss Pho or Banh Mi, and tell them to pack light clothes because July is hot and you will do a lot of walking.",
+          "frame": "G. Provide Instruction / Suggestion (Why don't you...?) + K. Informal Chunks (Ẩm thực & trang phục)",
+          "reason": "Direct face-to-face interaction with local teenagers and tasting traditional food help students broaden their mind and enjoy real daily life.",
+          "requirement": "Suggest activities to experience Vietnamese history and local lifestyle"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your students' summer study tour in Vietnam"
+      },
+      "extraVocab": [
+        "study tour",
+        "historical sites",
+        "cooking class",
+        "local market"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "great educational destinations and local activities in Vietnam for your students",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Give Suggestions (Study tour destinations & cultural activities)",
+      "reusedVocab": [
+        "I am genuinely thrilled to hear that you are planning to visit",
+        "I believe you should",
+        "Why don't you",
+        "increase knowledge",
+        "gain/obtain a deeper understanding of people, culture, and tradition",
+        "broaden their mind",
+        "face-to-face interaction",
+        "When it comes to [food/travel], you certainly shouldn't miss Pho",
+        "pack light clothes because we will likely do a lot of walking"
+      ]
+    }
   },
   {
     "STT": "6",
@@ -105,7 +327,42 @@
     "part": "part2",
     "group": "Đề thi thực tế AJC 07/11/2026 (Sáng - Ca 2)",
     "title": "Task 2.3: Permitting Children to Own Personal Smartphones",
-    "content": "Read the following statement:\n\n\"An increasing number of parents today choose to purchase personal smartphones for their young children so they can stay in touch and access educational apps. However, other parents argue that giving children their own smartphones exposes them to harmful online content and screen addiction.\"\n\nWrite an essay to an educated reader discussing both views on allowing children to own personal smartphones and present your own perspective. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"An increasing number of parents today choose to purchase personal smartphones for their young children so they can stay in touch and access educational apps. However, other parents argue that giving children their own smartphones exposes them to harmful online content and screen addiction.\"\n\nWrite an essay to an educated reader discussing both views on allowing children to own personal smartphones and present your own perspective. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, a busy mother can check when her son arrives at his extra class and let him use a math app for 20 minutes at home.",
+        "focus": "View 1: Benefits of giving children personal smartphones",
+        "frame": "Firstly, some parents believe it is convenient to give children smartphones + Mini-essay #5 + Cụm #18",
+        "point": "Parents can easily call or message their children to make sure they are safe after school. Moreover, children can use educational apps to practice English vocabulary and watch science lessons in a fast, convenient way."
+      },
+      "body2": {
+        "example": "For example, my younger cousin got his own phone at age nine, soon became addicted to online games until midnight, and stopped talking to his family during dinner.",
+        "focus": "View 2 & My opinion: Risks of smartphones for young children",
+        "frame": "Secondly, I agree with the other view that owning a smartphone early harms children + Mini-essay #2 + Cụm #22",
+        "point": "However, because young children lack proper guidance and self-control, owning a personal phone makes them spend hours watching violent videos, copying bad habits, and hurting their eyes. In my view, parents should wait until children reach high school or set strict daily screen limits."
+      },
+      "conclusion": "In conclusion, although smartphones help parents contact their children and support learning, I prefer delaying personal phone ownership until children are older so they stay safe and focus on real-life activities.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "screen addiction",
+        "harmful online content",
+        "screen limits"
+      ],
+      "intro": {
+        "debai": "allowing young children to own personal smartphones versus waiting until they are older",
+        "ld1": "stay in touch easily and use helpful learning apps",
+        "ld2": "avoid harmful online content, bad habits, and screen addiction"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Discuss both views + Mini-essay #2 (Trẻ dùng smartphone) + Mini-essay #5 + Cụm #18, #22",
+      "reusedVocab": [
+        "fast, convenient",
+        "lack proper guidance and self-control",
+        "spend hours on their smartphones",
+        "watching violent videos",
+        "copying bad habits"
+      ]
+    }
   },
   {
     "STT": "7",
@@ -123,7 +380,49 @@
     "part": "part1",
     "group": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
     "title": "Task 1.4: Advising Sam on Overcoming Presentation Anxiety in Biology Class",
-    "content": "You have received an email from your close friend, Sam. Read part of her email below:\n\n\"I am terrified because I have to deliver an individual presentation in my Biology class this coming Thursday! I feel so nervous and cannot focus. Could you give me some practical advice to reduce anxiety and speak confidently? Have you ever delivered a presentation before a large audience before?\"\n\nWrite an informal email responding to Sam."
+    "content": "You have received an email from your close friend, Sam. Read part of her email below:\n\n\"I am terrified because I have to deliver an individual presentation in my Biology class this coming Thursday! I feel so nervous and cannot focus. Could you give me some practical advice to reduce anxiety and speak confidently? Have you ever delivered a presentation before a large audience before?\"\n\nWrite an informal email responding to Sam.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm sorry to hear that you feel terrified, so there are two suggestions I would like to make: why don't you practice in front of a mirror and use short cue cards instead of reading a long paper?",
+          "example": "Before your Biology talk starts, take three deep breaths, look at friendly classmates in the front row, and speak slowly step by step.",
+          "frame": "A. Reaction + G. Provide Instruction / Suggestion (There are two suggestions... Why don't you...?)",
+          "reason": "Preparing well helps you stay on the safe side, relieve stress, and feel much calmer when standing before the class.",
+          "requirement": "Give practical advice to reduce anxiety and speak confidently"
+        },
+        {
+          "answer": "I would like to let you know that I delivered a 15-minute presentation in front of over 100 university students last semester.",
+          "example": "I put simple pictures of my computer project on the slides and practiced twice with my roommate, so everything went smoothly and everyone clapped.",
+          "frame": "D. Provide Information (I would like to let you know that...)",
+          "reason": "Although I felt nervous at the start, careful practice helped me adjust to the big room and finish on time.",
+          "requirement": "Answer whether you have delivered a presentation before a large audience before"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your Biology presentation"
+      },
+      "extraVocab": [
+        "cue cards",
+        "deep breaths",
+        "practice in front of a mirror"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "some practical tips to speak confidently and my own experience with big presentations",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Give Advice + Share Personal Experience (Presentation anxiety)",
+      "reusedVocab": [
+        "There are two suggestions that I would like to make",
+        "Why don't you",
+        "stay on the safe side and think things through calmly",
+        "can relieve stress and reduce fatigue",
+        "I would like to let you know that",
+        "adjust and adapt to the social environment"
+      ]
+    }
   },
   {
     "STT": "8",
@@ -141,6 +440,41 @@
     "part": "part2",
     "group": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
     "title": "Task 2.4: Educational Benefits of Historical Exhibitions at Public Libraries",
-    "content": "Read the following statement:\n\n\"The Hanoi Public Library is hosting a special historical exhibition showcasing rare historical archives, books, and photographs about the August Revolution, President Ho Chi Minh, and Vietnam's national liberation struggle. Some people think that in the digital era, people rarely visit physical exhibitions anymore.\"\n\nWrite an essay to an educated reader explaining the educational and cultural benefits of visiting this historical exhibition, and encourage citizens, particularly young students, to attend. Support your arguments with specific reasons and illustrative examples."
+    "content": "Read the following statement:\n\n\"The Hanoi Public Library is hosting a special historical exhibition showcasing rare historical archives, books, and photographs about the August Revolution, President Ho Chi Minh, and Vietnam's national liberation struggle. Some people think that in the digital era, people rarely visit physical exhibitions anymore.\"\n\nWrite an essay to an educated reader explaining the educational and cultural benefits of visiting this historical exhibition, and encourage citizens, particularly young students, to attend. Support your arguments with specific reasons and illustrative examples.",
+    "hint": {
+      "body1": {
+        "example": "For instance, when high school students see old wartime letters and original newspapers in the library hall, history becomes lively and easier to understand than reading a quick phone screen.",
+        "focus": "Educational benefits for students",
+        "frame": "Firstly, the first reason is that [ld1] + Trục Knowledge + Cụm #14, #15",
+        "point": "Even though information is easy to search online, visiting the exhibition at Hanoi Public Library allows students to broaden their mind through real books, rare photographs, and documents about President Ho Chi Minh and the August Revolution. Seeing real history helps young learners remember lessons much better."
+      },
+      "body2": {
+        "example": "For example, if university clubs take students to the Hanoi Public Library this weekend, they can learn about Vietnam's national liberation struggle together and share photos to invite more friends.",
+        "focus": "Cultural benefits and encouraging citizens to attend",
+        "frame": "Secondly, it allows that [ld2] + Cụm #23 + Giải pháp B (Support)",
+        "point": "The exhibition also builds a strong sense of belonging and national pride through face-to-face interaction with friends and teachers. Therefore, schools should organize free group visits, and young people should spend a weekend morning attending this meaningful event."
+      },
+      "conclusion": "In conclusion, I strongly believe that physical historical exhibitions still matter in the digital age because they deepen historical knowledge and cultural pride, so every young citizen should visit the Hanoi Public Library exhibition.",
+      "essayType": "Agree or Disagree",
+      "extraVocab": [
+        "historical archives",
+        "national pride",
+        "group visits"
+      ],
+      "intro": {
+        "debai": "visiting the historical exhibition at the Hanoi Public Library in the digital era",
+        "ld1": "gain deeper historical knowledge beyond short online articles",
+        "ld2": "protect cultural pride and encourage young students to attend"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Agree or Disagree + Trục Knowledge + Cụm #14, #15, #23 + Giải pháp B (Support)",
+      "reusedVocab": [
+        "broaden their mind",
+        "gain a deeper understanding of",
+        "provide knowledge and experience in",
+        "build a strong sense of belonging",
+        "face-to-face interaction"
+      ]
+    }
   }
 ]

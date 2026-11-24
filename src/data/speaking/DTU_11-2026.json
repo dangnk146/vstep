@@ -15,7 +15,51 @@
     "part": "part1",
     "group": "Đề thi thực tế DTU 12/11/2026 (Sáng)",
     "title": "Topic 1: Sports & Outdoor Activities",
-    "content": "1. Do you play any sports regularly or prefer watching sports on television?\n2. What are the noticeable benefits of participating in competitive sports?\n3. Which new sport or physical activity would you like to try in the future?"
+    "content": "1. Do you play any sports regularly or prefer watching sports on television?\n2. What are the noticeable benefits of participating in competitive sports?\n3. Which new sport or physical activity would you like to try in the future?",
+    "hint": {
+      "extraVocab": [
+        "competitive sports",
+        "badminton court",
+        "sports tournament"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I am a big fan of playing sports regularly rather than just watching them on television.",
+          "example": "I usually play badminton with my close friends at a local court every Tuesday and Saturday evening.",
+          "pillar": "Physical health",
+          "q": "1. Play sports regularly or prefer watching on TV?",
+          "reason": "This is because playing sports is beneficial to my physical health; it helps me keep fit, strengthen my immune system, and reduce stress after studying."
+        },
+        {
+          "answer": "Joining competitive sports brings many benefits to both our physical health and social life.",
+          "example": "For example, when my university class joined a football tournament last month, we practiced together and built stronger friendships.",
+          "pillar": "Social",
+          "q": "2. Noticeable benefits of competitive sports",
+          "reason": "Besides helping us get into good shape and feel more energetic, team competitions teach us teamwork and let us meet like-minded people."
+        },
+        {
+          "answer": "In the future, I would like to try swimming or hiking in the mountains.",
+          "example": "Next summer, I plan to sign up for a weekend swimming class at the sports center near my house.",
+          "pillar": "Physical health",
+          "q": "3. New sport or physical activity to try in the future",
+          "reason": "Swimming is great for physical fitness without hurting our joints, while hiking helps me relax my mind in fresh air."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Leisure/Sports) + Trục Physical health & Social",
+      "reusedVocab": [
+        "a big fan of",
+        "beneficial to my physical health",
+        "keep fit",
+        "strengthen my immune system",
+        "reduce stress",
+        "get into good shape",
+        "feel more energetic",
+        "meet like-minded people",
+        "relax my mind"
+      ],
+      "topic": "Sports & Outdoor Activities"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +77,48 @@
     "part": "part2",
     "group": "Đề thi thực tế DTU 12/11/2026 (Sáng)",
     "title": "Part 2 - Situation 1: Choosing a Weekend Activity for a 10-Year-Old Cousin",
-    "content": "Situation: Your 10-year-old cousin is visiting your city for the weekend, and you want to organize a fun and memorable outing. There are three options:\n- Visiting the city zoo (đi sở thú)\n- Going to a modern shopping mall (đi trung tâm thương mại mua sắm)\n- Attending a live performance at the children's theater (đi xem kịch tại nhà hát thiếu nhi)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: Your 10-year-old cousin is visiting your city for the weekend, and you want to organize a fun and memorable outing. There are three options:\n- Visiting the city zoo (đi sở thú)\n- Going to a modern shopping mall (đi trung tâm thương mại mua sắm)\n- Attending a live performance at the children's theater (đi xem kịch tại nhà hát thiếu nhi)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to walk around together, so my cousin and I can see many animals, share good snacks, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Visiting the city zoo gives my 10-year-old cousin the opportunity to increase knowledge and broaden his horizons about wildlife and nature.",
+          "example": "For example, we can walk through the green park area together, watch the elephant feeding show, and take fun photos to show his parents back home.",
+          "reason": "Instead of only looking at pictures on a phone screen, watching real animals helps him gain a deeper understanding of living creatures while staying active outdoors."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help both of us forget about study pressure, refresh our minds, and take meaningful photos together.",
+        "option": "Visiting the city zoo"
+      },
+      "extraVocab": [
+        "wildlife and nature",
+        "elephant feeding show",
+        "sitting still"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CUSTOM",
+          "option": "Going to a modern shopping mall",
+          "reason": "walking inside a crowded, noisy shopping mall easily makes a child feel tired, and it often tempts buyers to waste money on expensive toys instead of enjoying a memorable weekend outing."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "Attending a live performance at the children's theater",
+          "reason": "sitting still in a dark theater for two hours does not allow us to move around or talk freely, and this opinion has received little agreement from kids his age."
+        }
+      ],
+      "reusedVocab": [
+        "share good food, and chat comfortably",
+        "increase knowledge and broaden horizons",
+        "gain a deeper understanding",
+        "crowded, noisy public venues",
+        "refresh our minds, and take meaningful photos together"
+      ],
+      "situation": "My 10-year-old cousin is visiting my city for the weekend, and I want to organize a fun and memorable outing. There are three options: visiting the city zoo, going to a modern shopping mall, or attending a live performance at the children's theater."
+    }
   },
   {
     "STT": "3",
@@ -51,7 +136,76 @@
     "part": "part3",
     "group": "Đề thi thực tế DTU 12/11/2026 (Sáng)",
     "title": "Part 3 - Topic 1: The Impact of Parenting Styles on Children's Development",
-    "content": "Topic: How parental behavior and guidance shape children's development\nSuggestions:\n- Fostering self-confidence and emotional resilience\n- Shaping moral values, honesty, and social manners\n- Influencing academic success and future career orientation\n- [Your own ideas]\n\nFollow-up questions:\n1. Is strict parenting or lenient parenting more effective in raising well-behaved children?\n2. How does modern screen time affect interactions between parents and their children?\n3. What can society do to support parents who have hectic work schedules?"
+    "content": "Topic: How parental behavior and guidance shape children's development\nSuggestions:\n- Fostering self-confidence and emotional resilience\n- Shaping moral values, honesty, and social manners\n- Influencing academic success and future career orientation\n- [Your own ideas]\n\nFollow-up questions:\n1. Is strict parenting or lenient parenting more effective in raising well-behaved children?\n2. How does modern screen time affect interactions between parents and their children?\n3. What can society do to support parents who have hectic work schedules?",
+    "hint": {
+      "coreTopic": "how parenting styles shape children's development",
+      "extraVocab": [
+        "balanced parenting",
+        "bedtime rules",
+        "affordable preschools"
+      ],
+      "followUps": [
+        {
+          "answer": "I think a balanced parenting style is much better than being too strict or too soft.",
+          "example": "For example, parents can set clear bedtime rules, while still letting teenagers choose their own hobbies on weekends.",
+          "formula": "Do you think / Choice -> Balanced Answer + Reason",
+          "q": "Is strict parenting or lenient parenting more effective in raising well-behaved children?",
+          "reason": "This is because being too strict creates family conflicts and stress, while having no rules causes children to lack self-control and pick up bad behaviors."
+        },
+        {
+          "answer": "Too much screen time weakens communication and widens the generation gap between parents and children.",
+          "example": "For instance, during family dinners, children often watch videos on tablets instead of sharing stories about their school day.",
+          "formula": "How -> Reason + Example",
+          "q": "How does modern screen time affect interactions between parents and their children?",
+          "reason": "This is because family members spend hours looking at phones instead of talking face-to-face, so they fail to understand each other."
+        },
+        {
+          "answer": "I think companies and authorities should offer flexible working hours and build affordable preschools near neighborhoods.",
+          "example": "For example, companies can allow working parents to start work thirty minutes later after dropping their kids at school.",
+          "formula": "What -> Support solution + Preschool chunk",
+          "q": "What can society do to support parents who have hectic work schedules?",
+          "reason": "Sending young children to safe preschools lets parents work full-time without worry, while flexible hours help them reach a healthy balance between work and family time."
+        }
+      ],
+      "macroTopic": "family and society",
+      "mindmapPoints": [
+        {
+          "cue": "Fostering self-confidence and emotional resilience",
+          "expand": "This is because supportive parents listen to their children's worries calmly and guide them instead of shouting or leaving them alone.",
+          "impact": "Therefore, it is good for children's mental health and makes them feel safe and happy.",
+          "sentence": "Good parenting helps children build self-confidence and strong mental health.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Shaping moral values, honesty, and social manners",
+          "expand": "For example, when parents share housework and speak politely at home, children learn to respect others and avoid bad behaviors.",
+          "impact": "Clearly, it is beneficial to children as they adjust and adapt to the social environment.",
+          "sentence": "Parents play an essential role in teaching children honesty and good manners.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Influencing academic success and future career orientation",
+          "expand": "This is because parents who encourage reading and support their children's interests help them gain knowledge and choose a job they truly enjoy.",
+          "impact": "So, it has positive effects on their education and future living standard.",
+          "sentence": "Parenting styles affect children's school results and future career choices.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "mental health",
+        "plays an essential role in",
+        "bad behaviors",
+        "adjust and adapt to the social environment",
+        "living standard",
+        "family conflicts",
+        "lack proper guidance and self-control",
+        "widens the generation gap",
+        "screen time",
+        "reach a healthy balance between work and family time"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -69,7 +223,49 @@
     "part": "part1",
     "group": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
     "title": "Topic 2: Types of Schools & Traffic Conditions",
-    "content": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. How severe is traffic congestion in your hometown during rush hours?"
+    "content": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. How severe is traffic congestion in your hometown during rush hours?",
+    "hint": {
+      "extraVocab": [
+        "public school",
+        "private school",
+        "tuition fees",
+        "rush hours"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "When I was younger, I attended a local public school in my hometown from primary school to high school.",
+          "example": "It only took me ten minutes to go to school by bicycle every morning with my neighbors.",
+          "pillar": "Bộ đề gốc",
+          "q": "1. Attended a public school or private school",
+          "reason": "My parents chose it simply because public schools have affordable tuition fees that fit comfortably within our family budget, and it was very close to my house."
+        },
+        {
+          "answer": "The main differences between private and public schools in Vietnam are the tuition fees, class sizes, and facilities.",
+          "example": "For instance, a public class often has over forty students, whereas private schools may have around twenty-five students with air-conditioned classrooms.",
+          "pillar": "Knowledge",
+          "q": "2. Key differences between private and public schools",
+          "reason": "Private schools cost more, so they are often equipped with modern teaching tools and smaller classes, while public schools follow a standard program with more students."
+        },
+        {
+          "answer": "Traffic congestion in my hometown is quite serious during rush hours, especially in the early morning and late afternoon.",
+          "example": "For example, a short trip that usually takes fifteen minutes by motorbike can take nearly forty minutes at five o'clock in the evening.",
+          "pillar": "Bộ đề gốc",
+          "q": "3. Traffic congestion in your hometown during rush hours",
+          "reason": "There are too many private motorbikes and cars on narrow streets, which causes air pollution, noise, and stress for commuters."
+        }
+      ],
+      "reusedSource": "Bộ đề 2 (Hometown) & Bộ đề 3 (Transport) + Cụm #20, #21",
+      "reusedVocab": [
+        "fit comfortably within our budget",
+        "It takes me ___ minutes to go to school by...",
+        "equipped with modern teaching tools",
+        "traffic congestion",
+        "air pollution",
+        "motorbikes and cars"
+      ],
+      "topic": "Schools & Traffic Conditions"
+    }
   },
   {
     "STT": "5",
@@ -87,7 +283,48 @@
     "part": "part2",
     "group": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
     "title": "Part 2 - Situation 2: Selecting a Tourism Promotion Channel for the City",
-    "content": "Situation: Your city's tourism promotion board has allocated a budget to attract domestic and international visitors. The committee is deliberating between three marketing channels:\n- Broadcasting promotional commercials on national television (quảng bá qua truyền hình TV)\n- Running targeted campaigns on social media platforms (chạy chiến dịch trên mạng xã hội)\n- Developing creative content marketing and travel blogging (tiếp thị nội dung và cẩm nang du lịch trải nghiệm)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: Your city's tourism promotion board has allocated a budget to attract domestic and international visitors. The committee is deliberating between three marketing channels:\n- Broadcasting promotional commercials on national television (quảng bá qua truyền hình TV)\n- Running targeted campaigns on social media platforms (chạy chiến dịch trên mạng xã hội)\n- Developing creative content marketing and travel blogging (tiếp thị nội dung và cẩm nang du lịch trải nghiệm)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-0",
+        "khen1Text": "because it is super easy to launch right away online without waiting months for TV filming or long blog series, and it fits comfortably within the city's budget.",
+        "khen2ARE": {
+          "answer": "This option helps domestic and international visitors increase knowledge and broaden their horizons about my city's culture and tourist spots.",
+          "example": "For example, a 30-second video showing our city's night street food market and famous bridge on TikTok or Instagram can quickly attract young travelers to book weekend trips here.",
+          "reason": "Short social media campaigns are fast and convenient for busy people in modern-day society, allowing the board to make the most of new technology to reach millions of travelers worldwide."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-3",
+        "khen3Text": "a practical channel to get fast results, promote a friendly city image, and attract more visitors to boost local economic development.",
+        "option": "Running targeted campaigns on social media platforms"
+      },
+      "extraVocab": [
+        "30-second video",
+        "night street food market",
+        "TV commercial time"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-3",
+          "option": "Broadcasting promotional commercials on national television",
+          "reason": "buying commercial time on national television costs too much of the city's budget, and most young travelers today watch videos on their phones instead of TV ads."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "Developing creative content marketing and travel blogging",
+          "reason": "writing long travel blogs takes a lot of time to build an audience, so this opinion has received little agreement compared to fast social media campaigns."
+        }
+      ],
+      "reusedVocab": [
+        "fit comfortably within the budget",
+        "increase knowledge and broaden horizons",
+        "fast, convenient for busy people in modern-day society",
+        "make the most of new technology",
+        "boost economic development"
+      ],
+      "situation": "My city's tourism promotion board has allocated a budget to attract domestic and international visitors. The committee is deliberating between three marketing channels: broadcasting promotional commercials on national television, running targeted campaigns on social media platforms, or developing creative content marketing and travel blogging."
+    }
   },
   {
     "STT": "6",
@@ -105,7 +342,77 @@
     "part": "part3",
     "group": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
     "title": "Part 3 - Topic 2: Developing Sustainable Urban Tourism",
-    "content": "Topic: The multifaceted benefits of developing sustainable tourism in cities\nSuggestions:\n- Stimulating local economic growth and creating jobs\n- Preserving historical landmarks and architectural heritage\n- Promoting international cultural exchange and understanding\n- [Your own ideas]\n\nFollow-up questions:\n1. What negative impacts can excessive tourism (overtourism) inflict on local communities?\n2. How can municipal authorities balance tourism revenue with environmental conservation?\n3. Should historic heritage sites charge entrance fees to domestic citizens?"
+    "content": "Topic: The multifaceted benefits of developing sustainable tourism in cities\nSuggestions:\n- Stimulating local economic growth and creating jobs\n- Preserving historical landmarks and architectural heritage\n- Promoting international cultural exchange and understanding\n- [Your own ideas]\n\nFollow-up questions:\n1. What negative impacts can excessive tourism (overtourism) inflict on local communities?\n2. How can municipal authorities balance tourism revenue with environmental conservation?\n3. Should historic heritage sites charge entrance fees to domestic citizens?",
+    "hint": {
+      "coreTopic": "developing sustainable tourism in cities",
+      "extraVocab": [
+        "overtourism",
+        "entrance fee",
+        "old buildings"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some bad effects of too many tourists, such as traffic jams, loud noise, and environmental damage.",
+          "example": "For example, in popular beach cities during summer holidays, beaches are often full of trash and local roads are blocked for hours.",
+          "formula": "What -> There are some [Ns], such as...",
+          "q": "What negative impacts can excessive tourism (overtourism) inflict on local communities?",
+          "reason": "This is because crowded streets make local people feel stressed, and extra plastic waste can damage natural habitats and dirty city parks."
+        },
+        {
+          "answer": "I think city authorities should limit daily visitor numbers, give heavy fines for littering, and invest in clean public transport.",
+          "example": "For instance, a city can encourage tourists to ride shared bicycles or electric buses around the old town instead of private cars.",
+          "formula": "How -> Penalize + Support solution",
+          "q": "How can municipal authorities balance tourism revenue with environmental conservation?",
+          "reason": "Using electric buses reduces traffic jams and pollution, while strict rules protect green spaces without stopping tourism income."
+        },
+        {
+          "answer": "Yes, I think historic sites should charge a small entrance fee to local visitors, with free entry for students and seniors.",
+          "example": "For example, charging a cheap ticket of twenty thousand dong helps pay tour guides and maintain clean restrooms at a museum.",
+          "formula": "Should -> Yes, I think...",
+          "q": "Should historic heritage sites charge entrance fees to domestic citizens?",
+          "reason": "This is because ticket money makes an important contribution to cleaning and repairing old buildings while keeping prices within people's budget."
+        }
+      ],
+      "macroTopic": "tourism and environment",
+      "mindmapPoints": [
+        {
+          "cue": "Stimulating local economic growth and creating jobs",
+          "expand": "This is because tourists spend money on hotels, local food, and transport, which improves people's living standard.",
+          "impact": "Therefore, it is good for the local economy and small business owners.",
+          "sentence": "Sustainable city tourism helps boost economic development and create more local jobs.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Preserving historical landmarks and architectural heritage",
+          "expand": "For example, ticket money from visitors helps local authorities repair ancient temples and keep city museums clean.",
+          "impact": "Clearly, it is beneficial to both local culture and future generations.",
+          "sentence": "Developing green tourism helps cities protect old buildings and historical places.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Promoting international cultural exchange and understanding",
+          "expand": "This is because meeting foreign visitors gives citizens the chance to gain a deeper understanding of different people, cultures, and traditions.",
+          "impact": "So, it has positive effects on international friendship and general knowledge.",
+          "sentence": "Tourism brings cultural exchanges and helps people broaden their mind.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "boost economic development",
+        "improve people's living standard",
+        "broaden their mind",
+        "gain a deeper understanding of people, culture, and tradition",
+        "cultural exchanges",
+        "environmental damage",
+        "damage natural habitats",
+        "public transport",
+        "heavy fines",
+        "make a contribution to",
+        "fit comfortably within my budget"
+      ]
+    }
   },
   {
     "STT": "7",
@@ -123,7 +430,49 @@
     "part": "part1",
     "group": "Đề thi thực tế DTU (Ca sáng bổ sung)",
     "title": "Topic 3: Close Friends & Memorable Events",
-    "content": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What memorable community or school event have you enjoyed attending recently?"
+    "content": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What memorable community or school event have you enjoyed attending recently?",
+    "hint": {
+      "extraVocab": [
+        "best friend",
+        "keep in contact",
+        "charity fair"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I have a best friend named Minh, and the qualities I appreciate most about him are that he is honest, understanding, and supportive.",
+          "example": "Every weekend, we meet at a quiet coffee shop to share stories about our studies and relax after a busy week.",
+          "pillar": "Social",
+          "q": "1. Best friend & qualities you appreciate most",
+          "reason": "We have a lot of things in common and get on very well, and he is always beside me to listen when I face difficulties."
+        },
+        {
+          "answer": "Yes, I still keep in contact with two or three close friends from primary school, though everyone is quite busy now.",
+          "example": "We have a small group chat on Zalo to send funny messages and usually go out for hotpot together during the Tet holiday.",
+          "pillar": "Social",
+          "q": "2. Keep in contact with primary school or childhood friends",
+          "reason": "Spending time with childhood friends helps strengthen our bonds and brings back happy memories, which is great for my mental health."
+        },
+        {
+          "answer": "The most memorable school event I attended recently was our university's music night and charity fair last month.",
+          "example": "I went there with my classmates on Saturday night, bought handmade snacks, and cheered for our department's band.",
+          "pillar": "Mental health",
+          "q": "3. Memorable community or school event attended recently",
+          "reason": "It gave students a chance to relax, enjoy lively performances, and build a strong sense of belonging while raising money for poor children."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Family/Friends) + Trục Social & Mental health + Cụm #23",
+      "reusedVocab": [
+        "understanding and supportive",
+        "have a lot of things in common",
+        "get on well",
+        "always beside me when I face difficulties",
+        "strengthen bonds",
+        "good for my mental health",
+        "build a strong sense of belonging"
+      ],
+      "topic": "Close Friends & Memorable Events"
+    }
   },
   {
     "STT": "8",
@@ -141,7 +490,49 @@
     "part": "part2",
     "group": "Đề thi thực tế DTU (Ca sáng bổ sung)",
     "title": "Part 2 - Situation 3: Prioritizing Factors when Purchasing a House",
-    "content": "Situation: You are planning to purchase a new house or apartment for your family. You are contemplating which criterion should be given the highest priority. There are three options:\n- The purchase cost and mortgage affordability (giá cả và khả năng tài chính)\n- The size and floor area of the property (diện tích và không gian sinh hoạt)\n- The geographical location and proximity to facilities (vị trí địa lý và tiện ích xung quanh)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: You are planning to purchase a new house or apartment for your family. You are contemplating which criterion should be given the highest priority. There are three options:\n- The purchase cost and mortgage affordability (giá cả và khả năng tài chính)\n- The size and floor area of the property (diện tích và không gian sinh hoạt)\n- The geographical location and proximity to facilities (vị trí địa lý và tiện ích xung quanh)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-3",
+        "khen1Text": "because choosing a good location close to my workplace, schools, and local markets saves daily travel time and makes everyday life convenient for the whole family.",
+        "khen2ARE": {
+          "answer": "Prioritizing location is advantageous to my family's mental health because it helps us reach a healthy balance between work and family time.",
+          "example": "For example, if our apartment is only ten minutes from my office and a supermarket, I can pick up fresh food and have dinner with my family at 6 p.m. instead of sitting in traffic.",
+          "reason": "Living near essential facilities helps us relieve stress and reduce fatigue from long daily trips, so everyone can recharge their batteries together at home every evening."
+        },
+        "khen2Pillar": "Mental health",
+        "khen3Code": "KHEN-0",
+        "khen3Text": "great for reducing daily pressure for the whole family. This is because living near safe facilities keeps our routine under control, allowing us to feel safe, comfortable, and emotionally balanced.",
+        "option": "The geographical location and proximity to facilities"
+      },
+      "extraVocab": [
+        "pick up fresh food",
+        "sitting in traffic",
+        "essential facilities"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-8",
+          "option": "The size and floor area of the property",
+          "reason": "buying a large house just for extra floor space often means living far outside the city, so traveling two or three hours on congested roads every day will leave us with no energy left to work, sleep, or take care of ourselves."
+        },
+        {
+          "cheCode": "CHÊ-4",
+          "option": "The purchase cost and mortgage affordability",
+          "reason": "choosing a house only because it is cheap is not wise, because low-priced properties are often in remote or unsafe areas with few nearby schools and hospitals."
+        }
+      ],
+      "reusedVocab": [
+        "saves daily travel time",
+        "advantageous to mental health",
+        "reach a healthy balance between work and family time",
+        "relieve stress and reduce fatigue",
+        "recharge their batteries",
+        "traveling two or three hours on congested roads every day will leave us with no energy left"
+      ],
+      "situation": "I am planning to purchase a new house or apartment for my family and am deciding which factor should be given the highest priority: the purchase cost and mortgage affordability, the size and floor area of the property, or the geographical location and proximity to facilities."
+    }
   },
   {
     "STT": "9",
@@ -159,6 +550,77 @@
     "part": "part3",
     "group": "Đề thi thực tế DTU (Ca sáng bổ sung)",
     "title": "Part 3 - Topic 3: Advantages and Challenges of Self-Employment",
-    "content": "Topic: The notable benefits and demanding challenges of self-employment\nSuggestions:\n- Autonomous working schedule and independence from management\n- Direct correlation between personal effort and income potential\n- Financial instability and heavy entrepreneurial pressure\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are an increasing number of young graduates choosing freelance work or startup ventures?\n2. What essential skills are necessary before transitioning to self-employment?\n3. Do you think governments should provide financial subsidies for young entrepreneurs?"
+    "content": "Topic: The notable benefits and demanding challenges of self-employment\nSuggestions:\n- Autonomous working schedule and independence from management\n- Direct correlation between personal effort and income potential\n- Financial instability and heavy entrepreneurial pressure\n- [Your own ideas]\n\nFollow-up questions:\n1. Why are an increasing number of young graduates choosing freelance work or startup ventures?\n2. What essential skills are necessary before transitioning to self-employment?\n3. Do you think governments should provide financial subsidies for young entrepreneurs?",
+    "hint": {
+      "coreTopic": "the advantages and challenges of self-employment",
+      "extraVocab": [
+        "freelance",
+        "money management",
+        "low-interest loans"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some reasons why young graduates choose freelance work, such as wanting freedom and difficulty finding traditional office jobs.",
+          "example": "For example, a young graduate can start an online clothing shop or work as a freelance translator right after finishing university.",
+          "formula": "Why -> Reason (18 thesis #1 & #5)",
+          "q": "Why are an increasing number of young graduates choosing freelance work or startup ventures?",
+          "reason": "Many fresh graduates struggle to find jobs because university lessons focus too much on theory, while working for themselves lets them follow their true passion and use modern technology from home."
+        },
+        {
+          "answer": "There are some essential skills needed for self-employment, such as money management, self-discipline, and customer communication.",
+          "example": "For instance, a freelance photographer needs to save money for quiet months and reply to customers politely every day.",
+          "formula": "What -> There are some [Ns], such as...",
+          "q": "What essential skills are necessary before transitioning to self-employment?",
+          "reason": "This is because without a manager, you must manage your own budget, finish deadlines on time, and build trust with clients."
+        },
+        {
+          "answer": "Yes, I think governments should provide financial support and lower tax rates for young business owners.",
+          "example": "For example, local authorities can offer low-interest loans and free business training courses for graduates starting their first company.",
+          "formula": "Do you think -> Yes, I think... + Support solution",
+          "q": "Do you think governments should provide financial subsidies for young entrepreneurs?",
+          "reason": "From a broader perspective, helping new small businesses lowers the risk of losing savings, creates more jobs, and boosts economic development."
+        }
+      ],
+      "macroTopic": "work and career",
+      "mindmapPoints": [
+        {
+          "cue": "Autonomous working schedule and independence from management",
+          "expand": "This is because you can choose when and where to work, which reduces commuting stress and helps you reach a healthy balance between work and family time.",
+          "impact": "Therefore, it is good for your personal freedom and mental health.",
+          "sentence": "Working for yourself lets you control your own working schedule without a boss watching over you.",
+          "wordForm": "Adj + N"
+        },
+        {
+          "cue": "Direct correlation between personal effort and income potential",
+          "expand": "For example, a freelance designer or small shop owner who trains diligently and finds more clients can raise their monthly income faster than in a fixed office job.",
+          "impact": "Clearly, it is beneficial to people who want to improve their living standard.",
+          "sentence": "Self-employed people can earn more money when they work hard.",
+          "wordForm": "N"
+        },
+        {
+          "cue": "Financial instability and heavy entrepreneurial pressure",
+          "expand": "This is because without market experience, new business owners face a high risk of losing their savings and working long hours alone.",
+          "impact": "So, it can have negative effects on their mental health and financial safety.",
+          "sentence": "Running your own business brings unstable monthly income and heavy pressure.",
+          "wordForm": "Adj + N"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "Working for yourself lets you control your own schedule",
+        "without a boss watching over you",
+        "reach a healthy balance between work and family time",
+        "trains diligently",
+        "improve people's living standard",
+        "unstable monthly income",
+        "high risk of losing all your savings",
+        "Many fresh graduates struggle to find jobs because university lessons focus too much on theory",
+        "follow your true passion",
+        "financial support",
+        "lower tax rates",
+        "boost economic development"
+      ]
+    }
   }
 ]

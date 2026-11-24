@@ -17,7 +17,55 @@
     "title": "Topic 1: Watching Movies",
     "content": "1. Do you often watch movies in your free time?\n2. What is your favorite movie or genre, and why do you like it?\n3. What meaningful lessons have you learned from watching movies?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:37:01+07:00"
+    "addedAt": "2026-11-22T19:37:01+07:00",
+    "hint": {
+      "extraVocab": [
+        "never giving up",
+        "stay patient"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I am a big fan of watching movies in my spare time, usually twice a week.",
+          "example": "I often watch films on my laptop at home on Friday nights or go to the cinema with my friends at the weekend.",
+          "pillar": "Bộ đề gốc",
+          "q": "Do you often watch movies in your free time?",
+          "reason": "It is advantageous to my mental health because it helps me relax my mind, recharge my batteries, and reduce stress after a busy week."
+        },
+        {
+          "answer": "My favorite movie genre is comedy, though I also enjoy documentaries.",
+          "example": "Last Saturday, I watched a funny family comedy with my best friend while eating popcorn, and we laughed the whole time.",
+          "pillar": "Bộ đề gốc",
+          "q": "What is your favorite movie or genre, and why do you like it?",
+          "reason": "Comedies are relaxing and interesting because they make me laugh out loud and elevate my mood, while documentaries are educational and help me broaden my horizons."
+        },
+        {
+          "answer": "Movies have taught me many meaningful lessons about family love, friendship, and never giving up.",
+          "example": "For example, after watching a movie about a hardworking student, I learned how to stay patient and keep trying toward my study goals.",
+          "pillar": "Knowledge",
+          "q": "What meaningful lessons have you learned from watching movies?",
+          "reason": "Good films give me a deeper understanding of people, culture, and real-life values, and motivate me when I face difficulties."
+        }
+      ],
+      "reusedSource": "Bộ đề 4 (Watching Movies) + Trục Mental health + Trục Broaden knowledge",
+      "reusedVocab": [
+        "a big fan of watching movies",
+        "in my spare time",
+        "advantageous to my mental health",
+        "relax my mind",
+        "recharge my batteries",
+        "reduce stress",
+        "go to the cinema at the weekend",
+        "comedy",
+        "documentary",
+        "make me laugh",
+        "elevate my mood",
+        "broaden my horizons",
+        "deeper understanding of people, culture",
+        "face difficulties"
+      ],
+      "topic": "Watching Movies"
+    }
   },
   {
     "STT": "2",
@@ -37,7 +85,48 @@
     "title": "Topic 2: Participating in Competitions",
     "content": "1. Tell me about the most recent competition you participated in.\n2. When and where did that competition take place?\n3. Are competitions like that popular in your local area or school?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:37:02+07:00"
+    "addedAt": "2026-11-22T19:37:02+07:00",
+    "hint": {
+      "extraVocab": [
+        "speaking contest",
+        "main hall",
+        "take part in"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "The most recent competition I joined was an English speaking contest for university students.",
+          "example": "I prepared a short presentation about healthy lifestyles and practiced with my classmates every afternoon.",
+          "pillar": "Knowledge",
+          "q": "Tell me about the most recent competition you participated in.",
+          "reason": "Joining this contest gave me the opportunity to broaden my mind, gain real experience, and meet like-minded people who share the same interest."
+        },
+        {
+          "answer": "It took place about three months ago in the main hall of my university.",
+          "example": "The contest started at 8:00 AM on a Sunday morning, and around fifty students from different classes took part in it.",
+          "pillar": "Social",
+          "q": "When and where did that competition take place?",
+          "reason": "Joining an event on campus was very convenient, and having my friends there cheered me up and made me feel more confident."
+        },
+        {
+          "answer": "Yes, academic and sports competitions are very popular at my school and in my city.",
+          "example": "Every semester, my school holds English contests, coding events, and football tournaments that attract hundreds of students.",
+          "pillar": "Knowledge",
+          "q": "Are competitions like that popular in your local area or school?",
+          "reason": "They play an essential role in helping young people learn new skills, enrich their social life, and become more confident in public."
+        }
+      ],
+      "reusedSource": "Trục Broaden knowledge + Trục Social network + Cụm đa năng (#14, #15)",
+      "reusedVocab": [
+        "broaden my mind",
+        "provide knowledge and experience in",
+        "meet like-minded people",
+        "cheer me up",
+        "play an essential role in",
+        "enrich their social life"
+      ],
+      "topic": "Participating in Competitions"
+    }
   },
   {
     "STT": "3",
@@ -57,7 +146,49 @@
     "title": "Part 2 - Situation 1: Choosing a Place to Prepare for an Exam",
     "content": "Situation: You have an important upcoming exam at school and want to choose the best place to study and revise. There are three options:\n- At the school library (thư viện của trường)\n- At a quiet coffee shop (quán cà phê yên tĩnh)\n- At home (ôn thi tại nhà)\n\nWhich option do you think is the best choice and why?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:37:03+07:00"
+    "addedAt": "2026-11-22T19:37:03+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-4",
+        "khen1Text": "because the school library has air-conditioned rooms, free Wi-Fi, and quiet study areas that give me the best conditions to revise for the exam.",
+        "khen2ARE": {
+          "answer": "Studying at the school library gives me the opportunity to increase knowledge and focus better on my exam materials.",
+          "example": "For example, I can review printed textbooks and past exam papers for two hours after class without looking at my phone too much.",
+          "reason": "Printed books in quiet libraries protect our eyes from blue-light strain, allow our brain to exercise, and let me find reference materials easily when I have questions."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-4",
+        "khen3Text": "an inspiring learning environment where seeing other students study hard motivates me and helps me feel fully confident before the exam.",
+        "option": "At the school library"
+      },
+      "extraVocab": [
+        "reference materials",
+        "past exam papers",
+        "household chores"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CUSTOM",
+          "option": "At a quiet coffee shop",
+          "reason": "buying drinks at a coffee shop every day costs too much money for a student, and customers talking or background music can still break my focus."
+        },
+        {
+          "cheCode": "CUSTOM",
+          "option": "At home",
+          "reason": "revising at home makes it easy to get distracted by family noise, household chores, or the habit of lying down and surfing social media instead of studying."
+        }
+      ],
+      "reusedVocab": [
+        "air-conditioned ... quiet study areas gives students the best conditions",
+        "gives me the opportunity to increase knowledge",
+        "printed books in quiet libraries protect our eyes from blue-light strain",
+        "allow our brain to exercise",
+        "an inspiring learning environment ... feel fully confident",
+        "costs too much money"
+      ],
+      "situation": "I have an important upcoming exam at school and want to choose the best place to study and revise. I am considering three options: at the school library, at a quiet coffee shop, and at home."
+    }
   },
   {
     "STT": "4",
@@ -77,7 +208,76 @@
     "title": "Part 3 - Topic 1: Benefits of Charity Work and Volunteering",
     "content": "Topic: Benefits of doing charity work and volunteering\nSuggestions:\n- Helping disadvantaged people in the community\n- Developing empathy, teamwork, and social skills\n- Bringing a sense of purpose and personal fulfillment\n- [Your own ideas]\n\nFollow-up questions:\n1. Why should young people and students take part in charity activities?\n2. What kinds of charity work are most common in Vietnam?\n3. How can organizations make sure charitable donations are used transparently?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:37:04+07:00"
+    "addedAt": "2026-11-22T19:37:04+07:00",
+    "hint": {
+      "coreTopic": "benefits of doing charity work and volunteering",
+      "extraVocab": [
+        "disadvantaged people",
+        "empathy",
+        "charity money"
+      ],
+      "followUps": [
+        {
+          "answer": "I think young people and students should take part in charity activities because it is a gateway to self-discovery and learning essential life skills.",
+          "example": "For example, university students joining a summer volunteer trip to rural areas learn how to work in teams and solve daily problems independently.",
+          "formula": "how/should",
+          "q": "Why should young people and students take part in charity activities?",
+          "reason": "Volunteering helps students broaden their mind beyond textbooks, meet like-minded people, and appreciate what they already have."
+        },
+        {
+          "answer": "There are some common kinds of charity work in Vietnam, such as donating blood, giving free meals to hospital patients, and raising money for flood victims.",
+          "example": "For instance, many volunteer groups cook hundreds of free lunch boxes outside big hospitals in Ho Chi Minh City and Hanoi every week.",
+          "formula": "what",
+          "q": "What kinds of charity work are most common in Vietnam?",
+          "reason": "These activities directly solve urgent problems and support people facing illness or natural disasters."
+        },
+        {
+          "answer": "I think organizations must share clear public reports, while the government should introduce stricter rules and heavy fines for dishonest groups.",
+          "example": "For example, a charity group can post bank receipts and photos of delivered supplies online every month so every donor can check them.",
+          "formula": "how/should",
+          "q": "How can organizations make sure charitable donations are used transparently?",
+          "reason": "Clear records and strong rules help prevent cheating, protect charity money, and keep public trust in charity work."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Helping disadvantaged people in the community",
+          "expand": "because sharing food, clothes, or free lessons makes a great contribution to improving their living standard.",
+          "impact": "Therefore, it is good for building a kind and supportive society.",
+          "sentence": "Doing charity work allows people to help disadvantaged people in the community.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Developing empathy, teamwork, and social skills",
+          "expand": "For example, working in a volunteer group to clean a park or teach poor children teaches you how to adjust and adapt to the social environment.",
+          "impact": "Clearly, it is beneficial to your personal growth and social network.",
+          "sentence": "Volunteering helps young people develop empathy, teamwork, and social skills.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Bringing a sense of purpose and personal fulfillment",
+          "expand": "This is because helping others makes you feel peaceful, elevates your mood, and gives you a deeper understanding of real life.",
+          "impact": "So, it has positive effects on your mental health and life perspective.",
+          "sentence": "Charity work helps volunteers gain a sense of purpose and personal happiness.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "make a great contribution to",
+        "improve their living standard",
+        "adjust and adapt to the social environment",
+        "social network",
+        "elevates your mood",
+        "mental health",
+        "gateway to self-discovery",
+        "broaden their mind",
+        "like-minded people",
+        "stricter rules and heavy fines"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -97,7 +297,50 @@
     "title": "Part 2 - Situation 2: Choosing a University Based on Key Criteria",
     "content": "Situation: A high school graduate is deciding which university to apply to and is weighing three main factors:\n- The university's ranking (xếp hạng của trường đại học)\n- Distance from home (khoảng cách từ nhà đến trường)\n- Tuition fee (mức học phí)\n\nWhich factor do you think is the most important and why?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:42:01+07:00"
+    "addedAt": "2026-11-22T19:42:01+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-3",
+        "khen1Text": "because choosing a university close to home saves daily travel time, and living with parents makes living costs easy for the family to afford.",
+        "khen2ARE": {
+          "answer": "Choosing a university at a convenient distance from home is advantageous to a high school graduate's mental health and overall well-being.",
+          "example": "For example, a student who takes only twenty minutes by bus to campus can save energy for evening study and still have dinner with their parents.",
+          "reason": "Because they do not spend hours on congested roads or feel lonely living far away, they can reduce stress, sleep well, and get daily support from their family."
+        },
+        "khen2Pillar": "Mental health",
+        "khen3Code": "KHEN-3",
+        "khen3Text": "a safe and practical choice that lets the student stay in a supportive environment, build confidence, and get ready for a stable career.",
+        "option": "Distance from home"
+      },
+      "extraVocab": [
+        "high school graduate",
+        "top-ranked universities",
+        "daily support"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-4",
+          "option": "Tuition fee",
+          "reason": "choosing a university just because the tuition fee is cheap is not wise, because the student might have to study a major they dislike, and classes with low tuition are often too crowded for students to ask teachers questions."
+        },
+        {
+          "cheCode": "CHÊ-3",
+          "option": "The university's ranking",
+          "reason": "focusing only on a high ranking often leads to top-ranked universities with high tuition fees or expensive apartment rent far from home, which can force parents to borrow money and create constant financial worry for the whole family."
+        }
+      ],
+      "reusedVocab": [
+        "close to home, which saves daily travel time",
+        "living costs are easy for the family to afford",
+        "advantageous to ... mental health and overall well-being",
+        "congested roads",
+        "safe and practical ... build confidence, and get ready for a stable career",
+        "choosing a university just because it is cheap is not wise ... study a major they dislike ... classes with low tuition are often too crowded for students to ask teachers questions",
+        "high tuition fees or ... rent will force parents to borrow money, creating constant financial worry for the whole family"
+      ],
+      "situation": "A high school graduate is deciding which university to apply to and is weighing three main factors: the university's ranking, distance from home, and tuition fee."
+    }
   },
   {
     "STT": "6",
@@ -117,7 +360,74 @@
     "title": "Part 3 - Topic 2: The Importance of Music Education",
     "content": "Topic: The importance of music education for students\nSuggestions:\n- Fostering creativity and emotional expression\n- Reducing academic stress and improving mental well-being\n- Enhancing memory, focus, and discipline\n- [Your own ideas]\n\nFollow-up questions:\n1. Should music be a compulsory subject in primary and secondary schools?\n2. What challenges do schools face when offering quality music education?\n3. How can parents encourage their children to appreciate music?",
     "isNew": true,
-    "addedAt": "2026-11-22T19:42:02+07:00"
+    "addedAt": "2026-11-22T19:42:02+07:00",
+    "hint": {
+      "coreTopic": "the importance of music education for students",
+      "extraVocab": [
+        "music education",
+        "musical instruments",
+        "school choir"
+      ],
+      "followUps": [
+        {
+          "answer": "Yes, I think schools should keep music as a compulsory subject in primary and secondary schools to support students' healthy development.",
+          "example": "For instance, one 45-minute music lesson per week helps secondary students stay relaxed and learn teamwork when singing in a school choir.",
+          "formula": "how/should",
+          "q": "Should music be a compulsory subject in primary and secondary schools?",
+          "reason": "Music gives students needed downtime from heavy academic pressure and allows every child to explore their talents regardless of family income."
+        },
+        {
+          "answer": "There are some challenges schools face, such as a lack of musical instruments, limited budgets, and not enough trained music teachers.",
+          "example": "For example, many rural schools only have one old keyboard for a class of 40 students to share.",
+          "formula": "what",
+          "q": "What challenges do schools face when offering quality music education?",
+          "reason": "Many schools focus mainly on math and languages, so they do not invest enough money into upgrading music rooms and modern teaching tools."
+        },
+        {
+          "answer": "I think parents should guide and support their children gently by letting them listen to good music and choose an instrument they truly like.",
+          "example": "For example, parents can play relaxing music at home during dinner or let their child try a 30-minute weekend guitar class.",
+          "formula": "how/should",
+          "q": "How can parents encourage their children to appreciate music?",
+          "reason": "Forcing children too hard creates stress and family conflicts, while patient support helps children enjoy music naturally."
+        }
+      ],
+      "macroTopic": "education",
+      "mindmapPoints": [
+        {
+          "cue": "Fostering creativity and emotional expression",
+          "expand": "because playing instruments or singing allows their brain to exercise creatively and helps them share feelings naturally.",
+          "impact": "Therefore, it is good for students' creative thinking.",
+          "sentence": "Learning music helps students develop creativity and express their emotions.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Reducing academic stress and improving mental well-being",
+          "expand": "For example, having a music class after hard math or science lessons lets children unwind, relax, and elevate their mood.",
+          "impact": "Clearly, it is beneficial to students' mental health.",
+          "sentence": "Music education helps students relieve study stress and feel happier.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Enhancing memory, focus, and discipline",
+          "expand": "This is because learning to play a song requires regular daily practice, which trains patience and boosts school efficiency.",
+          "impact": "So, it has positive effects on their overall study results.",
+          "sentence": "Practicing music helps learners improve their memory, focus, and self-discipline.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "allows their brain to exercise creatively",
+        "unwind and relax",
+        "elevate their mood",
+        "mental health",
+        "self-discipline",
+        "boosts school efficiency",
+        "downtime",
+        "modern teaching tools",
+        "family conflicts"
+      ]
+    }
   }
 ]
-

@@ -15,7 +15,54 @@
     "part": "part1",
     "group": "Đề thi thực tế HCMUE 25/10/2026",
     "title": "Topic 1: Reading Habits",
-    "content": "1. Do you like reading books? Why or why not?\n2. Where do you usually prefer to read books?\n3. What genres of books are most popular among young people in Vietnam today, and why?"
+    "content": "1. Do you like reading books? Why or why not?\n2. Where do you usually prefer to read books?\n3. What genres of books are most popular among young people in Vietnam today, and why?",
+    "hint": {
+      "extraVocab": [
+        "self-help books",
+        "romance novels"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I am a big fan of reading books in my spare time.",
+          "example": "I usually read short stories or self-help books for about 30 minutes before going to sleep.",
+          "pillar": "Knowledge",
+          "q": "Do you like reading books? Why or why not?",
+          "reason": "Reading helps me relax my mind, reduce stress, and recharge my batteries. Moreover, I can gain general knowledge, learn richer vocabulary, and broaden my horizons."
+        },
+        {
+          "answer": "Certainly, I prefer reading books in my bedroom or in a quiet library.",
+          "example": "On Saturday mornings, I often sit near the window in my university library to read my favorite novels.",
+          "pillar": "Peace & Privacy",
+          "q": "Where do you usually prefer to read books?",
+          "reason": "Being in crowded, noisy public places easily makes people feel stressed. A quiet environment gives me personal privacy without distractions so I can dive into the world of a book."
+        },
+        {
+          "answer": "Nowadays, comic books, novels, and self-help books are very popular among young people in Vietnam.",
+          "example": "Many of my classmates love reading Japanese comic books or Vietnamese romance novels on weekends.",
+          "pillar": "Knowledge",
+          "q": "What genres of books are most popular among young people in Vietnam today, and why?",
+          "reason": "They are easy and interesting to read, help young people kick back after hard study hours, and give them deeper understanding of life and personal growth."
+        }
+      ],
+      "reusedSource": "Bộ đề 4 (Reading Books) + Trục Peace & Privacy, Knowledge + 24 cụm từ đa năng",
+      "reusedVocab": [
+        "a big fan of",
+        "in my spare time",
+        "relax my mind",
+        "reduce stress",
+        "recharge my batteries",
+        "gain general knowledge",
+        "richer vocab",
+        "broaden my horizons",
+        "quiet environment",
+        "personal privacy",
+        "dive into the world of a book",
+        "easy and interesting to read",
+        "personal growth"
+      ],
+      "topic": "Reading Habits"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +80,45 @@
     "part": "part1",
     "group": "Đề thi thực tế HCMUE 25/10/2026",
     "title": "Topic 2: Mobile Phones & Students",
-    "content": "1. Do you use a mobile phone every day?\n2. How often do you use your phone, and for what purposes?\n3. Do you think school students should be allowed to use mobile phones at school? Why or why not?"
+    "content": "1. Do you use a mobile phone every day?\n2. How often do you use your phone, and for what purposes?\n3. Do you think school students should be allowed to use mobile phones at school? Why or why not?",
+    "hint": {
+      "extraVocab": [
+        "class timetable",
+        "online dictionaries"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, of course, I use my mobile phone every single day because it plays an essential role in my daily routine.",
+          "example": "Every morning, I wake up with my phone alarm and check my class timetable before going to school.",
+          "pillar": "Knowledge",
+          "q": "Do you use a mobile phone every day?",
+          "reason": "It is fast and convenient for busy people in modern-day society to check schedules, look up English words, and contact family."
+        },
+        {
+          "answer": "I use my phone several times a day, for about three hours in total, mainly for studying and entertainment.",
+          "example": "During lunch breaks at university, I use my phone to watch short educational videos or message my parents.",
+          "pillar": "Social",
+          "q": "How often do you use your phone, and for what purposes?",
+          "reason": "It helps me make the most of new technology to study online, and also lets me relax by listening to music or chatting with friends."
+        },
+        {
+          "answer": "In my opinion, school students should only be allowed to use mobile phones during break time or when teachers ask them to for learning.",
+          "example": "In my English class, our teacher sometimes lets us use our phones for five minutes to check online dictionaries.",
+          "pillar": "Knowledge",
+          "q": "Do you think school students should be allowed to use mobile phones at school? Why or why not?",
+          "reason": "If students lack self-control and use phones freely in class, they will get distracted from lessons. However, using phones properly with teacher guidance helps them search for study materials quickly."
+        }
+      ],
+      "reusedSource": "Trục Knowledge, Social + 24 cụm từ đa năng",
+      "reusedVocab": [
+        "plays an essential role in",
+        "fast, convenient for busy people in modern-day society",
+        "make the most of new technology",
+        "lack proper guidance and self-control"
+      ],
+      "topic": "Mobile Phones & Students"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +136,46 @@
     "part": "part2",
     "group": "Đề thi thực tế HCMUE 25/10/2026",
     "title": "Part 2 - Situation 1: Recommending a Job to Improve English Skills",
-    "content": "Situation: A close friend of yours wants to find a part-time job that can help him significantly improve his English communication skills. There are three options for you to recommend to him: working at an English language center, working for an international travel agency, or working as a waiter at a Western restaurant. Which option would you recommend, and why?"
+    "content": "Situation: A close friend of yours wants to find a part-time job that can help him significantly improve his English communication skills. There are three options for you to recommend to him: working at an English language center, working for an international travel agency, or working as a waiter at a Western restaurant. Which option would you recommend, and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-3",
+        "khen1Text": "because language centers are usually close to university areas, which saves his daily travel time, and the part-time shifts fit comfortably within his study routine.",
+        "khen2ARE": {
+          "answer": "Secondly, this job brings my friend a wide range of benefits because it provides real knowledge and daily speaking experience in an English environment.",
+          "example": "For example, he can work three evenings a week helping native teachers prepare classroom activities and greeting students in English.",
+          "reason": "Working as a teaching assistant or receptionist allows him to chat regularly with foreign teachers, practice natural pronunciation, and build communication confidence without feeling stressed."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-3",
+        "khen3Text": "a safe and practical environment for him to gain real working experience, build confidence in English, and get ready for a stable career.",
+        "option": "working at an English language center"
+      },
+      "extraVocab": [
+        "teaching assistant",
+        "part-time shifts",
+        "food-ordering phrases"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-8",
+          "option": "working as a waiter at a Western restaurant",
+          "reason": "working late evening shifts standing on his feet at a busy restaurant will leave him with no energy left to study or sleep, and he will mostly repeat simple food-ordering phrases."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "working for an international travel agency",
+          "reason": "an international travel agency usually requires strong English fluency and job experience right away, which is too demanding for a part-time student, so this option receives little agreement in similar situations."
+        }
+      ],
+      "reusedVocab": [
+        "provide knowledge and experience in",
+        "fit comfortably within his daily routine",
+        "a safe and practical environment to gain real working experience, build confidence, and get ready for a stable career"
+      ],
+      "situation": "A close friend of mine wants to find a part-time job that can help him significantly improve his English communication skills, and there are three options for me to recommend to him: working at an English language center, working for an international travel agency, or working as a waiter at a Western restaurant."
+    }
   },
   {
     "STT": "4",
@@ -69,6 +193,75 @@
     "part": "part3",
     "group": "Đề thi thực tế HCMUE 25/10/2026",
     "title": "Part 3 - Topic 1: Benefits of Studying Abroad",
-    "content": "Topic: Benefits of studying abroad for higher education\nSuggestions:\n- Making international friends and networking\n- Gaining better career prospects and global opportunities\n- Experiencing new cultures and developing personal independence\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some students struggle with culture shock when studying abroad?\n2. Do you think studying abroad is always better than studying in one's home country? Why or why not?\n3. What should overseas graduates do when they return to their home country to contribute effectively?"
+    "content": "Topic: Benefits of studying abroad for higher education\nSuggestions:\n- Making international friends and networking\n- Gaining better career prospects and global opportunities\n- Experiencing new cultures and developing personal independence\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do some students struggle with culture shock when studying abroad?\n2. Do you think studying abroad is always better than studying in one's home country? Why or why not?\n3. What should overseas graduates do when they return to their home country to contribute effectively?",
+    "hint": {
+      "coreTopic": "benefits of studying abroad for higher education",
+      "extraVocab": [
+        "international friends",
+        "job prospects",
+        "language barriers",
+        "tuition fees",
+        "home country"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some reasons why students face culture shock abroad, such as language barriers, different food, and missing their family.",
+          "example": "For instance, a Vietnamese freshman in Europe might feel lonely at first because shops close early and they cannot easily find familiar Vietnamese dishes.",
+          "formula": "Why / What ...? -> There are some reasons, such as ...",
+          "q": "1. Why do some students struggle with culture shock when studying abroad?",
+          "reason": "Living far from home can cause severe culture shock and loneliness because students have to follow unfamiliar social rules and communicate in a second language every day."
+        },
+        {
+          "answer": "No, I don't think studying abroad is always better than studying in one's home country.",
+          "example": "For example, a student studying IT in Ho Chi Minh City can get a high-paying job right after graduation without spending huge savings on foreign tuition fees.",
+          "formula": "Do you think ...? -> No, I don't think ...",
+          "q": "2. Do you think studying abroad is always better than studying in one's home country? Why or why not?",
+          "reason": "Studying overseas is very expensive and does not fit every family's budget, while many top local universities today are equipped with state-of-the-art facilities and great teachers."
+        },
+        {
+          "answer": "I think overseas graduates should share their modern knowledge, work hard, and help improve local companies or schools.",
+          "example": "For example, a doctor or engineer trained abroad can return to train young local staff and introduce better working methods at a local hospital or tech firm.",
+          "formula": "What / Should ...? -> I think individuals should ... (Support)",
+          "q": "3. What should overseas graduates do when they return to their home country to contribute effectively?",
+          "reason": "They can make a great contribution to national growth by bringing new technology and professional working habits back to their home country."
+        }
+      ],
+      "macroTopic": "education and personal development",
+      "mindmapPoints": [
+        {
+          "cue": "Making international friends and networking",
+          "expand": "This is because living on an international campus lets students meet like-minded people from many countries, adjust and adapt to the social environment, and build lifelong friendships.",
+          "impact": "Therefore, it enriches their social life and global connections.",
+          "sentence": "Studying abroad helps students make international friends and build a global network.",
+          "wordForm": "V / V-ing"
+        },
+        {
+          "cue": "Gaining better career prospects and global opportunities",
+          "expand": "For example, a student who earns a degree abroad and speaks fluent English can easily get hired by international companies in Vietnam and improve their living standard.",
+          "impact": "Clearly, it is beneficial to their future career.",
+          "sentence": "Studying overseas helps graduates gain better job prospects and higher salaries.",
+          "wordForm": "V / V-ing"
+        },
+        {
+          "cue": "Experiencing new cultures and developing personal independence",
+          "expand": "This is because living in a new environment teaches young people to manage their own money and solve daily problems independently while broadening their horizons about the world.",
+          "impact": "So, it has positive effects on their maturity and knowledge.",
+          "sentence": "Living abroad helps students experience new cultures and become more independent.",
+          "wordForm": "V / V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "like-minded people",
+        "adjust and adapt to the social environment",
+        "improve people's living standard",
+        "Living or working in a new environment teaches young people to manage their own money and solve daily problems independently",
+        "broaden my horizons",
+        "living far from home can cause severe culture shock",
+        "be equipped with state-of-the-art facilities",
+        "make a contribution to"
+      ]
+    }
   }
 ]

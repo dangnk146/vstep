@@ -15,7 +15,50 @@
     "part": "part1",
     "group": "Đề thi thực tế DThU 25/10/2026 (Sáng)",
     "title": "Topic 1: Milk Tea / Bubble Tea",
-    "content": "1. Do you like drinking milk tea or bubble tea? Why or why not?\n2. Why do you think bubble tea has become so popular among young people today?\n3. What are some famous bubble tea brands in your country?"
+    "content": "1. Do you like drinking milk tea or bubble tea? Why or why not?\n2. Why do you think bubble tea has become so popular among young people today?\n3. What are some famous bubble tea brands in your country?",
+    "hint": {
+      "extraVocab": [
+        "less sugar",
+        "bubble tea brands"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I am a big fan of drinking milk tea, although I know drinking too much is not good for my health.",
+          "example": "On weekends, I often buy a cup of milk tea with less sugar when I hang out with my close friends.",
+          "pillar": "Mental health",
+          "q": "Do you like drinking milk tea or bubble tea? Why or why not?",
+          "reason": "It is advantageous to my mental health because the sweet taste helps me relax, elevate my mood, and recharge my batteries after a day of hard work."
+        },
+        {
+          "answer": "I think bubble tea is popular among young people because it is delicious, affordable, and great for social meetings.",
+          "example": "After school, many students sit together at a milk tea shop near campus to chat and do homework.",
+          "pillar": "Social",
+          "q": "Why do you think bubble tea has become so popular among young people today?",
+          "reason": "Young people love cozy milk tea shops where they can spend quality time with friends, talk openly, and strengthen bonds within their friend group."
+        },
+        {
+          "answer": "In Vietnam, there are many famous bubble tea brands such as Phuc Long, Gong Cha, and Mixue.",
+          "example": "My friends and I usually go to Phuc Long on Sunday afternoons because we love their oolong milk tea.",
+          "pillar": "Social",
+          "q": "What are some famous bubble tea brands in your country?",
+          "reason": "They are popular because their drinks have diverse, flavorful tastes, clean spaces, and prices that fit comfortably within a student's budget."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Leisure) + Trục Mental health, Social + 24 cụm từ đa năng",
+      "reusedVocab": [
+        "a big fan of",
+        "advantageous to my mental health",
+        "elevate my mood",
+        "recharge my batteries",
+        "after a day of hard work",
+        "spend quality time with friends",
+        "strengthen bonds",
+        "diverse, flavorful",
+        "fit comfortably within my budget"
+      ],
+      "topic": "Milk Tea / Bubble Tea"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +76,49 @@
     "part": "part1",
     "group": "Đề thi thực tế DThU 25/10/2026 (Sáng)",
     "title": "Topic 2: Eating Out",
-    "content": "1. Do you prefer eating out at restaurants or eating home-cooked meals?\n2. What kinds of food do you usually order when you eat out?\n3. How often do you eat out with your family or friends?"
+    "content": "1. Do you prefer eating out at restaurants or eating home-cooked meals?\n2. What kinds of food do you usually order when you eat out?\n3. How often do you eat out with your family or friends?",
+    "hint": {
+      "extraVocab": [
+        "home-cooked meals",
+        "hotpot"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Of course, I prefer eating home-cooked meals, although eating out is fast and convenient sometimes.",
+          "example": "Every evening, my mom and I cook dinner together at home with fresh vegetables and fish.",
+          "pillar": "Physical health",
+          "q": "Do you prefer eating out at restaurants or eating home-cooked meals?",
+          "reason": "Home-cooked meals play an essential role in maintaining our physical health because fresh food is clean, hygienic, and cheaper. We can also share quality time with family at dinner."
+        },
+        {
+          "answer": "When I eat out, I usually order traditional Vietnamese dishes like pho, broken rice, or hotpot.",
+          "example": "Last Saturday night, I went to a local restaurant near my house and ordered beef hotpot with my friends.",
+          "pillar": "Mental health",
+          "q": "What kinds of food do you usually order when you eat out?",
+          "reason": "Vietnamese cuisine is diverse, flavorful, and delicious, which makes me feel happy and helps me elevate my mood after a busy week."
+        },
+        {
+          "answer": "I usually eat out with my family or friends once or twice a month on special occasions or weekends.",
+          "example": "On my mom's birthday last month, our whole family went out for a cozy seafood dinner downtown.",
+          "pillar": "Social",
+          "q": "How often do you eat out with your family or friends?",
+          "reason": "Eating out together is good for our social life and helps strengthen bonds within my family and friend group while giving everyone a break from cooking."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Family) + Bộ đề 2 (Cuisine) + Trục Physical health, Mental health, Social + 24 cụm từ đa năng",
+      "reusedVocab": [
+        "fast, convenient",
+        "play an essential role in",
+        "physical health",
+        "hygienic",
+        "diverse, flavorful",
+        "elevate my mood",
+        "strengthen bonds within a family",
+        "good for my social life"
+      ],
+      "topic": "Eating Out"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +136,48 @@
     "part": "part2",
     "group": "Đề thi thực tế DThU 25/10/2026 (Sáng)",
     "title": "Part 2 - Situation 1: Free Time Activities",
-    "content": "Situation: You have some free time this weekend. There are three options for you to spend your leisure time: meeting up with friends, going shopping, or relaxing alone at a coffee shop. Which option do you choose and why?"
+    "content": "Situation: You have some free time this weekend. There are three options for you to spend your leisure time: meeting up with friends, going shopping, or relaxing alone at a coffee shop. Which option do you choose and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to meet up at a local cafe or food stall, so my friends and I can sit down, share good food, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Secondly, this option brings me a wide range of benefits because it is good for my social network and advantageous to my mental health.",
+          "example": "For example, my friends and I can gather at a small cafe near my house on Sunday morning to drink iced coffee and share funny stories about our week.",
+          "reason": "Meeting close friends helps relieve stress and reduce fatigue after a busy week, and it builds a strong sense of belonging through face-to-face interaction."
+        },
+        "khen2Pillar": "Social",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work and study pressure, refresh our minds, and take meaningful photos together.",
+        "option": "meeting up with friends"
+      },
+      "extraVocab": [
+        "food stall",
+        "feel lonely",
+        "hang out"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-2",
+          "option": "going shopping",
+          "reason": "going shopping at crowded malls often tempts me to waste too much money on expensive items I do not really need, which will burden my pocket."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "relaxing alone at a coffee shop",
+          "reason": "sitting alone at a coffee shop can easily feel lonely and boring after spending all week indoors, and this option receives little agreement and few choices in similar situations."
+        }
+      ],
+      "reusedVocab": [
+        "good for my social network",
+        "advantageous to my mental health",
+        "relieve stress and reduce fatigue",
+        "build a strong sense of belonging and help us truly understand each other through face-to-face interaction",
+        "forget about work pressure, refresh our minds, and take meaningful photos together"
+      ],
+      "situation": "I have some free time this weekend, and there are three options for me to spend my leisure time: meeting up with friends, going shopping, or relaxing alone at a coffee shop."
+    }
   },
   {
     "STT": "4",
@@ -69,6 +195,75 @@
     "part": "part3",
     "group": "Đề thi thực tế DThU 25/10/2026 (Sáng)",
     "title": "Part 3 - Topic 1: Benefits of Reading Books",
-    "content": "Topic: Benefits of reading books\nSuggestions:\n- Expanding general knowledge\n- Improving vocabulary and language skills\n- Relieving stress and promoting relaxation\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do many people prefer reading e-books over traditional printed books today?\n2. What kind of books are most popular among young people in your country?\n3. How can parents and schools encourage children to develop a habit of reading from an early age?"
+    "content": "Topic: Benefits of reading books\nSuggestions:\n- Expanding general knowledge\n- Improving vocabulary and language skills\n- Relieving stress and promoting relaxation\n- [Your own ideas]\n\nFollow-up questions:\n1. Why do many people prefer reading e-books over traditional printed books today?\n2. What kind of books are most popular among young people in your country?\n3. How can parents and schools encourage children to develop a habit of reading from an early age?",
+    "hint": {
+      "coreTopic": "benefits of reading books",
+      "extraVocab": [
+        "language skills",
+        "hardcover book",
+        "self-help books",
+        "reading corner",
+        "bedtime story"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some reasons why many people prefer e-books today, such as convenience and lower prices.",
+          "example": "For example, an office worker can read an e-book on their phone during a 30-minute bus ride without carrying a heavy hardcover book.",
+          "formula": "Why / What ...? -> There are some reasons, such as ...",
+          "q": "1. Why do many people prefer reading e-books over traditional printed books today?",
+          "reason": "Digital e-books are easy to carry on trips and fast and convenient for busy people in modern-day society, because you can store hundreds of books on one light tablet."
+        },
+        {
+          "answer": "There are some popular kinds of books among young people in my country, such as self-help books, comic books, and detective novels.",
+          "example": "For example, many university students enjoy reading career advice books or popular Japanese manga series in their free time.",
+          "formula": "What ...? -> There are some [Ns], such as ...",
+          "q": "2. What kind of books are most popular among young people in your country?",
+          "reason": "Young readers like self-development books to learn new skills for work, while fiction stories help them unwind and forget daily study stress."
+        },
+        {
+          "answer": "I think parents and schools should read together with children every day and create friendly reading corners.",
+          "example": "For instance, parents can read a short story with their child for 15 minutes before bedtime, and schools can give small prizes for reading five books a month.",
+          "formula": "How ...? -> I think parents and schools should ... (Support)",
+          "q": "3. How can parents and schools encourage children to develop a habit of reading from an early age?",
+          "reason": "Parents and schools should work closely together to guide young people by choosing fun picture books and limiting smartphone screen time."
+        }
+      ],
+      "macroTopic": "education and personal development",
+      "mindmapPoints": [
+        {
+          "cue": "Expanding general knowledge",
+          "expand": "This is because books give us the opportunity to broaden our horizons and gain a deeper understanding of people, culture, and history in different countries.",
+          "impact": "Therefore, it is a good way to enrich our general knowledge.",
+          "sentence": "Reading books helps people increase their knowledge and understand the world better.",
+          "wordForm": "V / V-ing"
+        },
+        {
+          "cue": "Improving vocabulary and language skills",
+          "expand": "For example, when students dive into the world of a book in English every day, they naturally learn new words, grammar patterns, and better writing styles.",
+          "impact": "Clearly, it is beneficial to both school study and communication.",
+          "sentence": "Reading regularly helps learners improve their vocabulary and language skills.",
+          "wordForm": "V / V-ing"
+        },
+        {
+          "cue": "Relieving stress and promoting relaxation",
+          "expand": "This is because reading in a quiet room allows our brain to exercise gently while letting us forget our worries and recharge our batteries.",
+          "impact": "So, it has positive effects on our mental health.",
+          "sentence": "Reading books helps people relieve stress and relax after a busy day.",
+          "wordForm": "V / V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "increase knowledge and broaden my horizons",
+        "gain/obtain a deeper understanding of people, culture, and tradition in different countries",
+        "dive into the world of a book",
+        "allow their brain to exercise",
+        "recharge my batteries",
+        "Digital e-books are easy to carry on trips",
+        "fast, convenient for busy people in modern-day society",
+        "parents and schools should work closely together to guide"
+      ]
+    }
   }
 ]

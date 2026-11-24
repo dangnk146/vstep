@@ -15,7 +15,58 @@
     "part": "part1",
     "group": "Đề thi thực tế LHU 25/10/2026",
     "title": "Topic 1: Hometown & Living Environment",
-    "content": "1. Where is your hometown located, and what is it famous for?\n2. What do you like most about living in your hometown?\n3. Would you prefer to live in your hometown in the future or move to a bigger metropolitan city?"
+    "content": "1. Where is your hometown located, and what is it famous for?\n2. What do you like most about living in your hometown?\n3. Would you prefer to live in your hometown in the future or move to a bigger metropolitan city?",
+    "hint": {
+      "extraVocab": [
+        "riverside",
+        "neighbors",
+        "heavy traffic",
+        "hometown"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I was born and grew up in Bien Hoa, which is located in the South of Vietnam.",
+          "example": "Whenever my friends visit my hometown, I always take them to try delicious local dishes and walk along the river.",
+          "pillar": "Knowledge & Hometown",
+          "q": "1. Where is your hometown located, and what is it famous for?",
+          "reason": "It is a lively city next to the Dong Nai river, and it is famous for its picturesque riverside views and diverse, flavorful local food."
+        },
+        {
+          "answer": "What I like most about living in my hometown is the friendly people and the peaceful atmosphere.",
+          "example": "For example, my neighbors often share fresh fruit with us, and I can have dinner with my family every evening.",
+          "pillar": "Social & Mental health",
+          "q": "2. What do you like most about living in your hometown?",
+          "reason": "People here are very kind, helpful, and hospitable, which makes me feel comfortable and happy. Living close to my family also helps strengthen family bonds and relieve stress."
+        },
+        {
+          "answer": "In the future, I would prefer to stay in my hometown rather than move to a huge, bustling city.",
+          "example": "For instance, I can enjoy a quiet, cozy environment at home without spending hours in heavy traffic every day.",
+          "pillar": "Peace & Privacy",
+          "q": "3. Would you prefer to live in your hometown in the future or move to a bigger metropolitan city?",
+          "reason": "Bigger cities often bring higher living expenses, environmental pollution, and make people feel stressed and exhausted. Staying in my hometown gives me more privacy and comfort while still fitting comfortably within my budget."
+        }
+      ],
+      "reusedSource": "Bộ đề 2: Hometown & Weather + Trục Peace & Privacy & Từ vựng #21",
+      "reusedVocab": [
+        "I was born and grew up in",
+        "located in the South of Vietnam",
+        "picturesque",
+        "diverse, flavorful",
+        "delicious dishes",
+        "kind, helpful, and hospitable",
+        "strengthen family bonds",
+        "relieve stress",
+        "huge, bustling city",
+        "higher living expenses",
+        "environmental pollution",
+        "stressed and exhausted",
+        "privacy and comfort",
+        "quiet, cozy environment",
+        "fit comfortably within my budget"
+      ],
+      "topic": "Hometown & Living Environment"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +84,56 @@
     "part": "part1",
     "group": "Đề thi thực tế LHU 25/10/2026",
     "title": "Topic 2: Friends & Social Relationships",
-    "content": "1. Do you have a large circle of friends or just a few close friends?\n2. What qualities do you value most in a good friend?\n3. How do you usually keep in touch with your friends when you are busy?"
+    "content": "1. Do you have a large circle of friends or just a few close friends?\n2. What qualities do you value most in a good friend?\n3. How do you usually keep in touch with your friends when you are busy?",
+    "hint": {
+      "extraVocab": [
+        "close friends",
+        "honesty",
+        "video calls",
+        "keep in touch"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I have just a few close friends rather than a large circle of friends.",
+          "example": "I have three close friends from high school who have a lot of things in common with me, and we often go out for meals at the weekend.",
+          "pillar": "Social",
+          "q": "1. Do you have a large circle of friends or just a few close friends?",
+          "reason": "Spending quality time with a few trusted friends helps strengthen bonds and allows us to openly and respectfully share our thoughts and emotions. It also helps avoid unnecessary trouble."
+        },
+        {
+          "answer": "The qualities I value most in a good friend are honesty, kindness, and being supportive.",
+          "example": "For example, whenever I feel down before an exam, my best friend listens patiently and encourages me to keep trying.",
+          "pillar": "Mental health & Social",
+          "q": "2. What qualities do you value most in a good friend?",
+          "reason": "True friends who are understanding and helpful are always beside me when I face difficulties. They lift up my mood and make my social life much happier."
+        },
+        {
+          "answer": "When we are busy, we usually keep in touch through text messages and short video calls.",
+          "example": "On weekdays we chat in our online group, and on Sunday mornings we meet at a coffee shop for face-to-face interaction.",
+          "pillar": "Social & Convenience",
+          "q": "3. How do you usually keep in touch with your friends when you are busy?",
+          "reason": "Using messaging apps is fast and convenient for busy people in modern-day society. However, we still try to meet in person once a month to build a strong sense of belonging."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 & Trục 2 (Social network) + Từ vựng #18, #23, #24",
+      "reusedVocab": [
+        "spend quality time",
+        "strengthen bonds",
+        "openly and respectfully share",
+        "thoughts and emotions",
+        "avoid unnecessary trouble",
+        "have a lot of things in common",
+        "go out for meals",
+        "understanding and helpful",
+        "always beside me when I face difficulties",
+        "lift up my mood",
+        "fast and convenient for busy people in modern-day society",
+        "build a strong sense of belonging",
+        "face-to-face interaction"
+      ],
+      "topic": "Friends & Social Relationships"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +151,47 @@
     "part": "part2",
     "group": "Đề thi thực tế LHU 25/10/2026",
     "title": "Part 2 - Situation 1: Choosing a Travel Tour Style for a Visiting Friend",
-    "content": "Situation: A friend of yours is planning to visit Hanoi for a four-day vacation and asks for your recommendation on how to tour the city. Three travel options are available: joining a guided group tour, booking a private customized tour, or taking a self-guided independent tour. Which option would you recommend, and why?"
+    "content": "Situation: A friend of yours is planning to visit Hanoi for a four-day vacation and asks for your recommendation on how to tour the city. Three travel options are available: joining a guided group tour, booking a private customized tour, or taking a self-guided independent tour. Which option would you recommend, and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because Hanoi is easy to get around using ride apps, so my friend can visit famous spots, try good local food, and rest comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Secondly, this travel style brings my friend a wide range of benefits because it gives them the freedom to increase knowledge and explore local culture at their own pace.",
+          "example": "For instance, my friend can spend a relaxed morning around Hoan Kiem Lake, try pho at a small family shop, and visit the Temple of Literature without following a strict group schedule.",
+          "reason": "Walking through local streets and talking with friendly sellers helps travelers gain a deeper understanding of Hanoi's people and traditions while fitting comfortably within their budget."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help my friend forget about work pressure, refresh their mind, and take meaningful photos at their favorite places.",
+        "option": "taking a self-guided independent tour"
+      },
+      "extraVocab": [
+        "self-guided",
+        "at their own pace",
+        "strict timetable"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CUSTOM",
+          "option": "booking a private customized tour",
+          "reason": "hiring a private tour guide and car for four days costs too much money and easily puts a heavy burden on a normal vacation budget."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "joining a guided group tour",
+          "reason": "a guided group tour follows a strict timetable with many strangers, so travelers often feel rushed and cannot relax freely, receiving little agreement in similar situations."
+        }
+      ],
+      "reusedVocab": [
+        "increase knowledge",
+        "gain a deeper understanding of people, culture, and tradition",
+        "fit comfortably within their budget",
+        "forget about work pressure, refresh their mind, and take meaningful photos together"
+      ],
+      "situation": "A friend of mine is planning to visit Hanoi for a four-day vacation and asks for my recommendation on how to tour the city, and three travel options are available: joining a guided group tour, booking a private customized tour, or taking a self-guided independent tour."
+    }
   },
   {
     "STT": "4",
@@ -69,6 +209,77 @@
     "part": "part3",
     "group": "Đề thi thực tế LHU 25/10/2026",
     "title": "Part 3 - Topic 1: The Influence of Personal Habits on Success",
-    "content": "Topic: The role of building good personal habits in achieving long-term success\nSuggestions:\n- Developing a daily habit of reading books for knowledge\n- Maintaining consistent physical exercise and healthy routines\n- Eliminating unproductive and negative bad habits\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is it often much harder to break a bad habit than to adopt a good one?\n2. How can parents and teachers help teenagers develop productive daily routines?\n3. Do you agree that modern digital devices have made people develop more negative lifestyle habits?"
+    "content": "Topic: The role of building good personal habits in achieving long-term success\nSuggestions:\n- Developing a daily habit of reading books for knowledge\n- Maintaining consistent physical exercise and healthy routines\n- Eliminating unproductive and negative bad habits\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is it often much harder to break a bad habit than to adopt a good one?\n2. How can parents and teachers help teenagers develop productive daily routines?\n3. Do you agree that modern digital devices have made people develop more negative lifestyle habits?",
+    "hint": {
+      "coreTopic": "building good personal habits for long-term success",
+      "extraVocab": [
+        "long-term success",
+        "self-discipline",
+        "daily routine",
+        "short videos"
+      ],
+      "followUps": [
+        {
+          "answer": "This is mainly because bad habits bring quick comfort, while good habits require strong self-discipline.",
+          "example": "For example, checking social media at night feels relaxing at first, even though it makes us wake up late the next morning.",
+          "formula": "Why ...? -> Because + Lack of self-control (Reason + Example)",
+          "q": "Why is it often much harder to break a bad habit than to adopt a good one?",
+          "reason": "Many people lack proper guidance and self-control, so they easily repeat comfortable routines like scrolling on their phones instead of working hard."
+        },
+        {
+          "answer": "I think parents and schools should work closely together to guide, listen, and support young people instead of leaving them alone.",
+          "example": "For instance, parents can limit screen time after dinner while teachers reward students who finish homework on time.",
+          "formula": "How ...? -> Penalize/Support solution (Parents & schools guide)",
+          "q": "How can parents and teachers help teenagers develop productive daily routines?",
+          "reason": "They can help teenagers create a daily study timetable and balance study time with healthy physical activities."
+        },
+        {
+          "answer": "Yes, I think modern digital devices have made many people develop negative lifestyle habits.",
+          "example": "For example, many young people spend hours watching short videos in bed instead of exercising or talking face-to-face with family.",
+          "formula": "Do you agree ...? -> Yes, I think... (Reason + Example)",
+          "q": "Do you agree that modern digital devices have made people develop more negative lifestyle habits?",
+          "reason": "Too much screen time can affect health and social development, and easily leads to reduced outdoor activities and poor sleep."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Developing a daily habit of reading books for knowledge",
+          "expand": "This is because books provide knowledge and experience in many fields, and allow their brain to exercise.",
+          "impact": "Therefore, it is good for personal growth and helps people do well in their field.",
+          "sentence": "Reading books every day helps people increase knowledge and broaden their mind.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Maintaining consistent physical exercise and healthy routines",
+          "expand": "For example, jogging for 30 minutes every morning strengthens our immune system and helps us feel more energetic.",
+          "impact": "Clearly, it is beneficial to our physical health and helps us work better.",
+          "sentence": "Doing physical exercise regularly helps people keep fit and stay healthy.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Eliminating unproductive and negative bad habits",
+          "expand": "This is because bad habits like staying up late or surfing social media too much make us tired and lose self-control.",
+          "impact": "So, it has positive effects on our daily productivity and long-term success.",
+          "sentence": "Stopping bad habits helps people stay focused and solve the problem of wasting time.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "increase knowledge",
+        "broaden their mind",
+        "provide knowledge and experience in",
+        "allow their brain to exercise",
+        "keep fit and stay healthy",
+        "strengthen our immune system",
+        "solve the problem",
+        "lack proper guidance and self-control",
+        "work closely together to guide, listen, and support young people",
+        "creating a daily study timetable",
+        "screen time can affect health and social development"
+      ]
+    }
   }
 ]

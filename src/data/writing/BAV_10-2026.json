@@ -15,7 +15,59 @@
     "part": "part1",
     "group": "Đề thi thực tế BAV 10/10/2026",
     "title": "Task 1.1: Celebrating a Photography Award and Planning a Vacation Trip",
-    "content": "You have received an email from your close friend, Dan, who recently won first prize in a national photography contest. Read part of his email below:\n\n\"I have some wonderful news to share—I just won first prize in the National Youth Photography Competition! As part of the award, I received a 4-day travel vacation voucher, and I would love for you to come with me to the award ceremony and join the trip afterwards! Could you let me know what day and time you can arrive? During our stay, would you prefer staying at a cozy local homestay or a 4-star hotel? Also, what exciting activities or sightseeing spots would you like us to do together while we are there?\"\n\nWrite an email responding to Dan."
+    "content": "You have received an email from your close friend, Dan, who recently won first prize in a national photography contest. Read part of his email below:\n\n\"I have some wonderful news to share—I just won first prize in the National Youth Photography Competition! As part of the award, I received a 4-day travel vacation voucher, and I would love for you to come with me to the award ceremony and join the trip afterwards! Could you let me know what day and time you can arrive? During our stay, would you prefer staying at a cozy local homestay or a 4-star hotel? Also, what exciting activities or sightseeing spots would you like us to do together while we are there?\"\n\nWrite an email responding to Dan.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm happy to hear that you won first prize, and I would like to let you know that I can arrive on Friday afternoon around 3 PM.",
+          "example": "I will take the morning bus right after my final lecture so we have the whole weekend to relax together.",
+          "frame": "K. Informal Chunks (Chúc mừng) + D. Provide Information (I would like to let you know that...)",
+          "reason": "Winning this prize is a fantastic opportunity that will bring you a lot of valuable experience, and arriving on Friday lets me finish my school week first.",
+          "requirement": "Congratulate Dan on the award and confirm arrival day and time"
+        },
+        {
+          "answer": "From my point of view, I think that staying at a cozy local homestay is the better choice for us.",
+          "example": "We can chat with the friendly host family, enjoy home-cooked breakfast, and learn more about local life.",
+          "frame": "H. Provide Opinion (From my point of view, I think that...)",
+          "reason": "A homestay fits comfortably within our budget without sacrificing quality, and it offers a quiet, cozy environment with total personal privacy.",
+          "requirement": "Choose between a cozy local homestay and a 4-star hotel"
+        },
+        {
+          "answer": "Why don't we visit the old town, try famous street food, and take sunrise photos by the beach?",
+          "example": "When it comes to food, we certainly shouldn't miss local noodles, and let's pack light clothes because we will do a lot of walking around the town.",
+          "frame": "G. Provide Instruction / Suggestion (Why don't you/we...?) + K. Informal Chunks (Ẩm thực & trang phục)",
+          "reason": "Exploring local places helps us broaden our mind about local traditions while helping us relieve stress and reduce fatigue after exams.",
+          "requirement": "Suggest activities and sightseeing spots to do together"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "our upcoming trip"
+      },
+      "extraVocab": [
+        "first prize",
+        "local homestay",
+        "sunrise photos"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "your photography award and our upcoming 4-day trip",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Congratulate friend + Provide travel & activity preferences",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "fantastic opportunity that will bring you a lot of valuable experience",
+        "I would like to let you know that",
+        "From my point of view, I think that",
+        "fit comfortably within my budget without sacrificing quality",
+        "quiet, cozy environment",
+        "broaden their mind",
+        "relieve stress and reduce fatigue",
+        "pack light clothes because we will likely do a lot of walking around the town"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,6 +85,42 @@
     "part": "part2",
     "group": "Đề thi thực tế BAV 10/10/2026",
     "title": "Task 2.1: Education is the Key to the Future",
-    "content": "Read the following statement:\n\n\"It is widely believed that education is the key to the future, empowering individuals to achieve personal success and enabling nations to develop sustainably.\"\n\nWrite an essay to an educated reader explaining the importance of education for individuals and society. Provide specific reasons and examples from your knowledge or personal experience to support your view."
+    "content": "Read the following statement:\n\n\"It is widely believed that education is the key to the future, empowering individuals to achieve personal success and enabling nations to develop sustainably.\"\n\nWrite an essay to an educated reader explaining the importance of education for individuals and society. Provide specific reasons and examples from your knowledge or personal experience to support your view.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my cousin studied hard to get a B2 English certificate and an IT degree, so she soon got a well-paid job at an international company.",
+        "focus": "Importance of education for individuals",
+        "frame": "Firstly, the first reason is that [ld1] + Trục Knowledge + Cụm #1, #4, #14",
+        "point": "Education plays an essential role in helping people broaden their mind and learn useful job skills. With a good degree and strong knowledge, young people can find better jobs with higher salaries and improve people's living standard."
+      },
+      "body2": {
+        "example": "For example, countries that invest heavily in schools and universities produce skilled doctors and engineers who make a great contribution to hospitals, clean energy, and local businesses.",
+        "focus": "Importance of education for society",
+        "frame": "Secondly, it allows that [ld2] + Cụm #2, #5, #6, #11",
+        "point": "At the society level, educated citizens help a country keep pace with the fast-paced development of modern science and boost economic development. Education also raises public awareness of laws, healthy lifestyles, and environmental protection."
+      },
+      "conclusion": "In conclusion, I wholeheartedly agree that education is the key to the future because it helps individuals improve their living standard and enables society to develop strongly.",
+      "essayType": "Agree or Disagree",
+      "extraVocab": [
+        "well-paid job",
+        "skilled workers"
+      ],
+      "intro": {
+        "debai": "education is the key to the future",
+        "ld1": "help individuals gain knowledge and improve their living standard",
+        "ld2": "boost economic development and build a better society"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Agree or Disagree + Trục Knowledge + Cụm #1, #2, #4, #5, #6, #14",
+      "reusedVocab": [
+        "plays an essential role in",
+        "broaden their mind",
+        "improve people's living standard",
+        "keep pace with the fast-paced development of modern science",
+        "boost economic development",
+        "make a contribution to",
+        "environmental protection"
+      ]
+    }
   }
 ]

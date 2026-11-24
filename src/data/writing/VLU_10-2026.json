@@ -15,7 +15,56 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 10/2026",
     "title": "Task 1.1: Replying to Sarah about Social Media Habits",
-    "content": "You have received an email from your close friend, Sarah, who is researching modern social media usage for her university project. Read part of her email below:\n\n\"I hope you are doing well! For my media assignment, I am doing a small survey on how young people use social networks today. Could you tell me how often you use social media every day? What kinds of social media platforms do you usually use, and what do you use them for? More importantly, in your opinion, how does social media influence people and their relationships with others? I look forward to hearing your thoughts soon!\"\n\nWrite an email responding to Sarah."
+    "content": "You have received an email from your close friend, Sarah, who is researching modern social media usage for her university project. Read part of her email below:\n\n\"I hope you are doing well! For my media assignment, I am doing a small survey on how young people use social networks today. Could you tell me how often you use social media every day? What kinds of social media platforms do you usually use, and what do you use them for? More importantly, in your opinion, how does social media influence people and their relationships with others? I look forward to hearing your thoughts soon!\"\n\nWrite an email responding to Sarah.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to give you information on my daily routine: I usually spend about one to two hours on social media every day.",
+          "example": "I often check messages for 20 minutes in the morning and spend around an hour scrolling through updates after dinner.",
+          "frame": "D. Provide Information: I would like to give you information on ______.",
+          "reason": "Using social media during short breaks helps me relieve stress and reduce fatigue while still reaching a healthy balance between study and rest.",
+          "requirement": "How often you use social media every day"
+        },
+        {
+          "answer": "I would like to let you know that I mainly use Facebook, Instagram, and YouTube to stay connected with friends and learn useful skills.",
+          "example": "I use Facebook for university club news, Instagram to share weekend photos, and YouTube to watch short English study videos.",
+          "frame": "D. Provide Information: I would like to let you know that ______.",
+          "reason": "These platforms are fast and convenient for busy people in modern-day society and provide knowledge and experience in many daily topics.",
+          "requirement": "What kinds of social media platforms you usually use, and what you use them for"
+        },
+        {
+          "answer": "From my point of view, I think that social media brings both benefits and drawbacks to people and their relationships.",
+          "example": "For example, some young people look at their phones during family meals instead of talking to their parents, which slowly reduces closeness at home.",
+          "frame": "H. Provide Opinion: From my point of view, I think that ______.",
+          "reason": "It helps us keep in touch across long distances, yet overusing it reduces face-to-face interaction and widens the generation gap when people lack self-control.",
+          "requirement": "How social media influences people and their relationships with others"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "social media usage"
+      },
+      "extraVocab": [
+        "social media platforms",
+        "stay connected",
+        "family meals"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my daily social media habits for your university assignment",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Provide Opinion (Social media habits and impact on relationships)",
+      "reusedVocab": [
+        "can relieve stress and reduce fatigue",
+        "reach a healthy balance between work and family time",
+        "fast, convenient for busy people in modern-day society",
+        "provide knowledge and experience in...",
+        "lack proper guidance and self-control, which easily leads to bad behaviors and widens the generation gap",
+        "build a strong sense of belonging and help us truly understand each other through face-to-face interaction"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,7 +82,53 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 24/10/2026 (Ca 1)",
     "title": "Task 1.2: Replying to a Company Regarding a Job Interview Schedule",
-    "content": "You have received an email from Mr. David Evans, the Human Resources Manager of ABC Corporation, regarding your job application. Read part of the email below:\n\n\"Thank you for submitting your CV and job application to our company. We are pleased to inform you that your profile has been shortlisted, and we would like to invite you for a face-to-face interview at our head office. Before we confirm the schedule, please provide us with some additional details:\n1. What is your expected salary for this position?\n2. What day and time slot next week would be most convenient for your face-to-face interview?\n3. What is the earliest date you could start working if you are selected?\nWe look forward to receiving your prompt reply.\"\n\nWrite a formal email responding to Mr. Evans."
+    "content": "You have received an email from Mr. David Evans, the Human Resources Manager of ABC Corporation, regarding your job application. Read part of the email below:\n\n\"Thank you for submitting your CV and job application to our company. We are pleased to inform you that your profile has been shortlisted, and we would like to invite you for a face-to-face interview at our head office. Before we confirm the schedule, please provide us with some additional details:\n1. What is your expected salary for this position?\n2. What day and time slot next week would be most convenient for your face-to-face interview?\n3. What is the earliest date you could start working if you are selected?\nWe look forward to receiving your prompt reply.\"\n\nWrite a formal email responding to Mr. Evans.",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, I would like to inform you that my expected salary for this position is around 15,000,000 to 18,000,000 VND per month.",
+          "example": "However, I am happy to discuss the final salary package based on the company's policy and exact job duties during the interview.",
+          "frame": "I. [Formal] Thư Trả lời Thông tin: First of all, I would like to inform you that ______.",
+          "reason": "This range matches my university training and internship background while helping improve my living standard in the city.",
+          "requirement": "Expected salary for this position"
+        },
+        {
+          "answer": "Regarding the interview schedule, next Wednesday morning from 9:00 AM to 11:00 AM or Thursday afternoon from 2:00 PM to 4:00 PM would be most convenient for me.",
+          "example": "I will bring printed copies of my CV, university transcript, and B2 English certificate to your head office.",
+          "frame": "I. [Formal] Thư Trả lời Thông tin: Regarding ______, ______.",
+          "reason": "These time slots fit comfortably within my daily routine so I can travel to your head office early and stay well-prepared.",
+          "requirement": "Most convenient day and time slot next week for the face-to-face interview"
+        },
+        {
+          "answer": "Regarding your third question, I would like to inform you that the earliest date I can start working is the first Monday of next month.",
+          "example": "Having one week before my start date also allows me to review any company handbook or training materials you send ahead.",
+          "frame": "I. [Formal] Thư Trả lời Thông tin: Regarding your third question, I would like to inform you that ______.",
+          "reason": "I have already completed my final university exams and am ready to adjust and adapt to the company's working environment right away.",
+          "requirement": "Earliest date you could start working if selected"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "my job interview schedule"
+      },
+      "extraVocab": [
+        "expected salary",
+        "time slot",
+        "head office"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "confirm my availability and provide the requested details for my job interview at ABC Corporation",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Formal Reply + Provide Information (Salary expectation, interview slot, and start date)",
+      "reusedVocab": [
+        "improve people's living standard",
+        "fit comfortably within my budget and daily routine without sacrificing quality",
+        "adjust and adapt to the social environment"
+      ]
+    }
   },
   {
     "STT": "3",
@@ -51,7 +146,55 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 24/10/2026 (Ca 2)",
     "title": "Task 1.3: Recommending Dining Places and Specialties to a Visiting Friend",
-    "content": "You have received an email from your friend, Michael, who is planning to visit your city next month. Read part of his email below:\n\n\"I am really excited about visiting your city next month! Since it will be my first time there, could you recommend some great local dining places or food stalls that we should definitely check out? What are the famous signature dishes in your city that I should not miss? Also, I would love to bring some homemade specialties or gifts from my hometown for your family—what kinds of items would they like?\"\n\nWrite an email responding to Michael."
+    "content": "You have received an email from your friend, Michael, who is planning to visit your city next month. Read part of his email below:\n\n\"I am really excited about visiting your city next month! Since it will be my first time there, could you recommend some great local dining places or food stalls that we should definitely check out? What are the famous signature dishes in your city that I should not miss? Also, I would love to bring some homemade specialties or gifts from my hometown for your family—what kinds of items would they like?\"\n\nWrite an email responding to Michael.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I am genuinely thrilled to hear that you are planning to visit my city, and I believe you should check out Ben Thanh Street Food Market and a local family restaurant near my neighborhood.",
+          "example": "On your first night here, we can walk around the lively street food stalls in District 1 to try several small snacks together.",
+          "frame": "K. Mẫu câu Thân mật + G. Suggestion: I am genuinely thrilled to hear that you are planning to visit my hometown! / I believe you should ______.",
+          "reason": "Local markets serve fresh local food at fair prices that fit comfortably within our budget while letting you enjoy the friendly street atmosphere.",
+          "requirement": "Recommend great local dining places or food stalls to check out"
+        },
+        {
+          "answer": "When it comes to local food, you certainly shouldn't miss Pho, Banh Mi, and broken rice (Com Tam) with grilled pork.",
+          "example": "I will take you to a famous 30-year-old Pho shop near my house that serves hot beef noodle soup with fresh herbs.",
+          "frame": "K. Mẫu câu Thân mật (Ẩm thực): When it comes to [food/travel], you certainly shouldn't miss ______.",
+          "reason": "The flavors are absolutely authentic, and tasting traditional dishes helps you gain a deeper understanding of our people, culture, and tradition.",
+          "requirement": "Famous signature dishes in your city that he should not miss"
+        },
+        {
+          "answer": "I would like to let you know that my family would love simple homemade cookies, local tea, or fruit jam from your hometown.",
+          "example": "My parents always drink hot tea after dinner, so a small box of herbal tea or homemade biscuits would be a thoughtful gift.",
+          "frame": "D. Provide Information: I would like to let you know that ______.",
+          "reason": "Sharing traditional snacks together after a meal builds warm connection and lets my family learn about your hometown's food culture.",
+          "requirement": "What kinds of homemade specialties or gifts from his hometown your family would like"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your upcoming trip to my city"
+      },
+      "extraVocab": [
+        "food stalls",
+        "signature dishes",
+        "herbal tea"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "great local food spots and signature dishes for your upcoming visit to my city",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Provide Suggestion (Local dining places, signature dishes, and family gifts)",
+      "reusedVocab": [
+        "I am genuinely thrilled to hear that you are planning to visit my hometown!",
+        "When it comes to [food/travel], you certainly shouldn't miss Pho. The flavors are absolutely authentic.",
+        "fit comfortably within my budget and daily routine without sacrificing quality",
+        "gain/obtain a deeper understanding of people, culture, and tradition in different countries",
+        "Buying fresh local food"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -69,7 +212,55 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 23/10/2026 (Ca sáng)",
     "title": "Task 1.4: Advising John on Summer Camp Preparation",
-    "content": "You have received an email from your friend, John, who wants to sign up for an upcoming summer youth camp that you participated in last year. Read part of his email below:\n\n\"I am planning to register for the youth summer camp next month, and since you attended it last year, could you give me some advice? What should I prepare and pack for the trip? Based on your own experience, what were the most rewarding activities or lessons you gained from the camp? In addition, do I need to prepare and submit any specific registration forms or health certificates beforehand?\"\n\nWrite an email responding to John."
+    "content": "You have received an email from your friend, John, who wants to sign up for an upcoming summer youth camp that you participated in last year. Read part of his email below:\n\n\"I am planning to register for the youth summer camp next month, and since you attended it last year, could you give me some advice? What should I prepare and pack for the trip? Based on your own experience, what were the most rewarding activities or lessons you gained from the camp? In addition, do I need to prepare and submit any specific registration forms or health certificates beforehand?\"\n\nWrite an email responding to John.",
+    "hint": {
+      "body": [
+        {
+          "answer": "Why don't you pack light clothes, comfortable running shoes, sunscreen, and a refillable water bottle for the trip?",
+          "example": "Also, bring a small flashlight and insect spray for the evening campfire games in the forest park.",
+          "frame": "G. Provide Instruction / Suggestion + K. Mẫu câu Thân mật: Why don't you ______? / Don't forget to pack light clothes...",
+          "reason": "We will likely do a lot of walking and outdoor team games under the hot summer sun, so light clothes help you stay cool and energetic.",
+          "requirement": "What to prepare and pack for the trip"
+        },
+        {
+          "answer": "I would like to share that the group teamwork challenges and tree-planting workshops were the most rewarding activities I joined last year.",
+          "example": "My team of six campers cooked our own meals and planted 30 young trees around the campsite, which taught us how to cooperate calmly.",
+          "frame": "D. Provide Information + H. Provide Opinion: I would like to share that ______ / From my point of view, ______.",
+          "reason": "They helped me meet like-minded people, build a strong sense of belonging, and see why young people should be involved in environmental protection.",
+          "requirement": "Most rewarding activities or lessons gained from the camp"
+        },
+        {
+          "answer": "Please be advised that you need to submit a signed registration form, a copy of your student ID, and a basic health certificate two weeks beforehand.",
+          "example": "You can get a quick health check at our university clinic in 30 minutes and upload the scanned certificate to the camp portal.",
+          "frame": "D. Provide Information: Please be advised that ______.",
+          "reason": "The organizers review these documents early to stay on the safe side and make sure everyone is fit for outdoor activities.",
+          "requirement": "Whether any specific registration forms or health certificates need to be submitted beforehand"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "the youth summer camp"
+      },
+      "extraVocab": [
+        "health certificate",
+        "outdoor activities",
+        "campfire"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "useful advice and packing tips for the youth summer camp next month",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Suggestion + Provide Information (Summer camp packing, rewarding lessons, and paperwork)",
+      "reusedVocab": [
+        "don't forget to pack light clothes because we will likely do a lot of walking around the town",
+        "meet like-minded people who have a lot of things in common with me",
+        "build a strong sense of belonging",
+        "should be involved in environmental protection",
+        "stay on the safe side and think things through calmly to avoid unnecessary trouble"
+      ]
+    }
   },
   {
     "STT": "5",
@@ -87,7 +278,55 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều - Ca 1)",
     "title": "Task 1.5: Seeking a Part-Time Job While Studying in Singapore",
-    "content": "You have received an email from your friend, Kelvin, who is currently studying at a university in Singapore. Read part of his email below:\n\n\"I heard that you are planning to look for a part-time job during your upcoming study semester here in Singapore! Could you tell me why you want to take up a job while studying? What kind of work are you hoping to find? Also, what relevant qualifications, skills, or past experience do you have that make you suitable for that job? I might be able to help you look for some openings!\"\n\nWrite an email responding to Kelvin."
+    "content": "You have received an email from your friend, Kelvin, who is currently studying at a university in Singapore. Read part of his email below:\n\n\"I heard that you are planning to look for a part-time job during your upcoming study semester here in Singapore! Could you tell me why you want to take up a job while studying? What kind of work are you hoping to find? Also, what relevant qualifications, skills, or past experience do you have that make you suitable for that job? I might be able to help you look for some openings!\"\n\nWrite an email responding to Kelvin.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to let you know that I want a part-time job mainly to gain real work experience and cover part of my monthly living costs.",
+          "example": "Earning some extra money each month will help pay for my daily meals and MRT tickets without putting heavy pressure on my parents.",
+          "frame": "D. Provide Information: I would like to let you know that ______.",
+          "reason": "Living and working in a new environment teaches me to manage my own money, broaden my mind, and adjust and adapt to the social environment in Singapore.",
+          "requirement": "Why you want to take up a part-time job while studying"
+        },
+        {
+          "answer": "From my point of view, I think that working as a campus library assistant, computer lab helper, or cafe staff member would suit me best.",
+          "example": "Working around 12 to 15 hours a week at the university library would keep me near my classrooms and leave enough time for homework.",
+          "frame": "H. Provide Opinion: From my point of view, I think that ______.",
+          "reason": "These roles offer flexible evening or weekend shifts so I can reach a healthy balance between my university study and work.",
+          "requirement": "What kind of work you are hoping to find"
+        },
+        {
+          "answer": "I would like to give you information on my background: I hold a B2 English certificate, strong computer skills, and six months of experience as a part-time tutor.",
+          "example": "Last year, I helped manage student records and organized weekly English club activities at my university in Ho Chi Minh City.",
+          "frame": "D. Provide Information: I would like to give you information on ______.",
+          "reason": "This background helps me communicate clearly with customers, solve daily problems calmly, and make the most of new technology to improve productivity.",
+          "requirement": "Relevant qualifications, skills, or past experience that make you suitable"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my part-time job plan in Singapore"
+      },
+      "extraVocab": [
+        "part-time tutor",
+        "flexible shifts",
+        "living costs"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my plans for finding a part-time job during my upcoming semester in Singapore",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Provide Opinion (Motivation for working, preferred jobs, and skills)",
+      "reusedVocab": [
+        "Living or working in a new environment teaches young people to manage their own money and solve daily problems independently",
+        "adjust and adapt to the social environment",
+        "broaden my mind",
+        "reach a healthy balance between work and family time",
+        "make the most of new technology to improve productivity"
+      ]
+    }
   },
   {
     "STT": "6",
@@ -105,7 +344,55 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều - Ca 2)",
     "title": "Task 1.6: Giving Presentation Advice to a Worried Friend",
-    "content": "You have received an email from your close friend, Emma, who has to give an important class presentation next week. Read part of her email below:\n\n\"I have to give a 15-minute presentation in front of the whole class and our professor next Monday, and I feel really nervous and anxious about speaking in public! Since you always appear confident when presenting, could you give me some advice on how to overcome stage fright? How should I structure my slides to keep the audience engaged, and what are some effective tips for rehearsing beforehand? I would really appreciate your help!\"\n\nWrite an email responding to Emma."
+    "content": "You have received an email from your close friend, Emma, who has to give an important class presentation next week. Read part of her email below:\n\n\"I have to give a 15-minute presentation in front of the whole class and our professor next Monday, and I feel really nervous and anxious about speaking in public! Since you always appear confident when presenting, could you give me some advice on how to overcome stage fright? How should I structure my slides to keep the audience engaged, and what are some effective tips for rehearsing beforehand? I would really appreciate your help!\"\n\nWrite an email responding to Emma.",
+    "hint": {
+      "body": [
+        {
+          "answer": "Why don't you take three deep breaths before starting and look at friendly classmates in the room to calm your nerves?",
+          "example": "Before my last presentation, I smiled at two close friends in the front row, and my stage fright faded after the first minute.",
+          "frame": "G. Provide Instruction / Suggestion: Why don't you ______?",
+          "reason": "Slow breathing helps relieve stress and reduce fatigue, while seeing supportive faces builds a sense of comfort instead of fear.",
+          "requirement": "How to overcome stage fright"
+        },
+        {
+          "answer": "I believe you should keep each slide simple with short bullet points, clear headings, and relevant photos rather than long paragraphs.",
+          "example": "For a 15-minute talk, prepare around 8 to 10 slides: one intro slide, three main sections with short examples, and one summary slide.",
+          "frame": "G. Provide Instruction / Suggestion: I believe you should ______.",
+          "reason": "Clean slides make the most of visual tools so the class can follow your main ideas easily without getting tired of reading too much text.",
+          "requirement": "How to structure slides to keep the audience engaged"
+        },
+        {
+          "answer": "There are two suggestions that I would like to make for rehearsing: practice out loud in front of a mirror with a timer, and rehearse once with a friend.",
+          "example": "I always practice my speech three times the day before so I know how long each part takes and can speak naturally without reading notes.",
+          "frame": "G. Provide Instruction / Suggestion: There are two suggestions that I would like to make.",
+          "reason": "Practicing in a quiet environment helps solve the problem of speaking too fast or running over your 15-minute limit.",
+          "requirement": "Effective tips for rehearsing beforehand"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your presentation next Monday"
+      },
+      "extraVocab": [
+        "stage fright",
+        "bullet points",
+        "eye contact"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "practical tips to help you feel confident for your presentation next Monday",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Suggestion (Tips to overcome stage fright, design slides, and rehearse)",
+      "reusedVocab": [
+        "can relieve stress and reduce fatigue",
+        "build a strong sense of belonging",
+        "make the most of new technology to improve productivity",
+        "solve the problem",
+        "offers a quiet, cozy environment"
+      ]
+    }
   },
   {
     "STT": "7",
@@ -123,7 +410,56 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều)",
     "title": "Task 1.7: Replying to a Friend about Your New Job in Hanoi",
-    "content": "You have received an email from your close friend, Liam, who heard you just relocated to Hanoi for a new job. Read part of his email below:\n\n\"Congratulations on your new job in Hanoi! How is the job going so far, and what are your main responsibilities? How do you feel about living in Hanoi compared to your hometown? Also, I am planning to visit Hanoi next month—would it be convenient for us to meet up at your new place? Let me know!\"\n\nWrite an email responding to Liam."
+    "content": "You have received an email from your close friend, Liam, who heard you just relocated to Hanoi for a new job. Read part of his email below:\n\n\"Congratulations on your new job in Hanoi! How is the job going so far, and what are your main responsibilities? How do you feel about living in Hanoi compared to your hometown? Also, I am planning to visit Hanoi next month—would it be convenient for us to meet up at your new place? Let me know!\"\n\nWrite an email responding to Liam.",
+    "hint": {
+      "body": [
+        {
+          "answer": "Life was quite hectic during my first week, but things always get smoother with time; I am currently working as a junior software support staff member.",
+          "example": "Every morning at 9:00 AM, I join a 15-minute team meeting to plan daily tasks and fix technical problems for our clients.",
+          "frame": "K. Mẫu câu Thân mật + D. Provide Information: Life can be quite hectic at first, but things always get smoother with time. / I would like to let you know that ______.",
+          "reason": "My main duties include testing daily software updates, answering user questions, and helping my team make the most of new technology to improve productivity.",
+          "requirement": "How the job is going so far and your main responsibilities"
+        },
+        {
+          "answer": "From my point of view, I think that Hanoi is much busier and cooler than my hometown in the South, with rich local traditions.",
+          "example": "Although morning traffic is heavy, I enjoy walking around Hoan Kiem Lake on Sunday mornings to relax in the cool weather.",
+          "frame": "H. Provide Opinion: From my point of view, I think that ______.",
+          "reason": "Living in a new environment helps me manage my daily life independently and gain a deeper understanding of northern people, culture, and food.",
+          "requirement": "How you feel about living in Hanoi compared to your hometown"
+        },
+        {
+          "answer": "I am genuinely thrilled to hear that you are planning to visit Hanoi next month, and I would like to let you know that we can easily meet at my new apartment on the weekend.",
+          "example": "Send me your flight dates early so I can take you around the Old Quarter and treat you to a bowl of hot Pho.",
+          "frame": "K. Mẫu câu Thân mật + D. Provide Information: I am genuinely thrilled to hear that you are planning to visit...! / I would like to let you know that ______.",
+          "reason": "My place is close to the city center and offers a cozy living space where we can catch up comfortably with total personal privacy.",
+          "requirement": "Whether it is convenient to meet up at your new place next month"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my new job and life in Hanoi"
+      },
+      "extraVocab": [
+        "software support",
+        "morning traffic",
+        "Old Quarter"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my new job and daily life since moving to Hanoi",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Provide Opinion (New job duties, living in Hanoi vs hometown, and weekend meetup)",
+      "reusedVocab": [
+        "Life can be quite hectic at first, but things always get smoother with time.",
+        "make the most of new technology to improve productivity",
+        "Living or working in a new environment teaches young people to manage their own money and solve daily problems independently",
+        "gain/obtain a deeper understanding of people, culture, and tradition in different countries",
+        "I am genuinely thrilled to hear that you are planning to visit my hometown!",
+        "total personal privacy"
+      ]
+    }
   },
   {
     "STT": "8",
@@ -141,7 +477,47 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều)",
     "title": "Task 1.8: Sharing Your Current Job Experience with a Friend Working at a Bookstore",
-    "content": "You have received an email from your friend, Chloe, who recently started working at a bookstore. Read part of her email below:\n\n\"I just got a part-time job working at a local bookstore and I really enjoy the atmosphere! I would love to hear more about your current job. What do you typically do on a daily basis at work? Do you have any memorable moments or special impressions from your job so far? Hope we can catch up soon!\"\n\nWrite an email responding to Chloe."
+    "content": "You have received an email from your friend, Chloe, who recently started working at a bookstore. Read part of her email below:\n\n\"I just got a part-time job working at a local bookstore and I really enjoy the atmosphere! I would love to hear more about your current job. What do you typically do on a daily basis at work? Do you have any memorable moments or special impressions from your job so far? Hope we can catch up soon!\"\n\nWrite an email responding to Chloe.",
+    "hint": {
+      "body": [
+        {
+          "answer": "It sounds like a fantastic opportunity at the bookstore! As for my current job, I would like to give you information on my daily routine as a part-time IT assistant at a small tech company.",
+          "example": "Most mornings, I answer staff support emails from 8:30 AM to 10:00 AM and then set up laptops for new colleagues.",
+          "frame": "K. Mẫu câu Thân mật + D. Provide Information: It sounds like a fantastic opportunity that will bring you a lot of valuable experience. / I would like to give you information on ______.",
+          "reason": "Every day, I check office computers, update software, and solve technical problems so the whole office can work smoothly without delays.",
+          "requirement": "What you typically do on a daily basis at work"
+        },
+        {
+          "answer": "I would like to let you know that my favorite impression is our supportive team, and my most memorable moment was fixing an urgent meeting room issue last month.",
+          "example": "Five minutes before a big client presentation, the projector stopped working, and I found and fixed the loose cable in time while our manager thanked me.",
+          "frame": "D. Provide Information + H. Provide Opinion: I would like to let you know that ______ / From my point of view, ______.",
+          "reason": "Working with friendly colleagues helps me adjust and adapt to the social environment quickly and builds a strong sense of belonging at the office.",
+          "requirement": "Memorable moments or special impressions from your job so far"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my current job"
+      },
+      "extraVocab": [
+        "IT assistant",
+        "support emails",
+        "team spirit"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my current job and daily experience at the office",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Provide Opinion (Daily work routine and memorable job moments)",
+      "reusedVocab": [
+        "It sounds like a fantastic opportunity that will bring you a lot of valuable experience.",
+        "solve the problem",
+        "adjust and adapt to the social environment",
+        "build a strong sense of belonging"
+      ]
+    }
   },
   {
     "STT": "9",
@@ -159,7 +535,66 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 24/10/2026 (Chiều)",
     "title": "Task 1.9: Responding to a Wedding Invitation for a Friend's Older Brother",
-    "content": "You have received an email from your close friend, Minh, inviting you to his older brother's wedding in another province. Read part of his email below:\n\n\"I am really excited to let you know that my older brother is getting married next month! My family and I would be thrilled if you could come and celebrate with us. Can you make it to the wedding? Will you be coming alone or traveling with your family? Also, could you let me know what day and time you expect to arrive? Would you like to stay at my house with my family, or would you prefer us to help arrange a hotel room nearby? Let me know so we can prepare!\"\n\nWrite an email responding to Minh."
+    "content": "You have received an email from your close friend, Minh, inviting you to his older brother's wedding in another province. Read part of his email below:\n\n\"I am really excited to let you know that my older brother is getting married next month! My family and I would be thrilled if you could come and celebrate with us. Can you make it to the wedding? Will you be coming alone or traveling with your family? Also, could you let me know what day and time you expect to arrive? Would you like to stay at my house with my family, or would you prefer us to help arrange a hotel room nearby? Let me know so we can prepare!\"\n\nWrite an email responding to Minh.",
+    "hint": {
+      "body": [
+        {
+          "answer": "Yes, I am very happy to hear the good news and I will definitely come to celebrate with your family.",
+          "example": "I have already cleared my weekend schedule so I will not miss your brother's big day.",
+          "frame": "A. Câu dẫn cảm xúc + D. Provide Information",
+          "reason": "Joining your family on this happy day builds a strong sense of belonging through face-to-face interaction.",
+          "requirement": "Can you make it to the wedding?"
+        },
+        {
+          "answer": "I would like to let you know that I will be coming alone by coach from my city.",
+          "example": "I plan to book an early morning express bus ticket on Saturday.",
+          "frame": "D. Provide Information",
+          "reason": "My parents have busy work schedules next month, and traveling alone is fast and convenient for busy people.",
+          "requirement": "Will you be coming alone or traveling with your family?"
+        },
+        {
+          "answer": "Please be advised that I expect to arrive in your province at around 4:00 PM on Saturday afternoon.",
+          "example": "I will call or text you as soon as my bus reaches the central bus station.",
+          "frame": "D. Provide Information",
+          "reason": "Arriving the day before helps me adjust and adapt to the new place and stay on the safe side to avoid traffic trouble.",
+          "requirement": "What day and time do you expect to arrive?"
+        },
+        {
+          "answer": "Thank you for inviting me to stay at your house, but I would appreciate it if you could help arrange a small hotel room nearby.",
+          "example": "A clean, budget-friendly guesthouse within a 10-minute walk from your home would fit comfortably within my budget.",
+          "frame": "B. Request + H. Provide Opinion",
+          "reason": "Staying at a hotel gives me total personal privacy to rest after the long trip without troubling your busy family before the wedding.",
+          "requirement": "Stay at your house or arrange a hotel room nearby?"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your brother's wedding"
+      },
+      "extraVocab": [
+        "[+] express bus ticket",
+        "[+] budget-friendly guesthouse"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "your older brother's wedding next month",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Accept Invitation + Provide Travel Info + Request Accommodation",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "I would like to let you know that",
+        "Please be advised that",
+        "I would appreciate it if you could",
+        "fast, convenient for busy people",
+        "adjust and adapt to",
+        "stay on the safe side to avoid unnecessary trouble",
+        "build a strong sense of belonging through face-to-face interaction",
+        "total personal privacy",
+        "fit comfortably within my budget"
+      ]
+    }
   },
   {
     "Mã câu hỏi": "vlu10-writing-task1-10",
@@ -177,7 +612,58 @@
     "group": "Đề thi thực tế VLU 10/2026 (Ca bổ sung)",
     "title": "Task 1.10: Preparing for an Upcoming Charity Gala with a Friend",
     "content": "You have received an email from your close friend, Jessica, who is attending an upcoming charity gala with you next weekend. Read part of her email below:\n\n\"I am so excited about attending the charity gala with you next Saturday! Since you have been helping organize it, could you tell me what kind of clothes or dress code I should wear for the evening? Should I bring anything along with me, such as a small gift or some food to contribute to the event? Also, what is the most convenient way for me to get to the gala venue? Let me know soon so I can prepare everything!\"\n\nWrite an email responding to Jessica.",
-    "STT": "10"
+    "STT": "10",
+    "hint": {
+      "body": [
+        {
+          "answer": "I believe you should wear smart, comfortable evening clothes, such as a simple nice dress or a neat jacket.",
+          "example": "A dark blue dress with low shoes will look great and allow you to walk around the hall easily.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "The gala is a warm charity event rather than a strict formal ceremony, so dressing neatly helps you feel happy and comfortable.",
+          "requirement": "What kind of clothes or dress code to wear?"
+        },
+        {
+          "answer": "I would like to let you know that dinner is already prepared, so why don't you bring some old books or warm clothes to donate?",
+          "example": "Two clean winter jackets or a few children's storybooks would be a really meaningful gift.",
+          "frame": "D. Provide Information + G. Provide Instruction / Suggestion",
+          "reason": "Donating small items makes a great contribution to helping poor children and helps solve the problem of winter shortages.",
+          "requirement": "Should I bring a small gift or food?"
+        },
+        {
+          "answer": "Why don't you take a ride-hailing taxi or the metro directly to the City Cultural Center?",
+          "example": "If you get off at Central Metro Station, the gala venue is only a five-minute walk away.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "Parking near the center is crowded, so taking public transport or a taxi is fast, convenient, and helps you stay on the safe side.",
+          "requirement": "What is the most convenient way to get to the gala venue?"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "the charity gala"
+      },
+      "extraVocab": [
+        "[+] smart evening clothes",
+        "[+] ride-hailing taxi",
+        "[+] donate"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "the charity gala next Saturday",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Event Info + Give Dress & Travel Advice",
+      "reusedVocab": [
+        "I believe you should",
+        "I would like to let you know that",
+        "Why don't you",
+        "feel happy and comfortable",
+        "make a contribution to",
+        "solve the problem",
+        "fast, convenient for busy people",
+        "stay on the safe side"
+      ]
+    }
   },
   {
     "Mã câu hỏi": "vlu10-writing-task1-11",
@@ -195,7 +681,57 @@
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều)",
     "title": "Task 1.11: Inviting a Friend to a Live Music Concert with Won Tickets",
     "content": "You have recently won two tickets to an upcoming live music concert and invited your close friend, Alex, to attend with you. Read part of Alex's email below:\n\n\"That is fantastic news! Thank you so much for the invitation! Could you give me more details about the concert—when and where will it take place, and which famous artists or bands will be performing? How did you manage to win the tickets? And out of all our mutual friends, why did you choose to invite me? Let me know so I can arrange my schedule!\"\n\nWrite an email responding to Alex.",
-    "STT": "11"
+    "STT": "11",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to give you information on the concert: it will take place next Sunday at 7:00 PM at the City Outdoor Stadium, with our favorite pop band and two local singers performing.",
+          "example": "The main band will play their biggest hit songs from 8:00 PM to 10:00 PM.",
+          "frame": "D. Provide Information",
+          "reason": "It is an open-air evening show with lively sound, which will help us relieve stress and reduce fatigue after a busy week.",
+          "requirement": "When, where, and which artists or bands will perform?"
+        },
+        {
+          "answer": "I would like to let you know that I won the two tickets by joining an online music quiz on a local radio station last week.",
+          "example": "The radio host called me on Friday afternoon to confirm that I was the lucky winner.",
+          "frame": "D. Provide Information",
+          "reason": "Because I listen to pop music daily to elevate my mood, I answered all the questions fast and got lucky in the final draw.",
+          "requirement": "How did you manage to win the tickets?"
+        },
+        {
+          "answer": "From my point of view, I think that you are the best friend to go with because we are like-minded people who have a lot of things in common.",
+          "example": "I still remember how much fun we had singing along together at last year's campus music show.",
+          "frame": "H. Provide Opinion + Trục 2 Social Network",
+          "reason": "Enjoying live music together will recharge our batteries and build a strong sense of belonging through face-to-face interaction.",
+          "requirement": "Why did you choose to invite me?"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "the live music concert"
+      },
+      "extraVocab": [
+        "[+] outdoor stadium",
+        "[+] online music quiz"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "the upcoming live music concert",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Concert Details + Explain Reason for Invitation",
+      "reusedVocab": [
+        "I would like to give you information on",
+        "I would like to let you know that",
+        "From my point of view, I think that",
+        "can relieve stress and reduce fatigue",
+        "elevate my mood",
+        "like-minded people who have a lot of things in common",
+        "recharge my batteries",
+        "build a strong sense of belonging through face-to-face interaction"
+      ]
+    }
   },
   {
     "Mã câu hỏi": "vlu10-writing-task1-12",
@@ -213,7 +749,58 @@
     "group": "Đề thi thực tế VLU 24/10/2026 (Chiều)",
     "title": "Task 1.12: Replying to an Employer with Employment and Interview Details",
     "content": "You have received an email from Ms. Jennifer Miller, Recruitment Coordinator at Global Logistics Ltd., regarding your recent job application. Read part of her email below:\n\n\"Thank you for your interest in the Assistant Operations Officer position at our company. Your profile has passed our initial screening, and we would like to invite you for the next interview round. Before finalizing your interview schedule, please confirm the following details:\n1. What is your desired monthly salary or compensation package for this role?\n2. What relevant work experience or professional skills qualify you best for this position?\n3. If offered the job, what is the earliest start date you would be available to commence work?\"\n\nWrite a formal email responding to Ms. Miller.",
-    "STT": "12"
+    "STT": "12",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, I would like to inform you that my expected monthly salary is between 12 and 15 million VND, depending on the company's benefits package.",
+          "example": "I am also open to discussing performance bonuses and allowance details during the interview.",
+          "frame": "I. [Formal] Thư Trả lời Thông tin (Reply to Inquiry)",
+          "reason": "This salary range fits my living costs and matches the market level, helping improve my living standard while staying motivated at work.",
+          "requirement": "Desired monthly salary or compensation package"
+        },
+        {
+          "answer": "Regarding my qualifications, I completed a six-month internship at a shipping firm and have strong office software and teamwork skills.",
+          "example": "During my internship, I used Excel every day to track delivery schedules and solve the problem of late shipments.",
+          "frame": "I. [Formal] Thư Trả lời Thông tin (Reply to Inquiry)",
+          "reason": "This practical experience trained me to make the most of new technology to improve productivity and adjust and adapt to a busy office environment.",
+          "requirement": "Relevant work experience or professional skills"
+        },
+        {
+          "answer": "Regarding your third question, I would like to inform you that I am available to start working from the first Monday of next month.",
+          "example": "I can sign the contract and join the company training session immediately after receiving your offer.",
+          "frame": "I. [Formal] Thư Trả lời Thông tin (Reply to Inquiry)",
+          "reason": "I have already completed my final university exams, so I can focus fully on the role and make a contribution to your team.",
+          "requirement": "Earliest start date available to commence work"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "my job application"
+      },
+      "extraVocab": [
+        "[+] benefits package",
+        "[+] shipping firm",
+        "[+] delivery schedules"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "confirm the requested details for my interview for the Assistant Operations Officer position",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Reply to Inquiry (Confirm Salary, Skills & Start Date)",
+      "reusedVocab": [
+        "First of all, I would like to inform you that",
+        "Regarding",
+        "Regarding your third question, I would like to inform you that",
+        "improve people's living standard",
+        "make the most of new technology to improve productivity",
+        "adjust and adapt to",
+        "solve the problem",
+        "make a contribution to"
+      ]
+    }
   },
   {
     "STT": "13",
@@ -231,7 +818,42 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 10/2026",
     "title": "Task 2.1: Buying Products Based on Others' Trends vs Personal Needs",
-    "content": "Read the following statement:\n\n\"In modern consumer society, many people tend to purchase goods and follow trends simply because others around them are doing so, while others argue that consumers should only buy what genuinely suits their personal needs and financial situation.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include relevant examples and explanations to support your view."
+    "content": "Read the following statement:\n\n\"In modern consumer society, many people tend to purchase goods and follow trends simply because others around them are doing so, while others argue that consumers should only buy what genuinely suits their personal needs and financial situation.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include relevant examples and explanations to support your view.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my cousin bought an expensive smartphone on credit just because his classmates had one, and then he struggled to pay his monthly rent.",
+        "focus": "Why some people follow trends and its downside (View 1)",
+        "frame": "Firstly, the first reason is that... / People have more opportunities to...",
+        "point": "Some people buy trendy products to fit in with friends and look stylish on social media, yet seeing expensive clothes on TikTok or Instagram often creates peer pressure and tempts them to waste money."
+      },
+      "body2": {
+        "example": "For example, before buying new shoes or clothes, I always make a shopping list and check my savings, so I never run out of money at the end of the month.",
+        "focus": "Why buying for personal needs is better (View 2 - My opinion)",
+        "frame": "Secondly, it allows that... / Furthermore, it is worth noting that...",
+        "point": "Buying only what we truly need lets goods fit comfortably within our budget and daily routine without sacrificing quality, helping us stay on the safe side financially."
+      },
+      "conclusion": "In conclusion, I prefer buying products based on personal needs and financial limits rather than chasing trends. This is because I can save money for important goals and avoid unnecessary financial stress.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "shopping list",
+        "on credit",
+        "financial limits"
+      ],
+      "intro": {
+        "debai": "following shopping trends versus buying based on personal needs",
+        "ld1": "save money and fit comfortably within my budget",
+        "ld2": "avoid wasting money on peer pressure and useless trends"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #3 (Peer Pressure) + Statement #10 + Shared Vocab #21 & #24",
+      "reusedVocab": [
+        "fit comfortably within my budget and daily routine without sacrificing quality",
+        "stay on the safe side and think things through calmly",
+        "tempts buyers to waste money",
+        "peer pressure",
+        "scrolling through Facebook, TikTok, and Instagram"
+      ]
+    }
   },
   {
     "STT": "14",
@@ -249,7 +871,41 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 24/10/2026 (Ca 1)",
     "title": "Task 2.2: Advantages of Fostering Early Independence in Children",
-    "content": "Read the following statement:\n\n\"In many countries, such as the United States, parents place great importance on raising children to be independent from an early age, such as encouraging them to sleep in separate bedrooms, prepare simple meals, and manage personal tasks independently. Many people believe that this practice brings significant benefits to children's growth.\"\n\nWrite an essay to an educated reader discussing the advantages of fostering independence in children from an early age. Provide specific reasons and examples from your knowledge or experience to support your answer."
+    "content": "Read the following statement:\n\n\"In many countries, such as the United States, parents place great importance on raising children to be independent from an early age, such as encouraging them to sleep in separate bedrooms, prepare simple meals, and manage personal tasks independently. Many people believe that this practice brings significant benefits to children's growth.\"\n\nWrite an essay to an educated reader discussing the advantages of fostering independence in children from an early age. Provide specific reasons and examples from your knowledge or experience to support your answer.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my younger sister started sleeping in her own room and packing her schoolbag at age seven, so she became much more confident and responsible.",
+        "focus": "Advantage 1: Practical life skills and confidence (ld1)",
+        "frame": "Firstly, the first reason is that... / [debai] is considered as a convenient way to...",
+        "point": "Encouraging kids to cook simple meals, clean their rooms, and manage small tasks teaches them practical life skills and how to solve daily problems independently without waiting for adults."
+      },
+      "body2": {
+        "example": "For example, teenagers who learned basic cooking and time management as kids rarely feel shocked when they move away to study at university.",
+        "focus": "Advantage 2: Future adaptation and helping parents (ld2)",
+        "frame": "Secondly, it allows that... / Another positive aspect is that...",
+        "point": "Early independence helps children adjust and adapt to the social environment easily when they grow up, while also preventing parents from carrying the entire housework burden alone."
+      },
+      "conclusion": "In conclusion, teaching children independence early is clearly a positive practice. It helps young people build essential life skills, adapt confidently to adult life, and support their families.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "time management",
+        "confident",
+        "responsible"
+      ],
+      "intro": {
+        "debai": "raising children to be independent from an early age",
+        "ld1": "learn practical life skills and solve daily problems on their own",
+        "ld2": "adjust to new environments and reduce parents' daily burden"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Statements #6, #8 & #14 + Shared Vocab #7 & #10",
+      "reusedVocab": [
+        "teaches children practical life skills",
+        "solve daily problems independently",
+        "adjust and adapt to the social environment",
+        "prevents mothers from carrying the entire family burden alone"
+      ]
+    }
   },
   {
     "STT": "15",
@@ -267,7 +923,42 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 24/10/2026 (Ca 2)",
     "title": "Task 2.3: Benefits of Participating in Volunteer Work",
-    "content": "Read the following statement:\n\n\"Voluntary work and community service have become increasingly encouraged for students and young people. Some people believe that volunteer work is one of the most effective ways to contribute to society, while also providing invaluable benefits for the volunteers themselves.\"\n\nWrite an essay to an educated reader discussing the benefits of participating in volunteer work for individuals and communities. Include relevant examples and reasons to support your view."
+    "content": "Read the following statement:\n\n\"Voluntary work and community service have become increasingly encouraged for students and young people. Some people believe that volunteer work is one of the most effective ways to contribute to society, while also providing invaluable benefits for the volunteers themselves.\"\n\nWrite an essay to an educated reader discussing the benefits of participating in volunteer work for individuals and communities. Include relevant examples and reasons to support your view.",
+    "hint": {
+      "body1": {
+        "example": "For instance, I joined a weekend charity group to teach basic English to poor children, which improved my communication skills and helped me make warm-hearted friends.",
+        "focus": "Benefits for young volunteers (ld1)",
+        "frame": "Firstly, the first reason is that... / People have more opportunities to...",
+        "point": "Volunteering gives students more opportunities to broaden their mind, gain practical teamwork experience beyond textbook theory, and meet like-minded people to enrich their social life."
+      },
+      "body2": {
+        "example": "For example, when student volunteers clean up neighborhood parks or donate food to elderly people living alone, the whole community becomes cleaner, safer, and kinder.",
+        "focus": "Benefits for society and local communities (ld2)",
+        "frame": "Secondly, it allows that... / Another positive aspect is that...",
+        "point": "Community service makes a direct contribution to improving people's living standard and protecting the local environment while building a strong sense of belonging among citizens."
+      },
+      "conclusion": "In conclusion, participating in volunteer work brings huge positive benefits to both individuals and society. It helps young people develop useful skills and friendships while making a real contribution to a better community.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "charity group",
+        "teamwork skills",
+        "elderly people"
+      ],
+      "intro": {
+        "debai": "participating in volunteer work and community service",
+        "ld1": "broaden their mind, gain real experience, and meet like-minded people",
+        "ld2": "make a meaningful contribution to local communities"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Shared Vocab #2, #7, #15 & #23 + Pillar 2 (Social network) + Statement #5",
+      "reusedVocab": [
+        "make a contribution to",
+        "broaden their mind",
+        "improve people's living standard",
+        "meet like-minded people",
+        "build a strong sense of belonging"
+      ]
+    }
   },
   {
     "STT": "16",
@@ -285,7 +976,42 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 23/10/2026 (Ca sáng)",
     "title": "Task 2.4: Natural Ability versus Hard Work in Achieving Success",
-    "content": "Read the following statement:\n\n\"Some people believe that natural talent and innate ability are the most important prerequisites for achieving extraordinary success, while others argue that hard work, perseverance, and dedication play a far more decisive role.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include specific reasons and examples from your knowledge or experience to support your perspective."
+    "content": "Read the following statement:\n\n\"Some people believe that natural talent and innate ability are the most important prerequisites for achieving extraordinary success, while others argue that hard work, perseverance, and dedication play a far more decisive role.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include specific reasons and examples from your knowledge or experience to support your perspective.",
+    "hint": {
+      "body1": {
+        "example": "For instance, a student with a natural gift for math may understand difficult formulas in minutes without needing extra tutoring.",
+        "focus": "Role of natural talent (View 1)",
+        "frame": "Firstly, the first reason is that... / People have more opportunities to...",
+        "point": "Natural talent gives people a helpful head start because those born with a good voice, athletic body, or quick mind can learn basic skills faster than others."
+      },
+      "body2": {
+        "example": "For example, my brother was shy and weak at English in high school, but by practicing speaking for thirty minutes every day, he won a scholarship and got a great job.",
+        "focus": "Why hard work is more decisive (View 2 - My opinion)",
+        "frame": "Secondly, it allows that... / Furthermore, it is worth noting that...",
+        "point": "Hard work plays an essential role in long-term success because refusing to learn new skills makes even talented workers easy to replace, whereas daily practice helps anyone master their job."
+      },
+      "conclusion": "In conclusion, while natural talent offers a good starting point, I believe hard work is far more important for real success. This is because continuous effort lets people improve their skills and keep pace with modern society.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "head start",
+        "natural gift",
+        "scholarship"
+      ],
+      "intro": {
+        "debai": "natural talent versus hard work in achieving success",
+        "ld1": "improve skills step by step and keep pace with changes",
+        "ld2": "stay reliable and avoid being replaced at work"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Shared Vocab #1 & #6 + Statement #4 (Work attitude) + Mini-essay #5 (Daily practice)",
+      "reusedVocab": [
+        "plays an essential role in",
+        "keep pace with",
+        "Refusing to learn new skills",
+        "easy to replace",
+        "practice English speaking daily"
+      ]
+    }
   },
   {
     "STT": "17",
@@ -303,7 +1029,42 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều - Ca 1)",
     "title": "Task 2.5: Causes and Solutions of Global Water Shortages",
-    "content": "Read the following statement:\n\n\"Freshwater scarcity has become one of the most pressing global environmental crises in the 21st century, affecting millions of people and ecosystems worldwide.\"\n\nWrite an essay to an educated reader discussing the causes of water shortages and proposing practical solutions that governments and communities can implement to resolve this issue. Include specific reasons and examples from your knowledge or experience to support your answer."
+    "content": "Read the following statement:\n\n\"Freshwater scarcity has become one of the most pressing global environmental crises in the 21st century, affecting millions of people and ecosystems worldwide.\"\n\nWrite an essay to an educated reader discussing the causes of water shortages and proposing practical solutions that governments and communities can implement to resolve this issue. Include specific reasons and examples from your knowledge or experience to support your answer.",
+    "hint": {
+      "body1": {
+        "example": "For instance, in many industrial cities, untreated chemical waste from factories pollutes nearby rivers, leaving local families with little safe water for cooking and farming.",
+        "focus": "Causes of water shortages (ld1)",
+        "frame": "The primary reason behind this is that... / First of all, [debai] directly affects...",
+        "point": "Global warming causes longer droughts in many countries, while factories dump dirty waste into rivers and many citizens waste clean water in daily life without thinking."
+      },
+      "body2": {
+        "example": "For example, cities can repair leaking water pipes quickly and encourage families to turn off taps while brushing teeth and reuse rainwater for watering gardens.",
+        "focus": "Solutions: Government rules and public conservation (ld2)",
+        "frame": "To deal with these problems, we need to take several practical steps. / Solution A (Penalize)",
+        "point": "The government must introduce heavy fines for factories that pollute rivers and invest in modern water-saving systems, while launching campaigns to raise the public's awareness of conserving water."
+      },
+      "conclusion": "In conclusion, water shortages stem from pollution, climate change, and careless habits. Therefore, governments should enforce strict anti-pollution laws and educate citizens to save water so everyone has enough clean water for the future.",
+      "essayType": "Causes-Solutions",
+      "extraVocab": [
+        "droughts",
+        "chemical waste",
+        "leaking pipes"
+      ],
+      "intro": {
+        "debai": "global freshwater shortages",
+        "ld1": "climate change, water pollution, and wasteful daily habits",
+        "ld2": "stricter government rules and better public awareness of saving water"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Shared Vocab #3, #11 & #13 (Conserving water) + Mini-essay #6 + Solution A (Penalize)",
+      "reusedVocab": [
+        "raise the public's awareness of conserving water",
+        "solve the problem",
+        "introduce stricter rules and heavy fines",
+        "invest more public funds",
+        "global warming"
+      ]
+    }
   },
   {
     "STT": "18",
@@ -321,7 +1082,40 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều - Ca 2)",
     "title": "Task 2.6: Discussing the Growing Popularity of Online Shopping",
-    "content": "Read the following statement:\n\n\"E-commerce and online shopping have grown exponentially in recent years, with an increasing number of consumers preferring to purchase goods via the internet rather than visiting physical brick-and-mortar stores.\"\n\nWrite an essay to an educated reader discussing the reasons why online shopping has become so popular, and discuss whether this trend brings more advantages or disadvantages to society. Include relevant examples and explanations to support your view."
+    "content": "Read the following statement:\n\n\"E-commerce and online shopping have grown exponentially in recent years, with an increasing number of consumers preferring to purchase goods via the internet rather than visiting physical brick-and-mortar stores.\"\n\nWrite an essay to an educated reader discussing the reasons why online shopping has become so popular, and discuss whether this trend brings more advantages or disadvantages to society. Include relevant examples and explanations to support your view.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother works late every day, so he orders clothes and books online in five minutes instead of spending two hours in traffic.",
+        "focus": "Reasons & Advantages: fast, convenient for busy people",
+        "frame": "Firstly, the first reason is that [ld1] + Advantages: [debai] is considered as a convenient way to [V]",
+        "point": "Online shopping is fast, convenient for busy people in modern-day society, and lets buyers compare prices easily without going to crowded stores."
+      },
+      "body2": {
+        "example": "For example, I bought a jacket online last month, but the real fabric was thin and the wrong size, so I lost money and time returning it.",
+        "focus": "Disadvantages: wasting money & poor quality (Câu #10)",
+        "frame": "Secondly, it allows that [ld2] + Disadvantages: People may face various unexpected problems",
+        "point": "However, shopping on e-commerce apps often tempts buyers to waste money on cheap items that look nothing like the advertised photos."
+      },
+      "conclusion": "In conclusion, online shopping can have both pros and cons. While it is possible for people to save time and shop conveniently, they might waste money on poor-quality goods, so consumers should buy carefully.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "compare prices easily",
+        "poor-quality goods"
+      ],
+      "intro": {
+        "debai": "online shopping",
+        "ld1": "save time and buy goods conveniently from home",
+        "ld2": "waste money on poor-quality items and face online risks"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Câu #10 (Mua sắm online -) + Cụm #18 (fast, convenient for busy people) + Khung Advantages/Disadvantages",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "considered as a convenient way to",
+        "Shopping on e-commerce apps often tempts buyers to waste money on cheap items that look nothing like the advertised photos",
+        "People may face various unexpected problems"
+      ]
+    }
   },
   {
     "STT": "19",
@@ -339,7 +1133,42 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 25/10/2026 (Ca 3)",
     "title": "Task 2.7: The Impacts of Tourism on Tourist Cities",
-    "content": "Read the following statement:\n\n\"The rapid growth of tourism brings significant changes to popular tourist cities. Some people argue that mass tourism causes serious environmental damage and disrupts the lives of local residents, while others believe that it boosts the local economy and encourages residents to modernize their businesses and services.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include specific reasons and examples from your knowledge or experience to support your perspective."
+    "content": "Read the following statement:\n\n\"The rapid growth of tourism brings significant changes to popular tourist cities. Some people argue that mass tourism causes serious environmental damage and disrupts the lives of local residents, while others believe that it boosts the local economy and encourages residents to modernize their businesses and services.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include specific reasons and examples from your knowledge or experience to support your perspective.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my cousin opened a small homestay in Da Nang, and thanks to tourists, he earned a stable income and improved his family's living standard.",
+        "focus": "View 1 (Positive): boosts economy & modernizes services",
+        "frame": "Firstly, the first reason is that [ld1] + Advantages: People have more opportunities to [V]",
+        "point": "Tourism plays an essential role in helping local people boost economic development, create jobs, and modernize their hotels and restaurants."
+      },
+      "body2": {
+        "example": "For example, when I visited a famous beach city in summer, the streets were full of plastic waste and local families could not sleep because of late-night noise.",
+        "focus": "View 2 (Negative): environmental damage & noisy daily life",
+        "frame": "Secondly, it allows that [ld2] + Effects: Obviously, this trend can lead to several serious problems",
+        "point": "On the other hand, too many visitors produce trash, cause traffic jams, and make quiet neighborhoods noisy and crowded for local residents."
+      },
+      "conclusion": "In conclusion, while mass tourism creates serious environmental and noise problems, I believe its economic benefits are greater if authorities manage waste and protect the environment.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "local residents",
+        "plastic waste",
+        "traffic jams"
+      ],
+      "intro": {
+        "debai": "mass tourism in popular cities",
+        "ld1": "boost economic development and improve local living standards",
+        "ld2": "protect the environment and avoid disturbing local residents"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Cụm #5 (boost economic development) + Cụm #4 (improve people's living standard) + Cụm #11 (environmental protection) + Trục Peace & Privacy",
+      "reusedVocab": [
+        "plays an essential role in",
+        "boost economic development",
+        "improve people's living standard",
+        "Obviously, this trend can lead to several serious problems",
+        "crowded, noisy public venues"
+      ]
+    }
   },
   {
     "STT": "20",
@@ -357,7 +1186,40 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều)",
     "title": "Task 2.8: Consuming Local Food versus Imported Food Products",
-    "content": "Read the following statement:\n\n\"Some people believe that consuming locally grown food is better for personal health and local communities, while others argue that imported food products from other countries are safer and of higher quality.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include specific reasons and relevant examples from your knowledge or experience to support your answer."
+    "content": "Read the following statement:\n\n\"Some people believe that consuming locally grown food is better for personal health and local communities, while others argue that imported food products from other countries are safer and of higher quality.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include specific reasons and relevant examples from your knowledge or experience to support your answer.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my mother buys fresh vegetables from a nearby farm every morning, so our meals stay healthy and affordable without long storage time.",
+        "focus": "View 1: Local food is fresher and supports farmers (Câu #17)",
+        "frame": "Firstly, the first reason is that [ld1] + Mẫu A-R-E Sức khỏe (#1)",
+        "point": "Buying fresh local food supports domestic farmers directly, avoids high shipping costs, and gives families clean food full of vitamins."
+      },
+      "body2": {
+        "example": "For example, I often buy imported milk and apples for my younger sister because they have clear quality labels and stay safe to eat.",
+        "focus": "View 2: Imported food has strict safety rules and variety",
+        "frame": "Secondly, it allows that [ld2] + Advantages: People have more opportunities to [V]",
+        "point": "However, many consumers prefer imported food because foreign companies often follow strict safety rules and offer special items we cannot grow locally."
+      },
+      "conclusion": "In conclusion, I prefer buying locally grown food because it keeps our family healthy and supports domestic farmers while remaining affordable.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "strict safety rules",
+        "quality labels"
+      ],
+      "intro": {
+        "debai": "choosing local food or imported food",
+        "ld1": "eat fresh food for health and support domestic farmers",
+        "ld2": "enjoy safe and high-quality products from abroad"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Câu #17 (Thực phẩm địa phương +) + Mẫu A-R-E Vườn rau/Sức khỏe (#1) + Cụm #21 (fit comfortably within my budget)",
+      "reusedVocab": [
+        "Buying fresh local food supports domestic farmers directly and avoids the high shipping costs of imported products",
+        "play an essential role in maintaining our family's health",
+        "provides vitamins & prevents common illnesses",
+        "fit comfortably within my budget"
+      ]
+    }
   },
   {
     "STT": "21",
@@ -375,7 +1237,42 @@
     "part": "part2",
     "group": "Đề thi thực tế VLU 24/10/2026 (Chiều)",
     "title": "Task 2.9: Young People Replacing Traditional Activities with Digital Devices",
-    "content": "Read the following statement:\n\n\"Nowadays, an increasing number of young people spend most of their leisure time using electronic devices and modern technology rather than engaging in traditional activities, such as reading printed books or playing outdoors.\"\n\nWrite an essay to an educated reader discussing the causes of this trend and proposing practical solutions to encourage youth to maintain a healthy balance. Provide reasons and specific examples from your knowledge or experience to support your answer."
+    "content": "Read the following statement:\n\n\"Nowadays, an increasing number of young people spend most of their leisure time using electronic devices and modern technology rather than engaging in traditional activities, such as reading printed books or playing outdoors.\"\n\nWrite an essay to an educated reader discussing the causes of this trend and proposing practical solutions to encourage youth to maintain a healthy balance. Provide reasons and specific examples from your knowledge or experience to support your answer.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my younger brother used to play football outside, but now he stays in his room watching short videos after school every evening.",
+        "focus": "Causes: busy parents & addictive screens (Mini-essay #2 & #3)",
+        "frame": "Firstly, the first reason is that [ld1] + The primary reason behind this is that...",
+        "point": "Many parents work all day and lack time to guide their children, so young people spend hours scrolling through TikTok and games instead of reading printed books."
+      },
+      "body2": {
+        "example": "For example, our school started a weekend reading and badminton club, which helped students put down their phones and reach a healthy balance.",
+        "focus": "Solutions: family guidance & school clubs (Giải pháp A - Penalize)",
+        "frame": "Secondly, it allows that [ld2] + Solutions: Giải pháp A (Cá nhân & Gia đình/Trường học)",
+        "point": "To tackle this problem effectively, parents and schools should limit screen time and organize sports clubs, while each young person must build good self-discipline."
+      },
+      "conclusion": "In conclusion, screen habits mainly come from busy family life and addictive apps, so parents, schools, and young people must work together to build healthy offline activities.",
+      "essayType": "Causes-Solutions",
+      "extraVocab": [
+        "limit screen time",
+        "offline activities"
+      ],
+      "intro": {
+        "debai": "young people spending too much free time on electronic devices",
+        "ld1": "busy lifestyles and attractive apps on smartphones",
+        "ld2": "family guidance and healthy outdoor habits"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #2 (Student Misbehaviour) + #3 (Peer Pressure) + Giải pháp A (Penalize) + Cụm #10 & #22",
+      "reusedVocab": [
+        "spend hours on their smartphones",
+        "scrolling through Facebook, TikTok, and Instagram",
+        "reach a healthy balance between work and family time",
+        "lack proper guidance and self-control",
+        "build good self-discipline",
+        "parents and schools should work closely together to guide, listen, and support young people"
+      ]
+    }
   },
   {
     "Mã câu hỏi": "vlu10-writing-task2-10",
@@ -393,7 +1290,41 @@
     "group": "Đề thi thực tế VLU 10/2026 (Ca bổ sung)",
     "title": "Task 2.10: Negative Impacts of Internet Usage and Potential Solutions",
     "content": "Read the following excerpt:\n\n\"The internet has revolutionized modern society, bringing numerous benefits such as instant access to information, seamless global communication, and flexible opportunities for work and study. However, widespread internet usage has also led to serious negative consequences, including cyber addiction, privacy breaches, online misinformation, and declining face-to-face social interactions.\"\n\nWrite an essay to an educated reader discussing the problems caused by excessive or improper internet usage and proposing practical solutions that individuals, families, and authorities can take to address them. Include specific reasons and examples from your knowledge or experience to support your view.",
-    "STT": "22"
+    "STT": "22",
+    "hint": {
+      "body1": {
+        "example": "For instance, my friend clicked a fake prize link on social media and lost her account, and she also stopped talking with her family during dinner.",
+        "focus": "Problems: cyber risks, fake news & less face-to-face talk (Câu #11 + Cụm #23)",
+        "frame": "Firstly, the first reason is that [ld1] + Effects: Obviously, this trend can lead to several serious problems",
+        "point": "Sharing private details online or clicking strange links lets cyber criminals steal bank accounts, while excessive screen time reduces real face-to-face interaction."
+      },
+      "body2": {
+        "example": "For example, schools can teach students how to check fake news and keep passwords safe, while authorities block harmful websites.",
+        "focus": "Solutions: individuals, families & strict laws (Giải pháp A - Penalize)",
+        "frame": "Secondly, it allows that [ld2] + Solutions: Giải pháp A (Cá nhân + Gia đình + Chính phủ)",
+        "point": "Each person must think calmly before sharing data, parents should guide teenagers, and the government must introduce stricter rules and heavy fines for online crimes."
+      },
+      "conclusion": "In conclusion, improper internet use threatens privacy and real relationships, so individuals, families, and the government should take concrete actions to make the online world safer.",
+      "essayType": "Causes-Solutions",
+      "extraVocab": [
+        "fake news",
+        "keep passwords safe"
+      ],
+      "intro": {
+        "debai": "excessive and improper internet usage",
+        "ld1": "cyber addiction, privacy loss, and weaker real-life communication",
+        "ld2": "strict rules, family guidance, and personal self-control"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Câu #11 (An ninh mạng -) + Giải pháp A (Penalize) + Cụm #23 (face-to-face interaction) + #24",
+      "reusedVocab": [
+        "Obviously, this trend can lead to several serious problems",
+        "Sharing private details online or clicking strange links allows cyber criminals to steal bank accounts and personal identities easily",
+        "help us truly understand each other through face-to-face interaction",
+        "think things through calmly to avoid unnecessary trouble",
+        "introduce stricter rules and heavy fines for violations"
+      ]
+    }
   },
   {
     "Mã câu hỏi": "vlu10-writing-task2-11",
@@ -411,7 +1342,40 @@
     "group": "Đề thi thực tế VLU 25/10/2026 (Chiều)",
     "title": "Task 2.11: Should Students Be Allowed to Bring Smartphones to School",
     "content": "Read the following statement:\n\n\"Some people argue that students should be allowed to bring smartphones to school because they serve as convenient educational tools for learning and emergency communication, while others believe that smartphones cause severe distractions and should be strictly banned in schools.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include specific reasons and relevant examples from your knowledge or experience to support your answer.",
-    "STT": "23"
+    "STT": "23",
+    "hint": {
+      "body1": {
+        "example": "For instance, in my English class, students used dictionary apps on their phones to check new words and finish group projects faster.",
+        "focus": "View 1 (Allow): learning tools & emergency contact (Mini-essay #5 + Cụm #8)",
+        "frame": "Firstly, the first reason is that [ld1] + Advantages: People have more opportunities to [V]",
+        "point": "Smartphones help students make the most of new technology to look up vocabulary, use AI study tools, and call their parents quickly in an emergency."
+      },
+      "body2": {
+        "example": "For example, my classmate kept checking TikTok under his desk last term, so he missed important math rules and got low test scores.",
+        "focus": "View 2 (Ban): classroom distractions & low self-control (Mini-essay #2 + Cụm #22)",
+        "frame": "Secondly, it allows that [ld2] + Disadvantages: [debai] has a negative impact on...",
+        "point": "On the other hand, without proper guidance and self-control, many students secretly play games or message friends during lessons instead of listening to teachers."
+      },
+      "conclusion": "In conclusion, although smartphones are useful for learning and emergencies, I believe schools should only allow them when teachers guide students to prevent distractions.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "emergency contact",
+        "classroom distractions"
+      ],
+      "intro": {
+        "debai": "allowing students to bring smartphones to school",
+        "ld1": "use learning apps and contact parents in emergencies",
+        "ld2": "avoid classroom distractions and protect study focus"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #5 (AI & Modern Skills) + Mini-essay #2 (Student Misbehaviour) + Cụm #8 & #22",
+      "reusedVocab": [
+        "make the most of new technology to improve productivity",
+        "with advanced AI tools, students can ask questions anytime",
+        "lack proper guidance and self-control",
+        "has a negative impact on"
+      ]
+    }
   },
   {
     "Mã câu hỏi": "vlu10-writing-task2-12",
@@ -429,6 +1393,39 @@
     "group": "Đề thi thực tế VLU 24/10/2026 (Chiều)",
     "title": "Task 2.12: Differing Perspectives on the Nature and Longevity of Friendships",
     "content": "Read the following statement:\n\n\"There are no guidelines about how to make friends, how to keep friendships going, and how to finish friendships if we want to move on. People have very different opinions about this: some people would die for their friends and they value them more than family. Others say that friends are temporary, only there to help each other until they are no longer needed.\"\n\nDiscuss both views and give your own opinion in an essay to an educated reader. Include specific reasons and relevant examples from your knowledge or experience to support your answer.",
-    "STT": "24"
+    "STT": "24",
+    "hint": {
+      "body1": {
+        "example": "For instance, my best friend from high school still helps me whenever I feel stressed or need advice, even after we entered different universities.",
+        "focus": "View 1: Deep lifelong friendships (Trục Social + Cụm #23)",
+        "frame": "Firstly, the first reason is that [ld1] + Trục Mental health (Social network)",
+        "point": "Close friends share hobbies, relieve stress together, and build a strong sense of belonging, so some people trust loyal friends as deeply as family."
+      },
+      "body2": {
+        "example": "For example, I used to talk daily with my former classmates, but once everyone started full-time work, we only contacted each other when we needed help.",
+        "focus": "View 2: Temporary friendships due to life changes",
+        "frame": "Secondly, it allows that [ld2] + Disadvantages: People may face various unexpected problems",
+        "point": "However, others believe friendships are temporary because busy jobs, moving to new cities, or different interests often make people stop keeping in touch."
+      },
+      "conclusion": "In conclusion, while some friendships are temporary due to life changes, I believe true friends are worth keeping and both family and loyal friends deserve our care.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "loyal friends",
+        "keep in touch"
+      ],
+      "intro": {
+        "debai": "how deeply and how long people value friendships",
+        "ld1": "build lifelong trust and support each other in hard times",
+        "ld2": "accept that some friendships change as life goals change"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Trục 2 Mental health (Social network) + Cụm #9 (relieve stress) + Cụm #23 (strong sense of belonging)",
+      "reusedVocab": [
+        "meet like-minded people who have a lot of things in common with me",
+        "relieve stress and reduce fatigue",
+        "build a strong sense of belonging and help us truly understand each other through face-to-face interaction",
+        "enhance my overall well-being"
+      ]
+    }
   }
 ]

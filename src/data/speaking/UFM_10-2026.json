@@ -15,7 +15,47 @@
     "part": "part1",
     "group": "Đề thi thực tế UFM 20/10/2026",
     "title": "Topic 1: Smartwatches & Wearable Devices",
-    "content": "1. Do you wear a smartwatch or any wearable digital fitness device?\n2. What features of smartwatches do you find most useful in your everyday life?\n3. Do you think smartwatches will eventually replace traditional wristwatches entirely in the future?"
+    "content": "1. Do you wear a smartwatch or any wearable digital fitness device?\n2. What features of smartwatches do you find most useful in your everyday life?\n3. Do you think smartwatches will eventually replace traditional wristwatches entirely in the future?",
+    "hint": {
+      "extraVocab": [
+        "step counter",
+        "heart-rate monitor",
+        "traditional wristwatches"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I currently wear a simple smartwatch every day, especially when I go out or exercise.",
+          "example": "I bought a black fitness watch six months ago and I wear it every morning when I go jogging in the park.",
+          "pillar": "Physical health",
+          "q": "Do you wear a smartwatch or any wearable digital fitness device?",
+          "reason": "It is beneficial to my physical health because it helps me track my daily steps and reminds me to stay active and keep fit."
+        },
+        {
+          "answer": "I find the step counter, heart-rate monitor, and message notifications the most useful features in my daily life.",
+          "example": "Whenever I sit at my desk for over an hour, my watch buzzes to remind me to stand up and walk around.",
+          "pillar": "Physical health",
+          "q": "What features of smartwatches do you find most useful in your everyday life?",
+          "reason": "Tracking my health encourages me to stay fit and healthy, while quick notifications are fast and convenient when I am busy driving or studying."
+        },
+        {
+          "answer": "No, I don't think smartwatches will replace traditional wristwatches completely in the future.",
+          "example": "For example, my dad still prefers wearing his classic leather watch to weddings and important office meetings.",
+          "pillar": "Knowledge",
+          "q": "Do you think smartwatches will eventually replace traditional wristwatches entirely in the future?",
+          "reason": "Although smartwatches help us keep pace with modern technology, traditional watches do not need daily charging and look classic and polite for formal events or business meetings."
+        }
+      ],
+      "reusedSource": "Trục Physical health, Knowledge + 24 cụm từ đa năng",
+      "reusedVocab": [
+        "beneficial to my physical health",
+        "keep fit",
+        "stay fit and healthy",
+        "fast, convenient",
+        "keep pace with"
+      ],
+      "topic": "Smartwatches & Wearable Devices"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +73,56 @@
     "part": "part1",
     "group": "Đề thi thực tế UFM 20/10/2026",
     "title": "Topic 2: Plants & Nature",
-    "content": "1. Do you keep any indoor plants or flowers in your room or home?\n2. Have you ever tried growing or taking care of plants yourself?\n3. What are the benefits of having plants and greenery in residential areas and workplaces?"
+    "content": "1. Do you keep any indoor plants or flowers in your room or home?\n2. Have you ever tried growing or taking care of plants yourself?\n3. What are the benefits of having plants and greenery in residential areas and workplaces?",
+    "hint": {
+      "extraVocab": [
+        "indoor plants",
+        "balcony",
+        "water plants",
+        "greenery",
+        "fresh air"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I am quite keen on keeping a few small indoor plants on my desk and balcony.",
+          "example": "For example, I have two small snake plants next to my study table that make my room feel cozy and fresh.",
+          "pillar": "Mental health",
+          "q": "1. Do you keep any indoor plants or flowers in your room or home?",
+          "reason": "Because it is advantageous to my mental health. Looking at green leaves makes me feel refreshed and peaceful, and helps me reduce stress and recharge my batteries after a day of hard work."
+        },
+        {
+          "answer": "Yes, I actually started taking care of some potted herbs and vegetables myself last year.",
+          "example": "Every morning before class, I spend ten minutes watering green lettuce and fresh tomatoes on my balcony.",
+          "pillar": "Mental health & Knowledge",
+          "q": "2. Have you ever tried growing or taking care of plants yourself?",
+          "reason": "Watering plants allows my mind to slow down and relax comfortably. It also gives me practical knowledge about nature and helps me reach a healthy balance between study and daily rest."
+        },
+        {
+          "answer": "Having plants and greenery in living areas and workplaces brings multiple benefits.",
+          "example": "For instance, an office with green corners or a neighborhood park helps people feel more energetic and avoid feeling overwhelmed by crowded, noisy streets.",
+          "pillar": "Physical health & Peace & Privacy",
+          "q": "3. What are the benefits of having plants and greenery in residential areas and workplaces?",
+          "reason": "Green plants make a great contribution to protecting the environment and improving physical health because they absorb CO2 and keep the air fresh. Also, green spaces help busy workers relieve stress and reduce fatigue."
+        }
+      ],
+      "reusedSource": "4 Trục A-R-E (Mental health, Physical health, Peace & Privacy) + Mẫu Môi trường (#2)",
+      "reusedVocab": [
+        "keen on",
+        "advantageous to my mental health",
+        "feel refreshed and peaceful",
+        "reduce stress",
+        "recharge my batteries",
+        "after a day of hard work",
+        "healthy balance",
+        "make a great contribution to",
+        "protecting the environment",
+        "relieve stress and reduce fatigue",
+        "feel more energetic",
+        "crowded, noisy"
+      ],
+      "topic": "Plants & Nature"
+    }
   },
   {
     "STT": "3",
@@ -51,7 +140,49 @@
     "part": "part2",
     "group": "Đề thi thực tế UFM 20/10/2026",
     "title": "Part 2 - Situation 1: Choosing a Science Learning Activity for Students",
-    "content": "Situation: A secondary school is organizing an extracurricular science learning activity for students to spark their interest in STEM subjects. Three options are proposed: visiting an interactive science museum, participating in a robotics and coding workshop, or conducting outdoor nature science experiments. Which option do you think is best for the students, and why?"
+    "content": "Situation: A secondary school is organizing an extracurricular science learning activity for students to spark their interest in STEM subjects. Three options are proposed: visiting an interactive science museum, participating in a robotics and coding workshop, or conducting outdoor nature science experiments. Which option do you think is best for the students, and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-4",
+        "khen1Text": "because air-conditioned classrooms equipped with modern teaching tools and computers give secondary students the best conditions to practice hands-on STEM skills.",
+        "khen2ARE": {
+          "answer": "Secondly, this workshop brings students a wide range of benefits because it helps them keep pace with the fast-paced development of modern science and make the most of new technology.",
+          "example": "For example, students can work in pairs to program a small robot car to follow a black line and avoid obstacles in the school computer room.",
+          "reason": "Writing simple code and building small robots allows their brains to exercise creatively and helps them see how math and physics work in real life."
+        },
+        "khen2Pillar": "Knowledge",
+        "khen3Code": "KHEN-4",
+        "khen3Text": "an inspiring learning environment where students feel proud of what they create and feel confident exploring STEM subjects.",
+        "option": "participating in a robotics and coding workshop"
+      },
+      "extraVocab": [
+        "STEM subjects",
+        "robotics and coding",
+        "avoid obstacles"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-6",
+          "option": "conducting outdoor nature science experiments",
+          "reason": "outdoor activities depend too much on the weather and can be unsafe or uncomfortable for secondary students when it rains heavily or gets too hot outside."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "visiting an interactive science museum",
+          "reason": "a museum visit often gets too crowded with large school groups and leaves students little time to actually build or test things themselves, so this opinion receives few choices in similar situations."
+        }
+      ],
+      "reusedVocab": [
+        "practice hands-on skills",
+        "equipped with modern teaching tools",
+        "keep pace with the fast-paced development of modern science",
+        "make the most of new technology",
+        "allow their brain to exercise",
+        "an inspiring learning environment"
+      ],
+      "situation": "A secondary school is organizing an extracurricular science learning activity for students to spark their interest in STEM subjects, and three options are proposed: visiting an interactive science museum, participating in a robotics and coding workshop, or conducting outdoor nature science experiments."
+    }
   },
   {
     "STT": "4",
@@ -69,6 +200,71 @@
     "part": "part3",
     "group": "Đề thi thực tế UFM 20/10/2026",
     "title": "Part 3 - Topic 1: The Importance of Body Language in Communication",
-    "content": "Topic: The importance of body language in interpersonal communication\nSuggestions:\n- Expressing emotions and building trust\n- Clarifying spoken words and avoiding misunderstandings\n- Creating a positive and professional first impression\n- [Your own ideas]\n\nFollow-up questions:\n1. Can body language sometimes reveal true feelings that spoken words try to hide?\n2. How can cultural differences affect the interpretation of specific gestures and eye contact?\n3. Why is mastering non-verbal communication crucial in professional job interviews and presentations?"
+    "content": "Topic: The importance of body language in interpersonal communication\nSuggestions:\n- Expressing emotions and building trust\n- Clarifying spoken words and avoiding misunderstandings\n- Creating a positive and professional first impression\n- [Your own ideas]\n\nFollow-up questions:\n1. Can body language sometimes reveal true feelings that spoken words try to hide?\n2. How can cultural differences affect the interpretation of specific gestures and eye contact?\n3. Why is mastering non-verbal communication crucial in professional job interviews and presentations?",
+    "hint": {
+      "coreTopic": "the importance of body language in interpersonal communication",
+      "extraVocab": [
+        "first impression",
+        "firm handshake",
+        "eye contact",
+        "nervous",
+        "job candidate"
+      ],
+      "followUps": [
+        {
+          "answer": "Yes, I think body language often shows true feelings that people try to hide with words.",
+          "example": "For example, a person may say I am fine with words, but their tight shoulders and sad face clearly show that they feel stressed.",
+          "formula": "Do you think / Can ...? -> Yes, I think ...",
+          "q": "1. Can body language sometimes reveal true feelings that spoken words try to hide?",
+          "reason": "People can control what they say, but small habits like avoiding eye contact, shaking legs, or crossing arms happen naturally when someone feels nervous or dishonest."
+        },
+        {
+          "answer": "I think cultural differences can make the same gesture look polite in one country and rude in another.",
+          "example": "For instance, direct eye contact shows honesty and confidence in Western countries, while in some Asian cultures, looking down slightly shows respect to older people.",
+          "formula": "How ...? -> I think individuals should understand ...",
+          "q": "2. How can cultural differences affect the interpretation of specific gestures and eye contact?",
+          "reason": "People in different countries grow up with different social habits, so travelers need to learn local customs to adjust and adapt to the social environment."
+        },
+        {
+          "answer": "There are some clear reasons why body language is crucial in interviews and presentations, such as showing confidence and keeping the audience interested.",
+          "example": "For example, a job candidate who sits up straight, smiles, and looks at the interviewer naturally has a much better chance of getting hired than someone looking at the floor.",
+          "formula": "Why / What ...? -> There are some reasons, such as ...",
+          "q": "3. Why is mastering non-verbal communication crucial in professional job interviews and presentations?",
+          "reason": "Employers and listeners judge your attitude in the first few seconds, so open posture and calm gestures help build trust and make your speech more convincing."
+        }
+      ],
+      "macroTopic": "society and communication",
+      "mindmapPoints": [
+        {
+          "cue": "Expressing emotions and building trust",
+          "expand": "This is because natural eye contact, a friendly smile, and nodding show that you are listening carefully, which helps us truly understand each other through face-to-face interaction.",
+          "impact": "Therefore, it brings people together and strengthens relationships.",
+          "sentence": "Body language helps people show real emotions and build trust with others.",
+          "wordForm": "V / V-ing"
+        },
+        {
+          "cue": "Clarifying spoken words and avoiding misunderstandings",
+          "expand": "For example, when a teacher uses hand movements to show size or direction while speaking, students understand the lesson much more easily.",
+          "impact": "Clearly, it is beneficial to clear daily communication.",
+          "sentence": "Using clear body language helps speakers explain their words and avoid misunderstandings.",
+          "wordForm": "V / V-ing"
+        },
+        {
+          "cue": "Creating a positive and professional first impression",
+          "expand": "This is because standing straight, offering a firm handshake, and smiling warmly show confidence and respect before you even say a word.",
+          "impact": "So, it has positive effects on work meetings and social success.",
+          "sentence": "Good body language helps people create a positive and professional first impression.",
+          "wordForm": "V / V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "help us truly understand each other through face-to-face interaction",
+        "brings people together and strengthens relationships",
+        "adjust and adapt to the social environment",
+        "build trust"
+      ]
+    }
   }
 ]

@@ -17,7 +17,57 @@
     "title": "Task 1.1: Replying to Tom About Finding Part-Time Jobs in Singapore",
     "content": "You have received an email from your friend, Tom, who lives in Singapore. You are planning to go there and want to find a part-time job. Write an email responding to Tom:\n\n- Tell him what types of part-time jobs you are interested in applying for\n- Share your plans and timeline for working part-time in Singapore\n- Describe the personal qualities and skills you have that make you suitable for those jobs",
     "isNew": true,
-    "addedAt": "2026-11-22T19:36:04+07:00"
+    "addedAt": "2026-11-22T19:36:04+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to give you information on the part-time jobs I am interested in, such as a café server, a shop assistant, or an IT support helper.",
+          "example": "Working at a coffee shop or bookstore near my campus would allow me to practice English with customers every day.",
+          "frame": "D. Provide Information",
+          "reason": "These jobs provide knowledge and experience in customer service, help me adjust and adapt to the social environment, and bring extra income to improve my living standard.",
+          "requirement": "What types of part-time jobs you are interested in applying for"
+        },
+        {
+          "answer": "I would like to let you know that I plan to arrive in Singapore next month and start applying for part-time shifts in my second week.",
+          "example": "I will prepare my CV this week, attend interviews during my first two weeks there, and begin working 15 hours a week from the following month.",
+          "frame": "D. Provide Information",
+          "reason": "Working on evenings and weekends fits comfortably within my budget and daily routine without hurting my studies.",
+          "requirement": "Your plans and timeline for working part-time in Singapore"
+        },
+        {
+          "answer": "I would like to let you know that I am hardworking, friendly, and good at communication and basic computer skills.",
+          "example": "Last year, I worked part-time at a bookshop in Ho Chi Minh City where I helped customers find books and handled payments accurately.",
+          "frame": "D. Provide Information",
+          "reason": "I can solve problems quickly at work and adjust well to a new environment, which makes me reliable for busy teams.",
+          "requirement": "Personal qualities and skills that make you suitable for those jobs"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my job plans in Singapore"
+      },
+      "extraVocab": [
+        "[+] shop assistant",
+        "[+] part-time shifts",
+        "[+] hardworking"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my plan to find a part-time job in Singapore",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Info + Share Plans & Qualities",
+      "reusedVocab": [
+        "I would like to give you information on",
+        "I would like to let you know that",
+        "provide knowledge and experience in",
+        "adjust and adapt to the social environment",
+        "improve my living standard",
+        "fit comfortably within my budget and daily routine",
+        "solve the problem"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -37,7 +87,41 @@
     "title": "Task 2.1: Advantages and Challenges of Learning a New Language",
     "content": "Read the following statement:\n\n\"Learning a new language brings many valuable opportunities in education, career development, and cultural exchange. However, learners also face numerous challenges along the way.\"\n\nWrite an essay to an educated reader discussing both the advantages and challenges of learning a new language. Support your arguments with specific reasons and relevant examples.",
     "isNew": true,
-    "addedAt": "2026-11-22T19:36:05+07:00"
+    "addedAt": "2026-11-22T19:36:05+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, getting a B2 English certificate helped my brother apply for an international company with a higher salary and learn about foreign cultures.",
+        "focus": "Advantages: Better career chances and broader cultural knowledge",
+        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
+        "point": "Learning a new language helps improve people's living standard through better job opportunities and lets them gain a deeper understanding of other cultures."
+      },
+      "body2": {
+        "example": "For example, busy adults often struggle to memorize new grammar after work and feel shy speaking with native speakers, though free AI tools now make practice cheaper.",
+        "focus": "Challenges: High cost of time, effort, and speaking shyness",
+        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
+        "point": "However, mastering a language costs a great deal of time, effort, and money for classes, and learners often find it hard to fit daily practice into a busy routine."
+      },
+      "conclusion": "In conclusion, learning a new language brings valuable career and cultural benefits despite the time and effort required, so learners should practice consistently using smart study tools.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "speaking shyness",
+        "study routine"
+      ],
+      "intro": {
+        "debai": "learning a new language",
+        "ld1": "improve career chances and broaden cultural knowledge",
+        "ld2": "managing time, study costs, and practice difficulties"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 3 (Positive or Negative) + Mẫu A-R-E #4 (Khóa học/B2) + Trục 3 (Knowledge) + Mini-essay #5 (AI & Language) + Chunks #4, #21, C",
+      "reusedVocab": [
+        "improve people's living standard",
+        "opens better job opportunities with higher income",
+        "gain a deeper understanding of people, culture, and tradition in different countries",
+        "costs a great deal of money, time, and effort",
+        "fit comfortably within my budget and daily routine"
+      ]
+    }
   },
   {
     "STT": "3",
@@ -57,7 +141,62 @@
     "title": "Task 1.2: Replying to Your Younger Brother About Your Birthday Party",
     "content": "Your younger brother wants to organize a birthday party for you and sent an email asking for your preferences. Write an informal email responding to him:\n\n- Tell him the place or venue where you would like to celebrate\n- Suggest the best date and time for the party\n- Mention the birthday gift you would love to receive",
     "isNew": true,
-    "addedAt": "2026-11-22T19:41:04+07:00"
+    "addedAt": "2026-11-22T19:41:04+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "From my point of view, I think that celebrating with a cozy dinner at home would be the best choice.",
+          "example": "We can decorate our living room with simple balloons and cook hotpot together with our parents and close friends.",
+          "frame": "H. Provide Opinion",
+          "reason": "Crowded, noisy public venues easily make people feel stressed, whereas home offers a quiet, cozy environment that helps us build a strong sense of belonging through face-to-face interaction.",
+          "requirement": "The place or venue where you would like to celebrate"
+        },
+        {
+          "answer": "Why don't we hold the party next Saturday evening at 6:30 p.m.?",
+          "example": "Our parents finish work early on Saturday, and our friends can stay until 9:30 p.m. without worrying about getting up early the next day.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "Saturday evening is fast and convenient for everyone because nobody has to rush after work or school, helping us reach a healthy balance between work and family time.",
+          "requirement": "The best date and time for the party"
+        },
+        {
+          "answer": "I would like to let you know that I would love to receive a good English novel or a wireless mouse for my laptop.",
+          "example": "You can easily pick up a paperback novel at the bookstore near your school, and I will read it every evening before bed.",
+          "frame": "D. Provide Information",
+          "reason": "A novel lets me dive into the world of a book to broaden my mind and relieve stress, while a wireless mouse helps me make the most of new technology to improve productivity.",
+          "requirement": "The birthday gift you would love to receive"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my birthday party"
+      },
+      "extraVocab": [
+        "[+] cozy dinner",
+        "[+] wireless mouse"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my upcoming birthday party",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Info + Suggestion + Express Preference",
+      "reusedVocab": [
+        "From my point of view, I think that",
+        "Why don't you",
+        "I would like to let you know that",
+        "crowded, noisy public venues",
+        "quiet, cozy environment",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "fast, convenient",
+        "reach a healthy balance between work and family time",
+        "dive into the world of a book",
+        "broaden my mind",
+        "relieve stress",
+        "make the most of new technology to improve productivity"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -77,7 +216,40 @@
     "title": "Task 2.2: Impacts of Workplace Stress on Employees and Companies",
     "content": "Read the following statement:\n\n\"In today's fast-paced and competitive work environment, workplace stress has become a serious concern that affects not only the health and well-being of individual employees but also the overall performance of companies.\"\n\nWrite an essay to an educated reader discussing the effects of workplace stress on both employees and companies. Provide specific reasons and examples to support your viewpoint.",
     "isNew": true,
-    "addedAt": "2026-11-22T19:41:05+07:00"
+    "addedAt": "2026-11-22T19:41:05+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, workers who skip lunch, work overtime, and check emails late at night often get sick and spend their savings on hospital bills later.",
+        "focus": "Effects on employees: Poor physical and mental health",
+        "frame": "First of all, [debai] directly affects... / Effects (Body Chunk D)",
+        "point": "Heavy workplace stress harms employees' physical and mental health, causes burnout, and stops them from reaching a healthy balance between work and family time."
+      },
+      "body2": {
+        "example": "For example, when tired employees cannot focus on deadlines or decide to change jobs every few months, the company loses skilled staff and spends more money hiring replacements.",
+        "focus": "Effects on companies: Lower productivity and high staff turnover",
+        "frame": "Secondly, in the long run... / Effects (Body Chunk D)",
+        "point": "For companies, stressed workers make more mistakes, show lower productivity, and often quit early, which hurts teamwork and business results."
+      },
+      "conclusion": "In conclusion, workplace stress damages both workers' health and company performance, so employers should set reasonable workloads to keep staff healthy and productive.",
+      "essayType": "Causes-Effects",
+      "extraVocab": [
+        "staff turnover",
+        "reasonable workloads"
+      ],
+      "intro": {
+        "debai": "workplace stress in modern companies",
+        "ld1": "harming employees' health and work-life balance",
+        "ld2": "reducing company productivity and keeping skilled staff"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 4 (Causes-Effects) + Mini-essay #4 (Workplace Stress & Burnout) + Câu #3 (Nhảy việc) + Chunks #8, #10 + Trục 1 & 2",
+      "reusedVocab": [
+        "skip lunch, work overtime, and still check work emails late at night",
+        "spend all that money on hospital bills later",
+        "reach a healthy balance between work and family time",
+        "improve productivity",
+        "changing jobs every few months"
+      ]
+    }
   }
 ]
-

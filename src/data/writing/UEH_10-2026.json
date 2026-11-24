@@ -15,7 +15,51 @@
     "part": "part1",
     "group": "Đề thi thực tế UEH 25/10/2026",
     "title": "Task 1.1: Arranging a Meet-up with a Friend Visiting on Business",
-    "content": "You have received an email from your close friend, Alex, who is coming to your city on a business trip next week. Read part of the email below:\n\n\"I am going to have a two-day business trip to your city next Friday, and I really want us to meet up while I am there! Would it be better for you if we meet at noon for lunch or in the evening at night? Also, could you suggest some nice and suitable places where we can sit down, eat, and chat comfortably? Let me know what you think!\"\n\nWrite an email responding to Alex."
+    "content": "You have received an email from your close friend, Alex, who is coming to your city on a business trip next week. Read part of the email below:\n\n\"I am going to have a two-day business trip to your city next Friday, and I really want us to meet up while I am there! Would it be better for you if we meet at noon for lunch or in the evening at night? Also, could you suggest some nice and suitable places where we can sit down, eat, and chat comfortably? Let me know what you think!\"\n\nWrite an email responding to Alex.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm happy to hear you are visiting my city! From my point of view, I think that meeting in the evening around 7:00 PM on Friday is much better than noon.",
+          "example": "We can spend two or three relaxed hours catching up after your Friday work meetings finish.",
+          "frame": "A. Câu dẫn cảm xúc + H. Provide Opinion",
+          "reason": "A lunch break is too short for busy people, whereas evening time lets us put our feet up, relieve stress, and talk without rushing back to work.",
+          "requirement": "Preference between meeting at noon for lunch or in the evening"
+        },
+        {
+          "answer": "There are two suggestions that I would like to make: a cozy Vietnamese restaurant near your hotel or a quiet rooftop cafe nearby.",
+          "example": "When it comes to food, we can enjoy authentic Pho or grilled dishes at Sen Garden, then walk next door for iced tea.",
+          "frame": "G. Provide Instruction / Suggestion + K. Informal Chunks",
+          "reason": "Both spots offer delicious local food and a quiet, cozy environment where we can truly understand each other through face-to-face interaction.",
+          "requirement": "Suggest nice and suitable places to sit, eat, and chat"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "our meet-up next week"
+      },
+      "extraVocab": [
+        "[+] catching up",
+        "[+] grilled dishes"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "our meet-up during your business trip next week",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Express Time Preference + Suggest Meeting Places",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "From my point of view, I think that",
+        "There are two suggestions that I would like to make",
+        "put my feet up",
+        "relieve stress",
+        "quiet, cozy environment",
+        "truly understand each other through face-to-face interaction",
+        "When it comes to",
+        "authentic"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,7 +77,58 @@
     "part": "part1",
     "group": "Đề thi thực tế UEH 25/10/2026 (Ca 2)",
     "title": "Task 1.2: Feedback on Hotel Stay Experience",
-    "content": "You have received an email from the Customer Relations Manager of Sunrise Hotel, where you stayed during your recent vacation. Read part of the email below:\n\n\"Thank you for choosing Sunrise Hotel for your recent vacation! We are constantly striving to enhance our guest experience. Could you share some thoughts on your overall experience staying with us? What specific aspect or service of our hotel did you enjoy the most? Do you have any constructive recommendations or feedback on how we could improve our facilities or services for future guests?\"\n\nWrite an email responding to the hotel manager."
+    "content": "You have received an email from the Customer Relations Manager of Sunrise Hotel, where you stayed during your recent vacation. Read part of the email below:\n\n\"Thank you for choosing Sunrise Hotel for your recent vacation! We are constantly striving to enhance our guest experience. Could you share some thoughts on your overall experience staying with us? What specific aspect or service of our hotel did you enjoy the most? Do you have any constructive recommendations or feedback on how we could improve our facilities or services for future guests?\"\n\nWrite an email responding to the hotel manager.",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, I would like to inform you that I had a very pleasant and relaxing three-night stay at Sunrise Hotel during my recent vacation.",
+          "example": "My room was clean, bright, and equipped with comfortable furniture.",
+          "frame": "I. [Formal] Thư Trả lời Thông tin (Reply to Inquiry)",
+          "reason": "The peaceful atmosphere allowed me to relieve stress, reduce fatigue, and recharge my batteries away from daily work.",
+          "requirement": "Overall experience staying at the hotel"
+        },
+        {
+          "answer": "Regarding the aspect I enjoyed most, I was really impressed by your polite front-desk staff and the delicious breakfast buffet.",
+          "example": "On my first morning, the receptionist gave me a helpful city map and recommended great nearby restaurants.",
+          "frame": "I. [Formal] Thư Trả lời Thông tin (Reply to Inquiry)",
+          "reason": "The staff's warm attitude made me feel comfortable, and eating fresh local food every morning boosted my energy for sightseeing.",
+          "requirement": "Specific aspect or service enjoyed the most"
+        },
+        {
+          "answer": "As to your next concern, I believe you should improve the Wi-Fi speed on the upper floors and add brighter bedside reading lamps.",
+          "example": "During my stay on the fifth floor, the Wi-Fi connection dropped several times in the evening.",
+          "frame": "I. [Formal] Reply + G. Provide Instruction / Suggestion",
+          "reason": "Stable internet is essential for busy guests checking emails, and better lighting helps guests relax comfortably without hurting their eyes.",
+          "requirement": "Constructive recommendations to improve facilities or services"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "my feedback on Sunrise Hotel"
+      },
+      "extraVocab": [
+        "[+] front-desk staff",
+        "[+] breakfast buffet",
+        "[+] Wi-Fi connection"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "share my feedback on my recent stay at Sunrise Hotel",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Stay Feedback + Suggest Improvements",
+      "reusedVocab": [
+        "First of all, I would like to inform you that",
+        "Regarding",
+        "As to your next concern",
+        "I believe you should",
+        "relieve stress and reduce fatigue",
+        "recharge my batteries",
+        "fresh local food",
+        "boost my energy"
+      ]
+    }
   },
   {
     "STT": "3",
@@ -51,7 +146,40 @@
     "part": "part2",
     "group": "Đề thi thực tế UEH 25/10/2026",
     "title": "Task 2.1: Pros and Cons of Self-Employment",
-    "content": "Read the following statement:\n\n\"In recent years, an increasing number of professionals choose self-employment or freelancing over working as a regular salaried employee for a company.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of self-employment. Provide specific reasons and examples from your knowledge or experience to support your answer."
+    "content": "Read the following statement:\n\n\"In recent years, an increasing number of professionals choose self-employment or freelancing over working as a regular salaried employee for a company.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of self-employment. Provide specific reasons and examples from your knowledge or experience to support your answer.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother works as a freelance designer from home, so he can choose his favorite projects and spend evenings with his family.",
+        "focus": "Advantages: flexible schedule & work-life balance (Câu #1 + Cụm #10)",
+        "frame": "Firstly, the first reason is that [ld1] + Advantages: [debai] is considered as a convenient way to [V]",
+        "point": "Working for yourself lets you control your own schedule, follow your true passion without a boss watching over you, and reach a healthy balance between work and family time."
+      },
+      "body2": {
+        "example": "For example, when my friend left his company to work alone, he had very few clients in the first six months and struggled to pay his rent.",
+        "focus": "Disadvantages: unstable income & high risk (Câu #2)",
+        "frame": "Secondly, it allows that [ld2] + Disadvantages: People may face various unexpected problems",
+        "point": "However, running a new business or freelancing brings unstable monthly income and a high risk of losing your savings without enough market experience."
+      },
+      "conclusion": "In conclusion, self-employment has both pros and cons. While people enjoy flexible schedules and freedom, they must save money and prepare carefully for unstable income.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "freelance designer",
+        "pay rent"
+      ],
+      "intro": {
+        "debai": "choosing self-employment or freelancing",
+        "ld1": "control my own schedule and follow my passion",
+        "ld2": "face unstable income and financial risks"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Câu #1 (Tự làm chủ +) + Câu #2 (Tự kinh doanh -) + Cụm #10 (work and family time)",
+      "reusedVocab": [
+        "Working for yourself lets you control your own schedule and follow your true passion without a boss watching over you",
+        "Running a new business brings unstable monthly income and a high risk of losing all your savings without market experience",
+        "reach a healthy balance between work and family time",
+        "People may face various unexpected problems"
+      ]
+    }
   },
   {
     "STT": "4",
@@ -69,6 +197,41 @@
     "part": "part2",
     "group": "Đề thi thực tế UEH 25/10/2026 (Ca 2)",
     "title": "Task 2.2: Advantages and Disadvantages of Using Motorbikes in Major Cities",
-    "content": "Read the following statement:\n\n\"In many major cities, motorbikes are widely favored as personal transport due to their low cost and convenient parking, yet critics argue that they contribute significantly to air pollution, noise pollution, and traffic accidents.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of using motorbikes as a primary means of transportation in large cities. Support your arguments with reasons and examples from your knowledge or experience."
+    "content": "Read the following statement:\n\n\"In many major cities, motorbikes are widely favored as personal transport due to their low cost and convenient parking, yet critics argue that they contribute significantly to air pollution, noise pollution, and traffic accidents.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of using motorbikes as a primary means of transportation in large cities. Support your arguments with reasons and examples from your knowledge or experience.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother rides a motorbike to work every morning because it costs much less than a car and helps him pass small streets quickly.",
+        "focus": "Advantages: affordable, fast & easy parking (Cụm #18 + #21)",
+        "frame": "Firstly, the first reason is that [ld1] + Advantages: [debai] is considered as a convenient way to [V]",
+        "point": "Motorbikes are fast, convenient for busy people in modern-day society, fit comfortably within a worker's budget, and are easy to park in crowded areas."
+      },
+      "body2": {
+        "example": "For example, during rush hour in Ho Chi Minh City, thousands of motorbikes cause thick air pollution and frequent crashes when riders hurry.",
+        "focus": "Disadvantages: exhaust fumes, noise & accidents (Mini-essay #6 + Effects)",
+        "frame": "Secondly, it allows that [ld2] + Effects: Obviously, this trend can lead to several serious problems",
+        "point": "However, gasoline motorbikes release harmful exhaust fumes, create loud traffic noise, and put riders at higher risk of serious road accidents."
+      },
+      "conclusion": "In conclusion, motorbikes have both pros and cons. While they save time and money for city residents, people should switch to electric motorbikes or public transport to protect the environment.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "easy to park",
+        "road accidents",
+        "rush hour"
+      ],
+      "intro": {
+        "debai": "using motorbikes as main transport in big cities",
+        "ld1": "save money and travel quickly through narrow streets",
+        "ld2": "avoid air pollution, noise, and road accidents"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #6 (Electric Vehicles) + Cụm #18 (fast, convenient) + Cụm #21 (fit comfortably within my budget) + Giải pháp B (Support)",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "fit comfortably within my budget",
+        "released a huge amount of harmful exhaust fumes, causing terrible air pollution",
+        "Obviously, this trend can lead to several serious problems",
+        "switch to electric"
+      ]
+    }
   }
 ]

@@ -15,7 +15,59 @@
     "part": "part1",
     "group": "Đề thi thực tế UFM 20/10/2026",
     "title": "Task 1.1: Inviting a Friend to an Upcoming Music Concert",
-    "content": "You have received an email from your friend, Liam, about plans for next month. Read part of his email below:\n\n\"How have you been? Next month, our favorite band is holding a live music concert in town, and I know you love their songs just as much as I do! Would you like to go to the concert with me? When and where is the event taking place, and how can we get the tickets? What should we prepare before attending the show? Let me know your thoughts!\"\n\nWrite an informal email responding to Liam."
+    "content": "You have received an email from your friend, Liam, about plans for next month. Read part of his email below:\n\n\"How have you been? Next month, our favorite band is holding a live music concert in town, and I know you love their songs just as much as I do! Would you like to go to the concert with me? When and where is the event taking place, and how can we get the tickets? What should we prepare before attending the show? Let me know your thoughts!\"\n\nWrite an informal email responding to Liam.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I'm happy to hear about this concert, and I would like to let you know that I would definitely love to go with you!",
+          "example": "I have been waiting to see our favorite band perform live since last summer.",
+          "frame": "A. Câu dẫn cảm xúc + D. Provide Information",
+          "reason": "Going to a live concert is advantageous to my mental health because it helps me relieve stress, reduce fatigue, and elevate my mood.",
+          "requirement": "Would you like to go to the concert with me?"
+        },
+        {
+          "answer": "I would like to give you information on the show: it takes place on Saturday, the 15th of next month at 7:30 PM at Military Zone 7 Stadium, and we can buy e-tickets online via Ticketbox.",
+          "example": "Tickets go on sale this Friday at 9:00 AM, so I can book two standing tickets for us right away.",
+          "frame": "D. Provide Information",
+          "reason": "Booking e-tickets online early is fast, convenient, and helps us stay on the safe side before good seats sell out.",
+          "requirement": "When, where, and how to get the tickets"
+        },
+        {
+          "answer": "There are two suggestions that I would like to make: we should wear light, comfortable clothes with sneakers and bring water plus a portable phone charger.",
+          "example": "Also, let's eat a light dinner at 5:30 PM near the stadium so we will not get hungry during the show.",
+          "frame": "G. Provide Instruction / Suggestion + K. Informal Chunks",
+          "reason": "We will stand and sing for hours, so wearing light clothes and preparing early helps us feel comfortable and avoid unnecessary trouble.",
+          "requirement": "What to prepare before attending the show"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "the live concert"
+      },
+      "extraVocab": [
+        "[+] book e-tickets",
+        "[+] portable phone charger"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "our favorite band's live concert next month",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Accept Invitation + Provide Event Info + Give Preparation Tips",
+      "reusedVocab": [
+        "I'm happy to hear",
+        "I would like to let you know that",
+        "I would like to give you information on",
+        "There are two suggestions that I would like to make",
+        "advantageous to my mental health",
+        "relieve stress and reduce fatigue",
+        "elevate my mood",
+        "fast, convenient",
+        "stay on the safe side to avoid unnecessary trouble",
+        "light clothes"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,6 +85,41 @@
     "part": "part2",
     "group": "Đề thi thực tế UFM 20/10/2026",
     "title": "Task 2.1: Advantages and Disadvantages of Being Famous",
-    "content": "Read the following statement:\n\n\"Many young people dream of becoming famous celebrities, influencers, or public figures, believing that fame brings great happiness and wealth, while others emphasize the significant drawbacks of living in the public eye.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of being famous. Include relevant examples and explanations from your knowledge or experience to support your points."
+    "content": "Read the following statement:\n\n\"Many young people dream of becoming famous celebrities, influencers, or public figures, believing that fame brings great happiness and wealth, while others emphasize the significant drawbacks of living in the public eye.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of being famous. Include relevant examples and explanations from your knowledge or experience to support your points.",
+    "hint": {
+      "body1": {
+        "example": "For instance, a popular young singer or TikTok creator can easily buy a nice house for their parents and raise money for poor children in rural areas.",
+        "focus": "Advantages of being famous",
+        "frame": "Firstly, [debai] + People have more opportunities to [V] + Cụm #2, #4",
+        "point": "Being famous gives people more opportunities to earn high salaries from ads and brand deals, which helps improve people's living standard. Celebrities can also use their voice to help others and make a contribution to charity."
+      },
+      "body2": {
+        "example": "For example, many young actors cannot even eat quietly at a restaurant with their family, and one small mistake online can bring thousands of rude comments.",
+        "focus": "Disadvantages of living in the public eye",
+        "frame": "Secondly, [debai] has a negative impact on... + Trục Peace & Privacy + Mini-essay #3",
+        "point": "On the other hand, famous people lose their personal privacy because cameras and fans follow them everywhere. Reading negative comments on social media also creates terrible stress and makes it hard to reach a healthy balance between work and family time."
+      },
+      "conclusion": "In conclusion, being famous has both pros and cons: it brings great wealth and career opportunities, yet celebrities often struggle to keep their personal privacy and mental peace.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "public eye",
+        "brand deals",
+        "negative comments"
+      ],
+      "intro": {
+        "debai": "being famous as a celebrity or influencer",
+        "ld1": "earn high income, improve living standards, and have more opportunities",
+        "ld2": "lose personal privacy and suffer from heavy public pressure"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Adv-Disadv + Trục Peace & Privacy + Mini-essay #3 (Mạng xã hội) + Cụm #2, #4, #10",
+      "reusedVocab": [
+        "have more opportunities to",
+        "improve people's living standard",
+        "make a contribution to",
+        "personal privacy",
+        "reach a healthy balance between work and family time"
+      ]
+    }
   }
 ]

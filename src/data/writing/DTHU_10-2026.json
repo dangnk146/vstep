@@ -15,7 +15,58 @@
     "part": "part1",
     "group": "Đề thi thực tế DThU 25/10/2026 (Sáng)",
     "title": "Task 1.1: Replying to Maya about Your New House",
-    "content": "You have received an email from your foreign friend, Maya, who is currently living in the same city. Read part of her email below:\n\n\"Congratulations on moving into your new home! I heard you just finished settling in. Could you tell me more about it? What do you like most about your new house and where is it located? Could you give me basic directions on how to get there from the city center? Also, I noticed you have an empty front yard—what are you planning to do with that space? I hope we can meet up soon!\"\n\nWrite an email responding to Maya."
+    "content": "You have received an email from your foreign friend, Maya, who is currently living in the same city. Read part of her email below:\n\n\"Congratulations on moving into your new home! I heard you just finished settling in. Could you tell me more about it? What do you like most about your new house and where is it located? Could you give me basic directions on how to get there from the city center? Also, I noticed you have an empty front yard—what are you planning to do with that space? I hope we can meet up soon!\"\n\nWrite an email responding to Maya.",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to give you information on my new house: it is in a quiet neighborhood in District 7, and what I like most is my bright bedroom overlooking a green park.",
+          "example": "Every morning, I can open the window to enjoy fresh air and birds singing.",
+          "frame": "D. Provide Information + H. Provide Opinion + Trục 4 Peace & Privacy",
+          "reason": "Living away from noisy main streets offers a quiet, cozy environment with total personal privacy so I can recharge my batteries after work.",
+          "requirement": "What you like most about the new house and where it is located"
+        },
+        {
+          "answer": "To get here from the city center, just drive straight south along Nguyen Huu Tho Street for 15 minutes until you pass a big supermarket, then turn right into Street No. 5.",
+          "example": "My house is number 24, right opposite a cozy coffee shop with a yellow sign.",
+          "frame": "D. Provide Information + G. Provide Instruction / Suggestion",
+          "reason": "Taking this straight main road is fast, convenient, and easy to follow without getting lost in small alleys.",
+          "requirement": "Basic directions from the city center"
+        },
+        {
+          "answer": "I would like to let you know that I am planning to turn the empty front yard into a small vegetable and flower garden.",
+          "example": "Next weekend, I will plant green lettuce, fresh tomatoes, and a few pots of roses along the fence.",
+          "frame": "D. Provide Information + A-R-E Vườn rau / Môi trường",
+          "reason": "Growing fresh organic vegetables plays an essential role in maintaining health and makes a contribution to keeping the air fresh around the house.",
+          "requirement": "Plans for the empty front yard"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my new house"
+      },
+      "extraVocab": [
+        "[+] turn right",
+        "[+] main road"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my new house and how to get here",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide House Info + Give Directions + Share Plans",
+      "reusedVocab": [
+        "I would like to give you information on",
+        "I would like to let you know that",
+        "quiet, cozy environment",
+        "total personal privacy",
+        "recharge my batteries",
+        "fast, convenient",
+        "fresh organic vegetables play an essential role in",
+        "make a contribution to",
+        "green lettuce & fresh tomatoes"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,6 +84,39 @@
     "part": "part2",
     "group": "Đề thi thực tế DThU 25/10/2026 (Sáng)",
     "title": "Task 2.1: Love Marriages versus Arranged Marriages",
-    "content": "Read the following statement:\n\n\"In many cultures such as in India, arranged marriages have long been a prevailing tradition, while in contemporary societies love marriages are increasingly favored. Some people believe that arranged marriages offer greater stability and family harmony, whereas others argue that love marriages ensure personal happiness and mutual emotional understanding.\"\n\nDiscuss both love marriages and arranged marriages, assess which one is better, and give your own personal opinion in an essay to an educated reader. Provide specific reasons and examples to support your view."
+    "content": "Read the following statement:\n\n\"In many cultures such as in India, arranged marriages have long been a prevailing tradition, while in contemporary societies love marriages are increasingly favored. Some people believe that arranged marriages offer greater stability and family harmony, whereas others argue that love marriages ensure personal happiness and mutual emotional understanding.\"\n\nDiscuss both love marriages and arranged marriages, assess which one is better, and give your own personal opinion in an essay to an educated reader. Provide specific reasons and examples to support your view.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my sister dated her husband for three years before marriage, so they understand each other's habits and solve daily arguments calmly.",
+        "focus": "View 1 (Preferred): Love marriages bring happiness & understanding (Câu #12)",
+        "frame": "Firstly, the first reason is that [ld1] + Câu #12 (Hôn nhân tình yêu vs sắp đặt)",
+        "point": "Marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents."
+      },
+      "body2": {
+        "example": "For example, my neighbor married a stranger chosen by her parents, and she felt unhappy because they had nothing in common.",
+        "focus": "View 2: Arranged marriages offer family support but risk conflict (Câu #15)",
+        "frame": "Secondly, it allows that [ld2] + Câu #15 (Mâu thuẫn gia đình)",
+        "point": "Arranged marriages can bring financial stability and approval from both families, yet forcing traditional views on young couples often creates family conflicts."
+      },
+      "conclusion": "In conclusion, I prefer love marriages because genuine love and mutual understanding help couples build a peaceful and happy family life.",
+      "essayType": "Discuss both views",
+      "extraVocab": [
+        "family approval",
+        "daily arguments"
+      ],
+      "intro": {
+        "debai": "love marriages and arranged marriages",
+        "ld1": "enjoy personal happiness and mutual understanding",
+        "ld2": "receive family support and shared cultural stability"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Câu #12 (Hôn nhân tình yêu vs sắp đặt) + Câu #15 (Mâu thuẫn gia đình) + Cụm #23 (truly understand each other)",
+      "reusedVocab": [
+        "Marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents",
+        "Family conflicts often happen when parents force traditional views",
+        "have a lot of things in common",
+        "help us truly understand each other"
+      ]
+    }
   }
 ]

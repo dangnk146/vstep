@@ -17,7 +17,59 @@
     "title": "Task 1.1: Replying to a Friend About Your New House and Big Garden",
     "content": "You have received an email from your English-speaking friend asking about the new house you recently moved into. Read part of the email below:\n\n\"Congratulations on moving into your new home! I would love to hear all about it. Where is your new house located, and what is the neighborhood like? I heard it even has a large garden—what do you plan to do with that space? Write back soon!\"\n\nWrite an informal email responding to your friend.",
     "isNew": true,
-    "addedAt": "2026-11-22T19:40:05+07:00"
+    "addedAt": "2026-11-22T19:40:05+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to give you information on my new house, which is located in a quiet suburb about twenty minutes from the city center.",
+          "example": "It is near a main bus stop and only a ten-minute ride from a big supermarket and a park.",
+          "frame": "D. Provide Information",
+          "reason": "Living slightly outside the center fits comfortably within my budget while still being fast and convenient to travel to school or work.",
+          "requirement": "Where the new house is located"
+        },
+        {
+          "answer": "I would like to let you know that the neighborhood is very peaceful, clean, and full of friendly families.",
+          "example": "Every morning neighbors greet each other while walking their dogs, and there is a small local market every weekend.",
+          "frame": "D. Provide Information",
+          "reason": "Unlike crowded, noisy public venues downtown, this area gives us a quiet, cozy environment where we can relieve stress and build a strong sense of belonging with neighbors.",
+          "requirement": "What the neighborhood is like"
+        },
+        {
+          "answer": "I would like to let you know that I plan to plant fresh organic vegetables and set up a small outdoor seating area in the garden.",
+          "example": "I want to grow green lettuce and fresh tomatoes to harvest every morning, and invite friends over for weekend dinners.",
+          "frame": "D. Provide Information",
+          "reason": "Fresh organic vegetables play an essential role in maintaining our family's health, and green plants make a great contribution to protecting the environment.",
+          "requirement": "What you plan to do with the large garden space"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my new house"
+      },
+      "extraVocab": [
+        "[+] quiet suburb",
+        "[+] outdoor seating area"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my new house and big garden",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Info + Share Future Plans",
+      "reusedVocab": [
+        "I would like to give you information on",
+        "I would like to let you know that",
+        "fit comfortably within my budget",
+        "fast, convenient",
+        "crowded, noisy public venues",
+        "quiet, cozy environment",
+        "relieve stress",
+        "build a strong sense of belonging",
+        "play an essential role in maintaining our family's health",
+        "make a contribution to"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -37,7 +89,40 @@
     "title": "Task 2.1: Parental Pressure via Social Media on Teachers: Effects and Solutions",
     "content": "Read the following statement:\n\n\"Nowadays, many parents frequently share stories and opinions about school and education issues on social media platforms. Education experts warn that teachers are facing greater pressure than ever before, which can strain the relationship between schools, families, and local communities.\"\n\nWrite an essay to an educated reader discussing the effects of this trend and proposing practical solutions to strengthen cooperation between communities, teachers, and parents. Support your arguments with specific reasons and examples.",
     "isNew": true,
-    "addedAt": "2026-11-22T19:40:06+07:00"
+    "addedAt": "2026-11-22T19:40:06+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, when parents complain about homework online instead of meeting the teacher, the teacher feels stressed and trust between school and family breaks down.",
+        "focus": "Effects: Teacher stress and damaged school-family trust",
+        "frame": "First of all, [debai] directly affects... / Effects (Body Chunk D)",
+        "point": "Online complaints put heavy mental pressure on teachers, hurt their motivation, and replace respectful face-to-face interaction with public arguments."
+      },
+      "body2": {
+        "example": "For example, schools can hold regular parent-teacher meetings, and parents should think things through calmly and talk directly with teachers instead of posting online.",
+        "focus": "Solutions: Direct communication and clear school rules",
+        "frame": "To deal with these problems... / Solutions (Body Chunk E + Giải pháp A)",
+        "point": "To tackle this problem, parents and schools should work closely together through honest face-to-face talks, while authorities set clear rules against unfair online attacks."
+      },
+      "conclusion": "In conclusion, online criticism harms teachers and school relationships, so parents, teachers, and communities must choose calm, direct dialogue to support students together.",
+      "essayType": "Causes-Solutions",
+      "extraVocab": [
+        "parent-teacher meetings",
+        "online complaints"
+      ],
+      "intro": {
+        "debai": "parents sharing complaints about schools on social media",
+        "ld1": "heavy pressure on teachers and weaker school-family trust",
+        "ld2": "direct communication and clearer community rules"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Template 4 (Causes-Solutions) + Giải pháp A (Penalize + Parent-School cooperation) + Mini-essay #4 (Workplace Stress) + Chunks #23, #24",
+      "reusedVocab": [
+        "face-to-face interaction",
+        "help us truly understand each other",
+        "parents and schools should work closely together to guide, listen, and support",
+        "introduce stricter rules",
+        "think things through calmly to avoid unnecessary trouble"
+      ]
+    }
   }
 ]
-

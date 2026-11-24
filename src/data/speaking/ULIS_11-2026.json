@@ -15,7 +15,52 @@
     "part": "part1",
     "group": "Đề thi thực tế ULIS 14/11/2026",
     "title": "Topic 1: Bicycles & Cycling Habits",
-    "content": "1. How often do you ride a bicycle, and where do you usually ride it?\n2. What are the key advantages of cycling compared to riding motorbikes or driving cars?\n3. Do you think more bike lanes should be constructed in major cities?"
+    "content": "1. How often do you ride a bicycle, and where do you usually ride it?\n2. What are the key advantages of cycling compared to riding motorbikes or driving cars?\n3. Do you think more bike lanes should be constructed in major cities?",
+    "hint": {
+      "extraVocab": [
+        "bike lanes",
+        "short trips",
+        "cyclists"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I ride my bicycle about three times a week, mostly around the park near my house or to nearby shops.",
+          "example": "It takes me around thirty minutes to cycle two rounds around the lake with my younger brother every weekend morning.",
+          "pillar": "Physical health",
+          "q": "1. How often & where you ride a bicycle",
+          "reason": "Cycling is cheap, convenient, and beneficial to my physical health because it helps me keep fit, feel energetic, and reduce stress."
+        },
+        {
+          "answer": "Cycling has clear advantages over riding motorbikes or driving cars, especially for short trips.",
+          "example": "For instance, cycling to a nearby market takes almost no money and helps me avoid getting stuck in heavy motorbike traffic.",
+          "pillar": "Bộ đề gốc",
+          "q": "2. Advantages of cycling vs motorbikes or cars",
+          "reason": "First, it is completely environmentally friendly because it produces no smoke and reduces air pollution; second, it saves money on fuel and parking fees."
+        },
+        {
+          "answer": "Yes, I strongly think major cities should build more separate bike lanes.",
+          "example": "If my city adds safe bike lanes along main streets, I will happily cycle to work instead of riding a motorbike.",
+          "pillar": "Physical health",
+          "q": "3. Should more bike lanes be built in major cities?",
+          "reason": "Separate lanes keep cyclists safe from fast cars and motorbikes, which will encourage more citizens to choose green transport and improve traffic congestion."
+        }
+      ],
+      "reusedSource": "Bộ đề 3 (Transport) + Trục Physical health + Giải pháp B",
+      "reusedVocab": [
+        "cheap and convenient",
+        "beneficial to my physical health",
+        "keep fit",
+        "feel energetic",
+        "reduce stress",
+        "It takes me around ___ minutes",
+        "environmentally friendly",
+        "reduce air pollution",
+        "save money on fuel and parking fees",
+        "improve traffic congestion"
+      ],
+      "topic": "Bicycles & Cycling"
+    }
   },
   {
     "STT": "2",
@@ -33,7 +78,48 @@
     "part": "part2",
     "group": "Đề thi thực tế ULIS 14/11/2026",
     "title": "Part 2 - Situation 1: Choosing a Pet Gift for a 12-Year-Old Niece's Birthday",
-    "content": "Situation: Your 12-year-old niece loves animals and is celebrating her upcoming birthday. Her parents have agreed to let her raise a pet at home. You are considering three pet options as a birthday gift:\n- A puppy dog (một chú chó con)\n- A cute kitten (một chú mèo con)\n- A colorful aquarium with ornamental fish (một bể cá cảnh nhiều màu sắc)\nWhich option do you think is the best choice and why?"
+    "content": "Situation: Your 12-year-old niece loves animals and is celebrating her upcoming birthday. Her parents have agreed to let her raise a pet at home. You are considering three pet options as a birthday gift:\n- A puppy dog (một chú chó con)\n- A cute kitten (một chú mèo con)\n- A colorful aquarium with ornamental fish (một bể cá cảnh nhiều màu sắc)\nWhich option do you think is the best choice and why?",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-2",
+        "khen1Text": "because a cute kitten is easy to find at a local pet shop, fits my budget, and my niece can play with and see it every day in her house.",
+        "khen2ARE": {
+          "answer": "Giving her a cute kitten is advantageous to my niece's mental health and brings her warm companionship every day.",
+          "example": "For example, whenever she finishes her evening homework, she can pet the kitten on the sofa and watch it chase a small toy ball.",
+          "reason": "Playing with a gentle kitten after school helps her relieve stress and reduce fatigue from homework, making her feel happy and peaceful indoors without needing daily outdoor walks."
+        },
+        "khen2Pillar": "Mental health",
+        "khen3Code": "KHEN-2",
+        "khen3Text": "a warm and meaningful companion that stays with my niece for many years and reminds her of my care and love.",
+        "option": "A cute kitten"
+      },
+      "extraVocab": [
+        "pet shop",
+        "daily outdoor walks",
+        "glass fish tank"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CUSTOM",
+          "option": "A puppy dog",
+          "reason": "a puppy dog needs daily outdoor walks and often barks loudly, which takes too much time away from a 12-year-old student's schoolwork and may bother the neighbors."
+        },
+        {
+          "cheCode": "DEFAULT",
+          "option": "A colorful aquarium with ornamental fish",
+          "reason": "although colorful fish look pretty, a child cannot hug or play with them, and cleaning a heavy glass fish tank is messy, so this option has received little agreement as a birthday gift for kids."
+        }
+      ],
+      "reusedVocab": [
+        "fits my budget",
+        "advantageous to mental health",
+        "brings warm companionship every day",
+        "relieve stress and reduce fatigue",
+        "feel happy and peaceful"
+      ],
+      "situation": "My 12-year-old niece loves animals and is celebrating her upcoming birthday. Her parents have agreed to let her raise a pet at home, and I am considering three pet options as a birthday gift: a puppy dog, a cute kitten, or a colorful aquarium with ornamental fish."
+    }
   },
   {
     "STT": "3",
@@ -51,6 +137,75 @@
     "part": "part3",
     "group": "Đề thi thực tế ULIS 14/11/2026",
     "title": "Part 3 - Topic 1: The Developmental Benefits of Keeping Household Pets for Children",
-    "content": "Topic: The positive impacts of raising pets on children's personal development\nSuggestions:\n- Nurturing a sense of responsibility and daily discipline\n- Fostering emotional empathy, compassion, and companionship\n- Reducing screen time and encouraging active indoor/outdoor play\n- [Your own ideas]\n\nFollow-up questions:\n1. What safety precautions should families take when introducing pets to small children?\n2. What happens when a child loses interest in taking care of their pet after a few months?\n3. Should animal protection and pet care be taught in school curricula?"
+    "content": "Topic: The positive impacts of raising pets on children's personal development\nSuggestions:\n- Nurturing a sense of responsibility and daily discipline\n- Fostering emotional empathy, compassion, and companionship\n- Reducing screen time and encouraging active indoor/outdoor play\n- [Your own ideas]\n\nFollow-up questions:\n1. What safety precautions should families take when introducing pets to small children?\n2. What happens when a child loses interest in taking care of their pet after a few months?\n3. Should animal protection and pet care be taught in school curricula?",
+    "hint": {
+      "coreTopic": "the benefits of keeping household pets for children",
+      "extraVocab": [
+        "health shots",
+        "allergies",
+        "local vet"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some important safety steps families should take, such as giving pets regular health shots and watching young children closely.",
+          "example": "For example, parents should teach small kids not to pull a dog's tail or disturb the pet while it is eating.",
+          "formula": "What -> There are some [Ns], such as... + Safe side chunk",
+          "q": "What safety precautions should families take when introducing pets to small children?",
+          "reason": "This helps everyone stay on the safe side and avoid unnecessary trouble like bites, scratches, or allergies."
+        },
+        {
+          "answer": "When a child gets bored of caring for a pet, the parents often end up carrying the whole daily burden alone, or the pet may be neglected.",
+          "example": "For instance, a mother can feed the dog together with her son every morning before school so it becomes a fun family habit.",
+          "formula": "What -> Problem + Support guidance",
+          "q": "What happens when a child loses interest in taking care of their pet after a few months?",
+          "reason": "To solve this problem, parents should give proper guidance, set a simple daily routine together, and remind the child gently of their promise."
+        },
+        {
+          "answer": "Yes, I think basic lessons on animal care and kindness should be taught in schools.",
+          "example": "For example, primary schools can invite a local vet once a year to teach students how to treat pets gently and keep public areas clean.",
+          "formula": "Should -> Yes, I think...",
+          "q": "Should animal protection and pet care be taught in school curricula?",
+          "reason": "This is because teaching young students to respect animals raises public awareness and prevents bad behaviors like hurting street dogs or abandoning pets."
+        }
+      ],
+      "macroTopic": "family and lifestyle",
+      "mindmapPoints": [
+        {
+          "cue": "Nurturing a sense of responsibility and daily discipline",
+          "expand": "This is because children have to feed their dog or cat on time, clean up after them, and take care of them every day.",
+          "impact": "Therefore, it is good for teaching practical life skills and self-discipline.",
+          "sentence": "Keeping a pet helps children learn responsibility and daily habits.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Fostering emotional empathy, compassion, and companionship",
+          "expand": "For example, playing with a friendly puppy after school makes a child feel happy, peaceful, and less lonely when parents are busy.",
+          "impact": "Clearly, it is beneficial to children's mental health and emotional growth.",
+          "sentence": "Raising a household pet brings warm companionship and teaches children to care for others.",
+          "wordForm": "V-ing"
+        },
+        {
+          "cue": "Reducing screen time and encouraging active indoor/outdoor play",
+          "expand": "This is because walking a dog in the park gets children moving in fresh air instead of sitting indoors watching TV or using phones.",
+          "impact": "So, it has positive effects on their physical health and daily energy.",
+          "sentence": "Keeping a pet helps children reduce screen time and play outside more often.",
+          "wordForm": "V-ing"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "Keeping a household pet brings warm companionship",
+        "clean up after their animals in public areas",
+        "mental health",
+        "screen time",
+        "physical health",
+        "stay on the safe side",
+        "avoid unnecessary trouble",
+        "proper guidance",
+        "raise public awareness",
+        "bad behaviors"
+      ]
+    }
   }
 ]

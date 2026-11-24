@@ -15,7 +15,56 @@
     "part": "part1",
     "group": "Đề thi thực tế LHU 25/10/2026",
     "title": "Task 1.1: Replying to John about Movie Habits and Action Films",
-    "content": "You have received an email from your friend, John, about movies and entertainment. Read part of his email below:\n\n\"I am planning a movie night with friends this weekend, and I would love to get your ideas! Do you enjoy watching action movies? How often do you go to the cinema to watch films? Also, is there any particular movie that you have watched recently that you found truly great and worth recommending? I can't wait to hear from you!\"\n\nWrite an email responding to John."
+    "content": "You have received an email from your friend, John, about movies and entertainment. Read part of his email below:\n\n\"I am planning a movie night with friends this weekend, and I would love to get your ideas! Do you enjoy watching action movies? How often do you go to the cinema to watch films? Also, is there any particular movie that you have watched recently that you found truly great and worth recommending? I can't wait to hear from you!\"\n\nWrite an email responding to John.",
+    "hint": {
+      "body": [
+        {
+          "answer": "From my point of view, I think that action movies are really exciting, and I enjoy watching them very much on weekends.",
+          "example": "I love fast car chases and teamwork scenes where heroes solve difficult problems together.",
+          "frame": "H. Provide Opinion + Trục 2 Mental Health",
+          "reason": "Watching exciting action films is advantageous to my mental health because it helps me relieve stress, reduce fatigue, and boost my energy after studying hard.",
+          "requirement": "Do you enjoy watching action movies?"
+        },
+        {
+          "answer": "I would like to let you know that I usually go to the cinema about twice a month on Friday or Saturday nights with my close friends.",
+          "example": "Last month, my friends and I went to CGV Cinema right after finishing our midterm exams.",
+          "frame": "D. Provide Information",
+          "reason": "Watching a film on a big screen makes me feel happy and comfortable while giving us a good time together.",
+          "requirement": "How often do you go to the cinema?"
+        },
+        {
+          "answer": "I believe you should watch \"Top Gun: Maverick\" for your movie night with friends this weekend.",
+          "example": "My friends and I watched it last Sunday, and none of us could take our eyes off the screen for two hours.",
+          "frame": "G. Provide Instruction / Suggestion + H. Provide Opinion",
+          "reason": "It has thrilling flight scenes, a meaningful story about teamwork, and teaches viewers how to stay calm under pressure.",
+          "requirement": "Recommend a great movie watched recently"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "movies and your movie night"
+      },
+      "extraVocab": [
+        "[+] big screen",
+        "[+] midterm exams"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my movie habits and a great film recommendation",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Share Movie Habits + Recommend a Film",
+      "reusedVocab": [
+        "From my point of view, I think that",
+        "I would like to let you know that",
+        "I believe you should",
+        "advantageous to my mental health",
+        "relieve stress and reduce fatigue",
+        "boost my energy",
+        "feel happy and comfortable"
+      ]
+    }
   },
   {
     "STT": "2",
@@ -33,6 +82,41 @@
     "part": "part2",
     "group": "Đề thi thực tế LHU 25/10/2026",
     "title": "Task 2.1: Computer Technology in Language Learning",
-    "content": "Read the following statement:\n\n\"Computer technology and digital applications are increasingly integrated into language learning classrooms and self-study routines.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of using computer technology for language learning. Provide specific reasons and examples from your knowledge or experience to support your answer."
+    "content": "Read the following statement:\n\n\"Computer technology and digital applications are increasingly integrated into language learning classrooms and self-study routines.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of using computer technology for language learning. Provide specific reasons and examples from your knowledge or experience to support your answer.",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother used free language apps on his laptop for 30 minutes every evening after work and quickly improved his English listening and vocabulary.",
+        "focus": "Advantages of computer technology in language learning",
+        "frame": "Firstly, [debai] is considered as a convenient way to [V] + Mini-essay #5 (AI & Tự học ngoại ngữ)",
+        "point": "Students can make the most of new technology to improve productivity because digital apps are fast, convenient for busy people in modern-day society. Learners can practice speaking daily and get instant feedback on grammar errors at low cost."
+      },
+      "body2": {
+        "example": "For example, when I tried to study English online late at night, I often got tired eyes and ended up watching short videos on YouTube instead of doing grammar exercises.",
+        "focus": "Disadvantages of computer technology in language learning",
+        "frame": "Secondly, [debai] has a negative impact on... + Câu #9 (E-book/screen strain) + Cụm #23",
+        "point": "However, staring at computer screens for hours can cause blue-light strain and tempt learners to open games or social media instead of studying. It also reduces real face-to-face interaction with teachers and classmates."
+      },
+      "conclusion": "In conclusion, using computer technology for language learning brings both pros and cons: while it makes study flexible and affordable, students should limit screen time and still practice speaking face to face.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "language apps",
+        "online distractions",
+        "screen time"
+      ],
+      "intro": {
+        "debai": "using computer technology for language learning",
+        "ld1": "make self-study fast, convenient, and affordable with modern tools",
+        "ld2": "cause eye strain, online distractions, and less face-to-face interaction"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Khung Adv-Disadv + Mini-essay #5 (AI & Tự học ngoại ngữ) + Câu #9 + Cụm #8, #18, #23",
+      "reusedVocab": [
+        "make the most of new technology to improve productivity",
+        "fast, convenient for busy people in modern-day society",
+        "instant feedback on grammar errors",
+        "blue-light strain",
+        "face-to-face interaction"
+      ]
+    }
   }
 ]
