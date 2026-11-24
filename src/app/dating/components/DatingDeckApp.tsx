@@ -641,10 +641,12 @@ export function DatingDeckApp({
       ref={containerRef}
       className={
         isFullscreen
-          ? 'fixed inset-0 z-[60] flex flex-col h-[100dvh] w-screen bg-background text-foreground overflow-hidden overscroll-none'
-          : 'fixed inset-x-0 top-0 bottom-12 z-40 flex flex-col bg-background text-foreground overflow-hidden overscroll-none animate-fade-in'
+          ? 'fixed inset-0 z-[60] flex flex-col md:flex-row h-[100dvh] w-screen bg-background text-foreground overflow-hidden overscroll-none'
+          : 'fixed inset-x-0 top-0 bottom-12 z-40 flex flex-col md:flex-row bg-background text-foreground overflow-hidden overscroll-none animate-fade-in'
       }
     >
+      {/* Left Main Area (70% on desktop when hint open, 100% otherwise) */}
+      <div className="relative flex-1 min-w-0 min-h-0 flex flex-col overflow-hidden">
       {/* Razor-thin 2px top progress hairline */}
       <div className="shrink-0 h-0.5 w-full bg-muted overflow-hidden">
         <div
@@ -850,23 +852,21 @@ export function DatingDeckApp({
                   reviewCount={currentCard.isReview ? currentCard.lapses : 0}
                 />
 
-                {/* Mobile (< md): inline hint dropdown appended at the very end of the prompt */}
-                {isHintOpen && (
-                  <div className="mt-4 pt-1 md:hidden">
-                    <ExamHintDrawer
-                      mode="inline"
-                      isOpen={isHintOpen}
-                      onClose={() => setIsHintOpen(false)}
-                      items={[
-                        {
-                          id: currentCard.prompt.id,
-                          title: currentCard.prompt.title,
-                          hint: currentCard.prompt.hint,
-                        },
-                      ]}
-                    />
-                  </div>
-                )}
+                {/* Mobile (< md): smoothly unfolding inline hint dropdown at the end of the prompt */}
+                <div className={`md:hidden ${isHintOpen ? 'mt-4 pt-1' : ''}`}>
+                  <ExamHintDrawer
+                    mode="inline"
+                    isOpen={isHintOpen}
+                    onClose={() => setIsHintOpen(false)}
+                    items={[
+                      {
+                        id: currentCard.prompt.id,
+                        title: currentCard.prompt.title,
+                        hint: currentCard.prompt.hint,
+                      },
+                    ]}
+                  />
+                </div>
               </div>
             </article>
           </div>
@@ -974,10 +974,12 @@ export function DatingDeckApp({
         </div>
       )}
 
-      {/* Desktop (>= md): Non-modal draggable floating hint window (works cleanly in Fullscreen too) */}
+      </div>
+
+      {/* Desktop (>= md): 30% docked right split-pane pushing top bar & card 70% left (works in Fullscreen too) */}
       <ExamHintDrawer
-        contained
-        mode="floating"
+        mode="desktop"
+        desktopLayout="flex-pane"
         isOpen={isHintOpen && Boolean(currentCard)}
         onClose={() => setIsHintOpen(false)}
         items={

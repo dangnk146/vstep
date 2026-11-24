@@ -1,6 +1,6 @@
 'use client';
 
-import { startTransition, useCallback, useEffect, useState } from 'react';
+import { startTransition, useCallback, useEffect, useRef, useState } from 'react';
 import { toPromptEditorHtml, type ExamPrompt } from '@/utils/examPrompts';
 import {
   ACTIVE_EXAM_KEY,
@@ -46,6 +46,7 @@ export function useSpeakingExam() {
   const [activeExamId, setActiveExamId] = useState<string | null>(null);
   const [activePrompts, setActivePrompts] = useState<ExamPrompt[]>([]);
   const [isLoadingHint, setIsLoadingHint] = useState<boolean>(false);
+  const loadedHintExamIdRef = useRef<string>('');
 
   const syncFromLocation = useCallback((consumeStoredPrompt: boolean) => {
     if (typeof window === 'undefined') return;
@@ -149,6 +150,7 @@ export function useSpeakingExam() {
               setExamKey((prev) => prev + 1);
               setHasExamContent(true);
               setActiveExamId(selectedExamId!);
+              loadedHintExamIdRef.current = selectedExamId!;
               setActivePrompts(found);
               localStorage.setItem(CUSTOM_EXAM_KEY, html);
               localStorage.setItem(ACTIVE_EXAM_KEY, selectedExamId!);
@@ -180,19 +182,20 @@ export function useSpeakingExam() {
   // Hydrate full prompt objects (with structured `hint`) when restored from localStorage/URL
   useEffect(() => {
     if (!activeExamId) {
-      setActivePrompts([]);
+      loadedHintExamIdRef.current = '';
+      setActivePrompts((prev) => (prev.length === 0 ? prev : []));
       setIsLoadingHint(false);
       return;
     }
 
-    const currentIds = activePrompts.map((p) => p.id).join('+');
-    if (currentIds === activeExamId) return;
+    if (loadedHintExamIdRef.current === activeExamId) return;
 
     let cancelled = false;
     setIsLoadingHint(true);
     fetchExamPromptsByIds(activeExamId, 'speaking')
       .then((found) => {
         if (!cancelled) {
+          loadedHintExamIdRef.current = activeExamId;
           setActivePrompts(found);
         }
       })
@@ -206,7 +209,7 @@ export function useSpeakingExam() {
     return () => {
       cancelled = true;
     };
-  }, [activeExamId, activePrompts]);
+  }, [activeExamId]);
 
   // Listen to popstate (browser back/forward)
   useEffect(() => {
@@ -225,6 +228,7 @@ export function useSpeakingExam() {
       setIsSubmitted(false);
       localStorage.setItem(ACTIVE_PART_KEY, section);
       setActiveExamId(null);
+      loadedHintExamIdRef.current = '';
       setActivePrompts([]);
       localStorage.removeItem(ACTIVE_EXAM_KEY);
       localStorage.removeItem(CUSTOM_EXAM_KEY);
@@ -275,6 +279,7 @@ export function useSpeakingExam() {
       setHasExamContent(true);
       setIsSubmitted(false);
       setActivePart(part);
+      loadedHintExamIdRef.current = examId;
       setActiveExamId(examId);
       setActivePrompts(prompts);
       localStorage.setItem(CUSTOM_EXAM_KEY, content);
@@ -296,6 +301,7 @@ export function useSpeakingExam() {
   };
 
   const handleEditorInput = (html: string, text: string) => {
+    loadedHintExamIdRef.current = '';
     setActiveExamId(null);
     setActivePrompts([]);
     localStorage.setItem(CUSTOM_EXAM_KEY, html);

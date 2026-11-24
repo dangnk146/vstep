@@ -131,85 +131,105 @@ export default function SpeakingSimulation() {
     });
   };
 
+  const hintItems = activePrompts.map((prompt) => ({
+    id: prompt.id,
+    title: prompt.title,
+    hint: prompt.hint,
+  }));
+
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
-      <SpeakingHeader
-        onRandomPrompt={handleRandomPrompt}
-        isLoadingRandomPrompt={isLoadingRandomPrompt}
-        hasHint={hasHint}
-        isHintOpen={isHintOpen}
-        onToggleHint={() => setIsHintOpen((prev) => !prev)}
-      />
-
-      {timerPhase === 'preparing' && preparationRemaining !== null && (
-        <SpeakingPreparationOverlay
-          remainingSeconds={preparationRemaining}
-          durationSeconds={getSeconds('prep')}
-        />
-      )}
-
-      <div className="w-full">
-        {/* Core Speaking Simulation */}
-        <section className="grid overflow-hidden rounded-sm border border-border bg-card shadow-xs lg:grid-cols-[minmax(0,1fr)_195px]">
-          <main className="min-w-0 border-b border-border lg:border-b-0 lg:border-r">
-            <SpeakingTimerBar
-              activePart={activePart}
-              runningPart={runningPart}
-              recorderStatus={recorderStatus}
-              timerPhase={timerPhase}
-              preparationRemaining={preparationRemaining}
-              remainingTime={remainingTimes[activePart]}
-              maxDuration={getSeconds(activePart)}
-              onToggleRun={() =>
-                runningPart ? handleStopRecording() : handleRunPart(activePart)
-              }
-            />
-
-            <SpeakingExamEditor
-              examHtml={examHtml}
-              examKey={examKey}
-              onInput={handleEditorInput}
-            />
-
-            <SpeakingAudioControls
-              recorderStatus={recorderStatus}
-              recorderError={recorderError}
-              timerPhase={timerPhase}
-              isRunning={runningPart !== null}
-              audioUrl={audioUrl}
-              audioRef={audioRef}
-              onManualRecord={() => handleRunPart(activePart)}
-              onStopRecording={handleStopRecording}
-              onResetTimers={handleResetTimers}
-            />
-          </main>
-
-          <SpeakingSidebarPanel
-            recorderStatus={recorderStatus}
-            waveformLevels={waveformLevels}
-            isSubmitted={isSubmitted}
-            hasExamContent={hasExamContent}
-            timerPhase={timerPhase}
-            activePart={activePart}
-            preparationRemaining={preparationRemaining}
-            remainingTimes={remainingTimes}
-            settings={settings}
-            getSeconds={getSeconds}
-            updateSetting={updateSetting}
+    <>
+      <div
+        className={`w-full transition-[padding] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          isHintOpen ? 'md:pr-[30vw]' : 'md:pr-0'
+        }`}
+      >
+        <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
+          <SpeakingHeader
+            onRandomPrompt={handleRandomPrompt}
+            isLoadingRandomPrompt={isLoadingRandomPrompt}
+            hasHint={hasHint}
+            isHintOpen={isHintOpen}
+            onToggleHint={() => setIsHintOpen((prev) => !prev)}
           />
-        </section>
+
+          {timerPhase === 'preparing' && preparationRemaining !== null && (
+            <SpeakingPreparationOverlay
+              remainingSeconds={preparationRemaining}
+              durationSeconds={getSeconds('prep')}
+            />
+          )}
+
+          <div className="w-full">
+            {/* Core Speaking Simulation */}
+            <section className="grid overflow-hidden rounded-sm border border-border bg-card shadow-xs lg:grid-cols-[minmax(0,1fr)_195px]">
+              <main className="min-w-0 border-b border-border lg:border-b-0 lg:border-r">
+                <SpeakingTimerBar
+                  activePart={activePart}
+                  runningPart={runningPart}
+                  recorderStatus={recorderStatus}
+                  timerPhase={timerPhase}
+                  preparationRemaining={preparationRemaining}
+                  remainingTime={remainingTimes[activePart]}
+                  maxDuration={getSeconds(activePart)}
+                  onToggleRun={() =>
+                    runningPart ? handleStopRecording() : handleRunPart(activePart)
+                  }
+                />
+
+                <SpeakingExamEditor
+                  examHtml={examHtml}
+                  examKey={examKey}
+                  onInput={handleEditorInput}
+                />
+
+                <SpeakingAudioControls
+                  recorderStatus={recorderStatus}
+                  recorderError={recorderError}
+                  timerPhase={timerPhase}
+                  isRunning={runningPart !== null}
+                  audioUrl={audioUrl}
+                  audioRef={audioRef}
+                  onManualRecord={() => handleRunPart(activePart)}
+                  onStopRecording={handleStopRecording}
+                  onResetTimers={handleResetTimers}
+                />
+              </main>
+
+              <SpeakingSidebarPanel
+                recorderStatus={recorderStatus}
+                waveformLevels={waveformLevels}
+                isSubmitted={isSubmitted}
+                hasExamContent={hasExamContent}
+                timerPhase={timerPhase}
+                activePart={activePart}
+                preparationRemaining={preparationRemaining}
+                remainingTimes={remainingTimes}
+                settings={settings}
+                getSeconds={getSeconds}
+                updateSetting={updateSetting}
+              />
+            </section>
+          </div>
+
+          <ExamHintDrawer
+            mode="inline"
+            isOpen={isHintOpen}
+            onClose={() => setIsHintOpen(false)}
+            isLoading={isLoadingHint}
+            items={hintItems}
+          />
+        </div>
       </div>
 
+      {/* Rendered outside animate-fade-in so fixed 30vw pane anchors to the real viewport */}
       <ExamHintDrawer
+        mode="desktop"
         isOpen={isHintOpen}
         onClose={() => setIsHintOpen(false)}
         isLoading={isLoadingHint}
-        items={activePrompts.map((prompt) => ({
-          id: prompt.id,
-          title: prompt.title,
-          hint: prompt.hint,
-        }))}
+        items={hintItems}
       />
-    </div>
+    </>
   );
 }

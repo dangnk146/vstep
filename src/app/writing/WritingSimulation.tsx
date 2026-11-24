@@ -532,9 +532,26 @@ export default function WritingPage() {
     return parsePromptContent(raw);
   }, [bankPrompt, activeTask]);
 
+  const showWritingHint = isHintOpen && activeTask !== 'free';
+  const writingHintItems = bankPrompt
+    ? [
+        {
+          id: bankPrompt.id || 'writing-current',
+          title: bankPrompt.title,
+          hint: bankPrompt.hint,
+        },
+      ]
+    : [];
+
   return (
-    <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
-      {/* Top Header */}
+    <>
+      <div
+        className={`w-full transition-[padding] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] ${
+          showWritingHint ? 'md:pr-[30vw]' : 'md:pr-0'
+        }`}
+      >
+        <div className="mx-auto flex w-full max-w-5xl flex-col space-y-2 animate-fade-in pb-12 sm:pb-6">
+          {/* Top Header */}
       <TopHeader
         icon={PenTool}
         title="VSTEP Writing"
@@ -845,22 +862,24 @@ export default function WritingPage() {
         </div>
       )}
 
+          <ExamHintDrawer
+            mode="inline"
+            isOpen={showWritingHint}
+            onClose={() => setIsHintOpen(false)}
+            isLoading={isLoadingHint}
+            items={writingHintItems}
+          />
+        </div>
+      </div>
+
+      {/* Rendered outside animate-fade-in so fixed 30vw pane anchors to the real viewport */}
       <ExamHintDrawer
-        isOpen={isHintOpen && activeTask !== 'free'}
+        mode="desktop"
+        isOpen={showWritingHint}
         onClose={() => setIsHintOpen(false)}
         isLoading={isLoadingHint}
-        items={
-          bankPrompt
-            ? [
-                {
-                  id: bankPrompt.id || 'writing-current',
-                  title: bankPrompt.title,
-                  hint: bankPrompt.hint,
-                },
-              ]
-            : []
-        }
+        items={writingHintItems}
       />
-    </div>
+    </>
   );
 }
