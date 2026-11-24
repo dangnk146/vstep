@@ -42,3 +42,4 @@ next-env.d.ts
 
 /src/data/theme/*
 /scratch/*
+.agents
