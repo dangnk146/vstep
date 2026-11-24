@@ -874,5 +874,69 @@
         "practical skills"
       ]
     }
+  },
+  {
+    "STT": "14",
+    "Mã câu hỏi": "ufm11-speaking-part2-5",
+    "Phần thi": "speaking-part2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế UFM 23/11/2026",
+    "Tiêu đề đề bài": "Part 2 - Situation 5: Choosing a Place to Take Your 10-Year-Old Niece Out",
+    "Nội dung chi tiết": "Situation: You have promised to take your 10-year-old niece out for a fun day this weekend. There are three options:\n- An amusement park\n- A science and history museum\n- A local zoo\n\nWhich option do you think is the best choice and why?",
+    "Mã trường": "UFM",
+    "Đợt thi": "11/2026",
+    "id": "ufm11-speaking-part2-5",
+    "skill": "speaking",
+    "school": "UFM",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế UFM 23/11/2026",
+    "title": "Part 2 - Situation 5: Choosing a Place to Take Your 10-Year-Old Niece Out",
+    "content": "Situation: You have promised to take your 10-year-old niece out for a fun day this weekend. There are three options:\n- An amusement park\n- A science and history museum\n- A local zoo\n\nWhich option do you think is the best choice and why?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:19+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to get to, so my 10-year-old niece and I can walk around, share good snacks, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "Visiting a local zoo is beneficial to our physical health and gives my niece a great chance to increase knowledge about nature.",
+          "example": "For example, we can walk around the park to see elephants and giraffes while reading the animal signs and taking a few breaks in the shade.",
+          "reason": "Walking outdoors helps us stay active and feel more energetic, while seeing real animals up close helps a 10-year-old broaden her mind and learn how to care for wildlife."
+        },
+        "khen2Pillar": "Improve Physical Health (Trục 1) & Increase Knowledge (Trục 3)",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help both of us forget about school and work pressure, refresh our minds, and take meaningful photos together.",
+        "option": "A local zoo"
+      },
+      "extraVocab": [
+        "wildlife",
+        "thrilling rides",
+        "long queues"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-1",
+          "option": "An amusement park",
+          "reason": "tickets and food at an amusement park cost too much money, and waiting in long queues or going on thrilling rides in hot weather can be unsafe and exhausting for a 10-year-old child."
+        },
+        {
+          "cheCode": "CHÊ-0",
+          "option": "A science and history museum",
+          "reason": "a quiet museum often feels too stiff for a young child, so my niece cannot move around or talk freely and may quickly get bored on her weekend off."
+        }
+      ],
+      "reusedVocab": [
+        "share good food and chat comfortably without any complicated preparation",
+        "beneficial to ... physical health",
+        "feel more energetic",
+        "increase knowledge",
+        "broaden ... mind",
+        "forget about ... pressure, refresh our minds, and take meaningful photos together",
+        "costs too much money",
+        "feel stiff and cannot talk as freely"
+      ],
+      "situation": "I have promised to take my 10-year-old niece out for a fun day this weekend, and I am considering three options: an amusement park, a science and history museum, or a local zoo."
+    }
   }
 ]

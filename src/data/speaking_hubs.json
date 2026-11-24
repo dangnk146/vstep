@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T07:13:14.886Z",
-  "totalSpeakingQuestions": 334,
+  "generatedAt": "2026-11-24T11:51:02.790Z",
+  "totalSpeakingQuestions": 354,
   "hubCount": 5,
   "hubs": {
     "education": {
@@ -32,9 +32,9 @@
         "Foster interpersonal communication & teamwork abilities (Rèn luyện giao tiếp xã hội và khả năng làm việc nhóm)"
       ],
       "stats": {
-        "total": 60,
-        "part1": 11,
-        "part2": 30,
+        "total": 62,
+        "part1": 12,
+        "part2": 31,
         "part3": 19
       },
       "questions": {
@@ -137,6 +137,15 @@
             "title": "Reading Habits",
             "rawTitle": "Topic 1: Reading Habits",
             "content": "1. Do you like reading books? Why or why not?\n2. Where do you usually prefer to read books?\n3. What genres of books are most popular among young people in Vietnam today, and why?"
+          },
+          {
+            "id": "hcmue11-speaking-part1-4",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Learning Foreign Languages",
+            "rawTitle": "Topic 4: Learning Foreign Languages",
+            "content": "1. What foreign language are you currently learning, and why did you choose it?\n2. What is the most enjoyable or challenging part of learning a foreign language?\n3. How do you usually practice speaking and listening in a foreign language?"
           }
         ],
         "part2": [
@@ -220,6 +229,15 @@
             "title": "Penalizing Public Misbehaviors",
             "rawTitle": "Part 2 - Situation 23: Penalizing Public Misbehaviors",
             "content": "Situation: A school or local authority is considering imposing stricter penalties on public misbehaviors. There are three options (two recalled from the exam review):\n- Smoking in a restaurant (hút thuốc trong nhà hàng)\n- Using a mobile phone while driving (sử dụng điện thoại khi lái xe)\n- [Option 3 not recalled in review]\n\nWhich behavior should receive the strictest penalty, and why?"
+          },
+          {
+            "id": "vlu11-speaking-part2-30",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Advising Your Brother on Choosing a Skills Course",
+            "rawTitle": "Part 2 - Situation 30: Advising Your Brother on Choosing a Skills Course",
+            "content": "Situation: Your brother wants to enroll in a short course to improve his personal and professional abilities. He is considering three options:\n- A management skills course\n- A presentation skills course\n- An effective time-management and study skills course\n\nWhich option do you think is the best choice and why?"
           },
           {
             "id": "special-speaking-part2-3",
@@ -615,10 +633,10 @@
         "Establish discipline & sustain prolonged vitality (Xây dựng lối sống kỷ luật và duy trì sự dẻo dai)"
       ],
       "stats": {
-        "total": 56,
-        "part1": 31,
+        "total": 58,
+        "part1": 32,
         "part2": 5,
-        "part3": 20
+        "part3": 21
       },
       "questions": {
         "part1": [
@@ -900,6 +918,15 @@
             "title": "Bicycles & Cycling Habits",
             "rawTitle": "Topic 1: Bicycles & Cycling Habits",
             "content": "1. How often do you ride a bicycle, and where do you usually ride it?\n2. What are the key advantages of cycling compared to riding motorbikes or driving cars?\n3. Do you think more bike lanes should be constructed in major cities?"
+          },
+          {
+            "id": "hanu11-speaking-part1-5",
+            "school": "HANU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Healthy Food & Eating Habits",
+            "rawTitle": "Topic 5: Healthy Food & Eating Habits",
+            "content": "1. Do you try to eat healthy food every day?\n2. What healthy dishes or ingredients do you enjoy eating most?\n3. Why is eating healthy food important for busy students and workers?"
           }
         ],
         "part2": [
@@ -1129,6 +1156,15 @@
             "title": "Part 3 - Topic 2: Benefits of Playing Team Sports",
             "rawTitle": "Part 3 - Topic 2: Benefits of Playing Team Sports",
             "content": "Topic: Benefits of playing team sports\nSuggestions:\n- Improving physical health and fitness\n- Developing teamwork and communication skills\n- Building friendships and relieving daily stress\n- [Your own ideas]\n\nFollow-up questions:\n1. What sports competitions are popular in your country?\n2. What problems can happen when people participate in sports?\n3. How can people stay motivated to exercise regularly?"
+          },
+          {
+            "id": "hcmue11-speaking-part3-5",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 5: The Importance of Teamwork",
+            "rawTitle": "Part 3 - Topic 5: The Importance of Teamwork",
+            "content": "Topic: Teamwork plays a vital role in study and work\nSuggestions:\n- Sharing workload effectively\n- Generating diverse creative ideas\n- Improving communication and social skills\n- [Your own ideas]\n\nFollow-up questions:\n1. What problems can happen when people work in a team?\n2. Do you prefer working in a team or working independently? Why?\n3. How can schools help students develop better teamwork skills?"
           }
         ]
       }
@@ -1162,10 +1198,10 @@
         "Mitigate risks of sedentary isolation & superficial virtual relationships (Cảnh báo nguy cơ phụ thuộc công nghệ và mất kết nối thực tế)"
       ],
       "stats": {
-        "total": 26,
-        "part1": 11,
-        "part2": 1,
-        "part3": 14
+        "total": 30,
+        "part1": 13,
+        "part2": 2,
+        "part3": 15
       },
       "questions": {
         "part1": [
@@ -1267,6 +1303,24 @@
             "title": "Mobile Phone Usage",
             "rawTitle": "Topic 8: Mobile Phone Usage",
             "content": "1. Do you use your mobile phone frequently in your daily life?\n2. What purposes do you mostly use your mobile phone for?\n3. Do you think people today rely too much on their mobile phones?"
+          },
+          {
+            "id": "hcmue11-speaking-part1-3",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Artificial Intelligence (AI) in Daily Life",
+            "rawTitle": "Topic 3: Artificial Intelligence (AI) in Daily Life",
+            "content": "1. Do you use Artificial Intelligence (AI) in your study or daily life?\n2. What are the main benefits of using AI tools?\n3. What kinds of AI applications are popular among people in your country?"
+          },
+          {
+            "id": "hanu11-speaking-part1-3",
+            "school": "HANU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Mobile Phones & Inventions",
+            "rawTitle": "Topic 3: Mobile Phones & Inventions",
+            "content": "1. Do you think the mobile phone is a great invention? Why or why not?\n2. How has the mobile phone helped or changed your daily life?\n3. If you were an inventor, what useful device or product would you invent?"
           }
         ],
         "part2": [
@@ -1278,6 +1332,15 @@
             "title": "Handling Wrongly Transferred Money into Bank Account",
             "rawTitle": "Part 2 - Situation 13: Handling Wrongly Transferred Money into Bank Account",
             "content": "Situation: You unexpectedly receive a large sum of money transferred into your bank account by mistake from a stranger. There are three options:\n- Reporting the incident immediately to the police\n- Contacting your bank to request an official verification\n- Keeping the money in your account and waiting for someone to contact you\nWhich action would you take and why?"
+          },
+          {
+            "id": "hanu11-speaking-part2-3",
+            "school": "HANU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Preparation Gift for a Freshman Relative",
+            "rawTitle": "Part 2 - Situation 3: Choosing a Preparation Gift for a Freshman Relative",
+            "content": "Situation: Your younger relative is about to enter their first year of university and needs an essential item to prepare well for their first semester. There are three options:\n- A laptop\n- A smartphone\n- A motorbike\n\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -1406,6 +1469,15 @@
             "title": "Part 3 - Topic 4: Drawbacks of Relying on Artificial Intelligence in Learning",
             "rawTitle": "Part 3 - Topic 4: Drawbacks of Relying on Artificial Intelligence in Learning",
             "content": "Topic: The notable drawbacks and risks of using Artificial Intelligence (AI) in education\nSuggestions:\n- Deteriorating students' critical thinking and problem-solving abilities\n- Increasing academic dishonesty and plagiarism in assignments\n- Creating overdependence on technology and diminishing face-to-face communication\n- [Your own ideas]\n\nFollow-up questions:\n1. How can educators prevent students from misusing generative AI tools in coursework?\n2. Do you believe AI will eventually make some academic degrees redundant?\n3. What ethical guidelines should students follow when utilizing AI for research?"
+          },
+          {
+            "id": "hanu11-speaking-part3-3",
+            "school": "HANU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 3: Benefits of Artificial Intelligence (AI) for Students",
+            "rawTitle": "Part 3 - Topic 3: Benefits of Artificial Intelligence (AI) for Students",
+            "content": "Topic: Artificial Intelligence (AI) brings many benefits to students\nSuggestions:\n- Supporting effective self-study\n- Accessing diverse learning resources\n- Providing instant feedback on homework\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the disadvantages of AI for students?\n2. How has AI changed our daily lives?\n3. Which jobs do you think could be replaced by AI in the future?"
           }
         ]
       }
@@ -1439,10 +1511,10 @@
         "Harness personal strengths to contribute meaningfully to organization (Phát huy sở trường và cống hiến cho tổ chức)"
       ],
       "stats": {
-        "total": 30,
+        "total": 33,
         "part1": 6,
-        "part2": 12,
-        "part3": 12
+        "part2": 14,
+        "part3": 13
       },
       "questions": {
         "part1": [
@@ -1609,6 +1681,24 @@
             "title": "Advising a Helper-Minded Friend on a Health & Wellness Career",
             "rawTitle": "Part 2 - Situation 1: Advising a Helper-Minded Friend on a Health & Wellness Career",
             "content": "Situation: Your close friend has a genuine passion for helping people lead healthier lives and wants to transition into the wellness field. He is considering three career paths:\n- Becoming a personal fitness trainer (huấn luyện viên thể hình cá nhân)\n- Working as a certified nutritionist (chuyên gia tư vấn dinh dưỡng)\n- Pursuing a career as a wellness and life coach (huấn luyện viên phong cách sống và sức khỏe toàn diện)\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "hcmue11-speaking-part2-3",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Advising a Friend on Choosing a Career Field",
+            "rawTitle": "Part 2 - Situation 3: Advising a Friend on Choosing a Career Field",
+            "content": "Situation: Your close friend is choosing a major and future career path and asks for your advice. There are three options:\n- Becoming an artist\n- Working in Information Technology (IT)\n- Becoming a content creator\n\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "hcmue11-speaking-part2-5",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Farewell Gift for a Best Friend Moving Abroad",
+            "rawTitle": "Part 2 - Situation 5: Choosing a Farewell Gift for a Best Friend Moving Abroad",
+            "content": "Situation: Your best friend is preparing to move abroad to settle down and you want to buy a meaningful farewell gift. There are three options:\n- A pair of headphones\n- A wristwatch\n- A framed photo album / photo frame\n\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -1719,6 +1809,15 @@
             "title": "Part 3 - Topic 1: The Importance of Good Relationships at the Workplace",
             "rawTitle": "Part 3 - Topic 1: The Importance of Good Relationships at the Workplace",
             "content": "Topic: The importance of maintaining positive relationships at the workplace\nSuggestions:\n- Enhancing teamwork and daily work efficiency\n- Reducing workplace stress and boosting job satisfaction\n- Expanding professional support and career growth opportunities\n- [Your own ideas]\n\nFollow-up questions:\n1. What qualities help an employee get along well with their colleagues?\n2. How should coworkers resolve disagreements or conflicts in the office?\n3. What can managers do to build a friendly and collaborative working environment?"
+          },
+          {
+            "id": "hcmue11-speaking-part3-4",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 4: Important Factors When Choosing a Job",
+            "rawTitle": "Part 3 - Topic 4: Important Factors When Choosing a Job",
+            "content": "Topic: Key factors to consider when choosing a job\nSuggestions:\n- Attractive salary\n- Positive work environment\n- Friendly and supportive colleagues\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the disadvantages or difficulties young people face when choosing a job?\n2. Which is more important to you: a high salary or job satisfaction?\n3. Do you think people today change jobs more frequently than in the past?"
           }
         ]
       }
@@ -1752,10 +1851,10 @@
         "Preserve cultural identity & strengthen familial and societal bonds (Gìn giữ bản sắc truyền thống và thắt chặt tình cảm gắn kết xã hội)"
       ],
       "stats": {
-        "total": 162,
-        "part1": 80,
-        "part2": 41,
-        "part3": 41
+        "total": 171,
+        "part1": 85,
+        "part2": 43,
+        "part3": 43
       },
       "questions": {
         "part1": [
@@ -2055,6 +2154,15 @@
             "title": "Natural Landscapes, Photography & Drawing",
             "rawTitle": "Topic 1: Natural Landscapes, Photography & Drawing",
             "content": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What are the natural features or scenery like around your home?\n3. Do you like taking photos or drawing pictures of landscapes? Why or why not?"
+          },
+          {
+            "id": "vlu11-speaking-part1-41",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Using Bags & Eco-Friendly Shopping",
+            "rawTitle": "Topic 1: Using Bags & Eco-Friendly Shopping",
+            "content": "1. What kind of bag do you usually carry when you go to school or work?\n2. Do you often bring your own reusable bag when going shopping? Why or why not?\n3. Why should people reduce the use of single-use plastic bags?"
           },
           {
             "id": "speaking-part1-5",
@@ -2462,6 +2570,24 @@
             "content": "1. How often do you cook meals at home?\n2. When did you first start learning how to cook?\n3. What is your favorite dish to cook, and why?"
           },
           {
+            "id": "hcmue11-speaking-part1-5",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Shopping Habits",
+            "rawTitle": "Topic 5: Shopping Habits",
+            "content": "1. How often do you go shopping, and who do you usually shop with?\n2. Do you prefer shopping online or going to traditional stores? Why?\n3. What kinds of items do you spend the most money on?"
+          },
+          {
+            "id": "hcmue11-speaking-part1-6",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Family & Relationships",
+            "rawTitle": "Topic 6: Family & Relationships",
+            "content": "1. Do you live in a big family or a small family?\n2. Who are you closest to in your family, and why?\n3. What activities do your family members enjoy doing together on weekends?"
+          },
+          {
             "id": "hanu11-speaking-part1-1",
             "school": "HANU",
             "batch": "11/2026",
@@ -2478,6 +2604,24 @@
             "title": "Participating in Competitions",
             "rawTitle": "Topic 2: Participating in Competitions",
             "content": "1. Tell me about the most recent competition you participated in.\n2. When and where did that competition take place?\n3. Are competitions like that popular in your local area or school?"
+          },
+          {
+            "id": "hanu11-speaking-part1-4",
+            "school": "HANU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Fashion & Clothing Brands",
+            "rawTitle": "Topic 4: Fashion & Clothing Brands",
+            "content": "1. What styles of clothes or clothing brands do you usually wear?\n2. Do you care about famous brands when buying clothes? Why or why not?\n3. Do you prefer wearing comfortable clothes or fashionable clothes in daily life?"
+          },
+          {
+            "id": "hanu11-speaking-part1-6",
+            "school": "HANU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Sharing Household Chores",
+            "rawTitle": "Topic 6: Sharing Household Chores",
+            "content": "1. What household chores do you usually help with at home?\n2. How is housework divided among members of your family?\n3. Do you think children should learn to do housework from an early age?"
           }
         ],
         "part2": [
@@ -2788,6 +2932,15 @@
             "content": "Situation: You and your close friends are planning a five-day vacation to a famous tourist city and are considering three accommodation options:\n- Staying at a local family-run homestay (ở khách sạn địa phương/homestay)\n- Booking a comfortable mid-range hotel (ở khách sạn tiện nghi, thoải mái)\n- Reserving a luxury expensive resort hotel (ở khách sạn/resort cao cấp đắt tiền)\nWhich option do you think is the best choice and why?"
           },
           {
+            "id": "ufm11-speaking-part2-5",
+            "school": "UFM",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Choosing a Place to Take Your 10-Year-Old Niece Out",
+            "rawTitle": "Part 2 - Situation 5: Choosing a Place to Take Your 10-Year-Old Niece Out",
+            "content": "Situation: You have promised to take your 10-year-old niece out for a fun day this weekend. There are three options:\n- An amusement park\n- A science and history museum\n- A local zoo\n\nWhich option do you think is the best choice and why?"
+          },
+          {
             "id": "dtu11-speaking-part2-1",
             "school": "DTU",
             "batch": "11/2026",
@@ -2849,6 +3002,15 @@
             "title": "Planning a Family Vacation",
             "rawTitle": "Part 2 - Situation 2: Planning a Family Vacation",
             "content": "Situation: You are planning an upcoming vacation for your family and want to decide the best way to organize the trip. There are three options:\n- Planning the entire trip by yourself (tự lên kế hoạch chuyến đi)\n- Hiring a travel specialist or travel agency (nhờ chuyên gia / công ty du lịch)\n- Asking a friend who has taken a similar trip (hỏi kinh nghiệm người bạn từng đi)\n\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "hcmue11-speaking-part2-4",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Organizing a Community Festival",
+            "rawTitle": "Part 2 - Situation 4: Organizing a Community Festival",
+            "content": "Situation: Your school or local community is planning to organize an annual festival and you are asked to choose the theme. There are three options:\n- A music festival\n- A food festival\n- An art festival\n\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -3213,6 +3375,15 @@
             "content": "Topic: Effective ways to protect the environment\nSuggestions:\n- Stopping the use of single-use plastic bags\n- Switching to alternative and renewable energy sources\n- Using public transportation instead of private vehicles\n- [Your own ideas]\n\nFollow-up questions:\n1. In what ways do people commonly negatively affect the environment?\n2. Do you think the environment will get better in the future? Why or why not?\n3. Should large corporations join hands to protect the environment? Why?"
           },
           {
+            "id": "hcmue11-speaking-part3-3",
+            "school": "HCMUE",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 3: Benefits of Keeping Pets",
+            "rawTitle": "Part 3 - Topic 3: Benefits of Keeping Pets",
+            "content": "Topic: Keeping pets brings many benefits to people's lives\nSuggestions:\n- Reducing stress and loneliness\n- Encouraging regular outdoor exercise\n- Teaching responsibility and care\n- [Your own ideas]\n\nFollow-up questions:\n1. What challenges or responsibilities do pet owners face?\n2. Should families with young children keep pets at home? Why or why not?\n3. What rules should pet owners follow in public areas?"
+          },
+          {
             "id": "hanu11-speaking-part3-1",
             "school": "HANU",
             "batch": "11/2026",
@@ -3220,6 +3391,15 @@
             "title": "Part 3 - Topic 1: Benefits of Charity Work and Volunteering",
             "rawTitle": "Part 3 - Topic 1: Benefits of Charity Work and Volunteering",
             "content": "Topic: Benefits of doing charity work and volunteering\nSuggestions:\n- Helping disadvantaged people in the community\n- Developing empathy, teamwork, and social skills\n- Bringing a sense of purpose and personal fulfillment\n- [Your own ideas]\n\nFollow-up questions:\n1. Why should young people and students take part in charity activities?\n2. What kinds of charity work are most common in Vietnam?\n3. How can organizations make sure charitable donations are used transparently?"
+          },
+          {
+            "id": "hanu11-speaking-part3-4",
+            "school": "HANU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 4: Solutions for Preserving Cultural Heritage",
+            "rawTitle": "Part 3 - Topic 4: Solutions for Preserving Cultural Heritage",
+            "content": "Topic: Effective ways to preserve traditional culture\nSuggestions:\n- Teaching cultural traditions at school\n- Organizing traditional festivals and exhibitions\n- Promoting local culture on digital media\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is it important to preserve traditional culture in a globalized world?\n2. Which solution do you think is the most effective for young people?\n3. What can individuals do in daily life to protect their national culture?"
           }
         ]
       }

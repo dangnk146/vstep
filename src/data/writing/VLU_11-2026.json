@@ -4075,5 +4075,146 @@
         "green habits"
       ]
     }
+  },
+  {
+    "STT": "68",
+    "Mã câu hỏi": "vlu11-writing-task1-33",
+    "Phần thi": "writing-task1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 08/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Task 1.33: Informal Letter to Steve About Your Job, Hometown, and Arranging a Meeting",
+    "Nội dung chi tiết": "You have received an email from your English friend, Steve, who wants to get to know more about your life and is considering visiting your country soon. Write an informal letter responding to Steve:\n\n- Share information about your current job (or study) and your hometown\n- Tell him what you usually enjoy doing in your free time\n- Suggest how you could arrange a meeting when he visits your country",
+    "Mã trường": "VLU",
+    "Đợt thi": "11/2026",
+    "id": "vlu11-writing-task1-33",
+    "skill": "writing",
+    "school": "VLU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 08/11/2026 (Chiều)",
+    "title": "Task 1.33: Informal Letter to Steve About Your Job, Hometown, and Arranging a Meeting",
+    "content": "You have received an email from your English friend, Steve, who wants to get to know more about your life and is considering visiting your country soon. Write an informal letter responding to Steve:\n\n- Share information about your current job (or study) and your hometown\n- Tell him what you usually enjoy doing in your free time\n- Suggest how you could arrange a meeting when he visits your country",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:33+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to let you know that I am a Computer Science student at UIT in Ho Chi Minh City, a lively and friendly hometown in the South of Vietnam.",
+          "example": "I am genuinely thrilled to hear that you are planning to visit my hometown! When it comes to local food, you certainly shouldn't miss Pho—the flavors are absolutely authentic.",
+          "frame": "D. Provide Information + K. Informal Chunks (Hometown visit)",
+          "reason": "Studying IT plays an essential role in helping me keep pace with the fast-paced development of modern science and broaden my mind.",
+          "requirement": "Share information about your current job (or study) and your hometown"
+        },
+        {
+          "answer": "I would like to give you information on my hobbies: I usually jog in the park and play badminton with close friends on weekends.",
+          "example": "Every Sunday morning, I spend an hour playing badminton at the local sports center and then drink iced coffee with my teammates.",
+          "frame": "D. Provide Information (A-R-E: Mental & Physical Health)",
+          "reason": "This is because it is beneficial to my physical health to keep fit and advantageous to my mental health so I can relieve stress and reduce fatigue after a day of hard work.",
+          "requirement": "Tell him what you usually enjoy doing in your free time"
+        },
+        {
+          "answer": "I believe you should send me your flight dates early so I can pick you up at the airport and show you around District 1.",
+          "example": "Also, don't forget to pack light clothes because we will likely do a lot of walking around the town and visiting Ben Thanh Market.",
+          "frame": "G. Provide Instruction / Suggestion + K. Informal Chunks",
+          "reason": "Planning ahead helps us reach a healthy balance between my school schedule and our sightseeing time without missing any fun places.",
+          "requirement": "Suggest how you could arrange a meeting when he visits your country"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my life and your upcoming visit to Vietnam"
+      },
+      "extraVocab": [
+        "local street food",
+        "pick you up at the airport"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my current life, my hometown, and our plan to meet when you visit Vietnam",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Suggestion (Informal Reply to Friend)",
+      "reusedVocab": [
+        "I would like to let you know that...",
+        "I am genuinely thrilled to hear that you are planning to visit my hometown!",
+        "When it comes to..., you certainly shouldn't miss Pho. The flavors are absolutely authentic.",
+        "don't forget to pack light clothes because we will likely do a lot of walking around the town",
+        "plays an essential role in",
+        "keep pace with the fast-paced development of modern science",
+        "relieve stress and reduce fatigue",
+        "reach a healthy balance between..."
+      ]
+    }
+  },
+  {
+    "STT": "69",
+    "Mã câu hỏi": "vlu11-writing-task1-34",
+    "Phần thi": "writing-task1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 22/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Task 1.34: Formal Email Replying to a Parent About a School Field Trip",
+    "Nội dung chi tiết": "You are a school teacher organizing an upcoming outdoor field trip for students. You have received an email from a parent asking for details about the excursion. Write a formal email responding to the parent:\n\n- Explain the main educational and fun activities planned during the field trip\n- Clarify why parents need to prepare a packed lunch for their children to bring along\n- List any essential items or clothes children should bring for the trip",
+    "Mã trường": "VLU",
+    "Đợt thi": "11/2026",
+    "id": "vlu11-writing-task1-34",
+    "skill": "writing",
+    "school": "VLU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 22/11/2026 (Sáng - Ca 2)",
+    "title": "Task 1.34: Formal Email Replying to a Parent About a School Field Trip",
+    "content": "You are a school teacher organizing an upcoming outdoor field trip for students. You have received an email from a parent asking for details about the excursion. Write a formal email responding to the parent:\n\n- Explain the main educational and fun activities planned during the field trip\n- Clarify why parents need to prepare a packed lunch for their children to bring along\n- List any essential items or clothes children should bring for the trip",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:34+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, I would like to inform you that the students will visit the city science museum in the morning and join team-building games in the botanical park in the afternoon.",
+          "example": "For instance, students will watch a short 3D space show at 9:00 AM and work in small groups to plant green trees after lunch.",
+          "frame": "I. [Formal] Reply to Inquiry (First of all) + D. Provide Information",
+          "reason": "These activities provide knowledge and experience in science while helping children adjust and adapt to the social environment and build a strong sense of belonging.",
+          "requirement": "Explain the main educational and fun activities planned during the field trip"
+        },
+        {
+          "answer": "Regarding lunch, please be advised that parents need to prepare a packed lunch for their children because the outdoor park does not have a school canteen.",
+          "example": "A simple lunchbox with rice, grilled chicken, fresh fruit, and a bottle of water will give your child enough energy for the afternoon games.",
+          "frame": "I. [Formal] Reply to Inquiry (Regarding) + F. Provide Explanation",
+          "reason": "The main reason for this is that bringing clean homemade food plays an essential role in protecting students' health and fits comfortably within each child's eating habits.",
+          "requirement": "Clarify why parents need to prepare a packed lunch for their children to bring along"
+        },
+        {
+          "answer": "As to your next concern, I believe you should pack comfortable sports clothes, a sun hat, walking shoes, and a small notebook for your child.",
+          "example": "Please also put a light raincoat and a bottle of drinking water in their backpack in case the afternoon weather changes.",
+          "frame": "I. [Formal] Reply to Inquiry (As to your next concern) + G. Provide Instruction / Suggestion",
+          "reason": "This helps students stay on the safe side during outdoor activities and allows them to move comfortably without getting tired or sunburned.",
+          "requirement": "List any essential items or clothes children should bring for the trip"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "the upcoming school field trip"
+      },
+      "extraVocab": [
+        "packed lunch",
+        "team-building games",
+        "walking shoes"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "provide you with important details about our upcoming school field trip for students",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Formal Reply to Inquiry + Instruction (School Field Trip)",
+      "reusedVocab": [
+        "First of all, I would like to inform you that...",
+        "Regarding..., please be advised that...",
+        "As to your next concern, ...",
+        "provide knowledge and experience in",
+        "adjust and adapt to the social environment",
+        "build a strong sense of belonging",
+        "plays an essential role in",
+        "stay on the safe side"
+      ]
+    }
   }
 ]

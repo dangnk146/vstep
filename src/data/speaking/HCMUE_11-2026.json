@@ -427,5 +427,726 @@
         "public sports centers"
       ]
     }
+  },
+  {
+    "STT": "7",
+    "Mã câu hỏi": "hcmue11-speaking-part2-3",
+    "Phần thi": "speaking-part2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Part 2 - Situation 3: Advising a Friend on Choosing a Career Field",
+    "Nội dung chi tiết": "Situation: Your close friend is choosing a major and future career path and asks for your advice. There are three options:\n- Becoming an artist\n- Working in Information Technology (IT)\n- Becoming a content creator\n\nWhich option do you think is the best choice and why?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part2-3",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Chiều)",
+    "title": "Part 2 - Situation 3: Advising a Friend on Choosing a Career Field",
+    "content": "Situation: Your close friend is choosing a major and future career path and asks for your advice. There are three options:\n- Becoming an artist\n- Working in Information Technology (IT)\n- Becoming a content creator\n\nWhich option do you think is the best choice and why?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:07+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-3",
+        "khen1Text": "because local IT programs are practical and easy for my close friend's family to afford, while fitting modern job demand well.",
+        "khen2ARE": {
+          "answer": "Working in IT helps my friend keep pace with the fast-paced development of modern science and improve their living standard.",
+          "example": "For example, after graduating, my friend can work as a software developer at a reliable company with steady pay and clear career growth.",
+          "reason": "Because companies need skilled tech workers, studying IT provides knowledge and experience in problem-solving and lets my friend make the most of new technology to improve productivity."
+        },
+        "khen2Pillar": "Increase Knowledge (Trục 3) & Improve Living Standard",
+        "khen3Code": "KHEN-3",
+        "khen3Text": "a safe and practical environment to gain real working experience, build confidence, and get ready for a stable career.",
+        "option": "Working in Information Technology (IT)"
+      },
+      "extraVocab": [
+        "software developer",
+        "job demand",
+        "online trends"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-3",
+          "option": "Becoming an artist",
+          "reason": "working as a full-time artist often brings unstable monthly income, which can create constant financial worry for my friend and their family if artworks do not sell regularly."
+        },
+        {
+          "cheCode": "CHÊ-0",
+          "option": "Becoming a content creator",
+          "reason": "becoming a content creator is risky because monthly income depends on changing online trends, and sharing private details online all the time can lead to stress and privacy trouble."
+        }
+      ],
+      "reusedVocab": [
+        "keep pace with the fast-paced development of modern science",
+        "improve ... living standard",
+        "provide knowledge and experience in",
+        "make the most of new technology to improve productivity",
+        "gain real working experience, build confidence, and get ready for a stable career",
+        "unstable monthly income",
+        "creating constant financial worry for the whole family",
+        "sharing private details online"
+      ],
+      "situation": "My close friend is choosing a major and future career path and asks for my advice among three options: becoming an artist, working in Information Technology (IT), or becoming a content creator."
+    }
+  },
+  {
+    "STT": "8",
+    "Mã câu hỏi": "hcmue11-speaking-part3-3",
+    "Phần thi": "speaking-part3",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Part 3 - Topic 3: Benefits of Keeping Pets",
+    "Nội dung chi tiết": "Topic: Keeping pets brings many benefits to people's lives\nSuggestions:\n- Reducing stress and loneliness\n- Encouraging regular outdoor exercise\n- Teaching responsibility and care\n- [Your own ideas]\n\nFollow-up questions:\n1. What challenges or responsibilities do pet owners face?\n2. Should families with young children keep pets at home? Why or why not?\n3. What rules should pet owners follow in public areas?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part3-3",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part3",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Chiều)",
+    "title": "Part 3 - Topic 3: Benefits of Keeping Pets",
+    "content": "Topic: Keeping pets brings many benefits to people's lives\nSuggestions:\n- Reducing stress and loneliness\n- Encouraging regular outdoor exercise\n- Teaching responsibility and care\n- [Your own ideas]\n\nFollow-up questions:\n1. What challenges or responsibilities do pet owners face?\n2. Should families with young children keep pets at home? Why or why not?\n3. What rules should pet owners follow in public areas?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:08+07:00",
+    "hint": {
+      "coreTopic": "the benefits of keeping pets in people's lives",
+      "extraVocab": [
+        "vet care",
+        "on a leash",
+        "waste bags"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some common challenges pet owners face, such as high costs for food and vet care, lack of time, and keeping public areas clean.",
+          "example": "For example, if an owner works late every day or travels on holidays, their dog may feel lonely at home or make noise that disturbs neighbors.",
+          "formula": "what",
+          "q": "What challenges or responsibilities do pet owners face?",
+          "reason": "Busy workers may struggle to reach a healthy balance between work and caring for an animal, and keeping a pet requires daily cleaning and care."
+        },
+        {
+          "answer": "Yes, I think families with young children should keep friendly pets at home.",
+          "example": "For instance, a 7-year-old child who helps feed a family cat or walk a small dog every afternoon learns to be more caring and active.",
+          "formula": "do you think",
+          "q": "Should families with young children keep pets at home? Why or why not?",
+          "reason": "Living with a pet teaches children practical life skills like feeding and caring for others, brings warm companionship every day, and reduces screen time."
+        },
+        {
+          "answer": "I think pet owners should follow clear rules in public places, and governments should enforce fines for violations.",
+          "example": "For example, dog owners should always keep their dogs on a leash and carry waste bags when walking in public parks or on busy streets.",
+          "formula": "should/how",
+          "q": "What rules should pet owners follow in public areas?",
+          "reason": "Owners must build good self-discipline to clean up after their animals in public areas, while stricter rules help protect everyone's safety and keep parks clean."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Reducing stress and loneliness",
+          "expand": "because it is advantageous to our mental health and brings warm companionship every day. It helps us unwind and relax, recharge our batteries, and elevate our mood after a day of hard work.",
+          "impact": "Therefore, it has a positive effect on our mental health and overall well-being.",
+          "sentence": "Keeping pets helps people reduce stress and loneliness.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Encouraging regular outdoor exercise",
+          "expand": "For example, dog owners often walk or run with their dogs in the local park every morning and evening, which allows them to keep fit, stay healthy, and strengthen their immune system.",
+          "impact": "Clearly, it is beneficial to people's physical health.",
+          "sentence": "Keeping pets encourages people to do regular outdoor exercise.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Teaching responsibility and care",
+          "expand": "This is because owners have to feed their pets on time, clean up after them, and take care of them when they get sick, which builds good self-discipline and practical life skills.",
+          "impact": "So, it has positive effects on personal growth and family life.",
+          "sentence": "Keeping pets teaches people responsibility and care.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "advantageous to my mental health",
+        "recharge my batteries and elevate my mood",
+        "unwind and relax",
+        "keep fit and stay healthy",
+        "strengthen my immune system",
+        "warm companionship every day",
+        "clean up after their animals in public areas",
+        "build good self-discipline",
+        "stricter rules and heavy fines for violations"
+      ]
+    }
+  },
+  {
+    "STT": "9",
+    "Mã câu hỏi": "hcmue11-speaking-part1-3",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "Tiêu đề đề bài": "Topic 3: Artificial Intelligence (AI) in Daily Life",
+    "Nội dung chi tiết": "1. Do you use Artificial Intelligence (AI) in your study or daily life?\n2. What are the main benefits of using AI tools?\n3. What kinds of AI applications are popular among people in your country?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part1-3",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "title": "Topic 3: Artificial Intelligence (AI) in Daily Life",
+    "content": "1. Do you use Artificial Intelligence (AI) in your study or daily life?\n2. What are the main benefits of using AI tools?\n3. What kinds of AI applications are popular among people in your country?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:09+07:00",
+    "hint": {
+      "extraVocab": [
+        "AI tools",
+        "AI chatbot",
+        "translation apps",
+        "voice assistants",
+        "summarize"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I use AI tools on a regular basis in both my study and daily life.",
+          "example": "Every evening, I use an AI chatbot on my laptop to explain difficult English grammar points and check my writing.",
+          "pillar": "Knowledge",
+          "q": "1. Do you use Artificial Intelligence (AI) in your study or daily life?",
+          "reason": "Using AI helps me keep pace with the fast-paced development of modern science and broadens my knowledge quickly when I need to check new information."
+        },
+        {
+          "answer": "The main benefits of AI tools are saving time and helping users make the most of new technology to improve productivity.",
+          "example": "For instance, instead of spending two hours searching many websites, I can ask an AI tool to summarize a long article in a few minutes.",
+          "pillar": "Mental health",
+          "q": "2. What are the main benefits of using AI tools?",
+          "reason": "They are fast and convenient for busy people in modern-day society, which helps relieve stress and reduce fatigue so we can reach a healthy balance between work and free time."
+        },
+        {
+          "answer": "In Vietnam, AI chatbots, translation apps, and voice assistants are very popular among students and office workers.",
+          "example": "Many of my classmates use Google Translate and ChatGPT on their phones to practice English speaking and prepare group presentations.",
+          "pillar": "Knowledge & Social",
+          "q": "3. What kinds of AI applications are popular among people in your country?",
+          "reason": "These apps are easy to use and provide useful knowledge and experience for learning languages, solving daily problems, and communicating with people from different countries."
+        }
+      ],
+      "reusedSource": "Trục Knowledge, Mental health, Social & Từ vựng #6, #8, #15, #18",
+      "reusedVocab": [
+        "on a regular basis",
+        "keep pace with the fast-paced development of modern science",
+        "broaden my horizons",
+        "make the most of new technology to improve productivity",
+        "fast, convenient for busy people in modern-day society",
+        "relieve stress and reduce fatigue",
+        "reach a healthy balance",
+        "provide knowledge and experience in"
+      ],
+      "topic": "Artificial Intelligence (AI) in Daily Life"
+    }
+  },
+  {
+    "STT": "10",
+    "Mã câu hỏi": "hcmue11-speaking-part1-4",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "Tiêu đề đề bài": "Topic 4: Learning Foreign Languages",
+    "Nội dung chi tiết": "1. What foreign language are you currently learning, and why did you choose it?\n2. What is the most enjoyable or challenging part of learning a foreign language?\n3. How do you usually practice speaking and listening in a foreign language?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part1-4",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "title": "Topic 4: Learning Foreign Languages",
+    "content": "1. What foreign language are you currently learning, and why did you choose it?\n2. What is the most enjoyable or challenging part of learning a foreign language?\n3. How do you usually practice speaking and listening in a foreign language?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:10+07:00",
+    "hint": {
+      "extraVocab": [
+        "foreign language",
+        "career",
+        "pronunciation",
+        "subtitles",
+        "fluent"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Currently, I am learning English, and I chose it simply because it plays an essential role in my future career.",
+          "example": "I am studying for a VSTEP B2 certificate this semester so I can graduate on time and apply for a job at an international company.",
+          "pillar": "Knowledge",
+          "q": "1. What foreign language are you currently learning, and why did you choose it?",
+          "reason": "Fluent English opens better job opportunities with higher income to improve my living standard, and it also helps me broaden my horizons and gain a deeper understanding of other cultures."
+        },
+        {
+          "answer": "The most enjoyable part is meeting like-minded people, while the most challenging part is remembering new vocabulary.",
+          "example": "In my evening English class, I feel very happy when I can chat with my classmates in English, even if I sometimes forget a word.",
+          "pillar": "Social & Knowledge",
+          "q": "2. What is the most enjoyable or challenging part of learning a foreign language?",
+          "reason": "Joining an English class enriches my social life and helps me build confidence, though I still need to allow my brain to exercise regularly so I do not forget new words."
+        },
+        {
+          "answer": "I usually practice speaking and listening through movies, music, and daily conversations with friends.",
+          "example": "Every weekend, I watch comedy movies with English subtitles on my laptop and practice speaking for 15 minutes with my friend.",
+          "pillar": "Mental health & Knowledge",
+          "q": "3. How do you usually practice speaking and listening in a foreign language?",
+          "reason": "Watching English movies or listening to songs helps me relax my mind and reduce stress while picking up richer vocabulary and natural pronunciation at the same time."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 & 4 (Knowledge, Social, Mental health) + Từ vựng #4, #17 + Mẫu #4 (English course)",
+      "reusedVocab": [
+        "plays an essential role in",
+        "improve my living standard",
+        "broaden my horizons",
+        "gain a deeper understanding of",
+        "like-minded people",
+        "enrich my social life",
+        "allow their brain to exercise",
+        "relax my mind",
+        "reduce stress",
+        "richer vocabulary"
+      ],
+      "topic": "Learning Foreign Languages"
+    }
+  },
+  {
+    "STT": "11",
+    "Mã câu hỏi": "hcmue11-speaking-part2-4",
+    "Phần thi": "speaking-part2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "Tiêu đề đề bài": "Part 2 - Situation 4: Organizing a Community Festival",
+    "Nội dung chi tiết": "Situation: Your school or local community is planning to organize an annual festival and you are asked to choose the theme. There are three options:\n- A music festival\n- A food festival\n- An art festival\n\nWhich option do you think is the best choice and why?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part2-4",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "title": "Part 2 - Situation 4: Organizing a Community Festival",
+    "content": "Situation: Your school or local community is planning to organize an annual festival and you are asked to choose the theme. There are three options:\n- A music festival\n- A food festival\n- An art festival\n\nWhich option do you think is the best choice and why?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:11+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-1",
+        "khen1Text": "because it is easy to meet up at local stalls, so everyone in my school or community can sit down, share good food, and chat comfortably without any complicated preparation.",
+        "khen2ARE": {
+          "answer": "A food festival is great for our social network and helps residents and students learn more about local culture and traditions.",
+          "example": "For example, different classes and local families can run simple booths serving traditional noodles, spring rolls, and fresh fruit juice for everyone to enjoy together.",
+          "reason": "Sharing fresh local food at friendly booths builds a strong sense of belonging and helps us truly understand each other through face-to-face interaction, while also supporting local sellers."
+        },
+        "khen2Pillar": "Social Network (Trục 2) & Culture (Trục 3)",
+        "khen3Code": "KHEN-1",
+        "khen3Text": "the best way to help all of us forget about work and study pressure, refresh our minds, and take meaningful photos together.",
+        "option": "A food festival"
+      },
+      "extraVocab": [
+        "food stalls",
+        "sound system",
+        "spring rolls"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-3",
+          "option": "A music festival",
+          "reason": "renting a loud sound system and building a large stage costs too much money, and a noisy crowded venue can easily make older residents and young children feel overwhelmed and stressed."
+        },
+        {
+          "cheCode": "CHÊ-1",
+          "option": "An art festival",
+          "reason": "an art exhibition often feels too quiet and stiff, so many students and neighbors might get bored and cannot talk or interact as freely as they can over good food."
+        }
+      ],
+      "reusedVocab": [
+        "easy to meet up, so everyone can sit down, share good food, and chat comfortably without any complicated preparation",
+        "good for ... social network",
+        "culture and tradition",
+        "build a strong sense of belonging and help us truly understand each other through face-to-face interaction",
+        "buying fresh local food",
+        "forget about work pressure, refresh our minds, and take meaningful photos together",
+        "crowded, noisy public venues easily makes people feel overwhelmed and stressed",
+        "feel stiff and cannot talk as freely"
+      ],
+      "situation": "My school or local community is planning to organize an annual festival, and I am asked to choose the theme from three options: a music festival, a food festival, or an art festival."
+    }
+  },
+  {
+    "STT": "12",
+    "Mã câu hỏi": "hcmue11-speaking-part3-4",
+    "Phần thi": "speaking-part3",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "Tiêu đề đề bài": "Part 3 - Topic 4: Important Factors When Choosing a Job",
+    "Nội dung chi tiết": "Topic: Key factors to consider when choosing a job\nSuggestions:\n- Attractive salary\n- Positive work environment\n- Friendly and supportive colleagues\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the disadvantages or difficulties young people face when choosing a job?\n2. Which is more important to you: a high salary or job satisfaction?\n3. Do you think people today change jobs more frequently than in the past?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part3-4",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part3",
+    "group": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "title": "Part 3 - Topic 4: Important Factors When Choosing a Job",
+    "content": "Topic: Key factors to consider when choosing a job\nSuggestions:\n- Attractive salary\n- Positive work environment\n- Friendly and supportive colleagues\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the disadvantages or difficulties young people face when choosing a job?\n2. Which is more important to you: a high salary or job satisfaction?\n3. Do you think people today change jobs more frequently than in the past?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:12+07:00",
+    "hint": {
+      "coreTopic": "key factors to consider when choosing a job",
+      "extraVocab": [
+        "financial stability",
+        "job satisfaction",
+        "burnout"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some major difficulties young people face when choosing a job, such as a lack of practical experience, low starting pay, and high competition.",
+          "example": "For example, an IT graduate may spend three to four months sending out CVs because companies ask for at least one year of real work experience.",
+          "formula": "what",
+          "q": "What are the disadvantages or difficulties young people face when choosing a job?",
+          "reason": "Many fresh graduates struggle to find jobs because university lessons focus too much on theory instead of real company internships, and some jobs offer unstable income."
+        },
+        {
+          "answer": "I think job satisfaction is more important to me in the long run, as long as the salary covers my basic needs.",
+          "example": "For instance, I would choose a teaching or office job that gives me time for my family and personal growth rather than a high-paid sales job with 12-hour shifts.",
+          "formula": "do you think",
+          "q": "Which is more important to you: a high salary or job satisfaction?",
+          "reason": "Doing work you enjoy is advantageous to your mental health and helps you relieve stress, while a stressful high-paying job can easily lead to burnout and fatigue."
+        },
+        {
+          "answer": "Yes, I think people today change jobs much more frequently than in the past.",
+          "example": "For example, many young office workers in big cities switch companies after one or two years to look for higher pay or remote work options.",
+          "formula": "do you think",
+          "q": "Do you think people today change jobs more frequently than in the past?",
+          "reason": "Young people want better salaries, flexibility, and faster career growth, though changing jobs every few months makes employers doubt your loyalty and stops you from mastering deep professional skills."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Attractive salary",
+          "expand": "because a good income helps workers improve their living standard, pay for daily needs, and fit comfortably within their budget without sacrificing quality of life.",
+          "impact": "Therefore, it is good for people's financial stability and family life.",
+          "sentence": "An attractive salary is very important when choosing a job.",
+          "wordForm": "Adj+N"
+        },
+        {
+          "cue": "Positive work environment",
+          "expand": "For example, working in a modern office with state-of-the-art facilities and a healthy balance between work and family time allows staff to relieve stress and reduce fatigue and improve productivity.",
+          "impact": "Clearly, it is beneficial to both workers' mental health and company performance.",
+          "sentence": "A positive work environment is essential for employees.",
+          "wordForm": "Adj+N"
+        },
+        {
+          "cue": "Friendly and supportive colleagues",
+          "expand": "This is because having kind teammates helps new workers adjust and adapt to the social environment easily and build a strong sense of belonging through face-to-face interaction.",
+          "impact": "So, it has positive effects on teamwork and job satisfaction.",
+          "sentence": "Friendly and supportive colleagues are very helpful at the workplace.",
+          "wordForm": "Adj+N"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "improve people's living standard",
+        "fit comfortably within my budget",
+        "state-of-the-art facilities",
+        "relieve stress and reduce fatigue",
+        "adjust and adapt to the social environment",
+        "build a strong sense of belonging",
+        "many fresh graduates struggle to find jobs because university lessons focus too much on theory instead of real company internships",
+        "changing jobs every few months makes employers doubt your loyalty and stops you from mastering deep professional skills"
+      ]
+    }
+  },
+  {
+    "STT": "13",
+    "Mã câu hỏi": "hcmue11-speaking-part1-5",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Topic 5: Shopping Habits",
+    "Nội dung chi tiết": "1. How often do you go shopping, and who do you usually shop with?\n2. Do you prefer shopping online or going to traditional stores? Why?\n3. What kinds of items do you spend the most money on?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part1-5",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "title": "Topic 5: Shopping Habits",
+    "content": "1. How often do you go shopping, and who do you usually shop with?\n2. Do you prefer shopping online or going to traditional stores? Why?\n3. What kinds of items do you spend the most money on?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:13+07:00",
+    "hint": {
+      "extraVocab": [
+        "traditional stores",
+        "local market",
+        "try on",
+        "allowance",
+        "household items"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I usually go shopping once or twice a week, mostly with my mom or my close friends.",
+          "example": "Every Sunday afternoon, my mom and I go to the local market near our house to buy fresh food and household items.",
+          "pillar": "Social & Mental health",
+          "q": "1. How often do you go shopping, and who do you usually shop with?",
+          "reason": "Going shopping together is a fun way to spend quality time, strengthen our bonds, and elevate my mood after a busy week of studying."
+        },
+        {
+          "answer": "Actually, I prefer going to traditional stores rather than shopping online, even though e-commerce apps are fast and convenient.",
+          "example": "Last month, I bought a jacket at a local shop near my school after trying it on to make sure the size and fabric were comfortable.",
+          "pillar": "Mental health & Knowledge",
+          "q": "2. Do you prefer shopping online or going to traditional stores? Why?",
+          "reason": "Shopping on e-commerce apps often tempts buyers to waste money on cheap items that look nothing like the advertised photos, whereas going to stores lets me check the quality directly and stay on the safe side."
+        },
+        {
+          "answer": "I spend the most money on fresh local food, comfortable clothes, and books for my study.",
+          "example": "Every month, I spend most of my allowance on fresh fruit, vegetables, and a couple of useful English textbooks at the bookstore.",
+          "pillar": "Physical health & Knowledge",
+          "q": "3. What kinds of items do you spend the most money on?",
+          "reason": "Healthy food and good study materials play an essential role in keeping fit and broadening my mind, and I always choose items that fit comfortably within my budget."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Social, Mental health) + Luận điểm #10 (Mua sắm online -), #17 + Từ vựng #14, #21, #24",
+      "reusedVocab": [
+        "spend quality time",
+        "strengthen bonds",
+        "elevate my mood",
+        "fast and convenient",
+        "shopping on e-commerce apps often tempts buyers to waste money on cheap items that look nothing like the advertised photos",
+        "stay on the safe side",
+        "plays an essential role in",
+        "keep fit",
+        "broaden their mind",
+        "fit comfortably within my budget"
+      ],
+      "topic": "Shopping Habits"
+    }
+  },
+  {
+    "STT": "14",
+    "Mã câu hỏi": "hcmue11-speaking-part1-6",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Topic 6: Family & Relationships",
+    "Nội dung chi tiết": "1. Do you live in a big family or a small family?\n2. Who are you closest to in your family, and why?\n3. What activities do your family members enjoy doing together on weekends?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part1-6",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "title": "Topic 6: Family & Relationships",
+    "content": "1. Do you live in a big family or a small family?\n2. Who are you closest to in your family, and why?\n3. What activities do your family members enjoy doing together on weekends?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:14+07:00",
+    "hint": {
+      "extraVocab": [
+        "cozy",
+        "family members",
+        "special lunch",
+        "living room"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I live in a small, cozy family with four members: my parents, my younger sibling, and me.",
+          "example": "We live together in a quiet house in my hometown, and we always have dinner together every evening.",
+          "pillar": "Bộ đề 1 (Family) & Social",
+          "q": "1. Do you live in a big family or a small family?",
+          "reason": "Even though our family is small, my family means the world to me because we have a lot of things in common and get on really well with each other."
+        },
+        {
+          "answer": "I am closest to my mom, who is the most supportive and understanding person in my eyes.",
+          "example": "Whenever I feel stressed about exams, I talk with my mom in the kitchen and share everything with her to feel peaceful again.",
+          "pillar": "Bộ đề 1 (Person you like most) & Mental health",
+          "q": "2. Who are you closest to in your family, and why?",
+          "reason": "She loves me unconditionally, teaches me important values and life skills, and is always beside me when I face difficulties, which makes her a great source of inspiration and motivation."
+        },
+        {
+          "answer": "On weekends, my family members enjoy cooking delicious meals, watching movies, or going on a picnic together.",
+          "example": "Every Sunday morning, my parents and I prepare a special lunch together at home and then watch a comedy movie in the living room.",
+          "pillar": "Bộ đề 1 (Family leisure activities) & Social",
+          "q": "3. What activities do your family members enjoy doing together on weekends?",
+          "reason": "These activities help strengthen bonds within our family, build a strong sense of belonging, and let us openly and respectfully share our thoughts through face-to-face interaction."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Family, Siblings, Person you like most, Family leisure activities) + Từ vựng #23",
+      "reusedVocab": [
+        "means the world to me",
+        "have a lot of things in common",
+        "get on really well with",
+        "supportive",
+        "understanding",
+        "love me unconditionally",
+        "teach me important values and life skills",
+        "always beside me when I face difficulties",
+        "a great source of inspiration and motivation",
+        "share everything with her",
+        "going on a picnic",
+        "strengthen bonds within a family",
+        "build a strong sense of belonging",
+        "face-to-face interaction"
+      ],
+      "topic": "Family & Relationships"
+    }
+  },
+  {
+    "STT": "15",
+    "Mã câu hỏi": "hcmue11-speaking-part2-5",
+    "Phần thi": "speaking-part2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Part 2 - Situation 5: Choosing a Farewell Gift for a Best Friend Moving Abroad",
+    "Nội dung chi tiết": "Situation: Your best friend is preparing to move abroad to settle down and you want to buy a meaningful farewell gift. There are three options:\n- A pair of headphones\n- A wristwatch\n- A framed photo album / photo frame\n\nWhich option do you think is the best choice and why?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part2-5",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "title": "Part 2 - Situation 5: Choosing a Farewell Gift for a Best Friend Moving Abroad",
+    "content": "Situation: Your best friend is preparing to move abroad to settle down and you want to buy a meaningful farewell gift. There are three options:\n- A pair of headphones\n- A wristwatch\n- A framed photo album / photo frame\n\nWhich option do you think is the best choice and why?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:15+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-2",
+        "khen1Text": "because it is easy to find in local shops, fits my budget, and my best friend can put it on a desk and see it every day in their new home abroad.",
+        "khen2ARE": {
+          "answer": "This gift is advantageous to my best friend's mental health when starting a new life far from home.",
+          "example": "For example, I can print photos from our school trips and birthday parties and put them in a wooden frame with a short handwritten note on the back.",
+          "reason": "Living far from home can feel lonely at first, so looking at familiar photos of our happy memories helps my friend feel peaceful, comforted, and emotionally connected to home."
+        },
+        "khen2Pillar": "Improve Mental Health (Trục 2)",
+        "khen3Code": "KHEN-2",
+        "khen3Text": "a warm and meaningful keepsake that reminds my best friend of our care and sincere friendship for many years to come.",
+        "option": "A framed photo album / photo frame"
+      },
+      "extraVocab": [
+        "wooden frame",
+        "handwritten note",
+        "bulky to pack"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-2",
+          "option": "A wristwatch",
+          "reason": "spending too much money on an expensive wristwatch will burden my pocket, and my best friend might feel embarrassed and hesitate to accept such a costly gift."
+        },
+        {
+          "cheCode": "CHÊ-2",
+          "option": "A pair of headphones",
+          "reason": "quality headphones are expensive and bulky to pack for a long flight, and electronic items wear out after a couple of years instead of lasting like a personal keepsake."
+        }
+      ],
+      "reusedVocab": [
+        "easy to find in local shops, fits our budget, and the receiver can use or see it every day",
+        "advantageous to ... mental health",
+        "feel refreshed and peaceful",
+        "living far from home",
+        "a warm and meaningful keepsake that reminds the person of our care and sincere friendship for many years to come",
+        "burden our pockets, and the receiver might feel embarrassed and hesitate to accept it"
+      ],
+      "situation": "My best friend is preparing to move abroad to settle down, and I want to buy a meaningful farewell gift from three options: a pair of headphones, a wristwatch, or a framed photo album / photo frame."
+    }
+  },
+  {
+    "STT": "16",
+    "Mã câu hỏi": "hcmue11-speaking-part3-5",
+    "Phần thi": "speaking-part3",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Part 3 - Topic 5: The Importance of Teamwork",
+    "Nội dung chi tiết": "Topic: Teamwork plays a vital role in study and work\nSuggestions:\n- Sharing workload effectively\n- Generating diverse creative ideas\n- Improving communication and social skills\n- [Your own ideas]\n\nFollow-up questions:\n1. What problems can happen when people work in a team?\n2. Do you prefer working in a team or working independently? Why?\n3. How can schools help students develop better teamwork skills?",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-speaking-part3-5",
+    "skill": "speaking",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part3",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "title": "Part 3 - Topic 5: The Importance of Teamwork",
+    "content": "Topic: Teamwork plays a vital role in study and work\nSuggestions:\n- Sharing workload effectively\n- Generating diverse creative ideas\n- Improving communication and social skills\n- [Your own ideas]\n\nFollow-up questions:\n1. What problems can happen when people work in a team?\n2. Do you prefer working in a team or working independently? Why?\n3. How can schools help students develop better teamwork skills?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:16+07:00",
+    "hint": {
+      "coreTopic": "the importance of teamwork in study and work",
+      "extraVocab": [
+        "unequal effort",
+        "brainstorming",
+        "share duties equally"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some common problems in teamwork, such as unequal effort, disagreements, and poor communication.",
+          "example": "For example, in a university group project, two active students often end up writing the whole report because another member misses meetings and deadlines.",
+          "formula": "what",
+          "q": "What problems can happen when people work in a team?",
+          "reason": "Some members may be lazy and let others do all the work, or conflicts happen when people refuse to listen to each other with patience."
+        },
+        {
+          "answer": "I think I prefer working in a team for big projects because of the shared support.",
+          "example": "For instance, when preparing an event or a class presentation, brainstorming with four classmates produces much better results than working by myself.",
+          "formula": "do you think",
+          "q": "Do you prefer working in a team or working independently? Why?",
+          "reason": "Working with like-minded people enriches my social life and helps solve hard problems faster, whereas working alone in a quiet environment is only better when I need deep focus."
+        },
+        {
+          "answer": "I think schools should organize more group projects, clubs, and team sports while guiding students on how to share duties equally.",
+          "example": "For example, high schools can assign group science projects every term and ask each student to present their own part so nobody can rely on others.",
+          "formula": "should/how",
+          "q": "How can schools help students develop better teamwork skills?",
+          "reason": "Teachers should guide and support students to listen to each other with patience, while group activities let them practice communication in real situations."
+        }
+      ],
+      "macroTopic": "education",
+      "mindmapPoints": [
+        {
+          "cue": "Sharing workload effectively",
+          "expand": "because each member can focus on what they do best, which saves time, relieves stress and reduces fatigue, and helps everyone finish tasks on time.",
+          "impact": "Therefore, it has a positive effect on work productivity and mental health.",
+          "sentence": "Teamwork helps people share the workload effectively.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Generating diverse creative ideas",
+          "expand": "For example, when students prepare a group presentation, each person brings different views and knowledge, which enhances problem-solving skills and encourages creativity.",
+          "impact": "Clearly, it is beneficial to learning results and new ideas.",
+          "sentence": "Working in a team helps members generate diverse creative ideas.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Improving communication and social skills",
+          "expand": "This is because working together lets us learn to listen, share opinions politely, and build a strong sense of belonging through face-to-face interaction.",
+          "impact": "So, it has positive effects on our social network and career growth.",
+          "sentence": "Teamwork helps people improve their communication and social skills.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "relieve stress and reduce fatigue",
+        "enhance problem-solving skills and teamwork",
+        "encourages creativity and collaboration",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "like-minded people",
+        "enrich my social life",
+        "improve productivity"
+      ]
+    }
   }
 ]

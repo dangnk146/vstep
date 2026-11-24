@@ -26,7 +26,7 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "speaking/VLU_11-2026.json",
-      "count": 99
+      "count": 101
     },
     {
       "school": "VLU",
@@ -92,7 +92,7 @@
       "school": "UFM",
       "batch": "11/2026",
       "file": "speaking/UFM_11-2026.json",
-      "count": 13
+      "count": 14
     },
     {
       "school": "DTU",
@@ -128,13 +128,13 @@
       "school": "HCMUE",
       "batch": "11/2026",
       "file": "speaking/HCMUE_11-2026.json",
-      "count": 6
+      "count": 16
     },
     {
       "school": "HANU",
       "batch": "11/2026",
       "file": "speaking/HANU_11-2026.json",
-      "count": 6
+      "count": 13
     }
   ],
   "writing": [
@@ -142,7 +142,7 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "writing/VLU_11-2026.json",
-      "count": 67
+      "count": 69
     },
     {
       "school": "VLU",
@@ -208,7 +208,7 @@
       "school": "UFM",
       "batch": "11/2026",
       "file": "writing/UFM_11-2026.json",
-      "count": 10
+      "count": 12
     },
     {
       "school": "DTU",
@@ -244,13 +244,13 @@
       "school": "HCMUE",
       "batch": "11/2026",
       "file": "writing/HCMUE_11-2026.json",
-      "count": 4
+      "count": 10
     },
     {
       "school": "HANU",
       "batch": "11/2026",
       "file": "writing/HANU_11-2026.json",
-      "count": 4
+      "count": 10
     }
   ],
   "listening": {

@@ -251,5 +251,387 @@
         "changing jobs every few months"
       ]
     }
+  },
+  {
+    "STT": "5",
+    "Mã câu hỏi": "hcmue11-writing-task1-3",
+    "Phần thi": "writing-task1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Task 1.3: Formal Email Advising a Tourist on Hotel Booking and Bali Attractions",
+    "Nội dung chi tiết": "You work as a guest relations officer at a resort hotel in Bali. You have received an email from an international tourist who wants to book a room for an upcoming holiday. Write a formal email responding to the guest:\n\n- Provide details about available room types, nightly prices, and hotel facilities\n- Recommend popular attractions and enjoyable activities to experience in Bali\n- Offer assistance with reservation confirmation and airport transfer if needed",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-writing-task1-3",
+    "skill": "writing",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Chiều)",
+    "title": "Task 1.3: Formal Email Advising a Tourist on Hotel Booking and Bali Attractions",
+    "content": "You work as a guest relations officer at a resort hotel in Bali. You have received an email from an international tourist who wants to book a room for an upcoming holiday. Write a formal email responding to the guest:\n\n- Provide details about available room types, nightly prices, and hotel facilities\n- Recommend popular attractions and enjoyable activities to experience in Bali\n- Offer assistance with reservation confirmation and airport transfer if needed",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:01+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "First of all, I would like to inform you that we currently have Deluxe Garden Rooms at $80 per night and Ocean View Suites at $140 per night, both including free breakfast.",
+          "example": "These room options fit comfortably within different budgets without sacrificing quality, and every room has high-speed Wi-Fi and a private balcony.",
+          "frame": "I. [Formal] Reply to Inquiry (First of all) + D. Provide Information",
+          "reason": "Our resort is equipped with modern facilities such as an outdoor swimming pool, a fitness gym, and a quiet spa so guests can relieve stress and reduce fatigue.",
+          "requirement": "Provide details about available room types, nightly prices, and hotel facilities"
+        },
+        {
+          "answer": "Regarding sightseeing in Bali, I believe you should visit the Ubud Monkey Forest, watch the sunset at Tanah Lot Temple, and try snorkeling at Nusa Dua Beach.",
+          "example": "For example, you can spend one morning walking through the green rice terraces in Ubud and taste authentic Balinese grilled seafood by the beach in the evening.",
+          "frame": "I. [Formal] Reply to Inquiry (Regarding) + G. Provide Instruction / Suggestion",
+          "reason": "These famous spots give travelers the opportunity to broaden their mind and gain a deeper understanding of local culture and tradition.",
+          "requirement": "Recommend popular attractions and enjoyable activities to experience in Bali"
+        },
+        {
+          "answer": "As to your next concern, I would be happy to confirm your reservation and arrange a private car for your airport transfer upon arrival.",
+          "example": "If you would like to book, I would appreciate it if you could reply with your check-in dates, room choice, and flight number.",
+          "frame": "I. [Formal] Reply to Inquiry (As to your next concern) + B. Request",
+          "reason": "Having an airport pickup is fast and convenient for guests after a long flight and helps you stay on the safe side without worrying about local taxis.",
+          "requirement": "Offer assistance with reservation confirmation and airport transfer if needed"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "your room booking and holiday in Bali"
+      },
+      "extraVocab": [
+        "private balcony",
+        "airport transfer",
+        "check-in dates"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "provide you with room details, Bali travel recommendations, and booking support for your upcoming holiday at our resort",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Formal Reply to Inquiry + Suggestion (Hotel Booking & Bali Attractions)",
+      "reusedVocab": [
+        "First of all, I would like to inform you that...",
+        "Regarding..., ...",
+        "As to your next concern, ...",
+        "I would appreciate it if you could...",
+        "relieve stress and reduce fatigue",
+        "fit comfortably within... without sacrificing quality",
+        "broaden their mind",
+        "gain a deeper understanding of people, culture, and tradition",
+        "fast, convenient for...",
+        "stay on the safe side"
+      ]
+    }
+  },
+  {
+    "STT": "6",
+    "Mã câu hỏi": "hcmue11-writing-task2-3",
+    "Phần thi": "writing-task2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Task 2.3: Advantages and Disadvantages of Social Networking Sites",
+    "Nội dung chi tiết": "Read the following statement:\n\n\"Social networking platforms have become an integral part of modern communication, allowing users to stay connected and share information instantly. However, many people are worried about their negative effects on mental health, privacy, and real-life relationships.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of social networking sites. Give reasons and relevant examples from your own knowledge or experience.",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-writing-task2-3",
+    "skill": "writing",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Chiều)",
+    "title": "Task 2.3: Advantages and Disadvantages of Social Networking Sites",
+    "content": "Read the following statement:\n\n\"Social networking platforms have become an integral part of modern communication, allowing users to stay connected and share information instantly. However, many people are worried about their negative effects on mental health, privacy, and real-life relationships.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of social networking sites. Give reasons and relevant examples from your own knowledge or experience.",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:02+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, my cousin joined an online English club on Facebook where she met like-minded people and shared daily study notes without leaving home.",
+        "focus": "Advantages: fast communication and information sharing",
+        "frame": "Firstly, [debai] is considered as a convenient way to [V]. People have more opportunities to...",
+        "point": "Social networking sites are fast, convenient for busy people in modern-day society to stay connected, broaden their mind, and share useful study or work information instantly."
+      },
+      "body2": {
+        "example": "For example, many teenagers feel stressed and lonely comparing their lives to friends' luxury photos online, and some lose bank money after clicking strange links.",
+        "focus": "Disadvantages: peer pressure, privacy risks, and weaker real-life bonds",
+        "frame": "Secondly, [debai] has a negative impact on... People may face various unexpected problems.",
+        "point": "Spending too much time on Facebook or TikTok causes peer pressure and mental stress, while sharing private details online allows cyber criminals to steal personal identities and reduces real face-to-face interaction."
+      },
+      "conclusion": "In conclusion, using social networking sites can have both pros and cons: while people can stay connected and broaden their mind quickly, they face mental stress, privacy risks, and less face-to-face interaction; therefore, users should stay on the safe side and use social media wisely.",
+      "essayType": "Positive or Negative",
+      "extraVocab": [
+        "[+] social media",
+        "[+] stay connected"
+      ],
+      "intro": {
+        "debai": "using social networking sites",
+        "ld1": "stay connected and broaden their mind quickly",
+        "ld2": "mental stress, privacy risks, and less face-to-face interaction"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #3 (Peer Pressure) + Câu #11 (An ninh mạng) + Khung Positive or Negative (Adv-Disadv)",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "broaden their mind",
+        "meet like-minded people",
+        "peer pressure",
+        "Sharing private details online or clicking strange links allows cyber criminals to steal bank accounts and personal identities easily",
+        "face-to-face interaction",
+        "stay on the safe side"
+      ]
+    }
+  },
+  {
+    "STT": "7",
+    "Mã câu hỏi": "hcmue11-writing-task1-4",
+    "Phần thi": "writing-task1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "Tiêu đề đề bài": "Task 1.4: Informal Email Advising a Friend on Choosing Home or Garden for Art Painting",
+    "Nội dung chi tiết": "You have received an email from your friend who wants to paint and display some art pictures and is asking for your advice. Write an informal email responding to your friend:\n\n- Advise whether it is better to paint or set up the art session at home or in the garden, and explain why\n- Share your thoughts on why art and pictures are important and valuable in daily life\n- Suggest a convenient time when you can join or view their finished artwork",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-writing-task1-4",
+    "skill": "writing",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "title": "Task 1.4: Informal Email Advising a Friend on Choosing Home or Garden for Art Painting",
+    "content": "You have received an email from your friend who wants to paint and display some art pictures and is asking for your advice. Write an informal email responding to your friend:\n\n- Advise whether it is better to paint or set up the art session at home or in the garden, and explain why\n- Share your thoughts on why art and pictures are important and valuable in daily life\n- Suggest a convenient time when you can join or view their finished artwork",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:03+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "From my point of view, I think that setting up your painting session in the garden is much better than working indoors at home.",
+          "example": "For example, you can put your easel under a shady tree in the morning so the bright sunlight helps you see true colors without straining your eyes.",
+          "frame": "H. Provide Opinion + G. Provide Instruction / Suggestion (A-R-E: Peace & Privacy)",
+          "reason": "This is because being in a green garden offers fresh air, natural daylight, and a quiet, cozy environment where you can enjoy personal privacy and feel refreshed and peaceful.",
+          "requirement": "Advise whether it is better to paint or set up the art session at home or in the garden, and explain why"
+        },
+        {
+          "answer": "I think that art and paintings play an essential role in making our daily life happier and more meaningful.",
+          "example": "Even a simple handmade landscape picture on the wall can boost your mood every morning before you leave for work or school.",
+          "frame": "H. Provide Opinion (A-R-E: Mental Health & Brain Exercise)",
+          "reason": "Painting allows our brain to exercise creatively, helps us relieve stress and reduce fatigue, and makes any living room look warm and welcoming.",
+          "requirement": "Share your thoughts on why art and pictures are important and valuable in daily life"
+        },
+        {
+          "answer": "Why don't you invite me over next Sunday afternoon at 3:00 PM so I can view your finished pictures and maybe try painting a small one with you?",
+          "example": "I can bring some fresh fruit and iced tea while we look at your artwork in the garden together.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "Sunday afternoon is ideal because we are both free from work and can enjoy face-to-face interaction over tea without rushing.",
+          "requirement": "Suggest a convenient time when you can join or view their finished artwork"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "your art painting session"
+      },
+      "extraVocab": [
+        "natural daylight",
+        "finished artwork"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "where you should paint your art pictures and why art means so much to us",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Opinion + Suggestion (Home vs Garden for Art Painting)",
+      "reusedVocab": [
+        "From my point of view, I think that...",
+        "I think that...",
+        "Why don't you...?",
+        "quiet, cozy environment",
+        "feel refreshed and peaceful",
+        "plays an essential role in",
+        "allow their brain to exercise",
+        "relieve stress and reduce fatigue",
+        "face-to-face interaction"
+      ]
+    }
+  },
+  {
+    "STT": "8",
+    "Mã câu hỏi": "hcmue11-writing-task2-4",
+    "Phần thi": "writing-task2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "Tiêu đề đề bài": "Task 2.4: Benefits of Staying Single in Modern Society",
+    "Nội dung chi tiết": "Read the following statement:\n\n\"Nowadays, an increasing number of young adults choose to stay single longer rather than getting married early.\"\n\nWrite an essay to an educated reader discussing the main benefits of staying single. Support your arguments with clear reasons and specific examples.",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-writing-task2-4",
+    "skill": "writing",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế HCMUE 21/11/2026 (Sáng)",
+    "title": "Task 2.4: Benefits of Staying Single in Modern Society",
+    "content": "Read the following statement:\n\n\"Nowadays, an increasing number of young adults choose to stay single longer rather than getting married early.\"\n\nWrite an essay to an educated reader discussing the main benefits of staying single. Support your arguments with clear reasons and specific examples.",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:04+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother stayed single until 28 to focus on work and take extra training courses, so he saved enough money to buy an apartment and improve his living standard.",
+        "focus": "Career focus and financial stability",
+        "frame": "Firstly, the first reason is that [ld1]. This is because nowadays people... For instance, my brother was... Clearly, it is necessary to [ld1]...",
+        "point": "Staying single in your twenties gives young people full freedom to build a stable career, manage their own money, and save enough before raising a family."
+      },
+      "body2": {
+        "example": "For example, my single friend uses her weekends to join English classes and travel with like-minded people, which keeps her happy and reduces stress.",
+        "focus": "Personal freedom, mental health, and self-development",
+        "frame": "Secondly, it allows that [ld2]. It is because when people... For example, I was... It is clear that [ld2].",
+        "point": "Without heavy family duties, single adults have more time to broaden their mind, learn new skills, and recharge their batteries after a day of hard work."
+      },
+      "conclusion": "In conclusion, I agree that staying single longer brings numerous positive impacts on young adults because they can build a stable career, save money, and enjoy personal freedom before marriage.",
+      "essayType": "Agree or Disagree",
+      "extraVocab": [
+        "[+] family duties",
+        "[+] training courses"
+      ],
+      "intro": {
+        "debai": "young adults choosing to stay single longer",
+        "ld1": "build a stable career and save enough money",
+        "ld2": "enjoy personal freedom and improve their living standard"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Câu #13 (Sống độc thân tuổi 20) + Câu #6 (Quản lý tiền/tự lập) + Trục Mental health + Khung Agree or Disagree",
+      "reusedVocab": [
+        "Staying single in your twenties gives you full freedom to build a stable career and save enough money before raising a family",
+        "manage their own money",
+        "improve people's living standard",
+        "broaden their mind",
+        "recharge their batteries",
+        "like-minded people"
+      ]
+    }
+  },
+  {
+    "STT": "9",
+    "Mã câu hỏi": "hcmue11-writing-task1-5",
+    "Phần thi": "writing-task1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Task 1.5: Formal Email as a Store Manager Replying to an Employee",
+    "Nội dung chi tiết": "You are the manager of a retail store and have received an email from one of your employees asking about upcoming work shifts, workload support during peak hours, and training opportunities. Write a formal email responding to your employee:\n\n- Respond clearly to their request regarding shift adjustments and peak-hour support\n- Provide information about upcoming skill training or workplace guidance\n- Encourage open communication and invite them to a brief follow-up meeting",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-writing-task1-5",
+    "skill": "writing",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "title": "Task 1.5: Formal Email as a Store Manager Replying to an Employee",
+    "content": "You are the manager of a retail store and have received an email from one of your employees asking about upcoming work shifts, workload support during peak hours, and training opportunities. Write a formal email responding to your employee:\n\n- Respond clearly to their request regarding shift adjustments and peak-hour support\n- Provide information about upcoming skill training or workplace guidance\n- Encourage open communication and invite them to a brief follow-up meeting",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:05+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "I appreciate your concern and willingness to address this issue. First of all, I would like to inform you that we can move your Friday morning shift to Saturday afternoon and add one extra part-time cashier during peak hours.",
+          "example": "Starting next week, two team members will cover the checkout counter from 5:00 PM to 8:00 PM so you will not have to handle rush-hour crowds alone.",
+          "frame": "A. Reaction + I. [Formal] Reply to Inquiry (First of all)",
+          "reason": "Balancing the shift schedule helps staff reach a healthy balance between work and personal time while solving the problem of long customer lines on weekends.",
+          "requirement": "Respond clearly to their request regarding shift adjustments and peak-hour support"
+        },
+        {
+          "answer": "Regarding training opportunities, please be advised that the store is holding a two-hour customer service and POS software workshop next Wednesday morning.",
+          "example": "Our senior supervisor will guide everyone step by step on how to process fast returns and check stock levels on the tablet.",
+          "frame": "I. [Formal] Reply to Inquiry (Regarding) + D. Provide Information",
+          "reason": "This training helps employees make the most of new technology to improve productivity and gain practical experience in handling difficult customer requests.",
+          "requirement": "Provide information about upcoming skill training or workplace guidance"
+        },
+        {
+          "answer": "As to open communication, I always welcome your ideas, and I would appreciate it if you could join a brief 15-minute meeting in my office tomorrow at 2:00 PM.",
+          "example": "Please let me know if 2:00 PM works for you, and feel free to bring any notes about your preferred shifts for next month.",
+          "frame": "I. [Formal] Reply to Inquiry (As to your next concern) + B. Request",
+          "reason": "Talking directly helps us build a strong sense of belonging at work and solve small problems early through face-to-face interaction.",
+          "requirement": "Encourage open communication and invite them to a brief follow-up meeting"
+        }
+      ],
+      "closing": {
+        "template": "Formal",
+        "topic": "your work schedule and training"
+      },
+      "extraVocab": [
+        "peak hours",
+        "shift schedule",
+        "checkout counter"
+      ],
+      "letterType": "Formal",
+      "opening": {
+        "fill": "address your questions about upcoming work shifts, peak-hour support, and staff training opportunities at our store",
+        "template": "Formal"
+      },
+      "part": "writing-task1",
+      "purpose": "Formal Reply to Inquiry + Suggestion (Work Shifts, Support & Training)",
+      "reusedVocab": [
+        "I appreciate your concern and willingness to address...",
+        "First of all, I would like to inform you that...",
+        "Regarding..., please be advised that...",
+        "As to..., I would appreciate it if you could...",
+        "reach a healthy balance between...",
+        "solve the problem",
+        "make the most of new technology to improve productivity",
+        "build a strong sense of belonging",
+        "face-to-face interaction"
+      ]
+    }
+  },
+  {
+    "STT": "10",
+    "Mã câu hỏi": "hcmue11-writing-task2-5",
+    "Phần thi": "writing-task2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Task 2.5: Causes and Solutions of Children Spending Excessive Time on Electronic Devices",
+    "Nội dung chi tiết": "Read the following statement:\n\n\"Children today are spending an alarming number of hours using smartphones, tablets, and computers instead of playing outdoors or interacting with their families.\"\n\nWrite an essay to an educated reader analyzing the main causes of this trend and proposing practical solutions for parents, schools, and society.",
+    "Mã trường": "HCMUE",
+    "Đợt thi": "11/2026",
+    "id": "hcmue11-writing-task2-5",
+    "skill": "writing",
+    "school": "HCMUE",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế HCMUE 22/11/2026 (Sáng - Ca 2)",
+    "title": "Task 2.5: Causes and Solutions of Children Spending Excessive Time on Electronic Devices",
+    "content": "Read the following statement:\n\n\"Children today are spending an alarming number of hours using smartphones, tablets, and computers instead of playing outdoors or interacting with their families.\"\n\nWrite an essay to an educated reader analyzing the main causes of this trend and proposing practical solutions for parents, schools, and society.",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:06+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, my neighbor's son plays games on a tablet for four hours every evening because his parents are too busy with work to play outdoors with him.",
+        "focus": "Main causes: lack of parental guidance and weak self-control",
+        "frame": "Firstly, the primary reason behind this is that [ld1]. This is because nowadays people... For instance...",
+        "point": "Today, many parents work all day and fail to spend enough time talking with or guiding their children, so kids lack proper guidance and self-control and spend hours on smartphones or tablets."
+      },
+      "body2": {
+        "example": "For example, a local primary school banned phones in class and added daily football and music clubs, which helped students play together through face-to-face interaction.",
+        "focus": "Practical solutions: Giải pháp A (Penalize - Family, School, Society)",
+        "frame": "Secondly, to deal with these problems, we need to take several practical steps (Giải pháp A: Gia đình/Trường học + Chính phủ).",
+        "point": "Parents should reach a healthy balance between work and family time to set screen rules and guide kids, while schools and the government should invest more public funds into building safe playgrounds and sports clubs."
+      },
+      "conclusion": "In conclusion, children's overuse of electronic devices comes from busy parents and weak self-control, so parents, schools, and the government must work closely together to guide children and create healthier outdoor activities.",
+      "essayType": "Causes-Solutions",
+      "extraVocab": [
+        "[+] screen rules",
+        "[+] safe playgrounds"
+      ],
+      "intro": {
+        "debai": "children spending too much time on electronic devices",
+        "ld1": "busy parents lacking time to guide their children",
+        "ld2": "joint actions from families, schools, and the government"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #2 (Student Misbehaviour) + Cụm #10, #22, #23 + Giải pháp A (Penalize)",
+      "reusedVocab": [
+        "parents work all day and fail to spend enough time talking with or guiding their children",
+        "lack proper guidance and self-control, which easily leads to bad behaviors and widens the generation gap",
+        "reach a healthy balance between work and family time",
+        "parents and schools should work closely together to guide, listen, and support young people",
+        "invest more public funds into upgrading facilities",
+        "face-to-face interaction"
+      ]
+    }
   }
 ]

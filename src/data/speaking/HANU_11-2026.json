@@ -429,5 +429,505 @@
         "family conflicts"
       ]
     }
+  },
+  {
+    "STT": "7",
+    "Mã câu hỏi": "hanu11-speaking-part1-3",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HANU 21/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Topic 3: Mobile Phones & Inventions",
+    "Nội dung chi tiết": "1. Do you think the mobile phone is a great invention? Why or why not?\n2. How has the mobile phone helped or changed your daily life?\n3. If you were an inventor, what useful device or product would you invent?",
+    "Mã trường": "HANU",
+    "Đợt thi": "11/2026",
+    "id": "hanu11-speaking-part1-3",
+    "skill": "speaking",
+    "school": "HANU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HANU 21/11/2026 (Chiều)",
+    "title": "Topic 3: Mobile Phones & Inventions",
+    "content": "1. Do you think the mobile phone is a great invention? Why or why not?\n2. How has the mobile phone helped or changed your daily life?\n3. If you were an inventor, what useful device or product would you invent?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:26+07:00",
+    "hint": {
+      "extraVocab": [
+        "invention",
+        "stay connected",
+        "video call",
+        "smart study lamp",
+        "stretch"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I certainly think the mobile phone is one of the greatest inventions in modern-day society.",
+          "example": "For example, even when I live away from home for university, I can video call my parents every evening on my phone.",
+          "pillar": "Social & Knowledge",
+          "q": "1. Do you think the mobile phone is a great invention? Why or why not?",
+          "reason": "It plays an essential role in helping people stay connected with family and friends anytime, and it is fast and convenient for busy people to search for information and broaden their mind."
+        },
+        {
+          "answer": "The mobile phone has made my daily life much easier because I can make the most of new technology to improve my study productivity.",
+          "example": "Every morning on my way to school, I listen to English podcasts and Lofi music on Spotify using my smartphone.",
+          "pillar": "Knowledge & Mental health",
+          "q": "2. How has the mobile phone helped or changed your daily life?",
+          "reason": "I can read news, take notes, check maps, and listen to soothing music to relax my mind and reduce stress on the bus."
+        },
+        {
+          "answer": "If I were an inventor, I would invent a smart study lamp that reminds students to rest their eyes and sit properly.",
+          "example": "For instance, every 45 minutes while I study at my desk at night, the lamp would give a gentle light signal so I stand up and stretch.",
+          "pillar": "Physical health & Mental health",
+          "q": "3. If you were an inventor, what useful device or product would you invent?",
+          "reason": "Many young people spend too much time looking at screens, so this device would help protect their physical health, relieve fatigue, and encourage a healthier daily routine."
+        }
+      ],
+      "reusedSource": "Bộ đề 3 (Music) + Trục Social, Knowledge, Physical health + Từ vựng #1, #8, #14, #18",
+      "reusedVocab": [
+        "modern-day society",
+        "plays an essential role in",
+        "fast, convenient for busy people",
+        "broaden their mind",
+        "make the most of new technology to improve productivity",
+        "soothing",
+        "relax my mind",
+        "reduce stress",
+        "physical health",
+        "relieve fatigue",
+        "daily routine"
+      ],
+      "topic": "Mobile Phones & Inventions"
+    }
+  },
+  {
+    "STT": "8",
+    "Mã câu hỏi": "hanu11-speaking-part1-4",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HANU 21/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Topic 4: Fashion & Clothing Brands",
+    "Nội dung chi tiết": "1. What styles of clothes or clothing brands do you usually wear?\n2. Do you care about famous brands when buying clothes? Why or why not?\n3. Do you prefer wearing comfortable clothes or fashionable clothes in daily life?",
+    "Mã trường": "HANU",
+    "Đợt thi": "11/2026",
+    "id": "hanu11-speaking-part1-4",
+    "skill": "speaking",
+    "school": "HANU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HANU 21/11/2026 (Chiều)",
+    "title": "Topic 4: Fashion & Clothing Brands",
+    "content": "1. What styles of clothes or clothing brands do you usually wear?\n2. Do you care about famous brands when buying clothes? Why or why not?\n3. Do you prefer wearing comfortable clothes or fashionable clothes in daily life?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:27+07:00",
+    "hint": {
+      "extraVocab": [
+        "casual clothes",
+        "famous brands",
+        "cotton",
+        "sneakers",
+        "good-quality"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I usually wear simple, casual clothes from local shops or affordable brands like Uniqlo.",
+          "example": "On normal weekdays, I often wear a cotton T-shirt, dark jeans, and a pair of white sneakers to go to university.",
+          "pillar": "Mental health",
+          "q": "1. What styles of clothes or clothing brands do you usually wear?",
+          "reason": "Simple T-shirts and jeans are easy to match, fit comfortably within my budget and daily routine, and make me feel comfortable and confident at school."
+        },
+        {
+          "answer": "No, I do not really care about expensive famous brands when buying clothes.",
+          "example": "Instead of spending millions of dong on one designer shirt, I prefer buying three good-quality shirts at a local store.",
+          "pillar": "Mental health",
+          "q": "2. Do you care about famous brands when buying clothes? Why or why not?",
+          "reason": "As a student, expensive brands do not fit comfortably within my budget, and I believe clean, neat clothes are already enough to look good without wasting money."
+        },
+        {
+          "answer": "I definitely prefer wearing comfortable clothes in my daily life rather than overly fashionable ones.",
+          "example": "When I have a full day of classes from 7 a.m. to 5 p.m., soft cotton clothes keep me cool in the boiling-hot weather.",
+          "pillar": "Physical health & Mental health",
+          "q": "3. Do you prefer wearing comfortable clothes or fashionable clothes in daily life?",
+          "reason": "Comfortable clothes help me move freely, feel energetic, and stay focused on my work or study instead of feeling tired or uncomfortable all day."
+        }
+      ],
+      "reusedSource": "Trục Mental health, Physical health + Từ vựng #21 + Bộ đề 2 (Weather)",
+      "reusedVocab": [
+        "fit comfortably within my budget and daily routine",
+        "fit comfortably within my budget",
+        "feel comfortable",
+        "feel energetic",
+        "boiling-hot"
+      ],
+      "topic": "Fashion & Clothing Brands"
+    }
+  },
+  {
+    "STT": "9",
+    "Mã câu hỏi": "hanu11-speaking-part2-3",
+    "Phần thi": "speaking-part2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HANU 21/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Part 2 - Situation 3: Choosing a Preparation Gift for a Freshman Relative",
+    "Nội dung chi tiết": "Situation: Your younger relative is about to enter their first year of university and needs an essential item to prepare well for their first semester. There are three options:\n- A laptop\n- A smartphone\n- A motorbike\n\nWhich option do you think is the best choice and why?",
+    "Mã trường": "HANU",
+    "Đợt thi": "11/2026",
+    "id": "hanu11-speaking-part2-3",
+    "skill": "speaking",
+    "school": "HANU",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế HANU 21/11/2026 (Chiều)",
+    "title": "Part 2 - Situation 3: Choosing a Preparation Gift for a Freshman Relative",
+    "content": "Situation: Your younger relative is about to enter their first year of university and needs an essential item to prepare well for their first semester. There are three options:\n- A laptop\n- A smartphone\n- A motorbike\n\nWhich option do you think is the best choice and why?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:28+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-0",
+        "khen1Text": "because it is super easy for my younger relative to start using right away for university lessons without needing extra equipment, and a student model fits comfortably within the family budget.",
+        "khen2ARE": {
+          "answer": "A laptop plays an essential role in university study and helps my relative make the most of new technology to improve productivity.",
+          "example": "For example, my relative can write group reports, prepare presentation slides, and join an evening online course comfortably from their room.",
+          "reason": "Unlike a small phone, a laptop lets them type long essays, organize study files, and attend online classes smoothly, helping them broaden their mind and finish tasks on time."
+        },
+        "khen2Pillar": "Increase Knowledge & Study Productivity (Trục 3 + Technology)",
+        "khen3Code": "KHEN-0",
+        "khen3Text": "great for reducing study pressure. This is because everything stays well-organized in one device, allowing my relative to feel confident and ready for their first semester.",
+        "option": "A laptop"
+      },
+      "extraVocab": [
+        "group reports",
+        "presentation slides",
+        "small screen"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-6",
+          "option": "A motorbike",
+          "reason": "buying a motorbike costs too much money, and riding on congested city roads is dangerous for a new university student, especially when it rains heavily."
+        },
+        {
+          "cheCode": "CHÊ-0",
+          "option": "A smartphone",
+          "reason": "a smartphone has a small screen that strains the eyes and makes typing long essays difficult, while social media apps easily distract freshmen from finishing their homework."
+        }
+      ],
+      "reusedVocab": [
+        "super easy to start right away",
+        "fit comfortably within my budget",
+        "plays an essential role in",
+        "make the most of new technology to improve productivity",
+        "broaden their mind",
+        "great for reducing mental pressure",
+        "congested roads",
+        "especially when it rains heavily"
+      ],
+      "situation": "My younger relative is about to enter their first year of university and needs an essential item to prepare well for their first semester among three options: a laptop, a smartphone, or a motorbike."
+    }
+  },
+  {
+    "STT": "10",
+    "Mã câu hỏi": "hanu11-speaking-part3-3",
+    "Phần thi": "speaking-part3",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HANU 21/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Part 3 - Topic 3: Benefits of Artificial Intelligence (AI) for Students",
+    "Nội dung chi tiết": "Topic: Artificial Intelligence (AI) brings many benefits to students\nSuggestions:\n- Supporting effective self-study\n- Accessing diverse learning resources\n- Providing instant feedback on homework\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the disadvantages of AI for students?\n2. How has AI changed our daily lives?\n3. Which jobs do you think could be replaced by AI in the future?",
+    "Mã trường": "HANU",
+    "Đợt thi": "11/2026",
+    "id": "hanu11-speaking-part3-3",
+    "skill": "speaking",
+    "school": "HANU",
+    "batch": "11/2026",
+    "part": "part3",
+    "group": "Đề thi thực tế HANU 21/11/2026 (Chiều)",
+    "title": "Part 3 - Topic 3: Benefits of Artificial Intelligence (AI) for Students",
+    "content": "Topic: Artificial Intelligence (AI) brings many benefits to students\nSuggestions:\n- Supporting effective self-study\n- Accessing diverse learning resources\n- Providing instant feedback on homework\n- [Your own ideas]\n\nFollow-up questions:\n1. What are the disadvantages of AI for students?\n2. How has AI changed our daily lives?\n3. Which jobs do you think could be replaced by AI in the future?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:29+07:00",
+    "hint": {
+      "coreTopic": "the benefits of Artificial Intelligence for students",
+      "extraVocab": [
+        "self-study",
+        "instant feedback",
+        "repetitive jobs"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some clear disadvantages of AI for students, such as over-dependence, laziness in thinking, and wrong information.",
+          "example": "For example, some students copy AI answers directly for their assignments without checking facts, so they learn nothing and get caught for cheating.",
+          "formula": "what",
+          "q": "What are the disadvantages of AI for students?",
+          "reason": "If students lack self-control and rely on AI to write whole essays, they stop allowing their brain to exercise and may fail real exams without technology."
+        },
+        {
+          "answer": "AI has made our daily lives much faster and more convenient in communication, shopping, and healthcare.",
+          "example": "For instance, people now use voice assistants on smartphones to set reminders, translation apps when traveling abroad, and smart maps to avoid traffic jams.",
+          "formula": "should/how",
+          "q": "How has AI changed our daily lives?",
+          "reason": "People can make the most of new technology to save time on routine tasks and keep pace with the fast-paced development of modern science."
+        },
+        {
+          "answer": "I think simple and repetitive jobs such as data entry, basic customer service, and factory work could be replaced by AI.",
+          "example": "For example, many banks and online shops already use AI chatbots to answer common customer questions instead of hiring large call-center teams.",
+          "formula": "do you think",
+          "q": "Which jobs do you think could be replaced by AI in the future?",
+          "reason": "AI machines can work non-stop without fatigue and process large amounts of data faster than humans, whereas jobs needing care, creativity, and face-to-face interaction are much harder to replace."
+        }
+      ],
+      "macroTopic": "technology",
+      "mindmapPoints": [
+        {
+          "cue": "Supporting effective self-study",
+          "expand": "because AI tools act like a 24/7 personal tutor that explains difficult lessons in simple words and helps learners make the most of new technology to improve productivity.",
+          "impact": "Therefore, it has a positive effect on independent learning and study results.",
+          "sentence": "Artificial Intelligence helps students do effective self-study.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Accessing diverse learning resources",
+          "expand": "For example, students can use AI platforms to find practice exercises, sample essays, and summaries in seconds, which helps them broaden their mind and keep pace with modern science.",
+          "impact": "Clearly, it is beneficial to students' general knowledge.",
+          "sentence": "AI allows students to access diverse learning resources easily.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Providing instant feedback on homework",
+          "expand": "This is because AI apps can check grammar, math steps, or coding errors right away without waiting for a teacher, which is fast and convenient for busy learners.",
+          "impact": "So, it has positive effects on study speed and time management.",
+          "sentence": "AI provides students with instant feedback on their homework.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "make the most of new technology to improve productivity",
+        "keep pace with the fast-paced development of modern science",
+        "broaden their mind",
+        "fast, convenient for busy people in modern-day society",
+        "allow their brain to exercise",
+        "lack proper guidance and self-control",
+        "face-to-face interaction"
+      ]
+    }
+  },
+  {
+    "STT": "11",
+    "Mã câu hỏi": "hanu11-speaking-part1-5",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HANU 21/11/2026 (Ca 2)",
+    "Tiêu đề đề bài": "Topic 5: Healthy Food & Eating Habits",
+    "Nội dung chi tiết": "1. Do you try to eat healthy food every day?\n2. What healthy dishes or ingredients do you enjoy eating most?\n3. Why is eating healthy food important for busy students and workers?",
+    "Mã trường": "HANU",
+    "Đợt thi": "11/2026",
+    "id": "hanu11-speaking-part1-5",
+    "skill": "speaking",
+    "school": "HANU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HANU 21/11/2026 (Ca 2)",
+    "title": "Topic 5: Healthy Food & Eating Habits",
+    "content": "1. Do you try to eat healthy food every day?\n2. What healthy dishes or ingredients do you enjoy eating most?\n3. Why is eating healthy food important for busy students and workers?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:30+07:00",
+    "hint": {
+      "extraVocab": [
+        "healthy food",
+        "balanced breakfast",
+        "ingredients",
+        "fast food",
+        "skip meals"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I always try my best to eat healthy food every day, even when I have a busy schedule.",
+          "example": "On weekdays, I usually cook simple meals at home with boiled vegetables and steamed rice instead of eating fast food.",
+          "pillar": "Physical health",
+          "q": "1. Do you try to eat healthy food every day?",
+          "reason": "Eating clean, fresh food plays an essential role in maintaining physical health, strengthening my immune system, and preventing common illnesses."
+        },
+        {
+          "answer": "I enjoy eating fresh local vegetables, chicken breast, and fruit smoothies the most.",
+          "example": "Every morning, my mom buys fresh lettuce and tomatoes at the local market so we can make a healthy salad for lunch.",
+          "pillar": "Physical health & Bộ đề 2 (Cuisine)",
+          "q": "2. What healthy dishes or ingredients do you enjoy eating most?",
+          "reason": "Fresh organic vegetables and local ingredients are delicious, affordable, and provide plenty of vitamins to help me keep fit and feel energetic."
+        },
+        {
+          "answer": "Eating healthy food is very important for busy students and workers because it gives them energy and reduces fatigue.",
+          "example": "For instance, when I eat a balanced breakfast with eggs and fruit before morning classes, I can concentrate much better than when I skip meals.",
+          "pillar": "Physical health & Mental health",
+          "q": "3. Why is eating healthy food important for busy students and workers?",
+          "reason": "When people work or study under high pressure, healthy meals boost their energy, improve focus, and help them stay fit and healthy for a long day."
+        }
+      ],
+      "reusedSource": "Trục Physical health + Từ vựng #1, #9 + Mẫu #1 (Organic vegetables) + Luận điểm #17 (Thực phẩm địa phương)",
+      "reusedVocab": [
+        "plays an essential role in",
+        "physical health",
+        "strengthen my immune system",
+        "prevent common illnesses",
+        "fresh organic vegetables",
+        "fresh local food",
+        "keep fit",
+        "feel energetic",
+        "reduce fatigue",
+        "stay fit and healthy"
+      ],
+      "topic": "Healthy Food & Eating Habits"
+    }
+  },
+  {
+    "STT": "12",
+    "Mã câu hỏi": "hanu11-speaking-part1-6",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HANU 21/11/2026 (Ca 2)",
+    "Tiêu đề đề bài": "Topic 6: Sharing Household Chores",
+    "Nội dung chi tiết": "1. What household chores do you usually help with at home?\n2. How is housework divided among members of your family?\n3. Do you think children should learn to do housework from an early age?",
+    "Mã trường": "HANU",
+    "Đợt thi": "11/2026",
+    "id": "hanu11-speaking-part1-6",
+    "skill": "speaking",
+    "school": "HANU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HANU 21/11/2026 (Ca 2)",
+    "title": "Topic 6: Sharing Household Chores",
+    "content": "1. What household chores do you usually help with at home?\n2. How is housework divided among members of your family?\n3. Do you think children should learn to do housework from an early age?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:31+07:00",
+    "hint": {
+      "extraVocab": [
+        "household chores",
+        "wash the dishes",
+        "sweep the floor",
+        "do the laundry",
+        "responsibility"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "At home, I usually help my parents wash the dishes, sweep the floor, and take out the trash.",
+          "example": "Every evening after dinner, I wash the dishes in the kitchen while my dad cleans the dining table.",
+          "pillar": "Social & Mental health",
+          "q": "1. What household chores do you usually help with at home?",
+          "reason": "Doing simple chores helps me keep my living space clean and peaceful, and it is a good way to relieve stress after sitting at my study desk for hours."
+        },
+        {
+          "answer": "In my family, housework is shared fairly among everyone depending on each person's free time.",
+          "example": "Usually, my mom cooks dinner, I do the laundry and wash dishes, and my dad repairs broken things or waters the plants in the yard.",
+          "pillar": "Social & Bộ đề 1 (Family)",
+          "q": "2. How is housework divided among members of your family?",
+          "reason": "Sharing daily housework prevents my mom from carrying the entire family burden alone, and working together builds a strong sense of belonging and strengthens family bonds."
+        },
+        {
+          "answer": "Yes, I strongly believe that children should learn to do simple housework from an early age.",
+          "example": "For example, five-year-old kids can start by putting away their own toys and folding their clothes after waking up.",
+          "pillar": "Knowledge & Social",
+          "q": "3. Do you think children should learn to do housework from an early age?",
+          "reason": "Sharing daily housework teaches children practical life skills, responsibility, and self-control, which helps them adapt well when they grow up and live independently."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Family) + Từ vựng #7, #9, #23 + Luận điểm #14 (Chia sẻ việc nhà +)",
+      "reusedVocab": [
+        "peaceful",
+        "relieve stress",
+        "sharing daily housework",
+        "prevents mothers from carrying the entire family burden alone",
+        "build a strong sense of belonging",
+        "strengthen bonds",
+        "practical life skills",
+        "self-control",
+        "adjust and adapt to"
+      ],
+      "topic": "Sharing Household Chores"
+    }
+  },
+  {
+    "STT": "13",
+    "Mã câu hỏi": "hanu11-speaking-part3-4",
+    "Phần thi": "speaking-part3",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HANU 21/11/2026 (Ca 2)",
+    "Tiêu đề đề bài": "Part 3 - Topic 4: Solutions for Preserving Cultural Heritage",
+    "Nội dung chi tiết": "Topic: Effective ways to preserve traditional culture\nSuggestions:\n- Teaching cultural traditions at school\n- Organizing traditional festivals and exhibitions\n- Promoting local culture on digital media\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is it important to preserve traditional culture in a globalized world?\n2. Which solution do you think is the most effective for young people?\n3. What can individuals do in daily life to protect their national culture?",
+    "Mã trường": "HANU",
+    "Đợt thi": "11/2026",
+    "id": "hanu11-speaking-part3-4",
+    "skill": "speaking",
+    "school": "HANU",
+    "batch": "11/2026",
+    "part": "part3",
+    "group": "Đề thi thực tế HANU 21/11/2026 (Ca 2)",
+    "title": "Part 3 - Topic 4: Solutions for Preserving Cultural Heritage",
+    "content": "Topic: Effective ways to preserve traditional culture\nSuggestions:\n- Teaching cultural traditions at school\n- Organizing traditional festivals and exhibitions\n- Promoting local culture on digital media\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is it important to preserve traditional culture in a globalized world?\n2. Which solution do you think is the most effective for young people?\n3. What can individuals do in daily life to protect their national culture?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:32+07:00",
+    "hint": {
+      "coreTopic": "effective ways to preserve traditional culture",
+      "extraVocab": [
+        "national identity",
+        "craft villages",
+        "digital media"
+      ],
+      "followUps": [
+        {
+          "answer": "There are some important reasons why preserving traditional culture is essential, such as keeping our national identity and passing down valuable wisdom.",
+          "example": "For example, traditional Ao Dai and Tet customs help Vietnamese people everywhere feel connected to their homeland and attract international tourists.",
+          "formula": "what",
+          "q": "Why is it important to preserve traditional culture in a globalized world?",
+          "reason": "Traditional culture plays an essential role in helping people understand their roots, build a strong sense of belonging, and boost economic development through cultural tourism."
+        },
+        {
+          "answer": "I think promoting local culture on digital media is the most effective way for young people.",
+          "example": "For instance, many young Vietnamese creators share TikTok and YouTube videos about folk songs and traditional food, which receive millions of views from teenagers.",
+          "formula": "do you think",
+          "q": "Which solution do you think is the most effective for young people?",
+          "reason": "Students and young workers spend a lot of time online every day, so using short videos and social media is fast, convenient, and helps them learn about traditions naturally without feeling bored."
+        },
+        {
+          "answer": "I think individuals should take part in local festivals, support traditional craft makers, and respect family customs in daily life.",
+          "example": "For example, families can celebrate Tet by visiting grandparents, wearing traditional clothes, and buying handmade gifts from local craft villages.",
+          "formula": "should/how",
+          "q": "What can individuals do in daily life to protect their national culture?",
+          "reason": "While governments play a crucial role, individuals can also make a difference by choosing traditional products and teaching younger family members about local customs."
+        }
+      ],
+      "macroTopic": "society",
+      "mindmapPoints": [
+        {
+          "cue": "Teaching cultural traditions at school",
+          "expand": "because young people often lack proper guidance on local history, so learning it in class helps them broaden their mind and gain a deeper understanding of their roots and traditions.",
+          "impact": "Therefore, it has a positive effect on education and national pride.",
+          "sentence": "Schools should teach cultural traditions to young students.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Organizing traditional festivals and exhibitions",
+          "expand": "For example, local folk music shows and handicraft fairs bring people together, strengthen community relationships, and provide real experience in traditional arts.",
+          "impact": "Clearly, it is beneficial to both cultural heritage and local tourism.",
+          "sentence": "Communities can organize traditional festivals and exhibitions to preserve culture.",
+          "wordForm": "V"
+        },
+        {
+          "cue": "Promoting local culture on digital media",
+          "expand": "This is because making the most of new technology like short videos and social media helps reach millions of young users quickly and keeps pace with modern society.",
+          "impact": "So, it has positive effects on public awareness and cultural preservation.",
+          "sentence": "People can promote local culture on digital media effectively.",
+          "wordForm": "V"
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "part": "speaking-part3",
+      "reusedVocab": [
+        "plays an essential role in",
+        "gain a deeper understanding of people, culture, and tradition",
+        "broaden their mind",
+        "brings people together and strengthens relationships",
+        "make the most of new technology",
+        "build a strong sense of belonging",
+        "boost economic development",
+        "while governments play a crucial role, individuals can also make a difference"
+      ]
+    }
   }
 ]

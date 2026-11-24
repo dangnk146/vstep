@@ -6963,5 +6963,135 @@
         "raise public awareness of healthy lifestyle and diseases"
       ]
     }
+  },
+  {
+    "STT": "100",
+    "Mã câu hỏi": "vlu11-speaking-part2-30",
+    "Phần thi": "speaking-part2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 08/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Part 2 - Situation 30: Advising Your Brother on Choosing a Skills Course",
+    "Nội dung chi tiết": "Situation: Your brother wants to enroll in a short course to improve his personal and professional abilities. He is considering three options:\n- A management skills course\n- A presentation skills course\n- An effective time-management and study skills course\n\nWhich option do you think is the best choice and why?",
+    "Mã trường": "VLU",
+    "Đợt thi": "11/2026",
+    "id": "vlu11-speaking-part2-30",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế VLU 08/11/2026 (Chiều)",
+    "title": "Part 2 - Situation 30: Advising Your Brother on Choosing a Skills Course",
+    "content": "Situation: Your brother wants to enroll in a short course to improve his personal and professional abilities. He is considering three options:\n- A management skills course\n- A presentation skills course\n- An effective time-management and study skills course\n\nWhich option do you think is the best choice and why?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:35+07:00",
+    "hint": {
+      "chosen": {
+        "khen1Code": "KHEN-0",
+        "khen1Text": "because it is super easy for my brother to start right away and apply daily without requiring any complicated preparation or prior experience.",
+        "khen2ARE": {
+          "answer": "This course is advantageous to his mental health and helps solve the problem of missing deadlines in both work and study.",
+          "example": "For example, my brother can create a daily timetable to finish urgent assignments or work tasks before relaxing with our family in the evening.",
+          "reason": "Learning how to organize his schedule lets him break large tasks into small daily steps, so he can relieve stress and reduce fatigue while reaching a healthy balance between work and family time."
+        },
+        "khen2Pillar": "Improve Mental Health (Trục 2) & Solve Daily Deadlines",
+        "khen3Code": "KHEN-0",
+        "khen3Text": "great for reducing mental pressure. This is because everything stays strictly under his control, allowing him to feel safe, confident, and emotionally balanced.",
+        "option": "An effective time-management and study skills course"
+      },
+      "extraVocab": [
+        "daily timetable",
+        "urgent assignments",
+        "manage a team"
+      ],
+      "part": "speaking-part2",
+      "rejected": [
+        {
+          "cheCode": "CHÊ-3",
+          "option": "A management skills course",
+          "reason": "specialized management training often comes with high tuition fees, and since my brother is not managing a team yet, the lessons will not fit his daily study and work needs right now."
+        },
+        {
+          "cheCode": "CHÊ-4",
+          "option": "A presentation skills course",
+          "reason": "a presentation course only helps on the few days he speaks in front of an audience, and crowded speaking classes can make him feel nervous without solving his everyday planning problems."
+        }
+      ],
+      "reusedVocab": [
+        "super easy to start right away without requiring any complicated preparation or prior experience",
+        "advantageous to ... mental health",
+        "solve the problem",
+        "can relieve stress and reduce fatigue",
+        "reach a healthy balance between work and family time",
+        "great for reducing mental pressure",
+        "emotionally balanced",
+        "high tuition fees"
+      ],
+      "situation": "My brother wants to enroll in a short course to improve his personal and professional abilities, and he is considering three options: a management skills course, a presentation skills course, or an effective time-management and study skills course."
+    }
+  },
+  {
+    "STT": "101",
+    "Mã câu hỏi": "vlu11-speaking-part1-41",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 22/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Topic 1: Using Bags & Eco-Friendly Shopping",
+    "Nội dung chi tiết": "1. What kind of bag do you usually carry when you go to school or work?\n2. Do you often bring your own reusable bag when going shopping? Why or why not?\n3. Why should people reduce the use of single-use plastic bags?",
+    "Mã trường": "VLU",
+    "Đợt thi": "11/2026",
+    "id": "vlu11-speaking-part1-41",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 22/11/2026 (Sáng - Ca 2)",
+    "title": "Topic 1: Using Bags & Eco-Friendly Shopping",
+    "content": "1. What kind of bag do you usually carry when you go to school or work?\n2. Do you often bring your own reusable bag when going shopping? Why or why not?\n3. Why should people reduce the use of single-use plastic bags?",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:36+07:00",
+    "hint": {
+      "extraVocab": [
+        "backpack",
+        "reusable bag",
+        "cloth bag",
+        "single-use plastic bags",
+        "plastic waste"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I usually carry a light fabric backpack when I go to school or work.",
+          "example": "Every morning, I put my laptop, notebook, and water bottle inside my backpack before riding my motorbike to campus.",
+          "pillar": "Physical health",
+          "q": "1. What kind of bag do you usually carry when you go to school or work?",
+          "reason": "It is cheap and convenient, and it keeps my shoulders comfortable instead of carrying heavy things in one hand, which is better for my physical health."
+        },
+        {
+          "answer": "Yes, I often bring my own reusable cloth bag when going shopping at the supermarket.",
+          "example": "I always keep a folded reusable bag in my motorbike trunk so I can use it whenever I stop at a store after class.",
+          "pillar": "Mental health",
+          "q": "2. Do you often bring your own reusable bag when going shopping? Why or why not?",
+          "reason": "It is fast and convenient, fits comfortably within my daily routine, and makes me feel happy because I can take part in environmental protection."
+        },
+        {
+          "answer": "I think people should reduce single-use plastic bags because everyone should be involved in environmental protection.",
+          "example": "For example, if each family uses cloth bags for daily grocery shopping, we can cut down on hundreds of plastic bags every month.",
+          "pillar": "Knowledge & Physical health",
+          "q": "3. Why should people reduce the use of single-use plastic bags?",
+          "reason": "Plastic waste causes serious environmental pollution and harms our physical health, so choosing green habits makes a great contribution to keeping our city clean and safe."
+        }
+      ],
+      "reusedSource": "Bộ đề 3 (Convenient) + Trục Mental health, Physical health & Từ vựng #11, #21 + Giải pháp B (Green habits)",
+      "reusedVocab": [
+        "cheap and convenient",
+        "physical health",
+        "fast and convenient",
+        "fit comfortably within",
+        "daily routine",
+        "should be involved in environmental protection",
+        "environmental pollution",
+        "choose green habits",
+        "make a contribution to"
+      ],
+      "topic": "Using Bags & Eco-Friendly Shopping"
+    }
   }
 ]

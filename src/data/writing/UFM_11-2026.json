@@ -618,5 +618,130 @@
         "think things through calmly to avoid unnecessary trouble"
       ]
     }
+  },
+  {
+    "STT": "11",
+    "Mã câu hỏi": "ufm11-writing-task1-6",
+    "Phần thi": "writing-task1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế UFM 23/11/2026",
+    "Tiêu đề đề bài": "Task 1.6: Informal Email Sharing Weekend Plans with a Friend",
+    "Nội dung chi tiết": "You have received an email from your close friend asking what you are going to do this coming weekend. Write an informal email responding to your friend:\n\n- Share your planned activities and locations for the weekend\n- Mention who you plan to spend time with and why you chose those activities\n- Invite your friend to join you and suggest a suitable meeting time",
+    "Mã trường": "UFM",
+    "Đợt thi": "11/2026",
+    "id": "ufm11-writing-task1-6",
+    "skill": "writing",
+    "school": "UFM",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế UFM 23/11/2026",
+    "title": "Task 1.6: Informal Email Sharing Weekend Plans with a Friend",
+    "content": "You have received an email from your close friend asking what you are going to do this coming weekend. Write an informal email responding to your friend:\n\n- Share your planned activities and locations for the weekend\n- Mention who you plan to spend time with and why you chose those activities\n- Invite your friend to join you and suggest a suitable meeting time",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:17+07:00",
+    "hint": {
+      "body": [
+        {
+          "answer": "I would like to give you information on my weekend plan: on Saturday morning I will go cycling around the city lake, and on Sunday afternoon I am visiting the new book street.",
+          "example": "I plan to ride two rounds around the lake from 7:00 AM to 8:30 AM and then stop by a quiet coffee shop nearby.",
+          "frame": "D. Provide Information",
+          "reason": "Outdoor cycling is fast and convenient for busy people in modern-day society to stay active, while reading helps me dive into the world of a book.",
+          "requirement": "Share your planned activities and locations for the weekend"
+        },
+        {
+          "answer": "I would like to let you know that I am going with two close classmates from my university club because we all need a break after our midterm tests.",
+          "example": "After a busy week of studying, we can recharge our batteries, chat over iced tea, and talk about our favorite books.",
+          "frame": "D. Provide Information (A-R-E: Social & Mental Health)",
+          "reason": "Choosing these activities is advantageous to our mental health so we can relieve stress and reduce fatigue, and it helps us understand each other better through face-to-face interaction.",
+          "requirement": "Mention who you plan to spend time with and why you chose those activities"
+        },
+        {
+          "answer": "Why don't you join us this weekend? I believe you should come with us on Saturday morning because the weather will be cool and sunny.",
+          "example": "Let's meet at the main gate of the city lake park at 7:00 AM sharp—just bring a bottle of water and wear sports shoes.",
+          "frame": "G. Provide Instruction / Suggestion",
+          "reason": "Meeting in the morning lets you get into good shape and still keeps your afternoon free for family time.",
+          "requirement": "Invite your friend to join you and suggest a suitable meeting time"
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my weekend plans"
+      },
+      "extraVocab": [
+        "book street",
+        "midterm tests"
+      ],
+      "letterType": "Informal",
+      "opening": {
+        "fill": "my plans for this coming weekend",
+        "template": "Informal"
+      },
+      "part": "writing-task1",
+      "purpose": "Provide Information + Invitation (Weekend Plans)",
+      "reusedVocab": [
+        "I would like to give you information on...",
+        "I would like to let you know that...",
+        "Why don't you...?",
+        "dive into the world of a book",
+        "advantageous to my mental health",
+        "relieve stress and reduce fatigue",
+        "recharge our batteries",
+        "face-to-face interaction",
+        "get into good shape"
+      ]
+    }
+  },
+  {
+    "STT": "12",
+    "Mã câu hỏi": "ufm11-writing-task2-6",
+    "Phần thi": "writing-task2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế UFM 23/11/2026",
+    "Tiêu đề đề bài": "Task 2.6: Is Online Learning Better Than Traditional Offline Learning?",
+    "Nội dung chi tiết": "Read the following statement:\n\n\"With the rapid growth of educational technology, many people believe that online learning is better and more effective than traditional offline classroom learning.\"\n\nWrite an essay to an educated reader expressing your opinion on whether online learning is better than offline learning. Support your answer with reasons and relevant examples.",
+    "Mã trường": "UFM",
+    "Đợt thi": "11/2026",
+    "id": "ufm11-writing-task2-6",
+    "skill": "writing",
+    "school": "UFM",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế UFM 23/11/2026",
+    "title": "Task 2.6: Is Online Learning Better Than Traditional Offline Learning?",
+    "content": "Read the following statement:\n\n\"With the rapid growth of educational technology, many people believe that online learning is better and more effective than traditional offline classroom learning.\"\n\nWrite an essay to an educated reader expressing your opinion on whether online learning is better than offline learning. Support your answer with reasons and relevant examples.",
+    "isNew": true,
+    "addedAt": "2026-11-24T18:45:18+07:00",
+    "hint": {
+      "body1": {
+        "example": "For instance, my brother worked full-time and joined evening online classes from home via laptop without heavy traffic, so he earned his English certificate on time.",
+        "focus": "Convenience and flexible routine (Advantages)",
+        "frame": "Firstly, the first reason is that [ld1]. This is because nowadays people... For instance, my brother was... Clearly, it is necessary to [ld1]...",
+        "point": "Online learning is fast, convenient for busy people in modern-day society and fits comfortably within their budget and daily routine without sacrificing quality."
+      },
+      "body2": {
+        "example": "For example, I used online learning apps to practice English speaking daily and check my grammar mistakes, which made my self-study much faster and cheaper.",
+        "focus": "Self-study with modern technology",
+        "frame": "Secondly, it allows that [ld2]. It is because when people... For example, I was... It is clear that [ld2].",
+        "point": "Learners can make the most of new technology to improve productivity, ask questions anytime, and receive instant feedback on their grammar errors instead of paying for expensive private tutors."
+      },
+      "conclusion": "In conclusion, I agree that online learning brings numerous positive impacts on people because they can enjoy a fast, convenient schedule and develop independent self-study skills with modern technology; therefore, schools should invest in modern learning tools to support learners.",
+      "essayType": "Agree or Disagree",
+      "extraVocab": [
+        "[+] evening online classes",
+        "[+] learning apps"
+      ],
+      "intro": {
+        "debai": "online learning compared to traditional classroom learning",
+        "ld1": "learners to enjoy a fast, convenient schedule",
+        "ld2": "independent self-study skills with modern technology"
+      },
+      "part": "writing-task2",
+      "reusedSource": "Mini-essay #5 (AI & Modern Skills) + Khung chung Agree or Disagree + Cụm #8, #18, #21",
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "fit comfortably within my budget and daily routine without sacrificing quality",
+        "make the most of new technology to improve productivity",
+        "receive instant feedback on their grammar errors",
+        "self-study becomes much faster, more personalized, and affordable"
+      ]
+    }
   }
 ]
