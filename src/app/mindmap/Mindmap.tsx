@@ -24,9 +24,17 @@ import {
   EyeOff,
   Layers,
   LoaderCircle,
+  TrendingUp,
 } from 'lucide-react';
 import { MINDMAP_HUBS, HubMetadata, MindmapTopic, MindmapNode, normalizeTopic } from './data';
 import { TopHeader } from '@/components/TopHeader';
+import { ExamTrendsView } from './ExamTrendsView';
+import {
+  computeTrendReport,
+  formatShortDate,
+  type SubtopicTrendRow,
+  type TrendDatasetResponse,
+} from '@/lib/examTrendsShared';
 
 interface PathEdge {
   id: string;
@@ -110,6 +118,11 @@ function OutlineDocumentView({
   showVietnamese,
   onCopy,
   getTopicIcon,
+  subtopicTrendMap,
+  unclassifiedCount,
+  onOpenTrends,
+  externalSubtopicId,
+  onClearExternalSubtopic,
 }: {
   hubs: HubMetadata[];
   activeTopicId: string;
@@ -121,9 +134,27 @@ function OutlineDocumentView({
   showVietnamese: boolean;
   onCopy: (text: string, id?: string) => void;
   getTopicIcon: (iconName: string) => React.ReactNode;
+  subtopicTrendMap: Record<string, SubtopicTrendRow>;
+  unclassifiedCount: number;
+  onOpenTrends: (focusSubtopicId?: string) => void;
+  externalSubtopicId: string | null;
+  onClearExternalSubtopic: () => void;
 }) {
   const [copiedId, setCopiedId] = useState<string | null>(null);
   const [activeSubtopicId, setActiveSubtopicId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (!externalSubtopicId || isLoading || !activeTopic) return;
+    const timer = setTimeout(() => {
+      setActiveSubtopicId(externalSubtopicId);
+      const el = document.getElementById(`topic-${externalSubtopicId}`);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      onClearExternalSubtopic();
+    }, 80);
+    return () => clearTimeout(timer);
+  }, [externalSubtopicId, isLoading, activeTopic, onClearExternalSubtopic]);
 
   const activeBranches = useMemo(() => {
     if (!activeTopic) return [];
@@ -282,6 +313,30 @@ function OutlineDocumentView({
             })}
           </div>
         </div>
+
+        {/* Lối mở riêng sang mục Phân tích Xu hướng đề & Đề chưa gom nhánh */}
+        <button
+          type="button"
+          onClick={() => onOpenTrends()}
+          className="flex w-full items-center justify-between gap-2 rounded-sm border border-[#245b86]/35 dark:border-sky-800/70 bg-sky-50/70 dark:bg-sky-950/35 px-2.5 py-2 text-left transition hover:bg-sky-100/80 dark:hover:bg-sky-950/60 shadow-xs cursor-pointer"
+        >
+          <span className="flex items-center gap-2 min-w-0">
+            <TrendingUp className="h-4 w-4 shrink-0 text-[#245b86] dark:text-sky-400" />
+            <span className="min-w-0">
+              <span className="block text-xs font-bold text-[#245b86] dark:text-sky-300 truncate">
+                Xu hướng đề thi thực tế
+              </span>
+              <span className="block text-[10px] text-slate-600 dark:text-slate-400 truncate">
+                Tỷ trọng đợt, liên trường & đề lẻ
+              </span>
+            </span>
+          </span>
+          {unclassifiedCount > 0 && (
+            <span className="rounded-xs bg-amber-100 dark:bg-amber-950/80 border border-amber-300/80 dark:border-amber-800 px-1.5 py-0.5 text-[10px] font-bold text-amber-800 dark:text-amber-300 shrink-0">
+              {unclassifiedCount} lẻ
+            </span>
+          )}
+        </button>
 
         {/* 3. Đề mục cấp 1 & Các chủ đề con của Hub đang chọn (Full nội dung, Không scrollbar nội bộ, Tiếng Anh) */}
         {isLoading ? (
@@ -460,6 +515,7 @@ function OutlineDocumentView({
                       const enMatch = subtopic.title.match(/\(([^)]+)\)/);
                       const enTitle = enMatch ? enMatch[1].trim() : subtopic.title;
                       const viTitle = subtopic.title.includes('(') ? subtopic.title.split('(')[0].trim() : (subtopic.viTitle || '');
+                      const trendRow = subtopicTrendMap[subtopic.id];
 
                       return (
                         <article
@@ -487,6 +543,38 @@ function OutlineDocumentView({
                                   </span>
                                 )}
                               </h3>
+                              {/* Nhãn số liệu thực nghiệm đối chiếu từ index.json */}
+                              {trendRow && trendRow.totalCount > 0 && (
+                                <div className="flex flex-wrap items-center gap-1.5 pt-1">
+                                  <button
+                                    type="button"
+                                    onClick={() => onOpenTrends(subtopic.id)}
+                                    title="Mở đối chiếu danh sách đề thực tế thuộc chủ đề này trong mục Xu hướng đề"
+                                    className="inline-flex items-center gap-1 rounded-2xs border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-800/80 px-1.5 py-0.5 text-[10px] font-bold text-slate-700 dark:text-slate-200 hover:border-[#245b86] hover:text-[#245b86] dark:hover:border-sky-500 dark:hover:text-sky-300 transition cursor-pointer"
+                                  >
+                                    <TrendingUp className="h-3 w-3 text-[#245b86] dark:text-sky-400" />
+                                    <span>
+                                      {trendRow.totalCount} đề • {trendRow.schoolCount} trường
+                                      {trendRow.latestDate ? ` • ${formatShortDate(trendRow.latestDate)}` : ''}
+                                    </span>
+                                  </button>
+                                  {trendRow.badges.includes('emerging') && (
+                                    <span className="inline-flex items-center rounded-2xs border border-emerald-200 dark:border-emerald-800/70 bg-emerald-50 dark:bg-emerald-950/60 px-1.5 py-0.5 text-[10px] font-bold text-emerald-800 dark:text-emerald-300">
+                                      Mới xuất hiện
+                                    </span>
+                                  )}
+                                  {trendRow.badges.includes('rising') && (
+                                    <span className="inline-flex items-center rounded-2xs border border-sky-200 dark:border-sky-800/70 bg-sky-50 dark:bg-sky-950/60 px-1.5 py-0.5 text-[10px] font-bold text-[#245b86] dark:text-sky-300">
+                                      Tăng tỷ trọng
+                                    </span>
+                                  )}
+                                  {trendRow.badges.includes('multi-school') && (
+                                    <span className="inline-flex items-center rounded-2xs border border-amber-200 dark:border-amber-800/70 bg-amber-50 dark:bg-amber-950/60 px-1.5 py-0.5 text-[10px] font-bold text-amber-800 dark:text-amber-300">
+                                      Liên trường
+                                    </span>
+                                  )}
+                                </div>
+                              )}
                               {/* Đề thi thực tế áp dụng */}
                               {examTags.length > 0 && (
                                 <div className="flex flex-wrap gap-1 pt-1">
@@ -1024,12 +1112,19 @@ export default function Mindmap() {
   const [loadError, setLoadError] = useState<string | null>(null);
   const [hubsList, setHubsList] = useState<HubMetadata[]>(MINDMAP_HUBS);
 
-  const [viewMode, setViewMode] = useState<'mindmap' | 'outline'>('outline');
+  const [viewMode, setViewMode] = useState<'mindmap' | 'outline' | 'trends'>('outline');
   const [showVietnamese, setShowVietnamese] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
   const [zoom, setZoom] = useState(0.85);
   const [collapsedMap, setCollapsedMap] = useState<Record<string, boolean>>({});
   const [toastMessage, setToastMessage] = useState<string | null>(null);
+
+  // Exam trends dataset (lazy-loaded once for both Trends view and Outline badges)
+  const [trendsDataset, setTrendsDataset] = useState<TrendDatasetResponse | null>(null);
+  const [isLoadingTrends, setIsLoadingTrends] = useState<boolean>(true);
+  const [trendsError, setTrendsError] = useState<string | null>(null);
+  const [focusTrendSubtopicId, setFocusTrendSubtopicId] = useState<string | null>(null);
+  const [pendingOutlineSubtopicId, setPendingOutlineSubtopicId] = useState<string | null>(null);
 
   // Fetch hub data on demand with client caching
   const loadHubData = useCallback(async (hubId: string) => {
@@ -1066,11 +1161,11 @@ export default function Mindmap() {
     try {
       const params = new URLSearchParams(window.location.search);
       const urlTopic = params.get('topic');
-      const urlView = params.get('view') as 'mindmap' | 'outline' | null;
+      const urlView = params.get('view') as 'mindmap' | 'outline' | 'trends' | null;
       const storedTopic = localStorage.getItem('vstep_mindmap_active_topic');
       const validIds = MINDMAP_HUBS.map((h) => h.id);
 
-      if (urlView === 'outline' || urlView === 'mindmap') {
+      if (urlView === 'outline' || urlView === 'mindmap' || urlView === 'trends') {
         setViewMode(urlView);
       }
 
@@ -1096,6 +1191,36 @@ export default function Mindmap() {
       .catch(() => {});
   }, [loadHubData]);
 
+  // Fetch exam trends dataset once on mount for both Trends view and Outline badges
+  useEffect(() => {
+    let cancelled = false;
+    fetch('/api/mindmap/trends')
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP error ${res.status}`);
+        return res.json();
+      })
+      .then((json: TrendDatasetResponse) => {
+        if (cancelled) return;
+        if (json.ok) {
+          setTrendsDataset(json);
+        } else {
+          setTrendsError('Không thể phân tích dữ liệu xu hướng đề thi.');
+        }
+      })
+      .catch((err) => {
+        if (cancelled) return;
+        console.error('Error fetching trends:', err);
+        setTrendsError(err instanceof Error ? err.message : 'Lỗi tải xu hướng đề');
+      })
+      .finally(() => {
+        if (!cancelled) setIsLoadingTrends(false);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, []);
+
   const selectTopic = useCallback(
     (topicId: string) => {
       try {
@@ -1109,14 +1234,57 @@ export default function Mindmap() {
     [viewMode, loadHubData]
   );
 
-  const switchViewMode = (mode: 'mindmap' | 'outline') => {
-    setViewMode(mode);
-    try {
-      window.history.replaceState(null, '', `?topic=${activeTopicId}&view=${mode}`);
-    } catch {
-      // Ignore storage errors
+  const switchViewMode = useCallback(
+    (mode: 'mindmap' | 'outline' | 'trends') => {
+      setViewMode(mode);
+      try {
+        window.history.replaceState(null, '', `?topic=${activeTopicId}&view=${mode}`);
+      } catch {
+        // Ignore storage errors
+      }
+    },
+    [activeTopicId]
+  );
+
+  const handleOpenTrends = useCallback(
+    (subtopicId?: string) => {
+      setFocusTrendSubtopicId(subtopicId || null);
+      switchViewMode('trends');
+    },
+    [switchViewMode]
+  );
+
+  const handleJumpToSubtopic = useCallback(
+    (hubId: string, subtopicId: string) => {
+      setPendingOutlineSubtopicId(subtopicId);
+      setViewMode('outline');
+      try {
+        localStorage.setItem('vstep_mindmap_active_topic', hubId);
+        window.history.replaceState(null, '', `?topic=${hubId}&view=outline`);
+      } catch {
+        // Ignore storage errors
+      }
+      loadHubData(hubId);
+    },
+    [loadHubData]
+  );
+
+  const defaultTrendSummary = useMemo(() => {
+    if (!trendsDataset) {
+      return { subtopicMap: {} as Record<string, SubtopicTrendRow>, unclassifiedCount: 0 };
     }
-  };
+    const report = computeTrendReport(
+      trendsDataset.records,
+      trendsDataset.subtopics,
+      trendsDataset.batches,
+      trendsDataset.latestExamDate,
+      { skill: 'all', school: 'all', includeSeptBaseline: false, hubFilter: 'all' }
+    );
+    return {
+      subtopicMap: report.subtopicMap,
+      unclassifiedCount: report.unclassifiedExams.length,
+    };
+  }, [trendsDataset]);
 
   // Mindmap Canvas state
   const [paths, setPaths] = useState<PathEdge[]>([]);
@@ -1347,41 +1515,62 @@ export default function Mindmap() {
         badge={`${totalTopicsCount} chủ đề`}
         showExamFilter={false}
       >
-        {/* Bật / Tắt dịch tiếng Việt */}
-        <button
-          type="button"
-          onClick={() => setShowVietnamese((v) => !v)}
-          className={`flex h-7 items-center gap-1 rounded-xs border px-1.5 sm:px-2 text-xs font-medium transition cursor-pointer ${
-            showVietnamese
-              ? 'border-amber-300 bg-amber-400/25 text-amber-200 hover:bg-amber-400/35'
-              : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
-          }`}
-          title={showVietnamese ? 'Ẩn dịch tiếng Việt' : 'Hiện dịch tiếng Việt'}
-        >
-          {showVietnamese ? <Eye className="h-3.5 w-3.5" /> : <EyeOff className="h-3.5 w-3.5" />}
-          <span className="hidden sm:inline">Dịch Việt</span>
-        </button>
+        {/* Bật / Tắt dịch tiếng Việt (chỉ hiện ở chế độ Văn bản & Sơ đồ) */}
+        {viewMode !== 'trends' && (
+          <button
+            type="button"
+            onClick={() => setShowVietnamese((v) => !v)}
+            className={`flex h-7 items-center gap-1 rounded-xs border px-1.5 sm:px-2 text-xs font-medium transition cursor-pointer ${
+              showVietnamese
+                ? 'border-amber-300 bg-amber-400/25 text-amber-200 hover:bg-amber-400/35'
+                : 'border-white/30 bg-white/10 text-white hover:bg-white/20'
+            }`}
+            title={showVietnamese ? 'Ẩn dịch tiếng Việt' : 'Hiện dịch tiếng Việt'}
+          >
+            {showVietnamese ? <Eye className="h-3.5 w-3.5" /> : <EyeOff className="h-3.5 w-3.5" />}
+            <span className="hidden sm:inline">Dịch Việt</span>
+          </button>
+        )}
 
-        {/* Chuyển đổi Trang văn bản 2 cột vs Sơ đồ nhánh */}
-        <button
-          type="button"
-          onClick={() => switchViewMode(viewMode === 'outline' ? 'mindmap' : 'outline')}
-          className="flex h-7 items-center gap-1.5 rounded-xs border border-white/30 bg-white/10 px-2 sm:px-2.5 text-xs font-bold text-white transition hover:bg-white/20 cursor-pointer"
-        >
-          {viewMode === 'outline' ? (
-            <>
-              <Compass className="h-3.5 w-3.5" />
-              <span className="hidden sm:inline">Xem Sơ đồ nhánh</span>
-              <span className="sm:hidden text-[11px]">Sơ đồ</span>
-            </>
-          ) : (
-            <>
-              <FileText className="h-3.5 w-3.5" />
-              <span className="hidden sm:inline">Xem Trang văn bản</span>
-              <span className="sm:hidden text-[11px]">Văn bản</span>
-            </>
-          )}
-        </button>
+        {/* Bộ chọn 3 chế độ xem: Trang văn bản | Sơ đồ nhánh | Xu hướng đề */}
+        <div className="flex items-center rounded-xs border border-white/30 bg-white/10 p-0.5">
+          <button
+            type="button"
+            onClick={() => switchViewMode('outline')}
+            className={`flex h-6 items-center gap-1 rounded-2xs px-2 text-xs font-bold transition cursor-pointer ${
+              viewMode === 'outline'
+                ? 'bg-white text-[#245b86] shadow-2xs'
+                : 'text-white/90 hover:bg-white/15'
+            }`}
+          >
+            <FileText className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Văn bản</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => switchViewMode('mindmap')}
+            className={`flex h-6 items-center gap-1 rounded-2xs px-2 text-xs font-bold transition cursor-pointer ${
+              viewMode === 'mindmap'
+                ? 'bg-white text-[#245b86] shadow-2xs'
+                : 'text-white/90 hover:bg-white/15'
+            }`}
+          >
+            <Compass className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Sơ đồ</span>
+          </button>
+          <button
+            type="button"
+            onClick={() => switchViewMode('trends')}
+            className={`flex h-6 items-center gap-1 rounded-2xs px-2 text-xs font-bold transition cursor-pointer ${
+              viewMode === 'trends'
+                ? 'bg-amber-300 text-amber-950 shadow-2xs'
+                : 'text-white/90 hover:bg-white/15'
+            }`}
+          >
+            <TrendingUp className="h-3.5 w-3.5" />
+            <span>Xu hướng</span>
+          </button>
+        </div>
       </TopHeader>
 
       {/* Thông báo lỗi nếu có */}
@@ -1392,8 +1581,18 @@ export default function Mindmap() {
         </div>
       )}
 
-      {/* 2. Main Content: 2-Column Outline View (Default) OR Mindmap Canvas */}
-      {viewMode === 'outline' ? (
+      {/* 2. Main Content: 2-Column Outline View (Default) OR Exam Trends OR Mindmap Canvas */}
+      {viewMode === 'trends' ? (
+        <ExamTrendsView
+          key={focusTrendSubtopicId || 'trends-default'}
+          dataset={trendsDataset}
+          isLoading={isLoadingTrends}
+          error={trendsError}
+          initialFocusSubtopicId={focusTrendSubtopicId}
+          onClearFocusSubtopic={() => setFocusTrendSubtopicId(null)}
+          onJumpToSubtopic={handleJumpToSubtopic}
+        />
+      ) : viewMode === 'outline' ? (
         <OutlineDocumentView
           hubs={hubsList}
           activeTopicId={activeTopicId}
@@ -1405,6 +1604,11 @@ export default function Mindmap() {
           showVietnamese={showVietnamese}
           onCopy={handleCopy}
           getTopicIcon={getTopicIcon}
+          subtopicTrendMap={defaultTrendSummary.subtopicMap}
+          unclassifiedCount={defaultTrendSummary.unclassifiedCount}
+          onOpenTrends={handleOpenTrends}
+          externalSubtopicId={pendingOutlineSubtopicId}
+          onClearExternalSubtopic={() => setPendingOutlineSubtopicId(null)}
         />
       ) : (
         <div className="space-y-2.5">
