@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-24T11:51:02.790Z",
-  "totalSpeakingQuestions": 354,
+  "generatedAt": "2026-11-25T08:00:57.659Z",
+  "totalSpeakingQuestions": 368,
   "hubCount": 5,
   "hubs": {
     "education": {
@@ -32,8 +32,8 @@
         "Foster interpersonal communication & teamwork abilities (Rèn luyện giao tiếp xã hội và khả năng làm việc nhóm)"
       ],
       "stats": {
-        "total": 62,
-        "part1": 12,
+        "total": 63,
+        "part1": 13,
         "part2": 31,
         "part3": 19
       },
@@ -89,18 +89,18 @@
             "school": "VLU",
             "batch": "10/2026",
             "part": "part1",
-            "title": "Learning English & Future Self",
-            "rawTitle": "Topic 8: Learning English & Future Self",
-            "content": "1. How long have you been studying English, and what do you find most challenging about it?\n2. In what ways do you think English proficiency will benefit your future career and personal life?\n3. What kind of person do you see yourself becoming in the next five to ten years?"
+            "title": "Learning English",
+            "rawTitle": "Topic 8: Learning English",
+            "content": "1. How long have you been studying English, and what do you find most challenging about it?\n2. In what ways do you think English proficiency will benefit your future career and personal life?\n3. How do you usually practice English outside the classroom?"
           },
           {
-            "id": "vlu10-speaking-part1-9",
+            "id": "vlu10-speaking-part1-26",
             "school": "VLU",
             "batch": "10/2026",
             "part": "part1",
-            "title": "Online Blogs & Online Learning",
-            "rawTitle": "Topic 9: Online Blogs & Online Learning",
-            "content": "1. Do you regularly read online blogs or articles on the internet? What topics are you most interested in?\n2. How can reading or writing online blogs benefit students and young people?\n3. What are the main advantages of taking online courses compared to traditional classroom learning?"
+            "title": "Online Learning",
+            "rawTitle": "Topic 26: Online Learning",
+            "content": "1. Have you ever taken an online course? What subject did you study?\n2. What are the main advantages of taking online courses compared to traditional classroom learning?\n3. What difficulties do students sometimes face when studying online?"
           },
           {
             "id": "vlu10-speaking-part1-12",
@@ -137,6 +137,15 @@
             "title": "Reading Habits",
             "rawTitle": "Topic 1: Reading Habits",
             "content": "1. Do you like reading books? Why or why not?\n2. Where do you usually prefer to read books?\n3. What genres of books are most popular among young people in Vietnam today, and why?"
+          },
+          {
+            "id": "dtu11-speaking-part1-2",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Types of Schools",
+            "rawTitle": "Topic 2: Types of Schools",
+            "content": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. What makes a good school in your opinion?"
           },
           {
             "id": "hcmue11-speaking-part1-4",
@@ -633,8 +642,8 @@
         "Establish discipline & sustain prolonged vitality (Xây dựng lối sống kỷ luật và duy trì sự dẻo dai)"
       ],
       "stats": {
-        "total": 58,
-        "part1": 32,
+        "total": 61,
+        "part1": 35,
         "part2": 5,
         "part3": 21
       },
@@ -677,13 +686,31 @@
             "content": "1. Do you frequently play any sports in your daily routine?\n2. Do you prefer actively participating in athletic sports or watching sports broadcasts on television?\n3. Which sport is currently the most widely celebrated in Vietnam?"
           },
           {
+            "id": "vlu11-speaking-part1-43",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Daily Work & Work-Life Balance",
+            "rawTitle": "Topic 2: Daily Work & Work-Life Balance",
+            "content": "1. How do you balance demanding work or study responsibilities with daily leisure time?\n2. What time of day do you usually feel most productive when working or studying?\n3. Why is it important to take short breaks during a busy workday?"
+          },
+          {
             "id": "vlu11-speaking-part1-40",
             "school": "VLU",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Favorite Local Food & Happiness",
-            "rawTitle": "Topic 1: Favorite Local Food & Happiness",
-            "content": "1. What is your favourite food in your country?\n2. What do you usually do when you feel happy?\n3. Who do you usually share your happiness with?\n4. Do you think that money can buy happiness?"
+            "title": "Favorite Local Food",
+            "rawTitle": "Topic 1: Favorite Local Food",
+            "content": "1. What is your favourite food in your country?\n2. How often do you eat this dish, and who do you usually eat it with?\n3. Would you recommend this local dish to foreign visitors? Why?"
+          },
+          {
+            "id": "vlu11-speaking-part1-44",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Happiness",
+            "rawTitle": "Topic 2: Happiness",
+            "content": "1. What do you usually do when you feel happy?\n2. Who do you usually share your happiness with?\n3. Do you think that money can buy happiness?"
           },
           {
             "id": "speaking-part1-3",
@@ -879,9 +906,9 @@
             "school": "HUST",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Healthy Diets & Public Parks",
-            "rawTitle": "Topic 4: Healthy Diets & Public Parks",
-            "content": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?"
+            "title": "Healthy Diets & Eating Habits",
+            "rawTitle": "Topic 4: Healthy Diets & Eating Habits",
+            "content": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. What unhealthy eating habits do you think young people should avoid?"
           },
           {
             "id": "hust11-speaking-part1-7",
@@ -909,6 +936,15 @@
             "title": "Sports & Outdoor Activities",
             "rawTitle": "Topic 1: Sports & Outdoor Activities",
             "content": "1. Do you play any sports regularly or prefer watching sports on television?\n2. What are the noticeable benefits of participating in competitive sports?\n3. Which new sport or physical activity would you like to try in the future?"
+          },
+          {
+            "id": "ussh11-speaking-part1-2",
+            "school": "USSH",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Recycling Habits",
+            "rawTitle": "Topic 2: Recycling Habits",
+            "content": "1. Do you frequently use recycled products or separate household recyclable waste?\n2. Are recycling programs and environmental awareness common among people in your neighborhood?\n3. What can schools or families do to encourage children to recycle more?"
           },
           {
             "id": "ulis11-speaking-part1-1",
@@ -1198,8 +1234,8 @@
         "Mitigate risks of sedentary isolation & superficial virtual relationships (Cảnh báo nguy cơ phụ thuộc công nghệ và mất kết nối thực tế)"
       ],
       "stats": {
-        "total": 30,
-        "part1": 13,
+        "total": 31,
+        "part1": 14,
         "part2": 2,
         "part3": 15
       },
@@ -1215,13 +1251,22 @@
             "content": "1. How much time do you spend using the Internet every day?\n2. What do you mainly use the Internet for?\n3. Has the Internet changed your daily life in any way?"
           },
           {
+            "id": "speaking-part1-14",
+            "school": "VLU",
+            "batch": "09/2026",
+            "part": "part1",
+            "title": "Photography",
+            "rawTitle": "Topic 14: Photography",
+            "content": "1. Do you like taking photos? On what occasions do you take photos?\n2. Do you prefer taking photos with your smartphone or with a camera? Why?\n3. What do you usually do with the photos after taking them?"
+          },
+          {
             "id": "speaking-part1-18",
             "school": "VLU",
             "batch": "09/2026",
             "part": "part1",
-            "title": "Inventions & Fashion",
-            "rawTitle": "Topic 18: Inventions & Fashion",
-            "content": "1. Do you think smartphones are the greatest invention? Why?\n2. Are you interested in fashion trends?\n3. What type of clothes do you feel most comfortable wearing?"
+            "title": "Inventions & Smartphones",
+            "rawTitle": "Topic 18: Inventions & Smartphones",
+            "content": "1. Do you think smartphones are the greatest invention? Why?\n2. What other modern invention do you use every day?\n3. How have modern inventions made daily life easier?"
           },
           {
             "id": "vlu10-speaking-part1-11",
@@ -1851,8 +1896,8 @@
         "Preserve cultural identity & strengthen familial and societal bonds (Gìn giữ bản sắc truyền thống và thắt chặt tình cảm gắn kết xã hội)"
       ],
       "stats": {
-        "total": 171,
-        "part1": 85,
+        "total": 180,
+        "part1": 94,
         "part2": 43,
         "part3": 43
       },
@@ -2034,18 +2079,27 @@
             "school": "VLU",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Dining Out vs Eating at Home & Celebrity Culture",
-            "rawTitle": "Topic 1: Dining Out vs Eating at Home & Celebrity Culture",
-            "content": "1. How often do you dine out, and do you prefer Vietnamese cuisine or international dishes?\n2. Do you have any public figures or celebrity idols that you admire?\n3. Would you ever desire to become a famous celebrity in the future? Why or why not?"
+            "title": "Dining Out vs Eating at Home",
+            "rawTitle": "Topic 1: Dining Out vs Eating at Home",
+            "content": "1. How often do you eat out, and do you prefer Vietnamese food or international dishes?\n2. Do you prefer eating at home or dining out at restaurants? Why?\n3. Who do you usually go out for meals with?"
+          },
+          {
+            "id": "vlu11-speaking-part1-42",
+            "school": "VLU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Celebrity Culture & Famous People",
+            "rawTitle": "Topic 2: Celebrity Culture & Famous People",
+            "content": "1. Do you have any public figures or celebrity idols that you admire?\n2. Why do many young people like following famous people on social media?\n3. Would you ever want to become a famous celebrity in the future? Why or why not?"
           },
           {
             "id": "vlu11-speaking-part1-26",
             "school": "VLU",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Indoor Leisure Activities & Daily Work",
-            "rawTitle": "Topic 1: Indoor Leisure Activities & Daily Work",
-            "content": "1. What indoor hobbies do you turn to when bad weather prevents outdoor activities?\n2. How do you balance demanding work responsibilities with daily leisure time?\n3. Do you find indoor activities as invigorating as outdoor sports?"
+            "title": "Indoor Leisure Activities",
+            "rawTitle": "Topic 1: Indoor Leisure Activities",
+            "content": "1. What indoor hobbies do you turn to when bad weather prevents outdoor activities?\n2. Do you prefer spending your indoor free time alone or with family and friends? Why?\n3. Do you find indoor activities as refreshing as outdoor sports?"
           },
           {
             "id": "vlu11-speaking-part1-27",
@@ -2054,7 +2108,7 @@
             "part": "part1",
             "title": "Natural Landscapes & Drawing Scenery",
             "rawTitle": "Topic 1: Natural Landscapes & Drawing Scenery",
-            "content": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What makes up the natural landscape or environment around your hometown or neighborhood?\n3. Do you like taking landscape photographs when you travel? Why or why not?\n4. Do you enjoy drawing or painting natural landscapes in your free time?"
+            "content": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What makes up the natural landscape or environment around your hometown or neighborhood?\n3. Do you like taking photos or drawing pictures of natural landscapes? Why or why not?"
           },
           {
             "id": "vlu11-speaking-part1-28",
@@ -2201,13 +2255,13 @@
             "content": "1. Do you like shopping? How often do you go shopping?\n2. Do you prefer online shopping or shopping at traditional markets/malls?\n3. What factors influence your purchasing decisions the most?"
           },
           {
-            "id": "speaking-part1-14",
+            "id": "speaking-part1-33",
             "school": "VLU",
             "batch": "09/2026",
             "part": "part1",
-            "title": "Photography & Singing",
-            "rawTitle": "Topic 14: Photography & Singing",
-            "content": "1. Do you like taking photos? On what occasions do you take photos?\n2. Do you enjoy singing? Can singing help people reduce stress?\n3. Do you prefer listening to music or singing along?"
+            "title": "Singing & Music",
+            "rawTitle": "Topic 33: Singing & Music",
+            "content": "1. Do you enjoy singing? Can singing help people reduce stress?\n2. Do you prefer listening to music or singing along?\n3. When and where do you usually like to sing?"
           },
           {
             "id": "speaking-part1-15",
@@ -2235,6 +2289,15 @@
             "title": "Travelling",
             "rawTitle": "Topic 17: Travelling",
             "content": "1. Do you like travelling? Where did you travel recently?\n2. Do you prefer travelling alone or with a group of friends?\n3. What is your dream travel destination?"
+          },
+          {
+            "id": "speaking-part1-34",
+            "school": "VLU",
+            "batch": "09/2026",
+            "part": "part1",
+            "title": "Fashion & Clothes",
+            "rawTitle": "Topic 34: Fashion & Clothes",
+            "content": "1. Are you interested in fashion trends?\n2. What type of clothes do you feel most comfortable wearing?\n3. Do you prefer shopping for clothes online or in physical stores? Why?"
           },
           {
             "id": "speaking-part1-19",
@@ -2295,9 +2358,18 @@
             "school": "VLU",
             "batch": "09/2026",
             "part": "part1",
-            "title": "Transport & Travel",
-            "rawTitle": "Topic 32: Transport & Travel",
-            "content": "1. How do you usually travel to work or school?\n2. What is your favorite means of transport? Why?\n3. Do you enjoy travelling? What is your favorite place to visit?"
+            "title": "Daily Transport",
+            "rawTitle": "Topic 32: Daily Transport",
+            "content": "1. How do you usually travel to work or school?\n2. What is your favorite means of transport? Why?\n3. Do you prefer using public transport or private vehicles in your city?"
+          },
+          {
+            "id": "speaking-part1-35",
+            "school": "VLU",
+            "batch": "09/2026",
+            "part": "part1",
+            "title": "Travel & Favourite Places",
+            "rawTitle": "Topic 35: Travel & Favourite Places",
+            "content": "1. Do you enjoy travelling? What is your favorite place to visit?\n2. Who do you usually prefer to travel with, family or friends? Why?\n3. What do you like doing most when you visit a new city?"
           },
           {
             "id": "vlu10-speaking-part1-1",
@@ -2340,9 +2412,36 @@
             "school": "VLU",
             "batch": "10/2026",
             "part": "part1",
-            "title": "Hometown & Travelling",
-            "rawTitle": "Topic 7: Hometown & Travelling",
-            "content": "1. Where is your hometown located, and what do you like most about living there?\n2. What kinds of places do you prefer to visit when you travel: natural landscapes or bustling modern cities? Why?\n3. What was the most memorable holiday or trip you have ever experienced?"
+            "title": "Hometown",
+            "rawTitle": "Topic 7: Hometown",
+            "content": "1. Where is your hometown located, and what do you like most about living there?\n2. What is your hometown famous for?\n3. Is there anything you would like to improve about your hometown?"
+          },
+          {
+            "id": "vlu10-speaking-part1-24",
+            "school": "VLU",
+            "batch": "10/2026",
+            "part": "part1",
+            "title": "Travelling & Holidays",
+            "rawTitle": "Topic 24: Travelling & Holidays",
+            "content": "1. What kinds of places do you prefer to visit when you travel: natural landscapes or bustling modern cities? Why?\n2. What was the most memorable holiday or trip you have ever experienced?\n3. Do you prefer travelling with your family or with friends? Why?"
+          },
+          {
+            "id": "vlu10-speaking-part1-25",
+            "school": "VLU",
+            "batch": "10/2026",
+            "part": "part1",
+            "title": "Future Plans & Goals",
+            "rawTitle": "Topic 25: Future Plans & Goals",
+            "content": "1. What kind of person do you see yourself becoming in the next five to ten years?\n2. What is your biggest goal for the next year?\n3. What skills do you want to learn to prepare for your future?"
+          },
+          {
+            "id": "vlu10-speaking-part1-9",
+            "school": "VLU",
+            "batch": "10/2026",
+            "part": "part1",
+            "title": "Online Blogs & Articles",
+            "rawTitle": "Topic 9: Online Blogs & Articles",
+            "content": "1. Do you regularly read online blogs or articles on the internet? What topics are you most interested in?\n2. How can reading or writing online blogs benefit students and young people?\n3. Would you like to write your own blog in the future? Why or why not?"
           },
           {
             "id": "vlu10-speaking-part1-10",
@@ -2412,9 +2511,18 @@
             "school": "AJC",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Weather Seasons & Dining Out Habits",
-            "rawTitle": "Topic 5: Weather Seasons & Dining Out Habits",
-            "content": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?"
+            "title": "Weather & Seasons",
+            "rawTitle": "Topic 5: Weather & Seasons",
+            "content": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. What do you usually like doing when the weather is nice?\n3. Does the weather often affect your mood or daily plans?"
+          },
+          {
+            "id": "ajc11-speaking-part1-6",
+            "school": "AJC",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Dining Out Habits",
+            "rawTitle": "Topic 6: Dining Out Habits",
+            "content": "1. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n2. What kind of food or restaurant do you like most when eating out?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?"
           },
           {
             "id": "hust11-speaking-part1-1",
@@ -2439,9 +2547,18 @@
             "school": "HUST",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Cooking & Social Events",
-            "rawTitle": "Topic 3: Cooking & Social Events",
-            "content": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. How important are communal meals and social gatherings in Vietnamese culture?"
+            "title": "Cooking & Family Meals",
+            "rawTitle": "Topic 3: Cooking & Family Meals",
+            "content": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. Why is sharing home-cooked meals together important for families in Vietnam?"
+          },
+          {
+            "id": "hust11-speaking-part1-9",
+            "school": "HUST",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Public Parks & Green Spaces",
+            "rawTitle": "Topic 9: Public Parks & Green Spaces",
+            "content": "1. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?\n2. What activities do you usually do when you go to a park?\n3. Why are public parks important for people living in big cities?"
           },
           {
             "id": "hust11-speaking-part1-5",
@@ -2480,31 +2597,40 @@
             "content": "1. Do you prefer spending your leisure time with family or with friends?\n2. What activities do you usually enjoy doing together with your family?\n3. What qualities do you think are most essential in a lifelong friend?"
           },
           {
-            "id": "dtu11-speaking-part1-2",
+            "id": "dtu11-speaking-part1-4",
             "school": "DTU",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Types of Schools & Traffic Conditions",
-            "rawTitle": "Topic 2: Types of Schools & Traffic Conditions",
-            "content": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. How severe is traffic congestion in your hometown during rush hours?"
+            "title": "Traffic Conditions",
+            "rawTitle": "Topic 4: Traffic Conditions",
+            "content": "1. How severe is traffic congestion in your hometown during rush hours?\n2. How do you usually travel around your city every day?\n3. What can people do to avoid traffic jams?"
           },
           {
             "id": "dtu11-speaking-part1-3",
             "school": "DTU",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Close Friends & Memorable Events",
-            "rawTitle": "Topic 3: Close Friends & Memorable Events",
-            "content": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What memorable community or school event have you enjoyed attending recently?"
+            "title": "Close Friends",
+            "rawTitle": "Topic 3: Close Friends",
+            "content": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What activities do you and your close friends usually do together?"
+          },
+          {
+            "id": "dtu11-speaking-part1-5",
+            "school": "DTU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Memorable Events",
+            "rawTitle": "Topic 5: Memorable Events",
+            "content": "1. What memorable community or school event have you enjoyed attending recently?\n2. Do you prefer big public events or small gatherings with friends? Why?\n3. Why do people like celebrating special events together?"
           },
           {
             "id": "ussh11-speaking-part1-1",
             "school": "USSH",
             "batch": "11/2026",
             "part": "part1",
-            "title": "Travel Plans & Recycling Habits",
-            "rawTitle": "Topic 1: Travel Plans & Recycling Habits",
-            "content": "1. Where are you planning to travel next, and why did you choose that destination?\n2. Do you frequently use recycled products or separate household recyclable waste?\n3. Are recycling programs and environmental awareness common among people in your neighborhood?"
+            "title": "Travel Plans",
+            "rawTitle": "Topic 1: Travel Plans",
+            "content": "1. Where are you planning to travel next, and why did you choose that destination?\n2. How do you usually prepare before going on a trip?\n3. Do you prefer travelling with a tour group or planning the trip yourself? Why?"
           },
           {
             "id": "ctu11-speaking-part1-1",

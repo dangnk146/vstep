@@ -212,8 +212,8 @@
     "Mã câu hỏi": "dtu11-speaking-part1-2",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
-    "Tiêu đề đề bài": "Topic 2: Types of Schools & Traffic Conditions",
-    "Nội dung chi tiết": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. How severe is traffic congestion in your hometown during rush hours?",
+    "Tiêu đề đề bài": "Topic 2: Types of Schools",
+    "Nội dung chi tiết": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. What makes a good school in your opinion?",
     "Mã trường": "DTU",
     "Đợt thi": "11/2026",
     "id": "dtu11-speaking-part1-2",
@@ -222,14 +222,13 @@
     "batch": "11/2026",
     "part": "part1",
     "group": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
-    "title": "Topic 2: Types of Schools & Traffic Conditions",
-    "content": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. How severe is traffic congestion in your hometown during rush hours?",
+    "title": "Topic 2: Types of Schools",
+    "content": "1. Did you attend a public school or a private school when you were younger?\n2. What are the key differences between private schools and public schools in your country?\n3. What makes a good school in your opinion?",
     "hint": {
       "extraVocab": [
         "public school",
         "private school",
-        "tuition fees",
-        "rush hours"
+        "tuition fees"
       ],
       "part": "speaking-part1",
       "questions": [
@@ -237,34 +236,91 @@
           "answer": "When I was younger, I attended a local public school in my hometown from primary school to high school.",
           "example": "It only took me ten minutes to go to school by bicycle every morning with my neighbors.",
           "pillar": "Bộ đề gốc",
-          "q": "1. Attended a public school or private school",
+          "q": "1. Did you attend a public school or a private school when you were younger?",
           "reason": "My parents chose it simply because public schools have affordable tuition fees that fit comfortably within our family budget, and it was very close to my house."
         },
         {
           "answer": "The main differences between private and public schools in Vietnam are the tuition fees, class sizes, and facilities.",
           "example": "For instance, a public class often has over forty students, whereas private schools may have around twenty-five students with air-conditioned classrooms.",
           "pillar": "Knowledge",
-          "q": "2. Key differences between private and public schools",
+          "q": "2. What are the key differences between private schools and public schools in your country?",
           "reason": "Private schools cost more, so they are often equipped with modern teaching tools and smaller classes, while public schools follow a standard program with more students."
         },
+        {
+          "answer": "In my opinion, a good school needs dedicated teachers, a friendly environment, and balanced learning activities.",
+          "example": "For example, my high school had supportive teachers and after-school sports clubs where students could relax and make friends.",
+          "pillar": "Social",
+          "q": "3. What makes a good school in your opinion?",
+          "reason": "When teachers are understanding and supportive, students can gain useful knowledge, meet like-minded people in clubs, and build a strong sense of belonging."
+        }
+      ],
+      "reusedSource": "Bộ đề 1 (Leisure/Family) + Trục 3 (Knowledge) + Cụm #20, #21, #23",
+      "reusedVocab": [
+        "fit comfortably within our family budget",
+        "It takes me ___ minutes to go to school by...",
+        "equipped with modern teaching tools",
+        "supportive teachers",
+        "life skills"
+      ],
+      "topic": "Types of Schools"
+    }
+  },
+  {
+    "STT": "10",
+    "Mã câu hỏi": "dtu11-speaking-part1-4",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Topic 4: Traffic Conditions",
+    "Nội dung chi tiết": "1. How severe is traffic congestion in your hometown during rush hours?\n2. How do you usually travel around your city every day?\n3. What can people do to avoid traffic jams?",
+    "Mã trường": "DTU",
+    "Đợt thi": "11/2026",
+    "id": "dtu11-speaking-part1-4",
+    "skill": "speaking",
+    "school": "DTU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế DTU 12/11/2026 (Chiều)",
+    "title": "Topic 4: Traffic Conditions",
+    "content": "1. How severe is traffic congestion in your hometown during rush hours?\n2. How do you usually travel around your city every day?\n3. What can people do to avoid traffic jams?",
+    "hint": {
+      "extraVocab": [
+        "rush hours",
+        "leave earlier",
+        "public buses"
+      ],
+      "part": "speaking-part1",
+      "questions": [
         {
           "answer": "Traffic congestion in my hometown is quite serious during rush hours, especially in the early morning and late afternoon.",
           "example": "For example, a short trip that usually takes fifteen minutes by motorbike can take nearly forty minutes at five o'clock in the evening.",
           "pillar": "Bộ đề gốc",
-          "q": "3. Traffic congestion in your hometown during rush hours",
+          "q": "1. How severe is traffic congestion in your hometown during rush hours?",
           "reason": "There are too many private motorbikes and cars on narrow streets, which causes air pollution, noise, and stress for commuters."
+        },
+        {
+          "answer": "I usually go to university and get around my city by motorbike because it is cheap, fast, and flexible.",
+          "example": "It takes me about twenty minutes to get to campus by motorbike every morning.",
+          "pillar": "Bộ đề gốc",
+          "q": "2. How do you usually travel around your city every day?",
+          "reason": "Motorbikes are popular in Vietnam, let me choose my own routes and schedules, and fit comfortably within my monthly budget."
+        },
+        {
+          "answer": "To avoid traffic jams, people can leave home earlier, check traffic apps, or use public buses when possible.",
+          "example": "Whenever I have an important morning class, I leave fifteen minutes early and check Google Maps for less crowded routes.",
+          "pillar": "Mental health",
+          "q": "3. What can people do to avoid traffic jams?",
+          "reason": "Planning ahead helps solve the problem of being late, keeps us on the safe side, and relieves stress and reduces fatigue on the road."
         }
       ],
-      "reusedSource": "Bộ đề 2 (Hometown) & Bộ đề 3 (Transport) + Cụm #20, #21",
+      "reusedSource": "Bộ đề 3 (Transport - Câu 1, 2, 3) + Trục 2 (Mental health) + Cụm #3, #9, #21, #24",
       "reusedVocab": [
-        "fit comfortably within our budget",
-        "It takes me ___ minutes to go to school by...",
-        "equipped with modern teaching tools",
         "traffic congestion",
         "air pollution",
-        "motorbikes and cars"
+        "motorbikes and cars",
+        "fits comfortably within my budget",
+        "reduces stress"
       ],
-      "topic": "Schools & Traffic Conditions"
+      "topic": "Traffic Conditions"
     }
   },
   {
@@ -419,8 +475,8 @@
     "Mã câu hỏi": "dtu11-speaking-part1-3",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTU (Ca sáng bổ sung)",
-    "Tiêu đề đề bài": "Topic 3: Close Friends & Memorable Events",
-    "Nội dung chi tiết": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What memorable community or school event have you enjoyed attending recently?",
+    "Tiêu đề đề bài": "Topic 3: Close Friends",
+    "Nội dung chi tiết": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What activities do you and your close friends usually do together?",
     "Mã trường": "DTU",
     "Đợt thi": "11/2026",
     "id": "dtu11-speaking-part1-3",
@@ -429,13 +485,13 @@
     "batch": "11/2026",
     "part": "part1",
     "group": "Đề thi thực tế DTU (Ca sáng bổ sung)",
-    "title": "Topic 3: Close Friends & Memorable Events",
-    "content": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What memorable community or school event have you enjoyed attending recently?",
+    "title": "Topic 3: Close Friends",
+    "content": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?\n2. Do you still keep in contact with your primary school classmates or childhood friends?\n3. What activities do you and your close friends usually do together?",
     "hint": {
       "extraVocab": [
         "best friend",
         "keep in contact",
-        "charity fair"
+        "hang out"
       ],
       "part": "speaking-part1",
       "questions": [
@@ -443,25 +499,25 @@
           "answer": "Yes, I have a best friend named Minh, and the qualities I appreciate most about him are that he is honest, understanding, and supportive.",
           "example": "Every weekend, we meet at a quiet coffee shop to share stories about our studies and relax after a busy week.",
           "pillar": "Social",
-          "q": "1. Best friend & qualities you appreciate most",
+          "q": "1. Do you have a best friend, and what qualities do you appreciate most about him or her?",
           "reason": "We have a lot of things in common and get on very well, and he is always beside me to listen when I face difficulties."
         },
         {
           "answer": "Yes, I still keep in contact with two or three close friends from primary school, though everyone is quite busy now.",
           "example": "We have a small group chat on Zalo to send funny messages and usually go out for hotpot together during the Tet holiday.",
           "pillar": "Social",
-          "q": "2. Keep in contact with primary school or childhood friends",
+          "q": "2. Do you still keep in contact with your primary school classmates or childhood friends?",
           "reason": "Spending time with childhood friends helps strengthen our bonds and brings back happy memories, which is great for my mental health."
         },
         {
-          "answer": "The most memorable school event I attended recently was our university's music night and charity fair last month.",
-          "example": "I went there with my classmates on Saturday night, bought handmade snacks, and cheered for our department's band.",
+          "answer": "When we have free time, my close friends and I usually go out for meals, watch movies, or play badminton together.",
+          "example": "Last Sunday, we went to the cinema in the afternoon and had street food together afterwards.",
           "pillar": "Mental health",
-          "q": "3. Memorable community or school event attended recently",
-          "reason": "It gave students a chance to relax, enjoy lively performances, and build a strong sense of belonging while raising money for poor children."
+          "q": "3. What activities do you and your close friends usually do together?",
+          "reason": "Spending quality time with close friends is advantageous to my mental health because it helps me relax my mind, elevate my mood, and relieve stress after hard work."
         }
       ],
-      "reusedSource": "Bộ đề 1 (Family/Friends) + Trục Social & Mental health + Cụm #23",
+      "reusedSource": "Bộ đề 1 (Leisure/Friends) + Trục 2 (Mental health & Social)",
       "reusedVocab": [
         "understanding and supportive",
         "have a lot of things in common",
@@ -469,9 +525,67 @@
         "always beside me when I face difficulties",
         "strengthen bonds",
         "good for my mental health",
-        "build a strong sense of belonging"
+        "relax my mind"
       ],
-      "topic": "Close Friends & Memorable Events"
+      "topic": "Close Friends"
+    }
+  },
+  {
+    "STT": "11",
+    "Mã câu hỏi": "dtu11-speaking-part1-5",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTU (Ca sáng bổ sung)",
+    "Tiêu đề đề bài": "Topic 5: Memorable Events",
+    "Nội dung chi tiết": "1. What memorable community or school event have you enjoyed attending recently?\n2. Do you prefer big public events or small gatherings with friends? Why?\n3. Why do people like celebrating special events together?",
+    "Mã trường": "DTU",
+    "Đợt thi": "11/2026",
+    "id": "dtu11-speaking-part1-5",
+    "skill": "speaking",
+    "school": "DTU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế DTU (Ca sáng bổ sung)",
+    "title": "Topic 5: Memorable Events",
+    "content": "1. What memorable community or school event have you enjoyed attending recently?\n2. Do you prefer big public events or small gatherings with friends? Why?\n3. Why do people like celebrating special events together?",
+    "hint": {
+      "extraVocab": [
+        "charity fair",
+        "special occasions",
+        "lively atmosphere"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "The most memorable school event I attended recently was our university's music night and charity fair last month.",
+          "example": "I went there with my classmates on Saturday night, bought handmade snacks, and cheered for our department's band.",
+          "pillar": "Mental health",
+          "q": "1. What memorable community or school event have you enjoyed attending recently?",
+          "reason": "It gave students a chance to relax, enjoy lively performances, and build a strong sense of belonging while raising money for poor children."
+        },
+        {
+          "answer": "Personally, I prefer small gatherings with close friends rather than big, crowded public events.",
+          "example": "For example, I enjoy celebrating birthdays at a quiet restaurant with five or six friends.",
+          "pillar": "Peace & Privacy",
+          "q": "2. Do you prefer big public events or small gatherings with friends? Why?",
+          "reason": "Being in crowded, noisy public venues easily makes people feel overwhelmed and stressed, whereas small gatherings offer a quiet, cozy environment to talk comfortably."
+        },
+        {
+          "answer": "People love celebrating special events together because shared joy feels much more meaningful.",
+          "example": "On graduation day or Tet, taking photos and eating together creates warm memories that last for years.",
+          "pillar": "Social",
+          "q": "3. Why do people like celebrating special events together?",
+          "reason": "Celebrating together strengthens bonds within a family or friend group, lifts up people's moods, and builds a strong sense of belonging through face-to-face interaction."
+        }
+      ],
+      "reusedSource": "Trục 2 (Mental health & Social) & Trục 4 (Peace & Privacy) + Cụm #23",
+      "reusedVocab": [
+        "build a strong sense of belonging",
+        "crowded and noisy",
+        "strengthens relationships",
+        "lifts up people's moods",
+        "supportive"
+      ],
+      "topic": "Memorable Events"
     }
   },
   {

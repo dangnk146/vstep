@@ -399,8 +399,8 @@
     "Mã câu hỏi": "vlu10-speaking-part1-7",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 1)",
-    "Tiêu đề đề bài": "Topic 7: Hometown & Travelling",
-    "Nội dung chi tiết": "1. Where is your hometown located, and what do you like most about living there?\n2. What kinds of places do you prefer to visit when you travel: natural landscapes or bustling modern cities? Why?\n3. What was the most memorable holiday or trip you have ever experienced?",
+    "Tiêu đề đề bài": "Topic 7: Hometown",
+    "Nội dung chi tiết": "1. Where is your hometown located, and what do you like most about living there?\n2. What is your hometown famous for?\n3. Is there anything you would like to improve about your hometown?",
     "Mã trường": "VLU",
     "Đợt thi": "10/2026",
     "id": "vlu10-speaking-part1-7",
@@ -409,13 +409,13 @@
     "batch": "10/2026",
     "part": "part1",
     "group": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 1)",
-    "title": "Topic 7: Hometown & Travelling",
-    "content": "1. Where is your hometown located, and what do you like most about living there?\n2. What kinds of places do you prefer to visit when you travel: natural landscapes or bustling modern cities? Why?\n3. What was the most memorable holiday or trip you have ever experienced?",
+    "title": "Topic 7: Hometown",
+    "content": "1. Where is your hometown located, and what do you like most about living there?\n2. What is your hometown famous for?\n3. Is there anything you would like to improve about your hometown?",
     "hint": {
       "extraVocab": [
-        "natural landscapes",
         "street food",
-        "memorable trip"
+        "local markets",
+        "traffic jams"
       ],
       "part": "speaking-part1",
       "questions": [
@@ -423,31 +423,86 @@
           "answer": "I was born and grew up in Ho Chi Minh City, which is a huge bustling city located in the South of Vietnam.",
           "example": "I live there with my family, and we often go out together to enjoy street food on weekends.",
           "pillar": "Bộ đề gốc",
-          "q": "Where is your hometown located, and what do you like most about living there?",
+          "q": "1. Where is your hometown located, and what do you like most about living there?",
           "reason": "What I like most about my hometown is its diverse, flavorful cuisine and friendly, hospitable people. There are lots of delicious dishes everywhere, and people are kind and helpful."
         },
         {
-          "answer": "When I travel, I prefer visiting natural landscapes rather than bustling modern cities.",
-          "example": "I love going to coastal cities or mountain towns like Da Lat with my friends to enjoy cool, pleasant weather.",
-          "pillar": "Peace & Privacy",
-          "q": "What kinds of places do you prefer to visit when you travel: natural landscapes or bustling modern cities? Why?",
-          "reason": "Being in crowded, noisy city streets easily makes me feel stressed and exhausted. Natural places with breathtaking views offer a peaceful environment where I can relax my mind and recharge my batteries."
+          "answer": "My hometown is famous for its delicious street food, busy local markets, and lively nightlife.",
+          "example": "For example, visitors always want to try banh mi, broken rice, and iced milk coffee when they come here.",
+          "pillar": "Bộ đề gốc",
+          "q": "2. What is your hometown famous for?",
+          "reason": "These diverse, flavorful dishes and picturesque landmarks symbolize the beauty of the city and make tourists feel welcome and excited."
         },
         {
-          "answer": "The most memorable trip I have ever had was a three-day summer vacation to Da Nang with my family two years ago.",
-          "example": "We went swimming at the beach every morning, visited Ba Na Hills, and took lots of photos together.",
-          "pillar": "Knowledge",
-          "q": "What was the most memorable holiday or trip you have ever experienced?",
-          "reason": "That trip helped enhance our family bonding and gave me the chance to broaden my horizons and gain a deeper understanding of local culture, food, and breathtaking landmarks."
+          "answer": "If I could improve one thing, I would like to reduce traffic jams and add more green parks.",
+          "example": "During rush hours around 5 p.m., main roads near my school are very crowded and noisy.",
+          "pillar": "Peace & Privacy",
+          "q": "3. Is there anything you would like to improve about your hometown?",
+          "reason": "Being in crowded, noisy streets easily makes people feel stressed and exhausted. Less traffic congestion and more trees would reduce air pollution and help local residents enjoy inner peace."
         }
       ],
-      "reusedSource": "Bộ đề 2 (Hometown & Season - Câu 1, 2, 5) + Trục Peace & Privacy & Knowledge",
+      "reusedSource": "Bộ đề 2 (Hometown - Câu 1, 2, 3) + Trục 4 (Peace & Privacy)",
       "reusedVocab": [
         "I was born and grew up in..., which is located in the North/South of Vietnam",
         "huge bustling city",
         "diverse, flavorful",
         "lots of delicious dishes",
         "kind, helpful, friendly, hospitable",
+        "crowded, noisy",
+        "air pollution"
+      ],
+      "topic": "Hometown"
+    }
+  },
+  {
+    "STT": "55",
+    "Mã câu hỏi": "vlu10-speaking-part1-24",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 1)",
+    "Tiêu đề đề bài": "Topic 24: Travelling & Holidays",
+    "Nội dung chi tiết": "1. What kinds of places do you prefer to visit when you travel: natural landscapes or bustling modern cities? Why?\n2. What was the most memorable holiday or trip you have ever experienced?\n3. Do you prefer travelling with your family or with friends? Why?",
+    "Mã trường": "VLU",
+    "Đợt thi": "10/2026",
+    "id": "vlu10-speaking-part1-24",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "10/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 1)",
+    "title": "Topic 24: Travelling & Holidays",
+    "content": "1. What kinds of places do you prefer to visit when you travel: natural landscapes or bustling modern cities? Why?\n2. What was the most memorable holiday or trip you have ever experienced?\n3. Do you prefer travelling with your family or with friends? Why?",
+    "hint": {
+      "extraVocab": [
+        "natural landscapes",
+        "memorable trip",
+        "travel budget"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "When I travel, I prefer visiting natural landscapes rather than bustling modern cities.",
+          "example": "I love going to coastal cities or mountain towns like Da Lat with my friends to enjoy cool, pleasant weather.",
+          "pillar": "Peace & Privacy",
+          "q": "1. What kinds of places do you prefer to visit when you travel: natural landscapes or bustling modern cities? Why?",
+          "reason": "Being in crowded, noisy city streets easily makes me feel stressed and exhausted. Natural places with breathtaking views offer a peaceful environment where I can relax my mind and recharge my batteries."
+        },
+        {
+          "answer": "The most memorable trip I have ever had was a three-day summer vacation to Da Nang with my family two years ago.",
+          "example": "We went swimming at the beach every morning, visited Ba Na Hills, and took lots of photos together.",
+          "pillar": "Knowledge",
+          "q": "2. What was the most memorable holiday or trip you have ever experienced?",
+          "reason": "That trip helped enhance our family bonding and gave me the chance to broaden my horizons and gain a deeper understanding of local culture, food, and breathtaking landmarks."
+        },
+        {
+          "answer": "I enjoy both, but I usually prefer travelling with my family on long holidays.",
+          "example": "Every summer, my parents and I plan a short trip together so we can rest and eat local seafood.",
+          "pillar": "Social",
+          "q": "3. Do you prefer travelling with your family or with friends? Why?",
+          "reason": "We are all busy during the year, so travelling together gives us quality time to talk, strengthen our family bonds, and create happy memories."
+        }
+      ],
+      "reusedSource": "Bộ đề 2 (Season/Travel) + Trục Peace & Privacy, Knowledge & Social",
+      "reusedVocab": [
         "crowded, noisy",
         "stressed/exhausted",
         "breathtaking",
@@ -460,7 +515,7 @@
         "broaden my horizons",
         "gain a deeper understanding of people, culture"
       ],
-      "topic": "Hometown & Travelling"
+      "topic": "Travelling & Holidays"
     }
   },
   {
@@ -468,8 +523,8 @@
     "Mã câu hỏi": "vlu10-speaking-part1-8",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 24/10/2026 (Sáng)",
-    "Tiêu đề đề bài": "Topic 8: Learning English & Future Self",
-    "Nội dung chi tiết": "1. How long have you been studying English, and what do you find most challenging about it?\n2. In what ways do you think English proficiency will benefit your future career and personal life?\n3. What kind of person do you see yourself becoming in the next five to ten years?",
+    "Tiêu đề đề bài": "Topic 8: Learning English",
+    "Nội dung chi tiết": "1. How long have you been studying English, and what do you find most challenging about it?\n2. In what ways do you think English proficiency will benefit your future career and personal life?\n3. How do you usually practice English outside the classroom?",
     "Mã trường": "VLU",
     "Đợt thi": "10/2026",
     "id": "vlu10-speaking-part1-8",
@@ -478,13 +533,13 @@
     "batch": "10/2026",
     "part": "part1",
     "group": "Đề thi thực tế VLU 24/10/2026 (Sáng)",
-    "title": "Topic 8: Learning English & Future Self",
-    "content": "1. How long have you been studying English, and what do you find most challenging about it?\n2. In what ways do you think English proficiency will benefit your future career and personal life?\n3. What kind of person do you see yourself becoming in the next five to ten years?",
+    "title": "Topic 8: Learning English",
+    "content": "1. How long have you been studying English, and what do you find most challenging about it?\n2. In what ways do you think English proficiency will benefit your future career and personal life?\n3. How do you usually practice English outside the classroom?",
     "hint": {
       "extraVocab": [
         "speaking fluently",
-        "independent and responsible",
-        "dynamic team"
+        "English podcasts",
+        "speaking club"
       ],
       "part": "speaking-part1",
       "questions": [
@@ -492,25 +547,25 @@
           "answer": "I have been studying English for about eight years since primary school, and the hardest part for me is speaking fluently.",
           "example": "To solve this problem, I join an English speaking club at school every Sunday to practice with like-minded people.",
           "pillar": "Knowledge",
-          "q": "How long have you been studying English, and what do you find most challenging about it?",
+          "q": "1. How long have you been studying English, and what do you find most challenging about it?",
           "reason": "Sometimes I lack a rich vocabulary and do not have many chances for face-to-face interaction in daily life, so it takes me time to think of the right words."
         },
         {
           "answer": "English plays an essential role in helping me improve my living standard and broaden my mind.",
           "example": "Right now, I am working hard to achieve a B2 certificate so I can apply for a good job at an international company.",
           "pillar": "Knowledge",
-          "q": "In what ways do you think English proficiency will benefit your future career and personal life?",
-          "reason": "In my career, fluent communication opens better job opportunities with higher income and helps me keep pace with the fast-paced development of modern science. In personal life, I can gain a deeper understanding of people and cultures when travelling."
+          "q": "2. In what ways do you think English proficiency will benefit your future career and personal life?",
+          "reason": "In my career, fluent communication opens better job opportunities with higher income and helps me keep pace with modern technology. In personal life, I can gain a deeper understanding of people and cultures when travelling."
         },
         {
-          "answer": "In the next five to ten years, I see myself becoming an independent, responsible, and supportive person with a stable career.",
-          "example": "I hope to work in a dynamic team, travel with my family every year, and keep learning new skills.",
-          "pillar": "Social",
-          "q": "What kind of person do you see yourself becoming in the next five to ten years?",
-          "reason": "I want to manage my own money well, follow my passion, and reach a healthy balance between work and family time so I can take good care of my parents."
+          "answer": "Outside the classroom, I mostly practice English by watching short videos, listening to podcasts, and speaking with friends.",
+          "example": "Every evening, I spend about twenty minutes watching English vlogs with subtitles on YouTube before bed.",
+          "pillar": "Knowledge",
+          "q": "3. How do you usually practice English outside the classroom?",
+          "reason": "It is fast and convenient for busy people in modern-day society, helping me build a richer vocabulary and broaden my mind without feeling stressed."
         }
       ],
-      "reusedSource": "Mẫu minh họa #4 (Khóa học/Công việc) + Từ vựng #3, #4, #6, #10, #14, #23 + Luận điểm #6 & #13",
+      "reusedSource": "Mẫu minh họa #4 (Khóa học/Công việc) + Trục 3 (Knowledge) + Cụm #3, #4, #6, #14, #18",
       "reusedVocab": [
         "solve this problem",
         "like-minded people",
@@ -519,14 +574,68 @@
         "improve my living standard",
         "broaden my mind",
         "fluent communication opens better job opportunities with higher income",
-        "keep pace with the fast-paced development of modern science",
-        "gain a deeper understanding of people, culture",
-        "achieving a B2 certificate for promotion at an international company",
+        "gain a deeper understanding of people, culture"
+      ],
+      "topic": "Learning English"
+    }
+  },
+  {
+    "STT": "56",
+    "Mã câu hỏi": "vlu10-speaking-part1-25",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 24/10/2026 (Sáng)",
+    "Tiêu đề đề bài": "Topic 25: Future Plans & Goals",
+    "Nội dung chi tiết": "1. What kind of person do you see yourself becoming in the next five to ten years?\n2. What is your biggest goal for the next year?\n3. What skills do you want to learn to prepare for your future?",
+    "Mã trường": "VLU",
+    "Đợt thi": "10/2026",
+    "id": "vlu10-speaking-part1-25",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "10/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 24/10/2026 (Sáng)",
+    "title": "Topic 25: Future Plans & Goals",
+    "content": "1. What kind of person do you see yourself becoming in the next five to ten years?\n2. What is your biggest goal for the next year?\n3. What skills do you want to learn to prepare for your future?",
+    "hint": {
+      "extraVocab": [
+        "independent and responsible",
+        "dynamic team",
+        "time management"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "In the next five to ten years, I see myself becoming an independent, responsible, and supportive person with a stable career.",
+          "example": "I hope to work in a dynamic team, travel with my family every year, and keep learning new skills.",
+          "pillar": "Social",
+          "q": "1. What kind of person do you see yourself becoming in the next five to ten years?",
+          "reason": "I want to manage my own money well, follow my passion, and reach a healthy balance between work and family time so I can take good care of my parents."
+        },
+        {
+          "answer": "My biggest goal for next year is to get my B2 English certificate and graduate on time with good grades.",
+          "example": "To achieve this, I practice speaking and writing every evening after finishing my classes.",
+          "pillar": "Knowledge",
+          "q": "2. What is your biggest goal for the next year?",
+          "reason": "Having a clear short-term goal keeps me motivated and gives me better job opportunities after university."
+        },
+        {
+          "answer": "I want to improve my communication skills and time management skills to prepare for my future career.",
+          "example": "For example, I am joining group projects at school so I can practice presenting ideas clearly in front of others.",
+          "pillar": "Knowledge",
+          "q": "3. What skills do you want to learn to prepare for your future?",
+          "reason": "Good communication skills help me adjust and adapt to the social environment, solve problems faster, and improve my living standard in the future."
+        }
+      ],
+      "reusedSource": "Trục 3 (Knowledge) + Cụm #4, #7, #10 + Luận điểm #6 & #13",
+      "reusedVocab": [
         "manage my own money",
         "reach a healthy balance between work and family time",
-        "supportive"
+        "supportive",
+        "better job opportunities",
+        "soft skills",
+        "feel more confident"
       ],
-      "topic": "Learning English & Future Self"
+      "topic": "Future Plans & Goals"
     }
   },
   {
@@ -534,8 +643,8 @@
     "Mã câu hỏi": "vlu10-speaking-part1-9",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 2)",
-    "Tiêu đề đề bài": "Topic 9: Online Blogs & Online Learning",
-    "Nội dung chi tiết": "1. Do you regularly read online blogs or articles on the internet? What topics are you most interested in?\n2. How can reading or writing online blogs benefit students and young people?\n3. What are the main advantages of taking online courses compared to traditional classroom learning?",
+    "Tiêu đề đề bài": "Topic 9: Online Blogs & Articles",
+    "Nội dung chi tiết": "1. Do you regularly read online blogs or articles on the internet? What topics are you most interested in?\n2. How can reading or writing online blogs benefit students and young people?\n3. Would you like to write your own blog in the future? Why or why not?",
     "Mã trường": "VLU",
     "Đợt thi": "10/2026",
     "id": "vlu10-speaking-part1-9",
@@ -544,13 +653,13 @@
     "batch": "10/2026",
     "part": "part1",
     "group": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 2)",
-    "title": "Topic 9: Online Blogs & Online Learning",
-    "content": "1. Do you regularly read online blogs or articles on the internet? What topics are you most interested in?\n2. How can reading or writing online blogs benefit students and young people?\n3. What are the main advantages of taking online courses compared to traditional classroom learning?",
+    "title": "Topic 9: Online Blogs & Articles",
+    "content": "1. Do you regularly read online blogs or articles on the internet? What topics are you most interested in?\n2. How can reading or writing online blogs benefit students and young people?\n3. Would you like to write your own blog in the future? Why or why not?",
     "hint": {
       "extraVocab": [
         "online blogs",
         "stay updated",
-        "flexibility"
+        "share study tips"
       ],
       "part": "speaking-part1",
       "questions": [
@@ -558,25 +667,25 @@
           "answer": "Yes, I read online blogs and articles almost every day in my spare time, especially about technology, travel, and healthy lifestyles.",
           "example": "Every morning while having breakfast, I read a short blog post on my phone about English learning or cooking.",
           "pillar": "Knowledge",
-          "q": "Do you regularly read online blogs or articles on the internet? What topics are you most interested in?",
+          "q": "1. Do you regularly read online blogs or articles on the internet? What topics are you most interested in?",
           "reason": "They are fast, convenient for busy people in modern-day society, and give me the opportunity to increase knowledge and stay updated on useful tips."
         },
         {
           "answer": "Reading and writing online blogs bring multiple benefits to students and young people.",
           "example": "For example, my friend writes a study blog where she shares notes and discusses exam tips with other university students.",
           "pillar": "Knowledge",
-          "q": "How can reading or writing online blogs benefit students and young people?",
+          "q": "2. How can reading or writing online blogs benefit students and young people?",
           "reason": "First, it helps them build a richer vocabulary, broaden their mind, and allow their brain to exercise. Second, writing blogs helps them express ideas and connect with like-minded people."
         },
         {
-          "answer": "Taking online courses is fast and convenient for busy people, and it offers great flexibility compared to traditional classrooms.",
-          "example": "I take an evening English course online at 7:30 PM right after work, which saves me a lot of travel time.",
-          "pillar": "Peace & Privacy",
-          "q": "What are the main advantages of taking online courses compared to traditional classroom learning?",
-          "reason": "Students can join from home via laptop without heavy traffic, fit lessons comfortably within their budget and daily routine, and make the most of new technology to improve productivity."
+          "answer": "Yes, I would love to start a small personal blog about English learning and daily life in the future.",
+          "example": "I could post simple vocabulary notes or photos from my weekend trips once a week.",
+          "pillar": "Social",
+          "q": "3. Would you like to write your own blog in the future? Why or why not?",
+          "reason": "Writing regularly allows my brain to exercise, brings back good past memories, and lets me meet like-minded people who have a lot of things in common with me."
         }
       ],
-      "reusedSource": "Mẫu minh họa #6 (Khóa học online) + Bộ đề 4 (Reading) + Từ vựng #8, #14, #17, #18, #21 + Trục Knowledge",
+      "reusedSource": "Bộ đề 4 (Reading) + Trục 2 (Social) & Trục 3 (Knowledge) + Cụm #14, #17, #18",
       "reusedVocab": [
         "in my spare time",
         "fast, convenient for busy people in modern-day society",
@@ -584,13 +693,67 @@
         "richer vocab",
         "broaden their mind",
         "allow their brain to exercise",
-        "like-minded people",
+        "like-minded people"
+      ],
+      "topic": "Online Blogs & Articles"
+    }
+  },
+  {
+    "STT": "57",
+    "Mã câu hỏi": "vlu10-speaking-part1-26",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 2)",
+    "Tiêu đề đề bài": "Topic 26: Online Learning",
+    "Nội dung chi tiết": "1. Have you ever taken an online course? What subject did you study?\n2. What are the main advantages of taking online courses compared to traditional classroom learning?\n3. What difficulties do students sometimes face when studying online?",
+    "Mã trường": "VLU",
+    "Đợt thi": "10/2026",
+    "id": "vlu10-speaking-part1-26",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "10/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 24/10/2026 (Chiều - Ca 2)",
+    "title": "Topic 26: Online Learning",
+    "content": "1. Have you ever taken an online course? What subject did you study?\n2. What are the main advantages of taking online courses compared to traditional classroom learning?\n3. What difficulties do students sometimes face when studying online?",
+    "hint": {
+      "extraVocab": [
+        "flexibility",
+        "internet connection",
+        "stay focused"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I have taken an online English speaking course to prepare for my VSTEP exam.",
+          "example": "I join live classes on Zoom three evenings a week from my bedroom using my laptop.",
+          "pillar": "Knowledge",
+          "q": "1. Have you ever taken an online course? What subject did you study?",
+          "reason": "It is fast and convenient for busy people in modern-day society and fits comfortably within my budget and daily routine without sacrificing quality."
+        },
+        {
+          "answer": "Taking online courses is fast and convenient for busy people, and it offers great flexibility compared to traditional classrooms.",
+          "example": "I take an evening English course online at 7:30 PM right after work, which saves me a lot of travel time.",
+          "pillar": "Peace & Privacy",
+          "q": "2. What are the main advantages of taking online courses compared to traditional classroom learning?",
+          "reason": "Students can join from home via laptop without heavy traffic, fit lessons comfortably within their budget and daily routine, and make the most of new technology to improve productivity."
+        },
+        {
+          "answer": "The biggest difficulties of studying online are getting distracted easily and lacking face-to-face interaction.",
+          "example": "Sometimes when I study at home, notifications on my phone or noise outside make it hard to stay focused.",
+          "pillar": "Social",
+          "q": "3. What difficulties do students sometimes face when studying online?",
+          "reason": "Without face-to-face interaction with teachers and classmates, students cannot build a strong sense of belonging and may lose motivation quickly."
+        }
+      ],
+      "reusedSource": "Mẫu minh họa #6 (Khóa học online) + Trục 3, 4 + Cụm #8, #18, #21, #23",
+      "reusedVocab": [
         "join from home via laptop without heavy traffic",
         "fit comfortably within my budget and daily routine",
         "make the most of new technology to improve productivity",
+        "face-to-face interaction",
         "7:30 PM classes right after work"
       ],
-      "topic": "Online Blogs & Online Learning"
+      "topic": "Online Learning"
     }
   },
   {

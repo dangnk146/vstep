@@ -26,19 +26,19 @@
       "school": "VLU",
       "batch": "11/2026",
       "file": "speaking/VLU_11-2026.json",
-      "count": 101
+      "count": 104
     },
     {
       "school": "VLU",
       "batch": "09/2026",
       "file": "speaking/VLU_09-2026.json",
-      "count": 75
+      "count": 78
     },
     {
       "school": "VLU",
       "batch": "10/2026",
       "file": "speaking/VLU_10-2026.json",
-      "count": 54
+      "count": 57
     },
     {
       "school": "DTHU",
@@ -80,13 +80,13 @@
       "school": "AJC",
       "batch": "11/2026",
       "file": "speaking/AJC_11-2026.json",
-      "count": 13
+      "count": 14
     },
     {
       "school": "HUST",
       "batch": "11/2026",
       "file": "speaking/HUST_11-2026.json",
-      "count": 18
+      "count": 19
     },
     {
       "school": "UFM",
@@ -98,13 +98,13 @@
       "school": "DTU",
       "batch": "11/2026",
       "file": "speaking/DTU_11-2026.json",
-      "count": 9
+      "count": 11
     },
     {
       "school": "USSH",
       "batch": "11/2026",
       "file": "speaking/USSH_11-2026.json",
-      "count": 3
+      "count": 4
     },
     {
       "school": "ULIS",

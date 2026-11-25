@@ -268,8 +268,8 @@
     "Mã câu hỏi": "hust11-speaking-part1-3",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HUST 07/11/2026",
-    "Tiêu đề đề bài": "Topic 3: Cooking & Social Events",
-    "Nội dung chi tiết": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. How important are communal meals and social gatherings in Vietnamese culture?",
+    "Tiêu đề đề bài": "Topic 3: Cooking & Family Meals",
+    "Nội dung chi tiết": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. Why is sharing home-cooked meals together important for families in Vietnam?",
     "Mã trường": "HUST",
     "Đợt thi": "11/2026",
     "id": "hust11-speaking-part1-3",
@@ -278,8 +278,8 @@
     "batch": "11/2026",
     "part": "part1",
     "group": "Đề thi thực tế HUST 07/11/2026",
-    "title": "Topic 3: Cooking & Social Events",
-    "content": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. How important are communal meals and social gatherings in Vietnamese culture?",
+    "title": "Topic 3: Cooking & Family Meals",
+    "content": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?\n2. What traditional dish are you best at preparing?\n3. Why is sharing home-cooked meals together important for families in Vietnam?",
     "hint": {
       "extraVocab": [
         "fried spring rolls",
@@ -291,22 +291,22 @@
           "answer": "Yes, I am keen on cooking meals for my family in my free time.",
           "example": "On Sundays, I often cook dinner with my mom using fresh local vegetables and fish.",
           "pillar": "Physical health",
-          "q": "Do you enjoy cooking meals for yourself or for your family? Why or why not?",
+          "q": "1. Do you enjoy cooking meals for yourself or for your family? Why or why not?",
           "reason": "Home-cooked food plays an essential role in maintaining our physical health, and cooking is also advantageous to my mental health because it helps me relax my mind and reduce stress."
         },
         {
           "answer": "I am best at making fried spring rolls, which is a popular traditional dish in Vietnam.",
           "example": "I usually prepare fried spring rolls for my family during the Tet holiday or weekend dinners.",
           "pillar": "Bộ đề gốc",
-          "q": "What traditional dish are you best at preparing?",
+          "q": "2. What traditional dish are you best at preparing?",
           "reason": "It is easy to prepare with simple ingredients, and it tastes delicious and flavorful when eaten hot."
         },
         {
-          "answer": "They are extremely important because family and community mean the world to Vietnamese people.",
-          "example": "During Tet or Mid-Autumn Festival, my whole extended family gathers at my grandparents' house to eat and talk happily.",
+          "answer": "Sharing home-cooked meals together is very important because family means the world to Vietnamese people.",
+          "example": "Every evening, and especially during Tet or Mid-Autumn Festival, my whole family gathers around the dinner table to eat and talk happily.",
           "pillar": "Social",
-          "q": "How important are communal meals and social gatherings in Vietnamese culture?",
-          "reason": "Sharing meals helps strengthen bonds within a family, build a strong sense of belonging, and help people truly understand each other through face-to-face interaction."
+          "q": "3. Why is sharing home-cooked meals together important for families in Vietnam?",
+          "reason": "Eating together helps strengthen bonds within a family, build a strong sense of belonging, and help family members understand each other through face-to-face interaction."
         }
       ],
       "reusedSource": "Bộ đề 1 (Leisure & Family) & Trục Physical/Mental health",
@@ -321,7 +321,7 @@
         "build a strong sense of belonging",
         "face-to-face interaction"
       ],
-      "topic": "Cooking & Social Events"
+      "topic": "Cooking & Family Meals"
     }
   },
   {
@@ -476,8 +476,8 @@
     "Mã câu hỏi": "hust11-speaking-part1-4",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
-    "Tiêu đề đề bài": "Topic 4: Healthy Diets & Public Parks",
-    "Nội dung chi tiết": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?",
+    "Tiêu đề đề bài": "Topic 4: Healthy Diets & Eating Habits",
+    "Nội dung chi tiết": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. What unhealthy eating habits do you think young people should avoid?",
     "Mã trường": "HUST",
     "Đợt thi": "11/2026",
     "id": "hust11-speaking-part1-4",
@@ -486,12 +486,13 @@
     "batch": "11/2026",
     "part": "part1",
     "group": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
-    "title": "Topic 4: Healthy Diets & Public Parks",
-    "content": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?",
+    "title": "Topic 4: Healthy Diets & Eating Habits",
+    "content": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?\n2. What dishes or snacks do you prefer bringing when having a food gathering with friends?\n3. What unhealthy eating habits do you think young people should avoid?",
     "hint": {
       "extraVocab": [
         "fast food",
-        "green spaces"
+        "skip breakfast",
+        "balanced meals"
       ],
       "part": "speaking-part1",
       "questions": [
@@ -499,36 +500,93 @@
           "answer": "Yes, I try to eat a healthy diet every day, although I do not follow a strict nutritional plan.",
           "example": "Every day, I eat green vegetables, rice, and chicken for lunch instead of fast food.",
           "pillar": "Physical health",
-          "q": "Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?",
+          "q": "1. Do you try to eat a healthy diet every day, and do you follow any specific nutritional plan?",
           "reason": "Eating clean food is beneficial to my physical health because fresh vegetables and fruit help me strengthen my immune system, stay fit and healthy, and feel more energetic."
         },
         {
           "answer": "When having a gathering with friends, I prefer bringing fresh fruit, sandwiches, and homemade drinks.",
           "example": "Last Saturday, my friends and I went on a picnic and shared watermelon, cheese sandwiches, and iced tea.",
           "pillar": "Social",
-          "q": "What dishes or snacks do you prefer bringing when having a food gathering with friends?",
+          "q": "2. What dishes or snacks do you prefer bringing when having a food gathering with friends?",
           "reason": "They are cheap, convenient to carry, and healthy so everyone can enjoy them while spending quality time together."
         },
         {
-          "answer": "I visit a park about three times a week, and I prefer small community green spaces near my home.",
-          "example": "I usually walk around my neighborhood park for 30 minutes at 6 p.m. after finishing school or work.",
-          "pillar": "Peace & Privacy",
-          "q": "How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?",
-          "reason": "Large parks are often crowded and noisy, which makes me feel stressed, whereas small parks offer a quiet environment to relax and recharge my batteries."
+          "answer": "I think young people should avoid skipping breakfast, eating fast food too often, and drinking lots of sugary milk tea late at night.",
+          "example": "Many students stay up late studying and order fried chicken or bubble tea instead of eating regular balanced meals.",
+          "pillar": "Physical health",
+          "q": "3. What unhealthy eating habits do you think young people should avoid?",
+          "reason": "These bad habits easily cause weight gain, stomach problems, and low energy during the day, so eating on time is essential to keep fit."
         }
       ],
-      "reusedSource": "Trục Physical health, Trục Peace & Privacy & Bộ đề 1",
+      "reusedSource": "Trục Physical health & Social",
       "reusedVocab": [
         "beneficial to my physical health",
         "strengthen my immune system",
         "stay fit and healthy",
         "feel more energetic",
         "go on a picnic",
-        "spend quality time",
-        "crowded, noisy",
-        "recharge my batteries"
+        "spend quality time"
       ],
-      "topic": "Healthy Diets & Public Parks"
+      "topic": "Healthy Diets & Eating Habits"
+    }
+  },
+  {
+    "STT": "19",
+    "Mã câu hỏi": "hust11-speaking-part1-9",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Topic 9: Public Parks & Green Spaces",
+    "Nội dung chi tiết": "1. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?\n2. What activities do you usually do when you go to a park?\n3. Why are public parks important for people living in big cities?",
+    "Mã trường": "HUST",
+    "Đợt thi": "11/2026",
+    "id": "hust11-speaking-part1-9",
+    "skill": "speaking",
+    "school": "HUST",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế HUST 08/11/2026 (Sáng - Ca 2)",
+    "title": "Topic 9: Public Parks & Green Spaces",
+    "content": "1. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?\n2. What activities do you usually do when you go to a park?\n3. Why are public parks important for people living in big cities?",
+    "hint": {
+      "extraVocab": [
+        "green spaces",
+        "fresh air",
+        "morning walk"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I visit a park about three times a week, and I prefer small community green spaces near my home.",
+          "example": "I usually walk around my neighborhood park for 30 minutes at 6 p.m. after finishing school or work.",
+          "pillar": "Peace & Privacy",
+          "q": "1. How often do you visit public parks, and do you prefer large municipal parks or small community green spaces?",
+          "reason": "Large parks are often crowded and noisy, which makes me feel stressed, whereas small parks offer a quiet environment to relax and recharge my batteries."
+        },
+        {
+          "answer": "When I go to the park, I usually go jogging, listen to music, or sit on a bench to chat with my friends.",
+          "example": "On Sunday mornings, I often play badminton with my younger brother under the trees.",
+          "pillar": "Physical health",
+          "q": "2. What activities do you usually do when you go to a park?",
+          "reason": "Exercising outdoors is beneficial to my physical health because it helps me keep fit, stay healthy, and strengthen my immune system while reducing daily stress."
+        },
+        {
+          "answer": "Public parks play an essential role in improving both physical health and mental health for city residents.",
+          "example": "In my city, elderly people do morning exercise and children play safely in parks every day.",
+          "pillar": "Mental health",
+          "q": "3. Why are public parks important for people living in big cities?",
+          "reason": "Trees make a contribution to protecting the environment by reducing air pollution, and parks give busy city dwellers a peaceful space to relax their mind and recharge their batteries."
+        }
+      ],
+      "reusedSource": "Trục 1 (Physical health), Trục 2 (Mental health) & Trục 4 (Peace & Privacy) + Cụm #1, #2",
+      "reusedVocab": [
+        "crowded, noisy",
+        "recharge my batteries",
+        "stay fit and healthy",
+        "reduce stress",
+        "plays an essential role in",
+        "air pollution"
+      ],
+      "topic": "Public Parks & Green Spaces"
     }
   },
   {

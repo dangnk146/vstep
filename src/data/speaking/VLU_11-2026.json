@@ -3165,8 +3165,8 @@
     "Mã câu hỏi": "vlu11-speaking-part1-24",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 08/11/2026 (Chiều - Ca 1)",
-    "Tiêu đề đề bài": "Topic 1: Dining Out vs Eating at Home & Celebrity Culture",
-    "Nội dung chi tiết": "1. How often do you dine out, and do you prefer Vietnamese cuisine or international dishes?\n2. Do you have any public figures or celebrity idols that you admire?\n3. Would you ever desire to become a famous celebrity in the future? Why or why not?",
+    "Tiêu đề đề bài": "Topic 1: Dining Out vs Eating at Home",
+    "Nội dung chi tiết": "1. How often do you eat out, and do you prefer Vietnamese food or international dishes?\n2. Do you prefer eating at home or dining out at restaurants? Why?\n3. Who do you usually go out for meals with?",
     "Mã trường": "VLU",
     "Đợt thi": "11/2026",
     "id": "vlu11-speaking-part1-24",
@@ -3175,54 +3175,113 @@
     "batch": "11/2026",
     "part": "part1",
     "group": "Đề thi thực tế VLU 08/11/2026 (Chiều - Ca 1)",
-    "title": "Topic 1: Dining Out vs Eating at Home & Celebrity Culture",
-    "content": "1. How often do you dine out, and do you prefer Vietnamese cuisine or international dishes?\n2. Do you have any public figures or celebrity idols that you admire?\n3. Would you ever desire to become a famous celebrity in the future? Why or why not?",
+    "title": "Topic 1: Dining Out vs Eating at Home",
+    "content": "1. How often do you eat out, and do you prefer Vietnamese food or international dishes?\n2. Do you prefer eating at home or dining out at restaurants? Why?\n3. Who do you usually go out for meals with?",
     "hint": {
       "extraVocab": [
         "eat out",
-        "charity work",
-        "public pressure"
+        "home-cooked meals",
+        "cozy restaurant"
       ],
       "part": "speaking-part1",
       "questions": [
         {
           "answer": "I usually eat out once or twice a week at weekends, and I definitely prefer Vietnamese cuisine.",
           "example": "For example, every Sunday evening my family eats bun bo or pho at a cozy restaurant near our house.",
-          "pillar": "Bộ đề 2",
-          "q": "How often do you eat out, and do you prefer Vietnamese food or international dishes?",
+          "pillar": "Bộ đề gốc",
+          "q": "1. How often do you eat out, and do you prefer Vietnamese food or international dishes?",
           "reason": "Vietnamese cuisine is diverse, flavorful, and has lots of delicious dishes that fit comfortably within my budget. Moreover, going out for meals is a great way to spend quality time with family and friends and elevate my mood."
         },
         {
-          "answer": "Yes, I really admire a famous Vietnamese singer named My Tam because she is both talented and kind.",
-          "example": "I often listen to her ballads on Spotify when I study or drive home in the evening.",
-          "pillar": "Mental health",
-          "q": "Do you have any famous people or celebrity idols that you admire?",
-          "reason": "Her songs have soft melodies and meaningful lyrics that help me relax and pump me up when I feel down. Also, she is a great source of inspiration and motivation because she often does charity work to help poor people."
+          "answer": "On weekdays, I prefer eating home-cooked meals, while on weekends I enjoy dining out for a change.",
+          "example": "From Monday to Friday, I usually cook simple meals with vegetables and meat at home to save money and stay healthy.",
+          "pillar": "Physical health",
+          "q": "2. Do you prefer eating at home or dining out at restaurants? Why?",
+          "reason": "Eating at home is beneficial to my physical health because fresh local food helps prevent common illnesses and keeps me fit and healthy, while also avoiding higher living expenses."
         },
         {
-          "answer": "No, I would not want to become a famous celebrity in the future, even though they earn a lot of money.",
-          "example": "For instance, I just want a simple job and enough free time to hang out quietly with my close friends at coffee shops without anyone taking photos of me.",
-          "pillar": "Peace & Privacy",
-          "q": "Would you ever want to become a famous celebrity in the future? Why or why not?",
-          "reason": "Being famous means losing personal privacy and always feeling stressed and exhausted under public pressure. I prefer a normal life where I can enjoy inner peace, reach a healthy balance between work and family time, and stay on the safe side."
+          "answer": "I mostly go out for meals with my family members and my close friends.",
+          "example": "Last Saturday night, I met three university friends at a hotpot place near our school to catch up after a busy week.",
+          "pillar": "Social",
+          "q": "3. Who do you usually go out for meals with?",
+          "reason": "Going out for meals together helps us spend quality time, strengthen bonds within our family and friend group, and relax our minds after a day of hard work."
         }
       ],
-      "reusedSource": "Bộ đề 2 (Hometown) + Bộ đề 3 (Music) + Trục Peace & Privacy",
+      "reusedSource": "Bộ đề 1 (Leisure/Family) + Bộ đề 2 (Cuisine) + Trục 1 (Physical health) & Cụm #21",
       "reusedVocab": [
         "diverse, flavorful",
         "lots of delicious dishes",
         "fit comfortably within my budget",
         "going out for meals",
         "spend quality time with family and friends",
+        "beneficial to my physical health",
+        "keep fit and stay healthy",
+        "higher living expenses",
+        "strengthen bonds",
+        "relax my mind"
+      ],
+      "topic": "Dining Out vs Eating at Home"
+    }
+  },
+  {
+    "STT": "102",
+    "Mã câu hỏi": "vlu11-speaking-part1-42",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 08/11/2026 (Chiều - Ca 1)",
+    "Tiêu đề đề bài": "Topic 2: Celebrity Culture & Famous People",
+    "Nội dung chi tiết": "1. Do you have any public figures or celebrity idols that you admire?\n2. Why do many young people like following famous people on social media?\n3. Would you ever want to become a famous celebrity in the future? Why or why not?",
+    "Mã trường": "VLU",
+    "Đợt thi": "11/2026",
+    "id": "vlu11-speaking-part1-42",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 08/11/2026 (Chiều - Ca 1)",
+    "title": "Topic 2: Celebrity Culture & Famous People",
+    "content": "1. Do you have any public figures or celebrity idols that you admire?\n2. Why do many young people like following famous people on social media?\n3. Would you ever want to become a famous celebrity in the future? Why or why not?",
+    "hint": {
+      "extraVocab": [
+        "charity work",
+        "public pressure",
+        "role model"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "Yes, I really admire a famous Vietnamese singer named My Tam because she is both talented and kind.",
+          "example": "I often listen to her ballads on Spotify when I study or drive home in the evening.",
+          "pillar": "Mental health",
+          "q": "1. Do you have any public figures or celebrity idols that you admire?",
+          "reason": "Her songs have soft melodies and meaningful lyrics that help me relax and pump me up when I feel down. Also, she is a great source of inspiration and motivation because she often does charity work to help poor people."
+        },
+        {
+          "answer": "Many young people follow celebrities online to get entertainment, fashion ideas, and motivation in daily life.",
+          "example": "For example, my friends often watch short videos of their favorite singers or athletes on TikTok during study breaks.",
+          "pillar": "Mental health",
+          "q": "2. Why do many young people like following famous people on social media?",
+          "reason": "Seeing positive stories from a good role model can lift up their mood, give them a great source of inspiration and motivation, and help them relax after hard work."
+        },
+        {
+          "answer": "No, I would not want to become a famous celebrity in the future, even though they earn a lot of money.",
+          "example": "For instance, I just want a simple job and enough free time to hang out quietly with my close friends at coffee shops without anyone taking photos of me.",
+          "pillar": "Peace & Privacy",
+          "q": "3. Would you ever want to become a famous celebrity in the future? Why or why not?",
+          "reason": "Being famous means losing personal privacy and always feeling stressed and exhausted under public pressure. I prefer a normal life where I can enjoy inner peace, reach a healthy balance between work and family time, and stay on the safe side."
+        }
+      ],
+      "reusedSource": "Bộ đề 3 (Music) + Trục Mental health & Peace & Privacy",
+      "reusedVocab": [
         "meaningful lyrics",
         "pump me up",
         "a great source of inspiration and motivation",
+        "lift up their mood",
         "personal privacy",
         "inner peace",
         "reach a healthy balance between work and family time",
         "stay on the safe side"
       ],
-      "topic": "Eating Out & Famous People"
+      "topic": "Celebrity Culture & Famous People"
     }
   },
   {
@@ -3295,8 +3354,8 @@
     "Mã câu hỏi": "vlu11-speaking-part1-26",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 08/11/2026 (Chiều - Ca 3)",
-    "Tiêu đề đề bài": "Topic 1: Indoor Leisure Activities & Daily Work",
-    "Nội dung chi tiết": "1. What indoor hobbies do you turn to when bad weather prevents outdoor activities?\n2. How do you balance demanding work responsibilities with daily leisure time?\n3. Do you find indoor activities as invigorating as outdoor sports?",
+    "Tiêu đề đề bài": "Topic 1: Indoor Leisure Activities",
+    "Nội dung chi tiết": "1. What indoor hobbies do you turn to when bad weather prevents outdoor activities?\n2. Do you prefer spending your indoor free time alone or with family and friends? Why?\n3. Do you find indoor activities as refreshing as outdoor sports?",
     "Mã trường": "VLU",
     "Đợt thi": "11/2026",
     "id": "vlu11-speaking-part1-26",
@@ -3305,12 +3364,12 @@
     "batch": "11/2026",
     "part": "part1",
     "group": "Đề thi thực tế VLU 08/11/2026 (Chiều - Ca 3)",
-    "title": "Topic 1: Indoor Leisure Activities & Daily Work",
-    "content": "1. What indoor hobbies do you turn to when bad weather prevents outdoor activities?\n2. How do you balance demanding work responsibilities with daily leisure time?\n3. Do you find indoor activities as invigorating as outdoor sports?",
+    "title": "Topic 1: Indoor Leisure Activities",
+    "content": "1. What indoor hobbies do you turn to when bad weather prevents outdoor activities?\n2. Do you prefer spending your indoor free time alone or with family and friends? Why?\n3. Do you find indoor activities as refreshing as outdoor sports?",
     "hint": {
       "extraVocab": [
-        "daily schedule",
-        "urgent tasks",
+        "rainy afternoons",
+        "board games",
         "breathe fresh air"
       ],
       "part": "speaking-part1",
@@ -3318,41 +3377,98 @@
         {
           "answer": "When it rains heavily outside, I am keen on indoor hobbies such as reading books, watching movies, or cooking with my family.",
           "example": "For example, on rainy Sunday afternoons, I usually make hot tea, read a comic book or novel, and watch a comedy film in my bedroom.",
-          "pillar": "Bộ đề 1",
-          "q": "What indoor hobbies do you enjoy when bad weather stops you from going outside?",
+          "pillar": "Bộ đề gốc",
+          "q": "1. What indoor hobbies do you enjoy when bad weather stops you from going outside?",
           "reason": "It is advantageous to my mental health because it helps me relax my mind, recharge my batteries, and stay comfortable inside when gloomy weather makes people feel down."
         },
         {
-          "answer": "To reach a healthy balance between work and free time, I always make a clear daily schedule.",
-          "example": "For instance, I focus on my work and study from 8 a.m. to 5 p.m., and after 7 p.m. I put away my laptop to talk with my parents or listen to music.",
-          "pillar": "Mental health",
-          "q": "How do you balance hard work responsibilities with daily free time?",
-          "reason": "Creating a daily timetable helps solve the problem of missing deadlines and reduces stress and fatigue. Once I finish urgent tasks, I can put my feet up without worrying about unfinished work."
+          "answer": "It depends on my mood, but I usually prefer spending indoor free time with my family or close friends.",
+          "example": "On weekend evenings, my family often cooks dinner together and watches a TV show in the living room.",
+          "pillar": "Social",
+          "q": "2. Do you prefer spending your indoor free time alone or with family and friends? Why?",
+          "reason": "Doing indoor activities like cooking or playing chess together helps strengthen bonds within a family and makes us feel over the moon and peaceful."
         },
         {
           "answer": "Actually, indoor hobbies are relaxing, but outdoor sports are much better for making me feel energetic and keeping fit.",
           "example": "For example, playing badminton outside on Saturday morning wakes my body up, while reading a book at night helps me sleep well.",
           "pillar": "Physical health",
-          "q": "Do you find indoor activities as energetic and refreshing as outdoor sports?",
+          "q": "3. Do you find indoor activities as refreshing as outdoor sports?",
           "reason": "Indoor activities like reading or watching films are great for broadening horizons and enjoying inner peace, whereas outdoor sports help me breathe fresh air, sweat, and strengthen my immune system."
         }
       ],
-      "reusedSource": "Bộ đề 1 (Leisure) + Bộ đề 4 (Reading/Movies) + Trục Mental & Physical health",
+      "reusedSource": "Bộ đề 1 (Leisure - Câu 1, 2, 3) + Bộ đề 4 (Reading/Movies) + Trục 1 & Trục 2",
       "reusedVocab": [
         "keen on",
         "recharge my batteries",
         "relax my mind",
         "gloomy weather",
         "feel down",
-        "reach a healthy balance between work and family time",
-        "solve the problem",
-        "reduce fatigue",
-        "put my feet up",
+        "strengthen bonds",
         "broaden horizons",
         "inner peace",
         "strengthen my immune system"
       ],
-      "topic": "Indoor Hobbies & Work Balance"
+      "topic": "Indoor Leisure Activities"
+    }
+  },
+  {
+    "STT": "103",
+    "Mã câu hỏi": "vlu11-speaking-part1-43",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 08/11/2026 (Chiều - Ca 3)",
+    "Tiêu đề đề bài": "Topic 2: Daily Work & Work-Life Balance",
+    "Nội dung chi tiết": "1. How do you balance demanding work or study responsibilities with daily leisure time?\n2. What time of day do you usually feel most productive when working or studying?\n3. Why is it important to take short breaks during a busy workday?",
+    "Mã trường": "VLU",
+    "Đợt thi": "11/2026",
+    "id": "vlu11-speaking-part1-43",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 08/11/2026 (Chiều - Ca 3)",
+    "title": "Topic 2: Daily Work & Work-Life Balance",
+    "content": "1. How do you balance demanding work or study responsibilities with daily leisure time?\n2. What time of day do you usually feel most productive when working or studying?\n3. Why is it important to take short breaks during a busy workday?",
+    "hint": {
+      "extraVocab": [
+        "daily schedule",
+        "urgent tasks",
+        "short breaks"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "To reach a healthy balance between work and free time, I always make a clear daily schedule.",
+          "example": "For instance, I focus on my work and study from 8 a.m. to 5 p.m., and after 7 p.m. I put away my laptop to talk with my parents or listen to music.",
+          "pillar": "Mental health",
+          "q": "1. How do you balance demanding work or study responsibilities with daily leisure time?",
+          "reason": "Creating a daily timetable helps solve the problem of missing deadlines and reduces stress and fatigue. Once I finish urgent tasks, I can put my feet up without worrying about unfinished work."
+        },
+        {
+          "answer": "I usually feel most energetic and focused in the early morning, between 8 a.m. and 11 a.m.",
+          "example": "For example, I always do my hardest writing or study assignments in the morning after having a good breakfast and a cup of coffee.",
+          "pillar": "Peace & Privacy",
+          "q": "2. What time of day do you usually feel most productive when working or studying?",
+          "reason": "After a full night of sleep, my mind is refreshed and my room offers a quiet, cozy environment without any distractions, so I can concentrate well and improve productivity."
+        },
+        {
+          "answer": "Taking short breaks during a busy day is very important for both physical health and mental health.",
+          "example": "Every hour, I stand up for five minutes to stretch my body, drink water, and rest my eyes away from the computer screen.",
+          "pillar": "Physical health",
+          "q": "3. Why is it important to take short breaks during a busy workday?",
+          "reason": "Working nonstop makes people feel stressed and exhausted. Short breaks help us recharge our batteries, relieve stress and reduce fatigue, and stay fit and energetic."
+        }
+      ],
+      "reusedSource": "Mẫu minh họa #3 (Quản lý deadline) + Trục 1, 2, 4 + Cụm #3, #8, #9, #10",
+      "reusedVocab": [
+        "reach a healthy balance between work and free time",
+        "solve the problem",
+        "reduce fatigue",
+        "put my feet up",
+        "feel energetic",
+        "recharge our batteries",
+        "stressed and exhausted"
+      ],
+      "topic": "Daily Work & Work-Life Balance"
     }
   },
   {
@@ -4684,7 +4800,7 @@
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 08/11/2026 (Sáng)",
     "Tiêu đề đề bài": "Topic 1: Natural Landscapes & Drawing Scenery",
-    "Nội dung chi tiết": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What makes up the natural landscape or environment around your hometown or neighborhood?\n3. Do you like taking landscape photographs when you travel? Why or why not?\n4. Do you enjoy drawing or painting natural landscapes in your free time?",
+    "Nội dung chi tiết": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What makes up the natural landscape or environment around your hometown or neighborhood?\n3. Do you like taking photos or drawing pictures of natural landscapes? Why or why not?",
     "Mã trường": "VLU",
     "Đợt thi": "11/2026",
     "id": "vlu11-speaking-part1-27",
@@ -4694,7 +4810,7 @@
     "part": "part1",
     "group": "Đề thi thực tế VLU 08/11/2026 (Sáng)",
     "title": "Topic 1: Natural Landscapes & Drawing Scenery",
-    "content": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What makes up the natural landscape or environment around your hometown or neighborhood?\n3. Do you like taking landscape photographs when you travel? Why or why not?\n4. Do you enjoy drawing or painting natural landscapes in your free time?",
+    "content": "1. What kind of natural landscapes do you enjoy visiting the most?\n2. What makes up the natural landscape or environment around your hometown or neighborhood?\n3. Do you like taking photos or drawing pictures of natural landscapes? Why or why not?",
     "hint": {
       "extraVocab": [
         "natural scenery",
@@ -4707,32 +4823,25 @@
           "answer": "Of course, I am a big fan of visiting coastal beaches and green mountains in my free time.",
           "example": "For example, every summer vacation my family travels to Da Nang or Da Lat to enjoy fresh air and take a break from work.",
           "pillar": "Mental health",
-          "q": "What kind of natural places do you enjoy visiting the most?",
+          "q": "1. What kind of natural landscapes do you enjoy visiting the most?",
           "reason": "Natural places are breathtaking and picturesque, and they are advantageous to my mental health because they help me relax, recharge my batteries, and escape noisy cities."
         },
         {
           "answer": "I was born and grew up in a lively area in the South of Vietnam that still has green parks and a large river.",
           "example": "Right near my neighborhood, there is a tree-lined park along the river where families walk and children play every evening.",
-          "pillar": "Bộ đề 2",
-          "q": "What is the natural environment around your hometown or neighborhood like?",
+          "pillar": "Bộ đề gốc",
+          "q": "2. What makes up the natural landscape or environment around your hometown or neighborhood?",
           "reason": "Having trees and rivers nearby plays an essential role in keeping the air fresh and helping local people feel peaceful and comfortable after hard work."
         },
         {
-          "answer": "Certainly, I love taking photos of natural scenery whenever I go on a trip with my friends or family.",
-          "example": "For instance, during my last trip to Phu Quoc Island, I took dozens of sunset photos on the beach with my phone.",
-          "pillar": "Mental health",
-          "q": "Do you like taking landscape photos when you travel? Why or why not?",
-          "reason": "Photos capture breathtaking views and bring back good past memories when we look at them later. Also, sharing those pictures helps us remember quality time together."
-        },
-        {
-          "answer": "Yes, I sometimes enjoy drawing simple natural landscapes, even though I am not a professional artist.",
-          "example": "On rainy weekends, I sit by my desk with soft music and sketch trees or mountains in a small notebook.",
+          "answer": "Certainly, I love taking photos of natural scenery when I travel, and I sometimes enjoy doing simple sketches in my free time.",
+          "example": "For instance, during my last trip to Phu Quoc Island, I took dozens of sunset photos on the beach and later drew a small picture in my notebook.",
           "pillar": "Peace & Privacy",
-          "q": "Do you enjoy drawing or painting natural landscapes in your free time?",
-          "reason": "Drawing in a quiet, cozy room gives me personal privacy without any distractions, allowing my mind to slow down and enjoy inner peace while letting my brain exercise creatively."
+          "q": "3. Do you like taking photos or drawing pictures of natural landscapes? Why or why not?",
+          "reason": "Taking photos captures breathtaking views and brings back good past memories, while drawing in a quiet, cozy environment helps my mind slow down and enjoy inner peace."
         }
       ],
-      "reusedSource": "Bộ đề 2 (Hometown) + Trục Mental health + Trục Peace & Privacy",
+      "reusedSource": "Bộ đề 2 (Hometown) + Trục 2 (Mental health) & Trục 4 (Peace & Privacy)",
       "reusedVocab": [
         "a big fan of",
         "coastal",
@@ -4742,10 +4851,7 @@
         "I was born and grew up in",
         "plays an essential role in",
         "bring back good past memories",
-        "spend quality time",
-        "personal privacy without any distractions",
-        "inner peace",
-        "allow their brain to exercise"
+        "inner peace"
       ],
       "topic": "Natural Landscapes & Drawing Scenery"
     }
@@ -6745,8 +6851,8 @@
     "Mã câu hỏi": "vlu11-speaking-part1-40",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 21/11/2026 (Sáng - Ca 2)",
-    "Tiêu đề đề bài": "Topic 1: Favorite Local Food & Happiness",
-    "Nội dung chi tiết": "1. What is your favourite food in your country?\n2. What do you usually do when you feel happy?\n3. Who do you usually share your happiness with?\n4. Do you think that money can buy happiness?",
+    "Tiêu đề đề bài": "Topic 1: Favorite Local Food",
+    "Nội dung chi tiết": "1. What is your favourite food in your country?\n2. How often do you eat this dish, and who do you usually eat it with?\n3. Would you recommend this local dish to foreign visitors? Why?",
     "Mã trường": "VLU",
     "Đợt thi": "11/2026",
     "id": "vlu11-speaking-part1-40",
@@ -6755,14 +6861,76 @@
     "batch": "11/2026",
     "part": "part1",
     "group": "Đề thi thực tế VLU 21/11/2026 (Sáng - Ca 2)",
-    "title": "Topic 1: Favorite Local Food & Happiness",
-    "content": "1. What is your favourite food in your country?\n2. What do you usually do when you feel happy?\n3. Who do you usually share your happiness with?\n4. Do you think that money can buy happiness?",
+    "title": "Topic 1: Favorite Local Food",
+    "content": "1. What is your favourite food in your country?\n2. How often do you eat this dish, and who do you usually eat it with?\n3. Would you recommend this local dish to foreign visitors? Why?",
     "isNew": true,
     "addedAt": "2026-11-22T19:50:01+07:00",
     "hint": {
       "extraVocab": [
         "broth",
         "herbs",
+        "local specialty"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "My favourite food in Vietnam is pho, which is one of the most famous traditional dishes in my country.",
+          "example": "For example, I often eat a hot bowl of beef pho for breakfast with my family on Sunday mornings.",
+          "pillar": "Bộ đề gốc",
+          "q": "1. What is your favourite food in your country?",
+          "reason": "Vietnamese cuisine is diverse and flavorful, and pho has a rich broth, soft noodles, and fresh herbs. Buying fresh local food also tastes delicious and fits comfortably within my budget."
+        },
+        {
+          "answer": "I usually eat pho about once or twice a week, mostly with my parents or my classmates.",
+          "example": "There is a clean, popular pho shop near my neighborhood where my dad and I often go on weekend mornings.",
+          "pillar": "Social",
+          "q": "2. How often do you eat this dish, and who do you usually eat it with?",
+          "reason": "It is fast and convenient for busy people in modern-day society, and going out for meals together is a simple way to spend quality time and strengthen bonds within my family."
+        },
+        {
+          "answer": "Yes, I would definitely recommend pho to any foreign tourist visiting Vietnam.",
+          "example": "Last year, when my cousin's friend from Australia visited Ho Chi Minh City, we took him to try beef pho and he loved it right away.",
+          "pillar": "Knowledge",
+          "q": "3. Would you recommend this local dish to foreign visitors? Why?",
+          "reason": "It is healthy with fresh herbs and helps visitors broaden their horizons and gain a deeper understanding of Vietnamese culture and tradition."
+        }
+      ],
+      "reusedSource": "Bộ đề 2 (Cuisine) + Trục 3 (Knowledge) + Cụm #18, #21 & Luận điểm #17",
+      "reusedVocab": [
+        "diverse, flavorful",
+        "fresh local food",
+        "fit comfortably within my budget",
+        "fast, convenient for busy people in modern-day society",
+        "going out for meals",
+        "spend quality time",
+        "strengthen bonds",
+        "broaden horizons",
+        "gain a deeper understanding of people, culture, and tradition"
+      ],
+      "topic": "Favorite Local Food"
+    }
+  },
+  {
+    "STT": "104",
+    "Mã câu hỏi": "vlu11-speaking-part1-44",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế VLU 21/11/2026 (Sáng - Ca 2)",
+    "Tiêu đề đề bài": "Topic 2: Happiness",
+    "Nội dung chi tiết": "1. What do you usually do when you feel happy?\n2. Who do you usually share your happiness with?\n3. Do you think that money can buy happiness?",
+    "Mã trường": "VLU",
+    "Đợt thi": "11/2026",
+    "id": "vlu11-speaking-part1-44",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế VLU 21/11/2026 (Sáng - Ca 2)",
+    "title": "Topic 2: Happiness",
+    "content": "1. What do you usually do when you feel happy?\n2. Who do you usually share your happiness with?\n3. Do you think that money can buy happiness?",
+    "isNew": true,
+    "addedAt": "2026-11-22T19:50:01+07:00",
+    "hint": {
+      "extraVocab": [
         "upbeat music",
         "treat myself",
         "home-cooked dinner"
@@ -6770,51 +6938,42 @@
       "part": "speaking-part1",
       "questions": [
         {
-          "answer": "My favourite food in Vietnam is pho, which is one of the most famous traditional dishes in my country.",
-          "example": "For example, I often eat a hot bowl of beef pho for breakfast with my family on Sunday mornings.",
-          "pillar": "Knowledge / Culture (Cuisine - Bộ đề 2)",
-          "q": "1. What is your favourite food in your country?",
-          "reason": "Vietnamese cuisine is diverse and flavorful, and pho has a rich broth, soft noodles, and fresh herbs. Buying fresh local food also tastes delicious and fits comfortably within my budget."
-        },
-        {
           "answer": "When I feel over the moon, I usually listen to upbeat music, treat myself to a good meal, or hang out with my friends.",
           "example": "For instance, after I passed an important test last semester, I invited my close friends for milk tea and we chatted happily.",
-          "pillar": "Mental health & Social",
-          "q": "2. What do you usually do when you feel happy?",
-          "reason": "Celebrating happy moments helps elevate my mood and keeps my positive energy high for my study and daily work."
+          "pillar": "Mental health",
+          "q": "1. What do you usually do when you feel happy?",
+          "reason": "Celebrating happy moments is advantageous to my mental health because it elevates my mood and boosts my energy for study and daily work."
         },
         {
           "answer": "I always share my happiness with my family first, especially my mom and my best friends.",
           "example": "When I got a good score on my English exam, I called my mom right away, and she was so proud of me.",
-          "pillar": "Social (Family bonding - Bộ đề 1)",
-          "q": "3. Who do you usually share your happiness with?",
+          "pillar": "Social",
+          "q": "2. Who do you usually share your happiness with?",
           "reason": "My family means the world to me, and we openly share our thoughts and emotions with each other. Sharing good news makes the joy feel bigger and strengthens our bonds."
         },
         {
           "answer": "In my opinion, money is important for a comfortable life, but it cannot buy true happiness.",
           "example": "For example, a simple home-cooked dinner with my parents makes me much happier than eating an expensive meal alone.",
-          "pillar": "Mental health & Family values",
-          "q": "4. Do you think that money can buy happiness?",
+          "pillar": "Mental health",
+          "q": "3. Do you think that money can buy happiness?",
           "reason": "Of course, money helps improve our living standard and pay for daily needs. However, real happiness comes from good physical health, inner peace, and loving people who care about us unconditionally."
         }
       ],
-      "reusedSource": "Bộ đề 1 (Family/Friends) + Bộ đề 2 (Cuisine) + Trục 1 (Physical health) & Trục 2 (Mental health) + Shared Vocab (#4, #21, Luận điểm #17)",
+      "reusedSource": "Bộ đề 1 (Family/Friends) + Trục 1 (Physical health) & Trục 2 (Mental health) + Cụm #4",
       "reusedVocab": [
-        "cuisine",
-        "diverse and flavorful",
-        "fresh local food",
-        "fits comfortably within my budget",
-        "over the moon",
+        "feel over the moon",
+        "advantageous to my mental health",
         "elevate my mood",
+        "boost my energy",
         "means the world to me",
         "openly share our thoughts and emotions",
-        "strengthens our bonds",
-        "improve our living standard",
+        "strengthen bonds",
+        "improve people's living standard",
         "physical health",
         "inner peace",
-        "unconditionally"
+        "love unconditionally"
       ],
-      "topic": "Topic 1: Favorite Local Food & Happiness"
+      "topic": "Happiness"
     }
   },
   {

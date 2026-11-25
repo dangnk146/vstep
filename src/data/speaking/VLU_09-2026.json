@@ -238,8 +238,8 @@
     "Mã câu hỏi": "speaking-part1-14",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "BỘ CÂU HỎI THEO TỪNG CHỦ ĐỀ THƯỜNG GẶP:",
-    "Tiêu đề đề bài": "Topic 14: Photography & Singing",
-    "Nội dung chi tiết": "1. Do you like taking photos? On what occasions do you take photos?\n2. Do you enjoy singing? Can singing help people reduce stress?\n3. Do you prefer listening to music or singing along?",
+    "Tiêu đề đề bài": "Topic 14: Photography",
+    "Nội dung chi tiết": "1. Do you like taking photos? On what occasions do you take photos?\n2. Do you prefer taking photos with your smartphone or with a camera? Why?\n3. What do you usually do with the photos after taking them?",
     "Mã trường": "VLU",
     "Đợt thi": "09/2026",
     "id": "speaking-part1-14",
@@ -248,8 +248,116 @@
     "batch": "09/2026",
     "part": "part1",
     "group": "BỘ CÂU HỎI THEO TỪNG CHỦ ĐỀ THƯỜNG GẶP:",
-    "title": "Topic 14: Photography & Singing",
-    "content": "1. Do you like taking photos? On what occasions do you take photos?\n2. Do you enjoy singing? Can singing help people reduce stress?\n3. Do you prefer listening to music or singing along?"
+    "title": "Topic 14: Photography",
+    "content": "1. Do you like taking photos? On what occasions do you take photos?\n2. Do you prefer taking photos with your smartphone or with a camera? Why?\n3. What do you usually do with the photos after taking them?",
+    "hint": {
+      "part": "speaking-part1",
+      "topic": "Photography",
+      "reusedSource": "Bộ đề 1 (Leisure) + Bộ đề 2 (Hometown) + Trục 2 (Mental health) + Cụm #18, #21",
+      "questions": [
+        {
+          "q": "1. Do you like taking photos? On what occasions do you take photos?",
+          "pillar": "Mental health",
+          "answer": "Of course, I am a big fan of taking photos, especially during family trips, Tet holiday, and birthday parties.",
+          "reason": "It is advantageous to my mental health because looking back at good photos brings back good past memories, elevates my mood, and helps me relax my mind after a day of hard work.",
+          "example": "For example, last summer vacation in Da Nang, I took lots of photos of breathtaking beaches with my family and close friends."
+        },
+        {
+          "q": "2. Do you prefer taking photos with your smartphone or with a camera? Why?",
+          "pillar": "Bộ đề gốc",
+          "answer": "Certainly, I prefer taking photos with my smartphone because it is fast and convenient for busy people in modern-day society.",
+          "reason": "A smartphone is light to carry everywhere, fits comfortably within my budget, and lets me share pictures immediately without bringing heavy equipment.",
+          "example": "Whenever I go out for meals or visit a coffee shop with friends, I just take out my phone and snap a quick picture."
+        },
+        {
+          "q": "3. What do you usually do with the photos after taking them?",
+          "pillar": "Social",
+          "answer": "After taking photos, I usually save my favorite ones in cloud albums and share some nice pictures with my family and close friends.",
+          "reason": "Sharing happy moments strengthens bonds within my family and friend group, while keeping private photos in an album lets me enjoy personal privacy.",
+          "example": "Every Sunday evening, I send weekend photos to our family group chat on Zalo so my grandparents can see what we did."
+        }
+      ],
+      "reusedVocab": [
+        "a big fan of",
+        "advantageous to my mental health",
+        "bring back good past memories",
+        "elevate my mood",
+        "relax my mind",
+        "breathtaking",
+        "fast, convenient for busy people in modern-day society",
+        "fit comfortably within my budget",
+        "strengthen bonds",
+        "personal privacy"
+      ],
+      "extraVocab": [
+        "cloud albums",
+        "snap a quick picture"
+      ]
+    }
+  },
+  {
+    "STT": "76",
+    "Mã câu hỏi": "speaking-part1-33",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "BỘ CÂU HỎI THEO TỪNG CHỦ ĐỀ THƯỜNG GẶP:",
+    "Tiêu đề đề bài": "Topic 33: Singing & Music",
+    "Nội dung chi tiết": "1. Do you enjoy singing? Can singing help people reduce stress?\n2. Do you prefer listening to music or singing along?\n3. When and where do you usually like to sing?",
+    "Mã trường": "VLU",
+    "Đợt thi": "09/2026",
+    "id": "speaking-part1-33",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "09/2026",
+    "part": "part1",
+    "group": "BỘ CÂU HỎI THEO TỪNG CHỦ ĐỀ THƯỜNG GẶP:",
+    "title": "Topic 33: Singing & Music",
+    "content": "1. Do you enjoy singing? Can singing help people reduce stress?\n2. Do you prefer listening to music or singing along?\n3. When and where do you usually like to sing?",
+    "hint": {
+      "part": "speaking-part1",
+      "topic": "Singing & Music",
+      "reusedSource": "Bộ đề 3 (Music - Câu 4, 5, 6) + Trục 2 (Mental health) & Trục 4 (Peace & Privacy)",
+      "questions": [
+        {
+          "q": "1. Do you enjoy singing? Can singing help people reduce stress?",
+          "pillar": "Bộ đề gốc",
+          "answer": "Yes, I am really into singing, and I definitely believe it can relieve stress and reduce fatigue.",
+          "reason": "It is advantageous to my mental health because singing along to catchy rhythms and meaningful lyrics helps me let my hair down, cheer myself up, and boost my energy after a day of hard work.",
+          "example": "In my spare time, I often sing pop ballads on Spotify in my room whenever I feel down."
+        },
+        {
+          "q": "2. Do you prefer listening to music or singing along?",
+          "pillar": "Mental health",
+          "answer": "I enjoy both, but I usually prefer listening to soft, soothing music when studying and singing along when relaxing.",
+          "reason": "Instrumental or Lofi music helps me concentrate better on my assignments, whereas singing along pumps me up and lifts up my mood.",
+          "example": "On weekdays, I listen to Lofi music while studying, and on Saturday nights I sing karaoke with my friends."
+        },
+        {
+          "q": "3. When and where do you usually like to sing?",
+          "pillar": "Peace & Privacy",
+          "answer": "I mostly like to sing at home in my bedroom in the evening, or at a karaoke room with close friends on weekends.",
+          "reason": "Being in a quiet, cozy room offers personal privacy so I feel comfortable singing freely without worrying about noisy crowds, while singing with friends helps strengthen our bonds.",
+          "example": "For example, after finishing my exams last month, my friends and I went to a nearby karaoke place for two hours and felt over the moon."
+        }
+      ],
+      "reusedVocab": [
+        "into music",
+        "can relieve stress and reduce fatigue",
+        "advantageous to my mental health",
+        "let my hair down",
+        "pump me up",
+        "boost my energy",
+        "soft, soothing",
+        "meaningful lyrics",
+        "feel down",
+        "quiet, cozy environment",
+        "personal privacy",
+        "feel over the moon"
+      ],
+      "extraVocab": [
+        "karaoke room",
+        "sing along"
+      ]
+    }
   },
   {
     "STT": "15",
@@ -310,8 +418,8 @@
     "Mã câu hỏi": "speaking-part1-18",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "BỘ CÂU HỎI THEO TỪNG CHỦ ĐỀ THƯỜNG GẶP:",
-    "Tiêu đề đề bài": "Topic 18: Inventions & Fashion",
-    "Nội dung chi tiết": "1. Do you think smartphones are the greatest invention? Why?\n2. Are you interested in fashion trends?\n3. What type of clothes do you feel most comfortable wearing?",
+    "Tiêu đề đề bài": "Topic 18: Inventions & Smartphones",
+    "Nội dung chi tiết": "1. Do you think smartphones are the greatest invention? Why?\n2. What other modern invention do you use every day?\n3. How have modern inventions made daily life easier?",
     "Mã trường": "VLU",
     "Đợt thi": "09/2026",
     "id": "speaking-part1-18",
@@ -320,8 +428,108 @@
     "batch": "09/2026",
     "part": "part1",
     "group": "BỘ CÂU HỎI THEO TỪNG CHỦ ĐỀ THƯỜNG GẶP:",
-    "title": "Topic 18: Inventions & Fashion",
-    "content": "1. Do you think smartphones are the greatest invention? Why?\n2. Are you interested in fashion trends?\n3. What type of clothes do you feel most comfortable wearing?"
+    "title": "Topic 18: Inventions & Smartphones",
+    "content": "1. Do you think smartphones are the greatest invention? Why?\n2. What other modern invention do you use every day?\n3. How have modern inventions made daily life easier?",
+    "hint": {
+      "part": "speaking-part1",
+      "topic": "Inventions & Smartphones",
+      "reusedSource": "Trục 3 (Knowledge) + Cụm đa năng #4, #6, #8, #18",
+      "questions": [
+        {
+          "q": "1. Do you think smartphones are the greatest invention? Why?",
+          "pillar": "Knowledge",
+          "answer": "Of course, I think smartphones are one of the most useful modern inventions in our daily life.",
+          "reason": "They are fast and convenient for busy people in modern-day society, helping us communicate anytime, search for information to broaden our mind, and make the most of new technology to improve productivity.",
+          "example": "Every day, I use my smartphone to check my study schedule, look up English vocabulary, and call my parents."
+        },
+        {
+          "q": "2. What other modern invention do you use every day?",
+          "pillar": "Knowledge",
+          "answer": "Besides my smartphone, I use my laptop every single day for studying and working.",
+          "reason": "My laptop plays an essential role in helping me join online classes, finish assignments faster, and keep pace with the fast-paced development of modern science.",
+          "example": "For example, I join my evening English class on Zoom at 7:30 PM from home via laptop without heavy traffic."
+        },
+        {
+          "q": "3. How have modern inventions made daily life easier?",
+          "pillar": "Mental health",
+          "answer": "Modern inventions have greatly improved people's living standard and saved us a lot of time and effort.",
+          "reason": "From washing machines to mobile banking apps, technology handles boring daily tasks quickly so busy people can relieve stress, reduce fatigue, and spend more quality time with their family.",
+          "example": "For instance, paying electricity bills online now takes my family only two minutes instead of waiting in a long line."
+        }
+      ],
+      "reusedVocab": [
+        "fast, convenient for busy people in modern-day society",
+        "broaden my mind",
+        "make the most of new technology to improve productivity",
+        "plays an essential role in",
+        "keep pace with the fast-paced development of modern science",
+        "join from home via laptop without heavy traffic",
+        "improve people's living standard",
+        "can relieve stress and reduce fatigue",
+        "spend quality time with family"
+      ],
+      "extraVocab": [
+        "mobile banking apps",
+        "washing machines"
+      ]
+    }
+  },
+  {
+    "STT": "77",
+    "Mã câu hỏi": "speaking-part1-34",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "BỘ CÂU HỎI THEO TỪNG CHỦ ĐỀ THƯỜNG GẶP:",
+    "Tiêu đề đề bài": "Topic 34: Fashion & Clothes",
+    "Nội dung chi tiết": "1. Are you interested in fashion trends?\n2. What type of clothes do you feel most comfortable wearing?\n3. Do you prefer shopping for clothes online or in physical stores? Why?",
+    "Mã trường": "VLU",
+    "Đợt thi": "09/2026",
+    "id": "speaking-part1-34",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "09/2026",
+    "part": "part1",
+    "group": "BỘ CÂU HỎI THEO TỪNG CHỦ ĐỀ THƯỜNG GẶP:",
+    "title": "Topic 34: Fashion & Clothes",
+    "content": "1. Are you interested in fashion trends?\n2. What type of clothes do you feel most comfortable wearing?\n3. Do you prefer shopping for clothes online or in physical stores? Why?",
+    "hint": {
+      "part": "speaking-part1",
+      "topic": "Fashion & Clothes",
+      "reusedSource": "Trục 2 (Mental health) + Cụm đa năng #21, #24 + Luận điểm #10 (Mua sắm online)",
+      "questions": [
+        {
+          "q": "1. Are you interested in fashion trends?",
+          "pillar": "Mental health",
+          "answer": "Not really, I like looking neat and clean, but I do not follow every new fashion trend.",
+          "reason": "Chasing expensive trends every season wastes money, whereas choosing simple, timeless items fits comfortably within my budget without sacrificing quality.",
+          "example": "I usually just buy basic shirts and jeans that I can wear to school and when hanging out with friends."
+        },
+        {
+          "q": "2. What type of clothes do you feel most comfortable wearing?",
+          "pillar": "Physical health",
+          "answer": "I feel most comfortable wearing casual clothes like cotton T-shirts, jeans, and sneakers.",
+          "reason": "Because Vietnam is boiling-hot and humid most of the year, light and breathable outfits help me feel comfortable, move easily, and stay energetic all day.",
+          "example": "On weekdays at university, I almost always wear a plain T-shirt and sneakers so I can walk around campus easily."
+        },
+        {
+          "q": "3. Do you prefer shopping for clothes online or in physical stores? Why?",
+          "pillar": "Peace & Privacy",
+          "answer": "Certainly, I prefer buying clothes in physical stores so I can stay on the safe side.",
+          "reason": "Shopping on e-commerce apps often tempts buyers to waste money on cheap items that look nothing like the advertised photos, while in a real store I can try clothes on and check the fabric directly.",
+          "example": "Last weekend, I went to a clothing store near my house with my sister and found a jacket that fit me well."
+        }
+      ],
+      "reusedVocab": [
+        "fit comfortably within my budget without sacrificing quality",
+        "boiling-hot and humid",
+        "feel energetic",
+        "stay on the safe side",
+        "shopping on e-commerce apps often tempts buyers to waste money on cheap items that look nothing like the advertised photos"
+      ],
+      "extraVocab": [
+        "casual clothes",
+        "try clothes on"
+      ]
+    }
   },
   {
     "STT": "19",
@@ -562,8 +770,8 @@
     "Mã câu hỏi": "speaking-part1-32",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "BỘ ĐỀ SPEAKING PART 1 BỔ SUNG (TOPIC + 3 CÂU HỎI)",
-    "Tiêu đề đề bài": "Topic 32: Transport & Travel",
-    "Nội dung chi tiết": "1. How do you usually travel to work or school?\n2. What is your favorite means of transport? Why?\n3. Do you enjoy travelling? What is your favorite place to visit?",
+    "Tiêu đề đề bài": "Topic 32: Daily Transport",
+    "Nội dung chi tiết": "1. How do you usually travel to work or school?\n2. What is your favorite means of transport? Why?\n3. Do you prefer using public transport or private vehicles in your city?",
     "Mã trường": "VLU",
     "Đợt thi": "09/2026",
     "id": "speaking-part1-32",
@@ -572,8 +780,115 @@
     "batch": "09/2026",
     "part": "part1",
     "group": "BỘ ĐỀ SPEAKING PART 1 BỔ SUNG (TOPIC + 3 CÂU HỎI)",
-    "title": "Topic 32: Transport & Travel",
-    "content": "1. How do you usually travel to work or school?\n2. What is your favorite means of transport? Why?\n3. Do you enjoy travelling? What is your favorite place to visit?"
+    "title": "Topic 32: Daily Transport",
+    "content": "1. How do you usually travel to work or school?\n2. What is your favorite means of transport? Why?\n3. Do you prefer using public transport or private vehicles in your city?",
+    "hint": {
+      "part": "speaking-part1",
+      "topic": "Daily Transport",
+      "reusedSource": "Bộ đề 3 (Transport - Câu 1, 2, 3) + Trục 4 (Peace & Privacy) + Cụm #21",
+      "questions": [
+        {
+          "q": "1. How do you usually travel to work or school?",
+          "pillar": "Bộ đề gốc",
+          "answer": "I usually go to school by motorbike because it is cheap, fast, and convenient.",
+          "reason": "Motorbikes are very popular in Vietnam, easy to learn how to ride, and flexible enough to go through narrow streets quickly.",
+          "example": "It takes me about twenty minutes to get to my university by motorbike every morning."
+        },
+        {
+          "q": "2. What is your favorite means of transport? Why?",
+          "pillar": "Bộ đề gốc",
+          "answer": "My favorite means of transport is the public bus when I travel long distances across the city.",
+          "reason": "Using the bus is affordable because it reduces fuel and parking fees, environmentally friendly because it reduces air pollution, and offers stress-free travel so I can relax or read on the way.",
+          "example": "Whenever I go to the city center on weekends, I take the bus and listen to music with my headphones."
+        },
+        {
+          "q": "3. Do you prefer using public transport or private vehicles in your city?",
+          "pillar": "Peace & Privacy",
+          "answer": "For daily commuting, I prefer private transport like my motorbike because it is beneficial in certain ways.",
+          "reason": "First, it is convenient and flexible so I can go anywhere anytime and choose my own routes. Second, it is more hygienic and gives me more personal privacy and comfort than crowded buses.",
+          "example": "For example, when I finish evening classes late at 8 p.m., riding my own motorbike gets me straight home safely."
+        }
+      ],
+      "reusedVocab": [
+        "cheap and convenient",
+        "flexible, fast",
+        "It takes me ___ minutes to get to work/school by...",
+        "reduce fuel, parking fees",
+        "reduce air pollution",
+        "stress-free travel",
+        "choose own routes/schedules",
+        "hygienic",
+        "personal privacy and comfort"
+      ],
+      "extraVocab": [
+        "narrow streets",
+        "daily commuting"
+      ]
+    }
+  },
+  {
+    "STT": "78",
+    "Mã câu hỏi": "speaking-part1-35",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "BỘ ĐỀ SPEAKING PART 1 BỔ SUNG (TOPIC + 3 CÂU HỎI)",
+    "Tiêu đề đề bài": "Topic 35: Travel & Favourite Places",
+    "Nội dung chi tiết": "1. Do you enjoy travelling? What is your favorite place to visit?\n2. Who do you usually prefer to travel with, family or friends? Why?\n3. What do you like doing most when you visit a new city?",
+    "Mã trường": "VLU",
+    "Đợt thi": "09/2026",
+    "id": "speaking-part1-35",
+    "skill": "speaking",
+    "school": "VLU",
+    "batch": "09/2026",
+    "part": "part1",
+    "group": "BỘ ĐỀ SPEAKING PART 1 BỔ SUNG (TOPIC + 3 CÂU HỎI)",
+    "title": "Topic 35: Travel & Favourite Places",
+    "content": "1. Do you enjoy travelling? What is your favorite place to visit?\n2. Who do you usually prefer to travel with, family or friends? Why?\n3. What do you like doing most when you visit a new city?",
+    "hint": {
+      "part": "speaking-part1",
+      "topic": "Travel & Favourite Places",
+      "reusedSource": "Bộ đề 1 (Leisure) + Bộ đề 2 (Hometown/Summer) + Trục 2 (Mental health) & Trục 3 (Knowledge)",
+      "questions": [
+        {
+          "q": "1. Do you enjoy travelling? What is your favorite place to visit?",
+          "pillar": "Mental health",
+          "answer": "Of course, I am passionate about travelling, and my favorite place to visit is Da Lat.",
+          "reason": "It is advantageous to my mental health because Da Lat has cool, pleasant weather and breathtaking scenery, which helps me relax my mind and recharge my batteries after hard work.",
+          "example": "Every summer vacation, I love visiting mountain towns or coastal cities like Da Nang for a short break."
+        },
+        {
+          "q": "2. Who do you usually prefer to travel with, family or friends? Why?",
+          "pillar": "Social",
+          "answer": "I usually prefer travelling with my family during long holidays because my family means the world to me.",
+          "reason": "Travelling together lets us spend quality time, enhance family bonding, and feel over the moon while sharing meals and happy stories.",
+          "example": "Last year during the Tet holiday, my parents and I took a four-day trip to Nha Trang and had a wonderful time."
+        },
+        {
+          "q": "3. What do you like doing most when you visit a new city?",
+          "pillar": "Knowledge",
+          "answer": "When visiting a new city, I enjoy trying local cuisine and exploring famous landmarks the most.",
+          "reason": "It gives me the opportunity to broaden my horizons and gain a deeper understanding of local people, culture, and traditions.",
+          "example": "For example, I always walk around local night markets to taste diverse, flavorful street food and talk with friendly local people."
+        }
+      ],
+      "reusedVocab": [
+        "passionate about",
+        "cool, pleasant",
+        "breathtaking",
+        "relax my mind",
+        "recharge my batteries",
+        "coastal cities",
+        "means the world to me",
+        "spend quality time",
+        "enhance family bonding",
+        "feel over the moon",
+        "broaden my horizons",
+        "gain a deeper understanding of people, culture, and tradition",
+        "diverse, flavorful"
+      ],
+      "extraVocab": [
+        "night markets"
+      ]
+    }
   },
   {
     "STT": "33",

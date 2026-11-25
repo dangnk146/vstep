@@ -699,8 +699,8 @@
     "Mã câu hỏi": "ajc11-speaking-part1-5",
     "Phần thi": "speaking-part1",
     "Bộ đề / Nhóm chủ đề": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
-    "Tiêu đề đề bài": "Topic 5: Weather Seasons & Dining Out Habits",
-    "Nội dung chi tiết": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?",
+    "Tiêu đề đề bài": "Topic 5: Weather & Seasons",
+    "Nội dung chi tiết": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. What do you usually like doing when the weather is nice?\n3. Does the weather often affect your mood or daily plans?",
     "Mã trường": "AJC",
     "Đợt thi": "11/2026",
     "id": "ajc11-speaking-part1-5",
@@ -709,40 +709,39 @@
     "batch": "11/2026",
     "part": "part1",
     "group": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
-    "title": "Topic 5: Weather Seasons & Dining Out Habits",
-    "content": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?",
+    "title": "Topic 5: Weather & Seasons",
+    "content": "1. What is your favorite season of the year, and what weather do you enjoy the most?\n2. What do you usually like doing when the weather is nice?\n3. Does the weather often affect your mood or daily plans?",
     "hint": {
       "extraVocab": [
         "fresh breeze",
-        "hotpot restaurant",
-        "eat out frequently",
-        "personal finance"
+        "gloomy weather",
+        "outdoor picnic"
       ],
       "part": "speaking-part1",
       "questions": [
         {
           "answer": "My favorite season of the year is autumn because I really enjoy cool and pleasant weather.",
           "example": "On cool autumn weekends, I love going for a walk in the park with my family to relax my mind and enjoy the fresh breeze.",
-          "pillar": "Mental health & Physical health",
+          "pillar": "Bộ đề gốc",
           "q": "1. What is your favorite season of the year, and what weather do you enjoy the most?",
           "reason": "Unlike boiling-hot summer days, pleasant autumn weather lifts up my mood, makes me feel more energetic, and is wonderful for outdoor activities like going on a picnic. It is also the season of the Mid-autumn festival."
         },
         {
-          "answer": "I eat out at food stalls or restaurants about once or twice a week, usually with my friends or family.",
-          "example": "Every Sunday night, my family goes to a nearby hotpot restaurant to share a warm meal and talk about our week.",
-          "pillar": "Social",
-          "q": "2. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?",
-          "reason": "It is a great chance to spend quality time together, strengthen our bonds, and enjoy delicious dishes after a busy week."
+          "answer": "When the weather is sunny and cool, I love spending time outdoors with my friends or family.",
+          "example": "For example, I often ride my bike around the local park or go on a picnic on Sunday mornings.",
+          "pillar": "Physical health",
+          "q": "2. What do you usually like doing when the weather is nice?",
+          "reason": "Outdoor activities are beneficial to my physical health because they help me keep fit, stay healthy, strengthen my immune system, and spend quality time with loved ones."
         },
         {
-          "answer": "I think eating out too frequently can be harmful to both personal health and finances.",
-          "example": "For example, cooking fresh vegetables and meat at home costs much less than restaurant meals and helps prevent common illnesses.",
-          "pillar": "Physical health & Budget",
-          "q": "3. Do you think eating out frequently is beneficial or harmful to personal health and finance?",
-          "reason": "Restaurant meals often contain too much oil, salt, or sugar, which is not good for keeping fit and staying healthy. Moreover, eating out every day leads to higher living expenses instead of fitting comfortably within our budget."
+          "answer": "Yes, the weather definitely has a big impact on people's emotions and moods.",
+          "example": "For instance, on bright mornings I feel happy and productive, whereas heavy rain makes me want to stay in bed.",
+          "pillar": "Mental health",
+          "q": "3. Does the weather often affect your mood or daily plans?",
+          "reason": "Pleasant weather lifts up people's mood and makes us feel more energetic, while gloomy, rainy weather makes people feel down, lazy, and unproductive."
         }
       ],
-      "reusedSource": "Bộ đề 2: Hometown & Weather (Câu 5) + Trục Physical health, Mental health & Từ vựng #21",
+      "reusedSource": "Bộ đề 2 (Weather - Câu 4, 5, 6) + Trục 1 (Physical health) & Trục 2 (Mental health)",
       "reusedVocab": [
         "cool and pleasant",
         "boiling-hot",
@@ -751,6 +750,61 @@
         "go on a picnic",
         "Mid-autumn festival",
         "relax my mind",
+        "stay fit and healthy",
+        "spend quality time"
+      ],
+      "topic": "Weather & Seasons"
+    }
+  },
+  {
+    "STT": "14",
+    "Mã câu hỏi": "ajc11-speaking-part1-6",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
+    "Tiêu đề đề bài": "Topic 6: Dining Out Habits",
+    "Nội dung chi tiết": "1. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n2. What kind of food or restaurant do you like most when eating out?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?",
+    "Mã trường": "AJC",
+    "Đợt thi": "11/2026",
+    "id": "ajc11-speaking-part1-6",
+    "skill": "speaking",
+    "school": "AJC",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế AJC 07/11/2026 (Chiều)",
+    "title": "Topic 6: Dining Out Habits",
+    "content": "1. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?\n2. What kind of food or restaurant do you like most when eating out?\n3. Do you think eating out frequently is beneficial or harmful to personal health and finance?",
+    "hint": {
+      "extraVocab": [
+        "hotpot restaurant",
+        "eat out frequently",
+        "personal finance"
+      ],
+      "part": "speaking-part1",
+      "questions": [
+        {
+          "answer": "I eat out at food stalls or restaurants about once or twice a week, usually with my friends or family.",
+          "example": "Every Sunday night, my family goes to a nearby hotpot restaurant to share a warm meal and talk about our week.",
+          "pillar": "Social",
+          "q": "1. How frequently do you eat out at food stalls or restaurants, and who do you usually dine with?",
+          "reason": "It is a great chance to spend quality time together, strengthen our bonds, and enjoy delicious dishes after a busy week."
+        },
+        {
+          "answer": "When I eat out, I prefer casual local restaurants that serve traditional Vietnamese dishes.",
+          "example": "For example, my friends and I often visit a small noodle or grilled pork shop near our university.",
+          "pillar": "Mental health",
+          "q": "2. What kind of food or restaurant do you like most when eating out?",
+          "reason": "Local eateries offer diverse, flavorful meals that are fast and convenient for busy people and fit comfortably within my budget without sacrificing quality."
+        },
+        {
+          "answer": "I think eating out too frequently can be harmful to both personal health and finances.",
+          "example": "For example, cooking fresh vegetables and meat at home costs much less than restaurant meals and helps prevent common illnesses.",
+          "pillar": "Physical health",
+          "q": "3. Do you think eating out frequently is beneficial or harmful to personal health and finance?",
+          "reason": "Restaurant meals often contain too much oil, salt, or sugar, which is not good for keeping fit and staying healthy. Moreover, eating out every day leads to higher living expenses instead of fitting comfortably within our budget."
+        }
+      ],
+      "reusedSource": "Bộ đề 2 (Cuisine) + Trục 1 (Physical health), Trục 2 (Social) + Cụm #18, #21",
+      "reusedVocab": [
         "spend quality time",
         "strengthen our bonds",
         "delicious dishes",
@@ -759,7 +813,7 @@
         "fit comfortably within our budget",
         "prevent common illnesses"
       ],
-      "topic": "Weather Seasons & Dining Out Habits"
+      "topic": "Dining Out Habits"
     }
   },
   {
