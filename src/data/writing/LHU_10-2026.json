@@ -85,18 +85,18 @@
     "content": "Read the following statement:\n\n\"Computer technology and digital applications are increasingly integrated into language learning classrooms and self-study routines.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of using computer technology for language learning. Provide specific reasons and examples from your knowledge or experience to support your answer.",
     "hint": {
       "body1": {
-        "example": "For instance, my brother used free language apps on his laptop for 30 minutes every evening after work and quickly improved his English listening and vocabulary.",
-        "focus": "Advantages of computer technology in language learning",
-        "frame": "Firstly, [debai] is considered as a convenient way to [V] + Mini-essay #5 (AI & Tự học ngoại ngữ)",
-        "point": "Students can make the most of new technology to improve productivity because digital apps are fast, convenient for busy people in modern-day society. Learners can practice speaking daily and get instant feedback on grammar errors at low cost."
+        "example": "For instance, my brother was too busy with his office job to attend evening English classes. Therefore, he decided to study with free language apps on his laptop for thirty minutes every night. As a result, he finally improved his listening skills and passed his B2 English test at low cost. If he had not used computer technology for self-study, he would not have been able to learn so flexibly.",
+        "focus": "Ưu điểm: Tự học linh hoạt, tiết kiệm chi phí và nhận phản hồi nhanh (Mini-essay #5)",
+        "frame": "Mở: On the one hand, using computer technology for language learning brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make using computer technology for language learning appealing to many people.",
+        "point": "A very important point to consider is that computer technology helps students make the most of new technology to improve productivity in a fast, convenient way. This means that busy learners can practice listening, vocabulary, and speaking anytime from home without paying for expensive private tutors. Another point I would like to make is that digital apps and AI tools give learners instant feedback on grammar and pronunciation errors. This is because of the fact that modern software can check mistakes immediately and match daily lessons to each student's level."
       },
       "body2": {
-        "example": "For example, when I tried to study English online late at night, I often got tired eyes and ended up watching short videos on YouTube instead of doing grammar exercises.",
-        "focus": "Disadvantages of computer technology in language learning",
-        "frame": "Secondly, [debai] has a negative impact on... + Câu #9 (E-book/screen strain) + Cụm #23",
-        "point": "However, staring at computer screens for hours can cause blue-light strain and tempt learners to open games or social media instead of studying. It also reduces real face-to-face interaction with teachers and classmates."
+        "example": "For example, I was trying to review English grammar on my laptop late at night before an exam last month. For this reason, I got to notice my eyes feeling tired while I kept clicking on funny YouTube videos instead of finishing my exercises. If I had not experienced those distractions myself, I would not have been able to know that screen-based study still requires strong self-discipline.",
+        "focus": "Nhược điểm: Mỏi mắt, xao nhãng trực tuyến và giảm tương tác trực tiếp (Câu #9 + Cụm #23)",
+        "frame": "Mở: On the other hand, the disadvantages of using computer technology for language learning are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that eye strain, online distractions, and reduced face-to-face interaction can create serious drawbacks if ignored.",
+        "point": "In fact, staring at computer screens for long hours can hurt students' eyes and reduce their study concentration. This happens because when learners study online without strong self-control, it easily leads to blue-light strain and opening social media or short videos instead of doing exercises. In addition, relying too much on software reduces real face-to-face interaction with teachers and classmates."
       },
-      "conclusion": "In conclusion, using computer technology for language learning brings both pros and cons: while it makes study flexible and affordable, students should limit screen time and still practice speaking face to face.",
+      "conclusion": "In conclusion, using computer technology for language learning brings both pros and cons. While people can benefit from fast, affordable, and flexible self-study, they also need to handle eye strain, online distractions, and reduced face-to-face interaction. Therefore, both individuals and schools should work together to make the most of language learning technology responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "language apps",
@@ -105,11 +105,11 @@
       ],
       "intro": {
         "debai": "using computer technology for language learning",
-        "ld1": "make self-study fast, convenient, and affordable with modern tools",
-        "ld2": "cause eye strain, online distractions, and less face-to-face interaction"
+        "ld1": "study languages faster, save money, and receive instant feedback",
+        "ld2": "eye strain, online distractions, and reduced face-to-face interaction"
       },
       "part": "writing-task2",
-      "reusedSource": "Khung Adv-Disadv + Mini-essay #5 (AI & Tự học ngoại ngữ) + Câu #9 + Cụm #8, #18, #23",
+      "reusedSource": "Dạng 3 (Positive or Negative / Adv-Disadv) + Ruột ĐOẠN 1 & ĐOẠN 2 + Mini-essay #5 (AI & Tự học ngoại ngữ) + Câu #9 + 24 cụm từ đa năng (#8, #18, #23)",
       "reusedVocab": [
         "make the most of new technology to improve productivity",
         "fast, convenient for busy people in modern-day society",

@@ -87,38 +87,39 @@
     "content": "Read the following statement:\n\n\"Urbanization is proceeding at an unprecedented rate worldwide, drawing vast populations from rural districts into metropolises in pursuit of better living standards. While rapid urbanization fosters economic vitality and modern convenience, it simultaneously spawns critical issues such as overcrowding, environmental degradation, and overloaded public infrastructure.\"\n\nWrite an essay to an educated reader examining both the advantages and disadvantages of rapid urbanization. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, many young people from rural villages move to Hanoi or Ho Chi Minh City to work in modern offices and send money back to support their parents.",
+        "example": "For instance, in many big cities today, young workers from rural areas can easily find office jobs, use modern hospitals, and send their children to well-equipped schools. As a result, their family income grows and their daily life becomes much more comfortable.",
         "focus": "Advantages of rapid urbanization",
-        "frame": "Firstly, [debai] + People have more opportunities to [V] + Cụm #4, #5, #18",
-        "point": "Moving to big cities gives people more opportunities to find well-paid jobs, boost economic development, and improve people's living standard. Cities also offer modern hospitals, good schools, and fast, convenient public transport."
+        "frame": "Mở: On the one hand, rapid urbanization brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make rapid urbanization appealing to many people.",
+        "point": "A very important point to consider is that rapid urbanization helps boost economic development and improve people's living standard. This means that residents have more opportunities to find well-paid jobs and grow their careers. Another point I would like to make is that big cities offer modern public facilities and convenient services. This is because of the fact that governments and companies invest heavily in hospitals, schools, and fast public transport in urban areas."
       },
       "body2": {
-        "example": "For example, during rush hour in big cities, workers often spend an hour stuck in heavy traffic and breathe dirty air every morning.",
+        "example": "For example, many residents often face long traffic jams during rush hour and breathe polluted air every morning. If this issue is ignored, it will cause serious health problems and lower the quality of city life.",
         "focus": "Disadvantages of rapid urbanization",
-        "frame": "Secondly, [debai] has a negative impact on... + Mini-essay #6 (Ô nhiễm đô thị) + Trục 4",
-        "point": "However, when too many people live in one city, roads become crowded with traffic jams and vehicles release harmful exhaust fumes, causing air pollution. Public hospitals and schools also become overloaded, while noisy streets make citizens feel stressed."
+        "frame": "Mở: On the other hand, the disadvantages of rapid urbanization are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that overcrowding and pollution can create serious drawbacks if ignored.",
+        "point": "In fact, rapid urbanization puts heavy pressure on housing, roads, and public services. This happens because when too many people move into one city, it easily leads to traffic jams, overloaded hospitals, and high living costs. In addition, crowded streets and thousands of vehicles release harmful exhaust fumes, which damage the environment and make city dwellers feel stressed."
       },
-      "conclusion": "In conclusion, rapid urbanization brings both pros and cons: while it improves jobs and modern services, governments should invest in public transport and housing to reduce pollution and crowding.",
+      "conclusion": "In conclusion, rapid urbanization brings both pros and cons. While people can benefit from better job opportunities and modern services, they also need to handle overcrowding, air pollution, and overloaded public services. Therefore, both individuals and local authorities should work together to make the most of rapid urbanization responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "traffic jams",
         "rush hour",
-        "rural villages"
+        "overloaded hospitals",
+        "high living costs"
       ],
       "intro": {
         "debai": "rapid urbanization",
-        "ld1": "boost economic development and improve people's living standard",
-        "ld2": "cause overcrowding, air pollution, and overloaded public services"
+        "ld1": "find better jobs and improve their living standard",
+        "ld2": "overcrowding, air pollution, and overloaded public services"
       },
       "part": "writing-task2",
-      "reusedSource": "Khung Adv-Disadv + Mini-essay #6 (Ô nhiễm đô thị) + Trục Peace & Privacy + Cụm #4, #5, #18",
+      "reusedSource": "Dạng 3 (Positive or Negative) + Ruột ĐOẠN 1 & ĐOẠN 2 (bản đô thị/vĩ mô) + Mini-essay #6 + Chunks #11, #13 + 24 cụm từ đa năng (#4, #5, #18)",
       "reusedVocab": [
-        "have more opportunities to",
         "boost economic development",
         "improve people's living standard",
-        "fast, convenient",
+        "have more opportunities to",
         "harmful exhaust fumes",
-        "air pollution"
+        "air pollution",
+        "damage the environment"
       ]
     }
   },
@@ -211,31 +212,32 @@
     "content": "Read the following statement:\n\n\"Taking a gap year—a year off between graduating from high school and starting university to travel or work—has gained immense popularity among young people. While proponents argue that a gap year provides practical life skills and personal maturity, critics worry it causes academic disruption and financial burdens.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of taking a gap year before entering higher education. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, my cousin worked part-time at a coffee shop and volunteered for six months after high school, which helped her save money and decide to study tourism.",
+        "example": "For instance, my brother was unsure which major to choose after finishing high school. Therefore, he decided to take a gap year to work part-time at a local café and join a volunteer group. As a result, he finally became more independent and picked a career he truly loved. If he had not taken that year off, he would not have been so confident at university.",
         "focus": "Advantages of taking a gap year",
-        "frame": "Firstly, [debai] + Câu #6 (Môi trường mới) + Trục Knowledge + Cụm #7, #14",
-        "point": "Working or traveling in a new environment teaches young people to manage their own money, solve daily problems independently, and adjust and adapt to the social environment. It also gives them time to broaden their mind and choose the right major."
+        "frame": "Mở: On the one hand, taking a gap year before starting university brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make taking a gap year appealing to many people.",
+        "point": "A very important point to consider is that taking a gap year helps young people learn practical life skills and become more independent. This means that working or traveling in a new environment teaches them to manage their own money and solve daily problems on their own. Another point I would like to make is that students can broaden their mind and choose the right university major. This is because of the fact that real-life experience helps them understand their real interests and adjust smoothly to the social environment."
       },
       "body2": {
-        "example": "For example, a friend of mine took a year off to travel across Vietnam, and when he returned to university, he struggled to focus in math classes and fell behind his classmates.",
+        "example": "For example, I was tempted to take a year off to travel with friends right after graduation. For this reason, I got to talk with my older cousin who had done it and struggled to catch up in university math classes. If I had not listened to his story, I would not have been able to know that a gap year without a clear plan can slow down my studies.",
         "focus": "Disadvantages of taking a gap year",
-        "frame": "Secondly, [debai] has a negative impact on... + Câu #7 (Gap year) + Disadvantages chunk",
-        "point": "On the other hand, pausing formal study for a year can make students forget high school lessons and delay graduation behind their peers. Travel or unpaid internships can also cost a great deal of money, creating a burden for parents."
+        "frame": "Mở: On the other hand, the disadvantages of taking a gap year before starting university are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that delayed graduation and extra pressure can create serious drawbacks if ignored.",
+        "point": "In fact, pausing formal study for a whole year can disrupt a student's learning habits and delay graduation behind their peers. This happens because when young people stay away from school for too long, it easily leads to forgetting basic lessons and losing focus in class. In addition, traveling or doing unpaid internships can cost a great deal of money, placing extra financial pressure on parents."
       },
-      "conclusion": "In conclusion, taking a gap year has both pros and cons: while it builds maturity and real-life experience, students need a clear plan and budget so they do not fall behind in their studies.",
+      "conclusion": "In conclusion, taking a gap year before starting university brings both pros and cons. While people can benefit from learning practical life skills and broadening their mind, they also need to handle delayed graduation and extra financial or study pressure. Therefore, both individuals and schools should work together to make the most of taking a gap year responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "part-time job",
         "choose the right major",
-        "fall behind"
+        "learning habits",
+        "financial pressure"
       ],
       "intro": {
         "debai": "taking a gap year before starting university",
-        "ld1": "learn practical life skills, broaden their mind, and become independent",
-        "ld2": "delay graduation and face financial pressure or study difficulties"
+        "ld1": "learn practical life skills and broaden their mind",
+        "ld2": "delaying graduation and facing extra financial or study pressure"
       },
       "part": "writing-task2",
-      "reusedSource": "Khung Adv-Disadv + Câu #6 & Câu #7 (Gap year) + Trục Knowledge + Cụm #7, #14",
+      "reusedSource": "Dạng 3 (Positive or Negative) + Ruột ĐOẠN 1 & ĐOẠN 2 + Câu #6 & #7 (Gap year) + Chunks #14 + 24 cụm từ đa năng (#7, #14)",
       "reusedVocab": [
         "manage their own money",
         "solve daily problems independently",
@@ -243,7 +245,7 @@
         "broaden their mind",
         "pausing formal study",
         "delay graduation behind your peers",
-        "costs a great deal of money"
+        "cost a great deal of money"
       ]
     }
   },
@@ -330,37 +332,38 @@
     "content": "Read the following statement:\n\n\"An increasing number of parents today choose to purchase personal smartphones for their young children so they can stay in touch and access educational apps. However, other parents argue that giving children their own smartphones exposes them to harmful online content and screen addiction.\"\n\nWrite an essay to an educated reader discussing both views on allowing children to own personal smartphones and present your own perspective. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, a busy mother can check when her son arrives at his extra class and let him use a math app for 20 minutes at home.",
-        "focus": "View 1: Benefits of giving children personal smartphones",
-        "frame": "Firstly, some parents believe it is convenient to give children smartphones + Mini-essay #5 + Cụm #18",
-        "point": "Parents can easily call or message their children to make sure they are safe after school. Moreover, children can use educational apps to practice English vocabulary and watch science lessons in a fast, convenient way."
+        "example": "For instance, my brother was worried when his ten-year-old son walked home from extra classes in the evening. Therefore, he decided to buy him a simple smartphone with a learning app. As a result, he finally felt calmer because he could call his son anytime and check his daily progress. If he had not given his son that phone, he would not have been able to reach him quickly.",
+        "focus": "View 1: Why some support giving children personal smartphones",
+        "frame": "Mở: First and foremost, people should recognize why some support giving young children personal smartphones | Ruột ĐOẠN 1 | Chốt: Clearly, this perspective has reasonable points.",
+        "point": "A very important point to consider is that owning a personal smartphone makes communication between parents and children fast and convenient. This means that busy parents can easily call or message their kids to make sure they are safe after school. Another point I would like to make is that smartphones give young learners quick access to useful study apps. This is because of the fact that children can practice English vocabulary and watch short educational videos anytime at home."
       },
       "body2": {
-        "example": "For example, my younger cousin got his own phone at age nine, soon became addicted to online games until midnight, and stopped talking to his family during dinner.",
-        "focus": "View 2 & My opinion: Risks of smartphones for young children",
-        "frame": "Secondly, I agree with the other view that owning a smartphone early harms children + Mini-essay #2 + Cụm #22",
-        "point": "However, because young children lack proper guidance and self-control, owning a personal phone makes them spend hours watching violent videos, copying bad habits, and hurting their eyes. In my view, parents should wait until children reach high school or set strict daily screen limits."
+        "example": "For example, I was surprised to see my younger cousin spend four hours every night playing mobile games after getting his own phone at age nine. For this reason, I got to talk with my aunt about setting strict daily screen limits for him. If I had not seen how tired he looked in class, I would not have been able to know that early phone ownership can harm a child so quickly.",
+        "focus": "View 2 (Preferred): Why waiting until children are older is better",
+        "frame": "Mở: On the other hand, there are stronger arguments in support of waiting until children are older before giving them personal smartphones | Ruột ĐOẠN 2 | Chốt: It is clear that waiting until children are older is a more practical choice.",
+        "point": "In fact, giving young children their own smartphones often leads to screen addiction and exposure to harmful online content. This happens because when kids lack proper guidance and self-control, it easily leads to watching violent videos, copying bad habits, and losing focus on schoolwork. In addition, staring at screens for hours harms children's eyesight and reduces face-to-face interaction with family members."
       },
-      "conclusion": "In conclusion, although smartphones help parents contact their children and support learning, I prefer delaying personal phone ownership until children are older so they stay safe and focus on real-life activities.",
+      "conclusion": "In conclusion, although both views have reasonable points, I prefer waiting until children are older before giving them personal smartphones because it allows people to protect children from harmful online content and build healthier daily habits. Therefore, both individuals and schools should work together to make the most of smartphone use responsibly.",
       "essayType": "Discuss both views",
       "extraVocab": [
         "screen addiction",
         "harmful online content",
-        "screen limits"
+        "screen limits",
+        "eyesight"
       ],
       "intro": {
-        "debai": "allowing young children to own personal smartphones versus waiting until they are older",
-        "ld1": "stay in touch easily and use helpful learning apps",
-        "ld2": "avoid harmful online content, bad habits, and screen addiction"
+        "debai": "allowing young children to own personal smartphones",
+        "ld1": "protect children from harmful online content and screen addiction",
+        "ld2": "better concentration and healthier daily habits"
       },
       "part": "writing-task2",
-      "reusedSource": "Khung Discuss both views + Mini-essay #2 (Trẻ dùng smartphone) + Mini-essay #5 + Cụm #18, #22",
+      "reusedSource": "Dạng 1 (Discuss both views) + Ruột ĐOẠN 1 & ĐOẠN 2 + Mini-essay #2 & #5 + 24 cụm từ đa năng (#18, #22, #23)",
       "reusedVocab": [
         "fast, convenient",
         "lack proper guidance and self-control",
-        "spend hours on their smartphones",
         "watching violent videos",
-        "copying bad habits"
+        "copying bad habits",
+        "face-to-face interaction"
       ]
     }
   },
@@ -443,31 +446,32 @@
     "content": "Read the following statement:\n\n\"The Hanoi Public Library is hosting a special historical exhibition showcasing rare historical archives, books, and photographs about the August Revolution, President Ho Chi Minh, and Vietnam's national liberation struggle. Some people think that in the digital era, people rarely visit physical exhibitions anymore.\"\n\nWrite an essay to an educated reader explaining the educational and cultural benefits of visiting this historical exhibition, and encourage citizens, particularly young students, to attend. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, when high school students see old wartime letters and original newspapers in the library hall, history becomes lively and easier to understand than reading a quick phone screen.",
-        "focus": "Educational benefits for students",
-        "frame": "Firstly, the first reason is that [ld1] + Trục Knowledge + Cụm #14, #15",
-        "point": "Even though information is easy to search online, visiting the exhibition at Hanoi Public Library allows students to broaden their mind through real books, rare photographs, and documents about President Ho Chi Minh and the August Revolution. Seeing real history helps young learners remember lessons much better."
+        "example": "For instance, my brother was bored with reading short history summaries on his phone before his high school exam. Therefore, he decided to visit the historical exhibition at the Hanoi Public Library on Sunday morning. As a result, he finally understood the August Revolution clearly after seeing real old newspapers and wartime letters. If he had not visited the exhibition, he would not have been so excited about learning history.",
+        "focus": "Educational benefits of visiting the historical exhibition",
+        "frame": "Mở: First and foremost, people should recognize that visiting this historical exhibition brings clear educational value | Ruột ĐOẠN 1 | Chốt: Clearly, gaining deeper historical knowledge brings undeniable value in modern life.",
+        "point": "A very important point to consider is that visiting the exhibition at the Hanoi Public Library helps students broaden their mind beyond quick online searches. This means that seeing rare archives, original books, and photographs about President Ho Chi Minh and the August Revolution makes history feel real and easy to remember. Another point I would like to make is that physical exhibitions provide rich knowledge and experience in a quiet, focused setting. This is because of the fact that visitors can read carefully and ask library guides questions without digital distractions."
       },
       "body2": {
-        "example": "For example, if university clubs take students to the Hanoi Public Library this weekend, they can learn about Vietnam's national liberation struggle together and share photos to invite more friends.",
-        "focus": "Cultural benefits and encouraging citizens to attend",
-        "frame": "Secondly, it allows that [ld2] + Cụm #23 + Giải pháp B (Support)",
-        "point": "The exhibition also builds a strong sense of belonging and national pride through face-to-face interaction with friends and teachers. Therefore, schools should organize free group visits, and young people should spend a weekend morning attending this meaningful event."
+        "example": "For example, I was invited to join a weekend group visit to the Hanoi Public Library with my university club last month. For this reason, I got to discuss Vietnam's national liberation struggle with my friends and share photos to invite other students. If I had not attended that event in person, I would not have been able to know that a library exhibition could inspire such strong national pride.",
+        "focus": "Cultural benefits and encouraging young citizens to attend",
+        "frame": "Mở: Secondly, there are further arguments in support of the idea that visiting this exhibition builds cultural pride and encourages young people to connect | Ruột ĐOẠN 2 | Chốt: It is clear that building cultural pride plays an important role.",
+        "point": "In fact, attending this historical exhibition builds a strong sense of belonging and deepens respect for Vietnam's heritage. This happens because when young students explore national history together through face-to-face interaction, it easily leads to meaningful conversations and shared national pride. In addition, encouraging citizens, especially students, to visit helps keep public libraries lively and preserves cultural memories in the digital era."
       },
-      "conclusion": "In conclusion, I strongly believe that physical historical exhibitions still matter in the digital age because they deepen historical knowledge and cultural pride, so every young citizen should visit the Hanoi Public Library exhibition.",
+      "conclusion": "In conclusion, I strongly agree that visiting the historical exhibition at the Hanoi Public Library brings clear educational and cultural benefits, mainly because it helps students gain deeper historical knowledge and supports national pride. Therefore, both individuals and schools should work together to make the most of public historical exhibitions responsibly.",
       "essayType": "Agree or Disagree",
       "extraVocab": [
         "historical archives",
         "national pride",
-        "group visits"
+        "group visits",
+        "wartime letters"
       ],
       "intro": {
         "debai": "visiting the historical exhibition at the Hanoi Public Library in the digital era",
         "ld1": "gain deeper historical knowledge beyond short online articles",
-        "ld2": "protect cultural pride and encourage young students to attend"
+        "ld2": "build national pride and encourage young students to connect with heritage"
       },
       "part": "writing-task2",
-      "reusedSource": "Khung Agree or Disagree + Trục Knowledge + Cụm #14, #15, #23 + Giải pháp B (Support)",
+      "reusedSource": "Dạng 2 (Agree or Disagree - Benefits only) + Ruột ĐOẠN 1 & ĐOẠN 2 + Trục Knowledge + 24 cụm từ đa năng (#14, #15, #23)",
       "reusedVocab": [
         "broaden their mind",
         "gain a deeper understanding of",

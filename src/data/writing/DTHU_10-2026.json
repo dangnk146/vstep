@@ -87,35 +87,36 @@
     "content": "Read the following statement:\n\n\"In many cultures such as in India, arranged marriages have long been a prevailing tradition, while in contemporary societies love marriages are increasingly favored. Some people believe that arranged marriages offer greater stability and family harmony, whereas others argue that love marriages ensure personal happiness and mutual emotional understanding.\"\n\nDiscuss both love marriages and arranged marriages, assess which one is better, and give your own personal opinion in an essay to an educated reader. Provide specific reasons and examples to support your view.",
     "hint": {
       "body1": {
-        "example": "For instance, my sister dated her husband for three years before marriage, so they understand each other's habits and solve daily arguments calmly.",
-        "focus": "View 1 (Preferred): Love marriages bring happiness & understanding (Câu #12)",
-        "frame": "Firstly, the first reason is that [ld1] + Câu #12 (Hôn nhân tình yêu vs sắp đặt)",
-        "point": "Marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents."
+        "example": "For instance, my brother was unsure about how to build a stable home while focusing on his busy career. Therefore, he decided to meet a partner introduced by our parents who shared our family values. As a result, he finally felt relieved to see both families getting along warmly during every holiday. If he had not listened to our parents' advice, he would not have been introduced to someone with such a similar background.",
+        "focus": "Quan điểm 1: Hôn nhân sắp đặt (Sự ủng hộ gia đình và nét tương đồng văn hóa)",
+        "frame": "Mở: First and foremost, people should recognize why some support arranged marriages | Ruột ĐOẠN 1 | Chốt: Clearly, this perspective has reasonable points.",
+        "point": "A very important point to consider is that arranged marriages often receive strong approval and practical support from both families. This means that young couples can get helpful financial and emotional advice from experienced parents during difficult times. Another point I would like to make is that parents usually match partners with similar family backgrounds and traditions. This is because of the fact that sharing the same cultural values can reduce basic misunderstandings after marriage."
       },
       "body2": {
-        "example": "For example, my neighbor married a stranger chosen by her parents, and she felt unhappy because they had nothing in common.",
-        "focus": "View 2: Arranged marriages offer family support but risk conflict (Câu #15)",
-        "frame": "Secondly, it allows that [ld2] + Câu #15 (Mâu thuẫn gia đình)",
-        "point": "Arranged marriages can bring financial stability and approval from both families, yet forcing traditional views on young couples often creates family conflicts."
+        "example": "For example, I was curious about why my older sister and her husband rarely argued despite their busy jobs. For this reason, I got to talk with her about how they dated for three years and learned each other's daily habits before getting married. If I had not seen their happy home closely, I would not have been able to know that mutual understanding matters much more than parental arrangement.",
+        "focus": "Quan điểm 2 (Ủng hộ): Hôn nhân tình yêu (Thấu hiểu sâu sắc và hạnh phúc bền vững — Câu #12 & #15)",
+        "frame": "Mở: On the other hand, there are stronger arguments in support of love marriages | Ruột ĐOẠN 2 | Chốt: It is clear that love marriages are a more practical choice.",
+        "point": "In fact, marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents. This happens because when two people spend time dating and sharing daily life, it easily leads to deep trust and calmer problem-solving. In addition, family conflicts often happen when parents force traditional views on young adults instead of letting them choose their own life partner."
       },
-      "conclusion": "In conclusion, I prefer love marriages because genuine love and mutual understanding help couples build a peaceful and happy family life.",
+      "conclusion": "In conclusion, although both views have reasonable points, I prefer love marriages because it allows people to build mutual understanding and brings a peaceful, lasting family life. Therefore, both individuals and families should work together to make the most of modern marriage choices responsibly.",
       "essayType": "Discuss both views",
       "extraVocab": [
         "family approval",
-        "daily arguments"
+        "cultural values",
+        "life partner"
       ],
       "intro": {
-        "debai": "love marriages and arranged marriages",
-        "ld1": "enjoy personal happiness and mutual understanding",
-        "ld2": "receive family support and shared cultural stability"
+        "debai": "choosing between arranged marriages and love marriages",
+        "ld1": "build mutual understanding and genuine emotional trust",
+        "ld2": "a peaceful and lasting family life"
       },
       "part": "writing-task2",
-      "reusedSource": "Câu #12 (Hôn nhân tình yêu vs sắp đặt) + Câu #15 (Mâu thuẫn gia đình) + Cụm #23 (truly understand each other)",
+      "reusedSource": "Dạng 1 (Discuss both views) + Ruột ĐOẠN 1 & ĐOẠN 2 + Câu #12 (Hôn nhân tình yêu vs sắp đặt) + Câu #15 (Mâu thuẫn gia đình) + 24 cụm từ đa năng (#23)",
       "reusedVocab": [
         "Marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents",
         "Family conflicts often happen when parents force traditional views",
-        "have a lot of things in common",
-        "help us truly understand each other"
+        "help us truly understand each other through face-to-face interaction",
+        "have a lot of things in common"
       ]
     }
   }

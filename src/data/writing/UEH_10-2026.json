@@ -149,30 +149,31 @@
     "content": "Read the following statement:\n\n\"In recent years, an increasing number of professionals choose self-employment or freelancing over working as a regular salaried employee for a company.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of self-employment. Provide specific reasons and examples from your knowledge or experience to support your answer.",
     "hint": {
       "body1": {
-        "example": "For instance, my brother works as a freelance designer from home, so he can choose his favorite projects and spend evenings with his family.",
-        "focus": "Advantages: flexible schedule & work-life balance (Câu #1 + Cụm #10)",
-        "frame": "Firstly, the first reason is that [ld1] + Advantages: [debai] is considered as a convenient way to [V]",
-        "point": "Working for yourself lets you control your own schedule, follow your true passion without a boss watching over you, and reach a healthy balance between work and family time."
+        "example": "For instance, my brother was feeling tired of strict office rules and long daily traffic jams. Therefore, he decided to work as a freelance graphic designer from home. As a result, he finally picked projects he truly enjoyed and had dinner with our family every evening. If he had not chosen self-employment, he would not have been able to enjoy such flexible daily freedom.",
+        "focus": "Ưu điểm: Chủ động lịch trình, theo đuổi đam mê và cân bằng công việc – gia đình (Câu #1 + Cụm #10)",
+        "frame": "Mở: On the one hand, choosing self-employment or freelancing brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make choosing self-employment or freelancing appealing to many people.",
+        "point": "A very important point to consider is that working for yourself lets you control your own schedule and follow your true passion without a boss watching over you. This means that freelancers can choose meaningful projects and work during the hours when they feel most productive. Another point I would like to make is that self-employment helps people reach a healthy balance between work and family time. This is because of the fact that working from home saves daily travel time and leaves more hours for personal rest and loved ones."
       },
       "body2": {
-        "example": "For example, when my friend left his company to work alone, he had very few clients in the first six months and struggled to pay his rent.",
-        "focus": "Disadvantages: unstable income & high risk (Câu #2)",
-        "frame": "Secondly, it allows that [ld2] + Disadvantages: People may face various unexpected problems",
-        "point": "However, running a new business or freelancing brings unstable monthly income and a high risk of losing your savings without enough market experience."
+        "example": "For example, I was thinking about quitting my part-time office job to work alone after seeing exciting posts about freelancing online. For this reason, I got to try taking small freelance design tasks for three months and realized how hard it was to find steady clients. If I had not tested freelancing myself, I would not have been able to know that unstable income can cause serious pressure.",
+        "focus": "Nhược điểm: Thu nhập không ổn định, rủi ro tài chính và thiếu phúc lợi công ty (Câu #2)",
+        "frame": "Mở: On the other hand, the disadvantages of choosing self-employment or freelancing are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that unstable monthly income and financial risks can create serious drawbacks if ignored.",
+        "point": "In fact, running a new business or freelancing brings unstable monthly income and a high risk of losing your savings without market experience. This happens because when freelancers have few clients in slow months, it easily leads to financial stress and trouble paying basic bills like rent. In addition, self-employed workers often lack paid holidays, company health insurance, and regular teamwork with colleagues."
       },
-      "conclusion": "In conclusion, self-employment has both pros and cons. While people enjoy flexible schedules and freedom, they must save money and prepare carefully for unstable income.",
+      "conclusion": "In conclusion, self-employment brings both pros and cons. While people can benefit from flexible schedules, personal freedom, and better work-life balance, they also need to handle unstable monthly income and financial risks. Therefore, both individuals and companies should work together to make the most of flexible freelancing responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "freelance designer",
+        "steady clients",
         "pay rent"
       ],
       "intro": {
         "debai": "choosing self-employment or freelancing",
-        "ld1": "control my own schedule and follow my passion",
-        "ld2": "face unstable income and financial risks"
+        "ld1": "control their own schedule, follow their passion, and achieve work-life balance",
+        "ld2": "unstable monthly income, financial risks, and lack of company benefits"
       },
       "part": "writing-task2",
-      "reusedSource": "Câu #1 (Tự làm chủ +) + Câu #2 (Tự kinh doanh -) + Cụm #10 (work and family time)",
+      "reusedSource": "Dạng 3 (Positive or Negative / Adv-Disadv) + Ruột ĐOẠN 1 & ĐOẠN 2 + Câu #1 (Tự làm chủ +) + Câu #2 (Tự kinh doanh -) + 24 cụm từ đa năng (#10)",
       "reusedVocab": [
         "Working for yourself lets you control your own schedule and follow your true passion without a boss watching over you",
         "Running a new business brings unstable monthly income and a high risk of losing all your savings without market experience",
@@ -200,18 +201,18 @@
     "content": "Read the following statement:\n\n\"In many major cities, motorbikes are widely favored as personal transport due to their low cost and convenient parking, yet critics argue that they contribute significantly to air pollution, noise pollution, and traffic accidents.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of using motorbikes as a primary means of transportation in large cities. Support your arguments with reasons and examples from your knowledge or experience.",
     "hint": {
       "body1": {
-        "example": "For instance, my brother rides a motorbike to work every morning because it costs much less than a car and helps him pass small streets quickly.",
-        "focus": "Advantages: affordable, fast & easy parking (Cụm #18 + #21)",
-        "frame": "Firstly, the first reason is that [ld1] + Advantages: [debai] is considered as a convenient way to [V]",
-        "point": "Motorbikes are fast, convenient for busy people in modern-day society, fit comfortably within a worker's budget, and are easy to park in crowded areas."
+        "example": "For instance, my brother was spending too much money on ride-hailing cars to commute to his downtown office. Therefore, he decided to buy an affordable motorbike for his daily trips. As a result, he finally cut his monthly travel costs in half and parked easily right outside his workplace. If he had not switched to a motorbike, he would not have been able to save so much time and money every week.",
+        "focus": "Ưu điểm: Chi phí thấp, di chuyển nhanh qua đường nhỏ và dễ đỗ xe (Cụm #18 + #21)",
+        "frame": "Mở: On the one hand, using motorbikes as main transport in major cities brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make using motorbikes as main transport in major cities appealing to many people.",
+        "point": "A very important point to consider is that motorbikes are fast and convenient for busy people in modern-day society. This means that riders can move smoothly through narrow streets and reach work or school on time even when main roads are crowded. Another point I would like to make is that motorbikes fit comfortably within an average worker's budget and are very easy to park. This is because of the fact that they cost much less to buy, fuel, and maintain than private cars."
       },
       "body2": {
-        "example": "For example, during rush hour in Ho Chi Minh City, thousands of motorbikes cause thick air pollution and frequent crashes when riders hurry.",
-        "focus": "Disadvantages: exhaust fumes, noise & accidents (Mini-essay #6 + Effects)",
-        "frame": "Secondly, it allows that [ld2] + Effects: Obviously, this trend can lead to several serious problems",
-        "point": "However, gasoline motorbikes release harmful exhaust fumes, create loud traffic noise, and put riders at higher risk of serious road accidents."
+        "example": "For example, many residents in big cities like Ho Chi Minh City often face thick exhaust smoke, loud horns, and sudden dangerous stops during evening rush hour. If this issue is ignored, it will cause worse breathing problems and even more serious traffic crashes every year.",
+        "focus": "Nhược điểm: Khí thải gây ô nhiễm, tiếng ồn và nguy cơ tai nạn giao thông (Mini-essay #6)",
+        "frame": "Mở: On the other hand, the disadvantages of using motorbikes as main transport in major cities are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that air pollution, traffic noise, and road accidents can create serious drawbacks if ignored.",
+        "point": "In fact, traditional gasoline motorbikes release a huge amount of harmful exhaust fumes and create loud traffic noise across urban areas. This happens because when millions of motorbikes crowd city streets during rush hour, it easily leads to serious air pollution and health problems for citizens. In addition, motorbikes offer very little physical protection, so riders face a much higher risk of severe road accidents."
       },
-      "conclusion": "In conclusion, motorbikes have both pros and cons. While they save time and money for city residents, people should switch to electric motorbikes or public transport to protect the environment.",
+      "conclusion": "In conclusion, using motorbikes in major cities brings both pros and cons. While people can benefit from low costs, fast travel, and easy parking, they also need to handle air pollution, traffic noise, and road accidents. Therefore, both individuals and local authorities should work together to make the most of urban transport responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "easy to park",
@@ -219,18 +220,18 @@
         "rush hour"
       ],
       "intro": {
-        "debai": "using motorbikes as main transport in big cities",
-        "ld1": "save money and travel quickly through narrow streets",
-        "ld2": "avoid air pollution, noise, and road accidents"
+        "debai": "using motorbikes as main transport in major cities",
+        "ld1": "save money, travel quickly through narrow streets, and park easily",
+        "ld2": "air pollution, traffic noise, and a high risk of road accidents"
       },
       "part": "writing-task2",
-      "reusedSource": "Mini-essay #6 (Electric Vehicles) + Cụm #18 (fast, convenient) + Cụm #21 (fit comfortably within my budget) + Giải pháp B (Support)",
+      "reusedSource": "Dạng 3 (Positive or Negative / Adv-Disadv) + Ruột ĐOẠN 1 & ĐOẠN 2 + Mini-essay #6 (Electric Vehicles) + 24 cụm từ đa năng (#18, #21) + Khung A Balance",
       "reusedVocab": [
         "fast, convenient for busy people in modern-day society",
         "fit comfortably within my budget",
-        "released a huge amount of harmful exhaust fumes, causing terrible air pollution",
-        "Obviously, this trend can lead to several serious problems",
-        "switch to electric"
+        "release a huge amount of harmful exhaust fumes",
+        "air pollution",
+        "switch to electric vehicles"
       ]
     }
   }

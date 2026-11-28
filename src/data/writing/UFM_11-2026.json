@@ -90,36 +90,37 @@
     "content": "Read the following statement:\n\n\"In an increasingly globalized world, preserving and promoting traditional culture has become a crucial concern for many nations. Some people argue that modern media, cultural festivals, and tourism are the most effective ways to popularize national traditions among young generations and international friends.\"\n\nWrite an essay to an educated reader explaining effective methods to promote national culture. Provide relevant examples and explanations from your knowledge or experience to support your points.",
     "hint": {
       "body1": {
-        "example": "For instance, my cousin follows a popular YouTube channel about Vietnamese Ao Dai and traditional cooking, which makes her proud of her local culture.",
-        "focus": "Method 1: Modern media and digital content",
-        "frame": "Firstly, the first reason is that [ld1]... + Chunks #8, #14",
-        "point": "Making the most of modern technology and social media helps young people learn about traditional music, food, and history in an interesting way. Short videos and online pages can easily reach millions of viewers around the world."
+        "example": "For instance, my brother was not very interested in traditional Vietnamese folk music when he was in high school. Therefore, he decided to watch short cultural videos from young creators on YouTube and TikTok. As a result, he finally fell in love with traditional instruments and shared them with his foreign friends. If he had not discovered this online content, he would not have been able to appreciate his own culture so deeply.",
+        "focus": "Method 1: Using modern media and social platforms to share traditions",
+        "frame": "Mở: First and foremost, people should recognize that modern media helps young people discover traditions easily | Ruột ĐOẠN 1 | Chốt: Clearly, using modern media brings undeniable value in modern life.",
+        "point": "A very important point to consider is that making the most of modern technology and social media lets people share traditional music, food, and clothing with millions of viewers. This means that young generations can learn about national history in a lively and convenient way every day. Another point I would like to make is that digital videos and articles help broaden people's minds across borders. This is because of the fact that international audiences can easily watch online content from anywhere in the world."
       },
       "body2": {
-        "example": "For example, when foreign friends visited my hometown's Tet flower festival last year, they learned how to make Chung cake and loved the warm atmosphere.",
-        "focus": "Method 2: Cultural festivals and tourism (Giải pháp B - Support)",
-        "frame": "Secondly, it allows that [ld2]... + Trục 3 (Knowledge) + Giải pháp B (Support)",
-        "point": "Governments and local communities should invest money in cultural festivals and historic places so visitors can see and join traditional activities directly. This helps both local youths and foreign tourists gain a deeper understanding of our culture and boost local tourism."
+        "example": "For example, I was guiding two international classmates at my hometown's traditional spring festival last year. For this reason, I got to show them how to make traditional cakes and watch folk dances face to face. If I had not taken them to that festival, I would not have been able to know that real-life events make foreign friends remember our culture so warmly.",
+        "focus": "Method 2: Organizing cultural festivals and friendly tourism",
+        "frame": "Mở: Secondly, there are further arguments in support of the idea that cultural festivals and tourism help popularize national traditions | Ruột ĐOẠN 2 | Chốt: It is clear that organizing cultural festivals and tourism plays an important role.",
+        "point": "In fact, cultural festivals and local tourism provide real knowledge and experience in national traditions. This happens because when local youths and foreign travelers join traditional games, wear traditional clothes, and taste local food, it easily leads to a deeper understanding of people, culture, and tradition. In addition, hosting well-organized cultural events helps boost economic development and creates pride within local communities."
       },
-      "conclusion": "In conclusion, I agree that using modern media and holding cultural festivals are effective ways to protect our national culture and share it with younger generations and international friends.",
+      "conclusion": "In conclusion, I strongly agree that modern media, cultural festivals, and tourism are effective ways to promote national culture, mainly because they help young people discover traditions online and support real cultural experiences for visitors. Therefore, both individuals and local communities should work together to make the most of these cultural activities responsibly.",
       "essayType": "Agree or Disagree",
       "extraVocab": [
         "traditional culture",
         "cultural festivals",
-        "historic places"
+        "folk music",
+        "cultural heritage"
       ],
       "intro": {
-        "debai": "promoting and keeping traditional culture alive",
-        "ld1": "use social media and modern technology to share traditions",
-        "ld2": "organize cultural festivals and friendly tourism activities"
+        "debai": "promoting and preserving national culture",
+        "ld1": "modern media helps young people discover traditions easily",
+        "ld2": "cultural festivals and tourism let visitors experience local traditions directly"
       },
       "part": "writing-task2",
-      "reusedSource": "Trục 3 (Broaden Knowledge) + Giải pháp B (Support) + Chunks #8, #14, #15",
+      "reusedSource": "Dạng 2 (Agree or Disagree / Ways) + Ruột ĐOẠN 1 & ĐOẠN 2 + Trục 3 (Broaden Knowledge) + 24 cụm từ đa năng (#5, #8, #14, #15)",
       "reusedVocab": [
         "make the most of new technology to improve productivity",
-        "gain a deeper understanding of people, culture, and tradition",
         "broaden their mind",
         "provide knowledge and experience in",
+        "gain a deeper understanding of people, culture, and tradition",
         "boost economic development"
       ]
     }
@@ -214,37 +215,39 @@
     "content": "Read the following statement:\n\n\"Some people prefer living in peaceful countryside areas with clean air and close communities, while others argue that living in large metropolises offers vastly superior career opportunities, modern amenities, and healthcare.\"\n\nDiscuss both views and give your own opinion.",
     "hint": {
       "body1": {
-        "example": "For instance, my grandparents moved back to their hometown village, and they feel much healthier and happier growing their own vegetables every morning.",
-        "focus": "View 1: Why people prefer the countryside (Preferred view)",
-        "frame": "Firstly, the first reason is that [ld1]... + Trục 1 (Physical health) & Trục 4 (Peace & Privacy)",
-        "point": "Living in the countryside offers a quiet, cozy environment with clean air and fresh food, which is beneficial to both physical and mental health. People also know their neighbors well and build a strong sense of belonging."
+        "example": "For instance, my brother was looking for a stable office job right after graduating from university. Therefore, he decided to move to a large city where many international companies were hiring. As a result, he finally found a well-paid job and joined evening skill classes. If he had not moved to the city, he would not have been able to start his career so smoothly.",
+        "focus": "View 1: Why some people support living in big cities",
+        "frame": "Mở: First and foremost, people should recognize why some support living in big cities | Ruột ĐOẠN 1 | Chốt: Clearly, this perspective has reasonable points.",
+        "point": "A very important point to consider is that large cities offer better career opportunities and higher salaries for workers. This means that young people can improve their living standard faster and support their families well. Another point I would like to make is that big cities are equipped with modern hospitals, schools, and entertainment venues. This is because of the fact that governments invest heavily in urban areas, giving residents fast access to quality healthcare and education."
       },
       "body2": {
-        "example": "For example, my brother moved to Ho Chi Minh City after university because he could easily find a good office job and take evening English classes.",
-        "focus": "View 2: Why others prefer big cities",
-        "frame": "Secondly, it allows that [ld2]... + Chunks #4, #20",
-        "point": "On the other hand, big cities offer better job opportunities with higher pay, modern schools, and well-equipped hospitals. This helps young workers improve their living standard and get quick medical care when needed."
+        "example": "For example, I was feeling tired and stressed after a busy semester in the city. For this reason, I got to spend three weeks at my grandparents' village breathing fresh air and eating home-grown vegetables. If I had not spent time there, I would not have been able to know that peaceful rural life truly improves our well-being.",
+        "focus": "View 2: Stronger arguments for living in the countryside (Preferred view)",
+        "frame": "Mở: On the other hand, there are stronger arguments in support of living in the countryside | Ruột ĐOẠN 2 | Chốt: It is clear that living in the countryside is a more practical choice.",
+        "point": "In fact, the countryside offers clean air, fresh food, and a quiet, cozy environment that is beneficial to both physical and mental health. This happens because when people live away from heavy traffic and noisy crowds, it easily leads to lower stress and a healthier lifestyle. In addition, rural residents know their neighbors closely and build a strong sense of belonging through warm face-to-face interaction."
       },
-      "conclusion": "In conclusion, although big cities offer more jobs and modern services, I prefer living in the countryside because I can enjoy clean air, inner peace, and a healthier daily life.",
+      "conclusion": "In conclusion, although both views have reasonable points, I prefer living in the countryside because it allows people to stay healthy in clean surroundings and enjoy inner peace with close neighbors. Therefore, both individuals and local authorities should work together to make the most of rural living conditions responsibly.",
       "essayType": "Discuss both views",
       "extraVocab": [
-        "job opportunities",
         "fresh air",
-        "medical care"
+        "career opportunities",
+        "quality healthcare",
+        "rural life"
       ],
       "intro": {
-        "debai": "living in the peaceful countryside rather than big cities",
-        "ld1": "enjoy fresh air, quiet space, and close neighbors",
-        "ld2": "find good jobs and modern hospitals in big cities"
+        "debai": "choosing between living in big cities and living in the countryside",
+        "ld1": "stay healthy and relieve daily stress in clean surroundings",
+        "ld2": "inner peace and close community bonds"
       },
       "part": "writing-task2",
-      "reusedSource": "Trục 1 (Physical Health) + Trục 4 (Peace & Privacy) + Khung Discuss both views",
+      "reusedSource": "Dạng 1 (Discuss both views) + Ruột ĐOẠN 1 & ĐOẠN 2 + Trục 1 (Physical Health) + Trục 4 (Peace & Privacy) + 24 cụm từ đa năng (#4, #20, #23)",
       "reusedVocab": [
+        "improve people's living standard",
+        "be equipped with state-of-the-art facilities",
         "beneficial to my physical health",
         "offers a quiet, cozy environment",
         "build a strong sense of belonging",
-        "improve people's living standard",
-        "be equipped with state-of-the-art facilities"
+        "face-to-face interaction"
       ]
     }
   },
@@ -339,37 +342,38 @@
     "content": "Read the following statement:\n\n\"During adolescence, conflicts frequently arise between parents and teenage children because parents often perceive their children as too young and immature, while teenagers desire more independence, personal space, and respect for their own viewpoints.\"\n\nWrite an essay to an educated reader analyzing the root causes of these conflicts and proposing practical solutions to bridge the generation gap between parents and teenagers. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, my cousin often argued with his parents because they wanted him to study medicine while he dreamed of becoming a graphic designer.",
-        "focus": "Root causes of parent-teenager conflicts",
-        "frame": "Firstly, the first reason is that [ld1]... + Câu #15 & Mini-essay #2 & Chunk #22",
-        "point": "Family conflicts often happen when busy parents force traditional views on teenagers instead of listening to their modern concerns with patience. Meanwhile, teenagers want more freedom and spend hours on smartphones, which widens the generation gap."
+        "example": "For instance, my brother was passionate about graphic design in high school, while our parents wanted him to study banking. Therefore, he decided to stay quiet and avoid family dinners whenever they argued. As a result, he finally felt stressed and distant from home for months. If he had not hidden his true feelings, he would not have been stuck in constant arguments with our parents.",
+        "focus": "Root causes of conflicts between parents and teenagers",
+        "frame": "Mở: First and foremost, there are several major causes leading to conflicts between parents and teenage children | Ruột ĐOẠN 1 | Chốt: Clearly, these are the key causes of conflicts between parents and teenage children.",
+        "point": "A very important point to consider is that family conflicts often happen when parents force traditional views on teenagers instead of listening to their modern concerns with patience. This means that young people feel misunderstood and dislike strict rules when they want more independence and personal space. Another point I would like to make is that busy parents have less time to talk with their children at home. This is because of the fact that heavy work schedules reduce face-to-face interaction, which widens the generation gap."
       },
       "body2": {
-        "example": "For example, when my uncle started having a 30-minute coffee chat with his teenage son every Sunday, they understood each other much better and argued less.",
-        "focus": "Practical solutions to bridge the generation gap (Giải pháp A - Family)",
-        "frame": "Secondly, to deal with this problem... + Giải pháp A (Cá nhân & Gia đình) + Chunks #23, #24",
-        "point": "To solve this problem, parents and teenagers should talk openly with patience and respect each other's opinions. Families should also eat dinner together and share weekend activities to truly understand each other through face-to-face interaction."
+        "example": "For example, when families eat dinner together without smartphones and schools offer simple communication talks for parents, teenagers feel safer sharing their daily problems. With steady effort from both sides, family conflicts can be reduced step by step.",
+        "focus": "Practical solutions to bridge the generation gap",
+        "frame": "Mở: In order to resolve such problems, both individuals and organizations should take practical measures | Ruột Solutions (Cá nhân + Tổ chức + Education)",
+        "point": "One primary solution would be that parents and teenagers should set aside regular time to talk calmly, listen with patience, and respect each other's opinions. In addition, schools and families need to organize parent-student workshops and shared weekend activities to build a strong sense of belonging through face-to-face interaction. Above all, education plays a key role in tackling this issue, because people need to be aware of its impacts so that they can act responsibly."
       },
-      "conclusion": "In conclusion, parent-teenager conflicts mainly come from poor communication and different views, so both sides need to listen patiently and spend quality time together.",
+      "conclusion": "In conclusion, conflicts between parents and teenagers are closely linked to poor communication and lifestyle differences and require practical steps such as patient family talks and school workshops. Therefore, both schools and families need to take steady, practical actions to reduce this problem in the long run.",
       "essayType": "Causes-Solutions",
       "extraVocab": [
         "teenage children",
-        "open communication",
-        "respect each other"
+        "personal space",
+        "mutual respect",
+        "family workshops"
       ],
       "intro": {
-        "debai": "arguments between parents and teenage children",
-        "ld1": "differences in lifestyle and lack of patient communication",
-        "ld2": "listening calmly and spending more family time together"
+        "debai": "conflicts between parents and teenage children",
+        "ld1": "poor communication, strict parenting, and lifestyle differences",
+        "ld2": "patient family talks, school workshops, and mutual respect"
       },
       "part": "writing-task2",
-      "reusedSource": "Câu #15 (Mâu thuẫn gia đình) + Mini-essay #2 + Chunks #22, #23 + Giải pháp A (Family)",
+      "reusedSource": "Dạng 4 (Causes-Solutions) + Ruột ĐOẠN 1 & Ruột Solutions + Câu #15 (Mâu thuẫn gia đình) + Mini-essay #2 (Student Misbehaviour) + 24 cụm từ đa năng (#22, #23)",
       "reusedVocab": [
         "force traditional views on teenagers instead of listening to their modern concerns with patience",
-        "lack proper guidance and self-control, which easily leads to bad behaviors and widens the generation gap",
-        "build a strong sense of belonging and help us truly understand each other through face-to-face interaction",
-        "stay on the safe side and think things through calmly",
-        "solve the problem"
+        "widens the generation gap",
+        "build a strong sense of belonging",
+        "face-to-face interaction",
+        "stay on the safe side and think things through calmly"
       ]
     }
   },
@@ -465,37 +469,38 @@
     "content": "Read the following statement:\n\n\"In contemporary society, many families still assume that domestic housework is primarily the responsibility of women. However, others believe that sharing household chores equally among all family members, including children, yields profound benefits for family harmony and personal growth.\"\n\nWrite an essay to an educated reader explaining the benefits of sharing domestic housework. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, my parents asked me to wash dishes and clean my room from age ten, which helped me live easily on my own during university.",
-        "focus": "Benefit 1: Teaching children independence and life skills",
-        "frame": "Firstly, the first reason is that [ld1]... + Câu #14 & Câu #6",
-        "point": "Sharing daily housework teaches children practical life skills like cooking, cleaning, and managing their time. When kids help at home early, they become more independent and know how to take care of themselves in the future."
+        "example": "For instance, my brother was asked to wash dishes and tidy his room every day from primary school. Therefore, he decided to learn simple cooking before moving away for university. As a result, he finally lived comfortably on his own without struggling with daily routines. If he had not helped with housework early, he would not have been so independent today.",
+        "focus": "Benefit 1: Teaching children life skills and independence",
+        "frame": "Mở: First and foremost, people should recognize that sharing household chores teaches children practical life skills | Ruột ĐOẠN 1 | Chốt: Clearly, teaching children life skills through chores brings undeniable value in modern life.",
+        "point": "A very important point to consider is that sharing daily housework teaches children essential habits like cooking, cleaning, and managing their time. This means that young people learn to take responsibility and solve daily problems independently when they grow up. Another point I would like to make is that helping at home makes children appreciate their parents' hard work. This is because of the fact that doing real tasks shows them how much effort is needed to keep a home clean and warm."
       },
       "body2": {
-        "example": "For example, in my home, my dad cooks dinner while my mom rests, and then we all talk happily while cleaning up together.",
+        "example": "For example, I was helping my father cook dinner while my mother rested after a busy shift last weekend. For this reason, I got to talk and laugh with my parents while we washed up together. If I had not joined in the housework, I would not have been able to know that simple daily chores can bring a family so close.",
         "focus": "Benefit 2: Reducing mothers' burden and building family harmony",
-        "frame": "Secondly, it allows that [ld2]... + Câu #14 & Chunks #9, #10, #23",
-        "point": "Dividing chores equally prevents mothers from carrying the entire family burden alone after a long workday. As a result, everyone can relieve stress, reach a healthy balance between work and family time, and feel closer together."
+        "frame": "Mở: Secondly, there are further arguments in support of the idea that sharing chores reduces stress for mothers and strengthens family bonds | Ruột ĐOẠN 2 | Chốt: It is clear that sharing family responsibilities plays an important role.",
+        "point": "In fact, dividing housework fairly prevents mothers from carrying the entire family burden alone after a long workday. This happens because when fathers and children help cook or clean together, it easily leads to less fatigue and a healthier balance between work and family time. In addition, doing chores side by side builds a strong sense of belonging through warm face-to-face interaction."
       },
-      "conclusion": "In conclusion, I wholeheartedly agree that sharing housework brings huge benefits because it helps children learn essential life skills and builds a happier, less stressful family.",
+      "conclusion": "In conclusion, I strongly agree that sharing household chores brings clear benefits, mainly because it helps teach children practical life skills and supports a happier, less stressful family life. Therefore, both individuals and families should work together to make the most of shared housework responsibly.",
       "essayType": "Agree or Disagree",
       "extraVocab": [
         "household chores",
         "independent",
-        "take care of themselves"
+        "take responsibility"
       ],
       "intro": {
-        "debai": "sharing housework equally among all family members",
-        "ld1": "teach children useful life skills and responsibility",
-        "ld2": "reduce stress for mothers and bring the family closer"
+        "debai": "sharing household chores equally among all family members",
+        "ld1": "teach children practical life skills and independence",
+        "ld2": "reduce stress for mothers and strengthen family harmony"
       },
       "part": "writing-task2",
-      "reusedSource": "Câu #14 (Chia sẻ việc nhà) + Câu #6 + Chunks #9, #10, #23",
+      "reusedSource": "Dạng 2 (Benefits only / Agree or Disagree) + Ruột ĐOẠN 1 & ĐOẠN 2 + Câu #14 (Chia sẻ việc nhà) + Câu #6 (Độc lập) + 24 cụm từ đa năng (#9, #10, #23)",
       "reusedVocab": [
         "sharing daily housework teaches children practical life skills",
         "prevents mothers from carrying the entire family burden alone",
         "can relieve stress and reduce fatigue",
         "reach a healthy balance between work and family time",
-        "build a strong sense of belonging"
+        "build a strong sense of belonging",
+        "face-to-face interaction"
       ]
     }
   },
@@ -586,36 +591,37 @@
     "content": "Read the following statement:\n\n\"In recent years, e-commerce platforms and online shopping have experienced exponential growth, fundamentally transforming the shopping habits of consumers worldwide.\"\n\nWrite an essay to an educated reader explaining why online shopping has become so remarkably popular. Provide specific reasons and illustrative examples from your own personal experience to support your arguments.",
     "hint": {
       "body1": {
-        "example": "For instance, I was very busy preparing for my exams last month, so I bought all my new notebooks and snacks on a shopping app in five minutes.",
-        "focus": "Reason 1: Time-saving convenience",
-        "frame": "Firstly, the first reason is that [ld1]... + Chunks #18, #21",
-        "point": "Online shopping is fast and convenient for busy people in modern-day society because they can order anything from home in just a few minutes. They do not need to waste time sitting in heavy traffic or waiting in long lines at crowded stores."
+        "example": "For instance, my brother was working overtime all week and had no free hours to visit a supermarket. Therefore, he decided to order his household supplies and snacks on a shopping app during his lunch break. As a result, he finally received everything the next morning and saved his whole weekend for rest. If he had not shopped online, he would not have been able to manage his busy schedule so smoothly.",
+        "focus": "Reason 1: Fast convenience and time-saving for busy consumers",
+        "frame": "Mở: First and foremost, people should recognize that online shopping saves time and effort for busy people | Ruột ĐOẠN 1 | Chốt: Clearly, saving time and effort brings undeniable value in modern life.",
+        "point": "A very important point to consider is that online shopping is a fast, convenient way to buy everyday items anytime and anywhere. This means that busy workers and students do not have to sit in heavy traffic or wait in long lines at crowded stores. Another point I would like to make is that home delivery fits easily into a busy daily routine. This is because of the fact that buyers can place an order on their phone in minutes and receive packages right at their door."
       },
       "body2": {
-        "example": "For example, my friend often buys cheap clothes during online flash sales, though she ends up returning half of them because of poor quality.",
-        "focus": "Reason 2 & Impact: Discounts, variety, and shopping risks",
-        "frame": "Secondly, it allows that [ld2]... + Câu #10",
-        "point": "E-commerce apps also attract buyers with big discounts, free shipping, and thousands of products to compare easily. However, this convenience sometimes tempts buyers to waste money on cheap items that look nothing like the advertised photos."
+        "example": "For example, I was looking for an affordable study lamp and notebooks before my university exams last month. For this reason, I got to compare five online stores, read buyer ratings, and buy a great set at half the store price. If I had not checked online platforms first, I would not have been able to know that online shopping can save so much money.",
+        "focus": "Reason 2: Affordable prices, discounts, and wide product choices",
+        "frame": "Mở: Secondly, there are further arguments in support of the idea that online shopping offers lower prices and wide product choices | Ruột ĐOẠN 2 | Chốt: It is clear that better prices and variety play an important role.",
+        "point": "In fact, e-commerce platforms allow customers to compare prices quickly and enjoy frequent discounts and free shipping. This happens because when online stores save money on shop rent, it easily leads to cheaper prices that fit comfortably within most people's budgets. In addition, shoppers have more opportunities to read real reviews and choose from thousands of products that local shops may not carry."
       },
-      "conclusion": "In conclusion, online shopping has become extremely popular because it saves time and offers great deals, though customers should still think things through calmly before clicking buy.",
-      "essayType": "Causes-Effects",
+      "conclusion": "In conclusion, I strongly agree that online shopping has become remarkably popular, mainly because it helps busy people save time and supports affordable shopping with wide product choices. Therefore, both individuals and e-commerce platforms should work together to make the most of online shopping responsibly.",
+      "essayType": "Agree or Disagree",
       "extraVocab": [
         "online shopping",
+        "home delivery",
         "free shipping",
         "compare prices"
       ],
       "intro": {
-        "debai": "the growing popularity of online shopping",
-        "ld1": "fast convenience for busy people in modern life",
-        "ld2": "lower prices, wide choices, and changing buying habits"
+        "debai": "the surging popularity of online shopping",
+        "ld1": "it saves time and effort for busy people",
+        "ld2": "it offers lower prices and a wide variety of products"
       },
       "part": "writing-task2",
-      "reusedSource": "Chunks #18, #21 + Câu #10 (Mua sắm online)",
+      "reusedSource": "Dạng 2 (Agree or Disagree / Reasons) + Ruột ĐOẠN 1 & ĐOẠN 2 + Chunks #10, #11 + 24 cụm từ đa năng (#18, #21)",
       "reusedVocab": [
         "fast, convenient for busy people in modern-day society",
         "fit comfortably within my budget and daily routine without sacrificing quality",
-        "tempts buyers to waste money on cheap items that look nothing like the advertised photos",
-        "think things through calmly to avoid unnecessary trouble"
+        "save time, money, and effort",
+        "have more opportunities to"
       ]
     }
   },
@@ -711,36 +717,38 @@
     "addedAt": "2026-11-24T18:45:18+07:00",
     "hint": {
       "body1": {
-        "example": "For instance, my brother worked full-time and joined evening online classes from home via laptop without heavy traffic, so he earned his English certificate on time.",
-        "focus": "Convenience and flexible routine (Advantages)",
-        "frame": "Firstly, the first reason is that [ld1]. This is because nowadays people... For instance, my brother was... Clearly, it is necessary to [ld1]...",
-        "point": "Online learning is fast, convenient for busy people in modern-day society and fits comfortably within their budget and daily routine without sacrificing quality."
+        "example": "For instance, my brother was working full-time during the day and struggled to attend evening classes across town. Therefore, he decided to join an online English course from home on his laptop. As a result, he finally earned his B2 certificate on time while saving hours of commuting every week. If he had not chosen online learning, he would not have been able to balance his job and studies so easily.",
+        "focus": "Reason 1: Flexible schedule and lower cost for learners",
+        "frame": "Mở: First and foremost, people should recognize that online learning offers a flexible and affordable schedule | Ruột ĐOẠN 1 | Chốt: Clearly, a flexible and affordable study option brings undeniable value in modern life.",
+        "point": "A very important point to consider is that online learning is fast and convenient for busy people in modern-day society. This means that students and workers can join classes from home without wasting time and money on daily travel. Another point I would like to make is that digital courses fit comfortably within most learners' budgets. This is because of the fact that online platforms have lower classroom costs and let students replay recorded lessons whenever they need to review."
       },
       "body2": {
-        "example": "For example, I used online learning apps to practice English speaking daily and check my grammar mistakes, which made my self-study much faster and cheaper.",
-        "focus": "Self-study with modern technology",
-        "frame": "Secondly, it allows that [ld2]. It is because when people... For example, I was... It is clear that [ld2].",
-        "point": "Learners can make the most of new technology to improve productivity, ask questions anytime, and receive instant feedback on their grammar errors instead of paying for expensive private tutors."
+        "example": "For example, I was preparing for an important university test and needed extra speaking practice every night. For this reason, I got to use online video lessons and interactive quizzes to check my mistakes right away. If I had not used these digital study tools, I would not have been able to know that self-study can be so fast and effective.",
+        "focus": "Reason 2: Modern digital tools and personalized self-study",
+        "frame": "Mở: Secondly, there are further arguments in support of the idea that online learning provides modern tools for effective self-study | Ruột ĐOẠN 2 | Chốt: It is clear that using modern study tools plays an important role.",
+        "point": "In fact, online learners can make the most of new technology to improve productivity and learn at their own speed. This happens because when students use interactive apps and digital resources, it easily leads to faster practice and instant feedback on their grammar errors. In addition, online platforms connect learners with experienced teachers from anywhere, broadening their mind beyond a local classroom."
       },
-      "conclusion": "In conclusion, I agree that online learning brings numerous positive impacts on people because they can enjoy a fast, convenient schedule and develop independent self-study skills with modern technology; therefore, schools should invest in modern learning tools to support learners.",
+      "conclusion": "In conclusion, I strongly agree that online learning is more effective than traditional offline learning for many learners, mainly because it helps save time with flexible schedules and supports independent self-study through modern technology. Therefore, both individuals and schools should work together to make the most of online learning responsibly.",
       "essayType": "Agree or Disagree",
       "extraVocab": [
-        "[+] evening online classes",
-        "[+] learning apps"
+        "online courses",
+        "recorded lessons",
+        "self-study",
+        "daily travel"
       ],
       "intro": {
-        "debai": "online learning compared to traditional classroom learning",
-        "ld1": "learners to enjoy a fast, convenient schedule",
-        "ld2": "independent self-study skills with modern technology"
+        "debai": "online learning compared to traditional offline classrooms",
+        "ld1": "it offers a flexible and affordable schedule for busy learners",
+        "ld2": "it provides modern digital tools for effective self-study"
       },
       "part": "writing-task2",
-      "reusedSource": "Mini-essay #5 (AI & Modern Skills) + Khung chung Agree or Disagree + Cụm #8, #18, #21",
+      "reusedSource": "Dạng 2 (Agree or Disagree) + Ruột ĐOẠN 1 & ĐOẠN 2 + Mini-essay #5 (AI & Modern Skills) + 24 cụm từ đa năng (#8, #14, #18, #21)",
       "reusedVocab": [
         "fast, convenient for busy people in modern-day society",
         "fit comfortably within my budget and daily routine without sacrificing quality",
         "make the most of new technology to improve productivity",
         "receive instant feedback on their grammar errors",
-        "self-study becomes much faster, more personalized, and affordable"
+        "broaden their mind"
       ]
     }
   }

@@ -90,36 +90,36 @@
     "content": "Read the following statement:\n\n\"As digital connectivity expands, cybercrime—such as online identity theft, financial fraud, and cyber harassment—has emerged as a severe threat to individuals and businesses worldwide.\"\n\nWrite an essay to an educated reader examining the primary impacts of cybercrime and proposing effective solutions that governments and internet users can take to combat it. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, my neighbor clicked a fake bank link in a text message last year and lost five million dong from her savings account.",
+        "example": "For instance, my brother was tricked by a fake bank message while checking his phone during a busy workday. Therefore, he decided to click the link and entered his card number to verify his account. As a result, he finally lost five million dong and spent days reporting the scam. If he had not clicked that strange link, he would not have been stressed and out of pocket.",
         "focus": "Primary impacts of cybercrime on individuals and businesses",
-        "frame": "Firstly, the first reason is that [ld1]... + Câu #11 & Khung Effects (Mục 3D)",
-        "point": "Cybercrime directly harms both normal people and companies by stealing bank accounts, private photos, and personal identities. Victims not only lose a lot of money but also feel worried, stressed, and unsafe when using the internet."
+        "frame": "Mở: First and foremost, cybercrime leads to several serious negative effects | Ruột ĐOẠN 1 | Chốt: Clearly, these are the key impacts of cybercrime.",
+        "point": "A very important point to consider is that cybercrime causes serious financial loss and identity theft for everyday users. This means that sharing private details online or clicking strange links allows cyber criminals to steal bank accounts and personal identities easily. Another point I would like to make is that online attacks damage trust and hurt business operations. This is because of the fact that companies lose customer data, spend a lot of money fixing systems, and victims feel stressed and unsafe online."
       },
       "body2": {
-        "example": "For example, banks and police in my city now send warning messages on mobile apps to teach people how to spot fake phone calls and scam links.",
-        "focus": "Solutions for governments and internet users (Giải pháp A - Penalize)",
-        "frame": "Secondly, to solve this problem... + Giải pháp A (Penalize) + Chunk #24",
-        "point": "At the macro level, the government must introduce stricter rules and heavy fines to catch and punish online criminals. At the same time, internet users must stay on the safe side by using strong passwords and never clicking strange links."
+        "example": "For example, internet users can turn on two-step verification and check sender addresses carefully, while local banks and tech companies send scam alerts and run free digital safety talks for citizens.",
+        "focus": "Practical solutions for internet users, platforms, and governments",
+        "frame": "Mở: In order to resolve such problems, both individuals and organizations should take practical measures | Ruột Solutions (Cá nhân + Tổ chức + Education)",
+        "point": "One primary solution would be that individuals should stay on the safe side by using strong passwords, avoiding strange links, and protecting their private details online. In addition, tech companies and local authorities need to improve data security, set clear safety rules, and investigate online fraud quickly. Above all, education plays a key role in tackling this issue, because people need to be aware of its impacts so that they can act responsibly."
       },
-      "conclusion": "In conclusion, online crime causes serious financial and mental damage, so governments need stricter punishments while users must protect their personal details carefully.",
-      "essayType": "Causes-Solutions",
+      "conclusion": "In conclusion, cybercrime in the digital era is closely linked to serious financial loss and stolen personal identities and requires practical steps such as safer online habits, stronger platform security, and public education. Therefore, both citizens and local authorities need to take steady, practical actions to reduce this problem in the long run.",
+      "essayType": "Effects-Solutions",
       "extraVocab": [
-        "online crime",
+        "online fraud",
         "strong passwords",
-        "fake links"
+        "fake links",
+        "two-step verification"
       ],
       "intro": {
-        "debai": "online crime in today's digital world",
-        "ld1": "serious money loss and stolen personal information",
-        "ld2": "stronger laws from the government and safer online habits"
+        "debai": "cybercrime in the digital era",
+        "ld1": "serious financial loss and stolen personal identities",
+        "ld2": "safer online habits, stronger data security, and public education"
       },
       "part": "writing-task2",
-      "reusedSource": "Câu #11 (An ninh mạng) + Giải pháp A (Penalize) + Chunks #3, #24",
+      "reusedSource": "Dạng 4 (Effects-Solutions) + Ruột ĐOẠN 1 & Ruột Solutions + Câu #11 (An ninh mạng) + Khung B Practical Solution + Chunks #18, #22, #25 + 24 cụm từ đa năng (#3, #24)",
       "reusedVocab": [
         "sharing private details online or clicking strange links allows cyber criminals to steal bank accounts and personal identities easily",
-        "introduce stricter rules and heavy fines for violations",
-        "raise their awareness",
         "stay on the safe side and think things through calmly to avoid unnecessary trouble",
+        "improve data security",
         "solve the problem"
       ]
     }
@@ -215,36 +215,36 @@
     "content": "Read the following statement:\n\n\"In some traditional cultures, arranged marriages organized by parents and family elders are still prevalent, while in modern societies, most people insist on choosing their own life partner based on romantic love.\"\n\nWrite an essay to an educated reader discussing both arranged marriages and love marriages, and give your own perspective on which approach fosters long-term marital stability and happiness. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, my sister dated her husband for three years before getting married, so they understand each other deeply and rarely argue over small things.",
-        "focus": "Love marriages (Preferred view)",
-        "frame": "Firstly, the first reason is that [ld1]... + Câu #12 & Chunk #23",
-        "point": "Marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents. When couples choose each other freely, they know each other's personality well and solve family problems more easily."
+        "example": "For instance, my brother was very busy with his job and had little time to meet new people in his late twenties. Therefore, he decided to meet a kind woman introduced by our parents and relatives. As a result, he finally received warm support from both families and felt less lonely. If he had not listened to our parents' advice, he would not have been introduced to someone with similar family values.",
+        "focus": "View 1: Why some support arranged marriages",
+        "frame": "Mở: First and foremost, people should recognize why some support arranged marriages | Ruột ĐOẠN 1 | Chốt: Clearly, this perspective has reasonable points.",
+        "point": "A very important point to consider is that parents have rich life experience and want a safe, stable match for their children. This means that elders carefully look at family background, habits, and financial stability to help young couples stay on the safe side. Another point I would like to make is that arranged marriages often receive strong support from both families. This is because of the fact that relatives agree with the match from the start and are ready to help the new couple with housing or childcare."
       },
       "body2": {
-        "example": "For example, my uncle married a woman introduced by his parents, and both families helped them buy a small house and start a business together.",
-        "focus": "Arranged marriages (Other view)",
-        "frame": "Secondly, it allows that [ld2]... + Khung Discuss both views & Chunk #24",
-        "point": "On the other hand, some people support arranged marriages because parents have rich life experience and want a safe, stable match for their children. Families with similar backgrounds may also avoid money conflicts and get strong support from both sides."
+        "example": "For example, I was able to see how my older sister dated her husband for three years before getting married. For this reason, I got to learn that spending time together beforehand helps couples handle daily disagreements calmly. If I had not watched their happy marriage closely, I would not have been able to know that genuine love and mutual understanding matter so much for a lasting home.",
+        "focus": "View 2 (Preferred): Why love marriages lead to lasting happiness",
+        "frame": "Mở: On the other hand, there are stronger arguments in support of love marriages | Ruột ĐOẠN 2 | Chốt: It is clear that love marriages are a more practical choice.",
+        "point": "In fact, marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents. This happens because when couples choose each other freely and get to know each other through face-to-face interaction, it easily leads to deeper trust and fewer serious conflicts. In addition, partners who share common goals and true respect can support each other smoothly through difficult times."
       },
-      "conclusion": "In conclusion, while arranged marriages bring family support and careful matching, I prefer love marriages because genuine love and mutual understanding lead to lasting happiness.",
+      "conclusion": "In conclusion, although both views have reasonable points, I prefer love marriages because it allows people to build mutual understanding before marriage and enjoy lasting emotional happiness. Therefore, both individuals and families should work together to make the most of marriage decisions responsibly.",
       "essayType": "Discuss both views",
       "extraVocab": [
         "life partner",
         "family support",
-        "similar backgrounds"
+        "similar backgrounds",
+        "mutual trust"
       ],
       "intro": {
-        "debai": "choosing a marriage partner based on love rather than family arrangement",
-        "ld1": "build a happy home through true love and shared understanding",
-        "ld2": "receive helpful advice and support from experienced parents"
+        "debai": "choosing a marriage partner out of love rather than family arrangement",
+        "ld1": "build mutual understanding before marriage",
+        "ld2": "stronger emotional happiness and lasting trust"
       },
       "part": "writing-task2",
-      "reusedSource": "Câu #12 (Hôn nhân tình yêu vs sắp đặt) + Chunk #23 + Khung Discuss both views",
+      "reusedSource": "Dạng 1 (Discuss both views) + Ruột ĐOẠN 1 & ĐOẠN 2 + Câu #12 (Hôn nhân tình yêu vs sắp đặt) + 24 cụm từ đa năng (#23, #24)",
       "reusedVocab": [
         "marrying someone out of genuine love and mutual understanding builds a happier home than following an arranged marriage forced by parents",
         "help us truly understand each other through face-to-face interaction",
-        "stay on the safe side and think things through calmly",
-        "reach a healthy balance between work and family time"
+        "stay on the safe side and think things through calmly"
       ]
     }
   },
@@ -338,36 +338,38 @@
     "content": "Read the following statement:\n\n\"With the ubiquity of social networks, millions of internet users share their daily lives, personal achievements, and family moments online. Many people argue that sharing our lives online has brought overwhelmingly positive impacts by fostering connection and inspiration.\"\n\nWrite an essay to an educated reader discussing to what extent you agree or disagree with the statement that sharing our lives online has many positive impacts. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, when my cousin moved to another city for work, sharing family photos online helped our relatives follow his daily life and feel close to him.",
-        "focus": "Positive impact: Staying connected and inspiring others",
-        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Template 2)",
-        "point": "Sharing daily moments online is a fast, convenient way for busy people to enrich their social life, keep in touch with faraway friends, and motivate others with positive achievements."
+        "example": "For instance, my brother was feeling lonely after moving to another city for his first full-time job. Therefore, he decided to share short weekend photos and updates on his family group online. As a result, he finally felt closer to our parents and old friends despite living far away. If he had not shared his daily moments online, he would not have been so cheerful in his new city.",
+        "focus": "Positive impact 1: Staying closely connected with loved ones and like-minded people",
+        "frame": "Mở: First and foremost, people should recognize that sharing daily moments online strengthens social connections | Ruột ĐOẠN 1 | Chốt: Clearly, staying connected online brings undeniable value in modern life.",
+        "point": "A very important point to consider is that sharing our daily lives online is fast and convenient for busy people in modern-day society. This means that friends and relatives living in different cities or countries can easily follow each other's updates and stay close. Another point I would like to make is that posting personal hobbies helps people meet like-minded people and enrich their social life. This is because of the fact that shared photos and stories create warm conversations and a strong sense of belonging."
       },
       "body2": {
-        "example": "For example, many teenagers scroll through Facebook and TikTok, compare themselves to luxury vacation posts, or accidentally share private details that cyber criminals can steal.",
-        "focus": "Negative impact: Peer pressure and online privacy risks",
-        "frame": "Secondly, it also brings [ld2]... / Disadvantages (Body Chunk C)",
-        "point": "However, posting too much online can create peer pressure, cause mental stress, and expose personal data to cyber criminals."
+        "example": "For example, I was nervous about preparing for my English exam while working part-time last semester. For this reason, I got to follow a student blogger who shared her daily study routine and honest tips online. If I had not read her encouraging posts, I would not have been able to know that sharing real-life experiences online can motivate others so strongly.",
+        "focus": "Positive impact 2: Inspiring others and sharing helpful life experiences",
+        "frame": "Mở: Secondly, there are further arguments in support of the idea that sharing personal achievements online inspires and helps others | Ruột ĐOẠN 2 | Chốt: It is clear that inspiring others online plays an important role.",
+        "point": "In fact, sharing personal achievements and everyday lessons online can motivate many people to build better habits. This happens because when users post honest stories about learning a skill, cooking healthy food, or exercising daily, it easily leads to positive encouragement and practical ideas for readers. In addition, seeing real progress from ordinary people helps broaden our mind and boosts our confidence when facing challenges."
       },
-      "conclusion": "In conclusion, sharing our lives online has both positive and negative sides, so users should stay on the safe side by connecting with loved ones while avoiding oversharing private details.",
+      "conclusion": "In conclusion, I strongly agree that sharing our lives online has many positive impacts, mainly because it helps people stay closely connected with loved ones and supports positive inspiration among users. Therefore, both individuals and tech companies should work together to make the most of sharing online responsibly.",
       "essayType": "Agree or Disagree",
       "extraVocab": [
-        "overshare private details",
-        "online privacy risks"
+        "daily updates",
+        "study routine",
+        "positive encouragement",
+        "online privacy"
       ],
       "intro": {
         "debai": "sharing our daily lives and personal moments online",
-        "ld1": "stay connected with friends and inspire others",
-        "ld2": "avoiding peer pressure and online safety risks"
+        "ld1": "it helps people stay closely connected with faraway friends and family",
+        "ld2": "it enables users to inspire others and share helpful experiences"
       },
       "part": "writing-task2",
-      "reusedSource": "Template 2 (Agree or Disagree) + Trục 2 (Social network) + Mini-essay #3 (Peer Pressure) + Câu #11 (An ninh mạng)",
+      "reusedSource": "Dạng 2 (Agree or Disagree) + Ruột ĐOẠN 1 & ĐOẠN 2 + Trục 2 (Social network) + Khung A Balance + 24 cụm từ đa năng (#14, #18, #23)",
       "reusedVocab": [
-        "enrich our social life",
         "fast, convenient for busy people in modern-day society",
-        "peer pressure",
-        "stay on the safe side",
-        "steal bank accounts and personal identities"
+        "meet like-minded people",
+        "enrich their social life",
+        "build a strong sense of belonging",
+        "broaden our mind"
       ]
     }
   }

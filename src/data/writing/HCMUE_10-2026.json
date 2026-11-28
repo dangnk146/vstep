@@ -85,18 +85,18 @@
     "content": "Read the following statement:\n\n\"Religious tourism, also known as spiritual tourism, where people travel to sacred sites, temples, pagodas, and pilgrimage destinations, has grown rapidly in many parts of the world.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of religious tourism for individuals and local communities. Include specific reasons and examples from your knowledge or experience to support your view.",
     "hint": {
       "body1": {
-        "example": "For instance, during spring festivals at Yen Tu Pagoda, tourists feel peaceful and happy, while local families earn good income from selling food and souvenirs.",
-        "focus": "Advantages for individuals and local communities",
-        "frame": "Firstly, the first reason is that [ld1] + Advantages chunks + A-R-E Mental health & Knowledge",
-        "point": "Visiting temples and pagodas helps travelers relieve stress and reduce fatigue while broadening their mind about local culture and traditions. For local communities, more visitors boost economic development and improve people's living standard."
+        "example": "For instance, my brother was feeling exhausted and stressed after months of heavy office work. Therefore, he decided to take a weekend spiritual trip to Yen Tu Pagoda in northern Vietnam. As a result, he finally felt refreshed while also supporting local food stalls and small family guesthouses there. If he had not taken that peaceful trip, he would not have been able to regain his mental energy so quickly.",
+        "focus": "Ưu điểm cho du khách (tinh thần, văn hóa) và cộng đồng địa phương (kinh tế)",
+        "frame": "Mở: On the one hand, religious tourism brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make religious tourism appealing to many people.",
+        "point": "A very important point to consider is that visiting sacred temples and pagodas helps travelers relieve stress and broaden their mind about local culture and traditions. This means that people can enjoy a sense of inner peace and recharge their batteries after busy workdays. Another point I would like to make is that religious tourism helps local communities boost economic development and improve people's living standard. This is because of the fact that visitors spend money on local food, homestays, and souvenirs, creating steady jobs for residents."
       },
       "body2": {
-        "example": "For example, on big holiday weekends at famous pagodas, travelers often get stuck in long lines, pay high hotel prices, and see plastic trash around the temple yard.",
-        "focus": "Disadvantages for individuals and local communities",
-        "frame": "Secondly, [debai] has a negative impact on... + Disadvantages chunks + Environmental protection",
-        "point": "However, too many visitors at sacred sites can cause overcrowding, traffic jams, and littering, which harms environmental protection. Also, long pilgrimage trips cost a great deal of money, time, and effort for travelers."
+        "example": "For example, I was expecting a quiet morning when I visited a famous temple during the spring festival last year. For this reason, I got to see crowded walkways, long lines, and plastic bottles left near the pagoda yard. If I had not experienced that busy holiday crowd myself, I would not have been able to know that unmanaged tourism can quickly spoil a peaceful sacred place.",
+        "focus": "Nhược điểm: Quá tải, chi phí cao và ô nhiễm rác thải tại điểm tâm linh",
+        "frame": "Mở: On the other hand, the disadvantages of religious tourism are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that overcrowding, high travel costs, and environmental pollution can create serious drawbacks if ignored.",
+        "point": "In fact, too many visitors arriving at sacred sites at the same time can cause overcrowding, loud noise, and plastic littering. This happens because when thousands of tourists rush to famous pagodas on festival days, it easily leads to traffic jams and harms environmental protection. In addition, long pilgrimage trips often cost a great deal of money, time, and effort for travelers due to high holiday hotel prices."
       },
-      "conclusion": "In conclusion, religious tourism can have both pros and cons: while it helps travelers feel peaceful and boosts local income, communities must protect the environment and manage large crowds carefully.",
+      "conclusion": "In conclusion, religious tourism brings both pros and cons. While people can benefit from inner peace, cultural knowledge, and local economic growth, they also need to handle overcrowding, high travel costs, and environmental pollution. Therefore, both individuals and local authorities should work together to make the most of religious tourism responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "sacred sites",
@@ -105,14 +105,15 @@
       ],
       "intro": {
         "debai": "religious tourism",
-        "ld1": "improve mental health, learn about local culture, and boost economic development",
-        "ld2": "face overcrowding, high travel costs, and pollution at sacred sites"
+        "ld1": "relieve stress, learn about local culture, and boost local economic development",
+        "ld2": "overcrowding, high travel costs, and environmental pollution at sacred sites"
       },
       "part": "writing-task2",
-      "reusedSource": "Khung Adv-Disadv + Trục Mental health & Broaden knowledge + Cụm #4, #5, #9, #11",
+      "reusedSource": "Dạng 3 (Positive or Negative / Adv-Disadv) + Ruột ĐOẠN 1 & ĐOẠN 2 + 24 cụm từ đa năng (#4, #5, #9, #11, #14) + Chunks #14",
       "reusedVocab": [
         "relieve stress and reduce fatigue",
         "broaden their mind",
+        "recharge their batteries",
         "boost economic development",
         "improve people's living standard",
         "costs a great deal of money, time, and effort",

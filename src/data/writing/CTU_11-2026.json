@@ -78,37 +78,39 @@
     "content": "Read the following statement:\n\n\"An increasing number of children are being given smartphones from a very young age. While some people believe that early access to smartphones brings educational and communication benefits, others are concerned about its negative effects on children's health, concentration, and social skills.\"\n\nWrite an essay to an educated reader discussing the advantages and disadvantages of children using smartphones from an early age. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, primary students can use English learning apps for 20 minutes a day to practice speaking and receive instant feedback on their mistakes.",
+        "example": "For instance, my brother was worried about his young daughter falling behind in English speaking at primary school. Therefore, he decided to let her use a fun English app on his smartphone for 20 minutes every evening. As a result, he finally saw her pronounce new words clearly and enjoy studying. If he had not used that learning tool, she would not have been so confident in class.",
         "focus": "Advantages: Educational support and quick communication",
-        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
-        "point": "Early smartphone use helps children make the most of new technology to broaden their mind, study languages faster, and stay in touch with parents safely."
+        "frame": "Mở: On the one hand, children using smartphones at an early age brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make early smartphone use appealing to many people.",
+        "point": "A very important point to consider is that smartphones help children make the most of new technology to broaden their mind. This means that young students can use educational apps to practice English, watch science clips, and receive instant feedback on their mistakes. Another point I would like to make is that phones make family communication fast and convenient. This is because of the fact that busy parents can easily call or check on their children right after school."
       },
       "body2": {
-        "example": "For example, many young children spend hours playing games or watching violent videos, which harms their eyes and reduces face-to-face time with classmates.",
-        "focus": "Disadvantages: Health problems, poor focus, and bad habits",
-        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
-        "point": "However, without proper guidance and self-control, children easily copy bad habits from the internet, suffer from eye strain, and lose focus on schoolwork."
+        "example": "For example, I was shocked when I stayed at my aunt's house and saw her eight-year-old son play mobile games until midnight. For this reason, I got to help him join a local football club so he could play outside with friends. If I had not seen his tired eyes every morning, I would not have been able to know that too much screen time harms children's health and focus so fast.",
+        "focus": "Disadvantages: Health problems, poor concentration, and weak social skills",
+        "frame": "Mở: On the other hand, the disadvantages of children using smartphones at an early age are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that health and focus problems can create serious drawbacks if ignored.",
+        "point": "In fact, spending too many hours on smartphones harms children's health and weakens their concentration at school. This happens because when young children lack proper guidance and self-control, it easily leads to eye strain, watching violent videos, and copying bad habits from the internet. In addition, staring at screens all evening reduces face-to-face interaction with family members and classmates."
       },
-      "conclusion": "In conclusion, early smartphone use brings both benefits and risks, so parents should set clear screen rules so children use phones safely for learning rather than wasting time.",
+      "conclusion": "In conclusion, children using smartphones at an early age brings both pros and cons. While people can benefit from educational apps and quick parent-child communication, they also need to handle eye strain, poor concentration, and weak social skills. Therefore, both individuals and schools should work together to make the most of smartphone use for children responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "screen rules",
-        "learning apps"
+        "learning apps",
+        "eye strain",
+        "screen time"
       ],
       "intro": {
         "debai": "children using smartphones at an early age",
-        "ld1": "support learning and parent-child communication",
-        "ld2": "harming children's health, focus, and social skills"
+        "ld1": "access helpful learning apps and stay in touch with parents safely",
+        "ld2": "eye strain, poor concentration, and weaker social skills"
       },
       "part": "writing-task2",
-      "reusedSource": "Template 3 (Positive or Negative) + Mini-essay #2 (Student Misbehaviour) + Mini-essay #5 (AI & learning) + Chunk #22 + Câu #9",
+      "reusedSource": "Dạng 3 (Positive or Negative) + Ruột ĐOẠN 1 & ĐOẠN 2 + Mini-essay #2 & #5 + Câu #9 + 24 cụm từ đa năng (#8, #14, #18, #22, #23)",
       "reusedVocab": [
         "make the most of new technology",
         "broaden their mind",
         "receive instant feedback",
-        "copying bad habits from the internet",
         "lack proper guidance and self-control",
-        "blue-light strain"
+        "copying bad habits from the internet",
+        "face-to-face interaction"
       ]
     }
   },
@@ -208,36 +210,38 @@
     "content": "Read the following statement:\n\n\"Nowadays, many people prefer working or studying in public places such as coffee shops, libraries, or coworking spaces instead of working in traditional offices or at home.\"\n\nWrite an essay to an educated reader discussing both the advantages and disadvantages of working in public places. Include specific reasons and examples from your knowledge or experience to support your arguments.",
     "hint": {
       "body1": {
-        "example": "For instance, a freelancer can work in a modern coworking space with fast internet and meet like-minded people to exchange creative ideas.",
+        "example": "For instance, my brother was feeling bored and sleepy when working alone in his small bedroom every day. Therefore, he decided to work at a coworking space near his house three times a week. As a result, he finally finished his design projects faster and met friendly freelancers. If he had not tried working in a public space, he would not have been so creative and motivated.",
         "focus": "Advantages: Convenient facilities and social connection",
-        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
-        "point": "Public places like cafes and coworking spaces are fast, convenient for busy people, equipped with modern facilities, and help workers avoid feeling lonely at home."
+        "frame": "Mở: On the one hand, working or studying in public places brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make working in public places appealing to many people.",
+        "point": "A very important point to consider is that cafes, libraries, and coworking spaces are fast, convenient for busy people in modern-day society. This means that workers and students can easily enjoy comfortable seating, air conditioning, and stable internet without paying office rent. Another point I would like to make is that public spaces help people stay motivated and build social connections. This is because of the fact that seeing others study or work hard boosts energy and lets people meet like-minded people."
       },
       "body2": {
-        "example": "For example, loud phone calls at a crowded coffee shop make it hard to focus on important tasks, and buying drinks every day costs a great deal of money.",
-        "focus": "Disadvantages: Noise, high costs, and lack of privacy",
-        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
-        "point": "However, crowded, noisy public venues easily make people feel stressed, lack personal privacy, and create risks when using public Wi-Fi for private work."
+        "example": "For example, I was trying to prepare an important presentation at a crowded coffee shop last weekend. For this reason, I got to move back to my quiet room at home because loud phone calls kept breaking my focus. If I had not had that frustrating afternoon, I would not have been able to know that noisy venues and public Wi-Fi are risky for serious work.",
+        "focus": "Disadvantages: Noise, extra costs, and lack of privacy",
+        "frame": "Mở: On the other hand, the disadvantages of working or studying in public places are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that noise distractions and privacy risks can create serious drawbacks if ignored.",
+        "point": "In fact, crowded, noisy public venues easily make people feel stressed and lose concentration. This happens because when other customers talk loudly or play music nearby, it easily leads to mistakes and slower work performance. In addition, buying drinks every day costs a great deal of money, and using public Wi-Fi lacks personal privacy when handling private files."
       },
-      "conclusion": "In conclusion, working in public places has both pros and cons; it is useful for short tasks and networking, while quiet home or office spaces remain better for deep focus.",
+      "conclusion": "In conclusion, working or studying in public places brings both pros and cons. While people can benefit from convenient facilities and social energy, they also need to handle noise distractions, extra daily costs, and privacy risks. Therefore, both individuals and companies should work together to make the most of working in public places responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "public Wi-Fi",
-        "deep focus"
+        "deep focus",
+        "coworking space",
+        "noise distractions"
       ],
       "intro": {
         "debai": "working or studying in public places",
-        "ld1": "enjoy convenient facilities and social energy",
-        "ld2": "handling noise, extra costs, and privacy issues"
+        "ld1": "enjoy convenient facilities and meet like-minded people",
+        "ld2": "noise distractions, extra daily costs, and privacy risks"
       },
       "part": "writing-task2",
-      "reusedSource": "Template 3 (Positive or Negative) + Trục 4 (Peace & Privacy) + Trục 2 (Social network) + Chunks #18, #20, #24 + Body Chunk C",
+      "reusedSource": "Dạng 3 (Positive or Negative) + Ruột ĐOẠN 1 & ĐOẠN 2 + Trục 2 (Social network) + Trục 4 (Peace & Privacy) + Khung A Balance + Chunks #14 + 24 cụm từ đa năng (#18, #24)",
       "reusedVocab": [
         "fast, convenient for busy people in modern-day society",
         "meet like-minded people",
-        "crowded, noisy public venues easily makes people feel overwhelmed and stressed",
-        "total personal privacy",
-        "costs a great deal of money, time, and effort",
+        "crowded, noisy public venues easily make people feel stressed",
+        "personal privacy",
+        "cost a great deal of money",
         "stay on the safe side"
       ]
     }

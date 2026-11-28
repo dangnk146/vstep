@@ -91,33 +91,35 @@
     "content": "Read the following statement:\n\n\"Traditionally, the Lunar New Year (Tet) is a sacred occasion for Vietnamese families to gather at home, visit grandparents, and honor ancestral customs. Nowadays, however, an increasing number of individuals and families choose to spend the entire Tet holiday traveling on vacations to domestic or international destinations.\"\n\nWrite an essay to an educated reader presenting your personal opinion on whether traveling throughout Tet is a positive lifestyle choice or an erosion of valuable traditional customs. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, a busy office family can take a three-day trip to the beach during Tet to recharge their batteries and enjoy peaceful moments together.",
-        "focus": "Positive side: Relaxation and family bonding on vacation",
-        "frame": "Firstly, the first reason is that [ld1]... / Advantages (Body Chunk B)",
-        "point": "Traveling during Tet helps busy workers relieve stress, reduce fatigue, and reach a healthy balance between work and family time."
+        "example": "For instance, my brother was exhausted after working overtime for months before the Lunar New Year. Therefore, he decided to take his wife and children on a short beach trip during Tet. As a result, he finally felt refreshed and came back to work full of energy. If he had not taken that relaxing holiday, he would not have been able to rest so well with his family.",
+        "focus": "Positive side: Relaxation and quality family time on vacation",
+        "frame": "Mở: On the one hand, traveling throughout the Tet holiday brings a lot of advantages in several ways | Ruột ĐOẠN 1 | Chốt: Clearly, these benefits make traveling throughout the Tet holiday appealing to many people.",
+        "point": "A very important point to consider is that taking a trip during the long Tet break helps busy workers relieve stress and reduce fatigue after a tiring year. This means that family members can truly recharge their batteries instead of spending days cooking and cleaning at home. Another point I would like to make is that traveling together helps parents and children reach a healthy balance between work and family time. This is because of the fact that exploring new places creates joyful shared memories and strengthens family bonds."
       },
       "body2": {
-        "example": "For example, if young people spend the whole holiday abroad, grandparents at home may feel lonely and children will miss traditional family meals and New Year greetings.",
-        "focus": "Negative side: Weakening traditional customs and family visits",
-        "frame": "Secondly, [ld2]... / Disadvantages (Body Chunk C)",
-        "point": "However, being away for the entire holiday reduces face-to-face interaction with older relatives and widens the generation gap when traditional customs are skipped."
+        "example": "For example, I was away on a long vacation with my parents during Tet three years ago. For this reason, I got to see how sad my grandmother sounded on the phone when the house was completely empty on New Year's Day. If I had not heard her voice that morning, I would not have been able to know that visiting elders during Tet means so much to our family.",
+        "focus": "Negative side: Weakening traditional customs and missing family visits",
+        "frame": "Mở: On the other hand, the disadvantages of traveling throughout the Tet holiday are undeniable | Ruột ĐOẠN 2 | Chốt: It is clear that weakening traditional customs and missing family visits can create serious drawbacks if ignored.",
+        "point": "In fact, spending the entire holiday away from home reduces face-to-face interaction with grandparents and older relatives. This happens because when younger generations skip traditional meals and New Year greetings every year, it easily leads to loneliness for elders and widens the generation gap. In addition, children who never celebrate Tet at home may gradually forget meaningful family customs and cultural values."
       },
-      "conclusion": "In conclusion, taking a family trip during the Tet holiday offers great relaxation, as long as we still spend New Year's Day visiting grandparents and keeping our family traditions.",
+      "conclusion": "In conclusion, traveling throughout the Tet holiday brings both pros and cons. While people can benefit from relaxing and enjoying family trips, they also need to handle weakening traditional customs and missing visits with grandparents. Therefore, both individuals and families should work together to make the most of the Tet holiday responsibly.",
       "essayType": "Positive or Negative",
       "extraVocab": [
         "traditional family meals",
-        "New Year greetings"
+        "New Year greetings",
+        "older relatives",
+        "shared memories"
       ],
       "intro": {
         "debai": "traveling continuously throughout the Tet holiday",
-        "ld1": "relax and enjoy quality family time",
-        "ld2": "losing traditional customs and family visits"
+        "ld1": "relax, relieve stress, and enjoy fresh family trips",
+        "ld2": "weakening traditional customs and missing visits with grandparents"
       },
       "part": "writing-task2",
-      "reusedSource": "Template 3 (Positive or Negative) + Câu #16 (Du lịch dịp Tết) + Trục 2 (Mental health) + Chunks #9, #10, #22, #23",
+      "reusedSource": "Dạng 3 (Positive or Negative) + Ruột ĐOẠN 1 & ĐOẠN 2 + Câu #16 (Du lịch dịp Tết) + Trục 2 (Mental Health) + 24 cụm từ đa năng (#9, #10, #22, #23)",
       "reusedVocab": [
-        "recharge my batteries",
         "relieve stress and reduce fatigue",
+        "recharge my batteries",
         "reach a healthy balance between work and family time",
         "face-to-face interaction",
         "widens the generation gap"

@@ -89,36 +89,37 @@
     "content": "Read the following statement:\n\n\"With the overwhelming rise of short-form digital media, fewer people maintain the habit of reading books. Many educators stress that reading books exercises the brain, expands vocabulary, and deepens emotional empathy.\"\n\nWrite an essay to an educated reader discussing the positive effects of cultivating a regular reading habit and proposing feasible measures that schools and families can implement to encourage people, especially the youth, to read more. Support your arguments with specific reasons and illustrative examples.",
     "hint": {
       "body1": {
-        "example": "For instance, my brother reads a printed history book for 30 minutes every night in a quiet room, which helps him relax and do better in his school essays.",
-        "focus": "Positive effects: Brain exercise, knowledge, and stress relief",
-        "frame": "Firstly, the first reason is that [ld1]... / Shared Body 1",
-        "point": "Reading books regularly allows our brain to exercise, broadens our mind with useful vocabulary, and helps us relieve stress away from phone screens."
+        "example": "For instance, my brother was spending hours watching short videos every night and struggled to focus in class. Therefore, he decided to read a printed history book for 30 minutes before bed each evening. As a result, he finally felt calmer and improved his grades in school writing tasks. If he had not built a daily reading habit, he would not have been able to concentrate so well.",
+        "focus": "Positive effects of cultivating a regular reading habit",
+        "frame": "Mở: First and foremost, cultivating a regular reading habit leads to several positive effects | Ruột ĐOẠN 1 | Chốt: Clearly, these are the key impacts of cultivating a regular reading habit.",
+        "point": "A very important point to consider is that reading books regularly allows people's brains to exercise and broadens their mind with new vocabulary and ideas. This means that young readers improve their focus, write better essays, and understand other people's feelings more deeply. Another point I would like to make is that diving into the world of a book helps people relieve stress and reduce fatigue. This is because of the fact that reading printed books in a quiet space protects our eyes from phone screens and brings inner peace."
       },
       "body2": {
-        "example": "For example, schools can update their libraries with interesting storybooks, and parents can read together with their children before bedtime instead of letting them watch short videos.",
-        "focus": "Solutions: Actions from schools and families",
-        "frame": "Secondly, [ld2]... / Solutions (Body Chunk E + Giải pháp A)",
-        "point": "To solve this problem, schools and families should work closely together to guide young people, create daily reading time, and upgrade libraries with modern facilities."
+        "example": "For example, many parents now keep a small bookshelf in the living room and read with their children before bedtime, while schools host monthly book-sharing days where students trade favorite novels. With steady effort from both sides, young people can build a lifelong reading habit step by step.",
+        "focus": "Practical measures from schools and families to encourage reading",
+        "frame": "Mở: In order to resolve such problems, both individuals and organizations should take practical measures | Ruột Solutions (Cá nhân + Tổ chức + Education)",
+        "point": "One primary solution would be that individuals and parents should limit daily screen time and set aside 20 minutes every evening to read together at home. In addition, schools and families need to upgrade libraries with interesting storybooks, organize fun reading clubs, and offer clear guidance on choosing good books. Above all, education plays a key role in tackling this issue, because people need to be aware of its impacts so that they can act responsibly."
       },
-      "conclusion": "In conclusion, reading regularly helps young people exercise their brain and broaden their mind, so schools and parents should take practical steps to build this good habit.",
-      "essayType": "Causes-Solutions",
+      "conclusion": "In conclusion, cultivating a regular reading habit is closely linked to exercising the brain and broadening knowledge and requires practical steps such as daily family reading routines and better school libraries. Therefore, both schools and families need to take steady, practical actions to reduce the decline in reading in the long run.",
+      "essayType": "Effects-Solutions",
       "extraVocab": [
         "short videos",
-        "daily reading time"
+        "daily reading habit",
+        "school libraries",
+        "reading clubs"
       ],
       "intro": {
         "debai": "cultivating a regular reading habit among young people",
-        "ld1": "exercising the brain and broadening knowledge",
-        "ld2": "encouraging young people through schools and families"
+        "ld1": "exercising the brain, broadening knowledge, and relieving stress",
+        "ld2": "creating daily family reading routines and upgrading school libraries"
       },
       "part": "writing-task2",
-      "reusedSource": "Template 4 (Causes-Solutions) + Body Chunk E + Chunks #14, #16, #17 + Câu #9 + Giải pháp A",
+      "reusedSource": "Dạng 4 (Effects-Solutions) + Ruột ĐOẠN 1 & Ruột Solutions + Câu #9 (E-book vs Sách giấy) + Chunks #24, #25 + 24 cụm từ đa năng (#9, #14, #16, #17)",
       "reusedVocab": [
         "allow their brain to exercise",
         "broaden their mind",
         "dive into the world of a book",
         "relieve stress and reduce fatigue",
-        "parents and schools should work closely together to guide, listen, and support young people",
         "protect our eyes from blue-light strain"
       ]
     }

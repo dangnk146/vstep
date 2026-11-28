@@ -88,37 +88,38 @@
     "content": "Read the following statement:\n\n\"It is widely believed that education is the key to the future, empowering individuals to achieve personal success and enabling nations to develop sustainably.\"\n\nWrite an essay to an educated reader explaining the importance of education for individuals and society. Provide specific reasons and examples from your knowledge or personal experience to support your view.",
     "hint": {
       "body1": {
-        "example": "For instance, my cousin studied hard to get a B2 English certificate and an IT degree, so she soon got a well-paid job at an international company.",
-        "focus": "Importance of education for individuals",
-        "frame": "Firstly, the first reason is that [ld1] + Trục Knowledge + Cụm #1, #4, #14",
-        "point": "Education plays an essential role in helping people broaden their mind and learn useful job skills. With a good degree and strong knowledge, young people can find better jobs with higher salaries and improve people's living standard."
+        "example": "For instance, my brother was struggling to find a stable office job right after high school. Therefore, he decided to attend university and earn a B2 English certificate. As a result, he finally got hired by an international company with a much higher salary. If he had not invested time in his education, he would not have been able to build such a good career.",
+        "focus": "Lợi ích cho cá nhân: Kiến thức, kỹ năng nghề nghiệp và mức sống",
+        "frame": "Mở: First and foremost, people should recognize that education helps individuals gain practical skills and better jobs | Ruột ĐOẠN 1 | Chốt: Clearly, building practical skills for individuals brings undeniable value in modern life.",
+        "point": "A very important point to consider is that education plays an essential role in helping people broaden their mind and learn practical job skills. This means that young people with good degrees have more opportunities to find well-paid jobs and improve their living standard. Another point I would like to make is that schooling trains learners to think carefully and solve daily problems. This is because of the fact that classes and group projects teach both subject knowledge and useful life habits."
       },
       "body2": {
-        "example": "For example, countries that invest heavily in schools and universities produce skilled doctors and engineers who make a great contribution to hospitals, clean energy, and local businesses.",
-        "focus": "Importance of education for society",
-        "frame": "Secondly, it allows that [ld2] + Cụm #2, #5, #6, #11",
-        "point": "At the society level, educated citizens help a country keep pace with the fast-paced development of modern science and boost economic development. Education also raises public awareness of laws, healthy lifestyles, and environmental protection."
+        "example": "For example, I was worried about how much plastic waste people left in our neighborhood park last year. For this reason, I got to join a school environmental project that educated local families on sorting trash. If I had not taken part in that school program, I would not have been able to know that simple education can change a whole community.",
+        "focus": "Lợi ích cho xã hội: Phát triển kinh tế, khoa học và ý thức cộng đồng",
+        "frame": "Mở: Secondly, there are further arguments in support of the idea that education boosts economic development and improves society | Ruột ĐOẠN 2 | Chốt: It is clear that boosting economic development and social awareness plays an important role.",
+        "point": "In fact, educated citizens help a country keep pace with the fast-paced development of modern science and boost economic development. This happens because when a nation has skilled doctors, teachers, and engineers, it easily leads to stronger businesses, better healthcare, and cleaner cities. In addition, education raises public awareness of healthy lifestyles, fair rules, and environmental protection."
       },
-      "conclusion": "In conclusion, I wholeheartedly agree that education is the key to the future because it helps individuals improve their living standard and enables society to develop strongly.",
+      "conclusion": "In conclusion, I strongly agree that education is the key to the future, mainly because it helps build practical skills for individuals and supports economic and social development. Therefore, both individuals and schools should work together to make the most of lifelong education responsibly.",
       "essayType": "Agree or Disagree",
       "extraVocab": [
-        "well-paid job",
-        "skilled workers"
+        "well-paid jobs",
+        "skilled workers",
+        "lifelong education"
       ],
       "intro": {
-        "debai": "education is the key to the future",
-        "ld1": "help individuals gain knowledge and improve their living standard",
-        "ld2": "boost economic development and build a better society"
+        "debai": "valuing education as the key to the future",
+        "ld1": "build practical skills and improve people's living standard",
+        "ld2": "boost economic development and create a better society"
       },
       "part": "writing-task2",
-      "reusedSource": "Khung Agree or Disagree + Trục Knowledge + Cụm #1, #2, #4, #5, #6, #14",
+      "reusedSource": "Dạng 2 (Benefits only) + Ruột ĐOẠN 1 & ĐOẠN 2 + 24 cụm từ đa năng (#1, #2, #4, #5, #6, #11, #14, #19) + Chunks #11",
       "reusedVocab": [
         "plays an essential role in",
         "broaden their mind",
+        "have more opportunities to",
         "improve people's living standard",
         "keep pace with the fast-paced development of modern science",
         "boost economic development",
-        "make a contribution to",
         "environmental protection"
       ]
     }

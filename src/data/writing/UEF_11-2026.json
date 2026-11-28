@@ -92,36 +92,37 @@
     "addedAt": "2026-11-22T19:40:06+07:00",
     "hint": {
       "body1": {
-        "example": "For instance, when parents complain about homework online instead of meeting the teacher, the teacher feels stressed and trust between school and family breaks down.",
-        "focus": "Effects: Teacher stress and damaged school-family trust",
-        "frame": "First of all, [debai] directly affects... / Effects (Body Chunk D)",
-        "point": "Online complaints put heavy mental pressure on teachers, hurt their motivation, and replace respectful face-to-face interaction with public arguments."
+        "example": "For instance, my brother was working hard as a young secondary school teacher last semester. Therefore, he decided to give extra homework to help weak students before exams, but a parent posted an angry complaint about him on Facebook. As a result, he finally felt deeply stressed and lost confidence in class. If he had not received kind support from his principal, he would not have been able to continue teaching calmly.",
+        "focus": "Effects: Heavy pressure on teachers and weaker school-family trust",
+        "frame": "Mở: First and foremost, parents sharing school complaints on social media leads to several serious negative effects | Ruột ĐOẠN 1 | Chốt: Clearly, these are the key impacts of parents sharing school complaints on social media.",
+        "point": "A very important point to consider is that public complaints online put heavy mental pressure on teachers and hurt their motivation. This means that even small misunderstandings in class can turn into stressful online arguments that damage a teacher's reputation. Another point I would like to make is that this habit weakens trust between schools, families, and local communities. This is because of the fact that online criticism replaces respectful face-to-face interaction and makes parents and teachers view each other with doubt."
       },
       "body2": {
-        "example": "For example, schools can hold regular parent-teacher meetings, and parents should think things through calmly and talk directly with teachers instead of posting online.",
-        "focus": "Solutions: Direct communication and clear school rules",
-        "frame": "To deal with these problems... / Solutions (Body Chunk E + Giải pháp A)",
-        "point": "To tackle this problem, parents and schools should work closely together through honest face-to-face talks, while authorities set clear rules against unfair online attacks."
+        "example": "For example, schools can hold regular parent-teacher meetings and open a private feedback email, while parents choose calm face-to-face talks with teachers instead of posting angry comments online.",
+        "focus": "Practical solutions: Direct communication, clear school channels, and education",
+        "frame": "Mở: In order to resolve such problems, both individuals and organizations should take practical measures | Ruột Solutions (Cá nhân + Tổ chức + Education)",
+        "point": "One primary solution would be that individuals, especially parents, should stay on the safe side and think things through calmly by talking directly with teachers before posting anything online. In addition, schools and local communities need to set clear communication channels, hold regular parent-teacher meetings, and apply fair rules against unfair online attacks. Above all, education plays a key role in tackling this issue, because people need to be aware of its impacts so that they can act responsibly."
       },
-      "conclusion": "In conclusion, online criticism harms teachers and school relationships, so parents, teachers, and communities must choose calm, direct dialogue to support students together.",
-      "essayType": "Causes-Solutions",
+      "conclusion": "In conclusion, parents sharing complaints about schools on social media is closely linked to heavy teacher stress and broken school-family trust and requires practical steps such as direct parent-teacher talks and clear communication channels. Therefore, both schools and families need to take steady, practical actions to reduce this problem in the long run.",
+      "essayType": "Effects-Solutions",
       "extraVocab": [
         "parent-teacher meetings",
-        "online complaints"
+        "online complaints",
+        "communication channels",
+        "teacher's reputation"
       ],
       "intro": {
-        "debai": "parents sharing complaints about schools on social media",
-        "ld1": "heavy pressure on teachers and weaker school-family trust",
-        "ld2": "direct communication and clearer community rules"
+        "debai": "parents sharing complaints about schools and teachers on social media",
+        "ld1": "heavy stress on teachers and weaker school-family trust",
+        "ld2": "direct parent-teacher talks, clear school channels, and community education"
       },
       "part": "writing-task2",
-      "reusedSource": "Template 4 (Causes-Solutions) + Giải pháp A (Penalize + Parent-School cooperation) + Mini-essay #4 (Workplace Stress) + Chunks #23, #24",
+      "reusedSource": "Dạng 4 (Effects-Solutions) + Ruột ĐOẠN 1 & Ruột Solutions + Mini-essay #4 (Workplace Stress) + Khung B Practical Solution + Chunks #18, #24 + 24 cụm từ đa năng (#23, #24)",
       "reusedVocab": [
         "face-to-face interaction",
         "help us truly understand each other",
-        "parents and schools should work closely together to guide, listen, and support",
-        "introduce stricter rules",
-        "think things through calmly to avoid unnecessary trouble"
+        "stay on the safe side and think things through calmly to avoid unnecessary trouble",
+        "build a strong sense of belonging"
       ]
     }
   }
