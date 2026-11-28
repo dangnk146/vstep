@@ -18,6 +18,7 @@ import {
 import {
   fetchExamFilterOptions,
   fetchExamPrompts,
+  getExamApiSettings,
   getExamApiSettingsSnapshot,
   getServerExamApiSettingsSnapshot,
   parseExamApiSettingsSnapshot,
@@ -48,11 +49,11 @@ export default function PromptBankPage() {
   const [availableSchools, setAvailableSchools] = useState<string[]>([]);
   const [availableBatches, setAvailableBatches] = useState<string[]>([]);
 
-  // Page filters
+  // Page filters (school & batch come directly from global exam settings so there is a single source of truth)
   const [selectedSkill, setSelectedSkill] = useState<SkillFilter>('all');
   const [selectedPart, setSelectedPart] = useState<PartFilter>('all');
-  const [selectedSchool, setSelectedSchool] = useState<string>(settings.school || 'all');
-  const [selectedBatch, setSelectedBatch] = useState<string>(settings.batch || 'all');
+  const selectedSchool = settings.school || 'all';
+  const selectedBatch = settings.batch || 'all';
   const [search, setSearch] = useState('');
   const [debouncedSearch, setDebouncedSearch] = useState('');
   const [onlyNew, setOnlyNew] = useState(false);
@@ -65,8 +66,8 @@ export default function PromptBankPage() {
   const [copiedAll, setCopiedAll] = useState(false);
   const promptPanelRef = useRef<HTMLDivElement>(null);
 
-  // Synchronization refs
-  const isInitialSyncDoneRef = useRef(false);
+  // Synchronization state/refs
+  const [isUrlSynced, setIsUrlSynced] = useState(false);
   const initialExamIdRef = useRef<string | null>(null);
 
   // Export Modal state
@@ -83,24 +84,17 @@ export default function PromptBankPage() {
   useEffect(() => {
     const syncFromLocation = () => {
       const parsed = parsePromptsUrlQuery(window.location.search);
-      const hasAnyUrlParam = Boolean(window.location.search.replace(/^\?/, '').trim());
+      const hasScopeInUrl = parsed.school !== undefined || parsed.batch !== undefined;
 
-      if (parsed.school !== undefined) {
-        setSelectedSchool(parsed.school);
-        if (parsed.school !== 'all') {
-          saveExamApiSettings({ school: parsed.school });
+      // Only /prompts URLs with explicit matruong/batch update global settings (for shared links);
+      // URLs without matruong/batch preserve localStorage untouched.
+      if (hasScopeInUrl) {
+        const nextSchool = parsed.school && parsed.school !== 'all' ? parsed.school : '';
+        const nextBatch = parsed.batch && parsed.batch !== 'all' ? parsed.batch : '';
+        const current = getExamApiSettings();
+        if (nextSchool !== current.school || nextBatch !== current.batch) {
+          saveExamApiSettings({ school: nextSchool, batch: nextBatch });
         }
-      } else if (!hasAnyUrlParam && settings.school) {
-        setSelectedSchool(settings.school);
-      }
-
-      if (parsed.batch !== undefined) {
-        setSelectedBatch(parsed.batch);
-        if (parsed.batch !== 'all') {
-          saveExamApiSettings({ batch: parsed.batch });
-        }
-      } else if (!hasAnyUrlParam && settings.batch) {
-        setSelectedBatch(settings.batch);
       }
 
       if (parsed.skill !== undefined) {
@@ -128,7 +122,7 @@ export default function PromptBankPage() {
         initialExamIdRef.current = parsed.examId;
       }
 
-      isInitialSyncDoneRef.current = true;
+      setIsUrlSynced(true);
     };
 
     syncFromLocation();
@@ -154,7 +148,7 @@ export default function PromptBankPage() {
 
   // 3. Immediately sync selection state to URL search parameters without navigating
   useEffect(() => {
-    if (!isInitialSyncDoneRef.current) return;
+    if (!isUrlSynced) return;
 
     const queryString = buildPromptsUrlQuery({
       school: selectedSchool,
@@ -173,7 +167,7 @@ export default function PromptBankPage() {
     if (currentUrl !== canonicalUrl) {
       window.history.replaceState(null, '', canonicalUrl);
     }
-  }, [selectedSkill, selectedPart, selectedSchool, selectedBatch, debouncedSearch, onlyNew, sortMode, selectedPrompt]);
+  }, [isUrlSynced, selectedSkill, selectedPart, selectedSchool, selectedBatch, debouncedSearch, onlyNew, sortMode, selectedPrompt]);
 
   // Load all prompts and filter options on mount
   useEffect(() => {
@@ -207,13 +201,11 @@ export default function PromptBankPage() {
 
   // Sync settings when school/batch is changed
   const handleSchoolChange = (school: string) => {
-    setSelectedSchool(school);
-    saveExamApiSettings({ ...settings, school: school === 'all' ? '' : school });
+    saveExamApiSettings({ school: school === 'all' ? '' : school });
   };
 
   const handleBatchChange = (batch: string) => {
-    setSelectedBatch(batch);
-    saveExamApiSettings({ ...settings, batch: batch === 'all' ? '' : batch });
+    saveExamApiSettings({ batch: batch === 'all' ? '' : batch });
   };
 
   // Prompts matching scope before onlyNew filter (to display accurate NEW badge count)
@@ -242,11 +234,9 @@ export default function PromptBankPage() {
     [scopedPrompts, onlyNew]
   );
 
-  // Build URL for standalone /dating app carrying current configured filters
+  // Build URL for standalone /dating app carrying only local view filters (school & batch come from global settings)
   const datingHref = useMemo(() => {
     const queryString = buildPromptsUrlQuery({
-      school: selectedSchool,
-      batch: selectedBatch,
       skill: selectedSkill,
       part: selectedPart,
       search,
@@ -254,7 +244,7 @@ export default function PromptBankPage() {
       sort: sortMode,
     });
     return queryString ? `/dating?${queryString}` : '/dating';
-  }, [selectedSchool, selectedBatch, selectedSkill, selectedPart, search, onlyNew, sortMode]);
+  }, [selectedSkill, selectedPart, search, onlyNew, sortMode]);
 
   // Counts by category scoped to active School, Batch, Search & onlyNew filters
   const counts = useMemo(() => {
@@ -479,8 +469,6 @@ export default function PromptBankPage() {
               <PromptDetailCard
                 prompt={selectedPrompt}
                 copied={copiedPromptId === selectedPrompt.id}
-                defaultSchool={settings.school}
-                defaultBatch={settings.batch}
                 onCopy={() => void handleCopyPrompt(selectedPrompt)}
                 onClose={() => setSelectedPrompt(null)}
                 onPracticeWriting={handlePracticeWriting}

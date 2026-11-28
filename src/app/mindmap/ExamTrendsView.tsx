@@ -31,7 +31,6 @@ import {
   formatFullDate,
   formatShortDate,
 } from '@/lib/examTrendsShared';
-import { buildExamQueryString } from '@/lib/examApi';
 
 interface ExamTrendsViewProps {
   dataset: TrendDatasetResponse | null;
@@ -86,11 +85,7 @@ const BADGE_CONFIG: Record<
 };
 
 function getPracticeHref(exam: ClassifiedExamRecord): string {
-  const qs = buildExamQueryString({
-    matruong: exam.school,
-    batch: exam.batch,
-    exam: exam.id,
-  });
+  const qs = `exam=${encodeURIComponent(exam.id)}`;
   if (exam.skill === 'speaking') {
     return `/speaking/${exam.part}?${qs}`;
   }

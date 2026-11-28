@@ -29,13 +29,18 @@ import { useHintOpen } from '@/hooks/useHintOpen';
 import { isExamHint, type ExamHint } from '@/types/examHint';
 import { toReadablePromptText } from '@/utils/examPrompts';
 import {
-  buildExamQueryString,
   getExamApiSettings,
   getRandomExamPrompts,
   fetchExamPromptById,
   parseExamQueryString,
-  saveExamApiSettings,
 } from '@/lib/examApi';
+
+function buildWritingUrl(task: 'task1' | 'task2' | 'free', examId?: string): string {
+  const cleanExam = examId?.trim();
+  return cleanExam
+    ? `/writing/${task}?exam=${encodeURIComponent(cleanExam)}`
+    : `/writing/${task}`;
+}
 
 const EDITOR_BASIC_SETUP = {
   lineNumbers: true,
@@ -191,22 +196,6 @@ export default function WritingPage() {
       const pathTask = window.location.pathname.match(/^\/writing\/(task1|task2|free)$/)?.[1];
       const queryTask = parsedQuery.task;
       const examId = parsedQuery.exam;
-      const urlSchool = parsedQuery.matruong;
-      const urlBatch = parsedQuery.batch;
-
-      // Sync filter from URL to localStorage if provided
-      const hasFilterInUrl = urlSchool !== undefined || urlBatch !== undefined;
-      const currentSettings = getExamApiSettings();
-      let nextSchool = currentSettings.school;
-      let nextBatch = currentSettings.batch;
-
-      if (hasFilterInUrl) {
-        nextSchool = urlSchool && urlSchool.toLowerCase() !== 'all' ? urlSchool : '';
-        nextBatch = urlBatch && urlBatch.toLowerCase() !== 'all' ? urlBatch : '';
-        if (nextSchool !== currentSettings.school || nextBatch !== currentSettings.batch) {
-          saveExamApiSettings({ school: nextSchool, batch: nextBatch });
-        }
-      }
 
       let task: 'task1' | 'task2' | 'free' =
         pathTask === 'task1' || pathTask === 'task2' || pathTask === 'free'
@@ -277,25 +266,12 @@ export default function WritingPage() {
                   hint: p.hint,
                 }));
               } catch {}
-
-              if (!hasFilterInUrl) {
-                const promptSchool = p.school || '';
-                const promptBatch = p.batch || '';
-                if (promptSchool || promptBatch) {
-                  saveExamApiSettings({ school: promptSchool, batch: promptBatch });
-                }
-              }
             }
           })
           .catch(console.error);
       }
 
-      const queryStr = buildExamQueryString({
-        matruong: nextSchool,
-        batch: nextBatch,
-        exam: selectedExamId,
-      });
-      const canonicalUrl = `/writing/${task}${queryStr ? `?${queryStr}` : ''}`;
+      const canonicalUrl = buildWritingUrl(task, selectedExamId);
       if (`${window.location.pathname}${window.location.search}` !== canonicalUrl) {
         window.history.replaceState(null, '', canonicalUrl);
       }
@@ -341,14 +317,7 @@ export default function WritingPage() {
           sessionStorage.removeItem('vstep_bank_writing_prompt');
         } catch {}
 
-        const parsed = parseExamQueryString(window.location.search);
-        delete parsed.exam;
-        const queryStr = buildExamQueryString(parsed);
-        window.history.replaceState(
-          null,
-          '',
-          `/writing/${section}${queryStr ? `?${queryStr}` : ''}`,
-        );
+        window.history.replaceState(null, '', buildWritingUrl(section));
       }
     };
 
@@ -388,16 +357,7 @@ export default function WritingPage() {
         localStorage.setItem('vstep_bank_writing_prompt', JSON.stringify(promptObj));
       } catch {}
 
-      const queryStr = buildExamQueryString({
-        matruong: apiSettings.school,
-        batch: apiSettings.batch,
-        exam: prompt.id,
-      });
-      window.history.pushState(
-        null,
-        '',
-        `/writing/${task}${queryStr ? `?${queryStr}` : ''}`,
-      );
+      window.history.pushState(null, '', buildWritingUrl(task, prompt.id));
     } catch (error) {
       console.error('Could not load a random Writing prompt.', error);
       window.alert(error instanceof Error ? error.message : 'Không thể tải đề Writing.');

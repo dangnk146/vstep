@@ -4,13 +4,10 @@ import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, Check, Copy, X } from 'lucide-react';
 import { getExamCategory, toReadablePromptText, type ExamPrompt } from '@/utils/examPrompts';
-import { buildExamQueryString } from '@/lib/examApi';
 
 interface PromptDetailCardProps {
   prompt: ExamPrompt;
   copied: boolean;
-  defaultSchool: string;
-  defaultBatch: string;
   onCopy: () => void;
   onClose: () => void;
   onPracticeWriting: (prompt: ExamPrompt) => void;
@@ -20,8 +17,6 @@ interface PromptDetailCardProps {
 export function PromptDetailCard({
   prompt,
   copied,
-  defaultSchool,
-  defaultBatch,
   onCopy,
   onClose,
   onPracticeWriting,
@@ -107,11 +102,7 @@ export function PromptDetailCard({
 
           {isWriting ? (
             <Link
-              href={`/writing/${prompt.category === 'writing-task1' ? 'task1' : 'task2'}?${buildExamQueryString({
-                matruong: prompt.school || defaultSchool,
-                batch: prompt.batch || defaultBatch,
-                exam: prompt.id,
-              })}`}
+              href={`/writing/${prompt.category === 'writing-task1' ? 'task1' : 'task2'}?exam=${encodeURIComponent(prompt.id)}`}
               onClick={() => onPracticeWriting(prompt)}
               className="flex items-center gap-1.5 rounded-sm bg-[#245b86] px-3.5 py-1.5 text-xs font-bold text-white transition hover:bg-[#1e4d72]"
             >
@@ -120,11 +111,7 @@ export function PromptDetailCard({
             </Link>
           ) : (
             <Link
-              href={`/speaking/${prompt.category.replace('speaking-', '')}?${buildExamQueryString({
-                matruong: prompt.school || defaultSchool,
-                batch: prompt.batch || defaultBatch,
-                exam: prompt.id,
-              })}`}
+              href={`/speaking/${prompt.category.replace('speaking-', '')}?exam=${encodeURIComponent(prompt.id)}`}
               onClick={() => onPracticeSpeaking(prompt)}
               className="flex items-center gap-1.5 rounded-sm bg-[#245b86] px-3.5 py-1.5 text-xs font-bold text-white transition hover:bg-[#1e4d72]"
             >

@@ -10,13 +10,18 @@ import {
 } from '../types';
 import { sanitizeClipboardHtml } from '../utils/sanitize';
 import {
-  buildExamQueryString,
   fetchExamPromptsByIds,
   getExamApiSettings,
   getRandomExamPrompts,
   parseExamQueryString,
-  saveExamApiSettings,
 } from '@/lib/examApi';
+
+function buildSpeakingUrl(part: SpeakingPart, examId?: string): string {
+  const cleanExam = examId?.trim();
+  return cleanExam
+    ? `/speaking/${part}?exam=${encodeURIComponent(cleanExam)}`
+    : `/speaking/${part}`;
+}
 
 function renderSpeakingPromptsHtml(prompts: ExamPrompt[]): string {
   if (prompts.length === 1) {
@@ -56,22 +61,6 @@ export function useSpeakingExam() {
     const queryPart = parsedQuery.part as SpeakingPart | null;
     const savedPart = localStorage.getItem(ACTIVE_PART_KEY) as SpeakingPart | null;
     const rawExam = parsedQuery.exam;
-    const urlSchool = parsedQuery.matruong;
-    const urlBatch = parsedQuery.batch;
-
-    const hasFilterInUrl = urlSchool !== undefined || urlBatch !== undefined;
-    const currentSettings = getExamApiSettings();
-    let nextSchool = currentSettings.school;
-    let nextBatch = currentSettings.batch;
-
-    // Sync filter from URL to localStorage if provided
-    if (hasFilterInUrl) {
-      nextSchool = urlSchool && urlSchool.toLowerCase() !== 'all' ? urlSchool : '';
-      nextBatch = urlBatch && urlBatch.toLowerCase() !== 'all' ? urlBatch : '';
-      if (nextSchool !== currentSettings.school || nextBatch !== currentSettings.batch) {
-        saveExamApiSettings({ school: nextSchool, batch: nextBatch });
-      }
-    }
 
     const fallbackPart: SpeakingPart = pathPart
       || (queryPart === 'part1' || queryPart === 'part2' || queryPart === 'part3' ? queryPart : null)
@@ -155,25 +144,12 @@ export function useSpeakingExam() {
               localStorage.setItem(CUSTOM_EXAM_KEY, html);
               localStorage.setItem(ACTIVE_EXAM_KEY, selectedExamId!);
             });
-
-            if (!hasFilterInUrl) {
-              const promptSchool = found[0].school || '';
-              const promptBatch = found[0].batch || '';
-              if (promptSchool || promptBatch) {
-                saveExamApiSettings({ school: promptSchool, batch: promptBatch });
-              }
-            }
           }
         })
         .catch(console.error);
     }
 
-    const queryStr = buildExamQueryString({
-      matruong: nextSchool,
-      batch: nextBatch,
-      exam: selectedExamId,
-    });
-    const canonicalUrl = `/speaking/${part}${queryStr ? `?${queryStr}` : ''}`;
+    const canonicalUrl = buildSpeakingUrl(part, selectedExamId);
     if (`${window.location.pathname}${window.location.search}` !== canonicalUrl) {
       window.history.replaceState(null, '', canonicalUrl);
     }
@@ -236,14 +212,7 @@ export function useSpeakingExam() {
       setExamKey((previous) => previous + 1);
       setHasExamContent(false);
 
-      const parsed = parseExamQueryString(window.location.search);
-      delete parsed.exam;
-      const queryStr = buildExamQueryString(parsed);
-      window.history.replaceState(
-        null,
-        '',
-        `/speaking/${section}${queryStr ? `?${queryStr}` : ''}`,
-      );
+      window.history.replaceState(null, '', buildSpeakingUrl(section));
     };
 
     window.addEventListener('vstep:select-section', handleSectionSelect);
@@ -286,12 +255,7 @@ export function useSpeakingExam() {
       localStorage.setItem(ACTIVE_EXAM_KEY, examId);
       localStorage.setItem(ACTIVE_PART_KEY, part);
 
-      const queryStr = buildExamQueryString({
-        matruong: apiSettings.school,
-        batch: apiSettings.batch,
-        exam: examId,
-      });
-      window.history.pushState(null, '', `/speaking/${part}${queryStr ? `?${queryStr}` : ''}`);
+      window.history.pushState(null, '', buildSpeakingUrl(part, examId));
     } catch (error) {
       console.error('Could not load a random Speaking prompt.', error);
       window.alert(error instanceof Error ? error.message : 'Không thể tải đề Speaking.');
@@ -307,15 +271,8 @@ export function useSpeakingExam() {
     localStorage.setItem(CUSTOM_EXAM_KEY, html);
     localStorage.removeItem(ACTIVE_EXAM_KEY);
 
-    const parsed = parseExamQueryString(window.location.search);
-    if (parsed.exam) {
-      delete parsed.exam;
-      const queryStr = buildExamQueryString(parsed);
-      window.history.replaceState(
-        null,
-        '',
-        `${window.location.pathname}${queryStr ? `?${queryStr}` : ''}`,
-      );
+    if (window.location.search) {
+      window.history.replaceState(null, '', window.location.pathname);
     }
     setHasExamContent(Boolean(text.trim()));
     setIsSubmitted(false);

@@ -58,23 +58,12 @@ function DatingAppContent() {
     };
   }, []);
 
-  // Resolve active filters from URL (configured from /prompts), falling back to global school/batch settings
+  // School & batch always come from global settings (localStorage); URL only carries local view filters
   const filters = useMemo(() => {
     const parsed = parsePromptsUrlQuery(queryString);
-    const hasUrlParams = Boolean(queryString.trim());
 
-    const school =
-      parsed.school !== undefined
-        ? parsed.school
-        : !hasUrlParams && settings.school
-          ? settings.school
-          : 'all';
-    const batch =
-      parsed.batch !== undefined
-        ? parsed.batch
-        : !hasUrlParams && settings.batch
-          ? settings.batch
-          : 'all';
+    const school = settings.school || 'all';
+    const batch = settings.batch || 'all';
     const skill: SkillFilter = parsed.skill ?? 'all';
     const part: PartFilter = parsed.part ?? 'all';
     const search = parsed.search ?? '';
@@ -89,10 +78,9 @@ function DatingAppContent() {
     [allPrompts, filters]
   );
 
+  // Omit school & batch from backHref so returning to /prompts never overwrites global settings
   const backHref = useMemo(() => {
     const qs = buildPromptsUrlQuery({
-      school: filters.school,
-      batch: filters.batch,
       skill: filters.skill,
       part: filters.part,
       search: filters.search,
@@ -100,7 +88,7 @@ function DatingAppContent() {
       sort: filters.sort,
     });
     return qs ? `/prompts?${qs}` : '/prompts';
-  }, [filters]);
+  }, [filters.skill, filters.part, filters.search, filters.onlyNew, filters.sort]);
 
   if (isLoading) {
     return (
@@ -154,10 +142,10 @@ function DatingAppContent() {
     );
   }
 
-  // Keyed by queryString so any filter change starts a clean fresh session
+  // Keyed by global school/batch + queryString so any filter change starts a clean fresh session
   return (
     <DatingDeckApp
-      key={queryString || 'default'}
+      key={`${filters.school}|${filters.batch}|${queryString || 'default'}`}
       prompts={filteredPrompts}
       backHref={backHref}
       filterSummary={filters}
