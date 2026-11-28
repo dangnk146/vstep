@@ -1,0 +1,131 @@
+[
+  {
+    "STT": "1",
+    "Mã câu hỏi": "dthu11-writing-task1-1",
+    "Phần thi": "writing-task1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTHU 28/11/2026",
+    "Tiêu đề đề bài": "Task 1.1: Informal Email About Organizing a Birthday Party",
+    "Nội dung chi tiết": "You have received an email from your close friend asking about your plans to organize a birthday party next week. Write an informal email responding to your friend:\n\n- Suggest a suitable venue and time to hold the birthday party\n- Describe the food, decorations, and fun activities you plan for the party\n- Ask if your friend can come early to help prepare and mention what birthday gift you would love (if they want to bring one)",
+    "Mã trường": "DTHU",
+    "Đợt thi": "11/2026",
+    "id": "dthu11-writing-task1-1",
+    "skill": "writing",
+    "school": "DTHU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế DTHU 28/11/2026",
+    "title": "Task 1.1: Informal Email About Organizing a Birthday Party",
+    "content": "You have received an email from your close friend asking about your plans to organize a birthday party next week. Write an informal email responding to your friend:\n\n- Suggest a suitable venue and time to hold the birthday party\n- Describe the food, decorations, and fun activities you plan for the party\n- Ask if your friend can come early to help prepare and mention what birthday gift you would love (if they want to bring one)",
+    "isNew": true,
+    "addedAt": "2026-11-28T15:30:04+07:00",
+    "hint": {
+      "part": "writing-task1",
+      "letterType": "Informal",
+      "purpose": "Suggestion + Provide Info + Request",
+      "opening": {
+        "template": "Informal",
+        "fill": "my plans to organize a birthday party next week"
+      },
+      "body": [
+        {
+          "requirement": "Suggest a suitable venue and time to hold the birthday party",
+          "frame": "A. Câu dẫn cảm xúc + G. Provide Instruction / Suggestion",
+          "answer": "I'm happy to hear that you are excited about my birthday party! Why don't we hold it at my house next Saturday evening at 6:30 PM?",
+          "reason": "Saturday evening is fast and convenient for busy people, and celebrating at home offers a quiet, cozy environment without the noise of crowded public places.",
+          "example": "Everyone finishes work or classes by Saturday afternoon, so we can gather comfortably in my living room without rushing."
+        },
+        {
+          "requirement": "Describe the food, decorations, and fun activities you plan for the party",
+          "frame": "D. Provide Information",
+          "answer": "I would like to let you know that I plan to decorate the room with simple balloons, cook a warm hotpot dinner, and play fun board games together.",
+          "reason": "Eating home-cooked food and chatting through face-to-face interaction helps us build a strong sense of belonging and relieve stress and reduce fatigue after a busy week.",
+          "example": "After enjoying seafood hotpot and cutting the birthday cake, we can sing karaoke, play card games, and take group photos."
+        },
+        {
+          "requirement": "Ask if your friend can come early to help prepare and mention a gift wish",
+          "frame": "B. Request + H. Provide Opinion",
+          "answer": "Firstly, I would appreciate it if you could come around 5:00 PM to help me set up the table and snacks. For a gift, your presence is enough, but I would love a short English novel.",
+          "reason": "Preparing together will make the work faster and more fun, while a good book lets me dive into the world of a book and broaden my mind.",
+          "example": "You can easily pick up any interesting paperback book at the bookstore near your house, and it fits comfortably within a student's budget."
+        }
+      ],
+      "closing": {
+        "template": "Informal",
+        "topic": "my birthday party"
+      },
+      "reusedVocab": [
+        "I'm happy to hear",
+        "Why don't you",
+        "I would like to let you know that",
+        "I would appreciate it if you could",
+        "fast, convenient for busy people",
+        "quiet, cozy environment",
+        "build a strong sense of belonging and help us truly understand each other through face-to-face interaction",
+        "relieve stress and reduce fatigue",
+        "dive into the world of a book",
+        "broaden my mind",
+        "fit comfortably within my budget"
+      ],
+      "extraVocab": [
+        "[+] hotpot dinner",
+        "[+] board games",
+        "[+] set up the table"
+      ]
+    }
+  },
+  {
+    "STT": "2",
+    "Mã câu hỏi": "dthu11-writing-task2-1",
+    "Phần thi": "writing-task2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTHU 28/11/2026",
+    "Tiêu đề đề bài": "Task 2.1: Discussion on Banning Smoking in Public Places",
+    "Nội dung chi tiết": "Read the following statement:\n\n\"Some people believe that adults should have the personal freedom to smoke cigarettes in open public places if they choose to do so. However, others argue that smoking should be completely banned in all public areas because second-hand smoke seriously harms the health of non-smokers, especially children and pregnant women.\"\n\nWrite an essay to an educated reader discussing both views and giving your own opinion on whether smoking should be banned in public places. Support your arguments with specific reasons and examples.",
+    "Mã trường": "DTHU",
+    "Đợt thi": "11/2026",
+    "id": "dthu11-writing-task2-1",
+    "skill": "writing",
+    "school": "DTHU",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế DTHU 28/11/2026",
+    "title": "Task 2.1: Discussion on Banning Smoking in Public Places",
+    "content": "Read the following statement:\n\n\"Some people believe that adults should have the personal freedom to smoke cigarettes in open public places if they choose to do so. However, others argue that smoking should be completely banned in all public areas because second-hand smoke seriously harms the health of non-smokers, especially children and pregnant women.\"\n\nWrite an essay to an educated reader discussing both views and giving your own opinion on whether smoking should be banned in public places. Support your arguments with specific reasons and examples.",
+    "isNew": true,
+    "addedAt": "2026-11-28T15:30:05+07:00",
+    "hint": {
+      "part": "writing-task2",
+      "essayType": "Discuss both views",
+      "reusedSource": "Dạng 1 (Discuss both views) + Ruột ĐOẠN 1 & ĐOẠN 2 + Trục Physical health + 24 cụm từ đa năng (#9, #19) + Khung B (Practical Solution)",
+      "intro": {
+        "debai": "banning smoking in public places",
+        "ld1": "protect non-smokers' physical health, especially children and pregnant women",
+        "ld2": "a cleaner and safer public environment for everyone"
+      },
+      "body1": {
+        "focus": "Quan điểm 1: Quyền tự do cá nhân của người hút thuốc ở không gian công cộng mở",
+        "frame": "Mở: First and foremost, people should recognize why some support adults' personal right to smoke in open public places | Ruột ĐOẠN 1 | Chốt: Clearly, this perspective has reasonable points.",
+        "point": "A very important point to consider is that buying and smoking cigarettes is a legal personal choice for adults. This means that supporters feel grown-ups should be allowed to relieve stress outdoors as long as they stand away from other people. Another point I would like to make is that a complete ban everywhere can feel unfair to smokers who work long hours away from home. This is because of the fact that without small smoking corners, smokers have nowhere legal to take a short break.",
+        "example": "For instance, my brother was a smoker who felt quite frustrated during busy workdays outside his office building. Therefore, he decided to walk to a quiet empty corner far from other people when smoking. As a result, he finally understood why some smokers ask for separate outdoor smoking zones instead of a total ban. If he had not respected nearby pedestrians, he would not have been mindful of shared spaces."
+      },
+      "body2": {
+        "focus": "Quan điểm 2 (Ủng hộ): Cấm hút thuốc nơi công cộng để bảo vệ sức khỏe cộng đồng",
+        "frame": "Mở: On the other hand, there are stronger arguments in support of banning smoking in all public places | Ruột ĐOẠN 2 | Chốt: It is clear that banning smoking in public places is a more practical choice.",
+        "point": "In fact, second-hand smoke directly harms the physical health of innocent bystanders, especially children and pregnant women who share the same air. This happens because when people smoke at bus stops, parks, or cafes, it easily leads to coughing, lung problems, and unpleasant smells for everyone nearby. In addition, strict smoking bans raise public awareness of healthy lifestyles and diseases, keeping shared public areas clean and safe.",
+        "example": "For example, I was waiting at a crowded bus stop with my pregnant cousin last year when a man started smoking right beside us. For this reason, I got to see her feel dizzy and move away immediately to breathe fresh air. If I had not seen that moment closely, I would not have been able to know how quickly second-hand smoke hurts people around us."
+      },
+      "conclusion": "In conclusion, although both views have reasonable points, I prefer banning smoking in public places because it allows people to protect non-smokers' physical health and brings a cleaner, safer community for everyone. Therefore, both individuals and local authorities should work together to keep public spaces healthy and apply fair rules.",
+      "reusedVocab": [
+        "relieve stress",
+        "beneficial to physical health",
+        "raise public awareness of healthy lifestyle and diseases",
+        "a cleaner, safer community",
+        "local authorities and communities"
+      ],
+      "extraVocab": [
+        "[+] second-hand smoke",
+        "[+] pregnant women",
+        "[+] smoking zones"
+      ]
+    }
+  }
+]

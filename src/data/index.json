@@ -135,6 +135,12 @@
       "batch": "11/2026",
       "file": "speaking/HANU_11-2026.json",
       "count": 13
+    },
+    {
+      "school": "DTHU",
+      "batch": "11/2026",
+      "file": "speaking/DTHU_11-2026.json",
+      "count": 3
     }
   ],
   "writing": [
@@ -251,6 +257,12 @@
       "batch": "11/2026",
       "file": "writing/HANU_11-2026.json",
       "count": 10
+    },
+    {
+      "school": "DTHU",
+      "batch": "11/2026",
+      "file": "writing/DTHU_11-2026.json",
+      "count": 2
     }
   ],
   "listening": {

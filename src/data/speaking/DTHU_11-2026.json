@@ -1,0 +1,219 @@
+[
+  {
+    "STT": "1",
+    "Mã câu hỏi": "dthu11-speaking-part1-1",
+    "Phần thi": "speaking-part1",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTHU 28/11/2026",
+    "Tiêu đề đề bài": "Topic 1: Overcoming Life Difficulties",
+    "Nội dung chi tiết": "1. Have you ever faced a big difficulty or challenge in your life?\n2. How do you usually overcome difficult moments or stress?\n3. Who do you often turn to for advice when you have a problem?",
+    "Mã trường": "DTHU",
+    "Đợt thi": "11/2026",
+    "id": "dthu11-speaking-part1-1",
+    "skill": "speaking",
+    "school": "DTHU",
+    "batch": "11/2026",
+    "part": "part1",
+    "group": "Đề thi thực tế DTHU 28/11/2026",
+    "title": "Topic 1: Overcoming Life Difficulties",
+    "content": "1. Have you ever faced a big difficulty or challenge in your life?\n2. How do you usually overcome difficult moments or stress?\n3. Who do you often turn to for advice when you have a problem?",
+    "isNew": true,
+    "addedAt": "2026-11-28T15:30:01+07:00",
+    "hint": {
+      "part": "speaking-part1",
+      "topic": "Overcoming Life Difficulties",
+      "reusedSource": "Bộ đề 1 (Mom) + Bộ đề 3 (Music) + Trục Mental health & Peace & Privacy + 24 cụm từ đa năng (#3, #9, #10, #23, #24)",
+      "questions": [
+        {
+          "q": "Have you ever faced a big difficulty or challenge in your life?",
+          "pillar": "Knowledge",
+          "answer": "Yes, I faced a big challenge last year when I had to prepare for important university exams while working a part-time job.",
+          "reason": "At that time, I felt stressed and exhausted because it was hard to reach a healthy balance between study and rest. However, creating a daily study timetable helped me solve the problem and manage my time independently.",
+          "example": "I wrote a clear weekly schedule to break large tasks into small daily steps so I could finish my urgent assignments before going to work."
+        },
+        {
+          "q": "How do you usually overcome difficult moments or stress?",
+          "pillar": "Mental health",
+          "answer": "When I face difficult moments, I usually listen to soft music or spend quiet time alone in my room to calm down.",
+          "reason": "This is advantageous to my mental health because it helps me relieve stress, reduce fatigue, and put my feet up. Staying in a quiet, cozy environment lets my mind slow down and think things through calmly.",
+          "example": "Whenever I feel down after a tough day, I listen to gentle Lofi music on Spotify for twenty minutes to recharge my batteries."
+        },
+        {
+          "q": "Who do you often turn to for advice when you have a problem?",
+          "pillar": "Social",
+          "answer": "I always turn to my mom first whenever I have a difficult problem in life.",
+          "reason": "She is understanding and supportive, and she is always beside me when I face difficulties. Talking with her through face-to-face interaction helps me stay on the safe side and avoid unnecessary trouble.",
+          "example": "Last month, when I felt worried about my study plan, my mom sat down with me after dinner and gave me very practical advice."
+        }
+      ],
+      "reusedVocab": [
+        "stressed and exhausted",
+        "reach a healthy balance",
+        "daily study timetable",
+        "solve the problem",
+        "break large tasks into small daily steps",
+        "advantageous to my mental health",
+        "relieve stress and reduce fatigue",
+        "put my feet up",
+        "quiet, cozy environment",
+        "recharge my batteries",
+        "always beside me when I face difficulties",
+        "face-to-face interaction",
+        "stay on the safe side and think things through calmly to avoid unnecessary trouble"
+      ],
+      "extraVocab": [
+        "[+] university exams",
+        "[+] part-time job",
+        "[+] turn to someone for advice"
+      ]
+    }
+  },
+  {
+    "STT": "2",
+    "Mã câu hỏi": "dthu11-speaking-part2-1",
+    "Phần thi": "speaking-part2",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTHU 28/11/2026",
+    "Tiêu đề đề bài": "Part 2 - Situation 1: Gathering Travel Information for a Trip to Singapore",
+    "Nội dung chi tiết": "Situation: You are preparing for an upcoming trip to Singapore and want to find reliable travel information. There are three options:\n- Reading travel guidebooks (đọc sách hướng dẫn du lịch)\n- Searching on the Internet (tìm kiếm thông tin trên mạng)\n- Asking for advice from someone who has visited Singapore (hỏi kinh nghiệm người đã từng đi Singapore)\n\nWhich option do you think is the best choice and why?",
+    "Mã trường": "DTHU",
+    "Đợt thi": "11/2026",
+    "id": "dthu11-speaking-part2-1",
+    "skill": "speaking",
+    "school": "DTHU",
+    "batch": "11/2026",
+    "part": "part2",
+    "group": "Đề thi thực tế DTHU 28/11/2026",
+    "title": "Part 2 - Situation 1: Gathering Travel Information for a Trip to Singapore",
+    "content": "Situation: You are preparing for an upcoming trip to Singapore and want to find reliable travel information. There are three options:\n- Reading travel guidebooks (đọc sách hướng dẫn du lịch)\n- Searching on the Internet (tìm kiếm thông tin trên mạng)\n- Asking for advice from someone who has visited Singapore (hỏi kinh nghiệm người đã từng đi Singapore)\n\nWhich option do you think is the best choice and why?",
+    "isNew": true,
+    "addedAt": "2026-11-28T15:30:02+07:00",
+    "hint": {
+      "part": "speaking-part2",
+      "situation": "I am preparing for an upcoming trip to Singapore and want to find reliable travel information.",
+      "chosen": {
+        "option": "Asking for advice from someone who has visited Singapore",
+        "khen1Code": "KHEN-0",
+        "khen1Text": "because it is super easy to start right away by calling or meeting a friend who visited Singapore, without buying expensive guidebooks or searching through confusing websites.",
+        "khen2Pillar": "Knowledge",
+        "khen2ARE": {
+          "answer": "Asking someone who has visited Singapore gives me practical knowledge and honest tips before my trip.",
+          "reason": "Through face-to-face interaction, an experienced traveler can share real, up-to-date information about local culture, transport, and reasonable prices, helping me stay on the safe side and avoid unnecessary trouble.",
+          "example": "For example, I can ask my close friend who went to Singapore last month which food courts fit comfortably within my budget and how to use the MRT train card from the airport."
+        },
+        "khen3Code": "KHEN-0",
+        "khen3Text": "great for reducing mental pressure before traveling. This is because everything in my travel plan stays clear and under my control, allowing me to feel safe, confident, and ready to enjoy the trip."
+      },
+      "rejected": [
+        {
+          "option": "Reading travel guidebooks",
+          "cheCode": "CUSTOM",
+          "reason": "printed travel guidebooks often have outdated ticket prices or closed places, and I also have to spend extra money buying them."
+        },
+        {
+          "option": "Searching on the Internet",
+          "cheCode": "CUSTOM",
+          "reason": "searching on the Internet often shows fake reviews, paid advertisements, and too many mixed opinions, so it wastes hours checking what is really true."
+        }
+      ],
+      "reusedVocab": [
+        "super easy to start right away",
+        "increase knowledge",
+        "face-to-face interaction",
+        "fit comfortably within my budget",
+        "stay on the safe side and avoid unnecessary trouble",
+        "reducing mental pressure"
+      ],
+      "extraVocab": [
+        "[+] up-to-date tips",
+        "[+] food courts",
+        "[+] MRT train card"
+      ]
+    }
+  },
+  {
+    "STT": "3",
+    "Mã câu hỏi": "dthu11-speaking-part3-1",
+    "Phần thi": "speaking-part3",
+    "Bộ đề / Nhóm chủ đề": "Đề thi thực tế DTHU 28/11/2026",
+    "Tiêu đề đề bài": "Part 3 - Topic 1: Advantages of Older Leaders",
+    "Nội dung chi tiết": "Topic: Advantages of having older leaders in organizations\nSuggestions:\n- Extensive work and life experience\n- Deep professional knowledge and calm decision-making\n- A strong sense of responsibility and stability\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you prefer working under a younger leader or an older leader? Why?\n2. What strengths can young leaders bring to modern companies?\n3. What are the most important qualities of a good leader regardless of age?",
+    "Mã trường": "DTHU",
+    "Đợt thi": "11/2026",
+    "id": "dthu11-speaking-part3-1",
+    "skill": "speaking",
+    "school": "DTHU",
+    "batch": "11/2026",
+    "part": "part3",
+    "group": "Đề thi thực tế DTHU 28/11/2026",
+    "title": "Part 3 - Topic 1: Advantages of Older Leaders",
+    "content": "Topic: Advantages of having older leaders in organizations\nSuggestions:\n- Extensive work and life experience\n- Deep professional knowledge and calm decision-making\n- A strong sense of responsibility and stability\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you prefer working under a younger leader or an older leader? Why?\n2. What strengths can young leaders bring to modern companies?\n3. What are the most important qualities of a good leader regardless of age?",
+    "isNew": true,
+    "addedAt": "2026-11-28T15:30:03+07:00",
+    "hint": {
+      "part": "speaking-part3",
+      "macroTopic": "society",
+      "coreTopic": "advantages of having older leaders in organizations",
+      "mindmapPoints": [
+        {
+          "cue": "Extensive work and life experience",
+          "wordForm": "Adj+N",
+          "sentence": "Older leaders bring rich work and life experience to a company.",
+          "expand": "because they have worked for many years and know how to solve problems and adjust and adapt to different workplace situations.",
+          "impact": "Therefore, it is good for guiding young employees who lack real experience."
+        },
+        {
+          "cue": "Deep professional knowledge and calm decision-making",
+          "wordForm": "N",
+          "sentence": "Employees can gain great support from older leaders' deep professional knowledge and calm decisions.",
+          "expand": "For example, when a company faces an urgent problem, an older boss can stay on the safe side and think things through calmly to avoid unnecessary trouble.",
+          "impact": "Clearly, it is beneficial to the team's confidence and long-term success."
+        },
+        {
+          "cue": "A strong sense of responsibility and stability",
+          "wordForm": "N",
+          "sentence": "Older bosses show a strong sense of responsibility and stability at work.",
+          "expand": "This is because people who train diligently for years rarely change jobs quickly and always focus on clear goals for the whole team.",
+          "impact": "So, it has positive effects on workplace trust and team performance."
+        }
+      ],
+      "ownIdea": "I think that 3 ideas are comprehensive. I cannot think of other ideas.",
+      "followUps": [
+        {
+          "q": "Do you prefer working under a younger leader or an older leader? Why?",
+          "formula": "do you think",
+          "answer": "Yes, I think I prefer working under an older leader because I can learn practical skills from their experience.",
+          "reason": "Many fresh graduates and young workers need proper guidance, and an older manager can listen patiently and help us solve real work problems.",
+          "example": "For example, my first team leader was over forty, and she always showed me step by step how to deal with difficult customers calmly."
+        },
+        {
+          "q": "What strengths can young leaders bring to modern companies?",
+          "formula": "what",
+          "answer": "There are some clear strengths that young leaders bring, such as fresh energy, creativity, and strong technology skills.",
+          "reason": "Young bosses easily keep pace with the fast-paced development of modern science and make the most of new technology to improve productivity.",
+          "example": "For instance, a young manager can quickly set up online tools so team members can share files and finish tasks faster."
+        },
+        {
+          "q": "What are the most important qualities of a good leader regardless of age?",
+          "formula": "what",
+          "answer": "There are some important qualities of a good leader at any age, such as fairness, clear communication, and responsibility.",
+          "reason": "A good boss builds a strong sense of belonging through face-to-face interaction and encourages everyone to learn new things.",
+          "example": "For example, whether a manager is 28 or 55, a leader who respects staff and gives helpful feedback makes the whole team work happily."
+        }
+      ],
+      "reusedVocab": [
+        "solve the problem",
+        "adjust and adapt to the social environment",
+        "stay on the safe side and think things through calmly to avoid unnecessary trouble",
+        "people who train diligently are more likely to do well in their field",
+        "keep pace with the fast-paced development of modern science",
+        "make the most of new technology to improve productivity",
+        "build a strong sense of belonging",
+        "face-to-face interaction"
+      ],
+      "extraVocab": [
+        "[+] calm decision-making",
+        "[+] fairness",
+        "[+] workplace trust"
+      ]
+    }
+  }
+]
