@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-25T08:00:57.659Z",
-  "totalSpeakingQuestions": 368,
+  "generatedAt": "2026-11-28T08:31:56.148Z",
+  "totalSpeakingQuestions": 371,
   "hubCount": 5,
   "hubs": {
     "education": {
@@ -1896,10 +1896,10 @@
         "Preserve cultural identity & strengthen familial and societal bonds (Gìn giữ bản sắc truyền thống và thắt chặt tình cảm gắn kết xã hội)"
       ],
       "stats": {
-        "total": 180,
-        "part1": 94,
-        "part2": 43,
-        "part3": 43
+        "total": 183,
+        "part1": 95,
+        "part2": 44,
+        "part3": 44
       },
       "questions": {
         "part1": [
@@ -2748,6 +2748,15 @@
             "title": "Sharing Household Chores",
             "rawTitle": "Topic 6: Sharing Household Chores",
             "content": "1. What household chores do you usually help with at home?\n2. How is housework divided among members of your family?\n3. Do you think children should learn to do housework from an early age?"
+          },
+          {
+            "id": "dthu11-speaking-part1-1",
+            "school": "DTHU",
+            "batch": "11/2026",
+            "part": "part1",
+            "title": "Overcoming Life Difficulties",
+            "rawTitle": "Topic 1: Overcoming Life Difficulties",
+            "content": "1. Have you ever faced a big difficulty or challenge in your life?\n2. How do you usually overcome difficult moments or stress?\n3. Who do you often turn to for advice when you have a problem?"
           }
         ],
         "part2": [
@@ -3137,6 +3146,15 @@
             "title": "Organizing a Community Festival",
             "rawTitle": "Part 2 - Situation 4: Organizing a Community Festival",
             "content": "Situation: Your school or local community is planning to organize an annual festival and you are asked to choose the theme. There are three options:\n- A music festival\n- A food festival\n- An art festival\n\nWhich option do you think is the best choice and why?"
+          },
+          {
+            "id": "dthu11-speaking-part2-1",
+            "school": "DTHU",
+            "batch": "11/2026",
+            "part": "part2",
+            "title": "Gathering Travel Information for a Trip to Singapore",
+            "rawTitle": "Part 2 - Situation 1: Gathering Travel Information for a Trip to Singapore",
+            "content": "Situation: You are preparing for an upcoming trip to Singapore and want to find reliable travel information. There are three options:\n- Reading travel guidebooks (đọc sách hướng dẫn du lịch)\n- Searching on the Internet (tìm kiếm thông tin trên mạng)\n- Asking for advice from someone who has visited Singapore (hỏi kinh nghiệm người đã từng đi Singapore)\n\nWhich option do you think is the best choice and why?"
           }
         ],
         "part3": [
@@ -3526,6 +3544,15 @@
             "title": "Part 3 - Topic 4: Solutions for Preserving Cultural Heritage",
             "rawTitle": "Part 3 - Topic 4: Solutions for Preserving Cultural Heritage",
             "content": "Topic: Effective ways to preserve traditional culture\nSuggestions:\n- Teaching cultural traditions at school\n- Organizing traditional festivals and exhibitions\n- Promoting local culture on digital media\n- [Your own ideas]\n\nFollow-up questions:\n1. Why is it important to preserve traditional culture in a globalized world?\n2. Which solution do you think is the most effective for young people?\n3. What can individuals do in daily life to protect their national culture?"
+          },
+          {
+            "id": "dthu11-speaking-part3-1",
+            "school": "DTHU",
+            "batch": "11/2026",
+            "part": "part3",
+            "title": "Part 3 - Topic 1: Advantages of Older Leaders",
+            "rawTitle": "Part 3 - Topic 1: Advantages of Older Leaders",
+            "content": "Topic: Advantages of having older leaders in organizations\nSuggestions:\n- Extensive work and life experience\n- Deep professional knowledge and calm decision-making\n- A strong sense of responsibility and stability\n- [Your own ideas]\n\nFollow-up questions:\n1. Do you prefer working under a younger leader or an older leader? Why?\n2. What strengths can young leaders bring to modern companies?\n3. What are the most important qualities of a good leader regardless of age?"
           }
         ]
       }
